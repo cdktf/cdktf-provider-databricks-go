@@ -1,0 +1,49 @@
+// Prebuilt databricks Provider for Terraform CDK (cdktf)
+package databricks
+
+import (
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+type LibraryConfig struct {
+	// Experimental.
+	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// Experimental.
+	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/library#cluster_id Library#cluster_id}.
+	ClusterId *string `field:"required" json:"clusterId" yaml:"clusterId"`
+	// cran block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/library#cran Library#cran}
+	Cran *LibraryCran `field:"optional" json:"cran" yaml:"cran"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/library#egg Library#egg}.
+	Egg *string `field:"optional" json:"egg" yaml:"egg"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/library#id Library#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/library#jar Library#jar}.
+	Jar *string `field:"optional" json:"jar" yaml:"jar"`
+	// maven block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/library#maven Library#maven}
+	Maven *LibraryMaven `field:"optional" json:"maven" yaml:"maven"`
+	// pypi block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/library#pypi Library#pypi}
+	Pypi *LibraryPypi `field:"optional" json:"pypi" yaml:"pypi"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/library#whl Library#whl}.
+	Whl *string `field:"optional" json:"whl" yaml:"whl"`
+}
+
