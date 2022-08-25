@@ -11,6 +11,9 @@ import (
 
 type JobTaskNewClusterOutputReference interface {
 	cdktf.ComplexObject
+	ApplyPolicyDefaultValues() interface{}
+	SetApplyPolicyDefaultValues(val interface{})
+	ApplyPolicyDefaultValuesInput() interface{}
 	Autoscale() JobTaskNewClusterAutoscaleOutputReference
 	AutoscaleInput() *JobTaskNewClusterAutoscale
 	AutoterminationMinutes() *float64
@@ -143,6 +146,7 @@ type JobTaskNewClusterOutputReference interface {
 	PutGcpAttributes(value *JobTaskNewClusterGcpAttributes)
 	PutInitScripts(value interface{})
 	PutWorkloadType(value *JobTaskNewClusterWorkloadType)
+	ResetApplyPolicyDefaultValues()
 	ResetAutoscale()
 	ResetAutoterminationMinutes()
 	ResetAwsAttributes()
@@ -182,6 +186,26 @@ type JobTaskNewClusterOutputReference interface {
 // The jsii proxy struct for JobTaskNewClusterOutputReference
 type jsiiProxy_JobTaskNewClusterOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) ApplyPolicyDefaultValues() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"applyPolicyDefaultValues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) ApplyPolicyDefaultValuesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"applyPolicyDefaultValuesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) Autoscale() JobTaskNewClusterAutoscaleOutputReference {
@@ -819,6 +843,14 @@ func NewJobTaskNewClusterOutputReference_Override(j JobTaskNewClusterOutputRefer
 	)
 }
 
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) SetApplyPolicyDefaultValues(val interface{}) {
+	_jsii_.Set(
+		j,
+		"applyPolicyDefaultValues",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) SetAutoterminationMinutes(val *float64) {
 	_jsii_.Set(
 		j,
@@ -1228,6 +1260,14 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) PutWorkloadType(value *JobT
 		j,
 		"putWorkloadType",
 		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetApplyPolicyDefaultValues() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetApplyPolicyDefaultValues",
+		nil, // no parameters
 	)
 }
 

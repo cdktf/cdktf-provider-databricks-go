@@ -5,6 +5,8 @@ package databricks
 type JobTaskNewCluster struct {
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#spark_version Job#spark_version}.
 	SparkVersion *string `field:"required" json:"sparkVersion" yaml:"sparkVersion"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#apply_policy_default_values Job#apply_policy_default_values}.
+	ApplyPolicyDefaultValues interface{} `field:"optional" json:"applyPolicyDefaultValues" yaml:"applyPolicyDefaultValues"`
 	// autoscale block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#autoscale Job#autoscale}

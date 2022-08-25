@@ -22,6 +22,8 @@ type ClusterConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#spark_version Cluster#spark_version}.
 	SparkVersion *string `field:"required" json:"sparkVersion" yaml:"sparkVersion"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#apply_policy_default_values Cluster#apply_policy_default_values}.
+	ApplyPolicyDefaultValues interface{} `field:"optional" json:"applyPolicyDefaultValues" yaml:"applyPolicyDefaultValues"`
 	// autoscale block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#autoscale Cluster#autoscale}

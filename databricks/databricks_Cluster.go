@@ -13,6 +13,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/databricks/r/cluster databricks_cluster}.
 type Cluster interface {
 	cdktf.TerraformResource
+	ApplyPolicyDefaultValues() interface{}
+	SetApplyPolicyDefaultValues(val interface{})
+	ApplyPolicyDefaultValuesInput() interface{}
 	Autoscale() ClusterAutoscaleOutputReference
 	AutoscaleInput() *ClusterAutoscale
 	AutoterminationMinutes() *float64
@@ -180,6 +183,7 @@ type Cluster interface {
 	PutLibrary(value interface{})
 	PutTimeouts(value *ClusterTimeouts)
 	PutWorkloadType(value *ClusterWorkloadType)
+	ResetApplyPolicyDefaultValues()
 	ResetAutoscale()
 	ResetAutoterminationMinutes()
 	ResetAwsAttributes()
@@ -226,6 +230,26 @@ type Cluster interface {
 // The jsii proxy struct for Cluster
 type jsiiProxy_Cluster struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Cluster) ApplyPolicyDefaultValues() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"applyPolicyDefaultValues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) ApplyPolicyDefaultValuesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"applyPolicyDefaultValuesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Cluster) Autoscale() ClusterAutoscaleOutputReference {
@@ -1065,6 +1089,14 @@ func NewCluster_Override(c Cluster, scope constructs.Construct, id *string, conf
 	)
 }
 
+func (j *jsiiProxy_Cluster) SetApplyPolicyDefaultValues(val interface{}) {
+	_jsii_.Set(
+		j,
+		"applyPolicyDefaultValues",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Cluster) SetAutoterminationMinutes(val *float64) {
 	_jsii_.Set(
 		j,
@@ -1555,6 +1587,14 @@ func (c *jsiiProxy_Cluster) PutWorkloadType(value *ClusterWorkloadType) {
 		c,
 		"putWorkloadType",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_Cluster) ResetApplyPolicyDefaultValues() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetApplyPolicyDefaultValues",
+		nil, // no parameters
 	)
 }
 

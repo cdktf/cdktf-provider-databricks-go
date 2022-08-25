@@ -28,6 +28,8 @@ type GrantsConfig struct {
 	Catalog *string `field:"optional" json:"catalog" yaml:"catalog"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#external_location Grants#external_location}.
 	ExternalLocation *string `field:"optional" json:"externalLocation" yaml:"externalLocation"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#function Grants#function}.
+	Function *string `field:"optional" json:"function" yaml:"function"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#id Grants#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

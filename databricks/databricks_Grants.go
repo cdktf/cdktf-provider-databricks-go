@@ -43,6 +43,9 @@ type Grants interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Function() *string
+	SetFunction(val *string)
+	FunctionInput() *string
 	Grant() GrantsGrantList
 	GrantInput() interface{}
 	Id() *string
@@ -113,6 +116,7 @@ type Grants interface {
 	PutGrant(value interface{})
 	ResetCatalog()
 	ResetExternalLocation()
+	ResetFunction()
 	ResetId()
 	ResetMetastore()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -252,6 +256,26 @@ func (j *jsiiProxy_Grants) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grants) Function() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"function",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grants) FunctionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"functionInput",
 		&returns,
 	)
 	return returns
@@ -552,6 +576,14 @@ func (j *jsiiProxy_Grants) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
+func (j *jsiiProxy_Grants) SetFunction(val *string) {
+	_jsii_.Set(
+		j,
+		"function",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Grants) SetId(val *string) {
 	_jsii_.Set(
 		j,
@@ -833,6 +865,14 @@ func (g *jsiiProxy_Grants) ResetExternalLocation() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetExternalLocation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Grants) ResetFunction() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFunction",
 		nil, // no parameters
 	)
 }

@@ -3,6 +3,8 @@ package databricks
 
 
 type PipelineCluster struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}.
+	ApplyPolicyDefaultValues interface{} `field:"optional" json:"applyPolicyDefaultValues" yaml:"applyPolicyDefaultValues"`
 	// autoscale block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#autoscale Pipeline#autoscale}
@@ -37,6 +39,8 @@ type PipelineCluster struct {
 	NodeTypeId *string `field:"optional" json:"nodeTypeId" yaml:"nodeTypeId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#num_workers Pipeline#num_workers}.
 	NumWorkers *float64 `field:"optional" json:"numWorkers" yaml:"numWorkers"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#policy_id Pipeline#policy_id}.
+	PolicyId *string `field:"optional" json:"policyId" yaml:"policyId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#spark_conf Pipeline#spark_conf}.
 	SparkConf *map[string]*string `field:"optional" json:"sparkConf" yaml:"sparkConf"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#spark_env_vars Pipeline#spark_env_vars}.

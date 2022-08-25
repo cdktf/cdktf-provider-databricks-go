@@ -11,6 +11,9 @@ import (
 
 type PipelineClusterOutputReference interface {
 	cdktf.ComplexObject
+	ApplyPolicyDefaultValues() interface{}
+	SetApplyPolicyDefaultValues(val interface{})
+	ApplyPolicyDefaultValuesInput() interface{}
 	Autoscale() PipelineClusterAutoscaleOutputReference
 	AutoscaleInput() *PipelineClusterAutoscale
 	AwsAttributes() PipelineClusterAwsAttributesOutputReference
@@ -61,6 +64,9 @@ type PipelineClusterOutputReference interface {
 	NumWorkers() *float64
 	SetNumWorkers(val *float64)
 	NumWorkersInput() *float64
+	PolicyId() *string
+	SetPolicyId(val *string)
+	PolicyIdInput() *string
 	SparkConf() *map[string]*string
 	SetSparkConf(val *map[string]*string)
 	SparkConfInput() *map[string]*string
@@ -107,6 +113,7 @@ type PipelineClusterOutputReference interface {
 	PutClusterLogConf(value *PipelineClusterClusterLogConf)
 	PutGcpAttributes(value *PipelineClusterGcpAttributes)
 	PutInitScripts(value interface{})
+	ResetApplyPolicyDefaultValues()
 	ResetAutoscale()
 	ResetAwsAttributes()
 	ResetClusterLogConf()
@@ -119,6 +126,7 @@ type PipelineClusterOutputReference interface {
 	ResetLabel()
 	ResetNodeTypeId()
 	ResetNumWorkers()
+	ResetPolicyId()
 	ResetSparkConf()
 	ResetSparkEnvVars()
 	ResetSshPublicKeys()
@@ -135,6 +143,26 @@ type PipelineClusterOutputReference interface {
 // The jsii proxy struct for PipelineClusterOutputReference
 type jsiiProxy_PipelineClusterOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_PipelineClusterOutputReference) ApplyPolicyDefaultValues() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"applyPolicyDefaultValues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterOutputReference) ApplyPolicyDefaultValuesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"applyPolicyDefaultValuesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PipelineClusterOutputReference) Autoscale() PipelineClusterAutoscaleOutputReference {
@@ -427,6 +455,26 @@ func (j *jsiiProxy_PipelineClusterOutputReference) NumWorkersInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_PipelineClusterOutputReference) PolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterOutputReference) PolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PipelineClusterOutputReference) SparkConf() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -532,6 +580,14 @@ func NewPipelineClusterOutputReference_Override(p PipelineClusterOutputReference
 	)
 }
 
+func (j *jsiiProxy_PipelineClusterOutputReference) SetApplyPolicyDefaultValues(val interface{}) {
+	_jsii_.Set(
+		j,
+		"applyPolicyDefaultValues",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PipelineClusterOutputReference) SetComplexObjectIndex(val interface{}) {
 	_jsii_.Set(
 		j,
@@ -608,6 +664,14 @@ func (j *jsiiProxy_PipelineClusterOutputReference) SetNumWorkers(val *float64) {
 	_jsii_.Set(
 		j,
 		"numWorkers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineClusterOutputReference) SetPolicyId(val *string) {
+	_jsii_.Set(
+		j,
+		"policyId",
 		val,
 	)
 }
@@ -848,6 +912,14 @@ func (p *jsiiProxy_PipelineClusterOutputReference) PutInitScripts(value interfac
 	)
 }
 
+func (p *jsiiProxy_PipelineClusterOutputReference) ResetApplyPolicyDefaultValues() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetApplyPolicyDefaultValues",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PipelineClusterOutputReference) ResetAutoscale() {
 	_jsii_.InvokeVoid(
 		p,
@@ -940,6 +1012,14 @@ func (p *jsiiProxy_PipelineClusterOutputReference) ResetNumWorkers() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetNumWorkers",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineClusterOutputReference) ResetPolicyId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPolicyId",
 		nil, // no parameters
 	)
 }

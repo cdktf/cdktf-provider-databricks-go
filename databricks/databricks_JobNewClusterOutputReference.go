@@ -11,6 +11,9 @@ import (
 
 type JobNewClusterOutputReference interface {
 	cdktf.ComplexObject
+	ApplyPolicyDefaultValues() interface{}
+	SetApplyPolicyDefaultValues(val interface{})
+	ApplyPolicyDefaultValuesInput() interface{}
 	Autoscale() JobNewClusterAutoscaleOutputReference
 	AutoscaleInput() *JobNewClusterAutoscale
 	AutoterminationMinutes() *float64
@@ -143,6 +146,7 @@ type JobNewClusterOutputReference interface {
 	PutGcpAttributes(value *JobNewClusterGcpAttributes)
 	PutInitScripts(value interface{})
 	PutWorkloadType(value *JobNewClusterWorkloadType)
+	ResetApplyPolicyDefaultValues()
 	ResetAutoscale()
 	ResetAutoterminationMinutes()
 	ResetAwsAttributes()
@@ -182,6 +186,26 @@ type JobNewClusterOutputReference interface {
 // The jsii proxy struct for JobNewClusterOutputReference
 type jsiiProxy_JobNewClusterOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_JobNewClusterOutputReference) ApplyPolicyDefaultValues() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"applyPolicyDefaultValues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobNewClusterOutputReference) ApplyPolicyDefaultValuesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"applyPolicyDefaultValuesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_JobNewClusterOutputReference) Autoscale() JobNewClusterAutoscaleOutputReference {
@@ -819,6 +843,14 @@ func NewJobNewClusterOutputReference_Override(j JobNewClusterOutputReference, te
 	)
 }
 
+func (j *jsiiProxy_JobNewClusterOutputReference) SetApplyPolicyDefaultValues(val interface{}) {
+	_jsii_.Set(
+		j,
+		"applyPolicyDefaultValues",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JobNewClusterOutputReference) SetAutoterminationMinutes(val *float64) {
 	_jsii_.Set(
 		j,
@@ -1228,6 +1260,14 @@ func (j *jsiiProxy_JobNewClusterOutputReference) PutWorkloadType(value *JobNewCl
 		j,
 		"putWorkloadType",
 		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobNewClusterOutputReference) ResetApplyPolicyDefaultValues() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetApplyPolicyDefaultValues",
+		nil, // no parameters
 	)
 }
 
