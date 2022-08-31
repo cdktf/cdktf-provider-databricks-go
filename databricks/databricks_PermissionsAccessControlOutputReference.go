@@ -246,6 +246,9 @@ func (j *jsiiProxy_PermissionsAccessControlOutputReference) UserNameInput() *str
 func NewPermissionsAccessControlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PermissionsAccessControlOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewPermissionsAccessControlOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PermissionsAccessControlOutputReference{}
 
 	_jsii_.Create(
@@ -267,7 +270,10 @@ func NewPermissionsAccessControlOutputReference_Override(p PermissionsAccessCont
 	)
 }
 
-func (j *jsiiProxy_PermissionsAccessControlOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PermissionsAccessControlOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -275,7 +281,10 @@ func (j *jsiiProxy_PermissionsAccessControlOutputReference) SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_PermissionsAccessControlOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PermissionsAccessControlOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -283,7 +292,10 @@ func (j *jsiiProxy_PermissionsAccessControlOutputReference) SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_PermissionsAccessControlOutputReference) SetGroupName(val *string) {
+func (j *jsiiProxy_PermissionsAccessControlOutputReference)SetGroupName(val *string) {
+	if err := j.validateSetGroupNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupName",
@@ -291,7 +303,10 @@ func (j *jsiiProxy_PermissionsAccessControlOutputReference) SetGroupName(val *st
 	)
 }
 
-func (j *jsiiProxy_PermissionsAccessControlOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PermissionsAccessControlOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -299,7 +314,10 @@ func (j *jsiiProxy_PermissionsAccessControlOutputReference) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_PermissionsAccessControlOutputReference) SetPermissionLevel(val *string) {
+func (j *jsiiProxy_PermissionsAccessControlOutputReference)SetPermissionLevel(val *string) {
+	if err := j.validateSetPermissionLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"permissionLevel",
@@ -307,7 +325,10 @@ func (j *jsiiProxy_PermissionsAccessControlOutputReference) SetPermissionLevel(v
 	)
 }
 
-func (j *jsiiProxy_PermissionsAccessControlOutputReference) SetServicePrincipalName(val *string) {
+func (j *jsiiProxy_PermissionsAccessControlOutputReference)SetServicePrincipalName(val *string) {
+	if err := j.validateSetServicePrincipalNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"servicePrincipalName",
@@ -315,7 +336,10 @@ func (j *jsiiProxy_PermissionsAccessControlOutputReference) SetServicePrincipalN
 	)
 }
 
-func (j *jsiiProxy_PermissionsAccessControlOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PermissionsAccessControlOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -323,7 +347,10 @@ func (j *jsiiProxy_PermissionsAccessControlOutputReference) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_PermissionsAccessControlOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PermissionsAccessControlOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -331,7 +358,10 @@ func (j *jsiiProxy_PermissionsAccessControlOutputReference) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_PermissionsAccessControlOutputReference) SetUserName(val *string) {
+func (j *jsiiProxy_PermissionsAccessControlOutputReference)SetUserName(val *string) {
+	if err := j.validateSetUserNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userName",
@@ -353,6 +383,9 @@ func (p *jsiiProxy_PermissionsAccessControlOutputReference) ComputeFqn() *string
 }
 
 func (p *jsiiProxy_PermissionsAccessControlOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -366,6 +399,9 @@ func (p *jsiiProxy_PermissionsAccessControlOutputReference) GetAnyMapAttribute(t
 }
 
 func (p *jsiiProxy_PermissionsAccessControlOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -379,6 +415,9 @@ func (p *jsiiProxy_PermissionsAccessControlOutputReference) GetBooleanAttribute(
 }
 
 func (p *jsiiProxy_PermissionsAccessControlOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -392,6 +431,9 @@ func (p *jsiiProxy_PermissionsAccessControlOutputReference) GetBooleanMapAttribu
 }
 
 func (p *jsiiProxy_PermissionsAccessControlOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -405,6 +447,9 @@ func (p *jsiiProxy_PermissionsAccessControlOutputReference) GetListAttribute(ter
 }
 
 func (p *jsiiProxy_PermissionsAccessControlOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -418,6 +463,9 @@ func (p *jsiiProxy_PermissionsAccessControlOutputReference) GetNumberAttribute(t
 }
 
 func (p *jsiiProxy_PermissionsAccessControlOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -431,6 +479,9 @@ func (p *jsiiProxy_PermissionsAccessControlOutputReference) GetNumberListAttribu
 }
 
 func (p *jsiiProxy_PermissionsAccessControlOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -444,6 +495,9 @@ func (p *jsiiProxy_PermissionsAccessControlOutputReference) GetNumberMapAttribut
 }
 
 func (p *jsiiProxy_PermissionsAccessControlOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -457,6 +511,9 @@ func (p *jsiiProxy_PermissionsAccessControlOutputReference) GetStringAttribute(t
 }
 
 func (p *jsiiProxy_PermissionsAccessControlOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -483,6 +540,9 @@ func (p *jsiiProxy_PermissionsAccessControlOutputReference) InterpolationAsList(
 }
 
 func (p *jsiiProxy_PermissionsAccessControlOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -520,6 +580,9 @@ func (p *jsiiProxy_PermissionsAccessControlOutputReference) ResetUserName() {
 }
 
 func (p *jsiiProxy_PermissionsAccessControlOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -481,6 +481,9 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) TerraformResourceType() *string {
 func NewMwsPrivateAccessSettings(scope constructs.Construct, id *string, config *MwsPrivateAccessSettingsConfig) MwsPrivateAccessSettings {
 	_init_.Initialize()
 
+	if err := validateNewMwsPrivateAccessSettingsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MwsPrivateAccessSettings{}
 
 	_jsii_.Create(
@@ -503,7 +506,10 @@ func NewMwsPrivateAccessSettings_Override(m MwsPrivateAccessSettings, scope cons
 	)
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) SetAccountId(val *string) {
+func (j *jsiiProxy_MwsPrivateAccessSettings)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -511,7 +517,10 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) SetAllowedVpcEndpointIds(val *[]*string) {
+func (j *jsiiProxy_MwsPrivateAccessSettings)SetAllowedVpcEndpointIds(val *[]*string) {
+	if err := j.validateSetAllowedVpcEndpointIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedVpcEndpointIds",
@@ -519,7 +528,10 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) SetAllowedVpcEndpointIds(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) SetConnection(val interface{}) {
+func (j *jsiiProxy_MwsPrivateAccessSettings)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -527,7 +539,7 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) SetCount(val *float64) {
+func (j *jsiiProxy_MwsPrivateAccessSettings)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -535,7 +547,7 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MwsPrivateAccessSettings)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -543,7 +555,7 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MwsPrivateAccessSettings)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -551,7 +563,10 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) SetId(val *string) {
+func (j *jsiiProxy_MwsPrivateAccessSettings)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -559,7 +574,10 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MwsPrivateAccessSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -567,7 +585,10 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) SetPrivateAccessLevel(val *string) {
+func (j *jsiiProxy_MwsPrivateAccessSettings)SetPrivateAccessLevel(val *string) {
+	if err := j.validateSetPrivateAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privateAccessLevel",
@@ -575,7 +596,10 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) SetPrivateAccessLevel(val *string) 
 	)
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) SetPrivateAccessSettingsId(val *string) {
+func (j *jsiiProxy_MwsPrivateAccessSettings)SetPrivateAccessSettingsId(val *string) {
+	if err := j.validateSetPrivateAccessSettingsIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privateAccessSettingsId",
@@ -583,7 +607,10 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) SetPrivateAccessSettingsId(val *str
 	)
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) SetPrivateAccessSettingsName(val *string) {
+func (j *jsiiProxy_MwsPrivateAccessSettings)SetPrivateAccessSettingsName(val *string) {
+	if err := j.validateSetPrivateAccessSettingsNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privateAccessSettingsName",
@@ -591,7 +618,7 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) SetPrivateAccessSettingsName(val *s
 	)
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MwsPrivateAccessSettings)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -599,7 +626,10 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MwsPrivateAccessSettings)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -607,7 +637,10 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) SetPublicAccessEnabled(val interface{}) {
+func (j *jsiiProxy_MwsPrivateAccessSettings)SetPublicAccessEnabled(val interface{}) {
+	if err := j.validateSetPublicAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"publicAccessEnabled",
@@ -615,7 +648,10 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) SetPublicAccessEnabled(val interfac
 	)
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) SetRegion(val *string) {
+func (j *jsiiProxy_MwsPrivateAccessSettings)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -623,7 +659,10 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) SetStatus(val *string) {
+func (j *jsiiProxy_MwsPrivateAccessSettings)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"status",
@@ -651,6 +690,9 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) SetStatus(val *string) {
 func MwsPrivateAccessSettings_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateMwsPrivateAccessSettings_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -675,6 +717,9 @@ func MwsPrivateAccessSettings_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_MwsPrivateAccessSettings) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -683,6 +728,9 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) AddOverride(path *string, value int
 }
 
 func (m *jsiiProxy_MwsPrivateAccessSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -696,6 +744,9 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) GetAnyMapAttribute(terraformAttribu
 }
 
 func (m *jsiiProxy_MwsPrivateAccessSettings) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -709,6 +760,9 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) GetBooleanAttribute(terraformAttrib
 }
 
 func (m *jsiiProxy_MwsPrivateAccessSettings) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -722,6 +776,9 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) GetBooleanMapAttribute(terraformAtt
 }
 
 func (m *jsiiProxy_MwsPrivateAccessSettings) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -735,6 +792,9 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) GetListAttribute(terraformAttribute
 }
 
 func (m *jsiiProxy_MwsPrivateAccessSettings) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -748,6 +808,9 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) GetNumberAttribute(terraformAttribu
 }
 
 func (m *jsiiProxy_MwsPrivateAccessSettings) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -761,6 +824,9 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) GetNumberListAttribute(terraformAtt
 }
 
 func (m *jsiiProxy_MwsPrivateAccessSettings) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -774,6 +840,9 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) GetNumberMapAttribute(terraformAttr
 }
 
 func (m *jsiiProxy_MwsPrivateAccessSettings) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -787,6 +856,9 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) GetStringAttribute(terraformAttribu
 }
 
 func (m *jsiiProxy_MwsPrivateAccessSettings) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -800,6 +872,9 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) GetStringMapAttribute(terraformAttr
 }
 
 func (m *jsiiProxy_MwsPrivateAccessSettings) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -813,6 +888,9 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) InterpolationForAttribute(terraform
 }
 
 func (m *jsiiProxy_MwsPrivateAccessSettings) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",

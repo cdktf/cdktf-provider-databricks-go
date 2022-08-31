@@ -198,6 +198,9 @@ func (j *jsiiProxy_MountS3OutputReference) TerraformResource() cdktf.IInterpolat
 func NewMountS3OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MountS3OutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMountS3OutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MountS3OutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewMountS3OutputReference_Override(m MountS3OutputReference, terraformResou
 	)
 }
 
-func (j *jsiiProxy_MountS3OutputReference) SetBucketName(val *string) {
+func (j *jsiiProxy_MountS3OutputReference)SetBucketName(val *string) {
+	if err := j.validateSetBucketNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bucketName",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_MountS3OutputReference) SetBucketName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MountS3OutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MountS3OutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_MountS3OutputReference) SetComplexObjectIndex(val interface{}
 	)
 }
 
-func (j *jsiiProxy_MountS3OutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MountS3OutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_MountS3OutputReference) SetComplexObjectIsFromSet(val *bool) 
 	)
 }
 
-func (j *jsiiProxy_MountS3OutputReference) SetInstanceProfile(val *string) {
+func (j *jsiiProxy_MountS3OutputReference)SetInstanceProfile(val *string) {
+	if err := j.validateSetInstanceProfileParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceProfile",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_MountS3OutputReference) SetInstanceProfile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MountS3OutputReference) SetInternalValue(val *MountS3) {
+func (j *jsiiProxy_MountS3OutputReference)SetInternalValue(val *MountS3) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_MountS3OutputReference) SetInternalValue(val *MountS3) {
 	)
 }
 
-func (j *jsiiProxy_MountS3OutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MountS3OutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_MountS3OutputReference) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MountS3OutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MountS3OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -289,6 +313,9 @@ func (m *jsiiProxy_MountS3OutputReference) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MountS3OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (m *jsiiProxy_MountS3OutputReference) GetAnyMapAttribute(terraformAttribute
 }
 
 func (m *jsiiProxy_MountS3OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (m *jsiiProxy_MountS3OutputReference) GetBooleanAttribute(terraformAttribut
 }
 
 func (m *jsiiProxy_MountS3OutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (m *jsiiProxy_MountS3OutputReference) GetBooleanMapAttribute(terraformAttri
 }
 
 func (m *jsiiProxy_MountS3OutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (m *jsiiProxy_MountS3OutputReference) GetListAttribute(terraformAttribute *
 }
 
 func (m *jsiiProxy_MountS3OutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (m *jsiiProxy_MountS3OutputReference) GetNumberAttribute(terraformAttribute
 }
 
 func (m *jsiiProxy_MountS3OutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (m *jsiiProxy_MountS3OutputReference) GetNumberListAttribute(terraformAttri
 }
 
 func (m *jsiiProxy_MountS3OutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (m *jsiiProxy_MountS3OutputReference) GetNumberMapAttribute(terraformAttrib
 }
 
 func (m *jsiiProxy_MountS3OutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (m *jsiiProxy_MountS3OutputReference) GetStringAttribute(terraformAttribute
 }
 
 func (m *jsiiProxy_MountS3OutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (m *jsiiProxy_MountS3OutputReference) InterpolationAsList() cdktf.IResolvab
 }
 
 func (m *jsiiProxy_MountS3OutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (m *jsiiProxy_MountS3OutputReference) ResetInstanceProfile() {
 }
 
 func (m *jsiiProxy_MountS3OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

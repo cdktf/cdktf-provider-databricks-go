@@ -174,6 +174,9 @@ func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) TerraformResour
 func NewMetastoreDataAccessAwsIamRoleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MetastoreDataAccessAwsIamRoleOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMetastoreDataAccessAwsIamRoleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference{}
 
 	_jsii_.Create(
@@ -195,7 +198,10 @@ func NewMetastoreDataAccessAwsIamRoleOutputReference_Override(m MetastoreDataAcc
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -203,7 +209,10 @@ func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -211,7 +220,10 @@ func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) SetInternalValue(val *MetastoreDataAccessAwsIamRole) {
+func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference)SetInternalValue(val *MetastoreDataAccessAwsIamRole) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -219,7 +231,10 @@ func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) SetRoleArn(val *string) {
+func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference)SetRoleArn(val *string) {
+	if err := j.validateSetRoleArnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"roleArn",
@@ -227,7 +242,10 @@ func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) SetRoleArn(val 
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -235,7 +253,10 @@ func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -257,6 +278,9 @@ func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) ComputeFqn() *s
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -270,6 +294,9 @@ func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) GetAnyMapAttrib
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -283,6 +310,9 @@ func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) GetBooleanAttri
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -296,6 +326,9 @@ func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) GetBooleanMapAt
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -309,6 +342,9 @@ func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) GetListAttribut
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -322,6 +358,9 @@ func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) GetNumberAttrib
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -335,6 +374,9 @@ func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) GetNumberListAt
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -348,6 +390,9 @@ func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) GetNumberMapAtt
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -361,6 +406,9 @@ func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) GetStringAttrib
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -387,6 +435,9 @@ func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) InterpolationAs
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -400,6 +451,9 @@ func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) InterpolationFo
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -197,6 +197,9 @@ func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) TerraformResource() c
 func NewMwsNetworksVpcEndpointsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MwsNetworksVpcEndpointsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMwsNetworksVpcEndpointsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MwsNetworksVpcEndpointsOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewMwsNetworksVpcEndpointsOutputReference_Override(m MwsNetworksVpcEndpoint
 	)
 }
 
-func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) SetDataplaneRelay(val *[]*string) {
+func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference)SetDataplaneRelay(val *[]*string) {
+	if err := j.validateSetDataplaneRelayParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dataplaneRelay",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) SetDataplaneRelay(val
 	)
 }
 
-func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) SetInternalValue(val *MwsNetworksVpcEndpoints) {
+func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference)SetInternalValue(val *MwsNetworksVpcEndpoints) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) SetRestApi(val *[]*string) {
+func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference)SetRestApi(val *[]*string) {
+	if err := j.validateSetRestApiParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"restApi",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) SetRestApi(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MwsNetworksVpcEndpointsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -288,6 +312,9 @@ func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) ComputeFqn() *string 
 }
 
 func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) GetAnyMapAttribute(te
 }
 
 func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) GetBooleanAttribute(t
 }
 
 func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) GetBooleanMapAttribut
 }
 
 func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) GetListAttribute(terr
 }
 
 func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) GetNumberAttribute(te
 }
 
 func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) GetNumberListAttribut
 }
 
 func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) GetNumberMapAttribute
 }
 
 func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) GetStringAttribute(te
 }
 
 func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) InterpolationAsList()
 }
 
 func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) InterpolationForAttri
 }
 
 func (m *jsiiProxy_MwsNetworksVpcEndpointsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

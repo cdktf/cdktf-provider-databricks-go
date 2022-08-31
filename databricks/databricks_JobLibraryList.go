@@ -111,6 +111,9 @@ func (j *jsiiProxy_JobLibraryList) WrapsSet() *bool {
 func NewJobLibraryList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobLibraryList {
 	_init_.Initialize()
 
+	if err := validateNewJobLibraryListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_JobLibraryList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewJobLibraryList_Override(j JobLibraryList, terraformResource cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_JobLibraryList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_JobLibraryList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_JobLibraryList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_JobLibraryList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobLibraryList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_JobLibraryList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobLibraryList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobLibraryList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_JobLibraryList) SetTerraformResource(val cdktf.IInterpolating
 	)
 }
 
-func (j *jsiiProxy_JobLibraryList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_JobLibraryList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (j *jsiiProxy_JobLibraryList) ComputeFqn() *string {
 }
 
 func (j *jsiiProxy_JobLibraryList) Get(index *float64) JobLibraryOutputReference {
+	if err := j.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns JobLibraryOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (j *jsiiProxy_JobLibraryList) Get(index *float64) JobLibraryOutputReference
 }
 
 func (j *jsiiProxy_JobLibraryList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

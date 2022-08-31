@@ -223,6 +223,9 @@ func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) ZoneIdInput() *stri
 func NewInstancePoolAwsAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) InstancePoolAwsAttributesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewInstancePoolAwsAttributesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_InstancePoolAwsAttributesOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewInstancePoolAwsAttributesOutputReference_Override(i InstancePoolAwsAttri
 	)
 }
 
-func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) SetAvailability(val *string) {
+func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference)SetAvailability(val *string) {
+	if err := j.validateSetAvailabilityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"availability",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) SetAvailability(val
 	)
 }
 
-func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) SetInternalValue(val *InstancePoolAwsAttributes) {
+func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference)SetInternalValue(val *InstancePoolAwsAttributes) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) SetSpotBidPricePercent(val *float64) {
+func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference)SetSpotBidPricePercent(val *float64) {
+	if err := j.validateSetSpotBidPricePercentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"spotBidPricePercent",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) SetSpotBidPricePerc
 	)
 }
 
-func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) SetZoneId(val *string) {
+func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -322,6 +349,9 @@ func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) ComputeFqn() *strin
 }
 
 func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) GetAnyMapAttribute(
 }
 
 func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) GetBooleanAttribute
 }
 
 func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) GetBooleanMapAttrib
 }
 
 func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) GetListAttribute(te
 }
 
 func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) GetNumberAttribute(
 }
 
 func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) GetNumberListAttrib
 }
 
 func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) GetNumberMapAttribu
 }
 
 func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) GetStringAttribute(
 }
 
 func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) InterpolationAsList
 }
 
 func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) ResetZoneId() {
 }
 
 func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

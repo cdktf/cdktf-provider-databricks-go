@@ -198,6 +198,9 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) TerraformResource() cdktf.IIn
 func NewJobNotebookTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobNotebookTaskOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewJobNotebookTaskOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_JobNotebookTaskOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewJobNotebookTaskOutputReference_Override(j JobNotebookTaskOutputReference
 	)
 }
 
-func (j *jsiiProxy_JobNotebookTaskOutputReference) SetBaseParameters(val *map[string]*string) {
+func (j *jsiiProxy_JobNotebookTaskOutputReference)SetBaseParameters(val *map[string]*string) {
+	if err := j.validateSetBaseParametersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"baseParameters",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) SetBaseParameters(val *map[st
 	)
 }
 
-func (j *jsiiProxy_JobNotebookTaskOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobNotebookTaskOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) SetComplexObjectIndex(val int
 	)
 }
 
-func (j *jsiiProxy_JobNotebookTaskOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobNotebookTaskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_JobNotebookTaskOutputReference) SetInternalValue(val *JobNotebookTask) {
+func (j *jsiiProxy_JobNotebookTaskOutputReference)SetInternalValue(val *JobNotebookTask) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) SetInternalValue(val *JobNote
 	)
 }
 
-func (j *jsiiProxy_JobNotebookTaskOutputReference) SetNotebookPath(val *string) {
+func (j *jsiiProxy_JobNotebookTaskOutputReference)SetNotebookPath(val *string) {
+	if err := j.validateSetNotebookPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"notebookPath",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) SetNotebookPath(val *string) 
 	)
 }
 
-func (j *jsiiProxy_JobNotebookTaskOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobNotebookTaskOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_JobNotebookTaskOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobNotebookTaskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -289,6 +313,9 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) ComputeFqn() *string {
 }
 
 func (j *jsiiProxy_JobNotebookTaskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) GetAnyMapAttribute(terraformA
 }
 
 func (j *jsiiProxy_JobNotebookTaskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) GetBooleanAttribute(terraform
 }
 
 func (j *jsiiProxy_JobNotebookTaskOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := j.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) GetBooleanMapAttribute(terraf
 }
 
 func (j *jsiiProxy_JobNotebookTaskOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := j.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) GetListAttribute(terraformAtt
 }
 
 func (j *jsiiProxy_JobNotebookTaskOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := j.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) GetNumberAttribute(terraformA
 }
 
 func (j *jsiiProxy_JobNotebookTaskOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := j.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) GetNumberListAttribute(terraf
 }
 
 func (j *jsiiProxy_JobNotebookTaskOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := j.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) GetNumberMapAttribute(terrafo
 }
 
 func (j *jsiiProxy_JobNotebookTaskOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := j.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) GetStringAttribute(terraformA
 }
 
 func (j *jsiiProxy_JobNotebookTaskOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := j.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) InterpolationAsList() cdktf.I
 }
 
 func (j *jsiiProxy_JobNotebookTaskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) ResetBaseParameters() {
 }
 
 func (j *jsiiProxy_JobNotebookTaskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -481,6 +481,9 @@ func (j *jsiiProxy_MlflowExperiment) TimeoutsInput() interface{} {
 func NewMlflowExperiment(scope constructs.Construct, id *string, config *MlflowExperimentConfig) MlflowExperiment {
 	_init_.Initialize()
 
+	if err := validateNewMlflowExperimentParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MlflowExperiment{}
 
 	_jsii_.Create(
@@ -503,7 +506,10 @@ func NewMlflowExperiment_Override(m MlflowExperiment, scope constructs.Construct
 	)
 }
 
-func (j *jsiiProxy_MlflowExperiment) SetArtifactLocation(val *string) {
+func (j *jsiiProxy_MlflowExperiment)SetArtifactLocation(val *string) {
+	if err := j.validateSetArtifactLocationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"artifactLocation",
@@ -511,7 +517,10 @@ func (j *jsiiProxy_MlflowExperiment) SetArtifactLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MlflowExperiment) SetConnection(val interface{}) {
+func (j *jsiiProxy_MlflowExperiment)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -519,7 +528,7 @@ func (j *jsiiProxy_MlflowExperiment) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MlflowExperiment) SetCount(val *float64) {
+func (j *jsiiProxy_MlflowExperiment)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -527,7 +536,10 @@ func (j *jsiiProxy_MlflowExperiment) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MlflowExperiment) SetCreationTime(val *float64) {
+func (j *jsiiProxy_MlflowExperiment)SetCreationTime(val *float64) {
+	if err := j.validateSetCreationTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"creationTime",
@@ -535,7 +547,7 @@ func (j *jsiiProxy_MlflowExperiment) SetCreationTime(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MlflowExperiment) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MlflowExperiment)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -543,7 +555,10 @@ func (j *jsiiProxy_MlflowExperiment) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MlflowExperiment) SetDescription(val *string) {
+func (j *jsiiProxy_MlflowExperiment)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -551,7 +566,10 @@ func (j *jsiiProxy_MlflowExperiment) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MlflowExperiment) SetExperimentId(val *string) {
+func (j *jsiiProxy_MlflowExperiment)SetExperimentId(val *string) {
+	if err := j.validateSetExperimentIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"experimentId",
@@ -559,7 +577,7 @@ func (j *jsiiProxy_MlflowExperiment) SetExperimentId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MlflowExperiment) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MlflowExperiment)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -567,7 +585,10 @@ func (j *jsiiProxy_MlflowExperiment) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MlflowExperiment) SetId(val *string) {
+func (j *jsiiProxy_MlflowExperiment)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -575,7 +596,10 @@ func (j *jsiiProxy_MlflowExperiment) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MlflowExperiment) SetLastUpdateTime(val *float64) {
+func (j *jsiiProxy_MlflowExperiment)SetLastUpdateTime(val *float64) {
+	if err := j.validateSetLastUpdateTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lastUpdateTime",
@@ -583,7 +607,10 @@ func (j *jsiiProxy_MlflowExperiment) SetLastUpdateTime(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MlflowExperiment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MlflowExperiment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -591,7 +618,10 @@ func (j *jsiiProxy_MlflowExperiment) SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_MlflowExperiment) SetLifecycleStage(val *string) {
+func (j *jsiiProxy_MlflowExperiment)SetLifecycleStage(val *string) {
+	if err := j.validateSetLifecycleStageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycleStage",
@@ -599,7 +629,10 @@ func (j *jsiiProxy_MlflowExperiment) SetLifecycleStage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MlflowExperiment) SetName(val *string) {
+func (j *jsiiProxy_MlflowExperiment)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -607,7 +640,7 @@ func (j *jsiiProxy_MlflowExperiment) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MlflowExperiment) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MlflowExperiment)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -615,7 +648,10 @@ func (j *jsiiProxy_MlflowExperiment) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MlflowExperiment) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MlflowExperiment)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -643,6 +679,9 @@ func (j *jsiiProxy_MlflowExperiment) SetProvisioners(val *[]interface{}) {
 func MlflowExperiment_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateMlflowExperiment_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -667,6 +706,9 @@ func MlflowExperiment_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_MlflowExperiment) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -675,6 +717,9 @@ func (m *jsiiProxy_MlflowExperiment) AddOverride(path *string, value interface{}
 }
 
 func (m *jsiiProxy_MlflowExperiment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -688,6 +733,9 @@ func (m *jsiiProxy_MlflowExperiment) GetAnyMapAttribute(terraformAttribute *stri
 }
 
 func (m *jsiiProxy_MlflowExperiment) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -701,6 +749,9 @@ func (m *jsiiProxy_MlflowExperiment) GetBooleanAttribute(terraformAttribute *str
 }
 
 func (m *jsiiProxy_MlflowExperiment) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -714,6 +765,9 @@ func (m *jsiiProxy_MlflowExperiment) GetBooleanMapAttribute(terraformAttribute *
 }
 
 func (m *jsiiProxy_MlflowExperiment) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -727,6 +781,9 @@ func (m *jsiiProxy_MlflowExperiment) GetListAttribute(terraformAttribute *string
 }
 
 func (m *jsiiProxy_MlflowExperiment) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -740,6 +797,9 @@ func (m *jsiiProxy_MlflowExperiment) GetNumberAttribute(terraformAttribute *stri
 }
 
 func (m *jsiiProxy_MlflowExperiment) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -753,6 +813,9 @@ func (m *jsiiProxy_MlflowExperiment) GetNumberListAttribute(terraformAttribute *
 }
 
 func (m *jsiiProxy_MlflowExperiment) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -766,6 +829,9 @@ func (m *jsiiProxy_MlflowExperiment) GetNumberMapAttribute(terraformAttribute *s
 }
 
 func (m *jsiiProxy_MlflowExperiment) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -779,6 +845,9 @@ func (m *jsiiProxy_MlflowExperiment) GetStringAttribute(terraformAttribute *stri
 }
 
 func (m *jsiiProxy_MlflowExperiment) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -792,6 +861,9 @@ func (m *jsiiProxy_MlflowExperiment) GetStringMapAttribute(terraformAttribute *s
 }
 
 func (m *jsiiProxy_MlflowExperiment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -805,6 +877,9 @@ func (m *jsiiProxy_MlflowExperiment) InterpolationForAttribute(terraformAttribut
 }
 
 func (m *jsiiProxy_MlflowExperiment) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
@@ -813,6 +888,9 @@ func (m *jsiiProxy_MlflowExperiment) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (m *jsiiProxy_MlflowExperiment) PutTimeouts(value *MlflowExperimentTimeouts) {
+	if err := m.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",

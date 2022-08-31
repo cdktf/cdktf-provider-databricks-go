@@ -1156,6 +1156,9 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) TerraformRes
 func NewDataDatabricksClusterClusterInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterClusterInfoOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataDatabricksClusterClusterInfoOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatabricksClusterClusterInfoOutputReference{}
 
 	_jsii_.Create(
@@ -1177,7 +1180,10 @@ func NewDataDatabricksClusterClusterInfoOutputReference_Override(d DataDatabrick
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetAutoterminationMinutes(val *float64) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetAutoterminationMinutes(val *float64) {
+	if err := j.validateSetAutoterminationMinutesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoterminationMinutes",
@@ -1185,7 +1191,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetAutotermi
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetClusterCores(val *float64) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetClusterCores(val *float64) {
+	if err := j.validateSetClusterCoresParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterCores",
@@ -1193,7 +1202,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetClusterCo
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetClusterId(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetClusterId(val *string) {
+	if err := j.validateSetClusterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterId",
@@ -1201,7 +1213,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetClusterId
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetClusterMemoryMb(val *float64) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetClusterMemoryMb(val *float64) {
+	if err := j.validateSetClusterMemoryMbParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterMemoryMb",
@@ -1209,7 +1224,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetClusterMe
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetClusterName(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetClusterName(val *string) {
+	if err := j.validateSetClusterNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterName",
@@ -1217,7 +1235,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetClusterNa
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetClusterSource(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetClusterSource(val *string) {
+	if err := j.validateSetClusterSourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterSource",
@@ -1225,7 +1246,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetClusterSo
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -1233,7 +1257,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -1241,7 +1268,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetCreatorUserName(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetCreatorUserName(val *string) {
+	if err := j.validateSetCreatorUserNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"creatorUserName",
@@ -1249,7 +1279,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetCreatorUs
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetCustomTags(val *map[string]*string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetCustomTags(val *map[string]*string) {
+	if err := j.validateSetCustomTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"customTags",
@@ -1257,7 +1290,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetCustomTag
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetDataSecurityMode(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetDataSecurityMode(val *string) {
+	if err := j.validateSetDataSecurityModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dataSecurityMode",
@@ -1265,7 +1301,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetDataSecur
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetDefaultTags(val *map[string]*string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetDefaultTags(val *map[string]*string) {
+	if err := j.validateSetDefaultTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultTags",
@@ -1273,7 +1312,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetDefaultTa
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetDriverInstancePoolId(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetDriverInstancePoolId(val *string) {
+	if err := j.validateSetDriverInstancePoolIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"driverInstancePoolId",
@@ -1281,7 +1323,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetDriverIns
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetDriverNodeTypeId(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetDriverNodeTypeId(val *string) {
+	if err := j.validateSetDriverNodeTypeIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"driverNodeTypeId",
@@ -1289,7 +1334,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetDriverNod
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetEnableElasticDisk(val interface{}) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetEnableElasticDisk(val interface{}) {
+	if err := j.validateSetEnableElasticDiskParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enableElasticDisk",
@@ -1297,7 +1345,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetEnableEla
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetEnableLocalDiskEncryption(val interface{}) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetEnableLocalDiskEncryption(val interface{}) {
+	if err := j.validateSetEnableLocalDiskEncryptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enableLocalDiskEncryption",
@@ -1305,7 +1356,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetEnableLoc
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetInstancePoolId(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetInstancePoolId(val *string) {
+	if err := j.validateSetInstancePoolIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instancePoolId",
@@ -1313,7 +1367,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetInstanceP
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetInternalValue(val *DataDatabricksClusterClusterInfo) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetInternalValue(val *DataDatabricksClusterClusterInfo) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -1321,7 +1378,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetJdbcPort(val *float64) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetJdbcPort(val *float64) {
+	if err := j.validateSetJdbcPortParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jdbcPort",
@@ -1329,7 +1389,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetJdbcPort(
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetLastActivityTime(val *float64) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetLastActivityTime(val *float64) {
+	if err := j.validateSetLastActivityTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lastActivityTime",
@@ -1337,7 +1400,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetLastActiv
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetLastStateLossTime(val *float64) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetLastStateLossTime(val *float64) {
+	if err := j.validateSetLastStateLossTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lastStateLossTime",
@@ -1345,7 +1411,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetLastState
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetNodeTypeId(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetNodeTypeId(val *string) {
+	if err := j.validateSetNodeTypeIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nodeTypeId",
@@ -1353,7 +1422,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetNodeTypeI
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetNumWorkers(val *float64) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetNumWorkers(val *float64) {
+	if err := j.validateSetNumWorkersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"numWorkers",
@@ -1361,7 +1433,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetNumWorker
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetPolicyId(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetPolicyId(val *string) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policyId",
@@ -1369,7 +1444,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetPolicyId(
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetSingleUserName(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetSingleUserName(val *string) {
+	if err := j.validateSetSingleUserNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"singleUserName",
@@ -1377,7 +1455,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetSingleUse
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetSparkConf(val *map[string]*string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetSparkConf(val *map[string]*string) {
+	if err := j.validateSetSparkConfParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sparkConf",
@@ -1385,7 +1466,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetSparkConf
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetSparkContextId(val *float64) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetSparkContextId(val *float64) {
+	if err := j.validateSetSparkContextIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sparkContextId",
@@ -1393,7 +1477,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetSparkCont
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetSparkEnvVars(val *map[string]*string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetSparkEnvVars(val *map[string]*string) {
+	if err := j.validateSetSparkEnvVarsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sparkEnvVars",
@@ -1401,7 +1488,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetSparkEnvV
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetSparkVersion(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetSparkVersion(val *string) {
+	if err := j.validateSetSparkVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sparkVersion",
@@ -1409,7 +1499,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetSparkVers
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetSshPublicKeys(val *[]*string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetSshPublicKeys(val *[]*string) {
+	if err := j.validateSetSshPublicKeysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sshPublicKeys",
@@ -1417,7 +1510,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetSshPublic
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetStartTime(val *float64) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetStartTime(val *float64) {
+	if err := j.validateSetStartTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"startTime",
@@ -1425,7 +1521,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetStartTime
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetState(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetState(val *string) {
+	if err := j.validateSetStateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"state",
@@ -1433,7 +1532,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetState(val
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetStateMessage(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetStateMessage(val *string) {
+	if err := j.validateSetStateMessageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"stateMessage",
@@ -1441,7 +1543,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetStateMess
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetTerminateTime(val *float64) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetTerminateTime(val *float64) {
+	if err := j.validateSetTerminateTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terminateTime",
@@ -1449,7 +1554,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetTerminate
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -1457,7 +1565,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -1479,6 +1590,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ComputeFqn()
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1492,6 +1606,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) GetAnyMapAtt
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1505,6 +1622,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) GetBooleanAt
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1518,6 +1638,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) GetBooleanMa
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1531,6 +1654,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) GetListAttri
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1544,6 +1670,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) GetNumberAtt
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1557,6 +1686,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) GetNumberLis
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1570,6 +1702,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) GetNumberMap
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1583,6 +1718,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) GetStringAtt
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1609,6 +1747,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) Interpolatio
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1622,6 +1763,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) Interpolatio
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutAutoscale(value *DataDatabricksClusterClusterInfoAutoscale) {
+	if err := d.validatePutAutoscaleParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putAutoscale",
@@ -1630,6 +1774,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutAutoscale
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutAwsAttributes(value *DataDatabricksClusterClusterInfoAwsAttributes) {
+	if err := d.validatePutAwsAttributesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putAwsAttributes",
@@ -1638,6 +1785,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutAwsAttrib
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutAzureAttributes(value *DataDatabricksClusterClusterInfoAzureAttributes) {
+	if err := d.validatePutAzureAttributesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putAzureAttributes",
@@ -1646,6 +1796,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutAzureAttr
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutClusterLogConf(value *DataDatabricksClusterClusterInfoClusterLogConf) {
+	if err := d.validatePutClusterLogConfParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putClusterLogConf",
@@ -1654,6 +1807,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutClusterLo
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutClusterLogStatus(value *DataDatabricksClusterClusterInfoClusterLogStatus) {
+	if err := d.validatePutClusterLogStatusParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putClusterLogStatus",
@@ -1662,6 +1818,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutClusterLo
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutDockerImage(value *DataDatabricksClusterClusterInfoDockerImage) {
+	if err := d.validatePutDockerImageParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putDockerImage",
@@ -1670,6 +1829,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutDockerIma
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutDriver(value *DataDatabricksClusterClusterInfoDriver) {
+	if err := d.validatePutDriverParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putDriver",
@@ -1678,6 +1840,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutDriver(va
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutExecutors(value interface{}) {
+	if err := d.validatePutExecutorsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putExecutors",
@@ -1686,6 +1851,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutExecutors
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutGcpAttributes(value *DataDatabricksClusterClusterInfoGcpAttributes) {
+	if err := d.validatePutGcpAttributesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putGcpAttributes",
@@ -1694,6 +1862,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutGcpAttrib
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutInitScripts(value interface{}) {
+	if err := d.validatePutInitScriptsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putInitScripts",
@@ -1702,6 +1873,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutInitScrip
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutTerminationReason(value *DataDatabricksClusterClusterInfoTerminationReason) {
+	if err := d.validatePutTerminationReasonParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putTerminationReason",
@@ -2022,6 +2196,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetTermina
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

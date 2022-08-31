@@ -411,6 +411,9 @@ func (j *jsiiProxy_SqlGlobalConfig) TerraformResourceType() *string {
 func NewSqlGlobalConfig(scope constructs.Construct, id *string, config *SqlGlobalConfigConfig) SqlGlobalConfig {
 	_init_.Initialize()
 
+	if err := validateNewSqlGlobalConfigParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SqlGlobalConfig{}
 
 	_jsii_.Create(
@@ -433,7 +436,10 @@ func NewSqlGlobalConfig_Override(s SqlGlobalConfig, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_SqlGlobalConfig) SetConnection(val interface{}) {
+func (j *jsiiProxy_SqlGlobalConfig)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -441,7 +447,7 @@ func (j *jsiiProxy_SqlGlobalConfig) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlGlobalConfig) SetCount(val *float64) {
+func (j *jsiiProxy_SqlGlobalConfig)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -449,7 +455,10 @@ func (j *jsiiProxy_SqlGlobalConfig) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqlGlobalConfig) SetDataAccessConfig(val *map[string]*string) {
+func (j *jsiiProxy_SqlGlobalConfig)SetDataAccessConfig(val *map[string]*string) {
+	if err := j.validateSetDataAccessConfigParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dataAccessConfig",
@@ -457,7 +466,7 @@ func (j *jsiiProxy_SqlGlobalConfig) SetDataAccessConfig(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_SqlGlobalConfig) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SqlGlobalConfig)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -465,7 +474,10 @@ func (j *jsiiProxy_SqlGlobalConfig) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SqlGlobalConfig) SetEnableServerlessCompute(val interface{}) {
+func (j *jsiiProxy_SqlGlobalConfig)SetEnableServerlessCompute(val interface{}) {
+	if err := j.validateSetEnableServerlessComputeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enableServerlessCompute",
@@ -473,7 +485,7 @@ func (j *jsiiProxy_SqlGlobalConfig) SetEnableServerlessCompute(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_SqlGlobalConfig) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SqlGlobalConfig)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -481,7 +493,10 @@ func (j *jsiiProxy_SqlGlobalConfig) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SqlGlobalConfig) SetId(val *string) {
+func (j *jsiiProxy_SqlGlobalConfig)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -489,7 +504,10 @@ func (j *jsiiProxy_SqlGlobalConfig) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlGlobalConfig) SetInstanceProfileArn(val *string) {
+func (j *jsiiProxy_SqlGlobalConfig)SetInstanceProfileArn(val *string) {
+	if err := j.validateSetInstanceProfileArnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceProfileArn",
@@ -497,7 +515,10 @@ func (j *jsiiProxy_SqlGlobalConfig) SetInstanceProfileArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlGlobalConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SqlGlobalConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -505,7 +526,7 @@ func (j *jsiiProxy_SqlGlobalConfig) SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_SqlGlobalConfig) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SqlGlobalConfig)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -513,7 +534,10 @@ func (j *jsiiProxy_SqlGlobalConfig) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SqlGlobalConfig) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SqlGlobalConfig)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -521,7 +545,10 @@ func (j *jsiiProxy_SqlGlobalConfig) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlGlobalConfig) SetSecurityPolicy(val *string) {
+func (j *jsiiProxy_SqlGlobalConfig)SetSecurityPolicy(val *string) {
+	if err := j.validateSetSecurityPolicyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"securityPolicy",
@@ -529,7 +556,10 @@ func (j *jsiiProxy_SqlGlobalConfig) SetSecurityPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlGlobalConfig) SetSqlConfigParams(val *map[string]*string) {
+func (j *jsiiProxy_SqlGlobalConfig)SetSqlConfigParams(val *map[string]*string) {
+	if err := j.validateSetSqlConfigParamsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sqlConfigParams",
@@ -557,6 +587,9 @@ func (j *jsiiProxy_SqlGlobalConfig) SetSqlConfigParams(val *map[string]*string) 
 func SqlGlobalConfig_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSqlGlobalConfig_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -581,6 +614,9 @@ func SqlGlobalConfig_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SqlGlobalConfig) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -589,6 +625,9 @@ func (s *jsiiProxy_SqlGlobalConfig) AddOverride(path *string, value interface{})
 }
 
 func (s *jsiiProxy_SqlGlobalConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -602,6 +641,9 @@ func (s *jsiiProxy_SqlGlobalConfig) GetAnyMapAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_SqlGlobalConfig) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -615,6 +657,9 @@ func (s *jsiiProxy_SqlGlobalConfig) GetBooleanAttribute(terraformAttribute *stri
 }
 
 func (s *jsiiProxy_SqlGlobalConfig) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -628,6 +673,9 @@ func (s *jsiiProxy_SqlGlobalConfig) GetBooleanMapAttribute(terraformAttribute *s
 }
 
 func (s *jsiiProxy_SqlGlobalConfig) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -641,6 +689,9 @@ func (s *jsiiProxy_SqlGlobalConfig) GetListAttribute(terraformAttribute *string)
 }
 
 func (s *jsiiProxy_SqlGlobalConfig) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -654,6 +705,9 @@ func (s *jsiiProxy_SqlGlobalConfig) GetNumberAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_SqlGlobalConfig) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -667,6 +721,9 @@ func (s *jsiiProxy_SqlGlobalConfig) GetNumberListAttribute(terraformAttribute *s
 }
 
 func (s *jsiiProxy_SqlGlobalConfig) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -680,6 +737,9 @@ func (s *jsiiProxy_SqlGlobalConfig) GetNumberMapAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_SqlGlobalConfig) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -693,6 +753,9 @@ func (s *jsiiProxy_SqlGlobalConfig) GetStringAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_SqlGlobalConfig) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -706,6 +769,9 @@ func (s *jsiiProxy_SqlGlobalConfig) GetStringMapAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_SqlGlobalConfig) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -719,6 +785,9 @@ func (s *jsiiProxy_SqlGlobalConfig) InterpolationForAttribute(terraformAttribute
 }
 
 func (s *jsiiProxy_SqlGlobalConfig) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",

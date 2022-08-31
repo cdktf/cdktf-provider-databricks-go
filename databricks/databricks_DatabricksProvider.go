@@ -689,6 +689,9 @@ func (j *jsiiProxy_DatabricksProvider) UsernameInput() *string {
 func NewDatabricksProvider(scope constructs.Construct, id *string, config *DatabricksProviderConfig) DatabricksProvider {
 	_init_.Initialize()
 
+	if err := validateNewDatabricksProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabricksProvider{}
 
 	_jsii_.Create(
@@ -711,7 +714,7 @@ func NewDatabricksProvider_Override(d DatabricksProvider, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetAccountId(val *string) {
+func (j *jsiiProxy_DatabricksProvider)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -719,7 +722,7 @@ func (j *jsiiProxy_DatabricksProvider) SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetAlias(val *string) {
+func (j *jsiiProxy_DatabricksProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -727,7 +730,7 @@ func (j *jsiiProxy_DatabricksProvider) SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetAuthType(val *string) {
+func (j *jsiiProxy_DatabricksProvider)SetAuthType(val *string) {
 	_jsii_.Set(
 		j,
 		"authType",
@@ -735,7 +738,7 @@ func (j *jsiiProxy_DatabricksProvider) SetAuthType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetAzureClientId(val *string) {
+func (j *jsiiProxy_DatabricksProvider)SetAzureClientId(val *string) {
 	_jsii_.Set(
 		j,
 		"azureClientId",
@@ -743,7 +746,7 @@ func (j *jsiiProxy_DatabricksProvider) SetAzureClientId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetAzureClientSecret(val *string) {
+func (j *jsiiProxy_DatabricksProvider)SetAzureClientSecret(val *string) {
 	_jsii_.Set(
 		j,
 		"azureClientSecret",
@@ -751,7 +754,7 @@ func (j *jsiiProxy_DatabricksProvider) SetAzureClientSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetAzureEnvironment(val *string) {
+func (j *jsiiProxy_DatabricksProvider)SetAzureEnvironment(val *string) {
 	_jsii_.Set(
 		j,
 		"azureEnvironment",
@@ -759,7 +762,7 @@ func (j *jsiiProxy_DatabricksProvider) SetAzureEnvironment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetAzureTenantId(val *string) {
+func (j *jsiiProxy_DatabricksProvider)SetAzureTenantId(val *string) {
 	_jsii_.Set(
 		j,
 		"azureTenantId",
@@ -767,7 +770,10 @@ func (j *jsiiProxy_DatabricksProvider) SetAzureTenantId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetAzureUseMsi(val interface{}) {
+func (j *jsiiProxy_DatabricksProvider)SetAzureUseMsi(val interface{}) {
+	if err := j.validateSetAzureUseMsiParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"azureUseMsi",
@@ -775,7 +781,7 @@ func (j *jsiiProxy_DatabricksProvider) SetAzureUseMsi(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetAzureWorkspaceResourceId(val *string) {
+func (j *jsiiProxy_DatabricksProvider)SetAzureWorkspaceResourceId(val *string) {
 	_jsii_.Set(
 		j,
 		"azureWorkspaceResourceId",
@@ -783,7 +789,7 @@ func (j *jsiiProxy_DatabricksProvider) SetAzureWorkspaceResourceId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetConfigFile(val *string) {
+func (j *jsiiProxy_DatabricksProvider)SetConfigFile(val *string) {
 	_jsii_.Set(
 		j,
 		"configFile",
@@ -791,7 +797,10 @@ func (j *jsiiProxy_DatabricksProvider) SetConfigFile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetDebugHeaders(val interface{}) {
+func (j *jsiiProxy_DatabricksProvider)SetDebugHeaders(val interface{}) {
+	if err := j.validateSetDebugHeadersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"debugHeaders",
@@ -799,7 +808,7 @@ func (j *jsiiProxy_DatabricksProvider) SetDebugHeaders(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetDebugTruncateBytes(val *float64) {
+func (j *jsiiProxy_DatabricksProvider)SetDebugTruncateBytes(val *float64) {
 	_jsii_.Set(
 		j,
 		"debugTruncateBytes",
@@ -807,7 +816,7 @@ func (j *jsiiProxy_DatabricksProvider) SetDebugTruncateBytes(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetGoogleCredentials(val *string) {
+func (j *jsiiProxy_DatabricksProvider)SetGoogleCredentials(val *string) {
 	_jsii_.Set(
 		j,
 		"googleCredentials",
@@ -815,7 +824,7 @@ func (j *jsiiProxy_DatabricksProvider) SetGoogleCredentials(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetGoogleServiceAccount(val *string) {
+func (j *jsiiProxy_DatabricksProvider)SetGoogleServiceAccount(val *string) {
 	_jsii_.Set(
 		j,
 		"googleServiceAccount",
@@ -823,7 +832,7 @@ func (j *jsiiProxy_DatabricksProvider) SetGoogleServiceAccount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetHost(val *string) {
+func (j *jsiiProxy_DatabricksProvider)SetHost(val *string) {
 	_jsii_.Set(
 		j,
 		"host",
@@ -831,7 +840,7 @@ func (j *jsiiProxy_DatabricksProvider) SetHost(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetHttpTimeoutSeconds(val *float64) {
+func (j *jsiiProxy_DatabricksProvider)SetHttpTimeoutSeconds(val *float64) {
 	_jsii_.Set(
 		j,
 		"httpTimeoutSeconds",
@@ -839,7 +848,7 @@ func (j *jsiiProxy_DatabricksProvider) SetHttpTimeoutSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetPassword(val *string) {
+func (j *jsiiProxy_DatabricksProvider)SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
@@ -847,7 +856,7 @@ func (j *jsiiProxy_DatabricksProvider) SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetProfile(val *string) {
+func (j *jsiiProxy_DatabricksProvider)SetProfile(val *string) {
 	_jsii_.Set(
 		j,
 		"profile",
@@ -855,7 +864,7 @@ func (j *jsiiProxy_DatabricksProvider) SetProfile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetRateLimit(val *float64) {
+func (j *jsiiProxy_DatabricksProvider)SetRateLimit(val *float64) {
 	_jsii_.Set(
 		j,
 		"rateLimit",
@@ -863,7 +872,10 @@ func (j *jsiiProxy_DatabricksProvider) SetRateLimit(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetSkipVerify(val interface{}) {
+func (j *jsiiProxy_DatabricksProvider)SetSkipVerify(val interface{}) {
+	if err := j.validateSetSkipVerifyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"skipVerify",
@@ -871,7 +883,7 @@ func (j *jsiiProxy_DatabricksProvider) SetSkipVerify(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetToken(val *string) {
+func (j *jsiiProxy_DatabricksProvider)SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
@@ -879,7 +891,7 @@ func (j *jsiiProxy_DatabricksProvider) SetToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider) SetUsername(val *string) {
+func (j *jsiiProxy_DatabricksProvider)SetUsername(val *string) {
 	_jsii_.Set(
 		j,
 		"username",
@@ -907,6 +919,9 @@ func (j *jsiiProxy_DatabricksProvider) SetUsername(val *string) {
 func DatabricksProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDatabricksProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -931,6 +946,9 @@ func DatabricksProvider_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DatabricksProvider) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -939,6 +957,9 @@ func (d *jsiiProxy_DatabricksProvider) AddOverride(path *string, value interface
 }
 
 func (d *jsiiProxy_DatabricksProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

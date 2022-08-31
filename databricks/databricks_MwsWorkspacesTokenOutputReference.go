@@ -247,6 +247,9 @@ func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) TokenValueInput() *string 
 func NewMwsWorkspacesTokenOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MwsWorkspacesTokenOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMwsWorkspacesTokenOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MwsWorkspacesTokenOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewMwsWorkspacesTokenOutputReference_Override(m MwsWorkspacesTokenOutputRef
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) SetComment(val *string) {
+func (j *jsiiProxy_MwsWorkspacesTokenOutputReference)SetComment(val *string) {
+	if err := j.validateSetCommentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"comment",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) SetComment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MwsWorkspacesTokenOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MwsWorkspacesTokenOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) SetInternalValue(val *MwsWorkspacesToken) {
+func (j *jsiiProxy_MwsWorkspacesTokenOutputReference)SetInternalValue(val *MwsWorkspacesToken) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) SetInternalValue(val *MwsW
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) SetLifetimeSeconds(val *float64) {
+func (j *jsiiProxy_MwsWorkspacesTokenOutputReference)SetLifetimeSeconds(val *float64) {
+	if err := j.validateSetLifetimeSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifetimeSeconds",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) SetLifetimeSeconds(val *fl
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MwsWorkspacesTokenOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MwsWorkspacesTokenOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) SetTokenId(val *string) {
+func (j *jsiiProxy_MwsWorkspacesTokenOutputReference)SetTokenId(val *string) {
+	if err := j.validateSetTokenIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenId",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) SetTokenId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspacesTokenOutputReference) SetTokenValue(val *string) {
+func (j *jsiiProxy_MwsWorkspacesTokenOutputReference)SetTokenValue(val *string) {
+	if err := j.validateSetTokenValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenValue",
@@ -354,6 +384,9 @@ func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) GetAnyMapAttribute(terrafo
 }
 
 func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) GetBooleanAttribute(terraf
 }
 
 func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) GetBooleanMapAttribute(ter
 }
 
 func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) GetListAttribute(terraform
 }
 
 func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) GetNumberAttribute(terrafo
 }
 
 func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) GetNumberListAttribute(ter
 }
 
 func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) GetNumberMapAttribute(terr
 }
 
 func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) GetStringAttribute(terrafo
 }
 
 func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) InterpolationAsList() cdkt
 }
 
 func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) ResetTokenValue() {
 }
 
 func (m *jsiiProxy_MwsWorkspacesTokenOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

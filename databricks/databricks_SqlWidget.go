@@ -482,6 +482,9 @@ func (j *jsiiProxy_SqlWidget) WidgetIdInput() *string {
 func NewSqlWidget(scope constructs.Construct, id *string, config *SqlWidgetConfig) SqlWidget {
 	_init_.Initialize()
 
+	if err := validateNewSqlWidgetParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SqlWidget{}
 
 	_jsii_.Create(
@@ -504,7 +507,10 @@ func NewSqlWidget_Override(s SqlWidget, scope constructs.Construct, id *string, 
 	)
 }
 
-func (j *jsiiProxy_SqlWidget) SetConnection(val interface{}) {
+func (j *jsiiProxy_SqlWidget)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -512,7 +518,7 @@ func (j *jsiiProxy_SqlWidget) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidget) SetCount(val *float64) {
+func (j *jsiiProxy_SqlWidget)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -520,7 +526,10 @@ func (j *jsiiProxy_SqlWidget) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidget) SetDashboardId(val *string) {
+func (j *jsiiProxy_SqlWidget)SetDashboardId(val *string) {
+	if err := j.validateSetDashboardIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dashboardId",
@@ -528,7 +537,7 @@ func (j *jsiiProxy_SqlWidget) SetDashboardId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidget) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SqlWidget)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -536,7 +545,10 @@ func (j *jsiiProxy_SqlWidget) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidget) SetDescription(val *string) {
+func (j *jsiiProxy_SqlWidget)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -544,7 +556,7 @@ func (j *jsiiProxy_SqlWidget) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidget) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SqlWidget)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -552,7 +564,10 @@ func (j *jsiiProxy_SqlWidget) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidget) SetId(val *string) {
+func (j *jsiiProxy_SqlWidget)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -560,7 +575,10 @@ func (j *jsiiProxy_SqlWidget) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidget) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SqlWidget)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -568,7 +586,7 @@ func (j *jsiiProxy_SqlWidget) SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_SqlWidget) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SqlWidget)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -576,7 +594,10 @@ func (j *jsiiProxy_SqlWidget) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidget) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SqlWidget)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -584,7 +605,10 @@ func (j *jsiiProxy_SqlWidget) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidget) SetText(val *string) {
+func (j *jsiiProxy_SqlWidget)SetText(val *string) {
+	if err := j.validateSetTextParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"text",
@@ -592,7 +616,10 @@ func (j *jsiiProxy_SqlWidget) SetText(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidget) SetTitle(val *string) {
+func (j *jsiiProxy_SqlWidget)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"title",
@@ -600,7 +627,10 @@ func (j *jsiiProxy_SqlWidget) SetTitle(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidget) SetVisualizationId(val *string) {
+func (j *jsiiProxy_SqlWidget)SetVisualizationId(val *string) {
+	if err := j.validateSetVisualizationIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"visualizationId",
@@ -608,7 +638,10 @@ func (j *jsiiProxy_SqlWidget) SetVisualizationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidget) SetWidgetId(val *string) {
+func (j *jsiiProxy_SqlWidget)SetWidgetId(val *string) {
+	if err := j.validateSetWidgetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"widgetId",
@@ -636,6 +669,9 @@ func (j *jsiiProxy_SqlWidget) SetWidgetId(val *string) {
 func SqlWidget_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSqlWidget_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -660,6 +696,9 @@ func SqlWidget_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SqlWidget) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -668,6 +707,9 @@ func (s *jsiiProxy_SqlWidget) AddOverride(path *string, value interface{}) {
 }
 
 func (s *jsiiProxy_SqlWidget) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -681,6 +723,9 @@ func (s *jsiiProxy_SqlWidget) GetAnyMapAttribute(terraformAttribute *string) *ma
 }
 
 func (s *jsiiProxy_SqlWidget) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -694,6 +739,9 @@ func (s *jsiiProxy_SqlWidget) GetBooleanAttribute(terraformAttribute *string) cd
 }
 
 func (s *jsiiProxy_SqlWidget) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -707,6 +755,9 @@ func (s *jsiiProxy_SqlWidget) GetBooleanMapAttribute(terraformAttribute *string)
 }
 
 func (s *jsiiProxy_SqlWidget) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -720,6 +771,9 @@ func (s *jsiiProxy_SqlWidget) GetListAttribute(terraformAttribute *string) *[]*s
 }
 
 func (s *jsiiProxy_SqlWidget) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -733,6 +787,9 @@ func (s *jsiiProxy_SqlWidget) GetNumberAttribute(terraformAttribute *string) *fl
 }
 
 func (s *jsiiProxy_SqlWidget) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -746,6 +803,9 @@ func (s *jsiiProxy_SqlWidget) GetNumberListAttribute(terraformAttribute *string)
 }
 
 func (s *jsiiProxy_SqlWidget) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -759,6 +819,9 @@ func (s *jsiiProxy_SqlWidget) GetNumberMapAttribute(terraformAttribute *string) 
 }
 
 func (s *jsiiProxy_SqlWidget) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -772,6 +835,9 @@ func (s *jsiiProxy_SqlWidget) GetStringAttribute(terraformAttribute *string) *st
 }
 
 func (s *jsiiProxy_SqlWidget) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -785,6 +851,9 @@ func (s *jsiiProxy_SqlWidget) GetStringMapAttribute(terraformAttribute *string) 
 }
 
 func (s *jsiiProxy_SqlWidget) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -798,6 +867,9 @@ func (s *jsiiProxy_SqlWidget) InterpolationForAttribute(terraformAttribute *stri
 }
 
 func (s *jsiiProxy_SqlWidget) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -806,6 +878,9 @@ func (s *jsiiProxy_SqlWidget) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (s *jsiiProxy_SqlWidget) PutParameter(value interface{}) {
+	if err := s.validatePutParameterParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putParameter",
@@ -814,6 +889,9 @@ func (s *jsiiProxy_SqlWidget) PutParameter(value interface{}) {
 }
 
 func (s *jsiiProxy_SqlWidget) PutPosition(value *SqlWidgetPosition) {
+	if err := s.validatePutPositionParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putPosition",

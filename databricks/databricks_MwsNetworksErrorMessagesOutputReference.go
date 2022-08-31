@@ -199,6 +199,9 @@ func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference) TerraformResource() 
 func NewMwsNetworksErrorMessagesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MwsNetworksErrorMessagesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMwsNetworksErrorMessagesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MwsNetworksErrorMessagesOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewMwsNetworksErrorMessagesOutputReference_Override(m MwsNetworksErrorMessa
 	)
 }
 
-func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference) SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference) SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference) SetErrorMessage(val *string) {
+func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference)SetErrorMessage(val *string) {
+	if err := j.validateSetErrorMessageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"errorMessage",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference) SetErrorMessage(val 
 	)
 }
 
-func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference) SetErrorType(val *string) {
+func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference)SetErrorType(val *string) {
+	if err := j.validateSetErrorTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"errorType",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference) SetErrorType(val *st
 	)
 }
 
-func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MwsNetworksErrorMessagesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) ComputeFqn() *string
 }
 
 func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) GetAnyMapAttribute(t
 }
 
 func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) GetBooleanAttribute(
 }
 
 func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) GetBooleanMapAttribu
 }
 
 func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) GetListAttribute(ter
 }
 
 func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) GetNumberAttribute(t
 }
 
 func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) GetNumberListAttribu
 }
 
 func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) GetNumberMapAttribut
 }
 
 func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) GetStringAttribute(t
 }
 
 func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) InterpolationAsList(
 }
 
 func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) ResetErrorType() {
 }
 
 func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

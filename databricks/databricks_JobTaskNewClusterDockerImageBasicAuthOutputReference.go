@@ -197,6 +197,9 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) Usernam
 func NewJobTaskNewClusterDockerImageBasicAuthOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobTaskNewClusterDockerImageBasicAuthOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewJobTaskNewClusterDockerImageBasicAuthOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewJobTaskNewClusterDockerImageBasicAuthOutputReference_Override(j JobTaskN
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) SetComp
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) SetComp
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) SetInternalValue(val *JobTaskNewClusterDockerImageBasicAuth) {
+func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference)SetInternalValue(val *JobTaskNewClusterDockerImageBasicAuth) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) SetInte
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) SetPassword(val *string) {
+func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) SetPass
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) SetTerr
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) SetTerr
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) SetUsername(val *string) {
+func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"username",
@@ -288,6 +312,9 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) Compute
 }
 
 func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) GetAnyM
 }
 
 func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) GetBool
 }
 
 func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := j.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) GetBool
 }
 
 func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := j.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) GetList
 }
 
 func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := j.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) GetNumb
 }
 
 func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := j.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) GetNumb
 }
 
 func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := j.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) GetNumb
 }
 
 func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := j.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) GetStri
 }
 
 func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := j.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) Interpo
 }
 
 func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) Interpo
 }
 
 func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

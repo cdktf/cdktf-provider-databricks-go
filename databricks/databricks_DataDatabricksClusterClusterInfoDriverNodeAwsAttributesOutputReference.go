@@ -175,6 +175,9 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 func NewDataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference{}
 
 	_jsii_.Create(
@@ -196,7 +199,10 @@ func NewDataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference_O
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -204,7 +210,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -212,7 +221,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) SetInternalValue(val *DataDatabricksClusterClusterInfoDriverNodeAwsAttributes) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference)SetInternalValue(val *DataDatabricksClusterClusterInfoDriverNodeAwsAttributes) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -220,7 +232,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) SetIsSpot(val interface{}) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference)SetIsSpot(val interface{}) {
+	if err := j.validateSetIsSpotParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isSpot",
@@ -228,7 +243,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -236,7 +254,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -258,6 +279,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -271,6 +295,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -284,6 +311,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -297,6 +327,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -310,6 +343,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -323,6 +359,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -336,6 +375,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -349,6 +391,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -362,6 +407,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -388,6 +436,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -409,6 +460,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

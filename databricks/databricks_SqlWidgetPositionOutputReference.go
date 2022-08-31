@@ -269,6 +269,9 @@ func (j *jsiiProxy_SqlWidgetPositionOutputReference) TerraformResource() cdktf.I
 func NewSqlWidgetPositionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlWidgetPositionOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSqlWidgetPositionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SqlWidgetPositionOutputReference{}
 
 	_jsii_.Create(
@@ -290,7 +293,10 @@ func NewSqlWidgetPositionOutputReference_Override(s SqlWidgetPositionOutputRefer
 	)
 }
 
-func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetAutoHeight(val interface{}) {
+func (j *jsiiProxy_SqlWidgetPositionOutputReference)SetAutoHeight(val interface{}) {
+	if err := j.validateSetAutoHeightParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoHeight",
@@ -298,7 +304,10 @@ func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetAutoHeight(val interface
 	)
 }
 
-func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SqlWidgetPositionOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -306,7 +315,10 @@ func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SqlWidgetPositionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -314,7 +326,10 @@ func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetInternalValue(val *SqlWidgetPosition) {
+func (j *jsiiProxy_SqlWidgetPositionOutputReference)SetInternalValue(val *SqlWidgetPosition) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -322,7 +337,10 @@ func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetInternalValue(val *SqlWi
 	)
 }
 
-func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetPosX(val *float64) {
+func (j *jsiiProxy_SqlWidgetPositionOutputReference)SetPosX(val *float64) {
+	if err := j.validateSetPosXParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"posX",
@@ -330,7 +348,10 @@ func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetPosX(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetPosY(val *float64) {
+func (j *jsiiProxy_SqlWidgetPositionOutputReference)SetPosY(val *float64) {
+	if err := j.validateSetPosYParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"posY",
@@ -338,7 +359,10 @@ func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetPosY(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetSizeX(val *float64) {
+func (j *jsiiProxy_SqlWidgetPositionOutputReference)SetSizeX(val *float64) {
+	if err := j.validateSetSizeXParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sizeX",
@@ -346,7 +370,10 @@ func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetSizeX(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetSizeY(val *float64) {
+func (j *jsiiProxy_SqlWidgetPositionOutputReference)SetSizeY(val *float64) {
+	if err := j.validateSetSizeYParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sizeY",
@@ -354,7 +381,10 @@ func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetSizeY(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SqlWidgetPositionOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -362,7 +392,10 @@ func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_SqlWidgetPositionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlWidgetPositionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -384,6 +417,9 @@ func (s *jsiiProxy_SqlWidgetPositionOutputReference) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -397,6 +433,9 @@ func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetAnyMapAttribute(terrafor
 }
 
 func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -410,6 +449,9 @@ func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetBooleanAttribute(terrafo
 }
 
 func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -423,6 +465,9 @@ func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetBooleanMapAttribute(terr
 }
 
 func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -436,6 +481,9 @@ func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetListAttribute(terraformA
 }
 
 func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -449,6 +497,9 @@ func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetNumberAttribute(terrafor
 }
 
 func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -462,6 +513,9 @@ func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetNumberListAttribute(terr
 }
 
 func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -475,6 +529,9 @@ func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetNumberMapAttribute(terra
 }
 
 func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -488,6 +545,9 @@ func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetStringAttribute(terrafor
 }
 
 func (s *jsiiProxy_SqlWidgetPositionOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -514,6 +574,9 @@ func (s *jsiiProxy_SqlWidgetPositionOutputReference) InterpolationAsList() cdktf
 }
 
 func (s *jsiiProxy_SqlWidgetPositionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -551,6 +614,9 @@ func (s *jsiiProxy_SqlWidgetPositionOutputReference) ResetPosY() {
 }
 
 func (s *jsiiProxy_SqlWidgetPositionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

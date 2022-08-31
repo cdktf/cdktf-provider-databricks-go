@@ -457,6 +457,9 @@ func (j *jsiiProxy_GlobalInitScript) TimeoutsInput() interface{} {
 func NewGlobalInitScript(scope constructs.Construct, id *string, config *GlobalInitScriptConfig) GlobalInitScript {
 	_init_.Initialize()
 
+	if err := validateNewGlobalInitScriptParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GlobalInitScript{}
 
 	_jsii_.Create(
@@ -479,7 +482,10 @@ func NewGlobalInitScript_Override(g GlobalInitScript, scope constructs.Construct
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript) SetConnection(val interface{}) {
+func (j *jsiiProxy_GlobalInitScript)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -487,7 +493,10 @@ func (j *jsiiProxy_GlobalInitScript) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript) SetContentBase64(val *string) {
+func (j *jsiiProxy_GlobalInitScript)SetContentBase64(val *string) {
+	if err := j.validateSetContentBase64Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"contentBase64",
@@ -495,7 +504,7 @@ func (j *jsiiProxy_GlobalInitScript) SetContentBase64(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript) SetCount(val *float64) {
+func (j *jsiiProxy_GlobalInitScript)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -503,7 +512,7 @@ func (j *jsiiProxy_GlobalInitScript) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GlobalInitScript)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -511,7 +520,10 @@ func (j *jsiiProxy_GlobalInitScript) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript) SetEnabled(val interface{}) {
+func (j *jsiiProxy_GlobalInitScript)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -519,7 +531,7 @@ func (j *jsiiProxy_GlobalInitScript) SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GlobalInitScript)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -527,7 +539,10 @@ func (j *jsiiProxy_GlobalInitScript) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript) SetId(val *string) {
+func (j *jsiiProxy_GlobalInitScript)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -535,7 +550,10 @@ func (j *jsiiProxy_GlobalInitScript) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GlobalInitScript)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -543,7 +561,10 @@ func (j *jsiiProxy_GlobalInitScript) SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript) SetMd5(val *string) {
+func (j *jsiiProxy_GlobalInitScript)SetMd5(val *string) {
+	if err := j.validateSetMd5Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"md5",
@@ -551,7 +572,10 @@ func (j *jsiiProxy_GlobalInitScript) SetMd5(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript) SetName(val *string) {
+func (j *jsiiProxy_GlobalInitScript)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -559,7 +583,10 @@ func (j *jsiiProxy_GlobalInitScript) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript) SetPosition(val *float64) {
+func (j *jsiiProxy_GlobalInitScript)SetPosition(val *float64) {
+	if err := j.validateSetPositionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"position",
@@ -567,7 +594,7 @@ func (j *jsiiProxy_GlobalInitScript) SetPosition(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GlobalInitScript)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -575,7 +602,10 @@ func (j *jsiiProxy_GlobalInitScript) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GlobalInitScript)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -583,7 +613,10 @@ func (j *jsiiProxy_GlobalInitScript) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript) SetSource(val *string) {
+func (j *jsiiProxy_GlobalInitScript)SetSource(val *string) {
+	if err := j.validateSetSourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"source",
@@ -611,6 +644,9 @@ func (j *jsiiProxy_GlobalInitScript) SetSource(val *string) {
 func GlobalInitScript_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateGlobalInitScript_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -635,6 +671,9 @@ func GlobalInitScript_TfResourceType() *string {
 }
 
 func (g *jsiiProxy_GlobalInitScript) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
@@ -643,6 +682,9 @@ func (g *jsiiProxy_GlobalInitScript) AddOverride(path *string, value interface{}
 }
 
 func (g *jsiiProxy_GlobalInitScript) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -656,6 +698,9 @@ func (g *jsiiProxy_GlobalInitScript) GetAnyMapAttribute(terraformAttribute *stri
 }
 
 func (g *jsiiProxy_GlobalInitScript) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -669,6 +714,9 @@ func (g *jsiiProxy_GlobalInitScript) GetBooleanAttribute(terraformAttribute *str
 }
 
 func (g *jsiiProxy_GlobalInitScript) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -682,6 +730,9 @@ func (g *jsiiProxy_GlobalInitScript) GetBooleanMapAttribute(terraformAttribute *
 }
 
 func (g *jsiiProxy_GlobalInitScript) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -695,6 +746,9 @@ func (g *jsiiProxy_GlobalInitScript) GetListAttribute(terraformAttribute *string
 }
 
 func (g *jsiiProxy_GlobalInitScript) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -708,6 +762,9 @@ func (g *jsiiProxy_GlobalInitScript) GetNumberAttribute(terraformAttribute *stri
 }
 
 func (g *jsiiProxy_GlobalInitScript) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -721,6 +778,9 @@ func (g *jsiiProxy_GlobalInitScript) GetNumberListAttribute(terraformAttribute *
 }
 
 func (g *jsiiProxy_GlobalInitScript) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -734,6 +794,9 @@ func (g *jsiiProxy_GlobalInitScript) GetNumberMapAttribute(terraformAttribute *s
 }
 
 func (g *jsiiProxy_GlobalInitScript) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -747,6 +810,9 @@ func (g *jsiiProxy_GlobalInitScript) GetStringAttribute(terraformAttribute *stri
 }
 
 func (g *jsiiProxy_GlobalInitScript) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -760,6 +826,9 @@ func (g *jsiiProxy_GlobalInitScript) GetStringMapAttribute(terraformAttribute *s
 }
 
 func (g *jsiiProxy_GlobalInitScript) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -773,6 +842,9 @@ func (g *jsiiProxy_GlobalInitScript) InterpolationForAttribute(terraformAttribut
 }
 
 func (g *jsiiProxy_GlobalInitScript) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
@@ -781,6 +853,9 @@ func (g *jsiiProxy_GlobalInitScript) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (g *jsiiProxy_GlobalInitScript) PutTimeouts(value *GlobalInitScriptTimeouts) {
+	if err := g.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",

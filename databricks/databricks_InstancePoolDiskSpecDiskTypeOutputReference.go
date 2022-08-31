@@ -199,6 +199,9 @@ func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) TerraformResourc
 func NewInstancePoolDiskSpecDiskTypeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) InstancePoolDiskSpecDiskTypeOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewInstancePoolDiskSpecDiskTypeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewInstancePoolDiskSpecDiskTypeOutputReference_Override(i InstancePoolDiskS
 	)
 }
 
-func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) SetAzureDiskVolumeType(val *string) {
+func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference)SetAzureDiskVolumeType(val *string) {
+	if err := j.validateSetAzureDiskVolumeTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"azureDiskVolumeType",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) SetAzureDiskVolu
 	)
 }
 
-func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) SetEbsVolumeType(val *string) {
+func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference)SetEbsVolumeType(val *string) {
+	if err := j.validateSetEbsVolumeTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ebsVolumeType",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) SetEbsVolumeType
 	)
 }
 
-func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) SetInternalValue(val *InstancePoolDiskSpecDiskType) {
+func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference)SetInternalValue(val *InstancePoolDiskSpecDiskType) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) ComputeFqn() *st
 }
 
 func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) GetAnyMapAttribu
 }
 
 func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) GetBooleanAttrib
 }
 
 func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) GetBooleanMapAtt
 }
 
 func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) GetListAttribute
 }
 
 func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) GetNumberAttribu
 }
 
 func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) GetNumberListAtt
 }
 
 func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) GetNumberMapAttr
 }
 
 func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) GetStringAttribu
 }
 
 func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) InterpolationAsL
 }
 
 func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) ResetEbsVolumeTy
 }
 
 func (i *jsiiProxy_InstancePoolDiskSpecDiskTypeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

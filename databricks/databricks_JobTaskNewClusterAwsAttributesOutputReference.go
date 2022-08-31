@@ -343,6 +343,9 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) ZoneIdInput() 
 func NewJobTaskNewClusterAwsAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobTaskNewClusterAwsAttributesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewJobTaskNewClusterAwsAttributesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference{}
 
 	_jsii_.Create(
@@ -364,7 +367,10 @@ func NewJobTaskNewClusterAwsAttributesOutputReference_Override(j JobTaskNewClust
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetAvailability(val *string) {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetAvailability(val *string) {
+	if err := j.validateSetAvailabilityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"availability",
@@ -372,7 +378,10 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetAvailabilit
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -380,7 +389,10 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -388,7 +400,10 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetEbsVolumeCount(val *float64) {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetEbsVolumeCount(val *float64) {
+	if err := j.validateSetEbsVolumeCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ebsVolumeCount",
@@ -396,7 +411,10 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetEbsVolumeCo
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetEbsVolumeSize(val *float64) {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetEbsVolumeSize(val *float64) {
+	if err := j.validateSetEbsVolumeSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ebsVolumeSize",
@@ -404,7 +422,10 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetEbsVolumeSi
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetEbsVolumeType(val *string) {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetEbsVolumeType(val *string) {
+	if err := j.validateSetEbsVolumeTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ebsVolumeType",
@@ -412,7 +433,10 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetEbsVolumeTy
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetFirstOnDemand(val *float64) {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetFirstOnDemand(val *float64) {
+	if err := j.validateSetFirstOnDemandParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"firstOnDemand",
@@ -420,7 +444,10 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetFirstOnDema
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetInstanceProfileArn(val *string) {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetInstanceProfileArn(val *string) {
+	if err := j.validateSetInstanceProfileArnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceProfileArn",
@@ -428,7 +455,10 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetInstancePro
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetInternalValue(val *JobTaskNewClusterAwsAttributes) {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetInternalValue(val *JobTaskNewClusterAwsAttributes) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -436,7 +466,10 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetSpotBidPricePercent(val *float64) {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetSpotBidPricePercent(val *float64) {
+	if err := j.validateSetSpotBidPricePercentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"spotBidPricePercent",
@@ -444,7 +477,10 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetSpotBidPric
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -452,7 +488,10 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -460,7 +499,10 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) SetZoneId(val *string) {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -482,6 +524,9 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) ComputeFqn() *
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -495,6 +540,9 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetAnyMapAttri
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -508,6 +556,9 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetBooleanAttr
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := j.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -521,6 +572,9 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetBooleanMapA
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := j.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -534,6 +588,9 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetListAttribu
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := j.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -547,6 +604,9 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetNumberAttri
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := j.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -560,6 +620,9 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetNumberListA
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := j.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -573,6 +636,9 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetNumberMapAt
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := j.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -586,6 +652,9 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetStringAttri
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := j.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -612,6 +681,9 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) InterpolationA
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -689,6 +761,9 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) ResetZoneId() 
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

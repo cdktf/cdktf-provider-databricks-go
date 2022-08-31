@@ -198,6 +198,9 @@ func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference) UntilDateInput() *
 func NewSqlQueryScheduleContinuousOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlQueryScheduleContinuousOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSqlQueryScheduleContinuousOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SqlQueryScheduleContinuousOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewSqlQueryScheduleContinuousOutputReference_Override(s SqlQueryScheduleCon
 	)
 }
 
-func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference) SetInternalValue(val *SqlQueryScheduleContinuous) {
+func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference)SetInternalValue(val *SqlQueryScheduleContinuous) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference) SetIntervalSeconds(val *float64) {
+func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference)SetIntervalSeconds(val *float64) {
+	if err := j.validateSetIntervalSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"intervalSeconds",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference) SetIntervalSeconds
 	)
 }
 
-func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference) SetUntilDate(val *string) {
+func (j *jsiiProxy_SqlQueryScheduleContinuousOutputReference)SetUntilDate(val *string) {
+	if err := j.validateSetUntilDateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"untilDate",
@@ -289,6 +313,9 @@ func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) ComputeFqn() *stri
 }
 
 func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) GetAnyMapAttribute
 }
 
 func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) GetBooleanAttribut
 }
 
 func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) GetBooleanMapAttri
 }
 
 func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) GetListAttribute(t
 }
 
 func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) GetNumberAttribute
 }
 
 func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) GetNumberListAttri
 }
 
 func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) GetNumberMapAttrib
 }
 
 func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) GetStringAttribute
 }
 
 func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) InterpolationAsLis
 }
 
 func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) ResetUntilDate() {
 }
 
 func (s *jsiiProxy_SqlQueryScheduleContinuousOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

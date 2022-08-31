@@ -316,6 +316,9 @@ func (j *jsiiProxy_MountAdlOutputReference) TerraformResource() cdktf.IInterpola
 func NewMountAdlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MountAdlOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMountAdlOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MountAdlOutputReference{}
 
 	_jsii_.Create(
@@ -337,7 +340,10 @@ func NewMountAdlOutputReference_Override(m MountAdlOutputReference, terraformRes
 	)
 }
 
-func (j *jsiiProxy_MountAdlOutputReference) SetClientId(val *string) {
+func (j *jsiiProxy_MountAdlOutputReference)SetClientId(val *string) {
+	if err := j.validateSetClientIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientId",
@@ -345,7 +351,10 @@ func (j *jsiiProxy_MountAdlOutputReference) SetClientId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MountAdlOutputReference) SetClientSecretKey(val *string) {
+func (j *jsiiProxy_MountAdlOutputReference)SetClientSecretKey(val *string) {
+	if err := j.validateSetClientSecretKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientSecretKey",
@@ -353,7 +362,10 @@ func (j *jsiiProxy_MountAdlOutputReference) SetClientSecretKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MountAdlOutputReference) SetClientSecretScope(val *string) {
+func (j *jsiiProxy_MountAdlOutputReference)SetClientSecretScope(val *string) {
+	if err := j.validateSetClientSecretScopeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientSecretScope",
@@ -361,7 +373,10 @@ func (j *jsiiProxy_MountAdlOutputReference) SetClientSecretScope(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MountAdlOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MountAdlOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -369,7 +384,10 @@ func (j *jsiiProxy_MountAdlOutputReference) SetComplexObjectIndex(val interface{
 	)
 }
 
-func (j *jsiiProxy_MountAdlOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MountAdlOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -377,7 +395,10 @@ func (j *jsiiProxy_MountAdlOutputReference) SetComplexObjectIsFromSet(val *bool)
 	)
 }
 
-func (j *jsiiProxy_MountAdlOutputReference) SetDirectory(val *string) {
+func (j *jsiiProxy_MountAdlOutputReference)SetDirectory(val *string) {
+	if err := j.validateSetDirectoryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"directory",
@@ -385,7 +406,10 @@ func (j *jsiiProxy_MountAdlOutputReference) SetDirectory(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MountAdlOutputReference) SetInternalValue(val *MountAdl) {
+func (j *jsiiProxy_MountAdlOutputReference)SetInternalValue(val *MountAdl) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -393,7 +417,10 @@ func (j *jsiiProxy_MountAdlOutputReference) SetInternalValue(val *MountAdl) {
 	)
 }
 
-func (j *jsiiProxy_MountAdlOutputReference) SetSparkConfPrefix(val *string) {
+func (j *jsiiProxy_MountAdlOutputReference)SetSparkConfPrefix(val *string) {
+	if err := j.validateSetSparkConfPrefixParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sparkConfPrefix",
@@ -401,7 +428,10 @@ func (j *jsiiProxy_MountAdlOutputReference) SetSparkConfPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MountAdlOutputReference) SetStorageResourceName(val *string) {
+func (j *jsiiProxy_MountAdlOutputReference)SetStorageResourceName(val *string) {
+	if err := j.validateSetStorageResourceNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storageResourceName",
@@ -409,7 +439,10 @@ func (j *jsiiProxy_MountAdlOutputReference) SetStorageResourceName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_MountAdlOutputReference) SetTenantId(val *string) {
+func (j *jsiiProxy_MountAdlOutputReference)SetTenantId(val *string) {
+	if err := j.validateSetTenantIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tenantId",
@@ -417,7 +450,10 @@ func (j *jsiiProxy_MountAdlOutputReference) SetTenantId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MountAdlOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MountAdlOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -425,7 +461,10 @@ func (j *jsiiProxy_MountAdlOutputReference) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MountAdlOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MountAdlOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -447,6 +486,9 @@ func (m *jsiiProxy_MountAdlOutputReference) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MountAdlOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -460,6 +502,9 @@ func (m *jsiiProxy_MountAdlOutputReference) GetAnyMapAttribute(terraformAttribut
 }
 
 func (m *jsiiProxy_MountAdlOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -473,6 +518,9 @@ func (m *jsiiProxy_MountAdlOutputReference) GetBooleanAttribute(terraformAttribu
 }
 
 func (m *jsiiProxy_MountAdlOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -486,6 +534,9 @@ func (m *jsiiProxy_MountAdlOutputReference) GetBooleanMapAttribute(terraformAttr
 }
 
 func (m *jsiiProxy_MountAdlOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -499,6 +550,9 @@ func (m *jsiiProxy_MountAdlOutputReference) GetListAttribute(terraformAttribute 
 }
 
 func (m *jsiiProxy_MountAdlOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -512,6 +566,9 @@ func (m *jsiiProxy_MountAdlOutputReference) GetNumberAttribute(terraformAttribut
 }
 
 func (m *jsiiProxy_MountAdlOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -525,6 +582,9 @@ func (m *jsiiProxy_MountAdlOutputReference) GetNumberListAttribute(terraformAttr
 }
 
 func (m *jsiiProxy_MountAdlOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -538,6 +598,9 @@ func (m *jsiiProxy_MountAdlOutputReference) GetNumberMapAttribute(terraformAttri
 }
 
 func (m *jsiiProxy_MountAdlOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -551,6 +614,9 @@ func (m *jsiiProxy_MountAdlOutputReference) GetStringAttribute(terraformAttribut
 }
 
 func (m *jsiiProxy_MountAdlOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -577,6 +643,9 @@ func (m *jsiiProxy_MountAdlOutputReference) InterpolationAsList() cdktf.IResolva
 }
 
 func (m *jsiiProxy_MountAdlOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -622,6 +691,9 @@ func (m *jsiiProxy_MountAdlOutputReference) ResetTenantId() {
 }
 
 func (m *jsiiProxy_MountAdlOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

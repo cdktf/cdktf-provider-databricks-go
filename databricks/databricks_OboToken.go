@@ -371,6 +371,9 @@ func (j *jsiiProxy_OboToken) TokenValue() *string {
 func NewOboToken(scope constructs.Construct, id *string, config *OboTokenConfig) OboToken {
 	_init_.Initialize()
 
+	if err := validateNewOboTokenParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OboToken{}
 
 	_jsii_.Create(
@@ -393,7 +396,10 @@ func NewOboToken_Override(o OboToken, scope constructs.Construct, id *string, co
 	)
 }
 
-func (j *jsiiProxy_OboToken) SetApplicationId(val *string) {
+func (j *jsiiProxy_OboToken)SetApplicationId(val *string) {
+	if err := j.validateSetApplicationIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"applicationId",
@@ -401,7 +407,10 @@ func (j *jsiiProxy_OboToken) SetApplicationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OboToken) SetComment(val *string) {
+func (j *jsiiProxy_OboToken)SetComment(val *string) {
+	if err := j.validateSetCommentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"comment",
@@ -409,7 +418,10 @@ func (j *jsiiProxy_OboToken) SetComment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OboToken) SetConnection(val interface{}) {
+func (j *jsiiProxy_OboToken)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -417,7 +429,7 @@ func (j *jsiiProxy_OboToken) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OboToken) SetCount(val *float64) {
+func (j *jsiiProxy_OboToken)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -425,7 +437,7 @@ func (j *jsiiProxy_OboToken) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OboToken) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OboToken)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -433,7 +445,7 @@ func (j *jsiiProxy_OboToken) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OboToken) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OboToken)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -441,7 +453,10 @@ func (j *jsiiProxy_OboToken) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_OboToken) SetId(val *string) {
+func (j *jsiiProxy_OboToken)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -449,7 +464,10 @@ func (j *jsiiProxy_OboToken) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OboToken) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OboToken)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -457,7 +475,10 @@ func (j *jsiiProxy_OboToken) SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_OboToken) SetLifetimeSeconds(val *float64) {
+func (j *jsiiProxy_OboToken)SetLifetimeSeconds(val *float64) {
+	if err := j.validateSetLifetimeSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifetimeSeconds",
@@ -465,7 +486,7 @@ func (j *jsiiProxy_OboToken) SetLifetimeSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OboToken) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OboToken)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -473,7 +494,10 @@ func (j *jsiiProxy_OboToken) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_OboToken) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OboToken)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -501,6 +525,9 @@ func (j *jsiiProxy_OboToken) SetProvisioners(val *[]interface{}) {
 func OboToken_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateOboToken_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -525,6 +552,9 @@ func OboToken_TfResourceType() *string {
 }
 
 func (o *jsiiProxy_OboToken) AddOverride(path *string, value interface{}) {
+	if err := o.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
@@ -533,6 +563,9 @@ func (o *jsiiProxy_OboToken) AddOverride(path *string, value interface{}) {
 }
 
 func (o *jsiiProxy_OboToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -546,6 +579,9 @@ func (o *jsiiProxy_OboToken) GetAnyMapAttribute(terraformAttribute *string) *map
 }
 
 func (o *jsiiProxy_OboToken) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -559,6 +595,9 @@ func (o *jsiiProxy_OboToken) GetBooleanAttribute(terraformAttribute *string) cdk
 }
 
 func (o *jsiiProxy_OboToken) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -572,6 +611,9 @@ func (o *jsiiProxy_OboToken) GetBooleanMapAttribute(terraformAttribute *string) 
 }
 
 func (o *jsiiProxy_OboToken) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -585,6 +627,9 @@ func (o *jsiiProxy_OboToken) GetListAttribute(terraformAttribute *string) *[]*st
 }
 
 func (o *jsiiProxy_OboToken) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -598,6 +643,9 @@ func (o *jsiiProxy_OboToken) GetNumberAttribute(terraformAttribute *string) *flo
 }
 
 func (o *jsiiProxy_OboToken) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -611,6 +659,9 @@ func (o *jsiiProxy_OboToken) GetNumberListAttribute(terraformAttribute *string) 
 }
 
 func (o *jsiiProxy_OboToken) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -624,6 +675,9 @@ func (o *jsiiProxy_OboToken) GetNumberMapAttribute(terraformAttribute *string) *
 }
 
 func (o *jsiiProxy_OboToken) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -637,6 +691,9 @@ func (o *jsiiProxy_OboToken) GetStringAttribute(terraformAttribute *string) *str
 }
 
 func (o *jsiiProxy_OboToken) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -650,6 +707,9 @@ func (o *jsiiProxy_OboToken) GetStringMapAttribute(terraformAttribute *string) *
 }
 
 func (o *jsiiProxy_OboToken) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -663,6 +723,9 @@ func (o *jsiiProxy_OboToken) InterpolationForAttribute(terraformAttribute *strin
 }
 
 func (o *jsiiProxy_OboToken) OverrideLogicalId(newLogicalId *string) {
+	if err := o.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",

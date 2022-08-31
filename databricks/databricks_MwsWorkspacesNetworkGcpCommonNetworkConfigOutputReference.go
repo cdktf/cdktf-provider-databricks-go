@@ -197,6 +197,9 @@ func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) Te
 func NewMwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMwsWorkspacesNetworkGcpCommonNetworkConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewMwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference_Override(m Mws
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) SetGkeClusterMasterIpRange(val *string) {
+func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference)SetGkeClusterMasterIpRange(val *string) {
+	if err := j.validateSetGkeClusterMasterIpRangeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gkeClusterMasterIpRange",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) SetGkeConnectivityType(val *string) {
+func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference)SetGkeConnectivityType(val *string) {
+	if err := j.validateSetGkeConnectivityTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gkeConnectivityType",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) SetInternalValue(val *MwsWorkspacesNetworkGcpCommonNetworkConfig) {
+func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference)SetInternalValue(val *MwsWorkspacesNetworkGcpCommonNetworkConfig) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -288,6 +312,9 @@ func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) Co
 }
 
 func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) Ge
 }
 
 func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) Ge
 }
 
 func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) Ge
 }
 
 func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) Ge
 }
 
 func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) Ge
 }
 
 func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) Ge
 }
 
 func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) Ge
 }
 
 func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) Ge
 }
 
 func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) In
 }
 
 func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) In
 }
 
 func (m *jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -503,6 +503,9 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) TerraformResourceType() *string {
 func NewDataDatabricksSparkVersion(scope constructs.Construct, id *string, config *DataDatabricksSparkVersionConfig) DataDatabricksSparkVersion {
 	_init_.Initialize()
 
+	if err := validateNewDataDatabricksSparkVersionParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatabricksSparkVersion{}
 
 	_jsii_.Create(
@@ -525,7 +528,10 @@ func NewDataDatabricksSparkVersion_Override(d DataDatabricksSparkVersion, scope 
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSparkVersion) SetBeta(val interface{}) {
+func (j *jsiiProxy_DataDatabricksSparkVersion)SetBeta(val interface{}) {
+	if err := j.validateSetBetaParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"beta",
@@ -533,7 +539,7 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) SetBeta(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSparkVersion) SetCount(val *float64) {
+func (j *jsiiProxy_DataDatabricksSparkVersion)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -541,7 +547,7 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSparkVersion) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataDatabricksSparkVersion)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -549,7 +555,7 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSparkVersion) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksSparkVersion)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -557,7 +563,10 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSparkVersion) SetGenomics(val interface{}) {
+func (j *jsiiProxy_DataDatabricksSparkVersion)SetGenomics(val interface{}) {
+	if err := j.validateSetGenomicsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"genomics",
@@ -565,7 +574,10 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) SetGenomics(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSparkVersion) SetGpu(val interface{}) {
+func (j *jsiiProxy_DataDatabricksSparkVersion)SetGpu(val interface{}) {
+	if err := j.validateSetGpuParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gpu",
@@ -573,7 +585,10 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) SetGpu(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSparkVersion) SetGraviton(val interface{}) {
+func (j *jsiiProxy_DataDatabricksSparkVersion)SetGraviton(val interface{}) {
+	if err := j.validateSetGravitonParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"graviton",
@@ -581,7 +596,10 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) SetGraviton(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSparkVersion) SetId(val *string) {
+func (j *jsiiProxy_DataDatabricksSparkVersion)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -589,7 +607,10 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSparkVersion) SetLatest(val interface{}) {
+func (j *jsiiProxy_DataDatabricksSparkVersion)SetLatest(val interface{}) {
+	if err := j.validateSetLatestParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"latest",
@@ -597,7 +618,10 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) SetLatest(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSparkVersion) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksSparkVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -605,7 +629,10 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSparkVersion) SetLongTermSupport(val interface{}) {
+func (j *jsiiProxy_DataDatabricksSparkVersion)SetLongTermSupport(val interface{}) {
+	if err := j.validateSetLongTermSupportParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"longTermSupport",
@@ -613,7 +640,10 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) SetLongTermSupport(val interface{
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSparkVersion) SetMl(val interface{}) {
+func (j *jsiiProxy_DataDatabricksSparkVersion)SetMl(val interface{}) {
+	if err := j.validateSetMlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ml",
@@ -621,7 +651,10 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) SetMl(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSparkVersion) SetPhoton(val interface{}) {
+func (j *jsiiProxy_DataDatabricksSparkVersion)SetPhoton(val interface{}) {
+	if err := j.validateSetPhotonParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"photon",
@@ -629,7 +662,7 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) SetPhoton(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSparkVersion) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksSparkVersion)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -637,7 +670,10 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSparkVersion) SetScala(val *string) {
+func (j *jsiiProxy_DataDatabricksSparkVersion)SetScala(val *string) {
+	if err := j.validateSetScalaParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"scala",
@@ -645,7 +681,10 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) SetScala(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSparkVersion) SetSparkVersion(val *string) {
+func (j *jsiiProxy_DataDatabricksSparkVersion)SetSparkVersion(val *string) {
+	if err := j.validateSetSparkVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sparkVersion",
@@ -673,6 +712,9 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) SetSparkVersion(val *string) {
 func DataDatabricksSparkVersion_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataDatabricksSparkVersion_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -697,6 +739,9 @@ func DataDatabricksSparkVersion_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataDatabricksSparkVersion) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -705,6 +750,9 @@ func (d *jsiiProxy_DataDatabricksSparkVersion) AddOverride(path *string, value i
 }
 
 func (d *jsiiProxy_DataDatabricksSparkVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -718,6 +766,9 @@ func (d *jsiiProxy_DataDatabricksSparkVersion) GetAnyMapAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataDatabricksSparkVersion) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -731,6 +782,9 @@ func (d *jsiiProxy_DataDatabricksSparkVersion) GetBooleanAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataDatabricksSparkVersion) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -744,6 +798,9 @@ func (d *jsiiProxy_DataDatabricksSparkVersion) GetBooleanMapAttribute(terraformA
 }
 
 func (d *jsiiProxy_DataDatabricksSparkVersion) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -757,6 +814,9 @@ func (d *jsiiProxy_DataDatabricksSparkVersion) GetListAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataDatabricksSparkVersion) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -770,6 +830,9 @@ func (d *jsiiProxy_DataDatabricksSparkVersion) GetNumberAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataDatabricksSparkVersion) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -783,6 +846,9 @@ func (d *jsiiProxy_DataDatabricksSparkVersion) GetNumberListAttribute(terraformA
 }
 
 func (d *jsiiProxy_DataDatabricksSparkVersion) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -796,6 +862,9 @@ func (d *jsiiProxy_DataDatabricksSparkVersion) GetNumberMapAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataDatabricksSparkVersion) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -809,6 +878,9 @@ func (d *jsiiProxy_DataDatabricksSparkVersion) GetStringAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataDatabricksSparkVersion) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -822,6 +894,9 @@ func (d *jsiiProxy_DataDatabricksSparkVersion) GetStringMapAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataDatabricksSparkVersion) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -835,6 +910,9 @@ func (d *jsiiProxy_DataDatabricksSparkVersion) InterpolationForAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataDatabricksSparkVersion) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

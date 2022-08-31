@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListList) WrapsSet() *bool {
 func NewDataDatabricksDbfsFilePathsPathListList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksDbfsFilePathsPathListList {
 	_init_.Initialize()
 
+	if err := validateNewDataDatabricksDbfsFilePathsPathListListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatabricksDbfsFilePathsPathListList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDatabricksDbfsFilePathsPathListList_Override(d DataDatabricksDbfsFil
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListList) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListList) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListList) ComputeFqn() *string
 }
 
 func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListList) Get(index *float64) DataDatabricksDbfsFilePathsPathListOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDatabricksDbfsFilePathsPathListOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListList) Get(index *float64) 
 }
 
 func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

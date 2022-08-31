@@ -111,6 +111,9 @@ func (j *jsiiProxy_PipelineLibraryList) WrapsSet() *bool {
 func NewPipelineLibraryList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineLibraryList {
 	_init_.Initialize()
 
+	if err := validateNewPipelineLibraryListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PipelineLibraryList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewPipelineLibraryList_Override(p PipelineLibraryList, terraformResource cd
 	)
 }
 
-func (j *jsiiProxy_PipelineLibraryList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PipelineLibraryList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_PipelineLibraryList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PipelineLibraryList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PipelineLibraryList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_PipelineLibraryList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PipelineLibraryList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PipelineLibraryList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_PipelineLibraryList) SetTerraformResource(val cdktf.IInterpol
 	)
 }
 
-func (j *jsiiProxy_PipelineLibraryList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PipelineLibraryList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (p *jsiiProxy_PipelineLibraryList) ComputeFqn() *string {
 }
 
 func (p *jsiiProxy_PipelineLibraryList) Get(index *float64) PipelineLibraryOutputReference {
+	if err := p.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns PipelineLibraryOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (p *jsiiProxy_PipelineLibraryList) Get(index *float64) PipelineLibraryOutpu
 }
 
 func (p *jsiiProxy_PipelineLibraryList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

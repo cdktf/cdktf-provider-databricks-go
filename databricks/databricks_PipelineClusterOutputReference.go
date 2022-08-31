@@ -559,6 +559,9 @@ func (j *jsiiProxy_PipelineClusterOutputReference) TerraformResource() cdktf.IIn
 func NewPipelineClusterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PipelineClusterOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewPipelineClusterOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PipelineClusterOutputReference{}
 
 	_jsii_.Create(
@@ -580,7 +583,10 @@ func NewPipelineClusterOutputReference_Override(p PipelineClusterOutputReference
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterOutputReference) SetApplyPolicyDefaultValues(val interface{}) {
+func (j *jsiiProxy_PipelineClusterOutputReference)SetApplyPolicyDefaultValues(val interface{}) {
+	if err := j.validateSetApplyPolicyDefaultValuesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"applyPolicyDefaultValues",
@@ -588,7 +594,10 @@ func (j *jsiiProxy_PipelineClusterOutputReference) SetApplyPolicyDefaultValues(v
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PipelineClusterOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -596,7 +605,10 @@ func (j *jsiiProxy_PipelineClusterOutputReference) SetComplexObjectIndex(val int
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PipelineClusterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -604,7 +616,10 @@ func (j *jsiiProxy_PipelineClusterOutputReference) SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterOutputReference) SetCustomTags(val *map[string]*string) {
+func (j *jsiiProxy_PipelineClusterOutputReference)SetCustomTags(val *map[string]*string) {
+	if err := j.validateSetCustomTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"customTags",
@@ -612,7 +627,10 @@ func (j *jsiiProxy_PipelineClusterOutputReference) SetCustomTags(val *map[string
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterOutputReference) SetDriverInstancePoolId(val *string) {
+func (j *jsiiProxy_PipelineClusterOutputReference)SetDriverInstancePoolId(val *string) {
+	if err := j.validateSetDriverInstancePoolIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"driverInstancePoolId",
@@ -620,7 +638,10 @@ func (j *jsiiProxy_PipelineClusterOutputReference) SetDriverInstancePoolId(val *
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterOutputReference) SetDriverNodeTypeId(val *string) {
+func (j *jsiiProxy_PipelineClusterOutputReference)SetDriverNodeTypeId(val *string) {
+	if err := j.validateSetDriverNodeTypeIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"driverNodeTypeId",
@@ -628,7 +649,10 @@ func (j *jsiiProxy_PipelineClusterOutputReference) SetDriverNodeTypeId(val *stri
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterOutputReference) SetInstancePoolId(val *string) {
+func (j *jsiiProxy_PipelineClusterOutputReference)SetInstancePoolId(val *string) {
+	if err := j.validateSetInstancePoolIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instancePoolId",
@@ -636,7 +660,10 @@ func (j *jsiiProxy_PipelineClusterOutputReference) SetInstancePoolId(val *string
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PipelineClusterOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -644,7 +671,10 @@ func (j *jsiiProxy_PipelineClusterOutputReference) SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterOutputReference) SetLabel(val *string) {
+func (j *jsiiProxy_PipelineClusterOutputReference)SetLabel(val *string) {
+	if err := j.validateSetLabelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"label",
@@ -652,7 +682,10 @@ func (j *jsiiProxy_PipelineClusterOutputReference) SetLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterOutputReference) SetNodeTypeId(val *string) {
+func (j *jsiiProxy_PipelineClusterOutputReference)SetNodeTypeId(val *string) {
+	if err := j.validateSetNodeTypeIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nodeTypeId",
@@ -660,7 +693,10 @@ func (j *jsiiProxy_PipelineClusterOutputReference) SetNodeTypeId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterOutputReference) SetNumWorkers(val *float64) {
+func (j *jsiiProxy_PipelineClusterOutputReference)SetNumWorkers(val *float64) {
+	if err := j.validateSetNumWorkersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"numWorkers",
@@ -668,7 +704,10 @@ func (j *jsiiProxy_PipelineClusterOutputReference) SetNumWorkers(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterOutputReference) SetPolicyId(val *string) {
+func (j *jsiiProxy_PipelineClusterOutputReference)SetPolicyId(val *string) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policyId",
@@ -676,7 +715,10 @@ func (j *jsiiProxy_PipelineClusterOutputReference) SetPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterOutputReference) SetSparkConf(val *map[string]*string) {
+func (j *jsiiProxy_PipelineClusterOutputReference)SetSparkConf(val *map[string]*string) {
+	if err := j.validateSetSparkConfParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sparkConf",
@@ -684,7 +726,10 @@ func (j *jsiiProxy_PipelineClusterOutputReference) SetSparkConf(val *map[string]
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterOutputReference) SetSparkEnvVars(val *map[string]*string) {
+func (j *jsiiProxy_PipelineClusterOutputReference)SetSparkEnvVars(val *map[string]*string) {
+	if err := j.validateSetSparkEnvVarsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sparkEnvVars",
@@ -692,7 +737,10 @@ func (j *jsiiProxy_PipelineClusterOutputReference) SetSparkEnvVars(val *map[stri
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterOutputReference) SetSshPublicKeys(val *[]*string) {
+func (j *jsiiProxy_PipelineClusterOutputReference)SetSshPublicKeys(val *[]*string) {
+	if err := j.validateSetSshPublicKeysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sshPublicKeys",
@@ -700,7 +748,10 @@ func (j *jsiiProxy_PipelineClusterOutputReference) SetSshPublicKeys(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PipelineClusterOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -708,7 +759,10 @@ func (j *jsiiProxy_PipelineClusterOutputReference) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PipelineClusterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -730,6 +784,9 @@ func (p *jsiiProxy_PipelineClusterOutputReference) ComputeFqn() *string {
 }
 
 func (p *jsiiProxy_PipelineClusterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -743,6 +800,9 @@ func (p *jsiiProxy_PipelineClusterOutputReference) GetAnyMapAttribute(terraformA
 }
 
 func (p *jsiiProxy_PipelineClusterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -756,6 +816,9 @@ func (p *jsiiProxy_PipelineClusterOutputReference) GetBooleanAttribute(terraform
 }
 
 func (p *jsiiProxy_PipelineClusterOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -769,6 +832,9 @@ func (p *jsiiProxy_PipelineClusterOutputReference) GetBooleanMapAttribute(terraf
 }
 
 func (p *jsiiProxy_PipelineClusterOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -782,6 +848,9 @@ func (p *jsiiProxy_PipelineClusterOutputReference) GetListAttribute(terraformAtt
 }
 
 func (p *jsiiProxy_PipelineClusterOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -795,6 +864,9 @@ func (p *jsiiProxy_PipelineClusterOutputReference) GetNumberAttribute(terraformA
 }
 
 func (p *jsiiProxy_PipelineClusterOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -808,6 +880,9 @@ func (p *jsiiProxy_PipelineClusterOutputReference) GetNumberListAttribute(terraf
 }
 
 func (p *jsiiProxy_PipelineClusterOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -821,6 +896,9 @@ func (p *jsiiProxy_PipelineClusterOutputReference) GetNumberMapAttribute(terrafo
 }
 
 func (p *jsiiProxy_PipelineClusterOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -834,6 +912,9 @@ func (p *jsiiProxy_PipelineClusterOutputReference) GetStringAttribute(terraformA
 }
 
 func (p *jsiiProxy_PipelineClusterOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -860,6 +941,9 @@ func (p *jsiiProxy_PipelineClusterOutputReference) InterpolationAsList() cdktf.I
 }
 
 func (p *jsiiProxy_PipelineClusterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -873,6 +957,9 @@ func (p *jsiiProxy_PipelineClusterOutputReference) InterpolationForAttribute(pro
 }
 
 func (p *jsiiProxy_PipelineClusterOutputReference) PutAutoscale(value *PipelineClusterAutoscale) {
+	if err := p.validatePutAutoscaleParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putAutoscale",
@@ -881,6 +968,9 @@ func (p *jsiiProxy_PipelineClusterOutputReference) PutAutoscale(value *PipelineC
 }
 
 func (p *jsiiProxy_PipelineClusterOutputReference) PutAwsAttributes(value *PipelineClusterAwsAttributes) {
+	if err := p.validatePutAwsAttributesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putAwsAttributes",
@@ -889,6 +979,9 @@ func (p *jsiiProxy_PipelineClusterOutputReference) PutAwsAttributes(value *Pipel
 }
 
 func (p *jsiiProxy_PipelineClusterOutputReference) PutClusterLogConf(value *PipelineClusterClusterLogConf) {
+	if err := p.validatePutClusterLogConfParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putClusterLogConf",
@@ -897,6 +990,9 @@ func (p *jsiiProxy_PipelineClusterOutputReference) PutClusterLogConf(value *Pipe
 }
 
 func (p *jsiiProxy_PipelineClusterOutputReference) PutGcpAttributes(value *PipelineClusterGcpAttributes) {
+	if err := p.validatePutGcpAttributesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putGcpAttributes",
@@ -905,6 +1001,9 @@ func (p *jsiiProxy_PipelineClusterOutputReference) PutGcpAttributes(value *Pipel
 }
 
 func (p *jsiiProxy_PipelineClusterOutputReference) PutInitScripts(value interface{}) {
+	if err := p.validatePutInitScriptsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putInitScripts",
@@ -1049,6 +1148,9 @@ func (p *jsiiProxy_PipelineClusterOutputReference) ResetSshPublicKeys() {
 }
 
 func (p *jsiiProxy_PipelineClusterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

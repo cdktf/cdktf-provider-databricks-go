@@ -483,6 +483,9 @@ func (j *jsiiProxy_SqlPermissions) ViewInput() *string {
 func NewSqlPermissions(scope constructs.Construct, id *string, config *SqlPermissionsConfig) SqlPermissions {
 	_init_.Initialize()
 
+	if err := validateNewSqlPermissionsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SqlPermissions{}
 
 	_jsii_.Create(
@@ -505,7 +508,10 @@ func NewSqlPermissions_Override(s SqlPermissions, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_SqlPermissions) SetAnonymousFunction(val interface{}) {
+func (j *jsiiProxy_SqlPermissions)SetAnonymousFunction(val interface{}) {
+	if err := j.validateSetAnonymousFunctionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"anonymousFunction",
@@ -513,7 +519,10 @@ func (j *jsiiProxy_SqlPermissions) SetAnonymousFunction(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlPermissions) SetAnyFile(val interface{}) {
+func (j *jsiiProxy_SqlPermissions)SetAnyFile(val interface{}) {
+	if err := j.validateSetAnyFileParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"anyFile",
@@ -521,7 +530,10 @@ func (j *jsiiProxy_SqlPermissions) SetAnyFile(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlPermissions) SetCatalog(val interface{}) {
+func (j *jsiiProxy_SqlPermissions)SetCatalog(val interface{}) {
+	if err := j.validateSetCatalogParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"catalog",
@@ -529,7 +541,10 @@ func (j *jsiiProxy_SqlPermissions) SetCatalog(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlPermissions) SetClusterId(val *string) {
+func (j *jsiiProxy_SqlPermissions)SetClusterId(val *string) {
+	if err := j.validateSetClusterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterId",
@@ -537,7 +552,10 @@ func (j *jsiiProxy_SqlPermissions) SetClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlPermissions) SetConnection(val interface{}) {
+func (j *jsiiProxy_SqlPermissions)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -545,7 +563,7 @@ func (j *jsiiProxy_SqlPermissions) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlPermissions) SetCount(val *float64) {
+func (j *jsiiProxy_SqlPermissions)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -553,7 +571,10 @@ func (j *jsiiProxy_SqlPermissions) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqlPermissions) SetDatabase(val *string) {
+func (j *jsiiProxy_SqlPermissions)SetDatabase(val *string) {
+	if err := j.validateSetDatabaseParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"database",
@@ -561,7 +582,7 @@ func (j *jsiiProxy_SqlPermissions) SetDatabase(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlPermissions) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SqlPermissions)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -569,7 +590,7 @@ func (j *jsiiProxy_SqlPermissions) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SqlPermissions) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SqlPermissions)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -577,7 +598,10 @@ func (j *jsiiProxy_SqlPermissions) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SqlPermissions) SetId(val *string) {
+func (j *jsiiProxy_SqlPermissions)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -585,7 +609,10 @@ func (j *jsiiProxy_SqlPermissions) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlPermissions) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SqlPermissions)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -593,7 +620,7 @@ func (j *jsiiProxy_SqlPermissions) SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_SqlPermissions) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SqlPermissions)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -601,7 +628,10 @@ func (j *jsiiProxy_SqlPermissions) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SqlPermissions) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SqlPermissions)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -609,7 +639,10 @@ func (j *jsiiProxy_SqlPermissions) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlPermissions) SetTable(val *string) {
+func (j *jsiiProxy_SqlPermissions)SetTable(val *string) {
+	if err := j.validateSetTableParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"table",
@@ -617,7 +650,10 @@ func (j *jsiiProxy_SqlPermissions) SetTable(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlPermissions) SetView(val *string) {
+func (j *jsiiProxy_SqlPermissions)SetView(val *string) {
+	if err := j.validateSetViewParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"view",
@@ -645,6 +681,9 @@ func (j *jsiiProxy_SqlPermissions) SetView(val *string) {
 func SqlPermissions_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSqlPermissions_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -669,6 +708,9 @@ func SqlPermissions_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SqlPermissions) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -677,6 +719,9 @@ func (s *jsiiProxy_SqlPermissions) AddOverride(path *string, value interface{}) 
 }
 
 func (s *jsiiProxy_SqlPermissions) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -690,6 +735,9 @@ func (s *jsiiProxy_SqlPermissions) GetAnyMapAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_SqlPermissions) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -703,6 +751,9 @@ func (s *jsiiProxy_SqlPermissions) GetBooleanAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_SqlPermissions) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -716,6 +767,9 @@ func (s *jsiiProxy_SqlPermissions) GetBooleanMapAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_SqlPermissions) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -729,6 +783,9 @@ func (s *jsiiProxy_SqlPermissions) GetListAttribute(terraformAttribute *string) 
 }
 
 func (s *jsiiProxy_SqlPermissions) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -742,6 +799,9 @@ func (s *jsiiProxy_SqlPermissions) GetNumberAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_SqlPermissions) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -755,6 +815,9 @@ func (s *jsiiProxy_SqlPermissions) GetNumberListAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_SqlPermissions) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -768,6 +831,9 @@ func (s *jsiiProxy_SqlPermissions) GetNumberMapAttribute(terraformAttribute *str
 }
 
 func (s *jsiiProxy_SqlPermissions) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -781,6 +847,9 @@ func (s *jsiiProxy_SqlPermissions) GetStringAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_SqlPermissions) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -794,6 +863,9 @@ func (s *jsiiProxy_SqlPermissions) GetStringMapAttribute(terraformAttribute *str
 }
 
 func (s *jsiiProxy_SqlPermissions) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -807,6 +879,9 @@ func (s *jsiiProxy_SqlPermissions) InterpolationForAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_SqlPermissions) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -815,6 +890,9 @@ func (s *jsiiProxy_SqlPermissions) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (s *jsiiProxy_SqlPermissions) PutPrivilegeAssignments(value interface{}) {
+	if err := s.validatePutPrivilegeAssignmentsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putPrivilegeAssignments",

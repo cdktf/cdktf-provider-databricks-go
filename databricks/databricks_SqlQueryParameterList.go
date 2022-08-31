@@ -111,6 +111,9 @@ func (j *jsiiProxy_SqlQueryParameterList) WrapsSet() *bool {
 func NewSqlQueryParameterList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SqlQueryParameterList {
 	_init_.Initialize()
 
+	if err := validateNewSqlQueryParameterListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SqlQueryParameterList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewSqlQueryParameterList_Override(s SqlQueryParameterList, terraformResourc
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SqlQueryParameterList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_SqlQueryParameterList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SqlQueryParameterList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_SqlQueryParameterList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlQueryParameterList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_SqlQueryParameterList) SetTerraformResource(val cdktf.IInterp
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SqlQueryParameterList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_SqlQueryParameterList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SqlQueryParameterList) Get(index *float64) SqlQueryParameterOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns SqlQueryParameterOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_SqlQueryParameterList) Get(index *float64) SqlQueryParameterO
 }
 
 func (s *jsiiProxy_SqlQueryParameterList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

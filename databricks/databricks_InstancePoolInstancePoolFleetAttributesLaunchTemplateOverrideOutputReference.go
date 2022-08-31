@@ -197,6 +197,9 @@ func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 func NewInstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewInstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewInstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputRefer
 	)
 }
 
-func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference)SetAvailabilityZone(val *string) {
+	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"availabilityZone",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 	)
 }
 
-func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 	)
 }
 
-func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 	)
 }
 
-func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) SetInstanceType(val *string) {
+func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference)SetInstanceType(val *string) {
+	if err := j.validateSetInstanceTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceType",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 	)
 }
 
-func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 	)
 }
 
-func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 	)
 }
 
-func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -288,6 +312,9 @@ func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 }
 
 func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 }
 
 func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 }
 
 func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 }
 
 func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 }
 
 func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 }
 
 func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 }
 
 func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 }
 
 func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 }
 
 func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 }
 
 func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 }
 
 func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

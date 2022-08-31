@@ -197,6 +197,9 @@ func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) UsernameInput() *
 func NewClusterDockerImageBasicAuthOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ClusterDockerImageBasicAuthOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewClusterDockerImageBasicAuthOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ClusterDockerImageBasicAuthOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewClusterDockerImageBasicAuthOutputReference_Override(c ClusterDockerImage
 	)
 }
 
-func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) SetInternalValue(val *ClusterDockerImageBasicAuth) {
+func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference)SetInternalValue(val *ClusterDockerImageBasicAuth) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) SetPassword(val *string) {
+func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) SetPassword(val *
 	)
 }
 
-func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) SetUsername(val *string) {
+func (j *jsiiProxy_ClusterDockerImageBasicAuthOutputReference)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"username",
@@ -288,6 +312,9 @@ func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) ComputeFqn() *str
 }
 
 func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) GetAnyMapAttribut
 }
 
 func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) GetBooleanAttribu
 }
 
 func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) GetBooleanMapAttr
 }
 
 func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) GetListAttribute(
 }
 
 func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) GetNumberAttribut
 }
 
 func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) GetNumberListAttr
 }
 
 func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) GetNumberMapAttri
 }
 
 func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) GetStringAttribut
 }
 
 func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) InterpolationAsLi
 }
 
 func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) InterpolationForA
 }
 
 func (c *jsiiProxy_ClusterDockerImageBasicAuthOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

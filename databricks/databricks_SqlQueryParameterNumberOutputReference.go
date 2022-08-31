@@ -174,6 +174,9 @@ func (j *jsiiProxy_SqlQueryParameterNumberOutputReference) ValueInput() *float64
 func NewSqlQueryParameterNumberOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlQueryParameterNumberOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSqlQueryParameterNumberOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SqlQueryParameterNumberOutputReference{}
 
 	_jsii_.Create(
@@ -195,7 +198,10 @@ func NewSqlQueryParameterNumberOutputReference_Override(s SqlQueryParameterNumbe
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterNumberOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SqlQueryParameterNumberOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -203,7 +209,10 @@ func (j *jsiiProxy_SqlQueryParameterNumberOutputReference) SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterNumberOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SqlQueryParameterNumberOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -211,7 +220,10 @@ func (j *jsiiProxy_SqlQueryParameterNumberOutputReference) SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterNumberOutputReference) SetInternalValue(val *SqlQueryParameterNumber) {
+func (j *jsiiProxy_SqlQueryParameterNumberOutputReference)SetInternalValue(val *SqlQueryParameterNumber) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -219,7 +231,10 @@ func (j *jsiiProxy_SqlQueryParameterNumberOutputReference) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterNumberOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SqlQueryParameterNumberOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -227,7 +242,10 @@ func (j *jsiiProxy_SqlQueryParameterNumberOutputReference) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterNumberOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlQueryParameterNumberOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -235,7 +253,10 @@ func (j *jsiiProxy_SqlQueryParameterNumberOutputReference) SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterNumberOutputReference) SetValue(val *float64) {
+func (j *jsiiProxy_SqlQueryParameterNumberOutputReference)SetValue(val *float64) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -257,6 +278,9 @@ func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) ComputeFqn() *string 
 }
 
 func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -270,6 +294,9 @@ func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) GetAnyMapAttribute(te
 }
 
 func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -283,6 +310,9 @@ func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) GetBooleanAttribute(t
 }
 
 func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -296,6 +326,9 @@ func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) GetBooleanMapAttribut
 }
 
 func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -309,6 +342,9 @@ func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) GetListAttribute(terr
 }
 
 func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -322,6 +358,9 @@ func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) GetNumberAttribute(te
 }
 
 func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -335,6 +374,9 @@ func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) GetNumberListAttribut
 }
 
 func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -348,6 +390,9 @@ func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) GetNumberMapAttribute
 }
 
 func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -361,6 +406,9 @@ func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) GetStringAttribute(te
 }
 
 func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -387,6 +435,9 @@ func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) InterpolationAsList()
 }
 
 func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -400,6 +451,9 @@ func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) InterpolationForAttri
 }
 
 func (s *jsiiProxy_SqlQueryParameterNumberOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

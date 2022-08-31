@@ -411,6 +411,9 @@ func (j *jsiiProxy_TableColumnOutputReference) TypeTextInput() *string {
 func NewTableColumnOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) TableColumnOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewTableColumnOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TableColumnOutputReference{}
 
 	_jsii_.Create(
@@ -432,7 +435,10 @@ func NewTableColumnOutputReference_Override(t TableColumnOutputReference, terraf
 	)
 }
 
-func (j *jsiiProxy_TableColumnOutputReference) SetComment(val *string) {
+func (j *jsiiProxy_TableColumnOutputReference)SetComment(val *string) {
+	if err := j.validateSetCommentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"comment",
@@ -440,7 +446,10 @@ func (j *jsiiProxy_TableColumnOutputReference) SetComment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TableColumnOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TableColumnOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -448,7 +457,10 @@ func (j *jsiiProxy_TableColumnOutputReference) SetComplexObjectIndex(val interfa
 	)
 }
 
-func (j *jsiiProxy_TableColumnOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TableColumnOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -456,7 +468,10 @@ func (j *jsiiProxy_TableColumnOutputReference) SetComplexObjectIsFromSet(val *bo
 	)
 }
 
-func (j *jsiiProxy_TableColumnOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_TableColumnOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -464,7 +479,10 @@ func (j *jsiiProxy_TableColumnOutputReference) SetInternalValue(val interface{})
 	)
 }
 
-func (j *jsiiProxy_TableColumnOutputReference) SetName(val *string) {
+func (j *jsiiProxy_TableColumnOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -472,7 +490,10 @@ func (j *jsiiProxy_TableColumnOutputReference) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TableColumnOutputReference) SetNullable(val interface{}) {
+func (j *jsiiProxy_TableColumnOutputReference)SetNullable(val interface{}) {
+	if err := j.validateSetNullableParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nullable",
@@ -480,7 +501,10 @@ func (j *jsiiProxy_TableColumnOutputReference) SetNullable(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TableColumnOutputReference) SetPartitionIndex(val *float64) {
+func (j *jsiiProxy_TableColumnOutputReference)SetPartitionIndex(val *float64) {
+	if err := j.validateSetPartitionIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"partitionIndex",
@@ -488,7 +512,10 @@ func (j *jsiiProxy_TableColumnOutputReference) SetPartitionIndex(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_TableColumnOutputReference) SetPosition(val *float64) {
+func (j *jsiiProxy_TableColumnOutputReference)SetPosition(val *float64) {
+	if err := j.validateSetPositionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"position",
@@ -496,7 +523,10 @@ func (j *jsiiProxy_TableColumnOutputReference) SetPosition(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_TableColumnOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TableColumnOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -504,7 +534,10 @@ func (j *jsiiProxy_TableColumnOutputReference) SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_TableColumnOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TableColumnOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -512,7 +545,10 @@ func (j *jsiiProxy_TableColumnOutputReference) SetTerraformResource(val cdktf.II
 	)
 }
 
-func (j *jsiiProxy_TableColumnOutputReference) SetTypeIntervalType(val *string) {
+func (j *jsiiProxy_TableColumnOutputReference)SetTypeIntervalType(val *string) {
+	if err := j.validateSetTypeIntervalTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"typeIntervalType",
@@ -520,7 +556,10 @@ func (j *jsiiProxy_TableColumnOutputReference) SetTypeIntervalType(val *string) 
 	)
 }
 
-func (j *jsiiProxy_TableColumnOutputReference) SetTypeJson(val *string) {
+func (j *jsiiProxy_TableColumnOutputReference)SetTypeJson(val *string) {
+	if err := j.validateSetTypeJsonParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"typeJson",
@@ -528,7 +567,10 @@ func (j *jsiiProxy_TableColumnOutputReference) SetTypeJson(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TableColumnOutputReference) SetTypeName(val *string) {
+func (j *jsiiProxy_TableColumnOutputReference)SetTypeName(val *string) {
+	if err := j.validateSetTypeNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"typeName",
@@ -536,7 +578,10 @@ func (j *jsiiProxy_TableColumnOutputReference) SetTypeName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TableColumnOutputReference) SetTypePrecision(val *float64) {
+func (j *jsiiProxy_TableColumnOutputReference)SetTypePrecision(val *float64) {
+	if err := j.validateSetTypePrecisionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"typePrecision",
@@ -544,7 +589,10 @@ func (j *jsiiProxy_TableColumnOutputReference) SetTypePrecision(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_TableColumnOutputReference) SetTypeScale(val *float64) {
+func (j *jsiiProxy_TableColumnOutputReference)SetTypeScale(val *float64) {
+	if err := j.validateSetTypeScaleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"typeScale",
@@ -552,7 +600,10 @@ func (j *jsiiProxy_TableColumnOutputReference) SetTypeScale(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_TableColumnOutputReference) SetTypeText(val *string) {
+func (j *jsiiProxy_TableColumnOutputReference)SetTypeText(val *string) {
+	if err := j.validateSetTypeTextParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"typeText",
@@ -574,6 +625,9 @@ func (t *jsiiProxy_TableColumnOutputReference) ComputeFqn() *string {
 }
 
 func (t *jsiiProxy_TableColumnOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -587,6 +641,9 @@ func (t *jsiiProxy_TableColumnOutputReference) GetAnyMapAttribute(terraformAttri
 }
 
 func (t *jsiiProxy_TableColumnOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -600,6 +657,9 @@ func (t *jsiiProxy_TableColumnOutputReference) GetBooleanAttribute(terraformAttr
 }
 
 func (t *jsiiProxy_TableColumnOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -613,6 +673,9 @@ func (t *jsiiProxy_TableColumnOutputReference) GetBooleanMapAttribute(terraformA
 }
 
 func (t *jsiiProxy_TableColumnOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -626,6 +689,9 @@ func (t *jsiiProxy_TableColumnOutputReference) GetListAttribute(terraformAttribu
 }
 
 func (t *jsiiProxy_TableColumnOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -639,6 +705,9 @@ func (t *jsiiProxy_TableColumnOutputReference) GetNumberAttribute(terraformAttri
 }
 
 func (t *jsiiProxy_TableColumnOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -652,6 +721,9 @@ func (t *jsiiProxy_TableColumnOutputReference) GetNumberListAttribute(terraformA
 }
 
 func (t *jsiiProxy_TableColumnOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -665,6 +737,9 @@ func (t *jsiiProxy_TableColumnOutputReference) GetNumberMapAttribute(terraformAt
 }
 
 func (t *jsiiProxy_TableColumnOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -678,6 +753,9 @@ func (t *jsiiProxy_TableColumnOutputReference) GetStringAttribute(terraformAttri
 }
 
 func (t *jsiiProxy_TableColumnOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -704,6 +782,9 @@ func (t *jsiiProxy_TableColumnOutputReference) InterpolationAsList() cdktf.IReso
 }
 
 func (t *jsiiProxy_TableColumnOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -773,6 +854,9 @@ func (t *jsiiProxy_TableColumnOutputReference) ResetTypeScale() {
 }
 
 func (t *jsiiProxy_TableColumnOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

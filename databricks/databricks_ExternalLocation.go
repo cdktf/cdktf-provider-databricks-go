@@ -456,6 +456,9 @@ func (j *jsiiProxy_ExternalLocation) UrlInput() *string {
 func NewExternalLocation(scope constructs.Construct, id *string, config *ExternalLocationConfig) ExternalLocation {
 	_init_.Initialize()
 
+	if err := validateNewExternalLocationParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ExternalLocation{}
 
 	_jsii_.Create(
@@ -478,7 +481,10 @@ func NewExternalLocation_Override(e ExternalLocation, scope constructs.Construct
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation) SetComment(val *string) {
+func (j *jsiiProxy_ExternalLocation)SetComment(val *string) {
+	if err := j.validateSetCommentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"comment",
@@ -486,7 +492,10 @@ func (j *jsiiProxy_ExternalLocation) SetComment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation) SetConnection(val interface{}) {
+func (j *jsiiProxy_ExternalLocation)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -494,7 +503,7 @@ func (j *jsiiProxy_ExternalLocation) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation) SetCount(val *float64) {
+func (j *jsiiProxy_ExternalLocation)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -502,7 +511,10 @@ func (j *jsiiProxy_ExternalLocation) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation) SetCredentialName(val *string) {
+func (j *jsiiProxy_ExternalLocation)SetCredentialName(val *string) {
+	if err := j.validateSetCredentialNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"credentialName",
@@ -510,7 +522,7 @@ func (j *jsiiProxy_ExternalLocation) SetCredentialName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ExternalLocation)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -518,7 +530,7 @@ func (j *jsiiProxy_ExternalLocation) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ExternalLocation)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -526,7 +538,10 @@ func (j *jsiiProxy_ExternalLocation) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation) SetId(val *string) {
+func (j *jsiiProxy_ExternalLocation)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -534,7 +549,10 @@ func (j *jsiiProxy_ExternalLocation) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ExternalLocation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -542,7 +560,10 @@ func (j *jsiiProxy_ExternalLocation) SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation) SetMetastoreId(val *string) {
+func (j *jsiiProxy_ExternalLocation)SetMetastoreId(val *string) {
+	if err := j.validateSetMetastoreIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metastoreId",
@@ -550,7 +571,10 @@ func (j *jsiiProxy_ExternalLocation) SetMetastoreId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation) SetName(val *string) {
+func (j *jsiiProxy_ExternalLocation)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -558,7 +582,10 @@ func (j *jsiiProxy_ExternalLocation) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation) SetOwner(val *string) {
+func (j *jsiiProxy_ExternalLocation)SetOwner(val *string) {
+	if err := j.validateSetOwnerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"owner",
@@ -566,7 +593,7 @@ func (j *jsiiProxy_ExternalLocation) SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ExternalLocation)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -574,7 +601,10 @@ func (j *jsiiProxy_ExternalLocation) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ExternalLocation)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -582,7 +612,10 @@ func (j *jsiiProxy_ExternalLocation) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation) SetSkipValidation(val interface{}) {
+func (j *jsiiProxy_ExternalLocation)SetSkipValidation(val interface{}) {
+	if err := j.validateSetSkipValidationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"skipValidation",
@@ -590,7 +623,10 @@ func (j *jsiiProxy_ExternalLocation) SetSkipValidation(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ExternalLocation) SetUrl(val *string) {
+func (j *jsiiProxy_ExternalLocation)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"url",
@@ -618,6 +654,9 @@ func (j *jsiiProxy_ExternalLocation) SetUrl(val *string) {
 func ExternalLocation_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateExternalLocation_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -642,6 +681,9 @@ func ExternalLocation_TfResourceType() *string {
 }
 
 func (e *jsiiProxy_ExternalLocation) AddOverride(path *string, value interface{}) {
+	if err := e.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
@@ -650,6 +692,9 @@ func (e *jsiiProxy_ExternalLocation) AddOverride(path *string, value interface{}
 }
 
 func (e *jsiiProxy_ExternalLocation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -663,6 +708,9 @@ func (e *jsiiProxy_ExternalLocation) GetAnyMapAttribute(terraformAttribute *stri
 }
 
 func (e *jsiiProxy_ExternalLocation) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -676,6 +724,9 @@ func (e *jsiiProxy_ExternalLocation) GetBooleanAttribute(terraformAttribute *str
 }
 
 func (e *jsiiProxy_ExternalLocation) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -689,6 +740,9 @@ func (e *jsiiProxy_ExternalLocation) GetBooleanMapAttribute(terraformAttribute *
 }
 
 func (e *jsiiProxy_ExternalLocation) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -702,6 +756,9 @@ func (e *jsiiProxy_ExternalLocation) GetListAttribute(terraformAttribute *string
 }
 
 func (e *jsiiProxy_ExternalLocation) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -715,6 +772,9 @@ func (e *jsiiProxy_ExternalLocation) GetNumberAttribute(terraformAttribute *stri
 }
 
 func (e *jsiiProxy_ExternalLocation) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -728,6 +788,9 @@ func (e *jsiiProxy_ExternalLocation) GetNumberListAttribute(terraformAttribute *
 }
 
 func (e *jsiiProxy_ExternalLocation) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -741,6 +804,9 @@ func (e *jsiiProxy_ExternalLocation) GetNumberMapAttribute(terraformAttribute *s
 }
 
 func (e *jsiiProxy_ExternalLocation) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -754,6 +820,9 @@ func (e *jsiiProxy_ExternalLocation) GetStringAttribute(terraformAttribute *stri
 }
 
 func (e *jsiiProxy_ExternalLocation) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -767,6 +836,9 @@ func (e *jsiiProxy_ExternalLocation) GetStringMapAttribute(terraformAttribute *s
 }
 
 func (e *jsiiProxy_ExternalLocation) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -780,6 +852,9 @@ func (e *jsiiProxy_ExternalLocation) InterpolationForAttribute(terraformAttribut
 }
 
 func (e *jsiiProxy_ExternalLocation) OverrideLogicalId(newLogicalId *string) {
+	if err := e.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",

@@ -534,6 +534,9 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) TerraformResourceType() *string {
 func NewAzureAdlsGen2Mount(scope constructs.Construct, id *string, config *AzureAdlsGen2MountConfig) AzureAdlsGen2Mount {
 	_init_.Initialize()
 
+	if err := validateNewAzureAdlsGen2MountParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AzureAdlsGen2Mount{}
 
 	_jsii_.Create(
@@ -556,7 +559,10 @@ func NewAzureAdlsGen2Mount_Override(a AzureAdlsGen2Mount, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetClientId(val *string) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetClientId(val *string) {
+	if err := j.validateSetClientIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientId",
@@ -564,7 +570,10 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetClientId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetClientSecretKey(val *string) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetClientSecretKey(val *string) {
+	if err := j.validateSetClientSecretKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientSecretKey",
@@ -572,7 +581,10 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetClientSecretKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetClientSecretScope(val *string) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetClientSecretScope(val *string) {
+	if err := j.validateSetClientSecretScopeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientSecretScope",
@@ -580,7 +592,10 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetClientSecretScope(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetClusterId(val *string) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetClusterId(val *string) {
+	if err := j.validateSetClusterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterId",
@@ -588,7 +603,10 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetConnection(val interface{}) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -596,7 +614,10 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetContainerName(val *string) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetContainerName(val *string) {
+	if err := j.validateSetContainerNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"containerName",
@@ -604,7 +625,7 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetContainerName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetCount(val *float64) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -612,7 +633,7 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -620,7 +641,10 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetDirectory(val *string) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetDirectory(val *string) {
+	if err := j.validateSetDirectoryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"directory",
@@ -628,7 +652,7 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetDirectory(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -636,7 +660,10 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetId(val *string) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -644,7 +671,10 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetInitializeFileSystem(val interface{}) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetInitializeFileSystem(val interface{}) {
+	if err := j.validateSetInitializeFileSystemParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"initializeFileSystem",
@@ -652,7 +682,10 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetInitializeFileSystem(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -660,7 +693,10 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetMountName(val *string) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetMountName(val *string) {
+	if err := j.validateSetMountNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mountName",
@@ -668,7 +704,7 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetMountName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -676,7 +712,10 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -684,7 +723,10 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetStorageAccountName(val *string) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetStorageAccountName(val *string) {
+	if err := j.validateSetStorageAccountNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storageAccountName",
@@ -692,7 +734,10 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetStorageAccountName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAdlsGen2Mount) SetTenantId(val *string) {
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetTenantId(val *string) {
+	if err := j.validateSetTenantIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tenantId",
@@ -720,6 +765,9 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) SetTenantId(val *string) {
 func AzureAdlsGen2Mount_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateAzureAdlsGen2Mount_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -744,6 +792,9 @@ func AzureAdlsGen2Mount_TfResourceType() *string {
 }
 
 func (a *jsiiProxy_AzureAdlsGen2Mount) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
@@ -752,6 +803,9 @@ func (a *jsiiProxy_AzureAdlsGen2Mount) AddOverride(path *string, value interface
 }
 
 func (a *jsiiProxy_AzureAdlsGen2Mount) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -765,6 +819,9 @@ func (a *jsiiProxy_AzureAdlsGen2Mount) GetAnyMapAttribute(terraformAttribute *st
 }
 
 func (a *jsiiProxy_AzureAdlsGen2Mount) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -778,6 +835,9 @@ func (a *jsiiProxy_AzureAdlsGen2Mount) GetBooleanAttribute(terraformAttribute *s
 }
 
 func (a *jsiiProxy_AzureAdlsGen2Mount) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -791,6 +851,9 @@ func (a *jsiiProxy_AzureAdlsGen2Mount) GetBooleanMapAttribute(terraformAttribute
 }
 
 func (a *jsiiProxy_AzureAdlsGen2Mount) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -804,6 +867,9 @@ func (a *jsiiProxy_AzureAdlsGen2Mount) GetListAttribute(terraformAttribute *stri
 }
 
 func (a *jsiiProxy_AzureAdlsGen2Mount) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -817,6 +883,9 @@ func (a *jsiiProxy_AzureAdlsGen2Mount) GetNumberAttribute(terraformAttribute *st
 }
 
 func (a *jsiiProxy_AzureAdlsGen2Mount) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -830,6 +899,9 @@ func (a *jsiiProxy_AzureAdlsGen2Mount) GetNumberListAttribute(terraformAttribute
 }
 
 func (a *jsiiProxy_AzureAdlsGen2Mount) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -843,6 +915,9 @@ func (a *jsiiProxy_AzureAdlsGen2Mount) GetNumberMapAttribute(terraformAttribute 
 }
 
 func (a *jsiiProxy_AzureAdlsGen2Mount) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -856,6 +931,9 @@ func (a *jsiiProxy_AzureAdlsGen2Mount) GetStringAttribute(terraformAttribute *st
 }
 
 func (a *jsiiProxy_AzureAdlsGen2Mount) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -869,6 +947,9 @@ func (a *jsiiProxy_AzureAdlsGen2Mount) GetStringMapAttribute(terraformAttribute 
 }
 
 func (a *jsiiProxy_AzureAdlsGen2Mount) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -882,6 +963,9 @@ func (a *jsiiProxy_AzureAdlsGen2Mount) InterpolationForAttribute(terraformAttrib
 }
 
 func (a *jsiiProxy_AzureAdlsGen2Mount) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",

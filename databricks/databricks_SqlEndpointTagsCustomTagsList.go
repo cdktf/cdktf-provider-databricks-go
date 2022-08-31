@@ -111,6 +111,9 @@ func (j *jsiiProxy_SqlEndpointTagsCustomTagsList) WrapsSet() *bool {
 func NewSqlEndpointTagsCustomTagsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SqlEndpointTagsCustomTagsList {
 	_init_.Initialize()
 
+	if err := validateNewSqlEndpointTagsCustomTagsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SqlEndpointTagsCustomTagsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewSqlEndpointTagsCustomTagsList_Override(s SqlEndpointTagsCustomTagsList, 
 	)
 }
 
-func (j *jsiiProxy_SqlEndpointTagsCustomTagsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SqlEndpointTagsCustomTagsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_SqlEndpointTagsCustomTagsList) SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_SqlEndpointTagsCustomTagsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SqlEndpointTagsCustomTagsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_SqlEndpointTagsCustomTagsList) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_SqlEndpointTagsCustomTagsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlEndpointTagsCustomTagsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_SqlEndpointTagsCustomTagsList) SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_SqlEndpointTagsCustomTagsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SqlEndpointTagsCustomTagsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_SqlEndpointTagsCustomTagsList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SqlEndpointTagsCustomTagsList) Get(index *float64) SqlEndpointTagsCustomTagsOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns SqlEndpointTagsCustomTagsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_SqlEndpointTagsCustomTagsList) Get(index *float64) SqlEndpoin
 }
 
 func (s *jsiiProxy_SqlEndpointTagsCustomTagsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

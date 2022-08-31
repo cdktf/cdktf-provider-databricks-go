@@ -646,6 +646,9 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) TerraformResourceType() *string {
 func NewDataDatabricksSqlWarehouse(scope constructs.Construct, id *string, config *DataDatabricksSqlWarehouseConfig) DataDatabricksSqlWarehouse {
 	_init_.Initialize()
 
+	if err := validateNewDataDatabricksSqlWarehouseParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatabricksSqlWarehouse{}
 
 	_jsii_.Create(
@@ -668,7 +671,10 @@ func NewDataDatabricksSqlWarehouse_Override(d DataDatabricksSqlWarehouse, scope 
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetAutoStopMins(val *float64) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetAutoStopMins(val *float64) {
+	if err := j.validateSetAutoStopMinsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoStopMins",
@@ -676,7 +682,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetAutoStopMins(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetClusterSize(val *string) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetClusterSize(val *string) {
+	if err := j.validateSetClusterSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterSize",
@@ -684,7 +693,7 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetClusterSize(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetCount(val *float64) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -692,7 +701,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetDataSourceId(val *string) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetDataSourceId(val *string) {
+	if err := j.validateSetDataSourceIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dataSourceId",
@@ -700,7 +712,7 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetDataSourceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -708,7 +720,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetEnablePhoton(val interface{}) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetEnablePhoton(val interface{}) {
+	if err := j.validateSetEnablePhotonParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enablePhoton",
@@ -716,7 +731,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetEnablePhoton(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetEnableServerlessCompute(val interface{}) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetEnableServerlessCompute(val interface{}) {
+	if err := j.validateSetEnableServerlessComputeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enableServerlessCompute",
@@ -724,7 +742,7 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetEnableServerlessCompute(val in
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -732,7 +750,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetId(val *string) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -740,7 +761,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetInstanceProfileArn(val *string) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetInstanceProfileArn(val *string) {
+	if err := j.validateSetInstanceProfileArnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceProfileArn",
@@ -748,7 +772,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetInstanceProfileArn(val *string
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetJdbcUrl(val *string) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetJdbcUrl(val *string) {
+	if err := j.validateSetJdbcUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jdbcUrl",
@@ -756,7 +783,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetJdbcUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -764,7 +794,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetMaxNumClusters(val *float64) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetMaxNumClusters(val *float64) {
+	if err := j.validateSetMaxNumClustersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxNumClusters",
@@ -772,7 +805,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetMaxNumClusters(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetMinNumClusters(val *float64) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetMinNumClusters(val *float64) {
+	if err := j.validateSetMinNumClustersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minNumClusters",
@@ -780,7 +816,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetMinNumClusters(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetName(val *string) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -788,7 +827,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetNumClusters(val *float64) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetNumClusters(val *float64) {
+	if err := j.validateSetNumClustersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"numClusters",
@@ -796,7 +838,7 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetNumClusters(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -804,7 +846,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetSpotInstancePolicy(val *string) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetSpotInstancePolicy(val *string) {
+	if err := j.validateSetSpotInstancePolicyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"spotInstancePolicy",
@@ -812,7 +857,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetSpotInstancePolicy(val *string
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetState(val *string) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetState(val *string) {
+	if err := j.validateSetStateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"state",
@@ -840,6 +888,9 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) SetState(val *string) {
 func DataDatabricksSqlWarehouse_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataDatabricksSqlWarehouse_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -864,6 +915,9 @@ func DataDatabricksSqlWarehouse_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -872,6 +926,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) AddOverride(path *string, value i
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -885,6 +942,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetAnyMapAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -898,6 +958,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetBooleanAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -911,6 +974,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetBooleanMapAttribute(terraformA
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -924,6 +990,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetListAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -937,6 +1006,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetNumberAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -950,6 +1022,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetNumberListAttribute(terraformA
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -963,6 +1038,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetNumberMapAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -976,6 +1054,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetStringAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -989,6 +1070,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) GetStringMapAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1002,6 +1086,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) InterpolationForAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
@@ -1010,6 +1097,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) OverrideLogicalId(newLogicalId *s
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) PutChannel(value *DataDatabricksSqlWarehouseChannel) {
+	if err := d.validatePutChannelParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putChannel",
@@ -1018,6 +1108,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) PutChannel(value *DataDatabricksS
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) PutOdbcParams(value *DataDatabricksSqlWarehouseOdbcParams) {
+	if err := d.validatePutOdbcParamsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putOdbcParams",
@@ -1026,6 +1119,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) PutOdbcParams(value *DataDatabric
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) PutTags(value *DataDatabricksSqlWarehouseTags) {
+	if err := d.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putTags",

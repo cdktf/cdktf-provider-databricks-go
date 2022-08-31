@@ -111,6 +111,9 @@ func (j *jsiiProxy_MlflowModelTagsList) WrapsSet() *bool {
 func NewMlflowModelTagsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MlflowModelTagsList {
 	_init_.Initialize()
 
+	if err := validateNewMlflowModelTagsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MlflowModelTagsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewMlflowModelTagsList_Override(m MlflowModelTagsList, terraformResource cd
 	)
 }
 
-func (j *jsiiProxy_MlflowModelTagsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MlflowModelTagsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_MlflowModelTagsList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MlflowModelTagsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MlflowModelTagsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_MlflowModelTagsList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MlflowModelTagsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MlflowModelTagsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_MlflowModelTagsList) SetTerraformResource(val cdktf.IInterpol
 	)
 }
 
-func (j *jsiiProxy_MlflowModelTagsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MlflowModelTagsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_MlflowModelTagsList) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MlflowModelTagsList) Get(index *float64) MlflowModelTagsOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns MlflowModelTagsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_MlflowModelTagsList) Get(index *float64) MlflowModelTagsOutpu
 }
 
 func (m *jsiiProxy_MlflowModelTagsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

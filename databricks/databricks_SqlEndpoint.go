@@ -697,6 +697,9 @@ func (j *jsiiProxy_SqlEndpoint) TimeoutsInput() interface{} {
 func NewSqlEndpoint(scope constructs.Construct, id *string, config *SqlEndpointConfig) SqlEndpoint {
 	_init_.Initialize()
 
+	if err := validateNewSqlEndpointParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SqlEndpoint{}
 
 	_jsii_.Create(
@@ -719,7 +722,10 @@ func NewSqlEndpoint_Override(s SqlEndpoint, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetAutoStopMins(val *float64) {
+func (j *jsiiProxy_SqlEndpoint)SetAutoStopMins(val *float64) {
+	if err := j.validateSetAutoStopMinsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoStopMins",
@@ -727,7 +733,10 @@ func (j *jsiiProxy_SqlEndpoint) SetAutoStopMins(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetClusterSize(val *string) {
+func (j *jsiiProxy_SqlEndpoint)SetClusterSize(val *string) {
+	if err := j.validateSetClusterSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterSize",
@@ -735,7 +744,10 @@ func (j *jsiiProxy_SqlEndpoint) SetClusterSize(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetConnection(val interface{}) {
+func (j *jsiiProxy_SqlEndpoint)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -743,7 +755,7 @@ func (j *jsiiProxy_SqlEndpoint) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetCount(val *float64) {
+func (j *jsiiProxy_SqlEndpoint)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -751,7 +763,10 @@ func (j *jsiiProxy_SqlEndpoint) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetDataSourceId(val *string) {
+func (j *jsiiProxy_SqlEndpoint)SetDataSourceId(val *string) {
+	if err := j.validateSetDataSourceIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dataSourceId",
@@ -759,7 +774,7 @@ func (j *jsiiProxy_SqlEndpoint) SetDataSourceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SqlEndpoint)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -767,7 +782,10 @@ func (j *jsiiProxy_SqlEndpoint) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetEnablePhoton(val interface{}) {
+func (j *jsiiProxy_SqlEndpoint)SetEnablePhoton(val interface{}) {
+	if err := j.validateSetEnablePhotonParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enablePhoton",
@@ -775,7 +793,10 @@ func (j *jsiiProxy_SqlEndpoint) SetEnablePhoton(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetEnableServerlessCompute(val interface{}) {
+func (j *jsiiProxy_SqlEndpoint)SetEnableServerlessCompute(val interface{}) {
+	if err := j.validateSetEnableServerlessComputeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enableServerlessCompute",
@@ -783,7 +804,7 @@ func (j *jsiiProxy_SqlEndpoint) SetEnableServerlessCompute(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SqlEndpoint)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -791,7 +812,10 @@ func (j *jsiiProxy_SqlEndpoint) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetId(val *string) {
+func (j *jsiiProxy_SqlEndpoint)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -799,7 +823,10 @@ func (j *jsiiProxy_SqlEndpoint) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetInstanceProfileArn(val *string) {
+func (j *jsiiProxy_SqlEndpoint)SetInstanceProfileArn(val *string) {
+	if err := j.validateSetInstanceProfileArnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceProfileArn",
@@ -807,7 +834,10 @@ func (j *jsiiProxy_SqlEndpoint) SetInstanceProfileArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetJdbcUrl(val *string) {
+func (j *jsiiProxy_SqlEndpoint)SetJdbcUrl(val *string) {
+	if err := j.validateSetJdbcUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jdbcUrl",
@@ -815,7 +845,10 @@ func (j *jsiiProxy_SqlEndpoint) SetJdbcUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SqlEndpoint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -823,7 +856,10 @@ func (j *jsiiProxy_SqlEndpoint) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetMaxNumClusters(val *float64) {
+func (j *jsiiProxy_SqlEndpoint)SetMaxNumClusters(val *float64) {
+	if err := j.validateSetMaxNumClustersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxNumClusters",
@@ -831,7 +867,10 @@ func (j *jsiiProxy_SqlEndpoint) SetMaxNumClusters(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetMinNumClusters(val *float64) {
+func (j *jsiiProxy_SqlEndpoint)SetMinNumClusters(val *float64) {
+	if err := j.validateSetMinNumClustersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minNumClusters",
@@ -839,7 +878,10 @@ func (j *jsiiProxy_SqlEndpoint) SetMinNumClusters(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetName(val *string) {
+func (j *jsiiProxy_SqlEndpoint)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -847,7 +889,10 @@ func (j *jsiiProxy_SqlEndpoint) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetNumClusters(val *float64) {
+func (j *jsiiProxy_SqlEndpoint)SetNumClusters(val *float64) {
+	if err := j.validateSetNumClustersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"numClusters",
@@ -855,7 +900,7 @@ func (j *jsiiProxy_SqlEndpoint) SetNumClusters(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SqlEndpoint)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -863,7 +908,10 @@ func (j *jsiiProxy_SqlEndpoint) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SqlEndpoint)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -871,7 +919,10 @@ func (j *jsiiProxy_SqlEndpoint) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetSpotInstancePolicy(val *string) {
+func (j *jsiiProxy_SqlEndpoint)SetSpotInstancePolicy(val *string) {
+	if err := j.validateSetSpotInstancePolicyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"spotInstancePolicy",
@@ -879,7 +930,10 @@ func (j *jsiiProxy_SqlEndpoint) SetSpotInstancePolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint) SetState(val *string) {
+func (j *jsiiProxy_SqlEndpoint)SetState(val *string) {
+	if err := j.validateSetStateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"state",
@@ -907,6 +961,9 @@ func (j *jsiiProxy_SqlEndpoint) SetState(val *string) {
 func SqlEndpoint_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSqlEndpoint_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -931,6 +988,9 @@ func SqlEndpoint_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SqlEndpoint) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -939,6 +999,9 @@ func (s *jsiiProxy_SqlEndpoint) AddOverride(path *string, value interface{}) {
 }
 
 func (s *jsiiProxy_SqlEndpoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -952,6 +1015,9 @@ func (s *jsiiProxy_SqlEndpoint) GetAnyMapAttribute(terraformAttribute *string) *
 }
 
 func (s *jsiiProxy_SqlEndpoint) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -965,6 +1031,9 @@ func (s *jsiiProxy_SqlEndpoint) GetBooleanAttribute(terraformAttribute *string) 
 }
 
 func (s *jsiiProxy_SqlEndpoint) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -978,6 +1047,9 @@ func (s *jsiiProxy_SqlEndpoint) GetBooleanMapAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_SqlEndpoint) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -991,6 +1063,9 @@ func (s *jsiiProxy_SqlEndpoint) GetListAttribute(terraformAttribute *string) *[]
 }
 
 func (s *jsiiProxy_SqlEndpoint) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1004,6 +1079,9 @@ func (s *jsiiProxy_SqlEndpoint) GetNumberAttribute(terraformAttribute *string) *
 }
 
 func (s *jsiiProxy_SqlEndpoint) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1017,6 +1095,9 @@ func (s *jsiiProxy_SqlEndpoint) GetNumberListAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_SqlEndpoint) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1030,6 +1111,9 @@ func (s *jsiiProxy_SqlEndpoint) GetNumberMapAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_SqlEndpoint) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1043,6 +1127,9 @@ func (s *jsiiProxy_SqlEndpoint) GetStringAttribute(terraformAttribute *string) *
 }
 
 func (s *jsiiProxy_SqlEndpoint) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1056,6 +1143,9 @@ func (s *jsiiProxy_SqlEndpoint) GetStringMapAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_SqlEndpoint) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1069,6 +1159,9 @@ func (s *jsiiProxy_SqlEndpoint) InterpolationForAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_SqlEndpoint) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -1077,6 +1170,9 @@ func (s *jsiiProxy_SqlEndpoint) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (s *jsiiProxy_SqlEndpoint) PutChannel(value *SqlEndpointChannel) {
+	if err := s.validatePutChannelParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putChannel",
@@ -1085,6 +1181,9 @@ func (s *jsiiProxy_SqlEndpoint) PutChannel(value *SqlEndpointChannel) {
 }
 
 func (s *jsiiProxy_SqlEndpoint) PutOdbcParams(value *SqlEndpointOdbcParams) {
+	if err := s.validatePutOdbcParamsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putOdbcParams",
@@ -1093,6 +1192,9 @@ func (s *jsiiProxy_SqlEndpoint) PutOdbcParams(value *SqlEndpointOdbcParams) {
 }
 
 func (s *jsiiProxy_SqlEndpoint) PutTags(value *SqlEndpointTags) {
+	if err := s.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putTags",
@@ -1101,6 +1203,9 @@ func (s *jsiiProxy_SqlEndpoint) PutTags(value *SqlEndpointTags) {
 }
 
 func (s *jsiiProxy_SqlEndpoint) PutTimeouts(value *SqlEndpointTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",

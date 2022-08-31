@@ -111,6 +111,9 @@ func (j *jsiiProxy_JobNewClusterInitScriptsList) WrapsSet() *bool {
 func NewJobNewClusterInitScriptsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobNewClusterInitScriptsList {
 	_init_.Initialize()
 
+	if err := validateNewJobNewClusterInitScriptsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_JobNewClusterInitScriptsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewJobNewClusterInitScriptsList_Override(j JobNewClusterInitScriptsList, te
 	)
 }
 
-func (j *jsiiProxy_JobNewClusterInitScriptsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_JobNewClusterInitScriptsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_JobNewClusterInitScriptsList) SetInternalValue(val interface{
 	)
 }
 
-func (j *jsiiProxy_JobNewClusterInitScriptsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobNewClusterInitScriptsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_JobNewClusterInitScriptsList) SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_JobNewClusterInitScriptsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobNewClusterInitScriptsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_JobNewClusterInitScriptsList) SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_JobNewClusterInitScriptsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_JobNewClusterInitScriptsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (j *jsiiProxy_JobNewClusterInitScriptsList) ComputeFqn() *string {
 }
 
 func (j *jsiiProxy_JobNewClusterInitScriptsList) Get(index *float64) JobNewClusterInitScriptsOutputReference {
+	if err := j.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns JobNewClusterInitScriptsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (j *jsiiProxy_JobNewClusterInitScriptsList) Get(index *float64) JobNewClust
 }
 
 func (j *jsiiProxy_JobNewClusterInitScriptsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

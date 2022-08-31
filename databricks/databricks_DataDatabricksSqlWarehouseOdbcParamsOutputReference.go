@@ -268,6 +268,9 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) Terrafor
 func NewDataDatabricksSqlWarehouseOdbcParamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksSqlWarehouseOdbcParamsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataDatabricksSqlWarehouseOdbcParamsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference{}
 
 	_jsii_.Create(
@@ -289,7 +292,10 @@ func NewDataDatabricksSqlWarehouseOdbcParamsOutputReference_Override(d DataDatab
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -297,7 +303,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -305,7 +314,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetHost(val *string) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference)SetHost(val *string) {
+	if err := j.validateSetHostParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"host",
@@ -313,7 +325,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetHost(
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetHostname(val *string) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference)SetHostname(val *string) {
+	if err := j.validateSetHostnameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hostname",
@@ -321,7 +336,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetHostn
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetInternalValue(val *DataDatabricksSqlWarehouseOdbcParams) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference)SetInternalValue(val *DataDatabricksSqlWarehouseOdbcParams) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -329,7 +347,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetInter
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetPath(val *string) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -337,7 +358,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetPath(
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetPort(val *float64) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"port",
@@ -345,7 +369,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetPort(
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetProtocol(val *string) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference)SetProtocol(val *string) {
+	if err := j.validateSetProtocolParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"protocol",
@@ -353,7 +380,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetProto
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -361,7 +391,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -383,6 +416,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) ComputeF
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -396,6 +432,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) GetAnyMa
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -409,6 +448,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) GetBoole
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -422,6 +464,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) GetBoole
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -435,6 +480,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) GetListA
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -448,6 +496,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -461,6 +512,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -474,6 +528,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -487,6 +544,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) GetStrin
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -513,6 +573,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) Interpol
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -542,6 +605,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) ResetHos
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -174,6 +174,9 @@ func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference) ValueInput() *stri
 func NewSqlQueryParameterDateRangeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlQueryParameterDateRangeOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSqlQueryParameterDateRangeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SqlQueryParameterDateRangeOutputReference{}
 
 	_jsii_.Create(
@@ -195,7 +198,10 @@ func NewSqlQueryParameterDateRangeOutputReference_Override(s SqlQueryParameterDa
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -203,7 +209,10 @@ func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -211,7 +220,10 @@ func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference) SetInternalValue(val *SqlQueryParameterDateRange) {
+func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference)SetInternalValue(val *SqlQueryParameterDateRange) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -219,7 +231,10 @@ func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -227,7 +242,10 @@ func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -235,7 +253,10 @@ func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_SqlQueryParameterDateRangeOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -257,6 +278,9 @@ func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) ComputeFqn() *stri
 }
 
 func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -270,6 +294,9 @@ func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) GetAnyMapAttribute
 }
 
 func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -283,6 +310,9 @@ func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) GetBooleanAttribut
 }
 
 func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -296,6 +326,9 @@ func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) GetBooleanMapAttri
 }
 
 func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -309,6 +342,9 @@ func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) GetListAttribute(t
 }
 
 func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -322,6 +358,9 @@ func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) GetNumberAttribute
 }
 
 func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -335,6 +374,9 @@ func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) GetNumberListAttri
 }
 
 func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -348,6 +390,9 @@ func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) GetNumberMapAttrib
 }
 
 func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -361,6 +406,9 @@ func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) GetStringAttribute
 }
 
 func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -387,6 +435,9 @@ func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) InterpolationAsLis
 }
 
 func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -400,6 +451,9 @@ func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) InterpolationForAt
 }
 
 func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

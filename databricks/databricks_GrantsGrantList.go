@@ -111,6 +111,9 @@ func (j *jsiiProxy_GrantsGrantList) WrapsSet() *bool {
 func NewGrantsGrantList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GrantsGrantList {
 	_init_.Initialize()
 
+	if err := validateNewGrantsGrantListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GrantsGrantList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewGrantsGrantList_Override(g GrantsGrantList, terraformResource cdktf.IInt
 	)
 }
 
-func (j *jsiiProxy_GrantsGrantList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GrantsGrantList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_GrantsGrantList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GrantsGrantList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GrantsGrantList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_GrantsGrantList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GrantsGrantList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GrantsGrantList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_GrantsGrantList) SetTerraformResource(val cdktf.IInterpolatin
 	)
 }
 
-func (j *jsiiProxy_GrantsGrantList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GrantsGrantList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (g *jsiiProxy_GrantsGrantList) ComputeFqn() *string {
 }
 
 func (g *jsiiProxy_GrantsGrantList) Get(index *float64) GrantsGrantOutputReference {
+	if err := g.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns GrantsGrantOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (g *jsiiProxy_GrantsGrantList) Get(index *float64) GrantsGrantOutputReferen
 }
 
 func (g *jsiiProxy_GrantsGrantList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -244,6 +244,9 @@ func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) UntilDateInput() *stri
 func NewSqlQueryScheduleWeeklyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlQueryScheduleWeeklyOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSqlQueryScheduleWeeklyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SqlQueryScheduleWeeklyOutputReference{}
 
 	_jsii_.Create(
@@ -265,7 +268,10 @@ func NewSqlQueryScheduleWeeklyOutputReference_Override(s SqlQueryScheduleWeeklyO
 	)
 }
 
-func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -273,7 +279,10 @@ func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -281,7 +290,10 @@ func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) SetDayOfWeek(val *string) {
+func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference)SetDayOfWeek(val *string) {
+	if err := j.validateSetDayOfWeekParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dayOfWeek",
@@ -289,7 +301,10 @@ func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) SetDayOfWeek(val *stri
 	)
 }
 
-func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) SetInternalValue(val *SqlQueryScheduleWeekly) {
+func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference)SetInternalValue(val *SqlQueryScheduleWeekly) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -297,7 +312,10 @@ func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) SetIntervalWeeks(val *float64) {
+func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference)SetIntervalWeeks(val *float64) {
+	if err := j.validateSetIntervalWeeksParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"intervalWeeks",
@@ -305,7 +323,10 @@ func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) SetIntervalWeeks(val *
 	)
 }
 
-func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -313,7 +334,10 @@ func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -321,7 +345,10 @@ func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) SetTimeOfDay(val *string) {
+func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference)SetTimeOfDay(val *string) {
+	if err := j.validateSetTimeOfDayParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeOfDay",
@@ -329,7 +356,10 @@ func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) SetTimeOfDay(val *stri
 	)
 }
 
-func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) SetUntilDate(val *string) {
+func (j *jsiiProxy_SqlQueryScheduleWeeklyOutputReference)SetUntilDate(val *string) {
+	if err := j.validateSetUntilDateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"untilDate",
@@ -351,6 +381,9 @@ func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -364,6 +397,9 @@ func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) GetAnyMapAttribute(ter
 }
 
 func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -377,6 +413,9 @@ func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) GetBooleanAttribute(te
 }
 
 func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -390,6 +429,9 @@ func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) GetBooleanMapAttribute
 }
 
 func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -403,6 +445,9 @@ func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) GetListAttribute(terra
 }
 
 func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -416,6 +461,9 @@ func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) GetNumberAttribute(ter
 }
 
 func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -429,6 +477,9 @@ func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) GetNumberListAttribute
 }
 
 func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -442,6 +493,9 @@ func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) GetNumberMapAttribute(
 }
 
 func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -455,6 +509,9 @@ func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) GetStringAttribute(ter
 }
 
 func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -481,6 +538,9 @@ func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) InterpolationAsList() 
 }
 
 func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -502,6 +562,9 @@ func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) ResetUntilDate() {
 }
 
 func (s *jsiiProxy_SqlQueryScheduleWeeklyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

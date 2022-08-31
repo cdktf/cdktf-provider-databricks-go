@@ -493,6 +493,9 @@ func (j *jsiiProxy_Notebook) Url() *string {
 func NewNotebook(scope constructs.Construct, id *string, config *NotebookConfig) Notebook {
 	_init_.Initialize()
 
+	if err := validateNewNotebookParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_Notebook{}
 
 	_jsii_.Create(
@@ -515,7 +518,10 @@ func NewNotebook_Override(n Notebook, scope constructs.Construct, id *string, co
 	)
 }
 
-func (j *jsiiProxy_Notebook) SetConnection(val interface{}) {
+func (j *jsiiProxy_Notebook)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -523,7 +529,10 @@ func (j *jsiiProxy_Notebook) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Notebook) SetContentBase64(val *string) {
+func (j *jsiiProxy_Notebook)SetContentBase64(val *string) {
+	if err := j.validateSetContentBase64Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"contentBase64",
@@ -531,7 +540,7 @@ func (j *jsiiProxy_Notebook) SetContentBase64(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Notebook) SetCount(val *float64) {
+func (j *jsiiProxy_Notebook)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -539,7 +548,7 @@ func (j *jsiiProxy_Notebook) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Notebook) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Notebook)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -547,7 +556,7 @@ func (j *jsiiProxy_Notebook) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Notebook) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Notebook)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -555,7 +564,10 @@ func (j *jsiiProxy_Notebook) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Notebook) SetFormat(val *string) {
+func (j *jsiiProxy_Notebook)SetFormat(val *string) {
+	if err := j.validateSetFormatParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"format",
@@ -563,7 +575,10 @@ func (j *jsiiProxy_Notebook) SetFormat(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Notebook) SetId(val *string) {
+func (j *jsiiProxy_Notebook)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -571,7 +586,10 @@ func (j *jsiiProxy_Notebook) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Notebook) SetLanguage(val *string) {
+func (j *jsiiProxy_Notebook)SetLanguage(val *string) {
+	if err := j.validateSetLanguageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"language",
@@ -579,7 +597,10 @@ func (j *jsiiProxy_Notebook) SetLanguage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Notebook) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Notebook)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -587,7 +608,10 @@ func (j *jsiiProxy_Notebook) SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_Notebook) SetMd5(val *string) {
+func (j *jsiiProxy_Notebook)SetMd5(val *string) {
+	if err := j.validateSetMd5Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"md5",
@@ -595,7 +619,10 @@ func (j *jsiiProxy_Notebook) SetMd5(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Notebook) SetObjectId(val *float64) {
+func (j *jsiiProxy_Notebook)SetObjectId(val *float64) {
+	if err := j.validateSetObjectIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"objectId",
@@ -603,7 +630,10 @@ func (j *jsiiProxy_Notebook) SetObjectId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Notebook) SetObjectType(val *string) {
+func (j *jsiiProxy_Notebook)SetObjectType(val *string) {
+	if err := j.validateSetObjectTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"objectType",
@@ -611,7 +641,10 @@ func (j *jsiiProxy_Notebook) SetObjectType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Notebook) SetPath(val *string) {
+func (j *jsiiProxy_Notebook)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -619,7 +652,7 @@ func (j *jsiiProxy_Notebook) SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Notebook) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Notebook)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -627,7 +660,10 @@ func (j *jsiiProxy_Notebook) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Notebook) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Notebook)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -635,7 +671,10 @@ func (j *jsiiProxy_Notebook) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Notebook) SetSource(val *string) {
+func (j *jsiiProxy_Notebook)SetSource(val *string) {
+	if err := j.validateSetSourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"source",
@@ -663,6 +702,9 @@ func (j *jsiiProxy_Notebook) SetSource(val *string) {
 func Notebook_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateNotebook_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -687,6 +729,9 @@ func Notebook_TfResourceType() *string {
 }
 
 func (n *jsiiProxy_Notebook) AddOverride(path *string, value interface{}) {
+	if err := n.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
@@ -695,6 +740,9 @@ func (n *jsiiProxy_Notebook) AddOverride(path *string, value interface{}) {
 }
 
 func (n *jsiiProxy_Notebook) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -708,6 +756,9 @@ func (n *jsiiProxy_Notebook) GetAnyMapAttribute(terraformAttribute *string) *map
 }
 
 func (n *jsiiProxy_Notebook) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -721,6 +772,9 @@ func (n *jsiiProxy_Notebook) GetBooleanAttribute(terraformAttribute *string) cdk
 }
 
 func (n *jsiiProxy_Notebook) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -734,6 +788,9 @@ func (n *jsiiProxy_Notebook) GetBooleanMapAttribute(terraformAttribute *string) 
 }
 
 func (n *jsiiProxy_Notebook) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -747,6 +804,9 @@ func (n *jsiiProxy_Notebook) GetListAttribute(terraformAttribute *string) *[]*st
 }
 
 func (n *jsiiProxy_Notebook) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -760,6 +820,9 @@ func (n *jsiiProxy_Notebook) GetNumberAttribute(terraformAttribute *string) *flo
 }
 
 func (n *jsiiProxy_Notebook) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -773,6 +836,9 @@ func (n *jsiiProxy_Notebook) GetNumberListAttribute(terraformAttribute *string) 
 }
 
 func (n *jsiiProxy_Notebook) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -786,6 +852,9 @@ func (n *jsiiProxy_Notebook) GetNumberMapAttribute(terraformAttribute *string) *
 }
 
 func (n *jsiiProxy_Notebook) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -799,6 +868,9 @@ func (n *jsiiProxy_Notebook) GetStringAttribute(terraformAttribute *string) *str
 }
 
 func (n *jsiiProxy_Notebook) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -812,6 +884,9 @@ func (n *jsiiProxy_Notebook) GetStringMapAttribute(terraformAttribute *string) *
 }
 
 func (n *jsiiProxy_Notebook) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -825,6 +900,9 @@ func (n *jsiiProxy_Notebook) InterpolationForAttribute(terraformAttribute *strin
 }
 
 func (n *jsiiProxy_Notebook) OverrideLogicalId(newLogicalId *string) {
+	if err := n.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",

@@ -889,6 +889,9 @@ func (j *jsiiProxy_MwsWorkspaces) WorkspaceUrlInput() *string {
 func NewMwsWorkspaces(scope constructs.Construct, id *string, config *MwsWorkspacesConfig) MwsWorkspaces {
 	_init_.Initialize()
 
+	if err := validateNewMwsWorkspacesParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MwsWorkspaces{}
 
 	_jsii_.Create(
@@ -911,7 +914,10 @@ func NewMwsWorkspaces_Override(m MwsWorkspaces, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetAccountId(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -919,7 +925,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetAwsRegion(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetAwsRegion(val *string) {
+	if err := j.validateSetAwsRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsRegion",
@@ -927,7 +936,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetAwsRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetCloud(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetCloud(val *string) {
+	if err := j.validateSetCloudParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cloud",
@@ -935,7 +947,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetCloud(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetConnection(val interface{}) {
+func (j *jsiiProxy_MwsWorkspaces)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -943,7 +958,7 @@ func (j *jsiiProxy_MwsWorkspaces) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetCount(val *float64) {
+func (j *jsiiProxy_MwsWorkspaces)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -951,7 +966,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetCreationTime(val *float64) {
+func (j *jsiiProxy_MwsWorkspaces)SetCreationTime(val *float64) {
+	if err := j.validateSetCreationTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"creationTime",
@@ -959,7 +977,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetCreationTime(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetCredentialsId(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetCredentialsId(val *string) {
+	if err := j.validateSetCredentialsIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"credentialsId",
@@ -967,7 +988,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetCredentialsId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetCustomerManagedKeyId(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetCustomerManagedKeyId(val *string) {
+	if err := j.validateSetCustomerManagedKeyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"customerManagedKeyId",
@@ -975,7 +999,7 @@ func (j *jsiiProxy_MwsWorkspaces) SetCustomerManagedKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MwsWorkspaces)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -983,7 +1007,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetDeploymentName(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetDeploymentName(val *string) {
+	if err := j.validateSetDeploymentNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deploymentName",
@@ -991,7 +1018,7 @@ func (j *jsiiProxy_MwsWorkspaces) SetDeploymentName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MwsWorkspaces)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -999,7 +1026,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetId(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1007,7 +1037,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetIsNoPublicIpEnabled(val interface{}) {
+func (j *jsiiProxy_MwsWorkspaces)SetIsNoPublicIpEnabled(val interface{}) {
+	if err := j.validateSetIsNoPublicIpEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isNoPublicIpEnabled",
@@ -1015,7 +1048,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetIsNoPublicIpEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MwsWorkspaces)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1023,7 +1059,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetLocation(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"location",
@@ -1031,7 +1070,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetManagedServicesCustomerManagedKeyId(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetManagedServicesCustomerManagedKeyId(val *string) {
+	if err := j.validateSetManagedServicesCustomerManagedKeyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"managedServicesCustomerManagedKeyId",
@@ -1039,7 +1081,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetManagedServicesCustomerManagedKeyId(val *st
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetNetworkId(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetNetworkId(val *string) {
+	if err := j.validateSetNetworkIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"networkId",
@@ -1047,7 +1092,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetNetworkId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetPricingTier(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetPricingTier(val *string) {
+	if err := j.validateSetPricingTierParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pricingTier",
@@ -1055,7 +1103,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetPricingTier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetPrivateAccessSettingsId(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetPrivateAccessSettingsId(val *string) {
+	if err := j.validateSetPrivateAccessSettingsIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privateAccessSettingsId",
@@ -1063,7 +1114,7 @@ func (j *jsiiProxy_MwsWorkspaces) SetPrivateAccessSettingsId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MwsWorkspaces)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1071,7 +1122,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MwsWorkspaces)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1079,7 +1133,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetStorageConfigurationId(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetStorageConfigurationId(val *string) {
+	if err := j.validateSetStorageConfigurationIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storageConfigurationId",
@@ -1087,7 +1144,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetStorageConfigurationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetStorageCustomerManagedKeyId(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetStorageCustomerManagedKeyId(val *string) {
+	if err := j.validateSetStorageCustomerManagedKeyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storageCustomerManagedKeyId",
@@ -1095,7 +1155,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetStorageCustomerManagedKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetWorkspaceId(val *float64) {
+func (j *jsiiProxy_MwsWorkspaces)SetWorkspaceId(val *float64) {
+	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"workspaceId",
@@ -1103,7 +1166,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetWorkspaceId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetWorkspaceName(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetWorkspaceName(val *string) {
+	if err := j.validateSetWorkspaceNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"workspaceName",
@@ -1111,7 +1177,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetWorkspaceName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetWorkspaceStatus(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetWorkspaceStatus(val *string) {
+	if err := j.validateSetWorkspaceStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"workspaceStatus",
@@ -1119,7 +1188,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetWorkspaceStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetWorkspaceStatusMessage(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetWorkspaceStatusMessage(val *string) {
+	if err := j.validateSetWorkspaceStatusMessageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"workspaceStatusMessage",
@@ -1127,7 +1199,10 @@ func (j *jsiiProxy_MwsWorkspaces) SetWorkspaceStatusMessage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsWorkspaces) SetWorkspaceUrl(val *string) {
+func (j *jsiiProxy_MwsWorkspaces)SetWorkspaceUrl(val *string) {
+	if err := j.validateSetWorkspaceUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"workspaceUrl",
@@ -1155,6 +1230,9 @@ func (j *jsiiProxy_MwsWorkspaces) SetWorkspaceUrl(val *string) {
 func MwsWorkspaces_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateMwsWorkspaces_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1179,6 +1257,9 @@ func MwsWorkspaces_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_MwsWorkspaces) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -1187,6 +1268,9 @@ func (m *jsiiProxy_MwsWorkspaces) AddOverride(path *string, value interface{}) {
 }
 
 func (m *jsiiProxy_MwsWorkspaces) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1200,6 +1284,9 @@ func (m *jsiiProxy_MwsWorkspaces) GetAnyMapAttribute(terraformAttribute *string)
 }
 
 func (m *jsiiProxy_MwsWorkspaces) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1213,6 +1300,9 @@ func (m *jsiiProxy_MwsWorkspaces) GetBooleanAttribute(terraformAttribute *string
 }
 
 func (m *jsiiProxy_MwsWorkspaces) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1226,6 +1316,9 @@ func (m *jsiiProxy_MwsWorkspaces) GetBooleanMapAttribute(terraformAttribute *str
 }
 
 func (m *jsiiProxy_MwsWorkspaces) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1239,6 +1332,9 @@ func (m *jsiiProxy_MwsWorkspaces) GetListAttribute(terraformAttribute *string) *
 }
 
 func (m *jsiiProxy_MwsWorkspaces) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1252,6 +1348,9 @@ func (m *jsiiProxy_MwsWorkspaces) GetNumberAttribute(terraformAttribute *string)
 }
 
 func (m *jsiiProxy_MwsWorkspaces) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1265,6 +1364,9 @@ func (m *jsiiProxy_MwsWorkspaces) GetNumberListAttribute(terraformAttribute *str
 }
 
 func (m *jsiiProxy_MwsWorkspaces) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1278,6 +1380,9 @@ func (m *jsiiProxy_MwsWorkspaces) GetNumberMapAttribute(terraformAttribute *stri
 }
 
 func (m *jsiiProxy_MwsWorkspaces) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1291,6 +1396,9 @@ func (m *jsiiProxy_MwsWorkspaces) GetStringAttribute(terraformAttribute *string)
 }
 
 func (m *jsiiProxy_MwsWorkspaces) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1304,6 +1412,9 @@ func (m *jsiiProxy_MwsWorkspaces) GetStringMapAttribute(terraformAttribute *stri
 }
 
 func (m *jsiiProxy_MwsWorkspaces) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1317,6 +1428,9 @@ func (m *jsiiProxy_MwsWorkspaces) InterpolationForAttribute(terraformAttribute *
 }
 
 func (m *jsiiProxy_MwsWorkspaces) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
@@ -1325,6 +1439,9 @@ func (m *jsiiProxy_MwsWorkspaces) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (m *jsiiProxy_MwsWorkspaces) PutCloudResourceBucket(value *MwsWorkspacesCloudResourceBucket) {
+	if err := m.validatePutCloudResourceBucketParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putCloudResourceBucket",
@@ -1333,6 +1450,9 @@ func (m *jsiiProxy_MwsWorkspaces) PutCloudResourceBucket(value *MwsWorkspacesClo
 }
 
 func (m *jsiiProxy_MwsWorkspaces) PutExternalCustomerInfo(value *MwsWorkspacesExternalCustomerInfo) {
+	if err := m.validatePutExternalCustomerInfoParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putExternalCustomerInfo",
@@ -1341,6 +1461,9 @@ func (m *jsiiProxy_MwsWorkspaces) PutExternalCustomerInfo(value *MwsWorkspacesEx
 }
 
 func (m *jsiiProxy_MwsWorkspaces) PutNetwork(value *MwsWorkspacesNetwork) {
+	if err := m.validatePutNetworkParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putNetwork",
@@ -1349,6 +1472,9 @@ func (m *jsiiProxy_MwsWorkspaces) PutNetwork(value *MwsWorkspacesNetwork) {
 }
 
 func (m *jsiiProxy_MwsWorkspaces) PutTimeouts(value *MwsWorkspacesTimeouts) {
+	if err := m.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
@@ -1357,6 +1483,9 @@ func (m *jsiiProxy_MwsWorkspaces) PutTimeouts(value *MwsWorkspacesTimeouts) {
 }
 
 func (m *jsiiProxy_MwsWorkspaces) PutToken(value *MwsWorkspacesToken) {
+	if err := m.validatePutTokenParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putToken",

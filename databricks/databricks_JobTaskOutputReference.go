@@ -631,6 +631,9 @@ func (j *jsiiProxy_JobTaskOutputReference) TimeoutSecondsInput() *float64 {
 func NewJobTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) JobTaskOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewJobTaskOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_JobTaskOutputReference{}
 
 	_jsii_.Create(
@@ -652,7 +655,10 @@ func NewJobTaskOutputReference_Override(j JobTaskOutputReference, terraformResou
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobTaskOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -660,7 +666,10 @@ func (j *jsiiProxy_JobTaskOutputReference) SetComplexObjectIndex(val interface{}
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobTaskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -668,7 +677,10 @@ func (j *jsiiProxy_JobTaskOutputReference) SetComplexObjectIsFromSet(val *bool) 
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) SetDescription(val *string) {
+func (j *jsiiProxy_JobTaskOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -676,7 +688,10 @@ func (j *jsiiProxy_JobTaskOutputReference) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) SetExistingClusterId(val *string) {
+func (j *jsiiProxy_JobTaskOutputReference)SetExistingClusterId(val *string) {
+	if err := j.validateSetExistingClusterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"existingClusterId",
@@ -684,7 +699,10 @@ func (j *jsiiProxy_JobTaskOutputReference) SetExistingClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_JobTaskOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -692,7 +710,10 @@ func (j *jsiiProxy_JobTaskOutputReference) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) SetJobClusterKey(val *string) {
+func (j *jsiiProxy_JobTaskOutputReference)SetJobClusterKey(val *string) {
+	if err := j.validateSetJobClusterKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jobClusterKey",
@@ -700,7 +721,10 @@ func (j *jsiiProxy_JobTaskOutputReference) SetJobClusterKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) SetMaxRetries(val *float64) {
+func (j *jsiiProxy_JobTaskOutputReference)SetMaxRetries(val *float64) {
+	if err := j.validateSetMaxRetriesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxRetries",
@@ -708,7 +732,10 @@ func (j *jsiiProxy_JobTaskOutputReference) SetMaxRetries(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) SetMinRetryIntervalMillis(val *float64) {
+func (j *jsiiProxy_JobTaskOutputReference)SetMinRetryIntervalMillis(val *float64) {
+	if err := j.validateSetMinRetryIntervalMillisParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minRetryIntervalMillis",
@@ -716,7 +743,10 @@ func (j *jsiiProxy_JobTaskOutputReference) SetMinRetryIntervalMillis(val *float6
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) SetRetryOnTimeout(val interface{}) {
+func (j *jsiiProxy_JobTaskOutputReference)SetRetryOnTimeout(val interface{}) {
+	if err := j.validateSetRetryOnTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"retryOnTimeout",
@@ -724,7 +754,10 @@ func (j *jsiiProxy_JobTaskOutputReference) SetRetryOnTimeout(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) SetTaskKey(val *string) {
+func (j *jsiiProxy_JobTaskOutputReference)SetTaskKey(val *string) {
+	if err := j.validateSetTaskKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"taskKey",
@@ -732,7 +765,10 @@ func (j *jsiiProxy_JobTaskOutputReference) SetTaskKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobTaskOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -740,7 +776,10 @@ func (j *jsiiProxy_JobTaskOutputReference) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobTaskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -748,7 +787,10 @@ func (j *jsiiProxy_JobTaskOutputReference) SetTerraformResource(val cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) SetTimeoutSeconds(val *float64) {
+func (j *jsiiProxy_JobTaskOutputReference)SetTimeoutSeconds(val *float64) {
+	if err := j.validateSetTimeoutSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeoutSeconds",
@@ -770,6 +812,9 @@ func (j *jsiiProxy_JobTaskOutputReference) ComputeFqn() *string {
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -783,6 +828,9 @@ func (j *jsiiProxy_JobTaskOutputReference) GetAnyMapAttribute(terraformAttribute
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -796,6 +844,9 @@ func (j *jsiiProxy_JobTaskOutputReference) GetBooleanAttribute(terraformAttribut
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := j.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -809,6 +860,9 @@ func (j *jsiiProxy_JobTaskOutputReference) GetBooleanMapAttribute(terraformAttri
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := j.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -822,6 +876,9 @@ func (j *jsiiProxy_JobTaskOutputReference) GetListAttribute(terraformAttribute *
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := j.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -835,6 +892,9 @@ func (j *jsiiProxy_JobTaskOutputReference) GetNumberAttribute(terraformAttribute
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := j.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -848,6 +908,9 @@ func (j *jsiiProxy_JobTaskOutputReference) GetNumberListAttribute(terraformAttri
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := j.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -861,6 +924,9 @@ func (j *jsiiProxy_JobTaskOutputReference) GetNumberMapAttribute(terraformAttrib
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := j.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -874,6 +940,9 @@ func (j *jsiiProxy_JobTaskOutputReference) GetStringAttribute(terraformAttribute
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := j.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -900,6 +969,9 @@ func (j *jsiiProxy_JobTaskOutputReference) InterpolationAsList() cdktf.IResolvab
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -913,6 +985,9 @@ func (j *jsiiProxy_JobTaskOutputReference) InterpolationForAttribute(property *s
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) PutDbtTask(value *JobTaskDbtTask) {
+	if err := j.validatePutDbtTaskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		j,
 		"putDbtTask",
@@ -921,6 +996,9 @@ func (j *jsiiProxy_JobTaskOutputReference) PutDbtTask(value *JobTaskDbtTask) {
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) PutDependsOn(value interface{}) {
+	if err := j.validatePutDependsOnParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		j,
 		"putDependsOn",
@@ -929,6 +1007,9 @@ func (j *jsiiProxy_JobTaskOutputReference) PutDependsOn(value interface{}) {
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) PutEmailNotifications(value *JobTaskEmailNotifications) {
+	if err := j.validatePutEmailNotificationsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		j,
 		"putEmailNotifications",
@@ -937,6 +1018,9 @@ func (j *jsiiProxy_JobTaskOutputReference) PutEmailNotifications(value *JobTaskE
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) PutLibrary(value interface{}) {
+	if err := j.validatePutLibraryParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		j,
 		"putLibrary",
@@ -945,6 +1029,9 @@ func (j *jsiiProxy_JobTaskOutputReference) PutLibrary(value interface{}) {
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) PutNewCluster(value *JobTaskNewCluster) {
+	if err := j.validatePutNewClusterParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		j,
 		"putNewCluster",
@@ -953,6 +1040,9 @@ func (j *jsiiProxy_JobTaskOutputReference) PutNewCluster(value *JobTaskNewCluste
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) PutNotebookTask(value *JobTaskNotebookTask) {
+	if err := j.validatePutNotebookTaskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		j,
 		"putNotebookTask",
@@ -961,6 +1051,9 @@ func (j *jsiiProxy_JobTaskOutputReference) PutNotebookTask(value *JobTaskNoteboo
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) PutPipelineTask(value *JobTaskPipelineTask) {
+	if err := j.validatePutPipelineTaskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		j,
 		"putPipelineTask",
@@ -969,6 +1062,9 @@ func (j *jsiiProxy_JobTaskOutputReference) PutPipelineTask(value *JobTaskPipelin
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) PutPythonWheelTask(value *JobTaskPythonWheelTask) {
+	if err := j.validatePutPythonWheelTaskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		j,
 		"putPythonWheelTask",
@@ -977,6 +1073,9 @@ func (j *jsiiProxy_JobTaskOutputReference) PutPythonWheelTask(value *JobTaskPyth
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) PutSparkJarTask(value *JobTaskSparkJarTask) {
+	if err := j.validatePutSparkJarTaskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		j,
 		"putSparkJarTask",
@@ -985,6 +1084,9 @@ func (j *jsiiProxy_JobTaskOutputReference) PutSparkJarTask(value *JobTaskSparkJa
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) PutSparkPythonTask(value *JobTaskSparkPythonTask) {
+	if err := j.validatePutSparkPythonTaskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		j,
 		"putSparkPythonTask",
@@ -993,6 +1095,9 @@ func (j *jsiiProxy_JobTaskOutputReference) PutSparkPythonTask(value *JobTaskSpar
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) PutSparkSubmitTask(value *JobTaskSparkSubmitTask) {
+	if err := j.validatePutSparkSubmitTaskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		j,
 		"putSparkSubmitTask",
@@ -1001,6 +1106,9 @@ func (j *jsiiProxy_JobTaskOutputReference) PutSparkSubmitTask(value *JobTaskSpar
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) PutSqlTask(value *JobTaskSqlTask) {
+	if err := j.validatePutSqlTaskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		j,
 		"putSqlTask",
@@ -1169,6 +1277,9 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetTimeoutSeconds() {
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

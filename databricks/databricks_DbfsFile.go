@@ -408,6 +408,9 @@ func (j *jsiiProxy_DbfsFile) TerraformResourceType() *string {
 func NewDbfsFile(scope constructs.Construct, id *string, config *DbfsFileConfig) DbfsFile {
 	_init_.Initialize()
 
+	if err := validateNewDbfsFileParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DbfsFile{}
 
 	_jsii_.Create(
@@ -430,7 +433,10 @@ func NewDbfsFile_Override(d DbfsFile, scope constructs.Construct, id *string, co
 	)
 }
 
-func (j *jsiiProxy_DbfsFile) SetConnection(val interface{}) {
+func (j *jsiiProxy_DbfsFile)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -438,7 +444,10 @@ func (j *jsiiProxy_DbfsFile) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbfsFile) SetContentBase64(val *string) {
+func (j *jsiiProxy_DbfsFile)SetContentBase64(val *string) {
+	if err := j.validateSetContentBase64Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"contentBase64",
@@ -446,7 +455,7 @@ func (j *jsiiProxy_DbfsFile) SetContentBase64(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbfsFile) SetCount(val *float64) {
+func (j *jsiiProxy_DbfsFile)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -454,7 +463,7 @@ func (j *jsiiProxy_DbfsFile) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DbfsFile) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DbfsFile)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -462,7 +471,7 @@ func (j *jsiiProxy_DbfsFile) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DbfsFile) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DbfsFile)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -470,7 +479,10 @@ func (j *jsiiProxy_DbfsFile) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DbfsFile) SetId(val *string) {
+func (j *jsiiProxy_DbfsFile)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -478,7 +490,10 @@ func (j *jsiiProxy_DbfsFile) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbfsFile) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DbfsFile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -486,7 +501,10 @@ func (j *jsiiProxy_DbfsFile) SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_DbfsFile) SetMd5(val *string) {
+func (j *jsiiProxy_DbfsFile)SetMd5(val *string) {
+	if err := j.validateSetMd5Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"md5",
@@ -494,7 +512,10 @@ func (j *jsiiProxy_DbfsFile) SetMd5(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbfsFile) SetPath(val *string) {
+func (j *jsiiProxy_DbfsFile)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -502,7 +523,7 @@ func (j *jsiiProxy_DbfsFile) SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbfsFile) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DbfsFile)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -510,7 +531,10 @@ func (j *jsiiProxy_DbfsFile) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DbfsFile) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DbfsFile)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -518,7 +542,10 @@ func (j *jsiiProxy_DbfsFile) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbfsFile) SetSource(val *string) {
+func (j *jsiiProxy_DbfsFile)SetSource(val *string) {
+	if err := j.validateSetSourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"source",
@@ -546,6 +573,9 @@ func (j *jsiiProxy_DbfsFile) SetSource(val *string) {
 func DbfsFile_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDbfsFile_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -570,6 +600,9 @@ func DbfsFile_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DbfsFile) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -578,6 +611,9 @@ func (d *jsiiProxy_DbfsFile) AddOverride(path *string, value interface{}) {
 }
 
 func (d *jsiiProxy_DbfsFile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -591,6 +627,9 @@ func (d *jsiiProxy_DbfsFile) GetAnyMapAttribute(terraformAttribute *string) *map
 }
 
 func (d *jsiiProxy_DbfsFile) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -604,6 +643,9 @@ func (d *jsiiProxy_DbfsFile) GetBooleanAttribute(terraformAttribute *string) cdk
 }
 
 func (d *jsiiProxy_DbfsFile) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -617,6 +659,9 @@ func (d *jsiiProxy_DbfsFile) GetBooleanMapAttribute(terraformAttribute *string) 
 }
 
 func (d *jsiiProxy_DbfsFile) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -630,6 +675,9 @@ func (d *jsiiProxy_DbfsFile) GetListAttribute(terraformAttribute *string) *[]*st
 }
 
 func (d *jsiiProxy_DbfsFile) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -643,6 +691,9 @@ func (d *jsiiProxy_DbfsFile) GetNumberAttribute(terraformAttribute *string) *flo
 }
 
 func (d *jsiiProxy_DbfsFile) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -656,6 +707,9 @@ func (d *jsiiProxy_DbfsFile) GetNumberListAttribute(terraformAttribute *string) 
 }
 
 func (d *jsiiProxy_DbfsFile) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -669,6 +723,9 @@ func (d *jsiiProxy_DbfsFile) GetNumberMapAttribute(terraformAttribute *string) *
 }
 
 func (d *jsiiProxy_DbfsFile) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -682,6 +739,9 @@ func (d *jsiiProxy_DbfsFile) GetStringAttribute(terraformAttribute *string) *str
 }
 
 func (d *jsiiProxy_DbfsFile) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -695,6 +755,9 @@ func (d *jsiiProxy_DbfsFile) GetStringMapAttribute(terraformAttribute *string) *
 }
 
 func (d *jsiiProxy_DbfsFile) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -708,6 +771,9 @@ func (d *jsiiProxy_DbfsFile) InterpolationForAttribute(terraformAttribute *strin
 }
 
 func (d *jsiiProxy_DbfsFile) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

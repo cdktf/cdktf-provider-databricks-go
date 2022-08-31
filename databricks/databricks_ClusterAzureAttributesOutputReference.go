@@ -223,6 +223,9 @@ func (j *jsiiProxy_ClusterAzureAttributesOutputReference) TerraformResource() cd
 func NewClusterAzureAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ClusterAzureAttributesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewClusterAzureAttributesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ClusterAzureAttributesOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewClusterAzureAttributesOutputReference_Override(c ClusterAzureAttributesO
 	)
 }
 
-func (j *jsiiProxy_ClusterAzureAttributesOutputReference) SetAvailability(val *string) {
+func (j *jsiiProxy_ClusterAzureAttributesOutputReference)SetAvailability(val *string) {
+	if err := j.validateSetAvailabilityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"availability",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_ClusterAzureAttributesOutputReference) SetAvailability(val *s
 	)
 }
 
-func (j *jsiiProxy_ClusterAzureAttributesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ClusterAzureAttributesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_ClusterAzureAttributesOutputReference) SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_ClusterAzureAttributesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ClusterAzureAttributesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_ClusterAzureAttributesOutputReference) SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_ClusterAzureAttributesOutputReference) SetFirstOnDemand(val *float64) {
+func (j *jsiiProxy_ClusterAzureAttributesOutputReference)SetFirstOnDemand(val *float64) {
+	if err := j.validateSetFirstOnDemandParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"firstOnDemand",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_ClusterAzureAttributesOutputReference) SetFirstOnDemand(val *
 	)
 }
 
-func (j *jsiiProxy_ClusterAzureAttributesOutputReference) SetInternalValue(val *ClusterAzureAttributes) {
+func (j *jsiiProxy_ClusterAzureAttributesOutputReference)SetInternalValue(val *ClusterAzureAttributes) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_ClusterAzureAttributesOutputReference) SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_ClusterAzureAttributesOutputReference) SetSpotBidMaxPrice(val *float64) {
+func (j *jsiiProxy_ClusterAzureAttributesOutputReference)SetSpotBidMaxPrice(val *float64) {
+	if err := j.validateSetSpotBidMaxPriceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"spotBidMaxPrice",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_ClusterAzureAttributesOutputReference) SetSpotBidMaxPrice(val
 	)
 }
 
-func (j *jsiiProxy_ClusterAzureAttributesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ClusterAzureAttributesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_ClusterAzureAttributesOutputReference) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_ClusterAzureAttributesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClusterAzureAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -322,6 +349,9 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetAnyMapAttribute(ter
 }
 
 func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetBooleanAttribute(te
 }
 
 func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetBooleanMapAttribute
 }
 
 func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetListAttribute(terra
 }
 
 func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetNumberAttribute(ter
 }
 
 func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetNumberListAttribute
 }
 
 func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetNumberMapAttribute(
 }
 
 func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetStringAttribute(ter
 }
 
 func (c *jsiiProxy_ClusterAzureAttributesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) InterpolationAsList() 
 }
 
 func (c *jsiiProxy_ClusterAzureAttributesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) ResetSpotBidMaxPrice()
 }
 
 func (c *jsiiProxy_ClusterAzureAttributesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

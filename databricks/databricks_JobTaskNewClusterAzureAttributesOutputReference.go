@@ -223,6 +223,9 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) TerraformRes
 func NewJobTaskNewClusterAzureAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobTaskNewClusterAzureAttributesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewJobTaskNewClusterAzureAttributesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewJobTaskNewClusterAzureAttributesOutputReference_Override(j JobTaskNewClu
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) SetAvailability(val *string) {
+func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference)SetAvailability(val *string) {
+	if err := j.validateSetAvailabilityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"availability",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) SetAvailabil
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) SetFirstOnDemand(val *float64) {
+func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference)SetFirstOnDemand(val *float64) {
+	if err := j.validateSetFirstOnDemandParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"firstOnDemand",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) SetFirstOnDe
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) SetInternalValue(val *JobTaskNewClusterAzureAttributes) {
+func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference)SetInternalValue(val *JobTaskNewClusterAzureAttributes) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) SetSpotBidMaxPrice(val *float64) {
+func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference)SetSpotBidMaxPrice(val *float64) {
+	if err := j.validateSetSpotBidMaxPriceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"spotBidMaxPrice",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) SetSpotBidMa
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -322,6 +349,9 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) ComputeFqn()
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) GetAnyMapAtt
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) GetBooleanAt
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := j.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) GetBooleanMa
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := j.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) GetListAttri
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := j.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) GetNumberAtt
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := j.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) GetNumberLis
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := j.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) GetNumberMap
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := j.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) GetStringAtt
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := j.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) Interpolatio
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) ResetSpotBid
 }
 
 func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -220,6 +220,9 @@ func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) TerraformResour
 func NewSqlQueryParameterEnumMultipleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlQueryParameterEnumMultipleOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSqlQueryParameterEnumMultipleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SqlQueryParameterEnumMultipleOutputReference{}
 
 	_jsii_.Create(
@@ -241,7 +244,10 @@ func NewSqlQueryParameterEnumMultipleOutputReference_Override(s SqlQueryParamete
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -249,7 +255,10 @@ func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -257,7 +266,10 @@ func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) SetInternalValue(val *SqlQueryParameterEnumMultiple) {
+func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference)SetInternalValue(val *SqlQueryParameterEnumMultiple) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -265,7 +277,10 @@ func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) SetPrefix(val *string) {
+func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference)SetPrefix(val *string) {
+	if err := j.validateSetPrefixParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"prefix",
@@ -273,7 +288,10 @@ func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) SetPrefix(val *
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) SetSeparator(val *string) {
+func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference)SetSeparator(val *string) {
+	if err := j.validateSetSeparatorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"separator",
@@ -281,7 +299,10 @@ func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) SetSeparator(va
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) SetSuffix(val *string) {
+func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference)SetSuffix(val *string) {
+	if err := j.validateSetSuffixParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"suffix",
@@ -289,7 +310,10 @@ func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) SetSuffix(val *
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -297,7 +321,10 @@ func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -319,6 +346,9 @@ func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) ComputeFqn() *s
 }
 
 func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -332,6 +362,9 @@ func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetAnyMapAttrib
 }
 
 func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -345,6 +378,9 @@ func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetBooleanAttri
 }
 
 func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -358,6 +394,9 @@ func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetBooleanMapAt
 }
 
 func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -371,6 +410,9 @@ func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetListAttribut
 }
 
 func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -384,6 +426,9 @@ func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetNumberAttrib
 }
 
 func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -397,6 +442,9 @@ func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetNumberListAt
 }
 
 func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetNumberMapAtt
 }
 
 func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetStringAttrib
 }
 
 func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) InterpolationAs
 }
 
 func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -462,6 +519,9 @@ func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) InterpolationFo
 }
 
 func (s *jsiiProxy_SqlQueryParameterEnumMultipleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

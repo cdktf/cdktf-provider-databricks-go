@@ -292,6 +292,9 @@ func (j *jsiiProxy_MountWasbOutputReference) TokenSecretScopeInput() *string {
 func NewMountWasbOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MountWasbOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMountWasbOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MountWasbOutputReference{}
 
 	_jsii_.Create(
@@ -313,7 +316,10 @@ func NewMountWasbOutputReference_Override(m MountWasbOutputReference, terraformR
 	)
 }
 
-func (j *jsiiProxy_MountWasbOutputReference) SetAuthType(val *string) {
+func (j *jsiiProxy_MountWasbOutputReference)SetAuthType(val *string) {
+	if err := j.validateSetAuthTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"authType",
@@ -321,7 +327,10 @@ func (j *jsiiProxy_MountWasbOutputReference) SetAuthType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MountWasbOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MountWasbOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -329,7 +338,10 @@ func (j *jsiiProxy_MountWasbOutputReference) SetComplexObjectIndex(val interface
 	)
 }
 
-func (j *jsiiProxy_MountWasbOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MountWasbOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -337,7 +349,10 @@ func (j *jsiiProxy_MountWasbOutputReference) SetComplexObjectIsFromSet(val *bool
 	)
 }
 
-func (j *jsiiProxy_MountWasbOutputReference) SetContainerName(val *string) {
+func (j *jsiiProxy_MountWasbOutputReference)SetContainerName(val *string) {
+	if err := j.validateSetContainerNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"containerName",
@@ -345,7 +360,10 @@ func (j *jsiiProxy_MountWasbOutputReference) SetContainerName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MountWasbOutputReference) SetDirectory(val *string) {
+func (j *jsiiProxy_MountWasbOutputReference)SetDirectory(val *string) {
+	if err := j.validateSetDirectoryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"directory",
@@ -353,7 +371,10 @@ func (j *jsiiProxy_MountWasbOutputReference) SetDirectory(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MountWasbOutputReference) SetInternalValue(val *MountWasb) {
+func (j *jsiiProxy_MountWasbOutputReference)SetInternalValue(val *MountWasb) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -361,7 +382,10 @@ func (j *jsiiProxy_MountWasbOutputReference) SetInternalValue(val *MountWasb) {
 	)
 }
 
-func (j *jsiiProxy_MountWasbOutputReference) SetStorageAccountName(val *string) {
+func (j *jsiiProxy_MountWasbOutputReference)SetStorageAccountName(val *string) {
+	if err := j.validateSetStorageAccountNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storageAccountName",
@@ -369,7 +393,10 @@ func (j *jsiiProxy_MountWasbOutputReference) SetStorageAccountName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_MountWasbOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MountWasbOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -377,7 +404,10 @@ func (j *jsiiProxy_MountWasbOutputReference) SetTerraformAttribute(val *string) 
 	)
 }
 
-func (j *jsiiProxy_MountWasbOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MountWasbOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -385,7 +415,10 @@ func (j *jsiiProxy_MountWasbOutputReference) SetTerraformResource(val cdktf.IInt
 	)
 }
 
-func (j *jsiiProxy_MountWasbOutputReference) SetTokenSecretKey(val *string) {
+func (j *jsiiProxy_MountWasbOutputReference)SetTokenSecretKey(val *string) {
+	if err := j.validateSetTokenSecretKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenSecretKey",
@@ -393,7 +426,10 @@ func (j *jsiiProxy_MountWasbOutputReference) SetTokenSecretKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MountWasbOutputReference) SetTokenSecretScope(val *string) {
+func (j *jsiiProxy_MountWasbOutputReference)SetTokenSecretScope(val *string) {
+	if err := j.validateSetTokenSecretScopeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenSecretScope",
@@ -415,6 +451,9 @@ func (m *jsiiProxy_MountWasbOutputReference) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MountWasbOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -428,6 +467,9 @@ func (m *jsiiProxy_MountWasbOutputReference) GetAnyMapAttribute(terraformAttribu
 }
 
 func (m *jsiiProxy_MountWasbOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -441,6 +483,9 @@ func (m *jsiiProxy_MountWasbOutputReference) GetBooleanAttribute(terraformAttrib
 }
 
 func (m *jsiiProxy_MountWasbOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -454,6 +499,9 @@ func (m *jsiiProxy_MountWasbOutputReference) GetBooleanMapAttribute(terraformAtt
 }
 
 func (m *jsiiProxy_MountWasbOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -467,6 +515,9 @@ func (m *jsiiProxy_MountWasbOutputReference) GetListAttribute(terraformAttribute
 }
 
 func (m *jsiiProxy_MountWasbOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -480,6 +531,9 @@ func (m *jsiiProxy_MountWasbOutputReference) GetNumberAttribute(terraformAttribu
 }
 
 func (m *jsiiProxy_MountWasbOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -493,6 +547,9 @@ func (m *jsiiProxy_MountWasbOutputReference) GetNumberListAttribute(terraformAtt
 }
 
 func (m *jsiiProxy_MountWasbOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -506,6 +563,9 @@ func (m *jsiiProxy_MountWasbOutputReference) GetNumberMapAttribute(terraformAttr
 }
 
 func (m *jsiiProxy_MountWasbOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -519,6 +579,9 @@ func (m *jsiiProxy_MountWasbOutputReference) GetStringAttribute(terraformAttribu
 }
 
 func (m *jsiiProxy_MountWasbOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -545,6 +608,9 @@ func (m *jsiiProxy_MountWasbOutputReference) InterpolationAsList() cdktf.IResolv
 }
 
 func (m *jsiiProxy_MountWasbOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -582,6 +648,9 @@ func (m *jsiiProxy_MountWasbOutputReference) ResetStorageAccountName() {
 }
 
 func (m *jsiiProxy_MountWasbOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

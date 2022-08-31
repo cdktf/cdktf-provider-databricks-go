@@ -649,6 +649,9 @@ func (j *jsiiProxy_Metastore) UpdatedByInput() *string {
 func NewMetastore(scope constructs.Construct, id *string, config *MetastoreConfig) Metastore {
 	_init_.Initialize()
 
+	if err := validateNewMetastoreParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_Metastore{}
 
 	_jsii_.Create(
@@ -671,7 +674,10 @@ func NewMetastore_Override(m Metastore, scope constructs.Construct, id *string, 
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetCloud(val *string) {
+func (j *jsiiProxy_Metastore)SetCloud(val *string) {
+	if err := j.validateSetCloudParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cloud",
@@ -679,7 +685,10 @@ func (j *jsiiProxy_Metastore) SetCloud(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetConnection(val interface{}) {
+func (j *jsiiProxy_Metastore)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -687,7 +696,7 @@ func (j *jsiiProxy_Metastore) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetCount(val *float64) {
+func (j *jsiiProxy_Metastore)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -695,7 +704,10 @@ func (j *jsiiProxy_Metastore) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetCreatedAt(val *float64) {
+func (j *jsiiProxy_Metastore)SetCreatedAt(val *float64) {
+	if err := j.validateSetCreatedAtParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"createdAt",
@@ -703,7 +715,10 @@ func (j *jsiiProxy_Metastore) SetCreatedAt(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetCreatedBy(val *string) {
+func (j *jsiiProxy_Metastore)SetCreatedBy(val *string) {
+	if err := j.validateSetCreatedByParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"createdBy",
@@ -711,7 +726,10 @@ func (j *jsiiProxy_Metastore) SetCreatedBy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetDefaultDataAccessConfigId(val *string) {
+func (j *jsiiProxy_Metastore)SetDefaultDataAccessConfigId(val *string) {
+	if err := j.validateSetDefaultDataAccessConfigIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultDataAccessConfigId",
@@ -719,7 +737,10 @@ func (j *jsiiProxy_Metastore) SetDefaultDataAccessConfigId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetDeltaSharingOrganizationName(val *string) {
+func (j *jsiiProxy_Metastore)SetDeltaSharingOrganizationName(val *string) {
+	if err := j.validateSetDeltaSharingOrganizationNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deltaSharingOrganizationName",
@@ -727,7 +748,10 @@ func (j *jsiiProxy_Metastore) SetDeltaSharingOrganizationName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetDeltaSharingRecipientTokenLifetimeInSeconds(val *float64) {
+func (j *jsiiProxy_Metastore)SetDeltaSharingRecipientTokenLifetimeInSeconds(val *float64) {
+	if err := j.validateSetDeltaSharingRecipientTokenLifetimeInSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deltaSharingRecipientTokenLifetimeInSeconds",
@@ -735,7 +759,10 @@ func (j *jsiiProxy_Metastore) SetDeltaSharingRecipientTokenLifetimeInSeconds(val
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetDeltaSharingScope(val *string) {
+func (j *jsiiProxy_Metastore)SetDeltaSharingScope(val *string) {
+	if err := j.validateSetDeltaSharingScopeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deltaSharingScope",
@@ -743,7 +770,7 @@ func (j *jsiiProxy_Metastore) SetDeltaSharingScope(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Metastore)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -751,7 +778,10 @@ func (j *jsiiProxy_Metastore) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetForceDestroy(val interface{}) {
+func (j *jsiiProxy_Metastore)SetForceDestroy(val interface{}) {
+	if err := j.validateSetForceDestroyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"forceDestroy",
@@ -759,7 +789,7 @@ func (j *jsiiProxy_Metastore) SetForceDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Metastore)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -767,7 +797,10 @@ func (j *jsiiProxy_Metastore) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetGlobalMetastoreId(val *string) {
+func (j *jsiiProxy_Metastore)SetGlobalMetastoreId(val *string) {
+	if err := j.validateSetGlobalMetastoreIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"globalMetastoreId",
@@ -775,7 +808,10 @@ func (j *jsiiProxy_Metastore) SetGlobalMetastoreId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetId(val *string) {
+func (j *jsiiProxy_Metastore)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -783,7 +819,10 @@ func (j *jsiiProxy_Metastore) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Metastore)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -791,7 +830,10 @@ func (j *jsiiProxy_Metastore) SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetName(val *string) {
+func (j *jsiiProxy_Metastore)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -799,7 +841,10 @@ func (j *jsiiProxy_Metastore) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetOwner(val *string) {
+func (j *jsiiProxy_Metastore)SetOwner(val *string) {
+	if err := j.validateSetOwnerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"owner",
@@ -807,7 +852,7 @@ func (j *jsiiProxy_Metastore) SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Metastore)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -815,7 +860,10 @@ func (j *jsiiProxy_Metastore) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Metastore)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -823,7 +871,10 @@ func (j *jsiiProxy_Metastore) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetRegion(val *string) {
+func (j *jsiiProxy_Metastore)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -831,7 +882,10 @@ func (j *jsiiProxy_Metastore) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetStorageRoot(val *string) {
+func (j *jsiiProxy_Metastore)SetStorageRoot(val *string) {
+	if err := j.validateSetStorageRootParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storageRoot",
@@ -839,7 +893,10 @@ func (j *jsiiProxy_Metastore) SetStorageRoot(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetUpdatedAt(val *float64) {
+func (j *jsiiProxy_Metastore)SetUpdatedAt(val *float64) {
+	if err := j.validateSetUpdatedAtParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"updatedAt",
@@ -847,7 +904,10 @@ func (j *jsiiProxy_Metastore) SetUpdatedAt(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Metastore) SetUpdatedBy(val *string) {
+func (j *jsiiProxy_Metastore)SetUpdatedBy(val *string) {
+	if err := j.validateSetUpdatedByParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"updatedBy",
@@ -875,6 +935,9 @@ func (j *jsiiProxy_Metastore) SetUpdatedBy(val *string) {
 func Metastore_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateMetastore_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -899,6 +962,9 @@ func Metastore_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_Metastore) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -907,6 +973,9 @@ func (m *jsiiProxy_Metastore) AddOverride(path *string, value interface{}) {
 }
 
 func (m *jsiiProxy_Metastore) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -920,6 +989,9 @@ func (m *jsiiProxy_Metastore) GetAnyMapAttribute(terraformAttribute *string) *ma
 }
 
 func (m *jsiiProxy_Metastore) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -933,6 +1005,9 @@ func (m *jsiiProxy_Metastore) GetBooleanAttribute(terraformAttribute *string) cd
 }
 
 func (m *jsiiProxy_Metastore) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -946,6 +1021,9 @@ func (m *jsiiProxy_Metastore) GetBooleanMapAttribute(terraformAttribute *string)
 }
 
 func (m *jsiiProxy_Metastore) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -959,6 +1037,9 @@ func (m *jsiiProxy_Metastore) GetListAttribute(terraformAttribute *string) *[]*s
 }
 
 func (m *jsiiProxy_Metastore) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -972,6 +1053,9 @@ func (m *jsiiProxy_Metastore) GetNumberAttribute(terraformAttribute *string) *fl
 }
 
 func (m *jsiiProxy_Metastore) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -985,6 +1069,9 @@ func (m *jsiiProxy_Metastore) GetNumberListAttribute(terraformAttribute *string)
 }
 
 func (m *jsiiProxy_Metastore) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -998,6 +1085,9 @@ func (m *jsiiProxy_Metastore) GetNumberMapAttribute(terraformAttribute *string) 
 }
 
 func (m *jsiiProxy_Metastore) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1011,6 +1101,9 @@ func (m *jsiiProxy_Metastore) GetStringAttribute(terraformAttribute *string) *st
 }
 
 func (m *jsiiProxy_Metastore) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1024,6 +1117,9 @@ func (m *jsiiProxy_Metastore) GetStringMapAttribute(terraformAttribute *string) 
 }
 
 func (m *jsiiProxy_Metastore) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1037,6 +1133,9 @@ func (m *jsiiProxy_Metastore) InterpolationForAttribute(terraformAttribute *stri
 }
 
 func (m *jsiiProxy_Metastore) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",

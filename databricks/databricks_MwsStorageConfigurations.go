@@ -382,6 +382,9 @@ func (j *jsiiProxy_MwsStorageConfigurations) TerraformResourceType() *string {
 func NewMwsStorageConfigurations(scope constructs.Construct, id *string, config *MwsStorageConfigurationsConfig) MwsStorageConfigurations {
 	_init_.Initialize()
 
+	if err := validateNewMwsStorageConfigurationsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MwsStorageConfigurations{}
 
 	_jsii_.Create(
@@ -404,7 +407,10 @@ func NewMwsStorageConfigurations_Override(m MwsStorageConfigurations, scope cons
 	)
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations) SetAccountId(val *string) {
+func (j *jsiiProxy_MwsStorageConfigurations)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -412,7 +418,10 @@ func (j *jsiiProxy_MwsStorageConfigurations) SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations) SetBucketName(val *string) {
+func (j *jsiiProxy_MwsStorageConfigurations)SetBucketName(val *string) {
+	if err := j.validateSetBucketNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bucketName",
@@ -420,7 +429,10 @@ func (j *jsiiProxy_MwsStorageConfigurations) SetBucketName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations) SetConnection(val interface{}) {
+func (j *jsiiProxy_MwsStorageConfigurations)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -428,7 +440,7 @@ func (j *jsiiProxy_MwsStorageConfigurations) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations) SetCount(val *float64) {
+func (j *jsiiProxy_MwsStorageConfigurations)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -436,7 +448,7 @@ func (j *jsiiProxy_MwsStorageConfigurations) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MwsStorageConfigurations)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -444,7 +456,7 @@ func (j *jsiiProxy_MwsStorageConfigurations) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MwsStorageConfigurations)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -452,7 +464,10 @@ func (j *jsiiProxy_MwsStorageConfigurations) SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations) SetId(val *string) {
+func (j *jsiiProxy_MwsStorageConfigurations)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -460,7 +475,10 @@ func (j *jsiiProxy_MwsStorageConfigurations) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MwsStorageConfigurations)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -468,7 +486,7 @@ func (j *jsiiProxy_MwsStorageConfigurations) SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MwsStorageConfigurations)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -476,7 +494,10 @@ func (j *jsiiProxy_MwsStorageConfigurations) SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MwsStorageConfigurations)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -484,7 +505,10 @@ func (j *jsiiProxy_MwsStorageConfigurations) SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_MwsStorageConfigurations) SetStorageConfigurationName(val *string) {
+func (j *jsiiProxy_MwsStorageConfigurations)SetStorageConfigurationName(val *string) {
+	if err := j.validateSetStorageConfigurationNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storageConfigurationName",
@@ -512,6 +536,9 @@ func (j *jsiiProxy_MwsStorageConfigurations) SetStorageConfigurationName(val *st
 func MwsStorageConfigurations_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateMwsStorageConfigurations_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -536,6 +563,9 @@ func MwsStorageConfigurations_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_MwsStorageConfigurations) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -544,6 +574,9 @@ func (m *jsiiProxy_MwsStorageConfigurations) AddOverride(path *string, value int
 }
 
 func (m *jsiiProxy_MwsStorageConfigurations) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -557,6 +590,9 @@ func (m *jsiiProxy_MwsStorageConfigurations) GetAnyMapAttribute(terraformAttribu
 }
 
 func (m *jsiiProxy_MwsStorageConfigurations) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -570,6 +606,9 @@ func (m *jsiiProxy_MwsStorageConfigurations) GetBooleanAttribute(terraformAttrib
 }
 
 func (m *jsiiProxy_MwsStorageConfigurations) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -583,6 +622,9 @@ func (m *jsiiProxy_MwsStorageConfigurations) GetBooleanMapAttribute(terraformAtt
 }
 
 func (m *jsiiProxy_MwsStorageConfigurations) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -596,6 +638,9 @@ func (m *jsiiProxy_MwsStorageConfigurations) GetListAttribute(terraformAttribute
 }
 
 func (m *jsiiProxy_MwsStorageConfigurations) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -609,6 +654,9 @@ func (m *jsiiProxy_MwsStorageConfigurations) GetNumberAttribute(terraformAttribu
 }
 
 func (m *jsiiProxy_MwsStorageConfigurations) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -622,6 +670,9 @@ func (m *jsiiProxy_MwsStorageConfigurations) GetNumberListAttribute(terraformAtt
 }
 
 func (m *jsiiProxy_MwsStorageConfigurations) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -635,6 +686,9 @@ func (m *jsiiProxy_MwsStorageConfigurations) GetNumberMapAttribute(terraformAttr
 }
 
 func (m *jsiiProxy_MwsStorageConfigurations) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -648,6 +702,9 @@ func (m *jsiiProxy_MwsStorageConfigurations) GetStringAttribute(terraformAttribu
 }
 
 func (m *jsiiProxy_MwsStorageConfigurations) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -661,6 +718,9 @@ func (m *jsiiProxy_MwsStorageConfigurations) GetStringMapAttribute(terraformAttr
 }
 
 func (m *jsiiProxy_MwsStorageConfigurations) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -674,6 +734,9 @@ func (m *jsiiProxy_MwsStorageConfigurations) InterpolationForAttribute(terraform
 }
 
 func (m *jsiiProxy_MwsStorageConfigurations) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",

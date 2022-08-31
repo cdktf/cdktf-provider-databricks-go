@@ -271,6 +271,9 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) ZoneIdIn
 func NewJobJobClusterNewClusterGcpAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobJobClusterNewClusterGcpAttributesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewJobJobClusterNewClusterGcpAttributesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference{}
 
 	_jsii_.Create(
@@ -292,7 +295,10 @@ func NewJobJobClusterNewClusterGcpAttributesOutputReference_Override(j JobJobClu
 	)
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetAvailability(val *string) {
+func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference)SetAvailability(val *string) {
+	if err := j.validateSetAvailabilityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"availability",
@@ -300,7 +306,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetAvail
 	)
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetBootDiskSize(val *float64) {
+func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference)SetBootDiskSize(val *float64) {
+	if err := j.validateSetBootDiskSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bootDiskSize",
@@ -308,7 +317,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetBootD
 	)
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -316,7 +328,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -324,7 +339,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetGoogleServiceAccount(val *string) {
+func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference)SetGoogleServiceAccount(val *string) {
+	if err := j.validateSetGoogleServiceAccountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"googleServiceAccount",
@@ -332,7 +350,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetGoogl
 	)
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetInternalValue(val *JobJobClusterNewClusterGcpAttributes) {
+func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference)SetInternalValue(val *JobJobClusterNewClusterGcpAttributes) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -340,7 +361,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetInter
 	)
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -348,7 +372,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetTerra
 	)
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -356,7 +383,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetTerra
 	)
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetUsePreemptibleExecutors(val interface{}) {
+func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference)SetUsePreemptibleExecutors(val interface{}) {
+	if err := j.validateSetUsePreemptibleExecutorsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usePreemptibleExecutors",
@@ -364,7 +394,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetUsePr
 	)
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) SetZoneId(val *string) {
+func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -386,6 +419,9 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) ComputeF
 }
 
 func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -399,6 +435,9 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) GetAnyMa
 }
 
 func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -412,6 +451,9 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) GetBoole
 }
 
 func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := j.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -425,6 +467,9 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) GetBoole
 }
 
 func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := j.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -438,6 +483,9 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) GetListA
 }
 
 func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := j.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -451,6 +499,9 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) GetNumbe
 }
 
 func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := j.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -464,6 +515,9 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) GetNumbe
 }
 
 func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := j.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -477,6 +531,9 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) GetNumbe
 }
 
 func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := j.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -490,6 +547,9 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) GetStrin
 }
 
 func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := j.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -516,6 +576,9 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) Interpol
 }
 
 func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -569,6 +632,9 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) ResetZon
 }
 
 func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

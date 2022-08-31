@@ -271,6 +271,9 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) TerraformResource() cdk
 func NewJobEmailNotificationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobEmailNotificationsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewJobEmailNotificationsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_JobEmailNotificationsOutputReference{}
 
 	_jsii_.Create(
@@ -292,7 +295,10 @@ func NewJobEmailNotificationsOutputReference_Override(j JobEmailNotificationsOut
 	)
 }
 
-func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetAlertOnLastAttempt(val interface{}) {
+func (j *jsiiProxy_JobEmailNotificationsOutputReference)SetAlertOnLastAttempt(val interface{}) {
+	if err := j.validateSetAlertOnLastAttemptParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"alertOnLastAttempt",
@@ -300,7 +306,10 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetAlertOnLastAttempt(v
 	)
 }
 
-func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobEmailNotificationsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -308,7 +317,10 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobEmailNotificationsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -316,7 +328,10 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetInternalValue(val *JobEmailNotifications) {
+func (j *jsiiProxy_JobEmailNotificationsOutputReference)SetInternalValue(val *JobEmailNotifications) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -324,7 +339,10 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetInternalValue(val *J
 	)
 }
 
-func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetNoAlertForSkippedRuns(val interface{}) {
+func (j *jsiiProxy_JobEmailNotificationsOutputReference)SetNoAlertForSkippedRuns(val interface{}) {
+	if err := j.validateSetNoAlertForSkippedRunsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"noAlertForSkippedRuns",
@@ -332,7 +350,10 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetNoAlertForSkippedRun
 	)
 }
 
-func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetOnFailure(val *[]*string) {
+func (j *jsiiProxy_JobEmailNotificationsOutputReference)SetOnFailure(val *[]*string) {
+	if err := j.validateSetOnFailureParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"onFailure",
@@ -340,7 +361,10 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetOnFailure(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetOnStart(val *[]*string) {
+func (j *jsiiProxy_JobEmailNotificationsOutputReference)SetOnStart(val *[]*string) {
+	if err := j.validateSetOnStartParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"onStart",
@@ -348,7 +372,10 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetOnStart(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetOnSuccess(val *[]*string) {
+func (j *jsiiProxy_JobEmailNotificationsOutputReference)SetOnSuccess(val *[]*string) {
+	if err := j.validateSetOnSuccessParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"onSuccess",
@@ -356,7 +383,10 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetOnSuccess(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobEmailNotificationsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -364,7 +394,10 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_JobEmailNotificationsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobEmailNotificationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -386,6 +419,9 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) ComputeFqn() *string {
 }
 
 func (j *jsiiProxy_JobEmailNotificationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -399,6 +435,9 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) GetAnyMapAttribute(terr
 }
 
 func (j *jsiiProxy_JobEmailNotificationsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -412,6 +451,9 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) GetBooleanAttribute(ter
 }
 
 func (j *jsiiProxy_JobEmailNotificationsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := j.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -425,6 +467,9 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) GetBooleanMapAttribute(
 }
 
 func (j *jsiiProxy_JobEmailNotificationsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := j.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -438,6 +483,9 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) GetListAttribute(terraf
 }
 
 func (j *jsiiProxy_JobEmailNotificationsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := j.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -451,6 +499,9 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) GetNumberAttribute(terr
 }
 
 func (j *jsiiProxy_JobEmailNotificationsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := j.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -464,6 +515,9 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) GetNumberListAttribute(
 }
 
 func (j *jsiiProxy_JobEmailNotificationsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := j.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -477,6 +531,9 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) GetNumberMapAttribute(t
 }
 
 func (j *jsiiProxy_JobEmailNotificationsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := j.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -490,6 +547,9 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) GetStringAttribute(terr
 }
 
 func (j *jsiiProxy_JobEmailNotificationsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := j.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -516,6 +576,9 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) InterpolationAsList() c
 }
 
 func (j *jsiiProxy_JobEmailNotificationsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -569,6 +632,9 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) ResetOnSuccess() {
 }
 
 func (j *jsiiProxy_JobEmailNotificationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

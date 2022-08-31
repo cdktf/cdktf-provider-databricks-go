@@ -175,6 +175,9 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) TerraformRe
 func NewDataDatabricksSqlWarehouseChannelOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksSqlWarehouseChannelOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataDatabricksSqlWarehouseChannelOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference{}
 
 	_jsii_.Create(
@@ -196,7 +199,10 @@ func NewDataDatabricksSqlWarehouseChannelOutputReference_Override(d DataDatabric
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -204,7 +210,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -212,7 +221,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) SetInternalValue(val *DataDatabricksSqlWarehouseChannel) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference)SetInternalValue(val *DataDatabricksSqlWarehouseChannel) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -220,7 +232,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) SetInternal
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) SetName(val *string) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -228,7 +243,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) SetName(val
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -236,7 +254,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -258,6 +279,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) ComputeFqn(
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -271,6 +295,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) GetAnyMapAt
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -284,6 +311,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) GetBooleanA
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -297,6 +327,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) GetBooleanM
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -310,6 +343,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) GetListAttr
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -323,6 +359,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) GetNumberAt
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -336,6 +375,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) GetNumberLi
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -349,6 +391,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) GetNumberMa
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -362,6 +407,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) GetStringAt
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -388,6 +436,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) Interpolati
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -409,6 +460,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) ResetName()
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

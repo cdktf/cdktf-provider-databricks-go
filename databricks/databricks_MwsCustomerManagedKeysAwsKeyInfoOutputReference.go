@@ -221,6 +221,9 @@ func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) TerraformRes
 func NewMwsCustomerManagedKeysAwsKeyInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MwsCustomerManagedKeysAwsKeyInfoOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMwsCustomerManagedKeysAwsKeyInfoOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference{}
 
 	_jsii_.Create(
@@ -242,7 +245,10 @@ func NewMwsCustomerManagedKeysAwsKeyInfoOutputReference_Override(m MwsCustomerMa
 	)
 }
 
-func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -250,7 +256,10 @@ func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -258,7 +267,10 @@ func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) SetInternalValue(val *MwsCustomerManagedKeysAwsKeyInfo) {
+func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference)SetInternalValue(val *MwsCustomerManagedKeysAwsKeyInfo) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -266,7 +278,10 @@ func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) SetKeyAlias(val *string) {
+func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference)SetKeyAlias(val *string) {
+	if err := j.validateSetKeyAliasParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyAlias",
@@ -274,7 +289,10 @@ func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) SetKeyAlias(
 	)
 }
 
-func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) SetKeyArn(val *string) {
+func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference)SetKeyArn(val *string) {
+	if err := j.validateSetKeyArnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyArn",
@@ -282,7 +300,10 @@ func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) SetKeyArn(va
 	)
 }
 
-func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) SetKeyRegion(val *string) {
+func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference)SetKeyRegion(val *string) {
+	if err := j.validateSetKeyRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyRegion",
@@ -290,7 +311,10 @@ func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) SetKeyRegion
 	)
 }
 
-func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -298,7 +322,10 @@ func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -320,6 +347,9 @@ func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) ComputeFqn()
 }
 
 func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -333,6 +363,9 @@ func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) GetAnyMapAtt
 }
 
 func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -346,6 +379,9 @@ func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) GetBooleanAt
 }
 
 func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -359,6 +395,9 @@ func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) GetBooleanMa
 }
 
 func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -372,6 +411,9 @@ func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) GetListAttri
 }
 
 func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -385,6 +427,9 @@ func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) GetNumberAtt
 }
 
 func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -398,6 +443,9 @@ func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) GetNumberLis
 }
 
 func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -411,6 +459,9 @@ func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) GetNumberMap
 }
 
 func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -424,6 +475,9 @@ func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) GetStringAtt
 }
 
 func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -450,6 +504,9 @@ func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) Interpolatio
 }
 
 func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -471,6 +528,9 @@ func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) ResetKeyRegi
 }
 
 func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

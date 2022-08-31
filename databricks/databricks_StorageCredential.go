@@ -458,6 +458,9 @@ func (j *jsiiProxy_StorageCredential) TerraformResourceType() *string {
 func NewStorageCredential(scope constructs.Construct, id *string, config *StorageCredentialConfig) StorageCredential {
 	_init_.Initialize()
 
+	if err := validateNewStorageCredentialParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StorageCredential{}
 
 	_jsii_.Create(
@@ -480,7 +483,10 @@ func NewStorageCredential_Override(s StorageCredential, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_StorageCredential) SetComment(val *string) {
+func (j *jsiiProxy_StorageCredential)SetComment(val *string) {
+	if err := j.validateSetCommentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"comment",
@@ -488,7 +494,10 @@ func (j *jsiiProxy_StorageCredential) SetComment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageCredential) SetConnection(val interface{}) {
+func (j *jsiiProxy_StorageCredential)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -496,7 +505,7 @@ func (j *jsiiProxy_StorageCredential) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StorageCredential) SetCount(val *float64) {
+func (j *jsiiProxy_StorageCredential)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -504,7 +513,7 @@ func (j *jsiiProxy_StorageCredential) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_StorageCredential) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_StorageCredential)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -512,7 +521,7 @@ func (j *jsiiProxy_StorageCredential) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StorageCredential) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StorageCredential)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -520,7 +529,10 @@ func (j *jsiiProxy_StorageCredential) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_StorageCredential) SetId(val *string) {
+func (j *jsiiProxy_StorageCredential)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -528,7 +540,10 @@ func (j *jsiiProxy_StorageCredential) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageCredential) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StorageCredential)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -536,7 +551,10 @@ func (j *jsiiProxy_StorageCredential) SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_StorageCredential) SetMetastoreId(val *string) {
+func (j *jsiiProxy_StorageCredential)SetMetastoreId(val *string) {
+	if err := j.validateSetMetastoreIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metastoreId",
@@ -544,7 +562,10 @@ func (j *jsiiProxy_StorageCredential) SetMetastoreId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageCredential) SetName(val *string) {
+func (j *jsiiProxy_StorageCredential)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -552,7 +573,10 @@ func (j *jsiiProxy_StorageCredential) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageCredential) SetOwner(val *string) {
+func (j *jsiiProxy_StorageCredential)SetOwner(val *string) {
+	if err := j.validateSetOwnerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"owner",
@@ -560,7 +584,7 @@ func (j *jsiiProxy_StorageCredential) SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageCredential) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StorageCredential)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -568,7 +592,10 @@ func (j *jsiiProxy_StorageCredential) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_StorageCredential) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_StorageCredential)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -596,6 +623,9 @@ func (j *jsiiProxy_StorageCredential) SetProvisioners(val *[]interface{}) {
 func StorageCredential_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateStorageCredential_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -620,6 +650,9 @@ func StorageCredential_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_StorageCredential) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -628,6 +661,9 @@ func (s *jsiiProxy_StorageCredential) AddOverride(path *string, value interface{
 }
 
 func (s *jsiiProxy_StorageCredential) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -641,6 +677,9 @@ func (s *jsiiProxy_StorageCredential) GetAnyMapAttribute(terraformAttribute *str
 }
 
 func (s *jsiiProxy_StorageCredential) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -654,6 +693,9 @@ func (s *jsiiProxy_StorageCredential) GetBooleanAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_StorageCredential) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -667,6 +709,9 @@ func (s *jsiiProxy_StorageCredential) GetBooleanMapAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_StorageCredential) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -680,6 +725,9 @@ func (s *jsiiProxy_StorageCredential) GetListAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_StorageCredential) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -693,6 +741,9 @@ func (s *jsiiProxy_StorageCredential) GetNumberAttribute(terraformAttribute *str
 }
 
 func (s *jsiiProxy_StorageCredential) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -706,6 +757,9 @@ func (s *jsiiProxy_StorageCredential) GetNumberListAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_StorageCredential) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -719,6 +773,9 @@ func (s *jsiiProxy_StorageCredential) GetNumberMapAttribute(terraformAttribute *
 }
 
 func (s *jsiiProxy_StorageCredential) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -732,6 +789,9 @@ func (s *jsiiProxy_StorageCredential) GetStringAttribute(terraformAttribute *str
 }
 
 func (s *jsiiProxy_StorageCredential) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -745,6 +805,9 @@ func (s *jsiiProxy_StorageCredential) GetStringMapAttribute(terraformAttribute *
 }
 
 func (s *jsiiProxy_StorageCredential) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -758,6 +821,9 @@ func (s *jsiiProxy_StorageCredential) InterpolationForAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_StorageCredential) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -766,6 +832,9 @@ func (s *jsiiProxy_StorageCredential) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (s *jsiiProxy_StorageCredential) PutAwsIamRole(value *StorageCredentialAwsIamRole) {
+	if err := s.validatePutAwsIamRoleParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putAwsIamRole",
@@ -774,6 +843,9 @@ func (s *jsiiProxy_StorageCredential) PutAwsIamRole(value *StorageCredentialAwsI
 }
 
 func (s *jsiiProxy_StorageCredential) PutAzureManagedIdentity(value *StorageCredentialAzureManagedIdentity) {
+	if err := s.validatePutAzureManagedIdentityParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putAzureManagedIdentity",
@@ -782,6 +854,9 @@ func (s *jsiiProxy_StorageCredential) PutAzureManagedIdentity(value *StorageCred
 }
 
 func (s *jsiiProxy_StorageCredential) PutAzureServicePrincipal(value *StorageCredentialAzureServicePrincipal) {
+	if err := s.validatePutAzureServicePrincipalParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putAzureServicePrincipal",

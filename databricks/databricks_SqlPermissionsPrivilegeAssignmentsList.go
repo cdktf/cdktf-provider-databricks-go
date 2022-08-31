@@ -111,6 +111,9 @@ func (j *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList) WrapsSet() *bool {
 func NewSqlPermissionsPrivilegeAssignmentsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SqlPermissionsPrivilegeAssignmentsList {
 	_init_.Initialize()
 
+	if err := validateNewSqlPermissionsPrivilegeAssignmentsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SqlPermissionsPrivilegeAssignmentsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewSqlPermissionsPrivilegeAssignmentsList_Override(s SqlPermissionsPrivileg
 	)
 }
 
-func (j *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList) SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList) ComputeFqn() *string 
 }
 
 func (s *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList) Get(index *float64) SqlPermissionsPrivilegeAssignmentsOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns SqlPermissionsPrivilegeAssignmentsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList) Get(index *float64) S
 }
 
 func (s *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

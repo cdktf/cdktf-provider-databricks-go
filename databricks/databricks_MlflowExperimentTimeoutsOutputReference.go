@@ -151,6 +151,9 @@ func (j *jsiiProxy_MlflowExperimentTimeoutsOutputReference) TerraformResource() 
 func NewMlflowExperimentTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MlflowExperimentTimeoutsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMlflowExperimentTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MlflowExperimentTimeoutsOutputReference{}
 
 	_jsii_.Create(
@@ -172,7 +175,10 @@ func NewMlflowExperimentTimeoutsOutputReference_Override(m MlflowExperimentTimeo
 	)
 }
 
-func (j *jsiiProxy_MlflowExperimentTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MlflowExperimentTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -180,7 +186,10 @@ func (j *jsiiProxy_MlflowExperimentTimeoutsOutputReference) SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_MlflowExperimentTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MlflowExperimentTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -188,7 +197,10 @@ func (j *jsiiProxy_MlflowExperimentTimeoutsOutputReference) SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_MlflowExperimentTimeoutsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MlflowExperimentTimeoutsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -196,7 +208,10 @@ func (j *jsiiProxy_MlflowExperimentTimeoutsOutputReference) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_MlflowExperimentTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MlflowExperimentTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -204,7 +219,10 @@ func (j *jsiiProxy_MlflowExperimentTimeoutsOutputReference) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_MlflowExperimentTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MlflowExperimentTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -226,6 +244,9 @@ func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) ComputeFqn() *string
 }
 
 func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -239,6 +260,9 @@ func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) GetAnyMapAttribute(t
 }
 
 func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -252,6 +276,9 @@ func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) GetBooleanAttribute(
 }
 
 func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -265,6 +292,9 @@ func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) GetBooleanMapAttribu
 }
 
 func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -278,6 +308,9 @@ func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) GetListAttribute(ter
 }
 
 func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -291,6 +324,9 @@ func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) GetNumberAttribute(t
 }
 
 func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -304,6 +340,9 @@ func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) GetNumberListAttribu
 }
 
 func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -317,6 +356,9 @@ func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) GetNumberMapAttribut
 }
 
 func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -330,6 +372,9 @@ func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) GetStringAttribute(t
 }
 
 func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -356,6 +401,9 @@ func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) InterpolationAsList(
 }
 
 func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -369,6 +417,9 @@ func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) InterpolationForAttr
 }
 
 func (m *jsiiProxy_MlflowExperimentTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

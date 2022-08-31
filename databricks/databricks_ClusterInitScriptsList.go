@@ -111,6 +111,9 @@ func (j *jsiiProxy_ClusterInitScriptsList) WrapsSet() *bool {
 func NewClusterInitScriptsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterInitScriptsList {
 	_init_.Initialize()
 
+	if err := validateNewClusterInitScriptsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ClusterInitScriptsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewClusterInitScriptsList_Override(c ClusterInitScriptsList, terraformResou
 	)
 }
 
-func (j *jsiiProxy_ClusterInitScriptsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ClusterInitScriptsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ClusterInitScriptsList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ClusterInitScriptsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ClusterInitScriptsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ClusterInitScriptsList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClusterInitScriptsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClusterInitScriptsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ClusterInitScriptsList) SetTerraformResource(val cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_ClusterInitScriptsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ClusterInitScriptsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (c *jsiiProxy_ClusterInitScriptsList) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_ClusterInitScriptsList) Get(index *float64) ClusterInitScriptsOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ClusterInitScriptsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (c *jsiiProxy_ClusterInitScriptsList) Get(index *float64) ClusterInitScript
 }
 
 func (c *jsiiProxy_ClusterInitScriptsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

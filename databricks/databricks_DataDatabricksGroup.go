@@ -574,6 +574,9 @@ func (j *jsiiProxy_DataDatabricksGroup) WorkspaceAccessInput() interface{} {
 func NewDataDatabricksGroup(scope constructs.Construct, id *string, config *DataDatabricksGroupConfig) DataDatabricksGroup {
 	_init_.Initialize()
 
+	if err := validateNewDataDatabricksGroupParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatabricksGroup{}
 
 	_jsii_.Create(
@@ -596,7 +599,10 @@ func NewDataDatabricksGroup_Override(d DataDatabricksGroup, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetAllowClusterCreate(val interface{}) {
+func (j *jsiiProxy_DataDatabricksGroup)SetAllowClusterCreate(val interface{}) {
+	if err := j.validateSetAllowClusterCreateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowClusterCreate",
@@ -604,7 +610,10 @@ func (j *jsiiProxy_DataDatabricksGroup) SetAllowClusterCreate(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetAllowInstancePoolCreate(val interface{}) {
+func (j *jsiiProxy_DataDatabricksGroup)SetAllowInstancePoolCreate(val interface{}) {
+	if err := j.validateSetAllowInstancePoolCreateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowInstancePoolCreate",
@@ -612,7 +621,10 @@ func (j *jsiiProxy_DataDatabricksGroup) SetAllowInstancePoolCreate(val interface
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetChildGroups(val *[]*string) {
+func (j *jsiiProxy_DataDatabricksGroup)SetChildGroups(val *[]*string) {
+	if err := j.validateSetChildGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"childGroups",
@@ -620,7 +632,7 @@ func (j *jsiiProxy_DataDatabricksGroup) SetChildGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetCount(val *float64) {
+func (j *jsiiProxy_DataDatabricksGroup)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -628,7 +640,10 @@ func (j *jsiiProxy_DataDatabricksGroup) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetDatabricksSqlAccess(val interface{}) {
+func (j *jsiiProxy_DataDatabricksGroup)SetDatabricksSqlAccess(val interface{}) {
+	if err := j.validateSetDatabricksSqlAccessParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"databricksSqlAccess",
@@ -636,7 +651,7 @@ func (j *jsiiProxy_DataDatabricksGroup) SetDatabricksSqlAccess(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataDatabricksGroup)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -644,7 +659,10 @@ func (j *jsiiProxy_DataDatabricksGroup) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetDisplayName(val *string) {
+func (j *jsiiProxy_DataDatabricksGroup)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"displayName",
@@ -652,7 +670,10 @@ func (j *jsiiProxy_DataDatabricksGroup) SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetExternalId(val *string) {
+func (j *jsiiProxy_DataDatabricksGroup)SetExternalId(val *string) {
+	if err := j.validateSetExternalIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"externalId",
@@ -660,7 +681,7 @@ func (j *jsiiProxy_DataDatabricksGroup) SetExternalId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksGroup)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -668,7 +689,10 @@ func (j *jsiiProxy_DataDatabricksGroup) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetGroups(val *[]*string) {
+func (j *jsiiProxy_DataDatabricksGroup)SetGroups(val *[]*string) {
+	if err := j.validateSetGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groups",
@@ -676,7 +700,10 @@ func (j *jsiiProxy_DataDatabricksGroup) SetGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetId(val *string) {
+func (j *jsiiProxy_DataDatabricksGroup)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -684,7 +711,10 @@ func (j *jsiiProxy_DataDatabricksGroup) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetInstanceProfiles(val *[]*string) {
+func (j *jsiiProxy_DataDatabricksGroup)SetInstanceProfiles(val *[]*string) {
+	if err := j.validateSetInstanceProfilesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceProfiles",
@@ -692,7 +722,10 @@ func (j *jsiiProxy_DataDatabricksGroup) SetInstanceProfiles(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -700,7 +733,10 @@ func (j *jsiiProxy_DataDatabricksGroup) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetMembers(val *[]*string) {
+func (j *jsiiProxy_DataDatabricksGroup)SetMembers(val *[]*string) {
+	if err := j.validateSetMembersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"members",
@@ -708,7 +744,7 @@ func (j *jsiiProxy_DataDatabricksGroup) SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksGroup)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -716,7 +752,10 @@ func (j *jsiiProxy_DataDatabricksGroup) SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetRecursive(val interface{}) {
+func (j *jsiiProxy_DataDatabricksGroup)SetRecursive(val interface{}) {
+	if err := j.validateSetRecursiveParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"recursive",
@@ -724,7 +763,10 @@ func (j *jsiiProxy_DataDatabricksGroup) SetRecursive(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetServicePrincipals(val *[]*string) {
+func (j *jsiiProxy_DataDatabricksGroup)SetServicePrincipals(val *[]*string) {
+	if err := j.validateSetServicePrincipalsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"servicePrincipals",
@@ -732,7 +774,10 @@ func (j *jsiiProxy_DataDatabricksGroup) SetServicePrincipals(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetUsers(val *[]*string) {
+func (j *jsiiProxy_DataDatabricksGroup)SetUsers(val *[]*string) {
+	if err := j.validateSetUsersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"users",
@@ -740,7 +785,10 @@ func (j *jsiiProxy_DataDatabricksGroup) SetUsers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) SetWorkspaceAccess(val interface{}) {
+func (j *jsiiProxy_DataDatabricksGroup)SetWorkspaceAccess(val interface{}) {
+	if err := j.validateSetWorkspaceAccessParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"workspaceAccess",
@@ -768,6 +816,9 @@ func (j *jsiiProxy_DataDatabricksGroup) SetWorkspaceAccess(val interface{}) {
 func DataDatabricksGroup_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataDatabricksGroup_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -792,6 +843,9 @@ func DataDatabricksGroup_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataDatabricksGroup) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -800,6 +854,9 @@ func (d *jsiiProxy_DataDatabricksGroup) AddOverride(path *string, value interfac
 }
 
 func (d *jsiiProxy_DataDatabricksGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -813,6 +870,9 @@ func (d *jsiiProxy_DataDatabricksGroup) GetAnyMapAttribute(terraformAttribute *s
 }
 
 func (d *jsiiProxy_DataDatabricksGroup) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -826,6 +886,9 @@ func (d *jsiiProxy_DataDatabricksGroup) GetBooleanAttribute(terraformAttribute *
 }
 
 func (d *jsiiProxy_DataDatabricksGroup) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -839,6 +902,9 @@ func (d *jsiiProxy_DataDatabricksGroup) GetBooleanMapAttribute(terraformAttribut
 }
 
 func (d *jsiiProxy_DataDatabricksGroup) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -852,6 +918,9 @@ func (d *jsiiProxy_DataDatabricksGroup) GetListAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DataDatabricksGroup) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -865,6 +934,9 @@ func (d *jsiiProxy_DataDatabricksGroup) GetNumberAttribute(terraformAttribute *s
 }
 
 func (d *jsiiProxy_DataDatabricksGroup) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -878,6 +950,9 @@ func (d *jsiiProxy_DataDatabricksGroup) GetNumberListAttribute(terraformAttribut
 }
 
 func (d *jsiiProxy_DataDatabricksGroup) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -891,6 +966,9 @@ func (d *jsiiProxy_DataDatabricksGroup) GetNumberMapAttribute(terraformAttribute
 }
 
 func (d *jsiiProxy_DataDatabricksGroup) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -904,6 +982,9 @@ func (d *jsiiProxy_DataDatabricksGroup) GetStringAttribute(terraformAttribute *s
 }
 
 func (d *jsiiProxy_DataDatabricksGroup) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -917,6 +998,9 @@ func (d *jsiiProxy_DataDatabricksGroup) GetStringMapAttribute(terraformAttribute
 }
 
 func (d *jsiiProxy_DataDatabricksGroup) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -930,6 +1014,9 @@ func (d *jsiiProxy_DataDatabricksGroup) InterpolationForAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataDatabricksGroup) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

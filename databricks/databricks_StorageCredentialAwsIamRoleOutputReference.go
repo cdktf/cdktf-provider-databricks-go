@@ -174,6 +174,9 @@ func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) TerraformResource
 func NewStorageCredentialAwsIamRoleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageCredentialAwsIamRoleOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewStorageCredentialAwsIamRoleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StorageCredentialAwsIamRoleOutputReference{}
 
 	_jsii_.Create(
@@ -195,7 +198,10 @@ func NewStorageCredentialAwsIamRoleOutputReference_Override(s StorageCredentialA
 	)
 }
 
-func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -203,7 +209,10 @@ func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -211,7 +220,10 @@ func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) SetInternalValue(val *StorageCredentialAwsIamRole) {
+func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference)SetInternalValue(val *StorageCredentialAwsIamRole) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -219,7 +231,10 @@ func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) SetRoleArn(val *string) {
+func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference)SetRoleArn(val *string) {
+	if err := j.validateSetRoleArnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"roleArn",
@@ -227,7 +242,10 @@ func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) SetRoleArn(val *s
 	)
 }
 
-func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -235,7 +253,10 @@ func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -257,6 +278,9 @@ func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) ComputeFqn() *str
 }
 
 func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -270,6 +294,9 @@ func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) GetAnyMapAttribut
 }
 
 func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -283,6 +310,9 @@ func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) GetBooleanAttribu
 }
 
 func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -296,6 +326,9 @@ func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) GetBooleanMapAttr
 }
 
 func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -309,6 +342,9 @@ func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) GetListAttribute(
 }
 
 func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -322,6 +358,9 @@ func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) GetNumberAttribut
 }
 
 func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -335,6 +374,9 @@ func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) GetNumberListAttr
 }
 
 func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -348,6 +390,9 @@ func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) GetNumberMapAttri
 }
 
 func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -361,6 +406,9 @@ func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) GetStringAttribut
 }
 
 func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -387,6 +435,9 @@ func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) InterpolationAsLi
 }
 
 func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -400,6 +451,9 @@ func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) InterpolationForA
 }
 
 func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

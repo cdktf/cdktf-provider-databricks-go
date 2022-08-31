@@ -111,6 +111,9 @@ func (j *jsiiProxy_PipelineClusterList) WrapsSet() *bool {
 func NewPipelineClusterList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineClusterList {
 	_init_.Initialize()
 
+	if err := validateNewPipelineClusterListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PipelineClusterList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewPipelineClusterList_Override(p PipelineClusterList, terraformResource cd
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PipelineClusterList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_PipelineClusterList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PipelineClusterList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_PipelineClusterList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PipelineClusterList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_PipelineClusterList) SetTerraformResource(val cdktf.IInterpol
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PipelineClusterList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (p *jsiiProxy_PipelineClusterList) ComputeFqn() *string {
 }
 
 func (p *jsiiProxy_PipelineClusterList) Get(index *float64) PipelineClusterOutputReference {
+	if err := p.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns PipelineClusterOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (p *jsiiProxy_PipelineClusterList) Get(index *float64) PipelineClusterOutpu
 }
 
 func (p *jsiiProxy_PipelineClusterList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

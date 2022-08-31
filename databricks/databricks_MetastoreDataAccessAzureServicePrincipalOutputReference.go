@@ -220,6 +220,9 @@ func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) Terr
 func NewMetastoreDataAccessAzureServicePrincipalOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MetastoreDataAccessAzureServicePrincipalOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMetastoreDataAccessAzureServicePrincipalOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference{}
 
 	_jsii_.Create(
@@ -241,7 +244,10 @@ func NewMetastoreDataAccessAzureServicePrincipalOutputReference_Override(m Metas
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) SetApplicationId(val *string) {
+func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference)SetApplicationId(val *string) {
+	if err := j.validateSetApplicationIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"applicationId",
@@ -249,7 +255,10 @@ func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) SetA
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) SetClientSecret(val *string) {
+func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference)SetClientSecret(val *string) {
+	if err := j.validateSetClientSecretParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientSecret",
@@ -257,7 +266,10 @@ func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -265,7 +277,10 @@ func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -273,7 +288,10 @@ func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) SetDirectoryId(val *string) {
+func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference)SetDirectoryId(val *string) {
+	if err := j.validateSetDirectoryIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"directoryId",
@@ -281,7 +299,10 @@ func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) SetD
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) SetInternalValue(val *MetastoreDataAccessAzureServicePrincipal) {
+func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference)SetInternalValue(val *MetastoreDataAccessAzureServicePrincipal) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -289,7 +310,10 @@ func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) SetI
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -297,7 +321,10 @@ func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -319,6 +346,9 @@ func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) Comp
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -332,6 +362,9 @@ func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetA
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -345,6 +378,9 @@ func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetB
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -358,6 +394,9 @@ func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetB
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -371,6 +410,9 @@ func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetL
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -384,6 +426,9 @@ func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetN
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -397,6 +442,9 @@ func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetN
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetN
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetS
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) Inte
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -462,6 +519,9 @@ func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) Inte
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_PipelineClusterInitScriptsList) WrapsSet() *bool {
 func NewPipelineClusterInitScriptsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineClusterInitScriptsList {
 	_init_.Initialize()
 
+	if err := validateNewPipelineClusterInitScriptsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PipelineClusterInitScriptsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewPipelineClusterInitScriptsList_Override(p PipelineClusterInitScriptsList
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterInitScriptsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PipelineClusterInitScriptsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_PipelineClusterInitScriptsList) SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterInitScriptsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PipelineClusterInitScriptsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_PipelineClusterInitScriptsList) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterInitScriptsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PipelineClusterInitScriptsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_PipelineClusterInitScriptsList) SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterInitScriptsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PipelineClusterInitScriptsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (p *jsiiProxy_PipelineClusterInitScriptsList) ComputeFqn() *string {
 }
 
 func (p *jsiiProxy_PipelineClusterInitScriptsList) Get(index *float64) PipelineClusterInitScriptsOutputReference {
+	if err := p.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns PipelineClusterInitScriptsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (p *jsiiProxy_PipelineClusterInitScriptsList) Get(index *float64) PipelineC
 }
 
 func (p *jsiiProxy_PipelineClusterInitScriptsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -337,6 +337,9 @@ func (j *jsiiProxy_UserInstanceProfile) UserIdInput() *string {
 func NewUserInstanceProfile(scope constructs.Construct, id *string, config *UserInstanceProfileConfig) UserInstanceProfile {
 	_init_.Initialize()
 
+	if err := validateNewUserInstanceProfileParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_UserInstanceProfile{}
 
 	_jsii_.Create(
@@ -359,7 +362,10 @@ func NewUserInstanceProfile_Override(u UserInstanceProfile, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_UserInstanceProfile) SetConnection(val interface{}) {
+func (j *jsiiProxy_UserInstanceProfile)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -367,7 +373,7 @@ func (j *jsiiProxy_UserInstanceProfile) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserInstanceProfile) SetCount(val *float64) {
+func (j *jsiiProxy_UserInstanceProfile)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -375,7 +381,7 @@ func (j *jsiiProxy_UserInstanceProfile) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_UserInstanceProfile) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_UserInstanceProfile)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -383,7 +389,7 @@ func (j *jsiiProxy_UserInstanceProfile) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_UserInstanceProfile) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_UserInstanceProfile)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -391,7 +397,10 @@ func (j *jsiiProxy_UserInstanceProfile) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_UserInstanceProfile) SetId(val *string) {
+func (j *jsiiProxy_UserInstanceProfile)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -399,7 +408,10 @@ func (j *jsiiProxy_UserInstanceProfile) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserInstanceProfile) SetInstanceProfileId(val *string) {
+func (j *jsiiProxy_UserInstanceProfile)SetInstanceProfileId(val *string) {
+	if err := j.validateSetInstanceProfileIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceProfileId",
@@ -407,7 +419,10 @@ func (j *jsiiProxy_UserInstanceProfile) SetInstanceProfileId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserInstanceProfile) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_UserInstanceProfile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -415,7 +430,7 @@ func (j *jsiiProxy_UserInstanceProfile) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_UserInstanceProfile) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_UserInstanceProfile)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -423,7 +438,10 @@ func (j *jsiiProxy_UserInstanceProfile) SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_UserInstanceProfile) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_UserInstanceProfile)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -431,7 +449,10 @@ func (j *jsiiProxy_UserInstanceProfile) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserInstanceProfile) SetUserId(val *string) {
+func (j *jsiiProxy_UserInstanceProfile)SetUserId(val *string) {
+	if err := j.validateSetUserIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userId",
@@ -459,6 +480,9 @@ func (j *jsiiProxy_UserInstanceProfile) SetUserId(val *string) {
 func UserInstanceProfile_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateUserInstanceProfile_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -483,6 +507,9 @@ func UserInstanceProfile_TfResourceType() *string {
 }
 
 func (u *jsiiProxy_UserInstanceProfile) AddOverride(path *string, value interface{}) {
+	if err := u.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		u,
 		"addOverride",
@@ -491,6 +518,9 @@ func (u *jsiiProxy_UserInstanceProfile) AddOverride(path *string, value interfac
 }
 
 func (u *jsiiProxy_UserInstanceProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := u.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -504,6 +534,9 @@ func (u *jsiiProxy_UserInstanceProfile) GetAnyMapAttribute(terraformAttribute *s
 }
 
 func (u *jsiiProxy_UserInstanceProfile) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := u.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -517,6 +550,9 @@ func (u *jsiiProxy_UserInstanceProfile) GetBooleanAttribute(terraformAttribute *
 }
 
 func (u *jsiiProxy_UserInstanceProfile) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := u.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -530,6 +566,9 @@ func (u *jsiiProxy_UserInstanceProfile) GetBooleanMapAttribute(terraformAttribut
 }
 
 func (u *jsiiProxy_UserInstanceProfile) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := u.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -543,6 +582,9 @@ func (u *jsiiProxy_UserInstanceProfile) GetListAttribute(terraformAttribute *str
 }
 
 func (u *jsiiProxy_UserInstanceProfile) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := u.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -556,6 +598,9 @@ func (u *jsiiProxy_UserInstanceProfile) GetNumberAttribute(terraformAttribute *s
 }
 
 func (u *jsiiProxy_UserInstanceProfile) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := u.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -569,6 +614,9 @@ func (u *jsiiProxy_UserInstanceProfile) GetNumberListAttribute(terraformAttribut
 }
 
 func (u *jsiiProxy_UserInstanceProfile) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := u.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -582,6 +630,9 @@ func (u *jsiiProxy_UserInstanceProfile) GetNumberMapAttribute(terraformAttribute
 }
 
 func (u *jsiiProxy_UserInstanceProfile) GetStringAttribute(terraformAttribute *string) *string {
+	if err := u.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -595,6 +646,9 @@ func (u *jsiiProxy_UserInstanceProfile) GetStringAttribute(terraformAttribute *s
 }
 
 func (u *jsiiProxy_UserInstanceProfile) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := u.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -608,6 +662,9 @@ func (u *jsiiProxy_UserInstanceProfile) GetStringMapAttribute(terraformAttribute
 }
 
 func (u *jsiiProxy_UserInstanceProfile) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := u.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -621,6 +678,9 @@ func (u *jsiiProxy_UserInstanceProfile) InterpolationForAttribute(terraformAttri
 }
 
 func (u *jsiiProxy_UserInstanceProfile) OverrideLogicalId(newLogicalId *string) {
+	if err := u.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		u,
 		"overrideLogicalId",

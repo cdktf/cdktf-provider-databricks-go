@@ -199,6 +199,9 @@ func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference) TerraformResource
 func NewInstancePoolAzureAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) InstancePoolAzureAttributesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewInstancePoolAzureAttributesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_InstancePoolAzureAttributesOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewInstancePoolAzureAttributesOutputReference_Override(i InstancePoolAzureA
 	)
 }
 
-func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference) SetAvailability(val *string) {
+func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference)SetAvailability(val *string) {
+	if err := j.validateSetAvailabilityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"availability",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference) SetAvailability(v
 	)
 }
 
-func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference) SetInternalValue(val *InstancePoolAzureAttributes) {
+func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference)SetInternalValue(val *InstancePoolAzureAttributes) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference) SetSpotBidMaxPrice(val *float64) {
+func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference)SetSpotBidMaxPrice(val *float64) {
+	if err := j.validateSetSpotBidMaxPriceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"spotBidMaxPrice",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference) SetSpotBidMaxPric
 	)
 }
 
-func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InstancePoolAzureAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) ComputeFqn() *str
 }
 
 func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) GetAnyMapAttribut
 }
 
 func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) GetBooleanAttribu
 }
 
 func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) GetBooleanMapAttr
 }
 
 func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) GetListAttribute(
 }
 
 func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) GetNumberAttribut
 }
 
 func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) GetNumberListAttr
 }
 
 func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) GetNumberMapAttri
 }
 
 func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) GetStringAttribut
 }
 
 func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) InterpolationAsLi
 }
 
 func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) ResetSpotBidMaxPr
 }
 
 func (i *jsiiProxy_InstancePoolAzureAttributesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

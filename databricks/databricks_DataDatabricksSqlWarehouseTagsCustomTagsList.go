@@ -111,6 +111,9 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseTagsCustomTagsList) WrapsSet() *boo
 func NewDataDatabricksSqlWarehouseTagsCustomTagsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksSqlWarehouseTagsCustomTagsList {
 	_init_.Initialize()
 
+	if err := validateNewDataDatabricksSqlWarehouseTagsCustomTagsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatabricksSqlWarehouseTagsCustomTagsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDataDatabricksSqlWarehouseTagsCustomTagsList_Override(d DataDatabricksSq
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseTagsCustomTagsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseTagsCustomTagsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseTagsCustomTagsList) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseTagsCustomTagsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseTagsCustomTagsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseTagsCustomTagsList) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseTagsCustomTagsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseTagsCustomTagsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseTagsCustomTagsList) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseTagsCustomTagsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouseTagsCustomTagsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseTagsCustomTagsList) ComputeFqn() *s
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseTagsCustomTagsList) Get(index *float64) DataDatabricksSqlWarehouseTagsCustomTagsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDatabricksSqlWarehouseTagsCustomTagsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseTagsCustomTagsList) Get(index *floa
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseTagsCustomTagsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

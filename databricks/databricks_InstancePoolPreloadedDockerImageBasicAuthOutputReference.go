@@ -197,6 +197,9 @@ func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Use
 func NewInstancePoolPreloadedDockerImageBasicAuthOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) InstancePoolPreloadedDockerImageBasicAuthOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewInstancePoolPreloadedDockerImageBasicAuthOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewInstancePoolPreloadedDockerImageBasicAuthOutputReference_Override(i Inst
 	)
 }
 
-func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) SetInternalValue(val *InstancePoolPreloadedDockerImageBasicAuth) {
+func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference)SetInternalValue(val *InstancePoolPreloadedDockerImageBasicAuth) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) SetPassword(val *string) {
+func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) SetUsername(val *string) {
+func (j *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"username",
@@ -288,6 +312,9 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Com
 }
 
 func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Get
 }
 
 func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Get
 }
 
 func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Get
 }
 
 func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Get
 }
 
 func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Get
 }
 
 func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Get
 }
 
 func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Get
 }
 
 func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Get
 }
 
 func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Int
 }
 
 func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Int
 }
 
 func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

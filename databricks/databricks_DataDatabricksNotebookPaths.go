@@ -320,6 +320,9 @@ func (j *jsiiProxy_DataDatabricksNotebookPaths) TerraformResourceType() *string 
 func NewDataDatabricksNotebookPaths(scope constructs.Construct, id *string, config *DataDatabricksNotebookPathsConfig) DataDatabricksNotebookPaths {
 	_init_.Initialize()
 
+	if err := validateNewDataDatabricksNotebookPathsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatabricksNotebookPaths{}
 
 	_jsii_.Create(
@@ -342,7 +345,7 @@ func NewDataDatabricksNotebookPaths_Override(d DataDatabricksNotebookPaths, scop
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPaths) SetCount(val *float64) {
+func (j *jsiiProxy_DataDatabricksNotebookPaths)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -350,7 +353,7 @@ func (j *jsiiProxy_DataDatabricksNotebookPaths) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPaths) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataDatabricksNotebookPaths)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -358,7 +361,7 @@ func (j *jsiiProxy_DataDatabricksNotebookPaths) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPaths) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatabricksNotebookPaths)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -366,7 +369,10 @@ func (j *jsiiProxy_DataDatabricksNotebookPaths) SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPaths) SetId(val *string) {
+func (j *jsiiProxy_DataDatabricksNotebookPaths)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -374,7 +380,10 @@ func (j *jsiiProxy_DataDatabricksNotebookPaths) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPaths) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatabricksNotebookPaths)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -382,7 +391,10 @@ func (j *jsiiProxy_DataDatabricksNotebookPaths) SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPaths) SetPath(val *string) {
+func (j *jsiiProxy_DataDatabricksNotebookPaths)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -390,7 +402,7 @@ func (j *jsiiProxy_DataDatabricksNotebookPaths) SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPaths) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatabricksNotebookPaths)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -398,7 +410,10 @@ func (j *jsiiProxy_DataDatabricksNotebookPaths) SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPaths) SetRecursive(val interface{}) {
+func (j *jsiiProxy_DataDatabricksNotebookPaths)SetRecursive(val interface{}) {
+	if err := j.validateSetRecursiveParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"recursive",
@@ -426,6 +441,9 @@ func (j *jsiiProxy_DataDatabricksNotebookPaths) SetRecursive(val interface{}) {
 func DataDatabricksNotebookPaths_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataDatabricksNotebookPaths_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -450,6 +468,9 @@ func DataDatabricksNotebookPaths_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataDatabricksNotebookPaths) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -458,6 +479,9 @@ func (d *jsiiProxy_DataDatabricksNotebookPaths) AddOverride(path *string, value 
 }
 
 func (d *jsiiProxy_DataDatabricksNotebookPaths) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -471,6 +495,9 @@ func (d *jsiiProxy_DataDatabricksNotebookPaths) GetAnyMapAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataDatabricksNotebookPaths) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -484,6 +511,9 @@ func (d *jsiiProxy_DataDatabricksNotebookPaths) GetBooleanAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataDatabricksNotebookPaths) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -497,6 +527,9 @@ func (d *jsiiProxy_DataDatabricksNotebookPaths) GetBooleanMapAttribute(terraform
 }
 
 func (d *jsiiProxy_DataDatabricksNotebookPaths) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -510,6 +543,9 @@ func (d *jsiiProxy_DataDatabricksNotebookPaths) GetListAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DataDatabricksNotebookPaths) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -523,6 +559,9 @@ func (d *jsiiProxy_DataDatabricksNotebookPaths) GetNumberAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataDatabricksNotebookPaths) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -536,6 +575,9 @@ func (d *jsiiProxy_DataDatabricksNotebookPaths) GetNumberListAttribute(terraform
 }
 
 func (d *jsiiProxy_DataDatabricksNotebookPaths) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -549,6 +591,9 @@ func (d *jsiiProxy_DataDatabricksNotebookPaths) GetNumberMapAttribute(terraformA
 }
 
 func (d *jsiiProxy_DataDatabricksNotebookPaths) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -562,6 +607,9 @@ func (d *jsiiProxy_DataDatabricksNotebookPaths) GetStringAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataDatabricksNotebookPaths) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -575,6 +623,9 @@ func (d *jsiiProxy_DataDatabricksNotebookPaths) GetStringMapAttribute(terraformA
 }
 
 func (d *jsiiProxy_DataDatabricksNotebookPaths) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -588,6 +639,9 @@ func (d *jsiiProxy_DataDatabricksNotebookPaths) InterpolationForAttribute(terraf
 }
 
 func (d *jsiiProxy_DataDatabricksNotebookPaths) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

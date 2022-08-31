@@ -318,6 +318,9 @@ func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) TerraformResource() c
 func NewClusterClusterLogConfS3OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ClusterClusterLogConfS3OutputReference {
 	_init_.Initialize()
 
+	if err := validateNewClusterClusterLogConfS3OutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ClusterClusterLogConfS3OutputReference{}
 
 	_jsii_.Create(
@@ -339,7 +342,10 @@ func NewClusterClusterLogConfS3OutputReference_Override(c ClusterClusterLogConfS
 	)
 }
 
-func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetCannedAcl(val *string) {
+func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference)SetCannedAcl(val *string) {
+	if err := j.validateSetCannedAclParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cannedAcl",
@@ -347,7 +353,10 @@ func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetCannedAcl(val *str
 	)
 }
 
-func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -355,7 +364,10 @@ func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -363,7 +375,10 @@ func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetDestination(val *string) {
+func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference)SetDestination(val *string) {
+	if err := j.validateSetDestinationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"destination",
@@ -371,7 +386,10 @@ func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetDestination(val *s
 	)
 }
 
-func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetEnableEncryption(val interface{}) {
+func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference)SetEnableEncryption(val interface{}) {
+	if err := j.validateSetEnableEncryptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enableEncryption",
@@ -379,7 +397,10 @@ func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetEnableEncryption(v
 	)
 }
 
-func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetEncryptionType(val *string) {
+func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference)SetEncryptionType(val *string) {
+	if err := j.validateSetEncryptionTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"encryptionType",
@@ -387,7 +408,10 @@ func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetEncryptionType(val
 	)
 }
 
-func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetEndpoint(val *string) {
+func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference)SetEndpoint(val *string) {
+	if err := j.validateSetEndpointParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"endpoint",
@@ -395,7 +419,10 @@ func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetEndpoint(val *stri
 	)
 }
 
-func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetInternalValue(val *ClusterClusterLogConfS3) {
+func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference)SetInternalValue(val *ClusterClusterLogConfS3) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -403,7 +430,10 @@ func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetKmsKey(val *string) {
+func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference)SetKmsKey(val *string) {
+	if err := j.validateSetKmsKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"kmsKey",
@@ -411,7 +441,10 @@ func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetKmsKey(val *string
 	)
 }
 
-func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetRegion(val *string) {
+func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -419,7 +452,10 @@ func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetRegion(val *string
 	)
 }
 
-func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -427,7 +463,10 @@ func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClusterClusterLogConfS3OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -449,6 +488,9 @@ func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) ComputeFqn() *string 
 }
 
 func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -462,6 +504,9 @@ func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) GetAnyMapAttribute(te
 }
 
 func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -475,6 +520,9 @@ func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) GetBooleanAttribute(t
 }
 
 func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -488,6 +536,9 @@ func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) GetBooleanMapAttribut
 }
 
 func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -501,6 +552,9 @@ func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) GetListAttribute(terr
 }
 
 func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -514,6 +568,9 @@ func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) GetNumberAttribute(te
 }
 
 func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -527,6 +584,9 @@ func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) GetNumberListAttribut
 }
 
 func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -540,6 +600,9 @@ func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) GetNumberMapAttribute
 }
 
 func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -553,6 +616,9 @@ func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) GetStringAttribute(te
 }
 
 func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -579,6 +645,9 @@ func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) InterpolationAsList()
 }
 
 func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -640,6 +709,9 @@ func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) ResetRegion() {
 }
 
 func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

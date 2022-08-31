@@ -246,6 +246,9 @@ func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) UrlInput() *string {
 func NewMlflowWebhookHttpUrlSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MlflowWebhookHttpUrlSpecOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMlflowWebhookHttpUrlSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference{}
 
 	_jsii_.Create(
@@ -267,7 +270,10 @@ func NewMlflowWebhookHttpUrlSpecOutputReference_Override(m MlflowWebhookHttpUrlS
 	)
 }
 
-func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SetAuthorization(val *string) {
+func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference)SetAuthorization(val *string) {
+	if err := j.validateSetAuthorizationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"authorization",
@@ -275,7 +281,10 @@ func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SetAuthorization(val
 	)
 }
 
-func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -283,7 +292,10 @@ func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -291,7 +303,10 @@ func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SetEnableSslVerification(val interface{}) {
+func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference)SetEnableSslVerification(val interface{}) {
+	if err := j.validateSetEnableSslVerificationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enableSslVerification",
@@ -299,7 +314,10 @@ func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SetEnableSslVerifica
 	)
 }
 
-func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SetInternalValue(val *MlflowWebhookHttpUrlSpec) {
+func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference)SetInternalValue(val *MlflowWebhookHttpUrlSpec) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -307,7 +325,10 @@ func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SetString(val *string) {
+func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference)SetString(val *string) {
+	if err := j.validateSetStringParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"string",
@@ -315,7 +336,10 @@ func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SetString(val *strin
 	)
 }
 
-func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -323,7 +347,10 @@ func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -331,7 +358,10 @@ func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SetUrl(val *string) {
+func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"url",
@@ -353,6 +383,9 @@ func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) ComputeFqn() *string
 }
 
 func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -366,6 +399,9 @@ func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) GetAnyMapAttribute(t
 }
 
 func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -379,6 +415,9 @@ func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) GetBooleanAttribute(
 }
 
 func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -392,6 +431,9 @@ func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) GetBooleanMapAttribu
 }
 
 func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -405,6 +447,9 @@ func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) GetListAttribute(ter
 }
 
 func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -418,6 +463,9 @@ func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) GetNumberAttribute(t
 }
 
 func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -431,6 +479,9 @@ func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) GetNumberListAttribu
 }
 
 func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -444,6 +495,9 @@ func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) GetNumberMapAttribut
 }
 
 func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -457,6 +511,9 @@ func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) GetStringAttribute(t
 }
 
 func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -483,6 +540,9 @@ func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) InterpolationAsList(
 }
 
 func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -520,6 +580,9 @@ func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) ResetString() {
 }
 
 func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

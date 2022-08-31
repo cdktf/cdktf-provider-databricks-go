@@ -319,6 +319,9 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Ter
 func NewDataDatabricksClusterClusterInfoExecutorsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksClusterClusterInfoExecutorsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataDatabricksClusterClusterInfoExecutorsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference{}
 
 	_jsii_.Create(
@@ -340,7 +343,10 @@ func NewDataDatabricksClusterClusterInfoExecutorsOutputReference_Override(d Data
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -348,7 +354,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -356,7 +365,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) SetHostPrivateIp(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference)SetHostPrivateIp(val *string) {
+	if err := j.validateSetHostPrivateIpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hostPrivateIp",
@@ -364,7 +376,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) SetInstanceId(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference)SetInstanceId(val *string) {
+	if err := j.validateSetInstanceIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceId",
@@ -372,7 +387,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -380,7 +398,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) SetNodeId(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference)SetNodeId(val *string) {
+	if err := j.validateSetNodeIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nodeId",
@@ -388,7 +409,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) SetPrivateIp(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference)SetPrivateIp(val *string) {
+	if err := j.validateSetPrivateIpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privateIp",
@@ -396,7 +420,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) SetPublicDns(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference)SetPublicDns(val *string) {
+	if err := j.validateSetPublicDnsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"publicDns",
@@ -404,7 +431,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) SetStartTimestamp(val *float64) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference)SetStartTimestamp(val *float64) {
+	if err := j.validateSetStartTimestampParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"startTimestamp",
@@ -412,7 +442,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -420,7 +453,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -442,6 +478,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Com
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -455,6 +494,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -468,6 +510,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -481,6 +526,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -494,6 +542,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -507,6 +558,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -520,6 +574,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -533,6 +590,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -546,6 +606,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -572,6 +635,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Int
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -585,6 +651,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Int
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) PutNodeAwsAttributes(value *DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes) {
+	if err := d.validatePutNodeAwsAttributesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putNodeAwsAttributes",
@@ -649,6 +718,9 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Res
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -223,6 +223,9 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) ZoneIdInput() *s
 func NewPipelineClusterAwsAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PipelineClusterAwsAttributesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewPipelineClusterAwsAttributesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PipelineClusterAwsAttributesOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewPipelineClusterAwsAttributesOutputReference_Override(p PipelineClusterAw
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) SetFirstOnDemand(val *float64) {
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetFirstOnDemand(val *float64) {
+	if err := j.validateSetFirstOnDemandParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"firstOnDemand",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) SetFirstOnDemand
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) SetInstanceProfileArn(val *string) {
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetInstanceProfileArn(val *string) {
+	if err := j.validateSetInstanceProfileArnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceProfileArn",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) SetInstanceProfi
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) SetInternalValue(val *PipelineClusterAwsAttributes) {
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetInternalValue(val *PipelineClusterAwsAttributes) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) SetZoneId(val *string) {
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -322,6 +349,9 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) ComputeFqn() *st
 }
 
 func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetAnyMapAttribu
 }
 
 func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetBooleanAttrib
 }
 
 func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetBooleanMapAtt
 }
 
 func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetListAttribute
 }
 
 func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetNumberAttribu
 }
 
 func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetNumberListAtt
 }
 
 func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetNumberMapAttr
 }
 
 func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetStringAttribu
 }
 
 func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) InterpolationAsL
 }
 
 func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) ResetZoneId() {
 }
 
 func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

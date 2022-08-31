@@ -220,6 +220,9 @@ func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) Terraf
 func NewStorageCredentialAzureServicePrincipalOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageCredentialAzureServicePrincipalOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewStorageCredentialAzureServicePrincipalOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference{}
 
 	_jsii_.Create(
@@ -241,7 +244,10 @@ func NewStorageCredentialAzureServicePrincipalOutputReference_Override(s Storage
 	)
 }
 
-func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) SetApplicationId(val *string) {
+func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference)SetApplicationId(val *string) {
+	if err := j.validateSetApplicationIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"applicationId",
@@ -249,7 +255,10 @@ func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) SetApp
 	)
 }
 
-func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) SetClientSecret(val *string) {
+func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference)SetClientSecret(val *string) {
+	if err := j.validateSetClientSecretParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientSecret",
@@ -257,7 +266,10 @@ func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) SetCli
 	)
 }
 
-func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -265,7 +277,10 @@ func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -273,7 +288,10 @@ func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) SetDirectoryId(val *string) {
+func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference)SetDirectoryId(val *string) {
+	if err := j.validateSetDirectoryIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"directoryId",
@@ -281,7 +299,10 @@ func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) SetDir
 	)
 }
 
-func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) SetInternalValue(val *StorageCredentialAzureServicePrincipal) {
+func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference)SetInternalValue(val *StorageCredentialAzureServicePrincipal) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -289,7 +310,10 @@ func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) SetInt
 	)
 }
 
-func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -297,7 +321,10 @@ func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) SetTer
 	)
 }
 
-func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -319,6 +346,9 @@ func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) Comput
 }
 
 func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -332,6 +362,9 @@ func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) GetAny
 }
 
 func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -345,6 +378,9 @@ func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) GetBoo
 }
 
 func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -358,6 +394,9 @@ func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) GetBoo
 }
 
 func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -371,6 +410,9 @@ func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) GetLis
 }
 
 func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -384,6 +426,9 @@ func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) GetNum
 }
 
 func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -397,6 +442,9 @@ func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) GetNum
 }
 
 func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) GetNum
 }
 
 func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) GetStr
 }
 
 func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) Interp
 }
 
 func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -462,6 +519,9 @@ func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) Interp
 }
 
 func (s *jsiiProxy_StorageCredentialAzureServicePrincipalOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

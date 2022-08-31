@@ -111,6 +111,9 @@ func (j *jsiiProxy_InstancePoolPreloadedDockerImageList) WrapsSet() *bool {
 func NewInstancePoolPreloadedDockerImageList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InstancePoolPreloadedDockerImageList {
 	_init_.Initialize()
 
+	if err := validateNewInstancePoolPreloadedDockerImageListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_InstancePoolPreloadedDockerImageList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewInstancePoolPreloadedDockerImageList_Override(i InstancePoolPreloadedDoc
 	)
 }
 
-func (j *jsiiProxy_InstancePoolPreloadedDockerImageList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_InstancePoolPreloadedDockerImageList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_InstancePoolPreloadedDockerImageList) SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_InstancePoolPreloadedDockerImageList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_InstancePoolPreloadedDockerImageList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_InstancePoolPreloadedDockerImageList) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_InstancePoolPreloadedDockerImageList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InstancePoolPreloadedDockerImageList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_InstancePoolPreloadedDockerImageList) SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_InstancePoolPreloadedDockerImageList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_InstancePoolPreloadedDockerImageList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageList) ComputeFqn() *string {
 }
 
 func (i *jsiiProxy_InstancePoolPreloadedDockerImageList) Get(index *float64) InstancePoolPreloadedDockerImageOutputReference {
+	if err := i.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns InstancePoolPreloadedDockerImageOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageList) Get(index *float64) Ins
 }
 
 func (i *jsiiProxy_InstancePoolPreloadedDockerImageList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

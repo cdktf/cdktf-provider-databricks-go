@@ -295,6 +295,9 @@ func (j *jsiiProxy_ClusterLibraryOutputReference) WhlInput() *string {
 func NewClusterLibraryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ClusterLibraryOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewClusterLibraryOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ClusterLibraryOutputReference{}
 
 	_jsii_.Create(
@@ -316,7 +319,10 @@ func NewClusterLibraryOutputReference_Override(c ClusterLibraryOutputReference, 
 	)
 }
 
-func (j *jsiiProxy_ClusterLibraryOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ClusterLibraryOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -324,7 +330,10 @@ func (j *jsiiProxy_ClusterLibraryOutputReference) SetComplexObjectIndex(val inte
 	)
 }
 
-func (j *jsiiProxy_ClusterLibraryOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ClusterLibraryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -332,7 +341,10 @@ func (j *jsiiProxy_ClusterLibraryOutputReference) SetComplexObjectIsFromSet(val 
 	)
 }
 
-func (j *jsiiProxy_ClusterLibraryOutputReference) SetEgg(val *string) {
+func (j *jsiiProxy_ClusterLibraryOutputReference)SetEgg(val *string) {
+	if err := j.validateSetEggParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"egg",
@@ -340,7 +352,10 @@ func (j *jsiiProxy_ClusterLibraryOutputReference) SetEgg(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClusterLibraryOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ClusterLibraryOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -348,7 +363,10 @@ func (j *jsiiProxy_ClusterLibraryOutputReference) SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_ClusterLibraryOutputReference) SetJar(val *string) {
+func (j *jsiiProxy_ClusterLibraryOutputReference)SetJar(val *string) {
+	if err := j.validateSetJarParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jar",
@@ -356,7 +374,10 @@ func (j *jsiiProxy_ClusterLibraryOutputReference) SetJar(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClusterLibraryOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ClusterLibraryOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -364,7 +385,10 @@ func (j *jsiiProxy_ClusterLibraryOutputReference) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_ClusterLibraryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClusterLibraryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -372,7 +396,10 @@ func (j *jsiiProxy_ClusterLibraryOutputReference) SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_ClusterLibraryOutputReference) SetWhl(val *string) {
+func (j *jsiiProxy_ClusterLibraryOutputReference)SetWhl(val *string) {
+	if err := j.validateSetWhlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"whl",
@@ -394,6 +421,9 @@ func (c *jsiiProxy_ClusterLibraryOutputReference) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_ClusterLibraryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -407,6 +437,9 @@ func (c *jsiiProxy_ClusterLibraryOutputReference) GetAnyMapAttribute(terraformAt
 }
 
 func (c *jsiiProxy_ClusterLibraryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -420,6 +453,9 @@ func (c *jsiiProxy_ClusterLibraryOutputReference) GetBooleanAttribute(terraformA
 }
 
 func (c *jsiiProxy_ClusterLibraryOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -433,6 +469,9 @@ func (c *jsiiProxy_ClusterLibraryOutputReference) GetBooleanMapAttribute(terrafo
 }
 
 func (c *jsiiProxy_ClusterLibraryOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -446,6 +485,9 @@ func (c *jsiiProxy_ClusterLibraryOutputReference) GetListAttribute(terraformAttr
 }
 
 func (c *jsiiProxy_ClusterLibraryOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -459,6 +501,9 @@ func (c *jsiiProxy_ClusterLibraryOutputReference) GetNumberAttribute(terraformAt
 }
 
 func (c *jsiiProxy_ClusterLibraryOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -472,6 +517,9 @@ func (c *jsiiProxy_ClusterLibraryOutputReference) GetNumberListAttribute(terrafo
 }
 
 func (c *jsiiProxy_ClusterLibraryOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -485,6 +533,9 @@ func (c *jsiiProxy_ClusterLibraryOutputReference) GetNumberMapAttribute(terrafor
 }
 
 func (c *jsiiProxy_ClusterLibraryOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -498,6 +549,9 @@ func (c *jsiiProxy_ClusterLibraryOutputReference) GetStringAttribute(terraformAt
 }
 
 func (c *jsiiProxy_ClusterLibraryOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -524,6 +578,9 @@ func (c *jsiiProxy_ClusterLibraryOutputReference) InterpolationAsList() cdktf.IR
 }
 
 func (c *jsiiProxy_ClusterLibraryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -537,6 +594,9 @@ func (c *jsiiProxy_ClusterLibraryOutputReference) InterpolationForAttribute(prop
 }
 
 func (c *jsiiProxy_ClusterLibraryOutputReference) PutCran(value *ClusterLibraryCran) {
+	if err := c.validatePutCranParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putCran",
@@ -545,6 +605,9 @@ func (c *jsiiProxy_ClusterLibraryOutputReference) PutCran(value *ClusterLibraryC
 }
 
 func (c *jsiiProxy_ClusterLibraryOutputReference) PutMaven(value *ClusterLibraryMaven) {
+	if err := c.validatePutMavenParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putMaven",
@@ -553,6 +616,9 @@ func (c *jsiiProxy_ClusterLibraryOutputReference) PutMaven(value *ClusterLibrary
 }
 
 func (c *jsiiProxy_ClusterLibraryOutputReference) PutPypi(value *ClusterLibraryPypi) {
+	if err := c.validatePutPypiParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putPypi",
@@ -609,6 +675,9 @@ func (c *jsiiProxy_ClusterLibraryOutputReference) ResetWhl() {
 }
 
 func (c *jsiiProxy_ClusterLibraryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

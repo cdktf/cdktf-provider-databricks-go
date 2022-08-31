@@ -590,6 +590,9 @@ func (j *jsiiProxy_Mount) WasbInput() *MountWasb {
 func NewMount(scope constructs.Construct, id *string, config *MountConfig) Mount {
 	_init_.Initialize()
 
+	if err := validateNewMountParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_Mount{}
 
 	_jsii_.Create(
@@ -612,7 +615,10 @@ func NewMount_Override(m Mount, scope constructs.Construct, id *string, config *
 	)
 }
 
-func (j *jsiiProxy_Mount) SetClusterId(val *string) {
+func (j *jsiiProxy_Mount)SetClusterId(val *string) {
+	if err := j.validateSetClusterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterId",
@@ -620,7 +626,10 @@ func (j *jsiiProxy_Mount) SetClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Mount) SetConnection(val interface{}) {
+func (j *jsiiProxy_Mount)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -628,7 +637,7 @@ func (j *jsiiProxy_Mount) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Mount) SetCount(val *float64) {
+func (j *jsiiProxy_Mount)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -636,7 +645,7 @@ func (j *jsiiProxy_Mount) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Mount) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Mount)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -644,7 +653,10 @@ func (j *jsiiProxy_Mount) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Mount) SetEncryptionType(val *string) {
+func (j *jsiiProxy_Mount)SetEncryptionType(val *string) {
+	if err := j.validateSetEncryptionTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"encryptionType",
@@ -652,7 +664,10 @@ func (j *jsiiProxy_Mount) SetEncryptionType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Mount) SetExtraConfigs(val *map[string]*string) {
+func (j *jsiiProxy_Mount)SetExtraConfigs(val *map[string]*string) {
+	if err := j.validateSetExtraConfigsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"extraConfigs",
@@ -660,7 +675,7 @@ func (j *jsiiProxy_Mount) SetExtraConfigs(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Mount) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Mount)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -668,7 +683,10 @@ func (j *jsiiProxy_Mount) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Mount) SetId(val *string) {
+func (j *jsiiProxy_Mount)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -676,7 +694,10 @@ func (j *jsiiProxy_Mount) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Mount) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Mount)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -684,7 +705,10 @@ func (j *jsiiProxy_Mount) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Mount) SetName(val *string) {
+func (j *jsiiProxy_Mount)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -692,7 +716,7 @@ func (j *jsiiProxy_Mount) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Mount) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Mount)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -700,7 +724,10 @@ func (j *jsiiProxy_Mount) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Mount) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Mount)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -708,7 +735,10 @@ func (j *jsiiProxy_Mount) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Mount) SetResourceId(val *string) {
+func (j *jsiiProxy_Mount)SetResourceId(val *string) {
+	if err := j.validateSetResourceIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"resourceId",
@@ -716,7 +746,10 @@ func (j *jsiiProxy_Mount) SetResourceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Mount) SetUri(val *string) {
+func (j *jsiiProxy_Mount)SetUri(val *string) {
+	if err := j.validateSetUriParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"uri",
@@ -744,6 +777,9 @@ func (j *jsiiProxy_Mount) SetUri(val *string) {
 func Mount_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateMount_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -768,6 +804,9 @@ func Mount_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_Mount) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -776,6 +815,9 @@ func (m *jsiiProxy_Mount) AddOverride(path *string, value interface{}) {
 }
 
 func (m *jsiiProxy_Mount) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -789,6 +831,9 @@ func (m *jsiiProxy_Mount) GetAnyMapAttribute(terraformAttribute *string) *map[st
 }
 
 func (m *jsiiProxy_Mount) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -802,6 +847,9 @@ func (m *jsiiProxy_Mount) GetBooleanAttribute(terraformAttribute *string) cdktf.
 }
 
 func (m *jsiiProxy_Mount) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -815,6 +863,9 @@ func (m *jsiiProxy_Mount) GetBooleanMapAttribute(terraformAttribute *string) *ma
 }
 
 func (m *jsiiProxy_Mount) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -828,6 +879,9 @@ func (m *jsiiProxy_Mount) GetListAttribute(terraformAttribute *string) *[]*strin
 }
 
 func (m *jsiiProxy_Mount) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -841,6 +895,9 @@ func (m *jsiiProxy_Mount) GetNumberAttribute(terraformAttribute *string) *float6
 }
 
 func (m *jsiiProxy_Mount) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -854,6 +911,9 @@ func (m *jsiiProxy_Mount) GetNumberListAttribute(terraformAttribute *string) *[]
 }
 
 func (m *jsiiProxy_Mount) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -867,6 +927,9 @@ func (m *jsiiProxy_Mount) GetNumberMapAttribute(terraformAttribute *string) *map
 }
 
 func (m *jsiiProxy_Mount) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -880,6 +943,9 @@ func (m *jsiiProxy_Mount) GetStringAttribute(terraformAttribute *string) *string
 }
 
 func (m *jsiiProxy_Mount) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -893,6 +959,9 @@ func (m *jsiiProxy_Mount) GetStringMapAttribute(terraformAttribute *string) *map
 }
 
 func (m *jsiiProxy_Mount) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -906,6 +975,9 @@ func (m *jsiiProxy_Mount) InterpolationForAttribute(terraformAttribute *string) 
 }
 
 func (m *jsiiProxy_Mount) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
@@ -914,6 +986,9 @@ func (m *jsiiProxy_Mount) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (m *jsiiProxy_Mount) PutAbfs(value *MountAbfs) {
+	if err := m.validatePutAbfsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putAbfs",
@@ -922,6 +997,9 @@ func (m *jsiiProxy_Mount) PutAbfs(value *MountAbfs) {
 }
 
 func (m *jsiiProxy_Mount) PutAdl(value *MountAdl) {
+	if err := m.validatePutAdlParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putAdl",
@@ -930,6 +1008,9 @@ func (m *jsiiProxy_Mount) PutAdl(value *MountAdl) {
 }
 
 func (m *jsiiProxy_Mount) PutGs(value *MountGs) {
+	if err := m.validatePutGsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putGs",
@@ -938,6 +1019,9 @@ func (m *jsiiProxy_Mount) PutGs(value *MountGs) {
 }
 
 func (m *jsiiProxy_Mount) PutS3(value *MountS3) {
+	if err := m.validatePutS3Parameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putS3",
@@ -946,6 +1030,9 @@ func (m *jsiiProxy_Mount) PutS3(value *MountS3) {
 }
 
 func (m *jsiiProxy_Mount) PutTimeouts(value *MountTimeouts) {
+	if err := m.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
@@ -954,6 +1041,9 @@ func (m *jsiiProxy_Mount) PutTimeouts(value *MountTimeouts) {
 }
 
 func (m *jsiiProxy_Mount) PutWasb(value *MountWasb) {
+	if err := m.validatePutWasbParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putWasb",

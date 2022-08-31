@@ -270,6 +270,9 @@ func (j *jsiiProxy_JobGitSourceOutputReference) UrlInput() *string {
 func NewJobGitSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobGitSourceOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewJobGitSourceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_JobGitSourceOutputReference{}
 
 	_jsii_.Create(
@@ -291,7 +294,10 @@ func NewJobGitSourceOutputReference_Override(j JobGitSourceOutputReference, terr
 	)
 }
 
-func (j *jsiiProxy_JobGitSourceOutputReference) SetBranch(val *string) {
+func (j *jsiiProxy_JobGitSourceOutputReference)SetBranch(val *string) {
+	if err := j.validateSetBranchParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"branch",
@@ -299,7 +305,10 @@ func (j *jsiiProxy_JobGitSourceOutputReference) SetBranch(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobGitSourceOutputReference) SetCommit(val *string) {
+func (j *jsiiProxy_JobGitSourceOutputReference)SetCommit(val *string) {
+	if err := j.validateSetCommitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"commit",
@@ -307,7 +316,10 @@ func (j *jsiiProxy_JobGitSourceOutputReference) SetCommit(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobGitSourceOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobGitSourceOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -315,7 +327,10 @@ func (j *jsiiProxy_JobGitSourceOutputReference) SetComplexObjectIndex(val interf
 	)
 }
 
-func (j *jsiiProxy_JobGitSourceOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobGitSourceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -323,7 +338,10 @@ func (j *jsiiProxy_JobGitSourceOutputReference) SetComplexObjectIsFromSet(val *b
 	)
 }
 
-func (j *jsiiProxy_JobGitSourceOutputReference) SetInternalValue(val *JobGitSource) {
+func (j *jsiiProxy_JobGitSourceOutputReference)SetInternalValue(val *JobGitSource) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -331,7 +349,10 @@ func (j *jsiiProxy_JobGitSourceOutputReference) SetInternalValue(val *JobGitSour
 	)
 }
 
-func (j *jsiiProxy_JobGitSourceOutputReference) SetProvider(val *string) {
+func (j *jsiiProxy_JobGitSourceOutputReference)SetProvider(val *string) {
+	if err := j.validateSetProviderParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provider",
@@ -339,7 +360,10 @@ func (j *jsiiProxy_JobGitSourceOutputReference) SetProvider(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobGitSourceOutputReference) SetTag(val *string) {
+func (j *jsiiProxy_JobGitSourceOutputReference)SetTag(val *string) {
+	if err := j.validateSetTagParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tag",
@@ -347,7 +371,10 @@ func (j *jsiiProxy_JobGitSourceOutputReference) SetTag(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobGitSourceOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobGitSourceOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -355,7 +382,10 @@ func (j *jsiiProxy_JobGitSourceOutputReference) SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_JobGitSourceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobGitSourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -363,7 +393,10 @@ func (j *jsiiProxy_JobGitSourceOutputReference) SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_JobGitSourceOutputReference) SetUrl(val *string) {
+func (j *jsiiProxy_JobGitSourceOutputReference)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"url",
@@ -385,6 +418,9 @@ func (j *jsiiProxy_JobGitSourceOutputReference) ComputeFqn() *string {
 }
 
 func (j *jsiiProxy_JobGitSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -398,6 +434,9 @@ func (j *jsiiProxy_JobGitSourceOutputReference) GetAnyMapAttribute(terraformAttr
 }
 
 func (j *jsiiProxy_JobGitSourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -411,6 +450,9 @@ func (j *jsiiProxy_JobGitSourceOutputReference) GetBooleanAttribute(terraformAtt
 }
 
 func (j *jsiiProxy_JobGitSourceOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := j.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -424,6 +466,9 @@ func (j *jsiiProxy_JobGitSourceOutputReference) GetBooleanMapAttribute(terraform
 }
 
 func (j *jsiiProxy_JobGitSourceOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := j.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -437,6 +482,9 @@ func (j *jsiiProxy_JobGitSourceOutputReference) GetListAttribute(terraformAttrib
 }
 
 func (j *jsiiProxy_JobGitSourceOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := j.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -450,6 +498,9 @@ func (j *jsiiProxy_JobGitSourceOutputReference) GetNumberAttribute(terraformAttr
 }
 
 func (j *jsiiProxy_JobGitSourceOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := j.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -463,6 +514,9 @@ func (j *jsiiProxy_JobGitSourceOutputReference) GetNumberListAttribute(terraform
 }
 
 func (j *jsiiProxy_JobGitSourceOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := j.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -476,6 +530,9 @@ func (j *jsiiProxy_JobGitSourceOutputReference) GetNumberMapAttribute(terraformA
 }
 
 func (j *jsiiProxy_JobGitSourceOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := j.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (j *jsiiProxy_JobGitSourceOutputReference) GetStringAttribute(terraformAttr
 }
 
 func (j *jsiiProxy_JobGitSourceOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := j.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -515,6 +575,9 @@ func (j *jsiiProxy_JobGitSourceOutputReference) InterpolationAsList() cdktf.IRes
 }
 
 func (j *jsiiProxy_JobGitSourceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -560,6 +623,9 @@ func (j *jsiiProxy_JobGitSourceOutputReference) ResetTag() {
 }
 
 func (j *jsiiProxy_JobGitSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(
