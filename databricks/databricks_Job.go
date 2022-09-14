@@ -28,6 +28,8 @@ type Job interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DbtTask() JobDbtTaskOutputReference
+	DbtTaskInput() *JobDbtTask
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -146,6 +148,7 @@ type Job interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDbtTask(value *JobDbtTask)
 	PutEmailNotifications(value *JobEmailNotifications)
 	PutGitSource(value *JobGitSource)
 	PutJobCluster(value interface{})
@@ -161,6 +164,7 @@ type Job interface {
 	PutTask(value interface{})
 	PutTimeouts(value *JobTimeouts)
 	ResetAlwaysRunning()
+	ResetDbtTask()
 	ResetEmailNotifications()
 	ResetExistingClusterId()
 	ResetFormat()
@@ -258,6 +262,26 @@ func (j *jsiiProxy_Job) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) DbtTask() JobDbtTaskOutputReference {
+	var returns JobDbtTaskOutputReference
+	_jsii_.Get(
+		j,
+		"dbtTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) DbtTaskInput() *JobDbtTask {
+	var returns *JobDbtTask
+	_jsii_.Get(
+		j,
+		"dbtTaskInput",
 		&returns,
 	)
 	return returns
@@ -1317,6 +1341,17 @@ func (j *jsiiProxy_Job) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (j *jsiiProxy_Job) PutDbtTask(value *JobDbtTask) {
+	if err := j.validatePutDbtTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putDbtTask",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_Job) PutEmailNotifications(value *JobEmailNotifications) {
 	if err := j.validatePutEmailNotificationsParameters(value); err != nil {
 		panic(err)
@@ -1475,6 +1510,14 @@ func (j *jsiiProxy_Job) ResetAlwaysRunning() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetAlwaysRunning",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetDbtTask() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetDbtTask",
 		nil, // no parameters
 	)
 }

@@ -54,6 +54,10 @@ func (j *jsiiProxy_Job) validateOverrideLogicalIdParameters(newLogicalId *string
 	return nil
 }
 
+func (j *jsiiProxy_Job) validatePutDbtTaskParameters(value *JobDbtTask) error {
+	return nil
+}
+
 func (j *jsiiProxy_Job) validatePutEmailNotificationsParameters(value *JobEmailNotifications) error {
 	return nil
 }

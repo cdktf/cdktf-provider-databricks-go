@@ -2,7 +2,7 @@
 package databricks
 
 
-type JobTaskDbtTask struct {
+type JobDbtTask struct {
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#commands Job#commands}.
 	Commands *[]*string `field:"required" json:"commands" yaml:"commands"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#profiles_directory Job#profiles_directory}.

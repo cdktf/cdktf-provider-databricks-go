@@ -66,6 +66,10 @@ func (j *jsiiProxy_Catalog) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_Catalog) validateSetForceDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Catalog) validateSetIdParameters(val *string) error {
 	return nil
 }

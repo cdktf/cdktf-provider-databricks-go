@@ -66,6 +66,10 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetInternalValueParame
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetProfilesDirectoryParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetProjectDirectoryParameters(val *string) error {
 	return nil
 }
@@ -79,6 +83,10 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetTerraformAttributeP
 }
 
 func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetWarehouseIdParameters(val *string) error {
 	return nil
 }
 

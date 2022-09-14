@@ -13,7 +13,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (c *jsiiProxy_Catalog) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GroupRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -25,7 +25,7 @@ func (c *jsiiProxy_Catalog) validateAddOverrideParameters(path *string, value in
 	return nil
 }
 
-func (c *jsiiProxy_Catalog) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (g *jsiiProxy_GroupRole) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -33,7 +33,7 @@ func (c *jsiiProxy_Catalog) validateGetAnyMapAttributeParameters(terraformAttrib
 	return nil
 }
 
-func (c *jsiiProxy_Catalog) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (g *jsiiProxy_GroupRole) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -41,7 +41,7 @@ func (c *jsiiProxy_Catalog) validateGetBooleanAttributeParameters(terraformAttri
 	return nil
 }
 
-func (c *jsiiProxy_Catalog) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (g *jsiiProxy_GroupRole) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -49,7 +49,7 @@ func (c *jsiiProxy_Catalog) validateGetBooleanMapAttributeParameters(terraformAt
 	return nil
 }
 
-func (c *jsiiProxy_Catalog) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (g *jsiiProxy_GroupRole) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -57,7 +57,7 @@ func (c *jsiiProxy_Catalog) validateGetListAttributeParameters(terraformAttribut
 	return nil
 }
 
-func (c *jsiiProxy_Catalog) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (g *jsiiProxy_GroupRole) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -65,7 +65,7 @@ func (c *jsiiProxy_Catalog) validateGetNumberAttributeParameters(terraformAttrib
 	return nil
 }
 
-func (c *jsiiProxy_Catalog) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (g *jsiiProxy_GroupRole) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -73,7 +73,7 @@ func (c *jsiiProxy_Catalog) validateGetNumberListAttributeParameters(terraformAt
 	return nil
 }
 
-func (c *jsiiProxy_Catalog) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (g *jsiiProxy_GroupRole) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -81,7 +81,7 @@ func (c *jsiiProxy_Catalog) validateGetNumberMapAttributeParameters(terraformAtt
 	return nil
 }
 
-func (c *jsiiProxy_Catalog) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (g *jsiiProxy_GroupRole) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -89,7 +89,7 @@ func (c *jsiiProxy_Catalog) validateGetStringAttributeParameters(terraformAttrib
 	return nil
 }
 
-func (c *jsiiProxy_Catalog) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (g *jsiiProxy_GroupRole) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -97,7 +97,7 @@ func (c *jsiiProxy_Catalog) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
-func (c *jsiiProxy_Catalog) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+func (g *jsiiProxy_GroupRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -105,7 +105,7 @@ func (c *jsiiProxy_Catalog) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
-func (c *jsiiProxy_Catalog) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+func (g *jsiiProxy_GroupRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
 	}
@@ -113,7 +113,7 @@ func (c *jsiiProxy_Catalog) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
-func validateCatalog_IsConstructParameters(x interface{}) error {
+func validateGroupRole_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -121,15 +121,7 @@ func validateCatalog_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Catalog) validateSetCommentParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Catalog) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GroupRole) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -162,27 +154,7 @@ func (j *jsiiProxy_Catalog) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_Catalog) validateSetForceDestroyParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Catalog) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_GroupRole) validateSetGroupIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -190,7 +162,15 @@ func (j *jsiiProxy_Catalog) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Catalog) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GroupRole) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GroupRole) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -198,39 +178,7 @@ func (j *jsiiProxy_Catalog) validateSetLifecycleParameters(val *cdktf.TerraformR
 	return nil
 }
 
-func (j *jsiiProxy_Catalog) validateSetMetastoreIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Catalog) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Catalog) validateSetOwnerParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Catalog) validateSetPropertiesParameters(val *map[string]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Catalog) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GroupRole) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -276,7 +224,15 @@ func (j *jsiiProxy_Catalog) validateSetProvisionersParameters(val *[]interface{}
 	return nil
 }
 
-func validateNewCatalogParameters(scope constructs.Construct, id *string, config *CatalogConfig) error {
+func (j *jsiiProxy_GroupRole) validateSetRoleParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateNewGroupRoleParameters(scope constructs.Construct, id *string, config *GroupRoleConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}

@@ -22,6 +22,10 @@ type JobConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#always_running Job#always_running}.
 	AlwaysRunning interface{} `field:"optional" json:"alwaysRunning" yaml:"alwaysRunning"`
+	// dbt_task block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#dbt_task Job#dbt_task}
+	DbtTask *JobDbtTask `field:"optional" json:"dbtTask" yaml:"dbtTask"`
 	// email_notifications block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#email_notifications Job#email_notifications}

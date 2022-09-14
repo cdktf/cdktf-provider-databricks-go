@@ -10,14 +10,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/catalog databricks_catalog}.
-type Catalog interface {
+// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/group_role databricks_group_role}.
+type GroupRole interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	Comment() *string
-	SetComment(val *string)
-	CommentInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -32,9 +29,6 @@ type Catalog interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	ForceDestroy() interface{}
-	SetForceDestroy(val interface{})
-	ForceDestroyInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -43,6 +37,9 @@ type Catalog interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GroupId() *string
+	SetGroupId(val *string)
+	GroupIdInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -50,20 +47,8 @@ type Catalog interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MetastoreId() *string
-	SetMetastoreId(val *string)
-	MetastoreIdInput() *string
-	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Owner() *string
-	SetOwner(val *string)
-	OwnerInput() *string
-	Properties() *map[string]*string
-	SetProperties(val *map[string]*string)
-	PropertiesInput() *map[string]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -74,6 +59,9 @@ type Catalog interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Role() *string
+	SetRole(val *string)
+	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -105,15 +93,10 @@ type Catalog interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetComment()
-	ResetForceDestroy()
 	ResetId()
-	ResetMetastoreId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetOwner()
-	ResetProperties()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -124,12 +107,12 @@ type Catalog interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for Catalog
-type jsiiProxy_Catalog struct {
+// The jsii proxy struct for GroupRole
+type jsiiProxy_GroupRole struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_Catalog) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_GroupRole) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -139,27 +122,7 @@ func (j *jsiiProxy_Catalog) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) Comment() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"comment",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Catalog) CommentInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"commentInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Catalog) Connection() interface{} {
+func (j *jsiiProxy_GroupRole) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -169,7 +132,7 @@ func (j *jsiiProxy_Catalog) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_GroupRole) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -179,7 +142,7 @@ func (j *jsiiProxy_Catalog) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) Count() *float64 {
+func (j *jsiiProxy_GroupRole) Count() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -189,7 +152,7 @@ func (j *jsiiProxy_Catalog) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) DependsOn() *[]*string {
+func (j *jsiiProxy_GroupRole) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -199,27 +162,7 @@ func (j *jsiiProxy_Catalog) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) ForceDestroy() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"forceDestroy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Catalog) ForceDestroyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"forceDestroyInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Catalog) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_GroupRole) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -229,7 +172,7 @@ func (j *jsiiProxy_Catalog) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) Fqn() *string {
+func (j *jsiiProxy_GroupRole) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -239,7 +182,7 @@ func (j *jsiiProxy_Catalog) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) FriendlyUniqueId() *string {
+func (j *jsiiProxy_GroupRole) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -249,7 +192,27 @@ func (j *jsiiProxy_Catalog) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) Id() *string {
+func (j *jsiiProxy_GroupRole) GroupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupRole) GroupIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupRole) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -259,7 +222,7 @@ func (j *jsiiProxy_Catalog) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) IdInput() *string {
+func (j *jsiiProxy_GroupRole) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -269,7 +232,7 @@ func (j *jsiiProxy_Catalog) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_GroupRole) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -279,47 +242,7 @@ func (j *jsiiProxy_Catalog) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) MetastoreId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"metastoreId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Catalog) MetastoreIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"metastoreIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Catalog) Name() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Catalog) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Catalog) Node() constructs.Node {
+func (j *jsiiProxy_GroupRole) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -329,47 +252,7 @@ func (j *jsiiProxy_Catalog) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) Owner() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"owner",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Catalog) OwnerInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ownerInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Catalog) Properties() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"properties",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Catalog) PropertiesInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"propertiesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Catalog) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_GroupRole) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -379,7 +262,7 @@ func (j *jsiiProxy_Catalog) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) Provisioners() *[]interface{} {
+func (j *jsiiProxy_GroupRole) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
 		j,
@@ -389,7 +272,7 @@ func (j *jsiiProxy_Catalog) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) RawOverrides() interface{} {
+func (j *jsiiProxy_GroupRole) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -399,7 +282,27 @@ func (j *jsiiProxy_Catalog) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_GroupRole) Role() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"role",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupRole) RoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -409,7 +312,7 @@ func (j *jsiiProxy_Catalog) TerraformGeneratorMetadata() *cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_GroupRole) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -419,7 +322,7 @@ func (j *jsiiProxy_Catalog) TerraformMetaArguments() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) TerraformResourceType() *string {
+func (j *jsiiProxy_GroupRole) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -430,17 +333,17 @@ func (j *jsiiProxy_Catalog) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/catalog databricks_catalog} Resource.
-func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) Catalog {
+// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/group_role databricks_group_role} Resource.
+func NewGroupRole(scope constructs.Construct, id *string, config *GroupRoleConfig) GroupRole {
 	_init_.Initialize()
 
-	if err := validateNewCatalogParameters(scope, id, config); err != nil {
+	if err := validateNewGroupRoleParameters(scope, id, config); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_Catalog{}
+	j := jsiiProxy_GroupRole{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.Catalog",
+		"@cdktf/provider-databricks.GroupRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -448,29 +351,18 @@ func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) C
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/catalog databricks_catalog} Resource.
-func NewCatalog_Override(c Catalog, scope constructs.Construct, id *string, config *CatalogConfig) {
+// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/group_role databricks_group_role} Resource.
+func NewGroupRole_Override(g GroupRole, scope constructs.Construct, id *string, config *GroupRoleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.Catalog",
+		"@cdktf/provider-databricks.GroupRole",
 		[]interface{}{scope, id, config},
-		c,
+		g,
 	)
 }
 
-func (j *jsiiProxy_Catalog)SetComment(val *string) {
-	if err := j.validateSetCommentParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"comment",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Catalog)SetConnection(val interface{}) {
+func (j *jsiiProxy_GroupRole)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,7 +373,7 @@ func (j *jsiiProxy_Catalog)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Catalog)SetCount(val *float64) {
+func (j *jsiiProxy_GroupRole)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -489,7 +381,7 @@ func (j *jsiiProxy_Catalog)SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Catalog)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GroupRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -497,18 +389,7 @@ func (j *jsiiProxy_Catalog)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Catalog)SetForceDestroy(val interface{}) {
-	if err := j.validateSetForceDestroyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"forceDestroy",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Catalog)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GroupRole)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -516,7 +397,18 @@ func (j *jsiiProxy_Catalog)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Catalog)SetId(val *string) {
+func (j *jsiiProxy_GroupRole)SetGroupId(val *string) {
+	if err := j.validateSetGroupIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupRole)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -527,7 +419,7 @@ func (j *jsiiProxy_Catalog)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Catalog)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GroupRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,51 +430,7 @@ func (j *jsiiProxy_Catalog)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Catalog)SetMetastoreId(val *string) {
-	if err := j.validateSetMetastoreIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"metastoreId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Catalog)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Catalog)SetOwner(val *string) {
-	if err := j.validateSetOwnerParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"owner",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Catalog)SetProperties(val *map[string]*string) {
-	if err := j.validateSetPropertiesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"properties",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Catalog)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GroupRole)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -590,13 +438,24 @@ func (j *jsiiProxy_Catalog)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Catalog)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GroupRole)SetProvisioners(val *[]interface{}) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupRole)SetRole(val *string) {
+	if err := j.validateSetRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"role",
 		val,
 	)
 }
@@ -618,16 +477,16 @@ func (j *jsiiProxy_Catalog)SetProvisioners(val *[]interface{}) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Catalog_IsConstruct(x interface{}) *bool {
+func GroupRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCatalog_IsConstructParameters(x); err != nil {
+	if err := validateGroupRole_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-databricks.Catalog",
+		"@cdktf/provider-databricks.GroupRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -636,36 +495,36 @@ func Catalog_IsConstruct(x interface{}) *bool {
 	return returns
 }
 
-func Catalog_TfResourceType() *string {
+func GroupRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-databricks.Catalog",
+		"@cdktf/provider-databricks.GroupRole",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (c *jsiiProxy_Catalog) AddOverride(path *string, value interface{}) {
-	if err := c.validateAddOverrideParameters(path, value); err != nil {
+func (g *jsiiProxy_GroupRole) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		c,
+		g,
 		"addOverride",
 		[]interface{}{path, value},
 	)
 }
 
-func (c *jsiiProxy_Catalog) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
-	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+func (g *jsiiProxy_GroupRole) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		c,
+		g,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -674,14 +533,14 @@ func (c *jsiiProxy_Catalog) GetAnyMapAttribute(terraformAttribute *string) *map[
 	return returns
 }
 
-func (c *jsiiProxy_Catalog) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+func (g *jsiiProxy_GroupRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		c,
+		g,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -690,14 +549,14 @@ func (c *jsiiProxy_Catalog) GetBooleanAttribute(terraformAttribute *string) cdkt
 	return returns
 }
 
-func (c *jsiiProxy_Catalog) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
-	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+func (g *jsiiProxy_GroupRole) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		c,
+		g,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -706,14 +565,14 @@ func (c *jsiiProxy_Catalog) GetBooleanMapAttribute(terraformAttribute *string) *
 	return returns
 }
 
-func (c *jsiiProxy_Catalog) GetListAttribute(terraformAttribute *string) *[]*string {
-	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+func (g *jsiiProxy_GroupRole) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		c,
+		g,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -722,14 +581,14 @@ func (c *jsiiProxy_Catalog) GetListAttribute(terraformAttribute *string) *[]*str
 	return returns
 }
 
-func (c *jsiiProxy_Catalog) GetNumberAttribute(terraformAttribute *string) *float64 {
-	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+func (g *jsiiProxy_GroupRole) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *float64
 
 	_jsii_.Invoke(
-		c,
+		g,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -738,14 +597,14 @@ func (c *jsiiProxy_Catalog) GetNumberAttribute(terraformAttribute *string) *floa
 	return returns
 }
 
-func (c *jsiiProxy_Catalog) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
-	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+func (g *jsiiProxy_GroupRole) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		c,
+		g,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -754,14 +613,14 @@ func (c *jsiiProxy_Catalog) GetNumberListAttribute(terraformAttribute *string) *
 	return returns
 }
 
-func (c *jsiiProxy_Catalog) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
-	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+func (g *jsiiProxy_GroupRole) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		c,
+		g,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -770,14 +629,14 @@ func (c *jsiiProxy_Catalog) GetNumberMapAttribute(terraformAttribute *string) *m
 	return returns
 }
 
-func (c *jsiiProxy_Catalog) GetStringAttribute(terraformAttribute *string) *string {
-	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+func (g *jsiiProxy_GroupRole) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *string
 
 	_jsii_.Invoke(
-		c,
+		g,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -786,14 +645,14 @@ func (c *jsiiProxy_Catalog) GetStringAttribute(terraformAttribute *string) *stri
 	return returns
 }
 
-func (c *jsiiProxy_Catalog) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
-	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+func (g *jsiiProxy_GroupRole) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		c,
+		g,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -802,14 +661,14 @@ func (c *jsiiProxy_Catalog) GetStringMapAttribute(terraformAttribute *string) *m
 	return returns
 }
 
-func (c *jsiiProxy_Catalog) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+func (g *jsiiProxy_GroupRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		c,
+		g,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -818,78 +677,38 @@ func (c *jsiiProxy_Catalog) InterpolationForAttribute(terraformAttribute *string
 	return returns
 }
 
-func (c *jsiiProxy_Catalog) OverrideLogicalId(newLogicalId *string) {
-	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+func (g *jsiiProxy_GroupRole) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		c,
+		g,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_Catalog) ResetComment() {
+func (g *jsiiProxy_GroupRole) ResetId() {
 	_jsii_.InvokeVoid(
-		c,
-		"resetComment",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_Catalog) ResetForceDestroy() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetForceDestroy",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_Catalog) ResetId() {
-	_jsii_.InvokeVoid(
-		c,
+		g,
 		"resetId",
 		nil, // no parameters
 	)
 }
 
-func (c *jsiiProxy_Catalog) ResetMetastoreId() {
+func (g *jsiiProxy_GroupRole) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
-		c,
-		"resetMetastoreId",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_Catalog) ResetOverrideLogicalId() {
-	_jsii_.InvokeVoid(
-		c,
+		g,
 		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }
 
-func (c *jsiiProxy_Catalog) ResetOwner() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetOwner",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_Catalog) ResetProperties() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetProperties",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_Catalog) SynthesizeAttributes() *map[string]interface{} {
+func (g *jsiiProxy_GroupRole) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		c,
+		g,
 		"synthesizeAttributes",
 		nil, // no parameters
 		&returns,
@@ -898,11 +717,11 @@ func (c *jsiiProxy_Catalog) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_Catalog) ToMetadata() interface{} {
+func (g *jsiiProxy_GroupRole) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		c,
+		g,
 		"toMetadata",
 		nil, // no parameters
 		&returns,
@@ -911,11 +730,11 @@ func (c *jsiiProxy_Catalog) ToMetadata() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_Catalog) ToString() *string {
+func (g *jsiiProxy_GroupRole) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		c,
+		g,
 		"toString",
 		nil, // no parameters
 		&returns,
@@ -924,11 +743,11 @@ func (c *jsiiProxy_Catalog) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_Catalog) ToTerraform() interface{} {
+func (g *jsiiProxy_GroupRole) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		c,
+		g,
 		"toTerraform",
 		nil, // no parameters
 		&returns,

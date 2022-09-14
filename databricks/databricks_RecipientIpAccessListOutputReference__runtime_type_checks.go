@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -20,7 +20,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetAnyMapAttributePara
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -28,7 +28,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetBooleanAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -36,7 +36,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetBooleanMapAttribute
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -44,7 +44,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetListAttributeParame
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -52,7 +52,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetNumberAttributePara
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -60,7 +60,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetNumberListAttribute
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -68,7 +68,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetNumberMapAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -76,7 +76,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetStringAttributePara
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -84,7 +84,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateGetStringMapAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -92,7 +92,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateInterpolationForAttrib
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -100,7 +100,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetCommandsParameters(val *[]*string) error {
+func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetAllowedIpAddressesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -108,7 +108,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetCommandsParameters(
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -165,7 +165,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetComplexObjectIndexP
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -173,7 +173,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetComplexObjectIsFrom
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetInternalValueParameters(val *JobTaskDbtTask) error {
+func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetInternalValueParameters(val *RecipientIpAccessList) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -181,7 +181,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetInternalValueParame
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetProfilesDirectoryParameters(val *string) error {
+func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -189,7 +189,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetProfilesDirectoryPa
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetProjectDirectoryParameters(val *string) error {
+func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -197,39 +197,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetProjectDirectoryPar
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetSchemaParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetTerraformAttributeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetWarehouseIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func validateNewJobTaskDbtTaskOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRecipientIpAccessListOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

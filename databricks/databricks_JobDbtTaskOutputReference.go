@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type JobTaskDbtTaskOutputReference interface {
+type JobDbtTaskOutputReference interface {
 	cdktf.ComplexObject
 	Commands() *[]*string
 	SetCommands(val *[]*string)
@@ -31,8 +31,8 @@ type JobTaskDbtTaskOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *JobTaskDbtTask
-	SetInternalValue(val *JobTaskDbtTask)
+	InternalValue() *JobDbtTask
+	SetInternalValue(val *JobDbtTask)
 	ProfilesDirectory() *string
 	SetProfilesDirectory(val *string)
 	ProfilesDirectoryInput() *string
@@ -91,12 +91,12 @@ type JobTaskDbtTaskOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for JobTaskDbtTaskOutputReference
-type jsiiProxy_JobTaskDbtTaskOutputReference struct {
+// The jsii proxy struct for JobDbtTaskOutputReference
+type jsiiProxy_JobDbtTaskOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) Commands() *[]*string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) Commands() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -106,7 +106,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) Commands() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) CommandsInput() *[]*string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) CommandsInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -116,7 +116,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) CommandsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_JobDbtTaskOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -126,7 +126,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ComplexObjectIndex() interface
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_JobDbtTaskOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -136,7 +136,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ComplexObjectIsFromSet() *bool
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -146,7 +146,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) Fqn() *string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -156,8 +156,8 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) InternalValue() *JobTaskDbtTask {
-	var returns *JobTaskDbtTask
+func (j *jsiiProxy_JobDbtTaskOutputReference) InternalValue() *JobDbtTask {
+	var returns *JobDbtTask
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -166,7 +166,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) InternalValue() *JobTaskDbtTas
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ProfilesDirectory() *string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) ProfilesDirectory() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -176,7 +176,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ProfilesDirectory() *string {
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ProfilesDirectoryInput() *string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) ProfilesDirectoryInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -186,7 +186,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ProfilesDirectoryInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ProjectDirectory() *string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) ProjectDirectory() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -196,7 +196,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ProjectDirectory() *string {
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ProjectDirectoryInput() *string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) ProjectDirectoryInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -206,7 +206,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ProjectDirectoryInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) Schema() *string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) Schema() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -216,7 +216,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) Schema() *string {
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) SchemaInput() *string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) SchemaInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -226,7 +226,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) SchemaInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -236,7 +236,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_JobDbtTaskOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -246,7 +246,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) TerraformResource() cdktf.IInt
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) WarehouseId() *string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) WarehouseId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -256,7 +256,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) WarehouseId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) WarehouseIdInput() *string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) WarehouseIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -267,16 +267,16 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) WarehouseIdInput() *string {
 }
 
 
-func NewJobTaskDbtTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobTaskDbtTaskOutputReference {
+func NewJobDbtTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobDbtTaskOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewJobTaskDbtTaskOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewJobDbtTaskOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_JobTaskDbtTaskOutputReference{}
+	j := jsiiProxy_JobDbtTaskOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.JobTaskDbtTaskOutputReference",
+		"@cdktf/provider-databricks.JobDbtTaskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,17 +284,17 @@ func NewJobTaskDbtTaskOutputReference(terraformResource cdktf.IInterpolatingPare
 	return &j
 }
 
-func NewJobTaskDbtTaskOutputReference_Override(j JobTaskDbtTaskOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewJobDbtTaskOutputReference_Override(j JobDbtTaskOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.JobTaskDbtTaskOutputReference",
+		"@cdktf/provider-databricks.JobDbtTaskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetCommands(val *[]*string) {
+func (j *jsiiProxy_JobDbtTaskOutputReference)SetCommands(val *[]*string) {
 	if err := j.validateSetCommandsParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetCommands(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobDbtTaskOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +316,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetComplexObjectIndex(val inter
 	)
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobDbtTaskOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +327,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetComplexObjectIsFromSet(val *
 	)
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetInternalValue(val *JobTaskDbtTask) {
+func (j *jsiiProxy_JobDbtTaskOutputReference)SetInternalValue(val *JobDbtTask) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +338,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetInternalValue(val *JobTaskDb
 	)
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetProfilesDirectory(val *string) {
+func (j *jsiiProxy_JobDbtTaskOutputReference)SetProfilesDirectory(val *string) {
 	if err := j.validateSetProfilesDirectoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +349,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetProfilesDirectory(val *strin
 	)
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetProjectDirectory(val *string) {
+func (j *jsiiProxy_JobDbtTaskOutputReference)SetProjectDirectory(val *string) {
 	if err := j.validateSetProjectDirectoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +360,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetProjectDirectory(val *string
 	)
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetSchema(val *string) {
+func (j *jsiiProxy_JobDbtTaskOutputReference)SetSchema(val *string) {
 	if err := j.validateSetSchemaParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +371,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetSchema(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobDbtTaskOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +382,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobDbtTaskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +393,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetWarehouseId(val *string) {
+func (j *jsiiProxy_JobDbtTaskOutputReference)SetWarehouseId(val *string) {
 	if err := j.validateSetWarehouseIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +404,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference)SetWarehouseId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ComputeFqn() *string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -417,7 +417,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobDbtTaskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -433,7 +433,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetAnyMapAttribute(terraformAt
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobDbtTaskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -449,7 +449,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetBooleanAttribute(terraformA
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (j *jsiiProxy_JobDbtTaskOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := j.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -465,7 +465,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetBooleanMapAttribute(terrafo
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := j.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -481,7 +481,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetListAttribute(terraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (j *jsiiProxy_JobDbtTaskOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := j.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -497,7 +497,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetNumberAttribute(terraformAt
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (j *jsiiProxy_JobDbtTaskOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := j.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -513,7 +513,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetNumberListAttribute(terrafo
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (j *jsiiProxy_JobDbtTaskOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := j.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -529,7 +529,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetNumberMapAttribute(terrafor
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := j.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -545,7 +545,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetStringAttribute(terraformAt
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := j.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -561,7 +561,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) GetStringMapAttribute(terrafor
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (j *jsiiProxy_JobDbtTaskOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -574,7 +574,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) InterpolationAsList() cdktf.IR
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobDbtTaskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -590,7 +590,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) InterpolationForAttribute(prop
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ResetProfilesDirectory() {
+func (j *jsiiProxy_JobDbtTaskOutputReference) ResetProfilesDirectory() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetProfilesDirectory",
@@ -598,7 +598,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ResetProfilesDirectory() {
 	)
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ResetProjectDirectory() {
+func (j *jsiiProxy_JobDbtTaskOutputReference) ResetProjectDirectory() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetProjectDirectory",
@@ -606,7 +606,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ResetProjectDirectory() {
 	)
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ResetSchema() {
+func (j *jsiiProxy_JobDbtTaskOutputReference) ResetSchema() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetSchema",
@@ -614,7 +614,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ResetSchema() {
 	)
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ResetWarehouseId() {
+func (j *jsiiProxy_JobDbtTaskOutputReference) ResetWarehouseId() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetWarehouseId",
@@ -622,7 +622,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ResetWarehouseId() {
 	)
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobDbtTaskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -638,7 +638,7 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) Resolve(_context cdktf.IResolv
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDbtTaskOutputReference) ToString() *string {
+func (j *jsiiProxy_JobDbtTaskOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

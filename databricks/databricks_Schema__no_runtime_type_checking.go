@@ -70,6 +70,10 @@ func (j *jsiiProxy_Schema) validateSetConnectionParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_Schema) validateSetForceDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Schema) validateSetIdParameters(val *string) error {
 	return nil
 }
