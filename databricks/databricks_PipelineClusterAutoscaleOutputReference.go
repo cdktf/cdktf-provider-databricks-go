@@ -36,6 +36,9 @@ type PipelineClusterAutoscaleOutputReference interface {
 	MinWorkers() *float64
 	SetMinWorkers(val *float64)
 	MinWorkersInput() *float64
+	Mode() *string
+	SetMode(val *string)
+	ModeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +73,7 @@ type PipelineClusterAutoscaleOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetMaxWorkers()
 	ResetMinWorkers()
+	ResetMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -175,6 +179,26 @@ func (j *jsiiProxy_PipelineClusterAutoscaleOutputReference) MinWorkersInput() *f
 	return returns
 }
 
+func (j *jsiiProxy_PipelineClusterAutoscaleOutputReference) Mode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterAutoscaleOutputReference) ModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PipelineClusterAutoscaleOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -274,6 +298,17 @@ func (j *jsiiProxy_PipelineClusterAutoscaleOutputReference)SetMinWorkers(val *fl
 	_jsii_.Set(
 		j,
 		"minWorkers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineClusterAutoscaleOutputReference)SetMode(val *string) {
+	if err := j.validateSetModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mode",
 		val,
 	)
 }
@@ -498,6 +533,14 @@ func (p *jsiiProxy_PipelineClusterAutoscaleOutputReference) ResetMinWorkers() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetMinWorkers",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineClusterAutoscaleOutputReference) ResetMode() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMode",
 		nil, // no parameters
 	)
 }

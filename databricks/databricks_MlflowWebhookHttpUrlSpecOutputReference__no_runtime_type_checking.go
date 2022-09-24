@@ -70,7 +70,7 @@ func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) validateSetInternalV
 	return nil
 }
 
-func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) validateSetStringParameters(val *string) error {
+func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) validateSetSecretParameters(val *string) error {
 	return nil
 }
 

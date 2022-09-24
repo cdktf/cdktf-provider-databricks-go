@@ -70,6 +70,10 @@ func (j *jsiiProxy_PipelineClusterAutoscaleOutputReference) validateSetMinWorker
 	return nil
 }
 
+func (j *jsiiProxy_PipelineClusterAutoscaleOutputReference) validateSetModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipelineClusterAutoscaleOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

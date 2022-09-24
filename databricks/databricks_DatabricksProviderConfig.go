@@ -17,6 +17,8 @@ type DatabricksProviderConfig struct {
 	AzureClientSecret *string `field:"optional" json:"azureClientSecret" yaml:"azureClientSecret"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_environment DatabricksProvider#azure_environment}.
 	AzureEnvironment *string `field:"optional" json:"azureEnvironment" yaml:"azureEnvironment"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_login_app_id DatabricksProvider#azure_login_app_id}.
+	AzureLoginAppId *string `field:"optional" json:"azureLoginAppId" yaml:"azureLoginAppId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_tenant_id DatabricksProvider#azure_tenant_id}.
 	AzureTenantId *string `field:"optional" json:"azureTenantId" yaml:"azureTenantId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_use_msi DatabricksProvider#azure_use_msi}.

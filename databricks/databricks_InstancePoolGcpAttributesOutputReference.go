@@ -11,9 +11,6 @@ import (
 
 type InstancePoolGcpAttributesOutputReference interface {
 	cdktf.ComplexObject
-	Availability() *string
-	SetAvailability(val *string)
-	AvailabilityInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,6 +28,9 @@ type InstancePoolGcpAttributesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GcpAvailability() *string
+	SetGcpAvailability(val *string)
+	GcpAvailabilityInput() *string
 	InternalValue() *InstancePoolGcpAttributes
 	SetInternalValue(val *InstancePoolGcpAttributes)
 	// Experimental.
@@ -65,7 +65,7 @@ type InstancePoolGcpAttributesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetAvailability()
+	ResetGcpAvailability()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -79,26 +79,6 @@ type InstancePoolGcpAttributesOutputReference interface {
 // The jsii proxy struct for InstancePoolGcpAttributesOutputReference
 type jsiiProxy_InstancePoolGcpAttributesOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) Availability() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"availability",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) AvailabilityInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"availabilityInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) ComplexObjectIndex() interface{} {
@@ -136,6 +116,26 @@ func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) GcpAvailability() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gcpAvailability",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) GcpAvailabilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gcpAvailabilityInput",
 		&returns,
 	)
 	return returns
@@ -199,17 +199,6 @@ func NewInstancePoolGcpAttributesOutputReference_Override(i InstancePoolGcpAttri
 	)
 }
 
-func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference)SetAvailability(val *string) {
-	if err := j.validateSetAvailabilityParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"availability",
-		val,
-	)
-}
-
 func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -228,6 +217,17 @@ func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference)SetComplexObjectIsFr
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference)SetGcpAvailability(val *string) {
+	if err := j.validateSetGcpAvailabilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gcpAvailability",
 		val,
 	)
 }
@@ -451,10 +451,10 @@ func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) InterpolationForAtt
 	return returns
 }
 
-func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) ResetAvailability() {
+func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) ResetGcpAvailability() {
 	_jsii_.InvokeVoid(
 		i,
-		"resetAvailability",
+		"resetGcpAvailability",
 		nil, // no parameters
 	)
 }

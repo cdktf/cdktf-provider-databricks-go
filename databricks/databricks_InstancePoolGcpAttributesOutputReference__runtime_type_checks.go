@@ -100,14 +100,6 @@ func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) validateSetAvailabilityParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -166,6 +158,14 @@ func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) validateSetComplexO
 }
 
 func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) validateSetGcpAvailabilityParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

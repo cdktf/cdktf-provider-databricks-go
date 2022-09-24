@@ -31,6 +31,9 @@ type DatabricksProvider interface {
 	AzureEnvironment() *string
 	SetAzureEnvironment(val *string)
 	AzureEnvironmentInput() *string
+	AzureLoginAppId() *string
+	SetAzureLoginAppId(val *string)
+	AzureLoginAppIdInput() *string
 	AzureTenantId() *string
 	SetAzureTenantId(val *string)
 	AzureTenantIdInput() *string
@@ -110,6 +113,7 @@ type DatabricksProvider interface {
 	ResetAzureClientId()
 	ResetAzureClientSecret()
 	ResetAzureEnvironment()
+	ResetAzureLoginAppId()
 	ResetAzureTenantId()
 	ResetAzureUseMsi()
 	ResetAzureWorkspaceResourceId()
@@ -259,6 +263,26 @@ func (j *jsiiProxy_DatabricksProvider) AzureEnvironmentInput() *string {
 	_jsii_.Get(
 		j,
 		"azureEnvironmentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) AzureLoginAppId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureLoginAppId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) AzureLoginAppIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureLoginAppIdInput",
 		&returns,
 	)
 	return returns
@@ -762,6 +786,14 @@ func (j *jsiiProxy_DatabricksProvider)SetAzureEnvironment(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DatabricksProvider)SetAzureLoginAppId(val *string) {
+	_jsii_.Set(
+		j,
+		"azureLoginAppId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabricksProvider)SetAzureTenantId(val *string) {
 	_jsii_.Set(
 		j,
@@ -1011,6 +1043,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetAzureEnvironment() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAzureEnvironment",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) ResetAzureLoginAppId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAzureLoginAppId",
 		nil, // no parameters
 	)
 }

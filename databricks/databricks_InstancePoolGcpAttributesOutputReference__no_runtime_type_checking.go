@@ -50,15 +50,15 @@ func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) validateSetAvailabilityParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) validateSetGcpAvailabilityParameters(val *string) error {
 	return nil
 }
 

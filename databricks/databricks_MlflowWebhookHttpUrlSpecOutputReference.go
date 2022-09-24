@@ -36,9 +36,9 @@ type MlflowWebhookHttpUrlSpecOutputReference interface {
 	Fqn() *string
 	InternalValue() *MlflowWebhookHttpUrlSpec
 	SetInternalValue(val *MlflowWebhookHttpUrlSpec)
-	String() *string
-	SetString(val *string)
-	StringInput() *string
+	Secret() *string
+	SetSecret(val *string)
+	SecretInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,7 +76,7 @@ type MlflowWebhookHttpUrlSpecOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAuthorization()
 	ResetEnableSslVerification()
-	ResetString()
+	ResetSecret()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -182,21 +182,21 @@ func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) InternalValue() *Mlf
 	return returns
 }
 
-func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) String() *string {
+func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) Secret() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"string",
+		"secret",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) StringInput() *string {
+func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) SecretInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"stringInput",
+		"secretInput",
 		&returns,
 	)
 	return returns
@@ -325,13 +325,13 @@ func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference)SetString(val *string) {
-	if err := j.validateSetStringParameters(val); err != nil {
+func (j *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference)SetSecret(val *string) {
+	if err := j.validateSetSecretParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"string",
+		"secret",
 		val,
 	)
 }
@@ -571,10 +571,10 @@ func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) ResetEnableSslVerifi
 	)
 }
 
-func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) ResetString() {
+func (m *jsiiProxy_MlflowWebhookHttpUrlSpecOutputReference) ResetSecret() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetString",
+		"resetSecret",
 		nil, // no parameters
 	)
 }
