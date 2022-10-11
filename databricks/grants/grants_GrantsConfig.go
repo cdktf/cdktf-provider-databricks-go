@@ -34,6 +34,8 @@ type GrantsConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#materialized_view Grants#materialized_view}.
+	MaterializedView *string `field:"optional" json:"materializedView" yaml:"materializedView"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#metastore Grants#metastore}.
 	Metastore *string `field:"optional" json:"metastore" yaml:"metastore"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#schema Grants#schema}.

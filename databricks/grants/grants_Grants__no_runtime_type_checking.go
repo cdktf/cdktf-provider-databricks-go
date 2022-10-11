@@ -85,6 +85,10 @@ func (j *jsiiProxy_Grants) validateSetLifecycleParameters(val *cdktf.TerraformRe
 	return nil
 }
 
+func (j *jsiiProxy_Grants) validateSetMaterializedViewParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Grants) validateSetMetastoreParameters(val *string) error {
 	return nil
 }

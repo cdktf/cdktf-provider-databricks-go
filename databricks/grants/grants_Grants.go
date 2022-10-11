@@ -54,6 +54,9 @@ type Grants interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaterializedView() *string
+	SetMaterializedView(val *string)
+	MaterializedViewInput() *string
 	Metastore() *string
 	SetMetastore(val *string)
 	MetastoreInput() *string
@@ -117,6 +120,7 @@ type Grants interface {
 	ResetExternalLocation()
 	ResetFunction()
 	ResetId()
+	ResetMaterializedView()
 	ResetMetastore()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -325,6 +329,26 @@ func (j *jsiiProxy_Grants) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grants) MaterializedView() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"materializedView",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grants) MaterializedViewInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"materializedViewInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (j *jsiiProxy_Grants)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Grants)SetMaterializedView(val *string) {
+	if err := j.validateSetMaterializedViewParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"materializedView",
 		val,
 	)
 }
@@ -961,6 +996,14 @@ func (g *jsiiProxy_Grants) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Grants) ResetMaterializedView() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaterializedView",
 		nil, // no parameters
 	)
 }

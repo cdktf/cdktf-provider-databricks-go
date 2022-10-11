@@ -44,6 +44,12 @@ type DatabricksProvider interface {
 	AzureWorkspaceResourceIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientId() *string
+	SetClientId(val *string)
+	ClientIdInput() *string
+	ClientSecret() *string
+	SetClientSecret(val *string)
+	ClientSecretInput() *string
 	ConfigFile() *string
 	SetConfigFile(val *string)
 	ConfigFileInput() *string
@@ -97,6 +103,9 @@ type DatabricksProvider interface {
 	TerraformResourceType() *string
 	Token() *string
 	SetToken(val *string)
+	TokenEndpoint() *string
+	SetTokenEndpoint(val *string)
+	TokenEndpointInput() *string
 	TokenInput() *string
 	Username() *string
 	SetUsername(val *string)
@@ -116,6 +125,8 @@ type DatabricksProvider interface {
 	ResetAzureTenantId()
 	ResetAzureUseMsi()
 	ResetAzureWorkspaceResourceId()
+	ResetClientId()
+	ResetClientSecret()
 	ResetConfigFile()
 	ResetDebugHeaders()
 	ResetDebugTruncateBytes()
@@ -131,6 +142,7 @@ type DatabricksProvider interface {
 	ResetRateLimit()
 	ResetSkipVerify()
 	ResetToken()
+	ResetTokenEndpoint()
 	ResetUsername()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -352,6 +364,46 @@ func (j *jsiiProxy_DatabricksProvider) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) ClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) ClientIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) ClientSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) ClientSecretInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecretInput",
 		&returns,
 	)
 	return returns
@@ -677,6 +729,26 @@ func (j *jsiiProxy_DatabricksProvider) Token() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DatabricksProvider) TokenEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) TokenEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabricksProvider) TokenInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -820,6 +892,22 @@ func (j *jsiiProxy_DatabricksProvider)SetAzureWorkspaceResourceId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DatabricksProvider)SetClientId(val *string) {
+	_jsii_.Set(
+		j,
+		"clientId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabricksProvider)SetClientSecret(val *string) {
+	_jsii_.Set(
+		j,
+		"clientSecret",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabricksProvider)SetConfigFile(val *string) {
 	_jsii_.Set(
 		j,
@@ -918,6 +1006,14 @@ func (j *jsiiProxy_DatabricksProvider)SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabricksProvider)SetTokenEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"tokenEndpoint",
 		val,
 	)
 }
@@ -1078,6 +1174,22 @@ func (d *jsiiProxy_DatabricksProvider) ResetAzureWorkspaceResourceId() {
 	)
 }
 
+func (d *jsiiProxy_DatabricksProvider) ResetClientId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClientId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) ResetClientSecret() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClientSecret",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabricksProvider) ResetConfigFile() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1178,6 +1290,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetToken() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetToken",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) ResetTokenEndpoint() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTokenEndpoint",
 		nil, // no parameters
 	)
 }

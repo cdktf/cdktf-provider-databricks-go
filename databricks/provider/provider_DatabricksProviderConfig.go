@@ -24,6 +24,10 @@ type DatabricksProviderConfig struct {
 	AzureUseMsi interface{} `field:"optional" json:"azureUseMsi" yaml:"azureUseMsi"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
 	AzureWorkspaceResourceId *string `field:"optional" json:"azureWorkspaceResourceId" yaml:"azureWorkspaceResourceId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#client_id DatabricksProvider#client_id}.
+	ClientId *string `field:"optional" json:"clientId" yaml:"clientId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#client_secret DatabricksProvider#client_secret}.
+	ClientSecret *string `field:"optional" json:"clientSecret" yaml:"clientSecret"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#config_file DatabricksProvider#config_file}.
 	ConfigFile *string `field:"optional" json:"configFile" yaml:"configFile"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#debug_headers DatabricksProvider#debug_headers}.
@@ -48,6 +52,8 @@ type DatabricksProviderConfig struct {
 	SkipVerify interface{} `field:"optional" json:"skipVerify" yaml:"skipVerify"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#token DatabricksProvider#token}.
 	Token *string `field:"optional" json:"token" yaml:"token"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#token_endpoint DatabricksProvider#token_endpoint}.
+	TokenEndpoint *string `field:"optional" json:"tokenEndpoint" yaml:"tokenEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#username DatabricksProvider#username}.
 	Username *string `field:"optional" json:"username" yaml:"username"`
 }
