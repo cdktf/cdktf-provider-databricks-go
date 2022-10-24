@@ -75,6 +75,9 @@ type Grants interface {
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
+	Share() *string
+	SetShare(val *string)
+	ShareInput() *string
 	StorageCredential() *string
 	SetStorageCredential(val *string)
 	StorageCredentialInput() *string
@@ -126,6 +129,7 @@ type Grants interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSchema()
+	ResetShare()
 	ResetStorageCredential()
 	ResetTable()
 	ResetView()
@@ -434,6 +438,26 @@ func (j *jsiiProxy_Grants) SchemaInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Grants) Share() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"share",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grants) ShareInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shareInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Grants) StorageCredential() *string {
 	var returns *string
 	_jsii_.Get(
@@ -692,6 +716,17 @@ func (j *jsiiProxy_Grants)SetSchema(val *string) {
 	_jsii_.Set(
 		j,
 		"schema",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Grants)SetShare(val *string) {
+	if err := j.validateSetShareParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"share",
 		val,
 	)
 }
@@ -1028,6 +1063,14 @@ func (g *jsiiProxy_Grants) ResetSchema() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSchema",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Grants) ResetShare() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetShare",
 		nil, // no parameters
 	)
 }

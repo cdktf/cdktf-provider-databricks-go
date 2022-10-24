@@ -104,5 +104,9 @@ type JobConfig struct {
 	Timeouts *JobTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#timeout_seconds Job#timeout_seconds}.
 	TimeoutSeconds *float64 `field:"optional" json:"timeoutSeconds" yaml:"timeoutSeconds"`
+	// webhook_notifications block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#webhook_notifications Job#webhook_notifications}
+	WebhookNotifications *JobWebhookNotifications `field:"optional" json:"webhookNotifications" yaml:"webhookNotifications"`
 }
 

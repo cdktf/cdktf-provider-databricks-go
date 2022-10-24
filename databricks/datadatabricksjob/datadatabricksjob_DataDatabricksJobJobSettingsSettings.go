@@ -76,5 +76,9 @@ type DataDatabricksJobJobSettingsSettings struct {
 	Task interface{} `field:"optional" json:"task" yaml:"task"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#timeout_seconds DataDatabricksJob#timeout_seconds}.
 	TimeoutSeconds *float64 `field:"optional" json:"timeoutSeconds" yaml:"timeoutSeconds"`
+	// webhook_notifications block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#webhook_notifications DataDatabricksJob#webhook_notifications}
+	WebhookNotifications *DataDatabricksJobJobSettingsSettingsWebhookNotifications `field:"optional" json:"webhookNotifications" yaml:"webhookNotifications"`
 }
 

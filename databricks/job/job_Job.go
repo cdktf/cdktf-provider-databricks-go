@@ -122,6 +122,8 @@ type Job interface {
 	TimeoutSecondsInput() *float64
 	TimeoutsInput() interface{}
 	Url() *string
+	WebhookNotifications() JobWebhookNotificationsOutputReference
+	WebhookNotificationsInput() *JobWebhookNotifications
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -162,6 +164,7 @@ type Job interface {
 	PutSparkSubmitTask(value *JobSparkSubmitTask)
 	PutTask(value interface{})
 	PutTimeouts(value *JobTimeouts)
+	PutWebhookNotifications(value *JobWebhookNotifications)
 	ResetAlwaysRunning()
 	ResetDbtTask()
 	ResetEmailNotifications()
@@ -191,6 +194,7 @@ type Job interface {
 	ResetTask()
 	ResetTimeouts()
 	ResetTimeoutSeconds()
+	ResetWebhookNotifications()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -896,6 +900,26 @@ func (j *jsiiProxy_Job) Url() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Job) WebhookNotifications() JobWebhookNotificationsOutputReference {
+	var returns JobWebhookNotificationsOutputReference
+	_jsii_.Get(
+		j,
+		"webhookNotifications",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) WebhookNotificationsInput() *JobWebhookNotifications {
+	var returns *JobWebhookNotifications
+	_jsii_.Get(
+		j,
+		"webhookNotificationsInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/databricks/r/job databricks_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
@@ -1505,6 +1529,17 @@ func (j *jsiiProxy_Job) PutTimeouts(value *JobTimeouts) {
 	)
 }
 
+func (j *jsiiProxy_Job) PutWebhookNotifications(value *JobWebhookNotifications) {
+	if err := j.validatePutWebhookNotificationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putWebhookNotifications",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_Job) ResetAlwaysRunning() {
 	_jsii_.InvokeVoid(
 		j,
@@ -1717,6 +1752,14 @@ func (j *jsiiProxy_Job) ResetTimeoutSeconds() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetTimeoutSeconds",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetWebhookNotifications() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetWebhookNotifications",
 		nil, // no parameters
 	)
 }

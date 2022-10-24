@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package datadatabricksjob
 
@@ -300,6 +299,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validate
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksJobJobSettingsSettingsTask; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutWebhookNotificationsParameters(value *DataDatabricksJobJobSettingsSettingsWebhookNotifications) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

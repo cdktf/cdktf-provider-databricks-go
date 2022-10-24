@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datadatabricksjob
 
@@ -98,6 +97,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validate
 }
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutTaskParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutWebhookNotificationsParameters(value *DataDatabricksJobJobSettingsSettingsWebhookNotifications) error {
 	return nil
 }
 

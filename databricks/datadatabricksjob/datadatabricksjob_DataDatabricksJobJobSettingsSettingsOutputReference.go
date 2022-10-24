@@ -92,6 +92,8 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	TimeoutSeconds() *float64
 	SetTimeoutSeconds(val *float64)
 	TimeoutSecondsInput() *float64
+	WebhookNotifications() DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference
+	WebhookNotificationsInput() *DataDatabricksJobJobSettingsSettingsWebhookNotifications
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -130,6 +132,7 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	PutSparkPythonTask(value *DataDatabricksJobJobSettingsSettingsSparkPythonTask)
 	PutSparkSubmitTask(value *DataDatabricksJobJobSettingsSettingsSparkSubmitTask)
 	PutTask(value interface{})
+	PutWebhookNotifications(value *DataDatabricksJobJobSettingsSettingsWebhookNotifications)
 	ResetDbtTask()
 	ResetEmailNotifications()
 	ResetExistingClusterId()
@@ -153,6 +156,7 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	ResetTags()
 	ResetTask()
 	ResetTimeoutSeconds()
+	ResetWebhookNotifications()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -698,6 +702,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) TimeoutS
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) WebhookNotifications() DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference
+	_jsii_.Get(
+		j,
+		"webhookNotifications",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) WebhookNotificationsInput() *DataDatabricksJobJobSettingsSettingsWebhookNotifications {
+	var returns *DataDatabricksJobJobSettingsSettingsWebhookNotifications
+	_jsii_.Get(
+		j,
+		"webhookNotificationsInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDataDatabricksJobJobSettingsSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsOutputReference {
 	_init_.Initialize()
@@ -1220,6 +1244,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutTask(
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutWebhookNotifications(value *DataDatabricksJobJobSettingsSettingsWebhookNotifications) {
+	if err := d.validatePutWebhookNotificationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putWebhookNotifications",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetDbtTask() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1400,6 +1435,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetTim
 	_jsii_.InvokeVoid(
 		d,
 		"resetTimeoutSeconds",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetWebhookNotifications() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWebhookNotifications",
 		nil, // no parameters
 	)
 }

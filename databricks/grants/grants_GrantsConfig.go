@@ -40,6 +40,8 @@ type GrantsConfig struct {
 	Metastore *string `field:"optional" json:"metastore" yaml:"metastore"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#schema Grants#schema}.
 	Schema *string `field:"optional" json:"schema" yaml:"schema"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#share Grants#share}.
+	Share *string `field:"optional" json:"share" yaml:"share"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#storage_credential Grants#storage_credential}.
 	StorageCredential *string `field:"optional" json:"storageCredential" yaml:"storageCredential"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#table Grants#table}.

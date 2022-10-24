@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package job
 
@@ -110,6 +109,10 @@ func (j *jsiiProxy_Job) validatePutTaskParameters(value interface{}) error {
 }
 
 func (j *jsiiProxy_Job) validatePutTimeoutsParameters(value *JobTimeouts) error {
+	return nil
+}
+
+func (j *jsiiProxy_Job) validatePutWebhookNotificationsParameters(value *JobWebhookNotifications) error {
 	return nil
 }
 
