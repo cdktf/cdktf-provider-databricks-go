@@ -23,6 +23,8 @@ type DataDatabricksAwsBucketPolicyConfig struct {
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/aws_bucket_policy#databricks_account_id DataDatabricksAwsBucketPolicy#databricks_account_id}.
 	DatabricksAccountId *string `field:"optional" json:"databricksAccountId" yaml:"databricksAccountId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/aws_bucket_policy#databricks_e2_account_id DataDatabricksAwsBucketPolicy#databricks_e2_account_id}.
+	DatabricksE2AccountId *string `field:"optional" json:"databricksE2AccountId" yaml:"databricksE2AccountId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/aws_bucket_policy#full_access_role DataDatabricksAwsBucketPolicy#full_access_role}.
 	FullAccessRole *string `field:"optional" json:"fullAccessRole" yaml:"fullAccessRole"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/aws_bucket_policy#id DataDatabricksAwsBucketPolicy#id}.

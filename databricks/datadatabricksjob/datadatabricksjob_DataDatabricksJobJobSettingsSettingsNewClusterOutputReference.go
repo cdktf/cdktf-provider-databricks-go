@@ -88,6 +88,9 @@ type DataDatabricksJobJobSettingsSettingsNewClusterOutputReference interface {
 	PolicyId() *string
 	SetPolicyId(val *string)
 	PolicyIdInput() *string
+	RuntimeEngine() *string
+	SetRuntimeEngine(val *string)
+	RuntimeEngineInput() *string
 	SingleUserName() *string
 	SetSingleUserName(val *string)
 	SingleUserNameInput() *string
@@ -166,6 +169,7 @@ type DataDatabricksJobJobSettingsSettingsNewClusterOutputReference interface {
 	ResetInstancePoolId()
 	ResetNodeTypeId()
 	ResetPolicyId()
+	ResetRuntimeEngine()
 	ResetSingleUserName()
 	ResetSparkConf()
 	ResetSparkEnvVars()
@@ -676,6 +680,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterOutputReference
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterOutputReference) RuntimeEngine() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeEngine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterOutputReference) RuntimeEngineInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeEngineInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterOutputReference) SingleUserName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1038,6 +1062,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterOutputReference
 	_jsii_.Set(
 		j,
 		"policyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterOutputReference)SetRuntimeEngine(val *string) {
+	if err := j.validateSetRuntimeEngineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeEngine",
 		val,
 	)
 }
@@ -1557,6 +1592,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterOutputReference
 	_jsii_.InvokeVoid(
 		d,
 		"resetPolicyId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterOutputReference) ResetRuntimeEngine() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRuntimeEngine",
 		nil, // no parameters
 	)
 }

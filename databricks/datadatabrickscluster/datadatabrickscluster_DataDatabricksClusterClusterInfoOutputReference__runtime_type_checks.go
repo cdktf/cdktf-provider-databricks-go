@@ -524,6 +524,14 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetP
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetRuntimeEngineParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetSingleUserNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

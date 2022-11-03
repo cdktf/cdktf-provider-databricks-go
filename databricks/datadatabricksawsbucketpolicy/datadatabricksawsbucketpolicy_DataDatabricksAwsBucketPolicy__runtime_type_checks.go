@@ -135,6 +135,14 @@ func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) validateSetDatabricksAccountId
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) validateSetDatabricksE2AccountIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) validateSetFullAccessRoleParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

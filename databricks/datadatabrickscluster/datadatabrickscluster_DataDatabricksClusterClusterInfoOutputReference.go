@@ -112,6 +112,9 @@ type DataDatabricksClusterClusterInfoOutputReference interface {
 	PolicyId() *string
 	SetPolicyId(val *string)
 	PolicyIdInput() *string
+	RuntimeEngine() *string
+	SetRuntimeEngine(val *string)
+	RuntimeEngineInput() *string
 	SingleUserName() *string
 	SetSingleUserName(val *string)
 	SingleUserNameInput() *string
@@ -217,6 +220,7 @@ type DataDatabricksClusterClusterInfoOutputReference interface {
 	ResetNodeTypeId()
 	ResetNumWorkers()
 	ResetPolicyId()
+	ResetRuntimeEngine()
 	ResetSingleUserName()
 	ResetSparkConf()
 	ResetSparkContextId()
@@ -911,6 +915,26 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PolicyIdInpu
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) RuntimeEngine() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeEngine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) RuntimeEngineInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeEngineInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SingleUserName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1439,6 +1463,17 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetPolicyId(v
 	_jsii_.Set(
 		j,
 		"policyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetRuntimeEngine(val *string) {
+	if err := j.validateSetRuntimeEngineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeEngine",
 		val,
 	)
 }
@@ -2118,6 +2153,14 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetPolicyI
 	_jsii_.InvokeVoid(
 		d,
 		"resetPolicyId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetRuntimeEngine() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRuntimeEngine",
 		nil, // no parameters
 	)
 }

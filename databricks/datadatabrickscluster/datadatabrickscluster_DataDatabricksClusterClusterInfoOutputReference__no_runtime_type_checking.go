@@ -188,6 +188,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetP
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetRuntimeEngineParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetSingleUserNameParameters(val *string) error {
 	return nil
 }

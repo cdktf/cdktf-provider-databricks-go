@@ -62,6 +62,8 @@ type JobNewCluster struct {
 	NumWorkers *float64 `field:"optional" json:"numWorkers" yaml:"numWorkers"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#policy_id Job#policy_id}.
 	PolicyId *string `field:"optional" json:"policyId" yaml:"policyId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#runtime_engine Job#runtime_engine}.
+	RuntimeEngine *string `field:"optional" json:"runtimeEngine" yaml:"runtimeEngine"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#single_user_name Job#single_user_name}.
 	SingleUserName *string `field:"optional" json:"singleUserName" yaml:"singleUserName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#spark_conf Job#spark_conf}.

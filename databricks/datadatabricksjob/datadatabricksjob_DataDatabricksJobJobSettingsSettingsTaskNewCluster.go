@@ -62,6 +62,8 @@ type DataDatabricksJobJobSettingsSettingsTaskNewCluster struct {
 	NodeTypeId *string `field:"optional" json:"nodeTypeId" yaml:"nodeTypeId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#policy_id DataDatabricksJob#policy_id}.
 	PolicyId *string `field:"optional" json:"policyId" yaml:"policyId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#runtime_engine DataDatabricksJob#runtime_engine}.
+	RuntimeEngine *string `field:"optional" json:"runtimeEngine" yaml:"runtimeEngine"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#single_user_name DataDatabricksJob#single_user_name}.
 	SingleUserName *string `field:"optional" json:"singleUserName" yaml:"singleUserName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#spark_conf DataDatabricksJob#spark_conf}.

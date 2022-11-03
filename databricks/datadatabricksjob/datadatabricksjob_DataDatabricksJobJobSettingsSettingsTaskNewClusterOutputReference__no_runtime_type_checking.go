@@ -152,6 +152,10 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNewClusterOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNewClusterOutputReference) validateSetRuntimeEngineParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNewClusterOutputReference) validateSetSingleUserNameParameters(val *string) error {
 	return nil
 }

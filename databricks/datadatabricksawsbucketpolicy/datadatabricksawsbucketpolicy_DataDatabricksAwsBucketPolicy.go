@@ -26,6 +26,9 @@ type DataDatabricksAwsBucketPolicy interface {
 	DatabricksAccountId() *string
 	SetDatabricksAccountId(val *string)
 	DatabricksAccountIdInput() *string
+	DatabricksE2AccountId() *string
+	SetDatabricksE2AccountId(val *string)
+	DatabricksE2AccountIdInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -89,6 +92,7 @@ type DataDatabricksAwsBucketPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDatabricksAccountId()
+	ResetDatabricksE2AccountId()
 	ResetFullAccessRole()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -174,6 +178,26 @@ func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) DatabricksAccountIdInput() *st
 	_jsii_.Get(
 		j,
 		"databricksAccountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) DatabricksE2AccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databricksE2AccountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) DatabricksE2AccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databricksE2AccountIdInput",
 		&returns,
 	)
 	return returns
@@ -395,6 +419,17 @@ func (j *jsiiProxy_DataDatabricksAwsBucketPolicy)SetDatabricksAccountId(val *str
 	_jsii_.Set(
 		j,
 		"databricksAccountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAwsBucketPolicy)SetDatabricksE2AccountId(val *string) {
+	if err := j.validateSetDatabricksE2AccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databricksE2AccountId",
 		val,
 	)
 }
@@ -688,6 +723,14 @@ func (d *jsiiProxy_DataDatabricksAwsBucketPolicy) ResetDatabricksAccountId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDatabricksAccountId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAwsBucketPolicy) ResetDatabricksE2AccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDatabricksE2AccountId",
 		nil, // no parameters
 	)
 }

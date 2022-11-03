@@ -176,6 +176,10 @@ func (j *jsiiProxy_Cluster) validateSetProvisionersParameters(val *[]interface{}
 	return nil
 }
 
+func (j *jsiiProxy_Cluster) validateSetRuntimeEngineParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cluster) validateSetSingleUserNameParameters(val *string) error {
 	return nil
 }

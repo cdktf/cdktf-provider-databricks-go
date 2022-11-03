@@ -88,6 +88,9 @@ type JobTaskNewClusterOutputReference interface {
 	PolicyId() *string
 	SetPolicyId(val *string)
 	PolicyIdInput() *string
+	RuntimeEngine() *string
+	SetRuntimeEngine(val *string)
+	RuntimeEngineInput() *string
 	SingleUserName() *string
 	SetSingleUserName(val *string)
 	SingleUserNameInput() *string
@@ -167,6 +170,7 @@ type JobTaskNewClusterOutputReference interface {
 	ResetNodeTypeId()
 	ResetNumWorkers()
 	ResetPolicyId()
+	ResetRuntimeEngine()
 	ResetSingleUserName()
 	ResetSparkConf()
 	ResetSparkEnvVars()
@@ -677,6 +681,26 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) PolicyIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) RuntimeEngine() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeEngine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) RuntimeEngineInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeEngineInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) SingleUserName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1039,6 +1063,17 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference)SetPolicyId(val *string) {
 	_jsii_.Set(
 		j,
 		"policyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference)SetRuntimeEngine(val *string) {
+	if err := j.validateSetRuntimeEngineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeEngine",
 		val,
 	)
 }
@@ -1566,6 +1601,14 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetPolicyId() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetPolicyId",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetRuntimeEngine() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetRuntimeEngine",
 		nil, // no parameters
 	)
 }

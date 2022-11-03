@@ -152,6 +152,10 @@ func (j *jsiiProxy_JobNewClusterOutputReference) validateSetPolicyIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_JobNewClusterOutputReference) validateSetRuntimeEngineParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobNewClusterOutputReference) validateSetSingleUserNameParameters(val *string) error {
 	return nil
 }

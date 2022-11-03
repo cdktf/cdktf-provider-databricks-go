@@ -120,6 +120,9 @@ type Cluster interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RuntimeEngine() *string
+	SetRuntimeEngine(val *string)
+	RuntimeEngineInput() *string
 	SingleUserName() *string
 	SetSingleUserName(val *string)
 	SingleUserNameInput() *string
@@ -210,6 +213,7 @@ type Cluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicyId()
+	ResetRuntimeEngine()
 	ResetSingleUserName()
 	ResetSparkConf()
 	ResetSparkEnvVars()
@@ -871,6 +875,26 @@ func (j *jsiiProxy_Cluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Cluster) RuntimeEngine() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeEngine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) RuntimeEngineInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeEngineInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Cluster) SingleUserName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1339,6 +1363,17 @@ func (j *jsiiProxy_Cluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Cluster)SetRuntimeEngine(val *string) {
+	if err := j.validateSetRuntimeEngineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeEngine",
 		val,
 	)
 }
@@ -1940,6 +1975,14 @@ func (c *jsiiProxy_Cluster) ResetPolicyId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetPolicyId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cluster) ResetRuntimeEngine() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRuntimeEngine",
 		nil, // no parameters
 	)
 }

@@ -64,6 +64,10 @@ func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) validateSetDatabricksAccountId
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) validateSetDatabricksE2AccountIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) validateSetFullAccessRoleParameters(val *string) error {
 	return nil
 }

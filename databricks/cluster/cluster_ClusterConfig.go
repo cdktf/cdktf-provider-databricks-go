@@ -90,6 +90,8 @@ type ClusterConfig struct {
 	NumWorkers *float64 `field:"optional" json:"numWorkers" yaml:"numWorkers"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#policy_id Cluster#policy_id}.
 	PolicyId *string `field:"optional" json:"policyId" yaml:"policyId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#runtime_engine Cluster#runtime_engine}.
+	RuntimeEngine *string `field:"optional" json:"runtimeEngine" yaml:"runtimeEngine"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#single_user_name Cluster#single_user_name}.
 	SingleUserName *string `field:"optional" json:"singleUserName" yaml:"singleUserName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#spark_conf Cluster#spark_conf}.
