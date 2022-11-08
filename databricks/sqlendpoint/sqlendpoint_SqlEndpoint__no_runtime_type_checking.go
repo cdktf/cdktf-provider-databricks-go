@@ -140,6 +140,10 @@ func (j *jsiiProxy_SqlEndpoint) validateSetStateParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_SqlEndpoint) validateSetWarehouseTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewSqlEndpointParameters(scope constructs.Construct, id *string, config *SqlEndpointConfig) error {
 	return nil
 }

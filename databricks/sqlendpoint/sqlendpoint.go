@@ -85,6 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetState", GoMethod: "ResetState"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWarehouseType", GoMethod: "ResetWarehouseType"},
 			_jsii_.MemberProperty{JsiiProperty: "spotInstancePolicy", GoGetter: "SpotInstancePolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "spotInstancePolicyInput", GoGetter: "SpotInstancePolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
@@ -100,6 +101,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "warehouseType", GoGetter: "WarehouseType"},
+			_jsii_.MemberProperty{JsiiProperty: "warehouseTypeInput", GoGetter: "WarehouseTypeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlEndpoint{}

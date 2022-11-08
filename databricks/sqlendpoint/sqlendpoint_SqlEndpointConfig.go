@@ -66,5 +66,7 @@ type SqlEndpointConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_endpoint#timeouts SqlEndpoint#timeouts}
 	Timeouts *SqlEndpointTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_endpoint#warehouse_type SqlEndpoint#warehouse_type}.
+	WarehouseType *string `field:"optional" json:"warehouseType" yaml:"warehouseType"`
 }
 

@@ -108,6 +108,9 @@ type SqlEndpoint interface {
 	TerraformResourceType() *string
 	Timeouts() SqlEndpointTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	WarehouseType() *string
+	SetWarehouseType(val *string)
+	WarehouseTypeInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -156,6 +159,7 @@ type SqlEndpoint interface {
 	ResetState()
 	ResetTags()
 	ResetTimeouts()
+	ResetWarehouseType()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -691,6 +695,26 @@ func (j *jsiiProxy_SqlEndpoint) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SqlEndpoint) WarehouseType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"warehouseType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlEndpoint) WarehouseTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"warehouseTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/databricks/r/sql_endpoint databricks_sql_endpoint} Resource.
 func NewSqlEndpoint(scope constructs.Construct, id *string, config *SqlEndpointConfig) SqlEndpoint {
@@ -936,6 +960,17 @@ func (j *jsiiProxy_SqlEndpoint)SetState(val *string) {
 	_jsii_.Set(
 		j,
 		"state",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlEndpoint)SetWarehouseType(val *string) {
+	if err := j.validateSetWarehouseTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"warehouseType",
 		val,
 	)
 }
@@ -1344,6 +1379,14 @@ func (s *jsiiProxy_SqlEndpoint) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlEndpoint) ResetWarehouseType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetWarehouseType",
 		nil, // no parameters
 	)
 }
