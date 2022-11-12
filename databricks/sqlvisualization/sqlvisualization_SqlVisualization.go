@@ -65,6 +65,9 @@ type SqlVisualization interface {
 	QueryId() *string
 	SetQueryId(val *string)
 	QueryIdInput() *string
+	QueryPlan() *string
+	SetQueryPlan(val *string)
+	QueryPlanInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -109,6 +112,7 @@ type SqlVisualization interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetQueryPlan()
 	ResetVisualizationId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -345,6 +349,26 @@ func (j *jsiiProxy_SqlVisualization) QueryIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SqlVisualization) QueryPlan() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"queryPlan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlVisualization) QueryPlanInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"queryPlanInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlVisualization) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -571,6 +595,17 @@ func (j *jsiiProxy_SqlVisualization)SetQueryId(val *string) {
 	_jsii_.Set(
 		j,
 		"queryId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlVisualization)SetQueryPlan(val *string) {
+	if err := j.validateSetQueryPlanParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"queryPlan",
 		val,
 	)
 }
@@ -845,6 +880,14 @@ func (s *jsiiProxy_SqlVisualization) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlVisualization) ResetQueryPlan() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetQueryPlan",
 		nil, // no parameters
 	)
 }

@@ -88,6 +88,10 @@ func (j *jsiiProxy_SqlVisualization) validateSetQueryIdParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_SqlVisualization) validateSetQueryPlanParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlVisualization) validateSetTypeParameters(val *string) error {
 	return nil
 }

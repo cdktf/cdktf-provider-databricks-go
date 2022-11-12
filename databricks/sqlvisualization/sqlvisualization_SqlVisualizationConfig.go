@@ -34,6 +34,8 @@ type SqlVisualizationConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_visualization#query_plan SqlVisualization#query_plan}.
+	QueryPlan *string `field:"optional" json:"queryPlan" yaml:"queryPlan"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_visualization#visualization_id SqlVisualization#visualization_id}.
 	VisualizationId *string `field:"optional" json:"visualizationId" yaml:"visualizationId"`
 }

@@ -246,6 +246,14 @@ func (j *jsiiProxy_SqlVisualization) validateSetQueryIdParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_SqlVisualization) validateSetQueryPlanParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SqlVisualization) validateSetTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
