@@ -56,6 +56,14 @@ func validateAwsS3Mount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAwsS3Mount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAwsS3Mount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsS3Mount) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

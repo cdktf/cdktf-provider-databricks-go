@@ -60,6 +60,14 @@ func validateSqlPermissions_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSqlPermissions_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSqlPermissions_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlPermissions) validateSetAnonymousFunctionParameters(val interface{}) error {
 	return nil
 }

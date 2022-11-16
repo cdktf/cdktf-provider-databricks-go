@@ -2,10 +2,10 @@ package mwsnetworks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/mwsnetworks/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/mwsnetworks/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -777,6 +777,44 @@ func MwsNetworks_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-databricks.mwsNetworks.MwsNetworks",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MwsNetworks_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMwsNetworks_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.mwsNetworks.MwsNetworks",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MwsNetworks_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMwsNetworks_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.mwsNetworks.MwsNetworks",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -60,6 +60,14 @@ func validateDataDatabricksJob_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataDatabricksJob_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatabricksJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJob) validateSetIdParameters(val *string) error {
 	return nil
 }

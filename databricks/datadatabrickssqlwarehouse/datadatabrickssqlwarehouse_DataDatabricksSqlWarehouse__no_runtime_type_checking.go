@@ -68,6 +68,14 @@ func validateDataDatabricksSqlWarehouse_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataDatabricksSqlWarehouse_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatabricksSqlWarehouse_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetAutoStopMinsParameters(val *float64) error {
 	return nil
 }

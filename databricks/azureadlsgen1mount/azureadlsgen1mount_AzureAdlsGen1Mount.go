@@ -2,10 +2,10 @@ package azureadlsgen1mount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/azureadlsgen1mount/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/azureadlsgen1mount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -739,6 +739,44 @@ func AzureAdlsGen1Mount_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-databricks.azureAdlsGen1Mount.AzureAdlsGen1Mount",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AzureAdlsGen1Mount_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAzureAdlsGen1Mount_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.azureAdlsGen1Mount.AzureAdlsGen1Mount",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AzureAdlsGen1Mount_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAzureAdlsGen1Mount_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.azureAdlsGen1Mount.AzureAdlsGen1Mount",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

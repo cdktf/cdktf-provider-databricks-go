@@ -80,6 +80,14 @@ func validateInstancePool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateInstancePool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateInstancePool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_InstancePool) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

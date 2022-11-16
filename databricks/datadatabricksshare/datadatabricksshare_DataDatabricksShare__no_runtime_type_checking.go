@@ -60,6 +60,14 @@ func validateDataDatabricksShare_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataDatabricksShare_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatabricksShare_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksShare) validateSetCreatedAtParameters(val *float64) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDbfsFile_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDbfsFile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDbfsFile_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbfsFile) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

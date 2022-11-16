@@ -56,6 +56,14 @@ func validateSqlGlobalConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSqlGlobalConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSqlGlobalConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlGlobalConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

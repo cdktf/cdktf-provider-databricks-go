@@ -2,9 +2,9 @@ package datadatabricksshare
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/datadatabricksshare/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/datadatabricksshare/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

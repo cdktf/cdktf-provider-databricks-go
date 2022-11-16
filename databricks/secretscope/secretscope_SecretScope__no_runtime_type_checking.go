@@ -60,6 +60,14 @@ func validateSecretScope_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSecretScope_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecretScope_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretScope) validateSetBackendTypeParameters(val *string) error {
 	return nil
 }

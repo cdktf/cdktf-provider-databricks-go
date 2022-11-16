@@ -56,6 +56,14 @@ func validateToken_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateToken_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Token) validateSetCommentParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataDatabricksCurrentUser_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataDatabricksCurrentUser_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatabricksCurrentUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksCurrentUser) validateSetIdParameters(val *string) error {
 	return nil
 }

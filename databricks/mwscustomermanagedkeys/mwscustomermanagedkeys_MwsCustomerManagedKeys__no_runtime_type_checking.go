@@ -60,6 +60,14 @@ func validateMwsCustomerManagedKeys_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMwsCustomerManagedKeys_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMwsCustomerManagedKeys_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsCustomerManagedKeys) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

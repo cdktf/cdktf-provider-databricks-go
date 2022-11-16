@@ -2,10 +2,10 @@ package library
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/library/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/library/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -630,6 +630,44 @@ func Library_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-databricks.library.Library",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Library_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLibrary_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.library.Library",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Library_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLibrary_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.library.Library",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

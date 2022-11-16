@@ -56,6 +56,14 @@ func validateDataDatabricksAwsCrossaccountPolicy_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataDatabricksAwsCrossaccountPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatabricksAwsCrossaccountPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validatePermissionAssignment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePermissionAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePermissionAssignment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PermissionAssignment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

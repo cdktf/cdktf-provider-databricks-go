@@ -56,6 +56,14 @@ func validateRepo_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRepo_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRepo_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Repo) validateSetBranchParameters(val *string) error {
 	return nil
 }

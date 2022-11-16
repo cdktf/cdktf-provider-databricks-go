@@ -2,10 +2,10 @@ package datadatabricksnotebook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/datadatabricksnotebook/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/datadatabricksnotebook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -553,6 +553,44 @@ func DataDatabricksNotebook_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebook",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataDatabricksNotebook_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataDatabricksNotebook_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebook",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataDatabricksNotebook_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataDatabricksNotebook_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebook",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

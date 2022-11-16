@@ -96,6 +96,14 @@ func validateCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cluster) validateSetApplyPolicyDefaultValuesParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataDatabricksClusters_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataDatabricksClusters_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatabricksClusters_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusters) validateSetClusterNameContainsParameters(val *string) error {
 	return nil
 }

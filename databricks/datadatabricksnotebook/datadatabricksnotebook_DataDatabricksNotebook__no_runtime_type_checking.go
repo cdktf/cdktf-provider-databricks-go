@@ -56,6 +56,14 @@ func validateDataDatabricksNotebook_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataDatabricksNotebook_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatabricksNotebook_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksNotebook) validateSetFormatParameters(val *string) error {
 	return nil
 }

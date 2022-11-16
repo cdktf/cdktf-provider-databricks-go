@@ -56,6 +56,14 @@ func validateDataDatabricksAwsAssumeRolePolicy_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataDatabricksAwsAssumeRolePolicy_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatabricksAwsAssumeRolePolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAwsAssumeRolePolicy) validateSetDatabricksAccountIdParameters(val *string) error {
 	return nil
 }

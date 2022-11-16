@@ -56,6 +56,14 @@ func validateDataDatabricksAwsBucketPolicy_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataDatabricksAwsBucketPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatabricksAwsBucketPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) validateSetBucketParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateMlflowModel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMlflowModel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMlflowModel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MlflowModel) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

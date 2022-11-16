@@ -56,6 +56,14 @@ func validateAzureBlobMount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAzureBlobMount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAzureBlobMount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureBlobMount) validateSetAuthTypeParameters(val *string) error {
 	return nil
 }

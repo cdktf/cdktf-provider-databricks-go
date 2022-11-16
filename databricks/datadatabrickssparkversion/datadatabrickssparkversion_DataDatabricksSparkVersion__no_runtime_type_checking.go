@@ -56,6 +56,14 @@ func validateDataDatabricksSparkVersion_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataDatabricksSparkVersion_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatabricksSparkVersion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksSparkVersion) validateSetBetaParameters(val interface{}) error {
 	return nil
 }

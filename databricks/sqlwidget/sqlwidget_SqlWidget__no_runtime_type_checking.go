@@ -64,6 +64,14 @@ func validateSqlWidget_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSqlWidget_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSqlWidget_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlWidget) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -16,6 +16,14 @@ func validateDatabricksProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDatabricksProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatabricksProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabricksProvider) validateSetAzureUseMsiParameters(val interface{}) error {
 	return nil
 }

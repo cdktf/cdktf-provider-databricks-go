@@ -60,6 +60,14 @@ func validateMlflowExperiment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMlflowExperiment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMlflowExperiment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MlflowExperiment) validateSetArtifactLocationParameters(val *string) error {
 	return nil
 }

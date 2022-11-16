@@ -56,6 +56,14 @@ func validateGitCredential_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGitCredential_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGitCredential_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GitCredential) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

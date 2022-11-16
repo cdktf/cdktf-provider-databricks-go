@@ -56,6 +56,14 @@ func validateDataDatabricksMwsWorkspaces_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataDatabricksMwsWorkspaces_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatabricksMwsWorkspaces_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksMwsWorkspaces) validateSetIdParameters(val *string) error {
 	return nil
 }

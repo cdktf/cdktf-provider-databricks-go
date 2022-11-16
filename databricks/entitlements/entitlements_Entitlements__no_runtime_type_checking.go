@@ -56,6 +56,14 @@ func validateEntitlements_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEntitlements_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEntitlements_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Entitlements) validateSetAllowClusterCreateParameters(val interface{}) error {
 	return nil
 }

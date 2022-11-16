@@ -56,6 +56,14 @@ func validateMwsLogDelivery_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMwsLogDelivery_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMwsLogDelivery_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsLogDelivery) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

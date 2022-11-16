@@ -2,10 +2,10 @@ package gitcredential
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/gitcredential/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/gitcredential/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -556,6 +556,44 @@ func GitCredential_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-databricks.gitCredential.GitCredential",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GitCredential_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGitCredential_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.gitCredential.GitCredential",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GitCredential_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGitCredential_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.gitCredential.GitCredential",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

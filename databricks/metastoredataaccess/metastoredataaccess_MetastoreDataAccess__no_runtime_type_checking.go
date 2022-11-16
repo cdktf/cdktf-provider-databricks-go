@@ -68,6 +68,14 @@ func validateMetastoreDataAccess_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMetastoreDataAccess_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMetastoreDataAccess_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MetastoreDataAccess) validateSetConfigurationTypeParameters(val *string) error {
 	return nil
 }

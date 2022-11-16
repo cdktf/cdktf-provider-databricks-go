@@ -56,6 +56,14 @@ func validateCatalog_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCatalog_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCatalog_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Catalog) validateSetCommentParameters(val *string) error {
 	return nil
 }

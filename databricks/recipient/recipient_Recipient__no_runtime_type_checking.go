@@ -64,6 +64,14 @@ func validateRecipient_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRecipient_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRecipient_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Recipient) validateSetAuthenticationTypeParameters(val *string) error {
 	return nil
 }

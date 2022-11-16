@@ -60,6 +60,14 @@ func validateTable_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTable_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Table) validateSetCatalogNameParameters(val *string) error {
 	return nil
 }

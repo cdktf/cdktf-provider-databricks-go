@@ -56,6 +56,14 @@ func validateMetastore_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMetastore_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMetastore_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Metastore) validateSetCloudParameters(val *string) error {
 	return nil
 }

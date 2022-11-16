@@ -56,6 +56,14 @@ func validateSqlDashboard_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSqlDashboard_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSqlDashboard_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDashboard) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

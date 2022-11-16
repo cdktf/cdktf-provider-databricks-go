@@ -56,6 +56,14 @@ func validateMwsPrivateAccessSettings_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateMwsPrivateAccessSettings_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMwsPrivateAccessSettings_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsPrivateAccessSettings) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

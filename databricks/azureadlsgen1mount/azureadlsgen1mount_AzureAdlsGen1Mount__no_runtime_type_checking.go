@@ -56,6 +56,14 @@ func validateAzureAdlsGen1Mount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAzureAdlsGen1Mount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAzureAdlsGen1Mount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureAdlsGen1Mount) validateSetClientIdParameters(val *string) error {
 	return nil
 }

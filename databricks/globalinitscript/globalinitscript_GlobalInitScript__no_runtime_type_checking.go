@@ -60,6 +60,14 @@ func validateGlobalInitScript_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGlobalInitScript_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGlobalInitScript_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlobalInitScript) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

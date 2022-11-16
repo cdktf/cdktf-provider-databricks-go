@@ -56,6 +56,14 @@ func validateSecretAcl_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSecretAcl_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecretAcl_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretAcl) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

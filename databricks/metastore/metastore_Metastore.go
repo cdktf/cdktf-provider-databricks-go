@@ -2,10 +2,10 @@ package metastore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/metastore/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/metastore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -942,6 +942,44 @@ func Metastore_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-databricks.metastore.Metastore",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Metastore_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMetastore_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.metastore.Metastore",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Metastore_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMetastore_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.metastore.Metastore",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

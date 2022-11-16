@@ -56,6 +56,14 @@ func validateMwsPermissionAssignment_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateMwsPermissionAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMwsPermissionAssignment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsPermissionAssignment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

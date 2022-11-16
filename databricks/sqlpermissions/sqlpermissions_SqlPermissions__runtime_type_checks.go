@@ -150,6 +150,22 @@ func validateSqlPermissions_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSqlPermissions_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateSqlPermissions_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SqlPermissions) validateSetAnonymousFunctionParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

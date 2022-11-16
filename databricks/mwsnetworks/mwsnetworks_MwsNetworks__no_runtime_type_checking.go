@@ -64,6 +64,14 @@ func validateMwsNetworks_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMwsNetworks_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMwsNetworks_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsNetworks) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

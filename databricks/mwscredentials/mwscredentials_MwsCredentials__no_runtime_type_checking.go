@@ -56,6 +56,14 @@ func validateMwsCredentials_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMwsCredentials_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMwsCredentials_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsCredentials) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

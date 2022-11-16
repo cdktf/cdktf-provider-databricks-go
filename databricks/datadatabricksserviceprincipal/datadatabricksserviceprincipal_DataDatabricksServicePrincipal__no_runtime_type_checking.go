@@ -56,6 +56,14 @@ func validateDataDatabricksServicePrincipal_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataDatabricksServicePrincipal_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatabricksServicePrincipal_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksServicePrincipal) validateSetActiveParameters(val interface{}) error {
 	return nil
 }

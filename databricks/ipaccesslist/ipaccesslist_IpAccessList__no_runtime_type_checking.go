@@ -56,6 +56,14 @@ func validateIpAccessList_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIpAccessList_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIpAccessList_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IpAccessList) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

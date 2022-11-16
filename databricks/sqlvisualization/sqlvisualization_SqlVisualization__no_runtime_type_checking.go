@@ -56,6 +56,14 @@ func validateSqlVisualization_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSqlVisualization_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSqlVisualization_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlVisualization) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateMwsVpcEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMwsVpcEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMwsVpcEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsVpcEndpoint) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

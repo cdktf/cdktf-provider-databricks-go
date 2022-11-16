@@ -2,10 +2,10 @@ package dbfsfile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/dbfsfile/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/dbfsfile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -580,6 +580,44 @@ func DbfsFile_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-databricks.dbfsFile.DbfsFile",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DbfsFile_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDbfsFile_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.dbfsFile.DbfsFile",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DbfsFile_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDbfsFile_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.dbfsFile.DbfsFile",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateDataDatabricksGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataDatabricksGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatabricksGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksGroup) validateSetAllowClusterCreateParameters(val interface{}) error {
 	return nil
 }

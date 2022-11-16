@@ -56,6 +56,14 @@ func validateOboToken_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOboToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOboToken_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OboToken) validateSetApplicationIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateServicePrincipalRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServicePrincipalRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicePrincipalRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipalRole) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

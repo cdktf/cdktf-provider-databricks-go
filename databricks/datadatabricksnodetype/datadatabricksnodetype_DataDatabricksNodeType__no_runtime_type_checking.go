@@ -56,6 +56,14 @@ func validateDataDatabricksNodeType_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataDatabricksNodeType_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatabricksNodeType_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksNodeType) validateSetCategoryParameters(val *string) error {
 	return nil
 }

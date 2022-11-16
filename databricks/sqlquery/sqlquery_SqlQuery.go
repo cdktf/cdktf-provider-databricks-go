@@ -2,10 +2,10 @@ package sqlquery
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/sqlquery/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/sqlquery/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -674,6 +674,44 @@ func SqlQuery_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-databricks.sqlQuery.SqlQuery",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SqlQuery_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSqlQuery_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.sqlQuery.SqlQuery",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SqlQuery_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSqlQuery_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.sqlQuery.SqlQuery",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

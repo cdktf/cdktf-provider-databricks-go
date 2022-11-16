@@ -2,10 +2,10 @@ package permissionassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v3/permissionassignment/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/permissionassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -487,6 +487,44 @@ func PermissionAssignment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-databricks.permissionAssignment.PermissionAssignment",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PermissionAssignment_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePermissionAssignment_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.permissionAssignment.PermissionAssignment",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PermissionAssignment_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePermissionAssignment_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.permissionAssignment.PermissionAssignment",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

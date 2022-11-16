@@ -68,6 +68,14 @@ func validateStorageCredential_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStorageCredential_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageCredential_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageCredential) validateSetCommentParameters(val *string) error {
 	return nil
 }

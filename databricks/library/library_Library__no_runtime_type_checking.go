@@ -68,6 +68,14 @@ func validateLibrary_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLibrary_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLibrary_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Library) validateSetClusterIdParameters(val *string) error {
 	return nil
 }
