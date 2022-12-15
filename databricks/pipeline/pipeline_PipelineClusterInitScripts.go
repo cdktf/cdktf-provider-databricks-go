@@ -2,6 +2,10 @@ package pipeline
 
 
 type PipelineClusterInitScripts struct {
+	// abfss block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#abfss Pipeline#abfss}
+	Abfss *PipelineClusterInitScriptsAbfss `field:"optional" json:"abfss" yaml:"abfss"`
 	// dbfs block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#dbfs Pipeline#dbfs}

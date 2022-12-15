@@ -44,6 +44,10 @@ func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) validateInterpolat
 	return nil
 }
 
+func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) validatePutRangeParameters(value *SqlQueryParameterDateRangeRange) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlQueryParameterDateRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

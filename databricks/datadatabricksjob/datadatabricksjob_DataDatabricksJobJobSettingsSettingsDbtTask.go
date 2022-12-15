@@ -4,6 +4,8 @@ package datadatabricksjob
 type DataDatabricksJobJobSettingsSettingsDbtTask struct {
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#commands DataDatabricksJob#commands}.
 	Commands *[]*string `field:"required" json:"commands" yaml:"commands"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#catalog DataDatabricksJob#catalog}.
+	Catalog *string `field:"optional" json:"catalog" yaml:"catalog"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#profiles_directory DataDatabricksJob#profiles_directory}.
 	ProfilesDirectory *string `field:"optional" json:"profilesDirectory" yaml:"profilesDirectory"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#project_directory DataDatabricksJob#project_directory}.

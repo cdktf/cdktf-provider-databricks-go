@@ -10,6 +10,9 @@ import (
 
 type DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference interface {
 	cdktf.ComplexObject
+	Catalog() *string
+	SetCatalog(val *string)
+	CatalogInput() *string
 	Commands() *[]*string
 	SetCommands(val *[]*string)
 	CommandsInput() *[]*string
@@ -76,6 +79,7 @@ type DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCatalog()
 	ResetProfilesDirectory()
 	ResetProjectDirectory()
 	ResetSchema()
@@ -93,6 +97,26 @@ type DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference interface {
 // The jsii proxy struct for DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference
 type jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference) Catalog() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference) CatalogInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalogInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference) Commands() *[]*string {
@@ -290,6 +314,17 @@ func NewDataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference_Override(
 		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference)SetCatalog(val *string) {
+	if err := j.validateSetCatalogParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"catalog",
+		val,
 	)
 }
 
@@ -587,6 +622,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReferenc
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference) ResetCatalog() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCatalog",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference) ResetProfilesDirectory() {

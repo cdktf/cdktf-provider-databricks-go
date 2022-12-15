@@ -44,6 +44,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validateIn
 	return nil
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validatePutAbfssParameters(value *JobJobClusterNewClusterInitScriptsAbfss) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validatePutDbfsParameters(value *JobJobClusterNewClusterInitScriptsDbfs) error {
 	return nil
 }

@@ -10,6 +10,8 @@ import (
 
 type JobJobClusterNewClusterInitScriptsOutputReference interface {
 	cdktf.ComplexObject
+	Abfss() JobJobClusterNewClusterInitScriptsAbfssOutputReference
+	AbfssInput() *JobJobClusterNewClusterInitScriptsAbfss
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -69,10 +71,12 @@ type JobJobClusterNewClusterInitScriptsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAbfss(value *JobJobClusterNewClusterInitScriptsAbfss)
 	PutDbfs(value *JobJobClusterNewClusterInitScriptsDbfs)
 	PutFile(value *JobJobClusterNewClusterInitScriptsFile)
 	PutGcs(value *JobJobClusterNewClusterInitScriptsGcs)
 	PutS3(value *JobJobClusterNewClusterInitScriptsS3)
+	ResetAbfss()
 	ResetDbfs()
 	ResetFile()
 	ResetGcs()
@@ -90,6 +94,26 @@ type JobJobClusterNewClusterInitScriptsOutputReference interface {
 // The jsii proxy struct for JobJobClusterNewClusterInitScriptsOutputReference
 type jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) Abfss() JobJobClusterNewClusterInitScriptsAbfssOutputReference {
+	var returns JobJobClusterNewClusterInitScriptsAbfssOutputReference
+	_jsii_.Get(
+		j,
+		"abfss",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) AbfssInput() *JobJobClusterNewClusterInitScriptsAbfss {
+	var returns *JobJobClusterNewClusterInitScriptsAbfss
+	_jsii_.Get(
+		j,
+		"abfssInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) ComplexObjectIndex() interface{} {
@@ -511,6 +535,17 @@ func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) Interpolat
 	return returns
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) PutAbfss(value *JobJobClusterNewClusterInitScriptsAbfss) {
+	if err := j.validatePutAbfssParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putAbfss",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) PutDbfs(value *JobJobClusterNewClusterInitScriptsDbfs) {
 	if err := j.validatePutDbfsParameters(value); err != nil {
 		panic(err)
@@ -552,6 +587,14 @@ func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) PutS3(valu
 		j,
 		"putS3",
 		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) ResetAbfss() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetAbfss",
+		nil, // no parameters
 	)
 }
 

@@ -44,6 +44,10 @@ func (c *jsiiProxy_ClusterInitScriptsOutputReference) validateInterpolationForAt
 	return nil
 }
 
+func (c *jsiiProxy_ClusterInitScriptsOutputReference) validatePutAbfssParameters(value *ClusterInitScriptsAbfss) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterInitScriptsOutputReference) validatePutDbfsParameters(value *ClusterInitScriptsDbfs) error {
 	return nil
 }

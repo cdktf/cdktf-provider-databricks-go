@@ -44,6 +44,10 @@ func (s *jsiiProxy_SqlQueryParameterDatetimesecRangeOutputReference) validateInt
 	return nil
 }
 
+func (s *jsiiProxy_SqlQueryParameterDatetimesecRangeOutputReference) validatePutRangeParameters(value *SqlQueryParameterDatetimesecRangeRange) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlQueryParameterDatetimesecRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

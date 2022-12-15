@@ -29,6 +29,8 @@ type SqlQueryParameterDatetimesecRangeOutputReference interface {
 	Fqn() *string
 	InternalValue() *SqlQueryParameterDatetimesecRange
 	SetInternalValue(val *SqlQueryParameterDatetimesecRange)
+	Range() SqlQueryParameterDatetimesecRangeRangeOutputReference
+	RangeInput() *SqlQueryParameterDatetimesecRangeRange
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +66,9 @@ type SqlQueryParameterDatetimesecRangeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutRange(value *SqlQueryParameterDatetimesecRangeRange)
+	ResetRange()
+	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,6 +129,26 @@ func (j *jsiiProxy_SqlQueryParameterDatetimesecRangeOutputReference) InternalVal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlQueryParameterDatetimesecRangeOutputReference) Range() SqlQueryParameterDatetimesecRangeRangeOutputReference {
+	var returns SqlQueryParameterDatetimesecRangeRangeOutputReference
+	_jsii_.Get(
+		j,
+		"range",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlQueryParameterDatetimesecRangeOutputReference) RangeInput() *SqlQueryParameterDatetimesecRangeRange {
+	var returns *SqlQueryParameterDatetimesecRangeRange
+	_jsii_.Get(
+		j,
+		"rangeInput",
 		&returns,
 	)
 	return returns
@@ -447,6 +472,33 @@ func (s *jsiiProxy_SqlQueryParameterDatetimesecRangeOutputReference) Interpolati
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SqlQueryParameterDatetimesecRangeOutputReference) PutRange(value *SqlQueryParameterDatetimesecRangeRange) {
+	if err := s.validatePutRangeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putRange",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SqlQueryParameterDatetimesecRangeOutputReference) ResetRange() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRange",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlQueryParameterDatetimesecRangeOutputReference) ResetValue() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetValue",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SqlQueryParameterDatetimesecRangeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

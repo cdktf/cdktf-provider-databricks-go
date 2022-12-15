@@ -4,6 +4,8 @@ package job
 type JobDbtTask struct {
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#commands Job#commands}.
 	Commands *[]*string `field:"required" json:"commands" yaml:"commands"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#catalog Job#catalog}.
+	Catalog *string `field:"optional" json:"catalog" yaml:"catalog"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#profiles_directory Job#profiles_directory}.
 	ProfilesDirectory *string `field:"optional" json:"profilesDirectory" yaml:"profilesDirectory"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#project_directory Job#project_directory}.

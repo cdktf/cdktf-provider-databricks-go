@@ -292,6 +292,14 @@ func (j *jsiiProxy_ServicePrincipal) validateSetForceParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipal) validateSetHomeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipal) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -349,6 +357,14 @@ func (j *jsiiProxy_ServicePrincipal) validateSetProvisionersParameters(val *[]in
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ServicePrincipal) validateSetReposParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

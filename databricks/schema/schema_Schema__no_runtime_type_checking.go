@@ -108,6 +108,10 @@ func (j *jsiiProxy_Schema) validateSetProvisionersParameters(val *[]interface{})
 	return nil
 }
 
+func (j *jsiiProxy_Schema) validateSetStorageRootParameters(val *string) error {
+	return nil
+}
+
 func validateNewSchemaParameters(scope constructs.Construct, id *string, config *SchemaConfig) error {
 	return nil
 }

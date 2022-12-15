@@ -2,6 +2,10 @@ package job
 
 
 type JobNewClusterInitScripts struct {
+	// abfss block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#abfss Job#abfss}
+	Abfss *JobNewClusterInitScriptsAbfss `field:"optional" json:"abfss" yaml:"abfss"`
 	// dbfs block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#dbfs Job#dbfs}

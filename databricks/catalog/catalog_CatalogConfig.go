@@ -36,5 +36,7 @@ type CatalogConfig struct {
 	Owner *string `field:"optional" json:"owner" yaml:"owner"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/catalog#properties Catalog#properties}.
 	Properties *map[string]*string `field:"optional" json:"properties" yaml:"properties"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/catalog#storage_root Catalog#storage_root}.
+	StorageRoot *string `field:"optional" json:"storageRoot" yaml:"storageRoot"`
 }
 

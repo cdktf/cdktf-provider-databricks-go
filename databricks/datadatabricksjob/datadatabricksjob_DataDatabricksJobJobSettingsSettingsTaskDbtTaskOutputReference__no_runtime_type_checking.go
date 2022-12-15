@@ -48,6 +48,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference) validateSetCatalogParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference) validateSetCommandsParameters(val *[]*string) error {
 	return nil
 }

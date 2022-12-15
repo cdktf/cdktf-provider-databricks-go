@@ -127,6 +127,8 @@ func init() {
 		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTaskOutputReference",
 		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsDbtTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "catalog", GoGetter: "Catalog"},
+			_jsii_.MemberProperty{JsiiProperty: "catalogInput", GoGetter: "CatalogInput"},
 			_jsii_.MemberProperty{JsiiProperty: "commands", GoGetter: "Commands"},
 			_jsii_.MemberProperty{JsiiProperty: "commandsInput", GoGetter: "CommandsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -150,6 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "profilesDirectoryInput", GoGetter: "ProfilesDirectoryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "projectDirectory", GoGetter: "ProjectDirectory"},
 			_jsii_.MemberProperty{JsiiProperty: "projectDirectoryInput", GoGetter: "ProjectDirectoryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCatalog", GoMethod: "ResetCatalog"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProfilesDirectory", GoMethod: "ResetProfilesDirectory"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProjectDirectory", GoMethod: "ResetProjectDirectory"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSchema", GoMethod: "ResetSchema"},
@@ -722,6 +725,45 @@ func init() {
 		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss",
+		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOutputReference",
+		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "destination", GoGetter: "Destination"},
+			_jsii_.MemberProperty{JsiiProperty: "destinationInput", GoGetter: "DestinationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDestination", GoMethod: "ResetDestination"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs",
 		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs)(nil)).Elem(),
 	)
@@ -862,6 +904,8 @@ func init() {
 		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference",
 		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "abfss", GoGetter: "Abfss"},
+			_jsii_.MemberProperty{JsiiProperty: "abfssInput", GoGetter: "AbfssInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -885,10 +929,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putAbfss", GoMethod: "PutAbfss"},
 			_jsii_.MemberMethod{JsiiMethod: "putDbfs", GoMethod: "PutDbfs"},
 			_jsii_.MemberMethod{JsiiMethod: "putFile", GoMethod: "PutFile"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcs", GoMethod: "PutGcs"},
 			_jsii_.MemberMethod{JsiiMethod: "putS3", GoMethod: "PutS3"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAbfss", GoMethod: "ResetAbfss"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDbfs", GoMethod: "ResetDbfs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFile", GoMethod: "ResetFile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGcs", GoMethod: "ResetGcs"},
@@ -1838,6 +1884,45 @@ func init() {
 		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsNewClusterInitScripts)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss",
+		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssOutputReference",
+		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "destination", GoGetter: "Destination"},
+			_jsii_.MemberProperty{JsiiProperty: "destinationInput", GoGetter: "DestinationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDestination", GoMethod: "ResetDestination"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfs",
 		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfs)(nil)).Elem(),
 	)
@@ -1978,6 +2063,8 @@ func init() {
 		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputReference",
 		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "abfss", GoGetter: "Abfss"},
+			_jsii_.MemberProperty{JsiiProperty: "abfssInput", GoGetter: "AbfssInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2001,10 +2088,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putAbfss", GoMethod: "PutAbfss"},
 			_jsii_.MemberMethod{JsiiMethod: "putDbfs", GoMethod: "PutDbfs"},
 			_jsii_.MemberMethod{JsiiMethod: "putFile", GoMethod: "PutFile"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcs", GoMethod: "PutGcs"},
 			_jsii_.MemberMethod{JsiiMethod: "putS3", GoMethod: "PutS3"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAbfss", GoMethod: "ResetAbfss"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDbfs", GoMethod: "ResetDbfs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFile", GoMethod: "ResetFile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGcs", GoMethod: "ResetGcs"},
@@ -2314,7 +2403,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "notebookPath", GoGetter: "NotebookPath"},
 			_jsii_.MemberProperty{JsiiProperty: "notebookPathInput", GoGetter: "NotebookPathInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBaseParameters", GoMethod: "ResetBaseParameters"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSource", GoMethod: "ResetSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "source", GoGetter: "Source"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceInput", GoGetter: "SourceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -2710,6 +2802,8 @@ func init() {
 		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference",
 		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "catalog", GoGetter: "Catalog"},
+			_jsii_.MemberProperty{JsiiProperty: "catalogInput", GoGetter: "CatalogInput"},
 			_jsii_.MemberProperty{JsiiProperty: "commands", GoGetter: "Commands"},
 			_jsii_.MemberProperty{JsiiProperty: "commandsInput", GoGetter: "CommandsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2733,6 +2827,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "profilesDirectoryInput", GoGetter: "ProfilesDirectoryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "projectDirectory", GoGetter: "ProjectDirectory"},
 			_jsii_.MemberProperty{JsiiProperty: "projectDirectoryInput", GoGetter: "ProjectDirectoryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCatalog", GoMethod: "ResetCatalog"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProfilesDirectory", GoMethod: "ResetProfilesDirectory"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProjectDirectory", GoMethod: "ResetProjectDirectory"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSchema", GoMethod: "ResetSchema"},
@@ -3515,6 +3610,45 @@ func init() {
 		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss",
+		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfssOutputReference",
+		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfssOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "destination", GoGetter: "Destination"},
+			_jsii_.MemberProperty{JsiiProperty: "destinationInput", GoGetter: "DestinationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDestination", GoMethod: "ResetDestination"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfssOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfs",
 		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfs)(nil)).Elem(),
 	)
@@ -3655,6 +3789,8 @@ func init() {
 		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference",
 		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "abfss", GoGetter: "Abfss"},
+			_jsii_.MemberProperty{JsiiProperty: "abfssInput", GoGetter: "AbfssInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3678,10 +3814,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putAbfss", GoMethod: "PutAbfss"},
 			_jsii_.MemberMethod{JsiiMethod: "putDbfs", GoMethod: "PutDbfs"},
 			_jsii_.MemberMethod{JsiiMethod: "putFile", GoMethod: "PutFile"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcs", GoMethod: "PutGcs"},
 			_jsii_.MemberMethod{JsiiMethod: "putS3", GoMethod: "PutS3"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAbfss", GoMethod: "ResetAbfss"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDbfs", GoMethod: "ResetDbfs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFile", GoMethod: "ResetFile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGcs", GoMethod: "ResetGcs"},
@@ -3991,7 +4129,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "notebookPath", GoGetter: "NotebookPath"},
 			_jsii_.MemberProperty{JsiiProperty: "notebookPathInput", GoGetter: "NotebookPathInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBaseParameters", GoMethod: "ResetBaseParameters"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSource", GoMethod: "ResetSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "source", GoGetter: "Source"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceInput", GoGetter: "SourceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

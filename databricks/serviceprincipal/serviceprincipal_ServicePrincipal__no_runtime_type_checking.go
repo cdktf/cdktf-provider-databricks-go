@@ -100,6 +100,10 @@ func (j *jsiiProxy_ServicePrincipal) validateSetForceParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipal) validateSetHomeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipal) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -109,6 +113,10 @@ func (j *jsiiProxy_ServicePrincipal) validateSetLifecycleParameters(val *cdktf.T
 }
 
 func (j *jsiiProxy_ServicePrincipal) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServicePrincipal) validateSetReposParameters(val *string) error {
 	return nil
 }
 

@@ -35,6 +35,9 @@ type JobTaskNotebookTaskOutputReference interface {
 	NotebookPath() *string
 	SetNotebookPath(val *string)
 	NotebookPathInput() *string
+	Source() *string
+	SetSource(val *string)
+	SourceInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type JobTaskNotebookTaskOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBaseParameters()
+	ResetSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -173,6 +177,26 @@ func (j *jsiiProxy_JobTaskNotebookTaskOutputReference) NotebookPathInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskNotebookTaskOutputReference) Source() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"source",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNotebookTaskOutputReference) SourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobTaskNotebookTaskOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -272,6 +296,17 @@ func (j *jsiiProxy_JobTaskNotebookTaskOutputReference)SetNotebookPath(val *strin
 	_jsii_.Set(
 		j,
 		"notebookPath",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskNotebookTaskOutputReference)SetSource(val *string) {
+	if err := j.validateSetSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"source",
 		val,
 	)
 }
@@ -488,6 +523,14 @@ func (j *jsiiProxy_JobTaskNotebookTaskOutputReference) ResetBaseParameters() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetBaseParameters",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskNotebookTaskOutputReference) ResetSource() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetSource",
 		nil, // no parameters
 	)
 }

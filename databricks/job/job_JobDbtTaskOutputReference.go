@@ -10,6 +10,9 @@ import (
 
 type JobDbtTaskOutputReference interface {
 	cdktf.ComplexObject
+	Catalog() *string
+	SetCatalog(val *string)
+	CatalogInput() *string
 	Commands() *[]*string
 	SetCommands(val *[]*string)
 	CommandsInput() *[]*string
@@ -76,6 +79,7 @@ type JobDbtTaskOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCatalog()
 	ResetProfilesDirectory()
 	ResetProjectDirectory()
 	ResetSchema()
@@ -93,6 +97,26 @@ type JobDbtTaskOutputReference interface {
 // The jsii proxy struct for JobDbtTaskOutputReference
 type jsiiProxy_JobDbtTaskOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_JobDbtTaskOutputReference) Catalog() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobDbtTaskOutputReference) CatalogInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalogInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_JobDbtTaskOutputReference) Commands() *[]*string {
@@ -290,6 +314,17 @@ func NewJobDbtTaskOutputReference_Override(j JobDbtTaskOutputReference, terrafor
 		"@cdktf/provider-databricks.job.JobDbtTaskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
+	)
+}
+
+func (j *jsiiProxy_JobDbtTaskOutputReference)SetCatalog(val *string) {
+	if err := j.validateSetCatalogParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"catalog",
+		val,
 	)
 }
 
@@ -587,6 +622,14 @@ func (j *jsiiProxy_JobDbtTaskOutputReference) InterpolationForAttribute(property
 	)
 
 	return returns
+}
+
+func (j *jsiiProxy_JobDbtTaskOutputReference) ResetCatalog() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetCatalog",
+		nil, // no parameters
+	)
 }
 
 func (j *jsiiProxy_JobDbtTaskOutputReference) ResetProfilesDirectory() {

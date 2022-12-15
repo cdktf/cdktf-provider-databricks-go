@@ -10,6 +10,8 @@ import (
 
 type ClusterInitScriptsOutputReference interface {
 	cdktf.ComplexObject
+	Abfss() ClusterInitScriptsAbfssOutputReference
+	AbfssInput() *ClusterInitScriptsAbfss
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -69,10 +71,12 @@ type ClusterInitScriptsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAbfss(value *ClusterInitScriptsAbfss)
 	PutDbfs(value *ClusterInitScriptsDbfs)
 	PutFile(value *ClusterInitScriptsFile)
 	PutGcs(value *ClusterInitScriptsGcs)
 	PutS3(value *ClusterInitScriptsS3)
+	ResetAbfss()
 	ResetDbfs()
 	ResetFile()
 	ResetGcs()
@@ -90,6 +94,26 @@ type ClusterInitScriptsOutputReference interface {
 // The jsii proxy struct for ClusterInitScriptsOutputReference
 type jsiiProxy_ClusterInitScriptsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ClusterInitScriptsOutputReference) Abfss() ClusterInitScriptsAbfssOutputReference {
+	var returns ClusterInitScriptsAbfssOutputReference
+	_jsii_.Get(
+		j,
+		"abfss",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterInitScriptsOutputReference) AbfssInput() *ClusterInitScriptsAbfss {
+	var returns *ClusterInitScriptsAbfss
+	_jsii_.Get(
+		j,
+		"abfssInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ClusterInitScriptsOutputReference) ComplexObjectIndex() interface{} {
@@ -511,6 +535,17 @@ func (c *jsiiProxy_ClusterInitScriptsOutputReference) InterpolationForAttribute(
 	return returns
 }
 
+func (c *jsiiProxy_ClusterInitScriptsOutputReference) PutAbfss(value *ClusterInitScriptsAbfss) {
+	if err := c.validatePutAbfssParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAbfss",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ClusterInitScriptsOutputReference) PutDbfs(value *ClusterInitScriptsDbfs) {
 	if err := c.validatePutDbfsParameters(value); err != nil {
 		panic(err)
@@ -552,6 +587,14 @@ func (c *jsiiProxy_ClusterInitScriptsOutputReference) PutS3(value *ClusterInitSc
 		c,
 		"putS3",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ClusterInitScriptsOutputReference) ResetAbfss() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAbfss",
+		nil, // no parameters
 	)
 }
 

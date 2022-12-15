@@ -96,6 +96,10 @@ func (j *jsiiProxy_User) validateSetForceParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_User) validateSetHomeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_User) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -105,6 +109,10 @@ func (j *jsiiProxy_User) validateSetLifecycleParameters(val *cdktf.TerraformReso
 }
 
 func (j *jsiiProxy_User) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_User) validateSetReposParameters(val *string) error {
 	return nil
 }
 

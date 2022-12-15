@@ -44,6 +44,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutp
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputReference) validatePutAbfssParameters(value *DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputReference) validatePutDbfsParameters(value *DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfs) error {
 	return nil
 }

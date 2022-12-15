@@ -45,6 +45,8 @@ type StorageCredential interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GcpServiceAccountKey() StorageCredentialGcpServiceAccountKeyOutputReference
+	GcpServiceAccountKeyInput() *StorageCredentialGcpServiceAccountKey
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -107,10 +109,12 @@ type StorageCredential interface {
 	PutAwsIamRole(value *StorageCredentialAwsIamRole)
 	PutAzureManagedIdentity(value *StorageCredentialAzureManagedIdentity)
 	PutAzureServicePrincipal(value *StorageCredentialAzureServicePrincipal)
+	PutGcpServiceAccountKey(value *StorageCredentialGcpServiceAccountKey)
 	ResetAwsIamRole()
 	ResetAzureManagedIdentity()
 	ResetAzureServicePrincipal()
 	ResetComment()
+	ResetGcpServiceAccountKey()
 	ResetId()
 	ResetMetastoreId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -287,6 +291,26 @@ func (j *jsiiProxy_StorageCredential) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageCredential) GcpServiceAccountKey() StorageCredentialGcpServiceAccountKeyOutputReference {
+	var returns StorageCredentialGcpServiceAccountKeyOutputReference
+	_jsii_.Get(
+		j,
+		"gcpServiceAccountKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageCredential) GcpServiceAccountKeyInput() *StorageCredentialGcpServiceAccountKey {
+	var returns *StorageCredentialGcpServiceAccountKey
+	_jsii_.Get(
+		j,
+		"gcpServiceAccountKeyInput",
 		&returns,
 	)
 	return returns
@@ -901,6 +925,17 @@ func (s *jsiiProxy_StorageCredential) PutAzureServicePrincipal(value *StorageCre
 	)
 }
 
+func (s *jsiiProxy_StorageCredential) PutGcpServiceAccountKey(value *StorageCredentialGcpServiceAccountKey) {
+	if err := s.validatePutGcpServiceAccountKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putGcpServiceAccountKey",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StorageCredential) ResetAwsIamRole() {
 	_jsii_.InvokeVoid(
 		s,
@@ -929,6 +964,14 @@ func (s *jsiiProxy_StorageCredential) ResetComment() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetComment",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageCredential) ResetGcpServiceAccountKey() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetGcpServiceAccountKey",
 		nil, // no parameters
 	)
 }

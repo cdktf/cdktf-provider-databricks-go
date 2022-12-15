@@ -73,6 +73,9 @@ type Catalog interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	StorageRoot() *string
+	SetStorageRoot(val *string)
+	StorageRootInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -113,6 +116,7 @@ type Catalog interface {
 	ResetOverrideLogicalId()
 	ResetOwner()
 	ResetProperties()
+	ResetStorageRoot()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -398,6 +402,26 @@ func (j *jsiiProxy_Catalog) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Catalog) StorageRoot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageRoot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) StorageRootInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageRootInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Catalog) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -596,6 +620,17 @@ func (j *jsiiProxy_Catalog)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Catalog)SetStorageRoot(val *string) {
+	if err := j.validateSetStorageRootParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageRoot",
 		val,
 	)
 }
@@ -918,6 +953,14 @@ func (c *jsiiProxy_Catalog) ResetProperties() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProperties",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Catalog) ResetStorageRoot() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStorageRoot",
 		nil, // no parameters
 	)
 }

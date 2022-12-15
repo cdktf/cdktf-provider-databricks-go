@@ -2,6 +2,10 @@ package datadatabricksjob
 
 
 type DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts struct {
+	// abfss block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#abfss DataDatabricksJob#abfss}
+	Abfss *DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss `field:"optional" json:"abfss" yaml:"abfss"`
 	// dbfs block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#dbfs DataDatabricksJob#dbfs}

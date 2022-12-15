@@ -48,6 +48,10 @@ func (j *jsiiProxy_JobDbtTaskOutputReference) validateResolveParameters(_context
 	return nil
 }
 
+func (j *jsiiProxy_JobDbtTaskOutputReference) validateSetCatalogParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobDbtTaskOutputReference) validateSetCommandsParameters(val *[]*string) error {
 	return nil
 }

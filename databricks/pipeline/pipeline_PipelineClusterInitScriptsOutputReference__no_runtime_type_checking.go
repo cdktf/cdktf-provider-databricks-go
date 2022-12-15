@@ -44,6 +44,10 @@ func (p *jsiiProxy_PipelineClusterInitScriptsOutputReference) validateInterpolat
 	return nil
 }
 
+func (p *jsiiProxy_PipelineClusterInitScriptsOutputReference) validatePutAbfssParameters(value *PipelineClusterInitScriptsAbfss) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineClusterInitScriptsOutputReference) validatePutDbfsParameters(value *PipelineClusterInitScriptsDbfs) error {
 	return nil
 }

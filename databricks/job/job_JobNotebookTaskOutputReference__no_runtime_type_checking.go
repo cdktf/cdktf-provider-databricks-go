@@ -68,6 +68,10 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) validateSetNotebookPathParame
 	return nil
 }
 
+func (j *jsiiProxy_JobNotebookTaskOutputReference) validateSetSourceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobNotebookTaskOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

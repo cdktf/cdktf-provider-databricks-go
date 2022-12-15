@@ -10,6 +10,8 @@ import (
 
 type PipelineClusterInitScriptsOutputReference interface {
 	cdktf.ComplexObject
+	Abfss() PipelineClusterInitScriptsAbfssOutputReference
+	AbfssInput() *PipelineClusterInitScriptsAbfss
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -69,10 +71,12 @@ type PipelineClusterInitScriptsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAbfss(value *PipelineClusterInitScriptsAbfss)
 	PutDbfs(value *PipelineClusterInitScriptsDbfs)
 	PutFile(value *PipelineClusterInitScriptsFile)
 	PutGcs(value *PipelineClusterInitScriptsGcs)
 	PutS3(value *PipelineClusterInitScriptsS3)
+	ResetAbfss()
 	ResetDbfs()
 	ResetFile()
 	ResetGcs()
@@ -90,6 +94,26 @@ type PipelineClusterInitScriptsOutputReference interface {
 // The jsii proxy struct for PipelineClusterInitScriptsOutputReference
 type jsiiProxy_PipelineClusterInitScriptsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_PipelineClusterInitScriptsOutputReference) Abfss() PipelineClusterInitScriptsAbfssOutputReference {
+	var returns PipelineClusterInitScriptsAbfssOutputReference
+	_jsii_.Get(
+		j,
+		"abfss",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterInitScriptsOutputReference) AbfssInput() *PipelineClusterInitScriptsAbfss {
+	var returns *PipelineClusterInitScriptsAbfss
+	_jsii_.Get(
+		j,
+		"abfssInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PipelineClusterInitScriptsOutputReference) ComplexObjectIndex() interface{} {
@@ -511,6 +535,17 @@ func (p *jsiiProxy_PipelineClusterInitScriptsOutputReference) InterpolationForAt
 	return returns
 }
 
+func (p *jsiiProxy_PipelineClusterInitScriptsOutputReference) PutAbfss(value *PipelineClusterInitScriptsAbfss) {
+	if err := p.validatePutAbfssParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putAbfss",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineClusterInitScriptsOutputReference) PutDbfs(value *PipelineClusterInitScriptsDbfs) {
 	if err := p.validatePutDbfsParameters(value); err != nil {
 		panic(err)
@@ -552,6 +587,14 @@ func (p *jsiiProxy_PipelineClusterInitScriptsOutputReference) PutS3(value *Pipel
 		p,
 		"putS3",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineClusterInitScriptsOutputReference) ResetAbfss() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAbfss",
+		nil, // no parameters
 	)
 }
 

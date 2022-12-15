@@ -76,6 +76,9 @@ type Schema interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	StorageRoot() *string
+	SetStorageRoot(val *string)
+	StorageRootInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -116,6 +119,7 @@ type Schema interface {
 	ResetOverrideLogicalId()
 	ResetOwner()
 	ResetProperties()
+	ResetStorageRoot()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -421,6 +425,26 @@ func (j *jsiiProxy_Schema) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Schema) StorageRoot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageRoot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Schema) StorageRootInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageRootInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Schema) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -630,6 +654,17 @@ func (j *jsiiProxy_Schema)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Schema)SetStorageRoot(val *string) {
+	if err := j.validateSetStorageRootParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageRoot",
 		val,
 	)
 }
@@ -952,6 +987,14 @@ func (s *jsiiProxy_Schema) ResetProperties() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetProperties",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Schema) ResetStorageRoot() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStorageRoot",
 		nil, // no parameters
 	)
 }

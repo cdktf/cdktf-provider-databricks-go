@@ -45,6 +45,8 @@ type MetastoreDataAccess interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GcpServiceAccountKey() MetastoreDataAccessGcpServiceAccountKeyOutputReference
+	GcpServiceAccountKeyInput() *MetastoreDataAccessGcpServiceAccountKey
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -107,10 +109,12 @@ type MetastoreDataAccess interface {
 	PutAwsIamRole(value *MetastoreDataAccessAwsIamRole)
 	PutAzureManagedIdentity(value *MetastoreDataAccessAzureManagedIdentity)
 	PutAzureServicePrincipal(value *MetastoreDataAccessAzureServicePrincipal)
+	PutGcpServiceAccountKey(value *MetastoreDataAccessGcpServiceAccountKey)
 	ResetAwsIamRole()
 	ResetAzureManagedIdentity()
 	ResetAzureServicePrincipal()
 	ResetConfigurationType()
+	ResetGcpServiceAccountKey()
 	ResetId()
 	ResetIsDefault()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -286,6 +290,26 @@ func (j *jsiiProxy_MetastoreDataAccess) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) GcpServiceAccountKey() MetastoreDataAccessGcpServiceAccountKeyOutputReference {
+	var returns MetastoreDataAccessGcpServiceAccountKeyOutputReference
+	_jsii_.Get(
+		j,
+		"gcpServiceAccountKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) GcpServiceAccountKeyInput() *MetastoreDataAccessGcpServiceAccountKey {
+	var returns *MetastoreDataAccessGcpServiceAccountKey
+	_jsii_.Get(
+		j,
+		"gcpServiceAccountKeyInput",
 		&returns,
 	)
 	return returns
@@ -900,6 +924,17 @@ func (m *jsiiProxy_MetastoreDataAccess) PutAzureServicePrincipal(value *Metastor
 	)
 }
 
+func (m *jsiiProxy_MetastoreDataAccess) PutGcpServiceAccountKey(value *MetastoreDataAccessGcpServiceAccountKey) {
+	if err := m.validatePutGcpServiceAccountKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putGcpServiceAccountKey",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MetastoreDataAccess) ResetAwsIamRole() {
 	_jsii_.InvokeVoid(
 		m,
@@ -928,6 +963,14 @@ func (m *jsiiProxy_MetastoreDataAccess) ResetConfigurationType() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetConfigurationType",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MetastoreDataAccess) ResetGcpServiceAccountKey() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetGcpServiceAccountKey",
 		nil, // no parameters
 	)
 }

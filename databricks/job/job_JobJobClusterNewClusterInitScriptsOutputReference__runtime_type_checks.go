@@ -90,6 +90,17 @@ func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validateIn
 	return nil
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validatePutAbfssParameters(value *JobJobClusterNewClusterInitScriptsAbfss) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validatePutDbfsParameters(value *JobJobClusterNewClusterInitScriptsDbfs) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

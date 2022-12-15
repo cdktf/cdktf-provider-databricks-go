@@ -35,11 +35,15 @@ type ServicePrincipalConfig struct {
 	ExternalId *string `field:"optional" json:"externalId" yaml:"externalId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#force ServicePrincipal#force}.
 	Force interface{} `field:"optional" json:"force" yaml:"force"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#home ServicePrincipal#home}.
+	Home *string `field:"optional" json:"home" yaml:"home"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#id ServicePrincipal#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#repos ServicePrincipal#repos}.
+	Repos *string `field:"optional" json:"repos" yaml:"repos"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#workspace_access ServicePrincipal#workspace_access}.
 	WorkspaceAccess interface{} `field:"optional" json:"workspaceAccess" yaml:"workspaceAccess"`
 }

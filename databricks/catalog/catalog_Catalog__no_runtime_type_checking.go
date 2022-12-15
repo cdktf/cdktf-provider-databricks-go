@@ -104,6 +104,10 @@ func (j *jsiiProxy_Catalog) validateSetProvisionersParameters(val *[]interface{}
 	return nil
 }
 
+func (j *jsiiProxy_Catalog) validateSetStorageRootParameters(val *string) error {
+	return nil
+}
+
 func validateNewCatalogParameters(scope constructs.Construct, id *string, config *CatalogConfig) error {
 	return nil
 }

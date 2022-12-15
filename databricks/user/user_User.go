@@ -57,6 +57,9 @@ type User interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Home() *string
+	SetHome(val *string)
+	HomeInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -76,6 +79,9 @@ type User interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Repos() *string
+	SetRepos(val *string)
+	ReposInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -120,10 +126,12 @@ type User interface {
 	ResetDisplayName()
 	ResetExternalId()
 	ResetForce()
+	ResetHome()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRepos()
 	ResetWorkspaceAccess()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -360,6 +368,26 @@ func (j *jsiiProxy_User) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_User) Home() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"home",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) HomeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"homeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_User) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -425,6 +453,26 @@ func (j *jsiiProxy_User) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) Repos() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repos",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) ReposInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reposInput",
 		&returns,
 	)
 	return returns
@@ -642,6 +690,17 @@ func (j *jsiiProxy_User)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
+func (j *jsiiProxy_User)SetHome(val *string) {
+	if err := j.validateSetHomeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"home",
+		val,
+	)
+}
+
 func (j *jsiiProxy_User)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -679,6 +738,17 @@ func (j *jsiiProxy_User)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_User)SetRepos(val *string) {
+	if err := j.validateSetReposParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"repos",
 		val,
 	)
 }
@@ -1027,6 +1097,14 @@ func (u *jsiiProxy_User) ResetForce() {
 	)
 }
 
+func (u *jsiiProxy_User) ResetHome() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetHome",
+		nil, // no parameters
+	)
+}
+
 func (u *jsiiProxy_User) ResetId() {
 	_jsii_.InvokeVoid(
 		u,
@@ -1039,6 +1117,14 @@ func (u *jsiiProxy_User) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_User) ResetRepos() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetRepos",
 		nil, // no parameters
 	)
 }

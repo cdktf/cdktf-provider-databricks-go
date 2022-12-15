@@ -64,6 +64,10 @@ func (s *jsiiProxy_StorageCredential) validatePutAzureServicePrincipalParameters
 	return nil
 }
 
+func (s *jsiiProxy_StorageCredential) validatePutGcpServiceAccountKeyParameters(value *StorageCredentialGcpServiceAccountKey) error {
+	return nil
+}
+
 func validateStorageCredential_IsConstructParameters(x interface{}) error {
 	return nil
 }

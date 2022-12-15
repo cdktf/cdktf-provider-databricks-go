@@ -64,6 +64,10 @@ func (m *jsiiProxy_MetastoreDataAccess) validatePutAzureServicePrincipalParamete
 	return nil
 }
 
+func (m *jsiiProxy_MetastoreDataAccess) validatePutGcpServiceAccountKeyParameters(value *MetastoreDataAccessGcpServiceAccountKey) error {
+	return nil
+}
+
 func validateMetastoreDataAccess_IsConstructParameters(x interface{}) error {
 	return nil
 }

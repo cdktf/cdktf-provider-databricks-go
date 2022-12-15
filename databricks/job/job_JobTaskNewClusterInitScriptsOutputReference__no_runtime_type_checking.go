@@ -44,6 +44,10 @@ func (j *jsiiProxy_JobTaskNewClusterInitScriptsOutputReference) validateInterpol
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskNewClusterInitScriptsOutputReference) validatePutAbfssParameters(value *JobTaskNewClusterInitScriptsAbfss) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskNewClusterInitScriptsOutputReference) validatePutDbfsParameters(value *JobTaskNewClusterInitScriptsDbfs) error {
 	return nil
 }

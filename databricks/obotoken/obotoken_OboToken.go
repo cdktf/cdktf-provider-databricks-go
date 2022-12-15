@@ -96,7 +96,9 @@ type OboToken interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetComment()
 	ResetId()
+	ResetLifetimeSeconds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -770,10 +772,26 @@ func (o *jsiiProxy_OboToken) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (o *jsiiProxy_OboToken) ResetComment() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetComment",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OboToken) ResetId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OboToken) ResetLifetimeSeconds() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLifetimeSeconds",
 		nil, // no parameters
 	)
 }

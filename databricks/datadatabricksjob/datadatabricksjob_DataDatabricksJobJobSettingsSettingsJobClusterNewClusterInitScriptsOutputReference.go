@@ -10,6 +10,8 @@ import (
 
 type DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference interface {
 	cdktf.ComplexObject
+	Abfss() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOutputReference
+	AbfssInput() *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -69,10 +71,12 @@ type DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputRe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAbfss(value *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss)
 	PutDbfs(value *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs)
 	PutFile(value *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFile)
 	PutGcs(value *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcs)
 	PutS3(value *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3)
+	ResetAbfss()
 	ResetDbfs()
 	ResetFile()
 	ResetGcs()
@@ -90,6 +94,26 @@ type DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputRe
 // The jsii proxy struct for DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference
 type jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference) Abfss() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOutputReference
+	_jsii_.Get(
+		j,
+		"abfss",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference) AbfssInput() *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss {
+	var returns *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss
+	_jsii_.Get(
+		j,
+		"abfssInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference) ComplexObjectIndex() interface{} {
@@ -511,6 +535,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitS
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference) PutAbfss(value *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss) {
+	if err := d.validatePutAbfssParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAbfss",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference) PutDbfs(value *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs) {
 	if err := d.validatePutDbfsParameters(value); err != nil {
 		panic(err)
@@ -552,6 +587,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitS
 		d,
 		"putS3",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference) ResetAbfss() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAbfss",
+		nil, // no parameters
 	)
 }
 
