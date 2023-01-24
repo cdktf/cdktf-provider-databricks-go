@@ -2,14 +2,17 @@ package pipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/pipeline/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/pipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type PipelineClusterGcpAttributesOutputReference interface {
 	cdktf.ComplexObject
+	Availability() *string
+	SetAvailability(val *string)
+	AvailabilityInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,6 +43,9 @@ type PipelineClusterGcpAttributesOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	ZoneId() *string
+	SetZoneId(val *string)
+	ZoneIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -64,7 +70,9 @@ type PipelineClusterGcpAttributesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAvailability()
 	ResetGoogleServiceAccount()
+	ResetZoneId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -78,6 +86,26 @@ type PipelineClusterGcpAttributesOutputReference interface {
 // The jsii proxy struct for PipelineClusterGcpAttributesOutputReference
 type jsiiProxy_PipelineClusterGcpAttributesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) Availability() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availability",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) AvailabilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availabilityInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) ComplexObjectIndex() interface{} {
@@ -170,6 +198,26 @@ func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) TerraformResourc
 	return returns
 }
 
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) ZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) ZoneIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewPipelineClusterGcpAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PipelineClusterGcpAttributesOutputReference {
 	_init_.Initialize()
@@ -195,6 +243,17 @@ func NewPipelineClusterGcpAttributesOutputReference_Override(p PipelineClusterGc
 		"@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
+	)
+}
+
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference)SetAvailability(val *string) {
+	if err := j.validateSetAvailabilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"availability",
+		val,
 	)
 }
 
@@ -260,6 +319,17 @@ func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference)SetTerraformResou
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zoneId",
 		val,
 	)
 }
@@ -450,10 +520,26 @@ func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) InterpolationFor
 	return returns
 }
 
+func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) ResetAvailability() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAvailability",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) ResetGoogleServiceAccount() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetGoogleServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

@@ -2,10 +2,10 @@ package datadatabricksnodetype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/datadatabricksnodetype/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksnodetype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -54,6 +54,9 @@ type DataDatabricksNodeType interface {
 	LocalDisk() interface{}
 	SetLocalDisk(val interface{})
 	LocalDiskInput() interface{}
+	LocalDiskMinSize() *float64
+	SetLocalDiskMinSize(val *float64)
+	LocalDiskMinSizeInput() *float64
 	MinCores() *float64
 	SetMinCores(val *float64)
 	MinCoresInput() *float64
@@ -120,6 +123,7 @@ type DataDatabricksNodeType interface {
 	ResetId()
 	ResetIsIoCacheEnabled()
 	ResetLocalDisk()
+	ResetLocalDiskMinSize()
 	ResetMinCores()
 	ResetMinGpus()
 	ResetMinMemoryGb()
@@ -340,6 +344,26 @@ func (j *jsiiProxy_DataDatabricksNodeType) LocalDiskInput() interface{} {
 	_jsii_.Get(
 		j,
 		"localDiskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksNodeType) LocalDiskMinSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"localDiskMinSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksNodeType) LocalDiskMinSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"localDiskMinSizeInput",
 		&returns,
 	)
 	return returns
@@ -672,6 +696,17 @@ func (j *jsiiProxy_DataDatabricksNodeType)SetLocalDisk(val interface{}) {
 	_jsii_.Set(
 		j,
 		"localDisk",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksNodeType)SetLocalDiskMinSize(val *float64) {
+	if err := j.validateSetLocalDiskMinSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localDiskMinSize",
 		val,
 	)
 }
@@ -1071,6 +1106,14 @@ func (d *jsiiProxy_DataDatabricksNodeType) ResetLocalDisk() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetLocalDisk",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksNodeType) ResetLocalDiskMinSize() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLocalDiskMinSize",
 		nil, // no parameters
 	)
 }

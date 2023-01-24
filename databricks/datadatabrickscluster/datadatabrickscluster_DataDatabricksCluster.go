@@ -2,10 +2,10 @@ package datadatabrickscluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/datadatabrickscluster/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabrickscluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -19,6 +19,9 @@ type DataDatabricksCluster interface {
 	ClusterIdInput() *string
 	ClusterInfo() DataDatabricksClusterClusterInfoOutputReference
 	ClusterInfoInput() *DataDatabricksClusterClusterInfo
+	ClusterName() *string
+	SetClusterName(val *string)
+	ClusterNameInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -84,7 +87,9 @@ type DataDatabricksCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutClusterInfo(value *DataDatabricksClusterClusterInfo)
+	ResetClusterId()
 	ResetClusterInfo()
+	ResetClusterName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -149,6 +154,26 @@ func (j *jsiiProxy_DataDatabricksCluster) ClusterInfoInput() *DataDatabricksClus
 	_jsii_.Get(
 		j,
 		"clusterInfoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksCluster) ClusterName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksCluster) ClusterNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterNameInput",
 		&returns,
 	)
 	return returns
@@ -341,6 +366,17 @@ func (j *jsiiProxy_DataDatabricksCluster)SetClusterId(val *string) {
 	_jsii_.Set(
 		j,
 		"clusterId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksCluster)SetClusterName(val *string) {
+	if err := j.validateSetClusterNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterName",
 		val,
 	)
 }
@@ -676,10 +712,26 @@ func (d *jsiiProxy_DataDatabricksCluster) PutClusterInfo(value *DataDatabricksCl
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksCluster) ResetClusterId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClusterId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksCluster) ResetClusterInfo() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetClusterInfo",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksCluster) ResetClusterName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClusterName",
 		nil, // no parameters
 	)
 }

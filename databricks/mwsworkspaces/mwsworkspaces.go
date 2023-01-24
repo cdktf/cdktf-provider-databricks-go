@@ -19,8 +19,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "cloud", GoGetter: "Cloud"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudInput", GoGetter: "CloudInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cloudResourceBucket", GoGetter: "CloudResourceBucket"},
-			_jsii_.MemberProperty{JsiiProperty: "cloudResourceBucketInput", GoGetter: "CloudResourceBucketInput"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudResourceContainer", GoGetter: "CloudResourceContainer"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudResourceContainerInput", GoGetter: "CloudResourceContainerInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -38,6 +38,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
+			_jsii_.MemberProperty{JsiiProperty: "gcpManagedNetworkConfig", GoGetter: "GcpManagedNetworkConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "gcpManagedNetworkConfigInput", GoGetter: "GcpManagedNetworkConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
@@ -47,6 +49,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "gkeConfig", GoGetter: "GkeConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "gkeConfigInput", GoGetter: "GkeConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -57,10 +61,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "managedServicesCustomerManagedKeyId", GoGetter: "ManagedServicesCustomerManagedKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "managedServicesCustomerManagedKeyIdInput", GoGetter: "ManagedServicesCustomerManagedKeyIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},
 			_jsii_.MemberProperty{JsiiProperty: "networkId", GoGetter: "NetworkId"},
 			_jsii_.MemberProperty{JsiiProperty: "networkIdInput", GoGetter: "NetworkIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "networkInput", GoGetter: "NetworkInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "pricingTier", GoGetter: "PricingTier"},
@@ -69,25 +71,27 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "privateAccessSettingsIdInput", GoGetter: "PrivateAccessSettingsIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putCloudResourceBucket", GoMethod: "PutCloudResourceBucket"},
+			_jsii_.MemberMethod{JsiiMethod: "putCloudResourceContainer", GoMethod: "PutCloudResourceContainer"},
 			_jsii_.MemberMethod{JsiiMethod: "putExternalCustomerInfo", GoMethod: "PutExternalCustomerInfo"},
-			_jsii_.MemberMethod{JsiiMethod: "putNetwork", GoMethod: "PutNetwork"},
+			_jsii_.MemberMethod{JsiiMethod: "putGcpManagedNetworkConfig", GoMethod: "PutGcpManagedNetworkConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putGkeConfig", GoMethod: "PutGkeConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putToken", GoMethod: "PutToken"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsRegion", GoMethod: "ResetAwsRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloud", GoMethod: "ResetCloud"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCloudResourceBucket", GoMethod: "ResetCloudResourceBucket"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCloudResourceContainer", GoMethod: "ResetCloudResourceContainer"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreationTime", GoMethod: "ResetCreationTime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCredentialsId", GoMethod: "ResetCredentialsId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomerManagedKeyId", GoMethod: "ResetCustomerManagedKeyId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeploymentName", GoMethod: "ResetDeploymentName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExternalCustomerInfo", GoMethod: "ResetExternalCustomerInfo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGcpManagedNetworkConfig", GoMethod: "ResetGcpManagedNetworkConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGkeConfig", GoMethod: "ResetGkeConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsNoPublicIpEnabled", GoMethod: "ResetIsNoPublicIpEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocation", GoMethod: "ResetLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetManagedServicesCustomerManagedKeyId", GoMethod: "ResetManagedServicesCustomerManagedKeyId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNetwork", GoMethod: "ResetNetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkId", GoMethod: "ResetNetworkId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPricingTier", GoMethod: "ResetPricingTier"},
@@ -133,16 +137,16 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceBucket",
-		reflect.TypeOf((*MwsWorkspacesCloudResourceBucket)(nil)).Elem(),
+		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainer",
+		reflect.TypeOf((*MwsWorkspacesCloudResourceContainer)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceBucketGcp",
-		reflect.TypeOf((*MwsWorkspacesCloudResourceBucketGcp)(nil)).Elem(),
+		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainerGcp",
+		reflect.TypeOf((*MwsWorkspacesCloudResourceContainerGcp)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceBucketGcpOutputReference",
-		reflect.TypeOf((*MwsWorkspacesCloudResourceBucketGcpOutputReference)(nil)).Elem(),
+		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainerGcpOutputReference",
+		reflect.TypeOf((*MwsWorkspacesCloudResourceContainerGcpOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -169,14 +173,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_MwsWorkspacesCloudResourceBucketGcpOutputReference{}
+			j := jsiiProxy_MwsWorkspacesCloudResourceContainerGcpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceBucketOutputReference",
-		reflect.TypeOf((*MwsWorkspacesCloudResourceBucketOutputReference)(nil)).Elem(),
+		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainerOutputReference",
+		reflect.TypeOf((*MwsWorkspacesCloudResourceContainerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -204,7 +208,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_MwsWorkspacesCloudResourceBucketOutputReference{}
+			j := jsiiProxy_MwsWorkspacesCloudResourceContainerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -256,56 +260,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesNetwork",
-		reflect.TypeOf((*MwsWorkspacesNetwork)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesNetworkGcpCommonNetworkConfig",
-		reflect.TypeOf((*MwsWorkspacesNetworkGcpCommonNetworkConfig)(nil)).Elem(),
+		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfig",
+		reflect.TypeOf((*MwsWorkspacesGcpManagedNetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference",
-		reflect.TypeOf((*MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "gkeClusterMasterIpRange", GoGetter: "GkeClusterMasterIpRange"},
-			_jsii_.MemberProperty{JsiiProperty: "gkeClusterMasterIpRangeInput", GoGetter: "GkeClusterMasterIpRangeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "gkeConnectivityType", GoGetter: "GkeConnectivityType"},
-			_jsii_.MemberProperty{JsiiProperty: "gkeConnectivityTypeInput", GoGetter: "GkeConnectivityTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MwsWorkspacesNetworkGcpCommonNetworkConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesNetworkGcpManagedNetworkConfig",
-		reflect.TypeOf((*MwsWorkspacesNetworkGcpManagedNetworkConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesNetworkGcpManagedNetworkConfigOutputReference",
-		reflect.TypeOf((*MwsWorkspacesNetworkGcpManagedNetworkConfigOutputReference)(nil)).Elem(),
+		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfigOutputReference",
+		reflect.TypeOf((*MwsWorkspacesGcpManagedNetworkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -336,24 +296,26 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_MwsWorkspacesNetworkGcpManagedNetworkConfigOutputReference{}
+			j := jsiiProxy_MwsWorkspacesGcpManagedNetworkConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGkeConfig",
+		reflect.TypeOf((*MwsWorkspacesGkeConfig)(nil)).Elem(),
+	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesNetworkOutputReference",
-		reflect.TypeOf((*MwsWorkspacesNetworkOutputReference)(nil)).Elem(),
+		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGkeConfigOutputReference",
+		reflect.TypeOf((*MwsWorkspacesGkeConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "connectivityType", GoGetter: "ConnectivityType"},
+			_jsii_.MemberProperty{JsiiProperty: "connectivityTypeInput", GoGetter: "ConnectivityTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "gcpCommonNetworkConfig", GoGetter: "GcpCommonNetworkConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "gcpCommonNetworkConfigInput", GoGetter: "GcpCommonNetworkConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "gcpManagedNetworkConfig", GoGetter: "GcpManagedNetworkConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "gcpManagedNetworkConfigInput", GoGetter: "GcpManagedNetworkConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
@@ -366,19 +328,15 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "networkId", GoGetter: "NetworkId"},
-			_jsii_.MemberProperty{JsiiProperty: "networkIdInput", GoGetter: "NetworkIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putGcpCommonNetworkConfig", GoMethod: "PutGcpCommonNetworkConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putGcpManagedNetworkConfig", GoMethod: "PutGcpManagedNetworkConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGcpManagedNetworkConfig", GoMethod: "ResetGcpManagedNetworkConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNetworkId", GoMethod: "ResetNetworkId"},
+			_jsii_.MemberProperty{JsiiProperty: "masterIpRange", GoGetter: "MasterIpRange"},
+			_jsii_.MemberProperty{JsiiProperty: "masterIpRangeInput", GoGetter: "MasterIpRangeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_MwsWorkspacesNetworkOutputReference{}
+			j := jsiiProxy_MwsWorkspacesGkeConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -52,6 +52,10 @@ func (p *jsiiProxy_PipelineClusterOutputReference) validatePutAwsAttributesParam
 	return nil
 }
 
+func (p *jsiiProxy_PipelineClusterOutputReference) validatePutAzureAttributesParameters(value *PipelineClusterAzureAttributes) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineClusterOutputReference) validatePutClusterLogConfParameters(value *PipelineClusterClusterLogConf) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (j *jsiiProxy_PipelineClusterOutputReference) validateSetDriverInstancePool
 }
 
 func (j *jsiiProxy_PipelineClusterOutputReference) validateSetDriverNodeTypeIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineClusterOutputReference) validateSetEnableLocalDiskEncryptionParameters(val interface{}) error {
 	return nil
 }
 

@@ -100,7 +100,15 @@ func (j *jsiiProxy_Catalog) validateSetPropertiesParameters(val *map[string]*str
 	return nil
 }
 
+func (j *jsiiProxy_Catalog) validateSetProviderNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Catalog) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Catalog) validateSetShareNameParameters(val *string) error {
 	return nil
 }
 

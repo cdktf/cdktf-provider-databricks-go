@@ -98,6 +98,14 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateResolveP
 	return nil
 }
 
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetAvailabilityParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -163,6 +171,30 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetCompl
 	return nil
 }
 
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetEbsVolumeCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetEbsVolumeSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetEbsVolumeTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetFirstOnDemandParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -182,6 +214,14 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetInsta
 func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetInternalValueParameters(val *PipelineClusterAwsAttributes) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetSpotBidPricePercentParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

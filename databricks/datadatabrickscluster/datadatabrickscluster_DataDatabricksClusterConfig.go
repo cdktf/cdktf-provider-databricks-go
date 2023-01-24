@@ -20,11 +20,13 @@ type DataDatabricksClusterConfig struct {
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster#cluster_id DataDatabricksCluster#cluster_id}.
-	ClusterId *string `field:"required" json:"clusterId" yaml:"clusterId"`
+	ClusterId *string `field:"optional" json:"clusterId" yaml:"clusterId"`
 	// cluster_info block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster#cluster_info DataDatabricksCluster#cluster_info}
 	ClusterInfo *DataDatabricksClusterClusterInfo `field:"optional" json:"clusterInfo" yaml:"clusterInfo"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster#cluster_name DataDatabricksCluster#cluster_name}.
+	ClusterName *string `field:"optional" json:"clusterName" yaml:"clusterName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster#id DataDatabricksCluster#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

@@ -2,10 +2,10 @@ package datadatabricksjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/datadatabricksjob/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -47,6 +47,9 @@ type DataDatabricksJob interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -91,6 +94,7 @@ type DataDatabricksJob interface {
 	ResetJobId()
 	ResetJobName()
 	ResetJobSettings()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -269,6 +273,26 @@ func (j *jsiiProxy_DataDatabricksJob) Lifecycle() *cdktf.TerraformResourceLifecy
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksJob) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJob) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksJob) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -423,6 +447,17 @@ func (j *jsiiProxy_DataDatabricksJob)SetLifecycle(val *cdktf.TerraformResourceLi
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJob)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -740,6 +775,14 @@ func (d *jsiiProxy_DataDatabricksJob) ResetJobSettings() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetJobSettings",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJob) ResetName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetName",
 		nil, // no parameters
 	)
 }

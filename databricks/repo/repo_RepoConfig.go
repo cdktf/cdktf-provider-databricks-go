@@ -34,6 +34,10 @@ type RepoConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/repo#path Repo#path}.
 	Path *string `field:"optional" json:"path" yaml:"path"`
+	// sparse_checkout block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/repo#sparse_checkout Repo#sparse_checkout}
+	SparseCheckout *RepoSparseCheckout `field:"optional" json:"sparseCheckout" yaml:"sparseCheckout"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/repo#tag Repo#tag}.
 	Tag *string `field:"optional" json:"tag" yaml:"tag"`
 }

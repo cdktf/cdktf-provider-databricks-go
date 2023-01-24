@@ -2,10 +2,10 @@ package repo
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/repo/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/repo/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -67,6 +67,8 @@ type Repo interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SparseCheckout() RepoSparseCheckoutOutputReference
+	SparseCheckoutInput() *RepoSparseCheckout
 	Tag() *string
 	SetTag(val *string)
 	TagInput() *string
@@ -104,6 +106,7 @@ type Repo interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutSparseCheckout(value *RepoSparseCheckout)
 	ResetBranch()
 	ResetCommitHash()
 	ResetGitProvider()
@@ -112,6 +115,7 @@ type Repo interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPath()
+	ResetSparseCheckout()
 	ResetTag()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -353,6 +357,26 @@ func (j *jsiiProxy_Repo) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repo) SparseCheckout() RepoSparseCheckoutOutputReference {
+	var returns RepoSparseCheckoutOutputReference
+	_jsii_.Get(
+		j,
+		"sparseCheckout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repo) SparseCheckoutInput() *RepoSparseCheckout {
+	var returns *RepoSparseCheckout
+	_jsii_.Get(
+		j,
+		"sparseCheckoutInput",
 		&returns,
 	)
 	return returns
@@ -866,6 +890,17 @@ func (r *jsiiProxy_Repo) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (r *jsiiProxy_Repo) PutSparseCheckout(value *RepoSparseCheckout) {
+	if err := r.validatePutSparseCheckoutParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putSparseCheckout",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_Repo) ResetBranch() {
 	_jsii_.InvokeVoid(
 		r,
@@ -910,6 +945,14 @@ func (r *jsiiProxy_Repo) ResetPath() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Repo) ResetSparseCheckout() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSparseCheckout",
 		nil, // no parameters
 	)
 }

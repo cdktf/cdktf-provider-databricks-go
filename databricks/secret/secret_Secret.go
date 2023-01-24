@@ -2,10 +2,10 @@ package secret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/secret/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/secret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -14,6 +14,7 @@ type Secret interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConfigReference() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -120,6 +121,16 @@ func (j *jsiiProxy_Secret) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Secret) ConfigReference() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configReference",
 		&returns,
 	)
 	return returns

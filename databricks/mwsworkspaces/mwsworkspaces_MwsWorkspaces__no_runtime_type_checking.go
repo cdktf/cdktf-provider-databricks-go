@@ -52,7 +52,7 @@ func (m *jsiiProxy_MwsWorkspaces) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (m *jsiiProxy_MwsWorkspaces) validatePutCloudResourceBucketParameters(value *MwsWorkspacesCloudResourceBucket) error {
+func (m *jsiiProxy_MwsWorkspaces) validatePutCloudResourceContainerParameters(value *MwsWorkspacesCloudResourceContainer) error {
 	return nil
 }
 
@@ -60,7 +60,11 @@ func (m *jsiiProxy_MwsWorkspaces) validatePutExternalCustomerInfoParameters(valu
 	return nil
 }
 
-func (m *jsiiProxy_MwsWorkspaces) validatePutNetworkParameters(value *MwsWorkspacesNetwork) error {
+func (m *jsiiProxy_MwsWorkspaces) validatePutGcpManagedNetworkConfigParameters(value *MwsWorkspacesGcpManagedNetworkConfig) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwsWorkspaces) validatePutGkeConfigParameters(value *MwsWorkspacesGkeConfig) error {
 	return nil
 }
 

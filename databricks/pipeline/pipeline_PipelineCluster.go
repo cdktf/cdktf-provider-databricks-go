@@ -12,6 +12,10 @@ type PipelineCluster struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#aws_attributes Pipeline#aws_attributes}
 	AwsAttributes *PipelineClusterAwsAttributes `field:"optional" json:"awsAttributes" yaml:"awsAttributes"`
+	// azure_attributes block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#azure_attributes Pipeline#azure_attributes}
+	AzureAttributes *PipelineClusterAzureAttributes `field:"optional" json:"azureAttributes" yaml:"azureAttributes"`
 	// cluster_log_conf block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#cluster_log_conf Pipeline#cluster_log_conf}
@@ -22,6 +26,8 @@ type PipelineCluster struct {
 	DriverInstancePoolId *string `field:"optional" json:"driverInstancePoolId" yaml:"driverInstancePoolId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#driver_node_type_id Pipeline#driver_node_type_id}.
 	DriverNodeTypeId *string `field:"optional" json:"driverNodeTypeId" yaml:"driverNodeTypeId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}.
+	EnableLocalDiskEncryption interface{} `field:"optional" json:"enableLocalDiskEncryption" yaml:"enableLocalDiskEncryption"`
 	// gcp_attributes block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#gcp_attributes Pipeline#gcp_attributes}

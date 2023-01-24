@@ -56,6 +56,10 @@ func (m *jsiiProxy_MwsNetworks) validatePutErrorMessagesParameters(value interfa
 	return nil
 }
 
+func (m *jsiiProxy_MwsNetworks) validatePutGcpNetworkInfoParameters(value *MwsNetworksGcpNetworkInfo) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsNetworks) validatePutVpcEndpointsParameters(value *MwsNetworksVpcEndpoints) error {
 	return nil
 }

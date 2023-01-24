@@ -2,10 +2,10 @@ package mwsworkspaces
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/mwsworkspaces/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/mwsworkspaces/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -23,8 +23,8 @@ type MwsWorkspaces interface {
 	Cloud() *string
 	SetCloud(val *string)
 	CloudInput() *string
-	CloudResourceBucket() MwsWorkspacesCloudResourceBucketOutputReference
-	CloudResourceBucketInput() *MwsWorkspacesCloudResourceBucket
+	CloudResourceContainer() MwsWorkspacesCloudResourceContainerOutputReference
+	CloudResourceContainerInput() *MwsWorkspacesCloudResourceContainer
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -61,6 +61,10 @@ type MwsWorkspaces interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GcpManagedNetworkConfig() MwsWorkspacesGcpManagedNetworkConfigOutputReference
+	GcpManagedNetworkConfigInput() *MwsWorkspacesGcpManagedNetworkConfig
+	GkeConfig() MwsWorkspacesGkeConfigOutputReference
+	GkeConfigInput() *MwsWorkspacesGkeConfig
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -77,11 +81,9 @@ type MwsWorkspaces interface {
 	ManagedServicesCustomerManagedKeyId() *string
 	SetManagedServicesCustomerManagedKeyId(val *string)
 	ManagedServicesCustomerManagedKeyIdInput() *string
-	Network() MwsWorkspacesNetworkOutputReference
 	NetworkId() *string
 	SetNetworkId(val *string)
 	NetworkIdInput() *string
-	NetworkInput() *MwsWorkspacesNetwork
 	// The tree node.
 	Node() constructs.Node
 	PricingTier() *string
@@ -156,24 +158,26 @@ type MwsWorkspaces interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCloudResourceBucket(value *MwsWorkspacesCloudResourceBucket)
+	PutCloudResourceContainer(value *MwsWorkspacesCloudResourceContainer)
 	PutExternalCustomerInfo(value *MwsWorkspacesExternalCustomerInfo)
-	PutNetwork(value *MwsWorkspacesNetwork)
+	PutGcpManagedNetworkConfig(value *MwsWorkspacesGcpManagedNetworkConfig)
+	PutGkeConfig(value *MwsWorkspacesGkeConfig)
 	PutTimeouts(value *MwsWorkspacesTimeouts)
 	PutToken(value *MwsWorkspacesToken)
 	ResetAwsRegion()
 	ResetCloud()
-	ResetCloudResourceBucket()
+	ResetCloudResourceContainer()
 	ResetCreationTime()
 	ResetCredentialsId()
 	ResetCustomerManagedKeyId()
 	ResetDeploymentName()
 	ResetExternalCustomerInfo()
+	ResetGcpManagedNetworkConfig()
+	ResetGkeConfig()
 	ResetId()
 	ResetIsNoPublicIpEnabled()
 	ResetLocation()
 	ResetManagedServicesCustomerManagedKeyId()
-	ResetNetwork()
 	ResetNetworkId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -273,21 +277,21 @@ func (j *jsiiProxy_MwsWorkspaces) CloudInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MwsWorkspaces) CloudResourceBucket() MwsWorkspacesCloudResourceBucketOutputReference {
-	var returns MwsWorkspacesCloudResourceBucketOutputReference
+func (j *jsiiProxy_MwsWorkspaces) CloudResourceContainer() MwsWorkspacesCloudResourceContainerOutputReference {
+	var returns MwsWorkspacesCloudResourceContainerOutputReference
 	_jsii_.Get(
 		j,
-		"cloudResourceBucket",
+		"cloudResourceContainer",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_MwsWorkspaces) CloudResourceBucketInput() *MwsWorkspacesCloudResourceBucket {
-	var returns *MwsWorkspacesCloudResourceBucket
+func (j *jsiiProxy_MwsWorkspaces) CloudResourceContainerInput() *MwsWorkspacesCloudResourceContainer {
+	var returns *MwsWorkspacesCloudResourceContainer
 	_jsii_.Get(
 		j,
-		"cloudResourceBucketInput",
+		"cloudResourceContainerInput",
 		&returns,
 	)
 	return returns
@@ -463,6 +467,46 @@ func (j *jsiiProxy_MwsWorkspaces) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MwsWorkspaces) GcpManagedNetworkConfig() MwsWorkspacesGcpManagedNetworkConfigOutputReference {
+	var returns MwsWorkspacesGcpManagedNetworkConfigOutputReference
+	_jsii_.Get(
+		j,
+		"gcpManagedNetworkConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsWorkspaces) GcpManagedNetworkConfigInput() *MwsWorkspacesGcpManagedNetworkConfig {
+	var returns *MwsWorkspacesGcpManagedNetworkConfig
+	_jsii_.Get(
+		j,
+		"gcpManagedNetworkConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsWorkspaces) GkeConfig() MwsWorkspacesGkeConfigOutputReference {
+	var returns MwsWorkspacesGkeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"gkeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsWorkspaces) GkeConfigInput() *MwsWorkspacesGkeConfig {
+	var returns *MwsWorkspacesGkeConfig
+	_jsii_.Get(
+		j,
+		"gkeConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MwsWorkspaces) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -553,16 +597,6 @@ func (j *jsiiProxy_MwsWorkspaces) ManagedServicesCustomerManagedKeyIdInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_MwsWorkspaces) Network() MwsWorkspacesNetworkOutputReference {
-	var returns MwsWorkspacesNetworkOutputReference
-	_jsii_.Get(
-		j,
-		"network",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MwsWorkspaces) NetworkId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -578,16 +612,6 @@ func (j *jsiiProxy_MwsWorkspaces) NetworkIdInput() *string {
 	_jsii_.Get(
 		j,
 		"networkIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MwsWorkspaces) NetworkInput() *MwsWorkspacesNetwork {
-	var returns *MwsWorkspacesNetwork
-	_jsii_.Get(
-		j,
-		"networkInput",
 		&returns,
 	)
 	return returns
@@ -1475,13 +1499,13 @@ func (m *jsiiProxy_MwsWorkspaces) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (m *jsiiProxy_MwsWorkspaces) PutCloudResourceBucket(value *MwsWorkspacesCloudResourceBucket) {
-	if err := m.validatePutCloudResourceBucketParameters(value); err != nil {
+func (m *jsiiProxy_MwsWorkspaces) PutCloudResourceContainer(value *MwsWorkspacesCloudResourceContainer) {
+	if err := m.validatePutCloudResourceContainerParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
-		"putCloudResourceBucket",
+		"putCloudResourceContainer",
 		[]interface{}{value},
 	)
 }
@@ -1497,13 +1521,24 @@ func (m *jsiiProxy_MwsWorkspaces) PutExternalCustomerInfo(value *MwsWorkspacesEx
 	)
 }
 
-func (m *jsiiProxy_MwsWorkspaces) PutNetwork(value *MwsWorkspacesNetwork) {
-	if err := m.validatePutNetworkParameters(value); err != nil {
+func (m *jsiiProxy_MwsWorkspaces) PutGcpManagedNetworkConfig(value *MwsWorkspacesGcpManagedNetworkConfig) {
+	if err := m.validatePutGcpManagedNetworkConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
-		"putNetwork",
+		"putGcpManagedNetworkConfig",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MwsWorkspaces) PutGkeConfig(value *MwsWorkspacesGkeConfig) {
+	if err := m.validatePutGkeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putGkeConfig",
 		[]interface{}{value},
 	)
 }
@@ -1546,10 +1581,10 @@ func (m *jsiiProxy_MwsWorkspaces) ResetCloud() {
 	)
 }
 
-func (m *jsiiProxy_MwsWorkspaces) ResetCloudResourceBucket() {
+func (m *jsiiProxy_MwsWorkspaces) ResetCloudResourceContainer() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetCloudResourceBucket",
+		"resetCloudResourceContainer",
 		nil, // no parameters
 	)
 }
@@ -1594,6 +1629,22 @@ func (m *jsiiProxy_MwsWorkspaces) ResetExternalCustomerInfo() {
 	)
 }
 
+func (m *jsiiProxy_MwsWorkspaces) ResetGcpManagedNetworkConfig() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetGcpManagedNetworkConfig",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsWorkspaces) ResetGkeConfig() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetGkeConfig",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MwsWorkspaces) ResetId() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1622,14 +1673,6 @@ func (m *jsiiProxy_MwsWorkspaces) ResetManagedServicesCustomerManagedKeyId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetManagedServicesCustomerManagedKeyId",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MwsWorkspaces) ResetNetwork() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetNetwork",
 		nil, // no parameters
 	)
 }

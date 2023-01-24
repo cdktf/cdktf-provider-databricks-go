@@ -32,5 +32,7 @@ type DataDatabricksJobConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#job_settings DataDatabricksJob#job_settings}
 	JobSettings *DataDatabricksJobJobSettings `field:"optional" json:"jobSettings" yaml:"jobSettings"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#name DataDatabricksJob#name}.
+	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

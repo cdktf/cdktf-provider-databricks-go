@@ -34,6 +34,8 @@ type DataDatabricksNodeTypeConfig struct {
 	IsIoCacheEnabled interface{} `field:"optional" json:"isIoCacheEnabled" yaml:"isIoCacheEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#local_disk DataDatabricksNodeType#local_disk}.
 	LocalDisk interface{} `field:"optional" json:"localDisk" yaml:"localDisk"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#local_disk_min_size DataDatabricksNodeType#local_disk_min_size}.
+	LocalDiskMinSize *float64 `field:"optional" json:"localDiskMinSize" yaml:"localDiskMinSize"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#min_cores DataDatabricksNodeType#min_cores}.
 	MinCores *float64 `field:"optional" json:"minCores" yaml:"minCores"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#min_gpus DataDatabricksNodeType#min_gpus}.

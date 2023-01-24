@@ -48,6 +48,10 @@ func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateResolveP
 	return nil
 }
 
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateSetAvailabilityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateSetTerra
 }
 
 func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateSetZoneIdParameters(val *string) error {
 	return nil
 }
 

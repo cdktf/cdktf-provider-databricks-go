@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataDatabricksJob) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJob) validateSetNameParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksJobParameters(scope constructs.Construct, id *string, config *DataDatabricksJobConfig) error {
 	return nil
 }

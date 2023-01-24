@@ -48,11 +48,27 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateResolveP
 	return nil
 }
 
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetAvailabilityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetEbsVolumeCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetEbsVolumeSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetEbsVolumeTypeParameters(val *string) error {
 	return nil
 }
 
@@ -65,6 +81,10 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetInsta
 }
 
 func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetInternalValueParameters(val *PipelineClusterAwsAttributes) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetSpotBidPricePercentParameters(val *float64) error {
 	return nil
 }
 

@@ -2,10 +2,10 @@ package catalog
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/catalog/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/catalog/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -67,12 +67,18 @@ type Catalog interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderName() *string
+	SetProviderName(val *string)
+	ProviderNameInput() *string
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ShareName() *string
+	SetShareName(val *string)
+	ShareNameInput() *string
 	StorageRoot() *string
 	SetStorageRoot(val *string)
 	StorageRootInput() *string
@@ -116,6 +122,8 @@ type Catalog interface {
 	ResetOverrideLogicalId()
 	ResetOwner()
 	ResetProperties()
+	ResetProviderName()
+	ResetShareName()
 	ResetStorageRoot()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -382,6 +390,26 @@ func (j *jsiiProxy_Catalog) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_Catalog) ProviderName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"providerName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) ProviderNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"providerNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Catalog) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -397,6 +425,26 @@ func (j *jsiiProxy_Catalog) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) ShareName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shareName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) ShareNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shareNameInput",
 		&returns,
 	)
 	return returns
@@ -613,6 +661,17 @@ func (j *jsiiProxy_Catalog)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
+func (j *jsiiProxy_Catalog)SetProviderName(val *string) {
+	if err := j.validateSetProviderNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"providerName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Catalog)SetProvisioners(val *[]interface{}) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
@@ -620,6 +679,17 @@ func (j *jsiiProxy_Catalog)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Catalog)SetShareName(val *string) {
+	if err := j.validateSetShareNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shareName",
 		val,
 	)
 }
@@ -953,6 +1023,22 @@ func (c *jsiiProxy_Catalog) ResetProperties() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProperties",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Catalog) ResetProviderName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProviderName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Catalog) ResetShareName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetShareName",
 		nil, // no parameters
 	)
 }

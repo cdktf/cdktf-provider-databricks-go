@@ -52,6 +52,10 @@ func (r *jsiiProxy_Repo) validateOverrideLogicalIdParameters(newLogicalId *strin
 	return nil
 }
 
+func (r *jsiiProxy_Repo) validatePutSparseCheckoutParameters(value *RepoSparseCheckout) error {
+	return nil
+}
+
 func validateRepo_IsConstructParameters(x interface{}) error {
 	return nil
 }

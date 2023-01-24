@@ -92,6 +92,10 @@ func (j *jsiiProxy_DataDatabricksNodeType) validateSetLocalDiskParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksNodeType) validateSetLocalDiskMinSizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksNodeType) validateSetMinCoresParameters(val *float64) error {
 	return nil
 }

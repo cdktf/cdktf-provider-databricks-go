@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataDatabricksNodeType) validateSetLocalDiskParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksNodeType) validateSetLocalDiskMinSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksNodeType) validateSetMinCoresParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -2,10 +2,10 @@ package mwsnetworks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/mwsnetworks/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/mwsnetworks/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -44,6 +44,8 @@ type MwsNetworks interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GcpNetworkInfo() MwsNetworksGcpNetworkInfoOutputReference
+	GcpNetworkInfoInput() *MwsNetworksGcpNetworkInfo
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -118,15 +120,20 @@ type MwsNetworks interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutErrorMessages(value interface{})
+	PutGcpNetworkInfo(value *MwsNetworksGcpNetworkInfo)
 	PutVpcEndpoints(value *MwsNetworksVpcEndpoints)
 	ResetCreationTime()
 	ResetErrorMessages()
+	ResetGcpNetworkInfo()
 	ResetId()
 	ResetNetworkId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSecurityGroupIds()
+	ResetSubnetIds()
 	ResetVpcEndpoints()
+	ResetVpcId()
 	ResetVpcStatus()
 	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -279,6 +286,26 @@ func (j *jsiiProxy_MwsNetworks) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsNetworks) GcpNetworkInfo() MwsNetworksGcpNetworkInfoOutputReference {
+	var returns MwsNetworksGcpNetworkInfoOutputReference
+	_jsii_.Get(
+		j,
+		"gcpNetworkInfo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsNetworks) GcpNetworkInfoInput() *MwsNetworksGcpNetworkInfo {
+	var returns *MwsNetworksGcpNetworkInfo
+	_jsii_.Get(
+		j,
+		"gcpNetworkInfoInput",
 		&returns,
 	)
 	return returns
@@ -1026,6 +1053,17 @@ func (m *jsiiProxy_MwsNetworks) PutErrorMessages(value interface{}) {
 	)
 }
 
+func (m *jsiiProxy_MwsNetworks) PutGcpNetworkInfo(value *MwsNetworksGcpNetworkInfo) {
+	if err := m.validatePutGcpNetworkInfoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putGcpNetworkInfo",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MwsNetworks) PutVpcEndpoints(value *MwsNetworksVpcEndpoints) {
 	if err := m.validatePutVpcEndpointsParameters(value); err != nil {
 		panic(err)
@@ -1049,6 +1087,14 @@ func (m *jsiiProxy_MwsNetworks) ResetErrorMessages() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetErrorMessages",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsNetworks) ResetGcpNetworkInfo() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetGcpNetworkInfo",
 		nil, // no parameters
 	)
 }
@@ -1077,10 +1123,34 @@ func (m *jsiiProxy_MwsNetworks) ResetOverrideLogicalId() {
 	)
 }
 
+func (m *jsiiProxy_MwsNetworks) ResetSecurityGroupIds() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSecurityGroupIds",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsNetworks) ResetSubnetIds() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSubnetIds",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MwsNetworks) ResetVpcEndpoints() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetVpcEndpoints",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsNetworks) ResetVpcId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetVpcId",
 		nil, // no parameters
 	)
 }

@@ -2,9 +2,9 @@ package pipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/pipeline/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/pipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -17,6 +17,8 @@ type PipelineClusterOutputReference interface {
 	AutoscaleInput() *PipelineClusterAutoscale
 	AwsAttributes() PipelineClusterAwsAttributesOutputReference
 	AwsAttributesInput() *PipelineClusterAwsAttributes
+	AzureAttributes() PipelineClusterAzureAttributesOutputReference
+	AzureAttributesInput() *PipelineClusterAzureAttributes
 	ClusterLogConf() PipelineClusterClusterLogConfOutputReference
 	ClusterLogConfInput() *PipelineClusterClusterLogConf
 	// the index of the complex object in a list.
@@ -43,6 +45,9 @@ type PipelineClusterOutputReference interface {
 	DriverNodeTypeId() *string
 	SetDriverNodeTypeId(val *string)
 	DriverNodeTypeIdInput() *string
+	EnableLocalDiskEncryption() interface{}
+	SetEnableLocalDiskEncryption(val interface{})
+	EnableLocalDiskEncryptionInput() interface{}
 	// Experimental.
 	Fqn() *string
 	GcpAttributes() PipelineClusterGcpAttributesOutputReference
@@ -109,16 +114,19 @@ type PipelineClusterOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAutoscale(value *PipelineClusterAutoscale)
 	PutAwsAttributes(value *PipelineClusterAwsAttributes)
+	PutAzureAttributes(value *PipelineClusterAzureAttributes)
 	PutClusterLogConf(value *PipelineClusterClusterLogConf)
 	PutGcpAttributes(value *PipelineClusterGcpAttributes)
 	PutInitScripts(value interface{})
 	ResetApplyPolicyDefaultValues()
 	ResetAutoscale()
 	ResetAwsAttributes()
+	ResetAzureAttributes()
 	ResetClusterLogConf()
 	ResetCustomTags()
 	ResetDriverInstancePoolId()
 	ResetDriverNodeTypeId()
+	ResetEnableLocalDiskEncryption()
 	ResetGcpAttributes()
 	ResetInitScripts()
 	ResetInstancePoolId()
@@ -199,6 +207,26 @@ func (j *jsiiProxy_PipelineClusterOutputReference) AwsAttributesInput() *Pipelin
 	_jsii_.Get(
 		j,
 		"awsAttributesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterOutputReference) AzureAttributes() PipelineClusterAzureAttributesOutputReference {
+	var returns PipelineClusterAzureAttributesOutputReference
+	_jsii_.Get(
+		j,
+		"azureAttributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterOutputReference) AzureAttributesInput() *PipelineClusterAzureAttributes {
+	var returns *PipelineClusterAzureAttributes
+	_jsii_.Get(
+		j,
+		"azureAttributesInput",
 		&returns,
 	)
 	return returns
@@ -309,6 +337,26 @@ func (j *jsiiProxy_PipelineClusterOutputReference) DriverNodeTypeIdInput() *stri
 	_jsii_.Get(
 		j,
 		"driverNodeTypeIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterOutputReference) EnableLocalDiskEncryption() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableLocalDiskEncryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterOutputReference) EnableLocalDiskEncryptionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableLocalDiskEncryptionInput",
 		&returns,
 	)
 	return returns
@@ -648,6 +696,17 @@ func (j *jsiiProxy_PipelineClusterOutputReference)SetDriverNodeTypeId(val *strin
 	)
 }
 
+func (j *jsiiProxy_PipelineClusterOutputReference)SetEnableLocalDiskEncryption(val interface{}) {
+	if err := j.validateSetEnableLocalDiskEncryptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableLocalDiskEncryption",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PipelineClusterOutputReference)SetInstancePoolId(val *string) {
 	if err := j.validateSetInstancePoolIdParameters(val); err != nil {
 		panic(err)
@@ -977,6 +1036,17 @@ func (p *jsiiProxy_PipelineClusterOutputReference) PutAwsAttributes(value *Pipel
 	)
 }
 
+func (p *jsiiProxy_PipelineClusterOutputReference) PutAzureAttributes(value *PipelineClusterAzureAttributes) {
+	if err := p.validatePutAzureAttributesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putAzureAttributes",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineClusterOutputReference) PutClusterLogConf(value *PipelineClusterClusterLogConf) {
 	if err := p.validatePutClusterLogConfParameters(value); err != nil {
 		panic(err)
@@ -1034,6 +1104,14 @@ func (p *jsiiProxy_PipelineClusterOutputReference) ResetAwsAttributes() {
 	)
 }
 
+func (p *jsiiProxy_PipelineClusterOutputReference) ResetAzureAttributes() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAzureAttributes",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PipelineClusterOutputReference) ResetClusterLogConf() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1062,6 +1140,14 @@ func (p *jsiiProxy_PipelineClusterOutputReference) ResetDriverNodeTypeId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetDriverNodeTypeId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineClusterOutputReference) ResetEnableLocalDiskEncryption() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEnableLocalDiskEncryption",
 		nil, // no parameters
 	)
 }

@@ -2,14 +2,17 @@ package pipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v4/pipeline/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/pipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type PipelineClusterAwsAttributesOutputReference interface {
 	cdktf.ComplexObject
+	Availability() *string
+	SetAvailability(val *string)
+	AvailabilityInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -25,6 +28,15 @@ type PipelineClusterAwsAttributesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EbsVolumeCount() *float64
+	SetEbsVolumeCount(val *float64)
+	EbsVolumeCountInput() *float64
+	EbsVolumeSize() *float64
+	SetEbsVolumeSize(val *float64)
+	EbsVolumeSizeInput() *float64
+	EbsVolumeType() *string
+	SetEbsVolumeType(val *string)
+	EbsVolumeTypeInput() *string
 	FirstOnDemand() *float64
 	SetFirstOnDemand(val *float64)
 	FirstOnDemandInput() *float64
@@ -35,6 +47,9 @@ type PipelineClusterAwsAttributesOutputReference interface {
 	InstanceProfileArnInput() *string
 	InternalValue() *PipelineClusterAwsAttributes
 	SetInternalValue(val *PipelineClusterAwsAttributes)
+	SpotBidPricePercent() *float64
+	SetSpotBidPricePercent(val *float64)
+	SpotBidPricePercentInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,8 +85,13 @@ type PipelineClusterAwsAttributesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAvailability()
+	ResetEbsVolumeCount()
+	ResetEbsVolumeSize()
+	ResetEbsVolumeType()
 	ResetFirstOnDemand()
 	ResetInstanceProfileArn()
+	ResetSpotBidPricePercent()
 	ResetZoneId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -86,6 +106,26 @@ type PipelineClusterAwsAttributesOutputReference interface {
 // The jsii proxy struct for PipelineClusterAwsAttributesOutputReference
 type jsiiProxy_PipelineClusterAwsAttributesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) Availability() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availability",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) AvailabilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availabilityInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) ComplexObjectIndex() interface{} {
@@ -113,6 +153,66 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) CreationStack() 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) EbsVolumeCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ebsVolumeCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) EbsVolumeCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ebsVolumeCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) EbsVolumeSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ebsVolumeSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) EbsVolumeSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ebsVolumeSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) EbsVolumeType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ebsVolumeType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) EbsVolumeTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ebsVolumeTypeInput",
 		&returns,
 	)
 	return returns
@@ -173,6 +273,26 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) SpotBidPricePercent() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"spotBidPricePercent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) SpotBidPricePercentInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"spotBidPricePercentInput",
 		&returns,
 	)
 	return returns
@@ -246,6 +366,17 @@ func NewPipelineClusterAwsAttributesOutputReference_Override(p PipelineClusterAw
 	)
 }
 
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetAvailability(val *string) {
+	if err := j.validateSetAvailabilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"availability",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -264,6 +395,39 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetComplexObjectI
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetEbsVolumeCount(val *float64) {
+	if err := j.validateSetEbsVolumeCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ebsVolumeCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetEbsVolumeSize(val *float64) {
+	if err := j.validateSetEbsVolumeSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ebsVolumeSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetEbsVolumeType(val *string) {
+	if err := j.validateSetEbsVolumeTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ebsVolumeType",
 		val,
 	)
 }
@@ -297,6 +461,17 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetInternalValue(
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference)SetSpotBidPricePercent(val *float64) {
+	if err := j.validateSetSpotBidPricePercentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"spotBidPricePercent",
 		val,
 	)
 }
@@ -520,6 +695,38 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) InterpolationFor
 	return returns
 }
 
+func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) ResetAvailability() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAvailability",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) ResetEbsVolumeCount() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEbsVolumeCount",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) ResetEbsVolumeSize() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEbsVolumeSize",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) ResetEbsVolumeType() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEbsVolumeType",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) ResetFirstOnDemand() {
 	_jsii_.InvokeVoid(
 		p,
@@ -532,6 +739,14 @@ func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) ResetInstancePro
 	_jsii_.InvokeVoid(
 		p,
 		"resetInstanceProfileArn",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineClusterAwsAttributesOutputReference) ResetSpotBidPricePercent() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSpotBidPricePercent",
 		nil, // no parameters
 	)
 }

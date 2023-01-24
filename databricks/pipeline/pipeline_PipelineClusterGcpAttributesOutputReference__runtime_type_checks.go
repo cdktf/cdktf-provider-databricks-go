@@ -98,6 +98,14 @@ func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateResolveP
 	return nil
 }
 
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateSetAvailabilityParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -188,6 +196,14 @@ func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateSetTerra
 }
 
 func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateSetZoneIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -111,7 +111,7 @@ func (m *jsiiProxy_MwsWorkspaces) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (m *jsiiProxy_MwsWorkspaces) validatePutCloudResourceBucketParameters(value *MwsWorkspacesCloudResourceBucket) error {
+func (m *jsiiProxy_MwsWorkspaces) validatePutCloudResourceContainerParameters(value *MwsWorkspacesCloudResourceContainer) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -133,7 +133,18 @@ func (m *jsiiProxy_MwsWorkspaces) validatePutExternalCustomerInfoParameters(valu
 	return nil
 }
 
-func (m *jsiiProxy_MwsWorkspaces) validatePutNetworkParameters(value *MwsWorkspacesNetwork) error {
+func (m *jsiiProxy_MwsWorkspaces) validatePutGcpManagedNetworkConfigParameters(value *MwsWorkspacesGcpManagedNetworkConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MwsWorkspaces) validatePutGkeConfigParameters(value *MwsWorkspacesGkeConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

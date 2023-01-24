@@ -27,10 +27,10 @@ type MwsWorkspacesConfig struct {
 	AwsRegion *string `field:"optional" json:"awsRegion" yaml:"awsRegion"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#cloud MwsWorkspaces#cloud}.
 	Cloud *string `field:"optional" json:"cloud" yaml:"cloud"`
-	// cloud_resource_bucket block.
+	// cloud_resource_container block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#cloud_resource_bucket MwsWorkspaces#cloud_resource_bucket}
-	CloudResourceBucket *MwsWorkspacesCloudResourceBucket `field:"optional" json:"cloudResourceBucket" yaml:"cloudResourceBucket"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#cloud_resource_container MwsWorkspaces#cloud_resource_container}
+	CloudResourceContainer *MwsWorkspacesCloudResourceContainer `field:"optional" json:"cloudResourceContainer" yaml:"cloudResourceContainer"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#creation_time MwsWorkspaces#creation_time}.
 	CreationTime *float64 `field:"optional" json:"creationTime" yaml:"creationTime"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#credentials_id MwsWorkspaces#credentials_id}.
@@ -43,6 +43,14 @@ type MwsWorkspacesConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#external_customer_info MwsWorkspaces#external_customer_info}
 	ExternalCustomerInfo *MwsWorkspacesExternalCustomerInfo `field:"optional" json:"externalCustomerInfo" yaml:"externalCustomerInfo"`
+	// gcp_managed_network_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#gcp_managed_network_config MwsWorkspaces#gcp_managed_network_config}
+	GcpManagedNetworkConfig *MwsWorkspacesGcpManagedNetworkConfig `field:"optional" json:"gcpManagedNetworkConfig" yaml:"gcpManagedNetworkConfig"`
+	// gke_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#gke_config MwsWorkspaces#gke_config}
+	GkeConfig *MwsWorkspacesGkeConfig `field:"optional" json:"gkeConfig" yaml:"gkeConfig"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#id MwsWorkspaces#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -54,10 +62,6 @@ type MwsWorkspacesConfig struct {
 	Location *string `field:"optional" json:"location" yaml:"location"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#managed_services_customer_managed_key_id MwsWorkspaces#managed_services_customer_managed_key_id}.
 	ManagedServicesCustomerManagedKeyId *string `field:"optional" json:"managedServicesCustomerManagedKeyId" yaml:"managedServicesCustomerManagedKeyId"`
-	// network block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#network MwsWorkspaces#network}
-	Network *MwsWorkspacesNetwork `field:"optional" json:"network" yaml:"network"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#network_id MwsWorkspaces#network_id}.
 	NetworkId *string `field:"optional" json:"networkId" yaml:"networkId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#pricing_tier MwsWorkspaces#pricing_tier}.
