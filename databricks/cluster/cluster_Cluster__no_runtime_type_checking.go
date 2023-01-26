@@ -68,6 +68,10 @@ func (c *jsiiProxy_Cluster) validatePutClusterLogConfParameters(value *ClusterCl
 	return nil
 }
 
+func (c *jsiiProxy_Cluster) validatePutClusterMountInfoParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cluster) validatePutDockerImageParameters(value *ClusterDockerImage) error {
 	return nil
 }

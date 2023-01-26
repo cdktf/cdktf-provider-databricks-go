@@ -80,6 +80,10 @@ func (j *jsiiProxy_ClusterPolicy) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
+func (j *jsiiProxy_ClusterPolicy) validateSetMaxClustersPerUserParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClusterPolicy) validateSetNameParameters(val *string) error {
 	return nil
 }

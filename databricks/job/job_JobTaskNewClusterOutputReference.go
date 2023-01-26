@@ -27,6 +27,8 @@ type JobTaskNewClusterOutputReference interface {
 	ClusterIdInput() *string
 	ClusterLogConf() JobTaskNewClusterClusterLogConfOutputReference
 	ClusterLogConfInput() *JobTaskNewClusterClusterLogConf
+	ClusterMountInfo() JobTaskNewClusterClusterMountInfoList
+	ClusterMountInfoInput() interface{}
 	ClusterName() *string
 	SetClusterName(val *string)
 	ClusterNameInput() *string
@@ -144,6 +146,7 @@ type JobTaskNewClusterOutputReference interface {
 	PutAwsAttributes(value *JobTaskNewClusterAwsAttributes)
 	PutAzureAttributes(value *JobTaskNewClusterAzureAttributes)
 	PutClusterLogConf(value *JobTaskNewClusterClusterLogConf)
+	PutClusterMountInfo(value interface{})
 	PutDockerImage(value *JobTaskNewClusterDockerImage)
 	PutGcpAttributes(value *JobTaskNewClusterGcpAttributes)
 	PutInitScripts(value interface{})
@@ -155,6 +158,7 @@ type JobTaskNewClusterOutputReference interface {
 	ResetAzureAttributes()
 	ResetClusterId()
 	ResetClusterLogConf()
+	ResetClusterMountInfo()
 	ResetClusterName()
 	ResetCustomTags()
 	ResetDataSecurityMode()
@@ -326,6 +330,26 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) ClusterLogConfInput() *JobT
 	_jsii_.Get(
 		j,
 		"clusterLogConfInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) ClusterMountInfo() JobTaskNewClusterClusterMountInfoList {
+	var returns JobTaskNewClusterClusterMountInfoList
+	_jsii_.Get(
+		j,
+		"clusterMountInfo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) ClusterMountInfoInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clusterMountInfoInput",
 		&returns,
 	)
 	return returns
@@ -1385,6 +1409,17 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) PutClusterLogConf(value *Jo
 	)
 }
 
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) PutClusterMountInfo(value interface{}) {
+	if err := j.validatePutClusterMountInfoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putClusterMountInfo",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) PutDockerImage(value *JobTaskNewClusterDockerImage) {
 	if err := j.validatePutDockerImageParameters(value); err != nil {
 		panic(err)
@@ -1481,6 +1516,14 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetClusterLogConf() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetClusterLogConf",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetClusterMountInfo() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetClusterMountInfo",
 		nil, // no parameters
 	)
 }

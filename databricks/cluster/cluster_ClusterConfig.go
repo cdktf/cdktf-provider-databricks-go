@@ -43,6 +43,10 @@ type ClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#cluster_log_conf Cluster#cluster_log_conf}
 	ClusterLogConf *ClusterClusterLogConf `field:"optional" json:"clusterLogConf" yaml:"clusterLogConf"`
+	// cluster_mount_info block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#cluster_mount_info Cluster#cluster_mount_info}
+	ClusterMountInfo interface{} `field:"optional" json:"clusterMountInfo" yaml:"clusterMountInfo"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#cluster_name Cluster#cluster_name}.
 	ClusterName *string `field:"optional" json:"clusterName" yaml:"clusterName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#custom_tags Cluster#custom_tags}.

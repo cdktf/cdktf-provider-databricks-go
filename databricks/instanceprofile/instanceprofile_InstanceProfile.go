@@ -36,6 +36,9 @@ type InstanceProfile interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	IamRoleArn() *string
+	SetIamRoleArn(val *string)
+	IamRoleArnInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -95,8 +98,8 @@ type InstanceProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetIamRoleArn()
 	ResetId()
-	ResetInstanceProfileArn()
 	ResetIsMetaInstanceProfile()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -192,6 +195,26 @@ func (j *jsiiProxy_InstanceProfile) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstanceProfile) IamRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstanceProfile) IamRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamRoleArnInput",
 		&returns,
 	)
 	return returns
@@ -418,6 +441,17 @@ func (j *jsiiProxy_InstanceProfile)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InstanceProfile)SetIamRoleArn(val *string) {
+	if err := j.validateSetIamRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"iamRoleArn",
 		val,
 	)
 }
@@ -762,18 +796,18 @@ func (i *jsiiProxy_InstanceProfile) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (i *jsiiProxy_InstanceProfile) ResetId() {
+func (i *jsiiProxy_InstanceProfile) ResetIamRoleArn() {
 	_jsii_.InvokeVoid(
 		i,
-		"resetId",
+		"resetIamRoleArn",
 		nil, // no parameters
 	)
 }
 
-func (i *jsiiProxy_InstanceProfile) ResetInstanceProfileArn() {
+func (i *jsiiProxy_InstanceProfile) ResetId() {
 	_jsii_.InvokeVoid(
 		i,
-		"resetInstanceProfileArn",
+		"resetId",
 		nil, // no parameters
 	)
 }

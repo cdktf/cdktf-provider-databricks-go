@@ -27,6 +27,8 @@ type DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputReference int
 	ClusterIdInput() *string
 	ClusterLogConf() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfOutputReference
 	ClusterLogConfInput() *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConf
+	ClusterMountInfo() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoList
+	ClusterMountInfoInput() interface{}
 	ClusterName() *string
 	SetClusterName(val *string)
 	ClusterNameInput() *string
@@ -144,6 +146,7 @@ type DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputReference int
 	PutAwsAttributes(value *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes)
 	PutAzureAttributes(value *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes)
 	PutClusterLogConf(value *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConf)
+	PutClusterMountInfo(value interface{})
 	PutDockerImage(value *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage)
 	PutGcpAttributes(value *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes)
 	PutInitScripts(value interface{})
@@ -155,6 +158,7 @@ type DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputReference int
 	ResetAzureAttributes()
 	ResetClusterId()
 	ResetClusterLogConf()
+	ResetClusterMountInfo()
 	ResetClusterName()
 	ResetCustomTags()
 	ResetDataSecurityMode()
@@ -325,6 +329,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutpu
 	_jsii_.Get(
 		j,
 		"clusterLogConfInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputReference) ClusterMountInfo() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoList {
+	var returns DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoList
+	_jsii_.Get(
+		j,
+		"clusterMountInfo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputReference) ClusterMountInfoInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clusterMountInfoInput",
 		&returns,
 	)
 	return returns
@@ -1384,6 +1408,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutpu
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputReference) PutClusterMountInfo(value interface{}) {
+	if err := d.validatePutClusterMountInfoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putClusterMountInfo",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputReference) PutDockerImage(value *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage) {
 	if err := d.validatePutDockerImageParameters(value); err != nil {
 		panic(err)
@@ -1480,6 +1515,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutpu
 	_jsii_.InvokeVoid(
 		d,
 		"resetClusterLogConf",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputReference) ResetClusterMountInfo() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClusterMountInfo",
 		nil, // no parameters
 	)
 }

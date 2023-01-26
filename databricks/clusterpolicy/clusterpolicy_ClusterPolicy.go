@@ -46,6 +46,9 @@ type ClusterPolicy interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxClustersPerUser() *float64
+	SetMaxClustersPerUser(val *float64)
+	MaxClustersPerUserInput() *float64
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -93,8 +96,8 @@ type ClusterPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetDefinition()
 	ResetId()
+	ResetMaxClustersPerUser()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -238,6 +241,26 @@ func (j *jsiiProxy_ClusterPolicy) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterPolicy) MaxClustersPerUser() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxClustersPerUser",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterPolicy) MaxClustersPerUserInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxClustersPerUserInput",
 		&returns,
 	)
 	return returns
@@ -437,6 +460,17 @@ func (j *jsiiProxy_ClusterPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterPolicy)SetMaxClustersPerUser(val *float64) {
+	if err := j.validateSetMaxClustersPerUserParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxClustersPerUser",
 		val,
 	)
 }
@@ -737,18 +771,18 @@ func (c *jsiiProxy_ClusterPolicy) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (c *jsiiProxy_ClusterPolicy) ResetDefinition() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetDefinition",
-		nil, // no parameters
-	)
-}
-
 func (c *jsiiProxy_ClusterPolicy) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterPolicy) ResetMaxClustersPerUser() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaxClustersPerUser",
 		nil, // no parameters
 	)
 }

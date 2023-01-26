@@ -40,6 +40,7 @@ type DataDatabricksClusterPolicy interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxClustersPerUser() *float64
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -206,6 +207,16 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy) Lifecycle() *cdktf.TerraformReso
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy) MaxClustersPerUser() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxClustersPerUser",
 		&returns,
 	)
 	return returns

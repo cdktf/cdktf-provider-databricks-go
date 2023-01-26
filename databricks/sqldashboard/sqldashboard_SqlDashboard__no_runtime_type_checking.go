@@ -80,6 +80,10 @@ func (j *jsiiProxy_SqlDashboard) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_SqlDashboard) validateSetParentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDashboard) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

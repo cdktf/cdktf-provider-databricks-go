@@ -96,6 +96,10 @@ func (j *jsiiProxy_SqlQuery) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_SqlQuery) validateSetParentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlQuery) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

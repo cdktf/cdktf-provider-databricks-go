@@ -31,6 +31,8 @@ type Cluster interface {
 	ClusterIdInput() *string
 	ClusterLogConf() ClusterClusterLogConfOutputReference
 	ClusterLogConfInput() *ClusterClusterLogConf
+	ClusterMountInfo() ClusterClusterMountInfoList
+	ClusterMountInfoInput() interface{}
 	ClusterName() *string
 	SetClusterName(val *string)
 	ClusterNameInput() *string
@@ -179,6 +181,7 @@ type Cluster interface {
 	PutAwsAttributes(value *ClusterAwsAttributes)
 	PutAzureAttributes(value *ClusterAzureAttributes)
 	PutClusterLogConf(value *ClusterClusterLogConf)
+	PutClusterMountInfo(value interface{})
 	PutDockerImage(value *ClusterDockerImage)
 	PutGcpAttributes(value *ClusterGcpAttributes)
 	PutInitScripts(value interface{})
@@ -192,6 +195,7 @@ type Cluster interface {
 	ResetAzureAttributes()
 	ResetClusterId()
 	ResetClusterLogConf()
+	ResetClusterMountInfo()
 	ResetClusterName()
 	ResetCustomTags()
 	ResetDataSecurityMode()
@@ -380,6 +384,26 @@ func (j *jsiiProxy_Cluster) ClusterLogConfInput() *ClusterClusterLogConf {
 	_jsii_.Get(
 		j,
 		"clusterLogConfInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) ClusterMountInfo() ClusterClusterMountInfoList {
+	var returns ClusterClusterMountInfoList
+	_jsii_.Get(
+		j,
+		"clusterMountInfo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) ClusterMountInfoInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clusterMountInfoInput",
 		&returns,
 	)
 	return returns
@@ -1743,6 +1767,17 @@ func (c *jsiiProxy_Cluster) PutClusterLogConf(value *ClusterClusterLogConf) {
 	)
 }
 
+func (c *jsiiProxy_Cluster) PutClusterMountInfo(value interface{}) {
+	if err := c.validatePutClusterMountInfoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putClusterMountInfo",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_Cluster) PutDockerImage(value *ClusterDockerImage) {
 	if err := c.validatePutDockerImageParameters(value); err != nil {
 		panic(err)
@@ -1861,6 +1896,14 @@ func (c *jsiiProxy_Cluster) ResetClusterLogConf() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetClusterLogConf",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cluster) ResetClusterMountInfo() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetClusterMountInfo",
 		nil, // no parameters
 	)
 }

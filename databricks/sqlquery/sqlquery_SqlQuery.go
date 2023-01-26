@@ -56,6 +56,9 @@ type SqlQuery interface {
 	Node() constructs.Node
 	Parameter() SqlQueryParameterList
 	ParameterInput() interface{}
+	Parent() *string
+	SetParent(val *string)
+	ParentInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -116,6 +119,7 @@ type SqlQuery interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameter()
+	ResetParent()
 	ResetRunAsRole()
 	ResetSchedule()
 	ResetTags()
@@ -329,6 +333,26 @@ func (j *jsiiProxy_SqlQuery) ParameterInput() interface{} {
 	_jsii_.Get(
 		j,
 		"parameterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlQuery) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlQuery) ParentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentInput",
 		&returns,
 	)
 	return returns
@@ -590,6 +614,17 @@ func (j *jsiiProxy_SqlQuery)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlQuery)SetParent(val *string) {
+	if err := j.validateSetParentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parent",
 		val,
 	)
 }
@@ -962,6 +997,14 @@ func (s *jsiiProxy_SqlQuery) ResetParameter() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetParameter",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlQuery) ResetParent() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetParent",
 		nil, // no parameters
 	)
 }

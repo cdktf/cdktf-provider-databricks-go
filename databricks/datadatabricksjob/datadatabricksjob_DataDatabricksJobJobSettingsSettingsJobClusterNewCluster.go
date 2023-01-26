@@ -28,6 +28,10 @@ type DataDatabricksJobJobSettingsSettingsJobClusterNewCluster struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#cluster_log_conf DataDatabricksJob#cluster_log_conf}
 	ClusterLogConf *DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConf `field:"optional" json:"clusterLogConf" yaml:"clusterLogConf"`
+	// cluster_mount_info block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#cluster_mount_info DataDatabricksJob#cluster_mount_info}
+	ClusterMountInfo interface{} `field:"optional" json:"clusterMountInfo" yaml:"clusterMountInfo"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#cluster_name DataDatabricksJob#cluster_name}.
 	ClusterName *string `field:"optional" json:"clusterName" yaml:"clusterName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#custom_tags DataDatabricksJob#custom_tags}.

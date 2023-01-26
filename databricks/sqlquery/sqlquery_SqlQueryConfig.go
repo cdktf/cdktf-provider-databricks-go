@@ -36,6 +36,8 @@ type SqlQueryConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#parameter SqlQuery#parameter}
 	Parameter interface{} `field:"optional" json:"parameter" yaml:"parameter"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#parent SqlQuery#parent}.
+	Parent *string `field:"optional" json:"parent" yaml:"parent"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#run_as_role SqlQuery#run_as_role}.
 	RunAsRole *string `field:"optional" json:"runAsRole" yaml:"runAsRole"`
 	// schedule block.

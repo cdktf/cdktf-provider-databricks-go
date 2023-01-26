@@ -48,6 +48,9 @@ type SqlDashboard interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Parent() *string
+	SetParent(val *string)
+	ParentInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -96,6 +99,7 @@ type SqlDashboard interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParent()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_SqlDashboard) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDashboard) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDashboard) ParentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentInput",
 		&returns,
 	)
 	return returns
@@ -426,6 +450,17 @@ func (j *jsiiProxy_SqlDashboard)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDashboard)SetParent(val *string) {
+	if err := j.validateSetParentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parent",
 		val,
 	)
 }
@@ -738,6 +773,14 @@ func (s *jsiiProxy_SqlDashboard) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDashboard) ResetParent() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetParent",
 		nil, // no parameters
 	)
 }

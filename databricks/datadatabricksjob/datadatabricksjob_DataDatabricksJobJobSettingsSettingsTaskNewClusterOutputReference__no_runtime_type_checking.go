@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNewClusterOutputRefer
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNewClusterOutputReference) validatePutClusterMountInfoParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNewClusterOutputReference) validatePutDockerImageParameters(value *DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImage) error {
 	return nil
 }

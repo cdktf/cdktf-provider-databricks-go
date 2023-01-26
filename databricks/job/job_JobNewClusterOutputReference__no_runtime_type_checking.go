@@ -60,6 +60,10 @@ func (j *jsiiProxy_JobNewClusterOutputReference) validatePutClusterLogConfParame
 	return nil
 }
 
+func (j *jsiiProxy_JobNewClusterOutputReference) validatePutClusterMountInfoParameters(value interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobNewClusterOutputReference) validatePutDockerImageParameters(value *JobNewClusterDockerImage) error {
 	return nil
 }

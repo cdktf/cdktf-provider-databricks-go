@@ -19,18 +19,20 @@ type ClusterPolicyConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// Policy definition JSON document expressed in Databricks Policy Definition Language.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster_policy#definition ClusterPolicy#definition}
+	Definition *string `field:"required" json:"definition" yaml:"definition"`
 	// Cluster policy name. This must be unique. Length must be between 1 and 100 characters.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster_policy#name ClusterPolicy#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Policy definition JSON document expressed in Databricks Policy Definition Language.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster_policy#definition ClusterPolicy#definition}
-	Definition *string `field:"optional" json:"definition" yaml:"definition"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster_policy#id ClusterPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster_policy#max_clusters_per_user ClusterPolicy#max_clusters_per_user}.
+	MaxClustersPerUser *float64 `field:"optional" json:"maxClustersPerUser" yaml:"maxClustersPerUser"`
 }
 

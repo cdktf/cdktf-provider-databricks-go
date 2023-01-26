@@ -68,6 +68,10 @@ func (j *jsiiProxy_InstanceProfile) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_InstanceProfile) validateSetIamRoleArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_InstanceProfile) validateSetIdParameters(val *string) error {
 	return nil
 }
