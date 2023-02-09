@@ -27,6 +27,9 @@ type DataDatabricksNodeType interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Fleet() interface{}
+	SetFleet(val interface{})
+	FleetInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -118,6 +121,7 @@ type DataDatabricksNodeType interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetCategory()
+	ResetFleet()
 	ResetGbPerCore()
 	ResetGraviton()
 	ResetId()
@@ -204,6 +208,26 @@ func (j *jsiiProxy_DataDatabricksNodeType) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksNodeType) Fleet() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fleet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksNodeType) FleetInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fleetInput",
 		&returns,
 	)
 	return returns
@@ -622,6 +646,17 @@ func (j *jsiiProxy_DataDatabricksNodeType)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksNodeType)SetFleet(val interface{}) {
+	if err := j.validateSetFleetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fleet",
 		val,
 	)
 }
@@ -1066,6 +1101,14 @@ func (d *jsiiProxy_DataDatabricksNodeType) ResetCategory() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCategory",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksNodeType) ResetFleet() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFleet",
 		nil, // no parameters
 	)
 }

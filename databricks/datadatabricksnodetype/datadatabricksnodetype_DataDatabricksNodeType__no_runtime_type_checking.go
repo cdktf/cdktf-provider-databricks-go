@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataDatabricksNodeType) validateSetCategoryParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksNodeType) validateSetFleetParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksNodeType) validateSetGbPerCoreParameters(val *float64) error {
 	return nil
 }

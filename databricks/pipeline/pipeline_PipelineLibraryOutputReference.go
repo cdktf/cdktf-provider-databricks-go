@@ -25,6 +25,8 @@ type PipelineLibraryOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	File() PipelineLibraryFileOutputReference
+	FileInput() *PipelineLibraryFile
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -71,8 +73,10 @@ type PipelineLibraryOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutFile(value *PipelineLibraryFile)
 	PutMaven(value *PipelineLibraryMaven)
 	PutNotebook(value *PipelineLibraryNotebook)
+	ResetFile()
 	ResetJar()
 	ResetMaven()
 	ResetNotebook()
@@ -117,6 +121,26 @@ func (j *jsiiProxy_PipelineLibraryOutputReference) CreationStack() *[]*string {
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineLibraryOutputReference) File() PipelineLibraryFileOutputReference {
+	var returns PipelineLibraryFileOutputReference
+	_jsii_.Get(
+		j,
+		"file",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineLibraryOutputReference) FileInput() *PipelineLibraryFile {
+	var returns *PipelineLibraryFile
+	_jsii_.Get(
+		j,
+		"fileInput",
 		&returns,
 	)
 	return returns
@@ -533,6 +557,17 @@ func (p *jsiiProxy_PipelineLibraryOutputReference) InterpolationForAttribute(pro
 	return returns
 }
 
+func (p *jsiiProxy_PipelineLibraryOutputReference) PutFile(value *PipelineLibraryFile) {
+	if err := p.validatePutFileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putFile",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineLibraryOutputReference) PutMaven(value *PipelineLibraryMaven) {
 	if err := p.validatePutMavenParameters(value); err != nil {
 		panic(err)
@@ -552,6 +587,14 @@ func (p *jsiiProxy_PipelineLibraryOutputReference) PutNotebook(value *PipelineLi
 		p,
 		"putNotebook",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineLibraryOutputReference) ResetFile() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetFile",
+		nil, // no parameters
 	)
 }
 

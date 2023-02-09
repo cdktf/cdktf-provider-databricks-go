@@ -44,6 +44,10 @@ func (p *jsiiProxy_PipelineLibraryOutputReference) validateInterpolationForAttri
 	return nil
 }
 
+func (p *jsiiProxy_PipelineLibraryOutputReference) validatePutFileParameters(value *PipelineLibraryFile) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineLibraryOutputReference) validatePutMavenParameters(value *PipelineLibraryMaven) error {
 	return nil
 }

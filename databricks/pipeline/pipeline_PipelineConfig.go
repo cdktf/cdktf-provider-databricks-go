@@ -21,6 +21,8 @@ type PipelineConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}.
 	AllowDuplicateNames interface{} `field:"optional" json:"allowDuplicateNames" yaml:"allowDuplicateNames"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#catalog Pipeline#catalog}.
+	Catalog *string `field:"optional" json:"catalog" yaml:"catalog"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#channel Pipeline#channel}.
 	Channel *string `field:"optional" json:"channel" yaml:"channel"`
 	// cluster block.

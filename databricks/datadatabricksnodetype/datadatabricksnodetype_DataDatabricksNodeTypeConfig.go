@@ -21,6 +21,8 @@ type DataDatabricksNodeTypeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#category DataDatabricksNodeType#category}.
 	Category *string `field:"optional" json:"category" yaml:"category"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#fleet DataDatabricksNodeType#fleet}.
+	Fleet interface{} `field:"optional" json:"fleet" yaml:"fleet"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#gb_per_core DataDatabricksNodeType#gb_per_core}.
 	GbPerCore *float64 `field:"optional" json:"gbPerCore" yaml:"gbPerCore"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#graviton DataDatabricksNodeType#graviton}.

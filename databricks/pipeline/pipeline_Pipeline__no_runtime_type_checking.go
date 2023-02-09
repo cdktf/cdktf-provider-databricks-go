@@ -84,6 +84,10 @@ func (j *jsiiProxy_Pipeline) validateSetAllowDuplicateNamesParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetCatalogParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetChannelParameters(val *string) error {
 	return nil
 }

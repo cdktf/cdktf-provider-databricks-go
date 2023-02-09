@@ -15,6 +15,9 @@ type Pipeline interface {
 	AllowDuplicateNames() interface{}
 	SetAllowDuplicateNames(val interface{})
 	AllowDuplicateNamesInput() interface{}
+	Catalog() *string
+	SetCatalog(val *string)
+	CatalogInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Channel() *string
@@ -130,6 +133,7 @@ type Pipeline interface {
 	PutLibrary(value interface{})
 	PutTimeouts(value *PipelineTimeouts)
 	ResetAllowDuplicateNames()
+	ResetCatalog()
 	ResetChannel()
 	ResetCluster()
 	ResetConfiguration()
@@ -177,6 +181,26 @@ func (j *jsiiProxy_Pipeline) AllowDuplicateNamesInput() interface{} {
 	_jsii_.Get(
 		j,
 		"allowDuplicateNamesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) Catalog() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) CatalogInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalogInput",
 		&returns,
 	)
 	return returns
@@ -673,6 +697,17 @@ func (j *jsiiProxy_Pipeline)SetAllowDuplicateNames(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Pipeline)SetCatalog(val *string) {
+	if err := j.validateSetCatalogParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"catalog",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Pipeline)SetChannel(val *string) {
 	if err := j.validateSetChannelParameters(val); err != nil {
 		panic(err)
@@ -1162,6 +1197,14 @@ func (p *jsiiProxy_Pipeline) ResetAllowDuplicateNames() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetAllowDuplicateNames",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Pipeline) ResetCatalog() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCatalog",
 		nil, // no parameters
 	)
 }

@@ -90,6 +90,17 @@ func (p *jsiiProxy_PipelineLibraryOutputReference) validateInterpolationForAttri
 	return nil
 }
 
+func (p *jsiiProxy_PipelineLibraryOutputReference) validatePutFileParameters(value *PipelineLibraryFile) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PipelineLibraryOutputReference) validatePutMavenParameters(value *PipelineLibraryMaven) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
