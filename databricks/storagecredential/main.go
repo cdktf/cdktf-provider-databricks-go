@@ -24,6 +24,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "databricksGcpServiceAccount", GoGetter: "DatabricksGcpServiceAccount"},
+			_jsii_.MemberProperty{JsiiProperty: "databricksGcpServiceAccountInput", GoGetter: "DatabricksGcpServiceAccountInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -56,12 +58,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAwsIamRole", GoMethod: "PutAwsIamRole"},
 			_jsii_.MemberMethod{JsiiMethod: "putAzureManagedIdentity", GoMethod: "PutAzureManagedIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "putAzureServicePrincipal", GoMethod: "PutAzureServicePrincipal"},
+			_jsii_.MemberMethod{JsiiMethod: "putDatabricksGcpServiceAccount", GoMethod: "PutDatabricksGcpServiceAccount"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcpServiceAccountKey", GoMethod: "PutGcpServiceAccountKey"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsIamRole", GoMethod: "ResetAwsIamRole"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureManagedIdentity", GoMethod: "ResetAzureManagedIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureServicePrincipal", GoMethod: "ResetAzureServicePrincipal"},
 			_jsii_.MemberMethod{JsiiMethod: "resetComment", GoMethod: "ResetComment"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDatabricksGcpServiceAccount", GoMethod: "ResetDatabricksGcpServiceAccount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGcpServiceAccountKey", GoMethod: "ResetGcpServiceAccountKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetastoreId", GoMethod: "ResetMetastoreId"},
@@ -202,6 +206,45 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-databricks.storageCredential.StorageCredentialConfig",
 		reflect.TypeOf((*StorageCredentialConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.storageCredential.StorageCredentialDatabricksGcpServiceAccount",
+		reflect.TypeOf((*StorageCredentialDatabricksGcpServiceAccount)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.storageCredential.StorageCredentialDatabricksGcpServiceAccountOutputReference",
+		reflect.TypeOf((*StorageCredentialDatabricksGcpServiceAccountOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "email", GoGetter: "Email"},
+			_jsii_.MemberProperty{JsiiProperty: "emailInput", GoGetter: "EmailInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEmail", GoMethod: "ResetEmail"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_StorageCredentialDatabricksGcpServiceAccountOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-databricks.storageCredential.StorageCredentialGcpServiceAccountKey",

@@ -99,10 +99,12 @@ type GitCredential interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetForce()
+	ResetGitUsername()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPersonalAccessToken()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -802,6 +804,14 @@ func (g *jsiiProxy_GitCredential) ResetForce() {
 	)
 }
 
+func (g *jsiiProxy_GitCredential) ResetGitUsername() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGitUsername",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GitCredential) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -814,6 +824,14 @@ func (g *jsiiProxy_GitCredential) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GitCredential) ResetPersonalAccessToken() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPersonalAccessToken",
 		nil, // no parameters
 	)
 }

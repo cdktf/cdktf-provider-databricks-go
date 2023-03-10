@@ -33,6 +33,8 @@ type MetastoreDataAccess interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DatabricksGcpServiceAccount() MetastoreDataAccessDatabricksGcpServiceAccountOutputReference
+	DatabricksGcpServiceAccountInput() *MetastoreDataAccessDatabricksGcpServiceAccount
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -109,11 +111,13 @@ type MetastoreDataAccess interface {
 	PutAwsIamRole(value *MetastoreDataAccessAwsIamRole)
 	PutAzureManagedIdentity(value *MetastoreDataAccessAzureManagedIdentity)
 	PutAzureServicePrincipal(value *MetastoreDataAccessAzureServicePrincipal)
+	PutDatabricksGcpServiceAccount(value *MetastoreDataAccessDatabricksGcpServiceAccount)
 	PutGcpServiceAccountKey(value *MetastoreDataAccessGcpServiceAccountKey)
 	ResetAwsIamRole()
 	ResetAzureManagedIdentity()
 	ResetAzureServicePrincipal()
 	ResetConfigurationType()
+	ResetDatabricksGcpServiceAccount()
 	ResetGcpServiceAccountKey()
 	ResetId()
 	ResetIsDefault()
@@ -250,6 +254,26 @@ func (j *jsiiProxy_MetastoreDataAccess) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) DatabricksGcpServiceAccount() MetastoreDataAccessDatabricksGcpServiceAccountOutputReference {
+	var returns MetastoreDataAccessDatabricksGcpServiceAccountOutputReference
+	_jsii_.Get(
+		j,
+		"databricksGcpServiceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) DatabricksGcpServiceAccountInput() *MetastoreDataAccessDatabricksGcpServiceAccount {
+	var returns *MetastoreDataAccessDatabricksGcpServiceAccount
+	_jsii_.Get(
+		j,
+		"databricksGcpServiceAccountInput",
 		&returns,
 	)
 	return returns
@@ -924,6 +948,17 @@ func (m *jsiiProxy_MetastoreDataAccess) PutAzureServicePrincipal(value *Metastor
 	)
 }
 
+func (m *jsiiProxy_MetastoreDataAccess) PutDatabricksGcpServiceAccount(value *MetastoreDataAccessDatabricksGcpServiceAccount) {
+	if err := m.validatePutDatabricksGcpServiceAccountParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putDatabricksGcpServiceAccount",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MetastoreDataAccess) PutGcpServiceAccountKey(value *MetastoreDataAccessGcpServiceAccountKey) {
 	if err := m.validatePutGcpServiceAccountKeyParameters(value); err != nil {
 		panic(err)
@@ -963,6 +998,14 @@ func (m *jsiiProxy_MetastoreDataAccess) ResetConfigurationType() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetConfigurationType",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MetastoreDataAccess) ResetDatabricksGcpServiceAccount() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDatabricksGcpServiceAccount",
 		nil, // no parameters
 	)
 }

@@ -35,6 +35,10 @@ type StorageCredentialConfig struct {
 	AzureServicePrincipal *StorageCredentialAzureServicePrincipal `field:"optional" json:"azureServicePrincipal" yaml:"azureServicePrincipal"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/storage_credential#comment StorageCredential#comment}.
 	Comment *string `field:"optional" json:"comment" yaml:"comment"`
+	// databricks_gcp_service_account block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/storage_credential#databricks_gcp_service_account StorageCredential#databricks_gcp_service_account}
+	DatabricksGcpServiceAccount *StorageCredentialDatabricksGcpServiceAccount `field:"optional" json:"databricksGcpServiceAccount" yaml:"databricksGcpServiceAccount"`
 	// gcp_service_account_key block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/storage_credential#gcp_service_account_key StorageCredential#gcp_service_account_key}

@@ -33,6 +33,8 @@ type StorageCredential interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DatabricksGcpServiceAccount() StorageCredentialDatabricksGcpServiceAccountOutputReference
+	DatabricksGcpServiceAccountInput() *StorageCredentialDatabricksGcpServiceAccount
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -109,11 +111,13 @@ type StorageCredential interface {
 	PutAwsIamRole(value *StorageCredentialAwsIamRole)
 	PutAzureManagedIdentity(value *StorageCredentialAzureManagedIdentity)
 	PutAzureServicePrincipal(value *StorageCredentialAzureServicePrincipal)
+	PutDatabricksGcpServiceAccount(value *StorageCredentialDatabricksGcpServiceAccount)
 	PutGcpServiceAccountKey(value *StorageCredentialGcpServiceAccountKey)
 	ResetAwsIamRole()
 	ResetAzureManagedIdentity()
 	ResetAzureServicePrincipal()
 	ResetComment()
+	ResetDatabricksGcpServiceAccount()
 	ResetGcpServiceAccountKey()
 	ResetId()
 	ResetMetastoreId()
@@ -251,6 +255,26 @@ func (j *jsiiProxy_StorageCredential) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageCredential) DatabricksGcpServiceAccount() StorageCredentialDatabricksGcpServiceAccountOutputReference {
+	var returns StorageCredentialDatabricksGcpServiceAccountOutputReference
+	_jsii_.Get(
+		j,
+		"databricksGcpServiceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageCredential) DatabricksGcpServiceAccountInput() *StorageCredentialDatabricksGcpServiceAccount {
+	var returns *StorageCredentialDatabricksGcpServiceAccount
+	_jsii_.Get(
+		j,
+		"databricksGcpServiceAccountInput",
 		&returns,
 	)
 	return returns
@@ -925,6 +949,17 @@ func (s *jsiiProxy_StorageCredential) PutAzureServicePrincipal(value *StorageCre
 	)
 }
 
+func (s *jsiiProxy_StorageCredential) PutDatabricksGcpServiceAccount(value *StorageCredentialDatabricksGcpServiceAccount) {
+	if err := s.validatePutDatabricksGcpServiceAccountParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putDatabricksGcpServiceAccount",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StorageCredential) PutGcpServiceAccountKey(value *StorageCredentialGcpServiceAccountKey) {
 	if err := s.validatePutGcpServiceAccountKeyParameters(value); err != nil {
 		panic(err)
@@ -964,6 +999,14 @@ func (s *jsiiProxy_StorageCredential) ResetComment() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetComment",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageCredential) ResetDatabricksGcpServiceAccount() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDatabricksGcpServiceAccount",
 		nil, // no parameters
 	)
 }

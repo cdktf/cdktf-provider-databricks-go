@@ -44,7 +44,19 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) v
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) validatePutAbfssParameters(value *DataDatabricksClusterClusterInfoInitScriptsAbfss) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) validatePutDbfsParameters(value *DataDatabricksClusterClusterInfoInitScriptsDbfs) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) validatePutFileParameters(value *DataDatabricksClusterClusterInfoInitScriptsFile) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) validatePutGcsParameters(value *DataDatabricksClusterClusterInfoInitScriptsGcs) error {
 	return nil
 }
 

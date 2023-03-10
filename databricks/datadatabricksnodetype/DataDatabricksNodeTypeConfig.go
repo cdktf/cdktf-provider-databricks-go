@@ -50,7 +50,5 @@ type DataDatabricksNodeTypeConfig struct {
 	PhotonWorkerCapable interface{} `field:"optional" json:"photonWorkerCapable" yaml:"photonWorkerCapable"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#support_port_forwarding DataDatabricksNodeType#support_port_forwarding}.
 	SupportPortForwarding interface{} `field:"optional" json:"supportPortForwarding" yaml:"supportPortForwarding"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#vcpu DataDatabricksNodeType#vcpu}.
-	Vcpu interface{} `field:"optional" json:"vcpu" yaml:"vcpu"`
 }
 

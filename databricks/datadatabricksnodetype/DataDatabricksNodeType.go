@@ -92,9 +92,6 @@ type DataDatabricksNodeType interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Vcpu() interface{}
-	SetVcpu(val interface{})
-	VcpuInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -137,7 +134,6 @@ type DataDatabricksNodeType interface {
 	ResetPhotonDriverCapable()
 	ResetPhotonWorkerCapable()
 	ResetSupportPortForwarding()
-	ResetVcpu()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -573,26 +569,6 @@ func (j *jsiiProxy_DataDatabricksNodeType) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksNodeType) Vcpu() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"vcpu",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksNodeType) VcpuInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"vcpuInput",
-		&returns,
-	)
-	return returns
-}
-
 
 // Create a new {@link https://www.terraform.io/docs/providers/databricks/d/node_type databricks_node_type} Data Source.
 func NewDataDatabricksNodeType(scope constructs.Construct, id *string, config *DataDatabricksNodeTypeConfig) DataDatabricksNodeType {
@@ -816,17 +792,6 @@ func (j *jsiiProxy_DataDatabricksNodeType)SetSupportPortForwarding(val interface
 	_jsii_.Set(
 		j,
 		"supportPortForwarding",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksNodeType)SetVcpu(val interface{}) {
-	if err := j.validateSetVcpuParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"vcpu",
 		val,
 	)
 }
@@ -1213,14 +1178,6 @@ func (d *jsiiProxy_DataDatabricksNodeType) ResetSupportPortForwarding() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSupportPortForwarding",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksNodeType) ResetVcpu() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetVcpu",
 		nil, // no parameters
 	)
 }

@@ -10,6 +10,8 @@ import (
 
 type DataDatabricksClusterClusterInfoInitScriptsOutputReference interface {
 	cdktf.ComplexObject
+	Abfss() DataDatabricksClusterClusterInfoInitScriptsAbfssOutputReference
+	AbfssInput() *DataDatabricksClusterClusterInfoInitScriptsAbfss
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -27,8 +29,12 @@ type DataDatabricksClusterClusterInfoInitScriptsOutputReference interface {
 	CreationStack() *[]*string
 	Dbfs() DataDatabricksClusterClusterInfoInitScriptsDbfsOutputReference
 	DbfsInput() *DataDatabricksClusterClusterInfoInitScriptsDbfs
+	File() DataDatabricksClusterClusterInfoInitScriptsFileOutputReference
+	FileInput() *DataDatabricksClusterClusterInfoInitScriptsFile
 	// Experimental.
 	Fqn() *string
+	Gcs() DataDatabricksClusterClusterInfoInitScriptsGcsOutputReference
+	GcsInput() *DataDatabricksClusterClusterInfoInitScriptsGcs
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	S3() DataDatabricksClusterClusterInfoInitScriptsS3OutputReference
@@ -65,9 +71,15 @@ type DataDatabricksClusterClusterInfoInitScriptsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAbfss(value *DataDatabricksClusterClusterInfoInitScriptsAbfss)
 	PutDbfs(value *DataDatabricksClusterClusterInfoInitScriptsDbfs)
+	PutFile(value *DataDatabricksClusterClusterInfoInitScriptsFile)
+	PutGcs(value *DataDatabricksClusterClusterInfoInitScriptsGcs)
 	PutS3(value *DataDatabricksClusterClusterInfoInitScriptsS3)
+	ResetAbfss()
 	ResetDbfs()
+	ResetFile()
+	ResetGcs()
 	ResetS3()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -82,6 +94,26 @@ type DataDatabricksClusterClusterInfoInitScriptsOutputReference interface {
 // The jsii proxy struct for DataDatabricksClusterClusterInfoInitScriptsOutputReference
 type jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) Abfss() DataDatabricksClusterClusterInfoInitScriptsAbfssOutputReference {
+	var returns DataDatabricksClusterClusterInfoInitScriptsAbfssOutputReference
+	_jsii_.Get(
+		j,
+		"abfss",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) AbfssInput() *DataDatabricksClusterClusterInfoInitScriptsAbfss {
+	var returns *DataDatabricksClusterClusterInfoInitScriptsAbfss
+	_jsii_.Get(
+		j,
+		"abfssInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) ComplexObjectIndex() interface{} {
@@ -134,11 +166,51 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) D
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) File() DataDatabricksClusterClusterInfoInitScriptsFileOutputReference {
+	var returns DataDatabricksClusterClusterInfoInitScriptsFileOutputReference
+	_jsii_.Get(
+		j,
+		"file",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) FileInput() *DataDatabricksClusterClusterInfoInitScriptsFile {
+	var returns *DataDatabricksClusterClusterInfoInitScriptsFile
+	_jsii_.Get(
+		j,
+		"fileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) Gcs() DataDatabricksClusterClusterInfoInitScriptsGcsOutputReference {
+	var returns DataDatabricksClusterClusterInfoInitScriptsGcsOutputReference
+	_jsii_.Get(
+		j,
+		"gcs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) GcsInput() *DataDatabricksClusterClusterInfoInitScriptsGcs {
+	var returns *DataDatabricksClusterClusterInfoInitScriptsGcs
+	_jsii_.Get(
+		j,
+		"gcsInput",
 		&returns,
 	)
 	return returns
@@ -463,6 +535,17 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) I
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) PutAbfss(value *DataDatabricksClusterClusterInfoInitScriptsAbfss) {
+	if err := d.validatePutAbfssParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAbfss",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) PutDbfs(value *DataDatabricksClusterClusterInfoInitScriptsDbfs) {
 	if err := d.validatePutDbfsParameters(value); err != nil {
 		panic(err)
@@ -470,6 +553,28 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) P
 	_jsii_.InvokeVoid(
 		d,
 		"putDbfs",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) PutFile(value *DataDatabricksClusterClusterInfoInitScriptsFile) {
+	if err := d.validatePutFileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFile",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) PutGcs(value *DataDatabricksClusterClusterInfoInitScriptsGcs) {
+	if err := d.validatePutGcsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putGcs",
 		[]interface{}{value},
 	)
 }
@@ -485,10 +590,34 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) P
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) ResetAbfss() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAbfss",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) ResetDbfs() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDbfs",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) ResetFile() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFile",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) ResetGcs() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGcs",
 		nil, // no parameters
 	)
 }

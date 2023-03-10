@@ -37,6 +37,10 @@ type MetastoreDataAccessConfig struct {
 	AzureServicePrincipal *MetastoreDataAccessAzureServicePrincipal `field:"optional" json:"azureServicePrincipal" yaml:"azureServicePrincipal"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore_data_access#configuration_type MetastoreDataAccess#configuration_type}.
 	ConfigurationType *string `field:"optional" json:"configurationType" yaml:"configurationType"`
+	// databricks_gcp_service_account block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore_data_access#databricks_gcp_service_account MetastoreDataAccess#databricks_gcp_service_account}
+	DatabricksGcpServiceAccount *MetastoreDataAccessDatabricksGcpServiceAccount `field:"optional" json:"databricksGcpServiceAccount" yaml:"databricksGcpServiceAccount"`
 	// gcp_service_account_key block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore_data_access#gcp_service_account_key MetastoreDataAccess#gcp_service_account_key}

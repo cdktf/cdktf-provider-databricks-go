@@ -75,7 +75,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPhotonDriverCapable", GoMethod: "ResetPhotonDriverCapable"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPhotonWorkerCapable", GoMethod: "ResetPhotonWorkerCapable"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSupportPortForwarding", GoMethod: "ResetSupportPortForwarding"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVcpu", GoMethod: "ResetVcpu"},
 			_jsii_.MemberProperty{JsiiProperty: "supportPortForwarding", GoGetter: "SupportPortForwarding"},
 			_jsii_.MemberProperty{JsiiProperty: "supportPortForwardingInput", GoGetter: "SupportPortForwardingInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -85,8 +84,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "vcpu", GoGetter: "Vcpu"},
-			_jsii_.MemberProperty{JsiiProperty: "vcpuInput", GoGetter: "VcpuInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksNodeType{}

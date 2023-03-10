@@ -124,10 +124,6 @@ func (j *jsiiProxy_DataDatabricksNodeType) validateSetSupportPortForwardingParam
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksNodeType) validateSetVcpuParameters(val interface{}) error {
-	return nil
-}
-
 func validateNewDataDatabricksNodeTypeParameters(scope constructs.Construct, id *string, config *DataDatabricksNodeTypeConfig) error {
 	return nil
 }
