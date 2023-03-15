@@ -48,6 +48,8 @@ type MwsVpcEndpoint interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GcpVpcEndpointInfo() MwsVpcEndpointGcpVpcEndpointInfoOutputReference
+	GcpVpcEndpointInfoInput() *MwsVpcEndpointGcpVpcEndpointInfo
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -113,13 +115,17 @@ type MwsVpcEndpoint interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutGcpVpcEndpointInfo(value *MwsVpcEndpointGcpVpcEndpointInfo)
 	ResetAccountId()
 	ResetAwsAccountId()
 	ResetAwsEndpointServiceId()
+	ResetAwsVpcEndpointId()
+	ResetGcpVpcEndpointInfo()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetState()
 	ResetUseCase()
 	ResetVpcEndpointId()
@@ -293,6 +299,26 @@ func (j *jsiiProxy_MwsVpcEndpoint) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsVpcEndpoint) GcpVpcEndpointInfo() MwsVpcEndpointGcpVpcEndpointInfoOutputReference {
+	var returns MwsVpcEndpointGcpVpcEndpointInfoOutputReference
+	_jsii_.Get(
+		j,
+		"gcpVpcEndpointInfo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsVpcEndpoint) GcpVpcEndpointInfoInput() *MwsVpcEndpointGcpVpcEndpointInfo {
+	var returns *MwsVpcEndpointGcpVpcEndpointInfo
+	_jsii_.Get(
+		j,
+		"gcpVpcEndpointInfoInput",
 		&returns,
 	)
 	return returns
@@ -969,6 +995,17 @@ func (m *jsiiProxy_MwsVpcEndpoint) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (m *jsiiProxy_MwsVpcEndpoint) PutGcpVpcEndpointInfo(value *MwsVpcEndpointGcpVpcEndpointInfo) {
+	if err := m.validatePutGcpVpcEndpointInfoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putGcpVpcEndpointInfo",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MwsVpcEndpoint) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		m,
@@ -993,6 +1030,22 @@ func (m *jsiiProxy_MwsVpcEndpoint) ResetAwsEndpointServiceId() {
 	)
 }
 
+func (m *jsiiProxy_MwsVpcEndpoint) ResetAwsVpcEndpointId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAwsVpcEndpointId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsVpcEndpoint) ResetGcpVpcEndpointInfo() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetGcpVpcEndpointInfo",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MwsVpcEndpoint) ResetId() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1005,6 +1058,14 @@ func (m *jsiiProxy_MwsVpcEndpoint) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsVpcEndpoint) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

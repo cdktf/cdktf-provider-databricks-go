@@ -19,10 +19,6 @@ type MwsVpcEndpointConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#aws_vpc_endpoint_id MwsVpcEndpoint#aws_vpc_endpoint_id}.
-	AwsVpcEndpointId *string `field:"required" json:"awsVpcEndpointId" yaml:"awsVpcEndpointId"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#region MwsVpcEndpoint#region}.
-	Region *string `field:"required" json:"region" yaml:"region"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#vpc_endpoint_name MwsVpcEndpoint#vpc_endpoint_name}.
 	VpcEndpointName *string `field:"required" json:"vpcEndpointName" yaml:"vpcEndpointName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#account_id MwsVpcEndpoint#account_id}.
@@ -31,11 +27,19 @@ type MwsVpcEndpointConfig struct {
 	AwsAccountId *string `field:"optional" json:"awsAccountId" yaml:"awsAccountId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#aws_endpoint_service_id MwsVpcEndpoint#aws_endpoint_service_id}.
 	AwsEndpointServiceId *string `field:"optional" json:"awsEndpointServiceId" yaml:"awsEndpointServiceId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#aws_vpc_endpoint_id MwsVpcEndpoint#aws_vpc_endpoint_id}.
+	AwsVpcEndpointId *string `field:"optional" json:"awsVpcEndpointId" yaml:"awsVpcEndpointId"`
+	// gcp_vpc_endpoint_info block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#gcp_vpc_endpoint_info MwsVpcEndpoint#gcp_vpc_endpoint_info}
+	GcpVpcEndpointInfo *MwsVpcEndpointGcpVpcEndpointInfo `field:"optional" json:"gcpVpcEndpointInfo" yaml:"gcpVpcEndpointInfo"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#id MwsVpcEndpoint#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#region MwsVpcEndpoint#region}.
+	Region *string `field:"optional" json:"region" yaml:"region"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#state MwsVpcEndpoint#state}.
 	State *string `field:"optional" json:"state" yaml:"state"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#use_case MwsVpcEndpoint#use_case}.

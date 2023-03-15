@@ -42,6 +42,9 @@ type DatabricksProvider interface {
 	AzureWorkspaceResourceId() *string
 	SetAzureWorkspaceResourceId(val *string)
 	AzureWorkspaceResourceIdInput() *string
+	BricksCliPath() *string
+	SetBricksCliPath(val *string)
+	BricksCliPathInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientId() *string
@@ -125,6 +128,7 @@ type DatabricksProvider interface {
 	ResetAzureTenantId()
 	ResetAzureUseMsi()
 	ResetAzureWorkspaceResourceId()
+	ResetBricksCliPath()
 	ResetClientId()
 	ResetClientSecret()
 	ResetConfigFile()
@@ -354,6 +358,26 @@ func (j *jsiiProxy_DatabricksProvider) AzureWorkspaceResourceIdInput() *string {
 	_jsii_.Get(
 		j,
 		"azureWorkspaceResourceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) BricksCliPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bricksCliPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) BricksCliPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bricksCliPathInput",
 		&returns,
 	)
 	return returns
@@ -892,6 +916,14 @@ func (j *jsiiProxy_DatabricksProvider)SetAzureWorkspaceResourceId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DatabricksProvider)SetBricksCliPath(val *string) {
+	_jsii_.Set(
+		j,
+		"bricksCliPath",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabricksProvider)SetClientId(val *string) {
 	_jsii_.Set(
 		j,
@@ -1208,6 +1240,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetAzureWorkspaceResourceId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAzureWorkspaceResourceId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) ResetBricksCliPath() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBricksCliPath",
 		nil, // no parameters
 	)
 }

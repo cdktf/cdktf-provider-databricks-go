@@ -24,6 +24,8 @@ type DatabricksProviderConfig struct {
 	AzureUseMsi interface{} `field:"optional" json:"azureUseMsi" yaml:"azureUseMsi"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
 	AzureWorkspaceResourceId *string `field:"optional" json:"azureWorkspaceResourceId" yaml:"azureWorkspaceResourceId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#bricks_cli_path DatabricksProvider#bricks_cli_path}.
+	BricksCliPath *string `field:"optional" json:"bricksCliPath" yaml:"bricksCliPath"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#client_id DatabricksProvider#client_id}.
 	ClientId *string `field:"optional" json:"clientId" yaml:"clientId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#client_secret DatabricksProvider#client_secret}.

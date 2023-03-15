@@ -52,6 +52,10 @@ func (m *jsiiProxy_MwsVpcEndpoint) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (m *jsiiProxy_MwsVpcEndpoint) validatePutGcpVpcEndpointInfoParameters(value *MwsVpcEndpointGcpVpcEndpointInfo) error {
+	return nil
+}
+
 func validateMwsVpcEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
