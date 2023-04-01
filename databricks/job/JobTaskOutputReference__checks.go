@@ -419,6 +419,14 @@ func (j *jsiiProxy_JobTaskOutputReference) validateSetRetryOnTimeoutParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) validateSetRunIfParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) validateSetTaskKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

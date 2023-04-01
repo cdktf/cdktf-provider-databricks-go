@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutput
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference) validateSetSourceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

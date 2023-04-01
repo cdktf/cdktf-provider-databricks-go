@@ -35,6 +35,9 @@ type DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference inte
 	PythonFile() *string
 	SetPythonFile(val *string)
 	PythonFileInput() *string
+	Source() *string
+	SetSource(val *string)
+	SourceInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference inte
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetParameters()
+	ResetSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -173,6 +177,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutput
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference) Source() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"source",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference) SourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -272,6 +296,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutput
 	_jsii_.Set(
 		j,
 		"pythonFile",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference)SetSource(val *string) {
+	if err := j.validateSetSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"source",
 		val,
 	)
 }
@@ -488,6 +523,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutput
 	_jsii_.InvokeVoid(
 		d,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference) ResetSource() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSource",
 		nil, // no parameters
 	)
 }

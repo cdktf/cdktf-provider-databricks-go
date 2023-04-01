@@ -46,6 +46,8 @@ type DataDatabricksJobJobSettingsSettingsTask struct {
 	PythonWheelTask *DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask `field:"optional" json:"pythonWheelTask" yaml:"pythonWheelTask"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}.
 	RetryOnTimeout interface{} `field:"optional" json:"retryOnTimeout" yaml:"retryOnTimeout"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#run_if DataDatabricksJob#run_if}.
+	RunIf *string `field:"optional" json:"runIf" yaml:"runIf"`
 	// spark_jar_task block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#spark_jar_task DataDatabricksJob#spark_jar_task}

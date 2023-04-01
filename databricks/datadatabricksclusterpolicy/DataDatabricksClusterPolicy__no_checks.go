@@ -64,11 +64,19 @@ func validateDataDatabricksClusterPolicy_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetDefinitionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetMaxClustersPerUserParameters(val *float64) error {
 	return nil
 }
 

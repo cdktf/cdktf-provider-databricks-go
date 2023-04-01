@@ -135,6 +135,14 @@ func validateDataDatabricksClusterPolicy_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetDefinitionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -146,6 +154,14 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetIdParameters(val *str
 func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetMaxClustersPerUserParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -168,9 +184,6 @@ func validateNewDataDatabricksClusterPolicyParameters(scope constructs.Construct
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
-	if config == nil {
-		return fmt.Errorf("parameter config is required, but nil was provided")
-	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

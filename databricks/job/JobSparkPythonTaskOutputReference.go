@@ -35,6 +35,9 @@ type JobSparkPythonTaskOutputReference interface {
 	PythonFile() *string
 	SetPythonFile(val *string)
 	PythonFileInput() *string
+	Source() *string
+	SetSource(val *string)
+	SourceInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type JobSparkPythonTaskOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetParameters()
+	ResetSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -173,6 +177,26 @@ func (j *jsiiProxy_JobSparkPythonTaskOutputReference) PythonFileInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_JobSparkPythonTaskOutputReference) Source() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"source",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSparkPythonTaskOutputReference) SourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobSparkPythonTaskOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -272,6 +296,17 @@ func (j *jsiiProxy_JobSparkPythonTaskOutputReference)SetPythonFile(val *string) 
 	_jsii_.Set(
 		j,
 		"pythonFile",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobSparkPythonTaskOutputReference)SetSource(val *string) {
+	if err := j.validateSetSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"source",
 		val,
 	)
 }
@@ -488,6 +523,14 @@ func (j *jsiiProxy_JobSparkPythonTaskOutputReference) ResetParameters() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobSparkPythonTaskOutputReference) ResetSource() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetSource",
 		nil, // no parameters
 	)
 }

@@ -94,6 +94,8 @@ type Job interface {
 	SetProvisioners(val *[]interface{})
 	PythonWheelTask() JobPythonWheelTaskOutputReference
 	PythonWheelTaskInput() *JobPythonWheelTask
+	Queue() JobQueueOutputReference
+	QueueInput() *JobQueue
 	// Experimental.
 	RawOverrides() interface{}
 	RetryOnTimeout() interface{}
@@ -123,6 +125,8 @@ type Job interface {
 	SetTimeoutSeconds(val *float64)
 	TimeoutSecondsInput() *float64
 	TimeoutsInput() interface{}
+	Trigger() JobTriggerOutputReference
+	TriggerInput() *JobTrigger
 	Url() *string
 	WebhookNotifications() JobWebhookNotificationsOutputReference
 	WebhookNotificationsInput() *JobWebhookNotifications
@@ -161,12 +165,14 @@ type Job interface {
 	PutNotebookTask(value *JobNotebookTask)
 	PutPipelineTask(value *JobPipelineTask)
 	PutPythonWheelTask(value *JobPythonWheelTask)
+	PutQueue(value *JobQueue)
 	PutSchedule(value *JobSchedule)
 	PutSparkJarTask(value *JobSparkJarTask)
 	PutSparkPythonTask(value *JobSparkPythonTask)
 	PutSparkSubmitTask(value *JobSparkSubmitTask)
 	PutTask(value interface{})
 	PutTimeouts(value *JobTimeouts)
+	PutTrigger(value *JobTrigger)
 	PutWebhookNotifications(value *JobWebhookNotifications)
 	ResetAlwaysRunning()
 	ResetContinuous()
@@ -189,6 +195,7 @@ type Job interface {
 	ResetOverrideLogicalId()
 	ResetPipelineTask()
 	ResetPythonWheelTask()
+	ResetQueue()
 	ResetRetryOnTimeout()
 	ResetSchedule()
 	ResetSparkJarTask()
@@ -198,6 +205,7 @@ type Job interface {
 	ResetTask()
 	ResetTimeouts()
 	ResetTimeoutSeconds()
+	ResetTrigger()
 	ResetWebhookNotifications()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -694,6 +702,26 @@ func (j *jsiiProxy_Job) PythonWheelTaskInput() *JobPythonWheelTask {
 	return returns
 }
 
+func (j *jsiiProxy_Job) Queue() JobQueueOutputReference {
+	var returns JobQueueOutputReference
+	_jsii_.Get(
+		j,
+		"queue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) QueueInput() *JobQueue {
+	var returns *JobQueue
+	_jsii_.Get(
+		j,
+		"queueInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Job) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -909,6 +937,26 @@ func (j *jsiiProxy_Job) TimeoutsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) Trigger() JobTriggerOutputReference {
+	var returns JobTriggerOutputReference
+	_jsii_.Get(
+		j,
+		"trigger",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) TriggerInput() *JobTrigger {
+	var returns *JobTrigger
+	_jsii_.Get(
+		j,
+		"triggerInput",
 		&returns,
 	)
 	return returns
@@ -1536,6 +1584,17 @@ func (j *jsiiProxy_Job) PutPythonWheelTask(value *JobPythonWheelTask) {
 	)
 }
 
+func (j *jsiiProxy_Job) PutQueue(value *JobQueue) {
+	if err := j.validatePutQueueParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putQueue",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_Job) PutSchedule(value *JobSchedule) {
 	if err := j.validatePutScheduleParameters(value); err != nil {
 		panic(err)
@@ -1598,6 +1657,17 @@ func (j *jsiiProxy_Job) PutTimeouts(value *JobTimeouts) {
 	_jsii_.InvokeVoid(
 		j,
 		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_Job) PutTrigger(value *JobTrigger) {
+	if err := j.validatePutTriggerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putTrigger",
 		[]interface{}{value},
 	)
 }
@@ -1765,6 +1835,14 @@ func (j *jsiiProxy_Job) ResetPythonWheelTask() {
 	)
 }
 
+func (j *jsiiProxy_Job) ResetQueue() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetQueue",
+		nil, // no parameters
+	)
+}
+
 func (j *jsiiProxy_Job) ResetRetryOnTimeout() {
 	_jsii_.InvokeVoid(
 		j,
@@ -1833,6 +1911,14 @@ func (j *jsiiProxy_Job) ResetTimeoutSeconds() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetTimeoutSeconds",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetTrigger() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetTrigger",
 		nil, // no parameters
 	)
 }

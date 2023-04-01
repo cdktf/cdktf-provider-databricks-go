@@ -92,6 +92,10 @@ func (j *jsiiProxy_Job) validatePutPythonWheelTaskParameters(value *JobPythonWhe
 	return nil
 }
 
+func (j *jsiiProxy_Job) validatePutQueueParameters(value *JobQueue) error {
+	return nil
+}
+
 func (j *jsiiProxy_Job) validatePutScheduleParameters(value *JobSchedule) error {
 	return nil
 }
@@ -113,6 +117,10 @@ func (j *jsiiProxy_Job) validatePutTaskParameters(value interface{}) error {
 }
 
 func (j *jsiiProxy_Job) validatePutTimeoutsParameters(value *JobTimeouts) error {
+	return nil
+}
+
+func (j *jsiiProxy_Job) validatePutTriggerParameters(value *JobTrigger) error {
 	return nil
 }
 

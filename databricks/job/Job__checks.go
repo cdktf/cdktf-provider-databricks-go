@@ -261,6 +261,17 @@ func (j *jsiiProxy_Job) validatePutPythonWheelTaskParameters(value *JobPythonWhe
 	return nil
 }
 
+func (j *jsiiProxy_Job) validatePutQueueParameters(value *JobQueue) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Job) validatePutScheduleParameters(value *JobSchedule) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -337,6 +348,17 @@ func (j *jsiiProxy_Job) validatePutTaskParameters(value interface{}) error {
 }
 
 func (j *jsiiProxy_Job) validatePutTimeoutsParameters(value *JobTimeouts) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Job) validatePutTriggerParameters(value *JobTrigger) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

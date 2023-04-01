@@ -21,6 +21,8 @@ type DataDatabricksClusterPolicy interface {
 	// Experimental.
 	SetCount(val *float64)
 	Definition() *string
+	SetDefinition(val *string)
+	DefinitionInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -41,6 +43,8 @@ type DataDatabricksClusterPolicy interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MaxClustersPerUser() *float64
+	SetMaxClustersPerUser(val *float64)
+	MaxClustersPerUserInput() *float64
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -83,7 +87,10 @@ type DataDatabricksClusterPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDefinition()
 	ResetId()
+	ResetMaxClustersPerUser()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -137,6 +144,16 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy) Definition() *string {
 	_jsii_.Get(
 		j,
 		"definition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy) DefinitionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"definitionInput",
 		&returns,
 	)
 	return returns
@@ -217,6 +234,16 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy) MaxClustersPerUser() *float64 {
 	_jsii_.Get(
 		j,
 		"maxClustersPerUser",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy) MaxClustersPerUserInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxClustersPerUserInput",
 		&returns,
 	)
 	return returns
@@ -340,6 +367,17 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy)SetCount(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPolicy)SetDefinition(val *string) {
+	if err := j.validateSetDefinitionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"definition",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPolicy)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -374,6 +412,17 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy)SetLifecycle(val *cdktf.Terraform
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy)SetMaxClustersPerUser(val *float64) {
+	if err := j.validateSetMaxClustersPerUserParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxClustersPerUser",
 		val,
 	)
 }
@@ -663,10 +712,34 @@ func (d *jsiiProxy_DataDatabricksClusterPolicy) OverrideLogicalId(newLogicalId *
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterPolicy) ResetDefinition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDefinition",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterPolicy) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterPolicy) ResetMaxClustersPerUser() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMaxClustersPerUser",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterPolicy) ResetName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetName",
 		nil, // no parameters
 	)
 }

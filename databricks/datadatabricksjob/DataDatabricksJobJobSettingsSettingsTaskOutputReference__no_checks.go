@@ -132,6 +132,10 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validateSetRunIfParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validateSetTaskKeyParameters(val *string) error {
 	return nil
 }

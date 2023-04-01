@@ -67,6 +67,8 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	PipelineTaskInput() *DataDatabricksJobJobSettingsSettingsPipelineTask
 	PythonWheelTask() DataDatabricksJobJobSettingsSettingsPythonWheelTaskOutputReference
 	PythonWheelTaskInput() *DataDatabricksJobJobSettingsSettingsPythonWheelTask
+	Queue() DataDatabricksJobJobSettingsSettingsQueueOutputReference
+	QueueInput() *DataDatabricksJobJobSettingsSettingsQueue
 	RetryOnTimeout() interface{}
 	SetRetryOnTimeout(val interface{})
 	RetryOnTimeoutInput() interface{}
@@ -94,6 +96,8 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	TimeoutSeconds() *float64
 	SetTimeoutSeconds(val *float64)
 	TimeoutSecondsInput() *float64
+	Trigger() DataDatabricksJobJobSettingsSettingsTriggerOutputReference
+	TriggerInput() *DataDatabricksJobJobSettingsSettingsTrigger
 	WebhookNotifications() DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference
 	WebhookNotificationsInput() *DataDatabricksJobJobSettingsSettingsWebhookNotifications
 	// Experimental.
@@ -130,11 +134,13 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	PutNotebookTask(value *DataDatabricksJobJobSettingsSettingsNotebookTask)
 	PutPipelineTask(value *DataDatabricksJobJobSettingsSettingsPipelineTask)
 	PutPythonWheelTask(value *DataDatabricksJobJobSettingsSettingsPythonWheelTask)
+	PutQueue(value *DataDatabricksJobJobSettingsSettingsQueue)
 	PutSchedule(value *DataDatabricksJobJobSettingsSettingsSchedule)
 	PutSparkJarTask(value *DataDatabricksJobJobSettingsSettingsSparkJarTask)
 	PutSparkPythonTask(value *DataDatabricksJobJobSettingsSettingsSparkPythonTask)
 	PutSparkSubmitTask(value *DataDatabricksJobJobSettingsSettingsSparkSubmitTask)
 	PutTask(value interface{})
+	PutTrigger(value *DataDatabricksJobJobSettingsSettingsTrigger)
 	PutWebhookNotifications(value *DataDatabricksJobJobSettingsSettingsWebhookNotifications)
 	ResetContinuous()
 	ResetDbtTask()
@@ -152,6 +158,7 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	ResetNotebookTask()
 	ResetPipelineTask()
 	ResetPythonWheelTask()
+	ResetQueue()
 	ResetRetryOnTimeout()
 	ResetSchedule()
 	ResetSparkJarTask()
@@ -160,6 +167,7 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	ResetTags()
 	ResetTask()
 	ResetTimeoutSeconds()
+	ResetTrigger()
 	ResetWebhookNotifications()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -546,6 +554,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PythonWh
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) Queue() DataDatabricksJobJobSettingsSettingsQueueOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsQueueOutputReference
+	_jsii_.Get(
+		j,
+		"queue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) QueueInput() *DataDatabricksJobJobSettingsSettingsQueue {
+	var returns *DataDatabricksJobJobSettingsSettingsQueue
+	_jsii_.Get(
+		j,
+		"queueInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) RetryOnTimeout() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -721,6 +749,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) TimeoutS
 	_jsii_.Get(
 		j,
 		"timeoutSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) Trigger() DataDatabricksJobJobSettingsSettingsTriggerOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsTriggerOutputReference
+	_jsii_.Get(
+		j,
+		"trigger",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) TriggerInput() *DataDatabricksJobJobSettingsSettingsTrigger {
+	var returns *DataDatabricksJobJobSettingsSettingsTrigger
+	_jsii_.Get(
+		j,
+		"triggerInput",
 		&returns,
 	)
 	return returns
@@ -1224,6 +1272,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutPytho
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutQueue(value *DataDatabricksJobJobSettingsSettingsQueue) {
+	if err := d.validatePutQueueParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putQueue",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutSchedule(value *DataDatabricksJobJobSettingsSettingsSchedule) {
 	if err := d.validatePutScheduleParameters(value); err != nil {
 		panic(err)
@@ -1275,6 +1334,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutTask(
 	_jsii_.InvokeVoid(
 		d,
 		"putTask",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutTrigger(value *DataDatabricksJobJobSettingsSettingsTrigger) {
+	if err := d.validatePutTriggerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTrigger",
 		[]interface{}{value},
 	)
 }
@@ -1418,6 +1488,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetPyt
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetQueue() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetQueue",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetRetryOnTimeout() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1478,6 +1556,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetTim
 	_jsii_.InvokeVoid(
 		d,
 		"resetTimeoutSeconds",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetTrigger() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTrigger",
 		nil, // no parameters
 	)
 }

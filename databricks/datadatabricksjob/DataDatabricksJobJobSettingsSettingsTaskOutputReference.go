@@ -63,6 +63,9 @@ type DataDatabricksJobJobSettingsSettingsTaskOutputReference interface {
 	RetryOnTimeout() interface{}
 	SetRetryOnTimeout(val interface{})
 	RetryOnTimeoutInput() interface{}
+	RunIf() *string
+	SetRunIf(val *string)
+	RunIfInput() *string
 	SparkJarTask() DataDatabricksJobJobSettingsSettingsTaskSparkJarTaskOutputReference
 	SparkJarTaskInput() *DataDatabricksJobJobSettingsSettingsTaskSparkJarTask
 	SparkPythonTask() DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference
@@ -135,6 +138,7 @@ type DataDatabricksJobJobSettingsSettingsTaskOutputReference interface {
 	ResetPipelineTask()
 	ResetPythonWheelTask()
 	ResetRetryOnTimeout()
+	ResetRunIf()
 	ResetSparkJarTask()
 	ResetSparkPythonTask()
 	ResetSparkSubmitTask()
@@ -486,6 +490,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) Retr
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) RunIf() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runIf",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) RunIfInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runIfInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) SparkJarTask() DataDatabricksJobJobSettingsSettingsTaskSparkJarTaskOutputReference {
 	var returns DataDatabricksJobJobSettingsSettingsTaskSparkJarTaskOutputReference
 	_jsii_.Get(
@@ -749,6 +773,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference)SetRe
 	_jsii_.Set(
 		j,
 		"retryOnTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference)SetRunIf(val *string) {
+	if err := j.validateSetRunIfParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runIf",
 		val,
 	)
 }
@@ -1223,6 +1258,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) Rese
 	_jsii_.InvokeVoid(
 		d,
 		"resetRetryOnTimeout",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) ResetRunIf() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRunIf",
 		nil, // no parameters
 	)
 }

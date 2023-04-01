@@ -63,6 +63,9 @@ type JobTaskOutputReference interface {
 	RetryOnTimeout() interface{}
 	SetRetryOnTimeout(val interface{})
 	RetryOnTimeoutInput() interface{}
+	RunIf() *string
+	SetRunIf(val *string)
+	RunIfInput() *string
 	SparkJarTask() JobTaskSparkJarTaskOutputReference
 	SparkJarTaskInput() *JobTaskSparkJarTask
 	SparkPythonTask() JobTaskSparkPythonTaskOutputReference
@@ -135,6 +138,7 @@ type JobTaskOutputReference interface {
 	ResetPipelineTask()
 	ResetPythonWheelTask()
 	ResetRetryOnTimeout()
+	ResetRunIf()
 	ResetSparkJarTask()
 	ResetSparkPythonTask()
 	ResetSparkSubmitTask()
@@ -486,6 +490,26 @@ func (j *jsiiProxy_JobTaskOutputReference) RetryOnTimeoutInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) RunIf() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runIf",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) RunIfInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runIfInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) SparkJarTask() JobTaskSparkJarTaskOutputReference {
 	var returns JobTaskSparkJarTaskOutputReference
 	_jsii_.Get(
@@ -749,6 +773,17 @@ func (j *jsiiProxy_JobTaskOutputReference)SetRetryOnTimeout(val interface{}) {
 	_jsii_.Set(
 		j,
 		"retryOnTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference)SetRunIf(val *string) {
+	if err := j.validateSetRunIfParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runIf",
 		val,
 	)
 }
@@ -1223,6 +1258,14 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetRetryOnTimeout() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetRetryOnTimeout",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ResetRunIf() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetRunIf",
 		nil, // no parameters
 	)
 }

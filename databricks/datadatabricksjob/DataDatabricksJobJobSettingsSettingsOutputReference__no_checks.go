@@ -84,6 +84,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validate
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutQueueParameters(value *DataDatabricksJobJobSettingsSettingsQueue) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutScheduleParameters(value *DataDatabricksJobJobSettingsSettingsSchedule) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validate
 }
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutTaskParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutTriggerParameters(value *DataDatabricksJobJobSettingsSettingsTrigger) error {
 	return nil
 }
 

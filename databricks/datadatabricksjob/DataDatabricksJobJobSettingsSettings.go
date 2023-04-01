@@ -54,6 +54,10 @@ type DataDatabricksJobJobSettingsSettings struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#python_wheel_task DataDatabricksJob#python_wheel_task}
 	PythonWheelTask *DataDatabricksJobJobSettingsSettingsPythonWheelTask `field:"optional" json:"pythonWheelTask" yaml:"pythonWheelTask"`
+	// queue block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#queue DataDatabricksJob#queue}
+	Queue *DataDatabricksJobJobSettingsSettingsQueue `field:"optional" json:"queue" yaml:"queue"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}.
 	RetryOnTimeout interface{} `field:"optional" json:"retryOnTimeout" yaml:"retryOnTimeout"`
 	// schedule block.
@@ -80,6 +84,10 @@ type DataDatabricksJobJobSettingsSettings struct {
 	Task interface{} `field:"optional" json:"task" yaml:"task"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#timeout_seconds DataDatabricksJob#timeout_seconds}.
 	TimeoutSeconds *float64 `field:"optional" json:"timeoutSeconds" yaml:"timeoutSeconds"`
+	// trigger block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#trigger DataDatabricksJob#trigger}
+	Trigger *DataDatabricksJobJobSettingsSettingsTrigger `field:"optional" json:"trigger" yaml:"trigger"`
 	// webhook_notifications block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#webhook_notifications DataDatabricksJob#webhook_notifications}

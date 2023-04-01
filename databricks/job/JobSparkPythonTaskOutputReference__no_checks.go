@@ -68,6 +68,10 @@ func (j *jsiiProxy_JobSparkPythonTaskOutputReference) validateSetPythonFileParam
 	return nil
 }
 
+func (j *jsiiProxy_JobSparkPythonTaskOutputReference) validateSetSourceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobSparkPythonTaskOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -132,6 +132,10 @@ func (j *jsiiProxy_JobTaskOutputReference) validateSetRetryOnTimeoutParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) validateSetRunIfParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) validateSetTaskKeyParameters(val *string) error {
 	return nil
 }
