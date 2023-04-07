@@ -29,6 +29,8 @@ type JobTaskSqlTaskOutputReference interface {
 	CreationStack() *[]*string
 	Dashboard() JobTaskSqlTaskDashboardOutputReference
 	DashboardInput() *JobTaskSqlTaskDashboard
+	File() JobTaskSqlTaskFileOutputReference
+	FileInput() *JobTaskSqlTaskFile
 	// Experimental.
 	Fqn() *string
 	InternalValue() *JobTaskSqlTask
@@ -75,9 +77,11 @@ type JobTaskSqlTaskOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAlert(value *JobTaskSqlTaskAlert)
 	PutDashboard(value *JobTaskSqlTaskDashboard)
+	PutFile(value *JobTaskSqlTaskFile)
 	PutQuery(value *JobTaskSqlTaskQuery)
 	ResetAlert()
 	ResetDashboard()
+	ResetFile()
 	ResetParameters()
 	ResetQuery()
 	ResetWarehouseId()
@@ -161,6 +165,26 @@ func (j *jsiiProxy_JobTaskSqlTaskOutputReference) DashboardInput() *JobTaskSqlTa
 	_jsii_.Get(
 		j,
 		"dashboardInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskOutputReference) File() JobTaskSqlTaskFileOutputReference {
+	var returns JobTaskSqlTaskFileOutputReference
+	_jsii_.Get(
+		j,
+		"file",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskOutputReference) FileInput() *JobTaskSqlTaskFile {
+	var returns *JobTaskSqlTaskFile
+	_jsii_.Get(
+		j,
+		"fileInput",
 		&returns,
 	)
 	return returns
@@ -579,6 +603,17 @@ func (j *jsiiProxy_JobTaskSqlTaskOutputReference) PutDashboard(value *JobTaskSql
 	)
 }
 
+func (j *jsiiProxy_JobTaskSqlTaskOutputReference) PutFile(value *JobTaskSqlTaskFile) {
+	if err := j.validatePutFileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putFile",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskSqlTaskOutputReference) PutQuery(value *JobTaskSqlTaskQuery) {
 	if err := j.validatePutQueryParameters(value); err != nil {
 		panic(err)
@@ -602,6 +637,14 @@ func (j *jsiiProxy_JobTaskSqlTaskOutputReference) ResetDashboard() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetDashboard",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskOutputReference) ResetFile() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetFile",
 		nil, // no parameters
 	)
 }

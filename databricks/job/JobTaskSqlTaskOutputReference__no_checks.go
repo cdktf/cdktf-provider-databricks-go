@@ -52,6 +52,10 @@ func (j *jsiiProxy_JobTaskSqlTaskOutputReference) validatePutDashboardParameters
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskSqlTaskOutputReference) validatePutFileParameters(value *JobTaskSqlTaskFile) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskSqlTaskOutputReference) validatePutQueryParameters(value *JobTaskSqlTaskQuery) error {
 	return nil
 }

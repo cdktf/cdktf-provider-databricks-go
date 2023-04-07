@@ -112,6 +112,17 @@ func (j *jsiiProxy_JobTaskSqlTaskOutputReference) validatePutDashboardParameters
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskSqlTaskOutputReference) validatePutFileParameters(value *JobTaskSqlTaskFile) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskSqlTaskOutputReference) validatePutQueryParameters(value *JobTaskSqlTaskQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

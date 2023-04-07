@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReferenc
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference) validatePutFileParameters(value *DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference) validatePutQueryParameters(value *DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery) error {
 	return nil
 }

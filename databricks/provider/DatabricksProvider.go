@@ -82,6 +82,9 @@ type DatabricksProvider interface {
 	HttpTimeoutSecondsInput() *float64
 	// Experimental.
 	MetaAttributes() *map[string]interface{}
+	MetadataServiceUrl() *string
+	SetMetadataServiceUrl(val *string)
+	MetadataServiceUrlInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Password() *string
@@ -138,6 +141,7 @@ type DatabricksProvider interface {
 	ResetGoogleServiceAccount()
 	ResetHost()
 	ResetHttpTimeoutSeconds()
+	ResetMetadataServiceUrl()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -613,6 +617,26 @@ func (j *jsiiProxy_DatabricksProvider) MetaAttributes() *map[string]interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_DatabricksProvider) MetadataServiceUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metadataServiceUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) MetadataServiceUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metadataServiceUrlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabricksProvider) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -999,6 +1023,14 @@ func (j *jsiiProxy_DatabricksProvider)SetHttpTimeoutSeconds(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_DatabricksProvider)SetMetadataServiceUrl(val *string) {
+	_jsii_.Set(
+		j,
+		"metadataServiceUrl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabricksProvider)SetPassword(val *string) {
 	_jsii_.Set(
 		j,
@@ -1320,6 +1352,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetHttpTimeoutSeconds() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetHttpTimeoutSeconds",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) ResetMetadataServiceUrl() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMetadataServiceUrl",
 		nil, // no parameters
 	)
 }

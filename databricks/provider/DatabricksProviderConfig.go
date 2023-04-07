@@ -44,6 +44,8 @@ type DatabricksProviderConfig struct {
 	Host *string `field:"optional" json:"host" yaml:"host"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#http_timeout_seconds DatabricksProvider#http_timeout_seconds}.
 	HttpTimeoutSeconds *float64 `field:"optional" json:"httpTimeoutSeconds" yaml:"httpTimeoutSeconds"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#metadata_service_url DatabricksProvider#metadata_service_url}.
+	MetadataServiceUrl *string `field:"optional" json:"metadataServiceUrl" yaml:"metadataServiceUrl"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#password DatabricksProvider#password}.
 	Password *string `field:"optional" json:"password" yaml:"password"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#profile DatabricksProvider#profile}.

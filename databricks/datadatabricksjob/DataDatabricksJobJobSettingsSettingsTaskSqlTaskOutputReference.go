@@ -29,6 +29,8 @@ type DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference interface {
 	CreationStack() *[]*string
 	Dashboard() DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference
 	DashboardInput() *DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard
+	File() DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputReference
+	FileInput() *DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksJobJobSettingsSettingsTaskSqlTask
@@ -75,9 +77,11 @@ type DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAlert(value *DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert)
 	PutDashboard(value *DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard)
+	PutFile(value *DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile)
 	PutQuery(value *DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery)
 	ResetAlert()
 	ResetDashboard()
+	ResetFile()
 	ResetParameters()
 	ResetQuery()
 	ResetWarehouseId()
@@ -161,6 +165,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReferenc
 	_jsii_.Get(
 		j,
 		"dashboardInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference) File() DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputReference
+	_jsii_.Get(
+		j,
+		"file",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference) FileInput() *DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile {
+	var returns *DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile
+	_jsii_.Get(
+		j,
+		"fileInput",
 		&returns,
 	)
 	return returns
@@ -579,6 +603,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReferenc
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference) PutFile(value *DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile) {
+	if err := d.validatePutFileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFile",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference) PutQuery(value *DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery) {
 	if err := d.validatePutQueryParameters(value); err != nil {
 		panic(err)
@@ -602,6 +637,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"resetDashboard",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference) ResetFile() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFile",
 		nil, // no parameters
 	)
 }

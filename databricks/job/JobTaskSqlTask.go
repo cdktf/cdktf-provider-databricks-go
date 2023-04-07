@@ -10,6 +10,10 @@ type JobTaskSqlTask struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#dashboard Job#dashboard}
 	Dashboard *JobTaskSqlTaskDashboard `field:"optional" json:"dashboard" yaml:"dashboard"`
+	// file block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#file Job#file}
+	File *JobTaskSqlTaskFile `field:"optional" json:"file" yaml:"file"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#parameters Job#parameters}.
 	Parameters *map[string]*string `field:"optional" json:"parameters" yaml:"parameters"`
 	// query block.
