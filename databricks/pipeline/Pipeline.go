@@ -2,10 +2,10 @@ package pipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/pipeline/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/pipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -75,6 +75,8 @@ type Pipeline interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Notification() PipelineNotificationList
+	NotificationInput() interface{}
 	Photon() interface{}
 	SetPhoton(val interface{})
 	PhotonInput() interface{}
@@ -131,6 +133,7 @@ type Pipeline interface {
 	PutCluster(value interface{})
 	PutFilters(value *PipelineFilters)
 	PutLibrary(value interface{})
+	PutNotification(value interface{})
 	PutTimeouts(value *PipelineTimeouts)
 	ResetAllowDuplicateNames()
 	ResetCatalog()
@@ -144,6 +147,7 @@ type Pipeline interface {
 	ResetId()
 	ResetLibrary()
 	ResetName()
+	ResetNotification()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -501,6 +505,26 @@ func (j *jsiiProxy_Pipeline) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) Notification() PipelineNotificationList {
+	var returns PipelineNotificationList
+	_jsii_.Get(
+		j,
+		"notification",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) NotificationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"notificationInput",
 		&returns,
 	)
 	return returns
@@ -1182,6 +1206,17 @@ func (p *jsiiProxy_Pipeline) PutLibrary(value interface{}) {
 	)
 }
 
+func (p *jsiiProxy_Pipeline) PutNotification(value interface{}) {
+	if err := p.validatePutNotificationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putNotification",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_Pipeline) PutTimeouts(value *PipelineTimeouts) {
 	if err := p.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1285,6 +1320,14 @@ func (p *jsiiProxy_Pipeline) ResetName() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Pipeline) ResetNotification() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNotification",
 		nil, // no parameters
 	)
 }

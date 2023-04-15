@@ -2,10 +2,10 @@ package permissionassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/permissionassignment/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/permissionassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

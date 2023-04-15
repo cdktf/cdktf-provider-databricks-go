@@ -52,6 +52,10 @@ type PipelineConfig struct {
 	Library interface{} `field:"optional" json:"library" yaml:"library"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#name Pipeline#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
+	// notification block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#notification Pipeline#notification}
+	Notification interface{} `field:"optional" json:"notification" yaml:"notification"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#photon Pipeline#photon}.
 	Photon interface{} `field:"optional" json:"photon" yaml:"photon"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#storage Pipeline#storage}.

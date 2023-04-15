@@ -64,6 +64,10 @@ func (p *jsiiProxy_Pipeline) validatePutLibraryParameters(value interface{}) err
 	return nil
 }
 
+func (p *jsiiProxy_Pipeline) validatePutNotificationParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_Pipeline) validatePutTimeoutsParameters(value *PipelineTimeouts) error {
 	return nil
 }
