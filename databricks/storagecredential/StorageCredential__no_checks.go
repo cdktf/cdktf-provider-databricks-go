@@ -92,6 +92,10 @@ func (j *jsiiProxy_StorageCredential) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_StorageCredential) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageCredential) validateSetIdParameters(val *string) error {
 	return nil
 }

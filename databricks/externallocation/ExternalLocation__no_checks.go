@@ -72,6 +72,10 @@ func (j *jsiiProxy_ExternalLocation) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_ExternalLocation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExternalLocation) validateSetCredentialNameParameters(val *string) error {
 	return nil
 }

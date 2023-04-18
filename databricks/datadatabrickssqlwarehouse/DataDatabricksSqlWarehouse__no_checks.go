@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetClusterSizeParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetDataSourceIdParameters(val *string) error {
 	return nil
 }

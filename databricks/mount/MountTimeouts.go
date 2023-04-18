@@ -2,7 +2,7 @@ package mount
 
 
 type MountTimeouts struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mount#default Mount#default}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mount#default Mount#default}.
 	Default *string `field:"optional" json:"default" yaml:"default"`
 }
 

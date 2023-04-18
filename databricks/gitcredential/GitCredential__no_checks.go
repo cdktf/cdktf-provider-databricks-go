@@ -68,6 +68,10 @@ func (j *jsiiProxy_GitCredential) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_GitCredential) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GitCredential) validateSetForceParameters(val interface{}) error {
 	return nil
 }

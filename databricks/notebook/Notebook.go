@@ -2,14 +2,14 @@ package notebook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/notebook/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/notebook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/notebook databricks_notebook}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/notebook databricks_notebook}.
 type Notebook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type Notebook interface {
 	SetContentBase64(val *string)
 	ContentBase64Input() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -187,8 +187,8 @@ func (j *jsiiProxy_Notebook) ContentBase64Input() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Notebook) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Notebook) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -488,7 +488,7 @@ func (j *jsiiProxy_Notebook) Url() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/notebook databricks_notebook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/notebook databricks_notebook} Resource.
 func NewNotebook(scope constructs.Construct, id *string, config *NotebookConfig) Notebook {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewNotebook(scope constructs.Construct, id *string, config *NotebookConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/notebook databricks_notebook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/notebook databricks_notebook} Resource.
 func NewNotebook_Override(n Notebook, scope constructs.Construct, id *string, config *NotebookConfig) {
 	_init_.Initialize()
 
@@ -539,7 +539,10 @@ func (j *jsiiProxy_Notebook)SetContentBase64(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Notebook)SetCount(val *float64) {
+func (j *jsiiProxy_Notebook)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -84,6 +84,10 @@ func (j *jsiiProxy_ServicePrincipal) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipal) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipal) validateSetDatabricksSqlAccessParameters(val interface{}) error {
 	return nil
 }

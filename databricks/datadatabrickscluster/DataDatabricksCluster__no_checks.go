@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataDatabricksCluster) validateSetClusterNameParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

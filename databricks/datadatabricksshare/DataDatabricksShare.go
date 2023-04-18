@@ -2,14 +2,14 @@ package datadatabricksshare
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksshare/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabricksshare/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/d/share databricks_share}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/share databricks_share}.
 type DataDatabricksShare interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDatabricksShare interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *float64
 	SetCreatedAt(val *float64)
 	CreatedAtInput() *float64
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataDatabricksShare) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksShare) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatabricksShare) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataDatabricksShare) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/share databricks_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/share databricks_share} Data Source.
 func NewDataDatabricksShare(scope constructs.Construct, id *string, config *DataDatabricksShareConfig) DataDatabricksShare {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataDatabricksShare(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/share databricks_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/share databricks_share} Data Source.
 func NewDataDatabricksShare_Override(d DataDatabricksShare, scope constructs.Construct, id *string, config *DataDatabricksShareConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func NewDataDatabricksShare_Override(d DataDatabricksShare, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksShare)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatabricksShare)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

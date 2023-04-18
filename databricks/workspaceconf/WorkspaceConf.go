@@ -2,14 +2,14 @@ package workspaceconf
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/workspaceconf/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/workspaceconf/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/workspace_conf databricks_workspace_conf}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/workspace_conf databricks_workspace_conf}.
 type WorkspaceConf interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type WorkspaceConf interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomConfig() *map[string]*string
 	SetCustomConfig(val *map[string]*string)
 	CustomConfigInput() *map[string]*string
@@ -139,8 +139,8 @@ func (j *jsiiProxy_WorkspaceConf) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceConf) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_WorkspaceConf) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -310,7 +310,7 @@ func (j *jsiiProxy_WorkspaceConf) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/workspace_conf databricks_workspace_conf} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/workspace_conf databricks_workspace_conf} Resource.
 func NewWorkspaceConf(scope constructs.Construct, id *string, config *WorkspaceConfConfig) WorkspaceConf {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewWorkspaceConf(scope constructs.Construct, id *string, config *WorkspaceC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/workspace_conf databricks_workspace_conf} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/workspace_conf databricks_workspace_conf} Resource.
 func NewWorkspaceConf_Override(w WorkspaceConf, scope constructs.Construct, id *string, config *WorkspaceConfConfig) {
 	_init_.Initialize()
 
@@ -350,7 +350,10 @@ func (j *jsiiProxy_WorkspaceConf)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkspaceConf)SetCount(val *float64) {
+func (j *jsiiProxy_WorkspaceConf)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

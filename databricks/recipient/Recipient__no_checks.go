@@ -84,6 +84,10 @@ func (j *jsiiProxy_Recipient) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_Recipient) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Recipient) validateSetDataRecipientGlobalMetastoreIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package obotoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/obotoken/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/obotoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/obo_token databricks_obo_token}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/obo_token databricks_obo_token}.
 type OboToken interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -27,9 +27,9 @@ type OboToken interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -187,8 +187,8 @@ func (j *jsiiProxy_OboToken) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OboToken) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OboToken) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -368,7 +368,7 @@ func (j *jsiiProxy_OboToken) TokenValue() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/obo_token databricks_obo_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/obo_token databricks_obo_token} Resource.
 func NewOboToken(scope constructs.Construct, id *string, config *OboTokenConfig) OboToken {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewOboToken(scope constructs.Construct, id *string, config *OboTokenConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/obo_token databricks_obo_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/obo_token databricks_obo_token} Resource.
 func NewOboToken_Override(o OboToken, scope constructs.Construct, id *string, config *OboTokenConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_OboToken)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OboToken)SetCount(val *float64) {
+func (j *jsiiProxy_OboToken)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

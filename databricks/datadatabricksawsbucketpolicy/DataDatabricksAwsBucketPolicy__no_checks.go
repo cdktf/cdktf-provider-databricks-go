@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) validateSetBucketParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) validateSetDatabricksAccountIdParameters(val *string) error {
 	return nil
 }

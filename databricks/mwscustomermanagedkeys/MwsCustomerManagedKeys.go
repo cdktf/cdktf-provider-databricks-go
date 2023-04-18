@@ -2,14 +2,14 @@ package mwscustomermanagedkeys
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/mwscustomermanagedkeys/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/mwscustomermanagedkeys/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/mws_customer_managed_keys databricks_mws_customer_managed_keys}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mws_customer_managed_keys databricks_mws_customer_managed_keys}.
 type MwsCustomerManagedKeys interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -26,9 +26,9 @@ type MwsCustomerManagedKeys interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationTime() *float64
 	SetCreationTime(val *float64)
 	CreationTimeInput() *float64
@@ -197,8 +197,8 @@ func (j *jsiiProxy_MwsCustomerManagedKeys) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_MwsCustomerManagedKeys) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MwsCustomerManagedKeys) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -428,7 +428,7 @@ func (j *jsiiProxy_MwsCustomerManagedKeys) UseCasesInput() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/mws_customer_managed_keys databricks_mws_customer_managed_keys} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mws_customer_managed_keys databricks_mws_customer_managed_keys} Resource.
 func NewMwsCustomerManagedKeys(scope constructs.Construct, id *string, config *MwsCustomerManagedKeysConfig) MwsCustomerManagedKeys {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewMwsCustomerManagedKeys(scope constructs.Construct, id *string, config *M
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/mws_customer_managed_keys databricks_mws_customer_managed_keys} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mws_customer_managed_keys databricks_mws_customer_managed_keys} Resource.
 func NewMwsCustomerManagedKeys_Override(m MwsCustomerManagedKeys, scope constructs.Construct, id *string, config *MwsCustomerManagedKeysConfig) {
 	_init_.Initialize()
 
@@ -479,7 +479,10 @@ func (j *jsiiProxy_MwsCustomerManagedKeys)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MwsCustomerManagedKeys)SetCount(val *float64) {
+func (j *jsiiProxy_MwsCustomerManagedKeys)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

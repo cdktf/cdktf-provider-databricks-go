@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataDatabricksServicePrincipal) validateSetApplicationIdParam
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksServicePrincipal) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksServicePrincipal) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_Repo) validateSetConnectionParameters(val interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_Repo) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Repo) validateSetGitProviderParameters(val *string) error {
 	return nil
 }

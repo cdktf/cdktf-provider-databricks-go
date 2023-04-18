@@ -72,6 +72,10 @@ func (j *jsiiProxy_Notebook) validateSetContentBase64Parameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_Notebook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Notebook) validateSetFormatParameters(val *string) error {
 	return nil
 }

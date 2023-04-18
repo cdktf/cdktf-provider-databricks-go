@@ -72,6 +72,10 @@ func (j *jsiiProxy_AwsS3Mount) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_AwsS3Mount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsS3Mount) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_Metastore) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_Metastore) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Metastore) validateSetCreatedAtParameters(val *float64) error {
 	return nil
 }

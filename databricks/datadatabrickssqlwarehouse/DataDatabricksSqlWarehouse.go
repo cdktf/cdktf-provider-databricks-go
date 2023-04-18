@@ -2,14 +2,14 @@ package datadatabrickssqlwarehouse
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabrickssqlwarehouse/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabrickssqlwarehouse/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/d/sql_warehouse databricks_sql_warehouse}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/sql_warehouse databricks_sql_warehouse}.
 type DataDatabricksSqlWarehouse interface {
 	cdktf.TerraformDataSource
 	AutoStopMins() *float64
@@ -25,9 +25,9 @@ type DataDatabricksSqlWarehouse interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataSourceId() *string
 	SetDataSourceId(val *string)
 	DataSourceIdInput() *string
@@ -240,8 +240,8 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -641,7 +641,7 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/sql_warehouse databricks_sql_warehouse} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
 func NewDataDatabricksSqlWarehouse(scope constructs.Construct, id *string, config *DataDatabricksSqlWarehouseConfig) DataDatabricksSqlWarehouse {
 	_init_.Initialize()
 
@@ -659,7 +659,7 @@ func NewDataDatabricksSqlWarehouse(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/sql_warehouse databricks_sql_warehouse} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
 func NewDataDatabricksSqlWarehouse_Override(d DataDatabricksSqlWarehouse, scope constructs.Construct, id *string, config *DataDatabricksSqlWarehouseConfig) {
 	_init_.Initialize()
 
@@ -692,7 +692,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetClusterSize(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

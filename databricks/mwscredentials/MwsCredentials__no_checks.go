@@ -72,6 +72,10 @@ func (j *jsiiProxy_MwsCredentials) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_MwsCredentials) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsCredentials) validateSetCredentialsNameParameters(val *string) error {
 	return nil
 }

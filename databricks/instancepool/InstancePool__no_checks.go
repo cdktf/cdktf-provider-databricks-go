@@ -92,6 +92,10 @@ func (j *jsiiProxy_InstancePool) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_InstancePool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_InstancePool) validateSetCustomTagsParameters(val *map[string]*string) error {
 	return nil
 }

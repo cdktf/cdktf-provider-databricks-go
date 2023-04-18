@@ -76,6 +76,10 @@ func (j *jsiiProxy_SqlQuery) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_SqlQuery) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlQuery) validateSetDataSourceIdParameters(val *string) error {
 	return nil
 }

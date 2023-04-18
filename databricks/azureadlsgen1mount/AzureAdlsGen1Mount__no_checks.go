@@ -84,6 +84,10 @@ func (j *jsiiProxy_AzureAdlsGen1Mount) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_AzureAdlsGen1Mount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureAdlsGen1Mount) validateSetDirectoryParameters(val *string) error {
 	return nil
 }

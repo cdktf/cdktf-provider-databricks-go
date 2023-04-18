@@ -2,14 +2,14 @@ package mwsvpcendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/mwsvpcendpoint/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/mwsvpcendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint databricks_mws_vpc_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint}.
 type MwsVpcEndpoint interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -33,9 +33,9 @@ type MwsVpcEndpoint interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -254,8 +254,8 @@ func (j *jsiiProxy_MwsVpcEndpoint) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_MwsVpcEndpoint) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MwsVpcEndpoint) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -525,7 +525,7 @@ func (j *jsiiProxy_MwsVpcEndpoint) VpcEndpointNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint databricks_mws_vpc_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint} Resource.
 func NewMwsVpcEndpoint(scope constructs.Construct, id *string, config *MwsVpcEndpointConfig) MwsVpcEndpoint {
 	_init_.Initialize()
 
@@ -543,7 +543,7 @@ func NewMwsVpcEndpoint(scope constructs.Construct, id *string, config *MwsVpcEnd
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint databricks_mws_vpc_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint} Resource.
 func NewMwsVpcEndpoint_Override(m MwsVpcEndpoint, scope constructs.Construct, id *string, config *MwsVpcEndpointConfig) {
 	_init_.Initialize()
 
@@ -609,7 +609,10 @@ func (j *jsiiProxy_MwsVpcEndpoint)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MwsVpcEndpoint)SetCount(val *float64) {
+func (j *jsiiProxy_MwsVpcEndpoint)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

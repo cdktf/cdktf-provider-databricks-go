@@ -68,6 +68,10 @@ func (j *jsiiProxy_SqlVisualization) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_SqlVisualization) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlVisualization) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

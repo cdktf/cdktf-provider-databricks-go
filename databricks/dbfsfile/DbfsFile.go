@@ -2,14 +2,14 @@ package dbfsfile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/dbfsfile/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/dbfsfile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/dbfs_file databricks_dbfs_file}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/dbfs_file databricks_dbfs_file}.
 type DbfsFile interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type DbfsFile interface {
 	SetContentBase64(val *string)
 	ContentBase64Input() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DbfsPath() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -172,8 +172,8 @@ func (j *jsiiProxy_DbfsFile) ContentBase64Input() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DbfsFile) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DbfsFile) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -403,7 +403,7 @@ func (j *jsiiProxy_DbfsFile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/dbfs_file databricks_dbfs_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/dbfs_file databricks_dbfs_file} Resource.
 func NewDbfsFile(scope constructs.Construct, id *string, config *DbfsFileConfig) DbfsFile {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewDbfsFile(scope constructs.Construct, id *string, config *DbfsFileConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/dbfs_file databricks_dbfs_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/dbfs_file databricks_dbfs_file} Resource.
 func NewDbfsFile_Override(d DbfsFile, scope constructs.Construct, id *string, config *DbfsFileConfig) {
 	_init_.Initialize()
 
@@ -454,7 +454,10 @@ func (j *jsiiProxy_DbfsFile)SetContentBase64(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbfsFile)SetCount(val *float64) {
+func (j *jsiiProxy_DbfsFile)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

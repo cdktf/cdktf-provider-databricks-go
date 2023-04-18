@@ -2,14 +2,14 @@ package mwsprivateaccesssettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/mwsprivateaccesssettings/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/mwsprivateaccesssettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/mws_private_access_settings databricks_mws_private_access_settings}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mws_private_access_settings databricks_mws_private_access_settings}.
 type MwsPrivateAccessSettings interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -27,9 +27,9 @@ type MwsPrivateAccessSettings interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -205,8 +205,8 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MwsPrivateAccessSettings) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -476,7 +476,7 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/mws_private_access_settings databricks_mws_private_access_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mws_private_access_settings databricks_mws_private_access_settings} Resource.
 func NewMwsPrivateAccessSettings(scope constructs.Construct, id *string, config *MwsPrivateAccessSettingsConfig) MwsPrivateAccessSettings {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewMwsPrivateAccessSettings(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/mws_private_access_settings databricks_mws_private_access_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mws_private_access_settings databricks_mws_private_access_settings} Resource.
 func NewMwsPrivateAccessSettings_Override(m MwsPrivateAccessSettings, scope constructs.Construct, id *string, config *MwsPrivateAccessSettingsConfig) {
 	_init_.Initialize()
 
@@ -538,7 +538,10 @@ func (j *jsiiProxy_MwsPrivateAccessSettings)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings)SetCount(val *float64) {
+func (j *jsiiProxy_MwsPrivateAccessSettings)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

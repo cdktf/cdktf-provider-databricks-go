@@ -2,14 +2,14 @@ package sqlpermissions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/sqlpermissions/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/sqlpermissions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/sql_permissions databricks_sql_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/sql_permissions databricks_sql_permissions}.
 type SqlPermissions interface {
 	cdktf.TerraformResource
 	AnonymousFunction() interface{}
@@ -33,9 +33,9 @@ type SqlPermissions interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
@@ -247,8 +247,8 @@ func (j *jsiiProxy_SqlPermissions) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_SqlPermissions) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SqlPermissions) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -478,7 +478,7 @@ func (j *jsiiProxy_SqlPermissions) ViewInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/sql_permissions databricks_sql_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/sql_permissions databricks_sql_permissions} Resource.
 func NewSqlPermissions(scope constructs.Construct, id *string, config *SqlPermissionsConfig) SqlPermissions {
 	_init_.Initialize()
 
@@ -496,7 +496,7 @@ func NewSqlPermissions(scope constructs.Construct, id *string, config *SqlPermis
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/sql_permissions databricks_sql_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/sql_permissions databricks_sql_permissions} Resource.
 func NewSqlPermissions_Override(s SqlPermissions, scope constructs.Construct, id *string, config *SqlPermissionsConfig) {
 	_init_.Initialize()
 
@@ -562,7 +562,10 @@ func (j *jsiiProxy_SqlPermissions)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlPermissions)SetCount(val *float64) {
+func (j *jsiiProxy_SqlPermissions)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_ServicePrincipalSecret) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipalSecret) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipalSecret) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package globalinitscript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/globalinitscript/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/globalinitscript/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/global_init_script databricks_global_init_script}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/global_init_script databricks_global_init_script}.
 type GlobalInitScript interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type GlobalInitScript interface {
 	SetContentBase64(val *string)
 	ContentBase64Input() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -181,8 +181,8 @@ func (j *jsiiProxy_GlobalInitScript) ContentBase64Input() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GlobalInitScript) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GlobalInitScript) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -452,7 +452,7 @@ func (j *jsiiProxy_GlobalInitScript) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/global_init_script databricks_global_init_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/global_init_script databricks_global_init_script} Resource.
 func NewGlobalInitScript(scope constructs.Construct, id *string, config *GlobalInitScriptConfig) GlobalInitScript {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewGlobalInitScript(scope constructs.Construct, id *string, config *GlobalI
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/global_init_script databricks_global_init_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/global_init_script databricks_global_init_script} Resource.
 func NewGlobalInitScript_Override(g GlobalInitScript, scope constructs.Construct, id *string, config *GlobalInitScriptConfig) {
 	_init_.Initialize()
 
@@ -503,7 +503,10 @@ func (j *jsiiProxy_GlobalInitScript)SetContentBase64(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlobalInitScript)SetCount(val *float64) {
+func (j *jsiiProxy_GlobalInitScript)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

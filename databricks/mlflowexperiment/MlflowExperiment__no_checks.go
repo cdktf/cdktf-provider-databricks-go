@@ -76,6 +76,10 @@ func (j *jsiiProxy_MlflowExperiment) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_MlflowExperiment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MlflowExperiment) validateSetCreationTimeParameters(val *float64) error {
 	return nil
 }

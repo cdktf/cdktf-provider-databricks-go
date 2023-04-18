@@ -2,9 +2,9 @@ package datadatabrickscluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabrickscluster/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabrickscluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

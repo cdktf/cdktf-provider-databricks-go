@@ -2,14 +2,14 @@ package datadatabricksdirectory
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksdirectory/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabricksdirectory/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/d/directory databricks_directory}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/directory databricks_directory}.
 type DataDatabricksDirectory interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDatabricksDirectory interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataDatabricksDirectory) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDirectory) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatabricksDirectory) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -305,7 +305,7 @@ func (j *jsiiProxy_DataDatabricksDirectory) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/directory databricks_directory} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/directory databricks_directory} Data Source.
 func NewDataDatabricksDirectory(scope constructs.Construct, id *string, config *DataDatabricksDirectoryConfig) DataDatabricksDirectory {
 	_init_.Initialize()
 
@@ -323,7 +323,7 @@ func NewDataDatabricksDirectory(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/directory databricks_directory} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/directory databricks_directory} Data Source.
 func NewDataDatabricksDirectory_Override(d DataDatabricksDirectory, scope constructs.Construct, id *string, config *DataDatabricksDirectoryConfig) {
 	_init_.Initialize()
 
@@ -334,7 +334,10 @@ func NewDataDatabricksDirectory_Override(d DataDatabricksDirectory, scope constr
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDirectory)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatabricksDirectory)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

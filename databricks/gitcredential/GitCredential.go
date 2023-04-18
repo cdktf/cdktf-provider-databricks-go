@@ -2,14 +2,14 @@ package gitcredential
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/gitcredential/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/gitcredential/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/git_credential databricks_git_credential}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/git_credential databricks_git_credential}.
 type GitCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GitCredential interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -150,8 +150,8 @@ func (j *jsiiProxy_GitCredential) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_GitCredential) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GitCredential) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -381,7 +381,7 @@ func (j *jsiiProxy_GitCredential) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/git_credential databricks_git_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/git_credential databricks_git_credential} Resource.
 func NewGitCredential(scope constructs.Construct, id *string, config *GitCredentialConfig) GitCredential {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewGitCredential(scope constructs.Construct, id *string, config *GitCredent
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/git_credential databricks_git_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/git_credential databricks_git_credential} Resource.
 func NewGitCredential_Override(g GitCredential, scope constructs.Construct, id *string, config *GitCredentialConfig) {
 	_init_.Initialize()
 
@@ -421,7 +421,10 @@ func (j *jsiiProxy_GitCredential)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GitCredential)SetCount(val *float64) {
+func (j *jsiiProxy_GitCredential)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_MwsCustomerManagedKeys) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_MwsCustomerManagedKeys) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsCustomerManagedKeys) validateSetCreationTimeParameters(val *float64) error {
 	return nil
 }

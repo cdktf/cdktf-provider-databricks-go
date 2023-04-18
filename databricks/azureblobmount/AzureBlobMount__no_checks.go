@@ -80,6 +80,10 @@ func (j *jsiiProxy_AzureBlobMount) validateSetContainerNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_AzureBlobMount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureBlobMount) validateSetDirectoryParameters(val *string) error {
 	return nil
 }

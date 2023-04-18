@@ -64,6 +64,10 @@ func validateDataDatabricksMwsCredentials_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksMwsCredentials) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksMwsCredentials) validateSetIdParameters(val *string) error {
 	return nil
 }

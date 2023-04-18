@@ -88,6 +88,10 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) validateSetContainerNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_AzureAdlsGen2Mount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureAdlsGen2Mount) validateSetDirectoryParameters(val *string) error {
 	return nil
 }

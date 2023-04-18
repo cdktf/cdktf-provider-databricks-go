@@ -64,6 +64,10 @@ func validateDataDatabricksClusterPolicy_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetDefinitionParameters(val *string) error {
 	return nil
 }

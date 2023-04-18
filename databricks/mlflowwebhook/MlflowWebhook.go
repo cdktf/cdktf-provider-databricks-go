@@ -2,14 +2,14 @@ package mlflowwebhook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/mlflowwebhook/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/mlflowwebhook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/mlflow_webhook databricks_mlflow_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mlflow_webhook databricks_mlflow_webhook}.
 type MlflowWebhook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MlflowWebhook interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -158,8 +158,8 @@ func (j *jsiiProxy_MlflowWebhook) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_MlflowWebhook) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MlflowWebhook) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -429,7 +429,7 @@ func (j *jsiiProxy_MlflowWebhook) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/mlflow_webhook databricks_mlflow_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mlflow_webhook databricks_mlflow_webhook} Resource.
 func NewMlflowWebhook(scope constructs.Construct, id *string, config *MlflowWebhookConfig) MlflowWebhook {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewMlflowWebhook(scope constructs.Construct, id *string, config *MlflowWebh
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/mlflow_webhook databricks_mlflow_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mlflow_webhook databricks_mlflow_webhook} Resource.
 func NewMlflowWebhook_Override(m MlflowWebhook, scope constructs.Construct, id *string, config *MlflowWebhookConfig) {
 	_init_.Initialize()
 
@@ -469,7 +469,10 @@ func (j *jsiiProxy_MlflowWebhook)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MlflowWebhook)SetCount(val *float64) {
+func (j *jsiiProxy_MlflowWebhook)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

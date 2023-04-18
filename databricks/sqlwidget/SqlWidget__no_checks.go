@@ -76,6 +76,10 @@ func (j *jsiiProxy_SqlWidget) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_SqlWidget) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlWidget) validateSetDashboardIdParameters(val *string) error {
 	return nil
 }

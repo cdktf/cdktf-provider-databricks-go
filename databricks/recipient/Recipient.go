@@ -2,14 +2,14 @@ package recipient
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/recipient/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/recipient/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/recipient databricks_recipient}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/recipient databricks_recipient}.
 type Recipient interface {
 	cdktf.TerraformResource
 	AuthenticationType() *string
@@ -27,9 +27,9 @@ type Recipient interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataRecipientGlobalMetastoreId() *string
 	SetDataRecipientGlobalMetastoreId(val *string)
 	DataRecipientGlobalMetastoreIdInput() *string
@@ -201,8 +201,8 @@ func (j *jsiiProxy_Recipient) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Recipient) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Recipient) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -452,7 +452,7 @@ func (j *jsiiProxy_Recipient) TokensInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/recipient databricks_recipient} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/recipient databricks_recipient} Resource.
 func NewRecipient(scope constructs.Construct, id *string, config *RecipientConfig) Recipient {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewRecipient(scope constructs.Construct, id *string, config *RecipientConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/recipient databricks_recipient} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/recipient databricks_recipient} Resource.
 func NewRecipient_Override(r Recipient, scope constructs.Construct, id *string, config *RecipientConfig) {
 	_init_.Initialize()
 
@@ -514,7 +514,10 @@ func (j *jsiiProxy_Recipient)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Recipient)SetCount(val *float64) {
+func (j *jsiiProxy_Recipient)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

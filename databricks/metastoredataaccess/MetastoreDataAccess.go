@@ -2,14 +2,14 @@ package metastoredataaccess
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/metastoredataaccess/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/metastoredataaccess/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/metastore_data_access databricks_metastore_data_access}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/metastore_data_access databricks_metastore_data_access}.
 type MetastoreDataAccess interface {
 	cdktf.TerraformResource
 	AwsIamRole() MetastoreDataAccessAwsIamRoleOutputReference
@@ -30,9 +30,9 @@ type MetastoreDataAccess interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatabricksGcpServiceAccount() MetastoreDataAccessDatabricksGcpServiceAccountOutputReference
 	DatabricksGcpServiceAccountInput() *MetastoreDataAccessDatabricksGcpServiceAccount
 	// Experimental.
@@ -249,8 +249,8 @@ func (j *jsiiProxy_MetastoreDataAccess) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_MetastoreDataAccess) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MetastoreDataAccess) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -500,7 +500,7 @@ func (j *jsiiProxy_MetastoreDataAccess) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/metastore_data_access databricks_metastore_data_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
 func NewMetastoreDataAccess(scope constructs.Construct, id *string, config *MetastoreDataAccessConfig) MetastoreDataAccess {
 	_init_.Initialize()
 
@@ -518,7 +518,7 @@ func NewMetastoreDataAccess(scope constructs.Construct, id *string, config *Meta
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/metastore_data_access databricks_metastore_data_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
 func NewMetastoreDataAccess_Override(m MetastoreDataAccess, scope constructs.Construct, id *string, config *MetastoreDataAccessConfig) {
 	_init_.Initialize()
 
@@ -551,7 +551,10 @@ func (j *jsiiProxy_MetastoreDataAccess)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccess)SetCount(val *float64) {
+func (j *jsiiProxy_MetastoreDataAccess)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

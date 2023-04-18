@@ -64,6 +64,10 @@ func validateDataDatabricksSqlWarehouses_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouses) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouses) validateSetIdParameters(val *string) error {
 	return nil
 }

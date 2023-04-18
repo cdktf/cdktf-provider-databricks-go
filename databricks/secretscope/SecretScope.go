@@ -2,14 +2,14 @@ package secretscope
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/secretscope/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/secretscope/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/secret_scope databricks_secret_scope}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/secret_scope databricks_secret_scope}.
 type SecretScope interface {
 	cdktf.TerraformResource
 	BackendType() *string
@@ -24,9 +24,9 @@ type SecretScope interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -170,8 +170,8 @@ func (j *jsiiProxy_SecretScope) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_SecretScope) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SecretScope) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -381,7 +381,7 @@ func (j *jsiiProxy_SecretScope) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/secret_scope databricks_secret_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/secret_scope databricks_secret_scope} Resource.
 func NewSecretScope(scope constructs.Construct, id *string, config *SecretScopeConfig) SecretScope {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewSecretScope(scope constructs.Construct, id *string, config *SecretScopeC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/secret_scope databricks_secret_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/secret_scope databricks_secret_scope} Resource.
 func NewSecretScope_Override(s SecretScope, scope constructs.Construct, id *string, config *SecretScopeConfig) {
 	_init_.Initialize()
 
@@ -432,7 +432,10 @@ func (j *jsiiProxy_SecretScope)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecretScope)SetCount(val *float64) {
+func (j *jsiiProxy_SecretScope)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

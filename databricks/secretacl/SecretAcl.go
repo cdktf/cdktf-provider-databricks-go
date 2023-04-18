@@ -2,14 +2,14 @@ package secretacl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/secretacl/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/secretacl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/secret_acl databricks_secret_acl}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/secret_acl databricks_secret_acl}.
 type SecretAcl interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SecretAcl interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_SecretAcl) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecretAcl) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SecretAcl) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,7 +355,7 @@ func (j *jsiiProxy_SecretAcl) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/secret_acl databricks_secret_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/secret_acl databricks_secret_acl} Resource.
 func NewSecretAcl(scope constructs.Construct, id *string, config *SecretAclConfig) SecretAcl {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewSecretAcl(scope constructs.Construct, id *string, config *SecretAclConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/secret_acl databricks_secret_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/secret_acl databricks_secret_acl} Resource.
 func NewSecretAcl_Override(s SecretAcl, scope constructs.Construct, id *string, config *SecretAclConfig) {
 	_init_.Initialize()
 
@@ -395,7 +395,10 @@ func (j *jsiiProxy_SecretAcl)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecretAcl)SetCount(val *float64) {
+func (j *jsiiProxy_SecretAcl)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

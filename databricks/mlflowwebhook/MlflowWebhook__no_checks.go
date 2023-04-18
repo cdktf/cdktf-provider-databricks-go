@@ -76,6 +76,10 @@ func (j *jsiiProxy_MlflowWebhook) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_MlflowWebhook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MlflowWebhook) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package library
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/library/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/library/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/library databricks_library}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/library databricks_library}.
 type Library interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type Library interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Cran() LibraryCranOutputReference
 	CranInput() *LibraryCran
 	// Experimental.
@@ -182,8 +182,8 @@ func (j *jsiiProxy_Library) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Library) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Library) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -453,7 +453,7 @@ func (j *jsiiProxy_Library) WhlInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/library databricks_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/library databricks_library} Resource.
 func NewLibrary(scope constructs.Construct, id *string, config *LibraryConfig) Library {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewLibrary(scope constructs.Construct, id *string, config *LibraryConfig) L
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/library databricks_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/library databricks_library} Resource.
 func NewLibrary_Override(l Library, scope constructs.Construct, id *string, config *LibraryConfig) {
 	_init_.Initialize()
 
@@ -504,7 +504,10 @@ func (j *jsiiProxy_Library)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Library)SetCount(val *float64) {
+func (j *jsiiProxy_Library)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_MlflowModel) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_MlflowModel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MlflowModel) validateSetCreationTimestampParameters(val *float64) error {
 	return nil
 }

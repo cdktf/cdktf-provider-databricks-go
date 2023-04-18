@@ -2,14 +2,14 @@ package mlflowmodel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/mlflowmodel/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/mlflowmodel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/mlflow_model databricks_mlflow_model}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mlflow_model databricks_mlflow_model}.
 type MlflowModel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MlflowModel interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationTimestamp() *float64
 	SetCreationTimestamp(val *float64)
 	CreationTimestampInput() *float64
@@ -162,8 +162,8 @@ func (j *jsiiProxy_MlflowModel) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_MlflowModel) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MlflowModel) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -453,7 +453,7 @@ func (j *jsiiProxy_MlflowModel) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/mlflow_model databricks_mlflow_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mlflow_model databricks_mlflow_model} Resource.
 func NewMlflowModel(scope constructs.Construct, id *string, config *MlflowModelConfig) MlflowModel {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewMlflowModel(scope constructs.Construct, id *string, config *MlflowModelC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/mlflow_model databricks_mlflow_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mlflow_model databricks_mlflow_model} Resource.
 func NewMlflowModel_Override(m MlflowModel, scope constructs.Construct, id *string, config *MlflowModelConfig) {
 	_init_.Initialize()
 
@@ -493,7 +493,10 @@ func (j *jsiiProxy_MlflowModel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MlflowModel)SetCount(val *float64) {
+func (j *jsiiProxy_MlflowModel)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

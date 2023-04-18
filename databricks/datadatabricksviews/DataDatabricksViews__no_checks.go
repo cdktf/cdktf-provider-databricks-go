@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataDatabricksViews) validateSetCatalogNameParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksViews) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksViews) validateSetIdParameters(val *string) error {
 	return nil
 }

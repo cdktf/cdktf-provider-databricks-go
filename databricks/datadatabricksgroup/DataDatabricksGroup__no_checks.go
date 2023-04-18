@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataDatabricksGroup) validateSetChildGroupsParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksGroup) validateSetDatabricksSqlAccessParameters(val interface{}) error {
 	return nil
 }

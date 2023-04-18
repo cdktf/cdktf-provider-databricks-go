@@ -2,14 +2,14 @@ package datadatabricksgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksgroup/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabricksgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/d/group databricks_group}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/group databricks_group}.
 type DataDatabricksGroup interface {
 	cdktf.TerraformDataSource
 	AllowClusterCreate() interface{}
@@ -26,9 +26,9 @@ type DataDatabricksGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatabricksSqlAccess() interface{}
 	SetDatabricksSqlAccess(val interface{})
 	DatabricksSqlAccessInput() interface{}
@@ -228,8 +228,8 @@ func (j *jsiiProxy_DataDatabricksGroup) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatabricksGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -569,7 +569,7 @@ func (j *jsiiProxy_DataDatabricksGroup) WorkspaceAccessInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/group databricks_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/group databricks_group} Data Source.
 func NewDataDatabricksGroup(scope constructs.Construct, id *string, config *DataDatabricksGroupConfig) DataDatabricksGroup {
 	_init_.Initialize()
 
@@ -587,7 +587,7 @@ func NewDataDatabricksGroup(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/group databricks_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/group databricks_group} Data Source.
 func NewDataDatabricksGroup_Override(d DataDatabricksGroup, scope constructs.Construct, id *string, config *DataDatabricksGroupConfig) {
 	_init_.Initialize()
 
@@ -631,7 +631,10 @@ func (j *jsiiProxy_DataDatabricksGroup)SetChildGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksGroup)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatabricksGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_Directory) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_Directory) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Directory) validateSetDeleteRecursiveParameters(val interface{}) error {
 	return nil
 }

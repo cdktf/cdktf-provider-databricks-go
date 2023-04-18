@@ -84,6 +84,10 @@ func (j *jsiiProxy_MwsNetworks) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_MwsNetworks) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsNetworks) validateSetCreationTimeParameters(val *float64) error {
 	return nil
 }

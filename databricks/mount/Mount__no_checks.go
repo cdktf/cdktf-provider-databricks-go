@@ -96,6 +96,10 @@ func (j *jsiiProxy_Mount) validateSetConnectionParameters(val interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_Mount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Mount) validateSetEncryptionTypeParameters(val *string) error {
 	return nil
 }

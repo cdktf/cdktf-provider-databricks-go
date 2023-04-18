@@ -64,6 +64,10 @@ func validateDataDatabricksDbfsFile_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDbfsFile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksDbfsFile) validateSetIdParameters(val *string) error {
 	return nil
 }

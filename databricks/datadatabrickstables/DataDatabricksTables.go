@@ -2,14 +2,14 @@ package datadatabrickstables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabrickstables/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabrickstables/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/d/tables databricks_tables}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/tables databricks_tables}.
 type DataDatabricksTables interface {
 	cdktf.TerraformDataSource
 	CatalogName() *string
@@ -20,9 +20,9 @@ type DataDatabricksTables interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -147,8 +147,8 @@ func (j *jsiiProxy_DataDatabricksTables) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksTables) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatabricksTables) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataDatabricksTables) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/tables databricks_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/tables databricks_tables} Data Source.
 func NewDataDatabricksTables(scope constructs.Construct, id *string, config *DataDatabricksTablesConfig) DataDatabricksTables {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataDatabricksTables(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/tables databricks_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/tables databricks_tables} Data Source.
 func NewDataDatabricksTables_Override(d DataDatabricksTables, scope constructs.Construct, id *string, config *DataDatabricksTablesConfig) {
 	_init_.Initialize()
 
@@ -368,7 +368,10 @@ func (j *jsiiProxy_DataDatabricksTables)SetCatalogName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksTables)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatabricksTables)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

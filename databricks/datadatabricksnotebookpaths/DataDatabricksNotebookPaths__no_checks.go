@@ -64,6 +64,10 @@ func validateDataDatabricksNotebookPaths_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksNotebookPaths) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksNotebookPaths) validateSetIdParameters(val *string) error {
 	return nil
 }

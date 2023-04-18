@@ -76,6 +76,10 @@ func (j *jsiiProxy_GlobalInitScript) validateSetContentBase64Parameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_GlobalInitScript) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlobalInitScript) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

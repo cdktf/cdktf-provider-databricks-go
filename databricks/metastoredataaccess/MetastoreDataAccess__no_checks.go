@@ -92,6 +92,10 @@ func (j *jsiiProxy_MetastoreDataAccess) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_MetastoreDataAccess) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MetastoreDataAccess) validateSetIdParameters(val *string) error {
 	return nil
 }

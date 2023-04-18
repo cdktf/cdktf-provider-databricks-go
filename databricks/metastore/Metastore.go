@@ -2,14 +2,14 @@ package metastore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/metastore/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/metastore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/metastore databricks_metastore}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/metastore databricks_metastore}.
 type Metastore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type Metastore interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *float64
 	SetCreatedAt(val *float64)
 	CreatedAtInput() *float64
@@ -213,8 +213,8 @@ func (j *jsiiProxy_Metastore) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Metastore) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Metastore) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -644,7 +644,7 @@ func (j *jsiiProxy_Metastore) UpdatedByInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/metastore databricks_metastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/metastore databricks_metastore} Resource.
 func NewMetastore(scope constructs.Construct, id *string, config *MetastoreConfig) Metastore {
 	_init_.Initialize()
 
@@ -662,7 +662,7 @@ func NewMetastore(scope constructs.Construct, id *string, config *MetastoreConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/metastore databricks_metastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/metastore databricks_metastore} Resource.
 func NewMetastore_Override(m Metastore, scope constructs.Construct, id *string, config *MetastoreConfig) {
 	_init_.Initialize()
 
@@ -695,7 +695,10 @@ func (j *jsiiProxy_Metastore)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Metastore)SetCount(val *float64) {
+func (j *jsiiProxy_Metastore)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

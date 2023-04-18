@@ -84,6 +84,10 @@ func (j *jsiiProxy_Library) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_Library) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Library) validateSetEggParameters(val *string) error {
 	return nil
 }

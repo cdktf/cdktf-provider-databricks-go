@@ -2,14 +2,14 @@ package metastoreassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/metastoreassignment/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/metastoreassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/metastore_assignment databricks_metastore_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/metastore_assignment databricks_metastore_assignment}.
 type MetastoreAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MetastoreAssignment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultCatalogName() *string
 	SetDefaultCatalogName(val *string)
 	DefaultCatalogNameInput() *string
@@ -145,8 +145,8 @@ func (j *jsiiProxy_MetastoreAssignment) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_MetastoreAssignment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MetastoreAssignment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_MetastoreAssignment) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/metastore_assignment databricks_metastore_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
 func NewMetastoreAssignment(scope constructs.Construct, id *string, config *MetastoreAssignmentConfig) MetastoreAssignment {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewMetastoreAssignment(scope constructs.Construct, id *string, config *Meta
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/metastore_assignment databricks_metastore_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
 func NewMetastoreAssignment_Override(m MetastoreAssignment, scope constructs.Construct, id *string, config *MetastoreAssignmentConfig) {
 	_init_.Initialize()
 
@@ -396,7 +396,10 @@ func (j *jsiiProxy_MetastoreAssignment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MetastoreAssignment)SetCount(val *float64) {
+func (j *jsiiProxy_MetastoreAssignment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

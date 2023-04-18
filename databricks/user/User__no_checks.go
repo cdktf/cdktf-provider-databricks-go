@@ -80,6 +80,10 @@ func (j *jsiiProxy_User) validateSetConnectionParameters(val interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_User) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_User) validateSetDatabricksSqlAccessParameters(val interface{}) error {
 	return nil
 }

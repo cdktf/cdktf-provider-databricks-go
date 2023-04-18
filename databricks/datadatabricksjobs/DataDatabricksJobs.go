@@ -2,14 +2,14 @@ package datadatabricksjobs
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksjobs/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabricksjobs/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/d/jobs databricks_jobs}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/jobs databricks_jobs}.
 type DataDatabricksJobs interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDatabricksJobs interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataDatabricksJobs) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksJobs) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatabricksJobs) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -282,7 +282,7 @@ func (j *jsiiProxy_DataDatabricksJobs) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/jobs databricks_jobs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/jobs databricks_jobs} Data Source.
 func NewDataDatabricksJobs(scope constructs.Construct, id *string, config *DataDatabricksJobsConfig) DataDatabricksJobs {
 	_init_.Initialize()
 
@@ -300,7 +300,7 @@ func NewDataDatabricksJobs(scope constructs.Construct, id *string, config *DataD
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/jobs databricks_jobs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/jobs databricks_jobs} Data Source.
 func NewDataDatabricksJobs_Override(d DataDatabricksJobs, scope constructs.Construct, id *string, config *DataDatabricksJobsConfig) {
 	_init_.Initialize()
 
@@ -311,7 +311,10 @@ func NewDataDatabricksJobs_Override(d DataDatabricksJobs, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksJobs)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatabricksJobs)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_SqlGlobalConfig) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_SqlGlobalConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlGlobalConfig) validateSetDataAccessConfigParameters(val *map[string]*string) error {
 	return nil
 }

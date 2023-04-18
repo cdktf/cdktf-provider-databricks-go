@@ -76,6 +76,10 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_MwsPrivateAccessSettings) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsPrivateAccessSettings) validateSetIdParameters(val *string) error {
 	return nil
 }

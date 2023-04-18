@@ -2,14 +2,14 @@ package awss3mount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/awss3mount/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/awss3mount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/aws_s3_mount databricks_aws_s3_mount}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/aws_s3_mount databricks_aws_s3_mount}.
 type AwsS3Mount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type AwsS3Mount interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -170,8 +170,8 @@ func (j *jsiiProxy_AwsS3Mount) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsS3Mount) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AwsS3Mount) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_AwsS3Mount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/aws_s3_mount databricks_aws_s3_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/aws_s3_mount databricks_aws_s3_mount} Resource.
 func NewAwsS3Mount(scope constructs.Construct, id *string, config *AwsS3MountConfig) AwsS3Mount {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewAwsS3Mount(scope constructs.Construct, id *string, config *AwsS3MountCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/aws_s3_mount databricks_aws_s3_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/aws_s3_mount databricks_aws_s3_mount} Resource.
 func NewAwsS3Mount_Override(a AwsS3Mount, scope constructs.Construct, id *string, config *AwsS3MountConfig) {
 	_init_.Initialize()
 
@@ -442,7 +442,10 @@ func (j *jsiiProxy_AwsS3Mount)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsS3Mount)SetCount(val *float64) {
+func (j *jsiiProxy_AwsS3Mount)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

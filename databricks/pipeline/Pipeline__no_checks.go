@@ -108,6 +108,10 @@ func (j *jsiiProxy_Pipeline) validateSetContinuousParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetDevelopmentParameters(val interface{}) error {
 	return nil
 }

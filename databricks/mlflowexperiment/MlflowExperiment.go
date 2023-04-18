@@ -2,14 +2,14 @@ package mlflowexperiment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/mlflowexperiment/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/mlflowexperiment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/mlflow_experiment databricks_mlflow_experiment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mlflow_experiment databricks_mlflow_experiment}.
 type MlflowExperiment interface {
 	cdktf.TerraformResource
 	ArtifactLocation() *string
@@ -24,9 +24,9 @@ type MlflowExperiment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationTime() *float64
 	SetCreationTime(val *float64)
 	CreationTimeInput() *float64
@@ -185,8 +185,8 @@ func (j *jsiiProxy_MlflowExperiment) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_MlflowExperiment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MlflowExperiment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -476,7 +476,7 @@ func (j *jsiiProxy_MlflowExperiment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/mlflow_experiment databricks_mlflow_experiment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
 func NewMlflowExperiment(scope constructs.Construct, id *string, config *MlflowExperimentConfig) MlflowExperiment {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewMlflowExperiment(scope constructs.Construct, id *string, config *MlflowE
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/mlflow_experiment databricks_mlflow_experiment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
 func NewMlflowExperiment_Override(m MlflowExperiment, scope constructs.Construct, id *string, config *MlflowExperimentConfig) {
 	_init_.Initialize()
 
@@ -527,7 +527,10 @@ func (j *jsiiProxy_MlflowExperiment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MlflowExperiment)SetCount(val *float64) {
+func (j *jsiiProxy_MlflowExperiment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

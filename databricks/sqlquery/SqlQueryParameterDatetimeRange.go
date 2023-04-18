@@ -4,9 +4,9 @@ package sqlquery
 type SqlQueryParameterDatetimeRange struct {
 	// range block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#range SqlQuery#range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/sql_query#range SqlQuery#range}
 	Range *SqlQueryParameterDatetimeRangeRange `field:"optional" json:"range" yaml:"range"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#value SqlQuery#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/sql_query#value SqlQuery#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

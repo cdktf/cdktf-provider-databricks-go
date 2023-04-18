@@ -2,14 +2,14 @@ package repo
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/repo/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/repo/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/r/repo databricks_repo}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/repo databricks_repo}.
 type Repo interface {
 	cdktf.TerraformResource
 	Branch() *string
@@ -27,9 +27,9 @@ type Repo interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -202,8 +202,8 @@ func (j *jsiiProxy_Repo) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Repo) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Repo) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -453,7 +453,7 @@ func (j *jsiiProxy_Repo) UrlInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/repo databricks_repo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/repo databricks_repo} Resource.
 func NewRepo(scope constructs.Construct, id *string, config *RepoConfig) Repo {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewRepo(scope constructs.Construct, id *string, config *RepoConfig) Repo {
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/r/repo databricks_repo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/repo databricks_repo} Resource.
 func NewRepo_Override(r Repo, scope constructs.Construct, id *string, config *RepoConfig) {
 	_init_.Initialize()
 
@@ -515,7 +515,10 @@ func (j *jsiiProxy_Repo)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Repo)SetCount(val *float64) {
+func (j *jsiiProxy_Repo)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

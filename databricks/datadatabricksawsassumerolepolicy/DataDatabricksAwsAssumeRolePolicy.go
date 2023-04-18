@@ -2,14 +2,14 @@ package datadatabricksawsassumerolepolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksawsassumerolepolicy/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabricksawsassumerolepolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/d/aws_assume_role_policy databricks_aws_assume_role_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/aws_assume_role_policy databricks_aws_assume_role_policy}.
 type DataDatabricksAwsAssumeRolePolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDatabricksAwsAssumeRolePolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatabricksAccountId() *string
 	SetDatabricksAccountId(val *string)
 	DatabricksAccountIdInput() *string
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataDatabricksAwsAssumeRolePolicy) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAwsAssumeRolePolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatabricksAwsAssumeRolePolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataDatabricksAwsAssumeRolePolicy) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/aws_assume_role_policy databricks_aws_assume_role_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/aws_assume_role_policy databricks_aws_assume_role_policy} Data Source.
 func NewDataDatabricksAwsAssumeRolePolicy(scope constructs.Construct, id *string, config *DataDatabricksAwsAssumeRolePolicyConfig) DataDatabricksAwsAssumeRolePolicy {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataDatabricksAwsAssumeRolePolicy(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/aws_assume_role_policy databricks_aws_assume_role_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/aws_assume_role_policy databricks_aws_assume_role_policy} Data Source.
 func NewDataDatabricksAwsAssumeRolePolicy_Override(d DataDatabricksAwsAssumeRolePolicy, scope constructs.Construct, id *string, config *DataDatabricksAwsAssumeRolePolicyConfig) {
 	_init_.Initialize()
 
@@ -369,7 +369,10 @@ func NewDataDatabricksAwsAssumeRolePolicy_Override(d DataDatabricksAwsAssumeRole
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAwsAssumeRolePolicy)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatabricksAwsAssumeRolePolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -64,6 +64,10 @@ func validateDataDatabricksZones_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksZones) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksZones) validateSetIdParameters(val *string) error {
 	return nil
 }

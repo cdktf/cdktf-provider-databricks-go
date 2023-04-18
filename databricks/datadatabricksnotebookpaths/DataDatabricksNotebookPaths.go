@@ -2,14 +2,14 @@ package datadatabricksnotebookpaths
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksnotebookpaths/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabricksnotebookpaths/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/d/notebook_paths databricks_notebook_paths}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/notebook_paths databricks_notebook_paths}.
 type DataDatabricksNotebookPaths interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDatabricksNotebookPaths interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataDatabricksNotebookPaths) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPaths) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatabricksNotebookPaths) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataDatabricksNotebookPaths) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/notebook_paths databricks_notebook_paths} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/notebook_paths databricks_notebook_paths} Data Source.
 func NewDataDatabricksNotebookPaths(scope constructs.Construct, id *string, config *DataDatabricksNotebookPathsConfig) DataDatabricksNotebookPaths {
 	_init_.Initialize()
 
@@ -333,7 +333,7 @@ func NewDataDatabricksNotebookPaths(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/notebook_paths databricks_notebook_paths} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/notebook_paths databricks_notebook_paths} Data Source.
 func NewDataDatabricksNotebookPaths_Override(d DataDatabricksNotebookPaths, scope constructs.Construct, id *string, config *DataDatabricksNotebookPathsConfig) {
 	_init_.Initialize()
 
@@ -344,7 +344,10 @@ func NewDataDatabricksNotebookPaths_Override(d DataDatabricksNotebookPaths, scop
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPaths)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatabricksNotebookPaths)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

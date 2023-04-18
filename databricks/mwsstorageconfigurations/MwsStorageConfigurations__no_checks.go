@@ -76,6 +76,10 @@ func (j *jsiiProxy_MwsStorageConfigurations) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_MwsStorageConfigurations) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsStorageConfigurations) validateSetIdParameters(val *string) error {
 	return nil
 }

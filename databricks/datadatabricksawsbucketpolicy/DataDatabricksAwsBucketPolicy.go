@@ -2,14 +2,14 @@ package datadatabricksawsbucketpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksawsbucketpolicy/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabricksawsbucketpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/databricks/d/aws_bucket_policy databricks_aws_bucket_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy}.
 type DataDatabricksAwsBucketPolicy interface {
 	cdktf.TerraformDataSource
 	Bucket() *string
@@ -20,9 +20,9 @@ type DataDatabricksAwsBucketPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatabricksAccountId() *string
 	SetDatabricksAccountId(val *string)
 	DatabricksAccountIdInput() *string
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/aws_bucket_policy databricks_aws_bucket_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy} Data Source.
 func NewDataDatabricksAwsBucketPolicy(scope constructs.Construct, id *string, config *DataDatabricksAwsBucketPolicyConfig) DataDatabricksAwsBucketPolicy {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewDataDatabricksAwsBucketPolicy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/databricks/d/aws_bucket_policy databricks_aws_bucket_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy} Data Source.
 func NewDataDatabricksAwsBucketPolicy_Override(d DataDatabricksAwsBucketPolicy, scope constructs.Construct, id *string, config *DataDatabricksAwsBucketPolicyConfig) {
 	_init_.Initialize()
 
@@ -404,7 +404,10 @@ func (j *jsiiProxy_DataDatabricksAwsBucketPolicy)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAwsBucketPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatabricksAwsBucketPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

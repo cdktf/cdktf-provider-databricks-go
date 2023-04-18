@@ -72,6 +72,10 @@ func (j *jsiiProxy_DbfsFile) validateSetContentBase64Parameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_DbfsFile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbfsFile) validateSetIdParameters(val *string) error {
 	return nil
 }

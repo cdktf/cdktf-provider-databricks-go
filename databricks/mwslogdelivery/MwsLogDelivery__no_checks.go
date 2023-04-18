@@ -80,6 +80,10 @@ func (j *jsiiProxy_MwsLogDelivery) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_MwsLogDelivery) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsLogDelivery) validateSetCredentialsIdParameters(val *string) error {
 	return nil
 }

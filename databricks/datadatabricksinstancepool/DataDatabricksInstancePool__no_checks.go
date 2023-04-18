@@ -68,6 +68,10 @@ func validateDataDatabricksInstancePool_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksInstancePool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksInstancePool) validateSetIdParameters(val *string) error {
 	return nil
 }

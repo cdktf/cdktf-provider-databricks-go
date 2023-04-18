@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) validateSetBetaParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksSparkVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksSparkVersion) validateSetGenomicsParameters(val interface{}) error {
 	return nil
 }
