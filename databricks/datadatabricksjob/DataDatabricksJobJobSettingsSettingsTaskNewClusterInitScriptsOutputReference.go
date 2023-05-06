@@ -47,6 +47,8 @@ type DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReferenc
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Workspace() DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspaceOutputReference
+	WorkspaceInput() *DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspace
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,11 +78,13 @@ type DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReferenc
 	PutFile(value *DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFile)
 	PutGcs(value *DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcs)
 	PutS3(value *DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3)
+	PutWorkspace(value *DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspace)
 	ResetAbfss()
 	ResetDbfs()
 	ResetFile()
 	ResetGcs()
 	ResetS3()
+	ResetWorkspace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -261,6 +265,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference) Workspace() DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspaceOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspaceOutputReference
+	_jsii_.Get(
+		j,
+		"workspace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference) WorkspaceInput() *DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspace {
+	var returns *DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspace
+	_jsii_.Get(
+		j,
+		"workspaceInput",
 		&returns,
 	)
 	return returns
@@ -590,6 +614,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference) PutWorkspace(value *DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspace) {
+	if err := d.validatePutWorkspaceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putWorkspace",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference) ResetAbfss() {
 	_jsii_.InvokeVoid(
 		d,
@@ -626,6 +661,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts
 	_jsii_.InvokeVoid(
 		d,
 		"resetS3",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference) ResetWorkspace() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWorkspace",
 		nil, // no parameters
 	)
 }

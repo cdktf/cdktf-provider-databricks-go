@@ -64,6 +64,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validatePu
 	return nil
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validatePutWorkspaceParameters(value *JobJobClusterNewClusterInitScriptsWorkspace) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

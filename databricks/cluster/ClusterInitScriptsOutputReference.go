@@ -47,6 +47,8 @@ type ClusterInitScriptsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Workspace() ClusterInitScriptsWorkspaceOutputReference
+	WorkspaceInput() *ClusterInitScriptsWorkspace
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,11 +78,13 @@ type ClusterInitScriptsOutputReference interface {
 	PutFile(value *ClusterInitScriptsFile)
 	PutGcs(value *ClusterInitScriptsGcs)
 	PutS3(value *ClusterInitScriptsS3)
+	PutWorkspace(value *ClusterInitScriptsWorkspace)
 	ResetAbfss()
 	ResetDbfs()
 	ResetFile()
 	ResetGcs()
 	ResetS3()
+	ResetWorkspace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -261,6 +265,26 @@ func (j *jsiiProxy_ClusterInitScriptsOutputReference) TerraformResource() cdktf.
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterInitScriptsOutputReference) Workspace() ClusterInitScriptsWorkspaceOutputReference {
+	var returns ClusterInitScriptsWorkspaceOutputReference
+	_jsii_.Get(
+		j,
+		"workspace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterInitScriptsOutputReference) WorkspaceInput() *ClusterInitScriptsWorkspace {
+	var returns *ClusterInitScriptsWorkspace
+	_jsii_.Get(
+		j,
+		"workspaceInput",
 		&returns,
 	)
 	return returns
@@ -590,6 +614,17 @@ func (c *jsiiProxy_ClusterInitScriptsOutputReference) PutS3(value *ClusterInitSc
 	)
 }
 
+func (c *jsiiProxy_ClusterInitScriptsOutputReference) PutWorkspace(value *ClusterInitScriptsWorkspace) {
+	if err := c.validatePutWorkspaceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putWorkspace",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ClusterInitScriptsOutputReference) ResetAbfss() {
 	_jsii_.InvokeVoid(
 		c,
@@ -626,6 +661,14 @@ func (c *jsiiProxy_ClusterInitScriptsOutputReference) ResetS3() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetS3",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterInitScriptsOutputReference) ResetWorkspace() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWorkspace",
 		nil, // no parameters
 	)
 }

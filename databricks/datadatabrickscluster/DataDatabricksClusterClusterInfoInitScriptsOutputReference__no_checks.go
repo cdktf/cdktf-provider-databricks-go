@@ -64,6 +64,10 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) v
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) validatePutWorkspaceParameters(value *DataDatabricksClusterClusterInfoInitScriptsWorkspace) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

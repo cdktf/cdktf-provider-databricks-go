@@ -64,6 +64,10 @@ func (c *jsiiProxy_ClusterInitScriptsOutputReference) validatePutS3Parameters(va
 	return nil
 }
 
+func (c *jsiiProxy_ClusterInitScriptsOutputReference) validatePutWorkspaceParameters(value *ClusterInitScriptsWorkspace) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterInitScriptsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

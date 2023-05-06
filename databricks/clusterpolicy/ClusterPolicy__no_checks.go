@@ -76,6 +76,10 @@ func (j *jsiiProxy_ClusterPolicy) validateSetDefinitionParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_ClusterPolicy) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClusterPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -89,6 +93,14 @@ func (j *jsiiProxy_ClusterPolicy) validateSetMaxClustersPerUserParameters(val *f
 }
 
 func (j *jsiiProxy_ClusterPolicy) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ClusterPolicy) validateSetPolicyFamilyDefinitionOverridesParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ClusterPolicy) validateSetPolicyFamilyIdParameters(val *string) error {
 	return nil
 }
 

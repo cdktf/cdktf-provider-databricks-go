@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/cluster_policy databricks_cluster_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/cluster_policy databricks_cluster_policy}.
 type ClusterPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type ClusterPolicy interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -54,6 +57,12 @@ type ClusterPolicy interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PolicyFamilyDefinitionOverrides() *string
+	SetPolicyFamilyDefinitionOverrides(val *string)
+	PolicyFamilyDefinitionOverridesInput() *string
+	PolicyFamilyId() *string
+	SetPolicyFamilyId(val *string)
+	PolicyFamilyIdInput() *string
 	PolicyId() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -96,11 +105,15 @@ type ClusterPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDefinition()
+	ResetDescription()
 	ResetId()
 	ResetMaxClustersPerUser()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicyFamilyDefinitionOverrides()
+	ResetPolicyFamilyId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -181,6 +194,26 @@ func (j *jsiiProxy_ClusterPolicy) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterPolicy) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterPolicy) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -296,6 +329,46 @@ func (j *jsiiProxy_ClusterPolicy) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ClusterPolicy) PolicyFamilyDefinitionOverrides() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyFamilyDefinitionOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterPolicy) PolicyFamilyDefinitionOverridesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyFamilyDefinitionOverridesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterPolicy) PolicyFamilyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyFamilyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterPolicy) PolicyFamilyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyFamilyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ClusterPolicy) PolicyId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -367,7 +440,7 @@ func (j *jsiiProxy_ClusterPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/cluster_policy databricks_cluster_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/cluster_policy databricks_cluster_policy} Resource.
 func NewClusterPolicy(scope constructs.Construct, id *string, config *ClusterPolicyConfig) ClusterPolicy {
 	_init_.Initialize()
 
@@ -385,7 +458,7 @@ func NewClusterPolicy(scope constructs.Construct, id *string, config *ClusterPol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/cluster_policy databricks_cluster_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/cluster_policy databricks_cluster_policy} Resource.
 func NewClusterPolicy_Override(c ClusterPolicy, scope constructs.Construct, id *string, config *ClusterPolicyConfig) {
 	_init_.Initialize()
 
@@ -433,6 +506,17 @@ func (j *jsiiProxy_ClusterPolicy)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterPolicy)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -485,6 +569,28 @@ func (j *jsiiProxy_ClusterPolicy)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterPolicy)SetPolicyFamilyDefinitionOverrides(val *string) {
+	if err := j.validateSetPolicyFamilyDefinitionOverridesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyFamilyDefinitionOverrides",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterPolicy)SetPolicyFamilyId(val *string) {
+	if err := j.validateSetPolicyFamilyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyFamilyId",
 		val,
 	)
 }
@@ -774,6 +880,22 @@ func (c *jsiiProxy_ClusterPolicy) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_ClusterPolicy) ResetDefinition() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDefinition",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterPolicy) ResetDescription() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ClusterPolicy) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
@@ -794,6 +916,22 @@ func (c *jsiiProxy_ClusterPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterPolicy) ResetPolicyFamilyDefinitionOverrides() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPolicyFamilyDefinitionOverrides",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterPolicy) ResetPolicyFamilyId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPolicyFamilyId",
 		nil, // no parameters
 	)
 }

@@ -64,6 +64,10 @@ func (p *jsiiProxy_PipelineClusterInitScriptsOutputReference) validatePutS3Param
 	return nil
 }
 
+func (p *jsiiProxy_PipelineClusterInitScriptsOutputReference) validatePutWorkspaceParameters(value *PipelineClusterInitScriptsWorkspace) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineClusterInitScriptsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
