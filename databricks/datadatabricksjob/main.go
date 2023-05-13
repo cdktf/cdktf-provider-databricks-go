@@ -2765,6 +2765,48 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotificationSettings",
+		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsNotificationSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotificationSettingsOutputReference",
+		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsNotificationSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "noAlertForCanceledRuns", GoGetter: "NoAlertForCanceledRuns"},
+			_jsii_.MemberProperty{JsiiProperty: "noAlertForCanceledRunsInput", GoGetter: "NoAlertForCanceledRunsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "noAlertForSkippedRuns", GoGetter: "NoAlertForSkippedRuns"},
+			_jsii_.MemberProperty{JsiiProperty: "noAlertForSkippedRunsInput", GoGetter: "NoAlertForSkippedRunsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNoAlertForCanceledRuns", GoMethod: "ResetNoAlertForCanceledRuns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNoAlertForSkippedRuns", GoMethod: "ResetNoAlertForSkippedRuns"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksJobJobSettingsSettingsNotificationSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference",
 		reflect.TypeOf((*DataDatabricksJobJobSettingsSettingsOutputReference)(nil)).Elem(),
@@ -2814,6 +2856,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "newClusterInput", GoGetter: "NewClusterInput"},
 			_jsii_.MemberProperty{JsiiProperty: "notebookTask", GoGetter: "NotebookTask"},
 			_jsii_.MemberProperty{JsiiProperty: "notebookTaskInput", GoGetter: "NotebookTaskInput"},
+			_jsii_.MemberProperty{JsiiProperty: "notificationSettings", GoGetter: "NotificationSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "notificationSettingsInput", GoGetter: "NotificationSettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "pipelineTask", GoGetter: "PipelineTask"},
 			_jsii_.MemberProperty{JsiiProperty: "pipelineTaskInput", GoGetter: "PipelineTaskInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putContinuous", GoMethod: "PutContinuous"},
@@ -2824,6 +2868,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putLibrary", GoMethod: "PutLibrary"},
 			_jsii_.MemberMethod{JsiiMethod: "putNewCluster", GoMethod: "PutNewCluster"},
 			_jsii_.MemberMethod{JsiiMethod: "putNotebookTask", GoMethod: "PutNotebookTask"},
+			_jsii_.MemberMethod{JsiiMethod: "putNotificationSettings", GoMethod: "PutNotificationSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putPipelineTask", GoMethod: "PutPipelineTask"},
 			_jsii_.MemberMethod{JsiiMethod: "putPythonWheelTask", GoMethod: "PutPythonWheelTask"},
 			_jsii_.MemberMethod{JsiiMethod: "putQueue", GoMethod: "PutQueue"},
@@ -2852,6 +2897,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNewCluster", GoMethod: "ResetNewCluster"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNotebookTask", GoMethod: "ResetNotebookTask"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNotificationSettings", GoMethod: "ResetNotificationSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPipelineTask", GoMethod: "ResetPipelineTask"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPythonWheelTask", GoMethod: "ResetPythonWheelTask"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQueue", GoMethod: "ResetQueue"},

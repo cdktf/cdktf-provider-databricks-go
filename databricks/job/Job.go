@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/job databricks_job}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/job databricks_job}.
 type Job interface {
 	cdktf.TerraformResource
 	AlwaysRunning() interface{}
@@ -82,6 +82,8 @@ type Job interface {
 	Node() constructs.Node
 	NotebookTask() JobNotebookTaskOutputReference
 	NotebookTaskInput() *JobNotebookTask
+	NotificationSettings() JobNotificationSettingsOutputReference
+	NotificationSettingsInput() *JobNotificationSettings
 	PipelineTask() JobPipelineTaskOutputReference
 	PipelineTaskInput() *JobPipelineTask
 	// Experimental.
@@ -163,6 +165,7 @@ type Job interface {
 	PutLibrary(value interface{})
 	PutNewCluster(value *JobNewCluster)
 	PutNotebookTask(value *JobNotebookTask)
+	PutNotificationSettings(value *JobNotificationSettings)
 	PutPipelineTask(value *JobPipelineTask)
 	PutPythonWheelTask(value *JobPythonWheelTask)
 	PutQueue(value *JobQueue)
@@ -190,6 +193,7 @@ type Job interface {
 	ResetName()
 	ResetNewCluster()
 	ResetNotebookTask()
+	ResetNotificationSettings()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -642,6 +646,26 @@ func (j *jsiiProxy_Job) NotebookTaskInput() *JobNotebookTask {
 	return returns
 }
 
+func (j *jsiiProxy_Job) NotificationSettings() JobNotificationSettingsOutputReference {
+	var returns JobNotificationSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"notificationSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) NotificationSettingsInput() *JobNotificationSettings {
+	var returns *JobNotificationSettings
+	_jsii_.Get(
+		j,
+		"notificationSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Job) PipelineTask() JobPipelineTaskOutputReference {
 	var returns JobPipelineTaskOutputReference
 	_jsii_.Get(
@@ -993,7 +1017,7 @@ func (j *jsiiProxy_Job) WebhookNotificationsInput() *JobWebhookNotifications {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/job databricks_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	_init_.Initialize()
 
@@ -1011,7 +1035,7 @@ func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/job databricks_job} Resource.
 func NewJob_Override(j Job, scope constructs.Construct, id *string, config *JobConfig) {
 	_init_.Initialize()
 
@@ -1565,6 +1589,17 @@ func (j *jsiiProxy_Job) PutNotebookTask(value *JobNotebookTask) {
 	)
 }
 
+func (j *jsiiProxy_Job) PutNotificationSettings(value *JobNotificationSettings) {
+	if err := j.validatePutNotificationSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putNotificationSettings",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_Job) PutPipelineTask(value *JobPipelineTask) {
 	if err := j.validatePutPipelineTaskParameters(value); err != nil {
 		panic(err)
@@ -1810,6 +1845,14 @@ func (j *jsiiProxy_Job) ResetNotebookTask() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetNotebookTask",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetNotificationSettings() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetNotificationSettings",
 		nil, // no parameters
 	)
 }

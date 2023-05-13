@@ -84,6 +84,10 @@ func (j *jsiiProxy_Job) validatePutNotebookTaskParameters(value *JobNotebookTask
 	return nil
 }
 
+func (j *jsiiProxy_Job) validatePutNotificationSettingsParameters(value *JobNotificationSettings) error {
+	return nil
+}
+
 func (j *jsiiProxy_Job) validatePutPipelineTaskParameters(value *JobPipelineTask) error {
 	return nil
 }

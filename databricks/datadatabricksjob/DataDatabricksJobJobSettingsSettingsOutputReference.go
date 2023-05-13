@@ -63,6 +63,8 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	NewClusterInput() *DataDatabricksJobJobSettingsSettingsNewCluster
 	NotebookTask() DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference
 	NotebookTaskInput() *DataDatabricksJobJobSettingsSettingsNotebookTask
+	NotificationSettings() DataDatabricksJobJobSettingsSettingsNotificationSettingsOutputReference
+	NotificationSettingsInput() *DataDatabricksJobJobSettingsSettingsNotificationSettings
 	PipelineTask() DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference
 	PipelineTaskInput() *DataDatabricksJobJobSettingsSettingsPipelineTask
 	PythonWheelTask() DataDatabricksJobJobSettingsSettingsPythonWheelTaskOutputReference
@@ -132,6 +134,7 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	PutLibrary(value interface{})
 	PutNewCluster(value *DataDatabricksJobJobSettingsSettingsNewCluster)
 	PutNotebookTask(value *DataDatabricksJobJobSettingsSettingsNotebookTask)
+	PutNotificationSettings(value *DataDatabricksJobJobSettingsSettingsNotificationSettings)
 	PutPipelineTask(value *DataDatabricksJobJobSettingsSettingsPipelineTask)
 	PutPythonWheelTask(value *DataDatabricksJobJobSettingsSettingsPythonWheelTask)
 	PutQueue(value *DataDatabricksJobJobSettingsSettingsQueue)
@@ -156,6 +159,7 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	ResetName()
 	ResetNewCluster()
 	ResetNotebookTask()
+	ResetNotificationSettings()
 	ResetPipelineTask()
 	ResetPythonWheelTask()
 	ResetQueue()
@@ -509,6 +513,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) Notebook
 	_jsii_.Get(
 		j,
 		"notebookTaskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) NotificationSettings() DataDatabricksJobJobSettingsSettingsNotificationSettingsOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsNotificationSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"notificationSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) NotificationSettingsInput() *DataDatabricksJobJobSettingsSettingsNotificationSettings {
+	var returns *DataDatabricksJobJobSettingsSettingsNotificationSettings
+	_jsii_.Get(
+		j,
+		"notificationSettingsInput",
 		&returns,
 	)
 	return returns
@@ -1250,6 +1274,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutNoteb
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutNotificationSettings(value *DataDatabricksJobJobSettingsSettingsNotificationSettings) {
+	if err := d.validatePutNotificationSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putNotificationSettings",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutPipelineTask(value *DataDatabricksJobJobSettingsSettingsPipelineTask) {
 	if err := d.validatePutPipelineTaskParameters(value); err != nil {
 		panic(err)
@@ -1468,6 +1503,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetNot
 	_jsii_.InvokeVoid(
 		d,
 		"resetNotebookTask",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetNotificationSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNotificationSettings",
 		nil, // no parameters
 	)
 }

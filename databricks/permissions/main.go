@@ -92,6 +92,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSqlDashboardId", GoMethod: "ResetSqlDashboardId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSqlEndpointId", GoMethod: "ResetSqlEndpointId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSqlQueryId", GoMethod: "ResetSqlQueryId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceFileId", GoMethod: "ResetWorkspaceFileId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceFilePath", GoMethod: "ResetWorkspaceFilePath"},
 			_jsii_.MemberProperty{JsiiProperty: "sqlAlertId", GoGetter: "SqlAlertId"},
 			_jsii_.MemberProperty{JsiiProperty: "sqlAlertIdInput", GoGetter: "SqlAlertIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sqlDashboardId", GoGetter: "SqlDashboardId"},
@@ -107,6 +109,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceFileId", GoGetter: "WorkspaceFileId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceFileIdInput", GoGetter: "WorkspaceFileIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceFilePath", GoGetter: "WorkspaceFilePath"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceFilePathInput", GoGetter: "WorkspaceFilePathInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Permissions{}

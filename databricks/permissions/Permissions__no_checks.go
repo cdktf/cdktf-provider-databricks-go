@@ -164,6 +164,14 @@ func (j *jsiiProxy_Permissions) validateSetSqlQueryIdParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_Permissions) validateSetWorkspaceFileIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Permissions) validateSetWorkspaceFilePathParameters(val *string) error {
+	return nil
+}
+
 func validateNewPermissionsParameters(scope constructs.Construct, id *string, config *PermissionsConfig) error {
 	return nil
 }

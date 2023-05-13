@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/grants databricks_grants}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/grants databricks_grants}.
 type Grants interface {
 	cdktf.TerraformResource
 	Catalog() *string
@@ -549,7 +549,7 @@ func (j *jsiiProxy_Grants) ViewInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/grants databricks_grants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/grants databricks_grants} Resource.
 func NewGrants(scope constructs.Construct, id *string, config *GrantsConfig) Grants {
 	_init_.Initialize()
 
@@ -567,7 +567,7 @@ func NewGrants(scope constructs.Construct, id *string, config *GrantsConfig) Gra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/grants databricks_grants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/grants databricks_grants} Resource.
 func NewGrants_Override(g Grants, scope constructs.Construct, id *string, config *GrantsConfig) {
 	_init_.Initialize()
 

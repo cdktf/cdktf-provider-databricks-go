@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions databricks_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions databricks_permissions}.
 type Permissions interface {
 	cdktf.TerraformResource
 	AccessControl() PermissionsAccessControlList
@@ -120,6 +120,12 @@ type Permissions interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WorkspaceFileId() *string
+	SetWorkspaceFileId(val *string)
+	WorkspaceFileIdInput() *string
+	WorkspaceFilePath() *string
+	SetWorkspaceFilePath(val *string)
+	WorkspaceFilePathInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -169,6 +175,8 @@ type Permissions interface {
 	ResetSqlDashboardId()
 	ResetSqlEndpointId()
 	ResetSqlQueryId()
+	ResetWorkspaceFileId()
+	ResetWorkspaceFilePath()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -764,8 +772,48 @@ func (j *jsiiProxy_Permissions) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Permissions) WorkspaceFileId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceFileId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions databricks_permissions} Resource.
+func (j *jsiiProxy_Permissions) WorkspaceFileIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceFileIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Permissions) WorkspaceFilePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceFilePath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Permissions) WorkspaceFilePathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceFilePathInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions databricks_permissions} Resource.
 func NewPermissions(scope constructs.Construct, id *string, config *PermissionsConfig) Permissions {
 	_init_.Initialize()
 
@@ -783,7 +831,7 @@ func NewPermissions(scope constructs.Construct, id *string, config *PermissionsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions databricks_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions databricks_permissions} Resource.
 func NewPermissions_Override(p Permissions, scope constructs.Construct, id *string, config *PermissionsConfig) {
 	_init_.Initialize()
 
@@ -1078,6 +1126,28 @@ func (j *jsiiProxy_Permissions)SetSqlQueryId(val *string) {
 	_jsii_.Set(
 		j,
 		"sqlQueryId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Permissions)SetWorkspaceFileId(val *string) {
+	if err := j.validateSetWorkspaceFileIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceFileId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Permissions)SetWorkspaceFilePath(val *string) {
+	if err := j.validateSetWorkspaceFilePathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceFilePath",
 		val,
 	)
 }
@@ -1523,6 +1593,22 @@ func (p *jsiiProxy_Permissions) ResetSqlQueryId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetSqlQueryId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Permissions) ResetWorkspaceFileId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetWorkspaceFileId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Permissions) ResetWorkspaceFilePath() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetWorkspaceFilePath",
 		nil, // no parameters
 	)
 }
