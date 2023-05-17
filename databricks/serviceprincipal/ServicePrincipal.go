@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/service_principal databricks_service_principal}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/service_principal databricks_service_principal}.
 type ServicePrincipal interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -598,7 +598,7 @@ func (j *jsiiProxy_ServicePrincipal) WorkspaceAccessInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/service_principal databricks_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/service_principal databricks_service_principal} Resource.
 func NewServicePrincipal(scope constructs.Construct, id *string, config *ServicePrincipalConfig) ServicePrincipal {
 	_init_.Initialize()
 
@@ -616,7 +616,7 @@ func NewServicePrincipal(scope constructs.Construct, id *string, config *Service
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/service_principal databricks_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/service_principal databricks_service_principal} Resource.
 func NewServicePrincipal_Override(s ServicePrincipal, scope constructs.Construct, id *string, config *ServicePrincipalConfig) {
 	_init_.Initialize()
 

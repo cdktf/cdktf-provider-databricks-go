@@ -19,40 +19,40 @@ type MetastoreConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/metastore#name Metastore#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/metastore#name Metastore#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/metastore#storage_root Metastore#storage_root}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/metastore#storage_root Metastore#storage_root}.
 	StorageRoot *string `field:"required" json:"storageRoot" yaml:"storageRoot"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/metastore#cloud Metastore#cloud}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/metastore#cloud Metastore#cloud}.
 	Cloud *string `field:"optional" json:"cloud" yaml:"cloud"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/metastore#created_at Metastore#created_at}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/metastore#created_at Metastore#created_at}.
 	CreatedAt *float64 `field:"optional" json:"createdAt" yaml:"createdAt"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/metastore#created_by Metastore#created_by}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/metastore#created_by Metastore#created_by}.
 	CreatedBy *string `field:"optional" json:"createdBy" yaml:"createdBy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/metastore#default_data_access_config_id Metastore#default_data_access_config_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/metastore#default_data_access_config_id Metastore#default_data_access_config_id}.
 	DefaultDataAccessConfigId *string `field:"optional" json:"defaultDataAccessConfigId" yaml:"defaultDataAccessConfigId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/metastore#delta_sharing_organization_name Metastore#delta_sharing_organization_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/metastore#delta_sharing_organization_name Metastore#delta_sharing_organization_name}.
 	DeltaSharingOrganizationName *string `field:"optional" json:"deltaSharingOrganizationName" yaml:"deltaSharingOrganizationName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/metastore#delta_sharing_recipient_token_lifetime_in_seconds Metastore#delta_sharing_recipient_token_lifetime_in_seconds}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/metastore#delta_sharing_recipient_token_lifetime_in_seconds Metastore#delta_sharing_recipient_token_lifetime_in_seconds}.
 	DeltaSharingRecipientTokenLifetimeInSeconds *float64 `field:"optional" json:"deltaSharingRecipientTokenLifetimeInSeconds" yaml:"deltaSharingRecipientTokenLifetimeInSeconds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/metastore#delta_sharing_scope Metastore#delta_sharing_scope}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/metastore#delta_sharing_scope Metastore#delta_sharing_scope}.
 	DeltaSharingScope *string `field:"optional" json:"deltaSharingScope" yaml:"deltaSharingScope"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/metastore#force_destroy Metastore#force_destroy}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/metastore#force_destroy Metastore#force_destroy}.
 	ForceDestroy interface{} `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/metastore#global_metastore_id Metastore#global_metastore_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/metastore#global_metastore_id Metastore#global_metastore_id}.
 	GlobalMetastoreId *string `field:"optional" json:"globalMetastoreId" yaml:"globalMetastoreId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/metastore#id Metastore#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/metastore#id Metastore#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/metastore#owner Metastore#owner}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/metastore#owner Metastore#owner}.
 	Owner *string `field:"optional" json:"owner" yaml:"owner"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/metastore#region Metastore#region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/metastore#region Metastore#region}.
 	Region *string `field:"optional" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/metastore#updated_at Metastore#updated_at}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/metastore#updated_at Metastore#updated_at}.
 	UpdatedAt *float64 `field:"optional" json:"updatedAt" yaml:"updatedAt"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/metastore#updated_by Metastore#updated_by}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/metastore#updated_by Metastore#updated_by}.
 	UpdatedBy *string `field:"optional" json:"updatedBy" yaml:"updatedBy"`
 }
 

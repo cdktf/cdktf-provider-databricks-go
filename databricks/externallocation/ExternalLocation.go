@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/external_location databricks_external_location}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/external_location databricks_external_location}.
 type ExternalLocation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_ExternalLocation) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation(scope constructs.Construct, id *string, config *ExternalLocationConfig) ExternalLocation {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewExternalLocation(scope constructs.Construct, id *string, config *Externa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation_Override(e ExternalLocation, scope constructs.Construct, id *string, config *ExternalLocationConfig) {
 	_init_.Initialize()
 
