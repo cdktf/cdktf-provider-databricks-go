@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/pipeline databricks_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/pipeline databricks_pipeline}.
 type Pipeline interface {
 	cdktf.TerraformResource
 	AllowDuplicateNames() interface{}
@@ -90,6 +90,9 @@ type Pipeline interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Serverless() interface{}
+	SetServerless(val interface{})
+	ServerlessInput() interface{}
 	Storage() *string
 	SetStorage(val *string)
 	StorageInput() *string
@@ -152,6 +155,7 @@ type Pipeline interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPhoton()
+	ResetServerless()
 	ResetStorage()
 	ResetTarget()
 	ResetTimeouts()
@@ -580,6 +584,26 @@ func (j *jsiiProxy_Pipeline) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Pipeline) Serverless() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"serverless",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) ServerlessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"serverlessInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Pipeline) Storage() *string {
 	var returns *string
 	_jsii_.Get(
@@ -681,7 +705,7 @@ func (j *jsiiProxy_Pipeline) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig) Pipeline {
 	_init_.Initialize()
 
@@ -699,7 +723,7 @@ func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline_Override(p Pipeline, scope constructs.Construct, id *string, config *PipelineConfig) {
 	_init_.Initialize()
 
@@ -884,6 +908,17 @@ func (j *jsiiProxy_Pipeline)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Pipeline)SetServerless(val interface{}) {
+	if err := j.validateSetServerlessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverless",
 		val,
 	)
 }
@@ -1347,6 +1382,14 @@ func (p *jsiiProxy_Pipeline) ResetPhoton() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPhoton",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Pipeline) ResetServerless() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetServerless",
 		nil, // no parameters
 	)
 }

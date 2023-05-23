@@ -140,6 +140,10 @@ func (j *jsiiProxy_Pipeline) validateSetProvisionersParameters(val *[]interface{
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetServerlessParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetStorageParameters(val *string) error {
 	return nil
 }

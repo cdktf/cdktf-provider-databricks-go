@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs databricks}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs databricks}.
 type DatabricksProvider interface {
 	cdktf.TerraformProvider
 	AccountId() *string
@@ -42,9 +42,6 @@ type DatabricksProvider interface {
 	AzureWorkspaceResourceId() *string
 	SetAzureWorkspaceResourceId(val *string)
 	AzureWorkspaceResourceIdInput() *string
-	BricksCliPath() *string
-	SetBricksCliPath(val *string)
-	BricksCliPathInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientId() *string
@@ -58,6 +55,9 @@ type DatabricksProvider interface {
 	ConfigFileInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	DatabricksCliPath() *string
+	SetDatabricksCliPath(val *string)
+	DatabricksCliPathInput() *string
 	DebugHeaders() interface{}
 	SetDebugHeaders(val interface{})
 	DebugHeadersInput() interface{}
@@ -131,10 +131,10 @@ type DatabricksProvider interface {
 	ResetAzureTenantId()
 	ResetAzureUseMsi()
 	ResetAzureWorkspaceResourceId()
-	ResetBricksCliPath()
 	ResetClientId()
 	ResetClientSecret()
 	ResetConfigFile()
+	ResetDatabricksCliPath()
 	ResetDebugHeaders()
 	ResetDebugTruncateBytes()
 	ResetGoogleCredentials()
@@ -367,26 +367,6 @@ func (j *jsiiProxy_DatabricksProvider) AzureWorkspaceResourceIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DatabricksProvider) BricksCliPath() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"bricksCliPath",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DatabricksProvider) BricksCliPathInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"bricksCliPathInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DatabricksProvider) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -462,6 +442,26 @@ func (j *jsiiProxy_DatabricksProvider) ConstructNodeMetadata() *map[string]inter
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) DatabricksCliPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databricksCliPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) DatabricksCliPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databricksCliPathInput",
 		&returns,
 	)
 	return returns
@@ -828,7 +828,7 @@ func (j *jsiiProxy_DatabricksProvider) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs databricks} Resource.
 func NewDatabricksProvider(scope constructs.Construct, id *string, config *DatabricksProviderConfig) DatabricksProvider {
 	_init_.Initialize()
 
@@ -846,7 +846,7 @@ func NewDatabricksProvider(scope constructs.Construct, id *string, config *Datab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs databricks} Resource.
 func NewDatabricksProvider_Override(d DatabricksProvider, scope constructs.Construct, id *string, config *DatabricksProviderConfig) {
 	_init_.Initialize()
 
@@ -940,14 +940,6 @@ func (j *jsiiProxy_DatabricksProvider)SetAzureWorkspaceResourceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksProvider)SetBricksCliPath(val *string) {
-	_jsii_.Set(
-		j,
-		"bricksCliPath",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DatabricksProvider)SetClientId(val *string) {
 	_jsii_.Set(
 		j,
@@ -968,6 +960,14 @@ func (j *jsiiProxy_DatabricksProvider)SetConfigFile(val *string) {
 	_jsii_.Set(
 		j,
 		"configFile",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabricksProvider)SetDatabricksCliPath(val *string) {
+	_jsii_.Set(
+		j,
+		"databricksCliPath",
 		val,
 	)
 }
@@ -1276,14 +1276,6 @@ func (d *jsiiProxy_DatabricksProvider) ResetAzureWorkspaceResourceId() {
 	)
 }
 
-func (d *jsiiProxy_DatabricksProvider) ResetBricksCliPath() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetBricksCliPath",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DatabricksProvider) ResetClientId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1304,6 +1296,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetConfigFile() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetConfigFile",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) ResetDatabricksCliPath() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDatabricksCliPath",
 		nil, // no parameters
 	)
 }

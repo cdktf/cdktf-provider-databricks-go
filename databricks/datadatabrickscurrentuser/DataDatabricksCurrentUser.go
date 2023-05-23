@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/data-sources/current_user databricks_current_user}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/data-sources/current_user databricks_current_user}.
 type DataDatabricksCurrentUser interface {
 	cdktf.TerraformDataSource
 	Alphanumeric() *string
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataDatabricksCurrentUser) WorkspaceUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/data-sources/current_user databricks_current_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/data-sources/current_user databricks_current_user} Data Source.
 func NewDataDatabricksCurrentUser(scope constructs.Construct, id *string, config *DataDatabricksCurrentUserConfig) DataDatabricksCurrentUser {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataDatabricksCurrentUser(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/data-sources/current_user databricks_current_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/data-sources/current_user databricks_current_user} Data Source.
 func NewDataDatabricksCurrentUser_Override(d DataDatabricksCurrentUser, scope constructs.Construct, id *string, config *DataDatabricksCurrentUserConfig) {
 	_init_.Initialize()
 
