@@ -111,7 +111,7 @@ func (r *jsiiProxy_Recipient) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
-func (r *jsiiProxy_Recipient) validatePutIpAccessListParameters(value *RecipientIpAccessList) error {
+func (r *jsiiProxy_Recipient) validatePutIpAccessListParameters(value *RecipientIpAccessListStruct) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

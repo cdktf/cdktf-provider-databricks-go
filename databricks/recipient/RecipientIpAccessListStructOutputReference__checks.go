@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetAnyMapAttrib
 	return nil
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetBooleanAttri
 	return nil
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetBooleanMapAt
 	return nil
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetListAttribut
 	return nil
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetNumberAttrib
 	return nil
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetNumberListAt
 	return nil
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetNumberMapAtt
 	return nil
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetStringAttrib
 	return nil
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateInterpolationFo
 	return nil
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -98,7 +98,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetAllowedIpAddressesParameters(val *[]*string) error {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference) validateSetAllowedIpAddressesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -106,7 +106,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetAllowedIpAdd
 	return nil
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -171,7 +171,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetInternalValueParameters(val *RecipientIpAccessList) error {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference) validateSetInternalValueParameters(val *RecipientIpAccessListStruct) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -179,7 +179,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetInternalValu
 	return nil
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -187,7 +187,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -195,7 +195,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference) validateSetTerraformRes
 	return nil
 }
 
-func validateNewRecipientIpAccessListOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRecipientIpAccessListStructOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

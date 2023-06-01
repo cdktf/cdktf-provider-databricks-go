@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package datadatabricksdbfsfilepaths
+package datadatabricksnotebookpaths
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateI
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -155,7 +155,7 @@ func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateSetInternalValueParameters(val *DataDatabricksDbfsFilePathsPathList) error {
+func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateSetInternalValueParameters(val *DataDatabricksNotebookPathsNotebookPathListStruct) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -187,7 +187,7 @@ func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListOutputReference) validateS
 	return nil
 }
 
-func validateNewDataDatabricksDbfsFilePathsPathListOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataDatabricksNotebookPathsNotebookPathListStructOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

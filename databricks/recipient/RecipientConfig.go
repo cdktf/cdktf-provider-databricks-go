@@ -35,7 +35,7 @@ type RecipientConfig struct {
 	// ip_access_list block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/recipient#ip_access_list Recipient#ip_access_list}
-	IpAccessList *RecipientIpAccessList `field:"optional" json:"ipAccessList" yaml:"ipAccessList"`
+	IpAccessList *RecipientIpAccessListStruct `field:"optional" json:"ipAccessList" yaml:"ipAccessList"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/recipient#sharing_code Recipient#sharing_code}.
 	SharingCode *string `field:"optional" json:"sharingCode" yaml:"sharingCode"`
 	// tokens block.

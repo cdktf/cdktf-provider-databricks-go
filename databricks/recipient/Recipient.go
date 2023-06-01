@@ -48,8 +48,8 @@ type Recipient interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IpAccessList() RecipientIpAccessListOutputReference
-	IpAccessListInput() *RecipientIpAccessList
+	IpAccessList() RecipientIpAccessListStructOutputReference
+	IpAccessListInput() *RecipientIpAccessListStruct
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -105,7 +105,7 @@ type Recipient interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutIpAccessList(value *RecipientIpAccessList)
+	PutIpAccessList(value *RecipientIpAccessListStruct)
 	PutTokens(value interface{})
 	ResetComment()
 	ResetDataRecipientGlobalMetastoreId()
@@ -291,8 +291,8 @@ func (j *jsiiProxy_Recipient) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Recipient) IpAccessList() RecipientIpAccessListOutputReference {
-	var returns RecipientIpAccessListOutputReference
+func (j *jsiiProxy_Recipient) IpAccessList() RecipientIpAccessListStructOutputReference {
+	var returns RecipientIpAccessListStructOutputReference
 	_jsii_.Get(
 		j,
 		"ipAccessList",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_Recipient) IpAccessList() RecipientIpAccessListOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_Recipient) IpAccessListInput() *RecipientIpAccessList {
-	var returns *RecipientIpAccessList
+func (j *jsiiProxy_Recipient) IpAccessListInput() *RecipientIpAccessListStruct {
+	var returns *RecipientIpAccessListStruct
 	_jsii_.Get(
 		j,
 		"ipAccessListInput",
@@ -881,7 +881,7 @@ func (r *jsiiProxy_Recipient) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (r *jsiiProxy_Recipient) PutIpAccessList(value *RecipientIpAccessList) {
+func (r *jsiiProxy_Recipient) PutIpAccessList(value *RecipientIpAccessListStruct) {
 	if err := r.validatePutIpAccessListParameters(value); err != nil {
 		panic(err)
 	}

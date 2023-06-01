@@ -41,7 +41,7 @@ type DataDatabricksNotebookPaths interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	NotebookPathList() DataDatabricksNotebookPathsNotebookPathListList
+	NotebookPathList() DataDatabricksNotebookPathsNotebookPathListStructList
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
@@ -214,8 +214,8 @@ func (j *jsiiProxy_DataDatabricksNotebookPaths) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPaths) NotebookPathList() DataDatabricksNotebookPathsNotebookPathListList {
-	var returns DataDatabricksNotebookPathsNotebookPathListList
+func (j *jsiiProxy_DataDatabricksNotebookPaths) NotebookPathList() DataDatabricksNotebookPathsNotebookPathListStructList {
+	var returns DataDatabricksNotebookPathsNotebookPathListStructList
 	_jsii_.Get(
 		j,
 		"notebookPathList",

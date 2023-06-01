@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type RecipientIpAccessListOutputReference interface {
+type RecipientIpAccessListStructOutputReference interface {
 	cdktf.ComplexObject
 	AllowedIpAddresses() *[]*string
 	SetAllowedIpAddresses(val *[]*string)
@@ -30,8 +30,8 @@ type RecipientIpAccessListOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *RecipientIpAccessList
-	SetInternalValue(val *RecipientIpAccessList)
+	InternalValue() *RecipientIpAccessListStruct
+	SetInternalValue(val *RecipientIpAccessListStruct)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -74,12 +74,12 @@ type RecipientIpAccessListOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for RecipientIpAccessListOutputReference
-type jsiiProxy_RecipientIpAccessListOutputReference struct {
+// The jsii proxy struct for RecipientIpAccessListStructOutputReference
+type jsiiProxy_RecipientIpAccessListStructOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference) AllowedIpAddresses() *[]*string {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference) AllowedIpAddresses() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -89,7 +89,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference) AllowedIpAddresses() *[
 	return returns
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference) AllowedIpAddressesInput() *[]*string {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference) AllowedIpAddressesInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -99,7 +99,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference) AllowedIpAddressesInput
 	return returns
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -109,7 +109,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference) ComplexObjectIndex() in
 	return returns
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -119,7 +119,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference) ComplexObjectIsFromSet(
 	return returns
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -129,7 +129,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference) CreationStack() *[]*str
 	return returns
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference) Fqn() *string {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -139,8 +139,8 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference) InternalValue() *RecipientIpAccessList {
-	var returns *RecipientIpAccessList
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference) InternalValue() *RecipientIpAccessListStruct {
+	var returns *RecipientIpAccessListStruct
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -149,7 +149,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference) InternalValue() *Recipi
 	return returns
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -159,7 +159,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -170,16 +170,16 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference) TerraformResource() cdk
 }
 
 
-func NewRecipientIpAccessListOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RecipientIpAccessListOutputReference {
+func NewRecipientIpAccessListStructOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RecipientIpAccessListStructOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRecipientIpAccessListOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRecipientIpAccessListStructOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_RecipientIpAccessListOutputReference{}
+	j := jsiiProxy_RecipientIpAccessListStructOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.recipient.RecipientIpAccessListOutputReference",
+		"@cdktf/provider-databricks.recipient.RecipientIpAccessListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,17 +187,17 @@ func NewRecipientIpAccessListOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewRecipientIpAccessListOutputReference_Override(r RecipientIpAccessListOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRecipientIpAccessListStructOutputReference_Override(r RecipientIpAccessListStructOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.recipient.RecipientIpAccessListOutputReference",
+		"@cdktf/provider-databricks.recipient.RecipientIpAccessListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference)SetAllowedIpAddresses(val *[]*string) {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference)SetAllowedIpAddresses(val *[]*string) {
 	if err := j.validateSetAllowedIpAddressesParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +208,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference)SetAllowedIpAddresses(va
 	)
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +219,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +230,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference)SetInternalValue(val *RecipientIpAccessList) {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference)SetInternalValue(val *RecipientIpAccessListStruct) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +241,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference)SetInternalValue(val *Re
 	)
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_RecipientIpAccessListOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RecipientIpAccessListStructOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_RecipientIpAccessListOutputReference)SetTerraformResource(val
 	)
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) ComputeFqn() *string {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -276,7 +276,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -292,7 +292,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -308,7 +308,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetBooleanAttribute(ter
 	return returns
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -324,7 +324,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetBooleanMapAttribute(
 	return returns
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -340,7 +340,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetListAttribute(terraf
 	return returns
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -356,7 +356,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetNumberAttribute(terr
 	return returns
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -372,7 +372,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetNumberListAttribute(
 	return returns
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -388,7 +388,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetNumberMapAttribute(t
 	return returns
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -404,7 +404,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetStringAttribute(terr
 	return returns
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -420,7 +420,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -433,7 +433,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -449,7 +449,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) InterpolationForAttribu
 	return returns
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -465,7 +465,7 @@ func (r *jsiiProxy_RecipientIpAccessListOutputReference) Resolve(_context cdktf.
 	return returns
 }
 
-func (r *jsiiProxy_RecipientIpAccessListOutputReference) ToString() *string {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

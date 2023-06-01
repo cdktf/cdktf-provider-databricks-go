@@ -80,12 +80,12 @@ func init() {
 		reflect.TypeOf((*RecipientConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.recipient.RecipientIpAccessList",
-		reflect.TypeOf((*RecipientIpAccessList)(nil)).Elem(),
+		"@cdktf/provider-databricks.recipient.RecipientIpAccessListStruct",
+		reflect.TypeOf((*RecipientIpAccessListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.recipient.RecipientIpAccessListOutputReference",
-		reflect.TypeOf((*RecipientIpAccessListOutputReference)(nil)).Elem(),
+		"@cdktf/provider-databricks.recipient.RecipientIpAccessListStructOutputReference",
+		reflect.TypeOf((*RecipientIpAccessListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedIpAddresses", GoGetter: "AllowedIpAddresses"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedIpAddressesInput", GoGetter: "AllowedIpAddressesInput"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_RecipientIpAccessListOutputReference{}
+			j := jsiiProxy_RecipientIpAccessListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

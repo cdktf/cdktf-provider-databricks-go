@@ -44,7 +44,7 @@ type DataDatabricksDbfsFilePaths interface {
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
-	PathList() DataDatabricksDbfsFilePathsPathListList
+	PathList() DataDatabricksDbfsFilePathsPathListStructList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -234,8 +234,8 @@ func (j *jsiiProxy_DataDatabricksDbfsFilePaths) PathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDbfsFilePaths) PathList() DataDatabricksDbfsFilePathsPathListList {
-	var returns DataDatabricksDbfsFilePathsPathListList
+func (j *jsiiProxy_DataDatabricksDbfsFilePaths) PathList() DataDatabricksDbfsFilePathsPathListStructList {
+	var returns DataDatabricksDbfsFilePathsPathListStructList
 	_jsii_.Get(
 		j,
 		"pathList",

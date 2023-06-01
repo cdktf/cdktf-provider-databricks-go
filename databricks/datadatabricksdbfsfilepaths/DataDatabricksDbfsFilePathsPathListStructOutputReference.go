@@ -1,14 +1,14 @@
-package datadatabricksnotebookpaths
+package datadatabricksdbfsfilepaths
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabricksnotebookpaths/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabricksdbfsfilepaths/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataDatabricksNotebookPathsNotebookPathListOutputReference interface {
+type DataDatabricksDbfsFilePathsPathListStructOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
@@ -25,11 +25,11 @@ type DataDatabricksNotebookPathsNotebookPathListOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FileSize() *float64
 	// Experimental.
 	Fqn() *string
-	InternalValue() *DataDatabricksNotebookPathsNotebookPathList
-	SetInternalValue(val *DataDatabricksNotebookPathsNotebookPathList)
-	Language() *string
+	InternalValue() *DataDatabricksDbfsFilePathsPathListStruct
+	SetInternalValue(val *DataDatabricksDbfsFilePathsPathListStruct)
 	Path() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -73,12 +73,12 @@ type DataDatabricksNotebookPathsNotebookPathListOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DataDatabricksNotebookPathsNotebookPathListOutputReference
-type jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference struct {
+// The jsii proxy struct for DataDatabricksDbfsFilePathsPathListStructOutputReference
+type jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -88,7 +88,7 @@ func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -98,7 +98,7 @@ func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -108,7 +108,17 @@ func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) Fqn() *string {
+func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) FileSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"fileSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -118,8 +128,8 @@ func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) InternalValue() *DataDatabricksNotebookPathsNotebookPathList {
-	var returns *DataDatabricksNotebookPathsNotebookPathList
+func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) InternalValue() *DataDatabricksDbfsFilePathsPathListStruct {
+	var returns *DataDatabricksDbfsFilePathsPathListStruct
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -128,17 +138,7 @@ func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) I
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) Language() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"language",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) Path() *string {
+func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) Path() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -148,7 +148,7 @@ func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) P
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -158,7 +158,7 @@ func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -169,16 +169,16 @@ func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) T
 }
 
 
-func NewDataDatabricksNotebookPathsNotebookPathListOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksNotebookPathsNotebookPathListOutputReference {
+func NewDataDatabricksDbfsFilePathsPathListStructOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksDbfsFilePathsPathListStructOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataDatabricksNotebookPathsNotebookPathListOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewDataDatabricksDbfsFilePathsPathListStructOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference{}
+	j := jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsNotebookPathListOutputReference",
+		"@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsPathListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -186,17 +186,17 @@ func NewDataDatabricksNotebookPathsNotebookPathListOutputReference(terraformReso
 	return &j
 }
 
-func NewDataDatabricksNotebookPathsNotebookPathListOutputReference_Override(d DataDatabricksNotebookPathsNotebookPathListOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksDbfsFilePathsPathListStructOutputReference_Override(d DataDatabricksDbfsFilePathsPathListStructOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsNotebookPathListOutputReference",
+		"@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsPathListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +207,7 @@ func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +218,7 @@ func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference)SetInternalValue(val *DataDatabricksNotebookPathsNotebookPathList) {
+func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference)SetInternalValue(val *DataDatabricksDbfsFilePathsPathListStruct) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +229,7 @@ func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +240,7 @@ func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +251,7 @@ func (j *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference)Se
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) ComputeFqn() *string {
+func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -264,7 +264,7 @@ func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) C
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -280,7 +280,7 @@ func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -296,7 +296,7 @@ func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -312,7 +312,7 @@ func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -328,7 +328,7 @@ func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -344,7 +344,7 @@ func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -360,7 +360,7 @@ func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -376,7 +376,7 @@ func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -392,7 +392,7 @@ func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -408,7 +408,7 @@ func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -421,7 +421,7 @@ func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) I
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -437,7 +437,7 @@ func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) I
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -453,7 +453,7 @@ func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) R
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference) ToString() *string {
+func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

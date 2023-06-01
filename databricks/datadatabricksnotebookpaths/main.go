@@ -62,12 +62,12 @@ func init() {
 		reflect.TypeOf((*DataDatabricksNotebookPathsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsNotebookPathList",
-		reflect.TypeOf((*DataDatabricksNotebookPathsNotebookPathList)(nil)).Elem(),
+		"@cdktf/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsNotebookPathListStruct",
+		reflect.TypeOf((*DataDatabricksNotebookPathsNotebookPathListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsNotebookPathListList",
-		reflect.TypeOf((*DataDatabricksNotebookPathsNotebookPathListList)(nil)).Elem(),
+		"@cdktf/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsNotebookPathListStructList",
+		reflect.TypeOf((*DataDatabricksNotebookPathsNotebookPathListStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -80,14 +80,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataDatabricksNotebookPathsNotebookPathListList{}
+			j := jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsNotebookPathListOutputReference",
-		reflect.TypeOf((*DataDatabricksNotebookPathsNotebookPathListOutputReference)(nil)).Elem(),
+		"@cdktf/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsNotebookPathListStructOutputReference",
+		reflect.TypeOf((*DataDatabricksNotebookPathsNotebookPathListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataDatabricksNotebookPathsNotebookPathListOutputReference{}
+			j := jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
