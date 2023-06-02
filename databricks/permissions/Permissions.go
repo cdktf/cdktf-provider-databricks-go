@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions databricks_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions databricks_permissions}.
 type Permissions interface {
 	cdktf.TerraformResource
 	AccessControl() PermissionsAccessControlList
@@ -102,6 +102,9 @@ type Permissions interface {
 	RepoPath() *string
 	SetRepoPath(val *string)
 	RepoPathInput() *string
+	ServingEndpointId() *string
+	SetServingEndpointId(val *string)
+	ServingEndpointIdInput() *string
 	SqlAlertId() *string
 	SetSqlAlertId(val *string)
 	SqlAlertIdInput() *string
@@ -171,6 +174,7 @@ type Permissions interface {
 	ResetRegisteredModelId()
 	ResetRepoId()
 	ResetRepoPath()
+	ResetServingEndpointId()
 	ResetSqlAlertId()
 	ResetSqlDashboardId()
 	ResetSqlEndpointId()
@@ -662,6 +666,26 @@ func (j *jsiiProxy_Permissions) RepoPathInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Permissions) ServingEndpointId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servingEndpointId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Permissions) ServingEndpointIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servingEndpointIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Permissions) SqlAlertId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -813,7 +837,7 @@ func (j *jsiiProxy_Permissions) WorkspaceFilePathInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions databricks_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions databricks_permissions} Resource.
 func NewPermissions(scope constructs.Construct, id *string, config *PermissionsConfig) Permissions {
 	_init_.Initialize()
 
@@ -831,7 +855,7 @@ func NewPermissions(scope constructs.Construct, id *string, config *PermissionsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions databricks_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions databricks_permissions} Resource.
 func NewPermissions_Override(p Permissions, scope constructs.Construct, id *string, config *PermissionsConfig) {
 	_init_.Initialize()
 
@@ -1082,6 +1106,17 @@ func (j *jsiiProxy_Permissions)SetRepoPath(val *string) {
 	_jsii_.Set(
 		j,
 		"repoPath",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Permissions)SetServingEndpointId(val *string) {
+	if err := j.validateSetServingEndpointIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"servingEndpointId",
 		val,
 	)
 }
@@ -1561,6 +1596,14 @@ func (p *jsiiProxy_Permissions) ResetRepoPath() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetRepoPath",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Permissions) ResetServingEndpointId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetServingEndpointId",
 		nil, // no parameters
 	)
 }

@@ -148,6 +148,10 @@ func (j *jsiiProxy_Permissions) validateSetRepoPathParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_Permissions) validateSetServingEndpointIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Permissions) validateSetSqlAlertIdParameters(val *string) error {
 	return nil
 }

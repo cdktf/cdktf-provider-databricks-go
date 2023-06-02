@@ -2,11 +2,11 @@ package pipeline
 
 
 type PipelineLibraryMaven struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/pipeline#coordinates Pipeline#coordinates}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/pipeline#coordinates Pipeline#coordinates}.
 	Coordinates *string `field:"required" json:"coordinates" yaml:"coordinates"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/pipeline#exclusions Pipeline#exclusions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/pipeline#exclusions Pipeline#exclusions}.
 	Exclusions *[]*string `field:"optional" json:"exclusions" yaml:"exclusions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/pipeline#repo Pipeline#repo}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/pipeline#repo Pipeline#repo}.
 	Repo *string `field:"optional" json:"repo" yaml:"repo"`
 }
 

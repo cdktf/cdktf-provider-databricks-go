@@ -2,9 +2,9 @@ package cluster
 
 
 type ClusterClusterMountInfoNetworkFilesystemInfo struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/cluster#server_address Cluster#server_address}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/cluster#server_address Cluster#server_address}.
 	ServerAddress *string `field:"required" json:"serverAddress" yaml:"serverAddress"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/cluster#mount_options Cluster#mount_options}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/cluster#mount_options Cluster#mount_options}.
 	MountOptions *string `field:"optional" json:"mountOptions" yaml:"mountOptions"`
 }
 
