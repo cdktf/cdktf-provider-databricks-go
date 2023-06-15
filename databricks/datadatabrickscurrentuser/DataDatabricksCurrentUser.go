@@ -2,10 +2,10 @@ package datadatabrickscurrentuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabrickscurrentuser/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/datadatabrickscurrentuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
