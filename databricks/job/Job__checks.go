@@ -283,6 +283,17 @@ func (j *jsiiProxy_Job) validatePutQueueParameters(value *JobQueue) error {
 	return nil
 }
 
+func (j *jsiiProxy_Job) validatePutRunAsParameters(value *JobRunAs) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Job) validatePutScheduleParameters(value *JobSchedule) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/job databricks_job}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/job databricks_job}.
 type Job interface {
 	cdktf.TerraformResource
 	AlwaysRunning() interface{}
@@ -103,6 +103,8 @@ type Job interface {
 	RetryOnTimeout() interface{}
 	SetRetryOnTimeout(val interface{})
 	RetryOnTimeoutInput() interface{}
+	RunAs() JobRunAsOutputReference
+	RunAsInput() *JobRunAs
 	Schedule() JobScheduleOutputReference
 	ScheduleInput() *JobSchedule
 	SparkJarTask() JobSparkJarTaskOutputReference
@@ -169,6 +171,7 @@ type Job interface {
 	PutPipelineTask(value *JobPipelineTask)
 	PutPythonWheelTask(value *JobPythonWheelTask)
 	PutQueue(value *JobQueue)
+	PutRunAs(value *JobRunAs)
 	PutSchedule(value *JobSchedule)
 	PutSparkJarTask(value *JobSparkJarTask)
 	PutSparkPythonTask(value *JobSparkPythonTask)
@@ -201,6 +204,7 @@ type Job interface {
 	ResetPythonWheelTask()
 	ResetQueue()
 	ResetRetryOnTimeout()
+	ResetRunAs()
 	ResetSchedule()
 	ResetSparkJarTask()
 	ResetSparkPythonTask()
@@ -776,6 +780,26 @@ func (j *jsiiProxy_Job) RetryOnTimeoutInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Job) RunAs() JobRunAsOutputReference {
+	var returns JobRunAsOutputReference
+	_jsii_.Get(
+		j,
+		"runAs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) RunAsInput() *JobRunAs {
+	var returns *JobRunAs
+	_jsii_.Get(
+		j,
+		"runAsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Job) Schedule() JobScheduleOutputReference {
 	var returns JobScheduleOutputReference
 	_jsii_.Get(
@@ -1017,7 +1041,7 @@ func (j *jsiiProxy_Job) WebhookNotificationsInput() *JobWebhookNotifications {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/job databricks_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	_init_.Initialize()
 
@@ -1035,7 +1059,7 @@ func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/job databricks_job} Resource.
 func NewJob_Override(j Job, scope constructs.Construct, id *string, config *JobConfig) {
 	_init_.Initialize()
 
@@ -1633,6 +1657,17 @@ func (j *jsiiProxy_Job) PutQueue(value *JobQueue) {
 	)
 }
 
+func (j *jsiiProxy_Job) PutRunAs(value *JobRunAs) {
+	if err := j.validatePutRunAsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putRunAs",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_Job) PutSchedule(value *JobSchedule) {
 	if err := j.validatePutScheduleParameters(value); err != nil {
 		panic(err)
@@ -1893,6 +1928,14 @@ func (j *jsiiProxy_Job) ResetRetryOnTimeout() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetRetryOnTimeout",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetRunAs() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetRunAs",
 		nil, // no parameters
 	)
 }

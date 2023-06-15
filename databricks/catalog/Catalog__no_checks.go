@@ -84,6 +84,10 @@ func (j *jsiiProxy_Catalog) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Catalog) validateSetIsolationModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Catalog) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

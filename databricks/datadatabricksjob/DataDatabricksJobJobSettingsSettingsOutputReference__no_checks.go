@@ -92,6 +92,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validate
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutRunAsParameters(value *DataDatabricksJobJobSettingsSettingsRunAs) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutScheduleParameters(value *DataDatabricksJobJobSettingsSettingsSchedule) error {
 	return nil
 }

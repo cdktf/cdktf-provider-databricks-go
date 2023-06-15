@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/catalog databricks_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/catalog databricks_catalog}.
 type Catalog interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,6 +45,9 @@ type Catalog interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsolationMode() *string
+	SetIsolationMode(val *string)
+	IsolationModeInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -116,6 +119,7 @@ type Catalog interface {
 	ResetComment()
 	ResetForceDestroy()
 	ResetId()
+	ResetIsolationMode()
 	ResetMetastoreId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -275,6 +279,26 @@ func (j *jsiiProxy_Catalog) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) IsolationMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"isolationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) IsolationModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"isolationModeInput",
 		&returns,
 	)
 	return returns
@@ -501,7 +525,7 @@ func (j *jsiiProxy_Catalog) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) Catalog {
 	_init_.Initialize()
 
@@ -519,7 +543,7 @@ func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog_Override(c Catalog, scope constructs.Construct, id *string, config *CatalogConfig) {
 	_init_.Initialize()
 
@@ -597,6 +621,17 @@ func (j *jsiiProxy_Catalog)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Catalog)SetIsolationMode(val *string) {
+	if err := j.validateSetIsolationModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isolationMode",
 		val,
 	)
 }
@@ -994,6 +1029,14 @@ func (c *jsiiProxy_Catalog) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Catalog) ResetIsolationMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIsolationMode",
 		nil, // no parameters
 	)
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsOutputReference) validateSetJobId
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsOutputReference) validateSetRunAsUserNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/external_location databricks_external_location}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/external_location databricks_external_location}.
 type ExternalLocation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,9 @@ type ExternalLocation interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ForceDestroy() interface{}
+	SetForceDestroy(val interface{})
+	ForceDestroyInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -70,6 +73,9 @@ type ExternalLocation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReadOnly() interface{}
+	SetReadOnly(val interface{})
+	ReadOnlyInput() interface{}
 	SkipValidation() interface{}
 	SetSkipValidation(val interface{})
 	SkipValidationInput() interface{}
@@ -108,12 +114,14 @@ type ExternalLocation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetComment()
+	ResetForceDestroy()
 	ResetId()
 	ResetMetastoreId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
+	ResetReadOnly()
 	ResetSkipValidation()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -215,6 +223,26 @@ func (j *jsiiProxy_ExternalLocation) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) ForceDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) ForceDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroyInput",
 		&returns,
 	)
 	return returns
@@ -380,6 +408,26 @@ func (j *jsiiProxy_ExternalLocation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ExternalLocation) ReadOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) ReadOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readOnlyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ExternalLocation) SkipValidation() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -451,7 +499,7 @@ func (j *jsiiProxy_ExternalLocation) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation(scope constructs.Construct, id *string, config *ExternalLocationConfig) ExternalLocation {
 	_init_.Initialize()
 
@@ -469,7 +517,7 @@ func NewExternalLocation(scope constructs.Construct, id *string, config *Externa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation_Override(e ExternalLocation, scope constructs.Construct, id *string, config *ExternalLocationConfig) {
 	_init_.Initialize()
 
@@ -528,6 +576,17 @@ func (j *jsiiProxy_ExternalLocation)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ExternalLocation)SetForceDestroy(val interface{}) {
+	if err := j.validateSetForceDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDestroy",
 		val,
 	)
 }
@@ -610,6 +669,17 @@ func (j *jsiiProxy_ExternalLocation)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ExternalLocation)SetReadOnly(val interface{}) {
+	if err := j.validateSetReadOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readOnly",
 		val,
 	)
 }
@@ -910,6 +980,14 @@ func (e *jsiiProxy_ExternalLocation) ResetComment() {
 	)
 }
 
+func (e *jsiiProxy_ExternalLocation) ResetForceDestroy() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetForceDestroy",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ExternalLocation) ResetId() {
 	_jsii_.InvokeVoid(
 		e,
@@ -938,6 +1016,14 @@ func (e *jsiiProxy_ExternalLocation) ResetOwner() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOwner",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExternalLocation) ResetReadOnly() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetReadOnly",
 		nil, // no parameters
 	)
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_ExternalLocation) validateSetCredentialNameParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_ExternalLocation) validateSetForceDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExternalLocation) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (j *jsiiProxy_ExternalLocation) validateSetOwnerParameters(val *string) err
 }
 
 func (j *jsiiProxy_ExternalLocation) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ExternalLocation) validateSetReadOnlyParameters(val interface{}) error {
 	return nil
 }
 

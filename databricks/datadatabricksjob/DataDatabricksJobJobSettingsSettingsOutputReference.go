@@ -74,6 +74,8 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	RetryOnTimeout() interface{}
 	SetRetryOnTimeout(val interface{})
 	RetryOnTimeoutInput() interface{}
+	RunAs() DataDatabricksJobJobSettingsSettingsRunAsOutputReference
+	RunAsInput() *DataDatabricksJobJobSettingsSettingsRunAs
 	Schedule() DataDatabricksJobJobSettingsSettingsScheduleOutputReference
 	ScheduleInput() *DataDatabricksJobJobSettingsSettingsSchedule
 	SparkJarTask() DataDatabricksJobJobSettingsSettingsSparkJarTaskOutputReference
@@ -138,6 +140,7 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	PutPipelineTask(value *DataDatabricksJobJobSettingsSettingsPipelineTask)
 	PutPythonWheelTask(value *DataDatabricksJobJobSettingsSettingsPythonWheelTask)
 	PutQueue(value *DataDatabricksJobJobSettingsSettingsQueue)
+	PutRunAs(value *DataDatabricksJobJobSettingsSettingsRunAs)
 	PutSchedule(value *DataDatabricksJobJobSettingsSettingsSchedule)
 	PutSparkJarTask(value *DataDatabricksJobJobSettingsSettingsSparkJarTask)
 	PutSparkPythonTask(value *DataDatabricksJobJobSettingsSettingsSparkPythonTask)
@@ -164,6 +167,7 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	ResetPythonWheelTask()
 	ResetQueue()
 	ResetRetryOnTimeout()
+	ResetRunAs()
 	ResetSchedule()
 	ResetSparkJarTask()
 	ResetSparkPythonTask()
@@ -613,6 +617,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) RetryOnT
 	_jsii_.Get(
 		j,
 		"retryOnTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) RunAs() DataDatabricksJobJobSettingsSettingsRunAsOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsRunAsOutputReference
+	_jsii_.Get(
+		j,
+		"runAs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) RunAsInput() *DataDatabricksJobJobSettingsSettingsRunAs {
+	var returns *DataDatabricksJobJobSettingsSettingsRunAs
+	_jsii_.Get(
+		j,
+		"runAsInput",
 		&returns,
 	)
 	return returns
@@ -1318,6 +1342,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutQueue
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutRunAs(value *DataDatabricksJobJobSettingsSettingsRunAs) {
+	if err := d.validatePutRunAsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRunAs",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutSchedule(value *DataDatabricksJobJobSettingsSettingsSchedule) {
 	if err := d.validatePutScheduleParameters(value); err != nil {
 		panic(err)
@@ -1543,6 +1578,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetRet
 	_jsii_.InvokeVoid(
 		d,
 		"resetRetryOnTimeout",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetRunAs() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRunAs",
 		nil, // no parameters
 	)
 }

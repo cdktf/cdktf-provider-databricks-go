@@ -100,6 +100,10 @@ func (j *jsiiProxy_Job) validatePutQueueParameters(value *JobQueue) error {
 	return nil
 }
 
+func (j *jsiiProxy_Job) validatePutRunAsParameters(value *JobRunAs) error {
+	return nil
+}
+
 func (j *jsiiProxy_Job) validatePutScheduleParameters(value *JobSchedule) error {
 	return nil
 }

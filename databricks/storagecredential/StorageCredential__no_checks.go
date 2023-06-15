@@ -120,6 +120,10 @@ func (j *jsiiProxy_StorageCredential) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_StorageCredential) validateSetReadOnlyParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewStorageCredentialParameters(scope constructs.Construct, id *string, config *StorageCredentialConfig) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/cluster_policy databricks_cluster_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/cluster_policy databricks_cluster_policy}.
 type DataDatabricksClusterPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,9 @@ type DataDatabricksClusterPolicy interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -38,6 +41,9 @@ type DataDatabricksClusterPolicy interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsDefault() interface{}
+	SetIsDefault(val interface{})
+	IsDefaultInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -50,6 +56,12 @@ type DataDatabricksClusterPolicy interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PolicyFamilyDefinitionOverrides() *string
+	SetPolicyFamilyDefinitionOverrides(val *string)
+	PolicyFamilyDefinitionOverridesInput() *string
+	PolicyFamilyId() *string
+	SetPolicyFamilyId(val *string)
+	PolicyFamilyIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -88,12 +100,16 @@ type DataDatabricksClusterPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDefinition()
+	ResetDescription()
 	ResetId()
+	ResetIsDefault()
 	ResetMaxClustersPerUser()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicyFamilyDefinitionOverrides()
+	ResetPolicyFamilyId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -169,6 +185,26 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPolicy) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPolicy) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -214,6 +250,26 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy) IsDefault() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDefault",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy) IsDefaultInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDefaultInput",
 		&returns,
 	)
 	return returns
@@ -279,6 +335,46 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPolicy) PolicyFamilyDefinitionOverrides() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyFamilyDefinitionOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy) PolicyFamilyDefinitionOverridesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyFamilyDefinitionOverridesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy) PolicyFamilyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyFamilyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy) PolicyFamilyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyFamilyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPolicy) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -330,7 +426,7 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source.
 func NewDataDatabricksClusterPolicy(scope constructs.Construct, id *string, config *DataDatabricksClusterPolicyConfig) DataDatabricksClusterPolicy {
 	_init_.Initialize()
 
@@ -348,7 +444,7 @@ func NewDataDatabricksClusterPolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source.
 func NewDataDatabricksClusterPolicy_Override(d DataDatabricksClusterPolicy, scope constructs.Construct, id *string, config *DataDatabricksClusterPolicyConfig) {
 	_init_.Initialize()
 
@@ -389,6 +485,17 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPolicy)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -404,6 +511,17 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy)SetIsDefault(val interface{}) {
+	if err := j.validateSetIsDefaultParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isDefault",
 		val,
 	)
 }
@@ -437,6 +555,28 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy)SetPolicyFamilyDefinitionOverrides(val *string) {
+	if err := j.validateSetPolicyFamilyDefinitionOverridesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyFamilyDefinitionOverrides",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy)SetPolicyFamilyId(val *string) {
+	if err := j.validateSetPolicyFamilyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyFamilyId",
 		val,
 	)
 }
@@ -723,10 +863,26 @@ func (d *jsiiProxy_DataDatabricksClusterPolicy) ResetDefinition() {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterPolicy) ResetDescription() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterPolicy) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterPolicy) ResetIsDefault() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIsDefault",
 		nil, // no parameters
 	)
 }
@@ -751,6 +907,22 @@ func (d *jsiiProxy_DataDatabricksClusterPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterPolicy) ResetPolicyFamilyDefinitionOverrides() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPolicyFamilyDefinitionOverrides",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterPolicy) ResetPolicyFamilyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPolicyFamilyId",
 		nil, // no parameters
 	)
 }

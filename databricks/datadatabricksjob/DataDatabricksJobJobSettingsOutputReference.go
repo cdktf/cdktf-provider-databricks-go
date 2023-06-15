@@ -38,6 +38,9 @@ type DataDatabricksJobJobSettingsOutputReference interface {
 	JobId() *float64
 	SetJobId(val *float64)
 	JobIdInput() *float64
+	RunAsUserName() *string
+	SetRunAsUserName(val *string)
+	RunAsUserNameInput() *string
 	Settings() DataDatabricksJobJobSettingsSettingsOutputReference
 	SettingsInput() *DataDatabricksJobJobSettingsSettings
 	// Experimental.
@@ -76,6 +79,7 @@ type DataDatabricksJobJobSettingsOutputReference interface {
 	ResetCreatedTime()
 	ResetCreatorUserName()
 	ResetJobId()
+	ResetRunAsUserName()
 	ResetSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -197,6 +201,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsOutputReference) JobIdInput() *fl
 	_jsii_.Get(
 		j,
 		"jobIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsOutputReference) RunAsUserName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runAsUserName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsOutputReference) RunAsUserNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runAsUserNameInput",
 		&returns,
 	)
 	return returns
@@ -332,6 +356,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsOutputReference)SetJobId(val *flo
 	_jsii_.Set(
 		j,
 		"jobId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsOutputReference)SetRunAsUserName(val *string) {
+	if err := j.validateSetRunAsUserNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runAsUserName",
 		val,
 	)
 }
@@ -575,6 +610,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsOutputReference) ResetJobId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetJobId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsOutputReference) ResetRunAsUserName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRunAsUserName",
 		nil, // no parameters
 	)
 }

@@ -72,7 +72,15 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetDefinitionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetIsDefaultParameters(val interface{}) error {
 	return nil
 }
 
@@ -85,6 +93,14 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetMaxClustersPerUserPar
 }
 
 func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetPolicyFamilyDefinitionOverridesParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy) validateSetPolicyFamilyIdParameters(val *string) error {
 	return nil
 }
 
