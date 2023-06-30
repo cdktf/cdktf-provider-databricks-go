@@ -2,14 +2,14 @@ package datadatabrickstables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/datadatabrickstables/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabrickstables/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/tables databricks_tables}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/data-sources/tables databricks_tables}.
 type DataDatabricksTables interface {
 	cdktf.TerraformDataSource
 	CatalogName() *string
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataDatabricksTables) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/tables databricks_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/data-sources/tables databricks_tables} Data Source.
 func NewDataDatabricksTables(scope constructs.Construct, id *string, config *DataDatabricksTablesConfig) DataDatabricksTables {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataDatabricksTables(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/tables databricks_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/data-sources/tables databricks_tables} Data Source.
 func NewDataDatabricksTables_Override(d DataDatabricksTables, scope constructs.Construct, id *string, config *DataDatabricksTablesConfig) {
 	_init_.Initialize()
 

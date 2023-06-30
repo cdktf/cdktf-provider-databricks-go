@@ -2,14 +2,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/provider/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs databricks}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs databricks}.
 type DatabricksProvider interface {
 	cdktf.TerraformProvider
 	AccountId() *string
@@ -50,6 +50,9 @@ type DatabricksProvider interface {
 	ClientSecret() *string
 	SetClientSecret(val *string)
 	ClientSecretInput() *string
+	ClusterId() *string
+	SetClusterId(val *string)
+	ClusterIdInput() *string
 	ConfigFile() *string
 	SetConfigFile(val *string)
 	ConfigFileInput() *string
@@ -116,6 +119,9 @@ type DatabricksProvider interface {
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
+	WarehouseId() *string
+	SetWarehouseId(val *string)
+	WarehouseIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
@@ -133,6 +139,7 @@ type DatabricksProvider interface {
 	ResetAzureWorkspaceResourceId()
 	ResetClientId()
 	ResetClientSecret()
+	ResetClusterId()
 	ResetConfigFile()
 	ResetDatabricksCliPath()
 	ResetDebugHeaders()
@@ -152,6 +159,7 @@ type DatabricksProvider interface {
 	ResetSkipVerify()
 	ResetToken()
 	ResetUsername()
+	ResetWarehouseId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -412,6 +420,26 @@ func (j *jsiiProxy_DatabricksProvider) ClientSecretInput() *string {
 	_jsii_.Get(
 		j,
 		"clientSecretInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) ClusterId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) ClusterIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterIdInput",
 		&returns,
 	)
 	return returns
@@ -827,8 +855,28 @@ func (j *jsiiProxy_DatabricksProvider) UsernameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DatabricksProvider) WarehouseId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"warehouseId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs databricks} Resource.
+func (j *jsiiProxy_DatabricksProvider) WarehouseIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"warehouseIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs databricks} Resource.
 func NewDatabricksProvider(scope constructs.Construct, id *string, config *DatabricksProviderConfig) DatabricksProvider {
 	_init_.Initialize()
 
@@ -846,7 +894,7 @@ func NewDatabricksProvider(scope constructs.Construct, id *string, config *Datab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs databricks} Resource.
 func NewDatabricksProvider_Override(d DatabricksProvider, scope constructs.Construct, id *string, config *DatabricksProviderConfig) {
 	_init_.Initialize()
 
@@ -952,6 +1000,14 @@ func (j *jsiiProxy_DatabricksProvider)SetClientSecret(val *string) {
 	_jsii_.Set(
 		j,
 		"clientSecret",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabricksProvider)SetClusterId(val *string) {
+	_jsii_.Set(
+		j,
+		"clusterId",
 		val,
 	)
 }
@@ -1086,6 +1142,14 @@ func (j *jsiiProxy_DatabricksProvider)SetUsername(val *string) {
 	_jsii_.Set(
 		j,
 		"username",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabricksProvider)SetWarehouseId(val *string) {
+	_jsii_.Set(
+		j,
+		"warehouseId",
 		val,
 	)
 }
@@ -1292,6 +1356,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetClientSecret() {
 	)
 }
 
+func (d *jsiiProxy_DatabricksProvider) ResetClusterId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClusterId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabricksProvider) ResetConfigFile() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1424,6 +1496,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetUsername() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetUsername",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) ResetWarehouseId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWarehouseId",
 		nil, // no parameters
 	)
 }

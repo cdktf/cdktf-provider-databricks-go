@@ -398,6 +398,14 @@ func (j *jsiiProxy_Grants) validateSetViewParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Grants) validateSetVolumeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewGrantsParameters(scope constructs.Construct, id *string, config *GrantsConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

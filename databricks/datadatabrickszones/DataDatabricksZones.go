@@ -2,14 +2,14 @@ package datadatabrickszones
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/datadatabrickszones/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabrickszones/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/zones databricks_zones}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/data-sources/zones databricks_zones}.
 type DataDatabricksZones interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -280,7 +280,7 @@ func (j *jsiiProxy_DataDatabricksZones) Zones() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/zones databricks_zones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/data-sources/zones databricks_zones} Data Source.
 func NewDataDatabricksZones(scope constructs.Construct, id *string, config *DataDatabricksZonesConfig) DataDatabricksZones {
 	_init_.Initialize()
 
@@ -298,7 +298,7 @@ func NewDataDatabricksZones(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/zones databricks_zones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/data-sources/zones databricks_zones} Data Source.
 func NewDataDatabricksZones_Override(d DataDatabricksZones, scope constructs.Construct, id *string, config *DataDatabricksZonesConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package serviceprincipalrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/serviceprincipalrole/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/serviceprincipalrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/service_principal_role databricks_service_principal_role}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/service_principal_role databricks_service_principal_role}.
 type ServicePrincipalRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ServicePrincipalRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/service_principal_role databricks_service_principal_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/service_principal_role databricks_service_principal_role} Resource.
 func NewServicePrincipalRole(scope constructs.Construct, id *string, config *ServicePrincipalRoleConfig) ServicePrincipalRole {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewServicePrincipalRole(scope constructs.Construct, id *string, config *Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/service_principal_role databricks_service_principal_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/service_principal_role databricks_service_principal_role} Resource.
 func NewServicePrincipalRole_Override(s ServicePrincipalRole, scope constructs.Construct, id *string, config *ServicePrincipalRoleConfig) {
 	_init_.Initialize()
 

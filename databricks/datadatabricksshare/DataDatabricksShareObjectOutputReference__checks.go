@@ -256,6 +256,8 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetHistoryD
 
 func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataDatabricksShareObject:
 		val := val.(*DataDatabricksShareObject)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -267,11 +269,9 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetInternal
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataDatabricksShareObject, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksShareObject; received %#v (a %T)", val, val)
 		}
 	}
 

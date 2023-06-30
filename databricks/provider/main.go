@@ -37,6 +37,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clientSecret", GoGetter: "ClientSecret"},
 			_jsii_.MemberProperty{JsiiProperty: "clientSecretInput", GoGetter: "ClientSecretInput"},
+			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
+			_jsii_.MemberProperty{JsiiProperty: "clusterIdInput", GoGetter: "ClusterIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "configFile", GoGetter: "ConfigFile"},
 			_jsii_.MemberProperty{JsiiProperty: "configFileInput", GoGetter: "ConfigFileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
@@ -80,6 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureWorkspaceResourceId", GoMethod: "ResetAzureWorkspaceResourceId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientId", GoMethod: "ResetClientId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientSecret", GoMethod: "ResetClientSecret"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClusterId", GoMethod: "ResetClusterId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConfigFile", GoMethod: "ResetConfigFile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabricksCliPath", GoMethod: "ResetDatabricksCliPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDebugHeaders", GoMethod: "ResetDebugHeaders"},
@@ -97,6 +100,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipVerify", GoMethod: "ResetSkipVerify"},
 			_jsii_.MemberMethod{JsiiMethod: "resetToken", GoMethod: "ResetToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUsername", GoMethod: "ResetUsername"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWarehouseId", GoMethod: "ResetWarehouseId"},
 			_jsii_.MemberProperty{JsiiProperty: "retryTimeoutSeconds", GoGetter: "RetryTimeoutSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "retryTimeoutSecondsInput", GoGetter: "RetryTimeoutSecondsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "skipVerify", GoGetter: "SkipVerify"},
@@ -112,6 +116,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "warehouseId", GoGetter: "WarehouseId"},
+			_jsii_.MemberProperty{JsiiProperty: "warehouseIdInput", GoGetter: "WarehouseIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabricksProvider{}

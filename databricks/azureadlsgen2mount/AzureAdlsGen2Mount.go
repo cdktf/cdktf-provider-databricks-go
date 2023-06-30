@@ -2,14 +2,14 @@ package azureadlsgen2mount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/azureadlsgen2mount/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/azureadlsgen2mount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount}.
 type AzureAdlsGen2Mount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -529,7 +529,7 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource.
 func NewAzureAdlsGen2Mount(scope constructs.Construct, id *string, config *AzureAdlsGen2MountConfig) AzureAdlsGen2Mount {
 	_init_.Initialize()
 
@@ -547,7 +547,7 @@ func NewAzureAdlsGen2Mount(scope constructs.Construct, id *string, config *Azure
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource.
 func NewAzureAdlsGen2Mount_Override(a AzureAdlsGen2Mount, scope constructs.Construct, id *string, config *AzureAdlsGen2MountConfig) {
 	_init_.Initialize()
 

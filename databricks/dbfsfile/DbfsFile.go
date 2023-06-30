@@ -2,14 +2,14 @@ package dbfsfile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/dbfsfile/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/dbfsfile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/dbfs_file databricks_dbfs_file}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/dbfs_file databricks_dbfs_file}.
 type DbfsFile interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_DbfsFile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/dbfs_file databricks_dbfs_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/dbfs_file databricks_dbfs_file} Resource.
 func NewDbfsFile(scope constructs.Construct, id *string, config *DbfsFileConfig) DbfsFile {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewDbfsFile(scope constructs.Construct, id *string, config *DbfsFileConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/dbfs_file databricks_dbfs_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/dbfs_file databricks_dbfs_file} Resource.
 func NewDbfsFile_Override(d DbfsFile, scope constructs.Construct, id *string, config *DbfsFileConfig) {
 	_init_.Initialize()
 

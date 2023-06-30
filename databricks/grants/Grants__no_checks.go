@@ -128,6 +128,10 @@ func (j *jsiiProxy_Grants) validateSetViewParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Grants) validateSetVolumeParameters(val *string) error {
+	return nil
+}
+
 func validateNewGrantsParameters(scope constructs.Construct, id *string, config *GrantsConfig) error {
 	return nil
 }

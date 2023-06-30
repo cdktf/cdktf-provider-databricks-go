@@ -2,14 +2,14 @@ package grants
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/grants/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/grants/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/grants databricks_grants}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/grants databricks_grants}.
 type Grants interface {
 	cdktf.TerraformResource
 	Catalog() *string
@@ -93,6 +93,9 @@ type Grants interface {
 	View() *string
 	SetView(val *string)
 	ViewInput() *string
+	Volume() *string
+	SetVolume(val *string)
+	VolumeInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -133,6 +136,7 @@ type Grants interface {
 	ResetStorageCredential()
 	ResetTable()
 	ResetView()
+	ResetVolume()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -548,8 +552,28 @@ func (j *jsiiProxy_Grants) ViewInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Grants) Volume() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volume",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/grants databricks_grants} Resource.
+func (j *jsiiProxy_Grants) VolumeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/grants databricks_grants} Resource.
 func NewGrants(scope constructs.Construct, id *string, config *GrantsConfig) Grants {
 	_init_.Initialize()
 
@@ -567,7 +591,7 @@ func NewGrants(scope constructs.Construct, id *string, config *GrantsConfig) Gra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/grants databricks_grants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/grants databricks_grants} Resource.
 func NewGrants_Override(g Grants, scope constructs.Construct, id *string, config *GrantsConfig) {
 	_init_.Initialize()
 
@@ -763,6 +787,17 @@ func (j *jsiiProxy_Grants)SetView(val *string) {
 	_jsii_.Set(
 		j,
 		"view",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Grants)SetVolume(val *string) {
+	if err := j.validateSetVolumeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"volume",
 		val,
 	)
 }
@@ -1136,6 +1171,14 @@ func (g *jsiiProxy_Grants) ResetView() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetView",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Grants) ResetVolume() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVolume",
 		nil, // no parameters
 	)
 }

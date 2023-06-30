@@ -56,6 +56,10 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetCom
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetEnvironmentVarsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

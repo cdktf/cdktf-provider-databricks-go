@@ -2,14 +2,14 @@ package mwscredentials
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/mwscredentials/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/mwscredentials/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/mws_credentials databricks_mws_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_credentials databricks_mws_credentials}.
 type MwsCredentials interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -388,7 +388,7 @@ func (j *jsiiProxy_MwsCredentials) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/mws_credentials databricks_mws_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_credentials databricks_mws_credentials} Resource.
 func NewMwsCredentials(scope constructs.Construct, id *string, config *MwsCredentialsConfig) MwsCredentials {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewMwsCredentials(scope constructs.Construct, id *string, config *MwsCreden
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/mws_credentials databricks_mws_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_credentials databricks_mws_credentials} Resource.
 func NewMwsCredentials_Override(m MwsCredentials, scope constructs.Construct, id *string, config *MwsCredentialsConfig) {
 	_init_.Initialize()
 

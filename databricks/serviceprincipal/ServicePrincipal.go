@@ -2,14 +2,14 @@ package serviceprincipal
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/serviceprincipal/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/serviceprincipal/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/service_principal databricks_service_principal}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/service_principal databricks_service_principal}.
 type ServicePrincipal interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -43,6 +43,9 @@ type ServicePrincipal interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableAsUserDeletion() interface{}
+	SetDisableAsUserDeletion(val interface{})
+	DisableAsUserDeletionInput() interface{}
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
@@ -130,6 +133,7 @@ type ServicePrincipal interface {
 	ResetAllowInstancePoolCreate()
 	ResetApplicationId()
 	ResetDatabricksSqlAccess()
+	ResetDisableAsUserDeletion()
 	ResetDisplayName()
 	ResetExternalId()
 	ResetForce()
@@ -302,6 +306,26 @@ func (j *jsiiProxy_ServicePrincipal) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipal) DisableAsUserDeletion() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAsUserDeletion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipal) DisableAsUserDeletionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAsUserDeletionInput",
 		&returns,
 	)
 	return returns
@@ -598,7 +622,7 @@ func (j *jsiiProxy_ServicePrincipal) WorkspaceAccessInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/service_principal databricks_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/service_principal databricks_service_principal} Resource.
 func NewServicePrincipal(scope constructs.Construct, id *string, config *ServicePrincipalConfig) ServicePrincipal {
 	_init_.Initialize()
 
@@ -616,7 +640,7 @@ func NewServicePrincipal(scope constructs.Construct, id *string, config *Service
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/service_principal databricks_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/service_principal databricks_service_principal} Resource.
 func NewServicePrincipal_Override(s ServicePrincipal, scope constructs.Construct, id *string, config *ServicePrincipalConfig) {
 	_init_.Initialize()
 
@@ -708,6 +732,17 @@ func (j *jsiiProxy_ServicePrincipal)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicePrincipal)SetDisableAsUserDeletion(val interface{}) {
+	if err := j.validateSetDisableAsUserDeletionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableAsUserDeletion",
 		val,
 	)
 }
@@ -1151,6 +1186,14 @@ func (s *jsiiProxy_ServicePrincipal) ResetDatabricksSqlAccess() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDatabricksSqlAccess",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicePrincipal) ResetDisableAsUserDeletion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDisableAsUserDeletion",
 		nil, // no parameters
 	)
 }

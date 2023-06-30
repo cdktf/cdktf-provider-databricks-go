@@ -80,6 +80,10 @@ func (j *jsiiProxy_SqlGlobalConfig) validateSetEnableServerlessComputeParameters
 	return nil
 }
 
+func (j *jsiiProxy_SqlGlobalConfig) validateSetGoogleServiceAccountParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlGlobalConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

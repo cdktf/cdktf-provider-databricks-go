@@ -231,6 +231,8 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutp
 
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataDatabricksJobJobSettingsSettingsNewClusterInitScripts:
 		val := val.(*DataDatabricksJobJobSettingsSettingsNewClusterInitScripts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -242,11 +244,9 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutp
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataDatabricksJobJobSettingsSettingsNewClusterInitScripts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksJobJobSettingsSettingsNewClusterInitScripts; received %#v (a %T)", val, val)
 		}
 	}
 

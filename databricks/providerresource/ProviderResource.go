@@ -2,14 +2,14 @@ package providerresource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/providerresource/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/providerresource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/provider databricks_provider}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/provider databricks_provider}.
 type ProviderResource interface {
 	cdktf.TerraformResource
 	AuthenticationType() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_ProviderResource) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/provider databricks_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/provider databricks_provider} Resource.
 func NewProviderResource(scope constructs.Construct, id *string, config *ProviderResourceConfig) ProviderResource {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewProviderResource(scope constructs.Construct, id *string, config *Provide
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/provider databricks_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/provider databricks_provider} Resource.
 func NewProviderResource_Override(p ProviderResource, scope constructs.Construct, id *string, config *ProviderResourceConfig) {
 	_init_.Initialize()
 

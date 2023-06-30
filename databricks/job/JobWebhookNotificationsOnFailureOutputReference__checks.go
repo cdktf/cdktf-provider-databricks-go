@@ -173,6 +173,8 @@ func (j *jsiiProxy_JobWebhookNotificationsOnFailureOutputReference) validateSetI
 
 func (j *jsiiProxy_JobWebhookNotificationsOnFailureOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *JobWebhookNotificationsOnFailure:
 		val := val.(*JobWebhookNotificationsOnFailure)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_JobWebhookNotificationsOnFailureOutputReference) validateSetI
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *JobWebhookNotificationsOnFailure, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *JobWebhookNotificationsOnFailure; received %#v (a %T)", val, val)
 		}
 	}
 

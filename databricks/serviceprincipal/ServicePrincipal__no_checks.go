@@ -92,6 +92,10 @@ func (j *jsiiProxy_ServicePrincipal) validateSetDatabricksSqlAccessParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipal) validateSetDisableAsUserDeletionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipal) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

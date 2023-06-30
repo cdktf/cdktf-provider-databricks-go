@@ -2,14 +2,14 @@ package mwsnetworks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/mwsnetworks/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/mwsnetworks/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/mws_networks databricks_mws_networks}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_networks databricks_mws_networks}.
 type MwsNetworks interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -572,7 +572,7 @@ func (j *jsiiProxy_MwsNetworks) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/mws_networks databricks_mws_networks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_networks databricks_mws_networks} Resource.
 func NewMwsNetworks(scope constructs.Construct, id *string, config *MwsNetworksConfig) MwsNetworks {
 	_init_.Initialize()
 
@@ -590,7 +590,7 @@ func NewMwsNetworks(scope constructs.Construct, id *string, config *MwsNetworksC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/mws_networks databricks_mws_networks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_networks databricks_mws_networks} Resource.
 func NewMwsNetworks_Override(m MwsNetworks, scope constructs.Construct, id *string, config *MwsNetworksConfig) {
 	_init_.Initialize()
 

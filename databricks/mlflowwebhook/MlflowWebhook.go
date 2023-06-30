@@ -2,14 +2,14 @@ package mlflowwebhook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/mlflowwebhook/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/mlflowwebhook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/mlflow_webhook databricks_mlflow_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mlflow_webhook databricks_mlflow_webhook}.
 type MlflowWebhook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -429,7 +429,7 @@ func (j *jsiiProxy_MlflowWebhook) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/mlflow_webhook databricks_mlflow_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mlflow_webhook databricks_mlflow_webhook} Resource.
 func NewMlflowWebhook(scope constructs.Construct, id *string, config *MlflowWebhookConfig) MlflowWebhook {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewMlflowWebhook(scope constructs.Construct, id *string, config *MlflowWebh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/mlflow_webhook databricks_mlflow_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mlflow_webhook databricks_mlflow_webhook} Resource.
 func NewMlflowWebhook_Override(m MlflowWebhook, scope constructs.Construct, id *string, config *MlflowWebhookConfig) {
 	_init_.Initialize()
 

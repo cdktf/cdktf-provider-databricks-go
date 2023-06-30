@@ -88,6 +88,10 @@ func (j *jsiiProxy_User) validateSetDatabricksSqlAccessParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_User) validateSetDisableAsUserDeletionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_User) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

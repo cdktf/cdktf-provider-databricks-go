@@ -323,6 +323,8 @@ func (j *jsiiProxy_PipelineClusterOutputReference) validateSetInstancePoolIdPara
 
 func (j *jsiiProxy_PipelineClusterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *PipelineCluster:
 		val := val.(*PipelineCluster)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -334,11 +336,9 @@ func (j *jsiiProxy_PipelineClusterOutputReference) validateSetInternalValueParam
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *PipelineCluster, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PipelineCluster; received %#v (a %T)", val, val)
 		}
 	}
 

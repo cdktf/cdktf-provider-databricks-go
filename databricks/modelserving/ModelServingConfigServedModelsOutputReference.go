@@ -2,9 +2,9 @@ package modelserving
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/modelserving/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/modelserving/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -25,6 +25,9 @@ type ModelServingConfigServedModelsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnvironmentVars() *map[string]*string
+	SetEnvironmentVars(val *map[string]*string)
+	EnvironmentVarsInput() *map[string]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -76,6 +79,7 @@ type ModelServingConfigServedModelsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEnvironmentVars()
 	ResetName()
 	ResetScaleToZeroEnabled()
 	// Produce the Token's value at resolution time.
@@ -118,6 +122,26 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) CreationStack(
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) EnvironmentVars() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"environmentVars",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) EnvironmentVarsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"environmentVarsInput",
 		&returns,
 	)
 	return returns
@@ -309,6 +333,17 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference)SetComplexObjec
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference)SetEnvironmentVars(val *map[string]*string) {
+	if err := j.validateSetEnvironmentVarsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"environmentVars",
 		val,
 	)
 }
@@ -585,6 +620,14 @@ func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetEnvironmentVars() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEnvironmentVars",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetName() {

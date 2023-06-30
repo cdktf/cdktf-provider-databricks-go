@@ -163,8 +163,18 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetCom
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetEnvironmentVarsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ModelServingConfigServedModels:
 		val := val.(*ModelServingConfigServedModels)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +186,9 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetInt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ModelServingConfigServedModels, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ModelServingConfigServedModels; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -253,6 +253,14 @@ func (j *jsiiProxy_SqlGlobalConfig) validateSetEnableServerlessComputeParameters
 	return nil
 }
 
+func (j *jsiiProxy_SqlGlobalConfig) validateSetGoogleServiceAccountParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SqlGlobalConfig) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
