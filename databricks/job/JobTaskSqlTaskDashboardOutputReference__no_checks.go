@@ -44,6 +44,10 @@ func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) validateInterpolation
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) validatePutSubscriptionsParameters(value interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -56,11 +60,19 @@ func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) validateSetComplexObj
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) validateSetCustomSubjectParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) validateSetDashboardIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) validateSetInternalValueParameters(val *JobTaskSqlTaskDashboard) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) validateSetPauseSubscriptionsParameters(val interface{}) error {
 	return nil
 }
 

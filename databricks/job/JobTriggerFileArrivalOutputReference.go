@@ -29,9 +29,9 @@ type JobTriggerFileArrivalOutputReference interface {
 	Fqn() *string
 	InternalValue() *JobTriggerFileArrival
 	SetInternalValue(val *JobTriggerFileArrival)
-	MinTimeBetweenTriggerSeconds() *float64
-	SetMinTimeBetweenTriggerSeconds(val *float64)
-	MinTimeBetweenTriggerSecondsInput() *float64
+	MinTimeBetweenTriggersSeconds() *float64
+	SetMinTimeBetweenTriggersSeconds(val *float64)
+	MinTimeBetweenTriggersSecondsInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,7 +70,7 @@ type JobTriggerFileArrivalOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetMinTimeBetweenTriggerSeconds()
+	ResetMinTimeBetweenTriggersSeconds()
 	ResetWaitAfterLastChangeSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -137,21 +137,21 @@ func (j *jsiiProxy_JobTriggerFileArrivalOutputReference) InternalValue() *JobTri
 	return returns
 }
 
-func (j *jsiiProxy_JobTriggerFileArrivalOutputReference) MinTimeBetweenTriggerSeconds() *float64 {
+func (j *jsiiProxy_JobTriggerFileArrivalOutputReference) MinTimeBetweenTriggersSeconds() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"minTimeBetweenTriggerSeconds",
+		"minTimeBetweenTriggersSeconds",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_JobTriggerFileArrivalOutputReference) MinTimeBetweenTriggerSecondsInput() *float64 {
+func (j *jsiiProxy_JobTriggerFileArrivalOutputReference) MinTimeBetweenTriggersSecondsInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"minTimeBetweenTriggerSecondsInput",
+		"minTimeBetweenTriggersSecondsInput",
 		&returns,
 	)
 	return returns
@@ -278,13 +278,13 @@ func (j *jsiiProxy_JobTriggerFileArrivalOutputReference)SetInternalValue(val *Jo
 	)
 }
 
-func (j *jsiiProxy_JobTriggerFileArrivalOutputReference)SetMinTimeBetweenTriggerSeconds(val *float64) {
-	if err := j.validateSetMinTimeBetweenTriggerSecondsParameters(val); err != nil {
+func (j *jsiiProxy_JobTriggerFileArrivalOutputReference)SetMinTimeBetweenTriggersSeconds(val *float64) {
+	if err := j.validateSetMinTimeBetweenTriggersSecondsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"minTimeBetweenTriggerSeconds",
+		"minTimeBetweenTriggersSeconds",
 		val,
 	)
 }
@@ -519,10 +519,10 @@ func (j *jsiiProxy_JobTriggerFileArrivalOutputReference) InterpolationForAttribu
 	return returns
 }
 
-func (j *jsiiProxy_JobTriggerFileArrivalOutputReference) ResetMinTimeBetweenTriggerSeconds() {
+func (j *jsiiProxy_JobTriggerFileArrivalOutputReference) ResetMinTimeBetweenTriggersSeconds() {
 	_jsii_.InvokeVoid(
 		j,
-		"resetMinTimeBetweenTriggerSeconds",
+		"resetMinTimeBetweenTriggersSeconds",
 		nil, // no parameters
 	)
 }

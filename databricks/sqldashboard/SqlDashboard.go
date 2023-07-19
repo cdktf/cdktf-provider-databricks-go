@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/sql_dashboard databricks_sql_dashboard}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_dashboard databricks_sql_dashboard}.
 type SqlDashboard interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_SqlDashboard) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
 func NewSqlDashboard(scope constructs.Construct, id *string, config *SqlDashboardConfig) SqlDashboard {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewSqlDashboard(scope constructs.Construct, id *string, config *SqlDashboar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
 func NewSqlDashboard_Override(s SqlDashboard, scope constructs.Construct, id *string, config *SqlDashboardConfig) {
 	_init_.Initialize()
 

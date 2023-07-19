@@ -60,7 +60,7 @@ func (j *jsiiProxy_JobTriggerFileArrivalOutputReference) validateSetInternalValu
 	return nil
 }
 
-func (j *jsiiProxy_JobTriggerFileArrivalOutputReference) validateSetMinTimeBetweenTriggerSecondsParameters(val *float64) error {
+func (j *jsiiProxy_JobTriggerFileArrivalOutputReference) validateSetMinTimeBetweenTriggersSecondsParameters(val *float64) error {
 	return nil
 }
 

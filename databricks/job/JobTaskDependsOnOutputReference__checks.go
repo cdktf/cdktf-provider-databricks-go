@@ -187,6 +187,14 @@ func (j *jsiiProxy_JobTaskDependsOnOutputReference) validateSetInternalValuePara
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskDependsOnOutputReference) validateSetOutcomeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskDependsOnOutputReference) validateSetTaskKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

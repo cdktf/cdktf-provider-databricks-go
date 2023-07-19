@@ -20,6 +20,8 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Compute() DataDatabricksJobJobSettingsSettingsComputeList
+	ComputeInput() interface{}
 	Continuous() DataDatabricksJobJobSettingsSettingsContinuousOutputReference
 	ContinuousInput() *DataDatabricksJobJobSettingsSettingsContinuous
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -128,6 +130,7 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCompute(value interface{})
 	PutContinuous(value *DataDatabricksJobJobSettingsSettingsContinuous)
 	PutDbtTask(value *DataDatabricksJobJobSettingsSettingsDbtTask)
 	PutEmailNotifications(value *DataDatabricksJobJobSettingsSettingsEmailNotifications)
@@ -148,6 +151,7 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	PutTask(value interface{})
 	PutTrigger(value *DataDatabricksJobJobSettingsSettingsTrigger)
 	PutWebhookNotifications(value *DataDatabricksJobJobSettingsSettingsWebhookNotifications)
+	ResetCompute()
 	ResetContinuous()
 	ResetDbtTask()
 	ResetEmailNotifications()
@@ -207,6 +211,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ComplexO
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) Compute() DataDatabricksJobJobSettingsSettingsComputeList {
+	var returns DataDatabricksJobJobSettingsSettingsComputeList
+	_jsii_.Get(
+		j,
+		"compute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ComputeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"computeInput",
 		&returns,
 	)
 	return returns
@@ -1210,6 +1234,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) Interpol
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutCompute(value interface{}) {
+	if err := d.validatePutComputeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCompute",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutContinuous(value *DataDatabricksJobJobSettingsSettingsContinuous) {
 	if err := d.validatePutContinuousParameters(value); err != nil {
 		panic(err)
@@ -1427,6 +1462,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutWebho
 		d,
 		"putWebhookNotifications",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetCompute() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCompute",
+		nil, // no parameters
 	)
 }
 

@@ -29,6 +29,9 @@ type JobTaskDependsOnOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Outcome() *string
+	SetOutcome(val *string)
+	OutcomeInput() *string
 	TaskKey() *string
 	SetTaskKey(val *string)
 	TaskKeyInput() *string
@@ -64,7 +67,7 @@ type JobTaskDependsOnOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetTaskKey()
+	ResetOutcome()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -125,6 +128,26 @@ func (j *jsiiProxy_JobTaskDependsOnOutputReference) InternalValue() interface{} 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskDependsOnOutputReference) Outcome() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outcome",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskDependsOnOutputReference) OutcomeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outcomeInput",
 		&returns,
 	)
 	return returns
@@ -227,6 +250,17 @@ func (j *jsiiProxy_JobTaskDependsOnOutputReference)SetInternalValue(val interfac
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskDependsOnOutputReference)SetOutcome(val *string) {
+	if err := j.validateSetOutcomeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"outcome",
 		val,
 	)
 }
@@ -450,10 +484,10 @@ func (j *jsiiProxy_JobTaskDependsOnOutputReference) InterpolationForAttribute(pr
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskDependsOnOutputReference) ResetTaskKey() {
+func (j *jsiiProxy_JobTaskDependsOnOutputReference) ResetOutcome() {
 	_jsii_.InvokeVoid(
 		j,
-		"resetTaskKey",
+		"resetOutcome",
 		nil, // no parameters
 	)
 }

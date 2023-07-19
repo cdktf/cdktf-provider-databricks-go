@@ -187,6 +187,14 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDependsOnOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDependsOnOutputReference) validateSetOutcomeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDependsOnOutputReference) validateSetTaskKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

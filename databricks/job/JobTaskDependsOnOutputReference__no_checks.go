@@ -60,6 +60,10 @@ func (j *jsiiProxy_JobTaskDependsOnOutputReference) validateSetInternalValuePara
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskDependsOnOutputReference) validateSetOutcomeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskDependsOnOutputReference) validateSetTaskKeyParameters(val *string) error {
 	return nil
 }

@@ -44,6 +44,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) vali
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutConditionTaskParameters(value *DataDatabricksJobJobSettingsSettingsTaskConditionTask) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutDbtTaskParameters(value *DataDatabricksJobJobSettingsSettingsTaskDbtTask) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) vali
 }
 
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validateSetComputeKeyParameters(val *string) error {
 	return nil
 }
 

@@ -90,6 +90,37 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutpu
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference) validatePutSubscriptionsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptions:
+		value := value.(*[]*DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptions)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptions:
+		value_ := value.([]*DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptions)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptions; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -163,6 +194,14 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutpu
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference) validateSetCustomSubjectParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference) validateSetDashboardIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -174,6 +213,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutpu
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference) validateSetInternalValueParameters(val *DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference) validateSetPauseSubscriptionsParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

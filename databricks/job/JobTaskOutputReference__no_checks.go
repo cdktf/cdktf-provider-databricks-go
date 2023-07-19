@@ -44,6 +44,10 @@ func (j *jsiiProxy_JobTaskOutputReference) validateInterpolationForAttributePara
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) validatePutConditionTaskParameters(value *JobTaskConditionTask) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) validatePutDbtTaskParameters(value *JobTaskDbtTask) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (j *jsiiProxy_JobTaskOutputReference) validateSetComplexObjectIndexParamete
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) validateSetComputeKeyParameters(val *string) error {
 	return nil
 }
 

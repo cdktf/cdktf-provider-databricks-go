@@ -60,6 +60,10 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDependsOnOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDependsOnOutputReference) validateSetOutcomeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskDependsOnOutputReference) validateSetTaskKeyParameters(val *string) error {
 	return nil
 }

@@ -20,6 +20,11 @@ type DataDatabricksJobJobSettingsSettingsTaskOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ComputeKey() *string
+	SetComputeKey(val *string)
+	ComputeKeyInput() *string
+	ConditionTask() DataDatabricksJobJobSettingsSettingsTaskConditionTaskOutputReference
+	ConditionTaskInput() *DataDatabricksJobJobSettingsSettingsTaskConditionTask
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -112,6 +117,7 @@ type DataDatabricksJobJobSettingsSettingsTaskOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutConditionTask(value *DataDatabricksJobJobSettingsSettingsTaskConditionTask)
 	PutDbtTask(value *DataDatabricksJobJobSettingsSettingsTaskDbtTask)
 	PutDependsOn(value interface{})
 	PutEmailNotifications(value *DataDatabricksJobJobSettingsSettingsTaskEmailNotifications)
@@ -124,6 +130,8 @@ type DataDatabricksJobJobSettingsSettingsTaskOutputReference interface {
 	PutSparkPythonTask(value *DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask)
 	PutSparkSubmitTask(value *DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask)
 	PutSqlTask(value *DataDatabricksJobJobSettingsSettingsTaskSqlTask)
+	ResetComputeKey()
+	ResetConditionTask()
 	ResetDbtTask()
 	ResetDependsOn()
 	ResetDescription()
@@ -175,6 +183,46 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) Comp
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) ComputeKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"computeKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) ComputeKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"computeKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) ConditionTask() DataDatabricksJobJobSettingsSettingsTaskConditionTaskOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsTaskConditionTaskOutputReference
+	_jsii_.Get(
+		j,
+		"conditionTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) ConditionTaskInput() *DataDatabricksJobJobSettingsSettingsTaskConditionTask {
+	var returns *DataDatabricksJobJobSettingsSettingsTaskConditionTask
+	_jsii_.Get(
+		j,
+		"conditionTaskInput",
 		&returns,
 	)
 	return returns
@@ -700,6 +748,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference)SetCo
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference)SetComputeKey(val *string) {
+	if err := j.validateSetComputeKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"computeKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference)SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
@@ -1018,6 +1077,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) Inte
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) PutConditionTask(value *DataDatabricksJobJobSettingsSettingsTaskConditionTask) {
+	if err := d.validatePutConditionTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putConditionTask",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) PutDbtTask(value *DataDatabricksJobJobSettingsSettingsTaskDbtTask) {
 	if err := d.validatePutDbtTaskParameters(value); err != nil {
 		panic(err)
@@ -1147,6 +1217,22 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) PutS
 		d,
 		"putSqlTask",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) ResetComputeKey() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetComputeKey",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) ResetConditionTask() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetConditionTask",
+		nil, // no parameters
 	)
 }
 

@@ -20,6 +20,11 @@ type JobTaskOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ComputeKey() *string
+	SetComputeKey(val *string)
+	ComputeKeyInput() *string
+	ConditionTask() JobTaskConditionTaskOutputReference
+	ConditionTaskInput() *JobTaskConditionTask
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -112,6 +117,7 @@ type JobTaskOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutConditionTask(value *JobTaskConditionTask)
 	PutDbtTask(value *JobTaskDbtTask)
 	PutDependsOn(value interface{})
 	PutEmailNotifications(value *JobTaskEmailNotifications)
@@ -124,6 +130,8 @@ type JobTaskOutputReference interface {
 	PutSparkPythonTask(value *JobTaskSparkPythonTask)
 	PutSparkSubmitTask(value *JobTaskSparkSubmitTask)
 	PutSqlTask(value *JobTaskSqlTask)
+	ResetComputeKey()
+	ResetConditionTask()
 	ResetDbtTask()
 	ResetDependsOn()
 	ResetDescription()
@@ -175,6 +183,46 @@ func (j *jsiiProxy_JobTaskOutputReference) ComplexObjectIsFromSet() *bool {
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ComputeKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"computeKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ComputeKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"computeKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ConditionTask() JobTaskConditionTaskOutputReference {
+	var returns JobTaskConditionTaskOutputReference
+	_jsii_.Get(
+		j,
+		"conditionTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ConditionTaskInput() *JobTaskConditionTask {
+	var returns *JobTaskConditionTask
+	_jsii_.Get(
+		j,
+		"conditionTaskInput",
 		&returns,
 	)
 	return returns
@@ -700,6 +748,17 @@ func (j *jsiiProxy_JobTaskOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	)
 }
 
+func (j *jsiiProxy_JobTaskOutputReference)SetComputeKey(val *string) {
+	if err := j.validateSetComputeKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"computeKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JobTaskOutputReference)SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
@@ -1018,6 +1077,17 @@ func (j *jsiiProxy_JobTaskOutputReference) InterpolationForAttribute(property *s
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) PutConditionTask(value *JobTaskConditionTask) {
+	if err := j.validatePutConditionTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putConditionTask",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) PutDbtTask(value *JobTaskDbtTask) {
 	if err := j.validatePutDbtTaskParameters(value); err != nil {
 		panic(err)
@@ -1147,6 +1217,22 @@ func (j *jsiiProxy_JobTaskOutputReference) PutSqlTask(value *JobTaskSqlTask) {
 		j,
 		"putSqlTask",
 		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ResetComputeKey() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetComputeKey",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ResetConditionTask() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetConditionTask",
+		nil, // no parameters
 	)
 }
 

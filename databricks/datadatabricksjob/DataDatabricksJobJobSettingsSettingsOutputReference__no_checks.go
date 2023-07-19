@@ -44,6 +44,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validate
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutComputeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutContinuousParameters(value *DataDatabricksJobJobSettingsSettingsContinuous) error {
 	return nil
 }

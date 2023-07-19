@@ -32,6 +32,11 @@ type DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputReference interfa
 	Fqn() *string
 	InternalValue() *DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert
 	SetInternalValue(val *DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert)
+	PauseSubscriptions() interface{}
+	SetPauseSubscriptions(val interface{})
+	PauseSubscriptionsInput() interface{}
+	Subscriptions() DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptionsList
+	SubscriptionsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +69,8 @@ type DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSubscriptions(value interface{})
+	ResetPauseSubscriptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +151,46 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputRef
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputReference) PauseSubscriptions() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pauseSubscriptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputReference) PauseSubscriptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pauseSubscriptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputReference) Subscriptions() DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptionsList {
+	var returns DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptionsList
+	_jsii_.Get(
+		j,
+		"subscriptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputReference) SubscriptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"subscriptionsInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +284,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputRef
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputReference)SetPauseSubscriptions(val interface{}) {
+	if err := j.validateSetPauseSubscriptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pauseSubscriptions",
 		val,
 	)
 }
@@ -447,6 +505,25 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputRef
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputReference) PutSubscriptions(value interface{}) {
+	if err := d.validatePutSubscriptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSubscriptions",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputReference) ResetPauseSubscriptions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPauseSubscriptions",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

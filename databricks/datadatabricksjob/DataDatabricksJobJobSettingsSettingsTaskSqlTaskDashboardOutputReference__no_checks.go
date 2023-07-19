@@ -44,6 +44,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutpu
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference) validatePutSubscriptionsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -56,11 +60,19 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutpu
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference) validateSetCustomSubjectParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference) validateSetDashboardIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference) validateSetInternalValueParameters(val *DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference) validateSetPauseSubscriptionsParameters(val interface{}) error {
 	return nil
 }
 

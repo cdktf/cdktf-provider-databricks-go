@@ -25,6 +25,9 @@ type JobTaskSqlTaskDashboardOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomSubject() *string
+	SetCustomSubject(val *string)
+	CustomSubjectInput() *string
 	DashboardId() *string
 	SetDashboardId(val *string)
 	DashboardIdInput() *string
@@ -32,6 +35,11 @@ type JobTaskSqlTaskDashboardOutputReference interface {
 	Fqn() *string
 	InternalValue() *JobTaskSqlTaskDashboard
 	SetInternalValue(val *JobTaskSqlTaskDashboard)
+	PauseSubscriptions() interface{}
+	SetPauseSubscriptions(val interface{})
+	PauseSubscriptionsInput() interface{}
+	Subscriptions() JobTaskSqlTaskDashboardSubscriptionsList
+	SubscriptionsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +72,10 @@ type JobTaskSqlTaskDashboardOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSubscriptions(value interface{})
+	ResetCustomSubject()
+	ResetPauseSubscriptions()
+	ResetSubscriptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -109,6 +121,26 @@ func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) CreationStack() *[]*s
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) CustomSubject() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customSubject",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) CustomSubjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customSubjectInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) DashboardId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -144,6 +176,46 @@ func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) InternalValue() *JobT
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) PauseSubscriptions() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pauseSubscriptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) PauseSubscriptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pauseSubscriptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) Subscriptions() JobTaskSqlTaskDashboardSubscriptionsList {
+	var returns JobTaskSqlTaskDashboardSubscriptionsList
+	_jsii_.Get(
+		j,
+		"subscriptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) SubscriptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"subscriptionsInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +291,17 @@ func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference)SetComplexObjectIsFrom
 	)
 }
 
+func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference)SetCustomSubject(val *string) {
+	if err := j.validateSetCustomSubjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customSubject",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference)SetDashboardId(val *string) {
 	if err := j.validateSetDashboardIdParameters(val); err != nil {
 		panic(err)
@@ -237,6 +320,17 @@ func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference)SetInternalValue(val *
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference)SetPauseSubscriptions(val interface{}) {
+	if err := j.validateSetPauseSubscriptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pauseSubscriptions",
 		val,
 	)
 }
@@ -447,6 +541,41 @@ func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) PutSubscriptions(value interface{}) {
+	if err := j.validatePutSubscriptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putSubscriptions",
+		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) ResetCustomSubject() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetCustomSubject",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) ResetPauseSubscriptions() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetPauseSubscriptions",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) ResetSubscriptions() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetSubscriptions",
+		nil, // no parameters
+	)
 }
 
 func (j *jsiiProxy_JobTaskSqlTaskDashboardOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

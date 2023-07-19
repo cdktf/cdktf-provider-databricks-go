@@ -29,9 +29,9 @@ type DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference inter
 	Fqn() *string
 	InternalValue() *DataDatabricksJobJobSettingsSettingsTriggerFileArrival
 	SetInternalValue(val *DataDatabricksJobJobSettingsSettingsTriggerFileArrival)
-	MinTimeBetweenTriggerSeconds() *float64
-	SetMinTimeBetweenTriggerSeconds(val *float64)
-	MinTimeBetweenTriggerSecondsInput() *float64
+	MinTimeBetweenTriggersSeconds() *float64
+	SetMinTimeBetweenTriggersSeconds(val *float64)
+	MinTimeBetweenTriggersSecondsInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,7 +70,7 @@ type DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference inter
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetMinTimeBetweenTriggerSeconds()
+	ResetMinTimeBetweenTriggersSeconds()
 	ResetWaitAfterLastChangeSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -137,21 +137,21 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) MinTimeBetweenTriggerSeconds() *float64 {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) MinTimeBetweenTriggersSeconds() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"minTimeBetweenTriggerSeconds",
+		"minTimeBetweenTriggersSeconds",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) MinTimeBetweenTriggerSecondsInput() *float64 {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) MinTimeBetweenTriggersSecondsInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"minTimeBetweenTriggerSecondsInput",
+		"minTimeBetweenTriggersSecondsInput",
 		&returns,
 	)
 	return returns
@@ -278,13 +278,13 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputR
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference)SetMinTimeBetweenTriggerSeconds(val *float64) {
-	if err := j.validateSetMinTimeBetweenTriggerSecondsParameters(val); err != nil {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference)SetMinTimeBetweenTriggersSeconds(val *float64) {
+	if err := j.validateSetMinTimeBetweenTriggersSecondsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"minTimeBetweenTriggerSeconds",
+		"minTimeBetweenTriggersSeconds",
 		val,
 	)
 }
@@ -519,10 +519,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) ResetMinTimeBetweenTriggerSeconds() {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) ResetMinTimeBetweenTriggersSeconds() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetMinTimeBetweenTriggerSeconds",
+		"resetMinTimeBetweenTriggersSeconds",
 		nil, // no parameters
 	)
 }

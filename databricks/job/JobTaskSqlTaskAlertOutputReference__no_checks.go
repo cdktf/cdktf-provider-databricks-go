@@ -44,6 +44,10 @@ func (j *jsiiProxy_JobTaskSqlTaskAlertOutputReference) validateInterpolationForA
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskSqlTaskAlertOutputReference) validatePutSubscriptionsParameters(value interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskSqlTaskAlertOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -61,6 +65,10 @@ func (j *jsiiProxy_JobTaskSqlTaskAlertOutputReference) validateSetComplexObjectI
 }
 
 func (j *jsiiProxy_JobTaskSqlTaskAlertOutputReference) validateSetInternalValueParameters(val *JobTaskSqlTaskAlert) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskAlertOutputReference) validateSetPauseSubscriptionsParameters(val interface{}) error {
 	return nil
 }
 

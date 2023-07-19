@@ -60,7 +60,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) validateSetMinTimeBetweenTriggerSecondsParameters(val *float64) error {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference) validateSetMinTimeBetweenTriggersSecondsParameters(val *float64) error {
 	return nil
 }
 
