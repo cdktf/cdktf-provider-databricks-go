@@ -44,6 +44,8 @@ type DataDatabricksJobJobSettingsSettingsTaskOutputReference interface {
 	ExistingClusterIdInput() *string
 	// Experimental.
 	Fqn() *string
+	Health() DataDatabricksJobJobSettingsSettingsTaskHealthOutputReference
+	HealthInput() *DataDatabricksJobJobSettingsSettingsTaskHealth
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	JobClusterKey() *string
@@ -61,6 +63,8 @@ type DataDatabricksJobJobSettingsSettingsTaskOutputReference interface {
 	NewClusterInput() *DataDatabricksJobJobSettingsSettingsTaskNewCluster
 	NotebookTask() DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference
 	NotebookTaskInput() *DataDatabricksJobJobSettingsSettingsTaskNotebookTask
+	NotificationSettings() DataDatabricksJobJobSettingsSettingsTaskNotificationSettingsOutputReference
+	NotificationSettingsInput() *DataDatabricksJobJobSettingsSettingsTaskNotificationSettings
 	PipelineTask() DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputReference
 	PipelineTaskInput() *DataDatabricksJobJobSettingsSettingsTaskPipelineTask
 	PythonWheelTask() DataDatabricksJobJobSettingsSettingsTaskPythonWheelTaskOutputReference
@@ -121,9 +125,11 @@ type DataDatabricksJobJobSettingsSettingsTaskOutputReference interface {
 	PutDbtTask(value *DataDatabricksJobJobSettingsSettingsTaskDbtTask)
 	PutDependsOn(value interface{})
 	PutEmailNotifications(value *DataDatabricksJobJobSettingsSettingsTaskEmailNotifications)
+	PutHealth(value *DataDatabricksJobJobSettingsSettingsTaskHealth)
 	PutLibrary(value interface{})
 	PutNewCluster(value *DataDatabricksJobJobSettingsSettingsTaskNewCluster)
 	PutNotebookTask(value *DataDatabricksJobJobSettingsSettingsTaskNotebookTask)
+	PutNotificationSettings(value *DataDatabricksJobJobSettingsSettingsTaskNotificationSettings)
 	PutPipelineTask(value *DataDatabricksJobJobSettingsSettingsTaskPipelineTask)
 	PutPythonWheelTask(value *DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask)
 	PutSparkJarTask(value *DataDatabricksJobJobSettingsSettingsTaskSparkJarTask)
@@ -137,12 +143,14 @@ type DataDatabricksJobJobSettingsSettingsTaskOutputReference interface {
 	ResetDescription()
 	ResetEmailNotifications()
 	ResetExistingClusterId()
+	ResetHealth()
 	ResetJobClusterKey()
 	ResetLibrary()
 	ResetMaxRetries()
 	ResetMinRetryIntervalMillis()
 	ResetNewCluster()
 	ResetNotebookTask()
+	ResetNotificationSettings()
 	ResetPipelineTask()
 	ResetPythonWheelTask()
 	ResetRetryOnTimeout()
@@ -348,6 +356,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) Fqn(
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) Health() DataDatabricksJobJobSettingsSettingsTaskHealthOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsTaskHealthOutputReference
+	_jsii_.Get(
+		j,
+		"health",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) HealthInput() *DataDatabricksJobJobSettingsSettingsTaskHealth {
+	var returns *DataDatabricksJobJobSettingsSettingsTaskHealth
+	_jsii_.Get(
+		j,
+		"healthInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -473,6 +501,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) Note
 	_jsii_.Get(
 		j,
 		"notebookTaskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) NotificationSettings() DataDatabricksJobJobSettingsSettingsTaskNotificationSettingsOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsTaskNotificationSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"notificationSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) NotificationSettingsInput() *DataDatabricksJobJobSettingsSettingsTaskNotificationSettings {
+	var returns *DataDatabricksJobJobSettingsSettingsTaskNotificationSettings
+	_jsii_.Get(
+		j,
+		"notificationSettingsInput",
 		&returns,
 	)
 	return returns
@@ -1121,6 +1169,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) PutE
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) PutHealth(value *DataDatabricksJobJobSettingsSettingsTaskHealth) {
+	if err := d.validatePutHealthParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putHealth",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) PutLibrary(value interface{}) {
 	if err := d.validatePutLibraryParameters(value); err != nil {
 		panic(err)
@@ -1150,6 +1209,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) PutN
 	_jsii_.InvokeVoid(
 		d,
 		"putNotebookTask",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) PutNotificationSettings(value *DataDatabricksJobJobSettingsSettingsTaskNotificationSettings) {
+	if err := d.validatePutNotificationSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putNotificationSettings",
 		[]interface{}{value},
 	)
 }
@@ -1276,6 +1346,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) Rese
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) ResetHealth() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHealth",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) ResetJobClusterKey() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1320,6 +1398,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) Rese
 	_jsii_.InvokeVoid(
 		d,
 		"resetNotebookTask",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) ResetNotificationSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNotificationSettings",
 		nil, // no parameters
 	)
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_Job) validatePutGitSourceParameters(value *JobGitSource) erro
 	return nil
 }
 
+func (j *jsiiProxy_Job) validatePutHealthParameters(value *JobHealth) error {
+	return nil
+}
+
 func (j *jsiiProxy_Job) validatePutJobClusterParameters(value interface{}) error {
 	return nil
 }
@@ -157,6 +161,10 @@ func (j *jsiiProxy_Job) validateSetAlwaysRunningParameters(val interface{}) erro
 }
 
 func (j *jsiiProxy_Job) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Job) validateSetControlRunStateParameters(val interface{}) error {
 	return nil
 }
 

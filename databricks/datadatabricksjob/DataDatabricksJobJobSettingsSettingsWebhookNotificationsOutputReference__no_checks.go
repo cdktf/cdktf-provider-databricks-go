@@ -44,6 +44,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutpu
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference) validatePutOnDurationWarningThresholdExceededParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference) validatePutOnFailureParameters(value interface{}) error {
 	return nil
 }

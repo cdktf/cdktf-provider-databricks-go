@@ -29,6 +29,8 @@ type JobWebhookNotificationsOutputReference interface {
 	Fqn() *string
 	InternalValue() *JobWebhookNotifications
 	SetInternalValue(val *JobWebhookNotifications)
+	OnDurationWarningThresholdExceeded() JobWebhookNotificationsOnDurationWarningThresholdExceededList
+	OnDurationWarningThresholdExceededInput() interface{}
 	OnFailure() JobWebhookNotificationsOnFailureList
 	OnFailureInput() interface{}
 	OnStart() JobWebhookNotificationsOnStartList
@@ -67,9 +69,11 @@ type JobWebhookNotificationsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutOnDurationWarningThresholdExceeded(value interface{})
 	PutOnFailure(value interface{})
 	PutOnStart(value interface{})
 	PutOnSuccess(value interface{})
+	ResetOnDurationWarningThresholdExceeded()
 	ResetOnFailure()
 	ResetOnStart()
 	ResetOnSuccess()
@@ -133,6 +137,26 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) InternalValue() *JobW
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobWebhookNotificationsOutputReference) OnDurationWarningThresholdExceeded() JobWebhookNotificationsOnDurationWarningThresholdExceededList {
+	var returns JobWebhookNotificationsOnDurationWarningThresholdExceededList
+	_jsii_.Get(
+		j,
+		"onDurationWarningThresholdExceeded",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobWebhookNotificationsOutputReference) OnDurationWarningThresholdExceededInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onDurationWarningThresholdExceededInput",
 		&returns,
 	)
 	return returns
@@ -487,6 +511,17 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) InterpolationForAttri
 	return returns
 }
 
+func (j *jsiiProxy_JobWebhookNotificationsOutputReference) PutOnDurationWarningThresholdExceeded(value interface{}) {
+	if err := j.validatePutOnDurationWarningThresholdExceededParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putOnDurationWarningThresholdExceeded",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobWebhookNotificationsOutputReference) PutOnFailure(value interface{}) {
 	if err := j.validatePutOnFailureParameters(value); err != nil {
 		panic(err)
@@ -517,6 +552,14 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) PutOnSuccess(value in
 		j,
 		"putOnSuccess",
 		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobWebhookNotificationsOutputReference) ResetOnDurationWarningThresholdExceeded() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetOnDurationWarningThresholdExceeded",
+		nil, // no parameters
 	)
 }
 

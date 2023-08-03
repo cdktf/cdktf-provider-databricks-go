@@ -43,6 +43,8 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	Fqn() *string
 	GitSource() DataDatabricksJobJobSettingsSettingsGitSourceOutputReference
 	GitSourceInput() *DataDatabricksJobJobSettingsSettingsGitSource
+	Health() DataDatabricksJobJobSettingsSettingsHealthOutputReference
+	HealthInput() *DataDatabricksJobJobSettingsSettingsHealth
 	InternalValue() *DataDatabricksJobJobSettingsSettings
 	SetInternalValue(val *DataDatabricksJobJobSettingsSettings)
 	JobCluster() DataDatabricksJobJobSettingsSettingsJobClusterList
@@ -135,6 +137,7 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	PutDbtTask(value *DataDatabricksJobJobSettingsSettingsDbtTask)
 	PutEmailNotifications(value *DataDatabricksJobJobSettingsSettingsEmailNotifications)
 	PutGitSource(value *DataDatabricksJobJobSettingsSettingsGitSource)
+	PutHealth(value *DataDatabricksJobJobSettingsSettingsHealth)
 	PutJobCluster(value interface{})
 	PutLibrary(value interface{})
 	PutNewCluster(value *DataDatabricksJobJobSettingsSettingsNewCluster)
@@ -158,6 +161,7 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	ResetExistingClusterId()
 	ResetFormat()
 	ResetGitSource()
+	ResetHealth()
 	ResetJobCluster()
 	ResetLibrary()
 	ResetMaxConcurrentRuns()
@@ -371,6 +375,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) GitSourc
 	_jsii_.Get(
 		j,
 		"gitSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) Health() DataDatabricksJobJobSettingsSettingsHealthOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsHealthOutputReference
+	_jsii_.Get(
+		j,
+		"health",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) HealthInput() *DataDatabricksJobJobSettingsSettingsHealth {
+	var returns *DataDatabricksJobJobSettingsSettingsHealth
+	_jsii_.Get(
+		j,
+		"healthInput",
 		&returns,
 	)
 	return returns
@@ -1289,6 +1313,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutGitSo
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutHealth(value *DataDatabricksJobJobSettingsSettingsHealth) {
+	if err := d.validatePutHealthParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putHealth",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutJobCluster(value interface{}) {
 	if err := d.validatePutJobClusterParameters(value); err != nil {
 		panic(err)
@@ -1517,6 +1552,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetGit
 	_jsii_.InvokeVoid(
 		d,
 		"resetGitSource",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetHealth() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHealth",
 		nil, // no parameters
 	)
 }

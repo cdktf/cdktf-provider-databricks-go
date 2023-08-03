@@ -9,9 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/service_principal databricks_service_principal}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/service_principal databricks_service_principal}.
 type ServicePrincipal interface {
 	cdktf.TerraformResource
+	AclPrincipalId() *string
+	SetAclPrincipalId(val *string)
+	AclPrincipalIdInput() *string
 	Active() interface{}
 	SetActive(val interface{})
 	ActiveInput() interface{}
@@ -128,6 +131,7 @@ type ServicePrincipal interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAclPrincipalId()
 	ResetActive()
 	ResetAllowClusterCreate()
 	ResetAllowInstancePoolCreate()
@@ -159,6 +163,26 @@ type ServicePrincipal interface {
 // The jsii proxy struct for ServicePrincipal
 type jsiiProxy_ServicePrincipal struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ServicePrincipal) AclPrincipalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aclPrincipalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipal) AclPrincipalIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aclPrincipalIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ServicePrincipal) Active() interface{} {
@@ -622,7 +646,7 @@ func (j *jsiiProxy_ServicePrincipal) WorkspaceAccessInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/service_principal databricks_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/service_principal databricks_service_principal} Resource.
 func NewServicePrincipal(scope constructs.Construct, id *string, config *ServicePrincipalConfig) ServicePrincipal {
 	_init_.Initialize()
 
@@ -640,7 +664,7 @@ func NewServicePrincipal(scope constructs.Construct, id *string, config *Service
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/service_principal databricks_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/service_principal databricks_service_principal} Resource.
 func NewServicePrincipal_Override(s ServicePrincipal, scope constructs.Construct, id *string, config *ServicePrincipalConfig) {
 	_init_.Initialize()
 
@@ -648,6 +672,17 @@ func NewServicePrincipal_Override(s ServicePrincipal, scope constructs.Construct
 		"@cdktf/provider-databricks.servicePrincipal.ServicePrincipal",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_ServicePrincipal)SetAclPrincipalId(val *string) {
+	if err := j.validateSetAclPrincipalIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aclPrincipalId",
+		val,
 	)
 }
 
@@ -1147,6 +1182,14 @@ func (s *jsiiProxy_ServicePrincipal) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_ServicePrincipal) ResetAclPrincipalId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAclPrincipalId",
+		nil, // no parameters
 	)
 }
 

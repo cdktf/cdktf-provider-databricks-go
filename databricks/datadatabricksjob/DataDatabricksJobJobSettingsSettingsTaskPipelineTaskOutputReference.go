@@ -27,6 +27,9 @@ type DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputReference interfa
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	FullRefresh() interface{}
+	SetFullRefresh(val interface{})
+	FullRefreshInput() interface{}
 	InternalValue() *DataDatabricksJobJobSettingsSettingsTaskPipelineTask
 	SetInternalValue(val *DataDatabricksJobJobSettingsSettingsTaskPipelineTask)
 	PipelineId() *string
@@ -64,6 +67,7 @@ type DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetFullRefresh()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -114,6 +118,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputRef
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputReference) FullRefresh() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fullRefresh",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputReference) FullRefreshInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fullRefreshInput",
 		&returns,
 	)
 	return returns
@@ -215,6 +239,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputRef
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputReference)SetFullRefresh(val interface{}) {
+	if err := j.validateSetFullRefreshParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fullRefresh",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputRef
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputReference) ResetFullRefresh() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFullRefresh",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

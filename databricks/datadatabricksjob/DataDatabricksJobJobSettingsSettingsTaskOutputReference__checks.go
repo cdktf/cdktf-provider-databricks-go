@@ -154,6 +154,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) vali
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutHealthParameters(value *DataDatabricksJobJobSettingsSettingsTaskHealth) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutLibraryParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -197,6 +208,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) vali
 }
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutNotebookTaskParameters(value *DataDatabricksJobJobSettingsSettingsTaskNotebookTask) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutNotificationSettingsParameters(value *DataDatabricksJobJobSettingsSettingsTaskNotificationSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

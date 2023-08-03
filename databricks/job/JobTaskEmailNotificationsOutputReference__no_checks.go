@@ -68,6 +68,10 @@ func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) validateSetNoAlertF
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) validateSetOnDurationWarningThresholdExceededParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) validateSetOnFailureParameters(val *[]*string) error {
 	return nil
 }

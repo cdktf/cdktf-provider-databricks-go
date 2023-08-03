@@ -44,6 +44,8 @@ type JobTaskOutputReference interface {
 	ExistingClusterIdInput() *string
 	// Experimental.
 	Fqn() *string
+	Health() JobTaskHealthOutputReference
+	HealthInput() *JobTaskHealth
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	JobClusterKey() *string
@@ -61,6 +63,8 @@ type JobTaskOutputReference interface {
 	NewClusterInput() *JobTaskNewCluster
 	NotebookTask() JobTaskNotebookTaskOutputReference
 	NotebookTaskInput() *JobTaskNotebookTask
+	NotificationSettings() JobTaskNotificationSettingsOutputReference
+	NotificationSettingsInput() *JobTaskNotificationSettings
 	PipelineTask() JobTaskPipelineTaskOutputReference
 	PipelineTaskInput() *JobTaskPipelineTask
 	PythonWheelTask() JobTaskPythonWheelTaskOutputReference
@@ -121,9 +125,11 @@ type JobTaskOutputReference interface {
 	PutDbtTask(value *JobTaskDbtTask)
 	PutDependsOn(value interface{})
 	PutEmailNotifications(value *JobTaskEmailNotifications)
+	PutHealth(value *JobTaskHealth)
 	PutLibrary(value interface{})
 	PutNewCluster(value *JobTaskNewCluster)
 	PutNotebookTask(value *JobTaskNotebookTask)
+	PutNotificationSettings(value *JobTaskNotificationSettings)
 	PutPipelineTask(value *JobTaskPipelineTask)
 	PutPythonWheelTask(value *JobTaskPythonWheelTask)
 	PutSparkJarTask(value *JobTaskSparkJarTask)
@@ -137,12 +143,14 @@ type JobTaskOutputReference interface {
 	ResetDescription()
 	ResetEmailNotifications()
 	ResetExistingClusterId()
+	ResetHealth()
 	ResetJobClusterKey()
 	ResetLibrary()
 	ResetMaxRetries()
 	ResetMinRetryIntervalMillis()
 	ResetNewCluster()
 	ResetNotebookTask()
+	ResetNotificationSettings()
 	ResetPipelineTask()
 	ResetPythonWheelTask()
 	ResetRetryOnTimeout()
@@ -348,6 +356,26 @@ func (j *jsiiProxy_JobTaskOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) Health() JobTaskHealthOutputReference {
+	var returns JobTaskHealthOutputReference
+	_jsii_.Get(
+		j,
+		"health",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) HealthInput() *JobTaskHealth {
+	var returns *JobTaskHealth
+	_jsii_.Get(
+		j,
+		"healthInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -473,6 +501,26 @@ func (j *jsiiProxy_JobTaskOutputReference) NotebookTaskInput() *JobTaskNotebookT
 	_jsii_.Get(
 		j,
 		"notebookTaskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) NotificationSettings() JobTaskNotificationSettingsOutputReference {
+	var returns JobTaskNotificationSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"notificationSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) NotificationSettingsInput() *JobTaskNotificationSettings {
+	var returns *JobTaskNotificationSettings
+	_jsii_.Get(
+		j,
+		"notificationSettingsInput",
 		&returns,
 	)
 	return returns
@@ -1121,6 +1169,17 @@ func (j *jsiiProxy_JobTaskOutputReference) PutEmailNotifications(value *JobTaskE
 	)
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) PutHealth(value *JobTaskHealth) {
+	if err := j.validatePutHealthParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putHealth",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) PutLibrary(value interface{}) {
 	if err := j.validatePutLibraryParameters(value); err != nil {
 		panic(err)
@@ -1150,6 +1209,17 @@ func (j *jsiiProxy_JobTaskOutputReference) PutNotebookTask(value *JobTaskNoteboo
 	_jsii_.InvokeVoid(
 		j,
 		"putNotebookTask",
+		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) PutNotificationSettings(value *JobTaskNotificationSettings) {
+	if err := j.validatePutNotificationSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putNotificationSettings",
 		[]interface{}{value},
 	)
 }
@@ -1276,6 +1346,14 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetExistingClusterId() {
 	)
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) ResetHealth() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetHealth",
+		nil, // no parameters
+	)
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) ResetJobClusterKey() {
 	_jsii_.InvokeVoid(
 		j,
@@ -1320,6 +1398,14 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetNotebookTask() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetNotebookTask",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ResetNotificationSettings() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetNotificationSettings",
 		nil, // no parameters
 	)
 }

@@ -35,6 +35,8 @@ type DataDatabricksJobJobSettingsSettingsGitSourceOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataDatabricksJobJobSettingsSettingsGitSource
 	SetInternalValue(val *DataDatabricksJobJobSettingsSettingsGitSource)
+	JobSource() DataDatabricksJobJobSettingsSettingsGitSourceJobSourceOutputReference
+	JobSourceInput() *DataDatabricksJobJobSettingsSettingsGitSourceJobSource
 	Provider() *string
 	SetProvider(val *string)
 	ProviderInput() *string
@@ -76,8 +78,10 @@ type DataDatabricksJobJobSettingsSettingsGitSourceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutJobSource(value *DataDatabricksJobJobSettingsSettingsGitSourceJobSource)
 	ResetBranch()
 	ResetCommit()
+	ResetJobSource()
 	ResetProvider()
 	ResetTag()
 	// Produce the Token's value at resolution time.
@@ -180,6 +184,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsGitSourceOutputReference)
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsGitSourceOutputReference) JobSource() DataDatabricksJobJobSettingsSettingsGitSourceJobSourceOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsGitSourceJobSourceOutputReference
+	_jsii_.Get(
+		j,
+		"jobSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsGitSourceOutputReference) JobSourceInput() *DataDatabricksJobJobSettingsSettingsGitSourceJobSource {
+	var returns *DataDatabricksJobJobSettingsSettingsGitSourceJobSource
+	_jsii_.Get(
+		j,
+		"jobSourceInput",
 		&returns,
 	)
 	return returns
@@ -589,6 +613,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsGitSourceOutputReference)
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsGitSourceOutputReference) PutJobSource(value *DataDatabricksJobJobSettingsSettingsGitSourceJobSource) {
+	if err := d.validatePutJobSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putJobSource",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsGitSourceOutputReference) ResetBranch() {
 	_jsii_.InvokeVoid(
 		d,
@@ -601,6 +636,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsGitSourceOutputReference)
 	_jsii_.InvokeVoid(
 		d,
 		"resetCommit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsGitSourceOutputReference) ResetJobSource() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetJobSource",
 		nil, // no parameters
 	)
 }

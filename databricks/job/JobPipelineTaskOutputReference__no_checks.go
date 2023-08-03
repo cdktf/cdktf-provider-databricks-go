@@ -56,6 +56,10 @@ func (j *jsiiProxy_JobPipelineTaskOutputReference) validateSetComplexObjectIsFro
 	return nil
 }
 
+func (j *jsiiProxy_JobPipelineTaskOutputReference) validateSetFullRefreshParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobPipelineTaskOutputReference) validateSetInternalValueParameters(val *JobPipelineTask) error {
 	return nil
 }

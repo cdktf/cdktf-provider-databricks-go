@@ -11,6 +11,8 @@ func init() {
 		"@cdktf/provider-databricks.group.Group",
 		reflect.TypeOf((*Group)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "aclPrincipalId", GoGetter: "AclPrincipalId"},
+			_jsii_.MemberProperty{JsiiProperty: "aclPrincipalIdInput", GoGetter: "AclPrincipalIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowClusterCreate", GoGetter: "AllowClusterCreate"},
 			_jsii_.MemberProperty{JsiiProperty: "allowClusterCreateInput", GoGetter: "AllowClusterCreateInput"},
@@ -50,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAclPrincipalId", GoMethod: "ResetAclPrincipalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowClusterCreate", GoMethod: "ResetAllowClusterCreate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowInstancePoolCreate", GoMethod: "ResetAllowInstancePoolCreate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabricksSqlAccess", GoMethod: "ResetDatabricksSqlAccess"},

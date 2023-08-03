@@ -9,9 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group databricks_group}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group databricks_group}.
 type Group interface {
 	cdktf.TerraformResource
+	AclPrincipalId() *string
+	SetAclPrincipalId(val *string)
+	AclPrincipalIdInput() *string
 	AllowClusterCreate() interface{}
 	SetAllowClusterCreate(val interface{})
 	AllowClusterCreateInput() interface{}
@@ -110,6 +113,7 @@ type Group interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAclPrincipalId()
 	ResetAllowClusterCreate()
 	ResetAllowInstancePoolCreate()
 	ResetDatabricksSqlAccess()
@@ -134,6 +138,26 @@ type Group interface {
 // The jsii proxy struct for Group
 type jsiiProxy_Group struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Group) AclPrincipalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aclPrincipalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AclPrincipalIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aclPrincipalIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Group) AllowClusterCreate() interface{} {
@@ -477,7 +501,7 @@ func (j *jsiiProxy_Group) WorkspaceAccessInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group databricks_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group databricks_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
 	_init_.Initialize()
 
@@ -495,7 +519,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group databricks_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group databricks_group} Resource.
 func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *GroupConfig) {
 	_init_.Initialize()
 
@@ -503,6 +527,17 @@ func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *
 		"@cdktf/provider-databricks.group.Group",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_Group)SetAclPrincipalId(val *string) {
+	if err := j.validateSetAclPrincipalIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aclPrincipalId",
+		val,
 	)
 }
 
@@ -936,6 +971,14 @@ func (g *jsiiProxy_Group) OverrideLogicalId(newLogicalId *string) {
 		g,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_Group) ResetAclPrincipalId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAclPrincipalId",
+		nil, // no parameters
 	)
 }
 

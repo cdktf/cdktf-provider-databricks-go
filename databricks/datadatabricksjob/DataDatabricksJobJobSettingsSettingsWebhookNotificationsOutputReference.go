@@ -29,6 +29,8 @@ type DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference int
 	Fqn() *string
 	InternalValue() *DataDatabricksJobJobSettingsSettingsWebhookNotifications
 	SetInternalValue(val *DataDatabricksJobJobSettingsSettingsWebhookNotifications)
+	OnDurationWarningThresholdExceeded() DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededList
+	OnDurationWarningThresholdExceededInput() interface{}
 	OnFailure() DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureList
 	OnFailureInput() interface{}
 	OnStart() DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartList
@@ -67,9 +69,11 @@ type DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutOnDurationWarningThresholdExceeded(value interface{})
 	PutOnFailure(value interface{})
 	PutOnStart(value interface{})
 	PutOnSuccess(value interface{})
+	ResetOnDurationWarningThresholdExceeded()
 	ResetOnFailure()
 	ResetOnStart()
 	ResetOnSuccess()
@@ -133,6 +137,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutpu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference) OnDurationWarningThresholdExceeded() DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededList {
+	var returns DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededList
+	_jsii_.Get(
+		j,
+		"onDurationWarningThresholdExceeded",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference) OnDurationWarningThresholdExceededInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onDurationWarningThresholdExceededInput",
 		&returns,
 	)
 	return returns
@@ -487,6 +511,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutpu
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference) PutOnDurationWarningThresholdExceeded(value interface{}) {
+	if err := d.validatePutOnDurationWarningThresholdExceededParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOnDurationWarningThresholdExceeded",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference) PutOnFailure(value interface{}) {
 	if err := d.validatePutOnFailureParameters(value); err != nil {
 		panic(err)
@@ -517,6 +552,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutpu
 		d,
 		"putOnSuccess",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference) ResetOnDurationWarningThresholdExceeded() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOnDurationWarningThresholdExceeded",
+		nil, // no parameters
 	)
 }
 

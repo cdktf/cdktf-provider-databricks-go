@@ -64,6 +64,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validate
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutHealthParameters(value *DataDatabricksJobJobSettingsSettingsHealth) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutJobClusterParameters(value interface{}) error {
 	return nil
 }

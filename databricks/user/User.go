@@ -9,9 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/user databricks_user}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/user databricks_user}.
 type User interface {
 	cdktf.TerraformResource
+	AclPrincipalId() *string
+	SetAclPrincipalId(val *string)
+	AclPrincipalIdInput() *string
 	Active() interface{}
 	SetActive(val interface{})
 	ActiveInput() interface{}
@@ -128,6 +131,7 @@ type User interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAclPrincipalId()
 	ResetActive()
 	ResetAllowClusterCreate()
 	ResetAllowInstancePoolCreate()
@@ -158,6 +162,26 @@ type User interface {
 // The jsii proxy struct for User
 type jsiiProxy_User struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_User) AclPrincipalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aclPrincipalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) AclPrincipalIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aclPrincipalIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_User) Active() interface{} {
@@ -621,7 +645,7 @@ func (j *jsiiProxy_User) WorkspaceAccessInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/user databricks_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/user databricks_user} Resource.
 func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	_init_.Initialize()
 
@@ -639,7 +663,7 @@ func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/user databricks_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/user databricks_user} Resource.
 func NewUser_Override(u User, scope constructs.Construct, id *string, config *UserConfig) {
 	_init_.Initialize()
 
@@ -647,6 +671,17 @@ func NewUser_Override(u User, scope constructs.Construct, id *string, config *Us
 		"@cdktf/provider-databricks.user.User",
 		[]interface{}{scope, id, config},
 		u,
+	)
+}
+
+func (j *jsiiProxy_User)SetAclPrincipalId(val *string) {
+	if err := j.validateSetAclPrincipalIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aclPrincipalId",
+		val,
 	)
 }
 
@@ -1146,6 +1181,14 @@ func (u *jsiiProxy_User) OverrideLogicalId(newLogicalId *string) {
 		u,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (u *jsiiProxy_User) ResetAclPrincipalId() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetAclPrincipalId",
+		nil, // no parameters
 	)
 }
 

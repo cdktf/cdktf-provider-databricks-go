@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputR
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference) validateSetOnDurationWarningThresholdExceededParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference) validateSetOnFailureParameters(val *[]*string) error {
 	return nil
 }

@@ -27,6 +27,9 @@ type JobPipelineTaskOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	FullRefresh() interface{}
+	SetFullRefresh(val interface{})
+	FullRefreshInput() interface{}
 	InternalValue() *JobPipelineTask
 	SetInternalValue(val *JobPipelineTask)
 	PipelineId() *string
@@ -64,6 +67,7 @@ type JobPipelineTaskOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetFullRefresh()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -114,6 +118,26 @@ func (j *jsiiProxy_JobPipelineTaskOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobPipelineTaskOutputReference) FullRefresh() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fullRefresh",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobPipelineTaskOutputReference) FullRefreshInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fullRefreshInput",
 		&returns,
 	)
 	return returns
@@ -215,6 +239,17 @@ func (j *jsiiProxy_JobPipelineTaskOutputReference)SetComplexObjectIsFromSet(val 
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobPipelineTaskOutputReference)SetFullRefresh(val interface{}) {
+	if err := j.validateSetFullRefreshParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fullRefresh",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (j *jsiiProxy_JobPipelineTaskOutputReference) InterpolationForAttribute(pro
 	)
 
 	return returns
+}
+
+func (j *jsiiProxy_JobPipelineTaskOutputReference) ResetFullRefresh() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetFullRefresh",
+		nil, // no parameters
+	)
 }
 
 func (j *jsiiProxy_JobPipelineTaskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

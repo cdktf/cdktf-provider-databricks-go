@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job databricks_job}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/job databricks_job}.
 type Job interface {
 	cdktf.TerraformResource
 	AlwaysRunning() interface{}
@@ -27,6 +27,9 @@ type Job interface {
 	ConstructNodeMetadata() *map[string]interface{}
 	Continuous() JobContinuousOutputReference
 	ContinuousInput() *JobContinuous
+	ControlRunState() interface{}
+	SetControlRunState(val interface{})
+	ControlRunStateInput() interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -55,6 +58,8 @@ type Job interface {
 	FriendlyUniqueId() *string
 	GitSource() JobGitSourceOutputReference
 	GitSourceInput() *JobGitSource
+	Health() JobHealthOutputReference
+	HealthInput() *JobHealth
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -166,6 +171,7 @@ type Job interface {
 	PutDbtTask(value *JobDbtTask)
 	PutEmailNotifications(value *JobEmailNotifications)
 	PutGitSource(value *JobGitSource)
+	PutHealth(value *JobHealth)
 	PutJobCluster(value interface{})
 	PutLibrary(value interface{})
 	PutNewCluster(value *JobNewCluster)
@@ -186,11 +192,13 @@ type Job interface {
 	ResetAlwaysRunning()
 	ResetCompute()
 	ResetContinuous()
+	ResetControlRunState()
 	ResetDbtTask()
 	ResetEmailNotifications()
 	ResetExistingClusterId()
 	ResetFormat()
 	ResetGitSource()
+	ResetHealth()
 	ResetId()
 	ResetJobCluster()
 	ResetLibrary()
@@ -319,6 +327,26 @@ func (j *jsiiProxy_Job) ContinuousInput() *JobContinuous {
 	_jsii_.Get(
 		j,
 		"continuousInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) ControlRunState() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"controlRunState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) ControlRunStateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"controlRunStateInput",
 		&returns,
 	)
 	return returns
@@ -469,6 +497,26 @@ func (j *jsiiProxy_Job) GitSourceInput() *JobGitSource {
 	_jsii_.Get(
 		j,
 		"gitSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) Health() JobHealthOutputReference {
+	var returns JobHealthOutputReference
+	_jsii_.Get(
+		j,
+		"health",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) HealthInput() *JobHealth {
+	var returns *JobHealth
+	_jsii_.Get(
+		j,
+		"healthInput",
 		&returns,
 	)
 	return returns
@@ -1065,7 +1113,7 @@ func (j *jsiiProxy_Job) WebhookNotificationsInput() *JobWebhookNotifications {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/job databricks_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	_init_.Initialize()
 
@@ -1083,7 +1131,7 @@ func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/job databricks_job} Resource.
 func NewJob_Override(j Job, scope constructs.Construct, id *string, config *JobConfig) {
 	_init_.Initialize()
 
@@ -1112,6 +1160,17 @@ func (j *jsiiProxy_Job)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Job)SetControlRunState(val interface{}) {
+	if err := j.validateSetControlRunStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"controlRunState",
 		val,
 	)
 }
@@ -1604,6 +1663,17 @@ func (j *jsiiProxy_Job) PutGitSource(value *JobGitSource) {
 	)
 }
 
+func (j *jsiiProxy_Job) PutHealth(value *JobHealth) {
+	if err := j.validatePutHealthParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putHealth",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_Job) PutJobCluster(value interface{}) {
 	if err := j.validatePutJobClusterParameters(value); err != nil {
 		panic(err)
@@ -1815,6 +1885,14 @@ func (j *jsiiProxy_Job) ResetContinuous() {
 	)
 }
 
+func (j *jsiiProxy_Job) ResetControlRunState() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetControlRunState",
+		nil, // no parameters
+	)
+}
+
 func (j *jsiiProxy_Job) ResetDbtTask() {
 	_jsii_.InvokeVoid(
 		j,
@@ -1851,6 +1929,14 @@ func (j *jsiiProxy_Job) ResetGitSource() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetGitSource",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetHealth() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetHealth",
 		nil, // no parameters
 	)
 }

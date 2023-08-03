@@ -35,6 +35,8 @@ type JobGitSourceOutputReference interface {
 	Fqn() *string
 	InternalValue() *JobGitSource
 	SetInternalValue(val *JobGitSource)
+	JobSource() JobGitSourceJobSourceOutputReference
+	JobSourceInput() *JobGitSourceJobSource
 	Provider() *string
 	SetProvider(val *string)
 	ProviderInput() *string
@@ -76,8 +78,10 @@ type JobGitSourceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutJobSource(value *JobGitSourceJobSource)
 	ResetBranch()
 	ResetCommit()
+	ResetJobSource()
 	ResetProvider()
 	ResetTag()
 	// Produce the Token's value at resolution time.
@@ -180,6 +184,26 @@ func (j *jsiiProxy_JobGitSourceOutputReference) InternalValue() *JobGitSource {
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobGitSourceOutputReference) JobSource() JobGitSourceJobSourceOutputReference {
+	var returns JobGitSourceJobSourceOutputReference
+	_jsii_.Get(
+		j,
+		"jobSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobGitSourceOutputReference) JobSourceInput() *JobGitSourceJobSource {
+	var returns *JobGitSourceJobSource
+	_jsii_.Get(
+		j,
+		"jobSourceInput",
 		&returns,
 	)
 	return returns
@@ -589,6 +613,17 @@ func (j *jsiiProxy_JobGitSourceOutputReference) InterpolationForAttribute(proper
 	return returns
 }
 
+func (j *jsiiProxy_JobGitSourceOutputReference) PutJobSource(value *JobGitSourceJobSource) {
+	if err := j.validatePutJobSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putJobSource",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobGitSourceOutputReference) ResetBranch() {
 	_jsii_.InvokeVoid(
 		j,
@@ -601,6 +636,14 @@ func (j *jsiiProxy_JobGitSourceOutputReference) ResetCommit() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetCommit",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobGitSourceOutputReference) ResetJobSource() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetJobSource",
 		nil, // no parameters
 	)
 }

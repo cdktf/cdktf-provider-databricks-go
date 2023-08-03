@@ -44,6 +44,10 @@ func (j *jsiiProxy_JobGitSourceOutputReference) validateInterpolationForAttribut
 	return nil
 }
 
+func (j *jsiiProxy_JobGitSourceOutputReference) validatePutJobSourceParameters(value *JobGitSourceJobSource) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobGitSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

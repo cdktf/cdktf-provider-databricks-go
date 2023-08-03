@@ -64,6 +64,10 @@ func validateGroup_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetAclPrincipalIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Group) validateSetAllowClusterCreateParameters(val interface{}) error {
 	return nil
 }

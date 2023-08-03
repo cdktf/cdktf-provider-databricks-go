@@ -60,6 +60,10 @@ func (j *jsiiProxy_JobTaskOutputReference) validatePutEmailNotificationsParamete
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) validatePutHealthParameters(value *JobTaskHealth) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) validatePutLibraryParameters(value interface{}) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (j *jsiiProxy_JobTaskOutputReference) validatePutNewClusterParameters(value
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) validatePutNotebookTaskParameters(value *JobTaskNotebookTask) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) validatePutNotificationSettingsParameters(value *JobTaskNotificationSettings) error {
 	return nil
 }
 

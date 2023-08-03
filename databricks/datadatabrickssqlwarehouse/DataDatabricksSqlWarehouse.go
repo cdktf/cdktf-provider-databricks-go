@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/sql_warehouse databricks_sql_warehouse}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/sql_warehouse databricks_sql_warehouse}.
 type DataDatabricksSqlWarehouse interface {
 	cdktf.TerraformDataSource
 	AutoStopMins() *float64
@@ -132,6 +132,7 @@ type DataDatabricksSqlWarehouse interface {
 	ResetDataSourceId()
 	ResetEnablePhoton()
 	ResetEnableServerlessCompute()
+	ResetId()
 	ResetInstanceProfileArn()
 	ResetJdbcUrl()
 	ResetMaxNumClusters()
@@ -641,7 +642,7 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
 func NewDataDatabricksSqlWarehouse(scope constructs.Construct, id *string, config *DataDatabricksSqlWarehouseConfig) DataDatabricksSqlWarehouse {
 	_init_.Initialize()
 
@@ -659,7 +660,7 @@ func NewDataDatabricksSqlWarehouse(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
 func NewDataDatabricksSqlWarehouse_Override(d DataDatabricksSqlWarehouse, scope constructs.Construct, id *string, config *DataDatabricksSqlWarehouseConfig) {
 	_init_.Initialize()
 
@@ -1213,6 +1214,14 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetEnableServerlessCompute() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetEnableServerlessCompute",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
 		nil, // no parameters
 	)
 }

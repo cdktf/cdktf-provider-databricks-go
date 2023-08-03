@@ -56,6 +56,10 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference) validateSetFullRefreshParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference) validateSetInternalValueParameters(val *DataDatabricksJobJobSettingsSettingsPipelineTask) error {
 	return nil
 }

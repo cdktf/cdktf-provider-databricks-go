@@ -64,6 +64,10 @@ func validateUser_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_User) validateSetAclPrincipalIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_User) validateSetActiveParameters(val interface{}) error {
 	return nil
 }

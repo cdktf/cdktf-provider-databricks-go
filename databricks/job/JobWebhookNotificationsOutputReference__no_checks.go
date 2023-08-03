@@ -44,6 +44,10 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validateInterpolation
 	return nil
 }
 
+func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnDurationWarningThresholdExceededParameters(value interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnFailureParameters(value interface{}) error {
 	return nil
 }

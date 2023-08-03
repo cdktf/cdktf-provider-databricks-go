@@ -44,6 +44,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsGitSourceOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsGitSourceOutputReference) validatePutJobSourceParameters(value *DataDatabricksJobJobSettingsSettingsGitSourceJobSource) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsGitSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

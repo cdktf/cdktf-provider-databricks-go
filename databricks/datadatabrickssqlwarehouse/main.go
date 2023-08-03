@@ -71,6 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSourceId", GoMethod: "ResetDataSourceId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnablePhoton", GoMethod: "ResetEnablePhoton"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableServerlessCompute", GoMethod: "ResetEnableServerlessCompute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstanceProfileArn", GoMethod: "ResetInstanceProfileArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJdbcUrl", GoMethod: "ResetJdbcUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxNumClusters", GoMethod: "ResetMaxNumClusters"},

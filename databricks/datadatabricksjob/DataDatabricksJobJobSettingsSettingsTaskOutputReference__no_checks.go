@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) vali
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutHealthParameters(value *DataDatabricksJobJobSettingsSettingsTaskHealth) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutLibraryParameters(value interface{}) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) vali
 }
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutNotebookTaskParameters(value *DataDatabricksJobJobSettingsSettingsTaskNotebookTask) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutNotificationSettingsParameters(value *DataDatabricksJobJobSettingsSettingsTaskNotificationSettings) error {
 	return nil
 }
 

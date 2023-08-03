@@ -64,6 +64,10 @@ func validateServicePrincipal_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipal) validateSetAclPrincipalIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipal) validateSetActiveParameters(val interface{}) error {
 	return nil
 }

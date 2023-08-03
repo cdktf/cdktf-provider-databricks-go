@@ -68,6 +68,10 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) validateSetNoAlertForSk
 	return nil
 }
 
+func (j *jsiiProxy_JobEmailNotificationsOutputReference) validateSetOnDurationWarningThresholdExceededParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobEmailNotificationsOutputReference) validateSetOnFailureParameters(val *[]*string) error {
 	return nil
 }

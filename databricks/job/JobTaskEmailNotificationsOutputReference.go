@@ -35,6 +35,9 @@ type JobTaskEmailNotificationsOutputReference interface {
 	NoAlertForSkippedRuns() interface{}
 	SetNoAlertForSkippedRuns(val interface{})
 	NoAlertForSkippedRunsInput() interface{}
+	OnDurationWarningThresholdExceeded() *[]*string
+	SetOnDurationWarningThresholdExceeded(val *[]*string)
+	OnDurationWarningThresholdExceededInput() *[]*string
 	OnFailure() *[]*string
 	SetOnFailure(val *[]*string)
 	OnFailureInput() *[]*string
@@ -78,6 +81,7 @@ type JobTaskEmailNotificationsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAlertOnLastAttempt()
 	ResetNoAlertForSkippedRuns()
+	ResetOnDurationWarningThresholdExceeded()
 	ResetOnFailure()
 	ResetOnStart()
 	ResetOnSuccess()
@@ -181,6 +185,26 @@ func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) NoAlertForSkippedRu
 	_jsii_.Get(
 		j,
 		"noAlertForSkippedRunsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) OnDurationWarningThresholdExceeded() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"onDurationWarningThresholdExceeded",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) OnDurationWarningThresholdExceededInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"onDurationWarningThresholdExceededInput",
 		&returns,
 	)
 	return returns
@@ -345,6 +369,17 @@ func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference)SetNoAlertForSkipped
 	_jsii_.Set(
 		j,
 		"noAlertForSkippedRuns",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference)SetOnDurationWarningThresholdExceeded(val *[]*string) {
+	if err := j.validateSetOnDurationWarningThresholdExceededParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"onDurationWarningThresholdExceeded",
 		val,
 	)
 }
@@ -602,6 +637,14 @@ func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) ResetNoAlertForSkip
 	_jsii_.InvokeVoid(
 		j,
 		"resetNoAlertForSkippedRuns",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) ResetOnDurationWarningThresholdExceeded() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetOnDurationWarningThresholdExceeded",
 		nil, // no parameters
 	)
 }

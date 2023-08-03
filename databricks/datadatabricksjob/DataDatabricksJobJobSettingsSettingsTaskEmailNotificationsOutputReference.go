@@ -35,6 +35,9 @@ type DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference i
 	NoAlertForSkippedRuns() interface{}
 	SetNoAlertForSkippedRuns(val interface{})
 	NoAlertForSkippedRunsInput() interface{}
+	OnDurationWarningThresholdExceeded() *[]*string
+	SetOnDurationWarningThresholdExceeded(val *[]*string)
+	OnDurationWarningThresholdExceededInput() *[]*string
 	OnFailure() *[]*string
 	SetOnFailure(val *[]*string)
 	OnFailureInput() *[]*string
@@ -78,6 +81,7 @@ type DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference i
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAlertOnLastAttempt()
 	ResetNoAlertForSkippedRuns()
+	ResetOnDurationWarningThresholdExceeded()
 	ResetOnFailure()
 	ResetOnStart()
 	ResetOnSuccess()
@@ -181,6 +185,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOut
 	_jsii_.Get(
 		j,
 		"noAlertForSkippedRunsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference) OnDurationWarningThresholdExceeded() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"onDurationWarningThresholdExceeded",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference) OnDurationWarningThresholdExceededInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"onDurationWarningThresholdExceededInput",
 		&returns,
 	)
 	return returns
@@ -345,6 +369,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOut
 	_jsii_.Set(
 		j,
 		"noAlertForSkippedRuns",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference)SetOnDurationWarningThresholdExceeded(val *[]*string) {
+	if err := j.validateSetOnDurationWarningThresholdExceededParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"onDurationWarningThresholdExceeded",
 		val,
 	)
 }
@@ -602,6 +637,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOut
 	_jsii_.InvokeVoid(
 		d,
 		"resetNoAlertForSkippedRuns",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference) ResetOnDurationWarningThresholdExceeded() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOnDurationWarningThresholdExceeded",
 		nil, // no parameters
 	)
 }
