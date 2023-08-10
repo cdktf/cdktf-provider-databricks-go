@@ -187,6 +187,14 @@ func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateSetInter
 	return nil
 }
 
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateSetLocalSsdCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

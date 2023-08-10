@@ -75,6 +75,8 @@ type JobTaskOutputReference interface {
 	RunIf() *string
 	SetRunIf(val *string)
 	RunIfInput() *string
+	RunJobTask() JobTaskRunJobTaskOutputReference
+	RunJobTaskInput() *JobTaskRunJobTask
 	SparkJarTask() JobTaskSparkJarTaskOutputReference
 	SparkJarTaskInput() *JobTaskSparkJarTask
 	SparkPythonTask() JobTaskSparkPythonTaskOutputReference
@@ -132,6 +134,7 @@ type JobTaskOutputReference interface {
 	PutNotificationSettings(value *JobTaskNotificationSettings)
 	PutPipelineTask(value *JobTaskPipelineTask)
 	PutPythonWheelTask(value *JobTaskPythonWheelTask)
+	PutRunJobTask(value *JobTaskRunJobTask)
 	PutSparkJarTask(value *JobTaskSparkJarTask)
 	PutSparkPythonTask(value *JobTaskSparkPythonTask)
 	PutSparkSubmitTask(value *JobTaskSparkSubmitTask)
@@ -155,6 +158,7 @@ type JobTaskOutputReference interface {
 	ResetPythonWheelTask()
 	ResetRetryOnTimeout()
 	ResetRunIf()
+	ResetRunJobTask()
 	ResetSparkJarTask()
 	ResetSparkPythonTask()
 	ResetSparkSubmitTask()
@@ -601,6 +605,26 @@ func (j *jsiiProxy_JobTaskOutputReference) RunIfInput() *string {
 	_jsii_.Get(
 		j,
 		"runIfInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) RunJobTask() JobTaskRunJobTaskOutputReference {
+	var returns JobTaskRunJobTaskOutputReference
+	_jsii_.Get(
+		j,
+		"runJobTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) RunJobTaskInput() *JobTaskRunJobTask {
+	var returns *JobTaskRunJobTask
+	_jsii_.Get(
+		j,
+		"runJobTaskInput",
 		&returns,
 	)
 	return returns
@@ -1246,6 +1270,17 @@ func (j *jsiiProxy_JobTaskOutputReference) PutPythonWheelTask(value *JobTaskPyth
 	)
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) PutRunJobTask(value *JobTaskRunJobTask) {
+	if err := j.validatePutRunJobTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putRunJobTask",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) PutSparkJarTask(value *JobTaskSparkJarTask) {
 	if err := j.validatePutSparkJarTaskParameters(value); err != nil {
 		panic(err)
@@ -1438,6 +1473,14 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetRunIf() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetRunIf",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ResetRunJobTask() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetRunJobTask",
 		nil, // no parameters
 	)
 }

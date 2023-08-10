@@ -68,6 +68,10 @@ func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateSetInter
 	return nil
 }
 
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateSetLocalSsdCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

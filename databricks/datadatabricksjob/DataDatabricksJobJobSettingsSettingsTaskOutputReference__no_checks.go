@@ -88,6 +88,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) vali
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutRunJobTaskParameters(value *DataDatabricksJobJobSettingsSettingsTaskRunJobTask) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutSparkJarTaskParameters(value *DataDatabricksJobJobSettingsSettingsTaskSparkJarTask) error {
 	return nil
 }

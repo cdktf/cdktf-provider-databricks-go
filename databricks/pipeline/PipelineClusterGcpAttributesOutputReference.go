@@ -35,6 +35,9 @@ type PipelineClusterGcpAttributesOutputReference interface {
 	GoogleServiceAccountInput() *string
 	InternalValue() *PipelineClusterGcpAttributes
 	SetInternalValue(val *PipelineClusterGcpAttributes)
+	LocalSsdCount() *float64
+	SetLocalSsdCount(val *float64)
+	LocalSsdCountInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type PipelineClusterGcpAttributesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAvailability()
 	ResetGoogleServiceAccount()
+	ResetLocalSsdCount()
 	ResetZoneId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -173,6 +177,26 @@ func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) LocalSsdCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"localSsdCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) LocalSsdCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"localSsdCountInput",
 		&returns,
 	)
 	return returns
@@ -297,6 +321,17 @@ func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference)SetInternalValue(
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference)SetLocalSsdCount(val *float64) {
+	if err := j.validateSetLocalSsdCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localSsdCount",
 		val,
 	)
 }
@@ -532,6 +567,14 @@ func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) ResetGoogleServi
 	_jsii_.InvokeVoid(
 		p,
 		"resetGoogleServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) ResetLocalSsdCount() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetLocalSsdCount",
 		nil, // no parameters
 	)
 }

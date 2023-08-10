@@ -64,6 +64,10 @@ func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) validateSetInternal
 	return nil
 }
 
+func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) validateSetLocalSsdCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

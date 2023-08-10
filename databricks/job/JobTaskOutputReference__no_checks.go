@@ -88,6 +88,10 @@ func (j *jsiiProxy_JobTaskOutputReference) validatePutPythonWheelTaskParameters(
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) validatePutRunJobTaskParameters(value *JobTaskRunJobTask) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) validatePutSparkJarTaskParameters(value *JobTaskSparkJarTask) error {
 	return nil
 }

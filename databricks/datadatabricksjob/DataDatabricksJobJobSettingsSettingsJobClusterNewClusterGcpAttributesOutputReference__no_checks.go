@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAt
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributesOutputReference) validateSetLocalSsdCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_JobTaskNewClusterGcpAttributesOutputReference) validateSetInt
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskNewClusterGcpAttributesOutputReference) validateSetLocalSsdCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskNewClusterGcpAttributesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

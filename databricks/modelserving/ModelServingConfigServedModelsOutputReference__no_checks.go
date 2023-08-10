@@ -60,6 +60,10 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetEnv
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetInstanceProfileArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

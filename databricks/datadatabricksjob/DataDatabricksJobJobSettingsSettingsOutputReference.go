@@ -69,6 +69,8 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	NotebookTaskInput() *DataDatabricksJobJobSettingsSettingsNotebookTask
 	NotificationSettings() DataDatabricksJobJobSettingsSettingsNotificationSettingsOutputReference
 	NotificationSettingsInput() *DataDatabricksJobJobSettingsSettingsNotificationSettings
+	Parameter() DataDatabricksJobJobSettingsSettingsParameterList
+	ParameterInput() interface{}
 	PipelineTask() DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference
 	PipelineTaskInput() *DataDatabricksJobJobSettingsSettingsPipelineTask
 	PythonWheelTask() DataDatabricksJobJobSettingsSettingsPythonWheelTaskOutputReference
@@ -80,6 +82,8 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	RetryOnTimeoutInput() interface{}
 	RunAs() DataDatabricksJobJobSettingsSettingsRunAsOutputReference
 	RunAsInput() *DataDatabricksJobJobSettingsSettingsRunAs
+	RunJobTask() DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference
+	RunJobTaskInput() *DataDatabricksJobJobSettingsSettingsRunJobTask
 	Schedule() DataDatabricksJobJobSettingsSettingsScheduleOutputReference
 	ScheduleInput() *DataDatabricksJobJobSettingsSettingsSchedule
 	SparkJarTask() DataDatabricksJobJobSettingsSettingsSparkJarTaskOutputReference
@@ -143,10 +147,12 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	PutNewCluster(value *DataDatabricksJobJobSettingsSettingsNewCluster)
 	PutNotebookTask(value *DataDatabricksJobJobSettingsSettingsNotebookTask)
 	PutNotificationSettings(value *DataDatabricksJobJobSettingsSettingsNotificationSettings)
+	PutParameter(value interface{})
 	PutPipelineTask(value *DataDatabricksJobJobSettingsSettingsPipelineTask)
 	PutPythonWheelTask(value *DataDatabricksJobJobSettingsSettingsPythonWheelTask)
 	PutQueue(value *DataDatabricksJobJobSettingsSettingsQueue)
 	PutRunAs(value *DataDatabricksJobJobSettingsSettingsRunAs)
+	PutRunJobTask(value *DataDatabricksJobJobSettingsSettingsRunJobTask)
 	PutSchedule(value *DataDatabricksJobJobSettingsSettingsSchedule)
 	PutSparkJarTask(value *DataDatabricksJobJobSettingsSettingsSparkJarTask)
 	PutSparkPythonTask(value *DataDatabricksJobJobSettingsSettingsSparkPythonTask)
@@ -171,11 +177,13 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	ResetNewCluster()
 	ResetNotebookTask()
 	ResetNotificationSettings()
+	ResetParameter()
 	ResetPipelineTask()
 	ResetPythonWheelTask()
 	ResetQueue()
 	ResetRetryOnTimeout()
 	ResetRunAs()
+	ResetRunJobTask()
 	ResetSchedule()
 	ResetSparkJarTask()
 	ResetSparkPythonTask()
@@ -590,6 +598,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) Notifica
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) Parameter() DataDatabricksJobJobSettingsSettingsParameterList {
+	var returns DataDatabricksJobJobSettingsSettingsParameterList
+	_jsii_.Get(
+		j,
+		"parameter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ParameterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"parameterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PipelineTask() DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference {
 	var returns DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference
 	_jsii_.Get(
@@ -685,6 +713,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) RunAsInp
 	_jsii_.Get(
 		j,
 		"runAsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) RunJobTask() DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference
+	_jsii_.Get(
+		j,
+		"runJobTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) RunJobTaskInput() *DataDatabricksJobJobSettingsSettingsRunJobTask {
+	var returns *DataDatabricksJobJobSettingsSettingsRunJobTask
+	_jsii_.Get(
+		j,
+		"runJobTaskInput",
 		&returns,
 	)
 	return returns
@@ -1379,6 +1427,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutNotif
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutParameter(value interface{}) {
+	if err := d.validatePutParameterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putParameter",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutPipelineTask(value *DataDatabricksJobJobSettingsSettingsPipelineTask) {
 	if err := d.validatePutPipelineTaskParameters(value); err != nil {
 		panic(err)
@@ -1419,6 +1478,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutRunAs
 	_jsii_.InvokeVoid(
 		d,
 		"putRunAs",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutRunJobTask(value *DataDatabricksJobJobSettingsSettingsRunJobTask) {
+	if err := d.validatePutRunJobTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRunJobTask",
 		[]interface{}{value},
 	)
 }
@@ -1636,6 +1706,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetNot
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetParameter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetParameter",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetPipelineTask() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1672,6 +1750,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetRun
 	_jsii_.InvokeVoid(
 		d,
 		"resetRunAs",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetRunJobTask() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRunJobTask",
 		nil, // no parameters
 	)
 }

@@ -292,6 +292,37 @@ func (j *jsiiProxy_Job) validatePutNotificationSettingsParameters(value *JobNoti
 	return nil
 }
 
+func (j *jsiiProxy_Job) validatePutParameterParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*JobParameter:
+		value := value.(*[]*JobParameter)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*JobParameter:
+		value_ := value.([]*JobParameter)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*JobParameter; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Job) validatePutPipelineTaskParameters(value *JobPipelineTask) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -326,6 +357,17 @@ func (j *jsiiProxy_Job) validatePutQueueParameters(value *JobQueue) error {
 }
 
 func (j *jsiiProxy_Job) validatePutRunAsParameters(value *JobRunAs) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Job) validatePutRunJobTaskParameters(value *JobRunJobTask) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

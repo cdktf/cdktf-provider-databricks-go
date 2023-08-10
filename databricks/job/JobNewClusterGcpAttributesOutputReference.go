@@ -38,6 +38,9 @@ type JobNewClusterGcpAttributesOutputReference interface {
 	GoogleServiceAccountInput() *string
 	InternalValue() *JobNewClusterGcpAttributes
 	SetInternalValue(val *JobNewClusterGcpAttributes)
+	LocalSsdCount() *float64
+	SetLocalSsdCount(val *float64)
+	LocalSsdCountInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,6 +82,7 @@ type JobNewClusterGcpAttributesOutputReference interface {
 	ResetAvailability()
 	ResetBootDiskSize()
 	ResetGoogleServiceAccount()
+	ResetLocalSsdCount()
 	ResetUsePreemptibleExecutors()
 	ResetZoneId()
 	// Produce the Token's value at resolution time.
@@ -201,6 +205,26 @@ func (j *jsiiProxy_JobNewClusterGcpAttributesOutputReference) InternalValue() *J
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobNewClusterGcpAttributesOutputReference) LocalSsdCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"localSsdCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobNewClusterGcpAttributesOutputReference) LocalSsdCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"localSsdCountInput",
 		&returns,
 	)
 	return returns
@@ -356,6 +380,17 @@ func (j *jsiiProxy_JobNewClusterGcpAttributesOutputReference)SetInternalValue(va
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobNewClusterGcpAttributesOutputReference)SetLocalSsdCount(val *float64) {
+	if err := j.validateSetLocalSsdCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localSsdCount",
 		val,
 	)
 }
@@ -610,6 +645,14 @@ func (j *jsiiProxy_JobNewClusterGcpAttributesOutputReference) ResetGoogleService
 	_jsii_.InvokeVoid(
 		j,
 		"resetGoogleServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobNewClusterGcpAttributesOutputReference) ResetLocalSsdCount() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetLocalSsdCount",
 		nil, // no parameters
 	)
 }

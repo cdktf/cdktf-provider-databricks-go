@@ -38,6 +38,9 @@ type DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributesOutputReference 
 	GoogleServiceAccountInput() *string
 	InternalValue() *DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes
 	SetInternalValue(val *DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes)
+	LocalSsdCount() *float64
+	SetLocalSsdCount(val *float64)
+	LocalSsdCountInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,6 +82,7 @@ type DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributesOutputReference 
 	ResetAvailability()
 	ResetBootDiskSize()
 	ResetGoogleServiceAccount()
+	ResetLocalSsdCount()
 	ResetUsePreemptibleExecutors()
 	ResetZoneId()
 	// Produce the Token's value at resolution time.
@@ -201,6 +205,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributesOu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributesOutputReference) LocalSsdCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"localSsdCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributesOutputReference) LocalSsdCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"localSsdCountInput",
 		&returns,
 	)
 	return returns
@@ -356,6 +380,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributesOu
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributesOutputReference)SetLocalSsdCount(val *float64) {
+	if err := j.validateSetLocalSsdCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localSsdCount",
 		val,
 	)
 }
@@ -610,6 +645,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributesOu
 	_jsii_.InvokeVoid(
 		d,
 		"resetGoogleServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributesOutputReference) ResetLocalSsdCount() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLocalSsdCount",
 		nil, // no parameters
 	)
 }

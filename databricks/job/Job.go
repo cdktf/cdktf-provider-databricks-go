@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/job databricks_job}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/job databricks_job}.
 type Job interface {
 	cdktf.TerraformResource
 	AlwaysRunning() interface{}
@@ -91,6 +91,8 @@ type Job interface {
 	NotebookTaskInput() *JobNotebookTask
 	NotificationSettings() JobNotificationSettingsOutputReference
 	NotificationSettingsInput() *JobNotificationSettings
+	Parameter() JobParameterList
+	ParameterInput() interface{}
 	PipelineTask() JobPipelineTaskOutputReference
 	PipelineTaskInput() *JobPipelineTask
 	// Experimental.
@@ -112,6 +114,8 @@ type Job interface {
 	RetryOnTimeoutInput() interface{}
 	RunAs() JobRunAsOutputReference
 	RunAsInput() *JobRunAs
+	RunJobTask() JobRunJobTaskOutputReference
+	RunJobTaskInput() *JobRunJobTask
 	Schedule() JobScheduleOutputReference
 	ScheduleInput() *JobSchedule
 	SparkJarTask() JobSparkJarTaskOutputReference
@@ -177,10 +181,12 @@ type Job interface {
 	PutNewCluster(value *JobNewCluster)
 	PutNotebookTask(value *JobNotebookTask)
 	PutNotificationSettings(value *JobNotificationSettings)
+	PutParameter(value interface{})
 	PutPipelineTask(value *JobPipelineTask)
 	PutPythonWheelTask(value *JobPythonWheelTask)
 	PutQueue(value *JobQueue)
 	PutRunAs(value *JobRunAs)
+	PutRunJobTask(value *JobRunJobTask)
 	PutSchedule(value *JobSchedule)
 	PutSparkJarTask(value *JobSparkJarTask)
 	PutSparkPythonTask(value *JobSparkPythonTask)
@@ -212,11 +218,13 @@ type Job interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParameter()
 	ResetPipelineTask()
 	ResetPythonWheelTask()
 	ResetQueue()
 	ResetRetryOnTimeout()
 	ResetRunAs()
+	ResetRunJobTask()
 	ResetSchedule()
 	ResetSparkJarTask()
 	ResetSparkPythonTask()
@@ -742,6 +750,26 @@ func (j *jsiiProxy_Job) NotificationSettingsInput() *JobNotificationSettings {
 	return returns
 }
 
+func (j *jsiiProxy_Job) Parameter() JobParameterList {
+	var returns JobParameterList
+	_jsii_.Get(
+		j,
+		"parameter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) ParameterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"parameterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Job) PipelineTask() JobPipelineTaskOutputReference {
 	var returns JobPipelineTaskOutputReference
 	_jsii_.Get(
@@ -867,6 +895,26 @@ func (j *jsiiProxy_Job) RunAsInput() *JobRunAs {
 	_jsii_.Get(
 		j,
 		"runAsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) RunJobTask() JobRunJobTaskOutputReference {
+	var returns JobRunJobTaskOutputReference
+	_jsii_.Get(
+		j,
+		"runJobTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) RunJobTaskInput() *JobRunJobTask {
+	var returns *JobRunJobTask
+	_jsii_.Get(
+		j,
+		"runJobTaskInput",
 		&returns,
 	)
 	return returns
@@ -1113,7 +1161,7 @@ func (j *jsiiProxy_Job) WebhookNotificationsInput() *JobWebhookNotifications {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/job databricks_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	_init_.Initialize()
 
@@ -1131,7 +1179,7 @@ func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/job databricks_job} Resource.
 func NewJob_Override(j Job, scope constructs.Construct, id *string, config *JobConfig) {
 	_init_.Initialize()
 
@@ -1729,6 +1777,17 @@ func (j *jsiiProxy_Job) PutNotificationSettings(value *JobNotificationSettings) 
 	)
 }
 
+func (j *jsiiProxy_Job) PutParameter(value interface{}) {
+	if err := j.validatePutParameterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putParameter",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_Job) PutPipelineTask(value *JobPipelineTask) {
 	if err := j.validatePutPipelineTaskParameters(value); err != nil {
 		panic(err)
@@ -1769,6 +1828,17 @@ func (j *jsiiProxy_Job) PutRunAs(value *JobRunAs) {
 	_jsii_.InvokeVoid(
 		j,
 		"putRunAs",
+		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_Job) PutRunJobTask(value *JobRunJobTask) {
+	if err := j.validatePutRunJobTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putRunJobTask",
 		[]interface{}{value},
 	)
 }
@@ -2029,6 +2099,14 @@ func (j *jsiiProxy_Job) ResetOverrideLogicalId() {
 	)
 }
 
+func (j *jsiiProxy_Job) ResetParameter() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetParameter",
+		nil, // no parameters
+	)
+}
+
 func (j *jsiiProxy_Job) ResetPipelineTask() {
 	_jsii_.InvokeVoid(
 		j,
@@ -2065,6 +2143,14 @@ func (j *jsiiProxy_Job) ResetRunAs() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetRunAs",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetRunJobTask() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetRunJobTask",
 		nil, // no parameters
 	)
 }

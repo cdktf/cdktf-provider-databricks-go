@@ -30,6 +30,9 @@ type ModelServingConfigServedModelsOutputReference interface {
 	EnvironmentVarsInput() *map[string]*string
 	// Experimental.
 	Fqn() *string
+	InstanceProfileArn() *string
+	SetInstanceProfileArn(val *string)
+	InstanceProfileArnInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	ModelName() *string
@@ -80,6 +83,7 @@ type ModelServingConfigServedModelsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnvironmentVars()
+	ResetInstanceProfileArn()
 	ResetName()
 	ResetScaleToZeroEnabled()
 	// Produce the Token's value at resolution time.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) Fqn() *string 
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) InstanceProfileArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceProfileArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) InstanceProfileArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceProfileArnInput",
 		&returns,
 	)
 	return returns
@@ -344,6 +368,17 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference)SetEnvironmentV
 	_jsii_.Set(
 		j,
 		"environmentVars",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference)SetInstanceProfileArn(val *string) {
+	if err := j.validateSetInstanceProfileArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instanceProfileArn",
 		val,
 	)
 }
@@ -626,6 +661,14 @@ func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetEnvironme
 	_jsii_.InvokeVoid(
 		m,
 		"resetEnvironmentVars",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetInstanceProfileArn() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetInstanceProfileArn",
 		nil, // no parameters
 	)
 }

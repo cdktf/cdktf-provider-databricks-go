@@ -32,6 +32,9 @@ type DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference interface {
 	GcpAvailabilityInput() *string
 	InternalValue() *DataDatabricksInstancePoolPoolInfoGcpAttributes
 	SetInternalValue(val *DataDatabricksInstancePoolPoolInfoGcpAttributes)
+	LocalSsdCount() *float64
+	SetLocalSsdCount(val *float64)
+	LocalSsdCountInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -65,6 +68,7 @@ type DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetGcpAvailability()
+	ResetLocalSsdCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,6 +149,26 @@ func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReferenc
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference) LocalSsdCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"localSsdCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference) LocalSsdCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"localSsdCountInput",
 		&returns,
 	)
 	return returns
@@ -238,6 +262,17 @@ func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReferenc
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference)SetLocalSsdCount(val *float64) {
+	if err := j.validateSetLocalSsdCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localSsdCount",
 		val,
 	)
 }
@@ -454,6 +489,14 @@ func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"resetGcpAvailability",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference) ResetLocalSsdCount() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLocalSsdCount",
 		nil, // no parameters
 	)
 }

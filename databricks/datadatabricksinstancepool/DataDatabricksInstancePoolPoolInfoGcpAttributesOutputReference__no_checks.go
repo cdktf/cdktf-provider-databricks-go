@@ -64,6 +64,10 @@ func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference) validateSetLocalSsdCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

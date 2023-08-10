@@ -96,6 +96,10 @@ func (j *jsiiProxy_Job) validatePutNotificationSettingsParameters(value *JobNoti
 	return nil
 }
 
+func (j *jsiiProxy_Job) validatePutParameterParameters(value interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Job) validatePutPipelineTaskParameters(value *JobPipelineTask) error {
 	return nil
 }
@@ -109,6 +113,10 @@ func (j *jsiiProxy_Job) validatePutQueueParameters(value *JobQueue) error {
 }
 
 func (j *jsiiProxy_Job) validatePutRunAsParameters(value *JobRunAs) error {
+	return nil
+}
+
+func (j *jsiiProxy_Job) validatePutRunJobTaskParameters(value *JobRunJobTask) error {
 	return nil
 }
 
