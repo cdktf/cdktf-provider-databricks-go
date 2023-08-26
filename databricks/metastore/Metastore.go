@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package metastore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/metastore/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/metastore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore databricks_metastore}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore databricks_metastore}.
 type Metastore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +73,9 @@ type Metastore interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MetastoreId() *string
+	SetMetastoreId(val *string)
+	MetastoreIdInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -93,6 +99,9 @@ type Metastore interface {
 	RegionInput() *string
 	StorageRoot() *string
 	SetStorageRoot(val *string)
+	StorageRootCredentialId() *string
+	SetStorageRootCredentialId(val *string)
+	StorageRootCredentialIdInput() *string
 	StorageRootInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -141,11 +150,13 @@ type Metastore interface {
 	ResetForceDestroy()
 	ResetGlobalMetastoreId()
 	ResetId()
+	ResetMetastoreId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
 	ResetRegion()
+	ResetStorageRootCredentialId()
 	ResetUpdatedAt()
 	ResetUpdatedBy()
 	SynthesizeAttributes() *map[string]interface{}
@@ -453,6 +464,26 @@ func (j *jsiiProxy_Metastore) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_Metastore) MetastoreId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metastoreId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Metastore) MetastoreIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metastoreIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Metastore) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -563,6 +594,26 @@ func (j *jsiiProxy_Metastore) StorageRoot() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Metastore) StorageRootCredentialId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageRootCredentialId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Metastore) StorageRootCredentialIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageRootCredentialIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Metastore) StorageRootInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -644,7 +695,7 @@ func (j *jsiiProxy_Metastore) UpdatedByInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore databricks_metastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore databricks_metastore} Resource.
 func NewMetastore(scope constructs.Construct, id *string, config *MetastoreConfig) Metastore {
 	_init_.Initialize()
 
@@ -662,7 +713,7 @@ func NewMetastore(scope constructs.Construct, id *string, config *MetastoreConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore databricks_metastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore databricks_metastore} Resource.
 func NewMetastore_Override(m Metastore, scope constructs.Construct, id *string, config *MetastoreConfig) {
 	_init_.Initialize()
 
@@ -832,6 +883,17 @@ func (j *jsiiProxy_Metastore)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
+func (j *jsiiProxy_Metastore)SetMetastoreId(val *string) {
+	if err := j.validateSetMetastoreIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metastoreId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Metastore)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -891,6 +953,17 @@ func (j *jsiiProxy_Metastore)SetStorageRoot(val *string) {
 	_jsii_.Set(
 		j,
 		"storageRoot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Metastore)SetStorageRootCredentialId(val *string) {
+	if err := j.validateSetStorageRootCredentialIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageRootCredentialId",
 		val,
 	)
 }
@@ -1263,6 +1336,14 @@ func (m *jsiiProxy_Metastore) ResetId() {
 	)
 }
 
+func (m *jsiiProxy_Metastore) ResetMetastoreId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMetastoreId",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_Metastore) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1283,6 +1364,14 @@ func (m *jsiiProxy_Metastore) ResetRegion() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Metastore) ResetStorageRootCredentialId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetStorageRootCredentialId",
 		nil, // no parameters
 	)
 }

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package catalog
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/catalog/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/catalog/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/catalog databricks_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/catalog databricks_catalog}.
 type Catalog interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,6 +24,9 @@ type Catalog interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectionName() *string
+	SetConnectionName(val *string)
+	ConnectionNameInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -117,6 +123,7 @@ type Catalog interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetComment()
+	ResetConnectionName()
 	ResetForceDestroy()
 	ResetId()
 	ResetIsolationMode()
@@ -179,6 +186,26 @@ func (j *jsiiProxy_Catalog) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) ConnectionName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) ConnectionNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionNameInput",
 		&returns,
 	)
 	return returns
@@ -525,7 +552,7 @@ func (j *jsiiProxy_Catalog) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) Catalog {
 	_init_.Initialize()
 
@@ -543,7 +570,7 @@ func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog_Override(c Catalog, scope constructs.Construct, id *string, config *CatalogConfig) {
 	_init_.Initialize()
 
@@ -572,6 +599,17 @@ func (j *jsiiProxy_Catalog)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Catalog)SetConnectionName(val *string) {
+	if err := j.validateSetConnectionNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connectionName",
 		val,
 	)
 }
@@ -1013,6 +1051,14 @@ func (c *jsiiProxy_Catalog) ResetComment() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetComment",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Catalog) ResetConnectionName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetConnectionName",
 		nil, // no parameters
 	)
 }

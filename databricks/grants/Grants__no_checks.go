@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package grants
@@ -81,6 +84,10 @@ func (j *jsiiProxy_Grants) validateSetCountParameters(val interface{}) error {
 }
 
 func (j *jsiiProxy_Grants) validateSetExternalLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Grants) validateSetForeignConnectionParameters(val *string) error {
 	return nil
 }
 

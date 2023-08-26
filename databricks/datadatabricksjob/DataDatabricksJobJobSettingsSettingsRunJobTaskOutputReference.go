@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadatabricksjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksjob/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -29,9 +32,9 @@ type DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataDatabricksJobJobSettingsSettingsRunJobTask
 	SetInternalValue(val *DataDatabricksJobJobSettingsSettingsRunJobTask)
-	JobId() *string
-	SetJobId(val *string)
-	JobIdInput() *string
+	JobId() *float64
+	SetJobId(val *float64)
+	JobIdInput() *float64
 	JobParameters() *map[string]*string
 	SetJobParameters(val *map[string]*string)
 	JobParametersInput() *map[string]*string
@@ -133,8 +136,8 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference) JobId() *string {
-	var returns *string
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference) JobId() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"jobId",
@@ -143,8 +146,8 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference) JobIdInput() *string {
-	var returns *string
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference) JobIdInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"jobIdInput",
@@ -254,7 +257,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference)SetJobId(val *string) {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference)SetJobId(val *float64) {
 	if err := j.validateSetJobIdParameters(val); err != nil {
 		panic(err)
 	}

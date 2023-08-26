@@ -1,17 +1,23 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadatabricksserviceprincipal
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksserviceprincipal/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksserviceprincipal/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/service_principal databricks_service_principal}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/service_principal databricks_service_principal}.
 type DataDatabricksServicePrincipal interface {
 	cdktf.TerraformDataSource
+	AclPrincipalId() *string
+	SetAclPrincipalId(val *string)
+	AclPrincipalIdInput() *string
 	Active() interface{}
 	SetActive(val interface{})
 	ActiveInput() interface{}
@@ -99,6 +105,7 @@ type DataDatabricksServicePrincipal interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAclPrincipalId()
 	ResetActive()
 	ResetApplicationId()
 	ResetDisplayName()
@@ -123,6 +130,26 @@ type DataDatabricksServicePrincipal interface {
 // The jsii proxy struct for DataDatabricksServicePrincipal
 type jsiiProxy_DataDatabricksServicePrincipal struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataDatabricksServicePrincipal) AclPrincipalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aclPrincipalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServicePrincipal) AclPrincipalIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aclPrincipalIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksServicePrincipal) Active() interface{} {
@@ -426,7 +453,7 @@ func (j *jsiiProxy_DataDatabricksServicePrincipal) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/service_principal databricks_service_principal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/service_principal databricks_service_principal} Data Source.
 func NewDataDatabricksServicePrincipal(scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalConfig) DataDatabricksServicePrincipal {
 	_init_.Initialize()
 
@@ -444,7 +471,7 @@ func NewDataDatabricksServicePrincipal(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/service_principal databricks_service_principal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/service_principal databricks_service_principal} Data Source.
 func NewDataDatabricksServicePrincipal_Override(d DataDatabricksServicePrincipal, scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalConfig) {
 	_init_.Initialize()
 
@@ -452,6 +479,17 @@ func NewDataDatabricksServicePrincipal_Override(d DataDatabricksServicePrincipal
 		"@cdktf/provider-databricks.dataDatabricksServicePrincipal.DataDatabricksServicePrincipal",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksServicePrincipal)SetAclPrincipalId(val *string) {
+	if err := j.validateSetAclPrincipalIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aclPrincipalId",
+		val,
 	)
 }
 
@@ -852,6 +890,14 @@ func (d *jsiiProxy_DataDatabricksServicePrincipal) OverrideLogicalId(newLogicalI
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksServicePrincipal) ResetAclPrincipalId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAclPrincipalId",
+		nil, // no parameters
 	)
 }
 

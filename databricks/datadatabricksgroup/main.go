@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadatabricksgroup
 
 import (
@@ -11,6 +14,8 @@ func init() {
 		"@cdktf/provider-databricks.dataDatabricksGroup.DataDatabricksGroup",
 		reflect.TypeOf((*DataDatabricksGroup)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "aclPrincipalId", GoGetter: "AclPrincipalId"},
+			_jsii_.MemberProperty{JsiiProperty: "aclPrincipalIdInput", GoGetter: "AclPrincipalIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowClusterCreate", GoGetter: "AllowClusterCreate"},
 			_jsii_.MemberProperty{JsiiProperty: "allowClusterCreateInput", GoGetter: "AllowClusterCreateInput"},
@@ -56,6 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "recursive", GoGetter: "Recursive"},
 			_jsii_.MemberProperty{JsiiProperty: "recursiveInput", GoGetter: "RecursiveInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAclPrincipalId", GoMethod: "ResetAclPrincipalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowClusterCreate", GoMethod: "ResetAllowClusterCreate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowInstancePoolCreate", GoMethod: "ResetAllowInstancePoolCreate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetChildGroups", GoMethod: "ResetChildGroups"},

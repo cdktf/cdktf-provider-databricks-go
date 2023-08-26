@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package mlflowmodel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/mlflowmodel/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mlflowmodel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -67,6 +70,8 @@ type MlflowModelTagsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetKey()
+	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -481,6 +486,22 @@ func (m *jsiiProxy_MlflowModelTagsOutputReference) InterpolationForAttribute(pro
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MlflowModelTagsOutputReference) ResetKey() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetKey",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MlflowModelTagsOutputReference) ResetValue() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetValue",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MlflowModelTagsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

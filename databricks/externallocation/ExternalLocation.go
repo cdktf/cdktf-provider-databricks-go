@@ -1,17 +1,23 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package externallocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/externallocation/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/externallocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/external_location databricks_external_location}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location databricks_external_location}.
 type ExternalLocation interface {
 	cdktf.TerraformResource
+	AccessPoint() *string
+	SetAccessPoint(val *string)
+	AccessPointInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Comment() *string
@@ -34,9 +40,14 @@ type ExternalLocation interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionDetails() ExternalLocationEncryptionDetailsOutputReference
+	EncryptionDetailsInput() *ExternalLocationEncryptionDetails
 	ForceDestroy() interface{}
 	SetForceDestroy(val interface{})
 	ForceDestroyInput() interface{}
+	ForceUpdate() interface{}
+	SetForceUpdate(val interface{})
+	ForceUpdateInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -113,8 +124,12 @@ type ExternalLocation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionDetails(value *ExternalLocationEncryptionDetails)
+	ResetAccessPoint()
 	ResetComment()
+	ResetEncryptionDetails()
 	ResetForceDestroy()
+	ResetForceUpdate()
 	ResetId()
 	ResetMetastoreId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -136,6 +151,26 @@ type ExternalLocation interface {
 // The jsii proxy struct for ExternalLocation
 type jsiiProxy_ExternalLocation struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ExternalLocation) AccessPoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessPoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) AccessPointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessPointInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ExternalLocation) CdktfStack() cdktf.TerraformStack {
@@ -228,6 +263,26 @@ func (j *jsiiProxy_ExternalLocation) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ExternalLocation) EncryptionDetails() ExternalLocationEncryptionDetailsOutputReference {
+	var returns ExternalLocationEncryptionDetailsOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionDetails",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) EncryptionDetailsInput() *ExternalLocationEncryptionDetails {
+	var returns *ExternalLocationEncryptionDetails
+	_jsii_.Get(
+		j,
+		"encryptionDetailsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ExternalLocation) ForceDestroy() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -243,6 +298,26 @@ func (j *jsiiProxy_ExternalLocation) ForceDestroyInput() interface{} {
 	_jsii_.Get(
 		j,
 		"forceDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) ForceUpdate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceUpdate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) ForceUpdateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceUpdateInput",
 		&returns,
 	)
 	return returns
@@ -499,7 +574,7 @@ func (j *jsiiProxy_ExternalLocation) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation(scope constructs.Construct, id *string, config *ExternalLocationConfig) ExternalLocation {
 	_init_.Initialize()
 
@@ -517,7 +592,7 @@ func NewExternalLocation(scope constructs.Construct, id *string, config *Externa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation_Override(e ExternalLocation, scope constructs.Construct, id *string, config *ExternalLocationConfig) {
 	_init_.Initialize()
 
@@ -525,6 +600,17 @@ func NewExternalLocation_Override(e ExternalLocation, scope constructs.Construct
 		"@cdktf/provider-databricks.externalLocation.ExternalLocation",
 		[]interface{}{scope, id, config},
 		e,
+	)
+}
+
+func (j *jsiiProxy_ExternalLocation)SetAccessPoint(val *string) {
+	if err := j.validateSetAccessPointParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessPoint",
+		val,
 	)
 }
 
@@ -587,6 +673,17 @@ func (j *jsiiProxy_ExternalLocation)SetForceDestroy(val interface{}) {
 	_jsii_.Set(
 		j,
 		"forceDestroy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ExternalLocation)SetForceUpdate(val interface{}) {
+	if err := j.validateSetForceUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceUpdate",
 		val,
 	)
 }
@@ -972,6 +1069,25 @@ func (e *jsiiProxy_ExternalLocation) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (e *jsiiProxy_ExternalLocation) PutEncryptionDetails(value *ExternalLocationEncryptionDetails) {
+	if err := e.validatePutEncryptionDetailsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putEncryptionDetails",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ExternalLocation) ResetAccessPoint() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAccessPoint",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ExternalLocation) ResetComment() {
 	_jsii_.InvokeVoid(
 		e,
@@ -980,10 +1096,26 @@ func (e *jsiiProxy_ExternalLocation) ResetComment() {
 	)
 }
 
+func (e *jsiiProxy_ExternalLocation) ResetEncryptionDetails() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEncryptionDetails",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ExternalLocation) ResetForceDestroy() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetForceDestroy",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExternalLocation) ResetForceUpdate() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetForceUpdate",
 		nil, // no parameters
 	)
 }

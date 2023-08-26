@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package grouprole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/grouprole/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/grouprole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/group_role databricks_group_role}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/group_role databricks_group_role}.
 type GroupRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +335,7 @@ func (j *jsiiProxy_GroupRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/group_role databricks_group_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/group_role databricks_group_role} Resource.
 func NewGroupRole(scope constructs.Construct, id *string, config *GroupRoleConfig) GroupRole {
 	_init_.Initialize()
 
@@ -350,7 +353,7 @@ func NewGroupRole(scope constructs.Construct, id *string, config *GroupRoleConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/group_role databricks_group_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/group_role databricks_group_role} Resource.
 func NewGroupRole_Override(g GroupRole, scope constructs.Construct, id *string, config *GroupRoleConfig) {
 	_init_.Initialize()
 

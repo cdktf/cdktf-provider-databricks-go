@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package mwsprivateaccesssettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/mwsprivateaccesssettings/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsprivateaccesssettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings}.
 type MwsPrivateAccessSettings interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -476,7 +479,7 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings} Resource.
 func NewMwsPrivateAccessSettings(scope constructs.Construct, id *string, config *MwsPrivateAccessSettingsConfig) MwsPrivateAccessSettings {
 	_init_.Initialize()
 
@@ -494,7 +497,7 @@ func NewMwsPrivateAccessSettings(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings} Resource.
 func NewMwsPrivateAccessSettings_Override(m MwsPrivateAccessSettings, scope constructs.Construct, id *string, config *MwsPrivateAccessSettingsConfig) {
 	_init_.Initialize()
 

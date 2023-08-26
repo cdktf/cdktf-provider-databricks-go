@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package grants
 
 import (
@@ -22,6 +25,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "externalLocation", GoGetter: "ExternalLocation"},
 			_jsii_.MemberProperty{JsiiProperty: "externalLocationInput", GoGetter: "ExternalLocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
+			_jsii_.MemberProperty{JsiiProperty: "foreignConnection", GoGetter: "ForeignConnection"},
+			_jsii_.MemberProperty{JsiiProperty: "foreignConnectionInput", GoGetter: "ForeignConnectionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
 			_jsii_.MemberProperty{JsiiProperty: "function", GoGetter: "Function"},
@@ -53,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCatalog", GoMethod: "ResetCatalog"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExternalLocation", GoMethod: "ResetExternalLocation"},
+			_jsii_.MemberMethod{JsiiMethod: "resetForeignConnection", GoMethod: "ResetForeignConnection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFunction", GoMethod: "ResetFunction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaterializedView", GoMethod: "ResetMaterializedView"},

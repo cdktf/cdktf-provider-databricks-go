@@ -1,17 +1,23 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadatabricksgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksgroup/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/group databricks_group}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/group databricks_group}.
 type DataDatabricksGroup interface {
 	cdktf.TerraformDataSource
+	AclPrincipalId() *string
+	SetAclPrincipalId(val *string)
+	AclPrincipalIdInput() *string
 	AllowClusterCreate() interface{}
 	SetAllowClusterCreate(val interface{})
 	AllowClusterCreateInput() interface{}
@@ -117,6 +123,7 @@ type DataDatabricksGroup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAclPrincipalId()
 	ResetAllowClusterCreate()
 	ResetAllowInstancePoolCreate()
 	ResetChildGroups()
@@ -146,6 +153,26 @@ type DataDatabricksGroup interface {
 // The jsii proxy struct for DataDatabricksGroup
 type jsiiProxy_DataDatabricksGroup struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataDatabricksGroup) AclPrincipalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aclPrincipalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksGroup) AclPrincipalIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aclPrincipalIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksGroup) AllowClusterCreate() interface{} {
@@ -569,7 +596,7 @@ func (j *jsiiProxy_DataDatabricksGroup) WorkspaceAccessInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/group databricks_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/group databricks_group} Data Source.
 func NewDataDatabricksGroup(scope constructs.Construct, id *string, config *DataDatabricksGroupConfig) DataDatabricksGroup {
 	_init_.Initialize()
 
@@ -587,7 +614,7 @@ func NewDataDatabricksGroup(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/group databricks_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/group databricks_group} Data Source.
 func NewDataDatabricksGroup_Override(d DataDatabricksGroup, scope constructs.Construct, id *string, config *DataDatabricksGroupConfig) {
 	_init_.Initialize()
 
@@ -595,6 +622,17 @@ func NewDataDatabricksGroup_Override(d DataDatabricksGroup, scope constructs.Con
 		"@cdktf/provider-databricks.dataDatabricksGroup.DataDatabricksGroup",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksGroup)SetAclPrincipalId(val *string) {
+	if err := j.validateSetAclPrincipalIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aclPrincipalId",
+		val,
 	)
 }
 
@@ -1061,6 +1099,14 @@ func (d *jsiiProxy_DataDatabricksGroup) OverrideLogicalId(newLogicalId *string) 
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksGroup) ResetAclPrincipalId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAclPrincipalId",
+		nil, // no parameters
 	)
 }
 

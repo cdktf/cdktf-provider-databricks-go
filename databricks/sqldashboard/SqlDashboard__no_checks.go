@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package sqldashboard
@@ -72,6 +75,10 @@ func (j *jsiiProxy_SqlDashboard) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_SqlDashboard) validateSetCreatedAtParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDashboard) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -93,6 +100,10 @@ func (j *jsiiProxy_SqlDashboard) validateSetProvisionersParameters(val *[]interf
 }
 
 func (j *jsiiProxy_SqlDashboard) validateSetTagsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SqlDashboard) validateSetUpdatedAtParameters(val *string) error {
 	return nil
 }
 

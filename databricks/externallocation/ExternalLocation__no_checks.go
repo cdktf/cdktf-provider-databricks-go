@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package externallocation
@@ -52,6 +55,10 @@ func (e *jsiiProxy_ExternalLocation) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (e *jsiiProxy_ExternalLocation) validatePutEncryptionDetailsParameters(value *ExternalLocationEncryptionDetails) error {
+	return nil
+}
+
 func validateExternalLocation_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -61,6 +68,10 @@ func validateExternalLocation_IsTerraformElementParameters(x interface{}) error 
 }
 
 func validateExternalLocation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ExternalLocation) validateSetAccessPointParameters(val *string) error {
 	return nil
 }
 
@@ -81,6 +92,10 @@ func (j *jsiiProxy_ExternalLocation) validateSetCredentialNameParameters(val *st
 }
 
 func (j *jsiiProxy_ExternalLocation) validateSetForceDestroyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ExternalLocation) validateSetForceUpdateParameters(val interface{}) error {
 	return nil
 }
 

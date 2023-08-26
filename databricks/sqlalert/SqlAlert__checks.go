@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build !no_runtime_type_checking
 
 package sqlalert
@@ -236,6 +239,14 @@ func (j *jsiiProxy_SqlAlert) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_SqlAlert) validateSetCreatedAtParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SqlAlert) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -323,6 +334,14 @@ func (j *jsiiProxy_SqlAlert) validateSetQueryIdParameters(val *string) error {
 }
 
 func (j *jsiiProxy_SqlAlert) validateSetRearmParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SqlAlert) validateSetUpdatedAtParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

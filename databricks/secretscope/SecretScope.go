@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package secretscope
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/secretscope/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/secretscope/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/secret_scope databricks_secret_scope}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/secret_scope databricks_secret_scope}.
 type SecretScope interface {
 	cdktf.TerraformResource
 	BackendType() *string
@@ -381,7 +384,7 @@ func (j *jsiiProxy_SecretScope) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/secret_scope databricks_secret_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/secret_scope databricks_secret_scope} Resource.
 func NewSecretScope(scope constructs.Construct, id *string, config *SecretScopeConfig) SecretScope {
 	_init_.Initialize()
 
@@ -399,7 +402,7 @@ func NewSecretScope(scope constructs.Construct, id *string, config *SecretScopeC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/secret_scope databricks_secret_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/secret_scope databricks_secret_scope} Resource.
 func NewSecretScope_Override(s SecretScope, scope constructs.Construct, id *string, config *SecretScopeConfig) {
 	_init_.Initialize()
 

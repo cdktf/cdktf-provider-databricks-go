@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package sqlalert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/sqlalert/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlalert/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_alert databricks_sql_alert}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_alert databricks_sql_alert}.
 type SqlAlert interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,6 +27,9 @@ type SqlAlert interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
+	SetCreatedAt(val *string)
+	CreatedAtInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -75,6 +81,9 @@ type SqlAlert interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatedAt() *string
+	SetUpdatedAt(val *string)
+	UpdatedAtInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -101,12 +110,14 @@ type SqlAlert interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutOptions(value *SqlAlertOptions)
+	ResetCreatedAt()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParent()
 	ResetRearm()
+	ResetUpdatedAt()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -157,6 +168,26 @@ func (j *jsiiProxy_SqlAlert) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlAlert) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlAlert) CreatedAtInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAtInput",
 		&returns,
 	)
 	return returns
@@ -402,8 +433,28 @@ func (j *jsiiProxy_SqlAlert) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SqlAlert) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_alert databricks_sql_alert} Resource.
+func (j *jsiiProxy_SqlAlert) UpdatedAtInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAtInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_alert databricks_sql_alert} Resource.
 func NewSqlAlert(scope constructs.Construct, id *string, config *SqlAlertConfig) SqlAlert {
 	_init_.Initialize()
 
@@ -421,7 +472,7 @@ func NewSqlAlert(scope constructs.Construct, id *string, config *SqlAlertConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_alert databricks_sql_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_alert databricks_sql_alert} Resource.
 func NewSqlAlert_Override(s SqlAlert, scope constructs.Construct, id *string, config *SqlAlertConfig) {
 	_init_.Initialize()
 
@@ -450,6 +501,17 @@ func (j *jsiiProxy_SqlAlert)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlAlert)SetCreatedAt(val *string) {
+	if err := j.validateSetCreatedAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createdAt",
 		val,
 	)
 }
@@ -551,6 +613,17 @@ func (j *jsiiProxy_SqlAlert)SetRearm(val *float64) {
 	_jsii_.Set(
 		j,
 		"rearm",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlAlert)SetUpdatedAt(val *string) {
+	if err := j.validateSetUpdatedAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"updatedAt",
 		val,
 	)
 }
@@ -832,6 +905,14 @@ func (s *jsiiProxy_SqlAlert) PutOptions(value *SqlAlertOptions) {
 	)
 }
 
+func (s *jsiiProxy_SqlAlert) ResetCreatedAt() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCreatedAt",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlAlert) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -860,6 +941,14 @@ func (s *jsiiProxy_SqlAlert) ResetRearm() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRearm",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlAlert) ResetUpdatedAt() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUpdatedAt",
 		nil, // no parameters
 	)
 }

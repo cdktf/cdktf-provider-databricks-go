@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package grants
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/grants/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/grants/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants databricks_grants}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants databricks_grants}.
 type Grants interface {
 	cdktf.TerraformResource
 	Catalog() *string
@@ -38,6 +41,9 @@ type Grants interface {
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktf.ITerraformIterator)
+	ForeignConnection() *string
+	SetForeignConnection(val *string)
+	ForeignConnectionInput() *string
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -124,6 +130,7 @@ type Grants interface {
 	PutGrant(value interface{})
 	ResetCatalog()
 	ResetExternalLocation()
+	ResetForeignConnection()
 	ResetFunction()
 	ResetId()
 	ResetMaterializedView()
@@ -247,6 +254,26 @@ func (j *jsiiProxy_Grants) ForEach() cdktf.ITerraformIterator {
 	_jsii_.Get(
 		j,
 		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grants) ForeignConnection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"foreignConnection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grants) ForeignConnectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"foreignConnectionInput",
 		&returns,
 	)
 	return returns
@@ -573,7 +600,7 @@ func (j *jsiiProxy_Grants) VolumeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants databricks_grants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants databricks_grants} Resource.
 func NewGrants(scope constructs.Construct, id *string, config *GrantsConfig) Grants {
 	_init_.Initialize()
 
@@ -591,7 +618,7 @@ func NewGrants(scope constructs.Construct, id *string, config *GrantsConfig) Gra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants databricks_grants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants databricks_grants} Resource.
 func NewGrants_Override(g Grants, scope constructs.Construct, id *string, config *GrantsConfig) {
 	_init_.Initialize()
 
@@ -658,6 +685,17 @@ func (j *jsiiProxy_Grants)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Grants)SetForeignConnection(val *string) {
+	if err := j.validateSetForeignConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"foreignConnection",
 		val,
 	)
 }
@@ -1091,6 +1129,14 @@ func (g *jsiiProxy_Grants) ResetExternalLocation() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetExternalLocation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Grants) ResetForeignConnection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetForeignConnection",
 		nil, // no parameters
 	)
 }

@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package datadatabricksgroup
@@ -61,6 +64,10 @@ func validateDataDatabricksGroup_IsTerraformDataSourceParameters(x interface{}) 
 }
 
 func validateDataDatabricksGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksGroup) validateSetAclPrincipalIdParameters(val *string) error {
 	return nil
 }
 

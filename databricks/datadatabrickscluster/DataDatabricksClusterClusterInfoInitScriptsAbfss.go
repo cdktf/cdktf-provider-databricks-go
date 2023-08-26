@@ -1,8 +1,11 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadatabrickscluster
 
 
 type DataDatabricksClusterClusterInfoInitScriptsAbfss struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 	Destination *string `field:"optional" json:"destination" yaml:"destination"`
 }
 

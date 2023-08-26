@@ -1,8 +1,11 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package storagecredential
 
 
 type StorageCredentialDatabricksGcpServiceAccount struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/storage_credential#email StorageCredential#email}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/storage_credential#email StorageCredential#email}.
 	Email *string `field:"optional" json:"email" yaml:"email"`
 }
 

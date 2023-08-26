@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package mlflowmodel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/mlflowmodel/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mlflowmodel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mlflow_model databricks_mlflow_model}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mlflow_model databricks_mlflow_model}.
 type MlflowModel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,9 +70,6 @@ type MlflowModel interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	RegisteredModelId() *string
-	SetRegisteredModelId(val *string)
-	RegisteredModelIdInput() *string
 	Tags() MlflowModelTagsList
 	TagsInput() interface{}
 	// Experimental.
@@ -114,7 +114,6 @@ type MlflowModel interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRegisteredModelId()
 	ResetTags()
 	ResetUserId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -362,26 +361,6 @@ func (j *jsiiProxy_MlflowModel) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MlflowModel) RegisteredModelId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"registeredModelId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MlflowModel) RegisteredModelIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"registeredModelIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MlflowModel) Tags() MlflowModelTagsList {
 	var returns MlflowModelTagsList
 	_jsii_.Get(
@@ -453,7 +432,7 @@ func (j *jsiiProxy_MlflowModel) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mlflow_model databricks_mlflow_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mlflow_model databricks_mlflow_model} Resource.
 func NewMlflowModel(scope constructs.Construct, id *string, config *MlflowModelConfig) MlflowModel {
 	_init_.Initialize()
 
@@ -471,7 +450,7 @@ func NewMlflowModel(scope constructs.Construct, id *string, config *MlflowModelC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mlflow_model databricks_mlflow_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mlflow_model databricks_mlflow_model} Resource.
 func NewMlflowModel_Override(m MlflowModel, scope constructs.Construct, id *string, config *MlflowModelConfig) {
 	_init_.Initialize()
 
@@ -601,17 +580,6 @@ func (j *jsiiProxy_MlflowModel)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MlflowModel)SetRegisteredModelId(val *string) {
-	if err := j.validateSetRegisteredModelIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"registeredModelId",
 		val,
 	)
 }
@@ -940,14 +908,6 @@ func (m *jsiiProxy_MlflowModel) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MlflowModel) ResetRegisteredModelId() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetRegisteredModelId",
 		nil, // no parameters
 	)
 }

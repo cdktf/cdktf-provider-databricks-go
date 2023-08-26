@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package obotoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/obotoken/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/obotoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/obo_token databricks_obo_token}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/obo_token databricks_obo_token}.
 type OboToken interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -368,7 +371,7 @@ func (j *jsiiProxy_OboToken) TokenValue() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/obo_token databricks_obo_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/obo_token databricks_obo_token} Resource.
 func NewOboToken(scope constructs.Construct, id *string, config *OboTokenConfig) OboToken {
 	_init_.Initialize()
 
@@ -386,7 +389,7 @@ func NewOboToken(scope constructs.Construct, id *string, config *OboTokenConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/obo_token databricks_obo_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/obo_token databricks_obo_token} Resource.
 func NewOboToken_Override(o OboToken, scope constructs.Construct, id *string, config *OboTokenConfig) {
 	_init_.Initialize()
 

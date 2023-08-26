@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package accesscontrolruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/accesscontrolruleset/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/accesscontrolruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/access_control_rule_set databricks_access_control_rule_set}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/access_control_rule_set databricks_access_control_rule_set}.
 type AccessControlRuleSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -344,7 +347,7 @@ func (j *jsiiProxy_AccessControlRuleSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/access_control_rule_set databricks_access_control_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/access_control_rule_set databricks_access_control_rule_set} Resource.
 func NewAccessControlRuleSet(scope constructs.Construct, id *string, config *AccessControlRuleSetConfig) AccessControlRuleSet {
 	_init_.Initialize()
 
@@ -362,7 +365,7 @@ func NewAccessControlRuleSet(scope constructs.Construct, id *string, config *Acc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/access_control_rule_set databricks_access_control_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/access_control_rule_set databricks_access_control_rule_set} Resource.
 func NewAccessControlRuleSet_Override(a AccessControlRuleSet, scope constructs.Construct, id *string, config *AccessControlRuleSetConfig) {
 	_init_.Initialize()
 

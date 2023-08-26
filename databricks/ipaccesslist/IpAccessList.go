@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package ipaccesslist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/ipaccesslist/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/ipaccesslist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/ip_access_list databricks_ip_access_list}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/ip_access_list databricks_ip_access_list}.
 type IpAccessList interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +382,7 @@ func (j *jsiiProxy_IpAccessList) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/ip_access_list databricks_ip_access_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/ip_access_list databricks_ip_access_list} Resource.
 func NewIpAccessList(scope constructs.Construct, id *string, config *IpAccessListConfig) IpAccessList {
 	_init_.Initialize()
 
@@ -397,7 +400,7 @@ func NewIpAccessList(scope constructs.Construct, id *string, config *IpAccessLis
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/ip_access_list databricks_ip_access_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/ip_access_list databricks_ip_access_list} Resource.
 func NewIpAccessList_Override(i IpAccessList, scope constructs.Construct, id *string, config *IpAccessListConfig) {
 	_init_.Initialize()
 

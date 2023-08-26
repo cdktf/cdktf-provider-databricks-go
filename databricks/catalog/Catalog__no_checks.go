@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package catalog
@@ -69,6 +72,10 @@ func (j *jsiiProxy_Catalog) validateSetCommentParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Catalog) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Catalog) validateSetConnectionNameParameters(val *string) error {
 	return nil
 }
 

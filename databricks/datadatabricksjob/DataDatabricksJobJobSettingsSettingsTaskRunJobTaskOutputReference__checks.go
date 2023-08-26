@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build !no_runtime_type_checking
 
 package datadatabricksjob
@@ -171,7 +174,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskRunJobTaskOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskRunJobTaskOutputReference) validateSetJobIdParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskRunJobTaskOutputReference) validateSetJobIdParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

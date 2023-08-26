@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package storagecredential
 
 import (
@@ -27,6 +30,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "databricksGcpServiceAccount", GoGetter: "DatabricksGcpServiceAccount"},
 			_jsii_.MemberProperty{JsiiProperty: "databricksGcpServiceAccountInput", GoGetter: "DatabricksGcpServiceAccountInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "forceDestroy", GoGetter: "ForceDestroy"},
+			_jsii_.MemberProperty{JsiiProperty: "forceDestroyInput", GoGetter: "ForceDestroyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -68,6 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureServicePrincipal", GoMethod: "ResetAzureServicePrincipal"},
 			_jsii_.MemberMethod{JsiiMethod: "resetComment", GoMethod: "ResetComment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabricksGcpServiceAccount", GoMethod: "ResetDatabricksGcpServiceAccount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetForceDestroy", GoMethod: "ResetForceDestroy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGcpServiceAccountKey", GoMethod: "ResetGcpServiceAccountKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetastoreId", GoMethod: "ResetMetastoreId"},

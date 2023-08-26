@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package metastore
@@ -116,6 +119,10 @@ func (j *jsiiProxy_Metastore) validateSetLifecycleParameters(val *cdktf.Terrafor
 	return nil
 }
 
+func (j *jsiiProxy_Metastore) validateSetMetastoreIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Metastore) validateSetNameParameters(val *string) error {
 	return nil
 }
@@ -133,6 +140,10 @@ func (j *jsiiProxy_Metastore) validateSetRegionParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Metastore) validateSetStorageRootParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Metastore) validateSetStorageRootCredentialIdParameters(val *string) error {
 	return nil
 }
 

@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package job
@@ -60,7 +63,7 @@ func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateSetInternalValuePar
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateSetJobIdParameters(val *string) error {
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateSetJobIdParameters(val *float64) error {
 	return nil
 }
 

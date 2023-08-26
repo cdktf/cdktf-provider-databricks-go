@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package storagecredential
@@ -93,6 +96,10 @@ func (j *jsiiProxy_StorageCredential) validateSetConnectionParameters(val interf
 }
 
 func (j *jsiiProxy_StorageCredential) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageCredential) validateSetForceDestroyParameters(val interface{}) error {
 	return nil
 }
 

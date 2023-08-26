@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package mlflowwebhook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/mlflowwebhook/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mlflowwebhook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

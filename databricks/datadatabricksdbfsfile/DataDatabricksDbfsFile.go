@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadatabricksdbfsfile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksdbfsfile/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksdbfsfile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/dbfs_file databricks_dbfs_file}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/dbfs_file databricks_dbfs_file}.
 type DataDatabricksDbfsFile interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -326,7 +329,7 @@ func (j *jsiiProxy_DataDatabricksDbfsFile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/dbfs_file databricks_dbfs_file} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/dbfs_file databricks_dbfs_file} Data Source.
 func NewDataDatabricksDbfsFile(scope constructs.Construct, id *string, config *DataDatabricksDbfsFileConfig) DataDatabricksDbfsFile {
 	_init_.Initialize()
 
@@ -344,7 +347,7 @@ func NewDataDatabricksDbfsFile(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/dbfs_file databricks_dbfs_file} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/dbfs_file databricks_dbfs_file} Data Source.
 func NewDataDatabricksDbfsFile_Override(d DataDatabricksDbfsFile, scope constructs.Construct, id *string, config *DataDatabricksDbfsFileConfig) {
 	_init_.Initialize()
 

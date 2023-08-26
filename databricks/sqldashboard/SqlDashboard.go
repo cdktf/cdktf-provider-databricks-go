@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package sqldashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/sqldashboard/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqldashboard/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_dashboard databricks_sql_dashboard}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_dashboard databricks_sql_dashboard}.
 type SqlDashboard interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,6 +27,9 @@ type SqlDashboard interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
+	SetCreatedAt(val *string)
+	CreatedAtInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -70,6 +76,9 @@ type SqlDashboard interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatedAt() *string
+	SetUpdatedAt(val *string)
+	UpdatedAtInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -95,12 +104,14 @@ type SqlDashboard interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetCreatedAt()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParent()
 	ResetTags()
+	ResetUpdatedAt()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -151,6 +162,26 @@ func (j *jsiiProxy_SqlDashboard) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDashboard) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDashboard) CreatedAtInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAtInput",
 		&returns,
 	)
 	return returns
@@ -356,8 +387,28 @@ func (j *jsiiProxy_SqlDashboard) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SqlDashboard) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
+func (j *jsiiProxy_SqlDashboard) UpdatedAtInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAtInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
 func NewSqlDashboard(scope constructs.Construct, id *string, config *SqlDashboardConfig) SqlDashboard {
 	_init_.Initialize()
 
@@ -375,7 +426,7 @@ func NewSqlDashboard(scope constructs.Construct, id *string, config *SqlDashboar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
 func NewSqlDashboard_Override(s SqlDashboard, scope constructs.Construct, id *string, config *SqlDashboardConfig) {
 	_init_.Initialize()
 
@@ -404,6 +455,17 @@ func (j *jsiiProxy_SqlDashboard)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDashboard)SetCreatedAt(val *string) {
+	if err := j.validateSetCreatedAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createdAt",
 		val,
 	)
 }
@@ -494,6 +556,17 @@ func (j *jsiiProxy_SqlDashboard)SetTags(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDashboard)SetUpdatedAt(val *string) {
+	if err := j.validateSetUpdatedAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"updatedAt",
 		val,
 	)
 }
@@ -764,6 +837,14 @@ func (s *jsiiProxy_SqlDashboard) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_SqlDashboard) ResetCreatedAt() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCreatedAt",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlDashboard) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -792,6 +873,14 @@ func (s *jsiiProxy_SqlDashboard) ResetTags() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDashboard) ResetUpdatedAt() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUpdatedAt",
 		nil, // no parameters
 	)
 }

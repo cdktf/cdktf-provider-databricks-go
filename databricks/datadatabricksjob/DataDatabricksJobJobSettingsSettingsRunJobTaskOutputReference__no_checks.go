@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package datadatabricksjob
@@ -60,7 +63,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference) validateSetJobIdParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference) validateSetJobIdParameters(val *float64) error {
 	return nil
 }
 

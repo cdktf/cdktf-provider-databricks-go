@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadatabricksnodetype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksnodetype/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksnodetype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/node_type databricks_node_type}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/node_type databricks_node_type}.
 type DataDatabricksNodeType interface {
 	cdktf.TerraformDataSource
 	Category() *string
@@ -570,7 +573,7 @@ func (j *jsiiProxy_DataDatabricksNodeType) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/node_type databricks_node_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/node_type databricks_node_type} Data Source.
 func NewDataDatabricksNodeType(scope constructs.Construct, id *string, config *DataDatabricksNodeTypeConfig) DataDatabricksNodeType {
 	_init_.Initialize()
 
@@ -588,7 +591,7 @@ func NewDataDatabricksNodeType(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/node_type databricks_node_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/node_type databricks_node_type} Data Source.
 func NewDataDatabricksNodeType_Override(d DataDatabricksNodeType, scope constructs.Construct, id *string, config *DataDatabricksNodeTypeConfig) {
 	_init_.Initialize()
 

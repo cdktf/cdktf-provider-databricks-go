@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package job
 
 
 type JobTaskSqlTaskDashboardSubscriptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/job#destination_id Job#destination_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/job#destination_id Job#destination_id}.
 	DestinationId *string `field:"optional" json:"destinationId" yaml:"destinationId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/job#user_name Job#user_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/job#user_name Job#user_name}.
 	UserName *string `field:"optional" json:"userName" yaml:"userName"`
 }
 

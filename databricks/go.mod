@@ -1,9 +1,9 @@
-module github.com/cdktf/cdktf-provider-databricks-go/databricks/v9
+module github.com/cdktf/cdktf-provider-databricks-go/databricks/v10
 
 go 1.18
 
 require (
-	github.com/aws/jsii-runtime-go v1.86.1
-	github.com/hashicorp/terraform-cdk-go/cdktf v0.17.3
+	github.com/aws/jsii-runtime-go v1.88.0
+	github.com/hashicorp/terraform-cdk-go/cdktf v0.18.0
 	github.com/aws/constructs-go/constructs/v10 v10.2.69
 )

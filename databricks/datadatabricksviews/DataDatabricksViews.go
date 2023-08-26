@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadatabricksviews
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksviews/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksviews/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/views databricks_views}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/views databricks_views}.
 type DataDatabricksViews interface {
 	cdktf.TerraformDataSource
 	CatalogName() *string
@@ -328,7 +331,7 @@ func (j *jsiiProxy_DataDatabricksViews) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/views databricks_views} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/views databricks_views} Data Source.
 func NewDataDatabricksViews(scope constructs.Construct, id *string, config *DataDatabricksViewsConfig) DataDatabricksViews {
 	_init_.Initialize()
 
@@ -346,7 +349,7 @@ func NewDataDatabricksViews(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/views databricks_views} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/views databricks_views} Data Source.
 func NewDataDatabricksViews_Override(d DataDatabricksViews, scope constructs.Construct, id *string, config *DataDatabricksViewsConfig) {
 	_init_.Initialize()
 

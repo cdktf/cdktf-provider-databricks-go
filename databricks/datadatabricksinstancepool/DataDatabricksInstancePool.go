@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadatabricksinstancepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksinstancepool/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksinstancepool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/instance_pool databricks_instance_pool}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/instance_pool databricks_instance_pool}.
 type DataDatabricksInstancePool interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -305,7 +308,7 @@ func (j *jsiiProxy_DataDatabricksInstancePool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/instance_pool databricks_instance_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/instance_pool databricks_instance_pool} Data Source.
 func NewDataDatabricksInstancePool(scope constructs.Construct, id *string, config *DataDatabricksInstancePoolConfig) DataDatabricksInstancePool {
 	_init_.Initialize()
 
@@ -323,7 +326,7 @@ func NewDataDatabricksInstancePool(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/instance_pool databricks_instance_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/instance_pool databricks_instance_pool} Data Source.
 func NewDataDatabricksInstancePool_Override(d DataDatabricksInstancePool, scope constructs.Construct, id *string, config *DataDatabricksInstancePoolConfig) {
 	_init_.Initialize()
 

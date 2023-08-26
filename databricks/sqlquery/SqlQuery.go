@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package sqlquery
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/sqlquery/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query databricks_sql_query}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query databricks_sql_query}.
 type SqlQuery interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,6 +27,9 @@ type SqlQuery interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
+	SetCreatedAt(val *string)
+	CreatedAtInput() *string
 	DataSourceId() *string
 	SetDataSourceId(val *string)
 	DataSourceIdInput() *string
@@ -86,6 +92,9 @@ type SqlQuery interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatedAt() *string
+	SetUpdatedAt(val *string)
+	UpdatedAtInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -113,6 +122,7 @@ type SqlQuery interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutParameter(value interface{})
 	PutSchedule(value *SqlQuerySchedule)
+	ResetCreatedAt()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -123,6 +133,7 @@ type SqlQuery interface {
 	ResetRunAsRole()
 	ResetSchedule()
 	ResetTags()
+	ResetUpdatedAt()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -173,6 +184,26 @@ func (j *jsiiProxy_SqlQuery) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlQuery) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlQuery) CreatedAtInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAtInput",
 		&returns,
 	)
 	return returns
@@ -498,8 +529,28 @@ func (j *jsiiProxy_SqlQuery) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SqlQuery) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query databricks_sql_query} Resource.
+func (j *jsiiProxy_SqlQuery) UpdatedAtInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAtInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query databricks_sql_query} Resource.
 func NewSqlQuery(scope constructs.Construct, id *string, config *SqlQueryConfig) SqlQuery {
 	_init_.Initialize()
 
@@ -517,7 +568,7 @@ func NewSqlQuery(scope constructs.Construct, id *string, config *SqlQueryConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query databricks_sql_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query databricks_sql_query} Resource.
 func NewSqlQuery_Override(s SqlQuery, scope constructs.Construct, id *string, config *SqlQueryConfig) {
 	_init_.Initialize()
 
@@ -546,6 +597,17 @@ func (j *jsiiProxy_SqlQuery)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlQuery)SetCreatedAt(val *string) {
+	if err := j.validateSetCreatedAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createdAt",
 		val,
 	)
 }
@@ -680,6 +742,17 @@ func (j *jsiiProxy_SqlQuery)SetTags(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlQuery)SetUpdatedAt(val *string) {
+	if err := j.validateSetUpdatedAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"updatedAt",
 		val,
 	)
 }
@@ -972,6 +1045,14 @@ func (s *jsiiProxy_SqlQuery) PutSchedule(value *SqlQuerySchedule) {
 	)
 }
 
+func (s *jsiiProxy_SqlQuery) ResetCreatedAt() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCreatedAt",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlQuery) ResetDescription() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1032,6 +1113,14 @@ func (s *jsiiProxy_SqlQuery) ResetTags() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlQuery) ResetUpdatedAt() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUpdatedAt",
 		nil, // no parameters
 	)
 }

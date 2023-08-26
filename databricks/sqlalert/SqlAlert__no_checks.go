@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package sqlalert
@@ -76,6 +79,10 @@ func (j *jsiiProxy_SqlAlert) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_SqlAlert) validateSetCreatedAtParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlAlert) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -101,6 +108,10 @@ func (j *jsiiProxy_SqlAlert) validateSetQueryIdParameters(val *string) error {
 }
 
 func (j *jsiiProxy_SqlAlert) validateSetRearmParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_SqlAlert) validateSetUpdatedAtParameters(val *string) error {
 	return nil
 }
 
