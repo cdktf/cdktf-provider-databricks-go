@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/clusters databricks_clusters}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/data-sources/clusters databricks_clusters}.
 type DataDatabricksClusters interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataDatabricksClusters) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/clusters databricks_clusters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/data-sources/clusters databricks_clusters} Data Source.
 func NewDataDatabricksClusters(scope constructs.Construct, id *string, config *DataDatabricksClustersConfig) DataDatabricksClusters {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataDatabricksClusters(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/clusters databricks_clusters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/data-sources/clusters databricks_clusters} Data Source.
 func NewDataDatabricksClusters_Override(d DataDatabricksClusters, scope constructs.Construct, id *string, config *DataDatabricksClustersConfig) {
 	_init_.Initialize()
 

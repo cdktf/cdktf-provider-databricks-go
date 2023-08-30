@@ -5,7 +5,7 @@ package storagecredential
 
 
 type StorageCredentialAwsIamRole struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/storage_credential#role_arn StorageCredential#role_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/storage_credential#role_arn StorageCredential#role_arn}.
 	RoleArn *string `field:"required" json:"roleArn" yaml:"roleArn"`
 }
 
