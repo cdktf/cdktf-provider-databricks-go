@@ -107,6 +107,10 @@ func (j *jsiiProxy_Catalog) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Catalog) validateSetOptionsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Catalog) validateSetOwnerParameters(val *string) error {
 	return nil
 }

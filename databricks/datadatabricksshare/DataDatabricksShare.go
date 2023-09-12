@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/data-sources/share databricks_share}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/data-sources/share databricks_share}.
 type DataDatabricksShare interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_DataDatabricksShare) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/data-sources/share databricks_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/data-sources/share databricks_share} Data Source.
 func NewDataDatabricksShare(scope constructs.Construct, id *string, config *DataDatabricksShareConfig) DataDatabricksShare {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewDataDatabricksShare(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/data-sources/share databricks_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/data-sources/share databricks_share} Data Source.
 func NewDataDatabricksShare_Override(d DataDatabricksShare, scope constructs.Construct, id *string, config *DataDatabricksShareConfig) {
 	_init_.Initialize()
 

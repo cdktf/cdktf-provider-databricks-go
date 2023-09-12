@@ -31,10 +31,16 @@ type MetastoreDataAccessAzureManagedIdentityOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CredentialId() *string
+	SetCredentialId(val *string)
+	CredentialIdInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *MetastoreDataAccessAzureManagedIdentity
 	SetInternalValue(val *MetastoreDataAccessAzureManagedIdentity)
+	ManagedIdentityId() *string
+	SetManagedIdentityId(val *string)
+	ManagedIdentityIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +73,8 @@ type MetastoreDataAccessAzureManagedIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCredentialId()
+	ResetManagedIdentityId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -132,6 +140,26 @@ func (j *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference) Creat
 	return returns
 }
 
+func (j *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference) CredentialId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference) CredentialIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -147,6 +175,26 @@ func (j *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference) ManagedIdentityId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedIdentityId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference) ManagedIdentityIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedIdentityIdInput",
 		&returns,
 	)
 	return returns
@@ -233,6 +281,17 @@ func (j *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference)SetCom
 	)
 }
 
+func (j *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference)SetCredentialId(val *string) {
+	if err := j.validateSetCredentialIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference)SetInternalValue(val *MetastoreDataAccessAzureManagedIdentity) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -240,6 +299,17 @@ func (j *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference)SetInt
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference)SetManagedIdentityId(val *string) {
+	if err := j.validateSetManagedIdentityIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedIdentityId",
 		val,
 	)
 }
@@ -450,6 +520,22 @@ func (m *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference) Inter
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference) ResetCredentialId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCredentialId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference) ResetManagedIdentityId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetManagedIdentityId",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

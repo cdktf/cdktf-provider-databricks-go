@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/catalog databricks_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/catalog databricks_catalog}.
 type Catalog interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -66,6 +66,9 @@ type Catalog interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Options() *map[string]*string
+	SetOptions(val *map[string]*string)
+	OptionsInput() *map[string]*string
 	Owner() *string
 	SetOwner(val *string)
 	OwnerInput() *string
@@ -128,6 +131,7 @@ type Catalog interface {
 	ResetId()
 	ResetIsolationMode()
 	ResetMetastoreId()
+	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -391,6 +395,26 @@ func (j *jsiiProxy_Catalog) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_Catalog) Options() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"options",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) OptionsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"optionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Catalog) Owner() *string {
 	var returns *string
 	_jsii_.Get(
@@ -552,7 +576,7 @@ func (j *jsiiProxy_Catalog) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) Catalog {
 	_init_.Initialize()
 
@@ -570,7 +594,7 @@ func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog_Override(c Catalog, scope constructs.Construct, id *string, config *CatalogConfig) {
 	_init_.Initialize()
 
@@ -703,6 +727,17 @@ func (j *jsiiProxy_Catalog)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Catalog)SetOptions(val *map[string]*string) {
+	if err := j.validateSetOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"options",
 		val,
 	)
 }
@@ -1091,6 +1126,14 @@ func (c *jsiiProxy_Catalog) ResetMetastoreId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetMetastoreId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Catalog) ResetOptions() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOptions",
 		nil, // no parameters
 	)
 }

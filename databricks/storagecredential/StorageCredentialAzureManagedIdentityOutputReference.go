@@ -31,10 +31,16 @@ type StorageCredentialAzureManagedIdentityOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CredentialId() *string
+	SetCredentialId(val *string)
+	CredentialIdInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *StorageCredentialAzureManagedIdentity
 	SetInternalValue(val *StorageCredentialAzureManagedIdentity)
+	ManagedIdentityId() *string
+	SetManagedIdentityId(val *string)
+	ManagedIdentityIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +73,8 @@ type StorageCredentialAzureManagedIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCredentialId()
+	ResetManagedIdentityId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -132,6 +140,26 @@ func (j *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) Creatio
 	return returns
 }
 
+func (j *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) CredentialId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) CredentialIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -147,6 +175,26 @@ func (j *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) Interna
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) ManagedIdentityId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedIdentityId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) ManagedIdentityIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedIdentityIdInput",
 		&returns,
 	)
 	return returns
@@ -233,6 +281,17 @@ func (j *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference)SetCompl
 	)
 }
 
+func (j *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference)SetCredentialId(val *string) {
+	if err := j.validateSetCredentialIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference)SetInternalValue(val *StorageCredentialAzureManagedIdentity) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -240,6 +299,17 @@ func (j *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference)SetInter
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference)SetManagedIdentityId(val *string) {
+	if err := j.validateSetManagedIdentityIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedIdentityId",
 		val,
 	)
 }
@@ -450,6 +520,22 @@ func (s *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) ResetCredentialId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCredentialId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) ResetManagedIdentityId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetManagedIdentityId",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

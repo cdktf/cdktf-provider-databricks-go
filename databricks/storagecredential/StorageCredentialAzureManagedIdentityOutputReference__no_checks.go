@@ -63,7 +63,15 @@ func (j *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) validateSetCredentialIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) validateSetInternalValueParameters(val *StorageCredentialAzureManagedIdentity) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) validateSetManagedIdentityIdParameters(val *string) error {
 	return nil
 }
 

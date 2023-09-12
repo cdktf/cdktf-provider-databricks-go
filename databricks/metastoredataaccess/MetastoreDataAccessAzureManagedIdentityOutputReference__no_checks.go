@@ -63,7 +63,15 @@ func (j *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference) validateSetCredentialIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference) validateSetInternalValueParameters(val *MetastoreDataAccessAzureManagedIdentity) error {
+	return nil
+}
+
+func (j *jsiiProxy_MetastoreDataAccessAzureManagedIdentityOutputReference) validateSetManagedIdentityIdParameters(val *string) error {
 	return nil
 }
 
