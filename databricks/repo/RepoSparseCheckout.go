@@ -5,7 +5,7 @@ package repo
 
 
 type RepoSparseCheckout struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/repo#patterns Repo#patterns}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/repo#patterns Repo#patterns}.
 	Patterns *[]*string `field:"required" json:"patterns" yaml:"patterns"`
 }
 
