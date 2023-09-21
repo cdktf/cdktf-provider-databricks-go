@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding}.
 type CatalogWorkspaceBinding interface {
 	cdktf.TerraformResource
 	CatalogName() *string
@@ -335,7 +335,7 @@ func (j *jsiiProxy_CatalogWorkspaceBinding) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
 func NewCatalogWorkspaceBinding(scope constructs.Construct, id *string, config *CatalogWorkspaceBindingConfig) CatalogWorkspaceBinding {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewCatalogWorkspaceBinding(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
 func NewCatalogWorkspaceBinding_Override(c CatalogWorkspaceBinding, scope constructs.Construct, id *string, config *CatalogWorkspaceBindingConfig) {
 	_init_.Initialize()
 

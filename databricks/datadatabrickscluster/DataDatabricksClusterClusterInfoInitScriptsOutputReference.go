@@ -50,6 +50,8 @@ type DataDatabricksClusterClusterInfoInitScriptsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Volumes() DataDatabricksClusterClusterInfoInitScriptsVolumesOutputReference
+	VolumesInput() *DataDatabricksClusterClusterInfoInitScriptsVolumes
 	Workspace() DataDatabricksClusterClusterInfoInitScriptsWorkspaceOutputReference
 	WorkspaceInput() *DataDatabricksClusterClusterInfoInitScriptsWorkspace
 	// Experimental.
@@ -81,12 +83,14 @@ type DataDatabricksClusterClusterInfoInitScriptsOutputReference interface {
 	PutFile(value *DataDatabricksClusterClusterInfoInitScriptsFile)
 	PutGcs(value *DataDatabricksClusterClusterInfoInitScriptsGcs)
 	PutS3(value *DataDatabricksClusterClusterInfoInitScriptsS3)
+	PutVolumes(value *DataDatabricksClusterClusterInfoInitScriptsVolumes)
 	PutWorkspace(value *DataDatabricksClusterClusterInfoInitScriptsWorkspace)
 	ResetAbfss()
 	ResetDbfs()
 	ResetFile()
 	ResetGcs()
 	ResetS3()
+	ResetVolumes()
 	ResetWorkspace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -268,6 +272,26 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) T
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) Volumes() DataDatabricksClusterClusterInfoInitScriptsVolumesOutputReference {
+	var returns DataDatabricksClusterClusterInfoInitScriptsVolumesOutputReference
+	_jsii_.Get(
+		j,
+		"volumes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) VolumesInput() *DataDatabricksClusterClusterInfoInitScriptsVolumes {
+	var returns *DataDatabricksClusterClusterInfoInitScriptsVolumes
+	_jsii_.Get(
+		j,
+		"volumesInput",
 		&returns,
 	)
 	return returns
@@ -617,6 +641,17 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) P
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) PutVolumes(value *DataDatabricksClusterClusterInfoInitScriptsVolumes) {
+	if err := d.validatePutVolumesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putVolumes",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) PutWorkspace(value *DataDatabricksClusterClusterInfoInitScriptsWorkspace) {
 	if err := d.validatePutWorkspaceParameters(value); err != nil {
 		panic(err)
@@ -664,6 +699,14 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) R
 	_jsii_.InvokeVoid(
 		d,
 		"resetS3",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) ResetVolumes() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetVolumes",
 		nil, // no parameters
 	)
 }

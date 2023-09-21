@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/mws_permission_assignment databricks_mws_permission_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/mws_permission_assignment databricks_mws_permission_assignment}.
 type MwsPermissionAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -358,7 +358,7 @@ func (j *jsiiProxy_MwsPermissionAssignment) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/mws_permission_assignment databricks_mws_permission_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/mws_permission_assignment databricks_mws_permission_assignment} Resource.
 func NewMwsPermissionAssignment(scope constructs.Construct, id *string, config *MwsPermissionAssignmentConfig) MwsPermissionAssignment {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewMwsPermissionAssignment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/mws_permission_assignment databricks_mws_permission_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/mws_permission_assignment databricks_mws_permission_assignment} Resource.
 func NewMwsPermissionAssignment_Override(m MwsPermissionAssignment, scope constructs.Construct, id *string, config *MwsPermissionAssignmentConfig) {
 	_init_.Initialize()
 

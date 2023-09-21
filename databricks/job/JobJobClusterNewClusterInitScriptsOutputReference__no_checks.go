@@ -67,6 +67,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validatePu
 	return nil
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validatePutVolumesParameters(value *JobJobClusterNewClusterInitScriptsVolumes) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validatePutWorkspaceParameters(value *JobJobClusterNewClusterInitScriptsWorkspace) error {
 	return nil
 }

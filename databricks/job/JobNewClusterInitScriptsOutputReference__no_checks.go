@@ -67,6 +67,10 @@ func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) validatePutS3Paramet
 	return nil
 }
 
+func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) validatePutVolumesParameters(value *JobNewClusterInitScriptsVolumes) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) validatePutWorkspaceParameters(value *JobNewClusterInitScriptsWorkspace) error {
 	return nil
 }

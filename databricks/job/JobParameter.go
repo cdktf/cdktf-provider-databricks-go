@@ -5,9 +5,9 @@ package job
 
 
 type JobParameter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/job#default Job#default}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/job#default Job#default}.
 	Default *string `field:"optional" json:"default" yaml:"default"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/job#name Job#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/job#name Job#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

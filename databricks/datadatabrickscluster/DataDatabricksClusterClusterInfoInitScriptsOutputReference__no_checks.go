@@ -67,6 +67,10 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) v
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) validatePutVolumesParameters(value *DataDatabricksClusterClusterInfoInitScriptsVolumes) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsOutputReference) validatePutWorkspaceParameters(value *DataDatabricksClusterClusterInfoInitScriptsWorkspace) error {
 	return nil
 }

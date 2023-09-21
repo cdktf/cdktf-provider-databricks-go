@@ -67,6 +67,10 @@ func (c *jsiiProxy_ClusterInitScriptsOutputReference) validatePutS3Parameters(va
 	return nil
 }
 
+func (c *jsiiProxy_ClusterInitScriptsOutputReference) validatePutVolumesParameters(value *ClusterInitScriptsVolumes) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterInitScriptsOutputReference) validatePutWorkspaceParameters(value *ClusterInitScriptsWorkspace) error {
 	return nil
 }

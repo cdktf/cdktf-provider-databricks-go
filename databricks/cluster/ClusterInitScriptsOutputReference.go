@@ -50,6 +50,8 @@ type ClusterInitScriptsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Volumes() ClusterInitScriptsVolumesOutputReference
+	VolumesInput() *ClusterInitScriptsVolumes
 	Workspace() ClusterInitScriptsWorkspaceOutputReference
 	WorkspaceInput() *ClusterInitScriptsWorkspace
 	// Experimental.
@@ -81,12 +83,14 @@ type ClusterInitScriptsOutputReference interface {
 	PutFile(value *ClusterInitScriptsFile)
 	PutGcs(value *ClusterInitScriptsGcs)
 	PutS3(value *ClusterInitScriptsS3)
+	PutVolumes(value *ClusterInitScriptsVolumes)
 	PutWorkspace(value *ClusterInitScriptsWorkspace)
 	ResetAbfss()
 	ResetDbfs()
 	ResetFile()
 	ResetGcs()
 	ResetS3()
+	ResetVolumes()
 	ResetWorkspace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -268,6 +272,26 @@ func (j *jsiiProxy_ClusterInitScriptsOutputReference) TerraformResource() cdktf.
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterInitScriptsOutputReference) Volumes() ClusterInitScriptsVolumesOutputReference {
+	var returns ClusterInitScriptsVolumesOutputReference
+	_jsii_.Get(
+		j,
+		"volumes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterInitScriptsOutputReference) VolumesInput() *ClusterInitScriptsVolumes {
+	var returns *ClusterInitScriptsVolumes
+	_jsii_.Get(
+		j,
+		"volumesInput",
 		&returns,
 	)
 	return returns
@@ -617,6 +641,17 @@ func (c *jsiiProxy_ClusterInitScriptsOutputReference) PutS3(value *ClusterInitSc
 	)
 }
 
+func (c *jsiiProxy_ClusterInitScriptsOutputReference) PutVolumes(value *ClusterInitScriptsVolumes) {
+	if err := c.validatePutVolumesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putVolumes",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ClusterInitScriptsOutputReference) PutWorkspace(value *ClusterInitScriptsWorkspace) {
 	if err := c.validatePutWorkspaceParameters(value); err != nil {
 		panic(err)
@@ -664,6 +699,14 @@ func (c *jsiiProxy_ClusterInitScriptsOutputReference) ResetS3() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetS3",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterInitScriptsOutputReference) ResetVolumes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVolumes",
 		nil, // no parameters
 	)
 }

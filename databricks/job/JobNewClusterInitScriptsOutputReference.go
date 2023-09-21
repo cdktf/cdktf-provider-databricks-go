@@ -50,6 +50,8 @@ type JobNewClusterInitScriptsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Volumes() JobNewClusterInitScriptsVolumesOutputReference
+	VolumesInput() *JobNewClusterInitScriptsVolumes
 	Workspace() JobNewClusterInitScriptsWorkspaceOutputReference
 	WorkspaceInput() *JobNewClusterInitScriptsWorkspace
 	// Experimental.
@@ -81,12 +83,14 @@ type JobNewClusterInitScriptsOutputReference interface {
 	PutFile(value *JobNewClusterInitScriptsFile)
 	PutGcs(value *JobNewClusterInitScriptsGcs)
 	PutS3(value *JobNewClusterInitScriptsS3)
+	PutVolumes(value *JobNewClusterInitScriptsVolumes)
 	PutWorkspace(value *JobNewClusterInitScriptsWorkspace)
 	ResetAbfss()
 	ResetDbfs()
 	ResetFile()
 	ResetGcs()
 	ResetS3()
+	ResetVolumes()
 	ResetWorkspace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -268,6 +272,26 @@ func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) TerraformResource() 
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) Volumes() JobNewClusterInitScriptsVolumesOutputReference {
+	var returns JobNewClusterInitScriptsVolumesOutputReference
+	_jsii_.Get(
+		j,
+		"volumes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) VolumesInput() *JobNewClusterInitScriptsVolumes {
+	var returns *JobNewClusterInitScriptsVolumes
+	_jsii_.Get(
+		j,
+		"volumesInput",
 		&returns,
 	)
 	return returns
@@ -617,6 +641,17 @@ func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) PutS3(value *JobNewC
 	)
 }
 
+func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) PutVolumes(value *JobNewClusterInitScriptsVolumes) {
+	if err := j.validatePutVolumesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putVolumes",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) PutWorkspace(value *JobNewClusterInitScriptsWorkspace) {
 	if err := j.validatePutWorkspaceParameters(value); err != nil {
 		panic(err)
@@ -664,6 +699,14 @@ func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) ResetS3() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetS3",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) ResetVolumes() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetVolumes",
 		nil, // no parameters
 	)
 }

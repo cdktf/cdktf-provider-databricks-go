@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/user_instance_profile databricks_user_instance_profile}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/user_instance_profile databricks_user_instance_profile}.
 type UserInstanceProfile interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_UserInstanceProfile) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/user_instance_profile databricks_user_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/user_instance_profile databricks_user_instance_profile} Resource.
 func NewUserInstanceProfile(scope constructs.Construct, id *string, config *UserInstanceProfileConfig) UserInstanceProfile {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewUserInstanceProfile(scope constructs.Construct, id *string, config *User
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/user_instance_profile databricks_user_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/user_instance_profile databricks_user_instance_profile} Resource.
 func NewUserInstanceProfile_Override(u UserInstanceProfile, scope constructs.Construct, id *string, config *UserInstanceProfileConfig) {
 	_init_.Initialize()
 

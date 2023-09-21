@@ -148,6 +148,17 @@ func (j *jsiiProxy_JobTaskNewClusterInitScriptsOutputReference) validatePutS3Par
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskNewClusterInitScriptsOutputReference) validatePutVolumesParameters(value *JobTaskNewClusterInitScriptsVolumes) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskNewClusterInitScriptsOutputReference) validatePutWorkspaceParameters(value *JobTaskNewClusterInitScriptsWorkspace) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

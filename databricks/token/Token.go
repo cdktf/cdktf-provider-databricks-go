@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/token databricks_token}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/token databricks_token}.
 type Token interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -420,7 +420,7 @@ func (j *jsiiProxy_Token) TokenValue() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/token databricks_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/token databricks_token} Resource.
 func NewToken(scope constructs.Construct, id *string, config *TokenConfig) Token {
 	_init_.Initialize()
 
@@ -438,7 +438,7 @@ func NewToken(scope constructs.Construct, id *string, config *TokenConfig) Token
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/token databricks_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/token databricks_token} Resource.
 func NewToken_Override(t Token, scope constructs.Construct, id *string, config *TokenConfig) {
 	_init_.Initialize()
 

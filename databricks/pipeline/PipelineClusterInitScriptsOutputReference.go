@@ -50,6 +50,8 @@ type PipelineClusterInitScriptsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Volumes() PipelineClusterInitScriptsVolumesOutputReference
+	VolumesInput() *PipelineClusterInitScriptsVolumes
 	Workspace() PipelineClusterInitScriptsWorkspaceOutputReference
 	WorkspaceInput() *PipelineClusterInitScriptsWorkspace
 	// Experimental.
@@ -81,12 +83,14 @@ type PipelineClusterInitScriptsOutputReference interface {
 	PutFile(value *PipelineClusterInitScriptsFile)
 	PutGcs(value *PipelineClusterInitScriptsGcs)
 	PutS3(value *PipelineClusterInitScriptsS3)
+	PutVolumes(value *PipelineClusterInitScriptsVolumes)
 	PutWorkspace(value *PipelineClusterInitScriptsWorkspace)
 	ResetAbfss()
 	ResetDbfs()
 	ResetFile()
 	ResetGcs()
 	ResetS3()
+	ResetVolumes()
 	ResetWorkspace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -268,6 +272,26 @@ func (j *jsiiProxy_PipelineClusterInitScriptsOutputReference) TerraformResource(
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterInitScriptsOutputReference) Volumes() PipelineClusterInitScriptsVolumesOutputReference {
+	var returns PipelineClusterInitScriptsVolumesOutputReference
+	_jsii_.Get(
+		j,
+		"volumes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterInitScriptsOutputReference) VolumesInput() *PipelineClusterInitScriptsVolumes {
+	var returns *PipelineClusterInitScriptsVolumes
+	_jsii_.Get(
+		j,
+		"volumesInput",
 		&returns,
 	)
 	return returns
@@ -617,6 +641,17 @@ func (p *jsiiProxy_PipelineClusterInitScriptsOutputReference) PutS3(value *Pipel
 	)
 }
 
+func (p *jsiiProxy_PipelineClusterInitScriptsOutputReference) PutVolumes(value *PipelineClusterInitScriptsVolumes) {
+	if err := p.validatePutVolumesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putVolumes",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineClusterInitScriptsOutputReference) PutWorkspace(value *PipelineClusterInitScriptsWorkspace) {
 	if err := p.validatePutWorkspaceParameters(value); err != nil {
 		panic(err)
@@ -664,6 +699,14 @@ func (p *jsiiProxy_PipelineClusterInitScriptsOutputReference) ResetS3() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetS3",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineClusterInitScriptsOutputReference) ResetVolumes() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetVolumes",
 		nil, // no parameters
 	)
 }
