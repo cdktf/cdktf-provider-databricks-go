@@ -59,6 +59,10 @@ func (j *jsiiProxy_StorageCredentialDatabricksGcpServiceAccountOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_StorageCredentialDatabricksGcpServiceAccountOutputReference) validateSetCredentialIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageCredentialDatabricksGcpServiceAccountOutputReference) validateSetEmailParameters(val *string) error {
 	return nil
 }

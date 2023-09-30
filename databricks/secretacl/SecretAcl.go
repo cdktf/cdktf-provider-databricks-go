@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/secret_acl databricks_secret_acl}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/secret_acl databricks_secret_acl}.
 type SecretAcl interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -358,7 +358,7 @@ func (j *jsiiProxy_SecretAcl) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/secret_acl databricks_secret_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/secret_acl databricks_secret_acl} Resource.
 func NewSecretAcl(scope constructs.Construct, id *string, config *SecretAclConfig) SecretAcl {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewSecretAcl(scope constructs.Construct, id *string, config *SecretAclConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/secret_acl databricks_secret_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/secret_acl databricks_secret_acl} Resource.
 func NewSecretAcl_Override(s SecretAcl, scope constructs.Construct, id *string, config *SecretAclConfig) {
 	_init_.Initialize()
 

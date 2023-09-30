@@ -87,7 +87,7 @@ func validateMetastoreDataAccess_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_MetastoreDataAccess) validateSetConfigurationTypeParameters(val *string) error {
+func (j *jsiiProxy_MetastoreDataAccess) validateSetCommentParameters(val *string) error {
 	return nil
 }
 
@@ -96,6 +96,10 @@ func (j *jsiiProxy_MetastoreDataAccess) validateSetConnectionParameters(val inte
 }
 
 func (j *jsiiProxy_MetastoreDataAccess) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) validateSetForceDestroyParameters(val interface{}) error {
 	return nil
 }
 
@@ -119,7 +123,15 @@ func (j *jsiiProxy_MetastoreDataAccess) validateSetNameParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_MetastoreDataAccess) validateSetOwnerParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MetastoreDataAccess) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) validateSetReadOnlyParameters(val interface{}) error {
 	return nil
 }
 

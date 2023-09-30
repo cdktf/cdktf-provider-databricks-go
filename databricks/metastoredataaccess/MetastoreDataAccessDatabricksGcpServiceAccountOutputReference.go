@@ -28,6 +28,9 @@ type MetastoreDataAccessDatabricksGcpServiceAccountOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CredentialId() *string
+	SetCredentialId(val *string)
+	CredentialIdInput() *string
 	Email() *string
 	SetEmail(val *string)
 	EmailInput() *string
@@ -67,6 +70,7 @@ type MetastoreDataAccessDatabricksGcpServiceAccountOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCredentialId()
 	ResetEmail()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,6 +112,26 @@ func (j *jsiiProxy_MetastoreDataAccessDatabricksGcpServiceAccountOutputReference
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccessDatabricksGcpServiceAccountOutputReference) CredentialId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccessDatabricksGcpServiceAccountOutputReference) CredentialIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialIdInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +243,17 @@ func (j *jsiiProxy_MetastoreDataAccessDatabricksGcpServiceAccountOutputReference
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MetastoreDataAccessDatabricksGcpServiceAccountOutputReference)SetCredentialId(val *string) {
+	if err := j.validateSetCredentialIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialId",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (m *jsiiProxy_MetastoreDataAccessDatabricksGcpServiceAccountOutputReference
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MetastoreDataAccessDatabricksGcpServiceAccountOutputReference) ResetCredentialId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCredentialId",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MetastoreDataAccessDatabricksGcpServiceAccountOutputReference) ResetEmail() {

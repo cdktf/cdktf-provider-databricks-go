@@ -59,6 +59,10 @@ func (j *jsiiProxy_MetastoreDataAccessDatabricksGcpServiceAccountOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_MetastoreDataAccessDatabricksGcpServiceAccountOutputReference) validateSetCredentialIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MetastoreDataAccessDatabricksGcpServiceAccountOutputReference) validateSetEmailParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/metastore_data_access databricks_metastore_data_access}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/metastore_data_access databricks_metastore_data_access}.
 type MetastoreDataAccess interface {
 	cdktf.TerraformResource
 	AwsIamRole() MetastoreDataAccessAwsIamRoleOutputReference
@@ -23,9 +23,9 @@ type MetastoreDataAccess interface {
 	AzureServicePrincipalInput() *MetastoreDataAccessAzureServicePrincipal
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	ConfigurationType() *string
-	SetConfigurationType(val *string)
-	ConfigurationTypeInput() *string
+	Comment() *string
+	SetComment(val *string)
+	CommentInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -42,6 +42,9 @@ type MetastoreDataAccess interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ForceDestroy() interface{}
+	SetForceDestroy(val interface{})
+	ForceDestroyInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -70,6 +73,9 @@ type MetastoreDataAccess interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Owner() *string
+	SetOwner(val *string)
+	OwnerInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -80,6 +86,9 @@ type MetastoreDataAccess interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReadOnly() interface{}
+	SetReadOnly(val interface{})
+	ReadOnlyInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -119,14 +128,17 @@ type MetastoreDataAccess interface {
 	ResetAwsIamRole()
 	ResetAzureManagedIdentity()
 	ResetAzureServicePrincipal()
-	ResetConfigurationType()
+	ResetComment()
 	ResetDatabricksGcpServiceAccount()
+	ResetForceDestroy()
 	ResetGcpServiceAccountKey()
 	ResetId()
 	ResetIsDefault()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetOwner()
+	ResetReadOnly()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -212,21 +224,21 @@ func (j *jsiiProxy_MetastoreDataAccess) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_MetastoreDataAccess) ConfigurationType() *string {
+func (j *jsiiProxy_MetastoreDataAccess) Comment() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"configurationType",
+		"comment",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_MetastoreDataAccess) ConfigurationTypeInput() *string {
+func (j *jsiiProxy_MetastoreDataAccess) CommentInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"configurationTypeInput",
+		"commentInput",
 		&returns,
 	)
 	return returns
@@ -287,6 +299,26 @@ func (j *jsiiProxy_MetastoreDataAccess) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) ForceDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) ForceDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroyInput",
 		&returns,
 	)
 	return returns
@@ -442,6 +474,26 @@ func (j *jsiiProxy_MetastoreDataAccess) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_MetastoreDataAccess) Owner() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"owner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) OwnerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MetastoreDataAccess) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -467,6 +519,26 @@ func (j *jsiiProxy_MetastoreDataAccess) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) ReadOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) ReadOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readOnlyInput",
 		&returns,
 	)
 	return returns
@@ -503,7 +575,7 @@ func (j *jsiiProxy_MetastoreDataAccess) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
 func NewMetastoreDataAccess(scope constructs.Construct, id *string, config *MetastoreDataAccessConfig) MetastoreDataAccess {
 	_init_.Initialize()
 
@@ -521,7 +593,7 @@ func NewMetastoreDataAccess(scope constructs.Construct, id *string, config *Meta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
 func NewMetastoreDataAccess_Override(m MetastoreDataAccess, scope constructs.Construct, id *string, config *MetastoreDataAccessConfig) {
 	_init_.Initialize()
 
@@ -532,13 +604,13 @@ func NewMetastoreDataAccess_Override(m MetastoreDataAccess, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_MetastoreDataAccess)SetConfigurationType(val *string) {
-	if err := j.validateSetConfigurationTypeParameters(val); err != nil {
+func (j *jsiiProxy_MetastoreDataAccess)SetComment(val *string) {
+	if err := j.validateSetCommentParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"configurationType",
+		"comment",
 		val,
 	)
 }
@@ -569,6 +641,17 @@ func (j *jsiiProxy_MetastoreDataAccess)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MetastoreDataAccess)SetForceDestroy(val interface{}) {
+	if err := j.validateSetForceDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDestroy",
 		val,
 	)
 }
@@ -636,6 +719,17 @@ func (j *jsiiProxy_MetastoreDataAccess)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_MetastoreDataAccess)SetOwner(val *string) {
+	if err := j.validateSetOwnerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"owner",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MetastoreDataAccess)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -651,6 +745,17 @@ func (j *jsiiProxy_MetastoreDataAccess)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MetastoreDataAccess)SetReadOnly(val interface{}) {
+	if err := j.validateSetReadOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readOnly",
 		val,
 	)
 }
@@ -1000,10 +1105,10 @@ func (m *jsiiProxy_MetastoreDataAccess) ResetAzureServicePrincipal() {
 	)
 }
 
-func (m *jsiiProxy_MetastoreDataAccess) ResetConfigurationType() {
+func (m *jsiiProxy_MetastoreDataAccess) ResetComment() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetConfigurationType",
+		"resetComment",
 		nil, // no parameters
 	)
 }
@@ -1012,6 +1117,14 @@ func (m *jsiiProxy_MetastoreDataAccess) ResetDatabricksGcpServiceAccount() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetDatabricksGcpServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MetastoreDataAccess) ResetForceDestroy() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetForceDestroy",
 		nil, // no parameters
 	)
 }
@@ -1044,6 +1157,22 @@ func (m *jsiiProxy_MetastoreDataAccess) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MetastoreDataAccess) ResetOwner() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetOwner",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MetastoreDataAccess) ResetReadOnly() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetReadOnly",
 		nil, // no parameters
 	)
 }

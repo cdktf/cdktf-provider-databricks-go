@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/pipelines databricks_pipelines}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/pipelines databricks_pipelines}.
 type DataDatabricksPipelines interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataDatabricksPipelines) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/pipelines databricks_pipelines} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/pipelines databricks_pipelines} Data Source.
 func NewDataDatabricksPipelines(scope constructs.Construct, id *string, config *DataDatabricksPipelinesConfig) DataDatabricksPipelines {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataDatabricksPipelines(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/pipelines databricks_pipelines} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/pipelines databricks_pipelines} Data Source.
 func NewDataDatabricksPipelines_Override(d DataDatabricksPipelines, scope constructs.Construct, id *string, config *DataDatabricksPipelinesConfig) {
 	_init_.Initialize()
 

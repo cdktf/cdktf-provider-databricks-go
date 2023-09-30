@@ -5,9 +5,9 @@ package datadatabricksjob
 
 
 type DataDatabricksJobJobSettingsSettingsPipelineTask struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}.
 	PipelineId *string `field:"required" json:"pipelineId" yaml:"pipelineId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/job#full_refresh DataDatabricksJob#full_refresh}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/job#full_refresh DataDatabricksJob#full_refresh}.
 	FullRefresh interface{} `field:"optional" json:"fullRefresh" yaml:"fullRefresh"`
 }
 

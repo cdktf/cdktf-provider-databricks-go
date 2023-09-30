@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/mlflow_model databricks_mlflow_model}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/mlflow_model databricks_mlflow_model}.
 type MlflowModel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +70,7 @@ type MlflowModel interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RegisteredModelId() *string
 	Tags() MlflowModelTagsList
 	TagsInput() interface{}
 	// Experimental.
@@ -361,6 +362,16 @@ func (j *jsiiProxy_MlflowModel) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MlflowModel) RegisteredModelId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"registeredModelId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MlflowModel) Tags() MlflowModelTagsList {
 	var returns MlflowModelTagsList
 	_jsii_.Get(
@@ -432,7 +443,7 @@ func (j *jsiiProxy_MlflowModel) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/mlflow_model databricks_mlflow_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/mlflow_model databricks_mlflow_model} Resource.
 func NewMlflowModel(scope constructs.Construct, id *string, config *MlflowModelConfig) MlflowModel {
 	_init_.Initialize()
 
@@ -450,7 +461,7 @@ func NewMlflowModel(scope constructs.Construct, id *string, config *MlflowModelC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/mlflow_model databricks_mlflow_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/mlflow_model databricks_mlflow_model} Resource.
 func NewMlflowModel_Override(m MlflowModel, scope constructs.Construct, id *string, config *MlflowModelConfig) {
 	_init_.Initialize()
 
