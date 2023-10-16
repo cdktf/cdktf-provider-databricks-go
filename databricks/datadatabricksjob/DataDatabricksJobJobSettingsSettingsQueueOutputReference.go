@@ -5,9 +5,9 @@ package datadatabricksjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksjob/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -28,6 +28,9 @@ type DataDatabricksJobJobSettingsSettingsQueueOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksJobJobSettingsSettingsQueue
@@ -104,6 +107,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsQueueOutputReference) Cre
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsQueueOutputReference) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsQueueOutputReference) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -195,6 +218,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsQueueOutputReference)SetC
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsQueueOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
 		val,
 	)
 }

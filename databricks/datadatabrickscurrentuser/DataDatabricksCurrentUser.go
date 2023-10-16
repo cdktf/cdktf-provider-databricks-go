@@ -5,14 +5,14 @@ package datadatabrickscurrentuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabrickscurrentuser/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabrickscurrentuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/current_user databricks_current_user}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/current_user databricks_current_user}.
 type DataDatabricksCurrentUser interface {
 	cdktf.TerraformDataSource
 	AclPrincipalId() *string
@@ -338,7 +338,7 @@ func (j *jsiiProxy_DataDatabricksCurrentUser) WorkspaceUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/current_user databricks_current_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/current_user databricks_current_user} Data Source.
 func NewDataDatabricksCurrentUser(scope constructs.Construct, id *string, config *DataDatabricksCurrentUserConfig) DataDatabricksCurrentUser {
 	_init_.Initialize()
 
@@ -356,7 +356,7 @@ func NewDataDatabricksCurrentUser(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/current_user databricks_current_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/current_user databricks_current_user} Data Source.
 func NewDataDatabricksCurrentUser_Override(d DataDatabricksCurrentUser, scope constructs.Construct, id *string, config *DataDatabricksCurrentUserConfig) {
 	_init_.Initialize()
 

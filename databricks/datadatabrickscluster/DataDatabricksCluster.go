@@ -5,14 +5,14 @@ package datadatabrickscluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabrickscluster/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabrickscluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/cluster databricks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/cluster databricks_cluster}.
 type DataDatabricksCluster interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DataDatabricksCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/cluster databricks_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/cluster databricks_cluster} Data Source.
 func NewDataDatabricksCluster(scope constructs.Construct, id *string, config *DataDatabricksClusterConfig) DataDatabricksCluster {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDataDatabricksCluster(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/cluster databricks_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/cluster databricks_cluster} Data Source.
 func NewDataDatabricksCluster_Override(d DataDatabricksCluster, scope constructs.Construct, id *string, config *DataDatabricksClusterConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package sqldashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqldashboard/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/sqldashboard/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_dashboard databricks_sql_dashboard}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_dashboard databricks_sql_dashboard}.
 type SqlDashboard interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -30,6 +30,9 @@ type SqlDashboard interface {
 	CreatedAt() *string
 	SetCreatedAt(val *string)
 	CreatedAtInput() *string
+	DashboardFiltersEnabled() interface{}
+	SetDashboardFiltersEnabled(val interface{})
+	DashboardFiltersEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -105,6 +108,7 @@ type SqlDashboard interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetCreatedAt()
+	ResetDashboardFiltersEnabled()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -182,6 +186,26 @@ func (j *jsiiProxy_SqlDashboard) CreatedAtInput() *string {
 	_jsii_.Get(
 		j,
 		"createdAtInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDashboard) DashboardFiltersEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dashboardFiltersEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDashboard) DashboardFiltersEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dashboardFiltersEnabledInput",
 		&returns,
 	)
 	return returns
@@ -408,7 +432,7 @@ func (j *jsiiProxy_SqlDashboard) UpdatedAtInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
 func NewSqlDashboard(scope constructs.Construct, id *string, config *SqlDashboardConfig) SqlDashboard {
 	_init_.Initialize()
 
@@ -426,7 +450,7 @@ func NewSqlDashboard(scope constructs.Construct, id *string, config *SqlDashboar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
 func NewSqlDashboard_Override(s SqlDashboard, scope constructs.Construct, id *string, config *SqlDashboardConfig) {
 	_init_.Initialize()
 
@@ -466,6 +490,17 @@ func (j *jsiiProxy_SqlDashboard)SetCreatedAt(val *string) {
 	_jsii_.Set(
 		j,
 		"createdAt",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDashboard)SetDashboardFiltersEnabled(val interface{}) {
+	if err := j.validateSetDashboardFiltersEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dashboardFiltersEnabled",
 		val,
 	)
 }
@@ -841,6 +876,14 @@ func (s *jsiiProxy_SqlDashboard) ResetCreatedAt() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCreatedAt",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDashboard) ResetDashboardFiltersEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDashboardFiltersEnabled",
 		nil, // no parameters
 	)
 }

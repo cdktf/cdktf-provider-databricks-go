@@ -71,6 +71,10 @@ func (j *jsiiProxy_SqlAlertOptionsOutputReference) validateSetCustomSubjectParam
 	return nil
 }
 
+func (j *jsiiProxy_SqlAlertOptionsOutputReference) validateSetEmptyResultStateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlAlertOptionsOutputReference) validateSetInternalValueParameters(val *SqlAlertOptions) error {
 	return nil
 }

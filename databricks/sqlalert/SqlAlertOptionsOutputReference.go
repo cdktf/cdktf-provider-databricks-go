@@ -5,9 +5,9 @@ package sqlalert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlalert/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/sqlalert/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -37,6 +37,9 @@ type SqlAlertOptionsOutputReference interface {
 	CustomSubject() *string
 	SetCustomSubject(val *string)
 	CustomSubjectInput() *string
+	EmptyResultState() *string
+	SetEmptyResultState(val *string)
+	EmptyResultStateInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SqlAlertOptions
@@ -84,6 +87,7 @@ type SqlAlertOptionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCustomBody()
 	ResetCustomSubject()
+	ResetEmptyResultState()
 	ResetMuted()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -185,6 +189,26 @@ func (j *jsiiProxy_SqlAlertOptionsOutputReference) CustomSubjectInput() *string 
 	_jsii_.Get(
 		j,
 		"customSubjectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlAlertOptionsOutputReference) EmptyResultState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"emptyResultState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlAlertOptionsOutputReference) EmptyResultStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"emptyResultStateInput",
 		&returns,
 	)
 	return returns
@@ -369,6 +393,17 @@ func (j *jsiiProxy_SqlAlertOptionsOutputReference)SetCustomSubject(val *string) 
 	_jsii_.Set(
 		j,
 		"customSubject",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlAlertOptionsOutputReference)SetEmptyResultState(val *string) {
+	if err := j.validateSetEmptyResultStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"emptyResultState",
 		val,
 	)
 }
@@ -637,6 +672,14 @@ func (s *jsiiProxy_SqlAlertOptionsOutputReference) ResetCustomSubject() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCustomSubject",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlAlertOptionsOutputReference) ResetEmptyResultState() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEmptyResultState",
 		nil, // no parameters
 	)
 }

@@ -178,6 +178,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetInstanceProfileArn", GoMethod: "ResetInstanceProfileArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScaleToZeroEnabled", GoMethod: "ResetScaleToZeroEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadType", GoMethod: "ResetWorkloadType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "scaleToZeroEnabled", GoGetter: "ScaleToZeroEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "scaleToZeroEnabledInput", GoGetter: "ScaleToZeroEnabledInput"},
@@ -186,6 +187,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadSize", GoGetter: "WorkloadSize"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadSizeInput", GoGetter: "WorkloadSizeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workloadType", GoGetter: "WorkloadType"},
+			_jsii_.MemberProperty{JsiiProperty: "workloadTypeInput", GoGetter: "WorkloadTypeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingConfigServedModelsOutputReference{}

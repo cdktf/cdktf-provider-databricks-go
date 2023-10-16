@@ -5,14 +5,14 @@ package grants
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/grants/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/grants/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants databricks_grants}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants databricks_grants}.
 type Grants interface {
 	cdktf.TerraformResource
 	Catalog() *string
@@ -66,6 +66,9 @@ type Grants interface {
 	Metastore() *string
 	SetMetastore(val *string)
 	MetastoreInput() *string
+	Model() *string
+	SetModel(val *string)
+	ModelInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -135,6 +138,7 @@ type Grants interface {
 	ResetId()
 	ResetMaterializedView()
 	ResetMetastore()
+	ResetModel()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -409,6 +413,26 @@ func (j *jsiiProxy_Grants) MetastoreInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Grants) Model() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"model",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grants) ModelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Grants) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -600,7 +624,7 @@ func (j *jsiiProxy_Grants) VolumeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants databricks_grants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants databricks_grants} Resource.
 func NewGrants(scope constructs.Construct, id *string, config *GrantsConfig) Grants {
 	_init_.Initialize()
 
@@ -618,7 +642,7 @@ func NewGrants(scope constructs.Construct, id *string, config *GrantsConfig) Gra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants databricks_grants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants databricks_grants} Resource.
 func NewGrants_Override(g Grants, scope constructs.Construct, id *string, config *GrantsConfig) {
 	_init_.Initialize()
 
@@ -751,6 +775,17 @@ func (j *jsiiProxy_Grants)SetMetastore(val *string) {
 	_jsii_.Set(
 		j,
 		"metastore",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Grants)SetModel(val *string) {
+	if err := j.validateSetModelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"model",
 		val,
 	)
 }
@@ -1169,6 +1204,14 @@ func (g *jsiiProxy_Grants) ResetMetastore() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMetastore",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Grants) ResetModel() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetModel",
 		nil, // no parameters
 	)
 }

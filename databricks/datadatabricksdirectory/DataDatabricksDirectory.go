@@ -5,14 +5,14 @@ package datadatabricksdirectory
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksdirectory/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksdirectory/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/directory databricks_directory}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/directory databricks_directory}.
 type DataDatabricksDirectory interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DataDatabricksDirectory) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/directory databricks_directory} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/directory databricks_directory} Data Source.
 func NewDataDatabricksDirectory(scope constructs.Construct, id *string, config *DataDatabricksDirectoryConfig) DataDatabricksDirectory {
 	_init_.Initialize()
 
@@ -326,7 +326,7 @@ func NewDataDatabricksDirectory(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/directory databricks_directory} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/directory databricks_directory} Data Source.
 func NewDataDatabricksDirectory_Override(d DataDatabricksDirectory, scope constructs.Construct, id *string, config *DataDatabricksDirectoryConfig) {
 	_init_.Initialize()
 

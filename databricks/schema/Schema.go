@@ -5,14 +5,14 @@ package schema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/schema/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/schema/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/schema databricks_schema}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/schema databricks_schema}.
 type Schema interface {
 	cdktf.TerraformResource
 	CatalogName() *string
@@ -479,7 +479,7 @@ func (j *jsiiProxy_Schema) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/schema databricks_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/schema databricks_schema} Resource.
 func NewSchema(scope constructs.Construct, id *string, config *SchemaConfig) Schema {
 	_init_.Initialize()
 
@@ -497,7 +497,7 @@ func NewSchema(scope constructs.Construct, id *string, config *SchemaConfig) Sch
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/schema databricks_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/schema databricks_schema} Resource.
 func NewSchema_Override(s Schema, scope constructs.Construct, id *string, config *SchemaConfig) {
 	_init_.Initialize()
 

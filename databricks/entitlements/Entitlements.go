@@ -5,14 +5,14 @@ package entitlements
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/entitlements/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/entitlements/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/entitlements databricks_entitlements}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/entitlements databricks_entitlements}.
 type Entitlements interface {
 	cdktf.TerraformResource
 	AllowClusterCreate() interface{}
@@ -457,7 +457,7 @@ func (j *jsiiProxy_Entitlements) WorkspaceAccessInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/entitlements databricks_entitlements} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/entitlements databricks_entitlements} Resource.
 func NewEntitlements(scope constructs.Construct, id *string, config *EntitlementsConfig) Entitlements {
 	_init_.Initialize()
 
@@ -475,7 +475,7 @@ func NewEntitlements(scope constructs.Construct, id *string, config *Entitlement
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/entitlements databricks_entitlements} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/entitlements databricks_entitlements} Resource.
 func NewEntitlements_Override(e Entitlements, scope constructs.Construct, id *string, config *EntitlementsConfig) {
 	_init_.Initialize()
 

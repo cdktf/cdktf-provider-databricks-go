@@ -5,14 +5,14 @@ package mwscustomermanagedkeys
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwscustomermanagedkeys/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/mwscustomermanagedkeys/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/mws_customer_managed_keys databricks_mws_customer_managed_keys}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/mws_customer_managed_keys databricks_mws_customer_managed_keys}.
 type MwsCustomerManagedKeys interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -431,7 +431,7 @@ func (j *jsiiProxy_MwsCustomerManagedKeys) UseCasesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/mws_customer_managed_keys databricks_mws_customer_managed_keys} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/mws_customer_managed_keys databricks_mws_customer_managed_keys} Resource.
 func NewMwsCustomerManagedKeys(scope constructs.Construct, id *string, config *MwsCustomerManagedKeysConfig) MwsCustomerManagedKeys {
 	_init_.Initialize()
 
@@ -449,7 +449,7 @@ func NewMwsCustomerManagedKeys(scope constructs.Construct, id *string, config *M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/mws_customer_managed_keys databricks_mws_customer_managed_keys} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/mws_customer_managed_keys databricks_mws_customer_managed_keys} Resource.
 func NewMwsCustomerManagedKeys_Override(m MwsCustomerManagedKeys, scope constructs.Construct, id *string, config *MwsCustomerManagedKeysConfig) {
 	_init_.Initialize()
 

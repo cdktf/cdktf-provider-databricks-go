@@ -79,6 +79,10 @@ func (j *jsiiProxy_SqlDashboard) validateSetCreatedAtParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_SqlDashboard) validateSetDashboardFiltersEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDashboard) validateSetIdParameters(val *string) error {
 	return nil
 }

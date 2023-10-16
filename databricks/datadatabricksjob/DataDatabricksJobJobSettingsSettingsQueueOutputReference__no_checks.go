@@ -59,6 +59,10 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsQueueOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsQueueOutputReference) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsQueueOutputReference) validateSetInternalValueParameters(val *DataDatabricksJobJobSettingsSettingsQueue) error {
 	return nil
 }

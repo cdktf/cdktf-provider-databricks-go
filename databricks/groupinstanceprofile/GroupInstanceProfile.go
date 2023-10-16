@@ -5,14 +5,14 @@ package groupinstanceprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/groupinstanceprofile/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/groupinstanceprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/group_instance_profile databricks_group_instance_profile}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_instance_profile databricks_group_instance_profile}.
 type GroupInstanceProfile interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_GroupInstanceProfile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/group_instance_profile databricks_group_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_instance_profile databricks_group_instance_profile} Resource.
 func NewGroupInstanceProfile(scope constructs.Construct, id *string, config *GroupInstanceProfileConfig) GroupInstanceProfile {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewGroupInstanceProfile(scope constructs.Construct, id *string, config *Gro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/group_instance_profile databricks_group_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_instance_profile databricks_group_instance_profile} Resource.
 func NewGroupInstanceProfile_Override(g GroupInstanceProfile, scope constructs.Construct, id *string, config *GroupInstanceProfileConfig) {
 	_init_.Initialize()
 

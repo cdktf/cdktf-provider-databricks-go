@@ -59,6 +59,10 @@ func (j *jsiiProxy_JobQueueOutputReference) validateSetComplexObjectIsFromSetPar
 	return nil
 }
 
+func (j *jsiiProxy_JobQueueOutputReference) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobQueueOutputReference) validateSetInternalValueParameters(val *JobQueue) error {
 	return nil
 }

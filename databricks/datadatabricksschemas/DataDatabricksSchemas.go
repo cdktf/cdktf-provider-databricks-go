@@ -5,14 +5,14 @@ package datadatabricksschemas
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksschemas/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksschemas/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/schemas databricks_schemas}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/schemas databricks_schemas}.
 type DataDatabricksSchemas interface {
 	cdktf.TerraformDataSource
 	CatalogName() *string
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DataDatabricksSchemas) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/schemas databricks_schemas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/schemas databricks_schemas} Data Source.
 func NewDataDatabricksSchemas(scope constructs.Construct, id *string, config *DataDatabricksSchemasConfig) DataDatabricksSchemas {
 	_init_.Initialize()
 
@@ -326,7 +326,7 @@ func NewDataDatabricksSchemas(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/schemas databricks_schemas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/schemas databricks_schemas} Data Source.
 func NewDataDatabricksSchemas_Override(d DataDatabricksSchemas, scope constructs.Construct, id *string, config *DataDatabricksSchemasConfig) {
 	_init_.Initialize()
 

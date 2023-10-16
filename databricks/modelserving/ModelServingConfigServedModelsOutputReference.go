@@ -5,9 +5,9 @@ package modelserving
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/modelserving/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/modelserving/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -61,6 +61,9 @@ type ModelServingConfigServedModelsOutputReference interface {
 	WorkloadSize() *string
 	SetWorkloadSize(val *string)
 	WorkloadSizeInput() *string
+	WorkloadType() *string
+	SetWorkloadType(val *string)
+	WorkloadTypeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -89,6 +92,7 @@ type ModelServingConfigServedModelsOutputReference interface {
 	ResetInstanceProfileArn()
 	ResetName()
 	ResetScaleToZeroEnabled()
+	ResetWorkloadType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -314,6 +318,26 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) WorkloadSizeIn
 	return returns
 }
 
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) WorkloadType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workloadType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) WorkloadTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workloadTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewModelServingConfigServedModelsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ModelServingConfigServedModelsOutputReference {
 	_init_.Initialize()
@@ -470,6 +494,17 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference)SetWorkloadSize
 	_jsii_.Set(
 		j,
 		"workloadSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference)SetWorkloadType(val *string) {
+	if err := j.validateSetWorkloadTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workloadType",
 		val,
 	)
 }
@@ -688,6 +723,14 @@ func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetScaleToZe
 	_jsii_.InvokeVoid(
 		m,
 		"resetScaleToZeroEnabled",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetWorkloadType() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetWorkloadType",
 		nil, // no parameters
 	)
 }

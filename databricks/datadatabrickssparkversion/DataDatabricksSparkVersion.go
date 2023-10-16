@@ -5,14 +5,14 @@ package datadatabrickssparkversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabrickssparkversion/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabrickssparkversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/spark_version databricks_spark_version}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/spark_version databricks_spark_version}.
 type DataDatabricksSparkVersion interface {
 	cdktf.TerraformDataSource
 	Beta() interface{}
@@ -501,7 +501,7 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/spark_version databricks_spark_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/spark_version databricks_spark_version} Data Source.
 func NewDataDatabricksSparkVersion(scope constructs.Construct, id *string, config *DataDatabricksSparkVersionConfig) DataDatabricksSparkVersion {
 	_init_.Initialize()
 
@@ -519,7 +519,7 @@ func NewDataDatabricksSparkVersion(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/spark_version databricks_spark_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/spark_version databricks_spark_version} Data Source.
 func NewDataDatabricksSparkVersion_Override(d DataDatabricksSparkVersion, scope constructs.Construct, id *string, config *DataDatabricksSparkVersionConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package gitcredential
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/gitcredential/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/gitcredential/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/git_credential databricks_git_credential}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/git_credential databricks_git_credential}.
 type GitCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -384,7 +384,7 @@ func (j *jsiiProxy_GitCredential) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/git_credential databricks_git_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/git_credential databricks_git_credential} Resource.
 func NewGitCredential(scope constructs.Construct, id *string, config *GitCredentialConfig) GitCredential {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewGitCredential(scope constructs.Construct, id *string, config *GitCredent
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/git_credential databricks_git_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/git_credential databricks_git_credential} Resource.
 func NewGitCredential_Override(g GitCredential, scope constructs.Construct, id *string, config *GitCredentialConfig) {
 	_init_.Initialize()
 

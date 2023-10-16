@@ -5,14 +5,14 @@ package connection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/connection/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/connection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/connection databricks_connection}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection databricks_connection}.
 type Connection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -478,7 +478,7 @@ func (j *jsiiProxy_Connection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/connection databricks_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection databricks_connection} Resource.
 func NewConnection(scope constructs.Construct, id *string, config *ConnectionConfig) Connection {
 	_init_.Initialize()
 
@@ -496,7 +496,7 @@ func NewConnection(scope constructs.Construct, id *string, config *ConnectionCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/connection databricks_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection databricks_connection} Resource.
 func NewConnection_Override(c Connection, scope constructs.Construct, id *string, config *ConnectionConfig) {
 	_init_.Initialize()
 

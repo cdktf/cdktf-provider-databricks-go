@@ -5,9 +5,9 @@ package mwscustomermanagedkeys
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwscustomermanagedkeys/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/mwscustomermanagedkeys/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

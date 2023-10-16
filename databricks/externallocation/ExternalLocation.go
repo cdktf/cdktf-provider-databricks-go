@@ -5,14 +5,14 @@ package externallocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/externallocation/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/externallocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/external_location databricks_external_location}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/external_location databricks_external_location}.
 type ExternalLocation interface {
 	cdktf.TerraformResource
 	AccessPoint() *string
@@ -574,7 +574,7 @@ func (j *jsiiProxy_ExternalLocation) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation(scope constructs.Construct, id *string, config *ExternalLocationConfig) ExternalLocation {
 	_init_.Initialize()
 
@@ -592,7 +592,7 @@ func NewExternalLocation(scope constructs.Construct, id *string, config *Externa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation_Override(e ExternalLocation, scope constructs.Construct, id *string, config *ExternalLocationConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package sqlglobalconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlglobalconfig/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/sqlglobalconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_global_config databricks_sql_global_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_global_config databricks_sql_global_config}.
 type SqlGlobalConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -433,7 +433,7 @@ func (j *jsiiProxy_SqlGlobalConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_global_config databricks_sql_global_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_global_config databricks_sql_global_config} Resource.
 func NewSqlGlobalConfig(scope constructs.Construct, id *string, config *SqlGlobalConfigConfig) SqlGlobalConfig {
 	_init_.Initialize()
 
@@ -451,7 +451,7 @@ func NewSqlGlobalConfig(scope constructs.Construct, id *string, config *SqlGloba
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_global_config databricks_sql_global_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_global_config databricks_sql_global_config} Resource.
 func NewSqlGlobalConfig_Override(s SqlGlobalConfig, scope constructs.Construct, id *string, config *SqlGlobalConfigConfig) {
 	_init_.Initialize()
 

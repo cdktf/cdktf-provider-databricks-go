@@ -111,6 +111,10 @@ func (j *jsiiProxy_Grants) validateSetMetastoreParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Grants) validateSetModelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Grants) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
