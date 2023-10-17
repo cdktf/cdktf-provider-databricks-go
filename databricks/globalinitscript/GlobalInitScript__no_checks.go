@@ -7,6 +7,10 @@ package globalinitscript
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlobalInitScript) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalInitScript) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GlobalInitScript) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (g *jsiiProxy_GlobalInitScript) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalInitScript) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlobalInitScript) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GlobalInitScript) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (g *jsiiProxy_GlobalInitScript) validatePutTimeoutsParameters(value *GlobalInitScriptTimeouts) error {
+	return nil
+}
+
+func validateGlobalInitScript_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

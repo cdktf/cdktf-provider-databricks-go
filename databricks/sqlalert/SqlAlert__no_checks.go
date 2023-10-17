@@ -7,6 +7,10 @@ package sqlalert
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SqlAlert) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlAlert) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SqlAlert) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (s *jsiiProxy_SqlAlert) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlAlert) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlAlert) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SqlAlert) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (s *jsiiProxy_SqlAlert) validatePutOptionsParameters(value *SqlAlertOptions) error {
+	return nil
+}
+
+func validateSqlAlert_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

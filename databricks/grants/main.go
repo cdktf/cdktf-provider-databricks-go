@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-databricks.grants.Grants",
 		reflect.TypeOf((*Grants)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "catalog", GoGetter: "Catalog"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogInput", GoGetter: "CatalogInput"},
@@ -44,6 +45,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "grantInput", GoGetter: "GrantInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "materializedView", GoGetter: "MaterializedView"},
@@ -52,6 +54,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "metastoreInput", GoGetter: "MetastoreInput"},
 			_jsii_.MemberProperty{JsiiProperty: "model", GoGetter: "Model"},
 			_jsii_.MemberProperty{JsiiProperty: "modelInput", GoGetter: "ModelInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},

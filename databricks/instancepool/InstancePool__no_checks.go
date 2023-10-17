@@ -7,6 +7,10 @@ package instancepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_InstancePool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_InstancePool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_InstancePool) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (i *jsiiProxy_InstancePool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_InstancePool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_InstancePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (i *jsiiProxy_InstancePool) validatePutInstancePoolFleetAttributesParameter
 }
 
 func (i *jsiiProxy_InstancePool) validatePutPreloadedDockerImageParameters(value interface{}) error {
+	return nil
+}
+
+func validateInstancePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

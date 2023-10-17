@@ -7,6 +7,10 @@ package sqltable
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SqlTable) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlTable) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SqlTable) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (s *jsiiProxy_SqlTable) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlTable) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlTable) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SqlTable) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (s *jsiiProxy_SqlTable) validatePutColumnParameters(value interface{}) error {
+	return nil
+}
+
+func validateSqlTable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package groupinstanceprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GroupInstanceProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GroupInstanceProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (g *jsiiProxy_GroupInstanceProfile) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GroupInstanceProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GroupInstanceProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (g *jsiiProxy_GroupInstanceProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GroupInstanceProfile) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateGroupInstanceProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

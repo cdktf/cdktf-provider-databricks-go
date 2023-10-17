@@ -7,6 +7,10 @@ package grants
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_Grants) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_Grants) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_Grants) validateGetStringMapAttributeParameters(terraformAttr
 	return nil
 }
 
+func (g *jsiiProxy_Grants) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_Grants) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_Grants) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_Grants) validateOverrideLogicalIdParameters(newLogicalId *str
 }
 
 func (g *jsiiProxy_Grants) validatePutGrantParameters(value interface{}) error {
+	return nil
+}
+
+func validateGrants_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

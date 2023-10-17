@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-databricks.cluster.Cluster",
 		reflect.TypeOf((*Cluster)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "applyPolicyDefaultValues", GoGetter: "ApplyPolicyDefaultValues"},
 			_jsii_.MemberProperty{JsiiProperty: "applyPolicyDefaultValuesInput", GoGetter: "ApplyPolicyDefaultValuesInput"},
@@ -71,6 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idempotencyToken", GoGetter: "IdempotencyToken"},
 			_jsii_.MemberProperty{JsiiProperty: "idempotencyTokenInput", GoGetter: "IdempotencyTokenInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "initScripts", GoGetter: "InitScripts"},
 			_jsii_.MemberProperty{JsiiProperty: "initScriptsInput", GoGetter: "InitScriptsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instancePoolId", GoGetter: "InstancePoolId"},
@@ -81,6 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "library", GoGetter: "Library"},
 			_jsii_.MemberProperty{JsiiProperty: "libraryInput", GoGetter: "LibraryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeTypeId", GoGetter: "NodeTypeId"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeTypeIdInput", GoGetter: "NodeTypeIdInput"},

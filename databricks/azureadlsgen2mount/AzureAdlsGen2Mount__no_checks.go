@@ -7,6 +7,10 @@ package azureadlsgen2mount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AzureAdlsGen2Mount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AzureAdlsGen2Mount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_AzureAdlsGen2Mount) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_AzureAdlsGen2Mount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AzureAdlsGen2Mount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AzureAdlsGen2Mount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AzureAdlsGen2Mount) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAzureAdlsGen2Mount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

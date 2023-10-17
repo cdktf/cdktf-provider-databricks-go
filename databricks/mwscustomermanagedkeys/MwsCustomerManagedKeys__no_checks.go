@@ -7,6 +7,10 @@ package mwscustomermanagedkeys
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MwsCustomerManagedKeys) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsCustomerManagedKeys) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MwsCustomerManagedKeys) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (m *jsiiProxy_MwsCustomerManagedKeys) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsCustomerManagedKeys) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwsCustomerManagedKeys) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MwsCustomerManagedKeys) validatePutAwsKeyInfoParameters(value
 }
 
 func (m *jsiiProxy_MwsCustomerManagedKeys) validatePutGcpKeyInfoParameters(value *MwsCustomerManagedKeysGcpKeyInfo) error {
+	return nil
+}
+
+func validateMwsCustomerManagedKeys_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

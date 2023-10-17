@@ -7,6 +7,10 @@ package mwspermissionassignment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MwsPermissionAssignment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsPermissionAssignment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (m *jsiiProxy_MwsPermissionAssignment) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_MwsPermissionAssignment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsPermissionAssignment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (m *jsiiProxy_MwsPermissionAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsPermissionAssignment) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateMwsPermissionAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

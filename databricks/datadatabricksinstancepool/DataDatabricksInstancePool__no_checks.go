@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksInstancePool) validatePutPoolInfoParameters(val
 	return nil
 }
 
+func validateDataDatabricksInstancePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDatabricksInstancePool_IsConstructParameters(x interface{}) error {
 	return nil
 }

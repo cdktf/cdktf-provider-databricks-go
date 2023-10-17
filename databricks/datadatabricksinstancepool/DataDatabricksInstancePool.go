@@ -5,10 +5,10 @@ package datadatabricksinstancepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksinstancepool/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksinstancepool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -403,6 +403,25 @@ func (j *jsiiProxy_DataDatabricksInstancePool)SetProvider(val cdktf.TerraformPro
 		"provider",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataDatabricksInstancePool resource upon running "cdktf plan <stack-name>".
+func DataDatabricksInstancePool_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataDatabricksInstancePool_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.dataDatabricksInstancePool.DataDatabricksInstancePool",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

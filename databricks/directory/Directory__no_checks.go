@@ -7,6 +7,10 @@ package directory
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_Directory) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Directory) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (d *jsiiProxy_Directory) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (d *jsiiProxy_Directory) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Directory) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_Directory) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_Directory) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDirectory_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package mlflowexperiment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MlflowExperiment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MlflowExperiment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MlflowExperiment) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (m *jsiiProxy_MlflowExperiment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MlflowExperiment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MlflowExperiment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MlflowExperiment) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (m *jsiiProxy_MlflowExperiment) validatePutTimeoutsParameters(value *MlflowExperimentTimeouts) error {
+	return nil
+}
+
+func validateMlflowExperiment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

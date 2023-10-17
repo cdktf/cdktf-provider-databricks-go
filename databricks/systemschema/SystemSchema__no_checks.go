@@ -7,6 +7,10 @@ package systemschema
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SystemSchema) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SystemSchema) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_SystemSchema) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (s *jsiiProxy_SystemSchema) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SystemSchema) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_SystemSchema) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SystemSchema) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateSystemSchema_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

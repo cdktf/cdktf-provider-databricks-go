@@ -7,6 +7,10 @@ package mwsstorageconfigurations
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MwsStorageConfigurations) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsStorageConfigurations) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (m *jsiiProxy_MwsStorageConfigurations) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (m *jsiiProxy_MwsStorageConfigurations) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsStorageConfigurations) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (m *jsiiProxy_MwsStorageConfigurations) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsStorageConfigurations) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateMwsStorageConfigurations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

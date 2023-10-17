@@ -5,10 +5,10 @@ package repo
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/repo/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/repo/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -84,6 +84,9 @@ type Repo interface {
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -105,7 +108,12 @@ type Repo interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -630,6 +638,25 @@ func (j *jsiiProxy_Repo)SetUrl(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a Repo resource upon running "cdktf plan <stack-name>".
+func Repo_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateRepo_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.repo.Repo",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -712,6 +739,17 @@ func Repo_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (r *jsiiProxy_Repo) AddMoveTarget(moveTarget *string) {
+	if err := r.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (r *jsiiProxy_Repo) AddOverride(path *string, value interface{}) {
@@ -869,6 +907,17 @@ func (r *jsiiProxy_Repo) GetStringMapAttribute(terraformAttribute *string) *map[
 	return returns
 }
 
+func (r *jsiiProxy_Repo) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := r.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (r *jsiiProxy_Repo) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -883,6 +932,17 @@ func (r *jsiiProxy_Repo) InterpolationForAttribute(terraformAttribute *string) c
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_Repo) MoveTo(moveTarget *string, index interface{}) {
+	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (r *jsiiProxy_Repo) OverrideLogicalId(newLogicalId *string) {

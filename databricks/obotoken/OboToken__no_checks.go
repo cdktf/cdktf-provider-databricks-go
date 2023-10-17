@@ -7,6 +7,10 @@ package obotoken
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OboToken) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OboToken) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (o *jsiiProxy_OboToken) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (o *jsiiProxy_OboToken) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OboToken) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (o *jsiiProxy_OboToken) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OboToken) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateOboToken_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

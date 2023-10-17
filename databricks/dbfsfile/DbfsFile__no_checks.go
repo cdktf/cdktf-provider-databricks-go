@@ -7,6 +7,10 @@ package dbfsfile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DbfsFile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbfsFile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (d *jsiiProxy_DbfsFile) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (d *jsiiProxy_DbfsFile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbfsFile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_DbfsFile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbfsFile) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDbfsFile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

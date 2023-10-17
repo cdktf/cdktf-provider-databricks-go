@@ -7,6 +7,10 @@ package gitcredential
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GitCredential) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GitCredential) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (g *jsiiProxy_GitCredential) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (g *jsiiProxy_GitCredential) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GitCredential) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (g *jsiiProxy_GitCredential) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GitCredential) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateGitCredential_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

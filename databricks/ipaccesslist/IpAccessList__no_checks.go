@@ -7,6 +7,10 @@ package ipaccesslist
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IpAccessList) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IpAccessList) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IpAccessList) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (i *jsiiProxy_IpAccessList) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IpAccessList) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IpAccessList) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IpAccessList) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIpAccessList_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

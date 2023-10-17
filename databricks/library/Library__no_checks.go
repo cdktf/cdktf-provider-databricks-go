@@ -7,6 +7,10 @@ package library
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_Library) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_Library) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_Library) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (l *jsiiProxy_Library) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_Library) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_Library) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (l *jsiiProxy_Library) validatePutMavenParameters(value *LibraryMaven) erro
 }
 
 func (l *jsiiProxy_Library) validatePutPypiParameters(value *LibraryPypi) error {
+	return nil
+}
+
+func validateLibrary_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -5,10 +5,10 @@ package volume
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/volume/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/volume/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -85,6 +85,9 @@ type Volume interface {
 	VolumeType() *string
 	SetVolumeType(val *string)
 	VolumeTypeInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -106,7 +109,12 @@ type Volume interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -638,6 +646,25 @@ func (j *jsiiProxy_Volume)SetVolumeType(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a Volume resource upon running "cdktf plan <stack-name>".
+func Volume_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateVolume_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.volume.Volume",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -720,6 +747,17 @@ func Volume_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (v *jsiiProxy_Volume) AddMoveTarget(moveTarget *string) {
+	if err := v.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (v *jsiiProxy_Volume) AddOverride(path *string, value interface{}) {
@@ -877,6 +915,17 @@ func (v *jsiiProxy_Volume) GetStringMapAttribute(terraformAttribute *string) *ma
 	return returns
 }
 
+func (v *jsiiProxy_Volume) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := v.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (v *jsiiProxy_Volume) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -891,6 +940,17 @@ func (v *jsiiProxy_Volume) InterpolationForAttribute(terraformAttribute *string)
 	)
 
 	return returns
+}
+
+func (v *jsiiProxy_Volume) MoveTo(moveTarget *string, index interface{}) {
+	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (v *jsiiProxy_Volume) OverrideLogicalId(newLogicalId *string) {

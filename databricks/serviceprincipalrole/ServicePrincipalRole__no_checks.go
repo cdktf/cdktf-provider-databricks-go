@@ -7,6 +7,10 @@ package serviceprincipalrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServicePrincipalRole) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicePrincipalRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_ServicePrincipalRole) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_ServicePrincipalRole) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicePrincipalRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_ServicePrincipalRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicePrincipalRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateServicePrincipalRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

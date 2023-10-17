@@ -7,6 +7,10 @@ package mwsworkspaces
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MwsWorkspaces) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsWorkspaces) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MwsWorkspaces) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (m *jsiiProxy_MwsWorkspaces) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsWorkspaces) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwsWorkspaces) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (m *jsiiProxy_MwsWorkspaces) validatePutTimeoutsParameters(value *MwsWorksp
 }
 
 func (m *jsiiProxy_MwsWorkspaces) validatePutTokenParameters(value *MwsWorkspacesToken) error {
+	return nil
+}
+
+func validateMwsWorkspaces_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

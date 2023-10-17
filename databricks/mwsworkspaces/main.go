@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "awsRegion", GoGetter: "AwsRegion"},
 			_jsii_.MemberProperty{JsiiProperty: "awsRegionInput", GoGetter: "AwsRegionInput"},
@@ -56,6 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "gkeConfigInput", GoGetter: "GkeConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isNoPublicIpEnabled", GoGetter: "IsNoPublicIpEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "isNoPublicIpEnabledInput", GoGetter: "IsNoPublicIpEnabledInput"},
@@ -64,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "managedServicesCustomerManagedKeyId", GoGetter: "ManagedServicesCustomerManagedKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "managedServicesCustomerManagedKeyIdInput", GoGetter: "ManagedServicesCustomerManagedKeyIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "networkId", GoGetter: "NetworkId"},
 			_jsii_.MemberProperty{JsiiProperty: "networkIdInput", GoGetter: "NetworkIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

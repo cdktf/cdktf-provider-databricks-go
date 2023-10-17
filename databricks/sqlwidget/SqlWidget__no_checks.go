@@ -7,6 +7,10 @@ package sqlwidget
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SqlWidget) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlWidget) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SqlWidget) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (s *jsiiProxy_SqlWidget) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlWidget) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlWidget) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SqlWidget) validatePutParameterParameters(value interface{}) 
 }
 
 func (s *jsiiProxy_SqlWidget) validatePutPositionParameters(value *SqlWidgetPosition) error {
+	return nil
+}
+
+func validateSqlWidget_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

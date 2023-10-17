@@ -7,6 +7,10 @@ package metastoredataaccess
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MetastoreDataAccess) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MetastoreDataAccess) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MetastoreDataAccess) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (m *jsiiProxy_MetastoreDataAccess) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MetastoreDataAccess) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MetastoreDataAccess) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (m *jsiiProxy_MetastoreDataAccess) validatePutDatabricksGcpServiceAccountPa
 }
 
 func (m *jsiiProxy_MetastoreDataAccess) validatePutGcpServiceAccountKeyParameters(value *MetastoreDataAccessGcpServiceAccountKey) error {
+	return nil
+}
+
+func validateMetastoreDataAccess_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

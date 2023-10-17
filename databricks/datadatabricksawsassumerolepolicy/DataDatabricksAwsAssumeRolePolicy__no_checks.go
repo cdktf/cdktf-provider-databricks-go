@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksAwsAssumeRolePolicy) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataDatabricksAwsAssumeRolePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDatabricksAwsAssumeRolePolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

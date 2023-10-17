@@ -7,6 +7,10 @@ package storagecredential
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageCredential) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageCredential) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageCredential) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_StorageCredential) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageCredential) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageCredential) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (s *jsiiProxy_StorageCredential) validatePutDatabricksGcpServiceAccountPara
 }
 
 func (s *jsiiProxy_StorageCredential) validatePutGcpServiceAccountKeyParameters(value *StorageCredentialGcpServiceAccountKey) error {
+	return nil
+}
+
+func validateStorageCredential_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

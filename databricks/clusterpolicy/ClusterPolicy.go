@@ -5,10 +5,10 @@ package clusterpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/clusterpolicy/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/clusterpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -83,6 +83,9 @@ type ClusterPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -104,7 +107,12 @@ type ClusterPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -617,6 +625,25 @@ func (j *jsiiProxy_ClusterPolicy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a ClusterPolicy resource upon running "cdktf plan <stack-name>".
+func ClusterPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateClusterPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.clusterPolicy.ClusterPolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -699,6 +726,17 @@ func ClusterPolicy_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (c *jsiiProxy_ClusterPolicy) AddMoveTarget(moveTarget *string) {
+	if err := c.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (c *jsiiProxy_ClusterPolicy) AddOverride(path *string, value interface{}) {
@@ -856,6 +894,17 @@ func (c *jsiiProxy_ClusterPolicy) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (c *jsiiProxy_ClusterPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := c.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (c *jsiiProxy_ClusterPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -870,6 +919,17 @@ func (c *jsiiProxy_ClusterPolicy) InterpolationForAttribute(terraformAttribute *
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ClusterPolicy) MoveTo(moveTarget *string, index interface{}) {
+	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (c *jsiiProxy_ClusterPolicy) OverrideLogicalId(newLogicalId *string) {

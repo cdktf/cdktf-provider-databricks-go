@@ -7,6 +7,10 @@ package mwscredentials
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MwsCredentials) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsCredentials) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (m *jsiiProxy_MwsCredentials) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (m *jsiiProxy_MwsCredentials) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsCredentials) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (m *jsiiProxy_MwsCredentials) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsCredentials) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateMwsCredentials_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

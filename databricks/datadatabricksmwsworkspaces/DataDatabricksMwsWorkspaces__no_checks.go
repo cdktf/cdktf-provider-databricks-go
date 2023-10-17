@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksMwsWorkspaces) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func validateDataDatabricksMwsWorkspaces_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDatabricksMwsWorkspaces_IsConstructParameters(x interface{}) error {
 	return nil
 }

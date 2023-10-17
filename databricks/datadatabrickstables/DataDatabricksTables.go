@@ -5,10 +5,10 @@ package datadatabrickstables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabrickstables/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickstables/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -448,6 +448,25 @@ func (j *jsiiProxy_DataDatabricksTables)SetSchemaName(val *string) {
 		"schemaName",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataDatabricksTables resource upon running "cdktf plan <stack-name>".
+func DataDatabricksTables_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataDatabricksTables_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.dataDatabricksTables.DataDatabricksTables",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

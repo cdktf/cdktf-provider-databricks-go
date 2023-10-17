@@ -7,6 +7,10 @@ package mount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_Mount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Mount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_Mount) validateGetStringMapAttributeParameters(terraformAttri
 	return nil
 }
 
+func (m *jsiiProxy_Mount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Mount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_Mount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (m *jsiiProxy_Mount) validatePutTimeoutsParameters(value *MountTimeouts) er
 }
 
 func (m *jsiiProxy_Mount) validatePutWasbParameters(value *MountWasb) error {
+	return nil
+}
+
+func validateMount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

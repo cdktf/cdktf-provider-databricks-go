@@ -7,6 +7,10 @@ package secretscope
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecretScope) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretScope) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SecretScope) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (s *jsiiProxy_SecretScope) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretScope) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecretScope) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SecretScope) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (s *jsiiProxy_SecretScope) validatePutKeyvaultMetadataParameters(value *SecretScopeKeyvaultMetadata) error {
+	return nil
+}
+
+func validateSecretScope_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package modelserving
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_ModelServing) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ModelServing) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_ModelServing) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (m *jsiiProxy_ModelServing) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ModelServing) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_ModelServing) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (m *jsiiProxy_ModelServing) validatePutTagsParameters(value interface{}) er
 }
 
 func (m *jsiiProxy_ModelServing) validatePutTimeoutsParameters(value *ModelServingTimeouts) error {
+	return nil
+}
+
+func validateModelServing_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

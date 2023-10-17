@@ -5,10 +5,10 @@ package userinstanceprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/userinstanceprofile/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/userinstanceprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -70,6 +70,9 @@ type UserInstanceProfile interface {
 	UserId() *string
 	SetUserId(val *string)
 	UserIdInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -91,7 +94,12 @@ type UserInstanceProfile interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -465,6 +473,25 @@ func (j *jsiiProxy_UserInstanceProfile)SetUserId(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a UserInstanceProfile resource upon running "cdktf plan <stack-name>".
+func UserInstanceProfile_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateUserInstanceProfile_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.userInstanceProfile.UserInstanceProfile",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -547,6 +574,17 @@ func UserInstanceProfile_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (u *jsiiProxy_UserInstanceProfile) AddMoveTarget(moveTarget *string) {
+	if err := u.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (u *jsiiProxy_UserInstanceProfile) AddOverride(path *string, value interface{}) {
@@ -704,6 +742,17 @@ func (u *jsiiProxy_UserInstanceProfile) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (u *jsiiProxy_UserInstanceProfile) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := u.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (u *jsiiProxy_UserInstanceProfile) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := u.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -718,6 +767,17 @@ func (u *jsiiProxy_UserInstanceProfile) InterpolationForAttribute(terraformAttri
 	)
 
 	return returns
+}
+
+func (u *jsiiProxy_UserInstanceProfile) MoveTo(moveTarget *string, index interface{}) {
+	if err := u.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (u *jsiiProxy_UserInstanceProfile) OverrideLogicalId(newLogicalId *string) {

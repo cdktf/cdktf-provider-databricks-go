@@ -7,6 +7,10 @@ package sqlendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SqlEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SqlEndpoint) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (s *jsiiProxy_SqlEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (s *jsiiProxy_SqlEndpoint) validatePutTagsParameters(value *SqlEndpointTags
 }
 
 func (s *jsiiProxy_SqlEndpoint) validatePutTimeoutsParameters(value *SqlEndpointTimeouts) error {
+	return nil
+}
+
+func validateSqlEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

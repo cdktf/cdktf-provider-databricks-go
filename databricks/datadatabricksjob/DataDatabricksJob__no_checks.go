@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksJob) validatePutJobSettingsParameters(value *Da
 	return nil
 }
 
+func validateDataDatabricksJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDatabricksJob_IsConstructParameters(x interface{}) error {
 	return nil
 }

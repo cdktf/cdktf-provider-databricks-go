@@ -7,6 +7,10 @@ package awss3mount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AwsS3Mount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsS3Mount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_AwsS3Mount) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (a *jsiiProxy_AwsS3Mount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsS3Mount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AwsS3Mount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsS3Mount) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAwsS3Mount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

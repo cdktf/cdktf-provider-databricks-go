@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksNotebook) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func validateDataDatabricksNotebook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDatabricksNotebook_IsConstructParameters(x interface{}) error {
 	return nil
 }

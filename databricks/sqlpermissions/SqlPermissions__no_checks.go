@@ -7,6 +7,10 @@ package sqlpermissions
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SqlPermissions) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlPermissions) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SqlPermissions) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (s *jsiiProxy_SqlPermissions) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlPermissions) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlPermissions) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SqlPermissions) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (s *jsiiProxy_SqlPermissions) validatePutPrivilegeAssignmentsParameters(value interface{}) error {
+	return nil
+}
+
+func validateSqlPermissions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -5,10 +5,10 @@ package gitcredential
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/gitcredential/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/gitcredential/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -76,6 +76,9 @@ type GitCredential interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -97,7 +100,12 @@ type GitCredential interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -536,6 +544,25 @@ func (j *jsiiProxy_GitCredential)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a GitCredential resource upon running "cdktf plan <stack-name>".
+func GitCredential_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateGitCredential_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-databricks.gitCredential.GitCredential",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -618,6 +645,17 @@ func GitCredential_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (g *jsiiProxy_GitCredential) AddMoveTarget(moveTarget *string) {
+	if err := g.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (g *jsiiProxy_GitCredential) AddOverride(path *string, value interface{}) {
@@ -775,6 +813,17 @@ func (g *jsiiProxy_GitCredential) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (g *jsiiProxy_GitCredential) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := g.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (g *jsiiProxy_GitCredential) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -789,6 +838,17 @@ func (g *jsiiProxy_GitCredential) InterpolationForAttribute(terraformAttribute *
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GitCredential) MoveTo(moveTarget *string, index interface{}) {
+	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (g *jsiiProxy_GitCredential) OverrideLogicalId(newLogicalId *string) {

@@ -67,6 +67,10 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) validatePutTagsParameters(value *
 	return nil
 }
 
+func validateDataDatabricksSqlWarehouse_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDatabricksSqlWarehouse_IsConstructParameters(x interface{}) error {
 	return nil
 }

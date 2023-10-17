@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-databricks.instancePool.InstancePool",
 		reflect.TypeOf((*InstancePool)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "awsAttributes", GoGetter: "AwsAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "awsAttributesInput", GoGetter: "AwsAttributesInput"},
@@ -48,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idleInstanceAutoterminationMinutes", GoGetter: "IdleInstanceAutoterminationMinutes"},
 			_jsii_.MemberProperty{JsiiProperty: "idleInstanceAutoterminationMinutesInput", GoGetter: "IdleInstanceAutoterminationMinutesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instancePoolFleetAttributes", GoGetter: "InstancePoolFleetAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "instancePoolFleetAttributesInput", GoGetter: "InstancePoolFleetAttributesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instancePoolId", GoGetter: "InstancePoolId"},
@@ -60,6 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxCapacityInput", GoGetter: "MaxCapacityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minIdleInstances", GoGetter: "MinIdleInstances"},
 			_jsii_.MemberProperty{JsiiProperty: "minIdleInstancesInput", GoGetter: "MinIdleInstancesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeTypeId", GoGetter: "NodeTypeId"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeTypeIdInput", GoGetter: "NodeTypeIdInput"},
