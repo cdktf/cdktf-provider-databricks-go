@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/mws_log_delivery databricks_mws_log_delivery}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_log_delivery databricks_mws_log_delivery}.
 type MwsLogDelivery interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -556,7 +556,7 @@ func (j *jsiiProxy_MwsLogDelivery) WorkspaceIdsFilterInput() *[]*float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/mws_log_delivery databricks_mws_log_delivery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_log_delivery databricks_mws_log_delivery} Resource.
 func NewMwsLogDelivery(scope constructs.Construct, id *string, config *MwsLogDeliveryConfig) MwsLogDelivery {
 	_init_.Initialize()
 
@@ -574,7 +574,7 @@ func NewMwsLogDelivery(scope constructs.Construct, id *string, config *MwsLogDel
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/mws_log_delivery databricks_mws_log_delivery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_log_delivery databricks_mws_log_delivery} Resource.
 func NewMwsLogDelivery_Override(m MwsLogDelivery, scope constructs.Construct, id *string, config *MwsLogDeliveryConfig) {
 	_init_.Initialize()
 
