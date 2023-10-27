@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/sql_widget databricks_sql_widget}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_widget databricks_sql_widget}.
 type SqlWidget interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -488,7 +488,7 @@ func (j *jsiiProxy_SqlWidget) WidgetIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/sql_widget databricks_sql_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_widget databricks_sql_widget} Resource.
 func NewSqlWidget(scope constructs.Construct, id *string, config *SqlWidgetConfig) SqlWidget {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewSqlWidget(scope constructs.Construct, id *string, config *SqlWidgetConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/sql_widget databricks_sql_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_widget databricks_sql_widget} Resource.
 func NewSqlWidget_Override(s SqlWidget, scope constructs.Construct, id *string, config *SqlWidgetConfig) {
 	_init_.Initialize()
 

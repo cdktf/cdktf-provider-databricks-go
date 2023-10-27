@@ -95,6 +95,10 @@ func (j *jsiiProxy_SqlTable) validateSetClusterIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_SqlTable) validateSetClusterKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlTable) validateSetCommentParameters(val *string) error {
 	return nil
 }
@@ -123,6 +127,14 @@ func (j *jsiiProxy_SqlTable) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_SqlTable) validateSetOptionsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SqlTable) validateSetPartitionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlTable) validateSetPropertiesParameters(val *map[string]*string) error {
 	return nil
 }
@@ -148,6 +160,10 @@ func (j *jsiiProxy_SqlTable) validateSetTableTypeParameters(val *string) error {
 }
 
 func (j *jsiiProxy_SqlTable) validateSetViewDefinitionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SqlTable) validateSetWarehouseIdParameters(val *string) error {
 	return nil
 }
 

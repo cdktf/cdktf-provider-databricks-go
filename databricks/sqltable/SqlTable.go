@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/sql_table databricks_sql_table}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_table databricks_sql_table}.
 type SqlTable interface {
 	cdktf.TerraformResource
 	CatalogName() *string
@@ -23,6 +23,9 @@ type SqlTable interface {
 	ClusterId() *string
 	SetClusterId(val *string)
 	ClusterIdInput() *string
+	ClusterKeys() *[]*string
+	SetClusterKeys(val *[]*string)
+	ClusterKeysInput() *[]*string
 	Column() SqlTableColumnList
 	ColumnInput() interface{}
 	Comment() *string
@@ -65,6 +68,12 @@ type SqlTable interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Options() *map[string]*string
+	SetOptions(val *map[string]*string)
+	OptionsInput() *map[string]*string
+	Partitions() *[]*string
+	SetPartitions(val *[]*string)
+	PartitionsInput() *[]*string
 	Properties() *map[string]*string
 	SetProperties(val *map[string]*string)
 	PropertiesInput() *map[string]*string
@@ -99,6 +108,9 @@ type SqlTable interface {
 	ViewDefinition() *string
 	SetViewDefinition(val *string)
 	ViewDefinitionInput() *string
+	WarehouseId() *string
+	SetWarehouseId(val *string)
+	WarehouseIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -134,17 +146,21 @@ type SqlTable interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutColumn(value interface{})
 	ResetClusterId()
+	ResetClusterKeys()
 	ResetColumn()
 	ResetComment()
 	ResetDataSourceFormat()
 	ResetId()
+	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPartitions()
 	ResetProperties()
 	ResetStorageCredentialName()
 	ResetStorageLocation()
 	ResetViewDefinition()
+	ResetWarehouseId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -205,6 +221,26 @@ func (j *jsiiProxy_SqlTable) ClusterIdInput() *string {
 	_jsii_.Get(
 		j,
 		"clusterIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlTable) ClusterKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"clusterKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlTable) ClusterKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"clusterKeysInput",
 		&returns,
 	)
 	return returns
@@ -400,6 +436,46 @@ func (j *jsiiProxy_SqlTable) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_SqlTable) Options() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"options",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlTable) OptionsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"optionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlTable) Partitions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"partitions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlTable) PartitionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"partitionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlTable) Properties() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -580,8 +656,28 @@ func (j *jsiiProxy_SqlTable) ViewDefinitionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SqlTable) WarehouseId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"warehouseId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/sql_table databricks_sql_table} Resource.
+func (j *jsiiProxy_SqlTable) WarehouseIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"warehouseIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_table databricks_sql_table} Resource.
 func NewSqlTable(scope constructs.Construct, id *string, config *SqlTableConfig) SqlTable {
 	_init_.Initialize()
 
@@ -599,7 +695,7 @@ func NewSqlTable(scope constructs.Construct, id *string, config *SqlTableConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/sql_table databricks_sql_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_table databricks_sql_table} Resource.
 func NewSqlTable_Override(s SqlTable, scope constructs.Construct, id *string, config *SqlTableConfig) {
 	_init_.Initialize()
 
@@ -628,6 +724,17 @@ func (j *jsiiProxy_SqlTable)SetClusterId(val *string) {
 	_jsii_.Set(
 		j,
 		"clusterId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlTable)SetClusterKeys(val *[]*string) {
+	if err := j.validateSetClusterKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterKeys",
 		val,
 	)
 }
@@ -725,6 +832,28 @@ func (j *jsiiProxy_SqlTable)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_SqlTable)SetOptions(val *map[string]*string) {
+	if err := j.validateSetOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"options",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlTable)SetPartitions(val *[]*string) {
+	if err := j.validateSetPartitionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"partitions",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SqlTable)SetProperties(val *map[string]*string) {
 	if err := j.validateSetPropertiesParameters(val); err != nil {
 		panic(err)
@@ -806,6 +935,17 @@ func (j *jsiiProxy_SqlTable)SetViewDefinition(val *string) {
 	_jsii_.Set(
 		j,
 		"viewDefinition",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlTable)SetWarehouseId(val *string) {
+	if err := j.validateSetWarehouseIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"warehouseId",
 		val,
 	)
 }
@@ -1147,6 +1287,14 @@ func (s *jsiiProxy_SqlTable) ResetClusterId() {
 	)
 }
 
+func (s *jsiiProxy_SqlTable) ResetClusterKeys() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetClusterKeys",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlTable) ResetColumn() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1179,10 +1327,26 @@ func (s *jsiiProxy_SqlTable) ResetId() {
 	)
 }
 
+func (s *jsiiProxy_SqlTable) ResetOptions() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOptions",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlTable) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlTable) ResetPartitions() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPartitions",
 		nil, // no parameters
 	)
 }
@@ -1215,6 +1379,14 @@ func (s *jsiiProxy_SqlTable) ResetViewDefinition() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetViewDefinition",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlTable) ResetWarehouseId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetWarehouseId",
 		nil, // no parameters
 	)
 }

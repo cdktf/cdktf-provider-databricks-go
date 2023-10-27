@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/data-sources/notebook_paths databricks_notebook_paths}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/data-sources/notebook_paths databricks_notebook_paths}.
 type DataDatabricksNotebookPaths interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -318,7 +318,7 @@ func (j *jsiiProxy_DataDatabricksNotebookPaths) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/data-sources/notebook_paths databricks_notebook_paths} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/data-sources/notebook_paths databricks_notebook_paths} Data Source.
 func NewDataDatabricksNotebookPaths(scope constructs.Construct, id *string, config *DataDatabricksNotebookPathsConfig) DataDatabricksNotebookPaths {
 	_init_.Initialize()
 
@@ -336,7 +336,7 @@ func NewDataDatabricksNotebookPaths(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/data-sources/notebook_paths databricks_notebook_paths} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/data-sources/notebook_paths databricks_notebook_paths} Data Source.
 func NewDataDatabricksNotebookPaths_Override(d DataDatabricksNotebookPaths, scope constructs.Construct, id *string, config *DataDatabricksNotebookPathsConfig) {
 	_init_.Initialize()
 

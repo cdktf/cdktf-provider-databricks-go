@@ -34,6 +34,8 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	CreationStack() *[]*string
 	DbtTask() DataDatabricksJobJobSettingsSettingsDbtTaskOutputReference
 	DbtTaskInput() *DataDatabricksJobJobSettingsSettingsDbtTask
+	Deployment() DataDatabricksJobJobSettingsSettingsDeploymentOutputReference
+	DeploymentInput() *DataDatabricksJobJobSettingsSettingsDeployment
 	EmailNotifications() DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference
 	EmailNotificationsInput() *DataDatabricksJobJobSettingsSettingsEmailNotifications
 	ExistingClusterId() *string
@@ -142,6 +144,7 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	PutCompute(value interface{})
 	PutContinuous(value *DataDatabricksJobJobSettingsSettingsContinuous)
 	PutDbtTask(value *DataDatabricksJobJobSettingsSettingsDbtTask)
+	PutDeployment(value *DataDatabricksJobJobSettingsSettingsDeployment)
 	PutEmailNotifications(value *DataDatabricksJobJobSettingsSettingsEmailNotifications)
 	PutGitSource(value *DataDatabricksJobJobSettingsSettingsGitSource)
 	PutHealth(value *DataDatabricksJobJobSettingsSettingsHealth)
@@ -166,6 +169,7 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	ResetCompute()
 	ResetContinuous()
 	ResetDbtTask()
+	ResetDeployment()
 	ResetEmailNotifications()
 	ResetExistingClusterId()
 	ResetFormat()
@@ -296,6 +300,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) DbtTaskI
 	_jsii_.Get(
 		j,
 		"dbtTaskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) Deployment() DataDatabricksJobJobSettingsSettingsDeploymentOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsDeploymentOutputReference
+	_jsii_.Get(
+		j,
+		"deployment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) DeploymentInput() *DataDatabricksJobJobSettingsSettingsDeployment {
+	var returns *DataDatabricksJobJobSettingsSettingsDeployment
+	_jsii_.Get(
+		j,
+		"deploymentInput",
 		&returns,
 	)
 	return returns
@@ -1342,6 +1366,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutDbtTa
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutDeployment(value *DataDatabricksJobJobSettingsSettingsDeployment) {
+	if err := d.validatePutDeploymentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putDeployment",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutEmailNotifications(value *DataDatabricksJobJobSettingsSettingsEmailNotifications) {
 	if err := d.validatePutEmailNotificationsParameters(value); err != nil {
 		panic(err)
@@ -1593,6 +1628,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetDbt
 	_jsii_.InvokeVoid(
 		d,
 		"resetDbtTask",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetDeployment() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDeployment",
 		nil, // no parameters
 	)
 }

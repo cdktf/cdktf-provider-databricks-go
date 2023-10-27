@@ -278,6 +278,14 @@ func (j *jsiiProxy_SqlTable) validateSetClusterIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_SqlTable) validateSetClusterKeysParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SqlTable) validateSetCommentParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -408,6 +416,22 @@ func (j *jsiiProxy_SqlTable) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_SqlTable) validateSetOptionsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SqlTable) validateSetPartitionsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SqlTable) validateSetPropertiesParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -495,6 +519,14 @@ func (j *jsiiProxy_SqlTable) validateSetTableTypeParameters(val *string) error {
 }
 
 func (j *jsiiProxy_SqlTable) validateSetViewDefinitionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SqlTable) validateSetWarehouseIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

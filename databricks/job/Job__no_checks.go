@@ -79,6 +79,10 @@ func (j *jsiiProxy_Job) validatePutDbtTaskParameters(value *JobDbtTask) error {
 	return nil
 }
 
+func (j *jsiiProxy_Job) validatePutDeploymentParameters(value *JobDeployment) error {
+	return nil
+}
+
 func (j *jsiiProxy_Job) validatePutEmailNotificationsParameters(value *JobEmailNotifications) error {
 	return nil
 }

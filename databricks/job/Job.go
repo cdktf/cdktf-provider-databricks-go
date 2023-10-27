@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job databricks_job}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/job databricks_job}.
 type Job interface {
 	cdktf.TerraformResource
 	AlwaysRunning() interface{}
@@ -43,6 +43,8 @@ type Job interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Deployment() JobDeploymentOutputReference
+	DeploymentInput() *JobDeployment
 	EmailNotifications() JobEmailNotificationsOutputReference
 	EmailNotificationsInput() *JobEmailNotifications
 	ExistingClusterId() *string
@@ -184,6 +186,7 @@ type Job interface {
 	PutCompute(value interface{})
 	PutContinuous(value *JobContinuous)
 	PutDbtTask(value *JobDbtTask)
+	PutDeployment(value *JobDeployment)
 	PutEmailNotifications(value *JobEmailNotifications)
 	PutGitSource(value *JobGitSource)
 	PutHealth(value *JobHealth)
@@ -211,6 +214,7 @@ type Job interface {
 	ResetContinuous()
 	ResetControlRunState()
 	ResetDbtTask()
+	ResetDeployment()
 	ResetEmailNotifications()
 	ResetExistingClusterId()
 	ResetFormat()
@@ -406,6 +410,26 @@ func (j *jsiiProxy_Job) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) Deployment() JobDeploymentOutputReference {
+	var returns JobDeploymentOutputReference
+	_jsii_.Get(
+		j,
+		"deployment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) DeploymentInput() *JobDeployment {
+	var returns *JobDeployment
+	_jsii_.Get(
+		j,
+		"deploymentInput",
 		&returns,
 	)
 	return returns
@@ -1172,7 +1196,7 @@ func (j *jsiiProxy_Job) WebhookNotificationsInput() *JobWebhookNotifications {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/job databricks_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	_init_.Initialize()
 
@@ -1190,7 +1214,7 @@ func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/job databricks_job} Resource.
 func NewJob_Override(j Job, scope constructs.Construct, id *string, config *JobConfig) {
 	_init_.Initialize()
 
@@ -1752,6 +1776,17 @@ func (j *jsiiProxy_Job) PutDbtTask(value *JobDbtTask) {
 	)
 }
 
+func (j *jsiiProxy_Job) PutDeployment(value *JobDeployment) {
+	if err := j.validatePutDeploymentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putDeployment",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_Job) PutEmailNotifications(value *JobEmailNotifications) {
 	if err := j.validatePutEmailNotificationsParameters(value); err != nil {
 		panic(err)
@@ -2030,6 +2065,14 @@ func (j *jsiiProxy_Job) ResetDbtTask() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetDbtTask",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetDeployment() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetDeployment",
 		nil, // no parameters
 	)
 }

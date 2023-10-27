@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/instance_pool databricks_instance_pool}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/instance_pool databricks_instance_pool}.
 type InstancePool interface {
 	cdktf.TerraformResource
 	AwsAttributes() InstancePoolAwsAttributesOutputReference
@@ -655,7 +655,7 @@ func (j *jsiiProxy_InstancePool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/instance_pool databricks_instance_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/instance_pool databricks_instance_pool} Resource.
 func NewInstancePool(scope constructs.Construct, id *string, config *InstancePoolConfig) InstancePool {
 	_init_.Initialize()
 
@@ -673,7 +673,7 @@ func NewInstancePool(scope constructs.Construct, id *string, config *InstancePoo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/instance_pool databricks_instance_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/instance_pool databricks_instance_pool} Resource.
 func NewInstancePool_Override(i InstancePool, scope constructs.Construct, id *string, config *InstancePoolConfig) {
 	_init_.Initialize()
 

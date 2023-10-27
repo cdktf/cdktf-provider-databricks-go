@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validate
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutDeploymentParameters(value *DataDatabricksJobJobSettingsSettingsDeployment) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutEmailNotificationsParameters(value *DataDatabricksJobJobSettingsSettingsEmailNotifications) error {
 	return nil
 }
