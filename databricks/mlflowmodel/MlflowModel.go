@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model databricks_mlflow_model}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_model databricks_mlflow_model}.
 type MlflowModel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,9 +27,6 @@ type MlflowModel interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CreationTimestamp() *float64
-	SetCreationTimestamp(val *float64)
-	CreationTimestampInput() *float64
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,9 +45,6 @@ type MlflowModel interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	LastUpdatedTimestamp() *float64
-	SetLastUpdatedTimestamp(val *float64)
-	LastUpdatedTimestampInput() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -79,9 +73,6 @@ type MlflowModel interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	UserId() *string
-	SetUserId(val *string)
-	UserIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -116,15 +107,12 @@ type MlflowModel interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTags(value interface{})
-	ResetCreationTimestamp()
 	ResetDescription()
 	ResetId()
-	ResetLastUpdatedTimestamp()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	ResetUserId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -175,26 +163,6 @@ func (j *jsiiProxy_MlflowModel) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MlflowModel) CreationTimestamp() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"creationTimestamp",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MlflowModel) CreationTimestampInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"creationTimestampInput",
 		&returns,
 	)
 	return returns
@@ -275,26 +243,6 @@ func (j *jsiiProxy_MlflowModel) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MlflowModel) LastUpdatedTimestamp() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"lastUpdatedTimestamp",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MlflowModel) LastUpdatedTimestampInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"lastUpdatedTimestampInput",
 		&returns,
 	)
 	return returns
@@ -430,28 +378,8 @@ func (j *jsiiProxy_MlflowModel) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MlflowModel) UserId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"userId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_MlflowModel) UserIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"userIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model databricks_mlflow_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_model databricks_mlflow_model} Resource.
 func NewMlflowModel(scope constructs.Construct, id *string, config *MlflowModelConfig) MlflowModel {
 	_init_.Initialize()
 
@@ -469,7 +397,7 @@ func NewMlflowModel(scope constructs.Construct, id *string, config *MlflowModelC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model databricks_mlflow_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_model databricks_mlflow_model} Resource.
 func NewMlflowModel_Override(m MlflowModel, scope constructs.Construct, id *string, config *MlflowModelConfig) {
 	_init_.Initialize()
 
@@ -498,17 +426,6 @@ func (j *jsiiProxy_MlflowModel)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MlflowModel)SetCreationTimestamp(val *float64) {
-	if err := j.validateSetCreationTimestampParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"creationTimestamp",
 		val,
 	)
 }
@@ -551,17 +468,6 @@ func (j *jsiiProxy_MlflowModel)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MlflowModel)SetLastUpdatedTimestamp(val *float64) {
-	if err := j.validateSetLastUpdatedTimestampParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"lastUpdatedTimestamp",
-		val,
-	)
-}
-
 func (j *jsiiProxy_MlflowModel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -599,17 +505,6 @@ func (j *jsiiProxy_MlflowModel)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MlflowModel)SetUserId(val *string) {
-	if err := j.validateSetUserIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"userId",
 		val,
 	)
 }
@@ -943,14 +838,6 @@ func (m *jsiiProxy_MlflowModel) PutTags(value interface{}) {
 	)
 }
 
-func (m *jsiiProxy_MlflowModel) ResetCreationTimestamp() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetCreationTimestamp",
-		nil, // no parameters
-	)
-}
-
 func (m *jsiiProxy_MlflowModel) ResetDescription() {
 	_jsii_.InvokeVoid(
 		m,
@@ -967,14 +854,6 @@ func (m *jsiiProxy_MlflowModel) ResetId() {
 	)
 }
 
-func (m *jsiiProxy_MlflowModel) ResetLastUpdatedTimestamp() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetLastUpdatedTimestamp",
-		nil, // no parameters
-	)
-}
-
 func (m *jsiiProxy_MlflowModel) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
@@ -987,14 +866,6 @@ func (m *jsiiProxy_MlflowModel) ResetTags() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetTags",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MlflowModel) ResetUserId() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetUserId",
 		nil, // no parameters
 	)
 }

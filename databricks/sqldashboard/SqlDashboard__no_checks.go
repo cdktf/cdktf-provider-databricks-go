@@ -119,6 +119,10 @@ func (j *jsiiProxy_SqlDashboard) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_SqlDashboard) validateSetRunAsRoleParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDashboard) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }

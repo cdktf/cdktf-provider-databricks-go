@@ -73,6 +73,7 @@ type MwsCustomerManagedKeysAwsKeyInfoOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetKeyAlias()
 	ResetKeyRegion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -519,6 +520,14 @@ func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) ResetKeyAlias() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetKeyAlias",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MwsCustomerManagedKeysAwsKeyInfoOutputReference) ResetKeyRegion() {

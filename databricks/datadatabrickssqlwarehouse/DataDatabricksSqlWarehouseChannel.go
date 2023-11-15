@@ -5,7 +5,7 @@ package datadatabrickssqlwarehouse
 
 
 type DataDatabricksSqlWarehouseChannel struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/data-sources/sql_warehouse#name DataDatabricksSqlWarehouse#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/data-sources/sql_warehouse#name DataDatabricksSqlWarehouse#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard databricks_sql_dashboard}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard databricks_sql_dashboard}.
 type SqlDashboard interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +70,9 @@ type SqlDashboard interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RunAsRole() *string
+	SetRunAsRole(val *string)
+	RunAsRoleInput() *string
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
@@ -122,6 +125,7 @@ type SqlDashboard interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParent()
+	ResetRunAsRole()
 	ResetTags()
 	ResetUpdatedAt()
 	SynthesizeAttributes() *map[string]interface{}
@@ -369,6 +373,26 @@ func (j *jsiiProxy_SqlDashboard) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SqlDashboard) RunAsRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runAsRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDashboard) RunAsRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runAsRoleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlDashboard) Tags() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -440,7 +464,7 @@ func (j *jsiiProxy_SqlDashboard) UpdatedAtInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
 func NewSqlDashboard(scope constructs.Construct, id *string, config *SqlDashboardConfig) SqlDashboard {
 	_init_.Initialize()
 
@@ -458,7 +482,7 @@ func NewSqlDashboard(scope constructs.Construct, id *string, config *SqlDashboar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource.
 func NewSqlDashboard_Override(s SqlDashboard, scope constructs.Construct, id *string, config *SqlDashboardConfig) {
 	_init_.Initialize()
 
@@ -588,6 +612,17 @@ func (j *jsiiProxy_SqlDashboard)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDashboard)SetRunAsRole(val *string) {
+	if err := j.validateSetRunAsRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runAsRole",
 		val,
 	)
 }
@@ -968,6 +1003,14 @@ func (s *jsiiProxy_SqlDashboard) ResetParent() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetParent",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDashboard) ResetRunAsRole() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRunAsRole",
 		nil, // no parameters
 	)
 }

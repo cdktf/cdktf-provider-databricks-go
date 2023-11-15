@@ -84,6 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOwner", GoMethod: "ResetOwner"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStorageRoot", GoMethod: "ResetStorageRoot"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStorageRootCredentialId", GoMethod: "ResetStorageRootCredentialId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUpdatedAt", GoMethod: "ResetUpdatedAt"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUpdatedBy", GoMethod: "ResetUpdatedBy"},

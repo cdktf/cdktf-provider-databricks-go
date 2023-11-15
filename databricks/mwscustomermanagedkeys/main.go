@@ -109,6 +109,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keyArnInput", GoGetter: "KeyArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "keyRegion", GoGetter: "KeyRegion"},
 			_jsii_.MemberProperty{JsiiProperty: "keyRegionInput", GoGetter: "KeyRegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKeyAlias", GoMethod: "ResetKeyAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeyRegion", GoMethod: "ResetKeyRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

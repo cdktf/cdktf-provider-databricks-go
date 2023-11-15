@@ -67,6 +67,10 @@ func (c *jsiiProxy_ClusterPolicy) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (c *jsiiProxy_ClusterPolicy) validatePutLibrariesParameters(value interface{}) error {
+	return nil
+}
+
 func validateClusterPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

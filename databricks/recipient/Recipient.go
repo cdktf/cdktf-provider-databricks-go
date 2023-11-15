@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient databricks_recipient}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient databricks_recipient}.
 type Recipient interface {
 	cdktf.TerraformResource
 	AuthenticationType() *string
@@ -62,6 +62,9 @@ type Recipient interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Owner() *string
+	SetOwner(val *string)
+	OwnerInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -125,6 +128,7 @@ type Recipient interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetOwner()
 	ResetSharingCode()
 	ResetTokens()
 	SynthesizeAttributes() *map[string]interface{}
@@ -362,6 +366,26 @@ func (j *jsiiProxy_Recipient) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_Recipient) Owner() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"owner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Recipient) OwnerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Recipient) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -463,7 +487,7 @@ func (j *jsiiProxy_Recipient) TokensInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient databricks_recipient} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient databricks_recipient} Resource.
 func NewRecipient(scope constructs.Construct, id *string, config *RecipientConfig) Recipient {
 	_init_.Initialize()
 
@@ -481,7 +505,7 @@ func NewRecipient(scope constructs.Construct, id *string, config *RecipientConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient databricks_recipient} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient databricks_recipient} Resource.
 func NewRecipient_Override(r Recipient, scope constructs.Construct, id *string, config *RecipientConfig) {
 	_init_.Initialize()
 
@@ -592,6 +616,17 @@ func (j *jsiiProxy_Recipient)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Recipient)SetOwner(val *string) {
+	if err := j.validateSetOwnerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"owner",
 		val,
 	)
 }
@@ -1002,6 +1037,14 @@ func (r *jsiiProxy_Recipient) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Recipient) ResetOwner() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetOwner",
 		nil, // no parameters
 	)
 }

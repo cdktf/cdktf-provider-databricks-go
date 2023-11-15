@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/cluster_policy databricks_cluster_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/cluster_policy databricks_cluster_policy}.
 type ClusterPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -48,6 +48,8 @@ type ClusterPolicy interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Libraries() ClusterPolicyLibrariesList
+	LibrariesInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -116,9 +118,11 @@ type ClusterPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutLibraries(value interface{})
 	ResetDefinition()
 	ResetDescription()
 	ResetId()
+	ResetLibraries()
 	ResetMaxClustersPerUser()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -275,6 +279,26 @@ func (j *jsiiProxy_ClusterPolicy) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterPolicy) Libraries() ClusterPolicyLibrariesList {
+	var returns ClusterPolicyLibrariesList
+	_jsii_.Get(
+		j,
+		"libraries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterPolicy) LibrariesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"librariesInput",
 		&returns,
 	)
 	return returns
@@ -451,7 +475,7 @@ func (j *jsiiProxy_ClusterPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/cluster_policy databricks_cluster_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/cluster_policy databricks_cluster_policy} Resource.
 func NewClusterPolicy(scope constructs.Construct, id *string, config *ClusterPolicyConfig) ClusterPolicy {
 	_init_.Initialize()
 
@@ -469,7 +493,7 @@ func NewClusterPolicy(scope constructs.Construct, id *string, config *ClusterPol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/cluster_policy databricks_cluster_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/cluster_policy databricks_cluster_policy} Resource.
 func NewClusterPolicy_Override(c ClusterPolicy, scope constructs.Construct, id *string, config *ClusterPolicyConfig) {
 	_init_.Initialize()
 
@@ -943,6 +967,17 @@ func (c *jsiiProxy_ClusterPolicy) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_ClusterPolicy) PutLibraries(value interface{}) {
+	if err := c.validatePutLibrariesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putLibraries",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ClusterPolicy) ResetDefinition() {
 	_jsii_.InvokeVoid(
 		c,
@@ -963,6 +998,14 @@ func (c *jsiiProxy_ClusterPolicy) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterPolicy) ResetLibraries() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLibraries",
 		nil, // no parameters
 	)
 }

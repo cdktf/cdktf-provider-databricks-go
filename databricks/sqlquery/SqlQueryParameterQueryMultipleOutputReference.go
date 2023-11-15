@@ -73,6 +73,8 @@ type SqlQueryParameterQueryMultipleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPrefix()
+	ResetSuffix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -518,6 +520,22 @@ func (s *jsiiProxy_SqlQueryParameterQueryMultipleOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SqlQueryParameterQueryMultipleOutputReference) ResetPrefix() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPrefix",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlQueryParameterQueryMultipleOutputReference) ResetSuffix() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSuffix",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SqlQueryParameterQueryMultipleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -95,19 +95,11 @@ func (j *jsiiProxy_MlflowModel) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_MlflowModel) validateSetCreationTimestampParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_MlflowModel) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_MlflowModel) validateSetIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MlflowModel) validateSetLastUpdatedTimestampParameters(val *float64) error {
 	return nil
 }
 
@@ -120,10 +112,6 @@ func (j *jsiiProxy_MlflowModel) validateSetNameParameters(val *string) error {
 }
 
 func (j *jsiiProxy_MlflowModel) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_MlflowModel) validateSetUserIdParameters(val *string) error {
 	return nil
 }
 

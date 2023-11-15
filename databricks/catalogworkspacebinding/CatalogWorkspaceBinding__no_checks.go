@@ -83,6 +83,10 @@ func validateCatalogWorkspaceBinding_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_CatalogWorkspaceBinding) validateSetBindingTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CatalogWorkspaceBinding) validateSetCatalogNameParameters(val *string) error {
 	return nil
 }
@@ -107,7 +111,15 @@ func (j *jsiiProxy_CatalogWorkspaceBinding) validateSetProvisionersParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_CatalogWorkspaceBinding) validateSetWorkspaceIdParameters(val *string) error {
+func (j *jsiiProxy_CatalogWorkspaceBinding) validateSetSecurableNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CatalogWorkspaceBinding) validateSetSecurableTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CatalogWorkspaceBinding) validateSetWorkspaceIdParameters(val *float64) error {
 	return nil
 }
 

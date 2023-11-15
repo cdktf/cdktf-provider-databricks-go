@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding}.
 type CatalogWorkspaceBinding interface {
 	cdktf.TerraformResource
+	BindingType() *string
+	SetBindingType(val *string)
+	BindingTypeInput() *string
 	CatalogName() *string
 	SetCatalogName(val *string)
 	CatalogNameInput() *string
@@ -61,15 +64,21 @@ type CatalogWorkspaceBinding interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SecurableName() *string
+	SetSecurableName(val *string)
+	SecurableNameInput() *string
+	SecurableType() *string
+	SetSecurableType(val *string)
+	SecurableTypeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	WorkspaceId() *string
-	SetWorkspaceId(val *string)
-	WorkspaceIdInput() *string
+	WorkspaceId() *float64
+	SetWorkspaceId(val *float64)
+	WorkspaceIdInput() *float64
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -103,10 +112,15 @@ type CatalogWorkspaceBinding interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetBindingType()
+	ResetCatalogName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSecurableName()
+	ResetSecurableType()
+	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -120,6 +134,26 @@ type CatalogWorkspaceBinding interface {
 // The jsii proxy struct for CatalogWorkspaceBinding
 type jsiiProxy_CatalogWorkspaceBinding struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CatalogWorkspaceBinding) BindingType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bindingType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CatalogWorkspaceBinding) BindingTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bindingTypeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CatalogWorkspaceBinding) CatalogName() *string {
@@ -292,6 +326,46 @@ func (j *jsiiProxy_CatalogWorkspaceBinding) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CatalogWorkspaceBinding) SecurableName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securableName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CatalogWorkspaceBinding) SecurableNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securableNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CatalogWorkspaceBinding) SecurableType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securableType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CatalogWorkspaceBinding) SecurableTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securableTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CatalogWorkspaceBinding) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -322,8 +396,8 @@ func (j *jsiiProxy_CatalogWorkspaceBinding) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CatalogWorkspaceBinding) WorkspaceId() *string {
-	var returns *string
+func (j *jsiiProxy_CatalogWorkspaceBinding) WorkspaceId() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"workspaceId",
@@ -332,8 +406,8 @@ func (j *jsiiProxy_CatalogWorkspaceBinding) WorkspaceId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CatalogWorkspaceBinding) WorkspaceIdInput() *string {
-	var returns *string
+func (j *jsiiProxy_CatalogWorkspaceBinding) WorkspaceIdInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"workspaceIdInput",
@@ -343,7 +417,7 @@ func (j *jsiiProxy_CatalogWorkspaceBinding) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
 func NewCatalogWorkspaceBinding(scope constructs.Construct, id *string, config *CatalogWorkspaceBindingConfig) CatalogWorkspaceBinding {
 	_init_.Initialize()
 
@@ -361,7 +435,7 @@ func NewCatalogWorkspaceBinding(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
 func NewCatalogWorkspaceBinding_Override(c CatalogWorkspaceBinding, scope constructs.Construct, id *string, config *CatalogWorkspaceBindingConfig) {
 	_init_.Initialize()
 
@@ -369,6 +443,17 @@ func NewCatalogWorkspaceBinding_Override(c CatalogWorkspaceBinding, scope constr
 		"@cdktf/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CatalogWorkspaceBinding)SetBindingType(val *string) {
+	if err := j.validateSetBindingTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bindingType",
+		val,
 	)
 }
 
@@ -462,7 +547,29 @@ func (j *jsiiProxy_CatalogWorkspaceBinding)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CatalogWorkspaceBinding)SetWorkspaceId(val *string) {
+func (j *jsiiProxy_CatalogWorkspaceBinding)SetSecurableName(val *string) {
+	if err := j.validateSetSecurableNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securableName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CatalogWorkspaceBinding)SetSecurableType(val *string) {
+	if err := j.validateSetSecurableTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securableType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CatalogWorkspaceBinding)SetWorkspaceId(val *float64) {
 	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,6 +898,22 @@ func (c *jsiiProxy_CatalogWorkspaceBinding) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (c *jsiiProxy_CatalogWorkspaceBinding) ResetBindingType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBindingType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CatalogWorkspaceBinding) ResetCatalogName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCatalogName",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CatalogWorkspaceBinding) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
@@ -803,6 +926,30 @@ func (c *jsiiProxy_CatalogWorkspaceBinding) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CatalogWorkspaceBinding) ResetSecurableName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSecurableName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CatalogWorkspaceBinding) ResetSecurableType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSecurableType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CatalogWorkspaceBinding) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/data-sources/schemas databricks_schemas}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/data-sources/schemas databricks_schemas}.
 type DataDatabricksSchemas interface {
 	cdktf.TerraformDataSource
 	CatalogName() *string
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DataDatabricksSchemas) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/data-sources/schemas databricks_schemas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/data-sources/schemas databricks_schemas} Data Source.
 func NewDataDatabricksSchemas(scope constructs.Construct, id *string, config *DataDatabricksSchemasConfig) DataDatabricksSchemas {
 	_init_.Initialize()
 
@@ -326,7 +326,7 @@ func NewDataDatabricksSchemas(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/data-sources/schemas databricks_schemas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/data-sources/schemas databricks_schemas} Data Source.
 func NewDataDatabricksSchemas_Override(d DataDatabricksSchemas, scope constructs.Construct, id *string, config *DataDatabricksSchemasConfig) {
 	_init_.Initialize()
 

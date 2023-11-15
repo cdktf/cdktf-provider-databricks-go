@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_endpoint databricks_sql_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_endpoint databricks_sql_endpoint}.
 type SqlEndpoint interface {
 	cdktf.TerraformResource
 	AutoStopMins() *float64
@@ -727,7 +727,7 @@ func (j *jsiiProxy_SqlEndpoint) WarehouseTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
 func NewSqlEndpoint(scope constructs.Construct, id *string, config *SqlEndpointConfig) SqlEndpoint {
 	_init_.Initialize()
 
@@ -745,7 +745,7 @@ func NewSqlEndpoint(scope constructs.Construct, id *string, config *SqlEndpointC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
 func NewSqlEndpoint_Override(s SqlEndpoint, scope constructs.Construct, id *string, config *SqlEndpointConfig) {
 	_init_.Initialize()
 
