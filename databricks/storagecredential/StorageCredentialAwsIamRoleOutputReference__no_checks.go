@@ -59,6 +59,10 @@ func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) validateSetComple
 	return nil
 }
 
+func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) validateSetExternalIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) validateSetInternalValueParameters(val *StorageCredentialAwsIamRole) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) validateSetTerraf
 }
 
 func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) validateSetUnityCatalogIamArnParameters(val *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GitCredential) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (g *jsiiProxy_GitCredential) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GitCredential) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GitCredential) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

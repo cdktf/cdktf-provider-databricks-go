@@ -59,7 +59,15 @@ func (s *jsiiProxy_SecretScope) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (s *jsiiProxy_SecretScope) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretScope) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecretScope) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

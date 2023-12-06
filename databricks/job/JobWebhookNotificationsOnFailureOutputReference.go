@@ -67,6 +67,7 @@ type JobWebhookNotificationsOnFailureOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (j *jsiiProxy_JobWebhookNotificationsOnFailureOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (j *jsiiProxy_JobWebhookNotificationsOnFailureOutputReference) ResetId() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetId",
+		nil, // no parameters
+	)
 }
 
 func (j *jsiiProxy_JobWebhookNotificationsOnFailureOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

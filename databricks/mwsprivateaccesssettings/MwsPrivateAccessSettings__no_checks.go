@@ -59,7 +59,15 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) validateInterpolationForAttributePa
 	return nil
 }
 
+func (m *jsiiProxy_MwsPrivateAccessSettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsPrivateAccessSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwsPrivateAccessSettings) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

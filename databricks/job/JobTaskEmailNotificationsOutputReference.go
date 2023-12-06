@@ -13,9 +13,6 @@ import (
 
 type JobTaskEmailNotificationsOutputReference interface {
 	cdktf.ComplexObject
-	AlertOnLastAttempt() interface{}
-	SetAlertOnLastAttempt(val interface{})
-	AlertOnLastAttemptInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,9 +32,6 @@ type JobTaskEmailNotificationsOutputReference interface {
 	Fqn() *string
 	InternalValue() *JobTaskEmailNotifications
 	SetInternalValue(val *JobTaskEmailNotifications)
-	NoAlertForSkippedRuns() interface{}
-	SetNoAlertForSkippedRuns(val interface{})
-	NoAlertForSkippedRunsInput() interface{}
 	OnDurationWarningThresholdExceeded() *[]*string
 	SetOnDurationWarningThresholdExceeded(val *[]*string)
 	OnDurationWarningThresholdExceededInput() *[]*string
@@ -82,8 +76,6 @@ type JobTaskEmailNotificationsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetAlertOnLastAttempt()
-	ResetNoAlertForSkippedRuns()
 	ResetOnDurationWarningThresholdExceeded()
 	ResetOnFailure()
 	ResetOnStart()
@@ -101,26 +93,6 @@ type JobTaskEmailNotificationsOutputReference interface {
 // The jsii proxy struct for JobTaskEmailNotificationsOutputReference
 type jsiiProxy_JobTaskEmailNotificationsOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) AlertOnLastAttempt() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"alertOnLastAttempt",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) AlertOnLastAttemptInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"alertOnLastAttemptInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) ComplexObjectIndex() interface{} {
@@ -168,26 +140,6 @@ func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) InternalValue() *Jo
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) NoAlertForSkippedRuns() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"noAlertForSkippedRuns",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) NoAlertForSkippedRunsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"noAlertForSkippedRunsInput",
 		&returns,
 	)
 	return returns
@@ -321,17 +273,6 @@ func NewJobTaskEmailNotificationsOutputReference_Override(j JobTaskEmailNotifica
 	)
 }
 
-func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference)SetAlertOnLastAttempt(val interface{}) {
-	if err := j.validateSetAlertOnLastAttemptParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"alertOnLastAttempt",
-		val,
-	)
-}
-
 func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -361,17 +302,6 @@ func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference)SetInternalValue(val
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference)SetNoAlertForSkippedRuns(val interface{}) {
-	if err := j.validateSetNoAlertForSkippedRunsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"noAlertForSkippedRuns",
 		val,
 	)
 }
@@ -626,22 +556,6 @@ func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) InterpolationForAtt
 	)
 
 	return returns
-}
-
-func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) ResetAlertOnLastAttempt() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetAlertOnLastAttempt",
-		nil, // no parameters
-	)
-}
-
-func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) ResetNoAlertForSkippedRuns() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetNoAlertForSkippedRuns",
-		nil, // no parameters
-	)
 }
 
 func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) ResetOnDurationWarningThresholdExceeded() {

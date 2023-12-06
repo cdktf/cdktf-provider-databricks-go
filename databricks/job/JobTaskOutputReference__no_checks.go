@@ -111,6 +111,10 @@ func (j *jsiiProxy_JobTaskOutputReference) validatePutSqlTaskParameters(value *J
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) validatePutWebhookNotificationsParameters(value *JobTaskWebhookNotifications) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

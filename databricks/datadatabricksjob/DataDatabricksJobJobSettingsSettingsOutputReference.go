@@ -36,6 +36,12 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	DbtTaskInput() *DataDatabricksJobJobSettingsSettingsDbtTask
 	Deployment() DataDatabricksJobJobSettingsSettingsDeploymentOutputReference
 	DeploymentInput() *DataDatabricksJobJobSettingsSettingsDeployment
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	EditMode() *string
+	SetEditMode(val *string)
+	EditModeInput() *string
 	EmailNotifications() DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference
 	EmailNotificationsInput() *DataDatabricksJobJobSettingsSettingsEmailNotifications
 	ExistingClusterId() *string
@@ -170,6 +176,8 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	ResetContinuous()
 	ResetDbtTask()
 	ResetDeployment()
+	ResetDescription()
+	ResetEditMode()
 	ResetEmailNotifications()
 	ResetExistingClusterId()
 	ResetFormat()
@@ -320,6 +328,46 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) Deployme
 	_jsii_.Get(
 		j,
 		"deploymentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) EditMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"editMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) EditModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"editModeInput",
 		&returns,
 	)
 	return returns
@@ -1015,6 +1063,28 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference)SetComple
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference)SetEditMode(val *string) {
+	if err := j.validateSetEditModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"editMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference)SetExistingClusterId(val *string) {
 	if err := j.validateSetExistingClusterIdParameters(val); err != nil {
 		panic(err)
@@ -1636,6 +1706,22 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetDep
 	_jsii_.InvokeVoid(
 		d,
 		"resetDeployment",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetEditMode() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEditMode",
 		nil, // no parameters
 	)
 }

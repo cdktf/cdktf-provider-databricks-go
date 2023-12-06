@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/token databricks_token}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/token databricks_token}.
 type Token interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -104,12 +104,22 @@ type Token interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -428,7 +438,7 @@ func (j *jsiiProxy_Token) TokenValue() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/token databricks_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/token databricks_token} Resource.
 func NewToken(scope constructs.Construct, id *string, config *TokenConfig) Token {
 	_init_.Initialize()
 
@@ -446,7 +456,7 @@ func NewToken(scope constructs.Construct, id *string, config *TokenConfig) Token
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/token databricks_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/token databricks_token} Resource.
 func NewToken_Override(t Token, scope constructs.Construct, id *string, config *TokenConfig) {
 	_init_.Initialize()
 
@@ -860,6 +870,19 @@ func (t *jsiiProxy_Token) GetStringMapAttribute(terraformAttribute *string) *map
 	return returns
 }
 
+func (t *jsiiProxy_Token) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		t,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (t *jsiiProxy_Token) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := t.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -887,6 +910,17 @@ func (t *jsiiProxy_Token) InterpolationForAttribute(terraformAttribute *string) 
 	return returns
 }
 
+func (t *jsiiProxy_Token) MoveFromId(id *string) {
+	if err := t.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (t *jsiiProxy_Token) MoveTo(moveTarget *string, index interface{}) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -895,6 +929,17 @@ func (t *jsiiProxy_Token) MoveTo(moveTarget *string, index interface{}) {
 		t,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (t *jsiiProxy_Token) MoveToId(id *string) {
+	if err := t.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

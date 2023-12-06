@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mount databricks_mount}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/mount databricks_mount}.
 type Mount interface {
 	cdktf.TerraformResource
 	Abfs() MountAbfsOutputReference
@@ -119,12 +119,22 @@ type Mount interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -596,7 +606,7 @@ func (j *jsiiProxy_Mount) WasbInput() *MountWasb {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mount databricks_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/mount databricks_mount} Resource.
 func NewMount(scope constructs.Construct, id *string, config *MountConfig) Mount {
 	_init_.Initialize()
 
@@ -614,7 +624,7 @@ func NewMount(scope constructs.Construct, id *string, config *MountConfig) Mount
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mount databricks_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/mount databricks_mount} Resource.
 func NewMount_Override(m Mount, scope constructs.Construct, id *string, config *MountConfig) {
 	_init_.Initialize()
 
@@ -1039,6 +1049,19 @@ func (m *jsiiProxy_Mount) GetStringMapAttribute(terraformAttribute *string) *map
 	return returns
 }
 
+func (m *jsiiProxy_Mount) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (m *jsiiProxy_Mount) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1066,6 +1089,17 @@ func (m *jsiiProxy_Mount) InterpolationForAttribute(terraformAttribute *string) 
 	return returns
 }
 
+func (m *jsiiProxy_Mount) MoveFromId(id *string) {
+	if err := m.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (m *jsiiProxy_Mount) MoveTo(moveTarget *string, index interface{}) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1074,6 +1108,17 @@ func (m *jsiiProxy_Mount) MoveTo(moveTarget *string, index interface{}) {
 		m,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (m *jsiiProxy_Mount) MoveToId(id *string) {
+	if err := m.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

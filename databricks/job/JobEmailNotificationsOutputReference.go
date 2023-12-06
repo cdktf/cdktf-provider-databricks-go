@@ -13,9 +13,6 @@ import (
 
 type JobEmailNotificationsOutputReference interface {
 	cdktf.ComplexObject
-	AlertOnLastAttempt() interface{}
-	SetAlertOnLastAttempt(val interface{})
-	AlertOnLastAttemptInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -82,7 +79,6 @@ type JobEmailNotificationsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetAlertOnLastAttempt()
 	ResetNoAlertForSkippedRuns()
 	ResetOnDurationWarningThresholdExceeded()
 	ResetOnFailure()
@@ -101,26 +97,6 @@ type JobEmailNotificationsOutputReference interface {
 // The jsii proxy struct for JobEmailNotificationsOutputReference
 type jsiiProxy_JobEmailNotificationsOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_JobEmailNotificationsOutputReference) AlertOnLastAttempt() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"alertOnLastAttempt",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobEmailNotificationsOutputReference) AlertOnLastAttemptInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"alertOnLastAttemptInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_JobEmailNotificationsOutputReference) ComplexObjectIndex() interface{} {
@@ -318,17 +294,6 @@ func NewJobEmailNotificationsOutputReference_Override(j JobEmailNotificationsOut
 		"@cdktf/provider-databricks.job.JobEmailNotificationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
-	)
-}
-
-func (j *jsiiProxy_JobEmailNotificationsOutputReference)SetAlertOnLastAttempt(val interface{}) {
-	if err := j.validateSetAlertOnLastAttemptParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"alertOnLastAttempt",
-		val,
 	)
 }
 
@@ -626,14 +591,6 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) InterpolationForAttribu
 	)
 
 	return returns
-}
-
-func (j *jsiiProxy_JobEmailNotificationsOutputReference) ResetAlertOnLastAttempt() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetAlertOnLastAttempt",
-		nil, // no parameters
-	)
 }
 
 func (j *jsiiProxy_JobEmailNotificationsOutputReference) ResetNoAlertForSkippedRuns() {

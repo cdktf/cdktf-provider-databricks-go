@@ -166,6 +166,14 @@ func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) validateSetComp
 	return nil
 }
 
+func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) validateSetExternalIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) validateSetInternalValueParameters(val *MetastoreDataAccessAwsIamRole) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -191,6 +199,14 @@ func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) validateSetTerr
 }
 
 func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) validateSetUnityCatalogIamArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

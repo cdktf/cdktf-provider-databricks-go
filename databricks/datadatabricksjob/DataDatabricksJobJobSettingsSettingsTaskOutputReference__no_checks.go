@@ -111,6 +111,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) vali
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutWebhookNotificationsParameters(value *DataDatabricksJobJobSettingsSettingsTaskWebhookNotifications) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

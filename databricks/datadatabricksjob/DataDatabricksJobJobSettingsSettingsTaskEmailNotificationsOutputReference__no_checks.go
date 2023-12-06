@@ -51,10 +51,6 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOut
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference) validateSetAlertOnLastAttemptParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -64,10 +60,6 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOut
 }
 
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference) validateSetInternalValueParameters(val *DataDatabricksJobJobSettingsSettingsTaskEmailNotifications) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference) validateSetNoAlertForSkippedRunsParameters(val interface{}) error {
 	return nil
 }
 

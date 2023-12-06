@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/user_instance_profile databricks_user_instance_profile}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/user_instance_profile databricks_user_instance_profile}.
 type UserInstanceProfile interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -94,12 +94,22 @@ type UserInstanceProfile interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -343,7 +353,7 @@ func (j *jsiiProxy_UserInstanceProfile) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/user_instance_profile databricks_user_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/user_instance_profile databricks_user_instance_profile} Resource.
 func NewUserInstanceProfile(scope constructs.Construct, id *string, config *UserInstanceProfileConfig) UserInstanceProfile {
 	_init_.Initialize()
 
@@ -361,7 +371,7 @@ func NewUserInstanceProfile(scope constructs.Construct, id *string, config *User
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/user_instance_profile databricks_user_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/user_instance_profile databricks_user_instance_profile} Resource.
 func NewUserInstanceProfile_Override(u UserInstanceProfile, scope constructs.Construct, id *string, config *UserInstanceProfileConfig) {
 	_init_.Initialize()
 
@@ -742,6 +752,19 @@ func (u *jsiiProxy_UserInstanceProfile) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (u *jsiiProxy_UserInstanceProfile) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		u,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (u *jsiiProxy_UserInstanceProfile) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := u.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -769,6 +792,17 @@ func (u *jsiiProxy_UserInstanceProfile) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (u *jsiiProxy_UserInstanceProfile) MoveFromId(id *string) {
+	if err := u.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (u *jsiiProxy_UserInstanceProfile) MoveTo(moveTarget *string, index interface{}) {
 	if err := u.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -777,6 +811,17 @@ func (u *jsiiProxy_UserInstanceProfile) MoveTo(moveTarget *string, index interfa
 		u,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (u *jsiiProxy_UserInstanceProfile) MoveToId(id *string) {
+	if err := u.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

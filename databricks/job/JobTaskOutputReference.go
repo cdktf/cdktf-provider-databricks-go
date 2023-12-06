@@ -102,6 +102,8 @@ type JobTaskOutputReference interface {
 	TimeoutSeconds() *float64
 	SetTimeoutSeconds(val *float64)
 	TimeoutSecondsInput() *float64
+	WebhookNotifications() JobTaskWebhookNotificationsOutputReference
+	WebhookNotificationsInput() *JobTaskWebhookNotifications
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -142,6 +144,7 @@ type JobTaskOutputReference interface {
 	PutSparkPythonTask(value *JobTaskSparkPythonTask)
 	PutSparkSubmitTask(value *JobTaskSparkSubmitTask)
 	PutSqlTask(value *JobTaskSqlTask)
+	PutWebhookNotifications(value *JobTaskWebhookNotifications)
 	ResetComputeKey()
 	ResetConditionTask()
 	ResetDbtTask()
@@ -168,6 +171,7 @@ type JobTaskOutputReference interface {
 	ResetSqlTask()
 	ResetTaskKey()
 	ResetTimeoutSeconds()
+	ResetWebhookNotifications()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -773,6 +777,26 @@ func (j *jsiiProxy_JobTaskOutputReference) TimeoutSecondsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) WebhookNotifications() JobTaskWebhookNotificationsOutputReference {
+	var returns JobTaskWebhookNotificationsOutputReference
+	_jsii_.Get(
+		j,
+		"webhookNotifications",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) WebhookNotificationsInput() *JobTaskWebhookNotifications {
+	var returns *JobTaskWebhookNotifications
+	_jsii_.Get(
+		j,
+		"webhookNotificationsInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewJobTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) JobTaskOutputReference {
 	_init_.Initialize()
@@ -1328,6 +1352,17 @@ func (j *jsiiProxy_JobTaskOutputReference) PutSqlTask(value *JobTaskSqlTask) {
 	)
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) PutWebhookNotifications(value *JobTaskWebhookNotifications) {
+	if err := j.validatePutWebhookNotificationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putWebhookNotifications",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) ResetComputeKey() {
 	_jsii_.InvokeVoid(
 		j,
@@ -1532,6 +1567,14 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetTimeoutSeconds() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetTimeoutSeconds",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ResetWebhookNotifications() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetWebhookNotifications",
 		nil, // no parameters
 	)
 }

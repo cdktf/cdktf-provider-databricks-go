@@ -59,7 +59,15 @@ func (s *jsiiProxy_SqlWidget) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (s *jsiiProxy_SqlWidget) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlWidget) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlWidget) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

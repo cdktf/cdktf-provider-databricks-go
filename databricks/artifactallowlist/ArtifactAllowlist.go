@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/artifact_allowlist databricks_artifact_allowlist}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/artifact_allowlist databricks_artifact_allowlist}.
 type ArtifactAllowlist interface {
 	cdktf.TerraformResource
 	ArtifactMatcher() ArtifactAllowlistArtifactMatcherList
@@ -102,12 +102,22 @@ type ArtifactAllowlist interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -415,7 +425,7 @@ func (j *jsiiProxy_ArtifactAllowlist) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/artifact_allowlist databricks_artifact_allowlist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/artifact_allowlist databricks_artifact_allowlist} Resource.
 func NewArtifactAllowlist(scope constructs.Construct, id *string, config *ArtifactAllowlistConfig) ArtifactAllowlist {
 	_init_.Initialize()
 
@@ -433,7 +443,7 @@ func NewArtifactAllowlist(scope constructs.Construct, id *string, config *Artifa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/artifact_allowlist databricks_artifact_allowlist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/artifact_allowlist databricks_artifact_allowlist} Resource.
 func NewArtifactAllowlist_Override(a ArtifactAllowlist, scope constructs.Construct, id *string, config *ArtifactAllowlistConfig) {
 	_init_.Initialize()
 
@@ -836,6 +846,19 @@ func (a *jsiiProxy_ArtifactAllowlist) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (a *jsiiProxy_ArtifactAllowlist) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_ArtifactAllowlist) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -863,6 +886,17 @@ func (a *jsiiProxy_ArtifactAllowlist) InterpolationForAttribute(terraformAttribu
 	return returns
 }
 
+func (a *jsiiProxy_ArtifactAllowlist) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_ArtifactAllowlist) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -871,6 +905,17 @@ func (a *jsiiProxy_ArtifactAllowlist) MoveTo(moveTarget *string, index interface
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_ArtifactAllowlist) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

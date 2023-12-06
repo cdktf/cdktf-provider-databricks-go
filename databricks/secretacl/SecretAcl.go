@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/secret_acl databricks_secret_acl}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/secret_acl databricks_secret_acl}.
 type SecretAcl interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -97,12 +97,22 @@ type SecretAcl interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -366,7 +376,7 @@ func (j *jsiiProxy_SecretAcl) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/secret_acl databricks_secret_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/secret_acl databricks_secret_acl} Resource.
 func NewSecretAcl(scope constructs.Construct, id *string, config *SecretAclConfig) SecretAcl {
 	_init_.Initialize()
 
@@ -384,7 +394,7 @@ func NewSecretAcl(scope constructs.Construct, id *string, config *SecretAclConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/secret_acl databricks_secret_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/secret_acl databricks_secret_acl} Resource.
 func NewSecretAcl_Override(s SecretAcl, scope constructs.Construct, id *string, config *SecretAclConfig) {
 	_init_.Initialize()
 
@@ -776,6 +786,19 @@ func (s *jsiiProxy_SecretAcl) GetStringMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
+func (s *jsiiProxy_SecretAcl) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_SecretAcl) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -803,6 +826,17 @@ func (s *jsiiProxy_SecretAcl) InterpolationForAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (s *jsiiProxy_SecretAcl) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_SecretAcl) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -811,6 +845,17 @@ func (s *jsiiProxy_SecretAcl) MoveTo(moveTarget *string, index interface{}) {
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_SecretAcl) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

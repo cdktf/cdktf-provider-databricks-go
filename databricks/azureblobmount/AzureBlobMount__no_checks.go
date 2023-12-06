@@ -59,7 +59,15 @@ func (a *jsiiProxy_AzureBlobMount) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_AzureBlobMount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AzureBlobMount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AzureBlobMount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

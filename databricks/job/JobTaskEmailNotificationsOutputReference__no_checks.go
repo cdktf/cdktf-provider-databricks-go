@@ -51,10 +51,6 @@ func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) validateSetAlertOnLastAttemptParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -64,10 +60,6 @@ func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) validateSetComplexO
 }
 
 func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) validateSetInternalValueParameters(val *JobTaskEmailNotifications) error {
-	return nil
-}
-
-func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) validateSetNoAlertForSkippedRunsParameters(val interface{}) error {
 	return nil
 }
 

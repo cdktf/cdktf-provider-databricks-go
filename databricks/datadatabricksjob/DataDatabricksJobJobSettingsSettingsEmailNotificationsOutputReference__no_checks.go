@@ -51,10 +51,6 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference) validateSetAlertOnLastAttemptParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

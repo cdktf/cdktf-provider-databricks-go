@@ -59,6 +59,10 @@ func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) validateSetComp
 	return nil
 }
 
+func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) validateSetExternalIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) validateSetInternalValueParameters(val *MetastoreDataAccessAwsIamRole) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) validateSetTerr
 }
 
 func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) validateSetUnityCatalogIamArnParameters(val *string) error {
 	return nil
 }
 

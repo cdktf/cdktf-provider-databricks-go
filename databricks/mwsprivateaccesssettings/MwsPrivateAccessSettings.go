@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings}.
 type MwsPrivateAccessSettings interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -112,12 +112,22 @@ type MwsPrivateAccessSettings interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -487,7 +497,7 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings} Resource.
 func NewMwsPrivateAccessSettings(scope constructs.Construct, id *string, config *MwsPrivateAccessSettingsConfig) MwsPrivateAccessSettings {
 	_init_.Initialize()
 
@@ -505,7 +515,7 @@ func NewMwsPrivateAccessSettings(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings} Resource.
 func NewMwsPrivateAccessSettings_Override(m MwsPrivateAccessSettings, scope constructs.Construct, id *string, config *MwsPrivateAccessSettingsConfig) {
 	_init_.Initialize()
 
@@ -952,6 +962,19 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
+func (m *jsiiProxy_MwsPrivateAccessSettings) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (m *jsiiProxy_MwsPrivateAccessSettings) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -979,6 +1002,17 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) InterpolationForAttribute(terraform
 	return returns
 }
 
+func (m *jsiiProxy_MwsPrivateAccessSettings) MoveFromId(id *string) {
+	if err := m.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (m *jsiiProxy_MwsPrivateAccessSettings) MoveTo(moveTarget *string, index interface{}) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -987,6 +1021,17 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) MoveTo(moveTarget *string, index in
 		m,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (m *jsiiProxy_MwsPrivateAccessSettings) MoveToId(id *string) {
+	if err := m.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

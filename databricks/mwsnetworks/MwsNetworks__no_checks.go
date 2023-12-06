@@ -59,7 +59,15 @@ func (m *jsiiProxy_MwsNetworks) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (m *jsiiProxy_MwsNetworks) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsNetworks) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwsNetworks) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

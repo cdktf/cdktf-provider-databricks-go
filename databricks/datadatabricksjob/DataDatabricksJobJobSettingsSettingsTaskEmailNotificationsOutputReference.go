@@ -13,9 +13,6 @@ import (
 
 type DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference interface {
 	cdktf.ComplexObject
-	AlertOnLastAttempt() interface{}
-	SetAlertOnLastAttempt(val interface{})
-	AlertOnLastAttemptInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,9 +32,6 @@ type DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference i
 	Fqn() *string
 	InternalValue() *DataDatabricksJobJobSettingsSettingsTaskEmailNotifications
 	SetInternalValue(val *DataDatabricksJobJobSettingsSettingsTaskEmailNotifications)
-	NoAlertForSkippedRuns() interface{}
-	SetNoAlertForSkippedRuns(val interface{})
-	NoAlertForSkippedRunsInput() interface{}
 	OnDurationWarningThresholdExceeded() *[]*string
 	SetOnDurationWarningThresholdExceeded(val *[]*string)
 	OnDurationWarningThresholdExceededInput() *[]*string
@@ -82,8 +76,6 @@ type DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetAlertOnLastAttempt()
-	ResetNoAlertForSkippedRuns()
 	ResetOnDurationWarningThresholdExceeded()
 	ResetOnFailure()
 	ResetOnStart()
@@ -101,26 +93,6 @@ type DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference i
 // The jsii proxy struct for DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference
 type jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference) AlertOnLastAttempt() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"alertOnLastAttempt",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference) AlertOnLastAttemptInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"alertOnLastAttemptInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference) ComplexObjectIndex() interface{} {
@@ -168,26 +140,6 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOut
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference) NoAlertForSkippedRuns() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"noAlertForSkippedRuns",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference) NoAlertForSkippedRunsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"noAlertForSkippedRunsInput",
 		&returns,
 	)
 	return returns
@@ -321,17 +273,6 @@ func NewDataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference)SetAlertOnLastAttempt(val interface{}) {
-	if err := j.validateSetAlertOnLastAttemptParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"alertOnLastAttempt",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -361,17 +302,6 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOut
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference)SetNoAlertForSkippedRuns(val interface{}) {
-	if err := j.validateSetNoAlertForSkippedRunsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"noAlertForSkippedRuns",
 		val,
 	)
 }
@@ -626,22 +556,6 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOut
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference) ResetAlertOnLastAttempt() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAlertOnLastAttempt",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference) ResetNoAlertForSkippedRuns() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetNoAlertForSkippedRuns",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference) ResetOnDurationWarningThresholdExceeded() {

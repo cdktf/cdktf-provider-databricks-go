@@ -159,6 +159,14 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validateSetEditModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validateSetExistingClusterIdParameters(val *string) error {
 	return nil
 }

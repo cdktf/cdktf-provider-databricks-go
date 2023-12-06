@@ -59,7 +59,15 @@ func (a *jsiiProxy_AzureAdlsGen2Mount) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (a *jsiiProxy_AzureAdlsGen2Mount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AzureAdlsGen2Mount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AzureAdlsGen2Mount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

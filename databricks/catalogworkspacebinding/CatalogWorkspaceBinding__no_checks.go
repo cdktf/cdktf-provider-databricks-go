@@ -59,7 +59,15 @@ func (c *jsiiProxy_CatalogWorkspaceBinding) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_CatalogWorkspaceBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CatalogWorkspaceBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CatalogWorkspaceBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

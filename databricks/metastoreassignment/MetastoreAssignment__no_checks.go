@@ -59,7 +59,15 @@ func (m *jsiiProxy_MetastoreAssignment) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_MetastoreAssignment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MetastoreAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MetastoreAssignment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

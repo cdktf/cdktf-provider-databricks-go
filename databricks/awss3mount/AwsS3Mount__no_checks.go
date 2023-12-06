@@ -59,7 +59,15 @@ func (a *jsiiProxy_AwsS3Mount) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (a *jsiiProxy_AwsS3Mount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsS3Mount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AwsS3Mount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

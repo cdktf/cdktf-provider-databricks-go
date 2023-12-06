@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/metastore_assignment databricks_metastore_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/metastore_assignment databricks_metastore_assignment}.
 type MetastoreAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -97,12 +97,22 @@ type MetastoreAssignment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -367,7 +377,7 @@ func (j *jsiiProxy_MetastoreAssignment) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
 func NewMetastoreAssignment(scope constructs.Construct, id *string, config *MetastoreAssignmentConfig) MetastoreAssignment {
 	_init_.Initialize()
 
@@ -385,7 +395,7 @@ func NewMetastoreAssignment(scope constructs.Construct, id *string, config *Meta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/metastore_assignment databricks_metastore_assignment} Resource.
 func NewMetastoreAssignment_Override(m MetastoreAssignment, scope constructs.Construct, id *string, config *MetastoreAssignmentConfig) {
 	_init_.Initialize()
 
@@ -777,6 +787,19 @@ func (m *jsiiProxy_MetastoreAssignment) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (m *jsiiProxy_MetastoreAssignment) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (m *jsiiProxy_MetastoreAssignment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -804,6 +827,17 @@ func (m *jsiiProxy_MetastoreAssignment) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (m *jsiiProxy_MetastoreAssignment) MoveFromId(id *string) {
+	if err := m.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (m *jsiiProxy_MetastoreAssignment) MoveTo(moveTarget *string, index interface{}) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -812,6 +846,17 @@ func (m *jsiiProxy_MetastoreAssignment) MoveTo(moveTarget *string, index interfa
 		m,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (m *jsiiProxy_MetastoreAssignment) MoveToId(id *string) {
+	if err := m.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

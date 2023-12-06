@@ -59,7 +59,15 @@ func (s *jsiiProxy_SecretAcl) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (s *jsiiProxy_SecretAcl) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretAcl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecretAcl) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

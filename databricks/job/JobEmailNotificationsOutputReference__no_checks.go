@@ -51,10 +51,6 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_JobEmailNotificationsOutputReference) validateSetAlertOnLastAttemptParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_JobEmailNotificationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

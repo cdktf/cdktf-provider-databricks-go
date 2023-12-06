@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/job databricks_job}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/job databricks_job}.
 type Job interface {
 	cdktf.TerraformResource
 	AlwaysRunning() interface{}
@@ -45,6 +45,12 @@ type Job interface {
 	SetDependsOn(val *[]*string)
 	Deployment() JobDeploymentOutputReference
 	DeploymentInput() *JobDeployment
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	EditMode() *string
+	SetEditMode(val *string)
+	EditModeInput() *string
 	EmailNotifications() JobEmailNotificationsOutputReference
 	EmailNotificationsInput() *JobEmailNotifications
 	ExistingClusterId() *string
@@ -174,12 +180,22 @@ type Job interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -215,6 +231,8 @@ type Job interface {
 	ResetControlRunState()
 	ResetDbtTask()
 	ResetDeployment()
+	ResetDescription()
+	ResetEditMode()
 	ResetEmailNotifications()
 	ResetExistingClusterId()
 	ResetFormat()
@@ -430,6 +448,46 @@ func (j *jsiiProxy_Job) DeploymentInput() *JobDeployment {
 	_jsii_.Get(
 		j,
 		"deploymentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) EditMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"editMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) EditModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"editModeInput",
 		&returns,
 	)
 	return returns
@@ -1196,7 +1254,7 @@ func (j *jsiiProxy_Job) WebhookNotificationsInput() *JobWebhookNotifications {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/job databricks_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	_init_.Initialize()
 
@@ -1214,7 +1272,7 @@ func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/job databricks_job} Resource.
 func NewJob_Override(j Job, scope constructs.Construct, id *string, config *JobConfig) {
 	_init_.Initialize()
 
@@ -1273,6 +1331,28 @@ func (j *jsiiProxy_Job)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Job)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Job)SetEditMode(val *string) {
+	if err := j.validateSetEditModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"editMode",
 		val,
 	)
 }
@@ -1694,6 +1774,19 @@ func (j *jsiiProxy_Job) GetStringMapAttribute(terraformAttribute *string) *map[s
 	return returns
 }
 
+func (j *jsiiProxy_Job) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		j,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (j *jsiiProxy_Job) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := j.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1721,6 +1814,17 @@ func (j *jsiiProxy_Job) InterpolationForAttribute(terraformAttribute *string) cd
 	return returns
 }
 
+func (j *jsiiProxy_Job) MoveFromId(id *string) {
+	if err := j.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (j *jsiiProxy_Job) MoveTo(moveTarget *string, index interface{}) {
 	if err := j.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1729,6 +1833,17 @@ func (j *jsiiProxy_Job) MoveTo(moveTarget *string, index interface{}) {
 		j,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (j *jsiiProxy_Job) MoveToId(id *string) {
+	if err := j.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -2073,6 +2188,22 @@ func (j *jsiiProxy_Job) ResetDeployment() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetDeployment",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetDescription() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetEditMode() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetEditMode",
 		nil, // no parameters
 	)
 }

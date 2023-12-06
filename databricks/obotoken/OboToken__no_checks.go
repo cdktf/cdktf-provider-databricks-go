@@ -59,7 +59,15 @@ func (o *jsiiProxy_OboToken) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (o *jsiiProxy_OboToken) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OboToken) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OboToken) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

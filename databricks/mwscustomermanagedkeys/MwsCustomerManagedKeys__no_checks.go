@@ -59,7 +59,15 @@ func (m *jsiiProxy_MwsCustomerManagedKeys) validateInterpolationForAttributePara
 	return nil
 }
 
+func (m *jsiiProxy_MwsCustomerManagedKeys) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsCustomerManagedKeys) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwsCustomerManagedKeys) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

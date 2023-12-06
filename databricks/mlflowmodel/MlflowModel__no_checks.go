@@ -59,7 +59,15 @@ func (m *jsiiProxy_MlflowModel) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (m *jsiiProxy_MlflowModel) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MlflowModel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MlflowModel) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

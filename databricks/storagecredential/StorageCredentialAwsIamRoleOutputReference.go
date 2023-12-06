@@ -28,6 +28,9 @@ type StorageCredentialAwsIamRoleOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExternalId() *string
+	SetExternalId(val *string)
+	ExternalIdInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *StorageCredentialAwsIamRole
@@ -43,6 +46,9 @@ type StorageCredentialAwsIamRoleOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UnityCatalogIamArn() *string
+	SetUnityCatalogIamArn(val *string)
+	UnityCatalogIamArnInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,6 +73,8 @@ type StorageCredentialAwsIamRoleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetExternalId()
+	ResetUnityCatalogIamArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -107,6 +115,26 @@ func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) CreationStack() *
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) ExternalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) ExternalIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalIdInput",
 		&returns,
 	)
 	return returns
@@ -172,6 +200,26 @@ func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) TerraformResource
 	return returns
 }
 
+func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) UnityCatalogIamArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"unityCatalogIamArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) UnityCatalogIamArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"unityCatalogIamArnInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewStorageCredentialAwsIamRoleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageCredentialAwsIamRoleOutputReference {
 	_init_.Initialize()
@@ -222,6 +270,17 @@ func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference)SetComplexObjectIs
 	)
 }
 
+func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference)SetExternalId(val *string) {
+	if err := j.validateSetExternalIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference)SetInternalValue(val *StorageCredentialAwsIamRole) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -262,6 +321,17 @@ func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference)SetTerraformResour
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageCredentialAwsIamRoleOutputReference)SetUnityCatalogIamArn(val *string) {
+	if err := j.validateSetUnityCatalogIamArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"unityCatalogIamArn",
 		val,
 	)
 }
@@ -450,6 +520,22 @@ func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) ResetExternalId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExternalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) ResetUnityCatalogIamArn() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUnityCatalogIamArn",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_StorageCredentialAwsIamRoleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

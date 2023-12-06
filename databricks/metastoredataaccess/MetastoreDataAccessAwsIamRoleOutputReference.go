@@ -28,6 +28,9 @@ type MetastoreDataAccessAwsIamRoleOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExternalId() *string
+	SetExternalId(val *string)
+	ExternalIdInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *MetastoreDataAccessAwsIamRole
@@ -43,6 +46,9 @@ type MetastoreDataAccessAwsIamRoleOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UnityCatalogIamArn() *string
+	SetUnityCatalogIamArn(val *string)
+	UnityCatalogIamArnInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,6 +73,8 @@ type MetastoreDataAccessAwsIamRoleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetExternalId()
+	ResetUnityCatalogIamArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -107,6 +115,26 @@ func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) CreationStack()
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) ExternalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) ExternalIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalIdInput",
 		&returns,
 	)
 	return returns
@@ -172,6 +200,26 @@ func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) TerraformResour
 	return returns
 }
 
+func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) UnityCatalogIamArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"unityCatalogIamArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) UnityCatalogIamArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"unityCatalogIamArnInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewMetastoreDataAccessAwsIamRoleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MetastoreDataAccessAwsIamRoleOutputReference {
 	_init_.Initialize()
@@ -222,6 +270,17 @@ func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference)SetComplexObject
 	)
 }
 
+func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference)SetExternalId(val *string) {
+	if err := j.validateSetExternalIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference)SetInternalValue(val *MetastoreDataAccessAwsIamRole) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -262,6 +321,17 @@ func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference)SetTerraformReso
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference)SetUnityCatalogIamArn(val *string) {
+	if err := j.validateSetUnityCatalogIamArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"unityCatalogIamArn",
 		val,
 	)
 }
@@ -450,6 +520,22 @@ func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) InterpolationFo
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) ResetExternalId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetExternalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) ResetUnityCatalogIamArn() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetUnityCatalogIamArn",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
