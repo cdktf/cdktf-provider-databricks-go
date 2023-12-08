@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/data-sources/job databricks_job}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/job databricks_job}.
 type DataDatabricksJob interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_DataDatabricksJob) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/data-sources/job databricks_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/job databricks_job} Data Source.
 func NewDataDatabricksJob(scope constructs.Construct, id *string, config *DataDatabricksJobConfig) DataDatabricksJob {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewDataDatabricksJob(scope constructs.Construct, id *string, config *DataDa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/data-sources/job databricks_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/job databricks_job} Data Source.
 func NewDataDatabricksJob_Override(d DataDatabricksJob, scope constructs.Construct, id *string, config *DataDatabricksJobConfig) {
 	_init_.Initialize()
 

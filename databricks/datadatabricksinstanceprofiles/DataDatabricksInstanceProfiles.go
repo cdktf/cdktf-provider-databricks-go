@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/data-sources/instance_profiles databricks_instance_profiles}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/instance_profiles databricks_instance_profiles}.
 type DataDatabricksInstanceProfiles interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -285,7 +285,7 @@ func (j *jsiiProxy_DataDatabricksInstanceProfiles) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/data-sources/instance_profiles databricks_instance_profiles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/instance_profiles databricks_instance_profiles} Data Source.
 func NewDataDatabricksInstanceProfiles(scope constructs.Construct, id *string, config *DataDatabricksInstanceProfilesConfig) DataDatabricksInstanceProfiles {
 	_init_.Initialize()
 
@@ -303,7 +303,7 @@ func NewDataDatabricksInstanceProfiles(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/data-sources/instance_profiles databricks_instance_profiles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/instance_profiles databricks_instance_profiles} Data Source.
 func NewDataDatabricksInstanceProfiles_Override(d DataDatabricksInstanceProfiles, scope constructs.Construct, id *string, config *DataDatabricksInstanceProfilesConfig) {
 	_init_.Initialize()
 

@@ -345,7 +345,31 @@ func (j *jsiiProxy_MwsCredentials) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_MwsCredentials) validateSetCreationTimeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MwsCredentials) validateSetCredentialsIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MwsCredentials) validateSetCredentialsNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MwsCredentials) validateSetExternalIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

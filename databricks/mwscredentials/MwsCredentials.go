@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/mws_credentials databricks_mws_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/mws_credentials databricks_mws_credentials}.
 type MwsCredentials interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -31,7 +31,11 @@ type MwsCredentials interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTime() *float64
+	SetCreationTime(val *float64)
+	CreationTimeInput() *float64
 	CredentialsId() *string
+	SetCredentialsId(val *string)
+	CredentialsIdInput() *string
 	CredentialsName() *string
 	SetCredentialsName(val *string)
 	CredentialsNameInput() *string
@@ -40,6 +44,8 @@ type MwsCredentials interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	ExternalId() *string
+	SetExternalId(val *string)
+	ExternalIdInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -119,6 +125,10 @@ type MwsCredentials interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
+	ResetCreationTime()
+	ResetCredentialsId()
+	ResetExternalId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -208,11 +218,31 @@ func (j *jsiiProxy_MwsCredentials) CreationTime() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_MwsCredentials) CreationTimeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"creationTimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MwsCredentials) CredentialsId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"credentialsId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsCredentials) CredentialsIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialsIdInput",
 		&returns,
 	)
 	return returns
@@ -253,6 +283,16 @@ func (j *jsiiProxy_MwsCredentials) ExternalId() *string {
 	_jsii_.Get(
 		j,
 		"externalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsCredentials) ExternalIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalIdInput",
 		&returns,
 	)
 	return returns
@@ -409,7 +449,7 @@ func (j *jsiiProxy_MwsCredentials) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/mws_credentials databricks_mws_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/mws_credentials databricks_mws_credentials} Resource.
 func NewMwsCredentials(scope constructs.Construct, id *string, config *MwsCredentialsConfig) MwsCredentials {
 	_init_.Initialize()
 
@@ -427,7 +467,7 @@ func NewMwsCredentials(scope constructs.Construct, id *string, config *MwsCreden
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/mws_credentials databricks_mws_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/mws_credentials databricks_mws_credentials} Resource.
 func NewMwsCredentials_Override(m MwsCredentials, scope constructs.Construct, id *string, config *MwsCredentialsConfig) {
 	_init_.Initialize()
 
@@ -471,6 +511,28 @@ func (j *jsiiProxy_MwsCredentials)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_MwsCredentials)SetCreationTime(val *float64) {
+	if err := j.validateSetCreationTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"creationTime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MwsCredentials)SetCredentialsId(val *string) {
+	if err := j.validateSetCredentialsIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialsId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MwsCredentials)SetCredentialsName(val *string) {
 	if err := j.validateSetCredentialsNameParameters(val); err != nil {
 		panic(err)
@@ -486,6 +548,17 @@ func (j *jsiiProxy_MwsCredentials)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MwsCredentials)SetExternalId(val *string) {
+	if err := j.validateSetExternalIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalId",
 		val,
 	)
 }
@@ -900,6 +973,38 @@ func (m *jsiiProxy_MwsCredentials) OverrideLogicalId(newLogicalId *string) {
 		m,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (m *jsiiProxy_MwsCredentials) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsCredentials) ResetCreationTime() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCreationTime",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsCredentials) ResetCredentialsId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCredentialsId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsCredentials) ResetExternalId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetExternalId",
+		nil, // no parameters
 	)
 }
 

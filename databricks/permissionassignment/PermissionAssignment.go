@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/permission_assignment databricks_permission_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/permission_assignment databricks_permission_assignment}.
 type PermissionAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_PermissionAssignment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/permission_assignment databricks_permission_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/permission_assignment databricks_permission_assignment} Resource.
 func NewPermissionAssignment(scope constructs.Construct, id *string, config *PermissionAssignmentConfig) PermissionAssignment {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewPermissionAssignment(scope constructs.Construct, id *string, config *Per
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/permission_assignment databricks_permission_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/permission_assignment databricks_permission_assignment} Resource.
 func NewPermissionAssignment_Override(p PermissionAssignment, scope constructs.Construct, id *string, config *PermissionAssignmentConfig) {
 	_init_.Initialize()
 

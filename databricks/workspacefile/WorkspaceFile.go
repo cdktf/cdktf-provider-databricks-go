@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/workspace_file databricks_workspace_file}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/workspace_file databricks_workspace_file}.
 type WorkspaceFile interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -80,6 +80,7 @@ type WorkspaceFile interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Url() *string
+	WorkspacePath() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -436,8 +437,18 @@ func (j *jsiiProxy_WorkspaceFile) Url() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkspaceFile) WorkspacePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspacePath",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/workspace_file databricks_workspace_file} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/workspace_file databricks_workspace_file} Resource.
 func NewWorkspaceFile(scope constructs.Construct, id *string, config *WorkspaceFileConfig) WorkspaceFile {
 	_init_.Initialize()
 
@@ -455,7 +466,7 @@ func NewWorkspaceFile(scope constructs.Construct, id *string, config *WorkspaceF
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/workspace_file databricks_workspace_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/workspace_file databricks_workspace_file} Resource.
 func NewWorkspaceFile_Override(w WorkspaceFile, scope constructs.Construct, id *string, config *WorkspaceFileConfig) {
 	_init_.Initialize()
 

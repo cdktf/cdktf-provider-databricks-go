@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/data-sources/mws_credentials databricks_mws_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/mws_credentials databricks_mws_credentials}.
 type DataDatabricksMwsCredentials interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -285,7 +285,7 @@ func (j *jsiiProxy_DataDatabricksMwsCredentials) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/data-sources/mws_credentials databricks_mws_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/mws_credentials databricks_mws_credentials} Data Source.
 func NewDataDatabricksMwsCredentials(scope constructs.Construct, id *string, config *DataDatabricksMwsCredentialsConfig) DataDatabricksMwsCredentials {
 	_init_.Initialize()
 
@@ -303,7 +303,7 @@ func NewDataDatabricksMwsCredentials(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/data-sources/mws_credentials databricks_mws_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/mws_credentials databricks_mws_credentials} Data Source.
 func NewDataDatabricksMwsCredentials_Override(d DataDatabricksMwsCredentials, scope constructs.Construct, id *string, config *DataDatabricksMwsCredentialsConfig) {
 	_init_.Initialize()
 

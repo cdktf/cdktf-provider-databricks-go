@@ -103,7 +103,19 @@ func (j *jsiiProxy_MwsCredentials) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_MwsCredentials) validateSetCreationTimeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MwsCredentials) validateSetCredentialsIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsCredentials) validateSetCredentialsNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MwsCredentials) validateSetExternalIdParameters(val *string) error {
 	return nil
 }
 

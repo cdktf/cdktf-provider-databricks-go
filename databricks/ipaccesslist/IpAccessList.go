@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/ip_access_list databricks_ip_access_list}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/ip_access_list databricks_ip_access_list}.
 type IpAccessList interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -400,7 +400,7 @@ func (j *jsiiProxy_IpAccessList) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/ip_access_list databricks_ip_access_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/ip_access_list databricks_ip_access_list} Resource.
 func NewIpAccessList(scope constructs.Construct, id *string, config *IpAccessListConfig) IpAccessList {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewIpAccessList(scope constructs.Construct, id *string, config *IpAccessLis
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/ip_access_list databricks_ip_access_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/ip_access_list databricks_ip_access_list} Resource.
 func NewIpAccessList_Override(i IpAccessList, scope constructs.Construct, id *string, config *IpAccessListConfig) {
 	_init_.Initialize()
 
