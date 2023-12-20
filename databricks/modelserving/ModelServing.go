@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/model_serving databricks_model_serving}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/model_serving databricks_model_serving}.
 type ModelServing interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,8 @@ type ModelServing interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	RateLimits() ModelServingRateLimitsList
+	RateLimitsInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	ServingEndpointId() *string
@@ -118,12 +120,14 @@ type ModelServing interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfig(value *ModelServingConfigA)
+	PutRateLimits(value interface{})
 	PutTags(value interface{})
 	PutTimeouts(value *ModelServingTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRateLimits()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -321,6 +325,26 @@ func (j *jsiiProxy_ModelServing) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ModelServing) RateLimits() ModelServingRateLimitsList {
+	var returns ModelServingRateLimitsList
+	_jsii_.Get(
+		j,
+		"rateLimits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServing) RateLimitsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rateLimitsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ModelServing) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -412,7 +436,7 @@ func (j *jsiiProxy_ModelServing) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/model_serving databricks_model_serving} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/model_serving databricks_model_serving} Resource.
 func NewModelServing(scope constructs.Construct, id *string, config *ModelServingConfig) ModelServing {
 	_init_.Initialize()
 
@@ -430,7 +454,7 @@ func NewModelServing(scope constructs.Construct, id *string, config *ModelServin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/model_serving databricks_model_serving} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/model_serving databricks_model_serving} Resource.
 func NewModelServing_Override(m ModelServing, scope constructs.Construct, id *string, config *ModelServingConfig) {
 	_init_.Initialize()
 
@@ -895,6 +919,17 @@ func (m *jsiiProxy_ModelServing) PutConfig(value *ModelServingConfigA) {
 	)
 }
 
+func (m *jsiiProxy_ModelServing) PutRateLimits(value interface{}) {
+	if err := m.validatePutRateLimitsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putRateLimits",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_ModelServing) PutTags(value interface{}) {
 	if err := m.validatePutTagsParameters(value); err != nil {
 		panic(err)
@@ -929,6 +964,14 @@ func (m *jsiiProxy_ModelServing) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServing) ResetRateLimits() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRateLimits",
 		nil, // no parameters
 	)
 }

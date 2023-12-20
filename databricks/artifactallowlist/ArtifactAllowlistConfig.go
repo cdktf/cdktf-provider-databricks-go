@@ -24,20 +24,20 @@ type ArtifactAllowlistConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// artifact_matcher block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/artifact_allowlist#artifact_matcher ArtifactAllowlist#artifact_matcher}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/artifact_allowlist#artifact_matcher ArtifactAllowlist#artifact_matcher}
 	ArtifactMatcher interface{} `field:"required" json:"artifactMatcher" yaml:"artifactMatcher"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/artifact_allowlist#artifact_type ArtifactAllowlist#artifact_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/artifact_allowlist#artifact_type ArtifactAllowlist#artifact_type}.
 	ArtifactType *string `field:"required" json:"artifactType" yaml:"artifactType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/artifact_allowlist#created_at ArtifactAllowlist#created_at}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/artifact_allowlist#created_at ArtifactAllowlist#created_at}.
 	CreatedAt *float64 `field:"optional" json:"createdAt" yaml:"createdAt"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/artifact_allowlist#created_by ArtifactAllowlist#created_by}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/artifact_allowlist#created_by ArtifactAllowlist#created_by}.
 	CreatedBy *string `field:"optional" json:"createdBy" yaml:"createdBy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/artifact_allowlist#id ArtifactAllowlist#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/artifact_allowlist#id ArtifactAllowlist#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/artifact_allowlist#metastore_id ArtifactAllowlist#metastore_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/artifact_allowlist#metastore_id ArtifactAllowlist#metastore_id}.
 	MetastoreId *string `field:"optional" json:"metastoreId" yaml:"metastoreId"`
 }
 

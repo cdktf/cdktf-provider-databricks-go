@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/catalogs databricks_catalogs}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/catalogs databricks_catalogs}.
 type DataDatabricksCatalogs interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -285,7 +285,7 @@ func (j *jsiiProxy_DataDatabricksCatalogs) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/catalogs databricks_catalogs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/catalogs databricks_catalogs} Data Source.
 func NewDataDatabricksCatalogs(scope constructs.Construct, id *string, config *DataDatabricksCatalogsConfig) DataDatabricksCatalogs {
 	_init_.Initialize()
 
@@ -303,7 +303,7 @@ func NewDataDatabricksCatalogs(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/catalogs databricks_catalogs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/catalogs databricks_catalogs} Data Source.
 func NewDataDatabricksCatalogs_Override(d DataDatabricksCatalogs, scope constructs.Construct, id *string, config *DataDatabricksCatalogsConfig) {
 	_init_.Initialize()
 

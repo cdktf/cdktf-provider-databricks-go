@@ -79,6 +79,10 @@ func (m *jsiiProxy_ModelServing) validatePutConfigParameters(value *ModelServing
 	return nil
 }
 
+func (m *jsiiProxy_ModelServing) validatePutRateLimitsParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_ModelServing) validatePutTagsParameters(value interface{}) error {
 	return nil
 }

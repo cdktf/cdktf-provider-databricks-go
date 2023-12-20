@@ -47,6 +47,10 @@ func (m *jsiiProxy_ModelServingConfigAOutputReference) validateInterpolationForA
 	return nil
 }
 
+func (m *jsiiProxy_ModelServingConfigAOutputReference) validatePutAutoCaptureConfigParameters(value *ModelServingConfigAutoCaptureConfig) error {
+	return nil
+}
+
 func (m *jsiiProxy_ModelServingConfigAOutputReference) validatePutServedModelsParameters(value interface{}) error {
 	return nil
 }

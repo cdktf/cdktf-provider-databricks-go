@@ -5,7 +5,7 @@ package job
 
 
 type JobComputeSpec struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/job#kind Job#kind}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/job#kind Job#kind}.
 	Kind *string `field:"optional" json:"kind" yaml:"kind"`
 }
 

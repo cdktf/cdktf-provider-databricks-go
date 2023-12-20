@@ -13,6 +13,8 @@ import (
 
 type ModelServingConfigAOutputReference interface {
 	cdktf.ComplexObject
+	AutoCaptureConfig() ModelServingConfigAutoCaptureConfigOutputReference
+	AutoCaptureConfigInput() *ModelServingConfigAutoCaptureConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -68,8 +70,11 @@ type ModelServingConfigAOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAutoCaptureConfig(value *ModelServingConfigAutoCaptureConfig)
 	PutServedModels(value interface{})
 	PutTrafficConfig(value *ModelServingConfigTrafficConfig)
+	ResetAutoCaptureConfig()
+	ResetServedModels()
 	ResetTrafficConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -84,6 +89,26 @@ type ModelServingConfigAOutputReference interface {
 // The jsii proxy struct for ModelServingConfigAOutputReference
 type jsiiProxy_ModelServingConfigAOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ModelServingConfigAOutputReference) AutoCaptureConfig() ModelServingConfigAutoCaptureConfigOutputReference {
+	var returns ModelServingConfigAutoCaptureConfigOutputReference
+	_jsii_.Get(
+		j,
+		"autoCaptureConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigAOutputReference) AutoCaptureConfigInput() *ModelServingConfigAutoCaptureConfig {
+	var returns *ModelServingConfigAutoCaptureConfig
+	_jsii_.Get(
+		j,
+		"autoCaptureConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ModelServingConfigAOutputReference) ComplexObjectIndex() interface{} {
@@ -465,6 +490,17 @@ func (m *jsiiProxy_ModelServingConfigAOutputReference) InterpolationForAttribute
 	return returns
 }
 
+func (m *jsiiProxy_ModelServingConfigAOutputReference) PutAutoCaptureConfig(value *ModelServingConfigAutoCaptureConfig) {
+	if err := m.validatePutAutoCaptureConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putAutoCaptureConfig",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_ModelServingConfigAOutputReference) PutServedModels(value interface{}) {
 	if err := m.validatePutServedModelsParameters(value); err != nil {
 		panic(err)
@@ -484,6 +520,22 @@ func (m *jsiiProxy_ModelServingConfigAOutputReference) PutTrafficConfig(value *M
 		m,
 		"putTrafficConfig",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigAOutputReference) ResetAutoCaptureConfig() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAutoCaptureConfig",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigAOutputReference) ResetServedModels() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetServedModels",
+		nil, // no parameters
 	)
 }
 
