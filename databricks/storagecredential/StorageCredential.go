@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/storage_credential databricks_storage_credential}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/storage_credential databricks_storage_credential}.
 type StorageCredential interface {
 	cdktf.TerraformResource
 	AwsIamRole() StorageCredentialAwsIamRoleOutputReference
@@ -45,6 +45,9 @@ type StorageCredential interface {
 	ForceDestroy() interface{}
 	SetForceDestroy(val interface{})
 	ForceDestroyInput() interface{}
+	ForceUpdate() interface{}
+	SetForceUpdate(val interface{})
+	ForceUpdateInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -146,6 +149,7 @@ type StorageCredential interface {
 	ResetComment()
 	ResetDatabricksGcpServiceAccount()
 	ResetForceDestroy()
+	ResetForceUpdate()
 	ResetGcpServiceAccountKey()
 	ResetId()
 	ResetMetastoreId()
@@ -334,6 +338,26 @@ func (j *jsiiProxy_StorageCredential) ForceDestroyInput() interface{} {
 	_jsii_.Get(
 		j,
 		"forceDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageCredential) ForceUpdate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceUpdate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageCredential) ForceUpdateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceUpdateInput",
 		&returns,
 	)
 	return returns
@@ -570,7 +594,7 @@ func (j *jsiiProxy_StorageCredential) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/storage_credential databricks_storage_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/storage_credential databricks_storage_credential} Resource.
 func NewStorageCredential(scope constructs.Construct, id *string, config *StorageCredentialConfig) StorageCredential {
 	_init_.Initialize()
 
@@ -588,7 +612,7 @@ func NewStorageCredential(scope constructs.Construct, id *string, config *Storag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/storage_credential databricks_storage_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/storage_credential databricks_storage_credential} Resource.
 func NewStorageCredential_Override(s StorageCredential, scope constructs.Construct, id *string, config *StorageCredentialConfig) {
 	_init_.Initialize()
 
@@ -647,6 +671,17 @@ func (j *jsiiProxy_StorageCredential)SetForceDestroy(val interface{}) {
 	_jsii_.Set(
 		j,
 		"forceDestroy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageCredential)SetForceUpdate(val interface{}) {
+	if err := j.validateSetForceUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceUpdate",
 		val,
 	)
 }
@@ -1196,6 +1231,14 @@ func (s *jsiiProxy_StorageCredential) ResetForceDestroy() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetForceDestroy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageCredential) ResetForceUpdate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetForceUpdate",
 		nil, // no parameters
 	)
 }

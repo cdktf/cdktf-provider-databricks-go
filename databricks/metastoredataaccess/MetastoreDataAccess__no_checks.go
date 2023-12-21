@@ -127,6 +127,10 @@ func (j *jsiiProxy_MetastoreDataAccess) validateSetForceDestroyParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_MetastoreDataAccess) validateSetForceUpdateParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MetastoreDataAccess) validateSetIdParameters(val *string) error {
 	return nil
 }

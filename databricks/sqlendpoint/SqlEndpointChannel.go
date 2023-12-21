@@ -5,7 +5,7 @@ package sqlendpoint
 
 
 type SqlEndpointChannel struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/sql_endpoint#name SqlEndpoint#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/sql_endpoint#name SqlEndpoint#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

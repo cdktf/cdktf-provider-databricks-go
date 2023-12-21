@@ -127,6 +127,10 @@ func (j *jsiiProxy_StorageCredential) validateSetForceDestroyParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_StorageCredential) validateSetForceUpdateParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageCredential) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/metastore_data_access databricks_metastore_data_access}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/metastore_data_access databricks_metastore_data_access}.
 type MetastoreDataAccess interface {
 	cdktf.TerraformResource
 	AwsIamRole() MetastoreDataAccessAwsIamRoleOutputReference
@@ -45,6 +45,9 @@ type MetastoreDataAccess interface {
 	ForceDestroy() interface{}
 	SetForceDestroy(val interface{})
 	ForceDestroyInput() interface{}
+	ForceUpdate() interface{}
+	SetForceUpdate(val interface{})
+	ForceUpdateInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -149,6 +152,7 @@ type MetastoreDataAccess interface {
 	ResetComment()
 	ResetDatabricksGcpServiceAccount()
 	ResetForceDestroy()
+	ResetForceUpdate()
 	ResetGcpServiceAccountKey()
 	ResetId()
 	ResetIsDefault()
@@ -338,6 +342,26 @@ func (j *jsiiProxy_MetastoreDataAccess) ForceDestroyInput() interface{} {
 	_jsii_.Get(
 		j,
 		"forceDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) ForceUpdate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceUpdate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) ForceUpdateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceUpdateInput",
 		&returns,
 	)
 	return returns
@@ -594,7 +618,7 @@ func (j *jsiiProxy_MetastoreDataAccess) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
 func NewMetastoreDataAccess(scope constructs.Construct, id *string, config *MetastoreDataAccessConfig) MetastoreDataAccess {
 	_init_.Initialize()
 
@@ -612,7 +636,7 @@ func NewMetastoreDataAccess(scope constructs.Construct, id *string, config *Meta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
 func NewMetastoreDataAccess_Override(m MetastoreDataAccess, scope constructs.Construct, id *string, config *MetastoreDataAccessConfig) {
 	_init_.Initialize()
 
@@ -671,6 +695,17 @@ func (j *jsiiProxy_MetastoreDataAccess)SetForceDestroy(val interface{}) {
 	_jsii_.Set(
 		j,
 		"forceDestroy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MetastoreDataAccess)SetForceUpdate(val interface{}) {
+	if err := j.validateSetForceUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceUpdate",
 		val,
 	)
 }
@@ -1231,6 +1266,14 @@ func (m *jsiiProxy_MetastoreDataAccess) ResetForceDestroy() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetForceDestroy",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MetastoreDataAccess) ResetForceUpdate() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetForceUpdate",
 		nil, // no parameters
 	)
 }
