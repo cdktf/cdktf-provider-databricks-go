@@ -7,6 +7,10 @@ package datadatabricksnotebookpaths
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructList) validateGetParameters(index *float64) error {
 	return nil
 }

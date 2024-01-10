@@ -5,10 +5,10 @@ package azureadlsgen1mount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/azureadlsgen1mount/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/azureadlsgen1mount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -143,6 +143,9 @@ type AzureAdlsGen1Mount interface {
 	ResetOverrideLogicalId()
 	ResetSparkConfPrefix()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1134,6 +1137,32 @@ func (a *jsiiProxy_AzureAdlsGen1Mount) SynthesizeAttributes() *map[string]interf
 	_jsii_.Invoke(
 		a,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AzureAdlsGen1Mount) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		a,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AzureAdlsGen1Mount) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

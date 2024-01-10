@@ -7,6 +7,10 @@ package datadatabricksshare
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataDatabricksShareObjectPartitionValueList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksShareObjectPartitionValueList) validateGetParameters(index *float64) error {
 	return nil
 }

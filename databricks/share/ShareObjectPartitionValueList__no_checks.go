@@ -7,6 +7,10 @@ package share
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ShareObjectPartitionValueList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ShareObjectPartitionValueList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package datadatabricksjob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureList) validateGetParameters(index *float64) error {
 	return nil
 }

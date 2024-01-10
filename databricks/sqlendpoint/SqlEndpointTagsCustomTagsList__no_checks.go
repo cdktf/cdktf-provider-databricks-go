@@ -7,6 +7,10 @@ package sqlendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SqlEndpointTagsCustomTagsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlEndpointTagsCustomTagsList) validateGetParameters(index *float64) error {
 	return nil
 }

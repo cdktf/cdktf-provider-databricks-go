@@ -5,9 +5,9 @@ package datadatabricksmlflowmodel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksmlflowmodel/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmlflowmodel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

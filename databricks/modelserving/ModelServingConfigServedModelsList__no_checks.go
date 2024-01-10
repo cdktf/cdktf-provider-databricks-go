@@ -7,6 +7,10 @@ package modelserving
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_ModelServingConfigServedModelsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ModelServingConfigServedModelsList) validateGetParameters(index *float64) error {
 	return nil
 }

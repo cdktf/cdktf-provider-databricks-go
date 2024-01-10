@@ -7,6 +7,10 @@ package job
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (j *jsiiProxy_JobParameterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobParameterList) validateGetParameters(index *float64) error {
 	return nil
 }
