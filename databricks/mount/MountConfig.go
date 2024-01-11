@@ -24,44 +24,44 @@ type MountConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// abfs block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mount#abfs Mount#abfs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mount#abfs Mount#abfs}
 	Abfs *MountAbfs `field:"optional" json:"abfs" yaml:"abfs"`
 	// adl block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mount#adl Mount#adl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mount#adl Mount#adl}
 	Adl *MountAdl `field:"optional" json:"adl" yaml:"adl"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mount#cluster_id Mount#cluster_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mount#cluster_id Mount#cluster_id}.
 	ClusterId *string `field:"optional" json:"clusterId" yaml:"clusterId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mount#encryption_type Mount#encryption_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mount#encryption_type Mount#encryption_type}.
 	EncryptionType *string `field:"optional" json:"encryptionType" yaml:"encryptionType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mount#extra_configs Mount#extra_configs}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mount#extra_configs Mount#extra_configs}.
 	ExtraConfigs *map[string]*string `field:"optional" json:"extraConfigs" yaml:"extraConfigs"`
 	// gs block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mount#gs Mount#gs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mount#gs Mount#gs}
 	Gs *MountGs `field:"optional" json:"gs" yaml:"gs"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mount#id Mount#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mount#id Mount#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mount#name Mount#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mount#name Mount#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mount#resource_id Mount#resource_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mount#resource_id Mount#resource_id}.
 	ResourceId *string `field:"optional" json:"resourceId" yaml:"resourceId"`
 	// s3 block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mount#s3 Mount#s3}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mount#s3 Mount#s3}
 	S3 *MountS3 `field:"optional" json:"s3" yaml:"s3"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mount#timeouts Mount#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mount#timeouts Mount#timeouts}
 	Timeouts *MountTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mount#uri Mount#uri}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mount#uri Mount#uri}.
 	Uri *string `field:"optional" json:"uri" yaml:"uri"`
 	// wasb block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mount#wasb Mount#wasb}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mount#wasb Mount#wasb}
 	Wasb *MountWasb `field:"optional" json:"wasb" yaml:"wasb"`
 }
 

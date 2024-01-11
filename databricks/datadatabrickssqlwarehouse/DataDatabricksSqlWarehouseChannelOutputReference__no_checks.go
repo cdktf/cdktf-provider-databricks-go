@@ -59,6 +59,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) validateSetDbsqlVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) validateSetInternalValueParameters(val *DataDatabricksSqlWarehouseChannel) error {
 	return nil
 }

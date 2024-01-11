@@ -28,6 +28,9 @@ type DataDatabricksSqlWarehouseChannelOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DbsqlVersion() *string
+	SetDbsqlVersion(val *string)
+	DbsqlVersionInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksSqlWarehouseChannel
@@ -67,6 +70,7 @@ type DataDatabricksSqlWarehouseChannelOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDbsqlVersion()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,6 +112,26 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) CreationSta
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) DbsqlVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dbsqlVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) DbsqlVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dbsqlVersionInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +243,17 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference)SetComplexOb
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference)SetDbsqlVersion(val *string) {
+	if err := j.validateSetDbsqlVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dbsqlVersion",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) Interpolati
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) ResetDbsqlVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDbsqlVersion",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) ResetName() {

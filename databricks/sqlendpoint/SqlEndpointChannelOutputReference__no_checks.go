@@ -59,6 +59,10 @@ func (j *jsiiProxy_SqlEndpointChannelOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
+func (j *jsiiProxy_SqlEndpointChannelOutputReference) validateSetDbsqlVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlEndpointChannelOutputReference) validateSetInternalValueParameters(val *SqlEndpointChannel) error {
 	return nil
 }

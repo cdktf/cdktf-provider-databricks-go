@@ -125,6 +125,17 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) validatePutChannelParameters(valu
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksSqlWarehouse) validatePutHealthParameters(value *DataDatabricksSqlWarehouseHealth) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) validatePutOdbcParamsParameters(value *DataDatabricksSqlWarehouseOdbcParams) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -260,6 +271,14 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetCountParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetCreatorNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetDataSourceIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -364,6 +383,14 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetNameParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetNumActiveSessionsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetNumClustersParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -381,6 +408,14 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetSpotInstancePolicyPara
 }
 
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetStateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetWarehouseTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

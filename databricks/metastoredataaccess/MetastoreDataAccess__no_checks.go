@@ -163,6 +163,10 @@ func (j *jsiiProxy_MetastoreDataAccess) validateSetReadOnlyParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_MetastoreDataAccess) validateSetSkipValidationParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewMetastoreDataAccessParameters(scope constructs.Construct, id *string, config *MetastoreDataAccessConfig) error {
 	return nil
 }

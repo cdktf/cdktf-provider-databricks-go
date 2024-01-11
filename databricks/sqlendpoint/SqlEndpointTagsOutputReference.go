@@ -67,6 +67,7 @@ type SqlEndpointTagsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCustomTags(value interface{})
+	ResetCustomTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -449,6 +450,14 @@ func (s *jsiiProxy_SqlEndpointTagsOutputReference) PutCustomTags(value interface
 		s,
 		"putCustomTags",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SqlEndpointTagsOutputReference) ResetCustomTags() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomTags",
+		nil, // no parameters
 	)
 }
 

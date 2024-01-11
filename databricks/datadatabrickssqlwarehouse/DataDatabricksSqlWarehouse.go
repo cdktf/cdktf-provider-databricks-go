@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/sql_warehouse databricks_sql_warehouse}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/data-sources/sql_warehouse databricks_sql_warehouse}.
 type DataDatabricksSqlWarehouse interface {
 	cdktf.TerraformDataSource
 	AutoStopMins() *float64
@@ -31,6 +31,9 @@ type DataDatabricksSqlWarehouse interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatorName() *string
+	SetCreatorName(val *string)
+	CreatorNameInput() *string
 	DataSourceId() *string
 	SetDataSourceId(val *string)
 	DataSourceIdInput() *string
@@ -52,6 +55,8 @@ type DataDatabricksSqlWarehouse interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Health() DataDatabricksSqlWarehouseHealthOutputReference
+	HealthInput() *DataDatabricksSqlWarehouseHealth
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -76,6 +81,9 @@ type DataDatabricksSqlWarehouse interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NumActiveSessions() *float64
+	SetNumActiveSessions(val *float64)
+	NumActiveSessionsInput() *float64
 	NumClusters() *float64
 	SetNumClusters(val *float64)
 	NumClustersInput() *float64
@@ -101,6 +109,9 @@ type DataDatabricksSqlWarehouse interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WarehouseType() *string
+	SetWarehouseType(val *string)
+	WarehouseTypeInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -127,20 +138,24 @@ type DataDatabricksSqlWarehouse interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutChannel(value *DataDatabricksSqlWarehouseChannel)
+	PutHealth(value *DataDatabricksSqlWarehouseHealth)
 	PutOdbcParams(value *DataDatabricksSqlWarehouseOdbcParams)
 	PutTags(value *DataDatabricksSqlWarehouseTags)
 	ResetAutoStopMins()
 	ResetChannel()
 	ResetClusterSize()
+	ResetCreatorName()
 	ResetDataSourceId()
 	ResetEnablePhoton()
 	ResetEnableServerlessCompute()
+	ResetHealth()
 	ResetId()
 	ResetInstanceProfileArn()
 	ResetJdbcUrl()
 	ResetMaxNumClusters()
 	ResetMinNumClusters()
 	ResetName()
+	ResetNumActiveSessions()
 	ResetNumClusters()
 	ResetOdbcParams()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -149,6 +164,7 @@ type DataDatabricksSqlWarehouse interface {
 	ResetSpotInstancePolicy()
 	ResetState()
 	ResetTags()
+	ResetWarehouseType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -258,6 +274,26 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) CreatorName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creatorName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) CreatorNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creatorNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) DataSourceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -353,6 +389,26 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) Health() DataDatabricksSqlWarehouseHealthOutputReference {
+	var returns DataDatabricksSqlWarehouseHealthOutputReference
+	_jsii_.Get(
+		j,
+		"health",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) HealthInput() *DataDatabricksSqlWarehouseHealth {
+	var returns *DataDatabricksSqlWarehouseHealth
+	_jsii_.Get(
+		j,
+		"healthInput",
 		&returns,
 	)
 	return returns
@@ -493,6 +549,26 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) NumActiveSessions() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numActiveSessions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) NumActiveSessionsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numActiveSessionsInput",
 		&returns,
 	)
 	return returns
@@ -648,8 +724,28 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) WarehouseType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"warehouseType",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) WarehouseTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"warehouseTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
 func NewDataDatabricksSqlWarehouse(scope constructs.Construct, id *string, config *DataDatabricksSqlWarehouseConfig) DataDatabricksSqlWarehouse {
 	_init_.Initialize()
 
@@ -667,7 +763,7 @@ func NewDataDatabricksSqlWarehouse(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
 func NewDataDatabricksSqlWarehouse_Override(d DataDatabricksSqlWarehouse, scope constructs.Construct, id *string, config *DataDatabricksSqlWarehouseConfig) {
 	_init_.Initialize()
 
@@ -707,6 +803,17 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetCreatorName(val *string) {
+	if err := j.validateSetCreatorNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"creatorName",
 		val,
 	)
 }
@@ -837,6 +944,17 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetNumActiveSessions(val *float64) {
+	if err := j.validateSetNumActiveSessionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"numActiveSessions",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetNumClusters(val *float64) {
 	if err := j.validateSetNumClustersParameters(val); err != nil {
 		panic(err)
@@ -874,6 +992,17 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetState(val *string) {
 	_jsii_.Set(
 		j,
 		"state",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse)SetWarehouseType(val *string) {
+	if err := j.validateSetWarehouseTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"warehouseType",
 		val,
 	)
 }
@@ -1174,6 +1303,17 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) PutChannel(value *DataDatabricksS
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksSqlWarehouse) PutHealth(value *DataDatabricksSqlWarehouseHealth) {
+	if err := d.validatePutHealthParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putHealth",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) PutOdbcParams(value *DataDatabricksSqlWarehouseOdbcParams) {
 	if err := d.validatePutOdbcParamsParameters(value); err != nil {
 		panic(err)
@@ -1220,6 +1360,14 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetClusterSize() {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetCreatorName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCreatorName",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetDataSourceId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1240,6 +1388,14 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetEnableServerlessCompute() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetEnableServerlessCompute",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetHealth() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHealth",
 		nil, // no parameters
 	)
 }
@@ -1292,6 +1448,14 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetName() {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetNumActiveSessions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNumActiveSessions",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetNumClusters() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1336,6 +1500,14 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetTags() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetWarehouseType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWarehouseType",
 		nil, // no parameters
 	)
 }

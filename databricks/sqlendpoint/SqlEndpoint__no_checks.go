@@ -79,10 +79,6 @@ func (s *jsiiProxy_SqlEndpoint) validatePutChannelParameters(value *SqlEndpointC
 	return nil
 }
 
-func (s *jsiiProxy_SqlEndpoint) validatePutOdbcParamsParameters(value *SqlEndpointOdbcParams) error {
-	return nil
-}
-
 func (s *jsiiProxy_SqlEndpoint) validatePutTagsParameters(value *SqlEndpointTags) error {
 	return nil
 }
@@ -143,10 +139,6 @@ func (j *jsiiProxy_SqlEndpoint) validateSetInstanceProfileArnParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_SqlEndpoint) validateSetJdbcUrlParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_SqlEndpoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -163,19 +155,11 @@ func (j *jsiiProxy_SqlEndpoint) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_SqlEndpoint) validateSetNumClustersParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_SqlEndpoint) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_SqlEndpoint) validateSetSpotInstancePolicyParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_SqlEndpoint) validateSetStateParameters(val *string) error {
 	return nil
 }
 

@@ -59,10 +59,6 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) validateSetHostParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) validateSetHostnameParameters(val *string) error {
 	return nil
 }

@@ -67,6 +67,7 @@ type DataDatabricksSqlWarehouseTagsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCustomTags(value interface{})
+	ResetCustomTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -449,6 +450,14 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseTagsOutputReference) PutCustomTags(
 		d,
 		"putCustomTags",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksSqlWarehouseTagsOutputReference) ResetCustomTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCustomTags",
+		nil, // no parameters
 	)
 }
 

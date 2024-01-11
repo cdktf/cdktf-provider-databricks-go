@@ -24,16 +24,16 @@ type DefaultNamespaceSettingConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// namespace block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/default_namespace_setting#namespace DefaultNamespaceSetting#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/default_namespace_setting#namespace DefaultNamespaceSetting#namespace}
 	Namespace *DefaultNamespaceSettingNamespace `field:"required" json:"namespace" yaml:"namespace"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/default_namespace_setting#etag DefaultNamespaceSetting#etag}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/default_namespace_setting#etag DefaultNamespaceSetting#etag}.
 	Etag *string `field:"optional" json:"etag" yaml:"etag"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/default_namespace_setting#id DefaultNamespaceSetting#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/default_namespace_setting#id DefaultNamespaceSetting#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/default_namespace_setting#setting_name DefaultNamespaceSetting#setting_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/default_namespace_setting#setting_name DefaultNamespaceSetting#setting_name}.
 	SettingName *string `field:"optional" json:"settingName" yaml:"settingName"`
 }
 

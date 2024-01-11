@@ -30,23 +30,12 @@ type SqlEndpointOdbcParamsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	Host() *string
-	SetHost(val *string)
-	HostInput() *string
 	Hostname() *string
-	SetHostname(val *string)
-	HostnameInput() *string
 	InternalValue() *SqlEndpointOdbcParams
 	SetInternalValue(val *SqlEndpointOdbcParams)
 	Path() *string
-	SetPath(val *string)
-	PathInput() *string
 	Port() *float64
-	SetPort(val *float64)
-	PortInput() *float64
 	Protocol() *string
-	SetProtocol(val *string)
-	ProtocolInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,8 +68,6 @@ type SqlEndpointOdbcParamsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetHost()
-	ResetHostname()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -136,41 +123,11 @@ func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) Host() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"host",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) HostInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"hostInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) Hostname() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"hostname",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) HostnameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"hostnameInput",
 		&returns,
 	)
 	return returns
@@ -196,16 +153,6 @@ func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) Path() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) PathInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pathInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) Port() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -216,31 +163,11 @@ func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) Port() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) PortInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"portInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) Protocol() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"protocol",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) ProtocolInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"protocolInput",
 		&returns,
 	)
 	return returns
@@ -267,29 +194,29 @@ func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) TerraformResource() cdk
 }
 
 
-func NewSqlEndpointOdbcParamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlEndpointOdbcParamsOutputReference {
+func NewSqlEndpointOdbcParamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SqlEndpointOdbcParamsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewSqlEndpointOdbcParamsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewSqlEndpointOdbcParamsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_SqlEndpointOdbcParamsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointOdbcParamsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewSqlEndpointOdbcParamsOutputReference_Override(s SqlEndpointOdbcParamsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSqlEndpointOdbcParamsOutputReference_Override(s SqlEndpointOdbcParamsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.sqlEndpoint.SqlEndpointOdbcParamsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -316,28 +243,6 @@ func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference)SetHost(val *string) {
-	if err := j.validateSetHostParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"host",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference)SetHostname(val *string) {
-	if err := j.validateSetHostnameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"hostname",
-		val,
-	)
-}
-
 func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference)SetInternalValue(val *SqlEndpointOdbcParams) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -345,39 +250,6 @@ func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference)SetInternalValue(val *Sq
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference)SetPath(val *string) {
-	if err := j.validateSetPathParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"path",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference)SetPort(val *float64) {
-	if err := j.validateSetPortParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"port",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference)SetProtocol(val *string) {
-	if err := j.validateSetProtocolParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"protocol",
 		val,
 	)
 }
@@ -588,22 +460,6 @@ func (s *jsiiProxy_SqlEndpointOdbcParamsOutputReference) InterpolationForAttribu
 	)
 
 	return returns
-}
-
-func (s *jsiiProxy_SqlEndpointOdbcParamsOutputReference) ResetHost() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetHost",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SqlEndpointOdbcParamsOutputReference) ResetHostname() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetHostname",
-		nil, // no parameters
-	)
 }
 
 func (s *jsiiProxy_SqlEndpointOdbcParamsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

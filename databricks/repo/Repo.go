@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/repo databricks_repo}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/repo databricks_repo}.
 type Repo interface {
 	cdktf.TerraformResource
 	Branch() *string
@@ -84,6 +84,7 @@ type Repo interface {
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
+	WorkspacePath() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -476,8 +477,18 @@ func (j *jsiiProxy_Repo) UrlInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Repo) WorkspacePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspacePath",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/repo databricks_repo} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/repo databricks_repo} Resource.
 func NewRepo(scope constructs.Construct, id *string, config *RepoConfig) Repo {
 	_init_.Initialize()
 
@@ -495,7 +506,7 @@ func NewRepo(scope constructs.Construct, id *string, config *RepoConfig) Repo {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/repo databricks_repo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/repo databricks_repo} Resource.
 func NewRepo_Override(r Repo, scope constructs.Construct, id *string, config *RepoConfig) {
 	_init_.Initialize()
 

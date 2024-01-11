@@ -159,6 +159,10 @@ func (j *jsiiProxy_StorageCredential) validateSetReadOnlyParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_StorageCredential) validateSetSkipValidationParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewStorageCredentialParameters(scope constructs.Construct, id *string, config *StorageCredentialConfig) error {
 	return nil
 }

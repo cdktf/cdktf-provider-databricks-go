@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/metastore_data_access databricks_metastore_data_access}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/metastore_data_access databricks_metastore_data_access}.
 type MetastoreDataAccess interface {
 	cdktf.TerraformResource
 	AwsIamRole() MetastoreDataAccessAwsIamRoleOutputReference
@@ -92,6 +92,9 @@ type MetastoreDataAccess interface {
 	ReadOnly() interface{}
 	SetReadOnly(val interface{})
 	ReadOnlyInput() interface{}
+	SkipValidation() interface{}
+	SetSkipValidation(val interface{})
+	SkipValidationInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -162,6 +165,7 @@ type MetastoreDataAccess interface {
 	ResetOverrideLogicalId()
 	ResetOwner()
 	ResetReadOnly()
+	ResetSkipValidation()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -590,6 +594,26 @@ func (j *jsiiProxy_MetastoreDataAccess) ReadOnlyInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MetastoreDataAccess) SkipValidation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipValidation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) SkipValidationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipValidationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MetastoreDataAccess) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -621,7 +645,7 @@ func (j *jsiiProxy_MetastoreDataAccess) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
 func NewMetastoreDataAccess(scope constructs.Construct, id *string, config *MetastoreDataAccessConfig) MetastoreDataAccess {
 	_init_.Initialize()
 
@@ -639,7 +663,7 @@ func NewMetastoreDataAccess(scope constructs.Construct, id *string, config *Meta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
 func NewMetastoreDataAccess_Override(m MetastoreDataAccess, scope constructs.Construct, id *string, config *MetastoreDataAccessConfig) {
 	_init_.Initialize()
 
@@ -813,6 +837,17 @@ func (j *jsiiProxy_MetastoreDataAccess)SetReadOnly(val interface{}) {
 	_jsii_.Set(
 		j,
 		"readOnly",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MetastoreDataAccess)SetSkipValidation(val interface{}) {
+	if err := j.validateSetSkipValidationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipValidation",
 		val,
 	)
 }
@@ -1333,6 +1368,14 @@ func (m *jsiiProxy_MetastoreDataAccess) ResetReadOnly() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetReadOnly",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MetastoreDataAccess) ResetSkipValidation() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSkipValidation",
 		nil, // no parameters
 	)
 }

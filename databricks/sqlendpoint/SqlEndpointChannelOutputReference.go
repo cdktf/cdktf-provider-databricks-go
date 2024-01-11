@@ -28,6 +28,9 @@ type SqlEndpointChannelOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DbsqlVersion() *string
+	SetDbsqlVersion(val *string)
+	DbsqlVersionInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SqlEndpointChannel
@@ -67,6 +70,7 @@ type SqlEndpointChannelOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDbsqlVersion()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,6 +112,26 @@ func (j *jsiiProxy_SqlEndpointChannelOutputReference) CreationStack() *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlEndpointChannelOutputReference) DbsqlVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dbsqlVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlEndpointChannelOutputReference) DbsqlVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dbsqlVersionInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +243,17 @@ func (j *jsiiProxy_SqlEndpointChannelOutputReference)SetComplexObjectIsFromSet(v
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlEndpointChannelOutputReference)SetDbsqlVersion(val *string) {
+	if err := j.validateSetDbsqlVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dbsqlVersion",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (s *jsiiProxy_SqlEndpointChannelOutputReference) InterpolationForAttribute(
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SqlEndpointChannelOutputReference) ResetDbsqlVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDbsqlVersion",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SqlEndpointChannelOutputReference) ResetName() {

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/sql_endpoint databricks_sql_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/sql_endpoint databricks_sql_endpoint}.
 type SqlEndpoint interface {
 	cdktf.TerraformResource
 	AutoStopMins() *float64
@@ -35,6 +35,7 @@ type SqlEndpoint interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatorName() *string
 	DataSourceId() *string
 	SetDataSourceId(val *string)
 	DataSourceIdInput() *string
@@ -56,6 +57,7 @@ type SqlEndpoint interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Health() SqlEndpointHealthList
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -63,8 +65,6 @@ type SqlEndpoint interface {
 	SetInstanceProfileArn(val *string)
 	InstanceProfileArnInput() *string
 	JdbcUrl() *string
-	SetJdbcUrl(val *string)
-	JdbcUrlInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -80,11 +80,9 @@ type SqlEndpoint interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NumActiveSessions() *float64
 	NumClusters() *float64
-	SetNumClusters(val *float64)
-	NumClustersInput() *float64
-	OdbcParams() SqlEndpointOdbcParamsOutputReference
-	OdbcParamsInput() *SqlEndpointOdbcParams
+	OdbcParams() SqlEndpointOdbcParamsList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -99,8 +97,6 @@ type SqlEndpoint interface {
 	SetSpotInstancePolicy(val *string)
 	SpotInstancePolicyInput() *string
 	State() *string
-	SetState(val *string)
-	StateInput() *string
 	Tags() SqlEndpointTagsOutputReference
 	TagsInput() *SqlEndpointTags
 	// Experimental.
@@ -158,7 +154,6 @@ type SqlEndpoint interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutChannel(value *SqlEndpointChannel)
-	PutOdbcParams(value *SqlEndpointOdbcParams)
 	PutTags(value *SqlEndpointTags)
 	PutTimeouts(value *SqlEndpointTimeouts)
 	ResetAutoStopMins()
@@ -168,16 +163,12 @@ type SqlEndpoint interface {
 	ResetEnableServerlessCompute()
 	ResetId()
 	ResetInstanceProfileArn()
-	ResetJdbcUrl()
 	ResetMaxNumClusters()
 	ResetMinNumClusters()
-	ResetNumClusters()
-	ResetOdbcParams()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSpotInstancePolicy()
-	ResetState()
 	ResetTags()
 	ResetTimeouts()
 	ResetWarehouseType()
@@ -299,6 +290,16 @@ func (j *jsiiProxy_SqlEndpoint) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SqlEndpoint) CreatorName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creatorName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlEndpoint) DataSourceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -399,6 +400,16 @@ func (j *jsiiProxy_SqlEndpoint) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SqlEndpoint) Health() SqlEndpointHealthList {
+	var returns SqlEndpointHealthList
+	_jsii_.Get(
+		j,
+		"health",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlEndpoint) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -444,16 +455,6 @@ func (j *jsiiProxy_SqlEndpoint) JdbcUrl() *string {
 	_jsii_.Get(
 		j,
 		"jdbcUrl",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SqlEndpoint) JdbcUrlInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"jdbcUrlInput",
 		&returns,
 	)
 	return returns
@@ -539,6 +540,16 @@ func (j *jsiiProxy_SqlEndpoint) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_SqlEndpoint) NumActiveSessions() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numActiveSessions",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlEndpoint) NumClusters() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -549,31 +560,11 @@ func (j *jsiiProxy_SqlEndpoint) NumClusters() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_SqlEndpoint) NumClustersInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"numClustersInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SqlEndpoint) OdbcParams() SqlEndpointOdbcParamsOutputReference {
-	var returns SqlEndpointOdbcParamsOutputReference
+func (j *jsiiProxy_SqlEndpoint) OdbcParams() SqlEndpointOdbcParamsList {
+	var returns SqlEndpointOdbcParamsList
 	_jsii_.Get(
 		j,
 		"odbcParams",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SqlEndpoint) OdbcParamsInput() *SqlEndpointOdbcParams {
-	var returns *SqlEndpointOdbcParams
-	_jsii_.Get(
-		j,
-		"odbcParamsInput",
 		&returns,
 	)
 	return returns
@@ -634,16 +625,6 @@ func (j *jsiiProxy_SqlEndpoint) State() *string {
 	_jsii_.Get(
 		j,
 		"state",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SqlEndpoint) StateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"stateInput",
 		&returns,
 	)
 	return returns
@@ -740,7 +721,7 @@ func (j *jsiiProxy_SqlEndpoint) WarehouseTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
 func NewSqlEndpoint(scope constructs.Construct, id *string, config *SqlEndpointConfig) SqlEndpoint {
 	_init_.Initialize()
 
@@ -758,7 +739,7 @@ func NewSqlEndpoint(scope constructs.Construct, id *string, config *SqlEndpointC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
 func NewSqlEndpoint_Override(s SqlEndpoint, scope constructs.Construct, id *string, config *SqlEndpointConfig) {
 	_init_.Initialize()
 
@@ -884,17 +865,6 @@ func (j *jsiiProxy_SqlEndpoint)SetInstanceProfileArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint)SetJdbcUrl(val *string) {
-	if err := j.validateSetJdbcUrlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"jdbcUrl",
-		val,
-	)
-}
-
 func (j *jsiiProxy_SqlEndpoint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -939,17 +909,6 @@ func (j *jsiiProxy_SqlEndpoint)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlEndpoint)SetNumClusters(val *float64) {
-	if err := j.validateSetNumClustersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"numClusters",
-		val,
-	)
-}
-
 func (j *jsiiProxy_SqlEndpoint)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -976,17 +935,6 @@ func (j *jsiiProxy_SqlEndpoint)SetSpotInstancePolicy(val *string) {
 	_jsii_.Set(
 		j,
 		"spotInstancePolicy",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SqlEndpoint)SetState(val *string) {
-	if err := j.validateSetStateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"state",
 		val,
 	)
 }
@@ -1366,17 +1314,6 @@ func (s *jsiiProxy_SqlEndpoint) PutChannel(value *SqlEndpointChannel) {
 	)
 }
 
-func (s *jsiiProxy_SqlEndpoint) PutOdbcParams(value *SqlEndpointOdbcParams) {
-	if err := s.validatePutOdbcParamsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		s,
-		"putOdbcParams",
-		[]interface{}{value},
-	)
-}
-
 func (s *jsiiProxy_SqlEndpoint) PutTags(value *SqlEndpointTags) {
 	if err := s.validatePutTagsParameters(value); err != nil {
 		panic(err)
@@ -1455,14 +1392,6 @@ func (s *jsiiProxy_SqlEndpoint) ResetInstanceProfileArn() {
 	)
 }
 
-func (s *jsiiProxy_SqlEndpoint) ResetJdbcUrl() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetJdbcUrl",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_SqlEndpoint) ResetMaxNumClusters() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1479,22 +1408,6 @@ func (s *jsiiProxy_SqlEndpoint) ResetMinNumClusters() {
 	)
 }
 
-func (s *jsiiProxy_SqlEndpoint) ResetNumClusters() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetNumClusters",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SqlEndpoint) ResetOdbcParams() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetOdbcParams",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_SqlEndpoint) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1507,14 +1420,6 @@ func (s *jsiiProxy_SqlEndpoint) ResetSpotInstancePolicy() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSpotInstancePolicy",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SqlEndpoint) ResetState() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetState",
 		nil, // no parameters
 	)
 }

@@ -59,27 +59,7 @@ func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) validateSetHostParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) validateSetHostnameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) validateSetInternalValueParameters(val *SqlEndpointOdbcParams) error {
-	return nil
-}
-
-func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) validateSetPathParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) validateSetPortParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) validateSetProtocolParameters(val *string) error {
 	return nil
 }
 
@@ -91,7 +71,7 @@ func (j *jsiiProxy_SqlEndpointOdbcParamsOutputReference) validateSetTerraformRes
 	return nil
 }
 
-func validateNewSqlEndpointOdbcParamsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSqlEndpointOdbcParamsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

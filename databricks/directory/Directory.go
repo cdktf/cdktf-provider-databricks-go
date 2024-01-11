@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/directory databricks_directory}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/directory databricks_directory}.
 type Directory interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -73,6 +73,7 @@ type Directory interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WorkspacePath() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -380,8 +381,18 @@ func (j *jsiiProxy_Directory) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Directory) WorkspacePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspacePath",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/directory databricks_directory} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/directory databricks_directory} Resource.
 func NewDirectory(scope constructs.Construct, id *string, config *DirectoryConfig) Directory {
 	_init_.Initialize()
 
@@ -399,7 +410,7 @@ func NewDirectory(scope constructs.Construct, id *string, config *DirectoryConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/directory databricks_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/directory databricks_directory} Resource.
 func NewDirectory_Override(d Directory, scope constructs.Construct, id *string, config *DirectoryConfig) {
 	_init_.Initialize()
 

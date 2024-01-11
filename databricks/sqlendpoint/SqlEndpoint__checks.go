@@ -218,17 +218,6 @@ func (s *jsiiProxy_SqlEndpoint) validatePutChannelParameters(value *SqlEndpointC
 	return nil
 }
 
-func (s *jsiiProxy_SqlEndpoint) validatePutOdbcParamsParameters(value *SqlEndpointOdbcParams) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (s *jsiiProxy_SqlEndpoint) validatePutTagsParameters(value *SqlEndpointTags) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -461,14 +450,6 @@ func (j *jsiiProxy_SqlEndpoint) validateSetInstanceProfileArnParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_SqlEndpoint) validateSetJdbcUrlParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_SqlEndpoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -494,14 +475,6 @@ func (j *jsiiProxy_SqlEndpoint) validateSetMinNumClustersParameters(val *float64
 }
 
 func (j *jsiiProxy_SqlEndpoint) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SqlEndpoint) validateSetNumClustersParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -556,14 +529,6 @@ func (j *jsiiProxy_SqlEndpoint) validateSetProvisionersParameters(val *[]interfa
 }
 
 func (j *jsiiProxy_SqlEndpoint) validateSetSpotInstancePolicyParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SqlEndpoint) validateSetStateParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

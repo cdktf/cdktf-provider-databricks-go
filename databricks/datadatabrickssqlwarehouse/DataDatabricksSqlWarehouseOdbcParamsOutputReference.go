@@ -30,9 +30,6 @@ type DataDatabricksSqlWarehouseOdbcParamsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	Host() *string
-	SetHost(val *string)
-	HostInput() *string
 	Hostname() *string
 	SetHostname(val *string)
 	HostnameInput() *string
@@ -79,8 +76,10 @@ type DataDatabricksSqlWarehouseOdbcParamsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetHost()
 	ResetHostname()
+	ResetPath()
+	ResetPort()
+	ResetProtocol()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -131,26 +130,6 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) Fqn() *s
 	_jsii_.Get(
 		j,
 		"fqn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) Host() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"host",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) HostInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"hostInput",
 		&returns,
 	)
 	return returns
@@ -312,17 +291,6 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference)SetComple
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference)SetHost(val *string) {
-	if err := j.validateSetHostParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"host",
 		val,
 	)
 }
@@ -590,18 +558,34 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) ResetHost() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetHost",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) ResetHostname() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetHostname",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) ResetPath() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksSqlWarehouseOdbcParamsOutputReference) ResetProtocol() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProtocol",
 		nil, // no parameters
 	)
 }

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) validatePutChannelParameters(valu
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksSqlWarehouse) validatePutHealthParameters(value *DataDatabricksSqlWarehouseHealth) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) validatePutOdbcParamsParameters(value *DataDatabricksSqlWarehouseOdbcParams) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetClusterSizeParameters(
 }
 
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetCreatorNameParameters(val *string) error {
 	return nil
 }
 
@@ -135,6 +143,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetNameParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetNumActiveSessionsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetNumClustersParameters(val *float64) error {
 	return nil
 }
@@ -144,6 +156,10 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetSpotInstancePolicyPara
 }
 
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) validateSetWarehouseTypeParameters(val *string) error {
 	return nil
 }
 
