@@ -5,7 +5,7 @@ package job
 
 
 type JobJobClusterNewClusterClusterLogConfDbfs struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/job#destination Job#destination}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/job#destination Job#destination}.
 	Destination *string `field:"required" json:"destination" yaml:"destination"`
 }
 

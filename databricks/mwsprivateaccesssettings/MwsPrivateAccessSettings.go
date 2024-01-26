@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings}.
 type MwsPrivateAccessSettings interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -79,9 +79,6 @@ type MwsPrivateAccessSettings interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
-	Status() *string
-	SetStatus(val *string)
-	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -140,7 +137,6 @@ type MwsPrivateAccessSettings interface {
 	ResetPrivateAccessLevel()
 	ResetPrivateAccessSettingsId()
 	ResetPublicAccessEnabled()
-	ResetStatus()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -449,26 +445,6 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) RegionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) Status() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"status",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MwsPrivateAccessSettings) StatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"statusInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MwsPrivateAccessSettings) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -500,7 +476,7 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings} Resource.
 func NewMwsPrivateAccessSettings(scope constructs.Construct, id *string, config *MwsPrivateAccessSettingsConfig) MwsPrivateAccessSettings {
 	_init_.Initialize()
 
@@ -518,7 +494,7 @@ func NewMwsPrivateAccessSettings(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/mws_private_access_settings databricks_mws_private_access_settings} Resource.
 func NewMwsPrivateAccessSettings_Override(m MwsPrivateAccessSettings, scope constructs.Construct, id *string, config *MwsPrivateAccessSettingsConfig) {
 	_init_.Initialize()
 
@@ -681,17 +657,6 @@ func (j *jsiiProxy_MwsPrivateAccessSettings)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MwsPrivateAccessSettings)SetStatus(val *string) {
-	if err := j.validateSetStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"status",
 		val,
 	)
 }
@@ -1101,14 +1066,6 @@ func (m *jsiiProxy_MwsPrivateAccessSettings) ResetPublicAccessEnabled() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetPublicAccessEnabled",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MwsPrivateAccessSettings) ResetStatus() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetStatus",
 		nil, // no parameters
 	)
 }

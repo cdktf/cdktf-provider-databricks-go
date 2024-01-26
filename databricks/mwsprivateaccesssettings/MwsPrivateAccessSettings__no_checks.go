@@ -139,10 +139,6 @@ func (j *jsiiProxy_MwsPrivateAccessSettings) validateSetRegionParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_MwsPrivateAccessSettings) validateSetStatusParameters(val *string) error {
-	return nil
-}
-
 func validateNewMwsPrivateAccessSettingsParameters(scope constructs.Construct, id *string, config *MwsPrivateAccessSettingsConfig) error {
 	return nil
 }

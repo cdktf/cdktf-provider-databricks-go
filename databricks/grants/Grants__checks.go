@@ -416,14 +416,6 @@ func (j *jsiiProxy_Grants) validateSetLifecycleParameters(val *cdktf.TerraformRe
 	return nil
 }
 
-func (j *jsiiProxy_Grants) validateSetMaterializedViewParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_Grants) validateSetMetastoreParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -511,14 +503,6 @@ func (j *jsiiProxy_Grants) validateSetStorageCredentialParameters(val *string) e
 }
 
 func (j *jsiiProxy_Grants) validateSetTableParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Grants) validateSetViewParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

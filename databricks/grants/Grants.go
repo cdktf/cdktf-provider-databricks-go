@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/grants databricks_grants}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/grants databricks_grants}.
 type Grants interface {
 	cdktf.TerraformResource
 	Catalog() *string
@@ -60,9 +60,6 @@ type Grants interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MaterializedView() *string
-	SetMaterializedView(val *string)
-	MaterializedViewInput() *string
 	Metastore() *string
 	SetMetastore(val *string)
 	MetastoreInput() *string
@@ -99,9 +96,6 @@ type Grants interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	View() *string
-	SetView(val *string)
-	ViewInput() *string
 	Volume() *string
 	SetVolume(val *string)
 	VolumeInput() *string
@@ -154,7 +148,6 @@ type Grants interface {
 	ResetForeignConnection()
 	ResetFunction()
 	ResetId()
-	ResetMaterializedView()
 	ResetMetastore()
 	ResetModel()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -164,7 +157,6 @@ type Grants interface {
 	ResetShare()
 	ResetStorageCredential()
 	ResetTable()
-	ResetView()
 	ResetVolume()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -394,26 +386,6 @@ func (j *jsiiProxy_Grants) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_Grants) MaterializedView() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"materializedView",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Grants) MaterializedViewInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"materializedViewInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Grants) Metastore() *string {
 	var returns *string
 	_jsii_.Get(
@@ -604,26 +576,6 @@ func (j *jsiiProxy_Grants) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Grants) View() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"view",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Grants) ViewInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"viewInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Grants) Volume() *string {
 	var returns *string
 	_jsii_.Get(
@@ -645,7 +597,7 @@ func (j *jsiiProxy_Grants) VolumeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/grants databricks_grants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/grants databricks_grants} Resource.
 func NewGrants(scope constructs.Construct, id *string, config *GrantsConfig) Grants {
 	_init_.Initialize()
 
@@ -663,7 +615,7 @@ func NewGrants(scope constructs.Construct, id *string, config *GrantsConfig) Gra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/grants databricks_grants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/grants databricks_grants} Resource.
 func NewGrants_Override(g Grants, scope constructs.Construct, id *string, config *GrantsConfig) {
 	_init_.Initialize()
 
@@ -778,17 +730,6 @@ func (j *jsiiProxy_Grants)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Grants)SetMaterializedView(val *string) {
-	if err := j.validateSetMaterializedViewParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"materializedView",
-		val,
-	)
-}
-
 func (j *jsiiProxy_Grants)SetMetastore(val *string) {
 	if err := j.validateSetMetastoreParameters(val); err != nil {
 		panic(err)
@@ -870,17 +811,6 @@ func (j *jsiiProxy_Grants)SetTable(val *string) {
 	_jsii_.Set(
 		j,
 		"table",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Grants)SetView(val *string) {
-	if err := j.validateSetViewParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"view",
 		val,
 	)
 }
@@ -1300,14 +1230,6 @@ func (g *jsiiProxy_Grants) ResetId() {
 	)
 }
 
-func (g *jsiiProxy_Grants) ResetMaterializedView() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetMaterializedView",
-		nil, // no parameters
-	)
-}
-
 func (g *jsiiProxy_Grants) ResetMetastore() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1360,14 +1282,6 @@ func (g *jsiiProxy_Grants) ResetTable() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTable",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_Grants) ResetView() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetView",
 		nil, // no parameters
 	)
 }

@@ -147,6 +147,10 @@ func (j *jsiiProxy_MwsWorkspaces) validateSetCustomerManagedKeyIdParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_MwsWorkspaces) validateSetCustomTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsWorkspaces) validateSetDeploymentNameParameters(val *string) error {
 	return nil
 }

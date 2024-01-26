@@ -127,10 +127,6 @@ func (j *jsiiProxy_Grants) validateSetLifecycleParameters(val *cdktf.TerraformRe
 	return nil
 }
 
-func (j *jsiiProxy_Grants) validateSetMaterializedViewParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Grants) validateSetMetastoreParameters(val *string) error {
 	return nil
 }
@@ -156,10 +152,6 @@ func (j *jsiiProxy_Grants) validateSetStorageCredentialParameters(val *string) e
 }
 
 func (j *jsiiProxy_Grants) validateSetTableParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_Grants) validateSetViewParameters(val *string) error {
 	return nil
 }
 

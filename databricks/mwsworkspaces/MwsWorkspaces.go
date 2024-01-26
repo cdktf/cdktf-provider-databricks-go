@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mws_workspaces databricks_mws_workspaces}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/mws_workspaces databricks_mws_workspaces}.
 type MwsWorkspaces interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -47,6 +47,9 @@ type MwsWorkspaces interface {
 	CustomerManagedKeyId() *string
 	SetCustomerManagedKeyId(val *string)
 	CustomerManagedKeyIdInput() *string
+	CustomTags() *map[string]*string
+	SetCustomTags(val *map[string]*string)
+	CustomTagsInput() *map[string]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -191,6 +194,7 @@ type MwsWorkspaces interface {
 	ResetCreationTime()
 	ResetCredentialsId()
 	ResetCustomerManagedKeyId()
+	ResetCustomTags()
 	ResetDeploymentName()
 	ResetExternalCustomerInfo()
 	ResetGcpManagedNetworkConfig()
@@ -406,6 +410,26 @@ func (j *jsiiProxy_MwsWorkspaces) CustomerManagedKeyIdInput() *string {
 	_jsii_.Get(
 		j,
 		"customerManagedKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsWorkspaces) CustomTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"customTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsWorkspaces) CustomTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"customTagsInput",
 		&returns,
 	)
 	return returns
@@ -932,7 +956,7 @@ func (j *jsiiProxy_MwsWorkspaces) WorkspaceUrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
 func NewMwsWorkspaces(scope constructs.Construct, id *string, config *MwsWorkspacesConfig) MwsWorkspaces {
 	_init_.Initialize()
 
@@ -950,7 +974,7 @@ func NewMwsWorkspaces(scope constructs.Construct, id *string, config *MwsWorkspa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
 func NewMwsWorkspaces_Override(m MwsWorkspaces, scope constructs.Construct, id *string, config *MwsWorkspacesConfig) {
 	_init_.Initialize()
 
@@ -1045,6 +1069,17 @@ func (j *jsiiProxy_MwsWorkspaces)SetCustomerManagedKeyId(val *string) {
 	_jsii_.Set(
 		j,
 		"customerManagedKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MwsWorkspaces)SetCustomTags(val *map[string]*string) {
+	if err := j.validateSetCustomTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customTags",
 		val,
 	)
 }
@@ -1723,6 +1758,14 @@ func (m *jsiiProxy_MwsWorkspaces) ResetCustomerManagedKeyId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetCustomerManagedKeyId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsWorkspaces) ResetCustomTags() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCustomTags",
 		nil, // no parameters
 	)
 }

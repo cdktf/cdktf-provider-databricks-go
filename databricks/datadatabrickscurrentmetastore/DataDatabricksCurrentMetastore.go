@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/data-sources/current_metastore databricks_current_metastore}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/data-sources/current_metastore databricks_current_metastore}.
 type DataDatabricksCurrentMetastore interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -289,7 +289,7 @@ func (j *jsiiProxy_DataDatabricksCurrentMetastore) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/data-sources/current_metastore databricks_current_metastore} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/data-sources/current_metastore databricks_current_metastore} Data Source.
 func NewDataDatabricksCurrentMetastore(scope constructs.Construct, id *string, config *DataDatabricksCurrentMetastoreConfig) DataDatabricksCurrentMetastore {
 	_init_.Initialize()
 
@@ -307,7 +307,7 @@ func NewDataDatabricksCurrentMetastore(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/data-sources/current_metastore databricks_current_metastore} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/data-sources/current_metastore databricks_current_metastore} Data Source.
 func NewDataDatabricksCurrentMetastore_Override(d DataDatabricksCurrentMetastore, scope constructs.Construct, id *string, config *DataDatabricksCurrentMetastoreConfig) {
 	_init_.Initialize()
 
