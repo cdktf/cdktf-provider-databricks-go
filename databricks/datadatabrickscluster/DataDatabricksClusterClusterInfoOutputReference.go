@@ -39,8 +39,6 @@ type DataDatabricksClusterClusterInfoOutputReference interface {
 	SetClusterName(val *string)
 	ClusterNameInput() *string
 	ClusterSource() *string
-	SetClusterSource(val *string)
-	ClusterSourceInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -203,7 +201,6 @@ type DataDatabricksClusterClusterInfoOutputReference interface {
 	ResetClusterLogStatus()
 	ResetClusterMemoryMb()
 	ResetClusterName()
-	ResetClusterSource()
 	ResetCreatorUserName()
 	ResetCustomTags()
 	ResetDataSecurityMode()
@@ -453,16 +450,6 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ClusterSourc
 	_jsii_.Get(
 		j,
 		"clusterSource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ClusterSourceInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"clusterSourceInput",
 		&returns,
 	)
 	return returns
@@ -1261,17 +1248,6 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetClusterNam
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetClusterSource(val *string) {
-	if err := j.validateSetClusterSourceParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"clusterSource",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -1996,14 +1972,6 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetCluster
 	_jsii_.InvokeVoid(
 		d,
 		"resetClusterName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetClusterSource() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetClusterSource",
 		nil, // no parameters
 	)
 }

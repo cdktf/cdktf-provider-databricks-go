@@ -182,7 +182,23 @@ func (j *jsiiProxy_ClusterAwsAttributesOutputReference) validateSetEbsVolumeCoun
 	return nil
 }
 
+func (j *jsiiProxy_ClusterAwsAttributesOutputReference) validateSetEbsVolumeIopsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ClusterAwsAttributesOutputReference) validateSetEbsVolumeSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ClusterAwsAttributesOutputReference) validateSetEbsVolumeThroughputParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -22,13 +22,13 @@ type AccessControlRuleSetConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.0/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// grant_rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/access_control_rule_set#grant_rules AccessControlRuleSet#grant_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.0/docs/resources/access_control_rule_set#grant_rules AccessControlRuleSet#grant_rules}
 	GrantRules interface{} `field:"optional" json:"grantRules" yaml:"grantRules"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.0/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

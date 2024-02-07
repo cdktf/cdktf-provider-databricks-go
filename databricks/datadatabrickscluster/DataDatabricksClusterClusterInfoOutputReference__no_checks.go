@@ -115,10 +115,6 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetClusterSourceParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

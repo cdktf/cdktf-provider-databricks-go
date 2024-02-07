@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/cluster databricks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.36.0/docs/resources/cluster databricks_cluster}.
 type Cluster interface {
 	cdktf.TerraformResource
 	ApplyPolicyDefaultValues() interface{}
@@ -39,6 +39,7 @@ type Cluster interface {
 	ClusterName() *string
 	SetClusterName(val *string)
 	ClusterNameInput() *string
+	ClusterSource() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -448,6 +449,16 @@ func (j *jsiiProxy_Cluster) ClusterNameInput() *string {
 	_jsii_.Get(
 		j,
 		"clusterNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) ClusterSource() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterSource",
 		&returns,
 	)
 	return returns
@@ -1134,7 +1145,7 @@ func (j *jsiiProxy_Cluster) WorkloadTypeInput() *ClusterWorkloadType {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.36.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) Cluster {
 	_init_.Initialize()
 
@@ -1152,7 +1163,7 @@ func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.36.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster_Override(c Cluster, scope constructs.Construct, id *string, config *ClusterConfig) {
 	_init_.Initialize()
 

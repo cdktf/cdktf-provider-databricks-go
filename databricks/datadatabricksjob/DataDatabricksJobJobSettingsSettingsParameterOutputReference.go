@@ -70,8 +70,6 @@ type DataDatabricksJobJobSettingsSettingsParameterOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetDefault()
-	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -486,22 +484,6 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsParameterOutputReference)
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsParameterOutputReference) ResetDefault() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDefault",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsParameterOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsParameterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

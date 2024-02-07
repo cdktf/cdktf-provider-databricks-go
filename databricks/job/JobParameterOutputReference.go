@@ -70,8 +70,6 @@ type JobParameterOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetDefault()
-	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -486,22 +484,6 @@ func (j *jsiiProxy_JobParameterOutputReference) InterpolationForAttribute(proper
 	)
 
 	return returns
-}
-
-func (j *jsiiProxy_JobParameterOutputReference) ResetDefault() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetDefault",
-		nil, // no parameters
-	)
-}
-
-func (j *jsiiProxy_JobParameterOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetName",
-		nil, // no parameters
-	)
 }
 
 func (j *jsiiProxy_JobParameterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

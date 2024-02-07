@@ -47,6 +47,10 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) validateInterpolationF
 	return nil
 }
 
+func (c *jsiiProxy_ClusterAzureAttributesOutputReference) validatePutLogAnalyticsInfoParameters(value *ClusterAzureAttributesLogAnalyticsInfo) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterAzureAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
