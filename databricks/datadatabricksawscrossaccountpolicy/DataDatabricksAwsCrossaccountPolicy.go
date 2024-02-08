@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.36.0/docs/data-sources/aws_crossaccount_policy databricks_aws_crossaccount_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.36.1/docs/data-sources/aws_crossaccount_policy databricks_aws_crossaccount_policy}.
 type DataDatabricksAwsCrossaccountPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.36.0/docs/data-sources/aws_crossaccount_policy databricks_aws_crossaccount_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.36.1/docs/data-sources/aws_crossaccount_policy databricks_aws_crossaccount_policy} Data Source.
 func NewDataDatabricksAwsCrossaccountPolicy(scope constructs.Construct, id *string, config *DataDatabricksAwsCrossaccountPolicyConfig) DataDatabricksAwsCrossaccountPolicy {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataDatabricksAwsCrossaccountPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.36.0/docs/data-sources/aws_crossaccount_policy databricks_aws_crossaccount_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.36.1/docs/data-sources/aws_crossaccount_policy databricks_aws_crossaccount_policy} Data Source.
 func NewDataDatabricksAwsCrossaccountPolicy_Override(d DataDatabricksAwsCrossaccountPolicy, scope constructs.Construct, id *string, config *DataDatabricksAwsCrossaccountPolicyConfig) {
 	_init_.Initialize()
 

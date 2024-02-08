@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.36.0/docs/data-sources/current_config databricks_current_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.36.1/docs/data-sources/current_config databricks_current_config}.
 type DataDatabricksCurrentConfig interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataDatabricksCurrentConfig) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.36.0/docs/data-sources/current_config databricks_current_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.36.1/docs/data-sources/current_config databricks_current_config} Data Source.
 func NewDataDatabricksCurrentConfig(scope constructs.Construct, id *string, config *DataDatabricksCurrentConfigConfig) DataDatabricksCurrentConfig {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewDataDatabricksCurrentConfig(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.36.0/docs/data-sources/current_config databricks_current_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.36.1/docs/data-sources/current_config databricks_current_config} Data Source.
 func NewDataDatabricksCurrentConfig_Override(d DataDatabricksCurrentConfig, scope constructs.Construct, id *string, config *DataDatabricksCurrentConfigConfig) {
 	_init_.Initialize()
 
