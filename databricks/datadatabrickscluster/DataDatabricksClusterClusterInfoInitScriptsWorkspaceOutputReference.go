@@ -67,7 +67,6 @@ type DataDatabricksClusterClusterInfoInitScriptsWorkspaceOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetDestination()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -451,14 +450,6 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsWorkspaceOutputRef
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsWorkspaceOutputReference) ResetDestination() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDestination",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoInitScriptsWorkspaceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

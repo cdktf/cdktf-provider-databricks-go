@@ -67,7 +67,6 @@ type DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOut
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetDestination()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -451,14 +450,6 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitS
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOutputReference) ResetDestination() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDestination",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

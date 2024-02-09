@@ -5,7 +5,7 @@ package datadatabricksjob
 
 
 type DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.1/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.2/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
 	Parameters *[]*string `field:"optional" json:"parameters" yaml:"parameters"`
 }
 

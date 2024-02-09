@@ -67,7 +67,6 @@ type PipelineClusterInitScriptsFileOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetDestination()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -451,14 +450,6 @@ func (p *jsiiProxy_PipelineClusterInitScriptsFileOutputReference) InterpolationF
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PipelineClusterInitScriptsFileOutputReference) ResetDestination() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetDestination",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PipelineClusterInitScriptsFileOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

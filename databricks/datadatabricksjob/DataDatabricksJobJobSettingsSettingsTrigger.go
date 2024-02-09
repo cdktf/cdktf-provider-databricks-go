@@ -7,9 +7,9 @@ package datadatabricksjob
 type DataDatabricksJobJobSettingsSettingsTrigger struct {
 	// file_arrival block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.1/docs/data-sources/job#file_arrival DataDatabricksJob#file_arrival}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.2/docs/data-sources/job#file_arrival DataDatabricksJob#file_arrival}
 	FileArrival *DataDatabricksJobJobSettingsSettingsTriggerFileArrival `field:"required" json:"fileArrival" yaml:"fileArrival"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.1/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.2/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}.
 	PauseStatus *string `field:"optional" json:"pauseStatus" yaml:"pauseStatus"`
 }
 

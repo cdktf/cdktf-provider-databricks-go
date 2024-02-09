@@ -67,7 +67,6 @@ type ClusterInitScriptsGcsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetDestination()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -451,14 +450,6 @@ func (c *jsiiProxy_ClusterInitScriptsGcsOutputReference) InterpolationForAttribu
 	)
 
 	return returns
-}
-
-func (c *jsiiProxy_ClusterInitScriptsGcsOutputReference) ResetDestination() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetDestination",
-		nil, // no parameters
-	)
 }
 
 func (c *jsiiProxy_ClusterInitScriptsGcsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
