@@ -214,6 +214,14 @@ func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetSchemaParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetSourceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskDbtTaskOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

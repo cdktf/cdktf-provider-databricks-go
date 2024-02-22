@@ -35,6 +35,9 @@ type JobTaskSqlTaskFileOutputReference interface {
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	Source() *string
+	SetSource(val *string)
+	SourceInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type JobTaskSqlTaskFileOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +151,26 @@ func (j *jsiiProxy_JobTaskSqlTaskFileOutputReference) PathInput() *string {
 	_jsii_.Get(
 		j,
 		"pathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskFileOutputReference) Source() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"source",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskFileOutputReference) SourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_JobTaskSqlTaskFileOutputReference)SetPath(val *string) {
 	_jsii_.Set(
 		j,
 		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskFileOutputReference)SetSource(val *string) {
+	if err := j.validateSetSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"source",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (j *jsiiProxy_JobTaskSqlTaskFileOutputReference) InterpolationForAttribute(
 	)
 
 	return returns
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskFileOutputReference) ResetSource() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetSource",
+		nil, // no parameters
+	)
 }
 
 func (j *jsiiProxy_JobTaskSqlTaskFileOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

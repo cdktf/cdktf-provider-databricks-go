@@ -5,17 +5,17 @@ package mwsnetworks
 
 
 type MwsNetworksGcpNetworkInfo struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.3/docs/resources/mws_networks#network_project_id MwsNetworks#network_project_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/mws_networks#network_project_id MwsNetworks#network_project_id}.
 	NetworkProjectId *string `field:"required" json:"networkProjectId" yaml:"networkProjectId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.3/docs/resources/mws_networks#pod_ip_range_name MwsNetworks#pod_ip_range_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/mws_networks#pod_ip_range_name MwsNetworks#pod_ip_range_name}.
 	PodIpRangeName *string `field:"required" json:"podIpRangeName" yaml:"podIpRangeName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.3/docs/resources/mws_networks#service_ip_range_name MwsNetworks#service_ip_range_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/mws_networks#service_ip_range_name MwsNetworks#service_ip_range_name}.
 	ServiceIpRangeName *string `field:"required" json:"serviceIpRangeName" yaml:"serviceIpRangeName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.3/docs/resources/mws_networks#subnet_id MwsNetworks#subnet_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/mws_networks#subnet_id MwsNetworks#subnet_id}.
 	SubnetId *string `field:"required" json:"subnetId" yaml:"subnetId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.3/docs/resources/mws_networks#subnet_region MwsNetworks#subnet_region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/mws_networks#subnet_region MwsNetworks#subnet_region}.
 	SubnetRegion *string `field:"required" json:"subnetRegion" yaml:"subnetRegion"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.3/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}.
 	VpcId *string `field:"required" json:"vpcId" yaml:"vpcId"`
 }
 

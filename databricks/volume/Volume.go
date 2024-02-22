@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.36.3/docs/resources/volume databricks_volume}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/volume databricks_volume}.
 type Volume interface {
 	cdktf.TerraformResource
 	CatalogName() *string
@@ -82,6 +82,7 @@ type Volume interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	VolumePath() *string
 	VolumeType() *string
 	SetVolumeType(val *string)
 	VolumeTypeInput() *string
@@ -453,6 +454,16 @@ func (j *jsiiProxy_Volume) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Volume) VolumePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumePath",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Volume) VolumeType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -474,7 +485,7 @@ func (j *jsiiProxy_Volume) VolumeTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.36.3/docs/resources/volume databricks_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/volume databricks_volume} Resource.
 func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Volume {
 	_init_.Initialize()
 
@@ -492,7 +503,7 @@ func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Vol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.36.3/docs/resources/volume databricks_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/volume databricks_volume} Resource.
 func NewVolume_Override(v Volume, scope constructs.Construct, id *string, config *VolumeConfig) {
 	_init_.Initialize()
 

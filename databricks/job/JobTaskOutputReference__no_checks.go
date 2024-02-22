@@ -63,6 +63,10 @@ func (j *jsiiProxy_JobTaskOutputReference) validatePutEmailNotificationsParamete
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) validatePutForEachTaskParameters(value *JobTaskForEachTask) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) validatePutHealthParameters(value *JobTaskHealth) error {
 	return nil
 }

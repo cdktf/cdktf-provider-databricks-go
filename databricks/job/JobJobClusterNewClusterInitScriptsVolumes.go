@@ -5,7 +5,7 @@ package job
 
 
 type JobJobClusterNewClusterInitScriptsVolumes struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.3/docs/resources/job#destination Job#destination}.
-	Destination *string `field:"optional" json:"destination" yaml:"destination"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/job#destination Job#destination}.
+	Destination *string `field:"required" json:"destination" yaml:"destination"`
 }
 

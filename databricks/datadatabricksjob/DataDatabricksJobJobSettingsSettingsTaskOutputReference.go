@@ -45,6 +45,8 @@ type DataDatabricksJobJobSettingsSettingsTaskOutputReference interface {
 	ExistingClusterId() *string
 	SetExistingClusterId(val *string)
 	ExistingClusterIdInput() *string
+	ForEachTask() DataDatabricksJobJobSettingsSettingsTaskForEachTaskOutputReference
+	ForEachTaskInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTask
 	// Experimental.
 	Fqn() *string
 	Health() DataDatabricksJobJobSettingsSettingsTaskHealthOutputReference
@@ -132,6 +134,7 @@ type DataDatabricksJobJobSettingsSettingsTaskOutputReference interface {
 	PutDbtTask(value *DataDatabricksJobJobSettingsSettingsTaskDbtTask)
 	PutDependsOn(value interface{})
 	PutEmailNotifications(value *DataDatabricksJobJobSettingsSettingsTaskEmailNotifications)
+	PutForEachTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTask)
 	PutHealth(value *DataDatabricksJobJobSettingsSettingsTaskHealth)
 	PutLibrary(value interface{})
 	PutNewCluster(value *DataDatabricksJobJobSettingsSettingsTaskNewCluster)
@@ -152,6 +155,7 @@ type DataDatabricksJobJobSettingsSettingsTaskOutputReference interface {
 	ResetDescription()
 	ResetEmailNotifications()
 	ResetExistingClusterId()
+	ResetForEachTask()
 	ResetHealth()
 	ResetJobClusterKey()
 	ResetLibrary()
@@ -352,6 +356,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) Exis
 	_jsii_.Get(
 		j,
 		"existingClusterIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) ForEachTask() DataDatabricksJobJobSettingsSettingsTaskForEachTaskOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsTaskForEachTaskOutputReference
+	_jsii_.Get(
+		j,
+		"forEachTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) ForEachTaskInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTask {
+	var returns *DataDatabricksJobJobSettingsSettingsTaskForEachTask
+	_jsii_.Get(
+		j,
+		"forEachTaskInput",
 		&returns,
 	)
 	return returns
@@ -1220,6 +1244,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) PutE
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) PutForEachTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTask) {
+	if err := d.validatePutForEachTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putForEachTask",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) PutHealth(value *DataDatabricksJobJobSettingsSettingsTaskHealth) {
 	if err := d.validatePutHealthParameters(value); err != nil {
 		panic(err)
@@ -1415,6 +1450,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) Rese
 	_jsii_.InvokeVoid(
 		d,
 		"resetExistingClusterId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) ResetForEachTask() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetForEachTask",
 		nil, // no parameters
 	)
 }

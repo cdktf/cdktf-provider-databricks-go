@@ -83,6 +83,10 @@ func (j *jsiiProxy_JobDbtTaskOutputReference) validateSetSchemaParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_JobDbtTaskOutputReference) validateSetSourceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobDbtTaskOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

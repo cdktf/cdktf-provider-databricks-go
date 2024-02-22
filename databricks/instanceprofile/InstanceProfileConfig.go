@@ -22,18 +22,18 @@ type InstanceProfileConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.3/docs/resources/instance_profile#instance_profile_arn InstanceProfile#instance_profile_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/instance_profile#instance_profile_arn InstanceProfile#instance_profile_arn}.
 	InstanceProfileArn *string `field:"required" json:"instanceProfileArn" yaml:"instanceProfileArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.3/docs/resources/instance_profile#iam_role_arn InstanceProfile#iam_role_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/instance_profile#iam_role_arn InstanceProfile#iam_role_arn}.
 	IamRoleArn *string `field:"optional" json:"iamRoleArn" yaml:"iamRoleArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.3/docs/resources/instance_profile#id InstanceProfile#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/instance_profile#id InstanceProfile#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.3/docs/resources/instance_profile#is_meta_instance_profile InstanceProfile#is_meta_instance_profile}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/instance_profile#is_meta_instance_profile InstanceProfile#is_meta_instance_profile}.
 	IsMetaInstanceProfile interface{} `field:"optional" json:"isMetaInstanceProfile" yaml:"isMetaInstanceProfile"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.36.3/docs/resources/instance_profile#skip_validation InstanceProfile#skip_validation}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/instance_profile#skip_validation InstanceProfile#skip_validation}.
 	SkipValidation interface{} `field:"optional" json:"skipValidation" yaml:"skipValidation"`
 }
 

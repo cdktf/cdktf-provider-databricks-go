@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) vali
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutForEachTaskParameters(value *DataDatabricksJobJobSettingsSettingsTaskForEachTask) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutHealthParameters(value *DataDatabricksJobJobSettingsSettingsTaskHealth) error {
 	return nil
 }

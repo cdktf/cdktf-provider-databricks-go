@@ -35,6 +35,9 @@ type DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputReference interfac
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	Source() *string
+	SetSource(val *string)
+	SourceInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +151,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputRefe
 	_jsii_.Get(
 		j,
 		"pathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputReference) Source() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"source",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputReference) SourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputRefe
 	_jsii_.Set(
 		j,
 		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputReference)SetSource(val *string) {
+	if err := j.validateSetSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"source",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputRefe
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputReference) ResetSource() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSource",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

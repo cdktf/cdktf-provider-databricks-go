@@ -182,6 +182,14 @@ func (j *jsiiProxy_JobTaskSqlTaskFileOutputReference) validateSetPathParameters(
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskSqlTaskFileOutputReference) validateSetSourceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskSqlTaskFileOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

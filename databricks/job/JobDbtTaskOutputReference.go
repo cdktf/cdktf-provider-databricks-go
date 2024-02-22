@@ -47,6 +47,9 @@ type JobDbtTaskOutputReference interface {
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
+	Source() *string
+	SetSource(val *string)
+	SourceInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -86,6 +89,7 @@ type JobDbtTaskOutputReference interface {
 	ResetProfilesDirectory()
 	ResetProjectDirectory()
 	ResetSchema()
+	ResetSource()
 	ResetWarehouseId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -252,6 +256,26 @@ func (j *jsiiProxy_JobDbtTaskOutputReference) SchemaInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_JobDbtTaskOutputReference) Source() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"source",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobDbtTaskOutputReference) SourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobDbtTaskOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -404,6 +428,17 @@ func (j *jsiiProxy_JobDbtTaskOutputReference)SetSchema(val *string) {
 	_jsii_.Set(
 		j,
 		"schema",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobDbtTaskOutputReference)SetSource(val *string) {
+	if err := j.validateSetSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"source",
 		val,
 	)
 }
@@ -655,6 +690,14 @@ func (j *jsiiProxy_JobDbtTaskOutputReference) ResetSchema() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetSchema",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobDbtTaskOutputReference) ResetSource() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetSource",
 		nil, // no parameters
 	)
 }

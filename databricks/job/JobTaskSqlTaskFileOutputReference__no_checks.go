@@ -67,6 +67,10 @@ func (j *jsiiProxy_JobTaskSqlTaskFileOutputReference) validateSetPathParameters(
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskSqlTaskFileOutputReference) validateSetSourceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskSqlTaskFileOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

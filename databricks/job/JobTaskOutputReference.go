@@ -45,6 +45,8 @@ type JobTaskOutputReference interface {
 	ExistingClusterId() *string
 	SetExistingClusterId(val *string)
 	ExistingClusterIdInput() *string
+	ForEachTask() JobTaskForEachTaskOutputReference
+	ForEachTaskInput() *JobTaskForEachTask
 	// Experimental.
 	Fqn() *string
 	Health() JobTaskHealthOutputReference
@@ -132,6 +134,7 @@ type JobTaskOutputReference interface {
 	PutDbtTask(value *JobTaskDbtTask)
 	PutDependsOn(value interface{})
 	PutEmailNotifications(value *JobTaskEmailNotifications)
+	PutForEachTask(value *JobTaskForEachTask)
 	PutHealth(value *JobTaskHealth)
 	PutLibrary(value interface{})
 	PutNewCluster(value *JobTaskNewCluster)
@@ -152,6 +155,7 @@ type JobTaskOutputReference interface {
 	ResetDescription()
 	ResetEmailNotifications()
 	ResetExistingClusterId()
+	ResetForEachTask()
 	ResetHealth()
 	ResetJobClusterKey()
 	ResetLibrary()
@@ -352,6 +356,26 @@ func (j *jsiiProxy_JobTaskOutputReference) ExistingClusterIdInput() *string {
 	_jsii_.Get(
 		j,
 		"existingClusterIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ForEachTask() JobTaskForEachTaskOutputReference {
+	var returns JobTaskForEachTaskOutputReference
+	_jsii_.Get(
+		j,
+		"forEachTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ForEachTaskInput() *JobTaskForEachTask {
+	var returns *JobTaskForEachTask
+	_jsii_.Get(
+		j,
+		"forEachTaskInput",
 		&returns,
 	)
 	return returns
@@ -1220,6 +1244,17 @@ func (j *jsiiProxy_JobTaskOutputReference) PutEmailNotifications(value *JobTaskE
 	)
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) PutForEachTask(value *JobTaskForEachTask) {
+	if err := j.validatePutForEachTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putForEachTask",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) PutHealth(value *JobTaskHealth) {
 	if err := j.validatePutHealthParameters(value); err != nil {
 		panic(err)
@@ -1415,6 +1450,14 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetExistingClusterId() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetExistingClusterId",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ResetForEachTask() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetForEachTask",
 		nil, // no parameters
 	)
 }
