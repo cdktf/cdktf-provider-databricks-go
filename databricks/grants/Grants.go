@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/grants databricks_grants}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/grants databricks_grants}.
 type Grants interface {
 	cdktf.TerraformResource
 	Catalog() *string
@@ -68,6 +68,9 @@ type Grants interface {
 	ModelInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Pipeline() *string
+	SetPipeline(val *string)
+	PipelineInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -78,6 +81,9 @@ type Grants interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Recipient() *string
+	SetRecipient(val *string)
+	RecipientInput() *string
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
@@ -153,6 +159,8 @@ type Grants interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPipeline()
+	ResetRecipient()
 	ResetSchema()
 	ResetShare()
 	ResetStorageCredential()
@@ -436,6 +444,26 @@ func (j *jsiiProxy_Grants) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_Grants) Pipeline() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pipeline",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grants) PipelineInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pipelineInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Grants) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -461,6 +489,26 @@ func (j *jsiiProxy_Grants) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grants) Recipient() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"recipient",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grants) RecipientInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"recipientInput",
 		&returns,
 	)
 	return returns
@@ -597,7 +645,7 @@ func (j *jsiiProxy_Grants) VolumeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/grants databricks_grants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/grants databricks_grants} Resource.
 func NewGrants(scope constructs.Construct, id *string, config *GrantsConfig) Grants {
 	_init_.Initialize()
 
@@ -615,7 +663,7 @@ func NewGrants(scope constructs.Construct, id *string, config *GrantsConfig) Gra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/grants databricks_grants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/grants databricks_grants} Resource.
 func NewGrants_Override(g Grants, scope constructs.Construct, id *string, config *GrantsConfig) {
 	_init_.Initialize()
 
@@ -752,6 +800,17 @@ func (j *jsiiProxy_Grants)SetModel(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Grants)SetPipeline(val *string) {
+	if err := j.validateSetPipelineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pipeline",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Grants)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -767,6 +826,17 @@ func (j *jsiiProxy_Grants)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Grants)SetRecipient(val *string) {
+	if err := j.validateSetRecipientParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"recipient",
 		val,
 	)
 }
@@ -1250,6 +1320,22 @@ func (g *jsiiProxy_Grants) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Grants) ResetPipeline() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPipeline",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Grants) ResetRecipient() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRecipient",
 		nil, // no parameters
 	)
 }

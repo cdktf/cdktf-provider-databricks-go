@@ -135,7 +135,15 @@ func (j *jsiiProxy_Grants) validateSetModelParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Grants) validateSetPipelineParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Grants) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Grants) validateSetRecipientParameters(val *string) error {
 	return nil
 }
 
