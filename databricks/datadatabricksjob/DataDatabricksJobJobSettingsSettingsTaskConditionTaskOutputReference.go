@@ -73,9 +73,6 @@ type DataDatabricksJobJobSettingsSettingsTaskConditionTaskOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetLeft()
-	ResetOp()
-	ResetRight()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -521,30 +518,6 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskConditionTaskOutputRe
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskConditionTaskOutputReference) ResetLeft() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetLeft",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskConditionTaskOutputReference) ResetOp() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOp",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskConditionTaskOutputReference) ResetRight() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRight",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskConditionTaskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

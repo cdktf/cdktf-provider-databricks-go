@@ -7,9 +7,13 @@ package job
 type JobTrigger struct {
 	// file_arrival block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/job#file_arrival Job#file_arrival}
-	FileArrival *JobTriggerFileArrival `field:"required" json:"fileArrival" yaml:"fileArrival"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/job#pause_status Job#pause_status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/job#file_arrival Job#file_arrival}
+	FileArrival *JobTriggerFileArrival `field:"optional" json:"fileArrival" yaml:"fileArrival"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/job#pause_status Job#pause_status}.
 	PauseStatus *string `field:"optional" json:"pauseStatus" yaml:"pauseStatus"`
+	// table_update block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/job#table_update Job#table_update}
+	TableUpdate *JobTriggerTableUpdate `field:"optional" json:"tableUpdate" yaml:"tableUpdate"`
 }
 

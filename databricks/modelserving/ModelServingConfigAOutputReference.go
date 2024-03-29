@@ -34,6 +34,8 @@ type ModelServingConfigAOutputReference interface {
 	Fqn() *string
 	InternalValue() *ModelServingConfigA
 	SetInternalValue(val *ModelServingConfigA)
+	ServedEntities() ModelServingConfigServedEntitiesList
+	ServedEntitiesInput() interface{}
 	ServedModels() ModelServingConfigServedModelsList
 	ServedModelsInput() interface{}
 	// Experimental.
@@ -71,9 +73,11 @@ type ModelServingConfigAOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAutoCaptureConfig(value *ModelServingConfigAutoCaptureConfig)
+	PutServedEntities(value interface{})
 	PutServedModels(value interface{})
 	PutTrafficConfig(value *ModelServingConfigTrafficConfig)
 	ResetAutoCaptureConfig()
+	ResetServedEntities()
 	ResetServedModels()
 	ResetTrafficConfig()
 	// Produce the Token's value at resolution time.
@@ -156,6 +160,26 @@ func (j *jsiiProxy_ModelServingConfigAOutputReference) InternalValue() *ModelSer
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigAOutputReference) ServedEntities() ModelServingConfigServedEntitiesList {
+	var returns ModelServingConfigServedEntitiesList
+	_jsii_.Get(
+		j,
+		"servedEntities",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigAOutputReference) ServedEntitiesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"servedEntitiesInput",
 		&returns,
 	)
 	return returns
@@ -501,6 +525,17 @@ func (m *jsiiProxy_ModelServingConfigAOutputReference) PutAutoCaptureConfig(valu
 	)
 }
 
+func (m *jsiiProxy_ModelServingConfigAOutputReference) PutServedEntities(value interface{}) {
+	if err := m.validatePutServedEntitiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putServedEntities",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_ModelServingConfigAOutputReference) PutServedModels(value interface{}) {
 	if err := m.validatePutServedModelsParameters(value); err != nil {
 		panic(err)
@@ -527,6 +562,14 @@ func (m *jsiiProxy_ModelServingConfigAOutputReference) ResetAutoCaptureConfig() 
 	_jsii_.InvokeVoid(
 		m,
 		"resetAutoCaptureConfig",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigAOutputReference) ResetServedEntities() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetServedEntities",
 		nil, // no parameters
 	)
 }

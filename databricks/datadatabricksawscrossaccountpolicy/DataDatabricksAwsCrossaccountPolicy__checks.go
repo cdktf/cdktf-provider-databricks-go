@@ -154,6 +154,14 @@ func validateDataDatabricksAwsCrossaccountPolicy_IsTerraformElementParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetAwsAccountIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:
@@ -228,6 +236,38 @@ func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetLifecyclePara
 }
 
 func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetPassRolesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetPolicyTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetSecurityGroupIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetVpcIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

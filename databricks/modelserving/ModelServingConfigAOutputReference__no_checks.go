@@ -51,6 +51,10 @@ func (m *jsiiProxy_ModelServingConfigAOutputReference) validatePutAutoCaptureCon
 	return nil
 }
 
+func (m *jsiiProxy_ModelServingConfigAOutputReference) validatePutServedEntitiesParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_ModelServingConfigAOutputReference) validatePutServedModelsParameters(value interface{}) error {
 	return nil
 }

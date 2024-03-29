@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) v
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) validatePutTableUpdateParameters(value *DataDatabricksJobJobSettingsSettingsTriggerTableUpdate) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

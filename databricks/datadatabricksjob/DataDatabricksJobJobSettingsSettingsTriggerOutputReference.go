@@ -37,6 +37,8 @@ type DataDatabricksJobJobSettingsSettingsTriggerOutputReference interface {
 	PauseStatus() *string
 	SetPauseStatus(val *string)
 	PauseStatusInput() *string
+	TableUpdate() DataDatabricksJobJobSettingsSettingsTriggerTableUpdateOutputReference
+	TableUpdateInput() *DataDatabricksJobJobSettingsSettingsTriggerTableUpdate
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,7 +72,10 @@ type DataDatabricksJobJobSettingsSettingsTriggerOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFileArrival(value *DataDatabricksJobJobSettingsSettingsTriggerFileArrival)
+	PutTableUpdate(value *DataDatabricksJobJobSettingsSettingsTriggerTableUpdate)
+	ResetFileArrival()
 	ResetPauseStatus()
+	ResetTableUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -171,6 +176,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) P
 	_jsii_.Get(
 		j,
 		"pauseStatusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) TableUpdate() DataDatabricksJobJobSettingsSettingsTriggerTableUpdateOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsTriggerTableUpdateOutputReference
+	_jsii_.Get(
+		j,
+		"tableUpdate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) TableUpdateInput() *DataDatabricksJobJobSettingsSettingsTriggerTableUpdate {
+	var returns *DataDatabricksJobJobSettingsSettingsTriggerTableUpdate
+	_jsii_.Get(
+		j,
+		"tableUpdateInput",
 		&returns,
 	)
 	return returns
@@ -487,10 +512,37 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) P
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) PutTableUpdate(value *DataDatabricksJobJobSettingsSettingsTriggerTableUpdate) {
+	if err := d.validatePutTableUpdateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTableUpdate",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) ResetFileArrival() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFileArrival",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) ResetPauseStatus() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPauseStatus",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) ResetTableUpdate() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTableUpdate",
 		nil, // no parameters
 	)
 }

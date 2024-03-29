@@ -73,9 +73,6 @@ type JobTaskForEachTaskTaskConditionTaskOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetLeft()
-	ResetOp()
-	ResetRight()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -521,30 +518,6 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskConditionTaskOutputReference) Interpola
 	)
 
 	return returns
-}
-
-func (j *jsiiProxy_JobTaskForEachTaskTaskConditionTaskOutputReference) ResetLeft() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetLeft",
-		nil, // no parameters
-	)
-}
-
-func (j *jsiiProxy_JobTaskForEachTaskTaskConditionTaskOutputReference) ResetOp() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetOp",
-		nil, // no parameters
-	)
-}
-
-func (j *jsiiProxy_JobTaskForEachTaskTaskConditionTaskOutputReference) ResetRight() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetRight",
-		nil, // no parameters
-	)
 }
 
 func (j *jsiiProxy_JobTaskForEachTaskTaskConditionTaskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

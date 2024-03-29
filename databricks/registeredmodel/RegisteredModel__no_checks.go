@@ -119,6 +119,10 @@ func (j *jsiiProxy_RegisteredModel) validateSetNameParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_RegisteredModel) validateSetOwnerParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RegisteredModel) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

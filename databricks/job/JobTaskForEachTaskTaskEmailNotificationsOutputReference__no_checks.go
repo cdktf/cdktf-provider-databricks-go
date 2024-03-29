@@ -63,6 +63,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) validateSetNoAlertForSkippedRunsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) validateSetOnDurationWarningThresholdExceededParameters(val *[]*string) error {
 	return nil
 }

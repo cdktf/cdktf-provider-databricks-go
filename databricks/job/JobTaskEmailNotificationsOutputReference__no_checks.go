@@ -63,6 +63,10 @@ func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) validateSetInternal
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) validateSetNoAlertForSkippedRunsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) validateSetOnDurationWarningThresholdExceededParameters(val *[]*string) error {
 	return nil
 }

@@ -32,6 +32,9 @@ type JobTaskForEachTaskTaskEmailNotificationsOutputReference interface {
 	Fqn() *string
 	InternalValue() *JobTaskForEachTaskTaskEmailNotifications
 	SetInternalValue(val *JobTaskForEachTaskTaskEmailNotifications)
+	NoAlertForSkippedRuns() interface{}
+	SetNoAlertForSkippedRuns(val interface{})
+	NoAlertForSkippedRunsInput() interface{}
 	OnDurationWarningThresholdExceeded() *[]*string
 	SetOnDurationWarningThresholdExceeded(val *[]*string)
 	OnDurationWarningThresholdExceededInput() *[]*string
@@ -76,6 +79,7 @@ type JobTaskForEachTaskTaskEmailNotificationsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetNoAlertForSkippedRuns()
 	ResetOnDurationWarningThresholdExceeded()
 	ResetOnFailure()
 	ResetOnStart()
@@ -140,6 +144,26 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) NoAlertForSkippedRuns() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noAlertForSkippedRuns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) NoAlertForSkippedRunsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noAlertForSkippedRunsInput",
 		&returns,
 	)
 	return returns
@@ -302,6 +326,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference)SetIn
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference)SetNoAlertForSkippedRuns(val interface{}) {
+	if err := j.validateSetNoAlertForSkippedRunsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"noAlertForSkippedRuns",
 		val,
 	)
 }
@@ -556,6 +591,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) Inte
 	)
 
 	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) ResetNoAlertForSkippedRuns() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetNoAlertForSkippedRuns",
+		nil, // no parameters
+	)
 }
 
 func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) ResetOnDurationWarningThresholdExceeded() {

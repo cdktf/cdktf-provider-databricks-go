@@ -5,15 +5,15 @@ package datadatabricksjob
 
 
 type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboard struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}.
 	DashboardId *string `field:"required" json:"dashboardId" yaml:"dashboardId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}.
 	CustomSubject *string `field:"optional" json:"customSubject" yaml:"customSubject"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}.
 	PauseSubscriptions interface{} `field:"optional" json:"pauseSubscriptions" yaml:"pauseSubscriptions"`
 	// subscriptions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/data-sources/job#subscriptions DataDatabricksJob#subscriptions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/data-sources/job#subscriptions DataDatabricksJob#subscriptions}
 	Subscriptions interface{} `field:"optional" json:"subscriptions" yaml:"subscriptions"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/registered_model databricks_registered_model}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/registered_model databricks_registered_model}.
 type RegisteredModel interface {
 	cdktf.TerraformResource
 	CatalogName() *string
@@ -57,6 +57,9 @@ type RegisteredModel interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Owner() *string
+	SetOwner(val *string)
+	OwnerInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -127,6 +130,7 @@ type RegisteredModel interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetOwner()
 	ResetStorageLocation()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -326,6 +330,26 @@ func (j *jsiiProxy_RegisteredModel) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_RegisteredModel) Owner() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"owner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegisteredModel) OwnerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RegisteredModel) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -427,7 +451,7 @@ func (j *jsiiProxy_RegisteredModel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/registered_model databricks_registered_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/registered_model databricks_registered_model} Resource.
 func NewRegisteredModel(scope constructs.Construct, id *string, config *RegisteredModelConfig) RegisteredModel {
 	_init_.Initialize()
 
@@ -445,7 +469,7 @@ func NewRegisteredModel(scope constructs.Construct, id *string, config *Register
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/registered_model databricks_registered_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/registered_model databricks_registered_model} Resource.
 func NewRegisteredModel_Override(r RegisteredModel, scope constructs.Construct, id *string, config *RegisteredModelConfig) {
 	_init_.Initialize()
 
@@ -545,6 +569,17 @@ func (j *jsiiProxy_RegisteredModel)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RegisteredModel)SetOwner(val *string) {
+	if err := j.validateSetOwnerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"owner",
 		val,
 	)
 }
@@ -963,6 +998,14 @@ func (r *jsiiProxy_RegisteredModel) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegisteredModel) ResetOwner() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetOwner",
 		nil, // no parameters
 	)
 }

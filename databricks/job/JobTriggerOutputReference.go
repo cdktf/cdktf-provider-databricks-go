@@ -37,6 +37,8 @@ type JobTriggerOutputReference interface {
 	PauseStatus() *string
 	SetPauseStatus(val *string)
 	PauseStatusInput() *string
+	TableUpdate() JobTriggerTableUpdateOutputReference
+	TableUpdateInput() *JobTriggerTableUpdate
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,7 +72,10 @@ type JobTriggerOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFileArrival(value *JobTriggerFileArrival)
+	PutTableUpdate(value *JobTriggerTableUpdate)
+	ResetFileArrival()
 	ResetPauseStatus()
+	ResetTableUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -171,6 +176,26 @@ func (j *jsiiProxy_JobTriggerOutputReference) PauseStatusInput() *string {
 	_jsii_.Get(
 		j,
 		"pauseStatusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) TableUpdate() JobTriggerTableUpdateOutputReference {
+	var returns JobTriggerTableUpdateOutputReference
+	_jsii_.Get(
+		j,
+		"tableUpdate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) TableUpdateInput() *JobTriggerTableUpdate {
+	var returns *JobTriggerTableUpdate
+	_jsii_.Get(
+		j,
+		"tableUpdateInput",
 		&returns,
 	)
 	return returns
@@ -487,10 +512,37 @@ func (j *jsiiProxy_JobTriggerOutputReference) PutFileArrival(value *JobTriggerFi
 	)
 }
 
+func (j *jsiiProxy_JobTriggerOutputReference) PutTableUpdate(value *JobTriggerTableUpdate) {
+	if err := j.validatePutTableUpdateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putTableUpdate",
+		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) ResetFileArrival() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetFileArrival",
+		nil, // no parameters
+	)
+}
+
 func (j *jsiiProxy_JobTriggerOutputReference) ResetPauseStatus() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetPauseStatus",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) ResetTableUpdate() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetTableUpdate",
 		nil, // no parameters
 	)
 }

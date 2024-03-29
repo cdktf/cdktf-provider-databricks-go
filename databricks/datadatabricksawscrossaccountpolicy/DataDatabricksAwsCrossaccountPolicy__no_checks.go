@@ -71,6 +71,10 @@ func validateDataDatabricksAwsCrossaccountPolicy_IsTerraformElementParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetAwsAccountIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetCountParameters(val interface{}) error {
 	return nil
 }
@@ -84,6 +88,22 @@ func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetLifecyclePara
 }
 
 func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetPassRolesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetPolicyTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetSecurityGroupIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetVpcIdParameters(val *string) error {
 	return nil
 }
 

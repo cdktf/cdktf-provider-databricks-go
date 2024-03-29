@@ -63,6 +63,10 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailN
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotificationsOutputReference) validateSetNoAlertForSkippedRunsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotificationsOutputReference) validateSetOnDurationWarningThresholdExceededParameters(val *[]*string) error {
 	return nil
 }
