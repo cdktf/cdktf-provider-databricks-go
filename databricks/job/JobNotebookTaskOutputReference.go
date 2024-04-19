@@ -49,6 +49,9 @@ type JobNotebookTaskOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WarehouseId() *string
+	SetWarehouseId(val *string)
+	WarehouseIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -75,6 +78,7 @@ type JobNotebookTaskOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBaseParameters()
 	ResetSource()
+	ResetWarehouseId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -220,6 +224,26 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) TerraformResource() cdktf.IIn
 	return returns
 }
 
+func (j *jsiiProxy_JobNotebookTaskOutputReference) WarehouseId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"warehouseId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobNotebookTaskOutputReference) WarehouseIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"warehouseIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewJobNotebookTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobNotebookTaskOutputReference {
 	_init_.Initialize()
@@ -332,6 +356,17 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference)SetTerraformResource(val cdktf
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobNotebookTaskOutputReference)SetWarehouseId(val *string) {
+	if err := j.validateSetWarehouseIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"warehouseId",
 		val,
 	)
 }
@@ -534,6 +569,14 @@ func (j *jsiiProxy_JobNotebookTaskOutputReference) ResetSource() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetSource",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobNotebookTaskOutputReference) ResetWarehouseId() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetWarehouseId",
 		nil, // no parameters
 	)
 }

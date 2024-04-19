@@ -91,6 +91,14 @@ func (j *jsiiProxy_DataDatabricksMetastore) validateSetMetastoreIdParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksMetastore) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksMetastore) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksMetastoreParameters(scope constructs.Construct, id *string, config *DataDatabricksMetastoreConfig) error {
 	return nil
 }

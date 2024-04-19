@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/data-sources/metastore databricks_metastore}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/data-sources/metastore databricks_metastore}.
 type DataDatabricksMetastore interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -47,6 +47,9 @@ type DataDatabricksMetastore interface {
 	MetastoreIdInput() *string
 	MetastoreInfo() DataDatabricksMetastoreMetastoreInfoOutputReference
 	MetastoreInfoInput() *DataDatabricksMetastoreMetastoreInfo
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -55,6 +58,9 @@ type DataDatabricksMetastore interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -88,10 +94,13 @@ type DataDatabricksMetastore interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMetastoreInfo(value *DataDatabricksMetastoreMetastoreInfo)
 	ResetId()
+	ResetMetastoreId()
 	ResetMetastoreInfo()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -251,6 +260,26 @@ func (j *jsiiProxy_DataDatabricksMetastore) MetastoreInfoInput() *DataDatabricks
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksMetastore) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMetastore) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksMetastore) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -276,6 +305,26 @@ func (j *jsiiProxy_DataDatabricksMetastore) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMetastore) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMetastore) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
 		&returns,
 	)
 	return returns
@@ -312,7 +361,7 @@ func (j *jsiiProxy_DataDatabricksMetastore) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/data-sources/metastore databricks_metastore} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/data-sources/metastore databricks_metastore} Data Source.
 func NewDataDatabricksMetastore(scope constructs.Construct, id *string, config *DataDatabricksMetastoreConfig) DataDatabricksMetastore {
 	_init_.Initialize()
 
@@ -330,7 +379,7 @@ func NewDataDatabricksMetastore(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/data-sources/metastore databricks_metastore} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/data-sources/metastore databricks_metastore} Data Source.
 func NewDataDatabricksMetastore_Override(d DataDatabricksMetastore, scope constructs.Construct, id *string, config *DataDatabricksMetastoreConfig) {
 	_init_.Initialize()
 
@@ -401,10 +450,32 @@ func (j *jsiiProxy_DataDatabricksMetastore)SetMetastoreId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksMetastore)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksMetastore)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksMetastore)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -713,6 +784,14 @@ func (d *jsiiProxy_DataDatabricksMetastore) ResetId() {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksMetastore) ResetMetastoreId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMetastoreId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksMetastore) ResetMetastoreInfo() {
 	_jsii_.InvokeVoid(
 		d,
@@ -721,10 +800,26 @@ func (d *jsiiProxy_DataDatabricksMetastore) ResetMetastoreInfo() {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksMetastore) ResetName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksMetastore) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksMetastore) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -34,6 +34,8 @@ type LakehouseMonitorNotificationsOutputReference interface {
 	SetInternalValue(val *LakehouseMonitorNotifications)
 	OnFailure() LakehouseMonitorNotificationsOnFailureOutputReference
 	OnFailureInput() *LakehouseMonitorNotificationsOnFailure
+	OnNewClassificationTagDetected() LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference
+	OnNewClassificationTagDetectedInput() *LakehouseMonitorNotificationsOnNewClassificationTagDetected
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type LakehouseMonitorNotificationsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutOnFailure(value *LakehouseMonitorNotificationsOnFailure)
+	PutOnNewClassificationTagDetected(value *LakehouseMonitorNotificationsOnNewClassificationTagDetected)
 	ResetOnFailure()
+	ResetOnNewClassificationTagDetected()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_LakehouseMonitorNotificationsOutputReference) OnFailureInput(
 	_jsii_.Get(
 		j,
 		"onFailureInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakehouseMonitorNotificationsOutputReference) OnNewClassificationTagDetected() LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference {
+	var returns LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference
+	_jsii_.Get(
+		j,
+		"onNewClassificationTagDetected",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakehouseMonitorNotificationsOutputReference) OnNewClassificationTagDetectedInput() *LakehouseMonitorNotificationsOnNewClassificationTagDetected {
+	var returns *LakehouseMonitorNotificationsOnNewClassificationTagDetected
+	_jsii_.Get(
+		j,
+		"onNewClassificationTagDetectedInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (l *jsiiProxy_LakehouseMonitorNotificationsOutputReference) PutOnFailure(va
 	)
 }
 
+func (l *jsiiProxy_LakehouseMonitorNotificationsOutputReference) PutOnNewClassificationTagDetected(value *LakehouseMonitorNotificationsOnNewClassificationTagDetected) {
+	if err := l.validatePutOnNewClassificationTagDetectedParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putOnNewClassificationTagDetected",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LakehouseMonitorNotificationsOutputReference) ResetOnFailure() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOnFailure",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LakehouseMonitorNotificationsOutputReference) ResetOnNewClassificationTagDetected() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetOnNewClassificationTagDetected",
 		nil, // no parameters
 	)
 }

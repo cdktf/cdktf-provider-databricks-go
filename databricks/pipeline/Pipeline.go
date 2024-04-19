@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/pipeline databricks_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/pipeline databricks_pipeline}.
 type Pipeline interface {
 	cdktf.TerraformResource
 	AllowDuplicateNames() interface{}
@@ -48,6 +48,8 @@ type Pipeline interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Deployment() PipelineDeploymentOutputReference
+	DeploymentInput() *PipelineDeployment
 	Development() interface{}
 	SetDevelopment(val interface{})
 	DevelopmentInput() interface{}
@@ -155,6 +157,7 @@ type Pipeline interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCluster(value interface{})
+	PutDeployment(value *PipelineDeployment)
 	PutFilters(value *PipelineFilters)
 	PutLibrary(value interface{})
 	PutNotification(value interface{})
@@ -165,6 +168,7 @@ type Pipeline interface {
 	ResetCluster()
 	ResetConfiguration()
 	ResetContinuous()
+	ResetDeployment()
 	ResetDevelopment()
 	ResetEdition()
 	ResetFilters()
@@ -363,6 +367,26 @@ func (j *jsiiProxy_Pipeline) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) Deployment() PipelineDeploymentOutputReference {
+	var returns PipelineDeploymentOutputReference
+	_jsii_.Get(
+		j,
+		"deployment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) DeploymentInput() *PipelineDeployment {
+	var returns *PipelineDeployment
+	_jsii_.Get(
+		j,
+		"deploymentInput",
 		&returns,
 	)
 	return returns
@@ -729,7 +753,7 @@ func (j *jsiiProxy_Pipeline) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig) Pipeline {
 	_init_.Initialize()
 
@@ -747,7 +771,7 @@ func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline_Override(p Pipeline, scope constructs.Construct, id *string, config *PipelineConfig) {
 	_init_.Initialize()
 
@@ -1333,6 +1357,17 @@ func (p *jsiiProxy_Pipeline) PutCluster(value interface{}) {
 	)
 }
 
+func (p *jsiiProxy_Pipeline) PutDeployment(value *PipelineDeployment) {
+	if err := p.validatePutDeploymentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putDeployment",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_Pipeline) PutFilters(value *PipelineFilters) {
 	if err := p.validatePutFiltersParameters(value); err != nil {
 		panic(err)
@@ -1421,6 +1456,14 @@ func (p *jsiiProxy_Pipeline) ResetContinuous() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetContinuous",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Pipeline) ResetDeployment() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDeployment",
 		nil, // no parameters
 	)
 }

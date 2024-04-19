@@ -75,10 +75,6 @@ func (j *jsiiProxy_Job) validateOverrideLogicalIdParameters(newLogicalId *string
 	return nil
 }
 
-func (j *jsiiProxy_Job) validatePutComputeParameters(value interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_Job) validatePutContinuousParameters(value *JobContinuous) error {
 	return nil
 }
@@ -92,6 +88,10 @@ func (j *jsiiProxy_Job) validatePutDeploymentParameters(value *JobDeployment) er
 }
 
 func (j *jsiiProxy_Job) validatePutEmailNotificationsParameters(value *JobEmailNotifications) error {
+	return nil
+}
+
+func (j *jsiiProxy_Job) validatePutEnvironmentParameters(value interface{}) error {
 	return nil
 }
 

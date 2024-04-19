@@ -74,8 +74,6 @@ type LakehouseMonitorScheduleOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetPauseStatus()
-	ResetQuartzCronExpression()
-	ResetTimezoneId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -527,22 +525,6 @@ func (l *jsiiProxy_LakehouseMonitorScheduleOutputReference) ResetPauseStatus() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPauseStatus",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LakehouseMonitorScheduleOutputReference) ResetQuartzCronExpression() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetQuartzCronExpression",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LakehouseMonitorScheduleOutputReference) ResetTimezoneId() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetTimezoneId",
 		nil, // no parameters
 	)
 }

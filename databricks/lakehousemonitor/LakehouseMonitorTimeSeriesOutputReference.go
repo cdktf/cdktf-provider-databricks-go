@@ -70,8 +70,6 @@ type LakehouseMonitorTimeSeriesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetGranularities()
-	ResetTimestampCol()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -486,22 +484,6 @@ func (l *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) InterpolationForAt
 	)
 
 	return returns
-}
-
-func (l *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) ResetGranularities() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetGranularities",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) ResetTimestampCol() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetTimestampCol",
-		nil, // no parameters
-	)
 }
 
 func (l *jsiiProxy_LakehouseMonitorTimeSeriesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

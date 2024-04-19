@@ -79,6 +79,10 @@ func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) validateSetTerrafor
 	return nil
 }
 
+func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) validateSetZoneIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewInstancePoolGcpAttributesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

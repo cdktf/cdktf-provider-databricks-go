@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/schema databricks_schema}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/schema databricks_schema}.
 type Schema interface {
 	cdktf.TerraformResource
 	CatalogName() *string
@@ -37,6 +37,9 @@ type Schema interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnablePredictiveOptimization() *string
+	SetEnablePredictiveOptimization(val *string)
+	EnablePredictiveOptimizationInput() *string
 	ForceDestroy() interface{}
 	SetForceDestroy(val interface{})
 	ForceDestroyInput() interface{}
@@ -132,6 +135,7 @@ type Schema interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetComment()
+	ResetEnablePredictiveOptimization()
 	ResetForceDestroy()
 	ResetId()
 	ResetMetastoreId()
@@ -244,6 +248,26 @@ func (j *jsiiProxy_Schema) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Schema) EnablePredictiveOptimization() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enablePredictiveOptimization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Schema) EnablePredictiveOptimizationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enablePredictiveOptimizationInput",
 		&returns,
 	)
 	return returns
@@ -500,7 +524,7 @@ func (j *jsiiProxy_Schema) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/schema databricks_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/schema databricks_schema} Resource.
 func NewSchema(scope constructs.Construct, id *string, config *SchemaConfig) Schema {
 	_init_.Initialize()
 
@@ -518,7 +542,7 @@ func NewSchema(scope constructs.Construct, id *string, config *SchemaConfig) Sch
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/schema databricks_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/schema databricks_schema} Resource.
 func NewSchema_Override(s Schema, scope constructs.Construct, id *string, config *SchemaConfig) {
 	_init_.Initialize()
 
@@ -577,6 +601,17 @@ func (j *jsiiProxy_Schema)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Schema)SetEnablePredictiveOptimization(val *string) {
+	if err := j.validateSetEnablePredictiveOptimizationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePredictiveOptimization",
 		val,
 	)
 }
@@ -1053,6 +1088,14 @@ func (s *jsiiProxy_Schema) ResetComment() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetComment",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Schema) ResetEnablePredictiveOptimization() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnablePredictiveOptimization",
 		nil, // no parameters
 	)
 }

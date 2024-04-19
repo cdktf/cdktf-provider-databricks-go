@@ -87,6 +87,10 @@ func (c *jsiiProxy_Cluster) validatePutAzureAttributesParameters(value *ClusterA
 	return nil
 }
 
+func (c *jsiiProxy_Cluster) validatePutCloneFromParameters(value *ClusterCloneFrom) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cluster) validatePutClusterLogConfParameters(value *ClusterClusterLogConf) error {
 	return nil
 }
@@ -140,10 +144,6 @@ func (j *jsiiProxy_Cluster) validateSetApplyPolicyDefaultValuesParameters(val in
 }
 
 func (j *jsiiProxy_Cluster) validateSetAutoterminationMinutesParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_Cluster) validateSetClusterIdParameters(val *string) error {
 	return nil
 }
 

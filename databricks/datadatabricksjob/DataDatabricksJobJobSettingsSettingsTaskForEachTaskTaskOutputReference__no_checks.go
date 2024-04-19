@@ -127,11 +127,11 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) validateSetComputeKeyParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) validateSetDescriptionParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) validateSetEnvironmentKeyParameters(val *string) error {
 	return nil
 }
 

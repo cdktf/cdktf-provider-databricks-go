@@ -51,6 +51,10 @@ func (l *jsiiProxy_LakehouseMonitorNotificationsOutputReference) validatePutOnFa
 	return nil
 }
 
+func (l *jsiiProxy_LakehouseMonitorNotificationsOutputReference) validatePutOnNewClassificationTagDetectedParameters(value *LakehouseMonitorNotificationsOnNewClassificationTagDetected) error {
+	return nil
+}
+
 func (l *jsiiProxy_LakehouseMonitorNotificationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

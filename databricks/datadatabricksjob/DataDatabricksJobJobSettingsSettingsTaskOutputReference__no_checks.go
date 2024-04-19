@@ -131,11 +131,11 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validateSetComputeKeyParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validateSetDescriptionParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validateSetEnvironmentKeyParameters(val *string) error {
 	return nil
 }
 

@@ -46,6 +46,9 @@ type InstancePoolGcpAttributesOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	ZoneId() *string
+	SetZoneId(val *string)
+	ZoneIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type InstancePoolGcpAttributesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetGcpAvailability()
 	ResetLocalSsdCount()
+	ResetZoneId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) TerraformResource()
 	return returns
 }
 
+func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) ZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference) ZoneIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewInstancePoolGcpAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) InstancePoolGcpAttributesOutputReference {
 	_init_.Initialize()
@@ -298,6 +322,17 @@ func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference)SetTerraformResource
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InstancePoolGcpAttributesOutputReference)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zoneId",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) ResetLocalSsdCount(
 	_jsii_.InvokeVoid(
 		i,
 		"resetLocalSsdCount",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_InstancePoolGcpAttributesOutputReference) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

@@ -67,6 +67,7 @@ type RecipientIpAccessListStructOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAllowedIpAddresses()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) ResetAllowedIpAddresses() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAllowedIpAddresses",
+		nil, // no parameters
+	)
 }
 
 func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/catalog databricks_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/catalog databricks_catalog}.
 type Catalog interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -37,6 +37,9 @@ type Catalog interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnablePredictiveOptimization() *string
+	SetEnablePredictiveOptimization(val *string)
+	EnablePredictiveOptimizationInput() *string
 	ForceDestroy() interface{}
 	SetForceDestroy(val interface{})
 	ForceDestroyInput() interface{}
@@ -145,6 +148,7 @@ type Catalog interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetComment()
 	ResetConnectionName()
+	ResetEnablePredictiveOptimization()
 	ResetForceDestroy()
 	ResetId()
 	ResetIsolationMode()
@@ -261,6 +265,26 @@ func (j *jsiiProxy_Catalog) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) EnablePredictiveOptimization() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enablePredictiveOptimization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) EnablePredictiveOptimizationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enablePredictiveOptimizationInput",
 		&returns,
 	)
 	return returns
@@ -597,7 +621,7 @@ func (j *jsiiProxy_Catalog) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) Catalog {
 	_init_.Initialize()
 
@@ -615,7 +639,7 @@ func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog_Override(c Catalog, scope constructs.Construct, id *string, config *CatalogConfig) {
 	_init_.Initialize()
 
@@ -674,6 +698,17 @@ func (j *jsiiProxy_Catalog)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Catalog)SetEnablePredictiveOptimization(val *string) {
+	if err := j.validateSetEnablePredictiveOptimizationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePredictiveOptimization",
 		val,
 	)
 }
@@ -1202,6 +1237,14 @@ func (c *jsiiProxy_Catalog) ResetConnectionName() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetConnectionName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Catalog) ResetEnablePredictiveOptimization() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnablePredictiveOptimization",
 		nil, // no parameters
 	)
 }

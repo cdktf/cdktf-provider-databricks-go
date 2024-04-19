@@ -238,6 +238,17 @@ func (p *jsiiProxy_Pipeline) validatePutClusterParameters(value interface{}) err
 	return nil
 }
 
+func (p *jsiiProxy_Pipeline) validatePutDeploymentParameters(value *PipelineDeployment) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_Pipeline) validatePutFiltersParameters(value *PipelineFilters) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

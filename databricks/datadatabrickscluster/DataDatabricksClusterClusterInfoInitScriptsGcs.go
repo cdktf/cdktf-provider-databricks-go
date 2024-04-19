@@ -5,7 +5,7 @@ package datadatabrickscluster
 
 
 type DataDatabricksClusterClusterInfoInitScriptsGcs struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 	Destination *string `field:"required" json:"destination" yaml:"destination"`
 }
 

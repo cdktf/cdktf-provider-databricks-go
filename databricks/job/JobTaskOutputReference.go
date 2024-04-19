@@ -23,9 +23,6 @@ type JobTaskOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	ComputeKey() *string
-	SetComputeKey(val *string)
-	ComputeKeyInput() *string
 	ConditionTask() JobTaskConditionTaskOutputReference
 	ConditionTaskInput() *JobTaskConditionTask
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -42,6 +39,9 @@ type JobTaskOutputReference interface {
 	DescriptionInput() *string
 	EmailNotifications() JobTaskEmailNotificationsOutputReference
 	EmailNotificationsInput() *JobTaskEmailNotifications
+	EnvironmentKey() *string
+	SetEnvironmentKey(val *string)
+	EnvironmentKeyInput() *string
 	ExistingClusterId() *string
 	SetExistingClusterId(val *string)
 	ExistingClusterIdInput() *string
@@ -148,12 +148,12 @@ type JobTaskOutputReference interface {
 	PutSparkSubmitTask(value *JobTaskSparkSubmitTask)
 	PutSqlTask(value *JobTaskSqlTask)
 	PutWebhookNotifications(value *JobTaskWebhookNotifications)
-	ResetComputeKey()
 	ResetConditionTask()
 	ResetDbtTask()
 	ResetDependsOn()
 	ResetDescription()
 	ResetEmailNotifications()
+	ResetEnvironmentKey()
 	ResetExistingClusterId()
 	ResetForEachTask()
 	ResetHealth()
@@ -206,26 +206,6 @@ func (j *jsiiProxy_JobTaskOutputReference) ComplexObjectIsFromSet() *bool {
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobTaskOutputReference) ComputeKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"computeKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobTaskOutputReference) ComputeKeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"computeKeyInput",
 		&returns,
 	)
 	return returns
@@ -336,6 +316,26 @@ func (j *jsiiProxy_JobTaskOutputReference) EmailNotificationsInput() *JobTaskEma
 	_jsii_.Get(
 		j,
 		"emailNotificationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) EnvironmentKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) EnvironmentKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentKeyInput",
 		&returns,
 	)
 	return returns
@@ -871,17 +871,6 @@ func (j *jsiiProxy_JobTaskOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference)SetComputeKey(val *string) {
-	if err := j.validateSetComputeKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"computeKey",
-		val,
-	)
-}
-
 func (j *jsiiProxy_JobTaskOutputReference)SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
@@ -889,6 +878,17 @@ func (j *jsiiProxy_JobTaskOutputReference)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference)SetEnvironmentKey(val *string) {
+	if err := j.validateSetEnvironmentKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"environmentKey",
 		val,
 	)
 }
@@ -1398,14 +1398,6 @@ func (j *jsiiProxy_JobTaskOutputReference) PutWebhookNotifications(value *JobTas
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) ResetComputeKey() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetComputeKey",
-		nil, // no parameters
-	)
-}
-
 func (j *jsiiProxy_JobTaskOutputReference) ResetConditionTask() {
 	_jsii_.InvokeVoid(
 		j,
@@ -1442,6 +1434,14 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetEmailNotifications() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetEmailNotifications",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ResetEnvironmentKey() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetEnvironmentKey",
 		nil, // no parameters
 	)
 }

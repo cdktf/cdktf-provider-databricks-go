@@ -79,6 +79,10 @@ func (p *jsiiProxy_Pipeline) validatePutClusterParameters(value interface{}) err
 	return nil
 }
 
+func (p *jsiiProxy_Pipeline) validatePutDeploymentParameters(value *PipelineDeployment) error {
+	return nil
+}
+
 func (p *jsiiProxy_Pipeline) validatePutFiltersParameters(value *PipelineFilters) error {
 	return nil
 }

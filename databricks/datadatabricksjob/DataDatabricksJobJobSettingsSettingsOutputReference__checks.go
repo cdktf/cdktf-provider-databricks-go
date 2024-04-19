@@ -93,37 +93,6 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutComputeParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataDatabricksJobJobSettingsSettingsCompute:
-		value := value.(*[]*DataDatabricksJobJobSettingsSettingsCompute)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataDatabricksJobJobSettingsSettingsCompute:
-		value_ := value.([]*DataDatabricksJobJobSettingsSettingsCompute)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksJobJobSettingsSettingsCompute; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutContinuousParameters(value *DataDatabricksJobJobSettingsSettingsContinuous) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -163,6 +132,37 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validate
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutEnvironmentParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataDatabricksJobJobSettingsSettingsEnvironment:
+		value := value.(*[]*DataDatabricksJobJobSettingsSettingsEnvironment)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataDatabricksJobJobSettingsSettingsEnvironment:
+		value_ := value.([]*DataDatabricksJobJobSettingsSettingsEnvironment)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksJobJobSettingsSettingsEnvironment; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil

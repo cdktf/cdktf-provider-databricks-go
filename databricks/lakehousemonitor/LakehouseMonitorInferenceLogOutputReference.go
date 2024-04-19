@@ -85,13 +85,8 @@ type LakehouseMonitorInferenceLogOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetGranularities()
 	ResetLabelCol()
-	ResetModelIdCol()
-	ResetPredictionCol()
 	ResetPredictionProbaCol()
-	ResetProblemType()
-	ResetTimestampCol()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -663,14 +658,6 @@ func (l *jsiiProxy_LakehouseMonitorInferenceLogOutputReference) InterpolationFor
 	return returns
 }
 
-func (l *jsiiProxy_LakehouseMonitorInferenceLogOutputReference) ResetGranularities() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetGranularities",
-		nil, // no parameters
-	)
-}
-
 func (l *jsiiProxy_LakehouseMonitorInferenceLogOutputReference) ResetLabelCol() {
 	_jsii_.InvokeVoid(
 		l,
@@ -679,42 +666,10 @@ func (l *jsiiProxy_LakehouseMonitorInferenceLogOutputReference) ResetLabelCol() 
 	)
 }
 
-func (l *jsiiProxy_LakehouseMonitorInferenceLogOutputReference) ResetModelIdCol() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetModelIdCol",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LakehouseMonitorInferenceLogOutputReference) ResetPredictionCol() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetPredictionCol",
-		nil, // no parameters
-	)
-}
-
 func (l *jsiiProxy_LakehouseMonitorInferenceLogOutputReference) ResetPredictionProbaCol() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPredictionProbaCol",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LakehouseMonitorInferenceLogOutputReference) ResetProblemType() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetProblemType",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LakehouseMonitorInferenceLogOutputReference) ResetTimestampCol() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetTimestampCol",
 		nil, // no parameters
 	)
 }

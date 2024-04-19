@@ -12,14 +12,17 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/recipient databricks_recipient}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/recipient databricks_recipient}.
 type Recipient interface {
 	cdktf.TerraformResource
+	Activated() cdktf.IResolvable
+	ActivationUrl() *string
 	AuthenticationType() *string
 	SetAuthenticationType(val *string)
 	AuthenticationTypeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Cloud() *string
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -33,6 +36,8 @@ type Recipient interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *float64
+	CreatedBy() *string
 	DataRecipientGlobalMetastoreId() *string
 	SetDataRecipientGlobalMetastoreId(val *string)
 	DataRecipientGlobalMetastoreIdInput() *string
@@ -57,6 +62,7 @@ type Recipient interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MetastoreId() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -65,6 +71,8 @@ type Recipient interface {
 	Owner() *string
 	SetOwner(val *string)
 	OwnerInput() *string
+	PropertiesKvpairs() RecipientPropertiesKvpairsOutputReference
+	PropertiesKvpairsInput() *RecipientPropertiesKvpairs
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -75,6 +83,7 @@ type Recipient interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
 	SharingCode() *string
 	SetSharingCode(val *string)
 	SharingCodeInput() *string
@@ -86,6 +95,8 @@ type Recipient interface {
 	TerraformResourceType() *string
 	Tokens() RecipientTokensList
 	TokensInput() interface{}
+	UpdatedAt() *float64
+	UpdatedBy() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -130,6 +141,7 @@ type Recipient interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutIpAccessList(value *RecipientIpAccessListStruct)
+	PutPropertiesKvpairs(value *RecipientPropertiesKvpairs)
 	PutTokens(value interface{})
 	ResetComment()
 	ResetDataRecipientGlobalMetastoreId()
@@ -139,6 +151,7 @@ type Recipient interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
+	ResetPropertiesKvpairs()
 	ResetSharingCode()
 	ResetTokens()
 	SynthesizeAttributes() *map[string]interface{}
@@ -157,6 +170,26 @@ type Recipient interface {
 // The jsii proxy struct for Recipient
 type jsiiProxy_Recipient struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Recipient) Activated() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"activated",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Recipient) ActivationUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"activationUrl",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Recipient) AuthenticationType() *string {
@@ -184,6 +217,16 @@ func (j *jsiiProxy_Recipient) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Recipient) Cloud() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloud",
 		&returns,
 	)
 	return returns
@@ -234,6 +277,26 @@ func (j *jsiiProxy_Recipient) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Recipient) CreatedAt() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Recipient) CreatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdBy",
 		&returns,
 	)
 	return returns
@@ -349,6 +412,16 @@ func (j *jsiiProxy_Recipient) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_Recipient) MetastoreId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metastoreId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Recipient) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -399,6 +472,26 @@ func (j *jsiiProxy_Recipient) OwnerInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Recipient) PropertiesKvpairs() RecipientPropertiesKvpairsOutputReference {
+	var returns RecipientPropertiesKvpairsOutputReference
+	_jsii_.Get(
+		j,
+		"propertiesKvpairs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Recipient) PropertiesKvpairsInput() *RecipientPropertiesKvpairs {
+	var returns *RecipientPropertiesKvpairs
+	_jsii_.Get(
+		j,
+		"propertiesKvpairsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Recipient) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -424,6 +517,16 @@ func (j *jsiiProxy_Recipient) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Recipient) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
 		&returns,
 	)
 	return returns
@@ -499,8 +602,28 @@ func (j *jsiiProxy_Recipient) TokensInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Recipient) UpdatedAt() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/recipient databricks_recipient} Resource.
+func (j *jsiiProxy_Recipient) UpdatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedBy",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/recipient databricks_recipient} Resource.
 func NewRecipient(scope constructs.Construct, id *string, config *RecipientConfig) Recipient {
 	_init_.Initialize()
 
@@ -518,7 +641,7 @@ func NewRecipient(scope constructs.Construct, id *string, config *RecipientConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/recipient databricks_recipient} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/recipient databricks_recipient} Resource.
 func NewRecipient_Override(r Recipient, scope constructs.Construct, id *string, config *RecipientConfig) {
 	_init_.Initialize()
 
@@ -1038,6 +1161,17 @@ func (r *jsiiProxy_Recipient) PutIpAccessList(value *RecipientIpAccessListStruct
 	)
 }
 
+func (r *jsiiProxy_Recipient) PutPropertiesKvpairs(value *RecipientPropertiesKvpairs) {
+	if err := r.validatePutPropertiesKvpairsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putPropertiesKvpairs",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_Recipient) PutTokens(value interface{}) {
 	if err := r.validatePutTokensParameters(value); err != nil {
 		panic(err)
@@ -1093,6 +1227,14 @@ func (r *jsiiProxy_Recipient) ResetOwner() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOwner",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Recipient) ResetPropertiesKvpairs() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPropertiesKvpairs",
 		nil, // no parameters
 	)
 }

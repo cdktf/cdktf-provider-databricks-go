@@ -23,9 +23,6 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	ComputeKey() *string
-	SetComputeKey(val *string)
-	ComputeKeyInput() *string
 	ConditionTask() JobTaskForEachTaskTaskConditionTaskOutputReference
 	ConditionTaskInput() *JobTaskForEachTaskTaskConditionTask
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -42,6 +39,9 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	DescriptionInput() *string
 	EmailNotifications() JobTaskForEachTaskTaskEmailNotificationsOutputReference
 	EmailNotificationsInput() *JobTaskForEachTaskTaskEmailNotifications
+	EnvironmentKey() *string
+	SetEnvironmentKey(val *string)
+	EnvironmentKeyInput() *string
 	ExistingClusterId() *string
 	SetExistingClusterId(val *string)
 	ExistingClusterIdInput() *string
@@ -145,12 +145,12 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	PutSparkSubmitTask(value *JobTaskForEachTaskTaskSparkSubmitTask)
 	PutSqlTask(value *JobTaskForEachTaskTaskSqlTask)
 	PutWebhookNotifications(value *JobTaskForEachTaskTaskWebhookNotifications)
-	ResetComputeKey()
 	ResetConditionTask()
 	ResetDbtTask()
 	ResetDependsOn()
 	ResetDescription()
 	ResetEmailNotifications()
+	ResetEnvironmentKey()
 	ResetExistingClusterId()
 	ResetHealth()
 	ResetJobClusterKey()
@@ -202,26 +202,6 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ComplexObjectIsFromSet
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ComputeKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"computeKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ComputeKeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"computeKeyInput",
 		&returns,
 	)
 	return returns
@@ -332,6 +312,26 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) EmailNotificationsInpu
 	_jsii_.Get(
 		j,
 		"emailNotificationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) EnvironmentKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) EnvironmentKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentKeyInput",
 		&returns,
 	)
 	return returns
@@ -847,17 +847,6 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference)SetComputeKey(val *string) {
-	if err := j.validateSetComputeKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"computeKey",
-		val,
-	)
-}
-
 func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference)SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
@@ -865,6 +854,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference)SetDescription(val *str
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference)SetEnvironmentKey(val *string) {
+	if err := j.validateSetEnvironmentKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"environmentKey",
 		val,
 	)
 }
@@ -1363,14 +1363,6 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) PutWebhookNotification
 	)
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ResetComputeKey() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetComputeKey",
-		nil, // no parameters
-	)
-}
-
 func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ResetConditionTask() {
 	_jsii_.InvokeVoid(
 		j,
@@ -1407,6 +1399,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ResetEmailNotification
 	_jsii_.InvokeVoid(
 		j,
 		"resetEmailNotifications",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ResetEnvironmentKey() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetEnvironmentKey",
 		nil, // no parameters
 	)
 }

@@ -51,31 +51,11 @@ func (r *jsiiProxy_RecipientTokensOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_RecipientTokensOutputReference) validateSetActivationUrlParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_RecipientTokensOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_RecipientTokensOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
-	return nil
-}
-
-func (j *jsiiProxy_RecipientTokensOutputReference) validateSetCreatedAtParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_RecipientTokensOutputReference) validateSetCreatedByParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_RecipientTokensOutputReference) validateSetExpirationTimeParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_RecipientTokensOutputReference) validateSetIdParameters(val *string) error {
 	return nil
 }
 
@@ -88,14 +68,6 @@ func (j *jsiiProxy_RecipientTokensOutputReference) validateSetTerraformAttribute
 }
 
 func (j *jsiiProxy_RecipientTokensOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_RecipientTokensOutputReference) validateSetUpdatedAtParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_RecipientTokensOutputReference) validateSetUpdatedByParameters(val *string) error {
 	return nil
 }
 

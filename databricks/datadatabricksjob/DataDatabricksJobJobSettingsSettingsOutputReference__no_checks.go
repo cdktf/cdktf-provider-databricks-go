@@ -47,10 +47,6 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutComputeParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutContinuousParameters(value *DataDatabricksJobJobSettingsSettingsContinuous) error {
 	return nil
 }
@@ -64,6 +60,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validate
 }
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutEmailNotificationsParameters(value *DataDatabricksJobJobSettingsSettingsEmailNotifications) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) validatePutEnvironmentParameters(value interface{}) error {
 	return nil
 }
 

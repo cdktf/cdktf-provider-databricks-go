@@ -107,6 +107,10 @@ func (j *jsiiProxy_Schema) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Schema) validateSetEnablePredictiveOptimizationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Schema) validateSetForceDestroyParameters(val interface{}) error {
 	return nil
 }

@@ -83,6 +83,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNotebookTaskOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskNotebookTaskOutputReference) validateSetWarehouseIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewJobTaskForEachTaskTaskNotebookTaskOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

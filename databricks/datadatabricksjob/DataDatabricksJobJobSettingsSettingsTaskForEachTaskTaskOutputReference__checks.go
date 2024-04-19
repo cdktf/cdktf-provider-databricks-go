@@ -393,7 +393,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) validateSetComputeKeyParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -401,7 +401,7 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) validateSetDescriptionParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) validateSetEnvironmentKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

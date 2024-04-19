@@ -46,6 +46,9 @@ type DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	ZoneId() *string
+	SetZoneId(val *string)
+	ZoneIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetGcpAvailability()
 	ResetLocalSsdCount()
+	ResetZoneId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference) ZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference) ZoneIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference {
 	_init_.Initialize()
@@ -298,6 +322,17 @@ func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReferenc
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zoneId",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"resetLocalSsdCount",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

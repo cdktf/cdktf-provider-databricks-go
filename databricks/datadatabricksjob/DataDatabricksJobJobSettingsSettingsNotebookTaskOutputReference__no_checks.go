@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference) validateSetWarehouseIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksJobJobSettingsSettingsNotebookTaskOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

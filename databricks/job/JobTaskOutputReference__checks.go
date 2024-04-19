@@ -404,7 +404,7 @@ func (j *jsiiProxy_JobTaskOutputReference) validateSetComplexObjectIsFromSetPara
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) validateSetComputeKeyParameters(val *string) error {
+func (j *jsiiProxy_JobTaskOutputReference) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -412,7 +412,7 @@ func (j *jsiiProxy_JobTaskOutputReference) validateSetComputeKeyParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) validateSetDescriptionParameters(val *string) error {
+func (j *jsiiProxy_JobTaskOutputReference) validateSetEnvironmentKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

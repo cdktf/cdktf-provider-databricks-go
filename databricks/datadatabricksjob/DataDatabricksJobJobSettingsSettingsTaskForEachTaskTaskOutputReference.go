@@ -23,9 +23,6 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference inte
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	ComputeKey() *string
-	SetComputeKey(val *string)
-	ComputeKeyInput() *string
 	ConditionTask() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTaskOutputReference
 	ConditionTaskInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTask
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -42,6 +39,9 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference inte
 	DescriptionInput() *string
 	EmailNotifications() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotificationsOutputReference
 	EmailNotificationsInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications
+	EnvironmentKey() *string
+	SetEnvironmentKey(val *string)
+	EnvironmentKeyInput() *string
 	ExistingClusterId() *string
 	SetExistingClusterId(val *string)
 	ExistingClusterIdInput() *string
@@ -145,12 +145,12 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference inte
 	PutSparkSubmitTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkSubmitTask)
 	PutSqlTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTask)
 	PutWebhookNotifications(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotifications)
-	ResetComputeKey()
 	ResetConditionTask()
 	ResetDbtTask()
 	ResetDependsOn()
 	ResetDescription()
 	ResetEmailNotifications()
+	ResetEnvironmentKey()
 	ResetExistingClusterId()
 	ResetHealth()
 	ResetJobClusterKey()
@@ -202,26 +202,6 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutput
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) ComputeKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"computeKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) ComputeKeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"computeKeyInput",
 		&returns,
 	)
 	return returns
@@ -332,6 +312,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutput
 	_jsii_.Get(
 		j,
 		"emailNotificationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) EnvironmentKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) EnvironmentKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentKeyInput",
 		&returns,
 	)
 	return returns
@@ -847,17 +847,6 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutput
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference)SetComputeKey(val *string) {
-	if err := j.validateSetComputeKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"computeKey",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference)SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
@@ -865,6 +854,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutput
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference)SetEnvironmentKey(val *string) {
+	if err := j.validateSetEnvironmentKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"environmentKey",
 		val,
 	)
 }
@@ -1363,14 +1363,6 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutput
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) ResetComputeKey() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetComputeKey",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) ResetConditionTask() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1407,6 +1399,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutput
 	_jsii_.InvokeVoid(
 		d,
 		"resetEmailNotifications",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) ResetEnvironmentKey() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnvironmentKey",
 		nil, // no parameters
 	)
 }

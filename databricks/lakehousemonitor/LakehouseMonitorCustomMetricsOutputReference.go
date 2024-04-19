@@ -79,11 +79,6 @@ type LakehouseMonitorCustomMetricsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetDefinition()
-	ResetInputColumns()
-	ResetName()
-	ResetOutputDataType()
-	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -591,46 +586,6 @@ func (l *jsiiProxy_LakehouseMonitorCustomMetricsOutputReference) InterpolationFo
 	)
 
 	return returns
-}
-
-func (l *jsiiProxy_LakehouseMonitorCustomMetricsOutputReference) ResetDefinition() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetDefinition",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LakehouseMonitorCustomMetricsOutputReference) ResetInputColumns() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetInputColumns",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LakehouseMonitorCustomMetricsOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LakehouseMonitorCustomMetricsOutputReference) ResetOutputDataType() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetOutputDataType",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LakehouseMonitorCustomMetricsOutputReference) ResetType() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetType",
-		nil, // no parameters
-	)
 }
 
 func (l *jsiiProxy_LakehouseMonitorCustomMetricsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

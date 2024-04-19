@@ -79,6 +79,10 @@ func (r *jsiiProxy_Recipient) validatePutIpAccessListParameters(value *Recipient
 	return nil
 }
 
+func (r *jsiiProxy_Recipient) validatePutPropertiesKvpairsParameters(value *RecipientPropertiesKvpairs) error {
+	return nil
+}
+
 func (r *jsiiProxy_Recipient) validatePutTokensParameters(value interface{}) error {
 	return nil
 }

@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference) validateSetZoneIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksInstancePoolPoolInfoGcpAttributesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

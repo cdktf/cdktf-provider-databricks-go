@@ -127,11 +127,11 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateSetComputeKeyParameters(val *string) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateSetDescriptionParameters(val *string) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateSetEnvironmentKeyParameters(val *string) error {
 	return nil
 }
 

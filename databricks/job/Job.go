@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/job databricks_job}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/job databricks_job}.
 type Job interface {
 	cdktf.TerraformResource
 	AlwaysRunning() interface{}
@@ -20,8 +20,6 @@ type Job interface {
 	AlwaysRunningInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	Compute() JobComputeList
-	ComputeInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -53,6 +51,8 @@ type Job interface {
 	EditModeInput() *string
 	EmailNotifications() JobEmailNotificationsOutputReference
 	EmailNotificationsInput() *JobEmailNotifications
+	Environment() JobEnvironmentList
+	EnvironmentInput() interface{}
 	ExistingClusterId() *string
 	SetExistingClusterId(val *string)
 	ExistingClusterIdInput() *string
@@ -199,11 +199,11 @@ type Job interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCompute(value interface{})
 	PutContinuous(value *JobContinuous)
 	PutDbtTask(value *JobDbtTask)
 	PutDeployment(value *JobDeployment)
 	PutEmailNotifications(value *JobEmailNotifications)
+	PutEnvironment(value interface{})
 	PutGitSource(value *JobGitSource)
 	PutHealth(value *JobHealth)
 	PutJobCluster(value interface{})
@@ -226,7 +226,6 @@ type Job interface {
 	PutTrigger(value *JobTrigger)
 	PutWebhookNotifications(value *JobWebhookNotifications)
 	ResetAlwaysRunning()
-	ResetCompute()
 	ResetContinuous()
 	ResetControlRunState()
 	ResetDbtTask()
@@ -234,6 +233,7 @@ type Job interface {
 	ResetDescription()
 	ResetEditMode()
 	ResetEmailNotifications()
+	ResetEnvironment()
 	ResetExistingClusterId()
 	ResetFormat()
 	ResetGitSource()
@@ -311,26 +311,6 @@ func (j *jsiiProxy_Job) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Job) Compute() JobComputeList {
-	var returns JobComputeList
-	_jsii_.Get(
-		j,
-		"compute",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Job) ComputeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"computeInput",
 		&returns,
 	)
 	return returns
@@ -511,6 +491,26 @@ func (j *jsiiProxy_Job) EmailNotificationsInput() *JobEmailNotifications {
 	_jsii_.Get(
 		j,
 		"emailNotificationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) Environment() JobEnvironmentList {
+	var returns JobEnvironmentList
+	_jsii_.Get(
+		j,
+		"environment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) EnvironmentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"environmentInput",
 		&returns,
 	)
 	return returns
@@ -1257,7 +1257,7 @@ func (j *jsiiProxy_Job) WebhookNotificationsInput() *JobWebhookNotifications {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/job databricks_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	_init_.Initialize()
 
@@ -1275,7 +1275,7 @@ func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/job databricks_job} Resource.
 func NewJob_Override(j Job, scope constructs.Construct, id *string, config *JobConfig) {
 	_init_.Initialize()
 
@@ -1861,17 +1861,6 @@ func (j *jsiiProxy_Job) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (j *jsiiProxy_Job) PutCompute(value interface{}) {
-	if err := j.validatePutComputeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		j,
-		"putCompute",
-		[]interface{}{value},
-	)
-}
-
 func (j *jsiiProxy_Job) PutContinuous(value *JobContinuous) {
 	if err := j.validatePutContinuousParameters(value); err != nil {
 		panic(err)
@@ -1912,6 +1901,17 @@ func (j *jsiiProxy_Job) PutEmailNotifications(value *JobEmailNotifications) {
 	_jsii_.InvokeVoid(
 		j,
 		"putEmailNotifications",
+		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_Job) PutEnvironment(value interface{}) {
+	if err := j.validatePutEnvironmentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putEnvironment",
 		[]interface{}{value},
 	)
 }
@@ -2155,14 +2155,6 @@ func (j *jsiiProxy_Job) ResetAlwaysRunning() {
 	)
 }
 
-func (j *jsiiProxy_Job) ResetCompute() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetCompute",
-		nil, // no parameters
-	)
-}
-
 func (j *jsiiProxy_Job) ResetContinuous() {
 	_jsii_.InvokeVoid(
 		j,
@@ -2215,6 +2207,14 @@ func (j *jsiiProxy_Job) ResetEmailNotifications() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetEmailNotifications",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetEnvironment() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetEnvironment",
 		nil, // no parameters
 	)
 }

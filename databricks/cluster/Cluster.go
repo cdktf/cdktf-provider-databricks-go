@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/cluster databricks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/cluster databricks_cluster}.
 type Cluster interface {
 	cdktf.TerraformResource
 	ApplyPolicyDefaultValues() interface{}
@@ -29,9 +29,9 @@ type Cluster interface {
 	AzureAttributesInput() *ClusterAzureAttributes
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CloneFrom() ClusterCloneFromOutputReference
+	CloneFromInput() *ClusterCloneFrom
 	ClusterId() *string
-	SetClusterId(val *string)
-	ClusterIdInput() *string
 	ClusterLogConf() ClusterClusterLogConfOutputReference
 	ClusterLogConfInput() *ClusterClusterLogConf
 	ClusterMountInfo() ClusterClusterMountInfoList
@@ -202,6 +202,7 @@ type Cluster interface {
 	PutAutoscale(value *ClusterAutoscale)
 	PutAwsAttributes(value *ClusterAwsAttributes)
 	PutAzureAttributes(value *ClusterAzureAttributes)
+	PutCloneFrom(value *ClusterCloneFrom)
 	PutClusterLogConf(value *ClusterClusterLogConf)
 	PutClusterMountInfo(value interface{})
 	PutDockerImage(value *ClusterDockerImage)
@@ -215,7 +216,7 @@ type Cluster interface {
 	ResetAutoterminationMinutes()
 	ResetAwsAttributes()
 	ResetAzureAttributes()
-	ResetClusterId()
+	ResetCloneFrom()
 	ResetClusterLogConf()
 	ResetClusterMountInfo()
 	ResetClusterName()
@@ -374,21 +375,31 @@ func (j *jsiiProxy_Cluster) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Cluster) ClusterId() *string {
-	var returns *string
+func (j *jsiiProxy_Cluster) CloneFrom() ClusterCloneFromOutputReference {
+	var returns ClusterCloneFromOutputReference
 	_jsii_.Get(
 		j,
-		"clusterId",
+		"cloneFrom",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_Cluster) ClusterIdInput() *string {
+func (j *jsiiProxy_Cluster) CloneFromInput() *ClusterCloneFrom {
+	var returns *ClusterCloneFrom
+	_jsii_.Get(
+		j,
+		"cloneFromInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) ClusterId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"clusterIdInput",
+		"clusterId",
 		&returns,
 	)
 	return returns
@@ -1145,7 +1156,7 @@ func (j *jsiiProxy_Cluster) WorkloadTypeInput() *ClusterWorkloadType {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) Cluster {
 	_init_.Initialize()
 
@@ -1163,7 +1174,7 @@ func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster_Override(c Cluster, scope constructs.Construct, id *string, config *ClusterConfig) {
 	_init_.Initialize()
 
@@ -1192,17 +1203,6 @@ func (j *jsiiProxy_Cluster)SetAutoterminationMinutes(val *float64) {
 	_jsii_.Set(
 		j,
 		"autoterminationMinutes",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Cluster)SetClusterId(val *string) {
-	if err := j.validateSetClusterIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"clusterId",
 		val,
 	)
 }
@@ -1881,6 +1881,17 @@ func (c *jsiiProxy_Cluster) PutAzureAttributes(value *ClusterAzureAttributes) {
 	)
 }
 
+func (c *jsiiProxy_Cluster) PutCloneFrom(value *ClusterCloneFrom) {
+	if err := c.validatePutCloneFromParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCloneFrom",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_Cluster) PutClusterLogConf(value *ClusterClusterLogConf) {
 	if err := c.validatePutClusterLogConfParameters(value); err != nil {
 		panic(err)
@@ -2009,10 +2020,10 @@ func (c *jsiiProxy_Cluster) ResetAzureAttributes() {
 	)
 }
 
-func (c *jsiiProxy_Cluster) ResetClusterId() {
+func (c *jsiiProxy_Cluster) ResetCloneFrom() {
 	_jsii_.InvokeVoid(
 		c,
-		"resetClusterId",
+		"resetCloneFrom",
 		nil, // no parameters
 	)
 }

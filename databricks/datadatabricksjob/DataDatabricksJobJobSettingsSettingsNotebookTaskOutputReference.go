@@ -49,6 +49,9 @@ type DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WarehouseId() *string
+	SetWarehouseId(val *string)
+	WarehouseIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -75,6 +78,7 @@ type DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBaseParameters()
 	ResetSource()
+	ResetWarehouseId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -220,6 +224,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference) WarehouseId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"warehouseId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference) WarehouseIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"warehouseIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference {
 	_init_.Initialize()
@@ -332,6 +356,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReferen
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference)SetWarehouseId(val *string) {
+	if err := j.validateSetWarehouseIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"warehouseId",
 		val,
 	)
 }
@@ -534,6 +569,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReferen
 	_jsii_.InvokeVoid(
 		d,
 		"resetSource",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference) ResetWarehouseId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWarehouseId",
 		nil, // no parameters
 	)
 }

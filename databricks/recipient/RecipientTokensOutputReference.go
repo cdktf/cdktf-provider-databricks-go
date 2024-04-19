@@ -14,8 +14,6 @@ import (
 type RecipientTokensOutputReference interface {
 	cdktf.ComplexObject
 	ActivationUrl() *string
-	SetActivationUrl(val *string)
-	ActivationUrlInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -27,24 +25,16 @@ type RecipientTokensOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	CreatedAt() *float64
-	SetCreatedAt(val *float64)
-	CreatedAtInput() *float64
 	CreatedBy() *string
-	SetCreatedBy(val *string)
-	CreatedByInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
 	ExpirationTime() *float64
-	SetExpirationTime(val *float64)
-	ExpirationTimeInput() *float64
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -56,11 +46,7 @@ type RecipientTokensOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	UpdatedAt() *float64
-	SetUpdatedAt(val *float64)
-	UpdatedAtInput() *float64
 	UpdatedBy() *string
-	SetUpdatedBy(val *string)
-	UpdatedByInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -85,13 +71,6 @@ type RecipientTokensOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetActivationUrl()
-	ResetCreatedAt()
-	ResetCreatedBy()
-	ResetExpirationTime()
-	ResetId()
-	ResetUpdatedAt()
-	ResetUpdatedBy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -112,16 +91,6 @@ func (j *jsiiProxy_RecipientTokensOutputReference) ActivationUrl() *string {
 	_jsii_.Get(
 		j,
 		"activationUrl",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RecipientTokensOutputReference) ActivationUrlInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"activationUrlInput",
 		&returns,
 	)
 	return returns
@@ -157,31 +126,11 @@ func (j *jsiiProxy_RecipientTokensOutputReference) CreatedAt() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_RecipientTokensOutputReference) CreatedAtInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"createdAtInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RecipientTokensOutputReference) CreatedBy() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"createdBy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RecipientTokensOutputReference) CreatedByInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdByInput",
 		&returns,
 	)
 	return returns
@@ -207,16 +156,6 @@ func (j *jsiiProxy_RecipientTokensOutputReference) ExpirationTime() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_RecipientTokensOutputReference) ExpirationTimeInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"expirationTimeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RecipientTokensOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -232,16 +171,6 @@ func (j *jsiiProxy_RecipientTokensOutputReference) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RecipientTokensOutputReference) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -287,31 +216,11 @@ func (j *jsiiProxy_RecipientTokensOutputReference) UpdatedAt() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_RecipientTokensOutputReference) UpdatedAtInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"updatedAtInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RecipientTokensOutputReference) UpdatedBy() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"updatedBy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RecipientTokensOutputReference) UpdatedByInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedByInput",
 		&returns,
 	)
 	return returns
@@ -345,17 +254,6 @@ func NewRecipientTokensOutputReference_Override(r RecipientTokensOutputReference
 	)
 }
 
-func (j *jsiiProxy_RecipientTokensOutputReference)SetActivationUrl(val *string) {
-	if err := j.validateSetActivationUrlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"activationUrl",
-		val,
-	)
-}
-
 func (j *jsiiProxy_RecipientTokensOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -374,50 +272,6 @@ func (j *jsiiProxy_RecipientTokensOutputReference)SetComplexObjectIsFromSet(val 
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RecipientTokensOutputReference)SetCreatedAt(val *float64) {
-	if err := j.validateSetCreatedAtParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createdAt",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RecipientTokensOutputReference)SetCreatedBy(val *string) {
-	if err := j.validateSetCreatedByParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createdBy",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RecipientTokensOutputReference)SetExpirationTime(val *float64) {
-	if err := j.validateSetExpirationTimeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"expirationTime",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RecipientTokensOutputReference)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -451,28 +305,6 @@ func (j *jsiiProxy_RecipientTokensOutputReference)SetTerraformResource(val cdktf
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RecipientTokensOutputReference)SetUpdatedAt(val *float64) {
-	if err := j.validateSetUpdatedAtParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"updatedAt",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RecipientTokensOutputReference)SetUpdatedBy(val *string) {
-	if err := j.validateSetUpdatedByParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"updatedBy",
 		val,
 	)
 }
@@ -661,62 +493,6 @@ func (r *jsiiProxy_RecipientTokensOutputReference) InterpolationForAttribute(pro
 	)
 
 	return returns
-}
-
-func (r *jsiiProxy_RecipientTokensOutputReference) ResetActivationUrl() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetActivationUrl",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RecipientTokensOutputReference) ResetCreatedAt() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetCreatedAt",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RecipientTokensOutputReference) ResetCreatedBy() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetCreatedBy",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RecipientTokensOutputReference) ResetExpirationTime() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetExpirationTime",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RecipientTokensOutputReference) ResetId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RecipientTokensOutputReference) ResetUpdatedAt() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetUpdatedAt",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RecipientTokensOutputReference) ResetUpdatedBy() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetUpdatedBy",
-		nil, // no parameters
-	)
 }
 
 func (r *jsiiProxy_RecipientTokensOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

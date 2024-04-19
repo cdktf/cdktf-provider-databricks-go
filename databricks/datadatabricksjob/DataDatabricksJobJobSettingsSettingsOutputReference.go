@@ -23,8 +23,6 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	Compute() DataDatabricksJobJobSettingsSettingsComputeList
-	ComputeInput() interface{}
 	Continuous() DataDatabricksJobJobSettingsSettingsContinuousOutputReference
 	ContinuousInput() *DataDatabricksJobJobSettingsSettingsContinuous
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -44,6 +42,8 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	EditModeInput() *string
 	EmailNotifications() DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference
 	EmailNotificationsInput() *DataDatabricksJobJobSettingsSettingsEmailNotifications
+	Environment() DataDatabricksJobJobSettingsSettingsEnvironmentList
+	EnvironmentInput() interface{}
 	ExistingClusterId() *string
 	SetExistingClusterId(val *string)
 	ExistingClusterIdInput() *string
@@ -147,11 +147,11 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCompute(value interface{})
 	PutContinuous(value *DataDatabricksJobJobSettingsSettingsContinuous)
 	PutDbtTask(value *DataDatabricksJobJobSettingsSettingsDbtTask)
 	PutDeployment(value *DataDatabricksJobJobSettingsSettingsDeployment)
 	PutEmailNotifications(value *DataDatabricksJobJobSettingsSettingsEmailNotifications)
+	PutEnvironment(value interface{})
 	PutGitSource(value *DataDatabricksJobJobSettingsSettingsGitSource)
 	PutHealth(value *DataDatabricksJobJobSettingsSettingsHealth)
 	PutJobCluster(value interface{})
@@ -172,13 +172,13 @@ type DataDatabricksJobJobSettingsSettingsOutputReference interface {
 	PutTask(value interface{})
 	PutTrigger(value *DataDatabricksJobJobSettingsSettingsTrigger)
 	PutWebhookNotifications(value *DataDatabricksJobJobSettingsSettingsWebhookNotifications)
-	ResetCompute()
 	ResetContinuous()
 	ResetDbtTask()
 	ResetDeployment()
 	ResetDescription()
 	ResetEditMode()
 	ResetEmailNotifications()
+	ResetEnvironment()
 	ResetExistingClusterId()
 	ResetFormat()
 	ResetGitSource()
@@ -238,26 +238,6 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ComplexO
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) Compute() DataDatabricksJobJobSettingsSettingsComputeList {
-	var returns DataDatabricksJobJobSettingsSettingsComputeList
-	_jsii_.Get(
-		j,
-		"compute",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ComputeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"computeInput",
 		&returns,
 	)
 	return returns
@@ -388,6 +368,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) EmailNot
 	_jsii_.Get(
 		j,
 		"emailNotificationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) Environment() DataDatabricksJobJobSettingsSettingsEnvironmentList {
+	var returns DataDatabricksJobJobSettingsSettingsEnvironmentList
+	_jsii_.Get(
+		j,
+		"environment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) EnvironmentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"environmentInput",
 		&returns,
 	)
 	return returns
@@ -1403,17 +1403,6 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutCompute(value interface{}) {
-	if err := d.validatePutComputeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putCompute",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutContinuous(value *DataDatabricksJobJobSettingsSettingsContinuous) {
 	if err := d.validatePutContinuousParameters(value); err != nil {
 		panic(err)
@@ -1454,6 +1443,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutEmail
 	_jsii_.InvokeVoid(
 		d,
 		"putEmailNotifications",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutEnvironment(value interface{}) {
+	if err := d.validatePutEnvironmentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putEnvironment",
 		[]interface{}{value},
 	)
 }
@@ -1678,14 +1678,6 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) PutWebho
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetCompute() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCompute",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetContinuous() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1730,6 +1722,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetEma
 	_jsii_.InvokeVoid(
 		d,
 		"resetEmailNotifications",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsOutputReference) ResetEnvironment() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnvironment",
 		nil, // no parameters
 	)
 }
