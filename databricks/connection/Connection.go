@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/connection databricks_connection}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/connection databricks_connection}.
 type Connection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -499,7 +499,7 @@ func (j *jsiiProxy_Connection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/connection databricks_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/connection databricks_connection} Resource.
 func NewConnection(scope constructs.Construct, id *string, config *ConnectionConfig) Connection {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewConnection(scope constructs.Construct, id *string, config *ConnectionCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/resources/connection databricks_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/connection databricks_connection} Resource.
 func NewConnection_Override(c Connection, scope constructs.Construct, id *string, config *ConnectionConfig) {
 	_init_.Initialize()
 
