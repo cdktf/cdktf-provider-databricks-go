@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrar
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryOutputReference) validateSetRequirementsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

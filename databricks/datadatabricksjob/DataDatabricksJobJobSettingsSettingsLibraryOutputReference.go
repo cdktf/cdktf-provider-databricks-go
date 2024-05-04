@@ -44,6 +44,9 @@ type DataDatabricksJobJobSettingsSettingsLibraryOutputReference interface {
 	MavenInput() *DataDatabricksJobJobSettingsSettingsLibraryMaven
 	Pypi() DataDatabricksJobJobSettingsSettingsLibraryPypiOutputReference
 	PypiInput() *DataDatabricksJobJobSettingsSettingsLibraryPypi
+	Requirements() *string
+	SetRequirements(val *string)
+	RequirementsInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -87,6 +90,7 @@ type DataDatabricksJobJobSettingsSettingsLibraryOutputReference interface {
 	ResetJar()
 	ResetMaven()
 	ResetPypi()
+	ResetRequirements()
 	ResetWhl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -253,6 +257,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference) P
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference) Requirements() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requirements",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference) RequirementsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requirementsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -372,6 +396,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference)Se
 	_jsii_.Set(
 		j,
 		"jar",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference)SetRequirements(val *string) {
+	if err := j.validateSetRequirementsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requirements",
 		val,
 	)
 }
@@ -664,6 +699,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference) R
 	_jsii_.InvokeVoid(
 		d,
 		"resetPypi",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference) ResetRequirements() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRequirements",
 		nil, // no parameters
 	)
 }

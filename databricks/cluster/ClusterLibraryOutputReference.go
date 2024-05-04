@@ -44,6 +44,9 @@ type ClusterLibraryOutputReference interface {
 	MavenInput() *ClusterLibraryMaven
 	Pypi() ClusterLibraryPypiOutputReference
 	PypiInput() *ClusterLibraryPypi
+	Requirements() *string
+	SetRequirements(val *string)
+	RequirementsInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -87,6 +90,7 @@ type ClusterLibraryOutputReference interface {
 	ResetJar()
 	ResetMaven()
 	ResetPypi()
+	ResetRequirements()
 	ResetWhl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -253,6 +257,26 @@ func (j *jsiiProxy_ClusterLibraryOutputReference) PypiInput() *ClusterLibraryPyp
 	return returns
 }
 
+func (j *jsiiProxy_ClusterLibraryOutputReference) Requirements() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requirements",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterLibraryOutputReference) RequirementsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requirementsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ClusterLibraryOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -372,6 +396,17 @@ func (j *jsiiProxy_ClusterLibraryOutputReference)SetJar(val *string) {
 	_jsii_.Set(
 		j,
 		"jar",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterLibraryOutputReference)SetRequirements(val *string) {
+	if err := j.validateSetRequirementsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requirements",
 		val,
 	)
 }
@@ -664,6 +699,14 @@ func (c *jsiiProxy_ClusterLibraryOutputReference) ResetPypi() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetPypi",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterLibraryOutputReference) ResetRequirements() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRequirements",
 		nil, // no parameters
 	)
 }

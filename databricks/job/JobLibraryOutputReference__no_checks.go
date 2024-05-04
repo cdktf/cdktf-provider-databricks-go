@@ -83,6 +83,10 @@ func (j *jsiiProxy_JobLibraryOutputReference) validateSetJarParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_JobLibraryOutputReference) validateSetRequirementsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobLibraryOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

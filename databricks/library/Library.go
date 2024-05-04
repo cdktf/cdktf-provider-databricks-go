@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library databricks_library}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library databricks_library}.
 type Library interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -73,6 +73,9 @@ type Library interface {
 	PypiInput() *LibraryPypi
 	// Experimental.
 	RawOverrides() interface{}
+	Requirements() *string
+	SetRequirements(val *string)
+	RequirementsInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -137,6 +140,7 @@ type Library interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPypi()
+	ResetRequirements()
 	ResetWhl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -426,6 +430,26 @@ func (j *jsiiProxy_Library) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Library) Requirements() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requirements",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Library) RequirementsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requirementsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Library) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -477,7 +501,7 @@ func (j *jsiiProxy_Library) WhlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library databricks_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library databricks_library} Resource.
 func NewLibrary(scope constructs.Construct, id *string, config *LibraryConfig) Library {
 	_init_.Initialize()
 
@@ -495,7 +519,7 @@ func NewLibrary(scope constructs.Construct, id *string, config *LibraryConfig) L
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library databricks_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library databricks_library} Resource.
 func NewLibrary_Override(l Library, scope constructs.Construct, id *string, config *LibraryConfig) {
 	_init_.Initialize()
 
@@ -614,6 +638,17 @@ func (j *jsiiProxy_Library)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Library)SetRequirements(val *string) {
+	if err := j.validateSetRequirementsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requirements",
 		val,
 	)
 }
@@ -1067,6 +1102,14 @@ func (l *jsiiProxy_Library) ResetPypi() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPypi",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Library) ResetRequirements() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRequirements",
 		nil, // no parameters
 	)
 }

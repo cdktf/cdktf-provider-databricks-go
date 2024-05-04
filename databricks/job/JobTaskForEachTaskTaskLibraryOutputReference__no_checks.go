@@ -83,6 +83,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskLibraryOutputReference) validateSetJarP
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskLibraryOutputReference) validateSetRequirementsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskLibraryOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

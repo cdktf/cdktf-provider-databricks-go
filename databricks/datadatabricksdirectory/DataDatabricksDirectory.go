@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/data-sources/directory databricks_directory}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/data-sources/directory databricks_directory}.
 type DataDatabricksDirectory interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -63,6 +63,8 @@ type DataDatabricksDirectory interface {
 	// Experimental.
 	TerraformResourceType() *string
 	WorkspacePath() *string
+	SetWorkspacePath(val *string)
+	WorkspacePathInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -93,6 +95,7 @@ type DataDatabricksDirectory interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetWorkspacePath()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -322,8 +325,18 @@ func (j *jsiiProxy_DataDatabricksDirectory) WorkspacePath() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDirectory) WorkspacePathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspacePathInput",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/data-sources/directory databricks_directory} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/data-sources/directory databricks_directory} Data Source.
 func NewDataDatabricksDirectory(scope constructs.Construct, id *string, config *DataDatabricksDirectoryConfig) DataDatabricksDirectory {
 	_init_.Initialize()
 
@@ -341,7 +354,7 @@ func NewDataDatabricksDirectory(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/data-sources/directory databricks_directory} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/data-sources/directory databricks_directory} Data Source.
 func NewDataDatabricksDirectory_Override(d DataDatabricksDirectory, scope constructs.Construct, id *string, config *DataDatabricksDirectoryConfig) {
 	_init_.Initialize()
 
@@ -427,6 +440,17 @@ func (j *jsiiProxy_DataDatabricksDirectory)SetProvider(val cdktf.TerraformProvid
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksDirectory)SetWorkspacePath(val *string) {
+	if err := j.validateSetWorkspacePathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspacePath",
 		val,
 	)
 }
@@ -736,6 +760,14 @@ func (d *jsiiProxy_DataDatabricksDirectory) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDirectory) ResetWorkspacePath() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWorkspacePath",
 		nil, // no parameters
 	)
 }

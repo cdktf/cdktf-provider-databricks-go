@@ -83,6 +83,10 @@ func (j *jsiiProxy_ClusterPolicyLibrariesOutputReference) validateSetJarParamete
 	return nil
 }
 
+func (j *jsiiProxy_ClusterPolicyLibrariesOutputReference) validateSetRequirementsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClusterPolicyLibrariesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

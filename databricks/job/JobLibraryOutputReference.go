@@ -44,6 +44,9 @@ type JobLibraryOutputReference interface {
 	MavenInput() *JobLibraryMaven
 	Pypi() JobLibraryPypiOutputReference
 	PypiInput() *JobLibraryPypi
+	Requirements() *string
+	SetRequirements(val *string)
+	RequirementsInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -87,6 +90,7 @@ type JobLibraryOutputReference interface {
 	ResetJar()
 	ResetMaven()
 	ResetPypi()
+	ResetRequirements()
 	ResetWhl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -253,6 +257,26 @@ func (j *jsiiProxy_JobLibraryOutputReference) PypiInput() *JobLibraryPypi {
 	return returns
 }
 
+func (j *jsiiProxy_JobLibraryOutputReference) Requirements() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requirements",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobLibraryOutputReference) RequirementsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requirementsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobLibraryOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -372,6 +396,17 @@ func (j *jsiiProxy_JobLibraryOutputReference)SetJar(val *string) {
 	_jsii_.Set(
 		j,
 		"jar",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobLibraryOutputReference)SetRequirements(val *string) {
+	if err := j.validateSetRequirementsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requirements",
 		val,
 	)
 }
@@ -664,6 +699,14 @@ func (j *jsiiProxy_JobLibraryOutputReference) ResetPypi() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetPypi",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobLibraryOutputReference) ResetRequirements() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetRequirements",
 		nil, // no parameters
 	)
 }

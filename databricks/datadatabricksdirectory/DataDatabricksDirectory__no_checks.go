@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataDatabricksDirectory) validateSetPathParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDirectory) validateSetWorkspacePathParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksDirectoryParameters(scope constructs.Construct, id *string, config *DataDatabricksDirectoryConfig) error {
 	return nil
 }

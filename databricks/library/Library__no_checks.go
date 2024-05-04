@@ -135,6 +135,10 @@ func (j *jsiiProxy_Library) validateSetProvisionersParameters(val *[]interface{}
 	return nil
 }
 
+func (j *jsiiProxy_Library) validateSetRequirementsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Library) validateSetWhlParameters(val *string) error {
 	return nil
 }
