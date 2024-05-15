@@ -59,6 +59,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validatePutAzureAttri
 	return nil
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validatePutCloneFromParameters(value *JobJobClusterNewClusterCloneFrom) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validatePutClusterLogConfParameters(value *JobJobClusterNewClusterClusterLogConf) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validatePutGcpAttribu
 }
 
 func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validatePutInitScriptsParameters(value interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validatePutLibraryParameters(value interface{}) error {
 	return nil
 }
 

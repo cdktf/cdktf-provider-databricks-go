@@ -37,6 +37,9 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableAutoOptimization() interface{}
+	SetDisableAutoOptimization(val interface{})
+	DisableAutoOptimizationInput() interface{}
 	EmailNotifications() JobTaskForEachTaskTaskEmailNotificationsOutputReference
 	EmailNotificationsInput() *JobTaskForEachTaskTaskEmailNotifications
 	EnvironmentKey() *string
@@ -149,6 +152,7 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	ResetDbtTask()
 	ResetDependsOn()
 	ResetDescription()
+	ResetDisableAutoOptimization()
 	ResetEmailNotifications()
 	ResetEnvironmentKey()
 	ResetExistingClusterId()
@@ -292,6 +296,26 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) DescriptionInput() *st
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) DisableAutoOptimization() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutoOptimization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) DisableAutoOptimizationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutoOptimizationInput",
 		&returns,
 	)
 	return returns
@@ -858,6 +882,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference)SetDescription(val *str
 	)
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference)SetDisableAutoOptimization(val interface{}) {
+	if err := j.validateSetDisableAutoOptimizationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableAutoOptimization",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference)SetEnvironmentKey(val *string) {
 	if err := j.validateSetEnvironmentKeyParameters(val); err != nil {
 		panic(err)
@@ -1391,6 +1426,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ResetDisableAutoOptimization() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetDisableAutoOptimization",
 		nil, // no parameters
 	)
 }

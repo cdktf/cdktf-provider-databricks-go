@@ -47,6 +47,10 @@ func (j *jsiiProxy_JobGitSourceOutputReference) validateInterpolationForAttribut
 	return nil
 }
 
+func (j *jsiiProxy_JobGitSourceOutputReference) validatePutGitSnapshotParameters(value *JobGitSourceGitSnapshot) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobGitSourceOutputReference) validatePutJobSourceParameters(value *JobGitSourceJobSource) error {
 	return nil
 }

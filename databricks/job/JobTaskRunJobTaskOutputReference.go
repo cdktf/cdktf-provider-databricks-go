@@ -28,16 +28,39 @@ type JobTaskRunJobTaskOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DbtCommands() *[]*string
+	SetDbtCommands(val *[]*string)
+	DbtCommandsInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *JobTaskRunJobTask
 	SetInternalValue(val *JobTaskRunJobTask)
+	JarParams() *[]*string
+	SetJarParams(val *[]*string)
+	JarParamsInput() *[]*string
 	JobId() *float64
 	SetJobId(val *float64)
 	JobIdInput() *float64
 	JobParameters() *map[string]*string
 	SetJobParameters(val *map[string]*string)
 	JobParametersInput() *map[string]*string
+	NotebookParams() *map[string]*string
+	SetNotebookParams(val *map[string]*string)
+	NotebookParamsInput() *map[string]*string
+	PipelineParams() JobTaskRunJobTaskPipelineParamsOutputReference
+	PipelineParamsInput() *JobTaskRunJobTaskPipelineParams
+	PythonNamedParams() *map[string]*string
+	SetPythonNamedParams(val *map[string]*string)
+	PythonNamedParamsInput() *map[string]*string
+	PythonParams() *[]*string
+	SetPythonParams(val *[]*string)
+	PythonParamsInput() *[]*string
+	SparkSubmitParams() *[]*string
+	SetSparkSubmitParams(val *[]*string)
+	SparkSubmitParamsInput() *[]*string
+	SqlParams() *map[string]*string
+	SetSqlParams(val *map[string]*string)
+	SqlParamsInput() *map[string]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,7 +93,16 @@ type JobTaskRunJobTaskOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPipelineParams(value *JobTaskRunJobTaskPipelineParams)
+	ResetDbtCommands()
+	ResetJarParams()
 	ResetJobParameters()
+	ResetNotebookParams()
+	ResetPipelineParams()
+	ResetPythonNamedParams()
+	ResetPythonParams()
+	ResetSparkSubmitParams()
+	ResetSqlParams()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -116,6 +148,26 @@ func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) CreationStack() *[]*string 
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) DbtCommands() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dbtCommands",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) DbtCommandsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dbtCommandsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -131,6 +183,26 @@ func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) InternalValue() *JobTaskRun
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) JarParams() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"jarParams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) JarParamsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"jarParamsInput",
 		&returns,
 	)
 	return returns
@@ -171,6 +243,126 @@ func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) JobParametersInput() *map[s
 	_jsii_.Get(
 		j,
 		"jobParametersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) NotebookParams() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"notebookParams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) NotebookParamsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"notebookParamsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) PipelineParams() JobTaskRunJobTaskPipelineParamsOutputReference {
+	var returns JobTaskRunJobTaskPipelineParamsOutputReference
+	_jsii_.Get(
+		j,
+		"pipelineParams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) PipelineParamsInput() *JobTaskRunJobTaskPipelineParams {
+	var returns *JobTaskRunJobTaskPipelineParams
+	_jsii_.Get(
+		j,
+		"pipelineParamsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) PythonNamedParams() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"pythonNamedParams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) PythonNamedParamsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"pythonNamedParamsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) PythonParams() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"pythonParams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) PythonParamsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"pythonParamsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) SparkSubmitParams() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sparkSubmitParams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) SparkSubmitParamsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sparkSubmitParamsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) SqlParams() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"sqlParams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) SqlParamsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"sqlParamsInput",
 		&returns,
 	)
 	return returns
@@ -246,6 +438,17 @@ func (j *jsiiProxy_JobTaskRunJobTaskOutputReference)SetComplexObjectIsFromSet(va
 	)
 }
 
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference)SetDbtCommands(val *[]*string) {
+	if err := j.validateSetDbtCommandsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dbtCommands",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JobTaskRunJobTaskOutputReference)SetInternalValue(val *JobTaskRunJobTask) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -253,6 +456,17 @@ func (j *jsiiProxy_JobTaskRunJobTaskOutputReference)SetInternalValue(val *JobTas
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference)SetJarParams(val *[]*string) {
+	if err := j.validateSetJarParamsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jarParams",
 		val,
 	)
 }
@@ -275,6 +489,61 @@ func (j *jsiiProxy_JobTaskRunJobTaskOutputReference)SetJobParameters(val *map[st
 	_jsii_.Set(
 		j,
 		"jobParameters",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference)SetNotebookParams(val *map[string]*string) {
+	if err := j.validateSetNotebookParamsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notebookParams",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference)SetPythonNamedParams(val *map[string]*string) {
+	if err := j.validateSetPythonNamedParamsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pythonNamedParams",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference)SetPythonParams(val *[]*string) {
+	if err := j.validateSetPythonParamsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pythonParams",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference)SetSparkSubmitParams(val *[]*string) {
+	if err := j.validateSetSparkSubmitParamsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sparkSubmitParams",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference)SetSqlParams(val *map[string]*string) {
+	if err := j.validateSetSqlParamsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sqlParams",
 		val,
 	)
 }
@@ -487,10 +756,85 @@ func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) InterpolationForAttribute(p
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) PutPipelineParams(value *JobTaskRunJobTaskPipelineParams) {
+	if err := j.validatePutPipelineParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putPipelineParams",
+		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) ResetDbtCommands() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetDbtCommands",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) ResetJarParams() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetJarParams",
+		nil, // no parameters
+	)
+}
+
 func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) ResetJobParameters() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetJobParameters",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) ResetNotebookParams() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetNotebookParams",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) ResetPipelineParams() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetPipelineParams",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) ResetPythonNamedParams() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetPythonNamedParams",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) ResetPythonParams() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetPythonParams",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) ResetSparkSubmitParams() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetSparkSubmitParams",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) ResetSqlParams() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetSqlParams",
 		nil, // no parameters
 	)
 }

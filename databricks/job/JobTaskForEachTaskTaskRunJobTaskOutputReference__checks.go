@@ -93,6 +93,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateInte
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validatePutPipelineParamsParameters(value *JobTaskForEachTaskTaskRunJobTaskPipelineParams) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -166,9 +177,25 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetDbtCommandsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetInternalValueParameters(val *JobTaskForEachTaskTaskRunJobTask) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetJarParamsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -183,6 +210,46 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetJ
 }
 
 func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetJobParametersParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetNotebookParamsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetPythonNamedParamsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetPythonParamsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetSparkSubmitParamsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetSqlParamsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

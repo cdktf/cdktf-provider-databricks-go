@@ -34,9 +34,15 @@ type JobTaskNewClusterAwsAttributesOutputReference interface {
 	EbsVolumeCount() *float64
 	SetEbsVolumeCount(val *float64)
 	EbsVolumeCountInput() *float64
+	EbsVolumeIops() *float64
+	SetEbsVolumeIops(val *float64)
+	EbsVolumeIopsInput() *float64
 	EbsVolumeSize() *float64
 	SetEbsVolumeSize(val *float64)
 	EbsVolumeSizeInput() *float64
+	EbsVolumeThroughput() *float64
+	SetEbsVolumeThroughput(val *float64)
+	EbsVolumeThroughputInput() *float64
 	EbsVolumeType() *string
 	SetEbsVolumeType(val *string)
 	EbsVolumeTypeInput() *string
@@ -90,7 +96,9 @@ type JobTaskNewClusterAwsAttributesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAvailability()
 	ResetEbsVolumeCount()
+	ResetEbsVolumeIops()
 	ResetEbsVolumeSize()
+	ResetEbsVolumeThroughput()
 	ResetEbsVolumeType()
 	ResetFirstOnDemand()
 	ResetInstanceProfileArn()
@@ -181,6 +189,26 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) EbsVolumeCount
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) EbsVolumeIops() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ebsVolumeIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) EbsVolumeIopsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ebsVolumeIopsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) EbsVolumeSize() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -196,6 +224,26 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) EbsVolumeSizeI
 	_jsii_.Get(
 		j,
 		"ebsVolumeSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) EbsVolumeThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ebsVolumeThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) EbsVolumeThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ebsVolumeThroughputInput",
 		&returns,
 	)
 	return returns
@@ -413,6 +461,17 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetEbsVolumeCou
 	)
 }
 
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetEbsVolumeIops(val *float64) {
+	if err := j.validateSetEbsVolumeIopsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ebsVolumeIops",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetEbsVolumeSize(val *float64) {
 	if err := j.validateSetEbsVolumeSizeParameters(val); err != nil {
 		panic(err)
@@ -420,6 +479,17 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetEbsVolumeSiz
 	_jsii_.Set(
 		j,
 		"ebsVolumeSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference)SetEbsVolumeThroughput(val *float64) {
+	if err := j.validateSetEbsVolumeThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ebsVolumeThroughput",
 		val,
 	)
 }
@@ -714,10 +784,26 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) ResetEbsVolume
 	)
 }
 
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) ResetEbsVolumeIops() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetEbsVolumeIops",
+		nil, // no parameters
+	)
+}
+
 func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) ResetEbsVolumeSize() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetEbsVolumeSize",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) ResetEbsVolumeThroughput() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetEbsVolumeThroughput",
 		nil, // no parameters
 	)
 }

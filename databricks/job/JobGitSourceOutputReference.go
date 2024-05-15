@@ -36,6 +36,8 @@ type JobGitSourceOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GitSnapshot() JobGitSourceGitSnapshotOutputReference
+	GitSnapshotInput() *JobGitSourceGitSnapshot
 	InternalValue() *JobGitSource
 	SetInternalValue(val *JobGitSource)
 	JobSource() JobGitSourceJobSourceOutputReference
@@ -81,9 +83,11 @@ type JobGitSourceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutGitSnapshot(value *JobGitSourceGitSnapshot)
 	PutJobSource(value *JobGitSourceJobSource)
 	ResetBranch()
 	ResetCommit()
+	ResetGitSnapshot()
 	ResetJobSource()
 	ResetProvider()
 	ResetTag()
@@ -177,6 +181,26 @@ func (j *jsiiProxy_JobGitSourceOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobGitSourceOutputReference) GitSnapshot() JobGitSourceGitSnapshotOutputReference {
+	var returns JobGitSourceGitSnapshotOutputReference
+	_jsii_.Get(
+		j,
+		"gitSnapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobGitSourceOutputReference) GitSnapshotInput() *JobGitSourceGitSnapshot {
+	var returns *JobGitSourceGitSnapshot
+	_jsii_.Get(
+		j,
+		"gitSnapshotInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (j *jsiiProxy_JobGitSourceOutputReference) InterpolationForAttribute(proper
 	return returns
 }
 
+func (j *jsiiProxy_JobGitSourceOutputReference) PutGitSnapshot(value *JobGitSourceGitSnapshot) {
+	if err := j.validatePutGitSnapshotParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putGitSnapshot",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobGitSourceOutputReference) PutJobSource(value *JobGitSourceJobSource) {
 	if err := j.validatePutJobSourceParameters(value); err != nil {
 		panic(err)
@@ -639,6 +674,14 @@ func (j *jsiiProxy_JobGitSourceOutputReference) ResetCommit() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetCommit",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobGitSourceOutputReference) ResetGitSnapshot() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetGitSnapshot",
 		nil, // no parameters
 	)
 }

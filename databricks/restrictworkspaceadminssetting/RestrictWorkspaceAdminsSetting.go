@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/restrict_workspace_admins_setting databricks_restrict_workspace_admins_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/restrict_workspace_admins_setting databricks_restrict_workspace_admins_setting}.
 type RestrictWorkspaceAdminsSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_RestrictWorkspaceAdminsSetting) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/restrict_workspace_admins_setting databricks_restrict_workspace_admins_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/restrict_workspace_admins_setting databricks_restrict_workspace_admins_setting} Resource.
 func NewRestrictWorkspaceAdminsSetting(scope constructs.Construct, id *string, config *RestrictWorkspaceAdminsSettingConfig) RestrictWorkspaceAdminsSetting {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewRestrictWorkspaceAdminsSetting(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/restrict_workspace_admins_setting databricks_restrict_workspace_admins_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/restrict_workspace_admins_setting databricks_restrict_workspace_admins_setting} Resource.
 func NewRestrictWorkspaceAdminsSetting_Override(r RestrictWorkspaceAdminsSetting, scope constructs.Construct, id *string, config *RestrictWorkspaceAdminsSettingConfig) {
 	_init_.Initialize()
 

@@ -38,6 +38,8 @@ type JobTaskNewClusterAzureAttributesOutputReference interface {
 	Fqn() *string
 	InternalValue() *JobTaskNewClusterAzureAttributes
 	SetInternalValue(val *JobTaskNewClusterAzureAttributes)
+	LogAnalyticsInfo() JobTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference
+	LogAnalyticsInfoInput() *JobTaskNewClusterAzureAttributesLogAnalyticsInfo
 	SpotBidMaxPrice() *float64
 	SetSpotBidMaxPrice(val *float64)
 	SpotBidMaxPriceInput() *float64
@@ -73,8 +75,10 @@ type JobTaskNewClusterAzureAttributesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutLogAnalyticsInfo(value *JobTaskNewClusterAzureAttributesLogAnalyticsInfo)
 	ResetAvailability()
 	ResetFirstOnDemand()
+	ResetLogAnalyticsInfo()
 	ResetSpotBidMaxPrice()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -176,6 +180,26 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) InternalValu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) LogAnalyticsInfo() JobTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference {
+	var returns JobTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference
+	_jsii_.Get(
+		j,
+		"logAnalyticsInfo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) LogAnalyticsInfoInput() *JobTaskNewClusterAzureAttributesLogAnalyticsInfo {
+	var returns *JobTaskNewClusterAzureAttributesLogAnalyticsInfo
+	_jsii_.Get(
+		j,
+		"logAnalyticsInfoInput",
 		&returns,
 	)
 	return returns
@@ -523,6 +547,17 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) Interpolatio
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) PutLogAnalyticsInfo(value *JobTaskNewClusterAzureAttributesLogAnalyticsInfo) {
+	if err := j.validatePutLogAnalyticsInfoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putLogAnalyticsInfo",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) ResetAvailability() {
 	_jsii_.InvokeVoid(
 		j,
@@ -535,6 +570,14 @@ func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) ResetFirstOn
 	_jsii_.InvokeVoid(
 		j,
 		"resetFirstOnDemand",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskNewClusterAzureAttributesOutputReference) ResetLogAnalyticsInfo() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetLogAnalyticsInfo",
 		nil, // no parameters
 	)
 }

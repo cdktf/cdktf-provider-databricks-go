@@ -5,7 +5,7 @@ package cluster
 
 
 type ClusterCloneFrom struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/cluster#source_cluster_id Cluster#source_cluster_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/cluster#source_cluster_id Cluster#source_cluster_id}.
 	SourceClusterId *string `field:"required" json:"sourceClusterId" yaml:"sourceClusterId"`
 }
 

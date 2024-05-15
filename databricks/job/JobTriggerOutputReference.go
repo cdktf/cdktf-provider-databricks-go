@@ -37,6 +37,8 @@ type JobTriggerOutputReference interface {
 	PauseStatus() *string
 	SetPauseStatus(val *string)
 	PauseStatusInput() *string
+	Table() JobTriggerTableOutputReference
+	TableInput() *JobTriggerTable
 	TableUpdate() JobTriggerTableUpdateOutputReference
 	TableUpdateInput() *JobTriggerTableUpdate
 	// Experimental.
@@ -72,9 +74,11 @@ type JobTriggerOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFileArrival(value *JobTriggerFileArrival)
+	PutTable(value *JobTriggerTable)
 	PutTableUpdate(value *JobTriggerTableUpdate)
 	ResetFileArrival()
 	ResetPauseStatus()
+	ResetTable()
 	ResetTableUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -176,6 +180,26 @@ func (j *jsiiProxy_JobTriggerOutputReference) PauseStatusInput() *string {
 	_jsii_.Get(
 		j,
 		"pauseStatusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) Table() JobTriggerTableOutputReference {
+	var returns JobTriggerTableOutputReference
+	_jsii_.Get(
+		j,
+		"table",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) TableInput() *JobTriggerTable {
+	var returns *JobTriggerTable
+	_jsii_.Get(
+		j,
+		"tableInput",
 		&returns,
 	)
 	return returns
@@ -512,6 +536,17 @@ func (j *jsiiProxy_JobTriggerOutputReference) PutFileArrival(value *JobTriggerFi
 	)
 }
 
+func (j *jsiiProxy_JobTriggerOutputReference) PutTable(value *JobTriggerTable) {
+	if err := j.validatePutTableParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putTable",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTriggerOutputReference) PutTableUpdate(value *JobTriggerTableUpdate) {
 	if err := j.validatePutTableUpdateParameters(value); err != nil {
 		panic(err)
@@ -535,6 +570,14 @@ func (j *jsiiProxy_JobTriggerOutputReference) ResetPauseStatus() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetPauseStatus",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) ResetTable() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetTable",
 		nil, // no parameters
 	)
 }

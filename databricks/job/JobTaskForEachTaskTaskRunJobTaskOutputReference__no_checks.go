@@ -47,6 +47,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateInte
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validatePutPipelineParamsParameters(value *JobTaskForEachTaskTaskRunJobTaskPipelineParams) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -59,7 +63,15 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetDbtCommandsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetInternalValueParameters(val *JobTaskForEachTaskTaskRunJobTask) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetJarParamsParameters(val *[]*string) error {
 	return nil
 }
 
@@ -68,6 +80,26 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetJ
 }
 
 func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetJobParametersParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetNotebookParamsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetPythonNamedParamsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetPythonParamsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetSparkSubmitParamsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskRunJobTaskOutputReference) validateSetSqlParamsParameters(val *map[string]*string) error {
 	return nil
 }
 

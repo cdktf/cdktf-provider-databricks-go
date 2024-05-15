@@ -47,6 +47,10 @@ func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateInterpolationForAtt
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validatePutPipelineParamsParameters(value *JobTaskRunJobTaskPipelineParams) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -59,7 +63,15 @@ func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateSetComplexObjectIsF
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateSetDbtCommandsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateSetInternalValueParameters(val *JobTaskRunJobTask) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateSetJarParamsParameters(val *[]*string) error {
 	return nil
 }
 
@@ -68,6 +80,26 @@ func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateSetJobIdParameters(
 }
 
 func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateSetJobParametersParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateSetNotebookParamsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateSetPythonNamedParamsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateSetPythonParamsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateSetSparkSubmitParamsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateSetSqlParamsParameters(val *map[string]*string) error {
 	return nil
 }
 

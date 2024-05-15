@@ -131,6 +131,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateSetDescription
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateSetDisableAutoOptimizationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateSetEnvironmentKeyParameters(val *string) error {
 	return nil
 }

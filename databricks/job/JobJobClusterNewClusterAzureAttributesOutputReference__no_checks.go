@@ -47,6 +47,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterAzureAttributesOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterAzureAttributesOutputReference) validatePutLogAnalyticsInfoParameters(value *JobJobClusterNewClusterAzureAttributesLogAnalyticsInfo) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterAzureAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

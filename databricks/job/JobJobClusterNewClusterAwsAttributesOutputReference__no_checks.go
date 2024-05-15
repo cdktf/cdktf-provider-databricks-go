@@ -67,7 +67,15 @@ func (j *jsiiProxy_JobJobClusterNewClusterAwsAttributesOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterAwsAttributesOutputReference) validateSetEbsVolumeIopsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterAwsAttributesOutputReference) validateSetEbsVolumeSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterAwsAttributesOutputReference) validateSetEbsVolumeThroughputParameters(val *float64) error {
 	return nil
 }
 

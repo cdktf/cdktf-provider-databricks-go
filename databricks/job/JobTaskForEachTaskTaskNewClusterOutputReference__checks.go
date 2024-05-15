@@ -126,6 +126,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) validatePutA
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) validatePutCloneFromParameters(value *JobTaskForEachTaskTaskNewClusterCloneFrom) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) validatePutClusterLogConfParameters(value *JobTaskForEachTaskTaskNewClusterClusterLogConf) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -215,6 +226,37 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) validatePutI
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*JobTaskForEachTaskTaskNewClusterInitScripts; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) validatePutLibraryParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*JobTaskForEachTaskTaskNewClusterLibrary:
+		value := value.(*[]*JobTaskForEachTaskTaskNewClusterLibrary)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*JobTaskForEachTaskTaskNewClusterLibrary:
+		value_ := value.([]*JobTaskForEachTaskTaskNewClusterLibrary)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*JobTaskForEachTaskTaskNewClusterLibrary; received %#v (a %T)", value, value)
 		}
 	}
 

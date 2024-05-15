@@ -37,6 +37,9 @@ type JobTaskOutputReference interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableAutoOptimization() interface{}
+	SetDisableAutoOptimization(val interface{})
+	DisableAutoOptimizationInput() interface{}
 	EmailNotifications() JobTaskEmailNotificationsOutputReference
 	EmailNotificationsInput() *JobTaskEmailNotifications
 	EnvironmentKey() *string
@@ -152,6 +155,7 @@ type JobTaskOutputReference interface {
 	ResetDbtTask()
 	ResetDependsOn()
 	ResetDescription()
+	ResetDisableAutoOptimization()
 	ResetEmailNotifications()
 	ResetEnvironmentKey()
 	ResetExistingClusterId()
@@ -296,6 +300,26 @@ func (j *jsiiProxy_JobTaskOutputReference) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) DisableAutoOptimization() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutoOptimization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) DisableAutoOptimizationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutoOptimizationInput",
 		&returns,
 	)
 	return returns
@@ -882,6 +906,17 @@ func (j *jsiiProxy_JobTaskOutputReference)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_JobTaskOutputReference)SetDisableAutoOptimization(val interface{}) {
+	if err := j.validateSetDisableAutoOptimizationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableAutoOptimization",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JobTaskOutputReference)SetEnvironmentKey(val *string) {
 	if err := j.validateSetEnvironmentKeyParameters(val); err != nil {
 		panic(err)
@@ -1426,6 +1461,14 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ResetDisableAutoOptimization() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetDisableAutoOptimization",
 		nil, // no parameters
 	)
 }

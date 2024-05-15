@@ -25,6 +25,8 @@ type JobTaskNewClusterOutputReference interface {
 	AwsAttributesInput() *JobTaskNewClusterAwsAttributes
 	AzureAttributes() JobTaskNewClusterAzureAttributesOutputReference
 	AzureAttributesInput() *JobTaskNewClusterAzureAttributes
+	CloneFrom() JobTaskNewClusterCloneFromOutputReference
+	CloneFromInput() *JobTaskNewClusterCloneFrom
 	ClusterId() *string
 	SetClusterId(val *string)
 	ClusterIdInput() *string
@@ -84,6 +86,8 @@ type JobTaskNewClusterOutputReference interface {
 	InstancePoolIdInput() *string
 	InternalValue() *JobTaskNewCluster
 	SetInternalValue(val *JobTaskNewCluster)
+	Library() JobTaskNewClusterLibraryList
+	LibraryInput() interface{}
 	NodeTypeId() *string
 	SetNodeTypeId(val *string)
 	NodeTypeIdInput() *string
@@ -148,17 +152,20 @@ type JobTaskNewClusterOutputReference interface {
 	PutAutoscale(value *JobTaskNewClusterAutoscale)
 	PutAwsAttributes(value *JobTaskNewClusterAwsAttributes)
 	PutAzureAttributes(value *JobTaskNewClusterAzureAttributes)
+	PutCloneFrom(value *JobTaskNewClusterCloneFrom)
 	PutClusterLogConf(value *JobTaskNewClusterClusterLogConf)
 	PutClusterMountInfo(value interface{})
 	PutDockerImage(value *JobTaskNewClusterDockerImage)
 	PutGcpAttributes(value *JobTaskNewClusterGcpAttributes)
 	PutInitScripts(value interface{})
+	PutLibrary(value interface{})
 	PutWorkloadType(value *JobTaskNewClusterWorkloadType)
 	ResetApplyPolicyDefaultValues()
 	ResetAutoscale()
 	ResetAutoterminationMinutes()
 	ResetAwsAttributes()
 	ResetAzureAttributes()
+	ResetCloneFrom()
 	ResetClusterId()
 	ResetClusterLogConf()
 	ResetClusterMountInfo()
@@ -174,6 +181,7 @@ type JobTaskNewClusterOutputReference interface {
 	ResetIdempotencyToken()
 	ResetInitScripts()
 	ResetInstancePoolId()
+	ResetLibrary()
 	ResetNodeTypeId()
 	ResetNumWorkers()
 	ResetPolicyId()
@@ -293,6 +301,26 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) AzureAttributesInput() *Job
 	_jsii_.Get(
 		j,
 		"azureAttributesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) CloneFrom() JobTaskNewClusterCloneFromOutputReference {
+	var returns JobTaskNewClusterCloneFromOutputReference
+	_jsii_.Get(
+		j,
+		"cloneFrom",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) CloneFromInput() *JobTaskNewClusterCloneFrom {
+	var returns *JobTaskNewClusterCloneFrom
+	_jsii_.Get(
+		j,
+		"cloneFromInput",
 		&returns,
 	)
 	return returns
@@ -643,6 +671,26 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) InternalValue() *JobTaskNew
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) Library() JobTaskNewClusterLibraryList {
+	var returns JobTaskNewClusterLibraryList
+	_jsii_.Get(
+		j,
+		"library",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) LibraryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"libraryInput",
 		&returns,
 	)
 	return returns
@@ -1401,6 +1449,17 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) PutAzureAttributes(value *J
 	)
 }
 
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) PutCloneFrom(value *JobTaskNewClusterCloneFrom) {
+	if err := j.validatePutCloneFromParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putCloneFrom",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) PutClusterLogConf(value *JobTaskNewClusterClusterLogConf) {
 	if err := j.validatePutClusterLogConfParameters(value); err != nil {
 		panic(err)
@@ -1456,6 +1515,17 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) PutInitScripts(value interf
 	)
 }
 
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) PutLibrary(value interface{}) {
+	if err := j.validatePutLibraryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putLibrary",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) PutWorkloadType(value *JobTaskNewClusterWorkloadType) {
 	if err := j.validatePutWorkloadTypeParameters(value); err != nil {
 		panic(err)
@@ -1503,6 +1573,14 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetAzureAttributes() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetAzureAttributes",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetCloneFrom() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetCloneFrom",
 		nil, // no parameters
 	)
 }
@@ -1623,6 +1701,14 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetInstancePoolId() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetInstancePoolId",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetLibrary() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetLibrary",
 		nil, // no parameters
 	)
 }
