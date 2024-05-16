@@ -440,6 +440,14 @@ func (j *jsiiProxy_SqlTable) validateSetOptionsParameters(val *map[string]*strin
 	return nil
 }
 
+func (j *jsiiProxy_SqlTable) validateSetOwnerParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SqlTable) validateSetPartitionsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

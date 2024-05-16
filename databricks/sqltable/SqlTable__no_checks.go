@@ -139,6 +139,10 @@ func (j *jsiiProxy_SqlTable) validateSetOptionsParameters(val *map[string]*strin
 	return nil
 }
 
+func (j *jsiiProxy_SqlTable) validateSetOwnerParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlTable) validateSetPartitionsParameters(val *[]*string) error {
 	return nil
 }
