@@ -32,6 +32,9 @@ type VectorSearchIndexDeltaSyncIndexSpecOutputReference interface {
 	EmbeddingSourceColumnsInput() interface{}
 	EmbeddingVectorColumns() VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList
 	EmbeddingVectorColumnsInput() interface{}
+	EmbeddingWritebackTable() *string
+	SetEmbeddingWritebackTable(val *string)
+	EmbeddingWritebackTableInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *VectorSearchIndexDeltaSyncIndexSpec
@@ -79,6 +82,7 @@ type VectorSearchIndexDeltaSyncIndexSpecOutputReference interface {
 	PutEmbeddingVectorColumns(value interface{})
 	ResetEmbeddingSourceColumns()
 	ResetEmbeddingVectorColumns()
+	ResetEmbeddingWritebackTable()
 	ResetPipelineType()
 	ResetSourceTable()
 	// Produce the Token's value at resolution time.
@@ -161,6 +165,26 @@ func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) Embedding
 	_jsii_.Get(
 		j,
 		"embeddingVectorColumnsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) EmbeddingWritebackTable() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"embeddingWritebackTable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) EmbeddingWritebackTableInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"embeddingWritebackTableInput",
 		&returns,
 	)
 	return returns
@@ -302,6 +326,17 @@ func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference)SetComplex
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference)SetEmbeddingWritebackTable(val *string) {
+	if err := j.validateSetEmbeddingWritebackTableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"embeddingWritebackTable",
 		val,
 	)
 }
@@ -581,6 +616,14 @@ func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) ResetEmbe
 	_jsii_.InvokeVoid(
 		v,
 		"resetEmbeddingVectorColumns",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) ResetEmbeddingWritebackTable() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetEmbeddingWritebackTable",
 		nil, // no parameters
 	)
 }

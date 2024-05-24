@@ -59,10 +59,6 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutAzureAttributesP
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutCloneFromParameters(value *JobTaskNewClusterCloneFrom) error {
-	return nil
-}
-
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutClusterLogConfParameters(value *JobTaskNewClusterClusterLogConf) error {
 	return nil
 }

@@ -981,44 +981,6 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterCloneFrom",
-		reflect.TypeOf((*JobJobClusterNewClusterCloneFrom)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobJobClusterNewClusterCloneFromOutputReference",
-		reflect.TypeOf((*JobJobClusterNewClusterCloneFromOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceClusterId", GoGetter: "SourceClusterId"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceClusterIdInput", GoGetter: "SourceClusterIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_JobJobClusterNewClusterCloneFromOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
 		"@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConf",
 		reflect.TypeOf((*JobJobClusterNewClusterClusterLogConf)(nil)).Elem(),
 	)
@@ -1991,8 +1953,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "awsAttributesInput", GoGetter: "AwsAttributesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "azureAttributes", GoGetter: "AzureAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "azureAttributesInput", GoGetter: "AzureAttributesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cloneFrom", GoGetter: "CloneFrom"},
-			_jsii_.MemberProperty{JsiiProperty: "cloneFromInput", GoGetter: "CloneFromInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterIdInput", GoGetter: "ClusterIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterLogConf", GoGetter: "ClusterLogConf"},
@@ -2051,7 +2011,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAutoscale", GoMethod: "PutAutoscale"},
 			_jsii_.MemberMethod{JsiiMethod: "putAwsAttributes", GoMethod: "PutAwsAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "putAzureAttributes", GoMethod: "PutAzureAttributes"},
-			_jsii_.MemberMethod{JsiiMethod: "putCloneFrom", GoMethod: "PutCloneFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "putClusterLogConf", GoMethod: "PutClusterLogConf"},
 			_jsii_.MemberMethod{JsiiMethod: "putClusterMountInfo", GoMethod: "PutClusterMountInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putDockerImage", GoMethod: "PutDockerImage"},
@@ -2064,7 +2023,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoterminationMinutes", GoMethod: "ResetAutoterminationMinutes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsAttributes", GoMethod: "ResetAwsAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureAttributes", GoMethod: "ResetAzureAttributes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCloneFrom", GoMethod: "ResetCloneFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterId", GoMethod: "ResetClusterId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterLogConf", GoMethod: "ResetClusterLogConf"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterMountInfo", GoMethod: "ResetClusterMountInfo"},
@@ -2642,44 +2600,6 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_JobNewClusterAzureAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobNewClusterCloneFrom",
-		reflect.TypeOf((*JobNewClusterCloneFrom)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobNewClusterCloneFromOutputReference",
-		reflect.TypeOf((*JobNewClusterCloneFromOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceClusterId", GoGetter: "SourceClusterId"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceClusterIdInput", GoGetter: "SourceClusterIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_JobNewClusterCloneFromOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -3657,8 +3577,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "awsAttributesInput", GoGetter: "AwsAttributesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "azureAttributes", GoGetter: "AzureAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "azureAttributesInput", GoGetter: "AzureAttributesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cloneFrom", GoGetter: "CloneFrom"},
-			_jsii_.MemberProperty{JsiiProperty: "cloneFromInput", GoGetter: "CloneFromInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterIdInput", GoGetter: "ClusterIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterLogConf", GoGetter: "ClusterLogConf"},
@@ -3717,7 +3635,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAutoscale", GoMethod: "PutAutoscale"},
 			_jsii_.MemberMethod{JsiiMethod: "putAwsAttributes", GoMethod: "PutAwsAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "putAzureAttributes", GoMethod: "PutAzureAttributes"},
-			_jsii_.MemberMethod{JsiiMethod: "putCloneFrom", GoMethod: "PutCloneFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "putClusterLogConf", GoMethod: "PutClusterLogConf"},
 			_jsii_.MemberMethod{JsiiMethod: "putClusterMountInfo", GoMethod: "PutClusterMountInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putDockerImage", GoMethod: "PutDockerImage"},
@@ -3730,7 +3647,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoterminationMinutes", GoMethod: "ResetAutoterminationMinutes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsAttributes", GoMethod: "ResetAwsAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureAttributes", GoMethod: "ResetAzureAttributes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCloneFrom", GoMethod: "ResetCloneFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterId", GoMethod: "ResetClusterId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterLogConf", GoMethod: "ResetClusterLogConf"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterMountInfo", GoMethod: "ResetClusterMountInfo"},
@@ -5388,44 +5304,6 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterCloneFrom",
-		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterCloneFrom)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterCloneFromOutputReference",
-		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterCloneFromOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceClusterId", GoGetter: "SourceClusterId"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceClusterIdInput", GoGetter: "SourceClusterIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_JobTaskForEachTaskTaskNewClusterCloneFromOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
 		"@cdktf/provider-databricks.job.JobTaskForEachTaskTaskNewClusterClusterLogConf",
 		reflect.TypeOf((*JobTaskForEachTaskTaskNewClusterClusterLogConf)(nil)).Elem(),
 	)
@@ -6398,8 +6276,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "awsAttributesInput", GoGetter: "AwsAttributesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "azureAttributes", GoGetter: "AzureAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "azureAttributesInput", GoGetter: "AzureAttributesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cloneFrom", GoGetter: "CloneFrom"},
-			_jsii_.MemberProperty{JsiiProperty: "cloneFromInput", GoGetter: "CloneFromInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterIdInput", GoGetter: "ClusterIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterLogConf", GoGetter: "ClusterLogConf"},
@@ -6458,7 +6334,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAutoscale", GoMethod: "PutAutoscale"},
 			_jsii_.MemberMethod{JsiiMethod: "putAwsAttributes", GoMethod: "PutAwsAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "putAzureAttributes", GoMethod: "PutAzureAttributes"},
-			_jsii_.MemberMethod{JsiiMethod: "putCloneFrom", GoMethod: "PutCloneFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "putClusterLogConf", GoMethod: "PutClusterLogConf"},
 			_jsii_.MemberMethod{JsiiMethod: "putClusterMountInfo", GoMethod: "PutClusterMountInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putDockerImage", GoMethod: "PutDockerImage"},
@@ -6471,7 +6346,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoterminationMinutes", GoMethod: "ResetAutoterminationMinutes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsAttributes", GoMethod: "ResetAwsAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureAttributes", GoMethod: "ResetAzureAttributes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCloneFrom", GoMethod: "ResetCloneFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterId", GoMethod: "ResetClusterId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterLogConf", GoMethod: "ResetClusterLogConf"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterMountInfo", GoMethod: "ResetClusterMountInfo"},
@@ -8339,44 +8213,6 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterCloneFrom",
-		reflect.TypeOf((*JobTaskNewClusterCloneFrom)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.job.JobTaskNewClusterCloneFromOutputReference",
-		reflect.TypeOf((*JobTaskNewClusterCloneFromOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceClusterId", GoGetter: "SourceClusterId"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceClusterIdInput", GoGetter: "SourceClusterIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_JobTaskNewClusterCloneFromOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
 		"@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConf",
 		reflect.TypeOf((*JobTaskNewClusterClusterLogConf)(nil)).Elem(),
 	)
@@ -9349,8 +9185,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "awsAttributesInput", GoGetter: "AwsAttributesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "azureAttributes", GoGetter: "AzureAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "azureAttributesInput", GoGetter: "AzureAttributesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cloneFrom", GoGetter: "CloneFrom"},
-			_jsii_.MemberProperty{JsiiProperty: "cloneFromInput", GoGetter: "CloneFromInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterIdInput", GoGetter: "ClusterIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterLogConf", GoGetter: "ClusterLogConf"},
@@ -9409,7 +9243,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAutoscale", GoMethod: "PutAutoscale"},
 			_jsii_.MemberMethod{JsiiMethod: "putAwsAttributes", GoMethod: "PutAwsAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "putAzureAttributes", GoMethod: "PutAzureAttributes"},
-			_jsii_.MemberMethod{JsiiMethod: "putCloneFrom", GoMethod: "PutCloneFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "putClusterLogConf", GoMethod: "PutClusterLogConf"},
 			_jsii_.MemberMethod{JsiiMethod: "putClusterMountInfo", GoMethod: "PutClusterMountInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putDockerImage", GoMethod: "PutDockerImage"},
@@ -9422,7 +9255,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoterminationMinutes", GoMethod: "ResetAutoterminationMinutes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsAttributes", GoMethod: "ResetAwsAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureAttributes", GoMethod: "ResetAzureAttributes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCloneFrom", GoMethod: "ResetCloneFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterId", GoMethod: "ResetClusterId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterLogConf", GoMethod: "ResetClusterLogConf"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterMountInfo", GoMethod: "ResetClusterMountInfo"},

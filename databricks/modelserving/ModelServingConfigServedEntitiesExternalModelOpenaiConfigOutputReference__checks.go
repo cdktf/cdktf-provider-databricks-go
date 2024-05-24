@@ -174,6 +174,30 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutp
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference) validateSetMicrosoftEntraClientIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference) validateSetMicrosoftEntraClientSecretParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference) validateSetMicrosoftEntraTenantIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference) validateSetOpenaiApiBaseParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

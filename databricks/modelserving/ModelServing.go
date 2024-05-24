@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/model_serving databricks_model_serving}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/model_serving databricks_model_serving}.
 type ModelServing interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,9 @@ type ModelServing interface {
 	RateLimitsInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	RouteOptimized() interface{}
+	SetRouteOptimized(val interface{})
+	RouteOptimizedInput() interface{}
 	ServingEndpointId() *string
 	Tags() ModelServingTagsList
 	TagsInput() interface{}
@@ -128,6 +131,7 @@ type ModelServing interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRateLimits()
+	ResetRouteOptimized()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -358,6 +362,26 @@ func (j *jsiiProxy_ModelServing) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ModelServing) RouteOptimized() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"routeOptimized",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServing) RouteOptimizedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"routeOptimizedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ModelServing) ServingEndpointId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -439,7 +463,7 @@ func (j *jsiiProxy_ModelServing) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/model_serving databricks_model_serving} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/model_serving databricks_model_serving} Resource.
 func NewModelServing(scope constructs.Construct, id *string, config *ModelServingConfig) ModelServing {
 	_init_.Initialize()
 
@@ -457,7 +481,7 @@ func NewModelServing(scope constructs.Construct, id *string, config *ModelServin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/model_serving databricks_model_serving} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/model_serving databricks_model_serving} Resource.
 func NewModelServing_Override(m ModelServing, scope constructs.Construct, id *string, config *ModelServingConfig) {
 	_init_.Initialize()
 
@@ -554,6 +578,17 @@ func (j *jsiiProxy_ModelServing)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServing)SetRouteOptimized(val interface{}) {
+	if err := j.validateSetRouteOptimizedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routeOptimized",
 		val,
 	)
 }
@@ -975,6 +1010,14 @@ func (m *jsiiProxy_ModelServing) ResetRateLimits() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetRateLimits",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServing) ResetRouteOptimized() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRouteOptimized",
 		nil, // no parameters
 	)
 }

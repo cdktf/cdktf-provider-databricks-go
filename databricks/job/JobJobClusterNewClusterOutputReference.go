@@ -25,8 +25,6 @@ type JobJobClusterNewClusterOutputReference interface {
 	AwsAttributesInput() *JobJobClusterNewClusterAwsAttributes
 	AzureAttributes() JobJobClusterNewClusterAzureAttributesOutputReference
 	AzureAttributesInput() *JobJobClusterNewClusterAzureAttributes
-	CloneFrom() JobJobClusterNewClusterCloneFromOutputReference
-	CloneFromInput() *JobJobClusterNewClusterCloneFrom
 	ClusterId() *string
 	SetClusterId(val *string)
 	ClusterIdInput() *string
@@ -152,7 +150,6 @@ type JobJobClusterNewClusterOutputReference interface {
 	PutAutoscale(value *JobJobClusterNewClusterAutoscale)
 	PutAwsAttributes(value *JobJobClusterNewClusterAwsAttributes)
 	PutAzureAttributes(value *JobJobClusterNewClusterAzureAttributes)
-	PutCloneFrom(value *JobJobClusterNewClusterCloneFrom)
 	PutClusterLogConf(value *JobJobClusterNewClusterClusterLogConf)
 	PutClusterMountInfo(value interface{})
 	PutDockerImage(value *JobJobClusterNewClusterDockerImage)
@@ -165,7 +162,6 @@ type JobJobClusterNewClusterOutputReference interface {
 	ResetAutoterminationMinutes()
 	ResetAwsAttributes()
 	ResetAzureAttributes()
-	ResetCloneFrom()
 	ResetClusterId()
 	ResetClusterLogConf()
 	ResetClusterMountInfo()
@@ -301,26 +297,6 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) AzureAttributesInput(
 	_jsii_.Get(
 		j,
 		"azureAttributesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) CloneFrom() JobJobClusterNewClusterCloneFromOutputReference {
-	var returns JobJobClusterNewClusterCloneFromOutputReference
-	_jsii_.Get(
-		j,
-		"cloneFrom",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) CloneFromInput() *JobJobClusterNewClusterCloneFrom {
-	var returns *JobJobClusterNewClusterCloneFrom
-	_jsii_.Get(
-		j,
-		"cloneFromInput",
 		&returns,
 	)
 	return returns
@@ -1449,17 +1425,6 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) PutAzureAttributes(va
 	)
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) PutCloneFrom(value *JobJobClusterNewClusterCloneFrom) {
-	if err := j.validatePutCloneFromParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		j,
-		"putCloneFrom",
-		[]interface{}{value},
-	)
-}
-
 func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) PutClusterLogConf(value *JobJobClusterNewClusterClusterLogConf) {
 	if err := j.validatePutClusterLogConfParameters(value); err != nil {
 		panic(err)
@@ -1573,14 +1538,6 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) ResetAzureAttributes(
 	_jsii_.InvokeVoid(
 		j,
 		"resetAzureAttributes",
-		nil, // no parameters
-	)
-}
-
-func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) ResetCloneFrom() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetCloneFrom",
 		nil, // no parameters
 	)
 }

@@ -67,6 +67,10 @@ func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) validateSetEmbeddingWritebackTableParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) validateSetInternalValueParameters(val *VectorSearchIndexDeltaSyncIndexSpec) error {
 	return nil
 }

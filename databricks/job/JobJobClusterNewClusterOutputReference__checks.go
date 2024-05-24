@@ -126,17 +126,6 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validatePutAzureAttri
 	return nil
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validatePutCloneFromParameters(value *JobJobClusterNewClusterCloneFrom) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validatePutClusterLogConfParameters(value *JobJobClusterNewClusterClusterLogConf) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -59,10 +59,6 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) validatePutA
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) validatePutCloneFromParameters(value *JobTaskForEachTaskTaskNewClusterCloneFrom) error {
-	return nil
-}
-
 func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) validatePutClusterLogConfParameters(value *JobTaskForEachTaskTaskNewClusterClusterLogConf) error {
 	return nil
 }

@@ -131,6 +131,10 @@ func (j *jsiiProxy_ModelServing) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_ModelServing) validateSetRouteOptimizedParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewModelServingParameters(scope constructs.Construct, id *string, config *ModelServingConfig) error {
 	return nil
 }

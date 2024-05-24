@@ -87,10 +87,6 @@ func (c *jsiiProxy_Cluster) validatePutAzureAttributesParameters(value *ClusterA
 	return nil
 }
 
-func (c *jsiiProxy_Cluster) validatePutCloneFromParameters(value *ClusterCloneFrom) error {
-	return nil
-}
-
 func (c *jsiiProxy_Cluster) validatePutClusterLogConfParameters(value *ClusterClusterLogConf) error {
 	return nil
 }
