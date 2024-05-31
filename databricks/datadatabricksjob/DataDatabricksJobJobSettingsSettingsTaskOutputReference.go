@@ -173,7 +173,6 @@ type DataDatabricksJobJobSettingsSettingsTaskOutputReference interface {
 	ResetSparkPythonTask()
 	ResetSparkSubmitTask()
 	ResetSqlTask()
-	ResetTaskKey()
 	ResetTimeoutSeconds()
 	ResetWebhookNotifications()
 	// Produce the Token's value at resolution time.
@@ -1594,14 +1593,6 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) Rese
 	_jsii_.InvokeVoid(
 		d,
 		"resetSqlTask",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) ResetTaskKey() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTaskKey",
 		nil, // no parameters
 	)
 }

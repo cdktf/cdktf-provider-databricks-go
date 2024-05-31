@@ -87,7 +87,6 @@ type JobTaskForEachTaskTaskSqlTaskOutputReference interface {
 	ResetFile()
 	ResetParameters()
 	ResetQuery()
-	ResetWarehouseId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -664,14 +663,6 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskSqlTaskOutputReference) ResetQuery() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetQuery",
-		nil, // no parameters
-	)
-}
-
-func (j *jsiiProxy_JobTaskForEachTaskTaskSqlTaskOutputReference) ResetWarehouseId() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetWarehouseId",
 		nil, // no parameters
 	)
 }

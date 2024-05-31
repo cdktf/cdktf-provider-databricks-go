@@ -73,9 +73,6 @@ type DataDatabricksJobJobSettingsSettingsTaskHealthRulesOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetMetric()
-	ResetOp()
-	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -521,30 +518,6 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskHealthRulesOutputRefe
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskHealthRulesOutputReference) ResetMetric() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetMetric",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskHealthRulesOutputReference) ResetOp() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOp",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskHealthRulesOutputReference) ResetValue() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetValue",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskHealthRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -177,7 +177,6 @@ type JobTaskOutputReference interface {
 	ResetSparkPythonTask()
 	ResetSparkSubmitTask()
 	ResetSqlTask()
-	ResetTaskKey()
 	ResetTimeoutSeconds()
 	ResetWebhookNotifications()
 	// Produce the Token's value at resolution time.
@@ -1637,14 +1636,6 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetSqlTask() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetSqlTask",
-		nil, // no parameters
-	)
-}
-
-func (j *jsiiProxy_JobTaskOutputReference) ResetTaskKey() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetTaskKey",
 		nil, // no parameters
 	)
 }

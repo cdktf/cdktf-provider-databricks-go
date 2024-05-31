@@ -18,9 +18,6 @@ type JobTaskForEachTaskTaskNewClusterOutputReference interface {
 	ApplyPolicyDefaultValuesInput() interface{}
 	Autoscale() JobTaskForEachTaskTaskNewClusterAutoscaleOutputReference
 	AutoscaleInput() *JobTaskForEachTaskTaskNewClusterAutoscale
-	AutoterminationMinutes() *float64
-	SetAutoterminationMinutes(val *float64)
-	AutoterminationMinutesInput() *float64
 	AwsAttributes() JobTaskForEachTaskTaskNewClusterAwsAttributesOutputReference
 	AwsAttributesInput() *JobTaskForEachTaskTaskNewClusterAwsAttributes
 	AzureAttributes() JobTaskForEachTaskTaskNewClusterAzureAttributesOutputReference
@@ -159,7 +156,6 @@ type JobTaskForEachTaskTaskNewClusterOutputReference interface {
 	PutWorkloadType(value *JobTaskForEachTaskTaskNewClusterWorkloadType)
 	ResetApplyPolicyDefaultValues()
 	ResetAutoscale()
-	ResetAutoterminationMinutes()
 	ResetAwsAttributes()
 	ResetAzureAttributes()
 	ResetClusterId()
@@ -237,26 +233,6 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) AutoscaleInp
 	_jsii_.Get(
 		j,
 		"autoscaleInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) AutoterminationMinutes() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"autoterminationMinutes",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) AutoterminationMinutesInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"autoterminationMinutesInput",
 		&returns,
 	)
 	return returns
@@ -931,17 +907,6 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference)SetApplyPolic
 	)
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference)SetAutoterminationMinutes(val *float64) {
-	if err := j.validateSetAutoterminationMinutesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"autoterminationMinutes",
-		val,
-	)
-}
-
 func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference)SetClusterId(val *string) {
 	if err := j.validateSetClusterIdParameters(val); err != nil {
 		panic(err)
@@ -1514,14 +1479,6 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) ResetAutosca
 	_jsii_.InvokeVoid(
 		j,
 		"resetAutoscale",
-		nil, // no parameters
-	)
-}
-
-func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) ResetAutoterminationMinutes() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetAutoterminationMinutes",
 		nil, // no parameters
 	)
 }

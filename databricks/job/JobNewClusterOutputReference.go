@@ -18,9 +18,6 @@ type JobNewClusterOutputReference interface {
 	ApplyPolicyDefaultValuesInput() interface{}
 	Autoscale() JobNewClusterAutoscaleOutputReference
 	AutoscaleInput() *JobNewClusterAutoscale
-	AutoterminationMinutes() *float64
-	SetAutoterminationMinutes(val *float64)
-	AutoterminationMinutesInput() *float64
 	AwsAttributes() JobNewClusterAwsAttributesOutputReference
 	AwsAttributesInput() *JobNewClusterAwsAttributes
 	AzureAttributes() JobNewClusterAzureAttributesOutputReference
@@ -159,7 +156,6 @@ type JobNewClusterOutputReference interface {
 	PutWorkloadType(value *JobNewClusterWorkloadType)
 	ResetApplyPolicyDefaultValues()
 	ResetAutoscale()
-	ResetAutoterminationMinutes()
 	ResetAwsAttributes()
 	ResetAzureAttributes()
 	ResetClusterId()
@@ -237,26 +233,6 @@ func (j *jsiiProxy_JobNewClusterOutputReference) AutoscaleInput() *JobNewCluster
 	_jsii_.Get(
 		j,
 		"autoscaleInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobNewClusterOutputReference) AutoterminationMinutes() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"autoterminationMinutes",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobNewClusterOutputReference) AutoterminationMinutesInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"autoterminationMinutesInput",
 		&returns,
 	)
 	return returns
@@ -931,17 +907,6 @@ func (j *jsiiProxy_JobNewClusterOutputReference)SetApplyPolicyDefaultValues(val 
 	)
 }
 
-func (j *jsiiProxy_JobNewClusterOutputReference)SetAutoterminationMinutes(val *float64) {
-	if err := j.validateSetAutoterminationMinutesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"autoterminationMinutes",
-		val,
-	)
-}
-
 func (j *jsiiProxy_JobNewClusterOutputReference)SetClusterId(val *string) {
 	if err := j.validateSetClusterIdParameters(val); err != nil {
 		panic(err)
@@ -1514,14 +1479,6 @@ func (j *jsiiProxy_JobNewClusterOutputReference) ResetAutoscale() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetAutoscale",
-		nil, // no parameters
-	)
-}
-
-func (j *jsiiProxy_JobNewClusterOutputReference) ResetAutoterminationMinutes() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetAutoterminationMinutes",
 		nil, // no parameters
 	)
 }

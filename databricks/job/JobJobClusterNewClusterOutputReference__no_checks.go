@@ -95,10 +95,6 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateSetApplyPolic
 	return nil
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateSetAutoterminationMinutesParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

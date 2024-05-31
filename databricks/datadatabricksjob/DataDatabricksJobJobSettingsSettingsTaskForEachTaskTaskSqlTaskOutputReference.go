@@ -87,7 +87,6 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskOutputReferen
 	ResetFile()
 	ResetParameters()
 	ResetQuery()
-	ResetWarehouseId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -664,14 +663,6 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTas
 	_jsii_.InvokeVoid(
 		d,
 		"resetQuery",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskOutputReference) ResetWarehouseId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetWarehouseId",
 		nil, // no parameters
 	)
 }

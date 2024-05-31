@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/mws_ncc_binding databricks_mws_ncc_binding}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/resources/mws_ncc_binding databricks_mws_ncc_binding}.
 type MwsNccBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_MwsNccBinding) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/mws_ncc_binding databricks_mws_ncc_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/resources/mws_ncc_binding databricks_mws_ncc_binding} Resource.
 func NewMwsNccBinding(scope constructs.Construct, id *string, config *MwsNccBindingConfig) MwsNccBinding {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewMwsNccBinding(scope constructs.Construct, id *string, config *MwsNccBind
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/mws_ncc_binding databricks_mws_ncc_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/resources/mws_ncc_binding databricks_mws_ncc_binding} Resource.
 func NewMwsNccBinding_Override(m MwsNccBinding, scope constructs.Construct, id *string, config *MwsNccBindingConfig) {
 	_init_.Initialize()
 

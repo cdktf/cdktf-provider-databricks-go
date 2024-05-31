@@ -291,14 +291,6 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateSetApplyPolic
 	return nil
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateSetAutoterminationMinutesParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateSetClusterIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -70,8 +70,6 @@ type JobJobClusterOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutNewCluster(value *JobJobClusterNewCluster)
-	ResetJobClusterKey()
-	ResetNewCluster()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -485,22 +483,6 @@ func (j *jsiiProxy_JobJobClusterOutputReference) PutNewCluster(value *JobJobClus
 		j,
 		"putNewCluster",
 		[]interface{}{value},
-	)
-}
-
-func (j *jsiiProxy_JobJobClusterOutputReference) ResetJobClusterKey() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetJobClusterKey",
-		nil, // no parameters
-	)
-}
-
-func (j *jsiiProxy_JobJobClusterOutputReference) ResetNewCluster() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetNewCluster",
-		nil, // no parameters
 	)
 }
 
