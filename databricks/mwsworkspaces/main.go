@@ -46,6 +46,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
 			_jsii_.MemberProperty{JsiiProperty: "gcpManagedNetworkConfig", GoGetter: "GcpManagedNetworkConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "gcpManagedNetworkConfigInput", GoGetter: "GcpManagedNetworkConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "gcpWorkspaceSa", GoGetter: "GcpWorkspaceSa"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},

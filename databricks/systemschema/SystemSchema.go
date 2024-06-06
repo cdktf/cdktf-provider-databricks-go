@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/resources/system_schema databricks_system_schema}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/resources/system_schema databricks_system_schema}.
 type SystemSchema interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -39,6 +39,7 @@ type SystemSchema interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	FullName() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -218,6 +219,16 @@ func (j *jsiiProxy_SystemSchema) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SystemSchema) FullName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fullName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SystemSchema) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -369,7 +380,7 @@ func (j *jsiiProxy_SystemSchema) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/resources/system_schema databricks_system_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/resources/system_schema databricks_system_schema} Resource.
 func NewSystemSchema(scope constructs.Construct, id *string, config *SystemSchemaConfig) SystemSchema {
 	_init_.Initialize()
 
@@ -387,7 +398,7 @@ func NewSystemSchema(scope constructs.Construct, id *string, config *SystemSchem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/resources/system_schema databricks_system_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/resources/system_schema databricks_system_schema} Resource.
 func NewSystemSchema_Override(s SystemSchema, scope constructs.Construct, id *string, config *SystemSchemaConfig) {
 	_init_.Initialize()
 

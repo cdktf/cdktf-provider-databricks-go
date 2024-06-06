@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/resources/storage_credential databricks_storage_credential}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/resources/storage_credential databricks_storage_credential}.
 type StorageCredential interface {
 	cdktf.TerraformResource
 	AwsIamRole() StorageCredentialAwsIamRoleOutputReference
@@ -92,6 +92,7 @@ type StorageCredential interface {
 	SkipValidation() interface{}
 	SetSkipValidation(val interface{})
 	SkipValidationInput() interface{}
+	StorageCredentialId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -590,6 +591,16 @@ func (j *jsiiProxy_StorageCredential) SkipValidationInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StorageCredential) StorageCredentialId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageCredentialId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageCredential) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -621,7 +632,7 @@ func (j *jsiiProxy_StorageCredential) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/resources/storage_credential databricks_storage_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/resources/storage_credential databricks_storage_credential} Resource.
 func NewStorageCredential(scope constructs.Construct, id *string, config *StorageCredentialConfig) StorageCredential {
 	_init_.Initialize()
 
@@ -639,7 +650,7 @@ func NewStorageCredential(scope constructs.Construct, id *string, config *Storag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/resources/storage_credential databricks_storage_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/resources/storage_credential databricks_storage_credential} Resource.
 func NewStorageCredential_Override(s StorageCredential, scope constructs.Construct, id *string, config *StorageCredentialConfig) {
 	_init_.Initialize()
 

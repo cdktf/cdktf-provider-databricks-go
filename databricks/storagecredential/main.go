@@ -92,6 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipValidation", GoMethod: "ResetSkipValidation"},
 			_jsii_.MemberProperty{JsiiProperty: "skipValidation", GoGetter: "SkipValidation"},
 			_jsii_.MemberProperty{JsiiProperty: "skipValidationInput", GoGetter: "SkipValidationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "storageCredentialId", GoGetter: "StorageCredentialId"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
