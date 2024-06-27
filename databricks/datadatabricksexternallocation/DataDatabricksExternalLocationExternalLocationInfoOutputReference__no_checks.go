@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) validateSetIsolationModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) validateSetMetastoreIdParameters(val *string) error {
 	return nil
 }

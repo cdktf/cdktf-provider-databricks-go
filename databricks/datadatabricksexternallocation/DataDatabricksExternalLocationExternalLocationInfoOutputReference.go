@@ -55,6 +55,9 @@ type DataDatabricksExternalLocationExternalLocationInfoOutputReference interface
 	Fqn() *string
 	InternalValue() *DataDatabricksExternalLocationExternalLocationInfo
 	SetInternalValue(val *DataDatabricksExternalLocationExternalLocationInfo)
+	IsolationMode() *string
+	SetIsolationMode(val *string)
+	IsolationModeInput() *string
 	MetastoreId() *string
 	SetMetastoreId(val *string)
 	MetastoreIdInput() *string
@@ -117,6 +120,7 @@ type DataDatabricksExternalLocationExternalLocationInfoOutputReference interface
 	ResetCredentialId()
 	ResetCredentialName()
 	ResetEncryptionDetails()
+	ResetIsolationMode()
 	ResetMetastoreId()
 	ResetName()
 	ResetOwner()
@@ -344,6 +348,26 @@ func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) IsolationMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"isolationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) IsolationModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"isolationModeInput",
 		&returns,
 	)
 	return returns
@@ -643,6 +667,17 @@ func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference)SetIsolationMode(val *string) {
+	if err := j.validateSetIsolationModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isolationMode",
 		val,
 	)
 }
@@ -1003,6 +1038,14 @@ func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	_jsii_.InvokeVoid(
 		d,
 		"resetEncryptionDetails",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) ResetIsolationMode() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIsolationMode",
 		nil, // no parameters
 	)
 }

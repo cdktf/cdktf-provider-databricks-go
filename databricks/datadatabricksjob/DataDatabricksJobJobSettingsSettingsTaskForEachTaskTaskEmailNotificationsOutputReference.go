@@ -44,6 +44,9 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotificationsOu
 	OnStart() *[]*string
 	SetOnStart(val *[]*string)
 	OnStartInput() *[]*string
+	OnStreamingBacklogExceeded() *[]*string
+	SetOnStreamingBacklogExceeded(val *[]*string)
+	OnStreamingBacklogExceededInput() *[]*string
 	OnSuccess() *[]*string
 	SetOnSuccess(val *[]*string)
 	OnSuccessInput() *[]*string
@@ -83,6 +86,7 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotificationsOu
 	ResetOnDurationWarningThresholdExceeded()
 	ResetOnFailure()
 	ResetOnStart()
+	ResetOnStreamingBacklogExceeded()
 	ResetOnSuccess()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -229,6 +233,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailN
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotificationsOutputReference) OnStreamingBacklogExceeded() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"onStreamingBacklogExceeded",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotificationsOutputReference) OnStreamingBacklogExceededInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"onStreamingBacklogExceededInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotificationsOutputReference) OnSuccess() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -370,6 +394,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailN
 	_jsii_.Set(
 		j,
 		"onStart",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotificationsOutputReference)SetOnStreamingBacklogExceeded(val *[]*string) {
+	if err := j.validateSetOnStreamingBacklogExceededParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"onStreamingBacklogExceeded",
 		val,
 	)
 }
@@ -621,6 +656,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailN
 	_jsii_.InvokeVoid(
 		d,
 		"resetOnStart",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotificationsOutputReference) ResetOnStreamingBacklogExceeded() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOnStreamingBacklogExceeded",
 		nil, // no parameters
 	)
 }

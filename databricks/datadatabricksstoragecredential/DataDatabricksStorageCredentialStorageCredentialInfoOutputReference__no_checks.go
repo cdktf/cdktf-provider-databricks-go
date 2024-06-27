@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoOutputReference) validateSetIsolationModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoOutputReference) validateSetMetastoreIdParameters(val *string) error {
 	return nil
 }

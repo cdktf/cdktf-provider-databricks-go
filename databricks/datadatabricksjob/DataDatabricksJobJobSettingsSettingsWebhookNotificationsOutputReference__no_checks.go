@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutpu
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference) validatePutOnStreamingBacklogExceededParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference) validatePutOnSuccessParameters(value interface{}) error {
 	return nil
 }

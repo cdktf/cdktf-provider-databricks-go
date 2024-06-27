@@ -44,6 +44,9 @@ type JobTaskForEachTaskTaskEmailNotificationsOutputReference interface {
 	OnStart() *[]*string
 	SetOnStart(val *[]*string)
 	OnStartInput() *[]*string
+	OnStreamingBacklogExceeded() *[]*string
+	SetOnStreamingBacklogExceeded(val *[]*string)
+	OnStreamingBacklogExceededInput() *[]*string
 	OnSuccess() *[]*string
 	SetOnSuccess(val *[]*string)
 	OnSuccessInput() *[]*string
@@ -83,6 +86,7 @@ type JobTaskForEachTaskTaskEmailNotificationsOutputReference interface {
 	ResetOnDurationWarningThresholdExceeded()
 	ResetOnFailure()
 	ResetOnStart()
+	ResetOnStreamingBacklogExceeded()
 	ResetOnSuccess()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -229,6 +233,26 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) OnSt
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) OnStreamingBacklogExceeded() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"onStreamingBacklogExceeded",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) OnStreamingBacklogExceededInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"onStreamingBacklogExceededInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) OnSuccess() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -370,6 +394,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference)SetOn
 	_jsii_.Set(
 		j,
 		"onStart",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference)SetOnStreamingBacklogExceeded(val *[]*string) {
+	if err := j.validateSetOnStreamingBacklogExceededParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"onStreamingBacklogExceeded",
 		val,
 	)
 }
@@ -621,6 +656,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) Rese
 	_jsii_.InvokeVoid(
 		j,
 		"resetOnStart",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskEmailNotificationsOutputReference) ResetOnStreamingBacklogExceeded() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetOnStreamingBacklogExceeded",
 		nil, // no parameters
 	)
 }

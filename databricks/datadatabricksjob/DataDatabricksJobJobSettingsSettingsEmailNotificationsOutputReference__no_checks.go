@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputR
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference) validateSetOnStreamingBacklogExceededParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference) validateSetOnSuccessParameters(val *[]*string) error {
 	return nil
 }

@@ -38,6 +38,8 @@ type JobTaskForEachTaskTaskWebhookNotificationsOutputReference interface {
 	OnFailureInput() interface{}
 	OnStart() JobTaskForEachTaskTaskWebhookNotificationsOnStartList
 	OnStartInput() interface{}
+	OnStreamingBacklogExceeded() JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList
+	OnStreamingBacklogExceededInput() interface{}
 	OnSuccess() JobTaskForEachTaskTaskWebhookNotificationsOnSuccessList
 	OnSuccessInput() interface{}
 	// Experimental.
@@ -75,10 +77,12 @@ type JobTaskForEachTaskTaskWebhookNotificationsOutputReference interface {
 	PutOnDurationWarningThresholdExceeded(value interface{})
 	PutOnFailure(value interface{})
 	PutOnStart(value interface{})
+	PutOnStreamingBacklogExceeded(value interface{})
 	PutOnSuccess(value interface{})
 	ResetOnDurationWarningThresholdExceeded()
 	ResetOnFailure()
 	ResetOnStart()
+	ResetOnStreamingBacklogExceeded()
 	ResetOnSuccess()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -200,6 +204,26 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) On
 	_jsii_.Get(
 		j,
 		"onStartInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) OnStreamingBacklogExceeded() JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList {
+	var returns JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList
+	_jsii_.Get(
+		j,
+		"onStreamingBacklogExceeded",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) OnStreamingBacklogExceededInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onStreamingBacklogExceededInput",
 		&returns,
 	)
 	return returns
@@ -547,6 +571,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) Pu
 	)
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) PutOnStreamingBacklogExceeded(value interface{}) {
+	if err := j.validatePutOnStreamingBacklogExceededParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putOnStreamingBacklogExceeded",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) PutOnSuccess(value interface{}) {
 	if err := j.validatePutOnSuccessParameters(value); err != nil {
 		panic(err)
@@ -578,6 +613,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) Re
 	_jsii_.InvokeVoid(
 		j,
 		"resetOnStart",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) ResetOnStreamingBacklogExceeded() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetOnStreamingBacklogExceeded",
 		nil, // no parameters
 	)
 }

@@ -79,6 +79,10 @@ func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) validateSetOnStartP
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) validateSetOnStreamingBacklogExceededParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskEmailNotificationsOutputReference) validateSetOnSuccessParameters(val *[]*string) error {
 	return nil
 }

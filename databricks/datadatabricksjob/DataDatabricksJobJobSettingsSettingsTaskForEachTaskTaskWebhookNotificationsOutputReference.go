@@ -38,6 +38,8 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotifications
 	OnFailureInput() interface{}
 	OnStart() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStartList
 	OnStartInput() interface{}
+	OnStreamingBacklogExceeded() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList
+	OnStreamingBacklogExceededInput() interface{}
 	OnSuccess() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnSuccessList
 	OnSuccessInput() interface{}
 	// Experimental.
@@ -75,10 +77,12 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotifications
 	PutOnDurationWarningThresholdExceeded(value interface{})
 	PutOnFailure(value interface{})
 	PutOnStart(value interface{})
+	PutOnStreamingBacklogExceeded(value interface{})
 	PutOnSuccess(value interface{})
 	ResetOnDurationWarningThresholdExceeded()
 	ResetOnFailure()
 	ResetOnStart()
+	ResetOnStreamingBacklogExceeded()
 	ResetOnSuccess()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -200,6 +204,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhoo
 	_jsii_.Get(
 		j,
 		"onStartInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOutputReference) OnStreamingBacklogExceeded() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList {
+	var returns DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList
+	_jsii_.Get(
+		j,
+		"onStreamingBacklogExceeded",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOutputReference) OnStreamingBacklogExceededInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onStreamingBacklogExceededInput",
 		&returns,
 	)
 	return returns
@@ -547,6 +571,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhoo
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOutputReference) PutOnStreamingBacklogExceeded(value interface{}) {
+	if err := d.validatePutOnStreamingBacklogExceededParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOnStreamingBacklogExceeded",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOutputReference) PutOnSuccess(value interface{}) {
 	if err := d.validatePutOnSuccessParameters(value); err != nil {
 		panic(err)
@@ -578,6 +613,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhoo
 	_jsii_.InvokeVoid(
 		d,
 		"resetOnStart",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOutputReference) ResetOnStreamingBacklogExceeded() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOnStreamingBacklogExceeded",
 		nil, // no parameters
 	)
 }

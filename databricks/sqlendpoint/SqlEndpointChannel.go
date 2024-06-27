@@ -5,9 +5,9 @@ package sqlendpoint
 
 
 type SqlEndpointChannel struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/resources/sql_endpoint#dbsql_version SqlEndpoint#dbsql_version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/resources/sql_endpoint#dbsql_version SqlEndpoint#dbsql_version}.
 	DbsqlVersion *string `field:"optional" json:"dbsqlVersion" yaml:"dbsqlVersion"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/resources/sql_endpoint#name SqlEndpoint#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/resources/sql_endpoint#name SqlEndpoint#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

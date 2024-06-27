@@ -123,6 +123,10 @@ func (j *jsiiProxy_OnlineTable) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_OnlineTable) validateSetTableServingUrlParameters(val *string) error {
+	return nil
+}
+
 func validateNewOnlineTableParameters(scope constructs.Construct, id *string, config *OnlineTableConfig) error {
 	return nil
 }

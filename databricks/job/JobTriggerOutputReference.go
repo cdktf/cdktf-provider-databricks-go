@@ -37,6 +37,8 @@ type JobTriggerOutputReference interface {
 	PauseStatus() *string
 	SetPauseStatus(val *string)
 	PauseStatusInput() *string
+	Periodic() JobTriggerPeriodicOutputReference
+	PeriodicInput() *JobTriggerPeriodic
 	Table() JobTriggerTableOutputReference
 	TableInput() *JobTriggerTable
 	TableUpdate() JobTriggerTableUpdateOutputReference
@@ -74,10 +76,12 @@ type JobTriggerOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFileArrival(value *JobTriggerFileArrival)
+	PutPeriodic(value *JobTriggerPeriodic)
 	PutTable(value *JobTriggerTable)
 	PutTableUpdate(value *JobTriggerTableUpdate)
 	ResetFileArrival()
 	ResetPauseStatus()
+	ResetPeriodic()
 	ResetTable()
 	ResetTableUpdate()
 	// Produce the Token's value at resolution time.
@@ -180,6 +184,26 @@ func (j *jsiiProxy_JobTriggerOutputReference) PauseStatusInput() *string {
 	_jsii_.Get(
 		j,
 		"pauseStatusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) Periodic() JobTriggerPeriodicOutputReference {
+	var returns JobTriggerPeriodicOutputReference
+	_jsii_.Get(
+		j,
+		"periodic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) PeriodicInput() *JobTriggerPeriodic {
+	var returns *JobTriggerPeriodic
+	_jsii_.Get(
+		j,
+		"periodicInput",
 		&returns,
 	)
 	return returns
@@ -536,6 +560,17 @@ func (j *jsiiProxy_JobTriggerOutputReference) PutFileArrival(value *JobTriggerFi
 	)
 }
 
+func (j *jsiiProxy_JobTriggerOutputReference) PutPeriodic(value *JobTriggerPeriodic) {
+	if err := j.validatePutPeriodicParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putPeriodic",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTriggerOutputReference) PutTable(value *JobTriggerTable) {
 	if err := j.validatePutTableParameters(value); err != nil {
 		panic(err)
@@ -570,6 +605,14 @@ func (j *jsiiProxy_JobTriggerOutputReference) ResetPauseStatus() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetPauseStatus",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) ResetPeriodic() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetPeriodic",
 		nil, // no parameters
 	)
 }

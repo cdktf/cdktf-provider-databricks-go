@@ -59,6 +59,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) validatePutOnStreamingBacklogExceededParameters(value interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOutputReference) validatePutOnSuccessParameters(value interface{}) error {
 	return nil
 }

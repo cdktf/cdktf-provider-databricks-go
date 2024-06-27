@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs databricks}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs databricks}.
 type DatabricksProvider interface {
 	cdktf.TerraformProvider
 	AccountId() *string
@@ -107,6 +107,9 @@ type DatabricksProvider interface {
 	RetryTimeoutSeconds() *float64
 	SetRetryTimeoutSeconds(val *float64)
 	RetryTimeoutSecondsInput() *float64
+	ServerlessComputeId() *string
+	SetServerlessComputeId(val *string)
+	ServerlessComputeIdInput() *string
 	SkipVerify() interface{}
 	SetSkipVerify(val interface{})
 	SkipVerifyInput() interface{}
@@ -159,6 +162,7 @@ type DatabricksProvider interface {
 	ResetProfile()
 	ResetRateLimit()
 	ResetRetryTimeoutSeconds()
+	ResetServerlessComputeId()
 	ResetSkipVerify()
 	ResetToken()
 	ResetUsername()
@@ -771,6 +775,26 @@ func (j *jsiiProxy_DatabricksProvider) RetryTimeoutSecondsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DatabricksProvider) ServerlessComputeId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverlessComputeId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) ServerlessComputeIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverlessComputeIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabricksProvider) SkipVerify() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -882,7 +906,7 @@ func (j *jsiiProxy_DatabricksProvider) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs databricks} Resource.
 func NewDatabricksProvider(scope constructs.Construct, id *string, config *DatabricksProviderConfig) DatabricksProvider {
 	_init_.Initialize()
 
@@ -900,7 +924,7 @@ func NewDatabricksProvider(scope constructs.Construct, id *string, config *Datab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs databricks} Resource.
 func NewDatabricksProvider_Override(d DatabricksProvider, scope constructs.Construct, id *string, config *DatabricksProviderConfig) {
 	_init_.Initialize()
 
@@ -1121,6 +1145,14 @@ func (j *jsiiProxy_DatabricksProvider)SetRetryTimeoutSeconds(val *float64) {
 	_jsii_.Set(
 		j,
 		"retryTimeoutSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabricksProvider)SetServerlessComputeId(val *string) {
+	_jsii_.Set(
+		j,
+		"serverlessComputeId",
 		val,
 	)
 }
@@ -1497,6 +1529,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetRetryTimeoutSeconds() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRetryTimeoutSeconds",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) ResetServerlessComputeId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServerlessComputeId",
 		nil, // no parameters
 	)
 }
