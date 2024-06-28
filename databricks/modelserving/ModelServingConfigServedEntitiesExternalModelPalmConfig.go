@@ -5,7 +5,7 @@ package modelserving
 
 
 type ModelServingConfigServedEntitiesExternalModelPalmConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/resources/model_serving#palm_api_key ModelServing#palm_api_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/model_serving#palm_api_key ModelServing#palm_api_key}.
 	PalmApiKey *string `field:"required" json:"palmApiKey" yaml:"palmApiKey"`
 }
 

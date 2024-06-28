@@ -7,7 +7,7 @@ package job
 type JobTaskHealth struct {
 	// rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/resources/job#rules Job#rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/job#rules Job#rules}
 	Rules interface{} `field:"required" json:"rules" yaml:"rules"`
 }
 

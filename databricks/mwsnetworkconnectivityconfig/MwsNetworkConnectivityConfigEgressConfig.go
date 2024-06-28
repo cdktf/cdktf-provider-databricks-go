@@ -7,11 +7,11 @@ package mwsnetworkconnectivityconfig
 type MwsNetworkConnectivityConfigEgressConfig struct {
 	// default_rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/resources/mws_network_connectivity_config#default_rules MwsNetworkConnectivityConfig#default_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/mws_network_connectivity_config#default_rules MwsNetworkConnectivityConfig#default_rules}
 	DefaultRules *MwsNetworkConnectivityConfigEgressConfigDefaultRules `field:"optional" json:"defaultRules" yaml:"defaultRules"`
 	// target_rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/resources/mws_network_connectivity_config#target_rules MwsNetworkConnectivityConfig#target_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/mws_network_connectivity_config#target_rules MwsNetworkConnectivityConfig#target_rules}
 	TargetRules *MwsNetworkConnectivityConfigEgressConfigTargetRules `field:"optional" json:"targetRules" yaml:"targetRules"`
 }
 
