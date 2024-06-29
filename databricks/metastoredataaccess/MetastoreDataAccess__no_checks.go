@@ -139,6 +139,10 @@ func (j *jsiiProxy_MetastoreDataAccess) validateSetIsDefaultParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_MetastoreDataAccess) validateSetIsolationModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MetastoreDataAccess) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

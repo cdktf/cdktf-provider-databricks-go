@@ -127,6 +127,10 @@ func (j *jsiiProxy_ExternalLocation) validateSetIdParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_ExternalLocation) validateSetIsolationModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExternalLocation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

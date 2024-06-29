@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/external_location databricks_external_location}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/external_location databricks_external_location}.
 type ExternalLocation interface {
 	cdktf.TerraformResource
 	AccessPoint() *string
@@ -59,6 +59,9 @@ type ExternalLocation interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsolationMode() *string
+	SetIsolationMode(val *string)
+	IsolationModeInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -149,6 +152,7 @@ type ExternalLocation interface {
 	ResetForceDestroy()
 	ResetForceUpdate()
 	ResetId()
+	ResetIsolationMode()
 	ResetMetastoreId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -394,6 +398,26 @@ func (j *jsiiProxy_ExternalLocation) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ExternalLocation) IsolationMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"isolationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) IsolationModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"isolationModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ExternalLocation) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -595,7 +619,7 @@ func (j *jsiiProxy_ExternalLocation) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation(scope constructs.Construct, id *string, config *ExternalLocationConfig) ExternalLocation {
 	_init_.Initialize()
 
@@ -613,7 +637,7 @@ func NewExternalLocation(scope constructs.Construct, id *string, config *Externa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation_Override(e ExternalLocation, scope constructs.Construct, id *string, config *ExternalLocationConfig) {
 	_init_.Initialize()
 
@@ -724,6 +748,17 @@ func (j *jsiiProxy_ExternalLocation)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ExternalLocation)SetIsolationMode(val *string) {
+	if err := j.validateSetIsolationModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isolationMode",
 		val,
 	)
 }
@@ -1232,6 +1267,14 @@ func (e *jsiiProxy_ExternalLocation) ResetId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExternalLocation) ResetIsolationMode() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetIsolationMode",
 		nil, // no parameters
 	)
 }

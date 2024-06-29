@@ -5,9 +5,9 @@ package storagecredential
 
 
 type StorageCredentialDatabricksGcpServiceAccount struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/storage_credential#credential_id StorageCredential#credential_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/storage_credential#credential_id StorageCredential#credential_id}.
 	CredentialId *string `field:"optional" json:"credentialId" yaml:"credentialId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/storage_credential#email StorageCredential#email}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/storage_credential#email StorageCredential#email}.
 	Email *string `field:"optional" json:"email" yaml:"email"`
 }
 

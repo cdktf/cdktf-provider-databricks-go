@@ -135,6 +135,10 @@ func (j *jsiiProxy_StorageCredential) validateSetIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_StorageCredential) validateSetIsolationModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageCredential) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

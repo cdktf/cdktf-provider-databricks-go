@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/storage_credential databricks_storage_credential}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/storage_credential databricks_storage_credential}.
 type StorageCredential interface {
 	cdktf.TerraformResource
 	AwsIamRole() StorageCredentialAwsIamRoleOutputReference
@@ -61,6 +61,9 @@ type StorageCredential interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsolationMode() *string
+	SetIsolationMode(val *string)
+	IsolationModeInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -156,6 +159,7 @@ type StorageCredential interface {
 	ResetForceUpdate()
 	ResetGcpServiceAccountKey()
 	ResetId()
+	ResetIsolationMode()
 	ResetMetastoreId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -441,6 +445,26 @@ func (j *jsiiProxy_StorageCredential) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageCredential) IsolationMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"isolationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageCredential) IsolationModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"isolationModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageCredential) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -632,7 +656,7 @@ func (j *jsiiProxy_StorageCredential) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/storage_credential databricks_storage_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/storage_credential databricks_storage_credential} Resource.
 func NewStorageCredential(scope constructs.Construct, id *string, config *StorageCredentialConfig) StorageCredential {
 	_init_.Initialize()
 
@@ -650,7 +674,7 @@ func NewStorageCredential(scope constructs.Construct, id *string, config *Storag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/storage_credential databricks_storage_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/storage_credential databricks_storage_credential} Resource.
 func NewStorageCredential_Override(s StorageCredential, scope constructs.Construct, id *string, config *StorageCredentialConfig) {
 	_init_.Initialize()
 
@@ -739,6 +763,17 @@ func (j *jsiiProxy_StorageCredential)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageCredential)SetIsolationMode(val *string) {
+	if err := j.validateSetIsolationModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isolationMode",
 		val,
 	)
 }
@@ -1304,6 +1339,14 @@ func (s *jsiiProxy_StorageCredential) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageCredential) ResetIsolationMode() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIsolationMode",
 		nil, // no parameters
 	)
 }

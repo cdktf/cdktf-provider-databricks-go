@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/metastore_data_access databricks_metastore_data_access}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/metastore_data_access databricks_metastore_data_access}.
 type MetastoreDataAccess interface {
 	cdktf.TerraformResource
 	AwsIamRole() MetastoreDataAccessAwsIamRoleOutputReference
@@ -64,6 +64,9 @@ type MetastoreDataAccess interface {
 	IsDefault() interface{}
 	SetIsDefault(val interface{})
 	IsDefaultInput() interface{}
+	IsolationMode() *string
+	SetIsolationMode(val *string)
+	IsolationModeInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -159,6 +162,7 @@ type MetastoreDataAccess interface {
 	ResetGcpServiceAccountKey()
 	ResetId()
 	ResetIsDefault()
+	ResetIsolationMode()
 	ResetMetastoreId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -464,6 +468,26 @@ func (j *jsiiProxy_MetastoreDataAccess) IsDefaultInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MetastoreDataAccess) IsolationMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"isolationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) IsolationModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"isolationModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MetastoreDataAccess) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -645,7 +669,7 @@ func (j *jsiiProxy_MetastoreDataAccess) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
 func NewMetastoreDataAccess(scope constructs.Construct, id *string, config *MetastoreDataAccessConfig) MetastoreDataAccess {
 	_init_.Initialize()
 
@@ -663,7 +687,7 @@ func NewMetastoreDataAccess(scope constructs.Construct, id *string, config *Meta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
 func NewMetastoreDataAccess_Override(m MetastoreDataAccess, scope constructs.Construct, id *string, config *MetastoreDataAccessConfig) {
 	_init_.Initialize()
 
@@ -763,6 +787,17 @@ func (j *jsiiProxy_MetastoreDataAccess)SetIsDefault(val interface{}) {
 	_jsii_.Set(
 		j,
 		"isDefault",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MetastoreDataAccess)SetIsolationMode(val *string) {
+	if err := j.validateSetIsolationModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isolationMode",
 		val,
 	)
 }
@@ -1336,6 +1371,14 @@ func (m *jsiiProxy_MetastoreDataAccess) ResetIsDefault() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetIsDefault",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MetastoreDataAccess) ResetIsolationMode() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetIsolationMode",
 		nil, // no parameters
 	)
 }

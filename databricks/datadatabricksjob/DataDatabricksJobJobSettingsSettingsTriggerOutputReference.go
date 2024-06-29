@@ -37,6 +37,8 @@ type DataDatabricksJobJobSettingsSettingsTriggerOutputReference interface {
 	PauseStatus() *string
 	SetPauseStatus(val *string)
 	PauseStatusInput() *string
+	Periodic() DataDatabricksJobJobSettingsSettingsTriggerPeriodicOutputReference
+	PeriodicInput() *DataDatabricksJobJobSettingsSettingsTriggerPeriodic
 	TableUpdate() DataDatabricksJobJobSettingsSettingsTriggerTableUpdateOutputReference
 	TableUpdateInput() *DataDatabricksJobJobSettingsSettingsTriggerTableUpdate
 	// Experimental.
@@ -72,9 +74,11 @@ type DataDatabricksJobJobSettingsSettingsTriggerOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFileArrival(value *DataDatabricksJobJobSettingsSettingsTriggerFileArrival)
+	PutPeriodic(value *DataDatabricksJobJobSettingsSettingsTriggerPeriodic)
 	PutTableUpdate(value *DataDatabricksJobJobSettingsSettingsTriggerTableUpdate)
 	ResetFileArrival()
 	ResetPauseStatus()
+	ResetPeriodic()
 	ResetTableUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -176,6 +180,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) P
 	_jsii_.Get(
 		j,
 		"pauseStatusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) Periodic() DataDatabricksJobJobSettingsSettingsTriggerPeriodicOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsTriggerPeriodicOutputReference
+	_jsii_.Get(
+		j,
+		"periodic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) PeriodicInput() *DataDatabricksJobJobSettingsSettingsTriggerPeriodic {
+	var returns *DataDatabricksJobJobSettingsSettingsTriggerPeriodic
+	_jsii_.Get(
+		j,
+		"periodicInput",
 		&returns,
 	)
 	return returns
@@ -512,6 +536,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) P
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) PutPeriodic(value *DataDatabricksJobJobSettingsSettingsTriggerPeriodic) {
+	if err := d.validatePutPeriodicParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPeriodic",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) PutTableUpdate(value *DataDatabricksJobJobSettingsSettingsTriggerTableUpdate) {
 	if err := d.validatePutTableUpdateParameters(value); err != nil {
 		panic(err)
@@ -535,6 +570,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) R
 	_jsii_.InvokeVoid(
 		d,
 		"resetPauseStatus",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) ResetPeriodic() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPeriodic",
 		nil, // no parameters
 	)
 }

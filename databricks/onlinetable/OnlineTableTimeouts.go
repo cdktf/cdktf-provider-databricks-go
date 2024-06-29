@@ -5,7 +5,7 @@ package onlinetable
 
 
 type OnlineTableTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/online_table#create OnlineTable#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/online_table#create OnlineTable#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 
