@@ -12,12 +12,18 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs databricks}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.48.3/docs databricks}.
 type DatabricksProvider interface {
 	cdktf.TerraformProvider
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	ActionsIdTokenRequestToken() *string
+	SetActionsIdTokenRequestToken(val *string)
+	ActionsIdTokenRequestTokenInput() *string
+	ActionsIdTokenRequestUrl() *string
+	SetActionsIdTokenRequestUrl(val *string)
+	ActionsIdTokenRequestUrlInput() *string
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
@@ -134,6 +140,8 @@ type DatabricksProvider interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
+	ResetActionsIdTokenRequestToken()
+	ResetActionsIdTokenRequestUrl()
 	ResetAlias()
 	ResetAuthType()
 	ResetAzureClientId()
@@ -200,6 +208,46 @@ func (j *jsiiProxy_DatabricksProvider) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) ActionsIdTokenRequestToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"actionsIdTokenRequestToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) ActionsIdTokenRequestTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"actionsIdTokenRequestTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) ActionsIdTokenRequestUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"actionsIdTokenRequestUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) ActionsIdTokenRequestUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"actionsIdTokenRequestUrlInput",
 		&returns,
 	)
 	return returns
@@ -906,7 +954,7 @@ func (j *jsiiProxy_DatabricksProvider) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.3/docs databricks} Resource.
 func NewDatabricksProvider(scope constructs.Construct, id *string, config *DatabricksProviderConfig) DatabricksProvider {
 	_init_.Initialize()
 
@@ -924,7 +972,7 @@ func NewDatabricksProvider(scope constructs.Construct, id *string, config *Datab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.3/docs databricks} Resource.
 func NewDatabricksProvider_Override(d DatabricksProvider, scope constructs.Construct, id *string, config *DatabricksProviderConfig) {
 	_init_.Initialize()
 
@@ -939,6 +987,22 @@ func (j *jsiiProxy_DatabricksProvider)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabricksProvider)SetActionsIdTokenRequestToken(val *string) {
+	_jsii_.Set(
+		j,
+		"actionsIdTokenRequestToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabricksProvider)SetActionsIdTokenRequestUrl(val *string) {
+	_jsii_.Set(
+		j,
+		"actionsIdTokenRequestUrl",
 		val,
 	)
 }
@@ -1321,6 +1385,22 @@ func (d *jsiiProxy_DatabricksProvider) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) ResetActionsIdTokenRequestToken() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetActionsIdTokenRequestToken",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) ResetActionsIdTokenRequestUrl() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetActionsIdTokenRequestUrl",
 		nil, // no parameters
 	)
 }
