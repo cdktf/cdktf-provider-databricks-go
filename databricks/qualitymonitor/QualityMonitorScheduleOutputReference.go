@@ -33,8 +33,6 @@ type QualityMonitorScheduleOutputReference interface {
 	InternalValue() *QualityMonitorSchedule
 	SetInternalValue(val *QualityMonitorSchedule)
 	PauseStatus() *string
-	SetPauseStatus(val *string)
-	PauseStatusInput() *string
 	QuartzCronExpression() *string
 	SetQuartzCronExpression(val *string)
 	QuartzCronExpressionInput() *string
@@ -73,7 +71,6 @@ type QualityMonitorScheduleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetPauseStatus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,16 +141,6 @@ func (j *jsiiProxy_QualityMonitorScheduleOutputReference) PauseStatus() *string 
 	_jsii_.Get(
 		j,
 		"pauseStatus",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_QualityMonitorScheduleOutputReference) PauseStatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pauseStatusInput",
 		&returns,
 	)
 	return returns
@@ -276,17 +263,6 @@ func (j *jsiiProxy_QualityMonitorScheduleOutputReference)SetInternalValue(val *Q
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_QualityMonitorScheduleOutputReference)SetPauseStatus(val *string) {
-	if err := j.validateSetPauseStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pauseStatus",
 		val,
 	)
 }
@@ -519,14 +495,6 @@ func (q *jsiiProxy_QualityMonitorScheduleOutputReference) InterpolationForAttrib
 	)
 
 	return returns
-}
-
-func (q *jsiiProxy_QualityMonitorScheduleOutputReference) ResetPauseStatus() {
-	_jsii_.InvokeVoid(
-		q,
-		"resetPauseStatus",
-		nil, // no parameters
-	)
 }
 
 func (q *jsiiProxy_QualityMonitorScheduleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

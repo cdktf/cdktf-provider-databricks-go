@@ -243,7 +243,29 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validatePutI
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validatePutSpecParameters(value *DataDatabricksClusterClusterInfoSpec) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validatePutTerminationReasonParameters(value *DataDatabricksClusterClusterInfoTerminationReason) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validatePutWorkloadTypeParameters(value *DataDatabricksClusterClusterInfoWorkloadType) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -295,6 +317,14 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetC
 }
 
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetClusterNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetClusterSourceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -479,7 +509,7 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetJ
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetLastActivityTimeParameters(val *float64) error {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetLastRestartedTimeParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -599,7 +629,7 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetS
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetTerminateTimeParameters(val *float64) error {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetTerminatedTimeParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

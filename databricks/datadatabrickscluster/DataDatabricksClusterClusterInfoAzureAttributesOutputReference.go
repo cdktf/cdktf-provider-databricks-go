@@ -38,6 +38,8 @@ type DataDatabricksClusterClusterInfoAzureAttributesOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataDatabricksClusterClusterInfoAzureAttributes
 	SetInternalValue(val *DataDatabricksClusterClusterInfoAzureAttributes)
+	LogAnalyticsInfo() DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfoOutputReference
+	LogAnalyticsInfoInput() *DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfo
 	SpotBidMaxPrice() *float64
 	SetSpotBidMaxPrice(val *float64)
 	SpotBidMaxPriceInput() *float64
@@ -73,8 +75,10 @@ type DataDatabricksClusterClusterInfoAzureAttributesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutLogAnalyticsInfo(value *DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfo)
 	ResetAvailability()
 	ResetFirstOnDemand()
+	ResetLogAnalyticsInfo()
 	ResetSpotBidMaxPrice()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -176,6 +180,26 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoAzureAttributesOutputReferenc
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoAzureAttributesOutputReference) LogAnalyticsInfo() DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfoOutputReference {
+	var returns DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfoOutputReference
+	_jsii_.Get(
+		j,
+		"logAnalyticsInfo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoAzureAttributesOutputReference) LogAnalyticsInfoInput() *DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfo {
+	var returns *DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfo
+	_jsii_.Get(
+		j,
+		"logAnalyticsInfoInput",
 		&returns,
 	)
 	return returns
@@ -523,6 +547,17 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoAzureAttributesOutputReferenc
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoAzureAttributesOutputReference) PutLogAnalyticsInfo(value *DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfo) {
+	if err := d.validatePutLogAnalyticsInfoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putLogAnalyticsInfo",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoAzureAttributesOutputReference) ResetAvailability() {
 	_jsii_.InvokeVoid(
 		d,
@@ -535,6 +570,14 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoAzureAttributesOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"resetFirstOnDemand",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoAzureAttributesOutputReference) ResetLogAnalyticsInfo() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLogAnalyticsInfo",
 		nil, // no parameters
 	)
 }

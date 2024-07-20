@@ -39,6 +39,8 @@ type DataDatabricksClusterClusterInfoOutputReference interface {
 	SetClusterName(val *string)
 	ClusterNameInput() *string
 	ClusterSource() *string
+	SetClusterSource(val *string)
+	ClusterSourceInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -98,9 +100,9 @@ type DataDatabricksClusterClusterInfoOutputReference interface {
 	JdbcPort() *float64
 	SetJdbcPort(val *float64)
 	JdbcPortInput() *float64
-	LastActivityTime() *float64
-	SetLastActivityTime(val *float64)
-	LastActivityTimeInput() *float64
+	LastRestartedTime() *float64
+	SetLastRestartedTime(val *float64)
+	LastRestartedTimeInput() *float64
 	LastStateLossTime() *float64
 	SetLastStateLossTime(val *float64)
 	LastStateLossTimeInput() *float64
@@ -131,6 +133,8 @@ type DataDatabricksClusterClusterInfoOutputReference interface {
 	SparkVersion() *string
 	SetSparkVersion(val *string)
 	SparkVersionInput() *string
+	Spec() DataDatabricksClusterClusterInfoSpecOutputReference
+	SpecInput() *DataDatabricksClusterClusterInfoSpec
 	SshPublicKeys() *[]*string
 	SetSshPublicKeys(val *[]*string)
 	SshPublicKeysInput() *[]*string
@@ -143,9 +147,9 @@ type DataDatabricksClusterClusterInfoOutputReference interface {
 	StateMessage() *string
 	SetStateMessage(val *string)
 	StateMessageInput() *string
-	TerminateTime() *float64
-	SetTerminateTime(val *float64)
-	TerminateTimeInput() *float64
+	TerminatedTime() *float64
+	SetTerminatedTime(val *float64)
+	TerminatedTimeInput() *float64
 	TerminationReason() DataDatabricksClusterClusterInfoTerminationReasonOutputReference
 	TerminationReasonInput() *DataDatabricksClusterClusterInfoTerminationReason
 	// Experimental.
@@ -156,6 +160,8 @@ type DataDatabricksClusterClusterInfoOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WorkloadType() DataDatabricksClusterClusterInfoWorkloadTypeOutputReference
+	WorkloadTypeInput() *DataDatabricksClusterClusterInfoWorkloadType
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -190,7 +196,9 @@ type DataDatabricksClusterClusterInfoOutputReference interface {
 	PutExecutors(value interface{})
 	PutGcpAttributes(value *DataDatabricksClusterClusterInfoGcpAttributes)
 	PutInitScripts(value interface{})
+	PutSpec(value *DataDatabricksClusterClusterInfoSpec)
 	PutTerminationReason(value *DataDatabricksClusterClusterInfoTerminationReason)
+	PutWorkloadType(value *DataDatabricksClusterClusterInfoWorkloadType)
 	ResetAutoscale()
 	ResetAutoterminationMinutes()
 	ResetAwsAttributes()
@@ -201,9 +209,11 @@ type DataDatabricksClusterClusterInfoOutputReference interface {
 	ResetClusterLogStatus()
 	ResetClusterMemoryMb()
 	ResetClusterName()
+	ResetClusterSource()
 	ResetCreatorUserName()
 	ResetCustomTags()
 	ResetDataSecurityMode()
+	ResetDefaultTags()
 	ResetDockerImage()
 	ResetDriver()
 	ResetDriverInstancePoolId()
@@ -215,7 +225,7 @@ type DataDatabricksClusterClusterInfoOutputReference interface {
 	ResetInitScripts()
 	ResetInstancePoolId()
 	ResetJdbcPort()
-	ResetLastActivityTime()
+	ResetLastRestartedTime()
 	ResetLastStateLossTime()
 	ResetNodeTypeId()
 	ResetNumWorkers()
@@ -225,11 +235,15 @@ type DataDatabricksClusterClusterInfoOutputReference interface {
 	ResetSparkConf()
 	ResetSparkContextId()
 	ResetSparkEnvVars()
+	ResetSparkVersion()
+	ResetSpec()
 	ResetSshPublicKeys()
 	ResetStartTime()
+	ResetState()
 	ResetStateMessage()
-	ResetTerminateTime()
+	ResetTerminatedTime()
 	ResetTerminationReason()
+	ResetWorkloadType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,6 +464,16 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ClusterSourc
 	_jsii_.Get(
 		j,
 		"clusterSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ClusterSourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterSourceInput",
 		&returns,
 	)
 	return returns
@@ -805,21 +829,21 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) JdbcPortInpu
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) LastActivityTime() *float64 {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) LastRestartedTime() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"lastActivityTime",
+		"lastRestartedTime",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) LastActivityTimeInput() *float64 {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) LastRestartedTimeInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"lastActivityTimeInput",
+		"lastRestartedTimeInput",
 		&returns,
 	)
 	return returns
@@ -1025,6 +1049,26 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SparkVersion
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) Spec() DataDatabricksClusterClusterInfoSpecOutputReference {
+	var returns DataDatabricksClusterClusterInfoSpecOutputReference
+	_jsii_.Get(
+		j,
+		"spec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SpecInput() *DataDatabricksClusterClusterInfoSpec {
+	var returns *DataDatabricksClusterClusterInfoSpec
+	_jsii_.Get(
+		j,
+		"specInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) SshPublicKeys() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1105,21 +1149,21 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) StateMessage
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) TerminateTime() *float64 {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) TerminatedTime() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"terminateTime",
+		"terminatedTime",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) TerminateTimeInput() *float64 {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) TerminatedTimeInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"terminateTimeInput",
+		"terminatedTimeInput",
 		&returns,
 	)
 	return returns
@@ -1160,6 +1204,26 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) TerraformRes
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) WorkloadType() DataDatabricksClusterClusterInfoWorkloadTypeOutputReference {
+	var returns DataDatabricksClusterClusterInfoWorkloadTypeOutputReference
+	_jsii_.Get(
+		j,
+		"workloadType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) WorkloadTypeInput() *DataDatabricksClusterClusterInfoWorkloadType {
+	var returns *DataDatabricksClusterClusterInfoWorkloadType
+	_jsii_.Get(
+		j,
+		"workloadTypeInput",
 		&returns,
 	)
 	return returns
@@ -1244,6 +1308,17 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetClusterNam
 	_jsii_.Set(
 		j,
 		"clusterName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetClusterSource(val *string) {
+	if err := j.validateSetClusterSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterSource",
 		val,
 	)
 }
@@ -1391,13 +1466,13 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetJdbcPort(v
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetLastActivityTime(val *float64) {
-	if err := j.validateSetLastActivityTimeParameters(val); err != nil {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetLastRestartedTime(val *float64) {
+	if err := j.validateSetLastRestartedTimeParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"lastActivityTime",
+		"lastRestartedTime",
 		val,
 	)
 }
@@ -1556,13 +1631,13 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetStateMessa
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetTerminateTime(val *float64) {
-	if err := j.validateSetTerminateTimeParameters(val); err != nil {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetTerminatedTime(val *float64) {
+	if err := j.validateSetTerminatedTimeParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"terminateTime",
+		"terminatedTime",
 		val,
 	)
 }
@@ -1885,6 +1960,17 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutInitScrip
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutSpec(value *DataDatabricksClusterClusterInfoSpec) {
+	if err := d.validatePutSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSpec",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutTerminationReason(value *DataDatabricksClusterClusterInfoTerminationReason) {
 	if err := d.validatePutTerminationReasonParameters(value); err != nil {
 		panic(err)
@@ -1892,6 +1978,17 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutTerminati
 	_jsii_.InvokeVoid(
 		d,
 		"putTerminationReason",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) PutWorkloadType(value *DataDatabricksClusterClusterInfoWorkloadType) {
+	if err := d.validatePutWorkloadTypeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putWorkloadType",
 		[]interface{}{value},
 	)
 }
@@ -1976,6 +2073,14 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetCluster
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetClusterSource() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClusterSource",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetCreatorUserName() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1996,6 +2101,14 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetDataSec
 	_jsii_.InvokeVoid(
 		d,
 		"resetDataSecurityMode",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetDefaultTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDefaultTags",
 		nil, // no parameters
 	)
 }
@@ -2088,10 +2201,10 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetJdbcPor
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetLastActivityTime() {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetLastRestartedTime() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetLastActivityTime",
+		"resetLastRestartedTime",
 		nil, // no parameters
 	)
 }
@@ -2168,6 +2281,22 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetSparkEn
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetSparkVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSparkVersion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetSpec() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSpec",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetSshPublicKeys() {
 	_jsii_.InvokeVoid(
 		d,
@@ -2184,6 +2313,14 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetStartTi
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetState() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetState",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetStateMessage() {
 	_jsii_.InvokeVoid(
 		d,
@@ -2192,10 +2329,10 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetStateMe
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetTerminateTime() {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetTerminatedTime() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetTerminateTime",
+		"resetTerminatedTime",
 		nil, // no parameters
 	)
 }
@@ -2204,6 +2341,14 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetTermina
 	_jsii_.InvokeVoid(
 		d,
 		"resetTerminationReason",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetWorkloadType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWorkloadType",
 		nil, // no parameters
 	)
 }

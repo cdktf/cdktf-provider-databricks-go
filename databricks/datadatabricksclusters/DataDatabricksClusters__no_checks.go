@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataDatabricksClusters) validateSetIdParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusters) validateSetIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusters) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

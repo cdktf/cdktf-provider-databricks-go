@@ -33,8 +33,6 @@ type LakehouseMonitorScheduleOutputReference interface {
 	InternalValue() *LakehouseMonitorSchedule
 	SetInternalValue(val *LakehouseMonitorSchedule)
 	PauseStatus() *string
-	SetPauseStatus(val *string)
-	PauseStatusInput() *string
 	QuartzCronExpression() *string
 	SetQuartzCronExpression(val *string)
 	QuartzCronExpressionInput() *string
@@ -73,7 +71,6 @@ type LakehouseMonitorScheduleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetPauseStatus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,16 +141,6 @@ func (j *jsiiProxy_LakehouseMonitorScheduleOutputReference) PauseStatus() *strin
 	_jsii_.Get(
 		j,
 		"pauseStatus",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LakehouseMonitorScheduleOutputReference) PauseStatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pauseStatusInput",
 		&returns,
 	)
 	return returns
@@ -276,17 +263,6 @@ func (j *jsiiProxy_LakehouseMonitorScheduleOutputReference)SetInternalValue(val 
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LakehouseMonitorScheduleOutputReference)SetPauseStatus(val *string) {
-	if err := j.validateSetPauseStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pauseStatus",
 		val,
 	)
 }
@@ -519,14 +495,6 @@ func (l *jsiiProxy_LakehouseMonitorScheduleOutputReference) InterpolationForAttr
 	)
 
 	return returns
-}
-
-func (l *jsiiProxy_LakehouseMonitorScheduleOutputReference) ResetPauseStatus() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetPauseStatus",
-		nil, // no parameters
-	)
 }
 
 func (l *jsiiProxy_LakehouseMonitorScheduleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -71,6 +71,7 @@ type DataDatabricksClusterClusterInfoDockerImageOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutBasicAuth(value *DataDatabricksClusterClusterInfoDockerImageBasicAuth)
 	ResetBasicAuth()
+	ResetUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -491,6 +492,14 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoDockerImageOutputReference) R
 	_jsii_.InvokeVoid(
 		d,
 		"resetBasicAuth",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoDockerImageOutputReference) ResetUrl() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUrl",
 		nil, // no parameters
 	)
 }

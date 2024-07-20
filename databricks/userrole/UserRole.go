@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.48.3/docs/resources/user_role databricks_user_role}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/resources/user_role databricks_user_role}.
 type UserRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_UserRole) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.3/docs/resources/user_role databricks_user_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/resources/user_role databricks_user_role} Resource.
 func NewUserRole(scope constructs.Construct, id *string, config *UserRoleConfig) UserRole {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewUserRole(scope constructs.Construct, id *string, config *UserRoleConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.3/docs/resources/user_role databricks_user_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/resources/user_role databricks_user_role} Resource.
 func NewUserRole_Override(u UserRole, scope constructs.Construct, id *string, config *UserRoleConfig) {
 	_init_.Initialize()
 

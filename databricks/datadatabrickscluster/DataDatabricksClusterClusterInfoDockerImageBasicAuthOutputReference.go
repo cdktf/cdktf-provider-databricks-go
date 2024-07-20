@@ -70,6 +70,8 @@ type DataDatabricksClusterClusterInfoDockerImageBasicAuthOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPassword()
+	ResetUsername()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -484,6 +486,22 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoDockerImageBasicAuthOutputRef
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoDockerImageBasicAuthOutputReference) ResetPassword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoDockerImageBasicAuthOutputReference) ResetUsername() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUsername",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoDockerImageBasicAuthOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -174,14 +174,6 @@ func (j *jsiiProxy_QualityMonitorScheduleOutputReference) validateSetInternalVal
 	return nil
 }
 
-func (j *jsiiProxy_QualityMonitorScheduleOutputReference) validateSetPauseStatusParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_QualityMonitorScheduleOutputReference) validateSetQuartzCronExpressionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

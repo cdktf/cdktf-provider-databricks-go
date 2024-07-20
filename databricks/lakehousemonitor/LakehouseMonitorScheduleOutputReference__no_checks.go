@@ -63,10 +63,6 @@ func (j *jsiiProxy_LakehouseMonitorScheduleOutputReference) validateSetInternalV
 	return nil
 }
 
-func (j *jsiiProxy_LakehouseMonitorScheduleOutputReference) validateSetPauseStatusParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_LakehouseMonitorScheduleOutputReference) validateSetQuartzCronExpressionParameters(val *string) error {
 	return nil
 }

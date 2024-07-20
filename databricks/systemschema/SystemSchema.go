@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.48.3/docs/resources/system_schema databricks_system_schema}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/resources/system_schema databricks_system_schema}.
 type SystemSchema interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_SystemSchema) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.3/docs/resources/system_schema databricks_system_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/resources/system_schema databricks_system_schema} Resource.
 func NewSystemSchema(scope constructs.Construct, id *string, config *SystemSchemaConfig) SystemSchema {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewSystemSchema(scope constructs.Construct, id *string, config *SystemSchem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.3/docs/resources/system_schema databricks_system_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/resources/system_schema databricks_system_schema} Resource.
 func NewSystemSchema_Override(s SystemSchema, scope constructs.Construct, id *string, config *SystemSchemaConfig) {
 	_init_.Initialize()
 

@@ -67,7 +67,15 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoAwsAttributesOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoAwsAttributesOutputReference) validateSetEbsVolumeIopsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoAwsAttributesOutputReference) validateSetEbsVolumeSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoAwsAttributesOutputReference) validateSetEbsVolumeThroughputParameters(val *float64) error {
 	return nil
 }
 

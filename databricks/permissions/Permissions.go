@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.48.3/docs/resources/permissions databricks_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/resources/permissions databricks_permissions}.
 type Permissions interface {
 	cdktf.TerraformResource
 	AccessControl() PermissionsAccessControlList
@@ -38,6 +38,9 @@ type Permissions interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DashboardId() *string
+	SetDashboardId(val *string)
+	DashboardIdInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -179,6 +182,7 @@ type Permissions interface {
 	ResetAuthorization()
 	ResetClusterId()
 	ResetClusterPolicyId()
+	ResetDashboardId()
 	ResetDirectoryId()
 	ResetDirectoryPath()
 	ResetExperimentId()
@@ -335,6 +339,26 @@ func (j *jsiiProxy_Permissions) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Permissions) DashboardId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dashboardId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Permissions) DashboardIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dashboardIdInput",
 		&returns,
 	)
 	return returns
@@ -861,7 +885,7 @@ func (j *jsiiProxy_Permissions) WorkspaceFilePathInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.3/docs/resources/permissions databricks_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/resources/permissions databricks_permissions} Resource.
 func NewPermissions(scope constructs.Construct, id *string, config *PermissionsConfig) Permissions {
 	_init_.Initialize()
 
@@ -879,7 +903,7 @@ func NewPermissions(scope constructs.Construct, id *string, config *PermissionsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.3/docs/resources/permissions databricks_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/resources/permissions databricks_permissions} Resource.
 func NewPermissions_Override(p Permissions, scope constructs.Construct, id *string, config *PermissionsConfig) {
 	_init_.Initialize()
 
@@ -941,6 +965,17 @@ func (j *jsiiProxy_Permissions)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Permissions)SetDashboardId(val *string) {
+	if err := j.validateSetDashboardIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dashboardId",
 		val,
 	)
 }
@@ -1595,6 +1630,14 @@ func (p *jsiiProxy_Permissions) ResetClusterPolicyId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetClusterPolicyId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Permissions) ResetDashboardId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDashboardId",
 		nil, // no parameters
 	)
 }

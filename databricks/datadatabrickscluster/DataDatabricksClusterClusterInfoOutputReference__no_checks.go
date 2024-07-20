@@ -87,7 +87,15 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validatePutI
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validatePutSpecParameters(value *DataDatabricksClusterClusterInfoSpec) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validatePutTerminationReasonParameters(value *DataDatabricksClusterClusterInfoTerminationReason) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validatePutWorkloadTypeParameters(value *DataDatabricksClusterClusterInfoWorkloadType) error {
 	return nil
 }
 
@@ -112,6 +120,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetC
 }
 
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetClusterNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetClusterSourceParameters(val *string) error {
 	return nil
 }
 
@@ -167,7 +179,7 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetJ
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetLastActivityTimeParameters(val *float64) error {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetLastRestartedTimeParameters(val *float64) error {
 	return nil
 }
 
@@ -227,7 +239,7 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetS
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetTerminateTimeParameters(val *float64) error {
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetTerminatedTimeParameters(val *float64) error {
 	return nil
 }
 

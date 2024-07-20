@@ -63,10 +63,6 @@ func (j *jsiiProxy_QualityMonitorScheduleOutputReference) validateSetInternalVal
 	return nil
 }
 
-func (j *jsiiProxy_QualityMonitorScheduleOutputReference) validateSetPauseStatusParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_QualityMonitorScheduleOutputReference) validateSetQuartzCronExpressionParameters(val *string) error {
 	return nil
 }

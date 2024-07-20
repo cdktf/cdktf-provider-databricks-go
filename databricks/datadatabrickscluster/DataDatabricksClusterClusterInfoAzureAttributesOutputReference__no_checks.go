@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoAzureAttributesOutputReferenc
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoAzureAttributesOutputReference) validatePutLogAnalyticsInfoParameters(value *DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfo) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoAzureAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

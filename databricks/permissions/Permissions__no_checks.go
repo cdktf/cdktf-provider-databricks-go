@@ -115,6 +115,10 @@ func (j *jsiiProxy_Permissions) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_Permissions) validateSetDashboardIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Permissions) validateSetDirectoryIdParameters(val *string) error {
 	return nil
 }
