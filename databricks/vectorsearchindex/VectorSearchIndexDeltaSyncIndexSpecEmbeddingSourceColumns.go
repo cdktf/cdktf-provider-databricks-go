@@ -5,9 +5,9 @@ package vectorsearchindex
 
 
 type VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}.
 	EmbeddingModelEndpointName *string `field:"optional" json:"embeddingModelEndpointName" yaml:"embeddingModelEndpointName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/vector_search_index#name VectorSearchIndex#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/lakehouse_monitor databricks_lakehouse_monitor}.
 type LakehouseMonitor interface {
 	cdktf.TerraformResource
 	AssetsDir() *string
@@ -746,7 +746,7 @@ func (j *jsiiProxy_LakehouseMonitor) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource.
 func NewLakehouseMonitor(scope constructs.Construct, id *string, config *LakehouseMonitorConfig) LakehouseMonitor {
 	_init_.Initialize()
 
@@ -764,7 +764,7 @@ func NewLakehouseMonitor(scope constructs.Construct, id *string, config *Lakehou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource.
 func NewLakehouseMonitor_Override(l LakehouseMonitor, scope constructs.Construct, id *string, config *LakehouseMonitorConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/data-sources/zones databricks_zones}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/data-sources/zones databricks_zones}.
 type DataDatabricksZones interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -24,6 +24,8 @@ type DataDatabricksZones interface {
 	// Experimental.
 	SetCount(val interface{})
 	DefaultZone() *string
+	SetDefaultZone(val *string)
+	DefaultZoneInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,6 +60,8 @@ type DataDatabricksZones interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Zones() *[]*string
+	SetZones(val *[]*string)
+	ZonesInput() *[]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -83,10 +87,12 @@ type DataDatabricksZones interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDefaultZone()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZones()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -141,6 +147,16 @@ func (j *jsiiProxy_DataDatabricksZones) DefaultZone() *string {
 	_jsii_.Get(
 		j,
 		"defaultZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksZones) DefaultZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultZoneInput",
 		&returns,
 	)
 	return returns
@@ -286,8 +302,18 @@ func (j *jsiiProxy_DataDatabricksZones) Zones() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksZones) ZonesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"zonesInput",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/data-sources/zones databricks_zones} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/data-sources/zones databricks_zones} Data Source.
 func NewDataDatabricksZones(scope constructs.Construct, id *string, config *DataDatabricksZonesConfig) DataDatabricksZones {
 	_init_.Initialize()
 
@@ -305,7 +331,7 @@ func NewDataDatabricksZones(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/data-sources/zones databricks_zones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/data-sources/zones databricks_zones} Data Source.
 func NewDataDatabricksZones_Override(d DataDatabricksZones, scope constructs.Construct, id *string, config *DataDatabricksZonesConfig) {
 	_init_.Initialize()
 
@@ -323,6 +349,17 @@ func (j *jsiiProxy_DataDatabricksZones)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksZones)SetDefaultZone(val *string) {
+	if err := j.validateSetDefaultZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultZone",
 		val,
 	)
 }
@@ -369,6 +406,17 @@ func (j *jsiiProxy_DataDatabricksZones)SetProvider(val cdktf.TerraformProvider) 
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksZones)SetZones(val *[]*string) {
+	if err := j.validateSetZonesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zones",
 		val,
 	)
 }
@@ -658,6 +706,14 @@ func (d *jsiiProxy_DataDatabricksZones) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksZones) ResetDefaultZone() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDefaultZone",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksZones) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -670,6 +726,14 @@ func (d *jsiiProxy_DataDatabricksZones) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksZones) ResetZones() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZones",
 		nil, // no parameters
 	)
 }

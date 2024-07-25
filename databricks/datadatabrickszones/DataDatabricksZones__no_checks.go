@@ -75,11 +75,19 @@ func (j *jsiiProxy_DataDatabricksZones) validateSetCountParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksZones) validateSetDefaultZoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksZones) validateSetIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksZones) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksZones) validateSetZonesParameters(val *[]*string) error {
 	return nil
 }
 

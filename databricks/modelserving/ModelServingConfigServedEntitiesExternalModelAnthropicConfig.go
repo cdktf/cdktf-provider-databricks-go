@@ -5,7 +5,7 @@ package modelserving
 
 
 type ModelServingConfigServedEntitiesExternalModelAnthropicConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/resources/model_serving#anthropic_api_key ModelServing#anthropic_api_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/model_serving#anthropic_api_key ModelServing#anthropic_api_key}.
 	AnthropicApiKey *string `field:"required" json:"anthropicApiKey" yaml:"anthropicApiKey"`
 }
 
