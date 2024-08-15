@@ -68,6 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLibraries", GoMethod: "ResetLibraries"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxClustersPerUser", GoMethod: "ResetMaxClustersPerUser"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPolicyFamilyDefinitionOverrides", GoMethod: "ResetPolicyFamilyDefinitionOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPolicyFamilyId", GoMethod: "ResetPolicyFamilyId"},

@@ -51,7 +51,15 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutp
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) validateSetCohereApiBaseParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) validateSetCohereApiKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) validateSetCohereApiKeyPlaintextParameters(val *string) error {
 	return nil
 }
 

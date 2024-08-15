@@ -71,6 +71,10 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutp
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference) validateSetMicrosoftEntraClientSecretPlaintextParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference) validateSetMicrosoftEntraTenantIdParameters(val *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutp
 }
 
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference) validateSetOpenaiApiKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference) validateSetOpenaiApiKeyPlaintextParameters(val *string) error {
 	return nil
 }
 

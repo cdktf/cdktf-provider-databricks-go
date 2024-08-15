@@ -40,6 +40,8 @@ type ModelServingConfigServedEntitiesExternalModelOutputReference interface {
 	DatabricksModelServingConfigInput() *ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig
 	// Experimental.
 	Fqn() *string
+	GoogleCloudVertexAiConfig() ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigOutputReference
+	GoogleCloudVertexAiConfigInput() *ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig
 	InternalValue() *ModelServingConfigServedEntitiesExternalModel
 	SetInternalValue(val *ModelServingConfigServedEntitiesExternalModel)
 	Name() *string
@@ -92,6 +94,7 @@ type ModelServingConfigServedEntitiesExternalModelOutputReference interface {
 	PutAnthropicConfig(value *ModelServingConfigServedEntitiesExternalModelAnthropicConfig)
 	PutCohereConfig(value *ModelServingConfigServedEntitiesExternalModelCohereConfig)
 	PutDatabricksModelServingConfig(value *ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig)
+	PutGoogleCloudVertexAiConfig(value *ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig)
 	PutOpenaiConfig(value *ModelServingConfigServedEntitiesExternalModelOpenaiConfig)
 	PutPalmConfig(value *ModelServingConfigServedEntitiesExternalModelPalmConfig)
 	ResetAi21LabsConfig()
@@ -99,6 +102,7 @@ type ModelServingConfigServedEntitiesExternalModelOutputReference interface {
 	ResetAnthropicConfig()
 	ResetCohereConfig()
 	ResetDatabricksModelServingConfig()
+	ResetGoogleCloudVertexAiConfig()
 	ResetOpenaiConfig()
 	ResetPalmConfig()
 	// Produce the Token's value at resolution time.
@@ -251,6 +255,26 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference)
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference) GoogleCloudVertexAiConfig() ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigOutputReference {
+	var returns ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigOutputReference
+	_jsii_.Get(
+		j,
+		"googleCloudVertexAiConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference) GoogleCloudVertexAiConfigInput() *ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig {
+	var returns *ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig
+	_jsii_.Get(
+		j,
+		"googleCloudVertexAiConfigInput",
 		&returns,
 	)
 	return returns
@@ -743,6 +767,17 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference)
 	)
 }
 
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference) PutGoogleCloudVertexAiConfig(value *ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig) {
+	if err := m.validatePutGoogleCloudVertexAiConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putGoogleCloudVertexAiConfig",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference) PutOpenaiConfig(value *ModelServingConfigServedEntitiesExternalModelOpenaiConfig) {
 	if err := m.validatePutOpenaiConfigParameters(value); err != nil {
 		panic(err)
@@ -801,6 +836,14 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference)
 	_jsii_.InvokeVoid(
 		m,
 		"resetDatabricksModelServingConfig",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference) ResetGoogleCloudVertexAiConfig() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetGoogleCloudVertexAiConfig",
 		nil, // no parameters
 	)
 }

@@ -67,7 +67,15 @@ func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetEbsVo
 	return nil
 }
 
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetEbsVolumeIopsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetEbsVolumeSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineClusterAwsAttributesOutputReference) validateSetEbsVolumeThroughputParameters(val *float64) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAnthropicConfigO
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference) validateSetAnthropicApiKeyPlaintextParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

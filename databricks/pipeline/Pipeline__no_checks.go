@@ -87,6 +87,18 @@ func (p *jsiiProxy_Pipeline) validatePutFiltersParameters(value *PipelineFilters
 	return nil
 }
 
+func (p *jsiiProxy_Pipeline) validatePutGatewayDefinitionParameters(value *PipelineGatewayDefinition) error {
+	return nil
+}
+
+func (p *jsiiProxy_Pipeline) validatePutIngestionDefinitionParameters(value *PipelineIngestionDefinition) error {
+	return nil
+}
+
+func (p *jsiiProxy_Pipeline) validatePutLatestUpdatesParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_Pipeline) validatePutLibraryParameters(value interface{}) error {
 	return nil
 }
@@ -96,6 +108,10 @@ func (p *jsiiProxy_Pipeline) validatePutNotificationParameters(value interface{}
 }
 
 func (p *jsiiProxy_Pipeline) validatePutTimeoutsParameters(value *PipelineTimeouts) error {
+	return nil
+}
+
+func (p *jsiiProxy_Pipeline) validatePutTriggerParameters(value *PipelineTrigger) error {
 	return nil
 }
 
@@ -123,7 +139,15 @@ func (j *jsiiProxy_Pipeline) validateSetCatalogParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetCauseParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetChannelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Pipeline) validateSetClusterIdParameters(val *string) error {
 	return nil
 }
 
@@ -143,6 +167,10 @@ func (j *jsiiProxy_Pipeline) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetCreatorUserNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetDevelopmentParameters(val interface{}) error {
 	return nil
 }
@@ -151,7 +179,19 @@ func (j *jsiiProxy_Pipeline) validateSetEditionParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetExpectedLastModifiedParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_Pipeline) validateSetHealthParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Pipeline) validateSetLastModifiedParameters(val *float64) error {
 	return nil
 }
 
@@ -171,7 +211,15 @@ func (j *jsiiProxy_Pipeline) validateSetProvisionersParameters(val *[]interface{
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetRunAsUserNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetServerlessParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Pipeline) validateSetStateParameters(val *string) error {
 	return nil
 }
 
@@ -180,6 +228,10 @@ func (j *jsiiProxy_Pipeline) validateSetStorageParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Pipeline) validateSetTargetParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Pipeline) validateSetUrlParameters(val *string) error {
 	return nil
 }
 

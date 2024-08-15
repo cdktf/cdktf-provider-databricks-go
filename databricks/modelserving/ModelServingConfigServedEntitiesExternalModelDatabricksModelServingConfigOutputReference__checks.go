@@ -174,6 +174,14 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelDatabricksModelS
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference) validateSetDatabricksApiTokenPlaintextParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference) validateSetDatabricksWorkspaceUrlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

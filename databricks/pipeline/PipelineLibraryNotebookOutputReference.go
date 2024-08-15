@@ -67,6 +67,7 @@ type PipelineLibraryNotebookOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (p *jsiiProxy_PipelineLibraryNotebookOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PipelineLibraryNotebookOutputReference) ResetPath() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPath",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PipelineLibraryNotebookOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

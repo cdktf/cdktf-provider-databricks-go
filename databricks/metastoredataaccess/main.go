@@ -23,6 +23,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "azureServicePrincipal", GoGetter: "AzureServicePrincipal"},
 			_jsii_.MemberProperty{JsiiProperty: "azureServicePrincipalInput", GoGetter: "AzureServicePrincipalInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudflareApiToken", GoGetter: "CloudflareApiToken"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudflareApiTokenInput", GoGetter: "CloudflareApiTokenInput"},
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
 			_jsii_.MemberProperty{JsiiProperty: "commentInput", GoGetter: "CommentInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
@@ -75,6 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAwsIamRole", GoMethod: "PutAwsIamRole"},
 			_jsii_.MemberMethod{JsiiMethod: "putAzureManagedIdentity", GoMethod: "PutAzureManagedIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "putAzureServicePrincipal", GoMethod: "PutAzureServicePrincipal"},
+			_jsii_.MemberMethod{JsiiMethod: "putCloudflareApiToken", GoMethod: "PutCloudflareApiToken"},
 			_jsii_.MemberMethod{JsiiMethod: "putDatabricksGcpServiceAccount", GoMethod: "PutDatabricksGcpServiceAccount"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcpServiceAccountKey", GoMethod: "PutGcpServiceAccountKey"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -83,6 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsIamRole", GoMethod: "ResetAwsIamRole"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureManagedIdentity", GoMethod: "ResetAzureManagedIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureServicePrincipal", GoMethod: "ResetAzureServicePrincipal"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCloudflareApiToken", GoMethod: "ResetCloudflareApiToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetComment", GoMethod: "ResetComment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabricksGcpServiceAccount", GoMethod: "ResetDatabricksGcpServiceAccount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForceDestroy", GoMethod: "ResetForceDestroy"},
@@ -240,6 +244,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken",
+		reflect.TypeOf((*MetastoreDataAccessCloudflareApiToken)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference",
+		reflect.TypeOf((*MetastoreDataAccessCloudflareApiTokenOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
+			_jsii_.MemberProperty{JsiiProperty: "accessKeyIdInput", GoGetter: "AccessKeyIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
+			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "secretAccessKey", GoGetter: "SecretAccessKey"},
+			_jsii_.MemberProperty{JsiiProperty: "secretAccessKeyInput", GoGetter: "SecretAccessKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MetastoreDataAccessCloudflareApiTokenOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

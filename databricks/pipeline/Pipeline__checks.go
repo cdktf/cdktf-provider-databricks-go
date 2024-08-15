@@ -260,6 +260,59 @@ func (p *jsiiProxy_Pipeline) validatePutFiltersParameters(value *PipelineFilters
 	return nil
 }
 
+func (p *jsiiProxy_Pipeline) validatePutGatewayDefinitionParameters(value *PipelineGatewayDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_Pipeline) validatePutIngestionDefinitionParameters(value *PipelineIngestionDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_Pipeline) validatePutLatestUpdatesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*PipelineLatestUpdates:
+		value := value.(*[]*PipelineLatestUpdates)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*PipelineLatestUpdates:
+		value_ := value.([]*PipelineLatestUpdates)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*PipelineLatestUpdates; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_Pipeline) validatePutLibraryParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -323,6 +376,17 @@ func (p *jsiiProxy_Pipeline) validatePutNotificationParameters(value interface{}
 }
 
 func (p *jsiiProxy_Pipeline) validatePutTimeoutsParameters(value *PipelineTimeouts) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_Pipeline) validatePutTriggerParameters(value *PipelineTrigger) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -401,7 +465,23 @@ func (j *jsiiProxy_Pipeline) validateSetCatalogParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetCauseParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetChannelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Pipeline) validateSetClusterIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -527,6 +607,14 @@ func (j *jsiiProxy_Pipeline) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetCreatorUserNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetDevelopmentParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -555,7 +643,31 @@ func (j *jsiiProxy_Pipeline) validateSetEditionParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetExpectedLastModifiedParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Pipeline) validateSetHealthParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Pipeline) validateSetLastModifiedParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -645,6 +757,14 @@ func (j *jsiiProxy_Pipeline) validateSetProvisionersParameters(val *[]interface{
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetRunAsUserNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetServerlessParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -665,6 +785,14 @@ func (j *jsiiProxy_Pipeline) validateSetServerlessParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetStateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetStorageParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -674,6 +802,14 @@ func (j *jsiiProxy_Pipeline) validateSetStorageParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Pipeline) validateSetTargetParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Pipeline) validateSetUrlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/notebook databricks_notebook}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/notebook databricks_notebook}.
 type Notebook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -89,6 +89,7 @@ type Notebook interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Url() *string
+	WorkspacePath() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -511,8 +512,18 @@ func (j *jsiiProxy_Notebook) Url() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Notebook) WorkspacePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspacePath",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/notebook databricks_notebook} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/notebook databricks_notebook} Resource.
 func NewNotebook(scope constructs.Construct, id *string, config *NotebookConfig) Notebook {
 	_init_.Initialize()
 
@@ -530,7 +541,7 @@ func NewNotebook(scope constructs.Construct, id *string, config *NotebookConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/notebook databricks_notebook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/notebook databricks_notebook} Resource.
 func NewNotebook_Override(n Notebook, scope constructs.Construct, id *string, config *NotebookConfig) {
 	_init_.Initialize()
 

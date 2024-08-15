@@ -67,6 +67,10 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference)
 	return nil
 }
 
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference) validatePutGoogleCloudVertexAiConfigParameters(value *ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig) error {
+	return nil
+}
+
 func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference) validatePutOpenaiConfigParameters(value *ModelServingConfigServedEntitiesExternalModelOpenaiConfig) error {
 	return nil
 }

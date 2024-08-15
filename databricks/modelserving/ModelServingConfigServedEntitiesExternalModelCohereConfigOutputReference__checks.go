@@ -101,7 +101,23 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutp
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) validateSetCohereApiBaseParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) validateSetCohereApiKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) validateSetCohereApiKeyPlaintextParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

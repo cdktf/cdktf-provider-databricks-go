@@ -55,6 +55,10 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOu
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference) validateSetAi21LabsApiKeyPlaintextParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

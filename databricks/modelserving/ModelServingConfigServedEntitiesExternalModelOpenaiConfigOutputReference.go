@@ -38,6 +38,9 @@ type ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference in
 	MicrosoftEntraClientSecret() *string
 	SetMicrosoftEntraClientSecret(val *string)
 	MicrosoftEntraClientSecretInput() *string
+	MicrosoftEntraClientSecretPlaintext() *string
+	SetMicrosoftEntraClientSecretPlaintext(val *string)
+	MicrosoftEntraClientSecretPlaintextInput() *string
 	MicrosoftEntraTenantId() *string
 	SetMicrosoftEntraTenantId(val *string)
 	MicrosoftEntraTenantIdInput() *string
@@ -47,6 +50,9 @@ type ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference in
 	OpenaiApiKey() *string
 	SetOpenaiApiKey(val *string)
 	OpenaiApiKeyInput() *string
+	OpenaiApiKeyPlaintext() *string
+	SetOpenaiApiKeyPlaintext(val *string)
+	OpenaiApiKeyPlaintextInput() *string
 	OpenaiApiType() *string
 	SetOpenaiApiType(val *string)
 	OpenaiApiTypeInput() *string
@@ -93,9 +99,11 @@ type ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference in
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetMicrosoftEntraClientId()
 	ResetMicrosoftEntraClientSecret()
+	ResetMicrosoftEntraClientSecretPlaintext()
 	ResetMicrosoftEntraTenantId()
 	ResetOpenaiApiBase()
 	ResetOpenaiApiKey()
+	ResetOpenaiApiKeyPlaintext()
 	ResetOpenaiApiType()
 	ResetOpenaiApiVersion()
 	ResetOpenaiDeploymentName()
@@ -205,6 +213,26 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutp
 	return returns
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference) MicrosoftEntraClientSecretPlaintext() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"microsoftEntraClientSecretPlaintext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference) MicrosoftEntraClientSecretPlaintextInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"microsoftEntraClientSecretPlaintextInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference) MicrosoftEntraTenantId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -260,6 +288,26 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutp
 	_jsii_.Get(
 		j,
 		"openaiApiKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference) OpenaiApiKeyPlaintext() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"openaiApiKeyPlaintext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference) OpenaiApiKeyPlaintextInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"openaiApiKeyPlaintextInput",
 		&returns,
 	)
 	return returns
@@ -448,6 +496,17 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutp
 	)
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference)SetMicrosoftEntraClientSecretPlaintext(val *string) {
+	if err := j.validateSetMicrosoftEntraClientSecretPlaintextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"microsoftEntraClientSecretPlaintext",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference)SetMicrosoftEntraTenantId(val *string) {
 	if err := j.validateSetMicrosoftEntraTenantIdParameters(val); err != nil {
 		panic(err)
@@ -477,6 +536,17 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutp
 	_jsii_.Set(
 		j,
 		"openaiApiKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference)SetOpenaiApiKeyPlaintext(val *string) {
+	if err := j.validateSetOpenaiApiKeyPlaintextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"openaiApiKeyPlaintext",
 		val,
 	)
 }
@@ -749,6 +819,14 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutp
 	)
 }
 
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference) ResetMicrosoftEntraClientSecretPlaintext() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMicrosoftEntraClientSecretPlaintext",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference) ResetMicrosoftEntraTenantId() {
 	_jsii_.InvokeVoid(
 		m,
@@ -769,6 +847,14 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutp
 	_jsii_.InvokeVoid(
 		m,
 		"resetOpenaiApiKey",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference) ResetOpenaiApiKeyPlaintext() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetOpenaiApiKeyPlaintext",
 		nil, // no parameters
 	)
 }

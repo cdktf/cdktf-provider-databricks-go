@@ -87,6 +87,10 @@ func (m *jsiiProxy_MetastoreDataAccess) validatePutAzureServicePrincipalParamete
 	return nil
 }
 
+func (m *jsiiProxy_MetastoreDataAccess) validatePutCloudflareApiTokenParameters(value *MetastoreDataAccessCloudflareApiToken) error {
+	return nil
+}
+
 func (m *jsiiProxy_MetastoreDataAccess) validatePutDatabricksGcpServiceAccountParameters(value *MetastoreDataAccessDatabricksGcpServiceAccount) error {
 	return nil
 }

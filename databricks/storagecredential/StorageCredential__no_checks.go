@@ -87,6 +87,10 @@ func (s *jsiiProxy_StorageCredential) validatePutAzureServicePrincipalParameters
 	return nil
 }
 
+func (s *jsiiProxy_StorageCredential) validatePutCloudflareApiTokenParameters(value *StorageCredentialCloudflareApiToken) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageCredential) validatePutDatabricksGcpServiceAccountParameters(value *StorageCredentialDatabricksGcpServiceAccount) error {
 	return nil
 }

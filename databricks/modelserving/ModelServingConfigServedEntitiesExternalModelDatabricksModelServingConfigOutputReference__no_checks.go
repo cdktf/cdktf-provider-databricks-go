@@ -63,6 +63,10 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelDatabricksModelS
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference) validateSetDatabricksApiTokenPlaintextParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference) validateSetDatabricksWorkspaceUrlParameters(val *string) error {
 	return nil
 }

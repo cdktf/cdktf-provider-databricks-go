@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/cluster_policy databricks_cluster_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/cluster_policy databricks_cluster_policy}.
 type ClusterPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -134,6 +134,7 @@ type ClusterPolicy interface {
 	ResetId()
 	ResetLibraries()
 	ResetMaxClustersPerUser()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -488,7 +489,7 @@ func (j *jsiiProxy_ClusterPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/cluster_policy databricks_cluster_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/cluster_policy databricks_cluster_policy} Resource.
 func NewClusterPolicy(scope constructs.Construct, id *string, config *ClusterPolicyConfig) ClusterPolicy {
 	_init_.Initialize()
 
@@ -506,7 +507,7 @@ func NewClusterPolicy(scope constructs.Construct, id *string, config *ClusterPol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/cluster_policy databricks_cluster_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/cluster_policy databricks_cluster_policy} Resource.
 func NewClusterPolicy_Override(c ClusterPolicy, scope constructs.Construct, id *string, config *ClusterPolicyConfig) {
 	_init_.Initialize()
 
@@ -1062,6 +1063,14 @@ func (c *jsiiProxy_ClusterPolicy) ResetMaxClustersPerUser() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetMaxClustersPerUser",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterPolicy) ResetName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetName",
 		nil, // no parameters
 	)
 }

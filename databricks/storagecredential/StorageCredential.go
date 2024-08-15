@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential databricks_storage_credential}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential databricks_storage_credential}.
 type StorageCredential interface {
 	cdktf.TerraformResource
 	AwsIamRole() StorageCredentialAwsIamRoleOutputReference
@@ -23,6 +23,8 @@ type StorageCredential interface {
 	AzureServicePrincipalInput() *StorageCredentialAzureServicePrincipal
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CloudflareApiToken() StorageCredentialCloudflareApiTokenOutputReference
+	CloudflareApiTokenInput() *StorageCredentialCloudflareApiToken
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -148,11 +150,13 @@ type StorageCredential interface {
 	PutAwsIamRole(value *StorageCredentialAwsIamRole)
 	PutAzureManagedIdentity(value *StorageCredentialAzureManagedIdentity)
 	PutAzureServicePrincipal(value *StorageCredentialAzureServicePrincipal)
+	PutCloudflareApiToken(value *StorageCredentialCloudflareApiToken)
 	PutDatabricksGcpServiceAccount(value *StorageCredentialDatabricksGcpServiceAccount)
 	PutGcpServiceAccountKey(value *StorageCredentialGcpServiceAccountKey)
 	ResetAwsIamRole()
 	ResetAzureManagedIdentity()
 	ResetAzureServicePrincipal()
+	ResetCloudflareApiToken()
 	ResetComment()
 	ResetDatabricksGcpServiceAccount()
 	ResetForceDestroy()
@@ -250,6 +254,26 @@ func (j *jsiiProxy_StorageCredential) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageCredential) CloudflareApiToken() StorageCredentialCloudflareApiTokenOutputReference {
+	var returns StorageCredentialCloudflareApiTokenOutputReference
+	_jsii_.Get(
+		j,
+		"cloudflareApiToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageCredential) CloudflareApiTokenInput() *StorageCredentialCloudflareApiToken {
+	var returns *StorageCredentialCloudflareApiToken
+	_jsii_.Get(
+		j,
+		"cloudflareApiTokenInput",
 		&returns,
 	)
 	return returns
@@ -656,7 +680,7 @@ func (j *jsiiProxy_StorageCredential) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential databricks_storage_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential databricks_storage_credential} Resource.
 func NewStorageCredential(scope constructs.Construct, id *string, config *StorageCredentialConfig) StorageCredential {
 	_init_.Initialize()
 
@@ -674,7 +698,7 @@ func NewStorageCredential(scope constructs.Construct, id *string, config *Storag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential databricks_storage_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential databricks_storage_credential} Resource.
 func NewStorageCredential_Override(s StorageCredential, scope constructs.Construct, id *string, config *StorageCredentialConfig) {
 	_init_.Initialize()
 
@@ -1249,6 +1273,17 @@ func (s *jsiiProxy_StorageCredential) PutAzureServicePrincipal(value *StorageCre
 	)
 }
 
+func (s *jsiiProxy_StorageCredential) PutCloudflareApiToken(value *StorageCredentialCloudflareApiToken) {
+	if err := s.validatePutCloudflareApiTokenParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCloudflareApiToken",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StorageCredential) PutDatabricksGcpServiceAccount(value *StorageCredentialDatabricksGcpServiceAccount) {
 	if err := s.validatePutDatabricksGcpServiceAccountParameters(value); err != nil {
 		panic(err)
@@ -1291,6 +1326,14 @@ func (s *jsiiProxy_StorageCredential) ResetAzureServicePrincipal() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAzureServicePrincipal",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageCredential) ResetCloudflareApiToken() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCloudflareApiToken",
 		nil, // no parameters
 	)
 }

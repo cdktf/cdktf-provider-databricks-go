@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access databricks_metastore_data_access}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access databricks_metastore_data_access}.
 type MetastoreDataAccess interface {
 	cdktf.TerraformResource
 	AwsIamRole() MetastoreDataAccessAwsIamRoleOutputReference
@@ -23,6 +23,8 @@ type MetastoreDataAccess interface {
 	AzureServicePrincipalInput() *MetastoreDataAccessAzureServicePrincipal
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CloudflareApiToken() MetastoreDataAccessCloudflareApiTokenOutputReference
+	CloudflareApiTokenInput() *MetastoreDataAccessCloudflareApiToken
 	Comment() *string
 	SetComment(val *string)
 	CommentInput() *string
@@ -150,11 +152,13 @@ type MetastoreDataAccess interface {
 	PutAwsIamRole(value *MetastoreDataAccessAwsIamRole)
 	PutAzureManagedIdentity(value *MetastoreDataAccessAzureManagedIdentity)
 	PutAzureServicePrincipal(value *MetastoreDataAccessAzureServicePrincipal)
+	PutCloudflareApiToken(value *MetastoreDataAccessCloudflareApiToken)
 	PutDatabricksGcpServiceAccount(value *MetastoreDataAccessDatabricksGcpServiceAccount)
 	PutGcpServiceAccountKey(value *MetastoreDataAccessGcpServiceAccountKey)
 	ResetAwsIamRole()
 	ResetAzureManagedIdentity()
 	ResetAzureServicePrincipal()
+	ResetCloudflareApiToken()
 	ResetComment()
 	ResetDatabricksGcpServiceAccount()
 	ResetForceDestroy()
@@ -253,6 +257,26 @@ func (j *jsiiProxy_MetastoreDataAccess) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) CloudflareApiToken() MetastoreDataAccessCloudflareApiTokenOutputReference {
+	var returns MetastoreDataAccessCloudflareApiTokenOutputReference
+	_jsii_.Get(
+		j,
+		"cloudflareApiToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetastoreDataAccess) CloudflareApiTokenInput() *MetastoreDataAccessCloudflareApiToken {
+	var returns *MetastoreDataAccessCloudflareApiToken
+	_jsii_.Get(
+		j,
+		"cloudflareApiTokenInput",
 		&returns,
 	)
 	return returns
@@ -669,7 +693,7 @@ func (j *jsiiProxy_MetastoreDataAccess) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
 func NewMetastoreDataAccess(scope constructs.Construct, id *string, config *MetastoreDataAccessConfig) MetastoreDataAccess {
 	_init_.Initialize()
 
@@ -687,7 +711,7 @@ func NewMetastoreDataAccess(scope constructs.Construct, id *string, config *Meta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource.
 func NewMetastoreDataAccess_Override(m MetastoreDataAccess, scope constructs.Construct, id *string, config *MetastoreDataAccessConfig) {
 	_init_.Initialize()
 
@@ -1273,6 +1297,17 @@ func (m *jsiiProxy_MetastoreDataAccess) PutAzureServicePrincipal(value *Metastor
 	)
 }
 
+func (m *jsiiProxy_MetastoreDataAccess) PutCloudflareApiToken(value *MetastoreDataAccessCloudflareApiToken) {
+	if err := m.validatePutCloudflareApiTokenParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putCloudflareApiToken",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MetastoreDataAccess) PutDatabricksGcpServiceAccount(value *MetastoreDataAccessDatabricksGcpServiceAccount) {
 	if err := m.validatePutDatabricksGcpServiceAccountParameters(value); err != nil {
 		panic(err)
@@ -1315,6 +1350,14 @@ func (m *jsiiProxy_MetastoreDataAccess) ResetAzureServicePrincipal() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetAzureServicePrincipal",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MetastoreDataAccess) ResetCloudflareApiToken() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCloudflareApiToken",
 		nil, // no parameters
 	)
 }

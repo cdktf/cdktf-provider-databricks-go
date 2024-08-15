@@ -31,6 +31,9 @@ type ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOu
 	DatabricksApiToken() *string
 	SetDatabricksApiToken(val *string)
 	DatabricksApiTokenInput() *string
+	DatabricksApiTokenPlaintext() *string
+	SetDatabricksApiTokenPlaintext(val *string)
+	DatabricksApiTokenPlaintextInput() *string
 	DatabricksWorkspaceUrl() *string
 	SetDatabricksWorkspaceUrl(val *string)
 	DatabricksWorkspaceUrlInput() *string
@@ -70,6 +73,8 @@ type ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOu
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDatabricksApiToken()
+	ResetDatabricksApiTokenPlaintext()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -130,6 +135,26 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelDatabricksModelS
 	_jsii_.Get(
 		j,
 		"databricksApiTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference) DatabricksApiTokenPlaintext() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databricksApiTokenPlaintext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference) DatabricksApiTokenPlaintextInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databricksApiTokenPlaintextInput",
 		&returns,
 	)
 	return returns
@@ -252,6 +277,17 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelDatabricksModelS
 	_jsii_.Set(
 		j,
 		"databricksApiToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference)SetDatabricksApiTokenPlaintext(val *string) {
+	if err := j.validateSetDatabricksApiTokenPlaintextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databricksApiTokenPlaintext",
 		val,
 	)
 }
@@ -484,6 +520,22 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelDatabricksModelS
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference) ResetDatabricksApiToken() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDatabricksApiToken",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference) ResetDatabricksApiTokenPlaintext() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDatabricksApiTokenPlaintext",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

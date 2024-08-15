@@ -35,6 +35,9 @@ type ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference inte
 	PalmApiKey() *string
 	SetPalmApiKey(val *string)
 	PalmApiKeyInput() *string
+	PalmApiKeyPlaintext() *string
+	SetPalmApiKeyPlaintext(val *string)
+	PalmApiKeyPlaintextInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,8 @@ type ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPalmApiKey()
+	ResetPalmApiKeyPlaintext()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +152,26 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelPalmConfigOutput
 	_jsii_.Get(
 		j,
 		"palmApiKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference) PalmApiKeyPlaintext() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"palmApiKeyPlaintext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference) PalmApiKeyPlaintextInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"palmApiKeyPlaintextInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +265,17 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelPalmConfigOutput
 	_jsii_.Set(
 		j,
 		"palmApiKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference)SetPalmApiKeyPlaintext(val *string) {
+	if err := j.validateSetPalmApiKeyPlaintextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"palmApiKeyPlaintext",
 		val,
 	)
 }
@@ -450,6 +486,22 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelPalmConfigOutput
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference) ResetPalmApiKey() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPalmApiKey",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference) ResetPalmApiKeyPlaintext() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPalmApiKeyPlaintext",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

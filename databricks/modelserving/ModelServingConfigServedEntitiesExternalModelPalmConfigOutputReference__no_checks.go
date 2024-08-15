@@ -67,6 +67,10 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelPalmConfigOutput
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference) validateSetPalmApiKeyPlaintextParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

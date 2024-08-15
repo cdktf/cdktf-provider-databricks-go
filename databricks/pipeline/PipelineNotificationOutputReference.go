@@ -70,6 +70,8 @@ type PipelineNotificationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAlerts()
+	ResetEmailRecipients()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -484,6 +486,22 @@ func (p *jsiiProxy_PipelineNotificationOutputReference) InterpolationForAttribut
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PipelineNotificationOutputReference) ResetAlerts() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAlerts",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineNotificationOutputReference) ResetEmailRecipients() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEmailRecipients",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PipelineNotificationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -16,6 +16,9 @@ type ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference
 	AnthropicApiKey() *string
 	SetAnthropicApiKey(val *string)
 	AnthropicApiKeyInput() *string
+	AnthropicApiKeyPlaintext() *string
+	SetAnthropicApiKeyPlaintext(val *string)
+	AnthropicApiKeyPlaintextInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +70,8 @@ type ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAnthropicApiKey()
+	ResetAnthropicApiKeyPlaintext()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -97,6 +102,26 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAnthropicConfigO
 	_jsii_.Get(
 		j,
 		"anthropicApiKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference) AnthropicApiKeyPlaintext() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"anthropicApiKeyPlaintext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference) AnthropicApiKeyPlaintextInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"anthropicApiKeyPlaintextInput",
 		&returns,
 	)
 	return returns
@@ -207,6 +232,17 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAnthropicConfigO
 	_jsii_.Set(
 		j,
 		"anthropicApiKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference)SetAnthropicApiKeyPlaintext(val *string) {
+	if err := j.validateSetAnthropicApiKeyPlaintextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"anthropicApiKeyPlaintext",
 		val,
 	)
 }
@@ -450,6 +486,22 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAnthropicConfigO
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference) ResetAnthropicApiKey() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAnthropicApiKey",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference) ResetAnthropicApiKeyPlaintext() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAnthropicApiKeyPlaintext",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

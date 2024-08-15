@@ -16,12 +16,18 @@ type ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputRefer
 	AwsAccessKeyId() *string
 	SetAwsAccessKeyId(val *string)
 	AwsAccessKeyIdInput() *string
+	AwsAccessKeyIdPlaintext() *string
+	SetAwsAccessKeyIdPlaintext(val *string)
+	AwsAccessKeyIdPlaintextInput() *string
 	AwsRegion() *string
 	SetAwsRegion(val *string)
 	AwsRegionInput() *string
 	AwsSecretAccessKey() *string
 	SetAwsSecretAccessKey(val *string)
 	AwsSecretAccessKeyInput() *string
+	AwsSecretAccessKeyPlaintext() *string
+	SetAwsSecretAccessKeyPlaintext(val *string)
+	AwsSecretAccessKeyPlaintextInput() *string
 	BedrockProvider() *string
 	SetBedrockProvider(val *string)
 	BedrockProviderInput() *string
@@ -76,6 +82,10 @@ type ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputRefer
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAwsAccessKeyId()
+	ResetAwsAccessKeyIdPlaintext()
+	ResetAwsSecretAccessKey()
+	ResetAwsSecretAccessKeyPlaintext()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -106,6 +116,26 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockCon
 	_jsii_.Get(
 		j,
 		"awsAccessKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) AwsAccessKeyIdPlaintext() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsAccessKeyIdPlaintext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) AwsAccessKeyIdPlaintextInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsAccessKeyIdPlaintextInput",
 		&returns,
 	)
 	return returns
@@ -146,6 +176,26 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockCon
 	_jsii_.Get(
 		j,
 		"awsSecretAccessKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) AwsSecretAccessKeyPlaintext() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsSecretAccessKeyPlaintext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) AwsSecretAccessKeyPlaintextInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsSecretAccessKeyPlaintextInput",
 		&returns,
 	)
 	return returns
@@ -280,6 +330,17 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockCon
 	)
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference)SetAwsAccessKeyIdPlaintext(val *string) {
+	if err := j.validateSetAwsAccessKeyIdPlaintextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"awsAccessKeyIdPlaintext",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference)SetAwsRegion(val *string) {
 	if err := j.validateSetAwsRegionParameters(val); err != nil {
 		panic(err)
@@ -298,6 +359,17 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockCon
 	_jsii_.Set(
 		j,
 		"awsSecretAccessKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference)SetAwsSecretAccessKeyPlaintext(val *string) {
+	if err := j.validateSetAwsSecretAccessKeyPlaintextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"awsSecretAccessKeyPlaintext",
 		val,
 	)
 }
@@ -552,6 +624,38 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockCon
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) ResetAwsAccessKeyId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAwsAccessKeyId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) ResetAwsAccessKeyIdPlaintext() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAwsAccessKeyIdPlaintext",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) ResetAwsSecretAccessKey() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAwsSecretAccessKey",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) ResetAwsSecretAccessKeyPlaintext() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAwsSecretAccessKeyPlaintext",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

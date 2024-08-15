@@ -55,11 +55,19 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockCon
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) validateSetAwsAccessKeyIdPlaintextParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) validateSetAwsRegionParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) validateSetAwsSecretAccessKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) validateSetAwsSecretAccessKeyPlaintextParameters(val *string) error {
 	return nil
 }
 

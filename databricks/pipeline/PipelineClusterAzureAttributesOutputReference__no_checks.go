@@ -47,6 +47,10 @@ func (p *jsiiProxy_PipelineClusterAzureAttributesOutputReference) validateInterp
 	return nil
 }
 
+func (p *jsiiProxy_PipelineClusterAzureAttributesOutputReference) validatePutLogAnalyticsInfoParameters(value *PipelineClusterAzureAttributesLogAnalyticsInfo) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineClusterAzureAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

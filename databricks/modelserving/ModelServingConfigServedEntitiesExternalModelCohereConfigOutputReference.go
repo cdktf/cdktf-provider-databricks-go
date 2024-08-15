@@ -13,9 +13,15 @@ import (
 
 type ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference interface {
 	cdktf.ComplexObject
+	CohereApiBase() *string
+	SetCohereApiBase(val *string)
+	CohereApiBaseInput() *string
 	CohereApiKey() *string
 	SetCohereApiKey(val *string)
 	CohereApiKeyInput() *string
+	CohereApiKeyPlaintext() *string
+	SetCohereApiKeyPlaintext(val *string)
+	CohereApiKeyPlaintextInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +73,9 @@ type ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference in
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCohereApiBase()
+	ResetCohereApiKey()
+	ResetCohereApiKeyPlaintext()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -80,6 +89,26 @@ type ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference in
 // The jsii proxy struct for ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference
 type jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) CohereApiBase() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cohereApiBase",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) CohereApiBaseInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cohereApiBaseInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) CohereApiKey() *string {
@@ -97,6 +126,26 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutp
 	_jsii_.Get(
 		j,
 		"cohereApiKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) CohereApiKeyPlaintext() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cohereApiKeyPlaintext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) CohereApiKeyPlaintextInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cohereApiKeyPlaintextInput",
 		&returns,
 	)
 	return returns
@@ -200,6 +249,17 @@ func NewModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference
 	)
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference)SetCohereApiBase(val *string) {
+	if err := j.validateSetCohereApiBaseParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cohereApiBase",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference)SetCohereApiKey(val *string) {
 	if err := j.validateSetCohereApiKeyParameters(val); err != nil {
 		panic(err)
@@ -207,6 +267,17 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutp
 	_jsii_.Set(
 		j,
 		"cohereApiKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference)SetCohereApiKeyPlaintext(val *string) {
+	if err := j.validateSetCohereApiKeyPlaintextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cohereApiKeyPlaintext",
 		val,
 	)
 }
@@ -450,6 +521,30 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutp
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) ResetCohereApiBase() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCohereApiBase",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) ResetCohereApiKey() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCohereApiKey",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) ResetCohereApiKeyPlaintext() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCohereApiKeyPlaintext",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

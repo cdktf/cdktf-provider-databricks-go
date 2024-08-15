@@ -109,6 +109,14 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOu
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference) validateSetAi21LabsApiKeyPlaintextParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

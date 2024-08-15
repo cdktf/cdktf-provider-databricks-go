@@ -73,8 +73,6 @@ type PipelineClusterAutoscaleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetMaxWorkers()
-	ResetMinWorkers()
 	ResetMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -521,22 +519,6 @@ func (p *jsiiProxy_PipelineClusterAutoscaleOutputReference) InterpolationForAttr
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PipelineClusterAutoscaleOutputReference) ResetMaxWorkers() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetMaxWorkers",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PipelineClusterAutoscaleOutputReference) ResetMinWorkers() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetMinWorkers",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PipelineClusterAutoscaleOutputReference) ResetMode() {

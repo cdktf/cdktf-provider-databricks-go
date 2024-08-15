@@ -16,6 +16,9 @@ type ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference 
 	Ai21LabsApiKey() *string
 	SetAi21LabsApiKey(val *string)
 	Ai21LabsApiKeyInput() *string
+	Ai21LabsApiKeyPlaintext() *string
+	SetAi21LabsApiKeyPlaintext(val *string)
+	Ai21LabsApiKeyPlaintextInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +70,8 @@ type ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAi21LabsApiKey()
+	ResetAi21LabsApiKeyPlaintext()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -97,6 +102,26 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOu
 	_jsii_.Get(
 		j,
 		"ai21LabsApiKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference) Ai21LabsApiKeyPlaintext() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ai21LabsApiKeyPlaintext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference) Ai21LabsApiKeyPlaintextInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ai21LabsApiKeyPlaintextInput",
 		&returns,
 	)
 	return returns
@@ -207,6 +232,17 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOu
 	_jsii_.Set(
 		j,
 		"ai21LabsApiKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference)SetAi21LabsApiKeyPlaintext(val *string) {
+	if err := j.validateSetAi21LabsApiKeyPlaintextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ai21LabsApiKeyPlaintext",
 		val,
 	)
 }
@@ -450,6 +486,22 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOu
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference) ResetAi21LabsApiKey() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAi21LabsApiKey",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference) ResetAi21LabsApiKeyPlaintext() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAi21LabsApiKeyPlaintext",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
