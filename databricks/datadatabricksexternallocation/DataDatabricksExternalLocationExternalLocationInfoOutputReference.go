@@ -51,6 +51,9 @@ type DataDatabricksExternalLocationExternalLocationInfoOutputReference interface
 	CredentialNameInput() *string
 	EncryptionDetails() DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsOutputReference
 	EncryptionDetailsInput() *DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails
+	Fallback() interface{}
+	SetFallback(val interface{})
+	FallbackInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksExternalLocationExternalLocationInfo
@@ -120,6 +123,7 @@ type DataDatabricksExternalLocationExternalLocationInfoOutputReference interface
 	ResetCredentialId()
 	ResetCredentialName()
 	ResetEncryptionDetails()
+	ResetFallback()
 	ResetIsolationMode()
 	ResetMetastoreId()
 	ResetName()
@@ -328,6 +332,26 @@ func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	_jsii_.Get(
 		j,
 		"encryptionDetailsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) Fallback() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fallback",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) FallbackInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fallbackInput",
 		&returns,
 	)
 	return returns
@@ -656,6 +680,17 @@ func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	_jsii_.Set(
 		j,
 		"credentialName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference)SetFallback(val interface{}) {
+	if err := j.validateSetFallbackParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fallback",
 		val,
 	)
 }
@@ -1038,6 +1073,14 @@ func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	_jsii_.InvokeVoid(
 		d,
 		"resetEncryptionDetails",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) ResetFallback() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFallback",
 		nil, // no parameters
 	)
 }

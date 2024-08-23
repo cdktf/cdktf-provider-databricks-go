@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) validateSetFallbackParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) validateSetInternalValueParameters(val *DataDatabricksExternalLocationExternalLocationInfo) error {
 	return nil
 }

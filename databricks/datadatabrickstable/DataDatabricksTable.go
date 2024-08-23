@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/table databricks_table}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/table databricks_table}.
 type DataDatabricksTable interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -312,7 +312,7 @@ func (j *jsiiProxy_DataDatabricksTable) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/table databricks_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/table databricks_table} Data Source.
 func NewDataDatabricksTable(scope constructs.Construct, id *string, config *DataDatabricksTableConfig) DataDatabricksTable {
 	_init_.Initialize()
 
@@ -330,7 +330,7 @@ func NewDataDatabricksTable(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/table databricks_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/table databricks_table} Data Source.
 func NewDataDatabricksTable_Override(d DataDatabricksTable, scope constructs.Construct, id *string, config *DataDatabricksTableConfig) {
 	_init_.Initialize()
 
