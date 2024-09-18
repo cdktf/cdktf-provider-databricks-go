@@ -67,6 +67,7 @@ type ShareObjectPartitionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutValue(value interface{})
+	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -449,6 +450,14 @@ func (s *jsiiProxy_ShareObjectPartitionOutputReference) PutValue(value interface
 		s,
 		"putValue",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_ShareObjectPartitionOutputReference) ResetValue() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetValue",
+		nil, // no parameters
 	)
 }
 

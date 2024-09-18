@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/cluster databricks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/cluster databricks_cluster}.
 type Cluster interface {
 	cdktf.TerraformResource
 	ApplyPolicyDefaultValues() interface{}
@@ -107,6 +107,9 @@ type Cluster interface {
 	NodeTypeId() *string
 	SetNodeTypeId(val *string)
 	NodeTypeIdInput() *string
+	NoWait() interface{}
+	SetNoWait(val interface{})
+	NoWaitInput() interface{}
 	NumWorkers() *float64
 	SetNumWorkers(val *float64)
 	NumWorkersInput() *float64
@@ -230,6 +233,7 @@ type Cluster interface {
 	ResetIsPinned()
 	ResetLibrary()
 	ResetNodeTypeId()
+	ResetNoWait()
 	ResetNumWorkers()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -840,6 +844,26 @@ func (j *jsiiProxy_Cluster) NodeTypeIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Cluster) NoWait() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noWait",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) NoWaitInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noWaitInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Cluster) NumWorkers() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1121,7 +1145,7 @@ func (j *jsiiProxy_Cluster) WorkloadTypeInput() *ClusterWorkloadType {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) Cluster {
 	_init_.Initialize()
 
@@ -1139,7 +1163,7 @@ func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster_Override(c Cluster, scope constructs.Construct, id *string, config *ClusterConfig) {
 	_init_.Initialize()
 
@@ -1349,6 +1373,17 @@ func (j *jsiiProxy_Cluster)SetNodeTypeId(val *string) {
 	_jsii_.Set(
 		j,
 		"nodeTypeId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Cluster)SetNoWait(val interface{}) {
+	if err := j.validateSetNoWaitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"noWait",
 		val,
 	)
 }
@@ -2114,6 +2149,14 @@ func (c *jsiiProxy_Cluster) ResetNodeTypeId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetNodeTypeId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cluster) ResetNoWait() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNoWait",
 		nil, // no parameters
 	)
 }

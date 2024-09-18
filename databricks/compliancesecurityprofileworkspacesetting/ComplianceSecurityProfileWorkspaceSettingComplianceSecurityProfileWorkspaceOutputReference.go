@@ -70,8 +70,6 @@ type ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspace
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetComplianceStandards()
-	ResetIsEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -486,22 +484,6 @@ func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityPr
 	)
 
 	return returns
-}
-
-func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference) ResetComplianceStandards() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetComplianceStandards",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference) ResetIsEnabled() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetIsEnabled",
-		nil, // no parameters
-	)
 }
 
 func (c *jsiiProxy_ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

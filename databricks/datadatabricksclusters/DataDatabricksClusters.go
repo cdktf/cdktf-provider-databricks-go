@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/clusters databricks_clusters}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/clusters databricks_clusters}.
 type DataDatabricksClusters interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -30,6 +30,8 @@ type DataDatabricksClusters interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	FilterBy() DataDatabricksClustersFilterByOutputReference
+	FilterByInput() *DataDatabricksClustersFilterBy
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -87,7 +89,9 @@ type DataDatabricksClusters interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilterBy(value *DataDatabricksClustersFilterBy)
 	ResetClusterNameContains()
+	ResetFilterBy()
 	ResetId()
 	ResetIds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -167,6 +171,26 @@ func (j *jsiiProxy_DataDatabricksClusters) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusters) FilterBy() DataDatabricksClustersFilterByOutputReference {
+	var returns DataDatabricksClustersFilterByOutputReference
+	_jsii_.Get(
+		j,
+		"filterBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusters) FilterByInput() *DataDatabricksClustersFilterBy {
+	var returns *DataDatabricksClustersFilterBy
+	_jsii_.Get(
+		j,
+		"filterByInput",
 		&returns,
 	)
 	return returns
@@ -313,7 +337,7 @@ func (j *jsiiProxy_DataDatabricksClusters) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/clusters databricks_clusters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/clusters databricks_clusters} Data Source.
 func NewDataDatabricksClusters(scope constructs.Construct, id *string, config *DataDatabricksClustersConfig) DataDatabricksClusters {
 	_init_.Initialize()
 
@@ -331,7 +355,7 @@ func NewDataDatabricksClusters(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/clusters databricks_clusters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/clusters databricks_clusters} Data Source.
 func NewDataDatabricksClusters_Override(d DataDatabricksClusters, scope constructs.Construct, id *string, config *DataDatabricksClustersConfig) {
 	_init_.Initialize()
 
@@ -706,10 +730,29 @@ func (d *jsiiProxy_DataDatabricksClusters) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusters) PutFilterBy(value *DataDatabricksClustersFilterBy) {
+	if err := d.validatePutFilterByParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilterBy",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusters) ResetClusterNameContains() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetClusterNameContains",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusters) ResetFilterBy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilterBy",
 		nil, // no parameters
 	)
 }

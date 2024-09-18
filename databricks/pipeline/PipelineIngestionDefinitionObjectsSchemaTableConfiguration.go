@@ -5,11 +5,11 @@ package pipeline
 
 
 type PipelineIngestionDefinitionObjectsSchemaTableConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
 	PrimaryKeys *[]*string `field:"optional" json:"primaryKeys" yaml:"primaryKeys"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 	SalesforceIncludeFormulaFields interface{} `field:"optional" json:"salesforceIncludeFormulaFields" yaml:"salesforceIncludeFormulaFields"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
 	ScdType *string `field:"optional" json:"scdType" yaml:"scdType"`
 }
 

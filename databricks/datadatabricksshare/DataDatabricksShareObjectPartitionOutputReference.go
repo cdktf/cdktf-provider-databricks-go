@@ -67,6 +67,7 @@ type DataDatabricksShareObjectPartitionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutValue(value interface{})
+	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -449,6 +450,14 @@ func (d *jsiiProxy_DataDatabricksShareObjectPartitionOutputReference) PutValue(v
 		d,
 		"putValue",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksShareObjectPartitionOutputReference) ResetValue() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetValue",
+		nil, // no parameters
 	)
 }
 

@@ -241,6 +241,14 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetComplexO
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetContentParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetDataObjectTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -306,6 +314,14 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetStartVer
 }
 
 func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetStatusParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetStringSharedAsParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

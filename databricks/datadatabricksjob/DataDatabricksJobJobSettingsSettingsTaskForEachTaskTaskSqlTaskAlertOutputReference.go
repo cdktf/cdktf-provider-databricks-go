@@ -74,6 +74,7 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlertOutputRe
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutSubscriptions(value interface{})
 	ResetPauseSubscriptions()
+	ResetSubscriptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -525,6 +526,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTas
 	_jsii_.InvokeVoid(
 		d,
 		"resetPauseSubscriptions",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlertOutputReference) ResetSubscriptions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSubscriptions",
 		nil, // no parameters
 	)
 }

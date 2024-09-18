@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksClusters) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksClusters) validatePutFilterByParameters(value *DataDatabricksClustersFilterBy) error {
+	return nil
+}
+
 func validateDataDatabricksClusters_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

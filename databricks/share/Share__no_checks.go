@@ -95,6 +95,10 @@ func validateShare_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Share) validateSetCommentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Share) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -128,6 +132,22 @@ func (j *jsiiProxy_Share) validateSetOwnerParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Share) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Share) validateSetStorageLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Share) validateSetStorageRootParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Share) validateSetUpdatedAtParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_Share) validateSetUpdatedByParameters(val *string) error {
 	return nil
 }
 

@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/share databricks_share}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/share databricks_share}.
 type Share interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Comment() *string
+	SetComment(val *string)
+	CommentInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -72,12 +75,24 @@ type Share interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	StorageLocation() *string
+	SetStorageLocation(val *string)
+	StorageLocationInput() *string
+	StorageRoot() *string
+	SetStorageRoot(val *string)
+	StorageRootInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatedAt() *float64
+	SetUpdatedAt(val *float64)
+	UpdatedAtInput() *float64
+	UpdatedBy() *string
+	SetUpdatedBy(val *string)
+	UpdatedByInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -122,6 +137,7 @@ type Share interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutObject(value interface{})
+	ResetComment()
 	ResetCreatedAt()
 	ResetCreatedBy()
 	ResetId()
@@ -130,6 +146,10 @@ type Share interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
+	ResetStorageLocation()
+	ResetStorageRoot()
+	ResetUpdatedAt()
+	ResetUpdatedBy()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -153,6 +173,26 @@ func (j *jsiiProxy_Share) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Share) Comment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"comment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Share) CommentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"commentInput",
 		&returns,
 	)
 	return returns
@@ -398,6 +438,46 @@ func (j *jsiiProxy_Share) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Share) StorageLocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Share) StorageLocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageLocationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Share) StorageRoot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageRoot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Share) StorageRootInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageRootInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Share) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -428,8 +508,48 @@ func (j *jsiiProxy_Share) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Share) UpdatedAt() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/share databricks_share} Resource.
+func (j *jsiiProxy_Share) UpdatedAtInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"updatedAtInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Share) UpdatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Share) UpdatedByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedByInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/share databricks_share} Resource.
 func NewShare(scope constructs.Construct, id *string, config *ShareConfig) Share {
 	_init_.Initialize()
 
@@ -447,7 +567,7 @@ func NewShare(scope constructs.Construct, id *string, config *ShareConfig) Share
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/share databricks_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/share databricks_share} Resource.
 func NewShare_Override(s Share, scope constructs.Construct, id *string, config *ShareConfig) {
 	_init_.Initialize()
 
@@ -455,6 +575,17 @@ func NewShare_Override(s Share, scope constructs.Construct, id *string, config *
 		"@cdktf/provider-databricks.share.Share",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_Share)SetComment(val *string) {
+	if err := j.validateSetCommentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"comment",
+		val,
 	)
 }
 
@@ -577,6 +708,50 @@ func (j *jsiiProxy_Share)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Share)SetStorageLocation(val *string) {
+	if err := j.validateSetStorageLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageLocation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Share)SetStorageRoot(val *string) {
+	if err := j.validateSetStorageRootParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageRoot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Share)SetUpdatedAt(val *float64) {
+	if err := j.validateSetUpdatedAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"updatedAt",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Share)SetUpdatedBy(val *string) {
+	if err := j.validateSetUpdatedByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"updatedBy",
 		val,
 	)
 }
@@ -945,6 +1120,14 @@ func (s *jsiiProxy_Share) PutObject(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_Share) ResetComment() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetComment",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_Share) ResetCreatedAt() {
 	_jsii_.InvokeVoid(
 		s,
@@ -989,6 +1172,38 @@ func (s *jsiiProxy_Share) ResetOwner() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOwner",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Share) ResetStorageLocation() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStorageLocation",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Share) ResetStorageRoot() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStorageRoot",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Share) ResetUpdatedAt() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUpdatedAt",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Share) ResetUpdatedBy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUpdatedBy",
 		nil, // no parameters
 	)
 }

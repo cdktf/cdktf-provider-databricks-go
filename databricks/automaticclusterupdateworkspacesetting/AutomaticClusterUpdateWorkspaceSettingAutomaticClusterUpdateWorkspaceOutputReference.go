@@ -34,8 +34,7 @@ type AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceOutput
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
-	EnablementDetails() AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference
-	EnablementDetailsInput() *AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetails
+	EnablementDetails() AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspace
@@ -77,11 +76,8 @@ type AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceOutput
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEnablementDetails(value *AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetails)
 	PutMaintenanceWindow(value *AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindow)
 	ResetCanToggle()
-	ResetEnabled()
-	ResetEnablementDetails()
 	ResetMaintenanceWindow()
 	ResetRestartEvenIfNoUpdatesAvailable()
 	// Produce the Token's value at resolution time.
@@ -169,21 +165,11 @@ func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateW
 	return returns
 }
 
-func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceOutputReference) EnablementDetails() AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference {
-	var returns AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference
+func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceOutputReference) EnablementDetails() AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsList {
+	var returns AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsList
 	_jsii_.Get(
 		j,
 		"enablementDetails",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceOutputReference) EnablementDetailsInput() *AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetails {
-	var returns *AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetails
-	_jsii_.Get(
-		j,
-		"enablementDetailsInput",
 		&returns,
 	)
 	return returns
@@ -571,17 +557,6 @@ func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateW
 	return returns
 }
 
-func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceOutputReference) PutEnablementDetails(value *AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetails) {
-	if err := a.validatePutEnablementDetailsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putEnablementDetails",
-		[]interface{}{value},
-	)
-}
-
 func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceOutputReference) PutMaintenanceWindow(value *AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindow) {
 	if err := a.validatePutMaintenanceWindowParameters(value); err != nil {
 		panic(err)
@@ -597,22 +572,6 @@ func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateW
 	_jsii_.InvokeVoid(
 		a,
 		"resetCanToggle",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceOutputReference) ResetEnabled() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetEnabled",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceOutputReference) ResetEnablementDetails() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetEnablementDetails",
 		nil, // no parameters
 	)
 }

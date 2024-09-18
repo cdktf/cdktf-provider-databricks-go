@@ -79,6 +79,10 @@ func (j *jsiiProxy_ShareObjectOutputReference) validateSetComplexObjectIsFromSet
 	return nil
 }
 
+func (j *jsiiProxy_ShareObjectOutputReference) validateSetContentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ShareObjectOutputReference) validateSetDataObjectTypeParameters(val *string) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (j *jsiiProxy_ShareObjectOutputReference) validateSetStartVersionParameters
 }
 
 func (j *jsiiProxy_ShareObjectOutputReference) validateSetStatusParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ShareObjectOutputReference) validateSetStringSharedAsParameters(val *string) error {
 	return nil
 }
 

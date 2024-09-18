@@ -73,8 +73,6 @@ type AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMainte
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutWindowStartTime(value *AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime)
-	ResetDayOfWeek()
-	ResetFrequency()
 	ResetWindowStartTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -520,22 +518,6 @@ func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateW
 		a,
 		"putWindowStartTime",
 		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleOutputReference) ResetDayOfWeek() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetDayOfWeek",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleOutputReference) ResetFrequency() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetFrequency",
-		nil, // no parameters
 	)
 }
 

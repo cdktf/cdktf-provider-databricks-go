@@ -35,6 +35,9 @@ type DataDatabricksShareObjectOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Content() *string
+	SetContent(val *string)
+	ContentInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -64,6 +67,9 @@ type DataDatabricksShareObjectOutputReference interface {
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
+	StringSharedAs() *string
+	SetStringSharedAs(val *string)
+	StringSharedAsInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -101,11 +107,13 @@ type DataDatabricksShareObjectOutputReference interface {
 	ResetAddedBy()
 	ResetCdfEnabled()
 	ResetComment()
+	ResetContent()
 	ResetHistoryDataSharingStatus()
 	ResetPartition()
 	ResetSharedAs()
 	ResetStartVersion()
 	ResetStatus()
+	ResetStringSharedAs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -216,6 +224,26 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) ComplexObjectIsFrom
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) Content() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"content",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) ContentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentInput",
 		&returns,
 	)
 	return returns
@@ -391,6 +419,26 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) StatusInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) StringSharedAs() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stringSharedAs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) StringSharedAsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stringSharedAsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -505,6 +553,17 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference)SetComplexObjectIsFr
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference)SetContent(val *string) {
+	if err := j.validateSetContentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"content",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksShareObjectOutputReference)SetDataObjectType(val *string) {
 	if err := j.validateSetDataObjectTypeParameters(val); err != nil {
 		panic(err)
@@ -578,6 +637,17 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference)SetStatus(val *strin
 	_jsii_.Set(
 		j,
 		"status",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference)SetStringSharedAs(val *string) {
+	if err := j.validateSetStringSharedAsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stringSharedAs",
 		val,
 	)
 }
@@ -833,6 +903,14 @@ func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) ResetComment() {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) ResetContent() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetContent",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) ResetHistoryDataSharingStatus() {
 	_jsii_.InvokeVoid(
 		d,
@@ -869,6 +947,14 @@ func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) ResetStatus() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) ResetStringSharedAs() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStringSharedAs",
 		nil, // no parameters
 	)
 }

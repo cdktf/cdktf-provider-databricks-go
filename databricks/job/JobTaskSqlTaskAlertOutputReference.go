@@ -74,6 +74,7 @@ type JobTaskSqlTaskAlertOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutSubscriptions(value interface{})
 	ResetPauseSubscriptions()
+	ResetSubscriptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -525,6 +526,14 @@ func (j *jsiiProxy_JobTaskSqlTaskAlertOutputReference) ResetPauseSubscriptions()
 	_jsii_.InvokeVoid(
 		j,
 		"resetPauseSubscriptions",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskSqlTaskAlertOutputReference) ResetSubscriptions() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetSubscriptions",
 		nil, // no parameters
 	)
 }

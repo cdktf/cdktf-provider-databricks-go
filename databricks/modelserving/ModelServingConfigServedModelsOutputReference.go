@@ -38,6 +38,12 @@ type ModelServingConfigServedModelsOutputReference interface {
 	InstanceProfileArnInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	MaxProvisionedThroughput() *float64
+	SetMaxProvisionedThroughput(val *float64)
+	MaxProvisionedThroughputInput() *float64
+	MinProvisionedThroughput() *float64
+	SetMinProvisionedThroughput(val *float64)
+	MinProvisionedThroughputInput() *float64
 	ModelName() *string
 	SetModelName(val *string)
 	ModelNameInput() *string
@@ -90,8 +96,11 @@ type ModelServingConfigServedModelsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnvironmentVars()
 	ResetInstanceProfileArn()
+	ResetMaxProvisionedThroughput()
+	ResetMinProvisionedThroughput()
 	ResetName()
 	ResetScaleToZeroEnabled()
+	ResetWorkloadSize()
 	ResetWorkloadType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -193,6 +202,46 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) InternalValue(
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) MaxProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxProvisionedThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) MaxProvisionedThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxProvisionedThroughputInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) MinProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minProvisionedThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) MinProvisionedThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minProvisionedThroughputInput",
 		&returns,
 	)
 	return returns
@@ -417,6 +466,28 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference)SetInternalValu
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference)SetMaxProvisionedThroughput(val *float64) {
+	if err := j.validateSetMaxProvisionedThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxProvisionedThroughput",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference)SetMinProvisionedThroughput(val *float64) {
+	if err := j.validateSetMinProvisionedThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minProvisionedThroughput",
 		val,
 	)
 }
@@ -711,6 +782,22 @@ func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetInstanceP
 	)
 }
 
+func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetMaxProvisionedThroughput() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMaxProvisionedThroughput",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetMinProvisionedThroughput() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMinProvisionedThroughput",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		m,
@@ -723,6 +810,14 @@ func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetScaleToZe
 	_jsii_.InvokeVoid(
 		m,
 		"resetScaleToZeroEnabled",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetWorkloadSize() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetWorkloadSize",
 		nil, // no parameters
 	)
 }

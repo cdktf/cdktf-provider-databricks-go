@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/sql_table databricks_sql_table}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/sql_table databricks_sql_table}.
 type SqlTable interface {
 	cdktf.TerraformResource
 	CatalogName() *string
@@ -48,6 +48,7 @@ type SqlTable interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveProperties() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -358,6 +359,16 @@ func (j *jsiiProxy_SqlTable) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlTable) EffectiveProperties() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveProperties",
 		&returns,
 	)
 	return returns
@@ -714,7 +725,7 @@ func (j *jsiiProxy_SqlTable) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/sql_table databricks_sql_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/sql_table databricks_sql_table} Resource.
 func NewSqlTable(scope constructs.Construct, id *string, config *SqlTableConfig) SqlTable {
 	_init_.Initialize()
 
@@ -732,7 +743,7 @@ func NewSqlTable(scope constructs.Construct, id *string, config *SqlTableConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/sql_table databricks_sql_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/sql_table databricks_sql_table} Resource.
 func NewSqlTable_Override(s SqlTable, scope constructs.Construct, id *string, config *SqlTableConfig) {
 	_init_.Initialize()
 

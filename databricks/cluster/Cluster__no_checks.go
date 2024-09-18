@@ -203,6 +203,10 @@ func (j *jsiiProxy_Cluster) validateSetNodeTypeIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Cluster) validateSetNoWaitParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cluster) validateSetNumWorkersParameters(val *float64) error {
 	return nil
 }

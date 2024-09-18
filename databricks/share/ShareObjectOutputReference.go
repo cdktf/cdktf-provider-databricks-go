@@ -35,6 +35,9 @@ type ShareObjectOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Content() *string
+	SetContent(val *string)
+	ContentInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -64,6 +67,9 @@ type ShareObjectOutputReference interface {
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
+	StringSharedAs() *string
+	SetStringSharedAs(val *string)
+	StringSharedAsInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -101,11 +107,13 @@ type ShareObjectOutputReference interface {
 	ResetAddedBy()
 	ResetCdfEnabled()
 	ResetComment()
+	ResetContent()
 	ResetHistoryDataSharingStatus()
 	ResetPartition()
 	ResetSharedAs()
 	ResetStartVersion()
 	ResetStatus()
+	ResetStringSharedAs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -216,6 +224,26 @@ func (j *jsiiProxy_ShareObjectOutputReference) ComplexObjectIsFromSet() *bool {
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ShareObjectOutputReference) Content() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"content",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ShareObjectOutputReference) ContentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentInput",
 		&returns,
 	)
 	return returns
@@ -391,6 +419,26 @@ func (j *jsiiProxy_ShareObjectOutputReference) StatusInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ShareObjectOutputReference) StringSharedAs() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stringSharedAs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ShareObjectOutputReference) StringSharedAsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stringSharedAsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ShareObjectOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -505,6 +553,17 @@ func (j *jsiiProxy_ShareObjectOutputReference)SetComplexObjectIsFromSet(val *boo
 	)
 }
 
+func (j *jsiiProxy_ShareObjectOutputReference)SetContent(val *string) {
+	if err := j.validateSetContentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"content",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ShareObjectOutputReference)SetDataObjectType(val *string) {
 	if err := j.validateSetDataObjectTypeParameters(val); err != nil {
 		panic(err)
@@ -578,6 +637,17 @@ func (j *jsiiProxy_ShareObjectOutputReference)SetStatus(val *string) {
 	_jsii_.Set(
 		j,
 		"status",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ShareObjectOutputReference)SetStringSharedAs(val *string) {
+	if err := j.validateSetStringSharedAsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stringSharedAs",
 		val,
 	)
 }
@@ -833,6 +903,14 @@ func (s *jsiiProxy_ShareObjectOutputReference) ResetComment() {
 	)
 }
 
+func (s *jsiiProxy_ShareObjectOutputReference) ResetContent() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetContent",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_ShareObjectOutputReference) ResetHistoryDataSharingStatus() {
 	_jsii_.InvokeVoid(
 		s,
@@ -869,6 +947,14 @@ func (s *jsiiProxy_ShareObjectOutputReference) ResetStatus() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ShareObjectOutputReference) ResetStringSharedAs() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStringSharedAs",
 		nil, // no parameters
 	)
 }

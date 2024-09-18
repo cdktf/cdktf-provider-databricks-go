@@ -70,8 +70,6 @@ type AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMainte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetHours()
-	ResetMinutes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -486,22 +484,6 @@ func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateW
 	)
 
 	return returns
-}
-
-func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeOutputReference) ResetHours() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetHours",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeOutputReference) ResetMinutes() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetMinutes",
-		nil, // no parameters
-	)
 }
 
 func (a *jsiiProxy_AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

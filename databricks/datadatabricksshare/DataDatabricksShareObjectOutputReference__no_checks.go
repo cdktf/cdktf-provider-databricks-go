@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetComplexO
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetContentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetDataObjectTypeParameters(val *string) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetStartVer
 }
 
 func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetStatusParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetStringSharedAsParameters(val *string) error {
 	return nil
 }
 

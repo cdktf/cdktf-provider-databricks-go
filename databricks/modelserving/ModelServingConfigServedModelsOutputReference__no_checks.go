@@ -71,6 +71,14 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetInt
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetMaxProvisionedThroughputParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetMinProvisionedThroughputParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetModelNameParameters(val *string) error {
 	return nil
 }

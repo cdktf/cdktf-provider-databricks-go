@@ -5,9 +5,9 @@ package datadatabrickscluster
 
 
 type DataDatabricksClusterClusterInfoSpecLibraryCran struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/cluster#package DataDatabricksCluster#package}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/cluster#package DataDatabricksCluster#package}.
 	Package *string `field:"required" json:"package" yaml:"package"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/cluster#repo DataDatabricksCluster#repo}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/cluster#repo DataDatabricksCluster#repo}.
 	Repo *string `field:"optional" json:"repo" yaml:"repo"`
 }
 

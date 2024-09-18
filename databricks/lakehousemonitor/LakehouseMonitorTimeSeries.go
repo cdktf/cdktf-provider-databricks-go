@@ -5,9 +5,9 @@ package lakehousemonitor
 
 
 type LakehouseMonitorTimeSeries struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}.
 	Granularities *[]*string `field:"required" json:"granularities" yaml:"granularities"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}.
 	TimestampCol *string `field:"required" json:"timestampCol" yaml:"timestampCol"`
 }
 
