@@ -135,6 +135,10 @@ func (j *jsiiProxy_Pipeline) validateSetAllowDuplicateNamesParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetBudgetPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetCatalogParameters(val *string) error {
 	return nil
 }
@@ -212,6 +216,10 @@ func (j *jsiiProxy_Pipeline) validateSetProvisionersParameters(val *[]interface{
 }
 
 func (j *jsiiProxy_Pipeline) validateSetRunAsUserNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Pipeline) validateSetSchemaParameters(val *string) error {
 	return nil
 }
 

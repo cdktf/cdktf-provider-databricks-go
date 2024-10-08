@@ -63,6 +63,10 @@ func (j *jsiiProxy_SqlTableColumnOutputReference) validateSetComplexObjectIsFrom
 	return nil
 }
 
+func (j *jsiiProxy_SqlTableColumnOutputReference) validateSetIdentityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlTableColumnOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (j *jsiiProxy_SqlTableColumnOutputReference) validateSetTerraformResourcePa
 }
 
 func (j *jsiiProxy_SqlTableColumnOutputReference) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SqlTableColumnOutputReference) validateSetTypeJsonParameters(val *string) error {
 	return nil
 }
 

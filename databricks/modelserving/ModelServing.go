@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving databricks_model_serving}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving databricks_model_serving}.
 type ModelServing interface {
 	cdktf.TerraformResource
+	AiGateway() ModelServingAiGatewayOutputReference
+	AiGatewayInput() *ModelServingAiGateway
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Config() ModelServingConfigAOutputReference
@@ -122,10 +124,12 @@ type ModelServing interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAiGateway(value *ModelServingAiGateway)
 	PutConfig(value *ModelServingConfigA)
 	PutRateLimits(value interface{})
 	PutTags(value interface{})
 	PutTimeouts(value *ModelServingTimeouts)
+	ResetAiGateway()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -150,6 +154,26 @@ type ModelServing interface {
 // The jsii proxy struct for ModelServing
 type jsiiProxy_ModelServing struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ModelServing) AiGateway() ModelServingAiGatewayOutputReference {
+	var returns ModelServingAiGatewayOutputReference
+	_jsii_.Get(
+		j,
+		"aiGateway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServing) AiGatewayInput() *ModelServingAiGateway {
+	var returns *ModelServingAiGateway
+	_jsii_.Get(
+		j,
+		"aiGatewayInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ModelServing) CdktfStack() cdktf.TerraformStack {
@@ -463,7 +487,7 @@ func (j *jsiiProxy_ModelServing) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving databricks_model_serving} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving databricks_model_serving} Resource.
 func NewModelServing(scope constructs.Construct, id *string, config *ModelServingConfig) ModelServing {
 	_init_.Initialize()
 
@@ -481,7 +505,7 @@ func NewModelServing(scope constructs.Construct, id *string, config *ModelServin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving databricks_model_serving} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving databricks_model_serving} Resource.
 func NewModelServing_Override(m ModelServing, scope constructs.Construct, id *string, config *ModelServingConfig) {
 	_init_.Initialize()
 
@@ -946,6 +970,17 @@ func (m *jsiiProxy_ModelServing) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (m *jsiiProxy_ModelServing) PutAiGateway(value *ModelServingAiGateway) {
+	if err := m.validatePutAiGatewayParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putAiGateway",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_ModelServing) PutConfig(value *ModelServingConfigA) {
 	if err := m.validatePutConfigParameters(value); err != nil {
 		panic(err)
@@ -987,6 +1022,14 @@ func (m *jsiiProxy_ModelServing) PutTimeouts(value *ModelServingTimeouts) {
 		m,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_ModelServing) ResetAiGateway() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAiGateway",
+		nil, // no parameters
 	)
 }
 

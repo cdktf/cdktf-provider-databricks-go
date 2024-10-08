@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/volumes_pluginframework databricks_volumes_pluginframework}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework databricks_volumes_pluginframework}.
 type DataDatabricksVolumesPluginframework interface {
 	cdktf.TerraformDataSource
 	CatalogName() *string
@@ -311,7 +311,7 @@ func (j *jsiiProxy_DataDatabricksVolumesPluginframework) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/volumes_pluginframework databricks_volumes_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework databricks_volumes_pluginframework} Data Source.
 func NewDataDatabricksVolumesPluginframework(scope constructs.Construct, id *string, config *DataDatabricksVolumesPluginframeworkConfig) DataDatabricksVolumesPluginframework {
 	_init_.Initialize()
 
@@ -329,7 +329,7 @@ func NewDataDatabricksVolumesPluginframework(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/volumes_pluginframework databricks_volumes_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework databricks_volumes_pluginframework} Data Source.
 func NewDataDatabricksVolumesPluginframework_Override(d DataDatabricksVolumesPluginframework, scope constructs.Construct, id *string, config *DataDatabricksVolumesPluginframeworkConfig) {
 	_init_.Initialize()
 

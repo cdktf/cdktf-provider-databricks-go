@@ -75,6 +75,10 @@ func (m *jsiiProxy_ModelServing) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (m *jsiiProxy_ModelServing) validatePutAiGatewayParameters(value *ModelServingAiGateway) error {
+	return nil
+}
+
 func (m *jsiiProxy_ModelServing) validatePutConfigParameters(value *ModelServingConfigA) error {
 	return nil
 }

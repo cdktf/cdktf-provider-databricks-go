@@ -5,9 +5,9 @@ package job
 
 
 type JobEnvironmentSpec struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/job#client Job#client}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/job#client Job#client}.
 	Client *string `field:"required" json:"client" yaml:"client"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/job#dependencies Job#dependencies}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/job#dependencies Job#dependencies}.
 	Dependencies *[]*string `field:"optional" json:"dependencies" yaml:"dependencies"`
 }
 

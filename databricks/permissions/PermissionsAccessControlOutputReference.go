@@ -77,6 +77,7 @@ type PermissionsAccessControlOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetGroupName()
+	ResetPermissionLevel()
 	ResetServicePrincipalName()
 	ResetUserName()
 	// Produce the Token's value at resolution time.
@@ -561,6 +562,14 @@ func (p *jsiiProxy_PermissionsAccessControlOutputReference) ResetGroupName() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetGroupName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PermissionsAccessControlOutputReference) ResetPermissionLevel() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPermissionLevel",
 		nil, // no parameters
 	)
 }

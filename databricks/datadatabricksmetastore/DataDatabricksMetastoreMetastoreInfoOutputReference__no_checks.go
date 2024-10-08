@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataDatabricksMetastoreMetastoreInfoOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksMetastoreMetastoreInfoOutputReference) validateSetExternalAccessEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksMetastoreMetastoreInfoOutputReference) validateSetGlobalMetastoreIdParameters(val *string) error {
 	return nil
 }

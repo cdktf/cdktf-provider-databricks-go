@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table databricks_online_table}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table databricks_online_table}.
 type OnlineTable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,8 +65,6 @@ type OnlineTable interface {
 	SpecInput() *OnlineTableSpec
 	Status() OnlineTableStatusList
 	TableServingUrl() *string
-	SetTableServingUrl(val *string)
-	TableServingUrlInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -125,7 +123,6 @@ type OnlineTable interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSpec()
-	ResetTableServingUrl()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -355,16 +352,6 @@ func (j *jsiiProxy_OnlineTable) TableServingUrl() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OnlineTable) TableServingUrlInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tableServingUrlInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_OnlineTable) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -416,7 +403,7 @@ func (j *jsiiProxy_OnlineTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table databricks_online_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table databricks_online_table} Resource.
 func NewOnlineTable(scope constructs.Construct, id *string, config *OnlineTableConfig) OnlineTable {
 	_init_.Initialize()
 
@@ -434,7 +421,7 @@ func NewOnlineTable(scope constructs.Construct, id *string, config *OnlineTableC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table databricks_online_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table databricks_online_table} Resource.
 func NewOnlineTable_Override(o OnlineTable, scope constructs.Construct, id *string, config *OnlineTableConfig) {
 	_init_.Initialize()
 
@@ -531,17 +518,6 @@ func (j *jsiiProxy_OnlineTable)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_OnlineTable)SetTableServingUrl(val *string) {
-	if err := j.validateSetTableServingUrlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tableServingUrl",
 		val,
 	)
 }
@@ -941,14 +917,6 @@ func (o *jsiiProxy_OnlineTable) ResetSpec() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetSpec",
-		nil, // no parameters
-	)
-}
-
-func (o *jsiiProxy_OnlineTable) ResetTableServingUrl() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetTableServingUrl",
 		nil, // no parameters
 	)
 }

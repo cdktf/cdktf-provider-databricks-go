@@ -5,7 +5,7 @@ package qualitymonitor
 
 
 type QualityMonitorTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/quality_monitor#create QualityMonitor#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/quality_monitor#create QualityMonitor#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

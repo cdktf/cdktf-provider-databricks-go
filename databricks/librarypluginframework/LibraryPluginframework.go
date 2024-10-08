@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/library_pluginframework databricks_library_pluginframework}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework databricks_library_pluginframework}.
 type LibraryPluginframework interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -477,7 +477,7 @@ func (j *jsiiProxy_LibraryPluginframework) WhlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/library_pluginframework databricks_library_pluginframework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework databricks_library_pluginframework} Resource.
 func NewLibraryPluginframework(scope constructs.Construct, id *string, config *LibraryPluginframeworkConfig) LibraryPluginframework {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewLibraryPluginframework(scope constructs.Construct, id *string, config *L
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/library_pluginframework databricks_library_pluginframework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework databricks_library_pluginframework} Resource.
 func NewLibraryPluginframework_Override(l LibraryPluginframework, scope constructs.Construct, id *string, config *LibraryPluginframeworkConfig) {
 	_init_.Initialize()
 

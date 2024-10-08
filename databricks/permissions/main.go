@@ -189,6 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "permissionLevel", GoGetter: "PermissionLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "permissionLevelInput", GoGetter: "PermissionLevelInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGroupName", GoMethod: "ResetGroupName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPermissionLevel", GoMethod: "ResetPermissionLevel"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServicePrincipalName", GoMethod: "ResetServicePrincipalName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUserName", GoMethod: "ResetUserName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

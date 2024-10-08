@@ -33,6 +33,9 @@ type SqlTableColumnOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Identity() *string
+	SetIdentity(val *string)
+	IdentityInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Name() *string
@@ -52,6 +55,9 @@ type SqlTableColumnOutputReference interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	TypeJson() *string
+	SetTypeJson(val *string)
+	TypeJsonInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -77,8 +83,10 @@ type SqlTableColumnOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetComment()
+	ResetIdentity()
 	ResetNullable()
 	ResetType()
+	ResetTypeJson()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -149,6 +157,26 @@ func (j *jsiiProxy_SqlTableColumnOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlTableColumnOutputReference) Identity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlTableColumnOutputReference) IdentityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityInput",
 		&returns,
 	)
 	return returns
@@ -244,6 +272,26 @@ func (j *jsiiProxy_SqlTableColumnOutputReference) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SqlTableColumnOutputReference) TypeJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlTableColumnOutputReference) TypeJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeJsonInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewSqlTableColumnOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SqlTableColumnOutputReference {
 	_init_.Initialize()
@@ -301,6 +349,17 @@ func (j *jsiiProxy_SqlTableColumnOutputReference)SetComplexObjectIsFromSet(val *
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlTableColumnOutputReference)SetIdentity(val *string) {
+	if err := j.validateSetIdentityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identity",
 		val,
 	)
 }
@@ -367,6 +426,17 @@ func (j *jsiiProxy_SqlTableColumnOutputReference)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlTableColumnOutputReference)SetTypeJson(val *string) {
+	if err := j.validateSetTypeJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"typeJson",
 		val,
 	)
 }
@@ -565,6 +635,14 @@ func (s *jsiiProxy_SqlTableColumnOutputReference) ResetComment() {
 	)
 }
 
+func (s *jsiiProxy_SqlTableColumnOutputReference) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlTableColumnOutputReference) ResetNullable() {
 	_jsii_.InvokeVoid(
 		s,
@@ -577,6 +655,14 @@ func (s *jsiiProxy_SqlTableColumnOutputReference) ResetType() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlTableColumnOutputReference) ResetTypeJson() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTypeJson",
 		nil, // no parameters
 	)
 }

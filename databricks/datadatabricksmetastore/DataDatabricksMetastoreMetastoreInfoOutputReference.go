@@ -49,6 +49,9 @@ type DataDatabricksMetastoreMetastoreInfoOutputReference interface {
 	DeltaSharingScope() *string
 	SetDeltaSharingScope(val *string)
 	DeltaSharingScopeInput() *string
+	ExternalAccessEnabled() interface{}
+	SetExternalAccessEnabled(val interface{})
+	ExternalAccessEnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	GlobalMetastoreId() *string
@@ -125,6 +128,7 @@ type DataDatabricksMetastoreMetastoreInfoOutputReference interface {
 	ResetDeltaSharingOrganizationName()
 	ResetDeltaSharingRecipientTokenLifetimeInSeconds()
 	ResetDeltaSharingScope()
+	ResetExternalAccessEnabled()
 	ResetGlobalMetastoreId()
 	ResetMetastoreId()
 	ResetName()
@@ -316,6 +320,26 @@ func (j *jsiiProxy_DataDatabricksMetastoreMetastoreInfoOutputReference) DeltaSha
 	_jsii_.Get(
 		j,
 		"deltaSharingScopeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMetastoreMetastoreInfoOutputReference) ExternalAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMetastoreMetastoreInfoOutputReference) ExternalAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalAccessEnabledInput",
 		&returns,
 	)
 	return returns
@@ -704,6 +728,17 @@ func (j *jsiiProxy_DataDatabricksMetastoreMetastoreInfoOutputReference)SetDeltaS
 	_jsii_.Set(
 		j,
 		"deltaSharingScope",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksMetastoreMetastoreInfoOutputReference)SetExternalAccessEnabled(val interface{}) {
+	if err := j.validateSetExternalAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalAccessEnabled",
 		val,
 	)
 }
@@ -1100,6 +1135,14 @@ func (d *jsiiProxy_DataDatabricksMetastoreMetastoreInfoOutputReference) ResetDel
 	_jsii_.InvokeVoid(
 		d,
 		"resetDeltaSharingScope",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksMetastoreMetastoreInfoOutputReference) ResetExternalAccessEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExternalAccessEnabled",
 		nil, // no parameters
 	)
 }

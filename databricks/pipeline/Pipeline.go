@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/pipeline databricks_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/pipeline databricks_pipeline}.
 type Pipeline interface {
 	cdktf.TerraformResource
 	AllowDuplicateNames() interface{}
 	SetAllowDuplicateNames(val interface{})
 	AllowDuplicateNamesInput() interface{}
+	BudgetPolicyId() *string
+	SetBudgetPolicyId(val *string)
+	BudgetPolicyIdInput() *string
 	Catalog() *string
 	SetCatalog(val *string)
 	CatalogInput() *string
@@ -122,6 +125,9 @@ type Pipeline interface {
 	RunAsUserName() *string
 	SetRunAsUserName(val *string)
 	RunAsUserNameInput() *string
+	Schema() *string
+	SetSchema(val *string)
+	SchemaInput() *string
 	Serverless() interface{}
 	SetServerless(val interface{})
 	ServerlessInput() interface{}
@@ -201,6 +207,7 @@ type Pipeline interface {
 	PutTimeouts(value *PipelineTimeouts)
 	PutTrigger(value *PipelineTrigger)
 	ResetAllowDuplicateNames()
+	ResetBudgetPolicyId()
 	ResetCatalog()
 	ResetCause()
 	ResetChannel()
@@ -228,6 +235,7 @@ type Pipeline interface {
 	ResetOverrideLogicalId()
 	ResetPhoton()
 	ResetRunAsUserName()
+	ResetSchema()
 	ResetServerless()
 	ResetState()
 	ResetStorage()
@@ -268,6 +276,26 @@ func (j *jsiiProxy_Pipeline) AllowDuplicateNamesInput() interface{} {
 	_jsii_.Get(
 		j,
 		"allowDuplicateNamesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) BudgetPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) BudgetPolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyIdInput",
 		&returns,
 	)
 	return returns
@@ -883,6 +911,26 @@ func (j *jsiiProxy_Pipeline) RunAsUserNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Pipeline) Schema() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) SchemaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Pipeline) Serverless() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1054,7 +1102,7 @@ func (j *jsiiProxy_Pipeline) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig) Pipeline {
 	_init_.Initialize()
 
@@ -1072,7 +1120,7 @@ func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline_Override(p Pipeline, scope constructs.Construct, id *string, config *PipelineConfig) {
 	_init_.Initialize()
 
@@ -1090,6 +1138,17 @@ func (j *jsiiProxy_Pipeline)SetAllowDuplicateNames(val interface{}) {
 	_jsii_.Set(
 		j,
 		"allowDuplicateNames",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Pipeline)SetBudgetPolicyId(val *string) {
+	if err := j.validateSetBudgetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"budgetPolicyId",
 		val,
 	)
 }
@@ -1334,6 +1393,17 @@ func (j *jsiiProxy_Pipeline)SetRunAsUserName(val *string) {
 	_jsii_.Set(
 		j,
 		"runAsUserName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Pipeline)SetSchema(val *string) {
+	if err := j.validateSetSchemaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"schema",
 		val,
 	)
 }
@@ -1864,6 +1934,14 @@ func (p *jsiiProxy_Pipeline) ResetAllowDuplicateNames() {
 	)
 }
 
+func (p *jsiiProxy_Pipeline) ResetBudgetPolicyId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetBudgetPolicyId",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_Pipeline) ResetCatalog() {
 	_jsii_.InvokeVoid(
 		p,
@@ -2060,6 +2138,14 @@ func (p *jsiiProxy_Pipeline) ResetRunAsUserName() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetRunAsUserName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Pipeline) ResetSchema() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSchema",
 		nil, // no parameters
 	)
 }
