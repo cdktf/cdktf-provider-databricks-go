@@ -174,29 +174,29 @@ func (j *jsiiProxy_QualityMonitorPluginframeworkDataClassificationConfigOutputRe
 }
 
 
-func NewQualityMonitorPluginframeworkDataClassificationConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QualityMonitorPluginframeworkDataClassificationConfigOutputReference {
+func NewQualityMonitorPluginframeworkDataClassificationConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) QualityMonitorPluginframeworkDataClassificationConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewQualityMonitorPluginframeworkDataClassificationConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewQualityMonitorPluginframeworkDataClassificationConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_QualityMonitorPluginframeworkDataClassificationConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitorPluginframework.QualityMonitorPluginframeworkDataClassificationConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewQualityMonitorPluginframeworkDataClassificationConfigOutputReference_Override(q QualityMonitorPluginframeworkDataClassificationConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewQualityMonitorPluginframeworkDataClassificationConfigOutputReference_Override(q QualityMonitorPluginframeworkDataClassificationConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitorPluginframework.QualityMonitorPluginframeworkDataClassificationConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		q,
 	)
 }

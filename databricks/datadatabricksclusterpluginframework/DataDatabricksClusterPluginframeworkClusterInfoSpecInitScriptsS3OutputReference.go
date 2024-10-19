@@ -317,29 +317,29 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScript
 }
 
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference {
+func NewDataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }

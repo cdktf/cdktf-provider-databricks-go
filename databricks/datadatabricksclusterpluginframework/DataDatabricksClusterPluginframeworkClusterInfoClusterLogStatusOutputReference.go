@@ -198,29 +198,29 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoClusterLogStat
 }
 
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference {
+func NewDataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }

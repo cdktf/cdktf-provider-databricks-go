@@ -198,29 +198,29 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleO
 }
 
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference {
+func NewDataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }

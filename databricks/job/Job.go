@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/job databricks_job}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/job databricks_job}.
 type Job interface {
 	cdktf.TerraformResource
 	AlwaysRunning() interface{}
 	SetAlwaysRunning(val interface{})
 	AlwaysRunningInput() interface{}
+	BudgetPolicyId() *string
+	SetBudgetPolicyId(val *string)
+	BudgetPolicyIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -226,6 +229,7 @@ type Job interface {
 	PutTrigger(value *JobTrigger)
 	PutWebhookNotifications(value *JobWebhookNotifications)
 	ResetAlwaysRunning()
+	ResetBudgetPolicyId()
 	ResetContinuous()
 	ResetControlRunState()
 	ResetDbtTask()
@@ -301,6 +305,26 @@ func (j *jsiiProxy_Job) AlwaysRunningInput() interface{} {
 	_jsii_.Get(
 		j,
 		"alwaysRunningInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) BudgetPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) BudgetPolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyIdInput",
 		&returns,
 	)
 	return returns
@@ -1257,7 +1281,7 @@ func (j *jsiiProxy_Job) WebhookNotificationsInput() *JobWebhookNotifications {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/job databricks_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	_init_.Initialize()
 
@@ -1275,7 +1299,7 @@ func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/job databricks_job} Resource.
 func NewJob_Override(j Job, scope constructs.Construct, id *string, config *JobConfig) {
 	_init_.Initialize()
 
@@ -1293,6 +1317,17 @@ func (j *jsiiProxy_Job)SetAlwaysRunning(val interface{}) {
 	_jsii_.Set(
 		j,
 		"alwaysRunning",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Job)SetBudgetPolicyId(val *string) {
+	if err := j.validateSetBudgetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"budgetPolicyId",
 		val,
 	)
 }
@@ -2151,6 +2186,14 @@ func (j *jsiiProxy_Job) ResetAlwaysRunning() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetAlwaysRunning",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetBudgetPolicyId() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetBudgetPolicyId",
 		nil, // no parameters
 	)
 }

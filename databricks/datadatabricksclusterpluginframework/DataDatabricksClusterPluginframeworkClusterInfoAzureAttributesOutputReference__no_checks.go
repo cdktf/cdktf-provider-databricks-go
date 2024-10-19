@@ -47,7 +47,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoAzureAttribute
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference) validatePutLogAnalyticsInfoParameters(value *DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference) validatePutLogAnalyticsInfoParameters(value interface{}) error {
 	return nil
 }
 
@@ -87,7 +87,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoAzureAttribute
 	return nil
 }
 
-func validateNewDataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

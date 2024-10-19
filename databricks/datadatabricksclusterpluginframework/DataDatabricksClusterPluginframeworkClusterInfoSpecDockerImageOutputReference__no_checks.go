@@ -47,7 +47,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImag
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference) validatePutBasicAuthParameters(value *DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference) validatePutBasicAuthParameters(value interface{}) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImag
 	return nil
 }
 
-func validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

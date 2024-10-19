@@ -47,7 +47,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference) validatePutNodeAwsAttributesParameters(value *DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference) validatePutNodeAwsAttributesParameters(value interface{}) error {
 	return nil
 }
 

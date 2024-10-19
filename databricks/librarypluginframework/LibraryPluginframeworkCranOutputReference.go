@@ -197,29 +197,29 @@ func (j *jsiiProxy_LibraryPluginframeworkCranOutputReference) TerraformResource(
 }
 
 
-func NewLibraryPluginframeworkCranOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LibraryPluginframeworkCranOutputReference {
+func NewLibraryPluginframeworkCranOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LibraryPluginframeworkCranOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewLibraryPluginframeworkCranOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewLibraryPluginframeworkCranOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_LibraryPluginframeworkCranOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.libraryPluginframework.LibraryPluginframeworkCranOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewLibraryPluginframeworkCranOutputReference_Override(l LibraryPluginframeworkCranOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLibraryPluginframeworkCranOutputReference_Override(l LibraryPluginframeworkCranOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.libraryPluginframework.LibraryPluginframeworkCranOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }

@@ -313,29 +313,29 @@ func (j *jsiiProxy_QualityMonitorPluginframeworkInferenceLogOutputReference) Tim
 }
 
 
-func NewQualityMonitorPluginframeworkInferenceLogOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QualityMonitorPluginframeworkInferenceLogOutputReference {
+func NewQualityMonitorPluginframeworkInferenceLogOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) QualityMonitorPluginframeworkInferenceLogOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewQualityMonitorPluginframeworkInferenceLogOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewQualityMonitorPluginframeworkInferenceLogOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_QualityMonitorPluginframeworkInferenceLogOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitorPluginframework.QualityMonitorPluginframeworkInferenceLogOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewQualityMonitorPluginframeworkInferenceLogOutputReference_Override(q QualityMonitorPluginframeworkInferenceLogOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewQualityMonitorPluginframeworkInferenceLogOutputReference_Override(q QualityMonitorPluginframeworkInferenceLogOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitorPluginframework.QualityMonitorPluginframeworkInferenceLogOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		q,
 	)
 }

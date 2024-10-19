@@ -32,6 +32,8 @@ type PipelineIngestionDefinitionObjectsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Report() PipelineIngestionDefinitionObjectsReportOutputReference
+	ReportInput() *PipelineIngestionDefinitionObjectsReport
 	Schema() PipelineIngestionDefinitionObjectsSchemaOutputReference
 	SchemaInput() *PipelineIngestionDefinitionObjectsSchema
 	Table() PipelineIngestionDefinitionObjectsTableOutputReference
@@ -68,8 +70,10 @@ type PipelineIngestionDefinitionObjectsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutReport(value *PipelineIngestionDefinitionObjectsReport)
 	PutSchema(value *PipelineIngestionDefinitionObjectsSchema)
 	PutTable(value *PipelineIngestionDefinitionObjectsTable)
+	ResetReport()
 	ResetSchema()
 	ResetTable()
 	// Produce the Token's value at resolution time.
@@ -132,6 +136,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsOutputReference) InternalVa
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsOutputReference) Report() PipelineIngestionDefinitionObjectsReportOutputReference {
+	var returns PipelineIngestionDefinitionObjectsReportOutputReference
+	_jsii_.Get(
+		j,
+		"report",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsOutputReference) ReportInput() *PipelineIngestionDefinitionObjectsReport {
+	var returns *PipelineIngestionDefinitionObjectsReport
+	_jsii_.Get(
+		j,
+		"reportInput",
 		&returns,
 	)
 	return returns
@@ -466,6 +490,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsOutputReference) Interpolat
 	return returns
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsOutputReference) PutReport(value *PipelineIngestionDefinitionObjectsReport) {
+	if err := p.validatePutReportParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putReport",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsOutputReference) PutSchema(value *PipelineIngestionDefinitionObjectsSchema) {
 	if err := p.validatePutSchemaParameters(value); err != nil {
 		panic(err)
@@ -485,6 +520,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsOutputReference) PutTable(v
 		p,
 		"putTable",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsOutputReference) ResetReport() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetReport",
+		nil, // no parameters
 	)
 }
 

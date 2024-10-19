@@ -75,7 +75,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVol
 	return nil
 }
 
-func validateNewDataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

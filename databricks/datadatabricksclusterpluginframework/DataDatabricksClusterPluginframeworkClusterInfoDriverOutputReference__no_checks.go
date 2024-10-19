@@ -47,7 +47,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoDriverOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference) validatePutNodeAwsAttributesParameters(value *DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference) validatePutNodeAwsAttributesParameters(value interface{}) error {
 	return nil
 }
 
@@ -99,7 +99,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoDriverOutputRe
 	return nil
 }
 
-func validateNewDataDatabricksClusterPluginframeworkClusterInfoDriverOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksClusterPluginframeworkClusterInfoDriverOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

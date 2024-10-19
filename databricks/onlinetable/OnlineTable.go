@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table databricks_online_table}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/online_table databricks_online_table}.
 type OnlineTable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -73,6 +73,7 @@ type OnlineTable interface {
 	TerraformResourceType() *string
 	Timeouts() OnlineTableTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	UnityCatalogProvisioningState() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -402,8 +403,18 @@ func (j *jsiiProxy_OnlineTable) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_OnlineTable) UnityCatalogProvisioningState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"unityCatalogProvisioningState",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table databricks_online_table} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/online_table databricks_online_table} Resource.
 func NewOnlineTable(scope constructs.Construct, id *string, config *OnlineTableConfig) OnlineTable {
 	_init_.Initialize()
 
@@ -421,7 +432,7 @@ func NewOnlineTable(scope constructs.Construct, id *string, config *OnlineTableC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table databricks_online_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/online_table databricks_online_table} Resource.
 func NewOnlineTable_Override(o OnlineTable, scope constructs.Construct, id *string, config *OnlineTableConfig) {
 	_init_.Initialize()
 

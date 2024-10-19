@@ -75,7 +75,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsA
 	return nil
 }
 
-func validateNewDataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

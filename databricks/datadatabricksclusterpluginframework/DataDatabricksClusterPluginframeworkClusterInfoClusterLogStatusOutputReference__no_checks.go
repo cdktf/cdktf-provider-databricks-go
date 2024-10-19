@@ -79,7 +79,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoClusterLogStat
 	return nil
 }
 
-func validateNewDataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

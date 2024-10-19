@@ -79,7 +79,7 @@ func (j *jsiiProxy_LibraryPluginframeworkPypiOutputReference) validateSetTerrafo
 	return nil
 }
 
-func validateNewLibraryPluginframeworkPypiOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLibraryPluginframeworkPypiOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

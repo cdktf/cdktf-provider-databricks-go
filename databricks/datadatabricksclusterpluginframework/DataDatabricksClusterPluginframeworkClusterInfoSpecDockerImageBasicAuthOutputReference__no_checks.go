@@ -79,7 +79,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImag
 	return nil
 }
 
-func validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

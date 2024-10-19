@@ -150,29 +150,29 @@ func (j *jsiiProxy_QualityMonitorPluginframeworkSnapshotOutputReference) Terrafo
 }
 
 
-func NewQualityMonitorPluginframeworkSnapshotOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QualityMonitorPluginframeworkSnapshotOutputReference {
+func NewQualityMonitorPluginframeworkSnapshotOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) QualityMonitorPluginframeworkSnapshotOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewQualityMonitorPluginframeworkSnapshotOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewQualityMonitorPluginframeworkSnapshotOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_QualityMonitorPluginframeworkSnapshotOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitorPluginframework.QualityMonitorPluginframeworkSnapshotOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewQualityMonitorPluginframeworkSnapshotOutputReference_Override(q QualityMonitorPluginframeworkSnapshotOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewQualityMonitorPluginframeworkSnapshotOutputReference_Override(q QualityMonitorPluginframeworkSnapshotOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitorPluginframework.QualityMonitorPluginframeworkSnapshotOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		q,
 	)
 }

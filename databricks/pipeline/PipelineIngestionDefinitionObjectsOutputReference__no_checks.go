@@ -47,6 +47,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsOutputReference) validateIn
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsOutputReference) validatePutReportParameters(value *PipelineIngestionDefinitionObjectsReport) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsOutputReference) validatePutSchemaParameters(value *PipelineIngestionDefinitionObjectsSchema) error {
 	return nil
 }

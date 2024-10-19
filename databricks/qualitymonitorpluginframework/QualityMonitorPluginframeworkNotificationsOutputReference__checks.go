@@ -93,23 +93,63 @@ func (q *jsiiProxy_QualityMonitorPluginframeworkNotificationsOutputReference) va
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframeworkNotificationsOutputReference) validatePutOnFailureParameters(value *QualityMonitorPluginframeworkNotificationsOnFailure) error {
+func (q *jsiiProxy_QualityMonitorPluginframeworkNotificationsOutputReference) validatePutOnFailureParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*QualityMonitorPluginframeworkNotificationsOnFailure:
+		value := value.(*[]*QualityMonitorPluginframeworkNotificationsOnFailure)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*QualityMonitorPluginframeworkNotificationsOnFailure:
+		value_ := value.([]*QualityMonitorPluginframeworkNotificationsOnFailure)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*QualityMonitorPluginframeworkNotificationsOnFailure; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframeworkNotificationsOutputReference) validatePutOnNewClassificationTagDetectedParameters(value *QualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetected) error {
+func (q *jsiiProxy_QualityMonitorPluginframeworkNotificationsOutputReference) validatePutOnNewClassificationTagDetectedParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*QualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetected:
+		value := value.(*[]*QualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetected)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*QualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetected:
+		value_ := value.([]*QualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetected)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*QualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetected; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -228,13 +268,21 @@ func (j *jsiiProxy_QualityMonitorPluginframeworkNotificationsOutputReference) va
 	return nil
 }
 
-func validateNewQualityMonitorPluginframeworkNotificationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewQualityMonitorPluginframeworkNotificationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	if complexObjectIndex == nil {
+		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
+	}
+
+	if complexObjectIsFromSet == nil {
+		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

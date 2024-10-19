@@ -28,13 +28,13 @@ type DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputRefe
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Dbfs() DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsOutputReference
+	Dbfs() DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsList
 	DbfsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	S3() DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference
+	S3() DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3List
 	S3Input() interface{}
 	// Experimental.
 	TerraformAttribute() *string
@@ -68,8 +68,8 @@ type DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputRefe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDbfs(value *DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs)
-	PutS3(value *DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3)
+	PutDbfs(value interface{})
+	PutS3(value interface{})
 	ResetDbfs()
 	ResetS3()
 	// Produce the Token's value at resolution time.
@@ -117,8 +117,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLog
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference) Dbfs() DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference) Dbfs() DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsList
 	_jsii_.Get(
 		j,
 		"dbfs",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLog
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference) S3() DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference) S3() DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3List {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3List
 	_jsii_.Get(
 		j,
 		"s3",
@@ -198,29 +198,29 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLog
 }
 
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference {
+func NewDataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
@@ -466,7 +466,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLog
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference) PutDbfs(value *DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference) PutDbfs(value interface{}) {
 	if err := d.validatePutDbfsParameters(value); err != nil {
 		panic(err)
 	}
@@ -477,7 +477,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLog
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference) PutS3(value *DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference) PutS3(value interface{}) {
 	if err := d.validatePutS3Parameters(value); err != nil {
 		panic(err)
 	}

@@ -83,7 +83,7 @@ func (j *jsiiProxy_LibraryPluginframeworkMavenOutputReference) validateSetTerraf
 	return nil
 }
 
-func validateNewLibraryPluginframeworkMavenOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLibraryPluginframeworkMavenOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

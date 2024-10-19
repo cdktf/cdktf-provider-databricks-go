@@ -13,7 +13,7 @@ import (
 
 type DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference interface {
 	cdktf.ComplexObject
-	Abfss() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssOutputReference
+	Abfss() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssList
 	AbfssInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
@@ -30,17 +30,17 @@ type DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReferen
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Dbfs() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsOutputReference
+	Dbfs() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsList
 	DbfsInput() interface{}
-	File() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileOutputReference
+	File() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileList
 	FileInput() interface{}
 	// Experimental.
 	Fqn() *string
-	Gcs() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsOutputReference
+	Gcs() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsList
 	GcsInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	S3() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference
+	S3() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3List
 	S3Input() interface{}
 	// Experimental.
 	TerraformAttribute() *string
@@ -50,9 +50,9 @@ type DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReferen
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Volumes() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesOutputReference
+	Volumes() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesList
 	VolumesInput() interface{}
-	Workspace() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceOutputReference
+	Workspace() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceList
 	WorkspaceInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
@@ -78,13 +78,13 @@ type DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReferen
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAbfss(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss)
-	PutDbfs(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs)
-	PutFile(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile)
-	PutGcs(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs)
-	PutS3(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3)
-	PutVolumes(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes)
-	PutWorkspace(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace)
+	PutAbfss(value interface{})
+	PutDbfs(value interface{})
+	PutFile(value interface{})
+	PutGcs(value interface{})
+	PutS3(value interface{})
+	PutVolumes(value interface{})
+	PutWorkspace(value interface{})
 	ResetAbfss()
 	ResetDbfs()
 	ResetFile()
@@ -107,8 +107,8 @@ type jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOut
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) Abfss() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) Abfss() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssList
 	_jsii_.Get(
 		j,
 		"abfss",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScript
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) Dbfs() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) Dbfs() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsList
 	_jsii_.Get(
 		j,
 		"dbfs",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScript
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) File() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) File() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileList
 	_jsii_.Get(
 		j,
 		"file",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScript
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) Gcs() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) Gcs() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsList
 	_jsii_.Get(
 		j,
 		"gcs",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScript
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) S3() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) S3() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3List {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3List
 	_jsii_.Get(
 		j,
 		"s3",
@@ -277,8 +277,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScript
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) Volumes() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) Volumes() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesList
 	_jsii_.Get(
 		j,
 		"volumes",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScript
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) Workspace() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) Workspace() DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceList
 	_jsii_.Get(
 		j,
 		"workspace",
@@ -586,7 +586,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScript
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) PutAbfss(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) PutAbfss(value interface{}) {
 	if err := d.validatePutAbfssParameters(value); err != nil {
 		panic(err)
 	}
@@ -597,7 +597,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScript
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) PutDbfs(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) PutDbfs(value interface{}) {
 	if err := d.validatePutDbfsParameters(value); err != nil {
 		panic(err)
 	}
@@ -608,7 +608,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScript
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) PutFile(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) PutFile(value interface{}) {
 	if err := d.validatePutFileParameters(value); err != nil {
 		panic(err)
 	}
@@ -619,7 +619,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScript
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) PutGcs(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) PutGcs(value interface{}) {
 	if err := d.validatePutGcsParameters(value); err != nil {
 		panic(err)
 	}
@@ -630,7 +630,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScript
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) PutS3(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) PutS3(value interface{}) {
 	if err := d.validatePutS3Parameters(value); err != nil {
 		panic(err)
 	}
@@ -641,7 +641,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScript
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) PutVolumes(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) PutVolumes(value interface{}) {
 	if err := d.validatePutVolumesParameters(value); err != nil {
 		panic(err)
 	}
@@ -652,7 +652,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScript
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) PutWorkspace(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) PutWorkspace(value interface{}) {
 	if err := d.validatePutWorkspaceParameters(value); err != nil {
 		panic(err)
 	}

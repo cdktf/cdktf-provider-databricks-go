@@ -93,67 +93,187 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validatePutAutoscaleParameters(value *DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validatePutAutoscaleParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale:
+		value := value.(*[]*DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale:
+		value_ := value.([]*DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validatePutAwsAttributesParameters(value *DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validatePutAwsAttributesParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes:
+		value := value.(*[]*DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes:
+		value_ := value.([]*DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validatePutAzureAttributesParameters(value *DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validatePutAzureAttributesParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes:
+		value := value.(*[]*DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes:
+		value_ := value.([]*DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validatePutClusterLogConfParameters(value *DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validatePutClusterLogConfParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf:
+		value := value.(*[]*DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf:
+		value_ := value.([]*DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validatePutDockerImageParameters(value *DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validatePutDockerImageParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage:
+		value := value.(*[]*DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage:
+		value_ := value.([]*DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validatePutGcpAttributesParameters(value *DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validatePutGcpAttributesParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes:
+		value := value.(*[]*DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes:
+		value_ := value.([]*DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -190,12 +310,32 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validatePutWorkloadTypeParameters(value *DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validatePutWorkloadTypeParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType:
+		value := value.(*[]*DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType:
+		value_ := value.([]*DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -502,13 +642,21 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputRefe
 	return nil
 }
 
-func validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	if complexObjectIndex == nil {
+		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
+	}
+
+	if complexObjectIsFromSet == nil {
+		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

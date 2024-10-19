@@ -13,7 +13,7 @@ import (
 
 type DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference interface {
 	cdktf.ComplexObject
-	BasicAuth() DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthOutputReference
+	BasicAuth() DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthList
 	BasicAuthInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
@@ -69,7 +69,7 @@ type DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReferen
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutBasicAuth(value *DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth)
+	PutBasicAuth(value interface{})
 	ResetBasicAuth()
 	ResetUrl()
 	// Produce the Token's value at resolution time.
@@ -87,8 +87,8 @@ type jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOut
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference) BasicAuth() DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference) BasicAuth() DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthList
 	_jsii_.Get(
 		j,
 		"basicAuth",
@@ -198,29 +198,29 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImag
 }
 
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference {
+func NewDataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
@@ -477,7 +477,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImag
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference) PutBasicAuth(value *DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference) PutBasicAuth(value interface{}) {
 	if err := d.validatePutBasicAuthParameters(value); err != nil {
 		panic(err)
 	}

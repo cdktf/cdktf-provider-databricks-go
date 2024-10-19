@@ -47,11 +47,11 @@ func (q *jsiiProxy_QualityMonitorPluginframeworkNotificationsOutputReference) va
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframeworkNotificationsOutputReference) validatePutOnFailureParameters(value *QualityMonitorPluginframeworkNotificationsOnFailure) error {
+func (q *jsiiProxy_QualityMonitorPluginframeworkNotificationsOutputReference) validatePutOnFailureParameters(value interface{}) error {
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframeworkNotificationsOutputReference) validatePutOnNewClassificationTagDetectedParameters(value *QualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetected) error {
+func (q *jsiiProxy_QualityMonitorPluginframeworkNotificationsOutputReference) validatePutOnNewClassificationTagDetectedParameters(value interface{}) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_QualityMonitorPluginframeworkNotificationsOutputReference) va
 	return nil
 }
 
-func validateNewQualityMonitorPluginframeworkNotificationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewQualityMonitorPluginframeworkNotificationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

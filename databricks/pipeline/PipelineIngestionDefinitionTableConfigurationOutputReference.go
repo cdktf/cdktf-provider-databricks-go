@@ -41,6 +41,9 @@ type PipelineIngestionDefinitionTableConfigurationOutputReference interface {
 	ScdType() *string
 	SetScdType(val *string)
 	ScdTypeInput() *string
+	SequenceBy() *[]*string
+	SetSequenceBy(val *[]*string)
+	SequenceByInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,6 +79,7 @@ type PipelineIngestionDefinitionTableConfigurationOutputReference interface {
 	ResetPrimaryKeys()
 	ResetSalesforceIncludeFormulaFields()
 	ResetScdType()
+	ResetSequenceBy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -201,6 +205,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference) SequenceBy() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sequenceBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference) SequenceByInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sequenceByInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -311,6 +335,17 @@ func (j *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference)
 	_jsii_.Set(
 		j,
 		"scdType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference)SetSequenceBy(val *[]*string) {
+	if err := j.validateSetSequenceByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sequenceBy",
 		val,
 	)
 }
@@ -543,6 +578,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference)
 	_jsii_.InvokeVoid(
 		p,
 		"resetScdType",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference) ResetSequenceBy() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSequenceBy",
 		nil, // no parameters
 	)
 }

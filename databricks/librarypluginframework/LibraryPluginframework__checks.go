@@ -207,34 +207,94 @@ func (l *jsiiProxy_LibraryPluginframework) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
-func (l *jsiiProxy_LibraryPluginframework) validatePutCranParameters(value *LibraryPluginframeworkCran) error {
+func (l *jsiiProxy_LibraryPluginframework) validatePutCranParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*LibraryPluginframeworkCran:
+		value := value.(*[]*LibraryPluginframeworkCran)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*LibraryPluginframeworkCran:
+		value_ := value.([]*LibraryPluginframeworkCran)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LibraryPluginframeworkCran; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (l *jsiiProxy_LibraryPluginframework) validatePutMavenParameters(value *LibraryPluginframeworkMaven) error {
+func (l *jsiiProxy_LibraryPluginframework) validatePutMavenParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*LibraryPluginframeworkMaven:
+		value := value.(*[]*LibraryPluginframeworkMaven)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*LibraryPluginframeworkMaven:
+		value_ := value.([]*LibraryPluginframeworkMaven)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LibraryPluginframeworkMaven; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (l *jsiiProxy_LibraryPluginframework) validatePutPypiParameters(value *LibraryPluginframeworkPypi) error {
+func (l *jsiiProxy_LibraryPluginframework) validatePutPypiParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*LibraryPluginframeworkPypi:
+		value := value.(*[]*LibraryPluginframeworkPypi)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*LibraryPluginframeworkPypi:
+		value_ := value.([]*LibraryPluginframeworkPypi)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LibraryPluginframeworkPypi; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil

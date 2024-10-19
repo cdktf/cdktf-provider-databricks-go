@@ -174,29 +174,29 @@ func (j *jsiiProxy_QualityMonitorPluginframeworkNotificationsOnNewClassification
 }
 
 
-func NewQualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetectedOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetectedOutputReference {
+func NewQualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetectedOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) QualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetectedOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewQualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetectedOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewQualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetectedOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_QualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetectedOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitorPluginframework.QualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetectedOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewQualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetectedOutputReference_Override(q QualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetectedOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewQualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetectedOutputReference_Override(q QualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetectedOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitorPluginframework.QualityMonitorPluginframeworkNotificationsOnNewClassificationTagDetectedOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		q,
 	)
 }

@@ -47,31 +47,31 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutAutoscaleParameters(value *DataDatabricksClusterPluginframeworkClusterInfoAutoscale) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutAutoscaleParameters(value interface{}) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutAwsAttributesParameters(value *DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutAwsAttributesParameters(value interface{}) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutAzureAttributesParameters(value *DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutAzureAttributesParameters(value interface{}) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutClusterLogConfParameters(value *DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutClusterLogConfParameters(value interface{}) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutClusterLogStatusParameters(value *DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutClusterLogStatusParameters(value interface{}) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutDockerImageParameters(value *DataDatabricksClusterPluginframeworkClusterInfoDockerImage) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutDockerImageParameters(value interface{}) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutDriverParameters(value *DataDatabricksClusterPluginframeworkClusterInfoDriver) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutDriverParameters(value interface{}) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutGcpAttributesParameters(value *DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutGcpAttributesParameters(value interface{}) error {
 	return nil
 }
 
@@ -87,15 +87,15 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutSpecParameters(value *DataDatabricksClusterPluginframeworkClusterInfoSpec) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutSpecParameters(value interface{}) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutTerminationReasonParameters(value *DataDatabricksClusterPluginframeworkClusterInfoTerminationReason) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutTerminationReasonParameters(value interface{}) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutWorkloadTypeParameters(value *DataDatabricksClusterPluginframeworkClusterInfoWorkloadType) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validatePutWorkloadTypeParameters(value interface{}) error {
 	return nil
 }
 
@@ -251,7 +251,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return nil
 }
 
-func validateNewDataDatabricksClusterPluginframeworkClusterInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksClusterPluginframeworkClusterInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

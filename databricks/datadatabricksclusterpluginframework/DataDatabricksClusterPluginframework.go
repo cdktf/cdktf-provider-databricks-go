@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework}.
 type DataDatabricksClusterPluginframework interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -20,7 +20,7 @@ type DataDatabricksClusterPluginframework interface {
 	ClusterId() *string
 	SetClusterId(val *string)
 	ClusterIdInput() *string
-	ClusterInfo() DataDatabricksClusterPluginframeworkClusterInfoOutputReference
+	ClusterInfo() DataDatabricksClusterPluginframeworkClusterInfoList
 	ClusterInfoInput() interface{}
 	ClusterName() *string
 	SetClusterName(val *string)
@@ -86,7 +86,7 @@ type DataDatabricksClusterPluginframework interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutClusterInfo(value *DataDatabricksClusterPluginframeworkClusterInfo)
+	PutClusterInfo(value interface{})
 	ResetClusterId()
 	ResetClusterInfo()
 	ResetClusterName()
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframework) ClusterIdInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframework) ClusterInfo() DataDatabricksClusterPluginframeworkClusterInfoOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframework) ClusterInfo() DataDatabricksClusterPluginframeworkClusterInfoList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoList
 	_jsii_.Get(
 		j,
 		"clusterInfo",
@@ -313,7 +313,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframework) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source.
 func NewDataDatabricksClusterPluginframework(scope constructs.Construct, id *string, config *DataDatabricksClusterPluginframeworkConfig) DataDatabricksClusterPluginframework {
 	_init_.Initialize()
 
@@ -331,7 +331,7 @@ func NewDataDatabricksClusterPluginframework(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source.
 func NewDataDatabricksClusterPluginframework_Override(d DataDatabricksClusterPluginframework, scope constructs.Construct, id *string, config *DataDatabricksClusterPluginframeworkConfig) {
 	_init_.Initialize()
 
@@ -695,7 +695,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframework) OverrideLogicalId(newLo
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframework) PutClusterInfo(value *DataDatabricksClusterPluginframeworkClusterInfo) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframework) PutClusterInfo(value interface{}) {
 	if err := d.validatePutClusterInfoParameters(value); err != nil {
 		panic(err)
 	}

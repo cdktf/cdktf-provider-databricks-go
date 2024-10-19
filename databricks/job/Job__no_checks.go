@@ -199,6 +199,10 @@ func (j *jsiiProxy_Job) validateSetAlwaysRunningParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_Job) validateSetBudgetPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Job) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

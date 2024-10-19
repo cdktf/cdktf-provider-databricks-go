@@ -41,6 +41,9 @@ type PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference in
 	ScdType() *string
 	SetScdType(val *string)
 	ScdTypeInput() *string
+	SequenceBy() *[]*string
+	SetSequenceBy(val *[]*string)
+	SequenceByInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,6 +79,7 @@ type PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference in
 	ResetPrimaryKeys()
 	ResetSalesforceIncludeFormulaFields()
 	ResetScdType()
+	ResetSequenceBy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -201,6 +205,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutp
 	return returns
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference) SequenceBy() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sequenceBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference) SequenceByInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sequenceByInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -311,6 +335,17 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutp
 	_jsii_.Set(
 		j,
 		"scdType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference)SetSequenceBy(val *[]*string) {
+	if err := j.validateSetSequenceByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sequenceBy",
 		val,
 	)
 }
@@ -543,6 +578,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutp
 	_jsii_.InvokeVoid(
 		p,
 		"resetScdType",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference) ResetSequenceBy() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSequenceBy",
 		nil, // no parameters
 	)
 }

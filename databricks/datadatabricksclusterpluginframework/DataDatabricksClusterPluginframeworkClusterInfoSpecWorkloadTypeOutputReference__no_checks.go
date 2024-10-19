@@ -47,7 +47,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTy
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReference) validatePutClientsParameters(value *DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReference) validatePutClientsParameters(value interface{}) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTy
 	return nil
 }
 
-func validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

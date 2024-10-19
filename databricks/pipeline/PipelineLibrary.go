@@ -7,19 +7,19 @@ package pipeline
 type PipelineLibrary struct {
 	// file block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/pipeline#file Pipeline#file}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/pipeline#file Pipeline#file}
 	File *PipelineLibraryFile `field:"optional" json:"file" yaml:"file"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/pipeline#jar Pipeline#jar}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/pipeline#jar Pipeline#jar}.
 	Jar *string `field:"optional" json:"jar" yaml:"jar"`
 	// maven block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/pipeline#maven Pipeline#maven}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/pipeline#maven Pipeline#maven}
 	Maven *PipelineLibraryMaven `field:"optional" json:"maven" yaml:"maven"`
 	// notebook block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/pipeline#notebook Pipeline#notebook}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/pipeline#notebook Pipeline#notebook}
 	Notebook *PipelineLibraryNotebook `field:"optional" json:"notebook" yaml:"notebook"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/pipeline#whl Pipeline#whl}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/pipeline#whl Pipeline#whl}.
 	Whl *string `field:"optional" json:"whl" yaml:"whl"`
 }
 

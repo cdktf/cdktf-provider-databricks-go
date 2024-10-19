@@ -79,27 +79,27 @@ func (q *jsiiProxy_QualityMonitorPluginframework) validatePutCustomMetricsParame
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) validatePutDataClassificationConfigParameters(value *QualityMonitorPluginframeworkDataClassificationConfig) error {
+func (q *jsiiProxy_QualityMonitorPluginframework) validatePutDataClassificationConfigParameters(value interface{}) error {
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) validatePutInferenceLogParameters(value *QualityMonitorPluginframeworkInferenceLog) error {
+func (q *jsiiProxy_QualityMonitorPluginframework) validatePutInferenceLogParameters(value interface{}) error {
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) validatePutNotificationsParameters(value *QualityMonitorPluginframeworkNotifications) error {
+func (q *jsiiProxy_QualityMonitorPluginframework) validatePutNotificationsParameters(value interface{}) error {
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) validatePutScheduleParameters(value *QualityMonitorPluginframeworkSchedule) error {
+func (q *jsiiProxy_QualityMonitorPluginframework) validatePutScheduleParameters(value interface{}) error {
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) validatePutSnapshotParameters(value *QualityMonitorPluginframeworkSnapshot) error {
+func (q *jsiiProxy_QualityMonitorPluginframework) validatePutSnapshotParameters(value interface{}) error {
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) validatePutTimeSeriesParameters(value *QualityMonitorPluginframeworkTimeSeries) error {
+func (q *jsiiProxy_QualityMonitorPluginframework) validatePutTimeSeriesParameters(value interface{}) error {
 	return nil
 }
 

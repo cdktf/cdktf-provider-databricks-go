@@ -75,15 +75,15 @@ func (l *jsiiProxy_LibraryPluginframework) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
-func (l *jsiiProxy_LibraryPluginframework) validatePutCranParameters(value *LibraryPluginframeworkCran) error {
+func (l *jsiiProxy_LibraryPluginframework) validatePutCranParameters(value interface{}) error {
 	return nil
 }
 
-func (l *jsiiProxy_LibraryPluginframework) validatePutMavenParameters(value *LibraryPluginframeworkMaven) error {
+func (l *jsiiProxy_LibraryPluginframework) validatePutMavenParameters(value interface{}) error {
 	return nil
 }
 
-func (l *jsiiProxy_LibraryPluginframework) validatePutPypiParameters(value *LibraryPluginframeworkPypi) error {
+func (l *jsiiProxy_LibraryPluginframework) validatePutPypiParameters(value interface{}) error {
 	return nil
 }
 

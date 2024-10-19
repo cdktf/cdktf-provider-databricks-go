@@ -95,7 +95,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesO
 	return nil
 }
 
-func validateNewDataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

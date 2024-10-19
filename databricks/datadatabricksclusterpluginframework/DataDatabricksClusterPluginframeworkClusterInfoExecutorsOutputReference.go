@@ -38,7 +38,7 @@ type DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference int
 	InstanceIdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	NodeAwsAttributes() DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesOutputReference
+	NodeAwsAttributes() DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesList
 	NodeAwsAttributesInput() interface{}
 	NodeId() *string
 	SetNodeId(val *string)
@@ -84,7 +84,7 @@ type DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutNodeAwsAttributes(value *DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes)
+	PutNodeAwsAttributes(value interface{})
 	ResetHostPrivateIp()
 	ResetInstanceId()
 	ResetNodeAwsAttributes()
@@ -197,8 +197,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference) NodeAwsAttributes() DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference) NodeAwsAttributes() DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesList
 	_jsii_.Get(
 		j,
 		"nodeAwsAttributes",
@@ -652,7 +652,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference) PutNodeAwsAttributes(value *DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference) PutNodeAwsAttributes(value interface{}) {
 	if err := d.validatePutNodeAwsAttributesParameters(value); err != nil {
 		panic(err)
 	}

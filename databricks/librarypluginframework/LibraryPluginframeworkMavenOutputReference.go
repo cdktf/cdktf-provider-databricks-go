@@ -221,29 +221,29 @@ func (j *jsiiProxy_LibraryPluginframeworkMavenOutputReference) TerraformResource
 }
 
 
-func NewLibraryPluginframeworkMavenOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LibraryPluginframeworkMavenOutputReference {
+func NewLibraryPluginframeworkMavenOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LibraryPluginframeworkMavenOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewLibraryPluginframeworkMavenOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewLibraryPluginframeworkMavenOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_LibraryPluginframeworkMavenOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.libraryPluginframework.LibraryPluginframeworkMavenOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewLibraryPluginframeworkMavenOutputReference_Override(l LibraryPluginframeworkMavenOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLibraryPluginframeworkMavenOutputReference_Override(l LibraryPluginframeworkMavenOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.libraryPluginframework.LibraryPluginframeworkMavenOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }

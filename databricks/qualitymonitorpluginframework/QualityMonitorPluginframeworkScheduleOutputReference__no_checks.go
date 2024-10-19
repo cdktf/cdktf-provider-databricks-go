@@ -79,7 +79,7 @@ func (j *jsiiProxy_QualityMonitorPluginframeworkScheduleOutputReference) validat
 	return nil
 }
 
-func validateNewQualityMonitorPluginframeworkScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewQualityMonitorPluginframeworkScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

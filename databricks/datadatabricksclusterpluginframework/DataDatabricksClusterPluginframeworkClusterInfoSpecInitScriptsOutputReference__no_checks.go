@@ -47,31 +47,31 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScript
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) validatePutAbfssParameters(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) validatePutAbfssParameters(value interface{}) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) validatePutDbfsParameters(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) validatePutDbfsParameters(value interface{}) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) validatePutFileParameters(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) validatePutFileParameters(value interface{}) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) validatePutGcsParameters(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) validatePutGcsParameters(value interface{}) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) validatePutS3Parameters(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) validatePutS3Parameters(value interface{}) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) validatePutVolumesParameters(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) validatePutVolumesParameters(value interface{}) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) validatePutWorkspaceParameters(value *DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference) validatePutWorkspaceParameters(value interface{}) error {
 	return nil
 }
 

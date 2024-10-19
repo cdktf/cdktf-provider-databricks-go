@@ -99,7 +99,7 @@ func (j *jsiiProxy_QualityMonitorPluginframeworkInferenceLogOutputReference) val
 	return nil
 }
 
-func validateNewQualityMonitorPluginframeworkInferenceLogOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewQualityMonitorPluginframeworkInferenceLogOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

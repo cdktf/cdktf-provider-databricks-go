@@ -197,29 +197,29 @@ func (j *jsiiProxy_LibraryPluginframeworkPypiOutputReference) TerraformResource(
 }
 
 
-func NewLibraryPluginframeworkPypiOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LibraryPluginframeworkPypiOutputReference {
+func NewLibraryPluginframeworkPypiOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LibraryPluginframeworkPypiOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewLibraryPluginframeworkPypiOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewLibraryPluginframeworkPypiOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_LibraryPluginframeworkPypiOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.libraryPluginframework.LibraryPluginframeworkPypiOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewLibraryPluginframeworkPypiOutputReference_Override(l LibraryPluginframeworkPypiOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLibraryPluginframeworkPypiOutputReference_Override(l LibraryPluginframeworkPypiOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.libraryPluginframework.LibraryPluginframeworkPypiOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }

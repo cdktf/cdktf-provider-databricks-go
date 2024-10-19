@@ -30,8 +30,8 @@ type DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutpu
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients
-	SetInternalValue(val *DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Jobs() interface{}
 	SetJobs(val interface{})
 	JobsInput() interface{}
@@ -127,8 +127,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTy
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference) InternalValue() *DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients {
-	var returns *DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -198,29 +198,29 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTy
 }
 
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference {
+func NewDataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
@@ -247,7 +247,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTy
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference)SetInternalValue(val *DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients) {
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

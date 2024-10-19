@@ -238,67 +238,187 @@ func (q *jsiiProxy_QualityMonitorPluginframework) validatePutCustomMetricsParame
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) validatePutDataClassificationConfigParameters(value *QualityMonitorPluginframeworkDataClassificationConfig) error {
+func (q *jsiiProxy_QualityMonitorPluginframework) validatePutDataClassificationConfigParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*QualityMonitorPluginframeworkDataClassificationConfig:
+		value := value.(*[]*QualityMonitorPluginframeworkDataClassificationConfig)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*QualityMonitorPluginframeworkDataClassificationConfig:
+		value_ := value.([]*QualityMonitorPluginframeworkDataClassificationConfig)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*QualityMonitorPluginframeworkDataClassificationConfig; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) validatePutInferenceLogParameters(value *QualityMonitorPluginframeworkInferenceLog) error {
+func (q *jsiiProxy_QualityMonitorPluginframework) validatePutInferenceLogParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*QualityMonitorPluginframeworkInferenceLog:
+		value := value.(*[]*QualityMonitorPluginframeworkInferenceLog)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*QualityMonitorPluginframeworkInferenceLog:
+		value_ := value.([]*QualityMonitorPluginframeworkInferenceLog)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*QualityMonitorPluginframeworkInferenceLog; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) validatePutNotificationsParameters(value *QualityMonitorPluginframeworkNotifications) error {
+func (q *jsiiProxy_QualityMonitorPluginframework) validatePutNotificationsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*QualityMonitorPluginframeworkNotifications:
+		value := value.(*[]*QualityMonitorPluginframeworkNotifications)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*QualityMonitorPluginframeworkNotifications:
+		value_ := value.([]*QualityMonitorPluginframeworkNotifications)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*QualityMonitorPluginframeworkNotifications; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) validatePutScheduleParameters(value *QualityMonitorPluginframeworkSchedule) error {
+func (q *jsiiProxy_QualityMonitorPluginframework) validatePutScheduleParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*QualityMonitorPluginframeworkSchedule:
+		value := value.(*[]*QualityMonitorPluginframeworkSchedule)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*QualityMonitorPluginframeworkSchedule:
+		value_ := value.([]*QualityMonitorPluginframeworkSchedule)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*QualityMonitorPluginframeworkSchedule; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) validatePutSnapshotParameters(value *QualityMonitorPluginframeworkSnapshot) error {
+func (q *jsiiProxy_QualityMonitorPluginframework) validatePutSnapshotParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*QualityMonitorPluginframeworkSnapshot:
+		value := value.(*[]*QualityMonitorPluginframeworkSnapshot)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*QualityMonitorPluginframeworkSnapshot:
+		value_ := value.([]*QualityMonitorPluginframeworkSnapshot)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*QualityMonitorPluginframeworkSnapshot; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) validatePutTimeSeriesParameters(value *QualityMonitorPluginframeworkTimeSeries) error {
+func (q *jsiiProxy_QualityMonitorPluginframework) validatePutTimeSeriesParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*QualityMonitorPluginframeworkTimeSeries:
+		value := value.(*[]*QualityMonitorPluginframeworkTimeSeries)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*QualityMonitorPluginframeworkTimeSeries:
+		value_ := value.([]*QualityMonitorPluginframeworkTimeSeries)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*QualityMonitorPluginframeworkTimeSeries; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil

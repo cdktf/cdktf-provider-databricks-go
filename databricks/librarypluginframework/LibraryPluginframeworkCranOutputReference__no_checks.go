@@ -79,7 +79,7 @@ func (j *jsiiProxy_LibraryPluginframeworkCranOutputReference) validateSetTerrafo
 	return nil
 }
 
-func validateNewLibraryPluginframeworkCranOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLibraryPluginframeworkCranOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

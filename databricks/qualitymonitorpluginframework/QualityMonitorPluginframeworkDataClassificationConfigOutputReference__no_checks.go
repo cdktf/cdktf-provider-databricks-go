@@ -75,7 +75,7 @@ func (j *jsiiProxy_QualityMonitorPluginframeworkDataClassificationConfigOutputRe
 	return nil
 }
 
-func validateNewQualityMonitorPluginframeworkDataClassificationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewQualityMonitorPluginframeworkDataClassificationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

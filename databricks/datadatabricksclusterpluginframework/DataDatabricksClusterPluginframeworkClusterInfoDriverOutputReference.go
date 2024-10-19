@@ -38,7 +38,7 @@ type DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference interf
 	InstanceIdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	NodeAwsAttributes() DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReference
+	NodeAwsAttributes() DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesList
 	NodeAwsAttributesInput() interface{}
 	NodeId() *string
 	SetNodeId(val *string)
@@ -84,7 +84,7 @@ type DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutNodeAwsAttributes(value *DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes)
+	PutNodeAwsAttributes(value interface{})
 	ResetHostPrivateIp()
 	ResetInstanceId()
 	ResetNodeAwsAttributes()
@@ -197,8 +197,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoDriverOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference) NodeAwsAttributes() DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference) NodeAwsAttributes() DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesList
 	_jsii_.Get(
 		j,
 		"nodeAwsAttributes",
@@ -318,29 +318,29 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoDriverOutputRe
 }
 
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference {
+func NewDataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoDriverOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoDriverOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
@@ -652,7 +652,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoDriverOutputRe
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference) PutNodeAwsAttributes(value *DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference) PutNodeAwsAttributes(value interface{}) {
 	if err := d.validatePutNodeAwsAttributesParameters(value); err != nil {
 		panic(err)
 	}

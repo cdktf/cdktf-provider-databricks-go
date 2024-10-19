@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/quality_monitor_pluginframework databricks_quality_monitor_pluginframework}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/quality_monitor_pluginframework databricks_quality_monitor_pluginframework}.
 type QualityMonitorPluginframework interface {
 	cdktf.TerraformResource
 	AssetsDir() *string
@@ -36,7 +36,7 @@ type QualityMonitorPluginframework interface {
 	CustomMetrics() QualityMonitorPluginframeworkCustomMetricsList
 	CustomMetricsInput() interface{}
 	DashboardId() *string
-	DataClassificationConfig() QualityMonitorPluginframeworkDataClassificationConfigOutputReference
+	DataClassificationConfig() QualityMonitorPluginframeworkDataClassificationConfigList
 	DataClassificationConfigInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
@@ -51,7 +51,7 @@ type QualityMonitorPluginframework interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	InferenceLog() QualityMonitorPluginframeworkInferenceLogOutputReference
+	InferenceLog() QualityMonitorPluginframeworkInferenceLogList
 	InferenceLogInput() interface{}
 	LatestMonitorFailureMsg() *string
 	SetLatestMonitorFailureMsg(val *string)
@@ -63,7 +63,7 @@ type QualityMonitorPluginframework interface {
 	MonitorVersion() *string
 	// The tree node.
 	Node() constructs.Node
-	Notifications() QualityMonitorPluginframeworkNotificationsOutputReference
+	Notifications() QualityMonitorPluginframeworkNotificationsList
 	NotificationsInput() interface{}
 	OutputSchemaName() *string
 	SetOutputSchemaName(val *string)
@@ -79,7 +79,7 @@ type QualityMonitorPluginframework interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Schedule() QualityMonitorPluginframeworkScheduleOutputReference
+	Schedule() QualityMonitorPluginframeworkScheduleList
 	ScheduleInput() interface{}
 	SkipBuiltinDashboard() interface{}
 	SetSkipBuiltinDashboard(val interface{})
@@ -87,7 +87,7 @@ type QualityMonitorPluginframework interface {
 	SlicingExprs() *[]*string
 	SetSlicingExprs(val *[]*string)
 	SlicingExprsInput() *[]*string
-	Snapshot() QualityMonitorPluginframeworkSnapshotOutputReference
+	Snapshot() QualityMonitorPluginframeworkSnapshotList
 	SnapshotInput() interface{}
 	Status() *string
 	TableName() *string
@@ -99,7 +99,7 @@ type QualityMonitorPluginframework interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	TimeSeries() QualityMonitorPluginframeworkTimeSeriesOutputReference
+	TimeSeries() QualityMonitorPluginframeworkTimeSeriesList
 	TimeSeriesInput() interface{}
 	WarehouseId() *string
 	SetWarehouseId(val *string)
@@ -148,12 +148,12 @@ type QualityMonitorPluginframework interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCustomMetrics(value interface{})
-	PutDataClassificationConfig(value *QualityMonitorPluginframeworkDataClassificationConfig)
-	PutInferenceLog(value *QualityMonitorPluginframeworkInferenceLog)
-	PutNotifications(value *QualityMonitorPluginframeworkNotifications)
-	PutSchedule(value *QualityMonitorPluginframeworkSchedule)
-	PutSnapshot(value *QualityMonitorPluginframeworkSnapshot)
-	PutTimeSeries(value *QualityMonitorPluginframeworkTimeSeries)
+	PutDataClassificationConfig(value interface{})
+	PutInferenceLog(value interface{})
+	PutNotifications(value interface{})
+	PutSchedule(value interface{})
+	PutSnapshot(value interface{})
+	PutTimeSeries(value interface{})
 	ResetBaselineTableName()
 	ResetCustomMetrics()
 	ResetDataClassificationConfig()
@@ -297,8 +297,8 @@ func (j *jsiiProxy_QualityMonitorPluginframework) DashboardId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorPluginframework) DataClassificationConfig() QualityMonitorPluginframeworkDataClassificationConfigOutputReference {
-	var returns QualityMonitorPluginframeworkDataClassificationConfigOutputReference
+func (j *jsiiProxy_QualityMonitorPluginframework) DataClassificationConfig() QualityMonitorPluginframeworkDataClassificationConfigList {
+	var returns QualityMonitorPluginframeworkDataClassificationConfigList
 	_jsii_.Get(
 		j,
 		"dataClassificationConfig",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_QualityMonitorPluginframework) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorPluginframework) InferenceLog() QualityMonitorPluginframeworkInferenceLogOutputReference {
-	var returns QualityMonitorPluginframeworkInferenceLogOutputReference
+func (j *jsiiProxy_QualityMonitorPluginframework) InferenceLog() QualityMonitorPluginframeworkInferenceLogList {
+	var returns QualityMonitorPluginframeworkInferenceLogList
 	_jsii_.Get(
 		j,
 		"inferenceLog",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_QualityMonitorPluginframework) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorPluginframework) Notifications() QualityMonitorPluginframeworkNotificationsOutputReference {
-	var returns QualityMonitorPluginframeworkNotificationsOutputReference
+func (j *jsiiProxy_QualityMonitorPluginframework) Notifications() QualityMonitorPluginframeworkNotificationsList {
+	var returns QualityMonitorPluginframeworkNotificationsList
 	_jsii_.Get(
 		j,
 		"notifications",
@@ -517,8 +517,8 @@ func (j *jsiiProxy_QualityMonitorPluginframework) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorPluginframework) Schedule() QualityMonitorPluginframeworkScheduleOutputReference {
-	var returns QualityMonitorPluginframeworkScheduleOutputReference
+func (j *jsiiProxy_QualityMonitorPluginframework) Schedule() QualityMonitorPluginframeworkScheduleList {
+	var returns QualityMonitorPluginframeworkScheduleList
 	_jsii_.Get(
 		j,
 		"schedule",
@@ -577,8 +577,8 @@ func (j *jsiiProxy_QualityMonitorPluginframework) SlicingExprsInput() *[]*string
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorPluginframework) Snapshot() QualityMonitorPluginframeworkSnapshotOutputReference {
-	var returns QualityMonitorPluginframeworkSnapshotOutputReference
+func (j *jsiiProxy_QualityMonitorPluginframework) Snapshot() QualityMonitorPluginframeworkSnapshotList {
+	var returns QualityMonitorPluginframeworkSnapshotList
 	_jsii_.Get(
 		j,
 		"snapshot",
@@ -657,8 +657,8 @@ func (j *jsiiProxy_QualityMonitorPluginframework) TerraformResourceType() *strin
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorPluginframework) TimeSeries() QualityMonitorPluginframeworkTimeSeriesOutputReference {
-	var returns QualityMonitorPluginframeworkTimeSeriesOutputReference
+func (j *jsiiProxy_QualityMonitorPluginframework) TimeSeries() QualityMonitorPluginframeworkTimeSeriesList {
+	var returns QualityMonitorPluginframeworkTimeSeriesList
 	_jsii_.Get(
 		j,
 		"timeSeries",
@@ -698,7 +698,7 @@ func (j *jsiiProxy_QualityMonitorPluginframework) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/quality_monitor_pluginframework databricks_quality_monitor_pluginframework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/quality_monitor_pluginframework databricks_quality_monitor_pluginframework} Resource.
 func NewQualityMonitorPluginframework(scope constructs.Construct, id *string, config *QualityMonitorPluginframeworkConfig) QualityMonitorPluginframework {
 	_init_.Initialize()
 
@@ -716,7 +716,7 @@ func NewQualityMonitorPluginframework(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/quality_monitor_pluginframework databricks_quality_monitor_pluginframework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/quality_monitor_pluginframework databricks_quality_monitor_pluginframework} Resource.
 func NewQualityMonitorPluginframework_Override(q QualityMonitorPluginframework, scope constructs.Construct, id *string, config *QualityMonitorPluginframeworkConfig) {
 	_init_.Initialize()
 
@@ -1247,7 +1247,7 @@ func (q *jsiiProxy_QualityMonitorPluginframework) PutCustomMetrics(value interfa
 	)
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) PutDataClassificationConfig(value *QualityMonitorPluginframeworkDataClassificationConfig) {
+func (q *jsiiProxy_QualityMonitorPluginframework) PutDataClassificationConfig(value interface{}) {
 	if err := q.validatePutDataClassificationConfigParameters(value); err != nil {
 		panic(err)
 	}
@@ -1258,7 +1258,7 @@ func (q *jsiiProxy_QualityMonitorPluginframework) PutDataClassificationConfig(va
 	)
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) PutInferenceLog(value *QualityMonitorPluginframeworkInferenceLog) {
+func (q *jsiiProxy_QualityMonitorPluginframework) PutInferenceLog(value interface{}) {
 	if err := q.validatePutInferenceLogParameters(value); err != nil {
 		panic(err)
 	}
@@ -1269,7 +1269,7 @@ func (q *jsiiProxy_QualityMonitorPluginframework) PutInferenceLog(value *Quality
 	)
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) PutNotifications(value *QualityMonitorPluginframeworkNotifications) {
+func (q *jsiiProxy_QualityMonitorPluginframework) PutNotifications(value interface{}) {
 	if err := q.validatePutNotificationsParameters(value); err != nil {
 		panic(err)
 	}
@@ -1280,7 +1280,7 @@ func (q *jsiiProxy_QualityMonitorPluginframework) PutNotifications(value *Qualit
 	)
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) PutSchedule(value *QualityMonitorPluginframeworkSchedule) {
+func (q *jsiiProxy_QualityMonitorPluginframework) PutSchedule(value interface{}) {
 	if err := q.validatePutScheduleParameters(value); err != nil {
 		panic(err)
 	}
@@ -1291,7 +1291,7 @@ func (q *jsiiProxy_QualityMonitorPluginframework) PutSchedule(value *QualityMoni
 	)
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) PutSnapshot(value *QualityMonitorPluginframeworkSnapshot) {
+func (q *jsiiProxy_QualityMonitorPluginframework) PutSnapshot(value interface{}) {
 	if err := q.validatePutSnapshotParameters(value); err != nil {
 		panic(err)
 	}
@@ -1302,7 +1302,7 @@ func (q *jsiiProxy_QualityMonitorPluginframework) PutSnapshot(value *QualityMoni
 	)
 }
 
-func (q *jsiiProxy_QualityMonitorPluginframework) PutTimeSeries(value *QualityMonitorPluginframeworkTimeSeries) {
+func (q *jsiiProxy_QualityMonitorPluginframework) PutTimeSeries(value interface{}) {
 	if err := q.validatePutTimeSeriesParameters(value); err != nil {
 		panic(err)
 	}

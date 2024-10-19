@@ -47,11 +47,11 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference) validatePutDbfsParameters(value *DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference) validatePutDbfsParameters(value interface{}) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference) validatePutS3Parameters(value *DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference) validatePutS3Parameters(value interface{}) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf
 	return nil
 }
 
-func validateNewDataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

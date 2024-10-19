@@ -38,7 +38,7 @@ type DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputRef
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	LogAnalyticsInfo() DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoOutputReference
+	LogAnalyticsInfo() DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoList
 	LogAnalyticsInfoInput() interface{}
 	SpotBidMaxPrice() *float64
 	SetSpotBidMaxPrice(val *float64)
@@ -75,7 +75,7 @@ type DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputRef
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutLogAnalyticsInfo(value *DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo)
+	PutLogAnalyticsInfo(value interface{})
 	ResetAvailability()
 	ResetFirstOnDemand()
 	ResetLogAnalyticsInfo()
@@ -185,8 +185,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttri
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference) LogAnalyticsInfo() DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference) LogAnalyticsInfo() DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoList
 	_jsii_.Get(
 		j,
 		"logAnalyticsInfo",
@@ -246,29 +246,29 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttri
 }
 
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference {
+func NewDataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
@@ -547,7 +547,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference) PutLogAnalyticsInfo(value *DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference) PutLogAnalyticsInfo(value interface{}) {
 	if err := d.validatePutLogAnalyticsInfoParameters(value); err != nil {
 		panic(err)
 	}

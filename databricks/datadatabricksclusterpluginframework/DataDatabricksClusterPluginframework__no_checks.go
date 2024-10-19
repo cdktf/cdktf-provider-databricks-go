@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframework) validateOverrideLogical
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframework) validatePutClusterInfoParameters(value *DataDatabricksClusterPluginframeworkClusterInfo) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframework) validatePutClusterInfoParameters(value interface{}) error {
 	return nil
 }
 

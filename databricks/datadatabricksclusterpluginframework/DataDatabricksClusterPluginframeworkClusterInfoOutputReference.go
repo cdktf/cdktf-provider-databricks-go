@@ -13,14 +13,14 @@ import (
 
 type DataDatabricksClusterPluginframeworkClusterInfoOutputReference interface {
 	cdktf.ComplexObject
-	Autoscale() DataDatabricksClusterPluginframeworkClusterInfoAutoscaleOutputReference
+	Autoscale() DataDatabricksClusterPluginframeworkClusterInfoAutoscaleList
 	AutoscaleInput() interface{}
 	AutoterminationMinutes() *float64
 	SetAutoterminationMinutes(val *float64)
 	AutoterminationMinutesInput() *float64
-	AwsAttributes() DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputReference
+	AwsAttributes() DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesList
 	AwsAttributesInput() interface{}
-	AzureAttributes() DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference
+	AzureAttributes() DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesList
 	AzureAttributesInput() interface{}
 	ClusterCores() *float64
 	SetClusterCores(val *float64)
@@ -28,9 +28,9 @@ type DataDatabricksClusterPluginframeworkClusterInfoOutputReference interface {
 	ClusterId() *string
 	SetClusterId(val *string)
 	ClusterIdInput() *string
-	ClusterLogConf() DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference
+	ClusterLogConf() DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfList
 	ClusterLogConfInput() interface{}
-	ClusterLogStatus() DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference
+	ClusterLogStatus() DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusList
 	ClusterLogStatusInput() interface{}
 	ClusterMemoryMb() *float64
 	SetClusterMemoryMb(val *float64)
@@ -68,9 +68,9 @@ type DataDatabricksClusterPluginframeworkClusterInfoOutputReference interface {
 	DefaultTags() *map[string]*string
 	SetDefaultTags(val *map[string]*string)
 	DefaultTagsInput() *map[string]*string
-	DockerImage() DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference
+	DockerImage() DataDatabricksClusterPluginframeworkClusterInfoDockerImageList
 	DockerImageInput() interface{}
-	Driver() DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference
+	Driver() DataDatabricksClusterPluginframeworkClusterInfoDriverList
 	DriverInput() interface{}
 	DriverInstancePoolId() *string
 	SetDriverInstancePoolId(val *string)
@@ -88,7 +88,7 @@ type DataDatabricksClusterPluginframeworkClusterInfoOutputReference interface {
 	ExecutorsInput() interface{}
 	// Experimental.
 	Fqn() *string
-	GcpAttributes() DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference
+	GcpAttributes() DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesList
 	GcpAttributesInput() interface{}
 	InitScripts() DataDatabricksClusterPluginframeworkClusterInfoInitScriptsList
 	InitScriptsInput() interface{}
@@ -133,7 +133,7 @@ type DataDatabricksClusterPluginframeworkClusterInfoOutputReference interface {
 	SparkVersion() *string
 	SetSparkVersion(val *string)
 	SparkVersionInput() *string
-	Spec() DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference
+	Spec() DataDatabricksClusterPluginframeworkClusterInfoSpecList
 	SpecInput() interface{}
 	SshPublicKeys() *[]*string
 	SetSshPublicKeys(val *[]*string)
@@ -150,7 +150,7 @@ type DataDatabricksClusterPluginframeworkClusterInfoOutputReference interface {
 	TerminatedTime() *float64
 	SetTerminatedTime(val *float64)
 	TerminatedTimeInput() *float64
-	TerminationReason() DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonOutputReference
+	TerminationReason() DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonList
 	TerminationReasonInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
@@ -160,7 +160,7 @@ type DataDatabricksClusterPluginframeworkClusterInfoOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	WorkloadType() DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference
+	WorkloadType() DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeList
 	WorkloadTypeInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
@@ -186,19 +186,19 @@ type DataDatabricksClusterPluginframeworkClusterInfoOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAutoscale(value *DataDatabricksClusterPluginframeworkClusterInfoAutoscale)
-	PutAwsAttributes(value *DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes)
-	PutAzureAttributes(value *DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes)
-	PutClusterLogConf(value *DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf)
-	PutClusterLogStatus(value *DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus)
-	PutDockerImage(value *DataDatabricksClusterPluginframeworkClusterInfoDockerImage)
-	PutDriver(value *DataDatabricksClusterPluginframeworkClusterInfoDriver)
+	PutAutoscale(value interface{})
+	PutAwsAttributes(value interface{})
+	PutAzureAttributes(value interface{})
+	PutClusterLogConf(value interface{})
+	PutClusterLogStatus(value interface{})
+	PutDockerImage(value interface{})
+	PutDriver(value interface{})
 	PutExecutors(value interface{})
-	PutGcpAttributes(value *DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes)
+	PutGcpAttributes(value interface{})
 	PutInitScripts(value interface{})
-	PutSpec(value *DataDatabricksClusterPluginframeworkClusterInfoSpec)
-	PutTerminationReason(value *DataDatabricksClusterPluginframeworkClusterInfoTerminationReason)
-	PutWorkloadType(value *DataDatabricksClusterPluginframeworkClusterInfoWorkloadType)
+	PutSpec(value interface{})
+	PutTerminationReason(value interface{})
+	PutWorkloadType(value interface{})
 	ResetAutoscale()
 	ResetAutoterminationMinutes()
 	ResetAwsAttributes()
@@ -259,8 +259,8 @@ type jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference st
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) Autoscale() DataDatabricksClusterPluginframeworkClusterInfoAutoscaleOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoAutoscaleOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) Autoscale() DataDatabricksClusterPluginframeworkClusterInfoAutoscaleList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoAutoscaleList
 	_jsii_.Get(
 		j,
 		"autoscale",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) AwsAttributes() DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) AwsAttributes() DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesList
 	_jsii_.Get(
 		j,
 		"awsAttributes",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) AzureAttributes() DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) AzureAttributes() DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesList
 	_jsii_.Get(
 		j,
 		"azureAttributes",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) ClusterLogConf() DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) ClusterLogConf() DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfList
 	_jsii_.Get(
 		j,
 		"clusterLogConf",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) ClusterLogStatus() DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) ClusterLogStatus() DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusList
 	_jsii_.Get(
 		j,
 		"clusterLogStatus",
@@ -589,8 +589,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) DockerImage() DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) DockerImage() DataDatabricksClusterPluginframeworkClusterInfoDockerImageList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoDockerImageList
 	_jsii_.Get(
 		j,
 		"dockerImage",
@@ -609,8 +609,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) Driver() DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) Driver() DataDatabricksClusterPluginframeworkClusterInfoDriverList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoDriverList
 	_jsii_.Get(
 		j,
 		"driver",
@@ -739,8 +739,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) GcpAttributes() DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) GcpAttributes() DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesList
 	_jsii_.Get(
 		j,
 		"gcpAttributes",
@@ -1049,8 +1049,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) Spec() DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) Spec() DataDatabricksClusterPluginframeworkClusterInfoSpecList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecList
 	_jsii_.Get(
 		j,
 		"spec",
@@ -1169,8 +1169,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) TerminationReason() DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) TerminationReason() DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonList
 	_jsii_.Get(
 		j,
 		"terminationReason",
@@ -1209,8 +1209,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) WorkloadType() DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) WorkloadType() DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeList
 	_jsii_.Get(
 		j,
 		"workloadType",
@@ -1230,29 +1230,29 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 }
 
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoOutputReference {
+func NewDataDatabricksClusterPluginframeworkClusterInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksClusterPluginframeworkClusterInfoOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksClusterPluginframeworkClusterInfoOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
@@ -1850,7 +1850,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutAutoscale(value *DataDatabricksClusterPluginframeworkClusterInfoAutoscale) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutAutoscale(value interface{}) {
 	if err := d.validatePutAutoscaleParameters(value); err != nil {
 		panic(err)
 	}
@@ -1861,7 +1861,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutAwsAttributes(value *DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutAwsAttributes(value interface{}) {
 	if err := d.validatePutAwsAttributesParameters(value); err != nil {
 		panic(err)
 	}
@@ -1872,7 +1872,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutAzureAttributes(value *DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutAzureAttributes(value interface{}) {
 	if err := d.validatePutAzureAttributesParameters(value); err != nil {
 		panic(err)
 	}
@@ -1883,7 +1883,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutClusterLogConf(value *DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutClusterLogConf(value interface{}) {
 	if err := d.validatePutClusterLogConfParameters(value); err != nil {
 		panic(err)
 	}
@@ -1894,7 +1894,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutClusterLogStatus(value *DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutClusterLogStatus(value interface{}) {
 	if err := d.validatePutClusterLogStatusParameters(value); err != nil {
 		panic(err)
 	}
@@ -1905,7 +1905,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutDockerImage(value *DataDatabricksClusterPluginframeworkClusterInfoDockerImage) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutDockerImage(value interface{}) {
 	if err := d.validatePutDockerImageParameters(value); err != nil {
 		panic(err)
 	}
@@ -1916,7 +1916,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutDriver(value *DataDatabricksClusterPluginframeworkClusterInfoDriver) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutDriver(value interface{}) {
 	if err := d.validatePutDriverParameters(value); err != nil {
 		panic(err)
 	}
@@ -1938,7 +1938,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutGcpAttributes(value *DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutGcpAttributes(value interface{}) {
 	if err := d.validatePutGcpAttributesParameters(value); err != nil {
 		panic(err)
 	}
@@ -1960,7 +1960,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutSpec(value *DataDatabricksClusterPluginframeworkClusterInfoSpec) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutSpec(value interface{}) {
 	if err := d.validatePutSpecParameters(value); err != nil {
 		panic(err)
 	}
@@ -1971,7 +1971,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutTerminationReason(value *DataDatabricksClusterPluginframeworkClusterInfoTerminationReason) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutTerminationReason(value interface{}) {
 	if err := d.validatePutTerminationReasonParameters(value); err != nil {
 		panic(err)
 	}
@@ -1982,7 +1982,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutWorkloadType(value *DataDatabricksClusterPluginframeworkClusterInfoWorkloadType) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) PutWorkloadType(value interface{}) {
 	if err := d.validatePutWorkloadTypeParameters(value); err != nil {
 		panic(err)
 	}

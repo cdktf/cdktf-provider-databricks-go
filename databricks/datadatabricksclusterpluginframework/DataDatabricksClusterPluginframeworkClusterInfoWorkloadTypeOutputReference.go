@@ -13,8 +13,8 @@ import (
 
 type DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference interface {
 	cdktf.ComplexObject
-	Clients() DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference
-	ClientsInput() *DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients
+	Clients() DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsList
+	ClientsInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -66,7 +66,8 @@ type DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutClients(value *DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients)
+	PutClients(value interface{})
+	ResetClients()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -82,8 +83,8 @@ type jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutput
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference) Clients() DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference {
-	var returns DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference) Clients() DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsList {
+	var returns DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsList
 	_jsii_.Get(
 		j,
 		"clients",
@@ -92,8 +93,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOu
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference) ClientsInput() *DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients {
-	var returns *DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference) ClientsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"clientsInput",
@@ -173,29 +174,29 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOu
 }
 
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference {
+func NewDataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference_Override(d DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
@@ -441,7 +442,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference) PutClients(value *DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients) {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference) PutClients(value interface{}) {
 	if err := d.validatePutClientsParameters(value); err != nil {
 		panic(err)
 	}
@@ -449,6 +450,14 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOu
 		d,
 		"putClients",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference) ResetClients() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClients",
+		nil, // no parameters
 	)
 }
 
