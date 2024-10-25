@@ -5,7 +5,7 @@ package qualitymonitorpluginframework
 
 
 type QualityMonitorPluginframeworkDataClassificationConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/quality_monitor_pluginframework#enabled QualityMonitorPluginframework#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/resources/quality_monitor_pluginframework#enabled QualityMonitorPluginframework#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

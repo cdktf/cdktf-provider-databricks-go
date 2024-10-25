@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/storage_credentials databricks_storage_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/data-sources/storage_credentials databricks_storage_credentials}.
 type DataDatabricksStorageCredentials interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -289,7 +289,7 @@ func (j *jsiiProxy_DataDatabricksStorageCredentials) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/storage_credentials databricks_storage_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/data-sources/storage_credentials databricks_storage_credentials} Data Source.
 func NewDataDatabricksStorageCredentials(scope constructs.Construct, id *string, config *DataDatabricksStorageCredentialsConfig) DataDatabricksStorageCredentials {
 	_init_.Initialize()
 
@@ -307,7 +307,7 @@ func NewDataDatabricksStorageCredentials(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/storage_credentials databricks_storage_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/data-sources/storage_credentials databricks_storage_credentials} Data Source.
 func NewDataDatabricksStorageCredentials_Override(d DataDatabricksStorageCredentials, scope constructs.Construct, id *string, config *DataDatabricksStorageCredentialsConfig) {
 	_init_.Initialize()
 

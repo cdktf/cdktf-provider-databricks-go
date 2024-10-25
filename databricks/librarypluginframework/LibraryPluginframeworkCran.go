@@ -5,9 +5,9 @@ package librarypluginframework
 
 
 type LibraryPluginframeworkCran struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#package LibraryPluginframework#package}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/resources/library_pluginframework#package LibraryPluginframework#package}.
 	Package *string `field:"required" json:"package" yaml:"package"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#repo LibraryPluginframework#repo}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/resources/library_pluginframework#repo LibraryPluginframework#repo}.
 	Repo *string `field:"optional" json:"repo" yaml:"repo"`
 }
 
