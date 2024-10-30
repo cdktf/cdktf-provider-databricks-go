@@ -7,9 +7,9 @@ package datadatabrickscluster
 type DataDatabricksClusterClusterInfoDockerImage struct {
 	// basic_auth block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/data-sources/cluster#basic_auth DataDatabricksCluster#basic_auth}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/data-sources/cluster#basic_auth DataDatabricksCluster#basic_auth}
 	BasicAuth *DataDatabricksClusterClusterInfoDockerImageBasicAuth `field:"optional" json:"basicAuth" yaml:"basicAuth"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/data-sources/cluster#url DataDatabricksCluster#url}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/data-sources/cluster#url DataDatabricksCluster#url}.
 	Url *string `field:"optional" json:"url" yaml:"url"`
 }
 

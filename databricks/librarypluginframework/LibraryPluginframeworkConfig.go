@@ -22,27 +22,27 @@ type LibraryPluginframeworkConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/resources/library_pluginframework#cluster_id LibraryPluginframework#cluster_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library_pluginframework#cluster_id LibraryPluginframework#cluster_id}.
 	ClusterId *string `field:"required" json:"clusterId" yaml:"clusterId"`
 	// cran block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/resources/library_pluginframework#cran LibraryPluginframework#cran}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library_pluginframework#cran LibraryPluginframework#cran}
 	Cran interface{} `field:"optional" json:"cran" yaml:"cran"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/resources/library_pluginframework#egg LibraryPluginframework#egg}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library_pluginframework#egg LibraryPluginframework#egg}.
 	Egg *string `field:"optional" json:"egg" yaml:"egg"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/resources/library_pluginframework#jar LibraryPluginframework#jar}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library_pluginframework#jar LibraryPluginframework#jar}.
 	Jar *string `field:"optional" json:"jar" yaml:"jar"`
 	// maven block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/resources/library_pluginframework#maven LibraryPluginframework#maven}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library_pluginframework#maven LibraryPluginframework#maven}
 	Maven interface{} `field:"optional" json:"maven" yaml:"maven"`
 	// pypi block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/resources/library_pluginframework#pypi LibraryPluginframework#pypi}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library_pluginframework#pypi LibraryPluginframework#pypi}
 	Pypi interface{} `field:"optional" json:"pypi" yaml:"pypi"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/resources/library_pluginframework#requirements LibraryPluginframework#requirements}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library_pluginframework#requirements LibraryPluginframework#requirements}.
 	Requirements *string `field:"optional" json:"requirements" yaml:"requirements"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/resources/library_pluginframework#whl LibraryPluginframework#whl}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library_pluginframework#whl LibraryPluginframework#whl}.
 	Whl *string `field:"optional" json:"whl" yaml:"whl"`
 }
 
