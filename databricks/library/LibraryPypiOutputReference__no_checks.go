@@ -59,7 +59,7 @@ func (j *jsiiProxy_LibraryPypiOutputReference) validateSetComplexObjectIsFromSet
 	return nil
 }
 
-func (j *jsiiProxy_LibraryPypiOutputReference) validateSetInternalValueParameters(val *LibraryPypi) error {
+func (j *jsiiProxy_LibraryPypiOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_LibraryPypiOutputReference) validateSetTerraformResourceParam
 	return nil
 }
 
-func validateNewLibraryPypiOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLibraryPypiOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

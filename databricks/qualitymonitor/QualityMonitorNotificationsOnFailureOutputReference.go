@@ -33,8 +33,8 @@ type QualityMonitorNotificationsOnFailureOutputReference interface {
 	EmailAddressesInput() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *QualityMonitorNotificationsOnFailure
-	SetInternalValue(val *QualityMonitorNotificationsOnFailure)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_QualityMonitorNotificationsOnFailureOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorNotificationsOnFailureOutputReference) InternalValue() *QualityMonitorNotificationsOnFailure {
-	var returns *QualityMonitorNotificationsOnFailure
+func (j *jsiiProxy_QualityMonitorNotificationsOnFailureOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -174,29 +174,29 @@ func (j *jsiiProxy_QualityMonitorNotificationsOnFailureOutputReference) Terrafor
 }
 
 
-func NewQualityMonitorNotificationsOnFailureOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QualityMonitorNotificationsOnFailureOutputReference {
+func NewQualityMonitorNotificationsOnFailureOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) QualityMonitorNotificationsOnFailureOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewQualityMonitorNotificationsOnFailureOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewQualityMonitorNotificationsOnFailureOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_QualityMonitorNotificationsOnFailureOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewQualityMonitorNotificationsOnFailureOutputReference_Override(q QualityMonitorNotificationsOnFailureOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewQualityMonitorNotificationsOnFailureOutputReference_Override(q QualityMonitorNotificationsOnFailureOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		q,
 	)
 }
@@ -234,7 +234,7 @@ func (j *jsiiProxy_QualityMonitorNotificationsOnFailureOutputReference)SetEmailA
 	)
 }
 
-func (j *jsiiProxy_QualityMonitorNotificationsOnFailureOutputReference)SetInternalValue(val *QualityMonitorNotificationsOnFailure) {
+func (j *jsiiProxy_QualityMonitorNotificationsOnFailureOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

@@ -33,8 +33,8 @@ type QualityMonitorInferenceLogOutputReference interface {
 	Granularities() *[]*string
 	SetGranularities(val *[]*string)
 	GranularitiesInput() *[]*string
-	InternalValue() *QualityMonitorInferenceLog
-	SetInternalValue(val *QualityMonitorInferenceLog)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	LabelCol() *string
 	SetLabelCol(val *string)
 	LabelColInput() *string
@@ -162,8 +162,8 @@ func (j *jsiiProxy_QualityMonitorInferenceLogOutputReference) GranularitiesInput
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorInferenceLogOutputReference) InternalValue() *QualityMonitorInferenceLog {
-	var returns *QualityMonitorInferenceLog
+func (j *jsiiProxy_QualityMonitorInferenceLogOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -313,29 +313,29 @@ func (j *jsiiProxy_QualityMonitorInferenceLogOutputReference) TimestampColInput(
 }
 
 
-func NewQualityMonitorInferenceLogOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QualityMonitorInferenceLogOutputReference {
+func NewQualityMonitorInferenceLogOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) QualityMonitorInferenceLogOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewQualityMonitorInferenceLogOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewQualityMonitorInferenceLogOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_QualityMonitorInferenceLogOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewQualityMonitorInferenceLogOutputReference_Override(q QualityMonitorInferenceLogOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewQualityMonitorInferenceLogOutputReference_Override(q QualityMonitorInferenceLogOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		q,
 	)
 }
@@ -373,7 +373,7 @@ func (j *jsiiProxy_QualityMonitorInferenceLogOutputReference)SetGranularities(va
 	)
 }
 
-func (j *jsiiProxy_QualityMonitorInferenceLogOutputReference)SetInternalValue(val *QualityMonitorInferenceLog) {
+func (j *jsiiProxy_QualityMonitorInferenceLogOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

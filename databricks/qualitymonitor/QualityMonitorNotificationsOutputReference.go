@@ -30,12 +30,12 @@ type QualityMonitorNotificationsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *QualityMonitorNotifications
-	SetInternalValue(val *QualityMonitorNotifications)
-	OnFailure() QualityMonitorNotificationsOnFailureOutputReference
-	OnFailureInput() *QualityMonitorNotificationsOnFailure
-	OnNewClassificationTagDetected() QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference
-	OnNewClassificationTagDetectedInput() *QualityMonitorNotificationsOnNewClassificationTagDetected
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	OnFailure() QualityMonitorNotificationsOnFailureList
+	OnFailureInput() interface{}
+	OnNewClassificationTagDetected() QualityMonitorNotificationsOnNewClassificationTagDetectedList
+	OnNewClassificationTagDetectedInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,8 +68,8 @@ type QualityMonitorNotificationsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutOnFailure(value *QualityMonitorNotificationsOnFailure)
-	PutOnNewClassificationTagDetected(value *QualityMonitorNotificationsOnNewClassificationTagDetected)
+	PutOnFailure(value interface{})
+	PutOnNewClassificationTagDetected(value interface{})
 	ResetOnFailure()
 	ResetOnNewClassificationTagDetected()
 	// Produce the Token's value at resolution time.
@@ -127,8 +127,8 @@ func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) InternalValue() *QualityMonitorNotifications {
-	var returns *QualityMonitorNotifications
+func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) InternalValue() *
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) OnFailure() QualityMonitorNotificationsOnFailureOutputReference {
-	var returns QualityMonitorNotificationsOnFailureOutputReference
+func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) OnFailure() QualityMonitorNotificationsOnFailureList {
+	var returns QualityMonitorNotificationsOnFailureList
 	_jsii_.Get(
 		j,
 		"onFailure",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) OnFailure() Quali
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) OnFailureInput() *QualityMonitorNotificationsOnFailure {
-	var returns *QualityMonitorNotificationsOnFailure
+func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) OnFailureInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"onFailureInput",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) OnFailureInput() 
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) OnNewClassificationTagDetected() QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference {
-	var returns QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference
+func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) OnNewClassificationTagDetected() QualityMonitorNotificationsOnNewClassificationTagDetectedList {
+	var returns QualityMonitorNotificationsOnNewClassificationTagDetectedList
 	_jsii_.Get(
 		j,
 		"onNewClassificationTagDetected",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) OnNewClassificati
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) OnNewClassificationTagDetectedInput() *QualityMonitorNotificationsOnNewClassificationTagDetected {
-	var returns *QualityMonitorNotificationsOnNewClassificationTagDetected
+func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) OnNewClassificationTagDetectedInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"onNewClassificationTagDetectedInput",
@@ -198,29 +198,29 @@ func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) TerraformResource
 }
 
 
-func NewQualityMonitorNotificationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QualityMonitorNotificationsOutputReference {
+func NewQualityMonitorNotificationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) QualityMonitorNotificationsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewQualityMonitorNotificationsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewQualityMonitorNotificationsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_QualityMonitorNotificationsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewQualityMonitorNotificationsOutputReference_Override(q QualityMonitorNotificationsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewQualityMonitorNotificationsOutputReference_Override(q QualityMonitorNotificationsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		q,
 	)
 }
@@ -247,7 +247,7 @@ func (j *jsiiProxy_QualityMonitorNotificationsOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_QualityMonitorNotificationsOutputReference)SetInternalValue(val *QualityMonitorNotifications) {
+func (j *jsiiProxy_QualityMonitorNotificationsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +466,7 @@ func (q *jsiiProxy_QualityMonitorNotificationsOutputReference) InterpolationForA
 	return returns
 }
 
-func (q *jsiiProxy_QualityMonitorNotificationsOutputReference) PutOnFailure(value *QualityMonitorNotificationsOnFailure) {
+func (q *jsiiProxy_QualityMonitorNotificationsOutputReference) PutOnFailure(value interface{}) {
 	if err := q.validatePutOnFailureParameters(value); err != nil {
 		panic(err)
 	}
@@ -477,7 +477,7 @@ func (q *jsiiProxy_QualityMonitorNotificationsOutputReference) PutOnFailure(valu
 	)
 }
 
-func (q *jsiiProxy_QualityMonitorNotificationsOutputReference) PutOnNewClassificationTagDetected(value *QualityMonitorNotificationsOnNewClassificationTagDetected) {
+func (q *jsiiProxy_QualityMonitorNotificationsOutputReference) PutOnNewClassificationTagDetected(value interface{}) {
 	if err := q.validatePutOnNewClassificationTagDetectedParameters(value); err != nil {
 		panic(err)
 	}

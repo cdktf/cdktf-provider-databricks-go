@@ -30,8 +30,8 @@ type LibraryPypiOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *LibraryPypi
-	SetInternalValue(val *LibraryPypi)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Package() *string
 	SetPackage(val *string)
 	PackageInput() *string
@@ -126,8 +126,8 @@ func (j *jsiiProxy_LibraryPypiOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LibraryPypiOutputReference) InternalValue() *LibraryPypi {
-	var returns *LibraryPypi
+func (j *jsiiProxy_LibraryPypiOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -197,29 +197,29 @@ func (j *jsiiProxy_LibraryPypiOutputReference) TerraformResource() cdktf.IInterp
 }
 
 
-func NewLibraryPypiOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LibraryPypiOutputReference {
+func NewLibraryPypiOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LibraryPypiOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewLibraryPypiOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewLibraryPypiOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_LibraryPypiOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.library.LibraryPypiOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewLibraryPypiOutputReference_Override(l LibraryPypiOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLibraryPypiOutputReference_Override(l LibraryPypiOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.library.LibraryPypiOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
@@ -246,7 +246,7 @@ func (j *jsiiProxy_LibraryPypiOutputReference)SetComplexObjectIsFromSet(val *boo
 	)
 }
 
-func (j *jsiiProxy_LibraryPypiOutputReference)SetInternalValue(val *LibraryPypi) {
+func (j *jsiiProxy_LibraryPypiOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

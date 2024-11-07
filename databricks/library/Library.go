@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library databricks_library}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library databricks_library}.
 type Library interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -30,8 +30,8 @@ type Library interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	Cran() LibraryCranOutputReference
-	CranInput() *LibraryCran
+	Cran() LibraryCranList
+	CranInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,8 +57,8 @@ type Library interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Maven() LibraryMavenOutputReference
-	MavenInput() *LibraryMaven
+	Maven() LibraryMavenList
+	MavenInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -69,8 +69,8 @@ type Library interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
-	Pypi() LibraryPypiOutputReference
-	PypiInput() *LibraryPypi
+	Pypi() LibraryPypiList
+	PypiInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	Requirements() *string
@@ -128,9 +128,9 @@ type Library interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCran(value *LibraryCran)
-	PutMaven(value *LibraryMaven)
-	PutPypi(value *LibraryPypi)
+	PutCran(value interface{})
+	PutMaven(value interface{})
+	PutPypi(value interface{})
 	ResetCran()
 	ResetEgg()
 	ResetId()
@@ -220,8 +220,8 @@ func (j *jsiiProxy_Library) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Library) Cran() LibraryCranOutputReference {
-	var returns LibraryCranOutputReference
+func (j *jsiiProxy_Library) Cran() LibraryCranList {
+	var returns LibraryCranList
 	_jsii_.Get(
 		j,
 		"cran",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_Library) Cran() LibraryCranOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_Library) CranInput() *LibraryCran {
-	var returns *LibraryCran
+func (j *jsiiProxy_Library) CranInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"cranInput",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_Library) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_Library) Maven() LibraryMavenOutputReference {
-	var returns LibraryMavenOutputReference
+func (j *jsiiProxy_Library) Maven() LibraryMavenList {
+	var returns LibraryMavenList
 	_jsii_.Get(
 		j,
 		"maven",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_Library) Maven() LibraryMavenOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_Library) MavenInput() *LibraryMaven {
-	var returns *LibraryMaven
+func (j *jsiiProxy_Library) MavenInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"mavenInput",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_Library) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Library) Pypi() LibraryPypiOutputReference {
-	var returns LibraryPypiOutputReference
+func (j *jsiiProxy_Library) Pypi() LibraryPypiList {
+	var returns LibraryPypiList
 	_jsii_.Get(
 		j,
 		"pypi",
@@ -410,8 +410,8 @@ func (j *jsiiProxy_Library) Pypi() LibraryPypiOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_Library) PypiInput() *LibraryPypi {
-	var returns *LibraryPypi
+func (j *jsiiProxy_Library) PypiInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"pypiInput",
@@ -501,7 +501,7 @@ func (j *jsiiProxy_Library) WhlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library databricks_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library databricks_library} Resource.
 func NewLibrary(scope constructs.Construct, id *string, config *LibraryConfig) Library {
 	_init_.Initialize()
 
@@ -519,7 +519,7 @@ func NewLibrary(scope constructs.Construct, id *string, config *LibraryConfig) L
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library databricks_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library databricks_library} Resource.
 func NewLibrary_Override(l Library, scope constructs.Construct, id *string, config *LibraryConfig) {
 	_init_.Initialize()
 
@@ -1017,7 +1017,7 @@ func (l *jsiiProxy_Library) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (l *jsiiProxy_Library) PutCran(value *LibraryCran) {
+func (l *jsiiProxy_Library) PutCran(value interface{}) {
 	if err := l.validatePutCranParameters(value); err != nil {
 		panic(err)
 	}
@@ -1028,7 +1028,7 @@ func (l *jsiiProxy_Library) PutCran(value *LibraryCran) {
 	)
 }
 
-func (l *jsiiProxy_Library) PutMaven(value *LibraryMaven) {
+func (l *jsiiProxy_Library) PutMaven(value interface{}) {
 	if err := l.validatePutMavenParameters(value); err != nil {
 		panic(err)
 	}
@@ -1039,7 +1039,7 @@ func (l *jsiiProxy_Library) PutMaven(value *LibraryMaven) {
 	)
 }
 
-func (l *jsiiProxy_Library) PutPypi(value *LibraryPypi) {
+func (l *jsiiProxy_Library) PutPypi(value interface{}) {
 	if err := l.validatePutPypiParameters(value); err != nil {
 		panic(err)
 	}

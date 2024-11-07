@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/data-sources/volumes databricks_volumes}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/volumes databricks_volumes}.
 type DataDatabricksVolumes interface {
 	cdktf.TerraformDataSource
 	CatalogName() *string
@@ -38,9 +38,6 @@ type DataDatabricksVolumes interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Ids() *[]*string
 	SetIds(val *[]*string)
 	IdsInput() *[]*string
@@ -90,7 +87,6 @@ type DataDatabricksVolumes interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	ResetIds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -199,26 +195,6 @@ func (j *jsiiProxy_DataDatabricksVolumes) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksVolumes) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksVolumes) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -335,7 +311,7 @@ func (j *jsiiProxy_DataDatabricksVolumes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/data-sources/volumes databricks_volumes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/volumes databricks_volumes} Data Source.
 func NewDataDatabricksVolumes(scope constructs.Construct, id *string, config *DataDatabricksVolumesConfig) DataDatabricksVolumes {
 	_init_.Initialize()
 
@@ -353,7 +329,7 @@ func NewDataDatabricksVolumes(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/data-sources/volumes databricks_volumes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/volumes databricks_volumes} Data Source.
 func NewDataDatabricksVolumes_Override(d DataDatabricksVolumes, scope constructs.Construct, id *string, config *DataDatabricksVolumesConfig) {
 	_init_.Initialize()
 
@@ -398,17 +374,6 @@ func (j *jsiiProxy_DataDatabricksVolumes)SetForEach(val cdktf.ITerraformIterator
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksVolumes)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -736,14 +701,6 @@ func (d *jsiiProxy_DataDatabricksVolumes) OverrideLogicalId(newLogicalId *string
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksVolumes) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

@@ -5,7 +5,7 @@ package qualitymonitor
 
 
 type QualityMonitorNotificationsOnNewClassificationTagDetected struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}.
 	EmailAddresses *[]*string `field:"optional" json:"emailAddresses" yaml:"emailAddresses"`
 }
 

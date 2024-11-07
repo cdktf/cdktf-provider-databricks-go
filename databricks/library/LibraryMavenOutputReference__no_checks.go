@@ -67,7 +67,7 @@ func (j *jsiiProxy_LibraryMavenOutputReference) validateSetExclusionsParameters(
 	return nil
 }
 
-func (j *jsiiProxy_LibraryMavenOutputReference) validateSetInternalValueParameters(val *LibraryMaven) error {
+func (j *jsiiProxy_LibraryMavenOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_LibraryMavenOutputReference) validateSetTerraformResourcePara
 	return nil
 }
 
-func validateNewLibraryMavenOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLibraryMavenOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

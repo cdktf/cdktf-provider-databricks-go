@@ -33,8 +33,8 @@ type QualityMonitorDataClassificationConfigOutputReference interface {
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *QualityMonitorDataClassificationConfig
-	SetInternalValue(val *QualityMonitorDataClassificationConfig)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) Fqn() 
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) InternalValue() *QualityMonitorDataClassificationConfig {
-	var returns *QualityMonitorDataClassificationConfig
+func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -174,29 +174,29 @@ func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) Terraf
 }
 
 
-func NewQualityMonitorDataClassificationConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QualityMonitorDataClassificationConfigOutputReference {
+func NewQualityMonitorDataClassificationConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) QualityMonitorDataClassificationConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewQualityMonitorDataClassificationConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewQualityMonitorDataClassificationConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_QualityMonitorDataClassificationConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewQualityMonitorDataClassificationConfigOutputReference_Override(q QualityMonitorDataClassificationConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewQualityMonitorDataClassificationConfigOutputReference_Override(q QualityMonitorDataClassificationConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		q,
 	)
 }
@@ -234,7 +234,7 @@ func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference)SetEnab
 	)
 }
 
-func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference)SetInternalValue(val *QualityMonitorDataClassificationConfig) {
+func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

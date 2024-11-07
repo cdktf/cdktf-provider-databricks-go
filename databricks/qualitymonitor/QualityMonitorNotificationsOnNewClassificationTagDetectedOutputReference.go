@@ -33,8 +33,8 @@ type QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference in
 	EmailAddressesInput() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *QualityMonitorNotificationsOnNewClassificationTagDetected
-	SetInternalValue(val *QualityMonitorNotificationsOnNewClassificationTagDetected)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_QualityMonitorNotificationsOnNewClassificationTagDetectedOutp
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference) InternalValue() *QualityMonitorNotificationsOnNewClassificationTagDetected {
-	var returns *QualityMonitorNotificationsOnNewClassificationTagDetected
+func (j *jsiiProxy_QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -174,29 +174,29 @@ func (j *jsiiProxy_QualityMonitorNotificationsOnNewClassificationTagDetectedOutp
 }
 
 
-func NewQualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference {
+func NewQualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewQualityMonitorNotificationsOnNewClassificationTagDetectedOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewQualityMonitorNotificationsOnNewClassificationTagDetectedOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewQualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference_Override(q QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewQualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference_Override(q QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		q,
 	)
 }
@@ -234,7 +234,7 @@ func (j *jsiiProxy_QualityMonitorNotificationsOnNewClassificationTagDetectedOutp
 	)
 }
 
-func (j *jsiiProxy_QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference)SetInternalValue(val *QualityMonitorNotificationsOnNewClassificationTagDetected) {
+func (j *jsiiProxy_QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

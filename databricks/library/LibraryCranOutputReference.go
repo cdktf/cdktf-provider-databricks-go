@@ -30,8 +30,8 @@ type LibraryCranOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *LibraryCran
-	SetInternalValue(val *LibraryCran)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Package() *string
 	SetPackage(val *string)
 	PackageInput() *string
@@ -126,8 +126,8 @@ func (j *jsiiProxy_LibraryCranOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LibraryCranOutputReference) InternalValue() *LibraryCran {
-	var returns *LibraryCran
+func (j *jsiiProxy_LibraryCranOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -197,29 +197,29 @@ func (j *jsiiProxy_LibraryCranOutputReference) TerraformResource() cdktf.IInterp
 }
 
 
-func NewLibraryCranOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LibraryCranOutputReference {
+func NewLibraryCranOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LibraryCranOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewLibraryCranOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewLibraryCranOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_LibraryCranOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.library.LibraryCranOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewLibraryCranOutputReference_Override(l LibraryCranOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLibraryCranOutputReference_Override(l LibraryCranOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.library.LibraryCranOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
@@ -246,7 +246,7 @@ func (j *jsiiProxy_LibraryCranOutputReference)SetComplexObjectIsFromSet(val *boo
 	)
 }
 
-func (j *jsiiProxy_LibraryCranOutputReference)SetInternalValue(val *LibraryCran) {
+func (j *jsiiProxy_LibraryCranOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

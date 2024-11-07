@@ -30,8 +30,8 @@ type QualityMonitorScheduleOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *QualityMonitorSchedule
-	SetInternalValue(val *QualityMonitorSchedule)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	PauseStatus() *string
 	QuartzCronExpression() *string
 	SetQuartzCronExpression(val *string)
@@ -126,8 +126,8 @@ func (j *jsiiProxy_QualityMonitorScheduleOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorScheduleOutputReference) InternalValue() *QualityMonitorSchedule {
-	var returns *QualityMonitorSchedule
+func (j *jsiiProxy_QualityMonitorScheduleOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -207,29 +207,29 @@ func (j *jsiiProxy_QualityMonitorScheduleOutputReference) TimezoneIdInput() *str
 }
 
 
-func NewQualityMonitorScheduleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QualityMonitorScheduleOutputReference {
+func NewQualityMonitorScheduleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) QualityMonitorScheduleOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewQualityMonitorScheduleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewQualityMonitorScheduleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_QualityMonitorScheduleOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewQualityMonitorScheduleOutputReference_Override(q QualityMonitorScheduleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewQualityMonitorScheduleOutputReference_Override(q QualityMonitorScheduleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		q,
 	)
 }
@@ -256,7 +256,7 @@ func (j *jsiiProxy_QualityMonitorScheduleOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_QualityMonitorScheduleOutputReference)SetInternalValue(val *QualityMonitorSchedule) {
+func (j *jsiiProxy_QualityMonitorScheduleOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

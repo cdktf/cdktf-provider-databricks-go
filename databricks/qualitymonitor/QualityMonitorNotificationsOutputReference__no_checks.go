@@ -47,11 +47,11 @@ func (q *jsiiProxy_QualityMonitorNotificationsOutputReference) validateInterpola
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorNotificationsOutputReference) validatePutOnFailureParameters(value *QualityMonitorNotificationsOnFailure) error {
+func (q *jsiiProxy_QualityMonitorNotificationsOutputReference) validatePutOnFailureParameters(value interface{}) error {
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorNotificationsOutputReference) validatePutOnNewClassificationTagDetectedParameters(value *QualityMonitorNotificationsOnNewClassificationTagDetected) error {
+func (q *jsiiProxy_QualityMonitorNotificationsOutputReference) validatePutOnNewClassificationTagDetectedParameters(value interface{}) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) validateSetInternalValueParameters(val *QualityMonitorNotifications) error {
+func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_QualityMonitorNotificationsOutputReference) validateSetTerraf
 	return nil
 }
 
-func validateNewQualityMonitorNotificationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewQualityMonitorNotificationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

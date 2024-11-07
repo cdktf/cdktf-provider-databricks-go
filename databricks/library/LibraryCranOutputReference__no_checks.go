@@ -59,7 +59,7 @@ func (j *jsiiProxy_LibraryCranOutputReference) validateSetComplexObjectIsFromSet
 	return nil
 }
 
-func (j *jsiiProxy_LibraryCranOutputReference) validateSetInternalValueParameters(val *LibraryCran) error {
+func (j *jsiiProxy_LibraryCranOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_LibraryCranOutputReference) validateSetTerraformResourceParam
 	return nil
 }
 
-func validateNewLibraryCranOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLibraryCranOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

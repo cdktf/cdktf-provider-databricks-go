@@ -30,8 +30,8 @@ type QualityMonitorSnapshotOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *QualityMonitorSnapshot
-	SetInternalValue(val *QualityMonitorSnapshot)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_QualityMonitorSnapshotOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorSnapshotOutputReference) InternalValue() *QualityMonitorSnapshot {
-	var returns *QualityMonitorSnapshot
+func (j *jsiiProxy_QualityMonitorSnapshotOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -150,29 +150,29 @@ func (j *jsiiProxy_QualityMonitorSnapshotOutputReference) TerraformResource() cd
 }
 
 
-func NewQualityMonitorSnapshotOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QualityMonitorSnapshotOutputReference {
+func NewQualityMonitorSnapshotOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) QualityMonitorSnapshotOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewQualityMonitorSnapshotOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewQualityMonitorSnapshotOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_QualityMonitorSnapshotOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewQualityMonitorSnapshotOutputReference_Override(q QualityMonitorSnapshotOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewQualityMonitorSnapshotOutputReference_Override(q QualityMonitorSnapshotOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		q,
 	)
 }
@@ -199,7 +199,7 @@ func (j *jsiiProxy_QualityMonitorSnapshotOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_QualityMonitorSnapshotOutputReference)SetInternalValue(val *QualityMonitorSnapshot) {
+func (j *jsiiProxy_QualityMonitorSnapshotOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

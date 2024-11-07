@@ -36,8 +36,8 @@ type LibraryMavenOutputReference interface {
 	ExclusionsInput() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *LibraryMaven
-	SetInternalValue(val *LibraryMaven)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Repo() *string
 	SetRepo(val *string)
 	RepoInput() *string
@@ -170,8 +170,8 @@ func (j *jsiiProxy_LibraryMavenOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LibraryMavenOutputReference) InternalValue() *LibraryMaven {
-	var returns *LibraryMaven
+func (j *jsiiProxy_LibraryMavenOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -221,29 +221,29 @@ func (j *jsiiProxy_LibraryMavenOutputReference) TerraformResource() cdktf.IInter
 }
 
 
-func NewLibraryMavenOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LibraryMavenOutputReference {
+func NewLibraryMavenOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LibraryMavenOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewLibraryMavenOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewLibraryMavenOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_LibraryMavenOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.library.LibraryMavenOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewLibraryMavenOutputReference_Override(l LibraryMavenOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLibraryMavenOutputReference_Override(l LibraryMavenOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.library.LibraryMavenOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
@@ -292,7 +292,7 @@ func (j *jsiiProxy_LibraryMavenOutputReference)SetExclusions(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LibraryMavenOutputReference)SetInternalValue(val *LibraryMaven) {
+func (j *jsiiProxy_LibraryMavenOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

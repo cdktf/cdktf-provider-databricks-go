@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataDatabricksVolumes) validateSetCountParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksVolumes) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksVolumes) validateSetIdsParameters(val *[]*string) error {
 	return nil
 }

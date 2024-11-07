@@ -22,38 +22,38 @@ type DashboardConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/dashboard#display_name Dashboard#display_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/dashboard#display_name Dashboard#display_name}.
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/dashboard#parent_path Dashboard#parent_path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/dashboard#parent_path Dashboard#parent_path}.
 	ParentPath *string `field:"required" json:"parentPath" yaml:"parentPath"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/dashboard#warehouse_id Dashboard#warehouse_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/dashboard#warehouse_id Dashboard#warehouse_id}.
 	WarehouseId *string `field:"required" json:"warehouseId" yaml:"warehouseId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/dashboard#create_time Dashboard#create_time}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/dashboard#create_time Dashboard#create_time}.
 	CreateTime *string `field:"optional" json:"createTime" yaml:"createTime"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/dashboard#dashboard_change_detected Dashboard#dashboard_change_detected}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/dashboard#dashboard_change_detected Dashboard#dashboard_change_detected}.
 	DashboardChangeDetected interface{} `field:"optional" json:"dashboardChangeDetected" yaml:"dashboardChangeDetected"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/dashboard#dashboard_id Dashboard#dashboard_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/dashboard#dashboard_id Dashboard#dashboard_id}.
 	DashboardId *string `field:"optional" json:"dashboardId" yaml:"dashboardId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/dashboard#embed_credentials Dashboard#embed_credentials}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/dashboard#embed_credentials Dashboard#embed_credentials}.
 	EmbedCredentials interface{} `field:"optional" json:"embedCredentials" yaml:"embedCredentials"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/dashboard#etag Dashboard#etag}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/dashboard#etag Dashboard#etag}.
 	Etag *string `field:"optional" json:"etag" yaml:"etag"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/dashboard#file_path Dashboard#file_path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/dashboard#file_path Dashboard#file_path}.
 	FilePath *string `field:"optional" json:"filePath" yaml:"filePath"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/dashboard#id Dashboard#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/dashboard#id Dashboard#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/dashboard#lifecycle_state Dashboard#lifecycle_state}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/dashboard#lifecycle_state Dashboard#lifecycle_state}.
 	LifecycleState *string `field:"optional" json:"lifecycleState" yaml:"lifecycleState"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/dashboard#md5 Dashboard#md5}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/dashboard#md5 Dashboard#md5}.
 	Md5 *string `field:"optional" json:"md5" yaml:"md5"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/dashboard#path Dashboard#path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/dashboard#path Dashboard#path}.
 	Path *string `field:"optional" json:"path" yaml:"path"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/dashboard#serialized_dashboard Dashboard#serialized_dashboard}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/dashboard#serialized_dashboard Dashboard#serialized_dashboard}.
 	SerializedDashboard *string `field:"optional" json:"serializedDashboard" yaml:"serializedDashboard"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/dashboard#update_time Dashboard#update_time}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/dashboard#update_time Dashboard#update_time}.
 	UpdateTime *string `field:"optional" json:"updateTime" yaml:"updateTime"`
 }
 

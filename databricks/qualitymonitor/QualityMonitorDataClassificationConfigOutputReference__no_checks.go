@@ -63,7 +63,7 @@ func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) validateSetInternalValueParameters(val *QualityMonitorDataClassificationConfig) error {
+func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_QualityMonitorDataClassificationConfigOutputReference) valida
 	return nil
 }
 
-func validateNewQualityMonitorDataClassificationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewQualityMonitorDataClassificationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -63,7 +63,7 @@ func (j *jsiiProxy_QualityMonitorTimeSeriesOutputReference) validateSetGranulari
 	return nil
 }
 
-func (j *jsiiProxy_QualityMonitorTimeSeriesOutputReference) validateSetInternalValueParameters(val *QualityMonitorTimeSeries) error {
+func (j *jsiiProxy_QualityMonitorTimeSeriesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_QualityMonitorTimeSeriesOutputReference) validateSetTimestamp
 	return nil
 }
 
-func validateNewQualityMonitorTimeSeriesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewQualityMonitorTimeSeriesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

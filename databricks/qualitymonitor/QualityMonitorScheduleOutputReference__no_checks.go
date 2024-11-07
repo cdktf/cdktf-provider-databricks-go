@@ -59,7 +59,7 @@ func (j *jsiiProxy_QualityMonitorScheduleOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_QualityMonitorScheduleOutputReference) validateSetInternalValueParameters(val *QualityMonitorSchedule) error {
+func (j *jsiiProxy_QualityMonitorScheduleOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_QualityMonitorScheduleOutputReference) validateSetTimezoneIdP
 	return nil
 }
 
-func validateNewQualityMonitorScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewQualityMonitorScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -33,8 +33,8 @@ type QualityMonitorTimeSeriesOutputReference interface {
 	Granularities() *[]*string
 	SetGranularities(val *[]*string)
 	GranularitiesInput() *[]*string
-	InternalValue() *QualityMonitorTimeSeries
-	SetInternalValue(val *QualityMonitorTimeSeries)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_QualityMonitorTimeSeriesOutputReference) GranularitiesInput()
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitorTimeSeriesOutputReference) InternalValue() *QualityMonitorTimeSeries {
-	var returns *QualityMonitorTimeSeries
+func (j *jsiiProxy_QualityMonitorTimeSeriesOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -196,29 +196,29 @@ func (j *jsiiProxy_QualityMonitorTimeSeriesOutputReference) TimestampColInput() 
 }
 
 
-func NewQualityMonitorTimeSeriesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QualityMonitorTimeSeriesOutputReference {
+func NewQualityMonitorTimeSeriesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) QualityMonitorTimeSeriesOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewQualityMonitorTimeSeriesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewQualityMonitorTimeSeriesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_QualityMonitorTimeSeriesOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewQualityMonitorTimeSeriesOutputReference_Override(q QualityMonitorTimeSeriesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewQualityMonitorTimeSeriesOutputReference_Override(q QualityMonitorTimeSeriesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		q,
 	)
 }
@@ -256,7 +256,7 @@ func (j *jsiiProxy_QualityMonitorTimeSeriesOutputReference)SetGranularities(val 
 	)
 }
 
-func (j *jsiiProxy_QualityMonitorTimeSeriesOutputReference)SetInternalValue(val *QualityMonitorTimeSeries) {
+func (j *jsiiProxy_QualityMonitorTimeSeriesOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
