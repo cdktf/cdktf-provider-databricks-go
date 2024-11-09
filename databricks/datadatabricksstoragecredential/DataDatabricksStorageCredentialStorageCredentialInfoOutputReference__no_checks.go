@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoOutputReference) validateSetFullNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoOutputReference) validateSetIdParameters(val *string) error {
 	return nil
 }

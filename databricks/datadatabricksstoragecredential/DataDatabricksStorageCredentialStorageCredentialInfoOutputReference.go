@@ -49,6 +49,9 @@ type DataDatabricksStorageCredentialStorageCredentialInfoOutputReference interfa
 	DatabricksGcpServiceAccountInput() *DataDatabricksStorageCredentialStorageCredentialInfoDatabricksGcpServiceAccount
 	// Experimental.
 	Fqn() *string
+	FullName() *string
+	SetFullName(val *string)
+	FullNameInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -123,6 +126,7 @@ type DataDatabricksStorageCredentialStorageCredentialInfoOutputReference interfa
 	ResetCreatedAt()
 	ResetCreatedBy()
 	ResetDatabricksGcpServiceAccount()
+	ResetFullName()
 	ResetId()
 	ResetIsolationMode()
 	ResetMetastoreId()
@@ -342,6 +346,26 @@ func (j *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoOutputRef
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoOutputReference) FullName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fullName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoOutputReference) FullNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fullNameInput",
 		&returns,
 	)
 	return returns
@@ -636,6 +660,17 @@ func (j *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoOutputRef
 	_jsii_.Set(
 		j,
 		"createdBy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoOutputReference)SetFullName(val *string) {
+	if err := j.validateSetFullNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fullName",
 		val,
 	)
 }
@@ -1073,6 +1108,14 @@ func (d *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoOutputRef
 	_jsii_.InvokeVoid(
 		d,
 		"resetDatabricksGcpServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoOutputReference) ResetFullName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFullName",
 		nil, // no parameters
 	)
 }

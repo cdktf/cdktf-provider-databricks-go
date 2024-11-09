@@ -107,6 +107,10 @@ func (p *jsiiProxy_Pipeline) validatePutNotificationParameters(value interface{}
 	return nil
 }
 
+func (p *jsiiProxy_Pipeline) validatePutRestartWindowParameters(value *PipelineRestartWindow) error {
+	return nil
+}
+
 func (p *jsiiProxy_Pipeline) validatePutTimeoutsParameters(value *PipelineTimeouts) error {
 	return nil
 }

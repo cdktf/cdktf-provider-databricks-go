@@ -5,7 +5,7 @@ package query
 
 
 type QueryParameterTextValue struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/query#value Query#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/query#value Query#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

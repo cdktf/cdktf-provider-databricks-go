@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/pipeline databricks_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/pipeline databricks_pipeline}.
 type Pipeline interface {
 	cdktf.TerraformResource
 	AllowDuplicateNames() interface{}
@@ -122,6 +122,8 @@ type Pipeline interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RestartWindow() PipelineRestartWindowOutputReference
+	RestartWindowInput() *PipelineRestartWindow
 	RunAsUserName() *string
 	SetRunAsUserName(val *string)
 	RunAsUserNameInput() *string
@@ -204,6 +206,7 @@ type Pipeline interface {
 	PutLatestUpdates(value interface{})
 	PutLibrary(value interface{})
 	PutNotification(value interface{})
+	PutRestartWindow(value *PipelineRestartWindow)
 	PutTimeouts(value *PipelineTimeouts)
 	PutTrigger(value *PipelineTrigger)
 	ResetAllowDuplicateNames()
@@ -234,6 +237,7 @@ type Pipeline interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPhoton()
+	ResetRestartWindow()
 	ResetRunAsUserName()
 	ResetSchema()
 	ResetServerless()
@@ -891,6 +895,26 @@ func (j *jsiiProxy_Pipeline) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Pipeline) RestartWindow() PipelineRestartWindowOutputReference {
+	var returns PipelineRestartWindowOutputReference
+	_jsii_.Get(
+		j,
+		"restartWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) RestartWindowInput() *PipelineRestartWindow {
+	var returns *PipelineRestartWindow
+	_jsii_.Get(
+		j,
+		"restartWindowInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Pipeline) RunAsUserName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1102,7 +1126,7 @@ func (j *jsiiProxy_Pipeline) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig) Pipeline {
 	_init_.Initialize()
 
@@ -1120,7 +1144,7 @@ func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline_Override(p Pipeline, scope constructs.Construct, id *string, config *PipelineConfig) {
 	_init_.Initialize()
 
@@ -1904,6 +1928,17 @@ func (p *jsiiProxy_Pipeline) PutNotification(value interface{}) {
 	)
 }
 
+func (p *jsiiProxy_Pipeline) PutRestartWindow(value *PipelineRestartWindow) {
+	if err := p.validatePutRestartWindowParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putRestartWindow",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_Pipeline) PutTimeouts(value *PipelineTimeouts) {
 	if err := p.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -2130,6 +2165,14 @@ func (p *jsiiProxy_Pipeline) ResetPhoton() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPhoton",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Pipeline) ResetRestartWindow() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRestartWindow",
 		nil, // no parameters
 	)
 }

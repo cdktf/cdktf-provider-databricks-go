@@ -26,6 +26,9 @@ type PipelineGatewayDefinitionOutputReference interface {
 	ConnectionId() *string
 	SetConnectionId(val *string)
 	ConnectionIdInput() *string
+	ConnectionName() *string
+	SetConnectionName(val *string)
+	ConnectionNameInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -77,6 +80,7 @@ type PipelineGatewayDefinitionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetConnectionId()
+	ResetConnectionName()
 	ResetGatewayStorageCatalog()
 	ResetGatewayStorageName()
 	ResetGatewayStorageSchema()
@@ -130,6 +134,26 @@ func (j *jsiiProxy_PipelineGatewayDefinitionOutputReference) ConnectionIdInput()
 	_jsii_.Get(
 		j,
 		"connectionIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineGatewayDefinitionOutputReference) ConnectionName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineGatewayDefinitionOutputReference) ConnectionNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionNameInput",
 		&returns,
 	)
 	return returns
@@ -302,6 +326,17 @@ func (j *jsiiProxy_PipelineGatewayDefinitionOutputReference)SetConnectionId(val 
 	_jsii_.Set(
 		j,
 		"connectionId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineGatewayDefinitionOutputReference)SetConnectionName(val *string) {
+	if err := j.validateSetConnectionNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connectionName",
 		val,
 	)
 }
@@ -562,6 +597,14 @@ func (p *jsiiProxy_PipelineGatewayDefinitionOutputReference) ResetConnectionId()
 	_jsii_.InvokeVoid(
 		p,
 		"resetConnectionId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineGatewayDefinitionOutputReference) ResetConnectionName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetConnectionName",
 		nil, // no parameters
 	)
 }

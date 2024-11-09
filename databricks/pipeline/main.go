@@ -102,6 +102,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putLatestUpdates", GoMethod: "PutLatestUpdates"},
 			_jsii_.MemberMethod{JsiiMethod: "putLibrary", GoMethod: "PutLibrary"},
 			_jsii_.MemberMethod{JsiiMethod: "putNotification", GoMethod: "PutNotification"},
+			_jsii_.MemberMethod{JsiiMethod: "putRestartWindow", GoMethod: "PutRestartWindow"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putTrigger", GoMethod: "PutTrigger"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -131,6 +132,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNotification", GoMethod: "ResetNotification"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPhoton", GoMethod: "ResetPhoton"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRestartWindow", GoMethod: "ResetRestartWindow"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRunAsUserName", GoMethod: "ResetRunAsUserName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSchema", GoMethod: "ResetSchema"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServerless", GoMethod: "ResetServerless"},
@@ -140,6 +142,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTrigger", GoMethod: "ResetTrigger"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUrl", GoMethod: "ResetUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "restartWindow", GoGetter: "RestartWindow"},
+			_jsii_.MemberProperty{JsiiProperty: "restartWindowInput", GoGetter: "RestartWindowInput"},
 			_jsii_.MemberProperty{JsiiProperty: "runAsUserName", GoGetter: "RunAsUserName"},
 			_jsii_.MemberProperty{JsiiProperty: "runAsUserNameInput", GoGetter: "RunAsUserNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "schema", GoGetter: "Schema"},
@@ -1152,6 +1156,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionId", GoGetter: "ConnectionId"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionIdInput", GoGetter: "ConnectionIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionName", GoGetter: "ConnectionName"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionNameInput", GoGetter: "ConnectionNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "gatewayStorageCatalog", GoGetter: "GatewayStorageCatalog"},
@@ -1173,6 +1179,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionId", GoMethod: "ResetConnectionId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectionName", GoMethod: "ResetConnectionName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGatewayStorageCatalog", GoMethod: "ResetGatewayStorageCatalog"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGatewayStorageName", GoMethod: "ResetGatewayStorageName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGatewayStorageSchema", GoMethod: "ResetGatewayStorageSchema"},
@@ -1986,6 +1993,50 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PipelineNotificationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.pipeline.PipelineRestartWindow",
+		reflect.TypeOf((*PipelineRestartWindow)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.pipeline.PipelineRestartWindowOutputReference",
+		reflect.TypeOf((*PipelineRestartWindowOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "daysOfWeek", GoGetter: "DaysOfWeek"},
+			_jsii_.MemberProperty{JsiiProperty: "daysOfWeekInput", GoGetter: "DaysOfWeekInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDaysOfWeek", GoMethod: "ResetDaysOfWeek"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTimeZoneId", GoMethod: "ResetTimeZoneId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "startHour", GoGetter: "StartHour"},
+			_jsii_.MemberProperty{JsiiProperty: "startHourInput", GoGetter: "StartHourInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "timeZoneId", GoGetter: "TimeZoneId"},
+			_jsii_.MemberProperty{JsiiProperty: "timeZoneIdInput", GoGetter: "TimeZoneIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineRestartWindowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

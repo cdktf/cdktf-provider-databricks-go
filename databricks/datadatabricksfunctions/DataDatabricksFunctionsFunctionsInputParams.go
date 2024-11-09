@@ -7,7 +7,7 @@ package datadatabricksfunctions
 type DataDatabricksFunctionsFunctionsInputParams struct {
 	// parameters block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/functions#parameters DataDatabricksFunctions#parameters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/functions#parameters DataDatabricksFunctions#parameters}
 	Parameters interface{} `field:"optional" json:"parameters" yaml:"parameters"`
 }
 

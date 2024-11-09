@@ -22,18 +22,18 @@ type GitCredentialConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/git_credential#git_provider GitCredential#git_provider}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/git_credential#git_provider GitCredential#git_provider}.
 	GitProvider *string `field:"required" json:"gitProvider" yaml:"gitProvider"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/git_credential#force GitCredential#force}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/git_credential#force GitCredential#force}.
 	Force interface{} `field:"optional" json:"force" yaml:"force"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/git_credential#git_username GitCredential#git_username}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/git_credential#git_username GitCredential#git_username}.
 	GitUsername *string `field:"optional" json:"gitUsername" yaml:"gitUsername"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/git_credential#id GitCredential#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/git_credential#id GitCredential#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/git_credential#personal_access_token GitCredential#personal_access_token}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/git_credential#personal_access_token GitCredential#personal_access_token}.
 	PersonalAccessToken *string `field:"optional" json:"personalAccessToken" yaml:"personalAccessToken"`
 }
 

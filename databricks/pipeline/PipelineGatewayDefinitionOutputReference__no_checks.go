@@ -63,6 +63,10 @@ func (j *jsiiProxy_PipelineGatewayDefinitionOutputReference) validateSetConnecti
 	return nil
 }
 
+func (j *jsiiProxy_PipelineGatewayDefinitionOutputReference) validateSetConnectionNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipelineGatewayDefinitionOutputReference) validateSetGatewayStorageCatalogParameters(val *string) error {
 	return nil
 }

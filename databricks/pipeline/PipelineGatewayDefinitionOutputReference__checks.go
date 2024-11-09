@@ -174,6 +174,14 @@ func (j *jsiiProxy_PipelineGatewayDefinitionOutputReference) validateSetConnecti
 	return nil
 }
 
+func (j *jsiiProxy_PipelineGatewayDefinitionOutputReference) validateSetConnectionNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PipelineGatewayDefinitionOutputReference) validateSetGatewayStorageCatalogParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
