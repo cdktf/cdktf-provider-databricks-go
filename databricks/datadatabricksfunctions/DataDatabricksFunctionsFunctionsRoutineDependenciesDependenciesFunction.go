@@ -5,7 +5,7 @@ package datadatabricksfunctions
 
 
 type DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/functions#function_full_name DataDatabricksFunctions#function_full_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/functions#function_full_name DataDatabricksFunctions#function_full_name}.
 	FunctionFullName *string `field:"required" json:"functionFullName" yaml:"functionFullName"`
 }
 

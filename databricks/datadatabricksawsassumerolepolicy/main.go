@@ -15,6 +15,8 @@ func init() {
 		reflect.TypeOf((*DataDatabricksAwsAssumeRolePolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "awsPartition", GoGetter: "AwsPartition"},
+			_jsii_.MemberProperty{JsiiProperty: "awsPartitionInput", GoGetter: "AwsPartitionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -46,6 +48,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAwsPartition", GoMethod: "ResetAwsPartition"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabricksAccountId", GoMethod: "ResetDatabricksAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForLogDelivery", GoMethod: "ResetForLogDelivery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

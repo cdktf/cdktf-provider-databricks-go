@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/aws_unity_catalog_assume_role_policy databricks_aws_unity_catalog_assume_role_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/aws_unity_catalog_assume_role_policy databricks_aws_unity_catalog_assume_role_policy}.
 type DataDatabricksAwsUnityCatalogAssumeRolePolicy interface {
 	cdktf.TerraformDataSource
 	AwsAccountId() *string
 	SetAwsAccountId(val *string)
 	AwsAccountIdInput() *string
+	AwsPartition() *string
+	SetAwsPartition(val *string)
+	AwsPartitionInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -92,6 +95,7 @@ type DataDatabricksAwsUnityCatalogAssumeRolePolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAwsPartition()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -130,6 +134,26 @@ func (j *jsiiProxy_DataDatabricksAwsUnityCatalogAssumeRolePolicy) AwsAccountIdIn
 	_jsii_.Get(
 		j,
 		"awsAccountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAwsUnityCatalogAssumeRolePolicy) AwsPartition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsPartition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAwsUnityCatalogAssumeRolePolicy) AwsPartitionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsPartitionInput",
 		&returns,
 	)
 	return returns
@@ -356,7 +380,7 @@ func (j *jsiiProxy_DataDatabricksAwsUnityCatalogAssumeRolePolicy) UnityCatalogIa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/aws_unity_catalog_assume_role_policy databricks_aws_unity_catalog_assume_role_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/aws_unity_catalog_assume_role_policy databricks_aws_unity_catalog_assume_role_policy} Data Source.
 func NewDataDatabricksAwsUnityCatalogAssumeRolePolicy(scope constructs.Construct, id *string, config *DataDatabricksAwsUnityCatalogAssumeRolePolicyConfig) DataDatabricksAwsUnityCatalogAssumeRolePolicy {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewDataDatabricksAwsUnityCatalogAssumeRolePolicy(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/aws_unity_catalog_assume_role_policy databricks_aws_unity_catalog_assume_role_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/aws_unity_catalog_assume_role_policy databricks_aws_unity_catalog_assume_role_policy} Data Source.
 func NewDataDatabricksAwsUnityCatalogAssumeRolePolicy_Override(d DataDatabricksAwsUnityCatalogAssumeRolePolicy, scope constructs.Construct, id *string, config *DataDatabricksAwsUnityCatalogAssumeRolePolicyConfig) {
 	_init_.Initialize()
 
@@ -392,6 +416,17 @@ func (j *jsiiProxy_DataDatabricksAwsUnityCatalogAssumeRolePolicy)SetAwsAccountId
 	_jsii_.Set(
 		j,
 		"awsAccountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAwsUnityCatalogAssumeRolePolicy)SetAwsPartition(val *string) {
+	if err := j.validateSetAwsPartitionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"awsPartition",
 		val,
 	)
 }
@@ -757,6 +792,14 @@ func (d *jsiiProxy_DataDatabricksAwsUnityCatalogAssumeRolePolicy) OverrideLogica
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAwsUnityCatalogAssumeRolePolicy) ResetAwsPartition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAwsPartition",
+		nil, // no parameters
 	)
 }
 

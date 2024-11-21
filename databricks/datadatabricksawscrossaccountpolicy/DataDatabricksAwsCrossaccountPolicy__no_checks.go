@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetAwsAccountIdP
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetAwsPartitionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAwsCrossaccountPolicy) validateSetCountParameters(val interface{}) error {
 	return nil
 }

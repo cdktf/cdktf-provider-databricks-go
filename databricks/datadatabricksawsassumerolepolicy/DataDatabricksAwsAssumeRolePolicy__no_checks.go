@@ -71,6 +71,10 @@ func validateDataDatabricksAwsAssumeRolePolicy_IsTerraformElementParameters(x in
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAwsAssumeRolePolicy) validateSetAwsPartitionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAwsAssumeRolePolicy) validateSetCountParameters(val interface{}) error {
 	return nil
 }

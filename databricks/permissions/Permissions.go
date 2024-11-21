@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/permissions databricks_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/permissions databricks_permissions}.
 type Permissions interface {
 	cdktf.TerraformResource
 	AccessControl() PermissionsAccessControlList
@@ -129,6 +129,9 @@ type Permissions interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	VectorSearchEndpointId() *string
+	SetVectorSearchEndpointId(val *string)
+	VectorSearchEndpointIdInput() *string
 	WorkspaceFileId() *string
 	SetWorkspaceFileId(val *string)
 	WorkspaceFileIdInput() *string
@@ -204,6 +207,7 @@ type Permissions interface {
 	ResetSqlDashboardId()
 	ResetSqlEndpointId()
 	ResetSqlQueryId()
+	ResetVectorSearchEndpointId()
 	ResetWorkspaceFileId()
 	ResetWorkspaceFilePath()
 	SynthesizeAttributes() *map[string]interface{}
@@ -844,6 +848,26 @@ func (j *jsiiProxy_Permissions) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Permissions) VectorSearchEndpointId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vectorSearchEndpointId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Permissions) VectorSearchEndpointIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vectorSearchEndpointIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Permissions) WorkspaceFileId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -885,7 +909,7 @@ func (j *jsiiProxy_Permissions) WorkspaceFilePathInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/permissions databricks_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/permissions databricks_permissions} Resource.
 func NewPermissions(scope constructs.Construct, id *string, config *PermissionsConfig) Permissions {
 	_init_.Initialize()
 
@@ -903,7 +927,7 @@ func NewPermissions(scope constructs.Construct, id *string, config *PermissionsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/permissions databricks_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/permissions databricks_permissions} Resource.
 func NewPermissions_Override(p Permissions, scope constructs.Construct, id *string, config *PermissionsConfig) {
 	_init_.Initialize()
 
@@ -1220,6 +1244,17 @@ func (j *jsiiProxy_Permissions)SetSqlQueryId(val *string) {
 	_jsii_.Set(
 		j,
 		"sqlQueryId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Permissions)SetVectorSearchEndpointId(val *string) {
+	if err := j.validateSetVectorSearchEndpointIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vectorSearchEndpointId",
 		val,
 	)
 }
@@ -1790,6 +1825,14 @@ func (p *jsiiProxy_Permissions) ResetSqlQueryId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetSqlQueryId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Permissions) ResetVectorSearchEndpointId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetVectorSearchEndpointId",
 		nil, // no parameters
 	)
 }

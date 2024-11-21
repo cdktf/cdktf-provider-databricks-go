@@ -199,6 +199,10 @@ func (j *jsiiProxy_Permissions) validateSetSqlQueryIdParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_Permissions) validateSetVectorSearchEndpointIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Permissions) validateSetWorkspaceFileIdParameters(val *string) error {
 	return nil
 }

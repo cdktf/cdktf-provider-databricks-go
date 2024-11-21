@@ -15,6 +15,8 @@ func init() {
 		reflect.TypeOf((*DataDatabricksAwsBucketPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "awsPartition", GoGetter: "AwsPartition"},
+			_jsii_.MemberProperty{JsiiProperty: "awsPartitionInput", GoGetter: "AwsPartitionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -48,6 +50,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAwsPartition", GoMethod: "ResetAwsPartition"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabricksAccountId", GoMethod: "ResetDatabricksAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabricksE2AccountId", GoMethod: "ResetDatabricksE2AccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFullAccessRole", GoMethod: "ResetFullAccessRole"},

@@ -5,7 +5,7 @@ package pipeline
 
 
 type PipelineLibraryNotebook struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/pipeline#path Pipeline#path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/pipeline#path Pipeline#path}.
 	Path *string `field:"optional" json:"path" yaml:"path"`
 }
 

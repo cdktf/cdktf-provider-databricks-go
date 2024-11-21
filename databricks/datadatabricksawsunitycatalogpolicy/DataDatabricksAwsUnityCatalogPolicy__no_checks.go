@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) validateSetAwsAccountIdP
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) validateSetAwsPartitionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAwsUnityCatalogPolicy) validateSetBucketNameParameters(val *string) error {
 	return nil
 }

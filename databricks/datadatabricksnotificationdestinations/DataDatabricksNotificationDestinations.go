@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/notification_destinations databricks_notification_destinations}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/notification_destinations databricks_notification_destinations}.
 type DataDatabricksNotificationDestinations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -313,7 +313,7 @@ func (j *jsiiProxy_DataDatabricksNotificationDestinations) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/notification_destinations databricks_notification_destinations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/notification_destinations databricks_notification_destinations} Data Source.
 func NewDataDatabricksNotificationDestinations(scope constructs.Construct, id *string, config *DataDatabricksNotificationDestinationsConfig) DataDatabricksNotificationDestinations {
 	_init_.Initialize()
 
@@ -331,7 +331,7 @@ func NewDataDatabricksNotificationDestinations(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/notification_destinations databricks_notification_destinations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/notification_destinations databricks_notification_destinations} Data Source.
 func NewDataDatabricksNotificationDestinations_Override(d DataDatabricksNotificationDestinations, scope constructs.Construct, id *string, config *DataDatabricksNotificationDestinationsConfig) {
 	_init_.Initialize()
 

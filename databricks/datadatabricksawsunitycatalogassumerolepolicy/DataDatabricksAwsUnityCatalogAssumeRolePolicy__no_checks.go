@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataDatabricksAwsUnityCatalogAssumeRolePolicy) validateSetAws
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAwsUnityCatalogAssumeRolePolicy) validateSetAwsPartitionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAwsUnityCatalogAssumeRolePolicy) validateSetCountParameters(val interface{}) error {
 	return nil
 }

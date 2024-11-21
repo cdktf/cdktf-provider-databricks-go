@@ -71,6 +71,10 @@ func validateDataDatabricksAwsBucketPolicy_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) validateSetAwsPartitionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) validateSetBucketParameters(val *string) error {
 	return nil
 }

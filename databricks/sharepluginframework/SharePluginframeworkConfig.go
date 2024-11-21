@@ -22,29 +22,29 @@ type SharePluginframeworkConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/share_pluginframework#name SharePluginframework#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/share_pluginframework#name SharePluginframework#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}.
 	Comment *string `field:"optional" json:"comment" yaml:"comment"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/share_pluginframework#created_at SharePluginframework#created_at}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/share_pluginframework#created_at SharePluginframework#created_at}.
 	CreatedAt *float64 `field:"optional" json:"createdAt" yaml:"createdAt"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/share_pluginframework#created_by SharePluginframework#created_by}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/share_pluginframework#created_by SharePluginframework#created_by}.
 	CreatedBy *string `field:"optional" json:"createdBy" yaml:"createdBy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/share_pluginframework#effective_owner SharePluginframework#effective_owner}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/share_pluginframework#effective_owner SharePluginframework#effective_owner}.
 	EffectiveOwner *string `field:"optional" json:"effectiveOwner" yaml:"effectiveOwner"`
 	// object block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/share_pluginframework#object SharePluginframework#object}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/share_pluginframework#object SharePluginframework#object}
 	Object interface{} `field:"optional" json:"object" yaml:"object"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/share_pluginframework#owner SharePluginframework#owner}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/share_pluginframework#owner SharePluginframework#owner}.
 	Owner *string `field:"optional" json:"owner" yaml:"owner"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/share_pluginframework#storage_location SharePluginframework#storage_location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/share_pluginframework#storage_location SharePluginframework#storage_location}.
 	StorageLocation *string `field:"optional" json:"storageLocation" yaml:"storageLocation"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/share_pluginframework#storage_root SharePluginframework#storage_root}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/share_pluginframework#storage_root SharePluginframework#storage_root}.
 	StorageRoot *string `field:"optional" json:"storageRoot" yaml:"storageRoot"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/share_pluginframework#updated_at SharePluginframework#updated_at}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/share_pluginframework#updated_at SharePluginframework#updated_at}.
 	UpdatedAt *float64 `field:"optional" json:"updatedAt" yaml:"updatedAt"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/share_pluginframework#updated_by SharePluginframework#updated_by}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/share_pluginframework#updated_by SharePluginframework#updated_by}.
 	UpdatedBy *string `field:"optional" json:"updatedBy" yaml:"updatedBy"`
 }
 
