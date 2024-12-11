@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/grant databricks_grant}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/grant databricks_grant}.
 type Grant interface {
 	cdktf.TerraformResource
 	Catalog() *string
@@ -30,6 +30,9 @@ type Grant interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Credential() *string
+	SetCredential(val *string)
+	CredentialInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -153,6 +156,7 @@ type Grant interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetCatalog()
+	ResetCredential()
 	ResetExternalLocation()
 	ResetForeignConnection()
 	ResetFunction()
@@ -242,6 +246,26 @@ func (j *jsiiProxy_Grant) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grant) Credential() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credential",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grant) CredentialInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialInput",
 		&returns,
 	)
 	return returns
@@ -668,7 +692,7 @@ func (j *jsiiProxy_Grant) VolumeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/grant databricks_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/grant databricks_grant} Resource.
 func NewGrant(scope constructs.Construct, id *string, config *GrantConfig) Grant {
 	_init_.Initialize()
 
@@ -686,7 +710,7 @@ func NewGrant(scope constructs.Construct, id *string, config *GrantConfig) Grant
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/grant databricks_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/grant databricks_grant} Resource.
 func NewGrant_Override(g Grant, scope constructs.Construct, id *string, config *GrantConfig) {
 	_init_.Initialize()
 
@@ -726,6 +750,17 @@ func (j *jsiiProxy_Grant)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Grant)SetCredential(val *string) {
+	if err := j.validateSetCredentialParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credential",
 		val,
 	)
 }
@@ -1298,6 +1333,14 @@ func (g *jsiiProxy_Grant) ResetCatalog() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetCatalog",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Grant) ResetCredential() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCredential",
 		nil, // no parameters
 	)
 }

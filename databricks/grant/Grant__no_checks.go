@@ -103,6 +103,10 @@ func (j *jsiiProxy_Grant) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Grant) validateSetCredentialParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Grant) validateSetExternalLocationParameters(val *string) error {
 	return nil
 }

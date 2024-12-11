@@ -91,10 +91,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetCreatedByParam
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetEffectiveOwnerParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

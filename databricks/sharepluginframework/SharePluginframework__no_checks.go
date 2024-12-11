@@ -115,10 +115,6 @@ func (j *jsiiProxy_SharePluginframework) validateSetCreatedByParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_SharePluginframework) validateSetEffectiveOwnerParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_SharePluginframework) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -385,6 +385,14 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) validateSetDirectoryParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_AzureAdlsGen2Mount) validateSetEnvironmentParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AzureAdlsGen2Mount) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -24,7 +24,7 @@ type DataDatabricksServingEndpointsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// endpoints block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/serving_endpoints#endpoints DataDatabricksServingEndpoints#endpoints}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/serving_endpoints#endpoints DataDatabricksServingEndpoints#endpoints}
 	Endpoints interface{} `field:"optional" json:"endpoints" yaml:"endpoints"`
 }
 

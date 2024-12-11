@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataDatabricksJobs) validateSetIdsParameters(val *map[string]
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobs) validateSetJobNameContainsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobs) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

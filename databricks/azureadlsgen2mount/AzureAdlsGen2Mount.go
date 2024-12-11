@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount}.
 type AzureAdlsGen2Mount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -49,6 +49,9 @@ type AzureAdlsGen2Mount interface {
 	Directory() *string
 	SetDirectory(val *string)
 	DirectoryInput() *string
+	Environment() *string
+	SetEnvironment(val *string)
+	EnvironmentInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -140,6 +143,7 @@ type AzureAdlsGen2Mount interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetClusterId()
 	ResetDirectory()
+	ResetEnvironment()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -327,6 +331,26 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) DirectoryInput() *string {
 	_jsii_.Get(
 		j,
 		"directoryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAdlsGen2Mount) Environment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAdlsGen2Mount) EnvironmentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentInput",
 		&returns,
 	)
 	return returns
@@ -553,7 +577,7 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource.
 func NewAzureAdlsGen2Mount(scope constructs.Construct, id *string, config *AzureAdlsGen2MountConfig) AzureAdlsGen2Mount {
 	_init_.Initialize()
 
@@ -571,7 +595,7 @@ func NewAzureAdlsGen2Mount(scope constructs.Construct, id *string, config *Azure
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource.
 func NewAzureAdlsGen2Mount_Override(a AzureAdlsGen2Mount, scope constructs.Construct, id *string, config *AzureAdlsGen2MountConfig) {
 	_init_.Initialize()
 
@@ -674,6 +698,17 @@ func (j *jsiiProxy_AzureAdlsGen2Mount)SetDirectory(val *string) {
 	_jsii_.Set(
 		j,
 		"directory",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureAdlsGen2Mount)SetEnvironment(val *string) {
+	if err := j.validateSetEnvironmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"environment",
 		val,
 	)
 }
@@ -1136,6 +1171,14 @@ func (a *jsiiProxy_AzureAdlsGen2Mount) ResetDirectory() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDirectory",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureAdlsGen2Mount) ResetEnvironment() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnvironment",
 		nil, // no parameters
 	)
 }

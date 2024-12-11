@@ -123,6 +123,10 @@ func (j *jsiiProxy_AzureAdlsGen2Mount) validateSetDirectoryParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_AzureAdlsGen2Mount) validateSetEnvironmentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureAdlsGen2Mount) validateSetIdParameters(val *string) error {
 	return nil
 }

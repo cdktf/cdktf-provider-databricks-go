@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/share_pluginframework databricks_share_pluginframework}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/share_pluginframework databricks_share_pluginframework}.
 type SharePluginframework interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,9 +40,6 @@ type SharePluginframework interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EffectiveOwner() *string
-	SetEffectiveOwner(val *string)
-	EffectiveOwnerInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -140,7 +137,6 @@ type SharePluginframework interface {
 	ResetComment()
 	ResetCreatedAt()
 	ResetCreatedBy()
-	ResetEffectiveOwner()
 	ResetObject()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -273,26 +269,6 @@ func (j *jsiiProxy_SharePluginframework) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SharePluginframework) EffectiveOwner() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"effectiveOwner",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SharePluginframework) EffectiveOwnerInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"effectiveOwnerInput",
 		&returns,
 	)
 	return returns
@@ -549,7 +525,7 @@ func (j *jsiiProxy_SharePluginframework) UpdatedByInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/share_pluginframework databricks_share_pluginframework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/share_pluginframework databricks_share_pluginframework} Resource.
 func NewSharePluginframework(scope constructs.Construct, id *string, config *SharePluginframeworkConfig) SharePluginframework {
 	_init_.Initialize()
 
@@ -567,7 +543,7 @@ func NewSharePluginframework(scope constructs.Construct, id *string, config *Sha
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/share_pluginframework databricks_share_pluginframework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/share_pluginframework databricks_share_pluginframework} Resource.
 func NewSharePluginframework_Override(s SharePluginframework, scope constructs.Construct, id *string, config *SharePluginframeworkConfig) {
 	_init_.Initialize()
 
@@ -637,17 +613,6 @@ func (j *jsiiProxy_SharePluginframework)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SharePluginframework)SetEffectiveOwner(val *string) {
-	if err := j.validateSetEffectiveOwnerParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"effectiveOwner",
 		val,
 	)
 }
@@ -1140,14 +1105,6 @@ func (s *jsiiProxy_SharePluginframework) ResetCreatedBy() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCreatedBy",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SharePluginframework) ResetEffectiveOwner() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetEffectiveOwner",
 		nil, // no parameters
 	)
 }
