@@ -76,8 +76,6 @@ type SharePluginframeworkObjectPartitionValueOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetName()
-	ResetOp()
 	ResetRecipientPropertyKey()
 	ResetValue()
 	// Produce the Token's value at resolution time.
@@ -556,22 +554,6 @@ func (s *jsiiProxy_SharePluginframeworkObjectPartitionValueOutputReference) Inte
 	)
 
 	return returns
-}
-
-func (s *jsiiProxy_SharePluginframeworkObjectPartitionValueOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SharePluginframeworkObjectPartitionValueOutputReference) ResetOp() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetOp",
-		nil, // no parameters
-	)
 }
 
 func (s *jsiiProxy_SharePluginframeworkObjectPartitionValueOutputReference) ResetRecipientPropertyKey() {

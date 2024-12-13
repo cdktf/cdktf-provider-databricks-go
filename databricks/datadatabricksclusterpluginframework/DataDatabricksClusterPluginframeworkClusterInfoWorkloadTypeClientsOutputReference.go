@@ -30,8 +30,8 @@ type DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputRef
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients
+	SetInternalValue(val *DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients)
 	Jobs() interface{}
 	SetJobs(val interface{})
 	JobsInput() interface{}
@@ -127,8 +127,8 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeCl
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference) InternalValue() *DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients {
+	var returns *DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -247,7 +247,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeCl
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference)SetInternalValue(val *DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

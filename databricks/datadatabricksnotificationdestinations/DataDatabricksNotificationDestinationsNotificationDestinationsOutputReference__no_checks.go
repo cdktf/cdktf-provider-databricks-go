@@ -71,7 +71,7 @@ func (j *jsiiProxy_DataDatabricksNotificationDestinationsNotificationDestination
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference) validateSetInternalValueParameters(val *DataDatabricksNotificationDestinationsNotificationDestinations) error {
 	return nil
 }
 

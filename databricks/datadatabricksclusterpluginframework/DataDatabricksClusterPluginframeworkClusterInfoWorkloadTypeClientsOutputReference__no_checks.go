@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeCl
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference) validateSetInternalValueParameters(val *DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients) error {
 	return nil
 }
 

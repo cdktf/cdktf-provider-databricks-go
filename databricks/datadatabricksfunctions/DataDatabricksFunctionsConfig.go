@@ -22,15 +22,13 @@ type DataDatabricksFunctionsConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/functions#catalog_name DataDatabricksFunctions#catalog_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/functions#catalog_name DataDatabricksFunctions#catalog_name}.
 	CatalogName *string `field:"required" json:"catalogName" yaml:"catalogName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/functions#schema_name DataDatabricksFunctions#schema_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/functions#schema_name DataDatabricksFunctions#schema_name}.
 	SchemaName *string `field:"required" json:"schemaName" yaml:"schemaName"`
-	// functions block.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/functions#functions DataDatabricksFunctions#functions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/functions#functions DataDatabricksFunctions#functions}.
 	Functions interface{} `field:"optional" json:"functions" yaml:"functions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/functions#include_browse DataDatabricksFunctions#include_browse}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/functions#include_browse DataDatabricksFunctions#include_browse}.
 	IncludeBrowse interface{} `field:"optional" json:"includeBrowse" yaml:"includeBrowse"`
 }
 

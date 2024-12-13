@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/permissions databricks_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/permissions databricks_permissions}.
 type Permissions interface {
 	cdktf.TerraformResource
 	AccessControl() PermissionsAccessControlList
 	AccessControlInput() interface{}
+	AppName() *string
+	SetAppName(val *string)
+	AppNameInput() *string
 	Authorization() *string
 	SetAuthorization(val *string)
 	AuthorizationInput() *string
@@ -182,6 +185,7 @@ type Permissions interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAccessControl(value interface{})
+	ResetAppName()
 	ResetAuthorization()
 	ResetClusterId()
 	ResetClusterPolicyId()
@@ -243,6 +247,26 @@ func (j *jsiiProxy_Permissions) AccessControlInput() interface{} {
 	_jsii_.Get(
 		j,
 		"accessControlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Permissions) AppName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Permissions) AppNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appNameInput",
 		&returns,
 	)
 	return returns
@@ -909,7 +933,7 @@ func (j *jsiiProxy_Permissions) WorkspaceFilePathInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/permissions databricks_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/permissions databricks_permissions} Resource.
 func NewPermissions(scope constructs.Construct, id *string, config *PermissionsConfig) Permissions {
 	_init_.Initialize()
 
@@ -927,7 +951,7 @@ func NewPermissions(scope constructs.Construct, id *string, config *PermissionsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/permissions databricks_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/permissions databricks_permissions} Resource.
 func NewPermissions_Override(p Permissions, scope constructs.Construct, id *string, config *PermissionsConfig) {
 	_init_.Initialize()
 
@@ -935,6 +959,17 @@ func NewPermissions_Override(p Permissions, scope constructs.Construct, id *stri
 		"@cdktf/provider-databricks.permissions.Permissions",
 		[]interface{}{scope, id, config},
 		p,
+	)
+}
+
+func (j *jsiiProxy_Permissions)SetAppName(val *string) {
+	if err := j.validateSetAppNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appName",
+		val,
 	)
 }
 
@@ -1642,6 +1677,14 @@ func (p *jsiiProxy_Permissions) PutAccessControl(value interface{}) {
 		p,
 		"putAccessControl",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_Permissions) ResetAppName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAppName",
+		nil, // no parameters
 	)
 }
 

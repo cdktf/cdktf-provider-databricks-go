@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataDatabricksNotificationDestinations) validateOverrideLogic
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksNotificationDestinations) validatePutNotificationDestinationsParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataDatabricksNotificationDestinations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

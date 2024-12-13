@@ -39,8 +39,8 @@ type DataDatabricksNotificationDestinationsNotificationDestinationsOutputReferen
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksNotificationDestinationsNotificationDestinations
+	SetInternalValue(val *DataDatabricksNotificationDestinationsNotificationDestinations)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DataDatabricksNotificationDestinationsNotificationDestination
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference) InternalValue() *DataDatabricksNotificationDestinationsNotificationDestinations {
+	var returns *DataDatabricksNotificationDestinationsNotificationDestinations
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -304,7 +304,7 @@ func (j *jsiiProxy_DataDatabricksNotificationDestinationsNotificationDestination
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference)SetInternalValue(val *DataDatabricksNotificationDestinationsNotificationDestinations) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

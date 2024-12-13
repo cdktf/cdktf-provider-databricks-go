@@ -67,7 +67,6 @@ type DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference 
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutClients(value interface{})
-	ResetClients()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,14 +449,6 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOu
 		d,
 		"putClients",
 		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference) ResetClients() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetClients",
-		nil, // no parameters
 	)
 }
 

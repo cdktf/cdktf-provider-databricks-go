@@ -5,85 +5,85 @@ package job
 
 
 type JobJobClusterNewCluster struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#spark_version Job#spark_version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#spark_version Job#spark_version}.
 	SparkVersion *string `field:"required" json:"sparkVersion" yaml:"sparkVersion"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}.
 	ApplyPolicyDefaultValues interface{} `field:"optional" json:"applyPolicyDefaultValues" yaml:"applyPolicyDefaultValues"`
 	// autoscale block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#autoscale Job#autoscale}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#autoscale Job#autoscale}
 	Autoscale *JobJobClusterNewClusterAutoscale `field:"optional" json:"autoscale" yaml:"autoscale"`
 	// aws_attributes block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#aws_attributes Job#aws_attributes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#aws_attributes Job#aws_attributes}
 	AwsAttributes *JobJobClusterNewClusterAwsAttributes `field:"optional" json:"awsAttributes" yaml:"awsAttributes"`
 	// azure_attributes block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#azure_attributes Job#azure_attributes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#azure_attributes Job#azure_attributes}
 	AzureAttributes *JobJobClusterNewClusterAzureAttributes `field:"optional" json:"azureAttributes" yaml:"azureAttributes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#cluster_id Job#cluster_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#cluster_id Job#cluster_id}.
 	ClusterId *string `field:"optional" json:"clusterId" yaml:"clusterId"`
 	// cluster_log_conf block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
 	ClusterLogConf *JobJobClusterNewClusterClusterLogConf `field:"optional" json:"clusterLogConf" yaml:"clusterLogConf"`
 	// cluster_mount_info block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
 	ClusterMountInfo interface{} `field:"optional" json:"clusterMountInfo" yaml:"clusterMountInfo"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#cluster_name Job#cluster_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#cluster_name Job#cluster_name}.
 	ClusterName *string `field:"optional" json:"clusterName" yaml:"clusterName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#custom_tags Job#custom_tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#custom_tags Job#custom_tags}.
 	CustomTags *map[string]*string `field:"optional" json:"customTags" yaml:"customTags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#data_security_mode Job#data_security_mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#data_security_mode Job#data_security_mode}.
 	DataSecurityMode *string `field:"optional" json:"dataSecurityMode" yaml:"dataSecurityMode"`
 	// docker_image block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#docker_image Job#docker_image}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#docker_image Job#docker_image}
 	DockerImage *JobJobClusterNewClusterDockerImage `field:"optional" json:"dockerImage" yaml:"dockerImage"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}.
 	DriverInstancePoolId *string `field:"optional" json:"driverInstancePoolId" yaml:"driverInstancePoolId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}.
 	DriverNodeTypeId *string `field:"optional" json:"driverNodeTypeId" yaml:"driverNodeTypeId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}.
 	EnableElasticDisk interface{} `field:"optional" json:"enableElasticDisk" yaml:"enableElasticDisk"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}.
 	EnableLocalDiskEncryption interface{} `field:"optional" json:"enableLocalDiskEncryption" yaml:"enableLocalDiskEncryption"`
 	// gcp_attributes block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
 	GcpAttributes *JobJobClusterNewClusterGcpAttributes `field:"optional" json:"gcpAttributes" yaml:"gcpAttributes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#idempotency_token Job#idempotency_token}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#idempotency_token Job#idempotency_token}.
 	IdempotencyToken *string `field:"optional" json:"idempotencyToken" yaml:"idempotencyToken"`
 	// init_scripts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#init_scripts Job#init_scripts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#init_scripts Job#init_scripts}
 	InitScripts interface{} `field:"optional" json:"initScripts" yaml:"initScripts"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#instance_pool_id Job#instance_pool_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#instance_pool_id Job#instance_pool_id}.
 	InstancePoolId *string `field:"optional" json:"instancePoolId" yaml:"instancePoolId"`
 	// library block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#library Job#library}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#library Job#library}
 	Library interface{} `field:"optional" json:"library" yaml:"library"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#node_type_id Job#node_type_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#node_type_id Job#node_type_id}.
 	NodeTypeId *string `field:"optional" json:"nodeTypeId" yaml:"nodeTypeId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#num_workers Job#num_workers}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#num_workers Job#num_workers}.
 	NumWorkers *float64 `field:"optional" json:"numWorkers" yaml:"numWorkers"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#policy_id Job#policy_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#policy_id Job#policy_id}.
 	PolicyId *string `field:"optional" json:"policyId" yaml:"policyId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#runtime_engine Job#runtime_engine}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#runtime_engine Job#runtime_engine}.
 	RuntimeEngine *string `field:"optional" json:"runtimeEngine" yaml:"runtimeEngine"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#single_user_name Job#single_user_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#single_user_name Job#single_user_name}.
 	SingleUserName *string `field:"optional" json:"singleUserName" yaml:"singleUserName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#spark_conf Job#spark_conf}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#spark_conf Job#spark_conf}.
 	SparkConf *map[string]*string `field:"optional" json:"sparkConf" yaml:"sparkConf"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#spark_env_vars Job#spark_env_vars}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#spark_env_vars Job#spark_env_vars}.
 	SparkEnvVars *map[string]*string `field:"optional" json:"sparkEnvVars" yaml:"sparkEnvVars"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}.
 	SshPublicKeys *[]*string `field:"optional" json:"sshPublicKeys" yaml:"sshPublicKeys"`
 	// workload_type block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/job#workload_type Job#workload_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/job#workload_type Job#workload_type}
 	WorkloadType *JobJobClusterNewClusterWorkloadType `field:"optional" json:"workloadType" yaml:"workloadType"`
 }
 

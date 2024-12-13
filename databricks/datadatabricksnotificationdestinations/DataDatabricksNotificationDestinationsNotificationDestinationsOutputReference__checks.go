@@ -190,25 +190,9 @@ func (j *jsiiProxy_DataDatabricksNotificationDestinationsNotificationDestination
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataDatabricksNotificationDestinationsNotificationDestinations:
-		val := val.(*DataDatabricksNotificationDestinationsNotificationDestinations)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataDatabricksNotificationDestinationsNotificationDestinations:
-		val_ := val.(DataDatabricksNotificationDestinationsNotificationDestinations)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksNotificationDestinationsNotificationDestinations; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference) validateSetInternalValueParameters(val *DataDatabricksNotificationDestinationsNotificationDestinations) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

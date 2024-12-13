@@ -319,8 +319,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "opInput", GoGetter: "OpInput"},
 			_jsii_.MemberProperty{JsiiProperty: "recipientPropertyKey", GoGetter: "RecipientPropertyKey"},
 			_jsii_.MemberProperty{JsiiProperty: "recipientPropertyKeyInput", GoGetter: "RecipientPropertyKeyInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOp", GoMethod: "ResetOp"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRecipientPropertyKey", GoMethod: "ResetRecipientPropertyKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetValue", GoMethod: "ResetValue"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

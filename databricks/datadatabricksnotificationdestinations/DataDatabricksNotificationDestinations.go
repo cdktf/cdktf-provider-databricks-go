@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations databricks_notification_destinations}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations databricks_notification_destinations}.
 type DataDatabricksNotificationDestinations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -45,7 +45,6 @@ type DataDatabricksNotificationDestinations interface {
 	// The tree node.
 	Node() constructs.Node
 	NotificationDestinations() DataDatabricksNotificationDestinationsNotificationDestinationsList
-	NotificationDestinationsInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -86,9 +85,7 @@ type DataDatabricksNotificationDestinations interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutNotificationDestinations(value interface{})
 	ResetDisplayNameContains()
-	ResetNotificationDestinations()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -232,16 +229,6 @@ func (j *jsiiProxy_DataDatabricksNotificationDestinations) NotificationDestinati
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksNotificationDestinations) NotificationDestinationsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"notificationDestinationsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksNotificationDestinations) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -313,7 +300,7 @@ func (j *jsiiProxy_DataDatabricksNotificationDestinations) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations databricks_notification_destinations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations databricks_notification_destinations} Data Source.
 func NewDataDatabricksNotificationDestinations(scope constructs.Construct, id *string, config *DataDatabricksNotificationDestinationsConfig) DataDatabricksNotificationDestinations {
 	_init_.Initialize()
 
@@ -331,7 +318,7 @@ func NewDataDatabricksNotificationDestinations(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations databricks_notification_destinations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations databricks_notification_destinations} Data Source.
 func NewDataDatabricksNotificationDestinations_Override(d DataDatabricksNotificationDestinations, scope constructs.Construct, id *string, config *DataDatabricksNotificationDestinationsConfig) {
 	_init_.Initialize()
 
@@ -695,29 +682,10 @@ func (d *jsiiProxy_DataDatabricksNotificationDestinations) OverrideLogicalId(new
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksNotificationDestinations) PutNotificationDestinations(value interface{}) {
-	if err := d.validatePutNotificationDestinationsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putNotificationDestinations",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksNotificationDestinations) ResetDisplayNameContains() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDisplayNameContains",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksNotificationDestinations) ResetNotificationDestinations() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetNotificationDestinations",
 		nil, // no parameters
 	)
 }
