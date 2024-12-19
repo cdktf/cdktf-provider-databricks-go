@@ -47,6 +47,10 @@ func (j *jsiiProxy_JobTaskOutputReference) validateInterpolationForAttributePara
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) validatePutCleanRoomsNotebookTaskParameters(value *JobTaskCleanRoomsNotebookTask) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) validatePutConditionTaskParameters(value *JobTaskConditionTask) error {
 	return nil
 }

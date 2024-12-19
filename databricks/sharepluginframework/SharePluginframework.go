@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework databricks_share_pluginframework}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework databricks_share_pluginframework}.
 type SharePluginframework interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,11 +31,7 @@ type SharePluginframework interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedAt() *float64
-	SetCreatedAt(val *float64)
-	CreatedAtInput() *float64
 	CreatedBy() *string
-	SetCreatedBy(val *string)
-	CreatedByInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -85,11 +81,7 @@ type SharePluginframework interface {
 	// Experimental.
 	TerraformResourceType() *string
 	UpdatedAt() *float64
-	SetUpdatedAt(val *float64)
-	UpdatedAtInput() *float64
 	UpdatedBy() *string
-	SetUpdatedBy(val *string)
-	UpdatedByInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -135,8 +127,6 @@ type SharePluginframework interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutObject(value interface{})
 	ResetComment()
-	ResetCreatedAt()
-	ResetCreatedBy()
 	ResetObject()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -144,8 +134,6 @@ type SharePluginframework interface {
 	ResetOwner()
 	ResetStorageLocation()
 	ResetStorageRoot()
-	ResetUpdatedAt()
-	ResetUpdatedBy()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -234,31 +222,11 @@ func (j *jsiiProxy_SharePluginframework) CreatedAt() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_SharePluginframework) CreatedAtInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"createdAtInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SharePluginframework) CreatedBy() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"createdBy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SharePluginframework) CreatedByInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdByInput",
 		&returns,
 	)
 	return returns
@@ -494,16 +462,6 @@ func (j *jsiiProxy_SharePluginframework) UpdatedAt() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_SharePluginframework) UpdatedAtInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"updatedAtInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SharePluginframework) UpdatedBy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -514,18 +472,8 @@ func (j *jsiiProxy_SharePluginframework) UpdatedBy() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SharePluginframework) UpdatedByInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedByInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework databricks_share_pluginframework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework databricks_share_pluginframework} Resource.
 func NewSharePluginframework(scope constructs.Construct, id *string, config *SharePluginframeworkConfig) SharePluginframework {
 	_init_.Initialize()
 
@@ -543,7 +491,7 @@ func NewSharePluginframework(scope constructs.Construct, id *string, config *Sha
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework databricks_share_pluginframework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework databricks_share_pluginframework} Resource.
 func NewSharePluginframework_Override(s SharePluginframework, scope constructs.Construct, id *string, config *SharePluginframeworkConfig) {
 	_init_.Initialize()
 
@@ -583,28 +531,6 @@ func (j *jsiiProxy_SharePluginframework)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SharePluginframework)SetCreatedAt(val *float64) {
-	if err := j.validateSetCreatedAtParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createdAt",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SharePluginframework)SetCreatedBy(val *string) {
-	if err := j.validateSetCreatedByParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createdBy",
 		val,
 	)
 }
@@ -695,28 +621,6 @@ func (j *jsiiProxy_SharePluginframework)SetStorageRoot(val *string) {
 	_jsii_.Set(
 		j,
 		"storageRoot",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SharePluginframework)SetUpdatedAt(val *float64) {
-	if err := j.validateSetUpdatedAtParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"updatedAt",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SharePluginframework)SetUpdatedBy(val *string) {
-	if err := j.validateSetUpdatedByParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"updatedBy",
 		val,
 	)
 }
@@ -1093,22 +997,6 @@ func (s *jsiiProxy_SharePluginframework) ResetComment() {
 	)
 }
 
-func (s *jsiiProxy_SharePluginframework) ResetCreatedAt() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetCreatedAt",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SharePluginframework) ResetCreatedBy() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetCreatedBy",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_SharePluginframework) ResetObject() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1145,22 +1033,6 @@ func (s *jsiiProxy_SharePluginframework) ResetStorageRoot() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetStorageRoot",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SharePluginframework) ResetUpdatedAt() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetUpdatedAt",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SharePluginframework) ResetUpdatedBy() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetUpdatedBy",
 		nil, // no parameters
 	)
 }

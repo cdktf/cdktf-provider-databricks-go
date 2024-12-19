@@ -166,41 +166,9 @@ func (j *jsiiProxy_AppActiveDeploymentStatusOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_AppActiveDeploymentStatusOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *AppActiveDeploymentStatus:
-		val := val.(*AppActiveDeploymentStatus)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case AppActiveDeploymentStatus:
-		val_ := val.(AppActiveDeploymentStatus)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AppActiveDeploymentStatus; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AppActiveDeploymentStatusOutputReference) validateSetMessageParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AppActiveDeploymentStatusOutputReference) validateSetStateParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_AppActiveDeploymentStatusOutputReference) validateSetInternalValueParameters(val *AppActiveDeploymentStatus) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

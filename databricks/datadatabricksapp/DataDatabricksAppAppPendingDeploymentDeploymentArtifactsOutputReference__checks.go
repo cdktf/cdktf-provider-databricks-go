@@ -166,25 +166,9 @@ func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentDeploymentArtifactsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentDeploymentArtifactsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataDatabricksAppAppPendingDeploymentDeploymentArtifacts:
-		val := val.(*DataDatabricksAppAppPendingDeploymentDeploymentArtifacts)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataDatabricksAppAppPendingDeploymentDeploymentArtifacts:
-		val_ := val.(DataDatabricksAppAppPendingDeploymentDeploymentArtifacts)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksAppAppPendingDeploymentDeploymentArtifacts; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentDeploymentArtifactsOutputReference) validateSetInternalValueParameters(val *DataDatabricksAppAppPendingDeploymentDeploymentArtifacts) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

@@ -30,14 +30,10 @@ type DataDatabricksAppAppPendingDeploymentStatusOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAppAppPendingDeploymentStatus
+	SetInternalValue(val *DataDatabricksAppAppPendingDeploymentStatus)
 	Message() *string
-	SetMessage(val *string)
-	MessageInput() *string
 	State() *string
-	SetState(val *string)
-	StateInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,8 +66,6 @@ type DataDatabricksAppAppPendingDeploymentStatusOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetMessage()
-	ResetState()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -127,8 +121,8 @@ func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference) InternalValue() *DataDatabricksAppAppPendingDeploymentStatus {
+	var returns *DataDatabricksAppAppPendingDeploymentStatus
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -147,31 +141,11 @@ func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference) M
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference) MessageInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"messageInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference) State() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"state",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference) StateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"stateInput",
 		&returns,
 	)
 	return returns
@@ -247,35 +221,13 @@ func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference)SetInternalValue(val *DataDatabricksAppAppPendingDeploymentStatus) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference)SetMessage(val *string) {
-	if err := j.validateSetMessageParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"message",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference)SetState(val *string) {
-	if err := j.validateSetStateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"state",
 		val,
 	)
 }
@@ -486,22 +438,6 @@ func (d *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference) I
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference) ResetMessage() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetMessage",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference) ResetState() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetState",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

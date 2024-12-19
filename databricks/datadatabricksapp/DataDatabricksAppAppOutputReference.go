@@ -14,9 +14,7 @@ import (
 type DataDatabricksAppAppOutputReference interface {
 	cdktf.ComplexObject
 	ActiveDeployment() DataDatabricksAppAppActiveDeploymentOutputReference
-	ActiveDeploymentInput() interface{}
 	AppStatus() DataDatabricksAppAppAppStatusOutputReference
-	AppStatusInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,21 +26,14 @@ type DataDatabricksAppAppOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ComputeStatus() DataDatabricksAppAppComputeStatusOutputReference
-	ComputeStatusInput() interface{}
 	CreateTime() *string
-	SetCreateTime(val *string)
-	CreateTimeInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
 	Creator() *string
-	SetCreator(val *string)
-	CreatorInput() *string
 	DefaultSourceCodePath() *string
-	SetDefaultSourceCodePath(val *string)
-	DefaultSourceCodePathInput() *string
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
@@ -54,18 +45,11 @@ type DataDatabricksAppAppOutputReference interface {
 	SetName(val *string)
 	NameInput() *string
 	PendingDeployment() DataDatabricksAppAppPendingDeploymentOutputReference
-	PendingDeploymentInput() interface{}
 	Resources() DataDatabricksAppAppResourcesList
 	ResourcesInput() interface{}
 	ServicePrincipalClientId() *string
-	SetServicePrincipalClientId(val *string)
-	ServicePrincipalClientIdInput() *string
 	ServicePrincipalId() *float64
-	SetServicePrincipalId(val *float64)
-	ServicePrincipalIdInput() *float64
 	ServicePrincipalName() *string
-	SetServicePrincipalName(val *string)
-	ServicePrincipalNameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,14 +59,8 @@ type DataDatabricksAppAppOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Updater() *string
-	SetUpdater(val *string)
-	UpdaterInput() *string
 	UpdateTime() *string
-	SetUpdateTime(val *string)
-	UpdateTimeInput() *string
 	Url() *string
-	SetUrl(val *string)
-	UrlInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -107,26 +85,9 @@ type DataDatabricksAppAppOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutActiveDeployment(value *DataDatabricksAppAppActiveDeployment)
-	PutAppStatus(value *DataDatabricksAppAppAppStatus)
-	PutComputeStatus(value *DataDatabricksAppAppComputeStatus)
-	PutPendingDeployment(value *DataDatabricksAppAppPendingDeployment)
 	PutResources(value interface{})
-	ResetActiveDeployment()
-	ResetAppStatus()
-	ResetComputeStatus()
-	ResetCreateTime()
-	ResetCreator()
-	ResetDefaultSourceCodePath()
 	ResetDescription()
-	ResetPendingDeployment()
 	ResetResources()
-	ResetServicePrincipalClientId()
-	ResetServicePrincipalId()
-	ResetServicePrincipalName()
-	ResetUpdater()
-	ResetUpdateTime()
-	ResetUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -152,31 +113,11 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) ActiveDeployment() DataD
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) ActiveDeploymentInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"activeDeploymentInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) AppStatus() DataDatabricksAppAppAppStatusOutputReference {
 	var returns DataDatabricksAppAppAppStatusOutputReference
 	_jsii_.Get(
 		j,
 		"appStatus",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) AppStatusInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"appStatusInput",
 		&returns,
 	)
 	return returns
@@ -212,31 +153,11 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) ComputeStatus() DataData
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) ComputeStatusInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"computeStatusInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) CreateTime() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"createTime",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) CreateTimeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createTimeInput",
 		&returns,
 	)
 	return returns
@@ -262,31 +183,11 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) Creator() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) CreatorInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"creatorInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) DefaultSourceCodePath() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"defaultSourceCodePath",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) DefaultSourceCodePathInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"defaultSourceCodePathInput",
 		&returns,
 	)
 	return returns
@@ -362,16 +263,6 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) PendingDeployment() Data
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) PendingDeploymentInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"pendingDeploymentInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) Resources() DataDatabricksAppAppResourcesList {
 	var returns DataDatabricksAppAppResourcesList
 	_jsii_.Get(
@@ -402,16 +293,6 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) ServicePrincipalClientId
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) ServicePrincipalClientIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"servicePrincipalClientIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) ServicePrincipalId() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -422,31 +303,11 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) ServicePrincipalId() *fl
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) ServicePrincipalIdInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"servicePrincipalIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) ServicePrincipalName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"servicePrincipalName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) ServicePrincipalNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"servicePrincipalNameInput",
 		&returns,
 	)
 	return returns
@@ -482,16 +343,6 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) Updater() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) UpdaterInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updaterInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) UpdateTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -502,31 +353,11 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) UpdateTime() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) UpdateTimeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updateTimeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) Url() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"url",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) UrlInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"urlInput",
 		&returns,
 	)
 	return returns
@@ -582,39 +413,6 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetCreateTime(val *string) {
-	if err := j.validateSetCreateTimeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createTime",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetCreator(val *string) {
-	if err := j.validateSetCreatorParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"creator",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetDefaultSourceCodePath(val *string) {
-	if err := j.validateSetDefaultSourceCodePathParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"defaultSourceCodePath",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
@@ -648,39 +446,6 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetServicePrincipalClientId(val *string) {
-	if err := j.validateSetServicePrincipalClientIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"servicePrincipalClientId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetServicePrincipalId(val *float64) {
-	if err := j.validateSetServicePrincipalIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"servicePrincipalId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetServicePrincipalName(val *string) {
-	if err := j.validateSetServicePrincipalNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"servicePrincipalName",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -699,39 +464,6 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetTerraformResource(val 
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetUpdater(val *string) {
-	if err := j.validateSetUpdaterParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"updater",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetUpdateTime(val *string) {
-	if err := j.validateSetUpdateTimeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"updateTime",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetUrl(val *string) {
-	if err := j.validateSetUrlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"url",
 		val,
 	)
 }
@@ -922,50 +654,6 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) InterpolationForAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) PutActiveDeployment(value *DataDatabricksAppAppActiveDeployment) {
-	if err := d.validatePutActiveDeploymentParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putActiveDeployment",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) PutAppStatus(value *DataDatabricksAppAppAppStatus) {
-	if err := d.validatePutAppStatusParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putAppStatus",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) PutComputeStatus(value *DataDatabricksAppAppComputeStatus) {
-	if err := d.validatePutComputeStatusParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putComputeStatus",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) PutPendingDeployment(value *DataDatabricksAppAppPendingDeployment) {
-	if err := d.validatePutPendingDeploymentParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putPendingDeployment",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksAppAppOutputReference) PutResources(value interface{}) {
 	if err := d.validatePutResourcesParameters(value); err != nil {
 		panic(err)
@@ -977,54 +665,6 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) PutResources(value inter
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetActiveDeployment() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetActiveDeployment",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetAppStatus() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAppStatus",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetComputeStatus() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetComputeStatus",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetCreateTime() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCreateTime",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetCreator() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCreator",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetDefaultSourceCodePath() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDefaultSourceCodePath",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1033,66 +673,10 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetDescription() {
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetPendingDeployment() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPendingDeployment",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetResources() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetResources",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetServicePrincipalClientId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetServicePrincipalClientId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetServicePrincipalId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetServicePrincipalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetServicePrincipalName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetServicePrincipalName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetUpdater() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUpdater",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetUpdateTime() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUpdateTime",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetUrl() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUrl",
 		nil, // no parameters
 	)
 }

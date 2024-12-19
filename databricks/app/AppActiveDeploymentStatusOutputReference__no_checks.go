@@ -59,15 +59,7 @@ func (j *jsiiProxy_AppActiveDeploymentStatusOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_AppActiveDeploymentStatusOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppActiveDeploymentStatusOutputReference) validateSetMessageParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppActiveDeploymentStatusOutputReference) validateSetStateParameters(val *string) error {
+func (j *jsiiProxy_AppActiveDeploymentStatusOutputReference) validateSetInternalValueParameters(val *AppActiveDeploymentStatus) error {
 	return nil
 }
 

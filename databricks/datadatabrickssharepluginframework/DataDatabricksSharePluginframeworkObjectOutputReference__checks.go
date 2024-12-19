@@ -132,22 +132,6 @@ func (d *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) validateSetAddedAtParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) validateSetAddedByParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) validateSetCdfEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -257,50 +241,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) validateSetEffectiveCdfEnabledParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) validateSetEffectiveHistoryDataSharingStatusParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) validateSetEffectiveSharedAsParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) validateSetEffectiveStartVersionParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) validateSetHistoryDataSharingStatusParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -350,14 +290,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) vali
 }
 
 func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) validateSetStartVersionParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) validateSetStatusParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

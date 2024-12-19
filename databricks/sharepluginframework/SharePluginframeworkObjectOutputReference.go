@@ -14,11 +14,7 @@ import (
 type SharePluginframeworkObjectOutputReference interface {
 	cdktf.ComplexObject
 	AddedAt() *float64
-	SetAddedAt(val *float64)
-	AddedAtInput() *float64
 	AddedBy() *string
-	SetAddedBy(val *string)
-	AddedByInput() *string
 	CdfEnabled() interface{}
 	SetCdfEnabled(val interface{})
 	CdfEnabledInput() interface{}
@@ -46,18 +42,10 @@ type SharePluginframeworkObjectOutputReference interface {
 	DataObjectType() *string
 	SetDataObjectType(val *string)
 	DataObjectTypeInput() *string
-	EffectiveCdfEnabled() interface{}
-	SetEffectiveCdfEnabled(val interface{})
-	EffectiveCdfEnabledInput() interface{}
+	EffectiveCdfEnabled() cdktf.IResolvable
 	EffectiveHistoryDataSharingStatus() *string
-	SetEffectiveHistoryDataSharingStatus(val *string)
-	EffectiveHistoryDataSharingStatusInput() *string
 	EffectiveSharedAs() *string
-	SetEffectiveSharedAs(val *string)
-	EffectiveSharedAsInput() *string
 	EffectiveStartVersion() *float64
-	SetEffectiveStartVersion(val *float64)
-	EffectiveStartVersionInput() *float64
 	// Experimental.
 	Fqn() *string
 	HistoryDataSharingStatus() *string
@@ -77,8 +65,6 @@ type SharePluginframeworkObjectOutputReference interface {
 	SetStartVersion(val *float64)
 	StartVersionInput() *float64
 	Status() *string
-	SetStatus(val *string)
-	StatusInput() *string
 	StringSharedAs() *string
 	SetStringSharedAs(val *string)
 	StringSharedAsInput() *string
@@ -115,20 +101,13 @@ type SharePluginframeworkObjectOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPartition(value interface{})
-	ResetAddedAt()
-	ResetAddedBy()
 	ResetCdfEnabled()
 	ResetComment()
 	ResetContent()
-	ResetEffectiveCdfEnabled()
-	ResetEffectiveHistoryDataSharingStatus()
-	ResetEffectiveSharedAs()
-	ResetEffectiveStartVersion()
 	ResetHistoryDataSharingStatus()
 	ResetPartition()
 	ResetSharedAs()
 	ResetStartVersion()
-	ResetStatus()
 	ResetStringSharedAs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -155,31 +134,11 @@ func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) AddedAt() *float64
 	return returns
 }
 
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) AddedAtInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"addedAtInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) AddedBy() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"addedBy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) AddedByInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"addedByInput",
 		&returns,
 	)
 	return returns
@@ -295,21 +254,11 @@ func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) DataObjectTypeInpu
 	return returns
 }
 
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) EffectiveCdfEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) EffectiveCdfEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"effectiveCdfEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) EffectiveCdfEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"effectiveCdfEnabledInput",
 		&returns,
 	)
 	return returns
@@ -325,16 +274,6 @@ func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) EffectiveHistoryDa
 	return returns
 }
 
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) EffectiveHistoryDataSharingStatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"effectiveHistoryDataSharingStatusInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) EffectiveSharedAs() *string {
 	var returns *string
 	_jsii_.Get(
@@ -345,31 +284,11 @@ func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) EffectiveSharedAs(
 	return returns
 }
 
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) EffectiveSharedAsInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"effectiveSharedAsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) EffectiveStartVersion() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"effectiveStartVersion",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) EffectiveStartVersionInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"effectiveStartVersionInput",
 		&returns,
 	)
 	return returns
@@ -505,16 +424,6 @@ func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) Status() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) StatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"statusInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) StringSharedAs() *string {
 	var returns *string
 	_jsii_.Get(
@@ -580,28 +489,6 @@ func NewSharePluginframeworkObjectOutputReference_Override(s SharePluginframewor
 		"@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
-	)
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference)SetAddedAt(val *float64) {
-	if err := j.validateSetAddedAtParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"addedAt",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference)SetAddedBy(val *string) {
-	if err := j.validateSetAddedByParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"addedBy",
-		val,
 	)
 }
 
@@ -671,50 +558,6 @@ func (j *jsiiProxy_SharePluginframeworkObjectOutputReference)SetDataObjectType(v
 	)
 }
 
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference)SetEffectiveCdfEnabled(val interface{}) {
-	if err := j.validateSetEffectiveCdfEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"effectiveCdfEnabled",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference)SetEffectiveHistoryDataSharingStatus(val *string) {
-	if err := j.validateSetEffectiveHistoryDataSharingStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"effectiveHistoryDataSharingStatus",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference)SetEffectiveSharedAs(val *string) {
-	if err := j.validateSetEffectiveSharedAsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"effectiveSharedAs",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference)SetEffectiveStartVersion(val *float64) {
-	if err := j.validateSetEffectiveStartVersionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"effectiveStartVersion",
-		val,
-	)
-}
-
 func (j *jsiiProxy_SharePluginframeworkObjectOutputReference)SetHistoryDataSharingStatus(val *string) {
 	if err := j.validateSetHistoryDataSharingStatusParameters(val); err != nil {
 		panic(err)
@@ -766,17 +609,6 @@ func (j *jsiiProxy_SharePluginframeworkObjectOutputReference)SetStartVersion(val
 	_jsii_.Set(
 		j,
 		"startVersion",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference)SetStatus(val *string) {
-	if err := j.validateSetStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"status",
 		val,
 	)
 }
@@ -1011,22 +843,6 @@ func (s *jsiiProxy_SharePluginframeworkObjectOutputReference) PutPartition(value
 	)
 }
 
-func (s *jsiiProxy_SharePluginframeworkObjectOutputReference) ResetAddedAt() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetAddedAt",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SharePluginframeworkObjectOutputReference) ResetAddedBy() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetAddedBy",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_SharePluginframeworkObjectOutputReference) ResetCdfEnabled() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1047,38 +863,6 @@ func (s *jsiiProxy_SharePluginframeworkObjectOutputReference) ResetContent() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetContent",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SharePluginframeworkObjectOutputReference) ResetEffectiveCdfEnabled() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetEffectiveCdfEnabled",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SharePluginframeworkObjectOutputReference) ResetEffectiveHistoryDataSharingStatus() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetEffectiveHistoryDataSharingStatus",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SharePluginframeworkObjectOutputReference) ResetEffectiveSharedAs() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetEffectiveSharedAs",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SharePluginframeworkObjectOutputReference) ResetEffectiveStartVersion() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetEffectiveStartVersion",
 		nil, // no parameters
 	)
 }
@@ -1111,14 +895,6 @@ func (s *jsiiProxy_SharePluginframeworkObjectOutputReference) ResetStartVersion(
 	_jsii_.InvokeVoid(
 		s,
 		"resetStartVersion",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SharePluginframeworkObjectOutputReference) ResetStatus() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetStatus",
 		nil, // no parameters
 	)
 }

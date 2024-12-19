@@ -30,14 +30,10 @@ type AppPendingDeploymentStatusOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *AppPendingDeploymentStatus
+	SetInternalValue(val *AppPendingDeploymentStatus)
 	Message() *string
-	SetMessage(val *string)
-	MessageInput() *string
 	State() *string
-	SetState(val *string)
-	StateInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,8 +66,6 @@ type AppPendingDeploymentStatusOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetMessage()
-	ResetState()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -127,8 +121,8 @@ func (j *jsiiProxy_AppPendingDeploymentStatusOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppPendingDeploymentStatusOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppPendingDeploymentStatusOutputReference) InternalValue() *AppPendingDeploymentStatus {
+	var returns *AppPendingDeploymentStatus
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -147,31 +141,11 @@ func (j *jsiiProxy_AppPendingDeploymentStatusOutputReference) Message() *string 
 	return returns
 }
 
-func (j *jsiiProxy_AppPendingDeploymentStatusOutputReference) MessageInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"messageInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppPendingDeploymentStatusOutputReference) State() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"state",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppPendingDeploymentStatusOutputReference) StateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"stateInput",
 		&returns,
 	)
 	return returns
@@ -247,35 +221,13 @@ func (j *jsiiProxy_AppPendingDeploymentStatusOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_AppPendingDeploymentStatusOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppPendingDeploymentStatusOutputReference)SetInternalValue(val *AppPendingDeploymentStatus) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppPendingDeploymentStatusOutputReference)SetMessage(val *string) {
-	if err := j.validateSetMessageParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"message",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppPendingDeploymentStatusOutputReference)SetState(val *string) {
-	if err := j.validateSetStateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"state",
 		val,
 	)
 }
@@ -486,22 +438,6 @@ func (a *jsiiProxy_AppPendingDeploymentStatusOutputReference) InterpolationForAt
 	)
 
 	return returns
-}
-
-func (a *jsiiProxy_AppPendingDeploymentStatusOutputReference) ResetMessage() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetMessage",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppPendingDeploymentStatusOutputReference) ResetState() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetState",
-		nil, // no parameters
-	)
 }
 
 func (a *jsiiProxy_AppPendingDeploymentStatusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -47,14 +47,6 @@ func (a *jsiiProxy_AppActiveDeploymentOutputReference) validateInterpolationForA
 	return nil
 }
 
-func (a *jsiiProxy_AppActiveDeploymentOutputReference) validatePutDeploymentArtifactsParameters(value *AppActiveDeploymentDeploymentArtifacts) error {
-	return nil
-}
-
-func (a *jsiiProxy_AppActiveDeploymentOutputReference) validatePutStatusParameters(value *AppActiveDeploymentStatus) error {
-	return nil
-}
-
 func (a *jsiiProxy_AppActiveDeploymentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -64,14 +56,6 @@ func (j *jsiiProxy_AppActiveDeploymentOutputReference) validateSetComplexObjectI
 }
 
 func (j *jsiiProxy_AppActiveDeploymentOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppActiveDeploymentOutputReference) validateSetCreateTimeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppActiveDeploymentOutputReference) validateSetCreatorParameters(val *string) error {
 	return nil
 }
 
@@ -96,10 +80,6 @@ func (j *jsiiProxy_AppActiveDeploymentOutputReference) validateSetTerraformAttri
 }
 
 func (j *jsiiProxy_AppActiveDeploymentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppActiveDeploymentOutputReference) validateSetUpdateTimeParameters(val *string) error {
 	return nil
 }
 

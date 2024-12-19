@@ -47,22 +47,6 @@ func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) validateInterpolationFo
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) validatePutActiveDeploymentParameters(value *DataDatabricksAppsAppActiveDeployment) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) validatePutAppStatusParameters(value *DataDatabricksAppsAppAppStatus) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) validatePutComputeStatusParameters(value *DataDatabricksAppsAppComputeStatus) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) validatePutPendingDeploymentParameters(value *DataDatabricksAppsAppPendingDeployment) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) validatePutResourcesParameters(value interface{}) error {
 	return nil
 }
@@ -79,18 +63,6 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetCreateTimeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetCreatorParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetDefaultSourceCodePathParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -103,35 +75,11 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetNameParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetServicePrincipalClientIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetServicePrincipalIdParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetServicePrincipalNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetUpdaterParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetUpdateTimeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) validateSetUrlParameters(val *string) error {
 	return nil
 }
 

@@ -30,8 +30,8 @@ type AppPendingDeploymentDeploymentArtifactsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *AppPendingDeploymentDeploymentArtifacts
+	SetInternalValue(val *AppPendingDeploymentDeploymentArtifacts)
 	SourceCodePath() *string
 	SetSourceCodePath(val *string)
 	SourceCodePathInput() *string
@@ -123,8 +123,8 @@ func (j *jsiiProxy_AppPendingDeploymentDeploymentArtifactsOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_AppPendingDeploymentDeploymentArtifactsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppPendingDeploymentDeploymentArtifactsOutputReference) InternalValue() *AppPendingDeploymentDeploymentArtifacts {
+	var returns *AppPendingDeploymentDeploymentArtifacts
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -223,7 +223,7 @@ func (j *jsiiProxy_AppPendingDeploymentDeploymentArtifactsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_AppPendingDeploymentDeploymentArtifactsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppPendingDeploymentDeploymentArtifactsOutputReference)SetInternalValue(val *AppPendingDeploymentDeploymentArtifacts) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

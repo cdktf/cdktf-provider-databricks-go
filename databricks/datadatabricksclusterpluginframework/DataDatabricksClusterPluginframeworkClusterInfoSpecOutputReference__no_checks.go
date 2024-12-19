@@ -135,6 +135,14 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validateSetIsSingleNodeParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validateSetKindParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validateSetNodeTypeIdParameters(val *string) error {
 	return nil
 }
@@ -176,6 +184,10 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputRefe
 }
 
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) validateSetUseMlRuntimeParameters(val interface{}) error {
 	return nil
 }
 

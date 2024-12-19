@@ -47,14 +47,6 @@ func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) validatePutDeploymentArtifactsParameters(value *DataDatabricksAppAppActiveDeploymentDeploymentArtifacts) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) validatePutStatusParameters(value *DataDatabricksAppAppActiveDeploymentStatus) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -67,19 +59,11 @@ func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) validateSetCreateTimeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) validateSetCreatorParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) validateSetDeploymentIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) validateSetInternalValueParameters(val *DataDatabricksAppAppActiveDeployment) error {
 	return nil
 }
 
@@ -96,10 +80,6 @@ func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) validate
 }
 
 func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) validateSetUpdateTimeParameters(val *string) error {
 	return nil
 }
 

@@ -250,22 +250,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetCountParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetCreatedAtParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetCreatedByParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -299,22 +283,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetStorageLocatio
 }
 
 func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetStorageRootParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetUpdatedAtParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetUpdatedByParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

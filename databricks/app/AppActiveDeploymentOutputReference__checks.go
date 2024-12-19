@@ -93,28 +93,6 @@ func (a *jsiiProxy_AppActiveDeploymentOutputReference) validateInterpolationForA
 	return nil
 }
 
-func (a *jsiiProxy_AppActiveDeploymentOutputReference) validatePutDeploymentArtifactsParameters(value *AppActiveDeploymentDeploymentArtifacts) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (a *jsiiProxy_AppActiveDeploymentOutputReference) validatePutStatusParameters(value *AppActiveDeploymentStatus) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (a *jsiiProxy_AppActiveDeploymentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -188,22 +166,6 @@ func (j *jsiiProxy_AppActiveDeploymentOutputReference) validateSetComplexObjectI
 	return nil
 }
 
-func (j *jsiiProxy_AppActiveDeploymentOutputReference) validateSetCreateTimeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AppActiveDeploymentOutputReference) validateSetCreatorParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_AppActiveDeploymentOutputReference) validateSetDeploymentIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -245,14 +207,6 @@ func (j *jsiiProxy_AppActiveDeploymentOutputReference) validateSetTerraformAttri
 }
 
 func (j *jsiiProxy_AppActiveDeploymentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AppActiveDeploymentOutputReference) validateSetUpdateTimeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

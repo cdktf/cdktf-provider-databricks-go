@@ -93,28 +93,6 @@ func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) validatePutDeploymentArtifactsParameters(value *DataDatabricksAppsAppActiveDeploymentDeploymentArtifacts) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) validatePutStatusParameters(value *DataDatabricksAppsAppActiveDeploymentStatus) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -188,22 +166,6 @@ func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) validateSetCreateTimeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) validateSetCreatorParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) validateSetDeploymentIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -212,25 +174,9 @@ func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataDatabricksAppsAppActiveDeployment:
-		val := val.(*DataDatabricksAppsAppActiveDeployment)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataDatabricksAppsAppActiveDeployment:
-		val_ := val.(DataDatabricksAppsAppActiveDeployment)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksAppsAppActiveDeployment; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) validateSetInternalValueParameters(val *DataDatabricksAppsAppActiveDeployment) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -261,14 +207,6 @@ func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) validat
 }
 
 func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppsAppActiveDeploymentOutputReference) validateSetUpdateTimeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

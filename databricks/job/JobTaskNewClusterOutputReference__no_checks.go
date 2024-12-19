@@ -147,6 +147,14 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetInternalValuePar
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetIsSingleNodeParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetKindParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetNodeTypeIdParameters(val *string) error {
 	return nil
 }
@@ -188,6 +196,10 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetTerraformAttribu
 }
 
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetUseMlRuntimeParameters(val interface{}) error {
 	return nil
 }
 

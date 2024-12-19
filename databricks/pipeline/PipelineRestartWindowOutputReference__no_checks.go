@@ -59,7 +59,7 @@ func (j *jsiiProxy_PipelineRestartWindowOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_PipelineRestartWindowOutputReference) validateSetDaysOfWeekParameters(val *string) error {
+func (j *jsiiProxy_PipelineRestartWindowOutputReference) validateSetDaysOfWeekParameters(val *[]*string) error {
 	return nil
 }
 

@@ -63,14 +63,6 @@ func (j *jsiiProxy_AppAppStatusOutputReference) validateSetInternalValueParamete
 	return nil
 }
 
-func (j *jsiiProxy_AppAppStatusOutputReference) validateSetMessageParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppAppStatusOutputReference) validateSetStateParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AppAppStatusOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

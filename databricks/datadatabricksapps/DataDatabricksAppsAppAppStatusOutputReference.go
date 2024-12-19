@@ -30,14 +30,10 @@ type DataDatabricksAppsAppAppStatusOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAppsAppAppStatus
+	SetInternalValue(val *DataDatabricksAppsAppAppStatus)
 	Message() *string
-	SetMessage(val *string)
-	MessageInput() *string
 	State() *string
-	SetState(val *string)
-	StateInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,8 +66,6 @@ type DataDatabricksAppsAppAppStatusOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetMessage()
-	ResetState()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -127,8 +121,8 @@ func (j *jsiiProxy_DataDatabricksAppsAppAppStatusOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppsAppAppStatusOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAppsAppAppStatusOutputReference) InternalValue() *DataDatabricksAppsAppAppStatus {
+	var returns *DataDatabricksAppsAppAppStatus
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -147,31 +141,11 @@ func (j *jsiiProxy_DataDatabricksAppsAppAppStatusOutputReference) Message() *str
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppsAppAppStatusOutputReference) MessageInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"messageInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAppsAppAppStatusOutputReference) State() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"state",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAppsAppAppStatusOutputReference) StateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"stateInput",
 		&returns,
 	)
 	return returns
@@ -247,35 +221,13 @@ func (j *jsiiProxy_DataDatabricksAppsAppAppStatusOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAppsAppAppStatusOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAppsAppAppStatusOutputReference)SetInternalValue(val *DataDatabricksAppsAppAppStatus) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppsAppAppStatusOutputReference)SetMessage(val *string) {
-	if err := j.validateSetMessageParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"message",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppsAppAppStatusOutputReference)SetState(val *string) {
-	if err := j.validateSetStateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"state",
 		val,
 	)
 }
@@ -486,22 +438,6 @@ func (d *jsiiProxy_DataDatabricksAppsAppAppStatusOutputReference) InterpolationF
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksAppsAppAppStatusOutputReference) ResetMessage() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetMessage",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppsAppAppStatusOutputReference) ResetState() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetState",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksAppsAppAppStatusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

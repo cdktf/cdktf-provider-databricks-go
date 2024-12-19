@@ -166,41 +166,9 @@ func (j *jsiiProxy_DataDatabricksAppsAppComputeStatusOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppsAppComputeStatusOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataDatabricksAppsAppComputeStatus:
-		val := val.(*DataDatabricksAppsAppComputeStatus)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataDatabricksAppsAppComputeStatus:
-		val_ := val.(DataDatabricksAppsAppComputeStatus)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksAppsAppComputeStatus; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppsAppComputeStatusOutputReference) validateSetMessageParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppsAppComputeStatusOutputReference) validateSetStateParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_DataDatabricksAppsAppComputeStatusOutputReference) validateSetInternalValueParameters(val *DataDatabricksAppsAppComputeStatus) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

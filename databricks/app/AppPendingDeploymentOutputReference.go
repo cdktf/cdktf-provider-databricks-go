@@ -24,18 +24,13 @@ type AppPendingDeploymentOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	CreateTime() *string
-	SetCreateTime(val *string)
-	CreateTimeInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
 	Creator() *string
-	SetCreator(val *string)
-	CreatorInput() *string
 	DeploymentArtifacts() AppPendingDeploymentDeploymentArtifactsOutputReference
-	DeploymentArtifactsInput() interface{}
 	DeploymentId() *string
 	SetDeploymentId(val *string)
 	DeploymentIdInput() *string
@@ -50,7 +45,6 @@ type AppPendingDeploymentOutputReference interface {
 	SetSourceCodePath(val *string)
 	SourceCodePathInput() *string
 	Status() AppPendingDeploymentStatusOutputReference
-	StatusInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -60,8 +54,6 @@ type AppPendingDeploymentOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	UpdateTime() *string
-	SetUpdateTime(val *string)
-	UpdateTimeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -86,16 +78,9 @@ type AppPendingDeploymentOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDeploymentArtifacts(value *AppPendingDeploymentDeploymentArtifacts)
-	PutStatus(value *AppPendingDeploymentStatus)
-	ResetCreateTime()
-	ResetCreator()
-	ResetDeploymentArtifacts()
 	ResetDeploymentId()
 	ResetMode()
 	ResetSourceCodePath()
-	ResetStatus()
-	ResetUpdateTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -141,16 +126,6 @@ func (j *jsiiProxy_AppPendingDeploymentOutputReference) CreateTime() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppPendingDeploymentOutputReference) CreateTimeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createTimeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppPendingDeploymentOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -171,31 +146,11 @@ func (j *jsiiProxy_AppPendingDeploymentOutputReference) Creator() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppPendingDeploymentOutputReference) CreatorInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"creatorInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppPendingDeploymentOutputReference) DeploymentArtifacts() AppPendingDeploymentDeploymentArtifactsOutputReference {
 	var returns AppPendingDeploymentDeploymentArtifactsOutputReference
 	_jsii_.Get(
 		j,
 		"deploymentArtifacts",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppPendingDeploymentOutputReference) DeploymentArtifactsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"deploymentArtifactsInput",
 		&returns,
 	)
 	return returns
@@ -291,16 +246,6 @@ func (j *jsiiProxy_AppPendingDeploymentOutputReference) Status() AppPendingDeplo
 	return returns
 }
 
-func (j *jsiiProxy_AppPendingDeploymentOutputReference) StatusInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"statusInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppPendingDeploymentOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -326,16 +271,6 @@ func (j *jsiiProxy_AppPendingDeploymentOutputReference) UpdateTime() *string {
 	_jsii_.Get(
 		j,
 		"updateTime",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppPendingDeploymentOutputReference) UpdateTimeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updateTimeInput",
 		&returns,
 	)
 	return returns
@@ -387,28 +322,6 @@ func (j *jsiiProxy_AppPendingDeploymentOutputReference)SetComplexObjectIsFromSet
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppPendingDeploymentOutputReference)SetCreateTime(val *string) {
-	if err := j.validateSetCreateTimeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createTime",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppPendingDeploymentOutputReference)SetCreator(val *string) {
-	if err := j.validateSetCreatorParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"creator",
 		val,
 	)
 }
@@ -475,17 +388,6 @@ func (j *jsiiProxy_AppPendingDeploymentOutputReference)SetTerraformResource(val 
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppPendingDeploymentOutputReference)SetUpdateTime(val *string) {
-	if err := j.validateSetUpdateTimeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"updateTime",
 		val,
 	)
 }
@@ -676,52 +578,6 @@ func (a *jsiiProxy_AppPendingDeploymentOutputReference) InterpolationForAttribut
 	return returns
 }
 
-func (a *jsiiProxy_AppPendingDeploymentOutputReference) PutDeploymentArtifacts(value *AppPendingDeploymentDeploymentArtifacts) {
-	if err := a.validatePutDeploymentArtifactsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putDeploymentArtifacts",
-		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_AppPendingDeploymentOutputReference) PutStatus(value *AppPendingDeploymentStatus) {
-	if err := a.validatePutStatusParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putStatus",
-		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_AppPendingDeploymentOutputReference) ResetCreateTime() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetCreateTime",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppPendingDeploymentOutputReference) ResetCreator() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetCreator",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppPendingDeploymentOutputReference) ResetDeploymentArtifacts() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetDeploymentArtifacts",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AppPendingDeploymentOutputReference) ResetDeploymentId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -742,22 +598,6 @@ func (a *jsiiProxy_AppPendingDeploymentOutputReference) ResetSourceCodePath() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSourceCodePath",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppPendingDeploymentOutputReference) ResetStatus() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetStatus",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppPendingDeploymentOutputReference) ResetUpdateTime() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetUpdateTime",
 		nil, // no parameters
 	)
 }

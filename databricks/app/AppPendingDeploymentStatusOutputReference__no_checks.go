@@ -59,15 +59,7 @@ func (j *jsiiProxy_AppPendingDeploymentStatusOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_AppPendingDeploymentStatusOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppPendingDeploymentStatusOutputReference) validateSetMessageParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppPendingDeploymentStatusOutputReference) validateSetStateParameters(val *string) error {
+func (j *jsiiProxy_AppPendingDeploymentStatusOutputReference) validateSetInternalValueParameters(val *AppPendingDeploymentStatus) error {
 	return nil
 }
 

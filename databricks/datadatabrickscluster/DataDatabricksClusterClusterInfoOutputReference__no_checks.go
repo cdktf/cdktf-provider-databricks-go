@@ -175,7 +175,15 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetI
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetIsSingleNodeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetJdbcPortParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetKindParameters(val *string) error {
 	return nil
 }
 
@@ -248,6 +256,10 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetT
 }
 
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) validateSetUseMlRuntimeParameters(val interface{}) error {
 	return nil
 }
 

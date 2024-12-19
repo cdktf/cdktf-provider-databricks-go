@@ -93,50 +93,6 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validateInterpolationFor
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validatePutActiveDeploymentParameters(value *DataDatabricksAppAppActiveDeployment) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validatePutAppStatusParameters(value *DataDatabricksAppAppAppStatus) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validatePutComputeStatusParameters(value *DataDatabricksAppAppComputeStatus) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validatePutPendingDeploymentParameters(value *DataDatabricksAppAppPendingDeployment) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validatePutResourcesParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -241,30 +197,6 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetComplexObject
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetCreateTimeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetCreatorParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetDefaultSourceCodePathParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -289,30 +221,6 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetNameParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetServicePrincipalClientIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetServicePrincipalIdParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetServicePrincipalNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -322,30 +230,6 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetTerraformAttr
 }
 
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetUpdaterParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetUpdateTimeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetUrlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

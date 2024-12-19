@@ -81,6 +81,12 @@ type JobJobClusterNewClusterOutputReference interface {
 	InstancePoolIdInput() *string
 	InternalValue() *JobJobClusterNewCluster
 	SetInternalValue(val *JobJobClusterNewCluster)
+	IsSingleNode() interface{}
+	SetIsSingleNode(val interface{})
+	IsSingleNodeInput() interface{}
+	Kind() *string
+	SetKind(val *string)
+	KindInput() *string
 	Library() JobJobClusterNewClusterLibraryList
 	LibraryInput() interface{}
 	NodeTypeId() *string
@@ -118,6 +124,9 @@ type JobJobClusterNewClusterOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UseMlRuntime() interface{}
+	SetUseMlRuntime(val interface{})
+	UseMlRuntimeInput() interface{}
 	WorkloadType() JobJobClusterNewClusterWorkloadTypeOutputReference
 	WorkloadTypeInput() *JobJobClusterNewClusterWorkloadType
 	// Experimental.
@@ -173,6 +182,8 @@ type JobJobClusterNewClusterOutputReference interface {
 	ResetIdempotencyToken()
 	ResetInitScripts()
 	ResetInstancePoolId()
+	ResetIsSingleNode()
+	ResetKind()
 	ResetLibrary()
 	ResetNodeTypeId()
 	ResetNumWorkers()
@@ -182,6 +193,7 @@ type JobJobClusterNewClusterOutputReference interface {
 	ResetSparkConf()
 	ResetSparkEnvVars()
 	ResetSshPublicKeys()
+	ResetUseMlRuntime()
 	ResetWorkloadType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -628,6 +640,46 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) InternalValue() *JobJ
 	return returns
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) IsSingleNode() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSingleNode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) IsSingleNodeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSingleNodeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) Kind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) KindInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kindInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) Library() JobJobClusterNewClusterLibraryList {
 	var returns JobJobClusterNewClusterLibraryList
 	_jsii_.Get(
@@ -848,6 +900,26 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) TerraformResource() c
 	return returns
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) UseMlRuntime() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useMlRuntime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) UseMlRuntimeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useMlRuntimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) WorkloadType() JobJobClusterNewClusterWorkloadTypeOutputReference {
 	var returns JobJobClusterNewClusterWorkloadTypeOutputReference
 	_jsii_.Get(
@@ -1050,6 +1122,28 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference)SetInternalValue(val *
 	)
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference)SetIsSingleNode(val interface{}) {
+	if err := j.validateSetIsSingleNodeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isSingleNode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference)SetKind(val *string) {
+	if err := j.validateSetKindParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kind",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterOutputReference)SetNodeTypeId(val *string) {
 	if err := j.validateSetNodeTypeIdParameters(val); err != nil {
 		panic(err)
@@ -1167,6 +1261,17 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference)SetTerraformResource(v
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference)SetUseMlRuntime(val interface{}) {
+	if err := j.validateSetUseMlRuntimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useMlRuntime",
 		val,
 	)
 }
@@ -1619,6 +1724,22 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) ResetInstancePoolId()
 	)
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) ResetIsSingleNode() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetIsSingleNode",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) ResetKind() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetKind",
+		nil, // no parameters
+	)
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) ResetLibrary() {
 	_jsii_.InvokeVoid(
 		j,
@@ -1687,6 +1808,14 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) ResetSshPublicKeys() 
 	_jsii_.InvokeVoid(
 		j,
 		"resetSshPublicKeys",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) ResetUseMlRuntime() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetUseMlRuntime",
 		nil, // no parameters
 	)
 }

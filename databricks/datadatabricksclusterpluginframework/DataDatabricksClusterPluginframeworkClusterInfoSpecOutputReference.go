@@ -76,6 +76,12 @@ type DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference interfac
 	InstancePoolIdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	IsSingleNode() interface{}
+	SetIsSingleNode(val interface{})
+	IsSingleNodeInput() interface{}
+	Kind() *string
+	SetKind(val *string)
+	KindInput() *string
 	NodeTypeId() *string
 	SetNodeTypeId(val *string)
 	NodeTypeIdInput() *string
@@ -111,6 +117,9 @@ type DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference interfac
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UseMlRuntime() interface{}
+	SetUseMlRuntime(val interface{})
+	UseMlRuntimeInput() interface{}
 	WorkloadType() DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeList
 	WorkloadTypeInput() interface{}
 	// Experimental.
@@ -162,6 +171,8 @@ type DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference interfac
 	ResetGcpAttributes()
 	ResetInitScripts()
 	ResetInstancePoolId()
+	ResetIsSingleNode()
+	ResetKind()
 	ResetNodeTypeId()
 	ResetNumWorkers()
 	ResetPolicyId()
@@ -171,6 +182,7 @@ type DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference interfac
 	ResetSparkEnvVars()
 	ResetSparkVersion()
 	ResetSshPublicKeys()
+	ResetUseMlRuntime()
 	ResetWorkloadType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -577,6 +589,46 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) IsSingleNode() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSingleNode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) IsSingleNodeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSingleNodeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) Kind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) KindInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kindInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) NodeTypeId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -777,6 +829,26 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) UseMlRuntime() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useMlRuntime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) UseMlRuntimeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useMlRuntimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) WorkloadType() DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeList {
 	var returns DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeList
 	_jsii_.Get(
@@ -968,6 +1040,28 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputRefe
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference)SetIsSingleNode(val interface{}) {
+	if err := j.validateSetIsSingleNodeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isSingleNode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference)SetKind(val *string) {
+	if err := j.validateSetKindParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kind",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference)SetNodeTypeId(val *string) {
 	if err := j.validateSetNodeTypeIdParameters(val); err != nil {
 		panic(err)
@@ -1085,6 +1179,17 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputRefe
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference)SetUseMlRuntime(val interface{}) {
+	if err := j.validateSetUseMlRuntimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useMlRuntime",
 		val,
 	)
 }
@@ -1499,6 +1604,22 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputRefe
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) ResetIsSingleNode() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIsSingleNode",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) ResetKind() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKind",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) ResetNodeTypeId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1567,6 +1688,14 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputRefe
 	_jsii_.InvokeVoid(
 		d,
 		"resetSshPublicKeys",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference) ResetUseMlRuntime() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUseMlRuntime",
 		nil, // no parameters
 	)
 }

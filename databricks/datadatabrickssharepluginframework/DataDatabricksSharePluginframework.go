@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework databricks_share_pluginframework}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework databricks_share_pluginframework}.
 type DataDatabricksSharePluginframework interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,11 +27,7 @@ type DataDatabricksSharePluginframework interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedAt() *float64
-	SetCreatedAt(val *float64)
-	CreatedAtInput() *float64
 	CreatedBy() *string
-	SetCreatedBy(val *string)
-	CreatedByInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -77,11 +73,7 @@ type DataDatabricksSharePluginframework interface {
 	// Experimental.
 	TerraformResourceType() *string
 	UpdatedAt() *float64
-	SetUpdatedAt(val *float64)
-	UpdatedAtInput() *float64
 	UpdatedBy() *string
-	SetUpdatedBy(val *string)
-	UpdatedByInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -109,8 +101,6 @@ type DataDatabricksSharePluginframework interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutObject(value interface{})
 	ResetComment()
-	ResetCreatedAt()
-	ResetCreatedBy()
 	ResetName()
 	ResetObject()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -119,8 +109,6 @@ type DataDatabricksSharePluginframework interface {
 	ResetOwner()
 	ResetStorageLocation()
 	ResetStorageRoot()
-	ResetUpdatedAt()
-	ResetUpdatedBy()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -200,31 +188,11 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework) CreatedAt() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframework) CreatedAtInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"createdAtInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksSharePluginframework) CreatedBy() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"createdBy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframework) CreatedByInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdByInput",
 		&returns,
 	)
 	return returns
@@ -450,16 +418,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework) UpdatedAt() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframework) UpdatedAtInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"updatedAtInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksSharePluginframework) UpdatedBy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -470,18 +428,8 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework) UpdatedBy() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframework) UpdatedByInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedByInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source.
 func NewDataDatabricksSharePluginframework(scope constructs.Construct, id *string, config *DataDatabricksSharePluginframeworkConfig) DataDatabricksSharePluginframework {
 	_init_.Initialize()
 
@@ -499,7 +447,7 @@ func NewDataDatabricksSharePluginframework(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source.
 func NewDataDatabricksSharePluginframework_Override(d DataDatabricksSharePluginframework, scope constructs.Construct, id *string, config *DataDatabricksSharePluginframeworkConfig) {
 	_init_.Initialize()
 
@@ -528,28 +476,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework)SetCount(val interface{}) 
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframework)SetCreatedAt(val *float64) {
-	if err := j.validateSetCreatedAtParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createdAt",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframework)SetCreatedBy(val *string) {
-	if err := j.validateSetCreatedByParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createdBy",
 		val,
 	)
 }
@@ -629,28 +555,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework)SetStorageRoot(val *string
 	_jsii_.Set(
 		j,
 		"storageRoot",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframework)SetUpdatedAt(val *float64) {
-	if err := j.validateSetUpdatedAtParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"updatedAt",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframework)SetUpdatedBy(val *string) {
-	if err := j.validateSetUpdatedByParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"updatedBy",
 		val,
 	)
 }
@@ -959,22 +863,6 @@ func (d *jsiiProxy_DataDatabricksSharePluginframework) ResetComment() {
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksSharePluginframework) ResetCreatedAt() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCreatedAt",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksSharePluginframework) ResetCreatedBy() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCreatedBy",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksSharePluginframework) ResetName() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1019,22 +907,6 @@ func (d *jsiiProxy_DataDatabricksSharePluginframework) ResetStorageRoot() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetStorageRoot",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksSharePluginframework) ResetUpdatedAt() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUpdatedAt",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksSharePluginframework) ResetUpdatedBy() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUpdatedBy",
 		nil, // no parameters
 	)
 }

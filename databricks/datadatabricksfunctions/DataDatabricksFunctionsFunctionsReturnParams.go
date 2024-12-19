@@ -5,7 +5,7 @@ package datadatabricksfunctions
 
 
 type DataDatabricksFunctionsFunctionsReturnParams struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/functions#parameters DataDatabricksFunctions#parameters}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/functions#parameters DataDatabricksFunctions#parameters}.
 	Parameters interface{} `field:"optional" json:"parameters" yaml:"parameters"`
 }
 

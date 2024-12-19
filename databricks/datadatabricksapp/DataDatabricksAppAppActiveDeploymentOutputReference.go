@@ -24,25 +24,20 @@ type DataDatabricksAppAppActiveDeploymentOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	CreateTime() *string
-	SetCreateTime(val *string)
-	CreateTimeInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
 	Creator() *string
-	SetCreator(val *string)
-	CreatorInput() *string
 	DeploymentArtifacts() DataDatabricksAppAppActiveDeploymentDeploymentArtifactsOutputReference
-	DeploymentArtifactsInput() interface{}
 	DeploymentId() *string
 	SetDeploymentId(val *string)
 	DeploymentIdInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAppAppActiveDeployment
+	SetInternalValue(val *DataDatabricksAppAppActiveDeployment)
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
@@ -50,7 +45,6 @@ type DataDatabricksAppAppActiveDeploymentOutputReference interface {
 	SetSourceCodePath(val *string)
 	SourceCodePathInput() *string
 	Status() DataDatabricksAppAppActiveDeploymentStatusOutputReference
-	StatusInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -60,8 +54,6 @@ type DataDatabricksAppAppActiveDeploymentOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	UpdateTime() *string
-	SetUpdateTime(val *string)
-	UpdateTimeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -86,16 +78,9 @@ type DataDatabricksAppAppActiveDeploymentOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDeploymentArtifacts(value *DataDatabricksAppAppActiveDeploymentDeploymentArtifacts)
-	PutStatus(value *DataDatabricksAppAppActiveDeploymentStatus)
-	ResetCreateTime()
-	ResetCreator()
-	ResetDeploymentArtifacts()
 	ResetDeploymentId()
 	ResetMode()
 	ResetSourceCodePath()
-	ResetStatus()
-	ResetUpdateTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -141,16 +126,6 @@ func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) CreateTi
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) CreateTimeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createTimeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -171,31 +146,11 @@ func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) Creator(
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) CreatorInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"creatorInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) DeploymentArtifacts() DataDatabricksAppAppActiveDeploymentDeploymentArtifactsOutputReference {
 	var returns DataDatabricksAppAppActiveDeploymentDeploymentArtifactsOutputReference
 	_jsii_.Get(
 		j,
 		"deploymentArtifacts",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) DeploymentArtifactsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"deploymentArtifactsInput",
 		&returns,
 	)
 	return returns
@@ -231,8 +186,8 @@ func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) InternalValue() *DataDatabricksAppAppActiveDeployment {
+	var returns *DataDatabricksAppAppActiveDeployment
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -291,16 +246,6 @@ func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) Status()
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) StatusInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"statusInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -326,16 +271,6 @@ func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) UpdateTi
 	_jsii_.Get(
 		j,
 		"updateTime",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) UpdateTimeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updateTimeInput",
 		&returns,
 	)
 	return returns
@@ -391,28 +326,6 @@ func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference)SetCreateTime(val *string) {
-	if err := j.validateSetCreateTimeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createTime",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference)SetCreator(val *string) {
-	if err := j.validateSetCreatorParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"creator",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference)SetDeploymentId(val *string) {
 	if err := j.validateSetDeploymentIdParameters(val); err != nil {
 		panic(err)
@@ -424,7 +337,7 @@ func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference)SetDeploy
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference)SetInternalValue(val *DataDatabricksAppAppActiveDeployment) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,17 +388,6 @@ func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference)SetTerraf
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference)SetUpdateTime(val *string) {
-	if err := j.validateSetUpdateTimeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"updateTime",
 		val,
 	)
 }
@@ -676,52 +578,6 @@ func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) PutDeploymentArtifacts(value *DataDatabricksAppAppActiveDeploymentDeploymentArtifacts) {
-	if err := d.validatePutDeploymentArtifactsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putDeploymentArtifacts",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) PutStatus(value *DataDatabricksAppAppActiveDeploymentStatus) {
-	if err := d.validatePutStatusParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putStatus",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) ResetCreateTime() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCreateTime",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) ResetCreator() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCreator",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) ResetDeploymentArtifacts() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDeploymentArtifacts",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) ResetDeploymentId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -742,22 +598,6 @@ func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) ResetSou
 	_jsii_.InvokeVoid(
 		d,
 		"resetSourceCodePath",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) ResetStatus() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetStatus",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppAppActiveDeploymentOutputReference) ResetUpdateTime() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUpdateTime",
 		nil, // no parameters
 	)
 }

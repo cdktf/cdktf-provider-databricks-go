@@ -107,14 +107,6 @@ func (j *jsiiProxy_SharePluginframework) validateSetCountParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_SharePluginframework) validateSetCreatedAtParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_SharePluginframework) validateSetCreatedByParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_SharePluginframework) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -136,14 +128,6 @@ func (j *jsiiProxy_SharePluginframework) validateSetStorageLocationParameters(va
 }
 
 func (j *jsiiProxy_SharePluginframework) validateSetStorageRootParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_SharePluginframework) validateSetUpdatedAtParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_SharePluginframework) validateSetUpdatedByParameters(val *string) error {
 	return nil
 }
 

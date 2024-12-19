@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/cluster databricks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/cluster databricks_cluster}.
 type Cluster interface {
 	cdktf.TerraformResource
 	ApplyPolicyDefaultValues() interface{}
@@ -96,6 +96,12 @@ type Cluster interface {
 	IsPinned() interface{}
 	SetIsPinned(val interface{})
 	IsPinnedInput() interface{}
+	IsSingleNode() interface{}
+	SetIsSingleNode(val interface{})
+	IsSingleNodeInput() interface{}
+	Kind() *string
+	SetKind(val *string)
+	KindInput() *string
 	Library() ClusterLibraryList
 	LibraryInput() interface{}
 	// Experimental.
@@ -154,6 +160,9 @@ type Cluster interface {
 	Timeouts() ClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Url() *string
+	UseMlRuntime() interface{}
+	SetUseMlRuntime(val interface{})
+	UseMlRuntimeInput() interface{}
 	WorkloadType() ClusterWorkloadTypeOutputReference
 	WorkloadTypeInput() *ClusterWorkloadType
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -231,6 +240,8 @@ type Cluster interface {
 	ResetInitScripts()
 	ResetInstancePoolId()
 	ResetIsPinned()
+	ResetIsSingleNode()
+	ResetKind()
 	ResetLibrary()
 	ResetNodeTypeId()
 	ResetNoWait()
@@ -245,6 +256,7 @@ type Cluster interface {
 	ResetSparkEnvVars()
 	ResetSshPublicKeys()
 	ResetTimeouts()
+	ResetUseMlRuntime()
 	ResetWorkloadType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -784,6 +796,46 @@ func (j *jsiiProxy_Cluster) IsPinnedInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Cluster) IsSingleNode() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSingleNode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) IsSingleNodeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSingleNodeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) Kind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) KindInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kindInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Cluster) Library() ClusterLibraryList {
 	var returns ClusterLibraryList
 	_jsii_.Get(
@@ -1124,6 +1176,26 @@ func (j *jsiiProxy_Cluster) Url() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Cluster) UseMlRuntime() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useMlRuntime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) UseMlRuntimeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useMlRuntimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Cluster) WorkloadType() ClusterWorkloadTypeOutputReference {
 	var returns ClusterWorkloadTypeOutputReference
 	_jsii_.Get(
@@ -1145,7 +1217,7 @@ func (j *jsiiProxy_Cluster) WorkloadTypeInput() *ClusterWorkloadType {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) Cluster {
 	_init_.Initialize()
 
@@ -1163,7 +1235,7 @@ func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster_Override(c Cluster, scope constructs.Construct, id *string, config *ClusterConfig) {
 	_init_.Initialize()
 
@@ -1355,6 +1427,28 @@ func (j *jsiiProxy_Cluster)SetIsPinned(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Cluster)SetIsSingleNode(val interface{}) {
+	if err := j.validateSetIsSingleNodeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isSingleNode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Cluster)SetKind(val *string) {
+	if err := j.validateSetKindParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kind",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Cluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1491,6 +1585,17 @@ func (j *jsiiProxy_Cluster)SetSshPublicKeys(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"sshPublicKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Cluster)SetUseMlRuntime(val interface{}) {
+	if err := j.validateSetUseMlRuntimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useMlRuntime",
 		val,
 	)
 }
@@ -2137,6 +2242,22 @@ func (c *jsiiProxy_Cluster) ResetIsPinned() {
 	)
 }
 
+func (c *jsiiProxy_Cluster) ResetIsSingleNode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIsSingleNode",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cluster) ResetKind() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKind",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_Cluster) ResetLibrary() {
 	_jsii_.InvokeVoid(
 		c,
@@ -2229,6 +2350,14 @@ func (c *jsiiProxy_Cluster) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cluster) ResetUseMlRuntime() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUseMlRuntime",
 		nil, // no parameters
 	)
 }

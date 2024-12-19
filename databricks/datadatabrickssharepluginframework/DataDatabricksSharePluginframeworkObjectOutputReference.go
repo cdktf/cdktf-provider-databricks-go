@@ -14,11 +14,7 @@ import (
 type DataDatabricksSharePluginframeworkObjectOutputReference interface {
 	cdktf.ComplexObject
 	AddedAt() *float64
-	SetAddedAt(val *float64)
-	AddedAtInput() *float64
 	AddedBy() *string
-	SetAddedBy(val *string)
-	AddedByInput() *string
 	CdfEnabled() interface{}
 	SetCdfEnabled(val interface{})
 	CdfEnabledInput() interface{}
@@ -46,18 +42,10 @@ type DataDatabricksSharePluginframeworkObjectOutputReference interface {
 	DataObjectType() *string
 	SetDataObjectType(val *string)
 	DataObjectTypeInput() *string
-	EffectiveCdfEnabled() interface{}
-	SetEffectiveCdfEnabled(val interface{})
-	EffectiveCdfEnabledInput() interface{}
+	EffectiveCdfEnabled() cdktf.IResolvable
 	EffectiveHistoryDataSharingStatus() *string
-	SetEffectiveHistoryDataSharingStatus(val *string)
-	EffectiveHistoryDataSharingStatusInput() *string
 	EffectiveSharedAs() *string
-	SetEffectiveSharedAs(val *string)
-	EffectiveSharedAsInput() *string
 	EffectiveStartVersion() *float64
-	SetEffectiveStartVersion(val *float64)
-	EffectiveStartVersionInput() *float64
 	// Experimental.
 	Fqn() *string
 	HistoryDataSharingStatus() *string
@@ -77,8 +65,6 @@ type DataDatabricksSharePluginframeworkObjectOutputReference interface {
 	SetStartVersion(val *float64)
 	StartVersionInput() *float64
 	Status() *string
-	SetStatus(val *string)
-	StatusInput() *string
 	StringSharedAs() *string
 	SetStringSharedAs(val *string)
 	StringSharedAsInput() *string
@@ -115,21 +101,14 @@ type DataDatabricksSharePluginframeworkObjectOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPartition(value interface{})
-	ResetAddedAt()
-	ResetAddedBy()
 	ResetCdfEnabled()
 	ResetComment()
 	ResetContent()
 	ResetDataObjectType()
-	ResetEffectiveCdfEnabled()
-	ResetEffectiveHistoryDataSharingStatus()
-	ResetEffectiveSharedAs()
-	ResetEffectiveStartVersion()
 	ResetHistoryDataSharingStatus()
 	ResetPartition()
 	ResetSharedAs()
 	ResetStartVersion()
-	ResetStatus()
 	ResetStringSharedAs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -156,31 +135,11 @@ func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) Adde
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) AddedAtInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"addedAtInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) AddedBy() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"addedBy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) AddedByInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"addedByInput",
 		&returns,
 	)
 	return returns
@@ -296,21 +255,11 @@ func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) Data
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) EffectiveCdfEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) EffectiveCdfEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"effectiveCdfEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) EffectiveCdfEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"effectiveCdfEnabledInput",
 		&returns,
 	)
 	return returns
@@ -326,16 +275,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) Effe
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) EffectiveHistoryDataSharingStatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"effectiveHistoryDataSharingStatusInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) EffectiveSharedAs() *string {
 	var returns *string
 	_jsii_.Get(
@@ -346,31 +285,11 @@ func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) Effe
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) EffectiveSharedAsInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"effectiveSharedAsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) EffectiveStartVersion() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"effectiveStartVersion",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) EffectiveStartVersionInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"effectiveStartVersionInput",
 		&returns,
 	)
 	return returns
@@ -506,16 +425,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) Stat
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) StatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"statusInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) StringSharedAs() *string {
 	var returns *string
 	_jsii_.Get(
@@ -581,28 +490,6 @@ func NewDataDatabricksSharePluginframeworkObjectOutputReference_Override(d DataD
 		"@cdktf/provider-databricks.dataDatabricksSharePluginframework.DataDatabricksSharePluginframeworkObjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference)SetAddedAt(val *float64) {
-	if err := j.validateSetAddedAtParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"addedAt",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference)SetAddedBy(val *string) {
-	if err := j.validateSetAddedByParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"addedBy",
-		val,
 	)
 }
 
@@ -672,50 +559,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference)SetDa
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference)SetEffectiveCdfEnabled(val interface{}) {
-	if err := j.validateSetEffectiveCdfEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"effectiveCdfEnabled",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference)SetEffectiveHistoryDataSharingStatus(val *string) {
-	if err := j.validateSetEffectiveHistoryDataSharingStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"effectiveHistoryDataSharingStatus",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference)SetEffectiveSharedAs(val *string) {
-	if err := j.validateSetEffectiveSharedAsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"effectiveSharedAs",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference)SetEffectiveStartVersion(val *float64) {
-	if err := j.validateSetEffectiveStartVersionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"effectiveStartVersion",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference)SetHistoryDataSharingStatus(val *string) {
 	if err := j.validateSetHistoryDataSharingStatusParameters(val); err != nil {
 		panic(err)
@@ -767,17 +610,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference)SetSt
 	_jsii_.Set(
 		j,
 		"startVersion",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference)SetStatus(val *string) {
-	if err := j.validateSetStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"status",
 		val,
 	)
 }
@@ -1012,22 +844,6 @@ func (d *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) PutP
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) ResetAddedAt() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAddedAt",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) ResetAddedBy() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAddedBy",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) ResetCdfEnabled() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1060,38 +876,6 @@ func (d *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) Rese
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) ResetEffectiveCdfEnabled() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEffectiveCdfEnabled",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) ResetEffectiveHistoryDataSharingStatus() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEffectiveHistoryDataSharingStatus",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) ResetEffectiveSharedAs() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEffectiveSharedAs",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) ResetEffectiveStartVersion() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEffectiveStartVersion",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) ResetHistoryDataSharingStatus() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1120,14 +904,6 @@ func (d *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) Rese
 	_jsii_.InvokeVoid(
 		d,
 		"resetStartVersion",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksSharePluginframeworkObjectOutputReference) ResetStatus() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetStatus",
 		nil, // no parameters
 	)
 }

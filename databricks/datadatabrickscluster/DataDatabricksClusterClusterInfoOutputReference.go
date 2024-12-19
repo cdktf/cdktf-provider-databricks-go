@@ -97,9 +97,15 @@ type DataDatabricksClusterClusterInfoOutputReference interface {
 	InstancePoolIdInput() *string
 	InternalValue() *DataDatabricksClusterClusterInfo
 	SetInternalValue(val *DataDatabricksClusterClusterInfo)
+	IsSingleNode() interface{}
+	SetIsSingleNode(val interface{})
+	IsSingleNodeInput() interface{}
 	JdbcPort() *float64
 	SetJdbcPort(val *float64)
 	JdbcPortInput() *float64
+	Kind() *string
+	SetKind(val *string)
+	KindInput() *string
 	LastRestartedTime() *float64
 	SetLastRestartedTime(val *float64)
 	LastRestartedTimeInput() *float64
@@ -160,6 +166,9 @@ type DataDatabricksClusterClusterInfoOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UseMlRuntime() interface{}
+	SetUseMlRuntime(val interface{})
+	UseMlRuntimeInput() interface{}
 	WorkloadType() DataDatabricksClusterClusterInfoWorkloadTypeOutputReference
 	WorkloadTypeInput() *DataDatabricksClusterClusterInfoWorkloadType
 	// Experimental.
@@ -224,7 +233,9 @@ type DataDatabricksClusterClusterInfoOutputReference interface {
 	ResetGcpAttributes()
 	ResetInitScripts()
 	ResetInstancePoolId()
+	ResetIsSingleNode()
 	ResetJdbcPort()
+	ResetKind()
 	ResetLastRestartedTime()
 	ResetLastStateLossTime()
 	ResetNodeTypeId()
@@ -243,6 +254,7 @@ type DataDatabricksClusterClusterInfoOutputReference interface {
 	ResetStateMessage()
 	ResetTerminatedTime()
 	ResetTerminationReason()
+	ResetUseMlRuntime()
 	ResetWorkloadType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -809,6 +821,26 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) InternalValu
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) IsSingleNode() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSingleNode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) IsSingleNodeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSingleNodeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) JdbcPort() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -824,6 +856,26 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) JdbcPortInpu
 	_jsii_.Get(
 		j,
 		"jdbcPortInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) Kind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) KindInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kindInput",
 		&returns,
 	)
 	return returns
@@ -1209,6 +1261,26 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) TerraformRes
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) UseMlRuntime() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useMlRuntime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) UseMlRuntimeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useMlRuntimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) WorkloadType() DataDatabricksClusterClusterInfoWorkloadTypeOutputReference {
 	var returns DataDatabricksClusterClusterInfoWorkloadTypeOutputReference
 	_jsii_.Get(
@@ -1455,6 +1527,17 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetInternalVa
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetIsSingleNode(val interface{}) {
+	if err := j.validateSetIsSingleNodeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isSingleNode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetJdbcPort(val *float64) {
 	if err := j.validateSetJdbcPortParameters(val); err != nil {
 		panic(err)
@@ -1462,6 +1545,17 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetJdbcPort(v
 	_jsii_.Set(
 		j,
 		"jdbcPort",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetKind(val *string) {
+	if err := j.validateSetKindParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kind",
 		val,
 	)
 }
@@ -1660,6 +1754,17 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetTerraformR
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference)SetUseMlRuntime(val interface{}) {
+	if err := j.validateSetUseMlRuntimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useMlRuntime",
 		val,
 	)
 }
@@ -2193,10 +2298,26 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetInstanc
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetIsSingleNode() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIsSingleNode",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetJdbcPort() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetJdbcPort",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetKind() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKind",
 		nil, // no parameters
 	)
 }
@@ -2341,6 +2462,14 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetTermina
 	_jsii_.InvokeVoid(
 		d,
 		"resetTerminationReason",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoOutputReference) ResetUseMlRuntime() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUseMlRuntime",
 		nil, // no parameters
 	)
 }

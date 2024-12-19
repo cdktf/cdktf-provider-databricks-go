@@ -55,14 +55,6 @@ func (s *jsiiProxy_SharePluginframeworkObjectOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetAddedAtParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetAddedByParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetCdfEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -87,22 +79,6 @@ func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetDataObj
 	return nil
 }
 
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetEffectiveCdfEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetEffectiveHistoryDataSharingStatusParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetEffectiveSharedAsParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetEffectiveStartVersionParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetHistoryDataSharingStatusParameters(val *string) error {
 	return nil
 }
@@ -120,10 +96,6 @@ func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetSharedA
 }
 
 func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetStartVersionParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetStatusParameters(val *string) error {
 	return nil
 }
 

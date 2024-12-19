@@ -28,9 +28,9 @@ type PipelineRestartWindowOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DaysOfWeek() *string
-	SetDaysOfWeek(val *string)
-	DaysOfWeekInput() *string
+	DaysOfWeek() *[]*string
+	SetDaysOfWeek(val *[]*string)
+	DaysOfWeekInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *PipelineRestartWindow
@@ -120,8 +120,8 @@ func (j *jsiiProxy_PipelineRestartWindowOutputReference) CreationStack() *[]*str
 	return returns
 }
 
-func (j *jsiiProxy_PipelineRestartWindowOutputReference) DaysOfWeek() *string {
-	var returns *string
+func (j *jsiiProxy_PipelineRestartWindowOutputReference) DaysOfWeek() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"daysOfWeek",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_PipelineRestartWindowOutputReference) DaysOfWeek() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PipelineRestartWindowOutputReference) DaysOfWeekInput() *string {
-	var returns *string
+func (j *jsiiProxy_PipelineRestartWindowOutputReference) DaysOfWeekInput() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"daysOfWeekInput",
@@ -270,7 +270,7 @@ func (j *jsiiProxy_PipelineRestartWindowOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_PipelineRestartWindowOutputReference)SetDaysOfWeek(val *string) {
+func (j *jsiiProxy_PipelineRestartWindowOutputReference)SetDaysOfWeek(val *[]*string) {
 	if err := j.validateSetDaysOfWeekParameters(val); err != nil {
 		panic(err)
 	}

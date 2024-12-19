@@ -83,14 +83,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetCountParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetCreatedAtParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetCreatedByParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -108,14 +100,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetStorageLocatio
 }
 
 func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetStorageRootParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetUpdatedAtParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetUpdatedByParameters(val *string) error {
 	return nil
 }
 

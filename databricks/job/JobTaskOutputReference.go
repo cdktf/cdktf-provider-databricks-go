@@ -13,6 +13,8 @@ import (
 
 type JobTaskOutputReference interface {
 	cdktf.ComplexObject
+	CleanRoomsNotebookTask() JobTaskCleanRoomsNotebookTaskOutputReference
+	CleanRoomsNotebookTaskInput() *JobTaskCleanRoomsNotebookTask
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -133,6 +135,7 @@ type JobTaskOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCleanRoomsNotebookTask(value *JobTaskCleanRoomsNotebookTask)
 	PutConditionTask(value *JobTaskConditionTask)
 	PutDbtTask(value *JobTaskDbtTask)
 	PutDependsOn(value interface{})
@@ -151,6 +154,7 @@ type JobTaskOutputReference interface {
 	PutSparkSubmitTask(value *JobTaskSparkSubmitTask)
 	PutSqlTask(value *JobTaskSqlTask)
 	PutWebhookNotifications(value *JobTaskWebhookNotifications)
+	ResetCleanRoomsNotebookTask()
 	ResetConditionTask()
 	ResetDbtTask()
 	ResetDependsOn()
@@ -192,6 +196,26 @@ type JobTaskOutputReference interface {
 // The jsii proxy struct for JobTaskOutputReference
 type jsiiProxy_JobTaskOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) CleanRoomsNotebookTask() JobTaskCleanRoomsNotebookTaskOutputReference {
+	var returns JobTaskCleanRoomsNotebookTaskOutputReference
+	_jsii_.Get(
+		j,
+		"cleanRoomsNotebookTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) CleanRoomsNotebookTaskInput() *JobTaskCleanRoomsNotebookTask {
+	var returns *JobTaskCleanRoomsNotebookTask
+	_jsii_.Get(
+		j,
+		"cleanRoomsNotebookTaskInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_JobTaskOutputReference) ComplexObjectIndex() interface{} {
@@ -1234,6 +1258,17 @@ func (j *jsiiProxy_JobTaskOutputReference) InterpolationForAttribute(property *s
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) PutCleanRoomsNotebookTask(value *JobTaskCleanRoomsNotebookTask) {
+	if err := j.validatePutCleanRoomsNotebookTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putCleanRoomsNotebookTask",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) PutConditionTask(value *JobTaskConditionTask) {
 	if err := j.validatePutConditionTaskParameters(value); err != nil {
 		panic(err)
@@ -1429,6 +1464,14 @@ func (j *jsiiProxy_JobTaskOutputReference) PutWebhookNotifications(value *JobTas
 		j,
 		"putWebhookNotifications",
 		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ResetCleanRoomsNotebookTask() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetCleanRoomsNotebookTask",
+		nil, // no parameters
 	)
 }
 

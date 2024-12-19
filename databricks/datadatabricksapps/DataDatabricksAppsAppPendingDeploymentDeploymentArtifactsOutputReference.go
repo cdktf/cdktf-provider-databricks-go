@@ -30,8 +30,8 @@ type DataDatabricksAppsAppPendingDeploymentDeploymentArtifactsOutputReference in
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts
+	SetInternalValue(val *DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts)
 	SourceCodePath() *string
 	SetSourceCodePath(val *string)
 	SourceCodePathInput() *string
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataDatabricksAppsAppPendingDeploymentDeploymentArtifactsOutp
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppsAppPendingDeploymentDeploymentArtifactsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAppsAppPendingDeploymentDeploymentArtifactsOutputReference) InternalValue() *DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts {
+	var returns *DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -223,7 +223,7 @@ func (j *jsiiProxy_DataDatabricksAppsAppPendingDeploymentDeploymentArtifactsOutp
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAppsAppPendingDeploymentDeploymentArtifactsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAppsAppPendingDeploymentDeploymentArtifactsOutputReference)SetInternalValue(val *DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

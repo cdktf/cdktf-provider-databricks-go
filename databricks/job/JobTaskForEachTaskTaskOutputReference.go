@@ -13,6 +13,8 @@ import (
 
 type JobTaskForEachTaskTaskOutputReference interface {
 	cdktf.ComplexObject
+	CleanRoomsNotebookTask() JobTaskForEachTaskTaskCleanRoomsNotebookTaskOutputReference
+	CleanRoomsNotebookTaskInput() *JobTaskForEachTaskTaskCleanRoomsNotebookTask
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -131,6 +133,7 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCleanRoomsNotebookTask(value *JobTaskForEachTaskTaskCleanRoomsNotebookTask)
 	PutConditionTask(value *JobTaskForEachTaskTaskConditionTask)
 	PutDbtTask(value *JobTaskForEachTaskTaskDbtTask)
 	PutDependsOn(value interface{})
@@ -148,6 +151,7 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	PutSparkSubmitTask(value *JobTaskForEachTaskTaskSparkSubmitTask)
 	PutSqlTask(value *JobTaskForEachTaskTaskSqlTask)
 	PutWebhookNotifications(value *JobTaskForEachTaskTaskWebhookNotifications)
+	ResetCleanRoomsNotebookTask()
 	ResetConditionTask()
 	ResetDbtTask()
 	ResetDependsOn()
@@ -188,6 +192,26 @@ type JobTaskForEachTaskTaskOutputReference interface {
 // The jsii proxy struct for JobTaskForEachTaskTaskOutputReference
 type jsiiProxy_JobTaskForEachTaskTaskOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) CleanRoomsNotebookTask() JobTaskForEachTaskTaskCleanRoomsNotebookTaskOutputReference {
+	var returns JobTaskForEachTaskTaskCleanRoomsNotebookTaskOutputReference
+	_jsii_.Get(
+		j,
+		"cleanRoomsNotebookTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) CleanRoomsNotebookTaskInput() *JobTaskForEachTaskTaskCleanRoomsNotebookTask {
+	var returns *JobTaskForEachTaskTaskCleanRoomsNotebookTask
+	_jsii_.Get(
+		j,
+		"cleanRoomsNotebookTaskInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ComplexObjectIndex() interface{} {
@@ -1210,6 +1234,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) InterpolationForAttrib
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) PutCleanRoomsNotebookTask(value *JobTaskForEachTaskTaskCleanRoomsNotebookTask) {
+	if err := j.validatePutCleanRoomsNotebookTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putCleanRoomsNotebookTask",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) PutConditionTask(value *JobTaskForEachTaskTaskConditionTask) {
 	if err := j.validatePutConditionTaskParameters(value); err != nil {
 		panic(err)
@@ -1394,6 +1429,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) PutWebhookNotification
 		j,
 		"putWebhookNotifications",
 		[]interface{}{value},
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ResetCleanRoomsNotebookTask() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetCleanRoomsNotebookTask",
+		nil, // no parameters
 	)
 }
 

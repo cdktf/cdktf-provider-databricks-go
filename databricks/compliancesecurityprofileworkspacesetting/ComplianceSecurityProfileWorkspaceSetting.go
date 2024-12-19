@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/compliance_security_profile_workspace_setting databricks_compliance_security_profile_workspace_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/compliance_security_profile_workspace_setting databricks_compliance_security_profile_workspace_setting}.
 type ComplianceSecurityProfileWorkspaceSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_ComplianceSecurityProfileWorkspaceSetting) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/compliance_security_profile_workspace_setting databricks_compliance_security_profile_workspace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/compliance_security_profile_workspace_setting databricks_compliance_security_profile_workspace_setting} Resource.
 func NewComplianceSecurityProfileWorkspaceSetting(scope constructs.Construct, id *string, config *ComplianceSecurityProfileWorkspaceSettingConfig) ComplianceSecurityProfileWorkspaceSetting {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewComplianceSecurityProfileWorkspaceSetting(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/compliance_security_profile_workspace_setting databricks_compliance_security_profile_workspace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/compliance_security_profile_workspace_setting databricks_compliance_security_profile_workspace_setting} Resource.
 func NewComplianceSecurityProfileWorkspaceSetting_Override(c ComplianceSecurityProfileWorkspaceSetting, scope constructs.Construct, id *string, config *ComplianceSecurityProfileWorkspaceSettingConfig) {
 	_init_.Initialize()
 

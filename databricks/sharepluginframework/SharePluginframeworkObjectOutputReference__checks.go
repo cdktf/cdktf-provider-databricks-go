@@ -132,22 +132,6 @@ func (s *jsiiProxy_SharePluginframeworkObjectOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetAddedAtParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetAddedByParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetCdfEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -257,50 +241,6 @@ func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetDataObj
 	return nil
 }
 
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetEffectiveCdfEnabledParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetEffectiveHistoryDataSharingStatusParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetEffectiveSharedAsParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetEffectiveStartVersionParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetHistoryDataSharingStatusParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -350,14 +290,6 @@ func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetSharedA
 }
 
 func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetStartVersionParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SharePluginframeworkObjectOutputReference) validateSetStatusParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -166,25 +166,9 @@ func (j *jsiiProxy_AppActiveDeploymentDeploymentArtifactsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_AppActiveDeploymentDeploymentArtifactsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *AppActiveDeploymentDeploymentArtifacts:
-		val := val.(*AppActiveDeploymentDeploymentArtifacts)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case AppActiveDeploymentDeploymentArtifacts:
-		val_ := val.(AppActiveDeploymentDeploymentArtifacts)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AppActiveDeploymentDeploymentArtifacts; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_AppActiveDeploymentDeploymentArtifactsOutputReference) validateSetInternalValueParameters(val *AppActiveDeploymentDeploymentArtifacts) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

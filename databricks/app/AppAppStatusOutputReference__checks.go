@@ -174,22 +174,6 @@ func (j *jsiiProxy_AppAppStatusOutputReference) validateSetInternalValueParamete
 	return nil
 }
 
-func (j *jsiiProxy_AppAppStatusOutputReference) validateSetMessageParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AppAppStatusOutputReference) validateSetStateParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_AppAppStatusOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

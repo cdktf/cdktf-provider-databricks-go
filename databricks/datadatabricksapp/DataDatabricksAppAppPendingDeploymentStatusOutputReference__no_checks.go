@@ -59,15 +59,7 @@ func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference) validateSetMessageParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference) validateSetStateParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksAppAppPendingDeploymentStatusOutputReference) validateSetInternalValueParameters(val *DataDatabricksAppAppPendingDeploymentStatus) error {
 	return nil
 }
 

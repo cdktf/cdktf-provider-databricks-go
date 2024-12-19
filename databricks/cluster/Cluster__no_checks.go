@@ -195,6 +195,14 @@ func (j *jsiiProxy_Cluster) validateSetIsPinnedParameters(val interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_Cluster) validateSetIsSingleNodeParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Cluster) validateSetKindParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -240,6 +248,10 @@ func (j *jsiiProxy_Cluster) validateSetSparkVersionParameters(val *string) error
 }
 
 func (j *jsiiProxy_Cluster) validateSetSshPublicKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Cluster) validateSetUseMlRuntimeParameters(val interface{}) error {
 	return nil
 }
 

@@ -33,11 +33,7 @@ type AppAppStatusOutputReference interface {
 	InternalValue() *AppAppStatus
 	SetInternalValue(val *AppAppStatus)
 	Message() *string
-	SetMessage(val *string)
-	MessageInput() *string
 	State() *string
-	SetState(val *string)
-	StateInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,8 +66,6 @@ type AppAppStatusOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetMessage()
-	ResetState()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,31 +141,11 @@ func (j *jsiiProxy_AppAppStatusOutputReference) Message() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppAppStatusOutputReference) MessageInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"messageInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppAppStatusOutputReference) State() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"state",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppAppStatusOutputReference) StateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"stateInput",
 		&returns,
 	)
 	return returns
@@ -254,28 +228,6 @@ func (j *jsiiProxy_AppAppStatusOutputReference)SetInternalValue(val *AppAppStatu
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppAppStatusOutputReference)SetMessage(val *string) {
-	if err := j.validateSetMessageParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"message",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppAppStatusOutputReference)SetState(val *string) {
-	if err := j.validateSetStateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"state",
 		val,
 	)
 }
@@ -486,22 +438,6 @@ func (a *jsiiProxy_AppAppStatusOutputReference) InterpolationForAttribute(proper
 	)
 
 	return returns
-}
-
-func (a *jsiiProxy_AppAppStatusOutputReference) ResetMessage() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetMessage",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppAppStatusOutputReference) ResetState() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetState",
-		nil, // no parameters
-	)
 }
 
 func (a *jsiiProxy_AppAppStatusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

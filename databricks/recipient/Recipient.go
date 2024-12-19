@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/recipient databricks_recipient}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/recipient databricks_recipient}.
 type Recipient interface {
 	cdktf.TerraformResource
 	Activated() cdktf.IResolvable
@@ -623,7 +623,7 @@ func (j *jsiiProxy_Recipient) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/recipient databricks_recipient} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/recipient databricks_recipient} Resource.
 func NewRecipient(scope constructs.Construct, id *string, config *RecipientConfig) Recipient {
 	_init_.Initialize()
 
@@ -641,7 +641,7 @@ func NewRecipient(scope constructs.Construct, id *string, config *RecipientConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/recipient databricks_recipient} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/recipient databricks_recipient} Resource.
 func NewRecipient_Override(r Recipient, scope constructs.Construct, id *string, config *RecipientConfig) {
 	_init_.Initialize()
 

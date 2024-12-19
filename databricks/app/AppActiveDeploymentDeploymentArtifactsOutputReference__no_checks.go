@@ -59,7 +59,7 @@ func (j *jsiiProxy_AppActiveDeploymentDeploymentArtifactsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_AppActiveDeploymentDeploymentArtifactsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppActiveDeploymentDeploymentArtifactsOutputReference) validateSetInternalValueParameters(val *AppActiveDeploymentDeploymentArtifacts) error {
 	return nil
 }
 
