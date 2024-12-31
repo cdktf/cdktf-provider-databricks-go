@@ -5,7 +5,7 @@ package datadatabrickssharepluginframework
 
 
 type DataDatabricksSharePluginframeworkObjectPartition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#value DataDatabricksSharePluginframework#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/data-sources/share_pluginframework#value DataDatabricksSharePluginframework#value}.
 	Value interface{} `field:"optional" json:"value" yaml:"value"`
 }
 

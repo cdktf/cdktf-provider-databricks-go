@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework databricks_share_pluginframework}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/data-sources/share_pluginframework databricks_share_pluginframework}.
 type DataDatabricksSharePluginframework interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -52,8 +52,6 @@ type DataDatabricksSharePluginframework interface {
 	Object() DataDatabricksSharePluginframeworkObjectList
 	ObjectInput() interface{}
 	Owner() *string
-	SetOwner(val *string)
-	OwnerInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -106,7 +104,6 @@ type DataDatabricksSharePluginframework interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetOwner()
 	ResetStorageLocation()
 	ResetStorageRoot()
 	SynthesizeAttributes() *map[string]interface{}
@@ -308,16 +305,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework) Owner() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframework) OwnerInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ownerInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksSharePluginframework) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -429,7 +416,7 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source.
 func NewDataDatabricksSharePluginframework(scope constructs.Construct, id *string, config *DataDatabricksSharePluginframeworkConfig) DataDatabricksSharePluginframework {
 	_init_.Initialize()
 
@@ -447,7 +434,7 @@ func NewDataDatabricksSharePluginframework(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source.
 func NewDataDatabricksSharePluginframework_Override(d DataDatabricksSharePluginframework, scope constructs.Construct, id *string, config *DataDatabricksSharePluginframeworkConfig) {
 	_init_.Initialize()
 
@@ -514,17 +501,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframework)SetOwner(val *string) {
-	if err := j.validateSetOwnerParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"owner",
 		val,
 	)
 }
@@ -883,14 +859,6 @@ func (d *jsiiProxy_DataDatabricksSharePluginframework) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksSharePluginframework) ResetOwner() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOwner",
 		nil, // no parameters
 	)
 }

@@ -7,7 +7,7 @@ package datadatabrickssqlwarehouse
 type DataDatabricksSqlWarehouseTags struct {
 	// custom_tags block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/sql_warehouse#custom_tags DataDatabricksSqlWarehouse#custom_tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/data-sources/sql_warehouse#custom_tags DataDatabricksSqlWarehouse#custom_tags}
 	CustomTags interface{} `field:"optional" json:"customTags" yaml:"customTags"`
 }
 

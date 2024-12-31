@@ -5,7 +5,7 @@ package job
 
 
 type JobTaskRunJobTaskPipelineParams struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/job#full_refresh Job#full_refresh}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/resources/job#full_refresh Job#full_refresh}.
 	FullRefresh interface{} `field:"optional" json:"fullRefresh" yaml:"fullRefresh"`
 }
 
