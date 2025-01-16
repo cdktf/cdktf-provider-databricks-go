@@ -5,9 +5,9 @@ package job
 
 
 type JobJobClusterNewClusterDockerImageBasicAuth struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/resources/job#password Job#password}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/job#password Job#password}.
 	Password *string `field:"required" json:"password" yaml:"password"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/resources/job#username Job#username}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/job#username Job#username}.
 	Username *string `field:"required" json:"username" yaml:"username"`
 }
 

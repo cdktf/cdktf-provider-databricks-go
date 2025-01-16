@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/resources/share_pluginframework databricks_share_pluginframework}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/share_pluginframework databricks_share_pluginframework}.
 type SharePluginframework interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -36,6 +36,7 @@ type SharePluginframework interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveOwner() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -237,6 +238,16 @@ func (j *jsiiProxy_SharePluginframework) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SharePluginframework) EffectiveOwner() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveOwner",
 		&returns,
 	)
 	return returns
@@ -473,7 +484,7 @@ func (j *jsiiProxy_SharePluginframework) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/resources/share_pluginframework databricks_share_pluginframework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/share_pluginframework databricks_share_pluginframework} Resource.
 func NewSharePluginframework(scope constructs.Construct, id *string, config *SharePluginframeworkConfig) SharePluginframework {
 	_init_.Initialize()
 
@@ -491,7 +502,7 @@ func NewSharePluginframework(scope constructs.Construct, id *string, config *Sha
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/resources/share_pluginframework databricks_share_pluginframework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/share_pluginframework databricks_share_pluginframework} Resource.
 func NewSharePluginframework_Override(s SharePluginframework, scope constructs.Construct, id *string, config *SharePluginframeworkConfig) {
 	_init_.Initialize()
 

@@ -12,12 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/resources/external_location databricks_external_location}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/external_location databricks_external_location}.
 type ExternalLocation interface {
 	cdktf.TerraformResource
 	AccessPoint() *string
 	SetAccessPoint(val *string)
 	AccessPointInput() *string
+	BrowseOnly() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Comment() *string
@@ -33,6 +34,9 @@ type ExternalLocation interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *float64
+	CreatedBy() *string
+	CredentialId() *string
 	CredentialName() *string
 	SetCredentialName(val *string)
 	CredentialNameInput() *string
@@ -42,6 +46,9 @@ type ExternalLocation interface {
 	SetDependsOn(val *[]*string)
 	EncryptionDetails() ExternalLocationEncryptionDetailsOutputReference
 	EncryptionDetailsInput() *ExternalLocationEncryptionDetails
+	Fallback() interface{}
+	SetFallback(val interface{})
+	FallbackInput() interface{}
 	ForceDestroy() interface{}
 	SetForceDestroy(val interface{})
 	ForceDestroyInput() interface{}
@@ -99,6 +106,8 @@ type ExternalLocation interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatedAt() *float64
+	UpdatedBy() *string
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -149,6 +158,7 @@ type ExternalLocation interface {
 	ResetAccessPoint()
 	ResetComment()
 	ResetEncryptionDetails()
+	ResetFallback()
 	ResetForceDestroy()
 	ResetForceUpdate()
 	ResetId()
@@ -193,6 +203,16 @@ func (j *jsiiProxy_ExternalLocation) AccessPointInput() *string {
 	_jsii_.Get(
 		j,
 		"accessPointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) BrowseOnly() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"browseOnly",
 		&returns,
 	)
 	return returns
@@ -258,6 +278,36 @@ func (j *jsiiProxy_ExternalLocation) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ExternalLocation) CreatedAt() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) CreatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) CredentialId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ExternalLocation) CredentialName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -303,6 +353,26 @@ func (j *jsiiProxy_ExternalLocation) EncryptionDetailsInput() *ExternalLocationE
 	_jsii_.Get(
 		j,
 		"encryptionDetailsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) Fallback() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fallback",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) FallbackInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fallbackInput",
 		&returns,
 	)
 	return returns
@@ -598,6 +668,26 @@ func (j *jsiiProxy_ExternalLocation) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ExternalLocation) UpdatedAt() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) UpdatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedBy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ExternalLocation) Url() *string {
 	var returns *string
 	_jsii_.Get(
@@ -619,7 +709,7 @@ func (j *jsiiProxy_ExternalLocation) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation(scope constructs.Construct, id *string, config *ExternalLocationConfig) ExternalLocation {
 	_init_.Initialize()
 
@@ -637,7 +727,7 @@ func NewExternalLocation(scope constructs.Construct, id *string, config *Externa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation_Override(e ExternalLocation, scope constructs.Construct, id *string, config *ExternalLocationConfig) {
 	_init_.Initialize()
 
@@ -707,6 +797,17 @@ func (j *jsiiProxy_ExternalLocation)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ExternalLocation)SetFallback(val interface{}) {
+	if err := j.validateSetFallbackParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fallback",
 		val,
 	)
 }
@@ -1243,6 +1344,14 @@ func (e *jsiiProxy_ExternalLocation) ResetEncryptionDetails() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetEncryptionDetails",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExternalLocation) ResetFallback() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetFallback",
 		nil, // no parameters
 	)
 }

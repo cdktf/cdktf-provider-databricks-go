@@ -5,9 +5,9 @@ package datadatabrickstable
 
 
 type DataDatabricksTableTableInfoColumnsMask struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/data-sources/table#function_name DataDatabricksTable#function_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/table#function_name DataDatabricksTable#function_name}.
 	FunctionName *string `field:"optional" json:"functionName" yaml:"functionName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/data-sources/table#using_column_names DataDatabricksTable#using_column_names}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/table#using_column_names DataDatabricksTable#using_column_names}.
 	UsingColumnNames *[]*string `field:"optional" json:"usingColumnNames" yaml:"usingColumnNames"`
 }
 

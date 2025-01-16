@@ -115,6 +115,10 @@ func (j *jsiiProxy_ExternalLocation) validateSetCredentialNameParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_ExternalLocation) validateSetFallbackParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExternalLocation) validateSetForceDestroyParameters(val interface{}) error {
 	return nil
 }

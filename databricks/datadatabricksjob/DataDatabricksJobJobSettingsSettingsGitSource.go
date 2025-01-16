@@ -5,19 +5,19 @@ package datadatabricksjob
 
 
 type DataDatabricksJobJobSettingsSettingsGitSource struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/data-sources/job#url DataDatabricksJob#url}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/job#url DataDatabricksJob#url}.
 	Url *string `field:"required" json:"url" yaml:"url"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/data-sources/job#branch DataDatabricksJob#branch}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/job#branch DataDatabricksJob#branch}.
 	Branch *string `field:"optional" json:"branch" yaml:"branch"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/data-sources/job#commit DataDatabricksJob#commit}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/job#commit DataDatabricksJob#commit}.
 	Commit *string `field:"optional" json:"commit" yaml:"commit"`
 	// job_source block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/data-sources/job#job_source DataDatabricksJob#job_source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/job#job_source DataDatabricksJob#job_source}
 	JobSource *DataDatabricksJobJobSettingsSettingsGitSourceJobSource `field:"optional" json:"jobSource" yaml:"jobSource"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/data-sources/job#provider DataDatabricksJob#provider}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/job#provider DataDatabricksJob#provider}.
 	Provider *string `field:"optional" json:"provider" yaml:"provider"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/data-sources/job#tag DataDatabricksJob#tag}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/job#tag DataDatabricksJob#tag}.
 	Tag *string `field:"optional" json:"tag" yaml:"tag"`
 }
 

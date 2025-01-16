@@ -5,9 +5,9 @@ package query
 
 
 type QueryParameterDateRangeValueDateRangeValue struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/resources/query#end Query#end}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/query#end Query#end}.
 	End *string `field:"required" json:"end" yaml:"end"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/resources/query#start Query#start}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/query#start Query#start}.
 	Start *string `field:"required" json:"start" yaml:"start"`
 }
 

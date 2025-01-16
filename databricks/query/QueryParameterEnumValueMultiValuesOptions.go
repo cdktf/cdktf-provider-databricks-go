@@ -5,11 +5,11 @@ package query
 
 
 type QueryParameterEnumValueMultiValuesOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/resources/query#prefix Query#prefix}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/query#prefix Query#prefix}.
 	Prefix *string `field:"optional" json:"prefix" yaml:"prefix"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/resources/query#separator Query#separator}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/query#separator Query#separator}.
 	Separator *string `field:"optional" json:"separator" yaml:"separator"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.1/docs/resources/query#suffix Query#suffix}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/query#suffix Query#suffix}.
 	Suffix *string `field:"optional" json:"suffix" yaml:"suffix"`
 }
 
