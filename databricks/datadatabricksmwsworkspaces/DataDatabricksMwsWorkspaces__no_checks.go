@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataDatabricksMwsWorkspaces) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksMwsWorkspaces) validateSetIdsParameters(val *map[string]*float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksMwsWorkspaces) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

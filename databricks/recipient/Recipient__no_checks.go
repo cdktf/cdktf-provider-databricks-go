@@ -123,6 +123,10 @@ func (j *jsiiProxy_Recipient) validateSetDataRecipientGlobalMetastoreIdParameter
 	return nil
 }
 
+func (j *jsiiProxy_Recipient) validateSetExpirationTimeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_Recipient) validateSetIdParameters(val *string) error {
 	return nil
 }

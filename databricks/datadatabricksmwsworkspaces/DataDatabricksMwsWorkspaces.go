@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/mws_workspaces databricks_mws_workspaces}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/data-sources/mws_workspaces databricks_mws_workspaces}.
 type DataDatabricksMwsWorkspaces interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -38,9 +38,7 @@ type DataDatabricksMwsWorkspaces interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	Ids() *map[string]*float64
-	SetIds(val *map[string]*float64)
-	IdsInput() *map[string]*float64
+	Ids() cdktf.NumberMap
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -85,7 +83,6 @@ type DataDatabricksMwsWorkspaces interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
-	ResetIds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -198,21 +195,11 @@ func (j *jsiiProxy_DataDatabricksMwsWorkspaces) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksMwsWorkspaces) Ids() *map[string]*float64 {
-	var returns *map[string]*float64
+func (j *jsiiProxy_DataDatabricksMwsWorkspaces) Ids() cdktf.NumberMap {
+	var returns cdktf.NumberMap
 	_jsii_.Get(
 		j,
 		"ids",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksMwsWorkspaces) IdsInput() *map[string]*float64 {
-	var returns *map[string]*float64
-	_jsii_.Get(
-		j,
-		"idsInput",
 		&returns,
 	)
 	return returns
@@ -289,7 +276,7 @@ func (j *jsiiProxy_DataDatabricksMwsWorkspaces) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/mws_workspaces databricks_mws_workspaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/data-sources/mws_workspaces databricks_mws_workspaces} Data Source.
 func NewDataDatabricksMwsWorkspaces(scope constructs.Construct, id *string, config *DataDatabricksMwsWorkspacesConfig) DataDatabricksMwsWorkspaces {
 	_init_.Initialize()
 
@@ -307,7 +294,7 @@ func NewDataDatabricksMwsWorkspaces(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/mws_workspaces databricks_mws_workspaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/data-sources/mws_workspaces databricks_mws_workspaces} Data Source.
 func NewDataDatabricksMwsWorkspaces_Override(d DataDatabricksMwsWorkspaces, scope constructs.Construct, id *string, config *DataDatabricksMwsWorkspacesConfig) {
 	_init_.Initialize()
 
@@ -352,17 +339,6 @@ func (j *jsiiProxy_DataDatabricksMwsWorkspaces)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksMwsWorkspaces)SetIds(val *map[string]*float64) {
-	if err := j.validateSetIdsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ids",
 		val,
 	)
 }
@@ -675,14 +651,6 @@ func (d *jsiiProxy_DataDatabricksMwsWorkspaces) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksMwsWorkspaces) ResetIds() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIds",
 		nil, // no parameters
 	)
 }

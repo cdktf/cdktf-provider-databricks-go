@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/dashboard databricks_dashboard}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/dashboard databricks_dashboard}.
 type Dashboard interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -643,7 +643,7 @@ func (j *jsiiProxy_Dashboard) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/dashboard databricks_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/dashboard databricks_dashboard} Resource.
 func NewDashboard(scope constructs.Construct, id *string, config *DashboardConfig) Dashboard {
 	_init_.Initialize()
 
@@ -661,7 +661,7 @@ func NewDashboard(scope constructs.Construct, id *string, config *DashboardConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/dashboard databricks_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/dashboard databricks_dashboard} Resource.
 func NewDashboard_Override(d Dashboard, scope constructs.Construct, id *string, config *DashboardConfig) {
 	_init_.Initialize()
 

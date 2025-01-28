@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/custom_app_integration databricks_custom_app_integration}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/custom_app_integration databricks_custom_app_integration}.
 type CustomAppIntegration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -574,7 +574,7 @@ func (j *jsiiProxy_CustomAppIntegration) TokenAccessPolicyInput() *CustomAppInte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/custom_app_integration databricks_custom_app_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/custom_app_integration databricks_custom_app_integration} Resource.
 func NewCustomAppIntegration(scope constructs.Construct, id *string, config *CustomAppIntegrationConfig) CustomAppIntegration {
 	_init_.Initialize()
 
@@ -592,7 +592,7 @@ func NewCustomAppIntegration(scope constructs.Construct, id *string, config *Cus
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/custom_app_integration databricks_custom_app_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/custom_app_integration databricks_custom_app_integration} Resource.
 func NewCustomAppIntegration_Override(c CustomAppIntegration, scope constructs.Construct, id *string, config *CustomAppIntegrationConfig) {
 	_init_.Initialize()
 

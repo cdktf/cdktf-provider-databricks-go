@@ -75,6 +75,10 @@ func (j *jsiiProxy_JobTaskSparkJarTaskOutputReference) validateSetParametersPara
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskSparkJarTaskOutputReference) validateSetRunAsReplParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskSparkJarTaskOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

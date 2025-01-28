@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/recipient databricks_recipient}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/recipient databricks_recipient}.
 type Recipient interface {
 	cdktf.TerraformResource
 	Activated() cdktf.IResolvable
@@ -45,6 +45,9 @@ type Recipient interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExpirationTime() *float64
+	SetExpirationTime(val *float64)
+	ExpirationTimeInput() *float64
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -145,6 +148,7 @@ type Recipient interface {
 	PutTokens(value interface{})
 	ResetComment()
 	ResetDataRecipientGlobalMetastoreId()
+	ResetExpirationTime()
 	ResetId()
 	ResetIpAccessList()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -327,6 +331,26 @@ func (j *jsiiProxy_Recipient) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Recipient) ExpirationTime() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expirationTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Recipient) ExpirationTimeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expirationTimeInput",
 		&returns,
 	)
 	return returns
@@ -623,7 +647,7 @@ func (j *jsiiProxy_Recipient) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/recipient databricks_recipient} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/recipient databricks_recipient} Resource.
 func NewRecipient(scope constructs.Construct, id *string, config *RecipientConfig) Recipient {
 	_init_.Initialize()
 
@@ -641,7 +665,7 @@ func NewRecipient(scope constructs.Construct, id *string, config *RecipientConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/recipient databricks_recipient} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/recipient databricks_recipient} Resource.
 func NewRecipient_Override(r Recipient, scope constructs.Construct, id *string, config *RecipientConfig) {
 	_init_.Initialize()
 
@@ -711,6 +735,17 @@ func (j *jsiiProxy_Recipient)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Recipient)SetExpirationTime(val *float64) {
+	if err := j.validateSetExpirationTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expirationTime",
 		val,
 	)
 }
@@ -1195,6 +1230,14 @@ func (r *jsiiProxy_Recipient) ResetDataRecipientGlobalMetastoreId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetDataRecipientGlobalMetastoreId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Recipient) ResetExpirationTime() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetExpirationTime",
 		nil, // no parameters
 	)
 }

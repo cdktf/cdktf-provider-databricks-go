@@ -5,9 +5,9 @@ package datadatabricksservingendpoints
 
 
 type DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/serving_endpoints#anthropic_api_key DataDatabricksServingEndpoints#anthropic_api_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/data-sources/serving_endpoints#anthropic_api_key DataDatabricksServingEndpoints#anthropic_api_key}.
 	AnthropicApiKey *string `field:"optional" json:"anthropicApiKey" yaml:"anthropicApiKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/serving_endpoints#anthropic_api_key_plaintext DataDatabricksServingEndpoints#anthropic_api_key_plaintext}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/data-sources/serving_endpoints#anthropic_api_key_plaintext DataDatabricksServingEndpoints#anthropic_api_key_plaintext}.
 	AnthropicApiKeyPlaintext *string `field:"optional" json:"anthropicApiKeyPlaintext" yaml:"anthropicApiKeyPlaintext"`
 }
 

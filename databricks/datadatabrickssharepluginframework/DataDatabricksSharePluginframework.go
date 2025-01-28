@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/share_pluginframework databricks_share_pluginframework}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/data-sources/share_pluginframework databricks_share_pluginframework}.
 type DataDatabricksSharePluginframework interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -440,7 +440,7 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source.
 func NewDataDatabricksSharePluginframework(scope constructs.Construct, id *string, config *DataDatabricksSharePluginframeworkConfig) DataDatabricksSharePluginframework {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewDataDatabricksSharePluginframework(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source.
 func NewDataDatabricksSharePluginframework_Override(d DataDatabricksSharePluginframework, scope constructs.Construct, id *string, config *DataDatabricksSharePluginframeworkConfig) {
 	_init_.Initialize()
 

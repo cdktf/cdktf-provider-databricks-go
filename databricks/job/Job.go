@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/job databricks_job}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/job databricks_job}.
 type Job interface {
 	cdktf.TerraformResource
 	AlwaysRunning() interface{}
@@ -1281,7 +1281,7 @@ func (j *jsiiProxy_Job) WebhookNotificationsInput() *JobWebhookNotifications {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/job databricks_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	_init_.Initialize()
 
@@ -1299,7 +1299,7 @@ func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/job databricks_job} Resource.
 func NewJob_Override(j Job, scope constructs.Construct, id *string, config *JobConfig) {
 	_init_.Initialize()
 

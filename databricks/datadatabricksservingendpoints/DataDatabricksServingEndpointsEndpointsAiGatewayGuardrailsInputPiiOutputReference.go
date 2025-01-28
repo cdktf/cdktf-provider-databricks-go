@@ -67,6 +67,7 @@ type DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiOutputRef
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBehavior()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInp
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiOutputReference) ResetBehavior() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBehavior",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

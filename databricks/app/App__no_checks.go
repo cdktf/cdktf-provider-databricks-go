@@ -115,6 +115,10 @@ func (j *jsiiProxy_App) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_App) validateSetNoComputeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_App) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

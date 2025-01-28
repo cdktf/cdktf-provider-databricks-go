@@ -78,8 +78,6 @@ type DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoo
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetPrivateKey()
 	ResetPrivateKeyPlaintext()
-	ResetProjectId()
-	ResetRegion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -570,22 +568,6 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesEx
 	_jsii_.InvokeVoid(
 		d,
 		"resetPrivateKeyPlaintext",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigOutputReference) ResetProjectId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetProjectId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigOutputReference) ResetRegion() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRegion",
 		nil, // no parameters
 	)
 }

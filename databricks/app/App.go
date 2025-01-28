@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/app databricks_app}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/app databricks_app}.
 type App interface {
 	cdktf.TerraformResource
 	ActiveDeployment() AppActiveDeploymentOutputReference
@@ -55,6 +55,9 @@ type App interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NoCompute() interface{}
+	SetNoCompute(val interface{})
+	NoComputeInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	PendingDeployment() AppPendingDeploymentOutputReference
@@ -127,6 +130,7 @@ type App interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutResources(value interface{})
 	ResetDescription()
+	ResetNoCompute()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -339,6 +343,26 @@ func (j *jsiiProxy_App) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_App) NoCompute() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noCompute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) NoComputeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noComputeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_App) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -500,7 +524,7 @@ func (j *jsiiProxy_App) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/app databricks_app} Resource.
 func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	_init_.Initialize()
 
@@ -518,7 +542,7 @@ func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/app databricks_app} Resource.
 func NewApp_Override(a App, scope constructs.Construct, id *string, config *AppConfig) {
 	_init_.Initialize()
 
@@ -596,6 +620,17 @@ func (j *jsiiProxy_App)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_App)SetNoCompute(val interface{}) {
+	if err := j.validateSetNoComputeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"noCompute",
 		val,
 	)
 }
@@ -987,6 +1022,14 @@ func (a *jsiiProxy_App) ResetDescription() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_App) ResetNoCompute() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNoCompute",
 		nil, // no parameters
 	)
 }

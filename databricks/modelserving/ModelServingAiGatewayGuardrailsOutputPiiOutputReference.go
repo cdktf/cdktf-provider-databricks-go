@@ -67,6 +67,7 @@ type ModelServingAiGatewayGuardrailsOutputPiiOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBehavior()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (m *jsiiProxy_ModelServingAiGatewayGuardrailsOutputPiiOutputReference) Inte
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_ModelServingAiGatewayGuardrailsOutputPiiOutputReference) ResetBehavior() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetBehavior",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_ModelServingAiGatewayGuardrailsOutputPiiOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

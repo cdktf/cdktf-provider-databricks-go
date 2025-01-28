@@ -5,9 +5,9 @@ package datadatabricksclusterpluginframework
 
 
 type DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/cluster_pluginframework#password DataDatabricksClusterPluginframework#password}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/data-sources/cluster_pluginframework#password DataDatabricksClusterPluginframework#password}.
 	Password *string `field:"optional" json:"password" yaml:"password"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/data-sources/cluster_pluginframework#username DataDatabricksClusterPluginframework#username}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/data-sources/cluster_pluginframework#username DataDatabricksClusterPluginframework#username}.
 	Username *string `field:"optional" json:"username" yaml:"username"`
 }
 

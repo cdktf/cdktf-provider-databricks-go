@@ -41,6 +41,9 @@ type JobTaskForEachTaskTaskSparkJarTaskOutputReference interface {
 	Parameters() *[]*string
 	SetParameters(val *[]*string)
 	ParametersInput() *[]*string
+	RunAsRepl() interface{}
+	SetRunAsRepl(val interface{})
+	RunAsReplInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,6 +79,7 @@ type JobTaskForEachTaskTaskSparkJarTaskOutputReference interface {
 	ResetJarUri()
 	ResetMainClassName()
 	ResetParameters()
+	ResetRunAsRepl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -201,6 +205,26 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskSparkJarTaskOutputReference) Parameters
 	return returns
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskSparkJarTaskOutputReference) RunAsRepl() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"runAsRepl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskSparkJarTaskOutputReference) RunAsReplInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"runAsReplInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskSparkJarTaskOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -311,6 +335,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskSparkJarTaskOutputReference)SetParamete
 	_jsii_.Set(
 		j,
 		"parameters",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskSparkJarTaskOutputReference)SetRunAsRepl(val interface{}) {
+	if err := j.validateSetRunAsReplParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runAsRepl",
 		val,
 	)
 }
@@ -543,6 +578,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskSparkJarTaskOutputReference) ResetParam
 	_jsii_.InvokeVoid(
 		j,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskSparkJarTaskOutputReference) ResetRunAsRepl() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetRunAsRepl",
 		nil, // no parameters
 	)
 }

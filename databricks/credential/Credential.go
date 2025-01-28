@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/credential databricks_credential}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/credential databricks_credential}.
 type Credential interface {
 	cdktf.TerraformResource
 	AwsIamRole() CredentialAwsIamRoleOutputReference
@@ -799,7 +799,7 @@ func (j *jsiiProxy_Credential) UsedForManagedStorageInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/credential databricks_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/credential databricks_credential} Resource.
 func NewCredential(scope constructs.Construct, id *string, config *CredentialConfig) Credential {
 	_init_.Initialize()
 
@@ -817,7 +817,7 @@ func NewCredential(scope constructs.Construct, id *string, config *CredentialCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/credential databricks_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/credential databricks_credential} Resource.
 func NewCredential_Override(c Credential, scope constructs.Construct, id *string, config *CredentialConfig) {
 	_init_.Initialize()
 
