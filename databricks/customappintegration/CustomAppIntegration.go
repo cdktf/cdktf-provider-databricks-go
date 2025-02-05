@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.64.1/docs/resources/custom_app_integration databricks_custom_app_integration}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.65.0/docs/resources/custom_app_integration databricks_custom_app_integration}.
 type CustomAppIntegration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -96,6 +96,9 @@ type CustomAppIntegration interface {
 	TerraformResourceType() *string
 	TokenAccessPolicy() CustomAppIntegrationTokenAccessPolicyOutputReference
 	TokenAccessPolicyInput() *CustomAppIntegrationTokenAccessPolicy
+	UserAuthorizedScopes() *[]*string
+	SetUserAuthorizedScopes(val *[]*string)
+	UserAuthorizedScopesInput() *[]*string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -155,6 +158,7 @@ type CustomAppIntegration interface {
 	ResetRedirectUrls()
 	ResetScopes()
 	ResetTokenAccessPolicy()
+	ResetUserAuthorizedScopes()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -573,8 +577,28 @@ func (j *jsiiProxy_CustomAppIntegration) TokenAccessPolicyInput() *CustomAppInte
 	return returns
 }
 
+func (j *jsiiProxy_CustomAppIntegration) UserAuthorizedScopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"userAuthorizedScopes",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.1/docs/resources/custom_app_integration databricks_custom_app_integration} Resource.
+func (j *jsiiProxy_CustomAppIntegration) UserAuthorizedScopesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"userAuthorizedScopesInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.65.0/docs/resources/custom_app_integration databricks_custom_app_integration} Resource.
 func NewCustomAppIntegration(scope constructs.Construct, id *string, config *CustomAppIntegrationConfig) CustomAppIntegration {
 	_init_.Initialize()
 
@@ -592,7 +616,7 @@ func NewCustomAppIntegration(scope constructs.Construct, id *string, config *Cus
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.1/docs/resources/custom_app_integration databricks_custom_app_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.65.0/docs/resources/custom_app_integration databricks_custom_app_integration} Resource.
 func NewCustomAppIntegration_Override(c CustomAppIntegration, scope constructs.Construct, id *string, config *CustomAppIntegrationConfig) {
 	_init_.Initialize()
 
@@ -788,6 +812,17 @@ func (j *jsiiProxy_CustomAppIntegration)SetScopes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"scopes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomAppIntegration)SetUserAuthorizedScopes(val *[]*string) {
+	if err := j.validateSetUserAuthorizedScopesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userAuthorizedScopes",
 		val,
 	)
 }
@@ -1256,6 +1291,14 @@ func (c *jsiiProxy_CustomAppIntegration) ResetTokenAccessPolicy() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTokenAccessPolicy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomAppIntegration) ResetUserAuthorizedScopes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUserAuthorizedScopes",
 		nil, // no parameters
 	)
 }

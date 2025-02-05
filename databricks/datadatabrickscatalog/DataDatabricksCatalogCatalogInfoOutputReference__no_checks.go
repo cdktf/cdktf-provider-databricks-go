@@ -131,10 +131,6 @@ func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) validateSetP
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) validateSetSecurableKindParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) validateSetSecurableTypeParameters(val *string) error {
 	return nil
 }

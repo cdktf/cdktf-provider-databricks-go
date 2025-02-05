@@ -502,6 +502,14 @@ func (j *jsiiProxy_CustomAppIntegration) validateSetScopesParameters(val *[]*str
 	return nil
 }
 
+func (j *jsiiProxy_CustomAppIntegration) validateSetUserAuthorizedScopesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewCustomAppIntegrationParameters(scope constructs.Construct, id *string, config *CustomAppIntegrationConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

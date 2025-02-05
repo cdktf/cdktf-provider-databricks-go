@@ -111,6 +111,10 @@ func (p *jsiiProxy_Pipeline) validatePutRestartWindowParameters(value *PipelineR
 	return nil
 }
 
+func (p *jsiiProxy_Pipeline) validatePutRunAsParameters(value *PipelineRunAs) error {
+	return nil
+}
+
 func (p *jsiiProxy_Pipeline) validatePutTimeoutsParameters(value *PipelineTimeouts) error {
 	return nil
 }
@@ -216,10 +220,6 @@ func (j *jsiiProxy_Pipeline) validateSetPhotonParameters(val interface{}) error 
 }
 
 func (j *jsiiProxy_Pipeline) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_Pipeline) validateSetRunAsUserNameParameters(val *string) error {
 	return nil
 }
 

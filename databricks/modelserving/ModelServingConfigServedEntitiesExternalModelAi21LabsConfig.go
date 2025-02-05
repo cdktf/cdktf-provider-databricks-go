@@ -5,9 +5,9 @@ package modelserving
 
 
 type ModelServingConfigServedEntitiesExternalModelAi21LabsConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.1/docs/resources/model_serving#ai21labs_api_key ModelServing#ai21labs_api_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.65.0/docs/resources/model_serving#ai21labs_api_key ModelServing#ai21labs_api_key}.
 	Ai21LabsApiKey *string `field:"optional" json:"ai21LabsApiKey" yaml:"ai21LabsApiKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.1/docs/resources/model_serving#ai21labs_api_key_plaintext ModelServing#ai21labs_api_key_plaintext}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.65.0/docs/resources/model_serving#ai21labs_api_key_plaintext ModelServing#ai21labs_api_key_plaintext}.
 	Ai21LabsApiKeyPlaintext *string `field:"optional" json:"ai21LabsApiKeyPlaintext" yaml:"ai21LabsApiKeyPlaintext"`
 }
 

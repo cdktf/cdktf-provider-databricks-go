@@ -81,9 +81,6 @@ type DataDatabricksCatalogCatalogInfoOutputReference interface {
 	ProviderNameInput() *string
 	ProvisioningInfo() DataDatabricksCatalogCatalogInfoProvisioningInfoOutputReference
 	ProvisioningInfoInput() *DataDatabricksCatalogCatalogInfoProvisioningInfo
-	SecurableKind() *string
-	SetSecurableKind(val *string)
-	SecurableKindInput() *string
 	SecurableType() *string
 	SetSecurableType(val *string)
 	SecurableTypeInput() *string
@@ -153,7 +150,6 @@ type DataDatabricksCatalogCatalogInfoOutputReference interface {
 	ResetProperties()
 	ResetProviderName()
 	ResetProvisioningInfo()
-	ResetSecurableKind()
 	ResetSecurableType()
 	ResetShareName()
 	ResetStorageLocation()
@@ -565,26 +561,6 @@ func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) Provisioning
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) SecurableKind() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"securableKind",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) SecurableKindInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"securableKindInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) SecurableType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -947,17 +923,6 @@ func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference)SetProviderNa
 	_jsii_.Set(
 		j,
 		"providerName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference)SetSecurableKind(val *string) {
-	if err := j.validateSetSecurableKindParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"securableKind",
 		val,
 	)
 }
@@ -1390,14 +1355,6 @@ func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) ResetProvisi
 	_jsii_.InvokeVoid(
 		d,
 		"resetProvisioningInfo",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) ResetSecurableKind() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSecurableKind",
 		nil, // no parameters
 	)
 }

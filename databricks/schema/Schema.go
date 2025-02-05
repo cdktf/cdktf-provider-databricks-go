@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.64.1/docs/resources/schema databricks_schema}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.65.0/docs/resources/schema databricks_schema}.
 type Schema interface {
 	cdktf.TerraformResource
 	CatalogName() *string
@@ -524,7 +524,7 @@ func (j *jsiiProxy_Schema) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.1/docs/resources/schema databricks_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.65.0/docs/resources/schema databricks_schema} Resource.
 func NewSchema(scope constructs.Construct, id *string, config *SchemaConfig) Schema {
 	_init_.Initialize()
 
@@ -542,7 +542,7 @@ func NewSchema(scope constructs.Construct, id *string, config *SchemaConfig) Sch
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.1/docs/resources/schema databricks_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.65.0/docs/resources/schema databricks_schema} Resource.
 func NewSchema_Override(s Schema, scope constructs.Construct, id *string, config *SchemaConfig) {
 	_init_.Initialize()
 

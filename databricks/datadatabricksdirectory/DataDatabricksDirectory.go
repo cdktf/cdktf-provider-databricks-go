@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.64.1/docs/data-sources/directory databricks_directory}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.65.0/docs/data-sources/directory databricks_directory}.
 type DataDatabricksDirectory interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -336,7 +336,7 @@ func (j *jsiiProxy_DataDatabricksDirectory) WorkspacePathInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.1/docs/data-sources/directory databricks_directory} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.65.0/docs/data-sources/directory databricks_directory} Data Source.
 func NewDataDatabricksDirectory(scope constructs.Construct, id *string, config *DataDatabricksDirectoryConfig) DataDatabricksDirectory {
 	_init_.Initialize()
 
@@ -354,7 +354,7 @@ func NewDataDatabricksDirectory(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.1/docs/data-sources/directory databricks_directory} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.65.0/docs/data-sources/directory databricks_directory} Data Source.
 func NewDataDatabricksDirectory_Override(d DataDatabricksDirectory, scope constructs.Construct, id *string, config *DataDatabricksDirectoryConfig) {
 	_init_.Initialize()
 

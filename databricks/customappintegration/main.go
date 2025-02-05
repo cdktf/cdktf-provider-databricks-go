@@ -79,6 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRedirectUrls", GoMethod: "ResetRedirectUrls"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScopes", GoMethod: "ResetScopes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTokenAccessPolicy", GoMethod: "ResetTokenAccessPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUserAuthorizedScopes", GoMethod: "ResetUserAuthorizedScopes"},
 			_jsii_.MemberProperty{JsiiProperty: "scopes", GoGetter: "Scopes"},
 			_jsii_.MemberProperty{JsiiProperty: "scopesInput", GoGetter: "ScopesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -92,6 +93,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "userAuthorizedScopes", GoGetter: "UserAuthorizedScopes"},
+			_jsii_.MemberProperty{JsiiProperty: "userAuthorizedScopesInput", GoGetter: "UserAuthorizedScopesInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAppIntegration{}

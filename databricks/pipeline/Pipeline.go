@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.64.1/docs/resources/pipeline databricks_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.65.0/docs/resources/pipeline databricks_pipeline}.
 type Pipeline interface {
 	cdktf.TerraformResource
 	AllowDuplicateNames() interface{}
@@ -124,9 +124,9 @@ type Pipeline interface {
 	RawOverrides() interface{}
 	RestartWindow() PipelineRestartWindowOutputReference
 	RestartWindowInput() *PipelineRestartWindow
+	RunAs() PipelineRunAsOutputReference
+	RunAsInput() *PipelineRunAs
 	RunAsUserName() *string
-	SetRunAsUserName(val *string)
-	RunAsUserNameInput() *string
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
@@ -207,6 +207,7 @@ type Pipeline interface {
 	PutLibrary(value interface{})
 	PutNotification(value interface{})
 	PutRestartWindow(value *PipelineRestartWindow)
+	PutRunAs(value *PipelineRunAs)
 	PutTimeouts(value *PipelineTimeouts)
 	PutTrigger(value *PipelineTrigger)
 	ResetAllowDuplicateNames()
@@ -238,7 +239,7 @@ type Pipeline interface {
 	ResetOverrideLogicalId()
 	ResetPhoton()
 	ResetRestartWindow()
-	ResetRunAsUserName()
+	ResetRunAs()
 	ResetSchema()
 	ResetServerless()
 	ResetState()
@@ -915,21 +916,31 @@ func (j *jsiiProxy_Pipeline) RestartWindowInput() *PipelineRestartWindow {
 	return returns
 }
 
-func (j *jsiiProxy_Pipeline) RunAsUserName() *string {
-	var returns *string
+func (j *jsiiProxy_Pipeline) RunAs() PipelineRunAsOutputReference {
+	var returns PipelineRunAsOutputReference
 	_jsii_.Get(
 		j,
-		"runAsUserName",
+		"runAs",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_Pipeline) RunAsUserNameInput() *string {
+func (j *jsiiProxy_Pipeline) RunAsInput() *PipelineRunAs {
+	var returns *PipelineRunAs
+	_jsii_.Get(
+		j,
+		"runAsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) RunAsUserName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"runAsUserNameInput",
+		"runAsUserName",
 		&returns,
 	)
 	return returns
@@ -1126,7 +1137,7 @@ func (j *jsiiProxy_Pipeline) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.1/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.65.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig) Pipeline {
 	_init_.Initialize()
 
@@ -1144,7 +1155,7 @@ func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.64.1/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.65.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline_Override(p Pipeline, scope constructs.Construct, id *string, config *PipelineConfig) {
 	_init_.Initialize()
 
@@ -1406,17 +1417,6 @@ func (j *jsiiProxy_Pipeline)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Pipeline)SetRunAsUserName(val *string) {
-	if err := j.validateSetRunAsUserNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"runAsUserName",
 		val,
 	)
 }
@@ -1939,6 +1939,17 @@ func (p *jsiiProxy_Pipeline) PutRestartWindow(value *PipelineRestartWindow) {
 	)
 }
 
+func (p *jsiiProxy_Pipeline) PutRunAs(value *PipelineRunAs) {
+	if err := p.validatePutRunAsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putRunAs",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_Pipeline) PutTimeouts(value *PipelineTimeouts) {
 	if err := p.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -2177,10 +2188,10 @@ func (p *jsiiProxy_Pipeline) ResetRestartWindow() {
 	)
 }
 
-func (p *jsiiProxy_Pipeline) ResetRunAsUserName() {
+func (p *jsiiProxy_Pipeline) ResetRunAs() {
 	_jsii_.InvokeVoid(
 		p,
-		"resetRunAsUserName",
+		"resetRunAs",
 		nil, // no parameters
 	)
 }

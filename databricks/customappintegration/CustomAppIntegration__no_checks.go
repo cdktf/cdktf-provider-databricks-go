@@ -155,6 +155,10 @@ func (j *jsiiProxy_CustomAppIntegration) validateSetScopesParameters(val *[]*str
 	return nil
 }
 
+func (j *jsiiProxy_CustomAppIntegration) validateSetUserAuthorizedScopesParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewCustomAppIntegrationParameters(scope constructs.Construct, id *string, config *CustomAppIntegrationConfig) error {
 	return nil
 }
