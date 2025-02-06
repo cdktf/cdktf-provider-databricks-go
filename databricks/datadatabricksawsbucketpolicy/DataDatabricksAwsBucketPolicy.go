@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.65.0/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy}.
 type DataDatabricksAwsBucketPolicy interface {
 	cdktf.TerraformDataSource
 	AwsPartition() *string
@@ -395,7 +395,7 @@ func (j *jsiiProxy_DataDatabricksAwsBucketPolicy) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.65.0/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy} Data Source.
 func NewDataDatabricksAwsBucketPolicy(scope constructs.Construct, id *string, config *DataDatabricksAwsBucketPolicyConfig) DataDatabricksAwsBucketPolicy {
 	_init_.Initialize()
 
@@ -413,7 +413,7 @@ func NewDataDatabricksAwsBucketPolicy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.65.0/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy} Data Source.
 func NewDataDatabricksAwsBucketPolicy_Override(d DataDatabricksAwsBucketPolicy, scope constructs.Construct, id *string, config *DataDatabricksAwsBucketPolicyConfig) {
 	_init_.Initialize()
 
