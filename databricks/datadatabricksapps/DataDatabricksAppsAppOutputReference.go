@@ -39,6 +39,7 @@ type DataDatabricksAppsAppOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataDatabricksAppsApp
 	SetInternalValue(val *DataDatabricksAppsApp)
 	Name() *string
@@ -218,6 +219,16 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

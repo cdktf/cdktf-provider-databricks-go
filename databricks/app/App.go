@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/app databricks_app}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/app databricks_app}.
 type App interface {
 	cdktf.TerraformResource
 	ActiveDeployment() AppActiveDeploymentOutputReference
@@ -48,6 +48,7 @@ type App interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -313,6 +314,16 @@ func (j *jsiiProxy_App) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_App) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_App) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -524,7 +535,7 @@ func (j *jsiiProxy_App) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/app databricks_app} Resource.
 func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	_init_.Initialize()
 
@@ -542,7 +553,7 @@ func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/app databricks_app} Resource.
 func NewApp_Override(a App, scope constructs.Construct, id *string, config *AppConfig) {
 	_init_.Initialize()
 

@@ -55,6 +55,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterClusterLogConfOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterClusterLogConfOutputReference) validatePutVolumesParameters(value *JobJobClusterNewClusterClusterLogConfVolumes) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterClusterLogConfOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

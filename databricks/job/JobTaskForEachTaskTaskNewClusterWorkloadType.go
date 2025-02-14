@@ -7,7 +7,7 @@ package job
 type JobTaskForEachTaskTaskNewClusterWorkloadType struct {
 	// clients block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/job#clients Job#clients}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/job#clients Job#clients}
 	Clients *JobTaskForEachTaskTaskNewClusterWorkloadTypeClients `field:"required" json:"clients" yaml:"clients"`
 }
 

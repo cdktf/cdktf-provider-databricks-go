@@ -5,11 +5,11 @@ package storagecredential
 
 
 type StorageCredentialAzureManagedIdentity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/storage_credential#access_connector_id StorageCredential#access_connector_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/storage_credential#access_connector_id StorageCredential#access_connector_id}.
 	AccessConnectorId *string `field:"required" json:"accessConnectorId" yaml:"accessConnectorId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/storage_credential#credential_id StorageCredential#credential_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/storage_credential#credential_id StorageCredential#credential_id}.
 	CredentialId *string `field:"optional" json:"credentialId" yaml:"credentialId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/storage_credential#managed_identity_id StorageCredential#managed_identity_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/storage_credential#managed_identity_id StorageCredential#managed_identity_id}.
 	ManagedIdentityId *string `field:"optional" json:"managedIdentityId" yaml:"managedIdentityId"`
 }
 

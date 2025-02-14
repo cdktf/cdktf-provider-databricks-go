@@ -44,6 +44,8 @@ type PipelineClusterClusterLogConfOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Volumes() PipelineClusterClusterLogConfVolumesOutputReference
+	VolumesInput() *PipelineClusterClusterLogConfVolumes
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,8 +72,10 @@ type PipelineClusterClusterLogConfOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDbfs(value *PipelineClusterClusterLogConfDbfs)
 	PutS3(value *PipelineClusterClusterLogConfS3)
+	PutVolumes(value *PipelineClusterClusterLogConfVolumes)
 	ResetDbfs()
 	ResetS3()
+	ResetVolumes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -192,6 +196,26 @@ func (j *jsiiProxy_PipelineClusterClusterLogConfOutputReference) TerraformResour
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterClusterLogConfOutputReference) Volumes() PipelineClusterClusterLogConfVolumesOutputReference {
+	var returns PipelineClusterClusterLogConfVolumesOutputReference
+	_jsii_.Get(
+		j,
+		"volumes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterClusterLogConfOutputReference) VolumesInput() *PipelineClusterClusterLogConfVolumes {
+	var returns *PipelineClusterClusterLogConfVolumes
+	_jsii_.Get(
+		j,
+		"volumesInput",
 		&returns,
 	)
 	return returns
@@ -488,6 +512,17 @@ func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) PutS3(value *Pi
 	)
 }
 
+func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) PutVolumes(value *PipelineClusterClusterLogConfVolumes) {
+	if err := p.validatePutVolumesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putVolumes",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) ResetDbfs() {
 	_jsii_.InvokeVoid(
 		p,
@@ -500,6 +535,14 @@ func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) ResetS3() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetS3",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) ResetVolumes() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetVolumes",
 		nil, // no parameters
 	)
 }

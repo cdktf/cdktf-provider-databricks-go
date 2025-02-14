@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoClusterLogConfOutputReference
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoClusterLogConfOutputReference) validatePutVolumesParameters(value *DataDatabricksClusterClusterInfoClusterLogConfVolumes) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoClusterLogConfOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

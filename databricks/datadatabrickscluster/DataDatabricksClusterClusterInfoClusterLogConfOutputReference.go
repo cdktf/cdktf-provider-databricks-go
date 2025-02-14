@@ -44,6 +44,8 @@ type DataDatabricksClusterClusterInfoClusterLogConfOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Volumes() DataDatabricksClusterClusterInfoClusterLogConfVolumesOutputReference
+	VolumesInput() *DataDatabricksClusterClusterInfoClusterLogConfVolumes
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,8 +72,10 @@ type DataDatabricksClusterClusterInfoClusterLogConfOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDbfs(value *DataDatabricksClusterClusterInfoClusterLogConfDbfs)
 	PutS3(value *DataDatabricksClusterClusterInfoClusterLogConfS3)
+	PutVolumes(value *DataDatabricksClusterClusterInfoClusterLogConfVolumes)
 	ResetDbfs()
 	ResetS3()
+	ResetVolumes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -192,6 +196,26 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoClusterLogConfOutputReference
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoClusterLogConfOutputReference) Volumes() DataDatabricksClusterClusterInfoClusterLogConfVolumesOutputReference {
+	var returns DataDatabricksClusterClusterInfoClusterLogConfVolumesOutputReference
+	_jsii_.Get(
+		j,
+		"volumes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoClusterLogConfOutputReference) VolumesInput() *DataDatabricksClusterClusterInfoClusterLogConfVolumes {
+	var returns *DataDatabricksClusterClusterInfoClusterLogConfVolumes
+	_jsii_.Get(
+		j,
+		"volumesInput",
 		&returns,
 	)
 	return returns
@@ -488,6 +512,17 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoClusterLogConfOutputReference
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoClusterLogConfOutputReference) PutVolumes(value *DataDatabricksClusterClusterInfoClusterLogConfVolumes) {
+	if err := d.validatePutVolumesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putVolumes",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoClusterLogConfOutputReference) ResetDbfs() {
 	_jsii_.InvokeVoid(
 		d,
@@ -500,6 +535,14 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoClusterLogConfOutputReference
 	_jsii_.InvokeVoid(
 		d,
 		"resetS3",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoClusterLogConfOutputReference) ResetVolumes() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetVolumes",
 		nil, // no parameters
 	)
 }

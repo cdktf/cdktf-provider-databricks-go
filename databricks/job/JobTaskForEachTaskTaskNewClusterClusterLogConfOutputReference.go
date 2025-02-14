@@ -44,6 +44,8 @@ type JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Volumes() JobTaskForEachTaskTaskNewClusterClusterLogConfVolumesOutputReference
+	VolumesInput() *JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,8 +72,10 @@ type JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDbfs(value *JobTaskForEachTaskTaskNewClusterClusterLogConfDbfs)
 	PutS3(value *JobTaskForEachTaskTaskNewClusterClusterLogConfS3)
+	PutVolumes(value *JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes)
 	ResetDbfs()
 	ResetS3()
+	ResetVolumes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -192,6 +196,26 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference) Volumes() JobTaskForEachTaskTaskNewClusterClusterLogConfVolumesOutputReference {
+	var returns JobTaskForEachTaskTaskNewClusterClusterLogConfVolumesOutputReference
+	_jsii_.Get(
+		j,
+		"volumes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference) VolumesInput() *JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes {
+	var returns *JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes
+	_jsii_.Get(
+		j,
+		"volumesInput",
 		&returns,
 	)
 	return returns
@@ -488,6 +512,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference
 	)
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference) PutVolumes(value *JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes) {
+	if err := j.validatePutVolumesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putVolumes",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference) ResetDbfs() {
 	_jsii_.InvokeVoid(
 		j,
@@ -500,6 +535,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference
 	_jsii_.InvokeVoid(
 		j,
 		"resetS3",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference) ResetVolumes() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetVolumes",
 		nil, // no parameters
 	)
 }
