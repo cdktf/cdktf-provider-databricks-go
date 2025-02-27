@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/connection databricks_connection}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/connection databricks_connection}.
 type Connection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,6 +24,7 @@ type Connection interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectionId() *string
 	ConnectionType() *string
 	SetConnectionType(val *string)
 	ConnectionTypeInput() *string
@@ -33,6 +34,9 @@ type Connection interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *float64
+	CreatedBy() *string
+	CredentialType() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -45,6 +49,7 @@ type Connection interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	FullName() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -53,8 +58,6 @@ type Connection interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MetastoreId() *string
-	SetMetastoreId(val *string)
-	MetastoreIdInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -77,17 +80,22 @@ type Connection interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	ProvisioningInfo() ConnectionProvisioningInfoList
 	// Experimental.
 	RawOverrides() interface{}
 	ReadOnly() interface{}
 	SetReadOnly(val interface{})
 	ReadOnlyInput() interface{}
+	SecurableType() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatedAt() *float64
+	UpdatedBy() *string
+	Url() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -132,8 +140,10 @@ type Connection interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetComment()
+	ResetConnectionType()
 	ResetId()
-	ResetMetastoreId()
+	ResetName()
+	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -198,6 +208,16 @@ func (j *jsiiProxy_Connection) Connection() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Connection) ConnectionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Connection) ConnectionType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -233,6 +253,36 @@ func (j *jsiiProxy_Connection) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Connection) CreatedAt() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Connection) CreatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Connection) CredentialType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialType",
 		&returns,
 	)
 	return returns
@@ -278,6 +328,16 @@ func (j *jsiiProxy_Connection) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Connection) FullName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fullName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Connection) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -313,16 +373,6 @@ func (j *jsiiProxy_Connection) MetastoreId() *string {
 	_jsii_.Get(
 		j,
 		"metastoreId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Connection) MetastoreIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"metastoreIdInput",
 		&returns,
 	)
 	return returns
@@ -438,6 +488,16 @@ func (j *jsiiProxy_Connection) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Connection) ProvisioningInfo() ConnectionProvisioningInfoList {
+	var returns ConnectionProvisioningInfoList
+	_jsii_.Get(
+		j,
+		"provisioningInfo",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Connection) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -463,6 +523,16 @@ func (j *jsiiProxy_Connection) ReadOnlyInput() interface{} {
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Connection) SecurableType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securableType",
 		&returns,
 	)
 	return returns
@@ -498,8 +568,38 @@ func (j *jsiiProxy_Connection) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Connection) UpdatedAt() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/connection databricks_connection} Resource.
+func (j *jsiiProxy_Connection) UpdatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Connection) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/connection databricks_connection} Resource.
 func NewConnection(scope constructs.Construct, id *string, config *ConnectionConfig) Connection {
 	_init_.Initialize()
 
@@ -517,7 +617,7 @@ func NewConnection(scope constructs.Construct, id *string, config *ConnectionCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/connection databricks_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/connection databricks_connection} Resource.
 func NewConnection_Override(c Connection, scope constructs.Construct, id *string, config *ConnectionConfig) {
 	_init_.Initialize()
 
@@ -606,17 +706,6 @@ func (j *jsiiProxy_Connection)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Connection)SetMetastoreId(val *string) {
-	if err := j.validateSetMetastoreIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"metastoreId",
 		val,
 	)
 }
@@ -1056,6 +1145,14 @@ func (c *jsiiProxy_Connection) ResetComment() {
 	)
 }
 
+func (c *jsiiProxy_Connection) ResetConnectionType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetConnectionType",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_Connection) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1064,10 +1161,18 @@ func (c *jsiiProxy_Connection) ResetId() {
 	)
 }
 
-func (c *jsiiProxy_Connection) ResetMetastoreId() {
+func (c *jsiiProxy_Connection) ResetName() {
 	_jsii_.InvokeVoid(
 		c,
-		"resetMetastoreId",
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Connection) ResetOptions() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOptions",
 		nil, // no parameters
 	)
 }

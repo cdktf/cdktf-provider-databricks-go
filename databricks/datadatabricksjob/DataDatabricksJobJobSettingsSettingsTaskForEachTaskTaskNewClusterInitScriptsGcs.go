@@ -5,7 +5,7 @@ package datadatabricksjob
 
 
 type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsGcs struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 	Destination *string `field:"required" json:"destination" yaml:"destination"`
 }
 

@@ -5,13 +5,13 @@ package query
 
 
 type QueryParameterQueryBackedValue struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/query#query_id Query#query_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/query#query_id Query#query_id}.
 	QueryId *string `field:"required" json:"queryId" yaml:"queryId"`
 	// multi_values_options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/query#multi_values_options Query#multi_values_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/query#multi_values_options Query#multi_values_options}
 	MultiValuesOptions *QueryParameterQueryBackedValueMultiValuesOptions `field:"optional" json:"multiValuesOptions" yaml:"multiValuesOptions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/query#values Query#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/query#values Query#values}.
 	Values *[]*string `field:"optional" json:"values" yaml:"values"`
 }
 

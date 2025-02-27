@@ -5,7 +5,7 @@ package datadatabrickstable
 
 
 type DataDatabricksTableTableInfoDeltaRuntimePropertiesKvpairs struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/data-sources/table#delta_runtime_properties DataDatabricksTable#delta_runtime_properties}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/data-sources/table#delta_runtime_properties DataDatabricksTable#delta_runtime_properties}.
 	DeltaRuntimeProperties *map[string]*string `field:"required" json:"deltaRuntimeProperties" yaml:"deltaRuntimeProperties"`
 }
 

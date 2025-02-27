@@ -5,7 +5,7 @@ package datadatabricksapps
 
 
 type DataDatabricksAppsAppActiveDeploymentDeploymentArtifacts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}.
 	SourceCodePath *string `field:"optional" json:"sourceCodePath" yaml:"sourceCodePath"`
 }
 

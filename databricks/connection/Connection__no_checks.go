@@ -115,10 +115,6 @@ func (j *jsiiProxy_Connection) validateSetLifecycleParameters(val *cdktf.Terrafo
 	return nil
 }
 
-func (j *jsiiProxy_Connection) validateSetMetastoreIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Connection) validateSetNameParameters(val *string) error {
 	return nil
 }

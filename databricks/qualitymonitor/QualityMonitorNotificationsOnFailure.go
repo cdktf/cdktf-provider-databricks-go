@@ -5,7 +5,7 @@ package qualitymonitor
 
 
 type QualityMonitorNotificationsOnFailure struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}.
 	EmailAddresses *[]*string `field:"optional" json:"emailAddresses" yaml:"emailAddresses"`
 }
 

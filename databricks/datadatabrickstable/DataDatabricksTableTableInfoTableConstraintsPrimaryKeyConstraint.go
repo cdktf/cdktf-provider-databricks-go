@@ -5,9 +5,9 @@ package datadatabrickstable
 
 
 type DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraint struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/data-sources/table#child_columns DataDatabricksTable#child_columns}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/data-sources/table#child_columns DataDatabricksTable#child_columns}.
 	ChildColumns *[]*string `field:"required" json:"childColumns" yaml:"childColumns"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/data-sources/table#name DataDatabricksTable#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/data-sources/table#name DataDatabricksTable#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

@@ -5,7 +5,7 @@ package datadatabricksclusterpluginframework
 
 
 type DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/data-sources/cluster_pluginframework#is_spot DataDatabricksClusterPluginframework#is_spot}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/data-sources/cluster_pluginframework#is_spot DataDatabricksClusterPluginframework#is_spot}.
 	IsSpot interface{} `field:"optional" json:"isSpot" yaml:"isSpot"`
 }
 

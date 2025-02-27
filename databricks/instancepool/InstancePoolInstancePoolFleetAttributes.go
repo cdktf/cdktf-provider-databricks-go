@@ -7,15 +7,15 @@ package instancepool
 type InstancePoolInstancePoolFleetAttributes struct {
 	// launch_template_override block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/instance_pool#launch_template_override InstancePool#launch_template_override}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/instance_pool#launch_template_override InstancePool#launch_template_override}
 	LaunchTemplateOverride interface{} `field:"required" json:"launchTemplateOverride" yaml:"launchTemplateOverride"`
 	// fleet_on_demand_option block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/instance_pool#fleet_on_demand_option InstancePool#fleet_on_demand_option}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/instance_pool#fleet_on_demand_option InstancePool#fleet_on_demand_option}
 	FleetOnDemandOption *InstancePoolInstancePoolFleetAttributesFleetOnDemandOption `field:"optional" json:"fleetOnDemandOption" yaml:"fleetOnDemandOption"`
 	// fleet_spot_option block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/instance_pool#fleet_spot_option InstancePool#fleet_spot_option}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/instance_pool#fleet_spot_option InstancePool#fleet_spot_option}
 	FleetSpotOption *InstancePoolInstancePoolFleetAttributesFleetSpotOption `field:"optional" json:"fleetSpotOption" yaml:"fleetSpotOption"`
 }
 
