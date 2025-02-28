@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/data-sources/cluster_policy databricks_cluster_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/data-sources/cluster_policy databricks_cluster_policy}.
 type DataDatabricksClusterPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -433,7 +433,7 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source.
 func NewDataDatabricksClusterPolicy(scope constructs.Construct, id *string, config *DataDatabricksClusterPolicyConfig) DataDatabricksClusterPolicy {
 	_init_.Initialize()
 
@@ -451,7 +451,7 @@ func NewDataDatabricksClusterPolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source.
 func NewDataDatabricksClusterPolicy_Override(d DataDatabricksClusterPolicy, scope constructs.Construct, id *string, config *DataDatabricksClusterPolicyConfig) {
 	_init_.Initialize()
 

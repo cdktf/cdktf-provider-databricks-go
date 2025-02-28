@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/aibi_dashboard_embedding_access_policy_setting databricks_aibi_dashboard_embedding_access_policy_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/aibi_dashboard_embedding_access_policy_setting databricks_aibi_dashboard_embedding_access_policy_setting}.
 type AibiDashboardEmbeddingAccessPolicySetting interface {
 	cdktf.TerraformResource
 	AibiDashboardEmbeddingAccessPolicy() AibiDashboardEmbeddingAccessPolicySettingAibiDashboardEmbeddingAccessPolicyOutputReference
@@ -381,7 +381,7 @@ func (j *jsiiProxy_AibiDashboardEmbeddingAccessPolicySetting) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/aibi_dashboard_embedding_access_policy_setting databricks_aibi_dashboard_embedding_access_policy_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/aibi_dashboard_embedding_access_policy_setting databricks_aibi_dashboard_embedding_access_policy_setting} Resource.
 func NewAibiDashboardEmbeddingAccessPolicySetting(scope constructs.Construct, id *string, config *AibiDashboardEmbeddingAccessPolicySettingConfig) AibiDashboardEmbeddingAccessPolicySetting {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewAibiDashboardEmbeddingAccessPolicySetting(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/aibi_dashboard_embedding_access_policy_setting databricks_aibi_dashboard_embedding_access_policy_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/aibi_dashboard_embedding_access_policy_setting databricks_aibi_dashboard_embedding_access_policy_setting} Resource.
 func NewAibiDashboardEmbeddingAccessPolicySetting_Override(a AibiDashboardEmbeddingAccessPolicySetting, scope constructs.Construct, id *string, config *AibiDashboardEmbeddingAccessPolicySettingConfig) {
 	_init_.Initialize()
 
