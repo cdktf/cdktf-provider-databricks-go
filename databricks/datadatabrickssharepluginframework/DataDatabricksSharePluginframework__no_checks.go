@@ -95,10 +95,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetOwnerParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetStorageLocationParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetStorageRootParameters(val *string) error {
 	return nil
 }

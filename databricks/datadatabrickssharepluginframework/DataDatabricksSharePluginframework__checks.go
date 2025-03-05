@@ -274,14 +274,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetOwnerParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetStorageLocationParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksSharePluginframework) validateSetStorageRootParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -15,6 +15,9 @@ type DataDatabricksAppsAppOutputReference interface {
 	cdktf.ComplexObject
 	ActiveDeployment() DataDatabricksAppsAppActiveDeploymentOutputReference
 	AppStatus() DataDatabricksAppsAppAppStatusOutputReference
+	BudgetPolicyId() *string
+	SetBudgetPolicyId(val *string)
+	BudgetPolicyIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,6 +40,7 @@ type DataDatabricksAppsAppOutputReference interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveBudgetPolicyId() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -87,6 +91,7 @@ type DataDatabricksAppsAppOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutResources(value interface{})
+	ResetBudgetPolicyId()
 	ResetDescription()
 	ResetResources()
 	// Produce the Token's value at resolution time.
@@ -119,6 +124,26 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) AppStatus() DataDatabri
 	_jsii_.Get(
 		j,
 		"appStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) BudgetPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) BudgetPolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyIdInput",
 		&returns,
 	)
 	return returns
@@ -209,6 +234,16 @@ func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) DescriptionInput() *str
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference) EffectiveBudgetPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveBudgetPolicyId",
 		&returns,
 	)
 	return returns
@@ -399,6 +434,17 @@ func NewDataDatabricksAppsAppOutputReference_Override(d DataDatabricksAppsAppOut
 		"@cdktf/provider-databricks.dataDatabricksApps.DataDatabricksAppsAppOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppOutputReference)SetBudgetPolicyId(val *string) {
+	if err := j.validateSetBudgetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"budgetPolicyId",
+		val,
 	)
 }
 
@@ -673,6 +719,14 @@ func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) PutResources(value inte
 		d,
 		"putResources",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppsAppOutputReference) ResetBudgetPolicyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBudgetPolicyId",
+		nil, // no parameters
 	)
 }
 

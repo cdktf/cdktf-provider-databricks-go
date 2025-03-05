@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validateResolveParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetBudgetPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

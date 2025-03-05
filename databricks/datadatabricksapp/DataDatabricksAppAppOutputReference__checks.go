@@ -132,6 +132,14 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validateResolveParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetBudgetPolicyIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

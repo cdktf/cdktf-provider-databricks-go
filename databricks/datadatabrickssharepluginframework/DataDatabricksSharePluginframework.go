@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/data-sources/share_pluginframework databricks_share_pluginframework}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/data-sources/share_pluginframework databricks_share_pluginframework}.
 type DataDatabricksSharePluginframework interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -62,8 +62,6 @@ type DataDatabricksSharePluginframework interface {
 	// Experimental.
 	RawOverrides() interface{}
 	StorageLocation() *string
-	SetStorageLocation(val *string)
-	StorageLocationInput() *string
 	StorageRoot() *string
 	SetStorageRoot(val *string)
 	StorageRootInput() *string
@@ -108,7 +106,6 @@ type DataDatabricksSharePluginframework interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
-	ResetStorageLocation()
 	ResetStorageRoot()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -359,16 +356,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework) StorageLocation() *string
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksSharePluginframework) StorageLocationInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"storageLocationInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksSharePluginframework) StorageRoot() *string {
 	var returns *string
 	_jsii_.Get(
@@ -440,7 +427,7 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source.
 func NewDataDatabricksSharePluginframework(scope constructs.Construct, id *string, config *DataDatabricksSharePluginframeworkConfig) DataDatabricksSharePluginframework {
 	_init_.Initialize()
 
@@ -458,7 +445,7 @@ func NewDataDatabricksSharePluginframework(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source.
 func NewDataDatabricksSharePluginframework_Override(d DataDatabricksSharePluginframework, scope constructs.Construct, id *string, config *DataDatabricksSharePluginframeworkConfig) {
 	_init_.Initialize()
 
@@ -544,17 +531,6 @@ func (j *jsiiProxy_DataDatabricksSharePluginframework)SetProvider(val cdktf.Terr
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksSharePluginframework)SetStorageLocation(val *string) {
-	if err := j.validateSetStorageLocationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"storageLocation",
 		val,
 	)
 }
@@ -902,14 +878,6 @@ func (d *jsiiProxy_DataDatabricksSharePluginframework) ResetOwner() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOwner",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksSharePluginframework) ResetStorageLocation() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetStorageLocation",
 		nil, // no parameters
 	)
 }

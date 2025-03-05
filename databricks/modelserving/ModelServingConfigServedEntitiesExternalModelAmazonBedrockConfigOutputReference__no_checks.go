@@ -83,6 +83,10 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockCon
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) validateSetInstanceProfileArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) validateSetInternalValueParameters(val *ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig) error {
 	return nil
 }

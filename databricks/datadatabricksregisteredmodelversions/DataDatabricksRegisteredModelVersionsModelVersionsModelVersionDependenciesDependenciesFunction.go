@@ -5,7 +5,7 @@ package datadatabricksregisteredmodelversions
 
 
 type DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunction struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/data-sources/registered_model_versions#function_full_name DataDatabricksRegisteredModelVersions#function_full_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/data-sources/registered_model_versions#function_full_name DataDatabricksRegisteredModelVersions#function_full_name}.
 	FunctionFullName *string `field:"required" json:"functionFullName" yaml:"functionFullName"`
 }
 

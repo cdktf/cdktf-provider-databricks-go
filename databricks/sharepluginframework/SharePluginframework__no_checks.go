@@ -123,10 +123,6 @@ func (j *jsiiProxy_SharePluginframework) validateSetProvisionersParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_SharePluginframework) validateSetStorageLocationParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_SharePluginframework) validateSetStorageRootParameters(val *string) error {
 	return nil
 }

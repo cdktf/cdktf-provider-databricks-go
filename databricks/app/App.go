@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/app databricks_app}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/app databricks_app}.
 type App interface {
 	cdktf.TerraformResource
 	ActiveDeployment() AppActiveDeploymentOutputReference
 	AppStatus() AppAppStatusOutputReference
+	BudgetPolicyId() *string
+	SetBudgetPolicyId(val *string)
+	BudgetPolicyIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ComputeStatus() AppComputeStatusOutputReference
@@ -40,6 +43,7 @@ type App interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveBudgetPolicyId() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -130,6 +134,7 @@ type App interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutResources(value interface{})
+	ResetBudgetPolicyId()
 	ResetDescription()
 	ResetNoCompute()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -169,6 +174,26 @@ func (j *jsiiProxy_App) AppStatus() AppAppStatusOutputReference {
 	_jsii_.Get(
 		j,
 		"appStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) BudgetPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) BudgetPolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyIdInput",
 		&returns,
 	)
 	return returns
@@ -279,6 +304,16 @@ func (j *jsiiProxy_App) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) EffectiveBudgetPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveBudgetPolicyId",
 		&returns,
 	)
 	return returns
@@ -535,7 +570,7 @@ func (j *jsiiProxy_App) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/app databricks_app} Resource.
 func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	_init_.Initialize()
 
@@ -553,7 +588,7 @@ func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/app databricks_app} Resource.
 func NewApp_Override(a App, scope constructs.Construct, id *string, config *AppConfig) {
 	_init_.Initialize()
 
@@ -561,6 +596,17 @@ func NewApp_Override(a App, scope constructs.Construct, id *string, config *AppC
 		"@cdktf/provider-databricks.app.App",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_App)SetBudgetPolicyId(val *string) {
+	if err := j.validateSetBudgetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"budgetPolicyId",
+		val,
 	)
 }
 
@@ -1026,6 +1072,14 @@ func (a *jsiiProxy_App) PutResources(value interface{}) {
 		a,
 		"putResources",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_App) ResetBudgetPolicyId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBudgetPolicyId",
+		nil, // no parameters
 	)
 }
 

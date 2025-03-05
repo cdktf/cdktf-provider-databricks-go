@@ -446,14 +446,6 @@ func (j *jsiiProxy_SharePluginframework) validateSetProvisionersParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_SharePluginframework) validateSetStorageLocationParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_SharePluginframework) validateSetStorageRootParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

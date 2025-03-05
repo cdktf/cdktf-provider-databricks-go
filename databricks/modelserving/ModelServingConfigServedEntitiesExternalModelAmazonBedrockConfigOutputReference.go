@@ -48,6 +48,9 @@ type ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputRefer
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InstanceProfileArn() *string
+	SetInstanceProfileArn(val *string)
+	InstanceProfileArnInput() *string
 	InternalValue() *ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig
 	SetInternalValue(val *ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig)
 	// Experimental.
@@ -86,6 +89,7 @@ type ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputRefer
 	ResetAwsAccessKeyIdPlaintext()
 	ResetAwsSecretAccessKey()
 	ResetAwsSecretAccessKeyPlaintext()
+	ResetInstanceProfileArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -261,6 +265,26 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockCon
 	return returns
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) InstanceProfileArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceProfileArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) InstanceProfileArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceProfileArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) InternalValue() *ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig {
 	var returns *ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig
 	_jsii_.Get(
@@ -403,6 +427,17 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockCon
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference)SetInstanceProfileArn(val *string) {
+	if err := j.validateSetInstanceProfileArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instanceProfileArn",
 		val,
 	)
 }
@@ -654,6 +689,14 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockCon
 	_jsii_.InvokeVoid(
 		m,
 		"resetAwsSecretAccessKeyPlaintext",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) ResetInstanceProfileArn() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetInstanceProfileArn",
 		nil, // no parameters
 	)
 }

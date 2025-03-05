@@ -52,6 +52,8 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	ExistingClusterIdInput() *string
 	// Experimental.
 	Fqn() *string
+	GenAiComputeTask() JobTaskForEachTaskTaskGenAiComputeTaskOutputReference
+	GenAiComputeTaskInput() *JobTaskForEachTaskTaskGenAiComputeTask
 	Health() JobTaskForEachTaskTaskHealthOutputReference
 	HealthInput() *JobTaskForEachTaskTaskHealth
 	InternalValue() *JobTaskForEachTaskTask
@@ -138,6 +140,7 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	PutDbtTask(value *JobTaskForEachTaskTaskDbtTask)
 	PutDependsOn(value interface{})
 	PutEmailNotifications(value *JobTaskForEachTaskTaskEmailNotifications)
+	PutGenAiComputeTask(value *JobTaskForEachTaskTaskGenAiComputeTask)
 	PutHealth(value *JobTaskForEachTaskTaskHealth)
 	PutLibrary(value interface{})
 	PutNewCluster(value *JobTaskForEachTaskTaskNewCluster)
@@ -160,6 +163,7 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	ResetEmailNotifications()
 	ResetEnvironmentKey()
 	ResetExistingClusterId()
+	ResetGenAiComputeTask()
 	ResetHealth()
 	ResetJobClusterKey()
 	ResetLibrary()
@@ -409,6 +413,26 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) GenAiComputeTask() JobTaskForEachTaskTaskGenAiComputeTaskOutputReference {
+	var returns JobTaskForEachTaskTaskGenAiComputeTaskOutputReference
+	_jsii_.Get(
+		j,
+		"genAiComputeTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) GenAiComputeTaskInput() *JobTaskForEachTaskTaskGenAiComputeTask {
+	var returns *JobTaskForEachTaskTaskGenAiComputeTask
+	_jsii_.Get(
+		j,
+		"genAiComputeTaskInput",
 		&returns,
 	)
 	return returns
@@ -1289,6 +1313,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) PutEmailNotifications(
 	)
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) PutGenAiComputeTask(value *JobTaskForEachTaskTaskGenAiComputeTask) {
+	if err := j.validatePutGenAiComputeTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putGenAiComputeTask",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) PutHealth(value *JobTaskForEachTaskTaskHealth) {
 	if err := j.validatePutHealthParameters(value); err != nil {
 		panic(err)
@@ -1500,6 +1535,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ResetExistingClusterId
 	_jsii_.InvokeVoid(
 		j,
 		"resetExistingClusterId",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ResetGenAiComputeTask() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetGenAiComputeTask",
 		nil, // no parameters
 	)
 }

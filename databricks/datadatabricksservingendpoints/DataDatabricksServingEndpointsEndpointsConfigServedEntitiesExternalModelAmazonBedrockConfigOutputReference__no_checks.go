@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesEx
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) validateSetInstanceProfileArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

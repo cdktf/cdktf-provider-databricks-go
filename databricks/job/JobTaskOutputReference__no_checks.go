@@ -71,6 +71,10 @@ func (j *jsiiProxy_JobTaskOutputReference) validatePutForEachTaskParameters(valu
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) validatePutGenAiComputeTaskParameters(value *JobTaskGenAiComputeTask) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) validatePutHealthParameters(value *JobTaskHealth) error {
 	return nil
 }

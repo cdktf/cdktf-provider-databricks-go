@@ -95,6 +95,10 @@ func validateApp_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_App) validateSetBudgetPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_App) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

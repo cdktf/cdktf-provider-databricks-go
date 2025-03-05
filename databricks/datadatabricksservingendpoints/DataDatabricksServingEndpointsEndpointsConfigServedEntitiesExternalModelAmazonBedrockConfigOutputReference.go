@@ -48,6 +48,9 @@ type DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAma
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InstanceProfileArn() *string
+	SetInstanceProfileArn(val *string)
+	InstanceProfileArnInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -86,6 +89,7 @@ type DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAma
 	ResetAwsAccessKeyIdPlaintext()
 	ResetAwsSecretAccessKey()
 	ResetAwsSecretAccessKeyPlaintext()
+	ResetInstanceProfileArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -261,6 +265,26 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesEx
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) InstanceProfileArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceProfileArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) InstanceProfileArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceProfileArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -403,6 +427,17 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesEx
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference)SetInstanceProfileArn(val *string) {
+	if err := j.validateSetInstanceProfileArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instanceProfileArn",
 		val,
 	)
 }
@@ -654,6 +689,14 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesEx
 	_jsii_.InvokeVoid(
 		d,
 		"resetAwsSecretAccessKeyPlaintext",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference) ResetInstanceProfileArn() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetInstanceProfileArn",
 		nil, // no parameters
 	)
 }
