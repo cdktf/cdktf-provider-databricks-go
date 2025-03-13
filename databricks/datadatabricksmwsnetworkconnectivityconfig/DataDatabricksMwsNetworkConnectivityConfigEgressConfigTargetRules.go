@@ -7,7 +7,7 @@ package datadatabricksmwsnetworkconnectivityconfig
 type DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRules struct {
 	// azure_private_endpoint_rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/data-sources/mws_network_connectivity_config#azure_private_endpoint_rules DataDatabricksMwsNetworkConnectivityConfig#azure_private_endpoint_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/mws_network_connectivity_config#azure_private_endpoint_rules DataDatabricksMwsNetworkConnectivityConfig#azure_private_endpoint_rules}
 	AzurePrivateEndpointRules interface{} `field:"optional" json:"azurePrivateEndpointRules" yaml:"azurePrivateEndpointRules"`
 }
 
