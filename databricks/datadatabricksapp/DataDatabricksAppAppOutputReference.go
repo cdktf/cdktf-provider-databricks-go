@@ -41,6 +41,7 @@ type DataDatabricksAppAppOutputReference interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveBudgetPolicyId() *string
+	EffectiveUserApiScopes() *[]*string
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -49,6 +50,8 @@ type DataDatabricksAppAppOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Oauth2AppClientId() *string
+	Oauth2AppIntegrationId() *string
 	PendingDeployment() DataDatabricksAppAppPendingDeploymentOutputReference
 	Resources() DataDatabricksAppAppResourcesList
 	ResourcesInput() interface{}
@@ -66,6 +69,9 @@ type DataDatabricksAppAppOutputReference interface {
 	Updater() *string
 	UpdateTime() *string
 	Url() *string
+	UserApiScopes() *[]*string
+	SetUserApiScopes(val *[]*string)
+	UserApiScopesInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -94,6 +100,7 @@ type DataDatabricksAppAppOutputReference interface {
 	ResetBudgetPolicyId()
 	ResetDescription()
 	ResetResources()
+	ResetUserApiScopes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -249,6 +256,16 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) EffectiveBudgetPolicyId(
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) EffectiveUserApiScopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"effectiveUserApiScopes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -294,6 +311,26 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) NameInput() *string {
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) Oauth2AppClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oauth2AppClientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) Oauth2AppIntegrationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oauth2AppIntegrationId",
 		&returns,
 	)
 	return returns
@@ -404,6 +441,26 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) Url() *string {
 	_jsii_.Get(
 		j,
 		"url",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) UserApiScopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"userApiScopes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) UserApiScopesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"userApiScopesInput",
 		&returns,
 	)
 	return returns
@@ -521,6 +578,17 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetTerraformResource(val 
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetUserApiScopes(val *[]*string) {
+	if err := j.validateSetUserApiScopesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userApiScopes",
 		val,
 	)
 }
@@ -742,6 +810,14 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetResources() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetUserApiScopes() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUserApiScopes",
 		nil, // no parameters
 	)
 }

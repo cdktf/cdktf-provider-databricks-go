@@ -15,6 +15,9 @@ type DataDatabricksServingEndpointsEndpointsOutputReference interface {
 	cdktf.ComplexObject
 	AiGateway() DataDatabricksServingEndpointsEndpointsAiGatewayList
 	AiGatewayInput() interface{}
+	BudgetPolicyId() *string
+	SetBudgetPolicyId(val *string)
+	BudgetPolicyIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -95,6 +98,7 @@ type DataDatabricksServingEndpointsEndpointsOutputReference interface {
 	PutState(value interface{})
 	PutTags(value interface{})
 	ResetAiGateway()
+	ResetBudgetPolicyId()
 	ResetConfig()
 	ResetCreationTimestamp()
 	ResetCreator()
@@ -134,6 +138,26 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) AiGat
 	_jsii_.Get(
 		j,
 		"aiGatewayInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) BudgetPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) BudgetPolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyIdInput",
 		&returns,
 	)
 	return returns
@@ -414,6 +438,17 @@ func NewDataDatabricksServingEndpointsEndpointsOutputReference_Override(d DataDa
 		"@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference)SetBudgetPolicyId(val *string) {
+	if err := j.validateSetBudgetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"budgetPolicyId",
+		val,
 	)
 }
 
@@ -772,6 +807,14 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) Reset
 	_jsii_.InvokeVoid(
 		d,
 		"resetAiGateway",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) ResetBudgetPolicyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBudgetPolicyId",
 		nil, // no parameters
 	)
 }

@@ -63,6 +63,10 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference)
 	return nil
 }
 
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference) validatePutCustomProviderConfigParameters(value *ModelServingConfigServedEntitiesExternalModelCustomProviderConfig) error {
+	return nil
+}
+
 func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference) validatePutDatabricksModelServingConfigParameters(value *ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig) error {
 	return nil
 }

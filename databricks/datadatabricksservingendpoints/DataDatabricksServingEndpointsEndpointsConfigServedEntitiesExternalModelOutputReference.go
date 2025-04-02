@@ -36,6 +36,8 @@ type DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOut
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomProviderConfig() DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigList
+	CustomProviderConfigInput() interface{}
 	DatabricksModelServingConfig() DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfigList
 	DatabricksModelServingConfigInput() interface{}
 	// Experimental.
@@ -93,6 +95,7 @@ type DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOut
 	PutAmazonBedrockConfig(value interface{})
 	PutAnthropicConfig(value interface{})
 	PutCohereConfig(value interface{})
+	PutCustomProviderConfig(value interface{})
 	PutDatabricksModelServingConfig(value interface{})
 	PutGoogleCloudVertexAiConfig(value interface{})
 	PutOpenaiConfig(value interface{})
@@ -101,6 +104,7 @@ type DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOut
 	ResetAmazonBedrockConfig()
 	ResetAnthropicConfig()
 	ResetCohereConfig()
+	ResetCustomProviderConfig()
 	ResetDatabricksModelServingConfig()
 	ResetGoogleCloudVertexAiConfig()
 	ResetOpenaiConfig()
@@ -225,6 +229,26 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesEx
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOutputReference) CustomProviderConfig() DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigList {
+	var returns DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigList
+	_jsii_.Get(
+		j,
+		"customProviderConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOutputReference) CustomProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customProviderConfigInput",
 		&returns,
 	)
 	return returns
@@ -756,6 +780,17 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesEx
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOutputReference) PutCustomProviderConfig(value interface{}) {
+	if err := d.validatePutCustomProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCustomProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOutputReference) PutDatabricksModelServingConfig(value interface{}) {
 	if err := d.validatePutDatabricksModelServingConfigParameters(value); err != nil {
 		panic(err)
@@ -828,6 +863,14 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesEx
 	_jsii_.InvokeVoid(
 		d,
 		"resetCohereConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOutputReference) ResetCustomProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCustomProviderConfig",
 		nil, // no parameters
 	)
 }

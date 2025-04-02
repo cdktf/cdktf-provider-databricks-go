@@ -47,6 +47,10 @@ func (m *jsiiProxy_ModelServingAiGatewayOutputReference) validateInterpolationFo
 	return nil
 }
 
+func (m *jsiiProxy_ModelServingAiGatewayOutputReference) validatePutFallbackConfigParameters(value *ModelServingAiGatewayFallbackConfig) error {
+	return nil
+}
+
 func (m *jsiiProxy_ModelServingAiGatewayOutputReference) validatePutGuardrailsParameters(value *ModelServingAiGatewayGuardrails) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/pipeline databricks_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/pipeline databricks_pipeline}.
 type Pipeline interface {
 	cdktf.TerraformResource
 	AllowDuplicateNames() interface{}
@@ -68,6 +68,8 @@ type Pipeline interface {
 	Edition() *string
 	SetEdition(val *string)
 	EditionInput() *string
+	EventLog() PipelineEventLogOutputReference
+	EventLogInput() *PipelineEventLog
 	ExpectedLastModified() *float64
 	SetExpectedLastModified(val *float64)
 	ExpectedLastModifiedInput() *float64
@@ -200,6 +202,7 @@ type Pipeline interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCluster(value interface{})
 	PutDeployment(value *PipelineDeployment)
+	PutEventLog(value *PipelineEventLog)
 	PutFilters(value *PipelineFilters)
 	PutGatewayDefinition(value *PipelineGatewayDefinition)
 	PutIngestionDefinition(value *PipelineIngestionDefinition)
@@ -223,6 +226,7 @@ type Pipeline interface {
 	ResetDeployment()
 	ResetDevelopment()
 	ResetEdition()
+	ResetEventLog()
 	ResetExpectedLastModified()
 	ResetFilters()
 	ResetGatewayDefinition()
@@ -571,6 +575,26 @@ func (j *jsiiProxy_Pipeline) EditionInput() *string {
 	_jsii_.Get(
 		j,
 		"editionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) EventLog() PipelineEventLogOutputReference {
+	var returns PipelineEventLogOutputReference
+	_jsii_.Get(
+		j,
+		"eventLog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) EventLogInput() *PipelineEventLog {
+	var returns *PipelineEventLog
+	_jsii_.Get(
+		j,
+		"eventLogInput",
 		&returns,
 	)
 	return returns
@@ -1137,7 +1161,7 @@ func (j *jsiiProxy_Pipeline) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig) Pipeline {
 	_init_.Initialize()
 
@@ -1155,7 +1179,7 @@ func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline_Override(p Pipeline, scope constructs.Construct, id *string, config *PipelineConfig) {
 	_init_.Initialize()
 
@@ -1862,6 +1886,17 @@ func (p *jsiiProxy_Pipeline) PutDeployment(value *PipelineDeployment) {
 	)
 }
 
+func (p *jsiiProxy_Pipeline) PutEventLog(value *PipelineEventLog) {
+	if err := p.validatePutEventLogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putEventLog",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_Pipeline) PutFilters(value *PipelineFilters) {
 	if err := p.validatePutFiltersParameters(value); err != nil {
 		panic(err)
@@ -2072,6 +2107,14 @@ func (p *jsiiProxy_Pipeline) ResetEdition() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetEdition",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Pipeline) ResetEventLog() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEventLog",
 		nil, // no parameters
 	)
 }

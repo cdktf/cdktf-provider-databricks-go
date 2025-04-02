@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/app databricks_app}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/app databricks_app}.
 type App interface {
 	cdktf.TerraformResource
 	ActiveDeployment() AppActiveDeploymentOutputReference
@@ -44,6 +44,7 @@ type App interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveBudgetPolicyId() *string
+	EffectiveUserApiScopes() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -65,6 +66,8 @@ type App interface {
 	NoComputeInput() interface{}
 	// The tree node.
 	Node() constructs.Node
+	Oauth2AppClientId() *string
+	Oauth2AppIntegrationId() *string
 	PendingDeployment() AppPendingDeploymentOutputReference
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -90,6 +93,9 @@ type App interface {
 	Updater() *string
 	UpdateTime() *string
 	Url() *string
+	UserApiScopes() *[]*string
+	SetUserApiScopes(val *[]*string)
+	UserApiScopesInput() *[]*string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -141,6 +147,7 @@ type App interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetResources()
+	ResetUserApiScopes()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -319,6 +326,16 @@ func (j *jsiiProxy_App) EffectiveBudgetPolicyId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_App) EffectiveUserApiScopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"effectiveUserApiScopes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_App) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -414,6 +431,26 @@ func (j *jsiiProxy_App) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) Oauth2AppClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oauth2AppClientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) Oauth2AppIntegrationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oauth2AppIntegrationId",
 		&returns,
 	)
 	return returns
@@ -569,8 +606,28 @@ func (j *jsiiProxy_App) Url() *string {
 	return returns
 }
 
+func (j *jsiiProxy_App) UserApiScopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"userApiScopes",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/app databricks_app} Resource.
+func (j *jsiiProxy_App) UserApiScopesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"userApiScopesInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/app databricks_app} Resource.
 func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	_init_.Initialize()
 
@@ -588,7 +645,7 @@ func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/app databricks_app} Resource.
 func NewApp_Override(a App, scope constructs.Construct, id *string, config *AppConfig) {
 	_init_.Initialize()
 
@@ -707,6 +764,17 @@ func (j *jsiiProxy_App)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_App)SetUserApiScopes(val *[]*string) {
+	if err := j.validateSetUserApiScopesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userApiScopes",
 		val,
 	)
 }
@@ -1111,6 +1179,14 @@ func (a *jsiiProxy_App) ResetResources() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_App) ResetUserApiScopes() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUserApiScopes",
 		nil, // no parameters
 	)
 }

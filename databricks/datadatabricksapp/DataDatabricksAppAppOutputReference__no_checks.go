@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetTerraformReso
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetUserApiScopesParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewDataDatabricksAppAppOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

@@ -82,6 +82,8 @@ type MwsNetworksGcpNetworkInfoOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPodIpRangeName()
+	ResetServiceIpRangeName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -620,6 +622,22 @@ func (m *jsiiProxy_MwsNetworksGcpNetworkInfoOutputReference) InterpolationForAtt
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MwsNetworksGcpNetworkInfoOutputReference) ResetPodIpRangeName() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPodIpRangeName",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsNetworksGcpNetworkInfoOutputReference) ResetServiceIpRangeName() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetServiceIpRangeName",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MwsNetworksGcpNetworkInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

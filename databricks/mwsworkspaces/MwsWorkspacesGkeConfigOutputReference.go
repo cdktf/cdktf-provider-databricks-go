@@ -70,6 +70,8 @@ type MwsWorkspacesGkeConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetConnectivityType()
+	ResetMasterIpRange()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -484,6 +486,22 @@ func (m *jsiiProxy_MwsWorkspacesGkeConfigOutputReference) InterpolationForAttrib
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MwsWorkspacesGkeConfigOutputReference) ResetConnectivityType() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetConnectivityType",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsWorkspacesGkeConfigOutputReference) ResetMasterIpRange() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMasterIpRange",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MwsWorkspacesGkeConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -32,6 +32,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
 			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveBudgetPolicyId", GoGetter: "EffectiveBudgetPolicyId"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveUserApiScopes", GoGetter: "EffectiveUserApiScopes"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -57,6 +58,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "noCompute", GoGetter: "NoCompute"},
 			_jsii_.MemberProperty{JsiiProperty: "noComputeInput", GoGetter: "NoComputeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberProperty{JsiiProperty: "oauth2AppClientId", GoGetter: "Oauth2AppClientId"},
+			_jsii_.MemberProperty{JsiiProperty: "oauth2AppIntegrationId", GoGetter: "Oauth2AppIntegrationId"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "pendingDeployment", GoGetter: "PendingDeployment"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
@@ -68,6 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNoCompute", GoMethod: "ResetNoCompute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetResources", GoMethod: "ResetResources"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUserApiScopes", GoMethod: "ResetUserApiScopes"},
 			_jsii_.MemberProperty{JsiiProperty: "resources", GoGetter: "Resources"},
 			_jsii_.MemberProperty{JsiiProperty: "resourcesInput", GoGetter: "ResourcesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "servicePrincipalClientId", GoGetter: "ServicePrincipalClientId"},
@@ -85,6 +89,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updater", GoGetter: "Updater"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
+			_jsii_.MemberProperty{JsiiProperty: "userApiScopes", GoGetter: "UserApiScopes"},
+			_jsii_.MemberProperty{JsiiProperty: "userApiScopesInput", GoGetter: "UserApiScopesInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_App{}

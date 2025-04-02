@@ -127,6 +127,10 @@ func (j *jsiiProxy_App) validateSetProvisionersParameters(val *[]interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_App) validateSetUserApiScopesParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewAppParameters(scope constructs.Construct, id *string, config *AppConfig) error {
 	return nil
 }

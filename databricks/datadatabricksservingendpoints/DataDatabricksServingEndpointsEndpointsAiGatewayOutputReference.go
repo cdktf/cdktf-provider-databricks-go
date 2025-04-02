@@ -28,6 +28,8 @@ type DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FallbackConfig() DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigList
+	FallbackConfigInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Guardrails() DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsList
@@ -72,10 +74,12 @@ type DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutFallbackConfig(value interface{})
 	PutGuardrails(value interface{})
 	PutInferenceTableConfig(value interface{})
 	PutRateLimits(value interface{})
 	PutUsageTrackingConfig(value interface{})
+	ResetFallbackConfig()
 	ResetGuardrails()
 	ResetInferenceTableConfig()
 	ResetRateLimits()
@@ -120,6 +124,26 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayOutputReferen
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference) FallbackConfig() DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigList {
+	var returns DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigList
+	_jsii_.Get(
+		j,
+		"fallbackConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference) FallbackConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fallbackConfigInput",
 		&returns,
 	)
 	return returns
@@ -514,6 +538,17 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayOutputReferen
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference) PutFallbackConfig(value interface{}) {
+	if err := d.validatePutFallbackConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFallbackConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference) PutGuardrails(value interface{}) {
 	if err := d.validatePutGuardrailsParameters(value); err != nil {
 		panic(err)
@@ -555,6 +590,14 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayOutputReferen
 		d,
 		"putUsageTrackingConfig",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference) ResetFallbackConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFallbackConfig",
+		nil, // no parameters
 	)
 }
 

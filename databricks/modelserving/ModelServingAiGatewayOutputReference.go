@@ -28,6 +28,8 @@ type ModelServingAiGatewayOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FallbackConfig() ModelServingAiGatewayFallbackConfigOutputReference
+	FallbackConfigInput() *ModelServingAiGatewayFallbackConfig
 	// Experimental.
 	Fqn() *string
 	Guardrails() ModelServingAiGatewayGuardrailsOutputReference
@@ -72,10 +74,12 @@ type ModelServingAiGatewayOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutFallbackConfig(value *ModelServingAiGatewayFallbackConfig)
 	PutGuardrails(value *ModelServingAiGatewayGuardrails)
 	PutInferenceTableConfig(value *ModelServingAiGatewayInferenceTableConfig)
 	PutRateLimits(value interface{})
 	PutUsageTrackingConfig(value *ModelServingAiGatewayUsageTrackingConfig)
+	ResetFallbackConfig()
 	ResetGuardrails()
 	ResetInferenceTableConfig()
 	ResetRateLimits()
@@ -120,6 +124,26 @@ func (j *jsiiProxy_ModelServingAiGatewayOutputReference) CreationStack() *[]*str
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingAiGatewayOutputReference) FallbackConfig() ModelServingAiGatewayFallbackConfigOutputReference {
+	var returns ModelServingAiGatewayFallbackConfigOutputReference
+	_jsii_.Get(
+		j,
+		"fallbackConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingAiGatewayOutputReference) FallbackConfigInput() *ModelServingAiGatewayFallbackConfig {
+	var returns *ModelServingAiGatewayFallbackConfig
+	_jsii_.Get(
+		j,
+		"fallbackConfigInput",
 		&returns,
 	)
 	return returns
@@ -514,6 +538,17 @@ func (m *jsiiProxy_ModelServingAiGatewayOutputReference) InterpolationForAttribu
 	return returns
 }
 
+func (m *jsiiProxy_ModelServingAiGatewayOutputReference) PutFallbackConfig(value *ModelServingAiGatewayFallbackConfig) {
+	if err := m.validatePutFallbackConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putFallbackConfig",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_ModelServingAiGatewayOutputReference) PutGuardrails(value *ModelServingAiGatewayGuardrails) {
 	if err := m.validatePutGuardrailsParameters(value); err != nil {
 		panic(err)
@@ -555,6 +590,14 @@ func (m *jsiiProxy_ModelServingAiGatewayOutputReference) PutUsageTrackingConfig(
 		m,
 		"putUsageTrackingConfig",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_ModelServingAiGatewayOutputReference) ResetFallbackConfig() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetFallbackConfig",
+		nil, // no parameters
 	)
 }
 

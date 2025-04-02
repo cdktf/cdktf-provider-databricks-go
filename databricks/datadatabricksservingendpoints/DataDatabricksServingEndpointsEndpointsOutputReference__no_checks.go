@@ -67,6 +67,10 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) validateSetBudgetPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

@@ -199,6 +199,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "networkProjectIdInput", GoGetter: "NetworkProjectIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "podIpRangeName", GoGetter: "PodIpRangeName"},
 			_jsii_.MemberProperty{JsiiProperty: "podIpRangeNameInput", GoGetter: "PodIpRangeNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPodIpRangeName", GoMethod: "ResetPodIpRangeName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServiceIpRangeName", GoMethod: "ResetServiceIpRangeName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceIpRangeName", GoGetter: "ServiceIpRangeName"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceIpRangeNameInput", GoGetter: "ServiceIpRangeNameInput"},

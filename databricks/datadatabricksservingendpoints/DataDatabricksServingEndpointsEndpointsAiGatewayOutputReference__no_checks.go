@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayOutputReferen
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference) validatePutFallbackConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference) validatePutGuardrailsParameters(value interface{}) error {
 	return nil
 }

@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/model_serving databricks_model_serving}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/model_serving databricks_model_serving}.
 type ModelServing interface {
 	cdktf.TerraformResource
 	AiGateway() ModelServingAiGatewayOutputReference
 	AiGatewayInput() *ModelServingAiGateway
+	BudgetPolicyId() *string
+	SetBudgetPolicyId(val *string)
+	BudgetPolicyIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Config() ModelServingConfigAOutputReference
@@ -130,6 +133,7 @@ type ModelServing interface {
 	PutTags(value interface{})
 	PutTimeouts(value *ModelServingTimeouts)
 	ResetAiGateway()
+	ResetBudgetPolicyId()
 	ResetConfig()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -172,6 +176,26 @@ func (j *jsiiProxy_ModelServing) AiGatewayInput() *ModelServingAiGateway {
 	_jsii_.Get(
 		j,
 		"aiGatewayInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServing) BudgetPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServing) BudgetPolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyIdInput",
 		&returns,
 	)
 	return returns
@@ -488,7 +512,7 @@ func (j *jsiiProxy_ModelServing) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/model_serving databricks_model_serving} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/model_serving databricks_model_serving} Resource.
 func NewModelServing(scope constructs.Construct, id *string, config *ModelServingConfig) ModelServing {
 	_init_.Initialize()
 
@@ -506,7 +530,7 @@ func NewModelServing(scope constructs.Construct, id *string, config *ModelServin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/model_serving databricks_model_serving} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/model_serving databricks_model_serving} Resource.
 func NewModelServing_Override(m ModelServing, scope constructs.Construct, id *string, config *ModelServingConfig) {
 	_init_.Initialize()
 
@@ -514,6 +538,17 @@ func NewModelServing_Override(m ModelServing, scope constructs.Construct, id *st
 		"@cdktf/provider-databricks.modelServing.ModelServing",
 		[]interface{}{scope, id, config},
 		m,
+	)
+}
+
+func (j *jsiiProxy_ModelServing)SetBudgetPolicyId(val *string) {
+	if err := j.validateSetBudgetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"budgetPolicyId",
+		val,
 	)
 }
 
@@ -1030,6 +1065,14 @@ func (m *jsiiProxy_ModelServing) ResetAiGateway() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetAiGateway",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServing) ResetBudgetPolicyId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetBudgetPolicyId",
 		nil, // no parameters
 	)
 }

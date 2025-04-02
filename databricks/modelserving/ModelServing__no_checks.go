@@ -111,6 +111,10 @@ func validateModelServing_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_ModelServing) validateSetBudgetPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServing) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
