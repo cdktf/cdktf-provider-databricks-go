@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/pipeline databricks_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/pipeline databricks_pipeline}.
 type Pipeline interface {
 	cdktf.TerraformResource
 	AllowDuplicateNames() interface{}
@@ -129,6 +129,8 @@ type Pipeline interface {
 	RunAs() PipelineRunAsOutputReference
 	RunAsInput() *PipelineRunAs
 	RunAsUserName() *string
+	SetRunAsUserName(val *string)
+	RunAsUserNameInput() *string
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
@@ -244,6 +246,7 @@ type Pipeline interface {
 	ResetPhoton()
 	ResetRestartWindow()
 	ResetRunAs()
+	ResetRunAsUserName()
 	ResetSchema()
 	ResetServerless()
 	ResetState()
@@ -970,6 +973,16 @@ func (j *jsiiProxy_Pipeline) RunAsUserName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Pipeline) RunAsUserNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runAsUserNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Pipeline) Schema() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1161,7 +1174,7 @@ func (j *jsiiProxy_Pipeline) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig) Pipeline {
 	_init_.Initialize()
 
@@ -1179,7 +1192,7 @@ func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline_Override(p Pipeline, scope constructs.Construct, id *string, config *PipelineConfig) {
 	_init_.Initialize()
 
@@ -1441,6 +1454,17 @@ func (j *jsiiProxy_Pipeline)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Pipeline)SetRunAsUserName(val *string) {
+	if err := j.validateSetRunAsUserNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runAsUserName",
 		val,
 	)
 }
@@ -2235,6 +2259,14 @@ func (p *jsiiProxy_Pipeline) ResetRunAs() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetRunAs",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Pipeline) ResetRunAsUserName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRunAsUserName",
 		nil, // no parameters
 	)
 }

@@ -74,7 +74,6 @@ type PipelineEventLogOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCatalog()
-	ResetName()
 	ResetSchema()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -527,14 +526,6 @@ func (p *jsiiProxy_PipelineEventLogOutputReference) ResetCatalog() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetCatalog",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PipelineEventLogOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetName",
 		nil, // no parameters
 	)
 }

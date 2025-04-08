@@ -5,7 +5,7 @@ package datadatabricksfunctions
 
 
 type DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/data-sources/functions#table_full_name DataDatabricksFunctions#table_full_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/data-sources/functions#table_full_name DataDatabricksFunctions#table_full_name}.
 	TableFullName *string `field:"required" json:"tableFullName" yaml:"tableFullName"`
 }
 

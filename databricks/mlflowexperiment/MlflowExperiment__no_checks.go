@@ -75,6 +75,10 @@ func (m *jsiiProxy_MlflowExperiment) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (m *jsiiProxy_MlflowExperiment) validatePutTagsParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MlflowExperiment) validatePutTimeoutsParameters(value *MlflowExperimentTimeouts) error {
 	return nil
 }

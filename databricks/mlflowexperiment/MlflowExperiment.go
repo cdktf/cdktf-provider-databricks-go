@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/mlflow_experiment databricks_mlflow_experiment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mlflow_experiment databricks_mlflow_experiment}.
 type MlflowExperiment interface {
 	cdktf.TerraformResource
 	ArtifactLocation() *string
@@ -79,6 +79,8 @@ type MlflowExperiment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() MlflowExperimentTagsList
+	TagsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -130,6 +132,7 @@ type MlflowExperiment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTags(value interface{})
 	PutTimeouts(value *MlflowExperimentTimeouts)
 	ResetArtifactLocation()
 	ResetCreationTime()
@@ -141,6 +144,7 @@ type MlflowExperiment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -449,6 +453,26 @@ func (j *jsiiProxy_MlflowExperiment) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MlflowExperiment) Tags() MlflowExperimentTagsList {
+	var returns MlflowExperimentTagsList
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MlflowExperiment) TagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MlflowExperiment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -500,7 +524,7 @@ func (j *jsiiProxy_MlflowExperiment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
 func NewMlflowExperiment(scope constructs.Construct, id *string, config *MlflowExperimentConfig) MlflowExperiment {
 	_init_.Initialize()
 
@@ -518,7 +542,7 @@ func NewMlflowExperiment(scope constructs.Construct, id *string, config *MlflowE
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
 func NewMlflowExperiment_Override(m MlflowExperiment, scope constructs.Construct, id *string, config *MlflowExperimentConfig) {
 	_init_.Initialize()
 
@@ -1038,6 +1062,17 @@ func (m *jsiiProxy_MlflowExperiment) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (m *jsiiProxy_MlflowExperiment) PutTags(value interface{}) {
+	if err := m.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putTags",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MlflowExperiment) PutTimeouts(value *MlflowExperimentTimeouts) {
 	if err := m.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1109,6 +1144,14 @@ func (m *jsiiProxy_MlflowExperiment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MlflowExperiment) ResetTags() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTags",
 		nil, // no parameters
 	)
 }
