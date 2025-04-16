@@ -132,6 +132,14 @@ func (d *jsiiProxy_DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference) validateSetBindingWorkspaceIdsParameters(val *[]*float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

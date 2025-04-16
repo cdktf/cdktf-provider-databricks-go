@@ -99,11 +99,23 @@ func (j *jsiiProxy_ServicePrincipalSecret) validateSetCountParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipalSecret) validateSetCreateTimeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret) validateSetExpireTimeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipalSecret) validateSetIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ServicePrincipalSecret) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret) validateSetLifetimeParameters(val *string) error {
 	return nil
 }
 
@@ -115,11 +127,19 @@ func (j *jsiiProxy_ServicePrincipalSecret) validateSetSecretParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipalSecret) validateSetSecretHashParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipalSecret) validateSetServicePrincipalIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ServicePrincipalSecret) validateSetStatusParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret) validateSetUpdateTimeParameters(val *string) error {
 	return nil
 }
 

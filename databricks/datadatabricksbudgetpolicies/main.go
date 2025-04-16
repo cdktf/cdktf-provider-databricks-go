@@ -148,6 +148,8 @@ func init() {
 		"@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference",
 		reflect.TypeOf((*DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "bindingWorkspaceIds", GoGetter: "BindingWorkspaceIds"},
+			_jsii_.MemberProperty{JsiiProperty: "bindingWorkspaceIdsInput", GoGetter: "BindingWorkspaceIdsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -171,6 +173,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "policyName", GoGetter: "PolicyName"},
 			_jsii_.MemberProperty{JsiiProperty: "policyNameInput", GoGetter: "PolicyNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomTags", GoMethod: "PutCustomTags"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBindingWorkspaceIds", GoMethod: "ResetBindingWorkspaceIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomTags", GoMethod: "ResetCustomTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPolicyName", GoMethod: "ResetPolicyName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

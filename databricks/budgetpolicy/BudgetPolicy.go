@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/budget_policy databricks_budget_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/budget_policy databricks_budget_policy}.
 type BudgetPolicy interface {
 	cdktf.TerraformResource
+	BindingWorkspaceIds() *[]*float64
+	SetBindingWorkspaceIds(val *[]*float64)
+	BindingWorkspaceIdsInput() *[]*float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -111,6 +114,7 @@ type BudgetPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCustomTags(value interface{})
+	ResetBindingWorkspaceIds()
 	ResetCustomTags()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -132,6 +136,26 @@ type BudgetPolicy interface {
 // The jsii proxy struct for BudgetPolicy
 type jsiiProxy_BudgetPolicy struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_BudgetPolicy) BindingWorkspaceIds() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"bindingWorkspaceIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetPolicy) BindingWorkspaceIdsInput() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"bindingWorkspaceIdsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_BudgetPolicy) CdktfStack() cdktf.TerraformStack {
@@ -345,7 +369,7 @@ func (j *jsiiProxy_BudgetPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/budget_policy databricks_budget_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/budget_policy databricks_budget_policy} Resource.
 func NewBudgetPolicy(scope constructs.Construct, id *string, config *BudgetPolicyConfig) BudgetPolicy {
 	_init_.Initialize()
 
@@ -363,7 +387,7 @@ func NewBudgetPolicy(scope constructs.Construct, id *string, config *BudgetPolic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/budget_policy databricks_budget_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/budget_policy databricks_budget_policy} Resource.
 func NewBudgetPolicy_Override(b BudgetPolicy, scope constructs.Construct, id *string, config *BudgetPolicyConfig) {
 	_init_.Initialize()
 
@@ -371,6 +395,17 @@ func NewBudgetPolicy_Override(b BudgetPolicy, scope constructs.Construct, id *st
 		"@cdktf/provider-databricks.budgetPolicy.BudgetPolicy",
 		[]interface{}{scope, id, config},
 		b,
+	)
+}
+
+func (j *jsiiProxy_BudgetPolicy)SetBindingWorkspaceIds(val *[]*float64) {
+	if err := j.validateSetBindingWorkspaceIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bindingWorkspaceIds",
+		val,
 	)
 }
 
@@ -814,6 +849,14 @@ func (b *jsiiProxy_BudgetPolicy) PutCustomTags(value interface{}) {
 		b,
 		"putCustomTags",
 		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BudgetPolicy) ResetBindingWorkspaceIds() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetBindingWorkspaceIds",
+		nil, // no parameters
 	)
 }
 

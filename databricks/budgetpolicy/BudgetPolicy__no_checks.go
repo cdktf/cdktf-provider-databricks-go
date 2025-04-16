@@ -95,6 +95,10 @@ func validateBudgetPolicy_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_BudgetPolicy) validateSetBindingWorkspaceIdsParameters(val *[]*float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_BudgetPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

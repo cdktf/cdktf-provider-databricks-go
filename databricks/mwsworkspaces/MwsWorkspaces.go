@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces databricks_mws_workspaces}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces databricks_mws_workspaces}.
 type MwsWorkspaces interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -21,6 +21,8 @@ type MwsWorkspaces interface {
 	AwsRegion() *string
 	SetAwsRegion(val *string)
 	AwsRegionInput() *string
+	AzureWorkspaceInfo() MwsWorkspacesAzureWorkspaceInfoOutputReference
+	AzureWorkspaceInfoInput() *MwsWorkspacesAzureWorkspaceInfo
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Cloud() *string
@@ -183,6 +185,7 @@ type MwsWorkspaces interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAzureWorkspaceInfo(value *MwsWorkspacesAzureWorkspaceInfo)
 	PutCloudResourceContainer(value *MwsWorkspacesCloudResourceContainer)
 	PutExternalCustomerInfo(value *MwsWorkspacesExternalCustomerInfo)
 	PutGcpManagedNetworkConfig(value *MwsWorkspacesGcpManagedNetworkConfig)
@@ -190,6 +193,7 @@ type MwsWorkspaces interface {
 	PutTimeouts(value *MwsWorkspacesTimeouts)
 	PutToken(value *MwsWorkspacesToken)
 	ResetAwsRegion()
+	ResetAzureWorkspaceInfo()
 	ResetCloud()
 	ResetCloudResourceContainer()
 	ResetCreationTime()
@@ -271,6 +275,26 @@ func (j *jsiiProxy_MwsWorkspaces) AwsRegionInput() *string {
 	_jsii_.Get(
 		j,
 		"awsRegionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsWorkspaces) AzureWorkspaceInfo() MwsWorkspacesAzureWorkspaceInfoOutputReference {
+	var returns MwsWorkspacesAzureWorkspaceInfoOutputReference
+	_jsii_.Get(
+		j,
+		"azureWorkspaceInfo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsWorkspaces) AzureWorkspaceInfoInput() *MwsWorkspacesAzureWorkspaceInfo {
+	var returns *MwsWorkspacesAzureWorkspaceInfo
+	_jsii_.Get(
+		j,
+		"azureWorkspaceInfoInput",
 		&returns,
 	)
 	return returns
@@ -967,7 +991,7 @@ func (j *jsiiProxy_MwsWorkspaces) WorkspaceUrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
 func NewMwsWorkspaces(scope constructs.Construct, id *string, config *MwsWorkspacesConfig) MwsWorkspaces {
 	_init_.Initialize()
 
@@ -985,7 +1009,7 @@ func NewMwsWorkspaces(scope constructs.Construct, id *string, config *MwsWorkspa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
 func NewMwsWorkspaces_Override(m MwsWorkspaces, scope constructs.Construct, id *string, config *MwsWorkspacesConfig) {
 	_init_.Initialize()
 
@@ -1659,6 +1683,17 @@ func (m *jsiiProxy_MwsWorkspaces) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (m *jsiiProxy_MwsWorkspaces) PutAzureWorkspaceInfo(value *MwsWorkspacesAzureWorkspaceInfo) {
+	if err := m.validatePutAzureWorkspaceInfoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putAzureWorkspaceInfo",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MwsWorkspaces) PutCloudResourceContainer(value *MwsWorkspacesCloudResourceContainer) {
 	if err := m.validatePutCloudResourceContainerParameters(value); err != nil {
 		panic(err)
@@ -1729,6 +1764,14 @@ func (m *jsiiProxy_MwsWorkspaces) ResetAwsRegion() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetAwsRegion",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsWorkspaces) ResetAzureWorkspaceInfo() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAzureWorkspaceInfo",
 		nil, // no parameters
 	)
 }

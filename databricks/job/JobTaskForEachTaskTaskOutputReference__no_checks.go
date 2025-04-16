@@ -55,6 +55,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutConditionTa
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutDashboardTaskParameters(value *JobTaskForEachTaskTaskDashboardTask) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutDbtTaskParameters(value *JobTaskForEachTaskTaskDbtTask) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutNotificatio
 }
 
 func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutPipelineTaskParameters(value *JobTaskForEachTaskTaskPipelineTask) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutPowerBiTaskParameters(value *JobTaskForEachTaskTaskPowerBiTask) error {
 	return nil
 }
 

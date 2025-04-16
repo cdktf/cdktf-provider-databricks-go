@@ -32,6 +32,8 @@ type JobTaskOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DashboardTask() JobTaskDashboardTaskOutputReference
+	DashboardTaskInput() *JobTaskDashboardTask
 	DbtTask() JobTaskDbtTaskOutputReference
 	DbtTaskInput() *JobTaskDbtTask
 	DependsOn() JobTaskDependsOnList
@@ -79,6 +81,8 @@ type JobTaskOutputReference interface {
 	NotificationSettingsInput() *JobTaskNotificationSettings
 	PipelineTask() JobTaskPipelineTaskOutputReference
 	PipelineTaskInput() *JobTaskPipelineTask
+	PowerBiTask() JobTaskPowerBiTaskOutputReference
+	PowerBiTaskInput() *JobTaskPowerBiTask
 	PythonWheelTask() JobTaskPythonWheelTaskOutputReference
 	PythonWheelTaskInput() *JobTaskPythonWheelTask
 	RetryOnTimeout() interface{}
@@ -139,6 +143,7 @@ type JobTaskOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCleanRoomsNotebookTask(value *JobTaskCleanRoomsNotebookTask)
 	PutConditionTask(value *JobTaskConditionTask)
+	PutDashboardTask(value *JobTaskDashboardTask)
 	PutDbtTask(value *JobTaskDbtTask)
 	PutDependsOn(value interface{})
 	PutEmailNotifications(value *JobTaskEmailNotifications)
@@ -150,6 +155,7 @@ type JobTaskOutputReference interface {
 	PutNotebookTask(value *JobTaskNotebookTask)
 	PutNotificationSettings(value *JobTaskNotificationSettings)
 	PutPipelineTask(value *JobTaskPipelineTask)
+	PutPowerBiTask(value *JobTaskPowerBiTask)
 	PutPythonWheelTask(value *JobTaskPythonWheelTask)
 	PutRunJobTask(value *JobTaskRunJobTask)
 	PutSparkJarTask(value *JobTaskSparkJarTask)
@@ -159,6 +165,7 @@ type JobTaskOutputReference interface {
 	PutWebhookNotifications(value *JobTaskWebhookNotifications)
 	ResetCleanRoomsNotebookTask()
 	ResetConditionTask()
+	ResetDashboardTask()
 	ResetDbtTask()
 	ResetDependsOn()
 	ResetDescription()
@@ -177,6 +184,7 @@ type JobTaskOutputReference interface {
 	ResetNotebookTask()
 	ResetNotificationSettings()
 	ResetPipelineTask()
+	ResetPowerBiTask()
 	ResetPythonWheelTask()
 	ResetRetryOnTimeout()
 	ResetRunIf()
@@ -267,6 +275,26 @@ func (j *jsiiProxy_JobTaskOutputReference) CreationStack() *[]*string {
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) DashboardTask() JobTaskDashboardTaskOutputReference {
+	var returns JobTaskDashboardTaskOutputReference
+	_jsii_.Get(
+		j,
+		"dashboardTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) DashboardTaskInput() *JobTaskDashboardTask {
+	var returns *JobTaskDashboardTask
+	_jsii_.Get(
+		j,
+		"dashboardTaskInput",
 		&returns,
 	)
 	return returns
@@ -647,6 +675,26 @@ func (j *jsiiProxy_JobTaskOutputReference) PipelineTaskInput() *JobTaskPipelineT
 	_jsii_.Get(
 		j,
 		"pipelineTaskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) PowerBiTask() JobTaskPowerBiTaskOutputReference {
+	var returns JobTaskPowerBiTaskOutputReference
+	_jsii_.Get(
+		j,
+		"powerBiTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) PowerBiTaskInput() *JobTaskPowerBiTask {
+	var returns *JobTaskPowerBiTask
+	_jsii_.Get(
+		j,
+		"powerBiTaskInput",
 		&returns,
 	)
 	return returns
@@ -1304,6 +1352,17 @@ func (j *jsiiProxy_JobTaskOutputReference) PutConditionTask(value *JobTaskCondit
 	)
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) PutDashboardTask(value *JobTaskDashboardTask) {
+	if err := j.validatePutDashboardTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putDashboardTask",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) PutDbtTask(value *JobTaskDbtTask) {
 	if err := j.validatePutDbtTaskParameters(value); err != nil {
 		panic(err)
@@ -1425,6 +1484,17 @@ func (j *jsiiProxy_JobTaskOutputReference) PutPipelineTask(value *JobTaskPipelin
 	)
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) PutPowerBiTask(value *JobTaskPowerBiTask) {
+	if err := j.validatePutPowerBiTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putPowerBiTask",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) PutPythonWheelTask(value *JobTaskPythonWheelTask) {
 	if err := j.validatePutPythonWheelTaskParameters(value); err != nil {
 		panic(err)
@@ -1514,6 +1584,14 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetConditionTask() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetConditionTask",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ResetDashboardTask() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetDashboardTask",
 		nil, // no parameters
 	)
 }
@@ -1658,6 +1736,14 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetPipelineTask() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetPipelineTask",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ResetPowerBiTask() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetPowerBiTask",
 		nil, // no parameters
 	)
 }

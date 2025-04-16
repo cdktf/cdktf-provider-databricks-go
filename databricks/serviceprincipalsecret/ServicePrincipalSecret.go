@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/service_principal_secret databricks_service_principal_secret}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret databricks_service_principal_secret}.
 type ServicePrincipalSecret interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,10 +27,16 @@ type ServicePrincipalSecret interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateTime() *string
+	SetCreateTime(val *string)
+	CreateTimeInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExpireTime() *string
+	SetExpireTime(val *string)
+	ExpireTimeInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -46,6 +52,9 @@ type ServicePrincipalSecret interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Lifetime() *string
+	SetLifetime(val *string)
+	LifetimeInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -60,6 +69,9 @@ type ServicePrincipalSecret interface {
 	RawOverrides() interface{}
 	Secret() *string
 	SetSecret(val *string)
+	SecretHash() *string
+	SetSecretHash(val *string)
+	SecretHashInput() *string
 	SecretInput() *string
 	ServicePrincipalId() *string
 	SetServicePrincipalId(val *string)
@@ -73,6 +85,9 @@ type ServicePrincipalSecret interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdateTime() *string
+	SetUpdateTime(val *string)
+	UpdateTimeInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -116,12 +131,17 @@ type ServicePrincipalSecret interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetCreateTime()
+	ResetExpireTime()
 	ResetId()
+	ResetLifetime()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSecret()
+	ResetSecretHash()
 	ResetStatus()
+	ResetUpdateTime()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -180,11 +200,51 @@ func (j *jsiiProxy_ServicePrincipalSecret) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ServicePrincipalSecret) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret) CreateTimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServicePrincipalSecret) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret) ExpireTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expireTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret) ExpireTimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expireTimeInput",
 		&returns,
 	)
 	return returns
@@ -250,6 +310,26 @@ func (j *jsiiProxy_ServicePrincipalSecret) Lifecycle() *cdktf.TerraformResourceL
 	return returns
 }
 
+func (j *jsiiProxy_ServicePrincipalSecret) Lifetime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lifetime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret) LifetimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lifetimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServicePrincipalSecret) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -295,6 +375,26 @@ func (j *jsiiProxy_ServicePrincipalSecret) Secret() *string {
 	_jsii_.Get(
 		j,
 		"secret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret) SecretHash() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretHash",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret) SecretHashInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretHashInput",
 		&returns,
 	)
 	return returns
@@ -380,8 +480,28 @@ func (j *jsiiProxy_ServicePrincipalSecret) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ServicePrincipalSecret) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
+func (j *jsiiProxy_ServicePrincipalSecret) UpdateTimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTimeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
 func NewServicePrincipalSecret(scope constructs.Construct, id *string, config *ServicePrincipalSecretConfig) ServicePrincipalSecret {
 	_init_.Initialize()
 
@@ -399,7 +519,7 @@ func NewServicePrincipalSecret(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
 func NewServicePrincipalSecret_Override(s ServicePrincipalSecret, scope constructs.Construct, id *string, config *ServicePrincipalSecretConfig) {
 	_init_.Initialize()
 
@@ -432,10 +552,32 @@ func (j *jsiiProxy_ServicePrincipalSecret)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_ServicePrincipalSecret)SetCreateTime(val *string) {
+	if err := j.validateSetCreateTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createTime",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ServicePrincipalSecret)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret)SetExpireTime(val *string) {
+	if err := j.validateSetExpireTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expireTime",
 		val,
 	)
 }
@@ -470,6 +612,17 @@ func (j *jsiiProxy_ServicePrincipalSecret)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
+func (j *jsiiProxy_ServicePrincipalSecret)SetLifetime(val *string) {
+	if err := j.validateSetLifetimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifetime",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ServicePrincipalSecret)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -500,6 +653,17 @@ func (j *jsiiProxy_ServicePrincipalSecret)SetSecret(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ServicePrincipalSecret)SetSecretHash(val *string) {
+	if err := j.validateSetSecretHashParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretHash",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ServicePrincipalSecret)SetServicePrincipalId(val *string) {
 	if err := j.validateSetServicePrincipalIdParameters(val); err != nil {
 		panic(err)
@@ -518,6 +682,17 @@ func (j *jsiiProxy_ServicePrincipalSecret)SetStatus(val *string) {
 	_jsii_.Set(
 		j,
 		"status",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret)SetUpdateTime(val *string) {
+	if err := j.validateSetUpdateTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"updateTime",
 		val,
 	)
 }
@@ -875,10 +1050,34 @@ func (s *jsiiProxy_ServicePrincipalSecret) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (s *jsiiProxy_ServicePrincipalSecret) ResetCreateTime() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCreateTime",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicePrincipalSecret) ResetExpireTime() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExpireTime",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_ServicePrincipalSecret) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicePrincipalSecret) ResetLifetime() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLifetime",
 		nil, // no parameters
 	)
 }
@@ -899,10 +1098,26 @@ func (s *jsiiProxy_ServicePrincipalSecret) ResetSecret() {
 	)
 }
 
+func (s *jsiiProxy_ServicePrincipalSecret) ResetSecretHash() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSecretHash",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_ServicePrincipalSecret) ResetStatus() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicePrincipalSecret) ResetUpdateTime() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUpdateTime",
 		nil, // no parameters
 	)
 }

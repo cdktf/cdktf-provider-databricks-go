@@ -20,6 +20,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "awsRegion", GoGetter: "AwsRegion"},
 			_jsii_.MemberProperty{JsiiProperty: "awsRegionInput", GoGetter: "AwsRegionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "azureWorkspaceInfo", GoGetter: "AzureWorkspaceInfo"},
+			_jsii_.MemberProperty{JsiiProperty: "azureWorkspaceInfoInput", GoGetter: "AzureWorkspaceInfoInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "cloud", GoGetter: "Cloud"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudInput", GoGetter: "CloudInput"},
@@ -83,6 +85,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "privateAccessSettingsIdInput", GoGetter: "PrivateAccessSettingsIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putAzureWorkspaceInfo", GoMethod: "PutAzureWorkspaceInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putCloudResourceContainer", GoMethod: "PutCloudResourceContainer"},
 			_jsii_.MemberMethod{JsiiMethod: "putExternalCustomerInfo", GoMethod: "PutExternalCustomerInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcpManagedNetworkConfig", GoMethod: "PutGcpManagedNetworkConfig"},
@@ -91,6 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putToken", GoMethod: "PutToken"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsRegion", GoMethod: "ResetAwsRegion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAzureWorkspaceInfo", GoMethod: "ResetAzureWorkspaceInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloud", GoMethod: "ResetCloud"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudResourceContainer", GoMethod: "ResetCloudResourceContainer"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreationTime", GoMethod: "ResetCreationTime"},
@@ -148,6 +152,48 @@ func init() {
 		func() interface{} {
 			j := jsiiProxy_MwsWorkspaces{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfo",
+		reflect.TypeOf((*MwsWorkspacesAzureWorkspaceInfo)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference",
+		reflect.TypeOf((*MwsWorkspacesAzureWorkspaceInfoOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceGroup", GoMethod: "ResetResourceGroup"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubscriptionId", GoMethod: "ResetSubscriptionId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroup", GoGetter: "ResourceGroup"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroupInput", GoGetter: "ResourceGroupInput"},
+			_jsii_.MemberProperty{JsiiProperty: "subscriptionId", GoGetter: "SubscriptionId"},
+			_jsii_.MemberProperty{JsiiProperty: "subscriptionIdInput", GoGetter: "SubscriptionIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MwsWorkspacesAzureWorkspaceInfoOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)

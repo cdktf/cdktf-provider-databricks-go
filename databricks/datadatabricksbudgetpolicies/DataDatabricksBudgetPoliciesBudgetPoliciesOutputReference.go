@@ -13,6 +13,9 @@ import (
 
 type DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference interface {
 	cdktf.ComplexObject
+	BindingWorkspaceIds() *[]*float64
+	SetBindingWorkspaceIds(val *[]*float64)
+	BindingWorkspaceIdsInput() *[]*float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -71,6 +74,7 @@ type DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCustomTags(value interface{})
+	ResetBindingWorkspaceIds()
 	ResetCustomTags()
 	ResetPolicyName()
 	// Produce the Token's value at resolution time.
@@ -86,6 +90,26 @@ type DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference interface {
 // The jsii proxy struct for DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference
 type jsiiProxy_DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference) BindingWorkspaceIds() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"bindingWorkspaceIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference) BindingWorkspaceIdsInput() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"bindingWorkspaceIdsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference) ComplexObjectIndex() interface{} {
@@ -233,6 +257,17 @@ func NewDataDatabricksBudgetPoliciesBudgetPoliciesOutputReference_Override(d Dat
 		"@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference)SetBindingWorkspaceIds(val *[]*float64) {
+	if err := j.validateSetBindingWorkspaceIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bindingWorkspaceIds",
+		val,
 	)
 }
 
@@ -496,6 +531,14 @@ func (d *jsiiProxy_DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference) Pu
 		d,
 		"putCustomTags",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference) ResetBindingWorkspaceIds() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBindingWorkspaceIds",
+		nil, // no parameters
 	)
 }
 

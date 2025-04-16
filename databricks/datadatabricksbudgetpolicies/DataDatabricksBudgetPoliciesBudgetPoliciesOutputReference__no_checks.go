@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference) validateSetBindingWorkspaceIdsParameters(val *[]*float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
