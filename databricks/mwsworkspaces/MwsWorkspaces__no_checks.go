@@ -75,10 +75,6 @@ func (m *jsiiProxy_MwsWorkspaces) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (m *jsiiProxy_MwsWorkspaces) validatePutAzureWorkspaceInfoParameters(value *MwsWorkspacesAzureWorkspaceInfo) error {
-	return nil
-}
-
 func (m *jsiiProxy_MwsWorkspaces) validatePutCloudResourceContainerParameters(value *MwsWorkspacesCloudResourceContainer) error {
 	return nil
 }

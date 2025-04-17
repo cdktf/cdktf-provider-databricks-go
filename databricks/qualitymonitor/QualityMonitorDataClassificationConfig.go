@@ -5,7 +5,7 @@ package qualitymonitor
 
 
 type QualityMonitorDataClassificationConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/quality_monitor#enabled QualityMonitor#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/quality_monitor#enabled QualityMonitor#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

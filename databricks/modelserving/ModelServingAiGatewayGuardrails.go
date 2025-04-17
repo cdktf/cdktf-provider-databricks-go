@@ -7,11 +7,11 @@ package modelserving
 type ModelServingAiGatewayGuardrails struct {
 	// input block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/model_serving#input ModelServing#input}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/model_serving#input ModelServing#input}
 	Input *ModelServingAiGatewayGuardrailsInput `field:"optional" json:"input" yaml:"input"`
 	// output block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/model_serving#output ModelServing#output}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/model_serving#output ModelServing#output}
 	Output *ModelServingAiGatewayGuardrailsOutput `field:"optional" json:"output" yaml:"output"`
 }
 

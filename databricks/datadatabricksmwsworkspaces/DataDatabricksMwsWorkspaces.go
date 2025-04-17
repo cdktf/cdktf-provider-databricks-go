@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/data-sources/mws_workspaces databricks_mws_workspaces}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/mws_workspaces databricks_mws_workspaces}.
 type DataDatabricksMwsWorkspaces interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataDatabricksMwsWorkspaces) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/data-sources/mws_workspaces databricks_mws_workspaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/mws_workspaces databricks_mws_workspaces} Data Source.
 func NewDataDatabricksMwsWorkspaces(scope constructs.Construct, id *string, config *DataDatabricksMwsWorkspacesConfig) DataDatabricksMwsWorkspaces {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataDatabricksMwsWorkspaces(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/data-sources/mws_workspaces databricks_mws_workspaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/mws_workspaces databricks_mws_workspaces} Data Source.
 func NewDataDatabricksMwsWorkspaces_Override(d DataDatabricksMwsWorkspaces, scope constructs.Construct, id *string, config *DataDatabricksMwsWorkspacesConfig) {
 	_init_.Initialize()
 

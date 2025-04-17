@@ -5,7 +5,7 @@ package datadatabricksfunctions
 
 
 type DataDatabricksFunctionsFunctionsRoutineDependencies struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/data-sources/functions#dependencies DataDatabricksFunctions#dependencies}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/functions#dependencies DataDatabricksFunctions#dependencies}.
 	Dependencies interface{} `field:"optional" json:"dependencies" yaml:"dependencies"`
 }
 
