@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) vali
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutDashboardTaskParameters(value *DataDatabricksJobJobSettingsSettingsTaskDashboardTask) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutDbtTaskParameters(value *DataDatabricksJobJobSettingsSettingsTaskDbtTask) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) vali
 }
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutPipelineTaskParameters(value *DataDatabricksJobJobSettingsSettingsTaskPipelineTask) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskOutputReference) validatePutPowerBiTaskParameters(value *DataDatabricksJobJobSettingsSettingsTaskPowerBiTask) error {
 	return nil
 }
 

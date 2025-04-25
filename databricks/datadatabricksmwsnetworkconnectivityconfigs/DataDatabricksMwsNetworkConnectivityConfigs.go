@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/mws_network_connectivity_configs databricks_mws_network_connectivity_configs}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/mws_network_connectivity_configs databricks_mws_network_connectivity_configs}.
 type DataDatabricksMwsNetworkConnectivityConfigs interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -313,7 +313,7 @@ func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigs) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/mws_network_connectivity_configs databricks_mws_network_connectivity_configs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/mws_network_connectivity_configs databricks_mws_network_connectivity_configs} Data Source.
 func NewDataDatabricksMwsNetworkConnectivityConfigs(scope constructs.Construct, id *string, config *DataDatabricksMwsNetworkConnectivityConfigsConfig) DataDatabricksMwsNetworkConnectivityConfigs {
 	_init_.Initialize()
 
@@ -331,7 +331,7 @@ func NewDataDatabricksMwsNetworkConnectivityConfigs(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/mws_network_connectivity_configs databricks_mws_network_connectivity_configs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/mws_network_connectivity_configs databricks_mws_network_connectivity_configs} Data Source.
 func NewDataDatabricksMwsNetworkConnectivityConfigs_Override(d DataDatabricksMwsNetworkConnectivityConfigs, scope constructs.Construct, id *string, config *DataDatabricksMwsNetworkConnectivityConfigsConfig) {
 	_init_.Initialize()
 

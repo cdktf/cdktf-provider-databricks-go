@@ -180,6 +180,7 @@ type DataDatabricksJobJobSettingsSettingsNewClusterOutputReference interface {
 	ResetSingleUserName()
 	ResetSparkConf()
 	ResetSparkEnvVars()
+	ResetSparkVersion()
 	ResetSshPublicKeys()
 	ResetWorkloadType()
 	// Produce the Token's value at resolution time.
@@ -1670,6 +1671,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterOutputReference
 	_jsii_.InvokeVoid(
 		d,
 		"resetSparkEnvVars",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterOutputReference) ResetSparkVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSparkVersion",
 		nil, // no parameters
 	)
 }

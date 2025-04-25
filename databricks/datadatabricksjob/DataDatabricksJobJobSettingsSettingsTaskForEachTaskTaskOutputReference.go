@@ -30,6 +30,8 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference inte
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DashboardTask() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskOutputReference
+	DashboardTaskInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTask
 	DbtTask() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTaskOutputReference
 	DbtTaskInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask
 	DependsOn() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDependsOnList
@@ -70,6 +72,8 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference inte
 	NotificationSettingsInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotificationSettings
 	PipelineTask() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTaskOutputReference
 	PipelineTaskInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTask
+	PowerBiTask() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskOutputReference
+	PowerBiTaskInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask
 	PythonWheelTask() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTaskOutputReference
 	PythonWheelTaskInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTask
 	RetryOnTimeout() interface{}
@@ -129,6 +133,7 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference inte
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTask)
+	PutDashboardTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTask)
 	PutDbtTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask)
 	PutDependsOn(value interface{})
 	PutEmailNotifications(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications)
@@ -138,6 +143,7 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference inte
 	PutNotebookTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTask)
 	PutNotificationSettings(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotificationSettings)
 	PutPipelineTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTask)
+	PutPowerBiTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask)
 	PutPythonWheelTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTask)
 	PutRunJobTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskRunJobTask)
 	PutSparkJarTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkJarTask)
@@ -146,6 +152,7 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference inte
 	PutSqlTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTask)
 	PutWebhookNotifications(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotifications)
 	ResetConditionTask()
+	ResetDashboardTask()
 	ResetDbtTask()
 	ResetDependsOn()
 	ResetDescription()
@@ -161,6 +168,7 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference inte
 	ResetNotebookTask()
 	ResetNotificationSettings()
 	ResetPipelineTask()
+	ResetPowerBiTask()
 	ResetPythonWheelTask()
 	ResetRetryOnTimeout()
 	ResetRunIf()
@@ -231,6 +239,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutput
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) DashboardTask() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskOutputReference
+	_jsii_.Get(
+		j,
+		"dashboardTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) DashboardTaskInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTask {
+	var returns *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTask
+	_jsii_.Get(
+		j,
+		"dashboardTaskInput",
 		&returns,
 	)
 	return returns
@@ -551,6 +579,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutput
 	_jsii_.Get(
 		j,
 		"pipelineTaskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) PowerBiTask() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskOutputReference
+	_jsii_.Get(
+		j,
+		"powerBiTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) PowerBiTaskInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask {
+	var returns *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask
+	_jsii_.Get(
+		j,
+		"powerBiTaskInput",
 		&returns,
 	)
 	return returns
@@ -1186,6 +1234,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutput
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) PutDashboardTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTask) {
+	if err := d.validatePutDashboardTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putDashboardTask",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) PutDbtTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask) {
 	if err := d.validatePutDbtTaskParameters(value); err != nil {
 		panic(err)
@@ -1285,6 +1344,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutput
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) PutPowerBiTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask) {
+	if err := d.validatePutPowerBiTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPowerBiTask",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) PutPythonWheelTask(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTask) {
 	if err := d.validatePutPythonWheelTaskParameters(value); err != nil {
 		panic(err)
@@ -1366,6 +1436,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutput
 	_jsii_.InvokeVoid(
 		d,
 		"resetConditionTask",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) ResetDashboardTask() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDashboardTask",
 		nil, // no parameters
 	)
 }
@@ -1486,6 +1564,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutput
 	_jsii_.InvokeVoid(
 		d,
 		"resetPipelineTask",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) ResetPowerBiTask() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPowerBiTask",
 		nil, // no parameters
 	)
 }

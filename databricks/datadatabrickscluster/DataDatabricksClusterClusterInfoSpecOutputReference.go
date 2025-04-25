@@ -189,6 +189,7 @@ type DataDatabricksClusterClusterInfoSpecOutputReference interface {
 	ResetSingleUserName()
 	ResetSparkConf()
 	ResetSparkEnvVars()
+	ResetSparkVersion()
 	ResetSshPublicKeys()
 	ResetUseMlRuntime()
 	ResetWorkloadType()
@@ -1768,6 +1769,14 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) ResetSpa
 	_jsii_.InvokeVoid(
 		d,
 		"resetSparkEnvVars",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) ResetSparkVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSparkVersion",
 		nil, // no parameters
 	)
 }

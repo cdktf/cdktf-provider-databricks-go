@@ -2718,6 +2718,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSingleUserName", GoMethod: "ResetSingleUserName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSparkConf", GoMethod: "ResetSparkConf"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSparkEnvVars", GoMethod: "ResetSparkEnvVars"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSparkVersion", GoMethod: "ResetSparkVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSshPublicKeys", GoMethod: "ResetSshPublicKeys"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUseMlRuntime", GoMethod: "ResetUseMlRuntime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadType", GoMethod: "ResetWorkloadType"},

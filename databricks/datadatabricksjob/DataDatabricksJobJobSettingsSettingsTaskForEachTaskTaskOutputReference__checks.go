@@ -104,6 +104,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutput
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) validatePutDashboardTaskParameters(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTask) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) validatePutDbtTaskParameters(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -233,6 +244,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutput
 }
 
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) validatePutPipelineTaskParameters(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTask) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference) validatePutPowerBiTaskParameters(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

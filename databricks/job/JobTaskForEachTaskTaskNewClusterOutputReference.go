@@ -192,6 +192,7 @@ type JobTaskForEachTaskTaskNewClusterOutputReference interface {
 	ResetSingleUserName()
 	ResetSparkConf()
 	ResetSparkEnvVars()
+	ResetSparkVersion()
 	ResetSshPublicKeys()
 	ResetUseMlRuntime()
 	ResetWorkloadType()
@@ -1800,6 +1801,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) ResetSparkEn
 	_jsii_.InvokeVoid(
 		j,
 		"resetSparkEnvVars",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterOutputReference) ResetSparkVersion() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetSparkVersion",
 		nil, // no parameters
 	)
 }

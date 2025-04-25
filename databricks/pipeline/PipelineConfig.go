@@ -22,108 +22,108 @@ type PipelineConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}.
 	AllowDuplicateNames interface{} `field:"optional" json:"allowDuplicateNames" yaml:"allowDuplicateNames"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}.
 	BudgetPolicyId *string `field:"optional" json:"budgetPolicyId" yaml:"budgetPolicyId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#catalog Pipeline#catalog}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#catalog Pipeline#catalog}.
 	Catalog *string `field:"optional" json:"catalog" yaml:"catalog"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#cause Pipeline#cause}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#cause Pipeline#cause}.
 	Cause *string `field:"optional" json:"cause" yaml:"cause"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#channel Pipeline#channel}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#channel Pipeline#channel}.
 	Channel *string `field:"optional" json:"channel" yaml:"channel"`
 	// cluster block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#cluster Pipeline#cluster}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#cluster Pipeline#cluster}
 	Cluster interface{} `field:"optional" json:"cluster" yaml:"cluster"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}.
 	ClusterId *string `field:"optional" json:"clusterId" yaml:"clusterId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#configuration Pipeline#configuration}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#configuration Pipeline#configuration}.
 	Configuration *map[string]*string `field:"optional" json:"configuration" yaml:"configuration"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#continuous Pipeline#continuous}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#continuous Pipeline#continuous}.
 	Continuous interface{} `field:"optional" json:"continuous" yaml:"continuous"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}.
 	CreatorUserName *string `field:"optional" json:"creatorUserName" yaml:"creatorUserName"`
 	// deployment block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#deployment Pipeline#deployment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#deployment Pipeline#deployment}
 	Deployment *PipelineDeployment `field:"optional" json:"deployment" yaml:"deployment"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#development Pipeline#development}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#development Pipeline#development}.
 	Development interface{} `field:"optional" json:"development" yaml:"development"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#edition Pipeline#edition}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#edition Pipeline#edition}.
 	Edition *string `field:"optional" json:"edition" yaml:"edition"`
 	// event_log block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#event_log Pipeline#event_log}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#event_log Pipeline#event_log}
 	EventLog *PipelineEventLog `field:"optional" json:"eventLog" yaml:"eventLog"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}.
 	ExpectedLastModified *float64 `field:"optional" json:"expectedLastModified" yaml:"expectedLastModified"`
 	// filters block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#filters Pipeline#filters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#filters Pipeline#filters}
 	Filters *PipelineFilters `field:"optional" json:"filters" yaml:"filters"`
 	// gateway_definition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#gateway_definition Pipeline#gateway_definition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#gateway_definition Pipeline#gateway_definition}
 	GatewayDefinition *PipelineGatewayDefinition `field:"optional" json:"gatewayDefinition" yaml:"gatewayDefinition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#health Pipeline#health}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#health Pipeline#health}.
 	Health *string `field:"optional" json:"health" yaml:"health"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#id Pipeline#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#id Pipeline#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// ingestion_definition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#ingestion_definition Pipeline#ingestion_definition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#ingestion_definition Pipeline#ingestion_definition}
 	IngestionDefinition *PipelineIngestionDefinition `field:"optional" json:"ingestionDefinition" yaml:"ingestionDefinition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#last_modified Pipeline#last_modified}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#last_modified Pipeline#last_modified}.
 	LastModified *float64 `field:"optional" json:"lastModified" yaml:"lastModified"`
 	// latest_updates block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#latest_updates Pipeline#latest_updates}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#latest_updates Pipeline#latest_updates}
 	LatestUpdates interface{} `field:"optional" json:"latestUpdates" yaml:"latestUpdates"`
 	// library block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#library Pipeline#library}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#library Pipeline#library}
 	Library interface{} `field:"optional" json:"library" yaml:"library"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#name Pipeline#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#name Pipeline#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// notification block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#notification Pipeline#notification}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#notification Pipeline#notification}
 	Notification interface{} `field:"optional" json:"notification" yaml:"notification"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#photon Pipeline#photon}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#photon Pipeline#photon}.
 	Photon interface{} `field:"optional" json:"photon" yaml:"photon"`
 	// restart_window block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#restart_window Pipeline#restart_window}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#restart_window Pipeline#restart_window}
 	RestartWindow *PipelineRestartWindow `field:"optional" json:"restartWindow" yaml:"restartWindow"`
 	// run_as block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#run_as Pipeline#run_as}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#run_as Pipeline#run_as}
 	RunAs *PipelineRunAs `field:"optional" json:"runAs" yaml:"runAs"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}.
 	RunAsUserName *string `field:"optional" json:"runAsUserName" yaml:"runAsUserName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#schema Pipeline#schema}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#schema Pipeline#schema}.
 	Schema *string `field:"optional" json:"schema" yaml:"schema"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#serverless Pipeline#serverless}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#serverless Pipeline#serverless}.
 	Serverless interface{} `field:"optional" json:"serverless" yaml:"serverless"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#state Pipeline#state}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#state Pipeline#state}.
 	State *string `field:"optional" json:"state" yaml:"state"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#storage Pipeline#storage}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#storage Pipeline#storage}.
 	Storage *string `field:"optional" json:"storage" yaml:"storage"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#target Pipeline#target}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#target Pipeline#target}.
 	Target *string `field:"optional" json:"target" yaml:"target"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#timeouts Pipeline#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#timeouts Pipeline#timeouts}
 	Timeouts *PipelineTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// trigger block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#trigger Pipeline#trigger}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#trigger Pipeline#trigger}
 	Trigger *PipelineTrigger `field:"optional" json:"trigger" yaml:"trigger"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/pipeline#url Pipeline#url}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/pipeline#url Pipeline#url}.
 	Url *string `field:"optional" json:"url" yaml:"url"`
 }
 

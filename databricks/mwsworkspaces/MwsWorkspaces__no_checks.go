@@ -127,6 +127,10 @@ func (j *jsiiProxy_MwsWorkspaces) validateSetCloudParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_MwsWorkspaces) validateSetComputeModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsWorkspaces) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

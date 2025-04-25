@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces databricks_mws_workspaces}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/mws_workspaces databricks_mws_workspaces}.
 type MwsWorkspaces interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -28,6 +28,9 @@ type MwsWorkspaces interface {
 	CloudInput() *string
 	CloudResourceContainer() MwsWorkspacesCloudResourceContainerOutputReference
 	CloudResourceContainerInput() *MwsWorkspacesCloudResourceContainer
+	ComputeMode() *string
+	SetComputeMode(val *string)
+	ComputeModeInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -57,6 +60,7 @@ type MwsWorkspaces interface {
 	DeploymentName() *string
 	SetDeploymentName(val *string)
 	DeploymentNameInput() *string
+	EffectiveComputeMode() *string
 	ExternalCustomerInfo() MwsWorkspacesExternalCustomerInfoOutputReference
 	ExternalCustomerInfoInput() *MwsWorkspacesExternalCustomerInfo
 	// Experimental.
@@ -192,6 +196,7 @@ type MwsWorkspaces interface {
 	ResetAwsRegion()
 	ResetCloud()
 	ResetCloudResourceContainer()
+	ResetComputeMode()
 	ResetCreationTime()
 	ResetCredentialsId()
 	ResetCustomerManagedKeyId()
@@ -321,6 +326,26 @@ func (j *jsiiProxy_MwsWorkspaces) CloudResourceContainerInput() *MwsWorkspacesCl
 	_jsii_.Get(
 		j,
 		"cloudResourceContainerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsWorkspaces) ComputeMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"computeMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsWorkspaces) ComputeModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"computeModeInput",
 		&returns,
 	)
 	return returns
@@ -461,6 +486,16 @@ func (j *jsiiProxy_MwsWorkspaces) DeploymentNameInput() *string {
 	_jsii_.Get(
 		j,
 		"deploymentNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsWorkspaces) EffectiveComputeMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveComputeMode",
 		&returns,
 	)
 	return returns
@@ -967,7 +1002,7 @@ func (j *jsiiProxy_MwsWorkspaces) WorkspaceUrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
 func NewMwsWorkspaces(scope constructs.Construct, id *string, config *MwsWorkspacesConfig) MwsWorkspaces {
 	_init_.Initialize()
 
@@ -985,7 +1020,7 @@ func NewMwsWorkspaces(scope constructs.Construct, id *string, config *MwsWorkspa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
 func NewMwsWorkspaces_Override(m MwsWorkspaces, scope constructs.Construct, id *string, config *MwsWorkspacesConfig) {
 	_init_.Initialize()
 
@@ -1025,6 +1060,17 @@ func (j *jsiiProxy_MwsWorkspaces)SetCloud(val *string) {
 	_jsii_.Set(
 		j,
 		"cloud",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MwsWorkspaces)SetComputeMode(val *string) {
+	if err := j.validateSetComputeModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"computeMode",
 		val,
 	)
 }
@@ -1745,6 +1791,14 @@ func (m *jsiiProxy_MwsWorkspaces) ResetCloudResourceContainer() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetCloudResourceContainer",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsWorkspaces) ResetComputeMode() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetComputeMode",
 		nil, // no parameters
 	)
 }
