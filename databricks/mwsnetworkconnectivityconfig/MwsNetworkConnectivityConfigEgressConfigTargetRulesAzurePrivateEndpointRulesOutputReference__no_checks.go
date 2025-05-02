@@ -75,6 +75,10 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePriva
 	return nil
 }
 
+func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) validateSetDomainNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) validateSetEndpointNameParameters(val *string) error {
 	return nil
 }

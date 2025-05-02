@@ -12,10 +12,9 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/budget_policies databricks_budget_policies}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/budget_policies databricks_budget_policies}.
 type DataDatabricksBudgetPolicies interface {
 	cdktf.TerraformDataSource
-	BudgetPolicies() DataDatabricksBudgetPoliciesBudgetPoliciesList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -42,6 +41,7 @@ type DataDatabricksBudgetPolicies interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Policies() DataDatabricksBudgetPoliciesPoliciesList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -99,16 +99,6 @@ type DataDatabricksBudgetPolicies interface {
 // The jsii proxy struct for DataDatabricksBudgetPolicies
 type jsiiProxy_DataDatabricksBudgetPolicies struct {
 	internal.Type__cdktfTerraformDataSource
-}
-
-func (j *jsiiProxy_DataDatabricksBudgetPolicies) BudgetPolicies() DataDatabricksBudgetPoliciesBudgetPoliciesList {
-	var returns DataDatabricksBudgetPoliciesBudgetPoliciesList
-	_jsii_.Get(
-		j,
-		"budgetPolicies",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksBudgetPolicies) CdktfStack() cdktf.TerraformStack {
@@ -201,6 +191,16 @@ func (j *jsiiProxy_DataDatabricksBudgetPolicies) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksBudgetPolicies) Policies() DataDatabricksBudgetPoliciesPoliciesList {
+	var returns DataDatabricksBudgetPoliciesPoliciesList
+	_jsii_.Get(
+		j,
+		"policies",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksBudgetPolicies) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -252,7 +252,7 @@ func (j *jsiiProxy_DataDatabricksBudgetPolicies) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/budget_policies databricks_budget_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/budget_policies databricks_budget_policies} Data Source.
 func NewDataDatabricksBudgetPolicies(scope constructs.Construct, id *string, config *DataDatabricksBudgetPoliciesConfig) DataDatabricksBudgetPolicies {
 	_init_.Initialize()
 
@@ -270,7 +270,7 @@ func NewDataDatabricksBudgetPolicies(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/budget_policies databricks_budget_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/budget_policies databricks_budget_policies} Data Source.
 func NewDataDatabricksBudgetPolicies_Override(d DataDatabricksBudgetPolicies, scope constructs.Construct, id *string, config *DataDatabricksBudgetPoliciesConfig) {
 	_init_.Initialize()
 

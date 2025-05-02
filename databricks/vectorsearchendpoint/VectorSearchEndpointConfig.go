@@ -22,18 +22,24 @@ type VectorSearchEndpointConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}.
 	EndpointType *string `field:"required" json:"endpointType" yaml:"endpointType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}.
+	// custom_tags block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/vector_search_endpoint#custom_tags VectorSearchEndpoint#custom_tags}
+	CustomTags interface{} `field:"optional" json:"customTags" yaml:"customTags"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/vector_search_endpoint#effective_budget_policy_id VectorSearchEndpoint#effective_budget_policy_id}.
+	EffectiveBudgetPolicyId *string `field:"optional" json:"effectiveBudgetPolicyId" yaml:"effectiveBudgetPolicyId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/vector_search_endpoint#timeouts VectorSearchEndpoint#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/vector_search_endpoint#timeouts VectorSearchEndpoint#timeouts}
 	Timeouts *VectorSearchEndpointTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

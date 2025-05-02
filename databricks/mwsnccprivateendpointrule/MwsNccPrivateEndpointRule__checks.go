@@ -381,6 +381,14 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetDeactivatedAtParameters
 	return nil
 }
 
+func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetDomainNamesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetEndpointNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

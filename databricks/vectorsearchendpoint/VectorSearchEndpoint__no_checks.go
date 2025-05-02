@@ -75,6 +75,10 @@ func (v *jsiiProxy_VectorSearchEndpoint) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (v *jsiiProxy_VectorSearchEndpoint) validatePutCustomTagsParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VectorSearchEndpoint) validatePutTimeoutsParameters(value *VectorSearchEndpointTimeouts) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (j *jsiiProxy_VectorSearchEndpoint) validateSetConnectionParameters(val int
 }
 
 func (j *jsiiProxy_VectorSearchEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_VectorSearchEndpoint) validateSetEffectiveBudgetPolicyIdParameters(val *string) error {
 	return nil
 }
 

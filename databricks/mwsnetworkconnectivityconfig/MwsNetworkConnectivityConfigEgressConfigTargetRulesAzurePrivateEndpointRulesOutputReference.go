@@ -40,6 +40,9 @@ type MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRule
 	SetDeactivatedAt(val *float64)
 	DeactivatedAtInput() *float64
 	DeactivatedInput() interface{}
+	DomainNames() *[]*string
+	SetDomainNames(val *[]*string)
+	DomainNamesInput() *[]*string
 	EndpointName() *string
 	SetEndpointName(val *string)
 	EndpointNameInput() *string
@@ -98,6 +101,7 @@ type MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRule
 	ResetCreationTime()
 	ResetDeactivated()
 	ResetDeactivatedAt()
+	ResetDomainNames()
 	ResetEndpointName()
 	ResetGroupId()
 	ResetNetworkConnectivityConfigId()
@@ -224,6 +228,26 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePriva
 	_jsii_.Get(
 		j,
 		"deactivatedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) DomainNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"domainNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) DomainNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"domainNamesInput",
 		&returns,
 	)
 	return returns
@@ -479,6 +503,17 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePriva
 	_jsii_.Set(
 		j,
 		"deactivatedAt",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference)SetDomainNames(val *[]*string) {
+	if err := j.validateSetDomainNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainNames",
 		val,
 	)
 }
@@ -796,6 +831,14 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePriva
 	_jsii_.InvokeVoid(
 		m,
 		"resetDeactivatedAt",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference) ResetDomainNames() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDomainNames",
 		nil, // no parameters
 	)
 }

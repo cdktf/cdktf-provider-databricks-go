@@ -15,7 +15,6 @@ func init() {
 		reflect.TypeOf((*DataDatabricksBudgetPolicies)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "budgetPolicies", GoGetter: "BudgetPolicies"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -36,6 +35,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "policies", GoGetter: "Policies"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -56,16 +56,20 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPolicies",
-		reflect.TypeOf((*DataDatabricksBudgetPoliciesBudgetPolicies)(nil)).Elem(),
+		"@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig",
+		reflect.TypeOf((*DataDatabricksBudgetPoliciesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags",
-		reflect.TypeOf((*DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags)(nil)).Elem(),
+		"@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPolicies",
+		reflect.TypeOf((*DataDatabricksBudgetPoliciesPolicies)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesCustomTags",
+		reflect.TypeOf((*DataDatabricksBudgetPoliciesPoliciesCustomTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsList",
-		reflect.TypeOf((*DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsList)(nil)).Elem(),
+		"@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesCustomTagsList",
+		reflect.TypeOf((*DataDatabricksBudgetPoliciesPoliciesCustomTagsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -80,14 +84,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsList{}
+			j := jsiiProxy_DataDatabricksBudgetPoliciesPoliciesCustomTagsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsOutputReference",
-		reflect.TypeOf((*DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsOutputReference)(nil)).Elem(),
+		"@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesCustomTagsOutputReference",
+		reflect.TypeOf((*DataDatabricksBudgetPoliciesPoliciesCustomTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,14 +121,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsOutputReference{}
+			j := jsiiProxy_DataDatabricksBudgetPoliciesPoliciesCustomTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesList",
-		reflect.TypeOf((*DataDatabricksBudgetPoliciesBudgetPoliciesList)(nil)).Elem(),
+		"@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesList",
+		reflect.TypeOf((*DataDatabricksBudgetPoliciesPoliciesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -139,14 +143,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataDatabricksBudgetPoliciesBudgetPoliciesList{}
+			j := jsiiProxy_DataDatabricksBudgetPoliciesPoliciesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference",
-		reflect.TypeOf((*DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference)(nil)).Elem(),
+		"@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesOutputReference",
+		reflect.TypeOf((*DataDatabricksBudgetPoliciesPoliciesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bindingWorkspaceIds", GoGetter: "BindingWorkspaceIds"},
 			_jsii_.MemberProperty{JsiiProperty: "bindingWorkspaceIdsInput", GoGetter: "BindingWorkspaceIdsInput"},
@@ -182,13 +186,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference{}
+			j := jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig",
-		reflect.TypeOf((*DataDatabricksBudgetPoliciesConfig)(nil)).Elem(),
 	)
 }

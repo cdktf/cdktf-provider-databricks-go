@@ -7,7 +7,7 @@ package datadatabrickscluster
 type DataDatabricksClusterClusterInfoSpecWorkloadType struct {
 	// clients block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#clients DataDatabricksCluster#clients}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/cluster#clients DataDatabricksCluster#clients}
 	Clients *DataDatabricksClusterClusterInfoSpecWorkloadTypeClients `field:"required" json:"clients" yaml:"clients"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/volume databricks_volume}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/volume databricks_volume}.
 type DataDatabricksVolume interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -312,7 +312,7 @@ func (j *jsiiProxy_DataDatabricksVolume) VolumeInfoInput() *DataDatabricksVolume
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/volume databricks_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/volume databricks_volume} Data Source.
 func NewDataDatabricksVolume(scope constructs.Construct, id *string, config *DataDatabricksVolumeConfig) DataDatabricksVolume {
 	_init_.Initialize()
 
@@ -330,7 +330,7 @@ func NewDataDatabricksVolume(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/volume databricks_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/volume databricks_volume} Data Source.
 func NewDataDatabricksVolume_Override(d DataDatabricksVolume, scope constructs.Construct, id *string, config *DataDatabricksVolumeConfig) {
 	_init_.Initialize()
 

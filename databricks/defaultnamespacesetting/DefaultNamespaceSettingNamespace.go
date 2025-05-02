@@ -5,7 +5,7 @@ package defaultnamespacesetting
 
 
 type DefaultNamespaceSettingNamespace struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/default_namespace_setting#value DefaultNamespaceSetting#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/default_namespace_setting#value DefaultNamespaceSetting#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

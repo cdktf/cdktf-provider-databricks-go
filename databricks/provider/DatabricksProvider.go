@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs databricks}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs databricks}.
 type DatabricksProvider interface {
 	cdktf.TerraformProvider
 	AccountId() *string
@@ -27,6 +27,9 @@ type DatabricksProvider interface {
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
+	Audience() *string
+	SetAudience(val *string)
+	AudienceInput() *string
 	AuthType() *string
 	SetAuthType(val *string)
 	AuthTypeInput() *string
@@ -143,6 +146,7 @@ type DatabricksProvider interface {
 	ResetActionsIdTokenRequestToken()
 	ResetActionsIdTokenRequestUrl()
 	ResetAlias()
+	ResetAudience()
 	ResetAuthType()
 	ResetAzureClientId()
 	ResetAzureClientSecret()
@@ -268,6 +272,26 @@ func (j *jsiiProxy_DatabricksProvider) AliasInput() *string {
 	_jsii_.Get(
 		j,
 		"aliasInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) Audience() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"audience",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) AudienceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"audienceInput",
 		&returns,
 	)
 	return returns
@@ -954,7 +978,7 @@ func (j *jsiiProxy_DatabricksProvider) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs databricks} Resource.
 func NewDatabricksProvider(scope constructs.Construct, id *string, config *DatabricksProviderConfig) DatabricksProvider {
 	_init_.Initialize()
 
@@ -972,7 +996,7 @@ func NewDatabricksProvider(scope constructs.Construct, id *string, config *Datab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs databricks} Resource.
 func NewDatabricksProvider_Override(d DatabricksProvider, scope constructs.Construct, id *string, config *DatabricksProviderConfig) {
 	_init_.Initialize()
 
@@ -1011,6 +1035,14 @@ func (j *jsiiProxy_DatabricksProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabricksProvider)SetAudience(val *string) {
+	_jsii_.Set(
+		j,
+		"audience",
 		val,
 	)
 }
@@ -1409,6 +1441,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetAlias() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAlias",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) ResetAudience() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAudience",
 		nil, // no parameters
 	)
 }

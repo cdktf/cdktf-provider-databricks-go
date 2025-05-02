@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule}.
 type MwsNccPrivateEndpointRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -43,6 +43,9 @@ type MwsNccPrivateEndpointRule interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DomainNames() *[]*string
+	SetDomainNames(val *[]*string)
+	DomainNamesInput() *[]*string
 	EndpointName() *string
 	SetEndpointName(val *string)
 	EndpointNameInput() *string
@@ -141,6 +144,7 @@ type MwsNccPrivateEndpointRule interface {
 	ResetCreationTime()
 	ResetDeactivated()
 	ResetDeactivatedAt()
+	ResetDomainNames()
 	ResetEndpointName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -291,6 +295,26 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsNccPrivateEndpointRule) DomainNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"domainNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsNccPrivateEndpointRule) DomainNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"domainNamesInput",
 		&returns,
 	)
 	return returns
@@ -547,7 +571,7 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) UpdatedTimeInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
 func NewMwsNccPrivateEndpointRule(scope constructs.Construct, id *string, config *MwsNccPrivateEndpointRuleConfig) MwsNccPrivateEndpointRule {
 	_init_.Initialize()
 
@@ -565,7 +589,7 @@ func NewMwsNccPrivateEndpointRule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
 func NewMwsNccPrivateEndpointRule_Override(m MwsNccPrivateEndpointRule, scope constructs.Construct, id *string, config *MwsNccPrivateEndpointRuleConfig) {
 	_init_.Initialize()
 
@@ -646,6 +670,17 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MwsNccPrivateEndpointRule)SetDomainNames(val *[]*string) {
+	if err := j.validateSetDomainNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainNames",
 		val,
 	)
 }
@@ -1146,6 +1181,14 @@ func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetDeactivatedAt() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetDeactivatedAt",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsNccPrivateEndpointRule) ResetDomainNames() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDomainNames",
 		nil, // no parameters
 	)
 }

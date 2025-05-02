@@ -115,6 +115,10 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetDeactivatedAtParameters
 	return nil
 }
 
+func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetDomainNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetEndpointNameParameters(val *string) error {
 	return nil
 }
