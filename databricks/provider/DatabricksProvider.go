@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs databricks}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs databricks}.
 type DatabricksProvider interface {
 	cdktf.TerraformProvider
 	AccountId() *string
@@ -73,6 +73,9 @@ type DatabricksProvider interface {
 	DatabricksCliPath() *string
 	SetDatabricksCliPath(val *string)
 	DatabricksCliPathInput() *string
+	DatabricksIdTokenFilepath() *string
+	SetDatabricksIdTokenFilepath(val *string)
+	DatabricksIdTokenFilepathInput() *string
 	DebugHeaders() interface{}
 	SetDebugHeaders(val interface{})
 	DebugHeadersInput() interface{}
@@ -102,6 +105,9 @@ type DatabricksProvider interface {
 	MetadataServiceUrlInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OidcTokenEnv() *string
+	SetOidcTokenEnv(val *string)
+	OidcTokenEnvInput() *string
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
@@ -160,6 +166,7 @@ type DatabricksProvider interface {
 	ResetClusterId()
 	ResetConfigFile()
 	ResetDatabricksCliPath()
+	ResetDatabricksIdTokenFilepath()
 	ResetDebugHeaders()
 	ResetDebugTruncateBytes()
 	ResetGoogleCredentials()
@@ -167,6 +174,7 @@ type DatabricksProvider interface {
 	ResetHost()
 	ResetHttpTimeoutSeconds()
 	ResetMetadataServiceUrl()
+	ResetOidcTokenEnv()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -577,6 +585,26 @@ func (j *jsiiProxy_DatabricksProvider) DatabricksCliPathInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DatabricksProvider) DatabricksIdTokenFilepath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databricksIdTokenFilepath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) DatabricksIdTokenFilepathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databricksIdTokenFilepathInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabricksProvider) DebugHeaders() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -752,6 +780,26 @@ func (j *jsiiProxy_DatabricksProvider) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) OidcTokenEnv() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oidcTokenEnv",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) OidcTokenEnvInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oidcTokenEnvInput",
 		&returns,
 	)
 	return returns
@@ -978,7 +1026,7 @@ func (j *jsiiProxy_DatabricksProvider) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs databricks} Resource.
 func NewDatabricksProvider(scope constructs.Construct, id *string, config *DatabricksProviderConfig) DatabricksProvider {
 	_init_.Initialize()
 
@@ -996,7 +1044,7 @@ func NewDatabricksProvider(scope constructs.Construct, id *string, config *Datab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs databricks} Resource.
 func NewDatabricksProvider_Override(d DatabricksProvider, scope constructs.Construct, id *string, config *DatabricksProviderConfig) {
 	_init_.Initialize()
 
@@ -1154,6 +1202,14 @@ func (j *jsiiProxy_DatabricksProvider)SetDatabricksCliPath(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DatabricksProvider)SetDatabricksIdTokenFilepath(val *string) {
+	_jsii_.Set(
+		j,
+		"databricksIdTokenFilepath",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabricksProvider)SetDebugHeaders(val interface{}) {
 	if err := j.validateSetDebugHeadersParameters(val); err != nil {
 		panic(err)
@@ -1209,6 +1265,14 @@ func (j *jsiiProxy_DatabricksProvider)SetMetadataServiceUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"metadataServiceUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabricksProvider)SetOidcTokenEnv(val *string) {
+	_jsii_.Set(
+		j,
+		"oidcTokenEnv",
 		val,
 	)
 }
@@ -1557,6 +1621,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetDatabricksCliPath() {
 	)
 }
 
+func (d *jsiiProxy_DatabricksProvider) ResetDatabricksIdTokenFilepath() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDatabricksIdTokenFilepath",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabricksProvider) ResetDebugHeaders() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1609,6 +1681,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetMetadataServiceUrl() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMetadataServiceUrl",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) ResetOidcTokenEnv() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOidcTokenEnv",
 		nil, // no parameters
 	)
 }

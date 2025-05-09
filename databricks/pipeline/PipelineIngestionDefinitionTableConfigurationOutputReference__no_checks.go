@@ -59,6 +59,14 @@ func (j *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference) validateSetExcludeColumnsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference) validateSetIncludeColumnsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference) validateSetInternalValueParameters(val *PipelineIngestionDefinitionTableConfiguration) error {
 	return nil
 }

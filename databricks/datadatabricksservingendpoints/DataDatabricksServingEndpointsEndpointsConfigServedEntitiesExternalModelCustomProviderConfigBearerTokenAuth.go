@@ -5,9 +5,9 @@ package datadatabricksservingendpoints
 
 
 type DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/serving_endpoints#token DataDatabricksServingEndpoints#token}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/serving_endpoints#token DataDatabricksServingEndpoints#token}.
 	Token *string `field:"optional" json:"token" yaml:"token"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/serving_endpoints#token_plaintext DataDatabricksServingEndpoints#token_plaintext}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/serving_endpoints#token_plaintext DataDatabricksServingEndpoints#token_plaintext}.
 	TokenPlaintext *string `field:"optional" json:"tokenPlaintext" yaml:"tokenPlaintext"`
 }
 

@@ -5,9 +5,9 @@ package datadatabrickscluster
 
 
 type DataDatabricksClusterClusterInfoSpecWorkloadTypeClients struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}.
 	Jobs interface{} `field:"optional" json:"jobs" yaml:"jobs"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}.
 	Notebooks interface{} `field:"optional" json:"notebooks" yaml:"notebooks"`
 }
 

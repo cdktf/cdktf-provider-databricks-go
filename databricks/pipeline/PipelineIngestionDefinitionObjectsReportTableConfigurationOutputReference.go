@@ -28,8 +28,14 @@ type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference i
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExcludeColumns() *[]*string
+	SetExcludeColumns(val *[]*string)
+	ExcludeColumnsInput() *[]*string
 	// Experimental.
 	Fqn() *string
+	IncludeColumns() *[]*string
+	SetIncludeColumns(val *[]*string)
+	IncludeColumnsInput() *[]*string
 	InternalValue() *PipelineIngestionDefinitionObjectsReportTableConfiguration
 	SetInternalValue(val *PipelineIngestionDefinitionObjectsReportTableConfiguration)
 	PrimaryKeys() *[]*string
@@ -76,6 +82,8 @@ type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetExcludeColumns()
+	ResetIncludeColumns()
 	ResetPrimaryKeys()
 	ResetSalesforceIncludeFormulaFields()
 	ResetScdType()
@@ -125,11 +133,51 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	return returns
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ExcludeColumns() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeColumns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ExcludeColumnsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeColumnsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) IncludeColumns() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeColumns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) IncludeColumnsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeColumnsInput",
 		&returns,
 	)
 	return returns
@@ -291,6 +339,28 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference)SetExcludeColumns(val *[]*string) {
+	if err := j.validateSetExcludeColumnsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeColumns",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference)SetIncludeColumns(val *[]*string) {
+	if err := j.validateSetIncludeColumnsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeColumns",
 		val,
 	)
 }
@@ -556,6 +626,22 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ResetExcludeColumns() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetExcludeColumns",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ResetIncludeColumns() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetIncludeColumns",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ResetPrimaryKeys() {

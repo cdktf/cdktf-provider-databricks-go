@@ -80,10 +80,7 @@ type PipelineGatewayDefinitionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetConnectionId()
-	ResetConnectionName()
-	ResetGatewayStorageCatalog()
 	ResetGatewayStorageName()
-	ResetGatewayStorageSchema()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -601,34 +598,10 @@ func (p *jsiiProxy_PipelineGatewayDefinitionOutputReference) ResetConnectionId()
 	)
 }
 
-func (p *jsiiProxy_PipelineGatewayDefinitionOutputReference) ResetConnectionName() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetConnectionName",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PipelineGatewayDefinitionOutputReference) ResetGatewayStorageCatalog() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetGatewayStorageCatalog",
-		nil, // no parameters
-	)
-}
-
 func (p *jsiiProxy_PipelineGatewayDefinitionOutputReference) ResetGatewayStorageName() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetGatewayStorageName",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PipelineGatewayDefinitionOutputReference) ResetGatewayStorageSchema() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetGatewayStorageSchema",
 		nil, // no parameters
 	)
 }

@@ -79,10 +79,7 @@ type PipelineIngestionDefinitionObjectsSchemaOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutTableConfiguration(value *PipelineIngestionDefinitionObjectsSchemaTableConfiguration)
-	ResetDestinationCatalog()
-	ResetDestinationSchema()
 	ResetSourceCatalog()
-	ResetSourceSchema()
 	ResetTableConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -593,34 +590,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaOutputReference) PutT
 	)
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaOutputReference) ResetDestinationCatalog() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetDestinationCatalog",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaOutputReference) ResetDestinationSchema() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetDestinationSchema",
-		nil, // no parameters
-	)
-}
-
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaOutputReference) ResetSourceCatalog() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetSourceCatalog",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaOutputReference) ResetSourceSchema() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetSourceSchema",
 		nil, // no parameters
 	)
 }

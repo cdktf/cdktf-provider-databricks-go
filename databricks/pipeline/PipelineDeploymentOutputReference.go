@@ -70,7 +70,6 @@ type PipelineDeploymentOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetKind()
 	ResetMetadataFilePath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -486,14 +485,6 @@ func (p *jsiiProxy_PipelineDeploymentOutputReference) InterpolationForAttribute(
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PipelineDeploymentOutputReference) ResetKind() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetKind",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PipelineDeploymentOutputReference) ResetMetadataFilePath() {
