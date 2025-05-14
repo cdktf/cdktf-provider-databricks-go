@@ -73,6 +73,7 @@ type JobTaskGenAiComputeTaskComputeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetGpuNodePoolId()
 	ResetGpuType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -519,6 +520,14 @@ func (j *jsiiProxy_JobTaskGenAiComputeTaskComputeOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (j *jsiiProxy_JobTaskGenAiComputeTaskComputeOutputReference) ResetGpuNodePoolId() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetGpuNodePoolId",
+		nil, // no parameters
+	)
 }
 
 func (j *jsiiProxy_JobTaskGenAiComputeTaskComputeOutputReference) ResetGpuType() {

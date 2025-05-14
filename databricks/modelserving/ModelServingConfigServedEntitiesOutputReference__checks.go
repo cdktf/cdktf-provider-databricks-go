@@ -257,6 +257,14 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) validateSetN
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) validateSetProvisionedModelUnitsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) validateSetScaleToZeroEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

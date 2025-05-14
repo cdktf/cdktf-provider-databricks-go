@@ -34,6 +34,9 @@ type JobEnvironmentSpecOutputReference interface {
 	Dependencies() *[]*string
 	SetDependencies(val *[]*string)
 	DependenciesInput() *[]*string
+	EnvironmentVersion() *string
+	SetEnvironmentVersion(val *string)
+	EnvironmentVersionInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *JobEnvironmentSpec
@@ -74,6 +77,7 @@ type JobEnvironmentSpecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDependencies()
+	ResetEnvironmentVersion()
 	ResetJarDependencies()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -155,6 +159,26 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) DependenciesInput() *[]*st
 	_jsii_.Get(
 		j,
 		"dependenciesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) EnvironmentVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) EnvironmentVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentVersionInput",
 		&returns,
 	)
 	return returns
@@ -288,6 +312,17 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference)SetDependencies(val *[]*str
 	_jsii_.Set(
 		j,
 		"dependencies",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference)SetEnvironmentVersion(val *string) {
+	if err := j.validateSetEnvironmentVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"environmentVersion",
 		val,
 	)
 }
@@ -526,6 +561,14 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) ResetDependencies() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetDependencies",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) ResetEnvironmentVersion() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetEnvironmentVersion",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,9 @@ package vectorsearchendpoint
 
 
 type VectorSearchEndpointCustomTags struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/vector_search_endpoint#key VectorSearchEndpoint#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/vector_search_endpoint#key VectorSearchEndpoint#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/vector_search_endpoint#value VectorSearchEndpoint#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/vector_search_endpoint#value VectorSearchEndpoint#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

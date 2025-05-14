@@ -22,21 +22,21 @@ type AlertV2Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}.
 	CustomDescription *string `field:"optional" json:"customDescription" yaml:"customDescription"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}.
 	CustomSummary *string `field:"optional" json:"customSummary" yaml:"customSummary"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/alert_v2#display_name AlertV2#display_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/alert_v2#display_name AlertV2#display_name}.
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}.
 	Evaluation *AlertV2Evaluation `field:"optional" json:"evaluation" yaml:"evaluation"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}.
 	ParentPath *string `field:"optional" json:"parentPath" yaml:"parentPath"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/alert_v2#query_text AlertV2#query_text}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/alert_v2#query_text AlertV2#query_text}.
 	QueryText *string `field:"optional" json:"queryText" yaml:"queryText"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/alert_v2#schedule AlertV2#schedule}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/alert_v2#schedule AlertV2#schedule}.
 	Schedule *AlertV2Schedule `field:"optional" json:"schedule" yaml:"schedule"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}.
 	WarehouseId *string `field:"optional" json:"warehouseId" yaml:"warehouseId"`
 }
 

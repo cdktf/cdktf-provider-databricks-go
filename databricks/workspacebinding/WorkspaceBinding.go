@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding databricks_workspace_binding}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding databricks_workspace_binding}.
 type WorkspaceBinding interface {
 	cdktf.TerraformResource
 	BindingType() *string
@@ -130,7 +130,6 @@ type WorkspaceBinding interface {
 	ResetOverrideLogicalId()
 	ResetSecurableName()
 	ResetSecurableType()
-	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -430,7 +429,7 @@ func (j *jsiiProxy_WorkspaceBinding) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding databricks_workspace_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding databricks_workspace_binding} Resource.
 func NewWorkspaceBinding(scope constructs.Construct, id *string, config *WorkspaceBindingConfig) WorkspaceBinding {
 	_init_.Initialize()
 
@@ -448,7 +447,7 @@ func NewWorkspaceBinding(scope constructs.Construct, id *string, config *Workspa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding databricks_workspace_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding databricks_workspace_binding} Resource.
 func NewWorkspaceBinding_Override(w WorkspaceBinding, scope constructs.Construct, id *string, config *WorkspaceBindingConfig) {
 	_init_.Initialize()
 
@@ -990,14 +989,6 @@ func (w *jsiiProxy_WorkspaceBinding) ResetSecurableType() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetSecurableType",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WorkspaceBinding) ResetWorkspaceId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

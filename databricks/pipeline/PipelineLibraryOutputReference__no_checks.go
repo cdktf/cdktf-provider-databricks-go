@@ -51,6 +51,10 @@ func (p *jsiiProxy_PipelineLibraryOutputReference) validatePutFileParameters(val
 	return nil
 }
 
+func (p *jsiiProxy_PipelineLibraryOutputReference) validatePutGlobParameters(value *PipelineLibraryGlob) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineLibraryOutputReference) validatePutMavenParameters(value *PipelineLibraryMaven) error {
 	return nil
 }

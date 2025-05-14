@@ -53,6 +53,9 @@ type ModelServingConfigServedModelsOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	ProvisionedModelUnits() *float64
+	SetProvisionedModelUnits(val *float64)
+	ProvisionedModelUnitsInput() *float64
 	ScaleToZeroEnabled() interface{}
 	SetScaleToZeroEnabled(val interface{})
 	ScaleToZeroEnabledInput() interface{}
@@ -99,6 +102,7 @@ type ModelServingConfigServedModelsOutputReference interface {
 	ResetMaxProvisionedThroughput()
 	ResetMinProvisionedThroughput()
 	ResetName()
+	ResetProvisionedModelUnits()
 	ResetScaleToZeroEnabled()
 	ResetWorkloadSize()
 	ResetWorkloadType()
@@ -302,6 +306,26 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) NameInput() *s
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) ProvisionedModelUnits() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedModelUnits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) ProvisionedModelUnitsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedModelUnitsInput",
 		&returns,
 	)
 	return returns
@@ -521,6 +545,17 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference)SetName(val *st
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference)SetProvisionedModelUnits(val *float64) {
+	if err := j.validateSetProvisionedModelUnitsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedModelUnits",
 		val,
 	)
 }
@@ -802,6 +837,14 @@ func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetProvisionedModelUnits() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetProvisionedModelUnits",
 		nil, // no parameters
 	)
 }

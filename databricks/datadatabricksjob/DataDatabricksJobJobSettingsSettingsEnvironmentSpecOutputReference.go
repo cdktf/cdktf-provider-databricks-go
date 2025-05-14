@@ -34,6 +34,9 @@ type DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference interfac
 	Dependencies() *[]*string
 	SetDependencies(val *[]*string)
 	DependenciesInput() *[]*string
+	EnvironmentVersion() *string
+	SetEnvironmentVersion(val *string)
+	EnvironmentVersionInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksJobJobSettingsSettingsEnvironmentSpec
@@ -74,6 +77,7 @@ type DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference interfac
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDependencies()
+	ResetEnvironmentVersion()
 	ResetJarDependencies()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -155,6 +159,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	_jsii_.Get(
 		j,
 		"dependenciesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) EnvironmentVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) EnvironmentVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentVersionInput",
 		&returns,
 	)
 	return returns
@@ -288,6 +312,17 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	_jsii_.Set(
 		j,
 		"dependencies",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference)SetEnvironmentVersion(val *string) {
+	if err := j.validateSetEnvironmentVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"environmentVersion",
 		val,
 	)
 }
@@ -526,6 +561,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	_jsii_.InvokeVoid(
 		d,
 		"resetDependencies",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) ResetEnvironmentVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnvironmentVersion",
 		nil, // no parameters
 	)
 }

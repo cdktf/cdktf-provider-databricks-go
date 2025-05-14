@@ -91,6 +91,10 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetNam
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetProvisionedModelUnitsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetScaleToZeroEnabledParameters(val interface{}) error {
 	return nil
 }

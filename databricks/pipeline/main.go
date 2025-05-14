@@ -1705,8 +1705,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionName", GoMethod: "ResetConnectionName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIngestionGatewayId", GoMethod: "ResetIngestionGatewayId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetObjects", GoMethod: "ResetObjects"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceType", GoMethod: "ResetSourceType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTableConfiguration", GoMethod: "ResetTableConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceType", GoGetter: "SourceType"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceTypeInput", GoGetter: "SourceTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tableConfiguration", GoGetter: "TableConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "tableConfigurationInput", GoGetter: "TableConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -1883,6 +1886,45 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.pipeline.PipelineLibraryGlob",
+		reflect.TypeOf((*PipelineLibraryGlob)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.pipeline.PipelineLibraryGlobOutputReference",
+		reflect.TypeOf((*PipelineLibraryGlobOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "include", GoGetter: "Include"},
+			_jsii_.MemberProperty{JsiiProperty: "includeInput", GoGetter: "IncludeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInclude", GoMethod: "ResetInclude"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineLibraryGlobOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-databricks.pipeline.PipelineLibraryList",
 		reflect.TypeOf((*PipelineLibraryList)(nil)).Elem(),
@@ -2008,6 +2050,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "glob", GoGetter: "Glob"},
+			_jsii_.MemberProperty{JsiiProperty: "globInput", GoGetter: "GlobInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -2018,9 +2062,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "notebook", GoGetter: "Notebook"},
 			_jsii_.MemberProperty{JsiiProperty: "notebookInput", GoGetter: "NotebookInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putFile", GoMethod: "PutFile"},
+			_jsii_.MemberMethod{JsiiMethod: "putGlob", GoMethod: "PutGlob"},
 			_jsii_.MemberMethod{JsiiMethod: "putMaven", GoMethod: "PutMaven"},
 			_jsii_.MemberMethod{JsiiMethod: "putNotebook", GoMethod: "PutNotebook"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFile", GoMethod: "ResetFile"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGlob", GoMethod: "ResetGlob"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJar", GoMethod: "ResetJar"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaven", GoMethod: "ResetMaven"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNotebook", GoMethod: "ResetNotebook"},

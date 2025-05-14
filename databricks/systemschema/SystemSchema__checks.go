@@ -407,14 +407,6 @@ func (j *jsiiProxy_SystemSchema) validateSetSchemaParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_SystemSchema) validateSetStateParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewSystemSchemaParameters(scope constructs.Construct, id *string, config *SystemSchemaConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -424,6 +416,9 @@ func validateNewSystemSchemaParameters(scope constructs.Construct, id *string, c
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
+	if config == nil {
+		return fmt.Errorf("parameter config is required, but nil was provided")
+	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

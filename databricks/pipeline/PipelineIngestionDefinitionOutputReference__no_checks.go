@@ -79,6 +79,10 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateSetIntern
 	return nil
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateSetSourceTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

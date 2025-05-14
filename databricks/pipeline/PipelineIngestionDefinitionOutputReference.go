@@ -40,6 +40,9 @@ type PipelineIngestionDefinitionOutputReference interface {
 	SetInternalValue(val *PipelineIngestionDefinition)
 	Objects() PipelineIngestionDefinitionObjectsList
 	ObjectsInput() interface{}
+	SourceType() *string
+	SetSourceType(val *string)
+	SourceTypeInput() *string
 	TableConfiguration() PipelineIngestionDefinitionTableConfigurationOutputReference
 	TableConfigurationInput() *PipelineIngestionDefinitionTableConfiguration
 	// Experimental.
@@ -79,6 +82,7 @@ type PipelineIngestionDefinitionOutputReference interface {
 	ResetConnectionName()
 	ResetIngestionGatewayId()
 	ResetObjects()
+	ResetSourceType()
 	ResetTableConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -205,6 +209,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) ObjectsInput() in
 	return returns
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) SourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) SourceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) TableConfiguration() PipelineIngestionDefinitionTableConfigurationOutputReference {
 	var returns PipelineIngestionDefinitionTableConfigurationOutputReference
 	_jsii_.Get(
@@ -324,6 +348,17 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference)SetInternalValue(v
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference)SetSourceType(val *string) {
+	if err := j.validateSetSourceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceType",
 		val,
 	)
 }
@@ -578,6 +613,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) ResetObjects() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetObjects",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) ResetSourceType() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSourceType",
 		nil, // no parameters
 	)
 }

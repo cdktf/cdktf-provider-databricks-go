@@ -67,6 +67,10 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) validateSetDependenciesPar
 	return nil
 }
 
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) validateSetEnvironmentVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobEnvironmentSpecOutputReference) validateSetInternalValueParameters(val *JobEnvironmentSpec) error {
 	return nil
 }

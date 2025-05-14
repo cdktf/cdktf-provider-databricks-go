@@ -115,10 +115,6 @@ func (j *jsiiProxy_SystemSchema) validateSetSchemaParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_SystemSchema) validateSetStateParameters(val *string) error {
-	return nil
-}
-
 func validateNewSystemSchemaParameters(scope constructs.Construct, id *string, config *SystemSchemaConfig) error {
 	return nil
 }

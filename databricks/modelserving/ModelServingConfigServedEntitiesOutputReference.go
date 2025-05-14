@@ -55,6 +55,9 @@ type ModelServingConfigServedEntitiesOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	ProvisionedModelUnits() *float64
+	SetProvisionedModelUnits(val *float64)
+	ProvisionedModelUnitsInput() *float64
 	ScaleToZeroEnabled() interface{}
 	SetScaleToZeroEnabled(val interface{})
 	ScaleToZeroEnabledInput() interface{}
@@ -105,6 +108,7 @@ type ModelServingConfigServedEntitiesOutputReference interface {
 	ResetMaxProvisionedThroughput()
 	ResetMinProvisionedThroughput()
 	ResetName()
+	ResetProvisionedModelUnits()
 	ResetScaleToZeroEnabled()
 	ResetWorkloadSize()
 	ResetWorkloadType()
@@ -333,6 +337,26 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) NameInput() 
 	return returns
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) ProvisionedModelUnits() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedModelUnits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) ProvisionedModelUnitsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedModelUnitsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) ScaleToZeroEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -547,6 +571,17 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesOutputReference)SetName(val *
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesOutputReference)SetProvisionedModelUnits(val *float64) {
+	if err := j.validateSetProvisionedModelUnitsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedModelUnits",
 		val,
 	)
 }
@@ -863,6 +898,14 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) ResetName() 
 	_jsii_.InvokeVoid(
 		m,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) ResetProvisionedModelUnits() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetProvisionedModelUnits",
 		nil, // no parameters
 	)
 }

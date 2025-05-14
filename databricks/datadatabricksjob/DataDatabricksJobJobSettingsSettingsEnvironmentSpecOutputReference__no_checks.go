@@ -67,6 +67,10 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) validateSetEnvironmentVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) validateSetInternalValueParameters(val *DataDatabricksJobJobSettingsSettingsEnvironmentSpec) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/system_schema databricks_system_schema}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/system_schema databricks_system_schema}.
 type SystemSchema interface {
 	cdktf.TerraformResource
 	AutoEnabled() cdktf.IResolvable
@@ -65,8 +65,6 @@ type SystemSchema interface {
 	SetSchema(val *string)
 	SchemaInput() *string
 	State() *string
-	SetState(val *string)
-	StateInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -120,8 +118,6 @@ type SystemSchema interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSchema()
-	ResetState()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -350,16 +346,6 @@ func (j *jsiiProxy_SystemSchema) State() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SystemSchema) StateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"stateInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SystemSchema) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -391,7 +377,7 @@ func (j *jsiiProxy_SystemSchema) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/system_schema databricks_system_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/system_schema databricks_system_schema} Resource.
 func NewSystemSchema(scope constructs.Construct, id *string, config *SystemSchemaConfig) SystemSchema {
 	_init_.Initialize()
 
@@ -409,7 +395,7 @@ func NewSystemSchema(scope constructs.Construct, id *string, config *SystemSchem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/system_schema databricks_system_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/system_schema databricks_system_schema} Resource.
 func NewSystemSchema_Override(s SystemSchema, scope constructs.Construct, id *string, config *SystemSchemaConfig) {
 	_init_.Initialize()
 
@@ -506,17 +492,6 @@ func (j *jsiiProxy_SystemSchema)SetSchema(val *string) {
 	_jsii_.Set(
 		j,
 		"schema",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SystemSchema)SetState(val *string) {
-	if err := j.validateSetStateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"state",
 		val,
 	)
 }
@@ -886,22 +861,6 @@ func (s *jsiiProxy_SystemSchema) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SystemSchema) ResetSchema() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetSchema",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SystemSchema) ResetState() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetState",
 		nil, // no parameters
 	)
 }

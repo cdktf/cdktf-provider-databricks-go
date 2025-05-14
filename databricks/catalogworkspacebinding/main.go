@@ -57,7 +57,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecurableName", GoMethod: "ResetSecurableName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecurableType", GoMethod: "ResetSecurableType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceId", GoMethod: "ResetWorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "securableName", GoGetter: "SecurableName"},
 			_jsii_.MemberProperty{JsiiProperty: "securableNameInput", GoGetter: "SecurableNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "securableType", GoGetter: "SecurableType"},

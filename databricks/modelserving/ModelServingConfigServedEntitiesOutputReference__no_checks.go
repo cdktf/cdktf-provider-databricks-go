@@ -95,6 +95,10 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) validateSetN
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) validateSetProvisionedModelUnitsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) validateSetScaleToZeroEnabledParameters(val interface{}) error {
 	return nil
 }

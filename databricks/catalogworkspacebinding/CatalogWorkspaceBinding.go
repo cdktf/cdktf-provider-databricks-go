@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding}.
 type CatalogWorkspaceBinding interface {
 	cdktf.TerraformResource
 	BindingType() *string
@@ -130,7 +130,6 @@ type CatalogWorkspaceBinding interface {
 	ResetOverrideLogicalId()
 	ResetSecurableName()
 	ResetSecurableType()
-	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -430,7 +429,7 @@ func (j *jsiiProxy_CatalogWorkspaceBinding) WorkspaceIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
 func NewCatalogWorkspaceBinding(scope constructs.Construct, id *string, config *CatalogWorkspaceBindingConfig) CatalogWorkspaceBinding {
 	_init_.Initialize()
 
@@ -448,7 +447,7 @@ func NewCatalogWorkspaceBinding(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource.
 func NewCatalogWorkspaceBinding_Override(c CatalogWorkspaceBinding, scope constructs.Construct, id *string, config *CatalogWorkspaceBindingConfig) {
 	_init_.Initialize()
 
@@ -990,14 +989,6 @@ func (c *jsiiProxy_CatalogWorkspaceBinding) ResetSecurableType() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSecurableType",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CatalogWorkspaceBinding) ResetWorkspaceId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

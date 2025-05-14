@@ -32,6 +32,8 @@ type PipelineLibraryOutputReference interface {
 	FileInput() *PipelineLibraryFile
 	// Experimental.
 	Fqn() *string
+	Glob() PipelineLibraryGlobOutputReference
+	GlobInput() *PipelineLibraryGlob
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Jar() *string
@@ -77,9 +79,11 @@ type PipelineLibraryOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFile(value *PipelineLibraryFile)
+	PutGlob(value *PipelineLibraryGlob)
 	PutMaven(value *PipelineLibraryMaven)
 	PutNotebook(value *PipelineLibraryNotebook)
 	ResetFile()
+	ResetGlob()
 	ResetJar()
 	ResetMaven()
 	ResetNotebook()
@@ -154,6 +158,26 @@ func (j *jsiiProxy_PipelineLibraryOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineLibraryOutputReference) Glob() PipelineLibraryGlobOutputReference {
+	var returns PipelineLibraryGlobOutputReference
+	_jsii_.Get(
+		j,
+		"glob",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineLibraryOutputReference) GlobInput() *PipelineLibraryGlob {
+	var returns *PipelineLibraryGlob
+	_jsii_.Get(
+		j,
+		"globInput",
 		&returns,
 	)
 	return returns
@@ -571,6 +595,17 @@ func (p *jsiiProxy_PipelineLibraryOutputReference) PutFile(value *PipelineLibrar
 	)
 }
 
+func (p *jsiiProxy_PipelineLibraryOutputReference) PutGlob(value *PipelineLibraryGlob) {
+	if err := p.validatePutGlobParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putGlob",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineLibraryOutputReference) PutMaven(value *PipelineLibraryMaven) {
 	if err := p.validatePutMavenParameters(value); err != nil {
 		panic(err)
@@ -597,6 +632,14 @@ func (p *jsiiProxy_PipelineLibraryOutputReference) ResetFile() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetFile",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineLibraryOutputReference) ResetGlob() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetGlob",
 		nil, // no parameters
 	)
 }
