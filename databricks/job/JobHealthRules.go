@@ -5,11 +5,11 @@ package job
 
 
 type JobHealthRules struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/job#metric Job#metric}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/job#metric Job#metric}.
 	Metric *string `field:"required" json:"metric" yaml:"metric"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/job#op Job#op}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/job#op Job#op}.
 	Op *string `field:"required" json:"op" yaml:"op"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/job#value Job#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/job#value Job#value}.
 	Value *float64 `field:"required" json:"value" yaml:"value"`
 }
 
