@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mlflow_experiment databricks_mlflow_experiment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mlflow_experiment databricks_mlflow_experiment}.
 type MlflowExperiment interface {
 	cdktf.TerraformResource
 	ArtifactLocation() *string
@@ -524,7 +524,7 @@ func (j *jsiiProxy_MlflowExperiment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
 func NewMlflowExperiment(scope constructs.Construct, id *string, config *MlflowExperimentConfig) MlflowExperiment {
 	_init_.Initialize()
 
@@ -542,7 +542,7 @@ func NewMlflowExperiment(scope constructs.Construct, id *string, config *MlflowE
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource.
 func NewMlflowExperiment_Override(m MlflowExperiment, scope constructs.Construct, id *string, config *MlflowExperimentConfig) {
 	_init_.Initialize()
 

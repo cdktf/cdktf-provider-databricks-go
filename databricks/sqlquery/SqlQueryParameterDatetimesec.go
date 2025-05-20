@@ -5,7 +5,7 @@ package sqlquery
 
 
 type SqlQueryParameterDatetimesec struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/sql_query#value SqlQuery#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_query#value SqlQuery#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

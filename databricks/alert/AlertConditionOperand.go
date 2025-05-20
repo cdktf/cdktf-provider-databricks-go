@@ -7,7 +7,7 @@ package alert
 type AlertConditionOperand struct {
 	// column block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/alert#column Alert#column}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/alert#column Alert#column}
 	Column *AlertConditionOperandColumn `field:"required" json:"column" yaml:"column"`
 }
 

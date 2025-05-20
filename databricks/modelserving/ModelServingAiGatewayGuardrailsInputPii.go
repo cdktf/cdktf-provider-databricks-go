@@ -5,7 +5,7 @@ package modelserving
 
 
 type ModelServingAiGatewayGuardrailsInputPii struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/model_serving#behavior ModelServing#behavior}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/model_serving#behavior ModelServing#behavior}.
 	Behavior *string `field:"optional" json:"behavior" yaml:"behavior"`
 }
 
