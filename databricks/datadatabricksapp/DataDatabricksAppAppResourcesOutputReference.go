@@ -54,6 +54,8 @@ type DataDatabricksAppAppResourcesOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UcSecurable() DataDatabricksAppAppResourcesUcSecurableOutputReference
+	UcSecurableInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -82,11 +84,13 @@ type DataDatabricksAppAppResourcesOutputReference interface {
 	PutSecret(value *DataDatabricksAppAppResourcesSecret)
 	PutServingEndpoint(value *DataDatabricksAppAppResourcesServingEndpoint)
 	PutSqlWarehouse(value *DataDatabricksAppAppResourcesSqlWarehouse)
+	PutUcSecurable(value *DataDatabricksAppAppResourcesUcSecurable)
 	ResetDescription()
 	ResetJob()
 	ResetSecret()
 	ResetServingEndpoint()
 	ResetSqlWarehouse()
+	ResetUcSecurable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -287,6 +291,26 @@ func (j *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) TerraformResour
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) UcSecurable() DataDatabricksAppAppResourcesUcSecurableOutputReference {
+	var returns DataDatabricksAppAppResourcesUcSecurableOutputReference
+	_jsii_.Get(
+		j,
+		"ucSecurable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) UcSecurableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ucSecurableInput",
 		&returns,
 	)
 	return returns
@@ -627,6 +651,17 @@ func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) PutSqlWarehouse
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) PutUcSecurable(value *DataDatabricksAppAppResourcesUcSecurable) {
+	if err := d.validatePutUcSecurableParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putUcSecurable",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		d,
@@ -663,6 +698,14 @@ func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) ResetSqlWarehou
 	_jsii_.InvokeVoid(
 		d,
 		"resetSqlWarehouse",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) ResetUcSecurable() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUcSecurable",
 		nil, // no parameters
 	)
 }

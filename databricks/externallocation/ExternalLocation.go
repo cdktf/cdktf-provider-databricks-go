@@ -12,12 +12,9 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/external_location databricks_external_location}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/external_location databricks_external_location}.
 type ExternalLocation interface {
 	cdktf.TerraformResource
-	AccessPoint() *string
-	SetAccessPoint(val *string)
-	AccessPointInput() *string
 	BrowseOnly() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -44,11 +41,16 @@ type ExternalLocation interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnableFileEvents() interface{}
+	SetEnableFileEvents(val interface{})
+	EnableFileEventsInput() interface{}
 	EncryptionDetails() ExternalLocationEncryptionDetailsOutputReference
 	EncryptionDetailsInput() *ExternalLocationEncryptionDetails
 	Fallback() interface{}
 	SetFallback(val interface{})
 	FallbackInput() interface{}
+	FileEventQueue() ExternalLocationFileEventQueueOutputReference
+	FileEventQueueInput() *ExternalLocationFileEventQueue
 	ForceDestroy() interface{}
 	SetForceDestroy(val interface{})
 	ForceDestroyInput() interface{}
@@ -155,10 +157,12 @@ type ExternalLocation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEncryptionDetails(value *ExternalLocationEncryptionDetails)
-	ResetAccessPoint()
+	PutFileEventQueue(value *ExternalLocationFileEventQueue)
 	ResetComment()
+	ResetEnableFileEvents()
 	ResetEncryptionDetails()
 	ResetFallback()
+	ResetFileEventQueue()
 	ResetForceDestroy()
 	ResetForceUpdate()
 	ResetId()
@@ -186,26 +190,6 @@ type ExternalLocation interface {
 // The jsii proxy struct for ExternalLocation
 type jsiiProxy_ExternalLocation struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_ExternalLocation) AccessPoint() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accessPoint",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ExternalLocation) AccessPointInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accessPointInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_ExternalLocation) BrowseOnly() cdktf.IResolvable {
@@ -338,6 +322,26 @@ func (j *jsiiProxy_ExternalLocation) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ExternalLocation) EnableFileEvents() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFileEvents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) EnableFileEventsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFileEventsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ExternalLocation) EncryptionDetails() ExternalLocationEncryptionDetailsOutputReference {
 	var returns ExternalLocationEncryptionDetailsOutputReference
 	_jsii_.Get(
@@ -373,6 +377,26 @@ func (j *jsiiProxy_ExternalLocation) FallbackInput() interface{} {
 	_jsii_.Get(
 		j,
 		"fallbackInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) FileEventQueue() ExternalLocationFileEventQueueOutputReference {
+	var returns ExternalLocationFileEventQueueOutputReference
+	_jsii_.Get(
+		j,
+		"fileEventQueue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExternalLocation) FileEventQueueInput() *ExternalLocationFileEventQueue {
+	var returns *ExternalLocationFileEventQueue
+	_jsii_.Get(
+		j,
+		"fileEventQueueInput",
 		&returns,
 	)
 	return returns
@@ -709,7 +733,7 @@ func (j *jsiiProxy_ExternalLocation) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation(scope constructs.Construct, id *string, config *ExternalLocationConfig) ExternalLocation {
 	_init_.Initialize()
 
@@ -727,7 +751,7 @@ func NewExternalLocation(scope constructs.Construct, id *string, config *Externa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/external_location databricks_external_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/external_location databricks_external_location} Resource.
 func NewExternalLocation_Override(e ExternalLocation, scope constructs.Construct, id *string, config *ExternalLocationConfig) {
 	_init_.Initialize()
 
@@ -735,17 +759,6 @@ func NewExternalLocation_Override(e ExternalLocation, scope constructs.Construct
 		"@cdktf/provider-databricks.externalLocation.ExternalLocation",
 		[]interface{}{scope, id, config},
 		e,
-	)
-}
-
-func (j *jsiiProxy_ExternalLocation)SetAccessPoint(val *string) {
-	if err := j.validateSetAccessPointParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"accessPoint",
-		val,
 	)
 }
 
@@ -797,6 +810,17 @@ func (j *jsiiProxy_ExternalLocation)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ExternalLocation)SetEnableFileEvents(val interface{}) {
+	if err := j.validateSetEnableFileEventsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableFileEvents",
 		val,
 	)
 }
@@ -1324,11 +1348,14 @@ func (e *jsiiProxy_ExternalLocation) PutEncryptionDetails(value *ExternalLocatio
 	)
 }
 
-func (e *jsiiProxy_ExternalLocation) ResetAccessPoint() {
+func (e *jsiiProxy_ExternalLocation) PutFileEventQueue(value *ExternalLocationFileEventQueue) {
+	if err := e.validatePutFileEventQueueParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
-		"resetAccessPoint",
-		nil, // no parameters
+		"putFileEventQueue",
+		[]interface{}{value},
 	)
 }
 
@@ -1336,6 +1363,14 @@ func (e *jsiiProxy_ExternalLocation) ResetComment() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetComment",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExternalLocation) ResetEnableFileEvents() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEnableFileEvents",
 		nil, // no parameters
 	)
 }
@@ -1352,6 +1387,14 @@ func (e *jsiiProxy_ExternalLocation) ResetFallback() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetFallback",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExternalLocation) ResetFileEventQueue() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetFileEventQueue",
 		nil, // no parameters
 	)
 }

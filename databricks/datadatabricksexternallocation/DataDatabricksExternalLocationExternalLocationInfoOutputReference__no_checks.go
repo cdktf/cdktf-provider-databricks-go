@@ -51,11 +51,11 @@ func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) validatePutFileEventQueueParameters(value *DataDatabricksExternalLocationExternalLocationInfoFileEventQueue) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) validateSetAccessPointParameters(val *string) error {
+func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
 
@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 }
 
 func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) validateSetCredentialNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) validateSetEnableFileEventsParameters(val interface{}) error {
 	return nil
 }
 

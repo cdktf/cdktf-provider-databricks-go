@@ -5,7 +5,7 @@ package datadatabricksregisteredmodelversions
 
 
 type DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependencies struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/registered_model_versions#dependencies DataDatabricksRegisteredModelVersions#dependencies}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/registered_model_versions#dependencies DataDatabricksRegisteredModelVersions#dependencies}.
 	Dependencies interface{} `field:"optional" json:"dependencies" yaml:"dependencies"`
 }
 

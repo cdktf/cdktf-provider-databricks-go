@@ -13,9 +13,6 @@ import (
 
 type DataDatabricksExternalLocationExternalLocationInfoOutputReference interface {
 	cdktf.ComplexObject
-	AccessPoint() *string
-	SetAccessPoint(val *string)
-	AccessPointInput() *string
 	BrowseOnly() interface{}
 	SetBrowseOnly(val interface{})
 	BrowseOnlyInput() interface{}
@@ -49,11 +46,16 @@ type DataDatabricksExternalLocationExternalLocationInfoOutputReference interface
 	CredentialName() *string
 	SetCredentialName(val *string)
 	CredentialNameInput() *string
+	EnableFileEvents() interface{}
+	SetEnableFileEvents(val interface{})
+	EnableFileEventsInput() interface{}
 	EncryptionDetails() DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsOutputReference
 	EncryptionDetailsInput() *DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails
 	Fallback() interface{}
 	SetFallback(val interface{})
 	FallbackInput() interface{}
+	FileEventQueue() DataDatabricksExternalLocationExternalLocationInfoFileEventQueueOutputReference
+	FileEventQueueInput() *DataDatabricksExternalLocationExternalLocationInfoFileEventQueue
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksExternalLocationExternalLocationInfo
@@ -115,15 +117,17 @@ type DataDatabricksExternalLocationExternalLocationInfoOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEncryptionDetails(value *DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails)
-	ResetAccessPoint()
+	PutFileEventQueue(value *DataDatabricksExternalLocationExternalLocationInfoFileEventQueue)
 	ResetBrowseOnly()
 	ResetComment()
 	ResetCreatedAt()
 	ResetCreatedBy()
 	ResetCredentialId()
 	ResetCredentialName()
+	ResetEnableFileEvents()
 	ResetEncryptionDetails()
 	ResetFallback()
+	ResetFileEventQueue()
 	ResetIsolationMode()
 	ResetMetastoreId()
 	ResetName()
@@ -145,26 +149,6 @@ type DataDatabricksExternalLocationExternalLocationInfoOutputReference interface
 // The jsii proxy struct for DataDatabricksExternalLocationExternalLocationInfoOutputReference
 type jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) AccessPoint() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accessPoint",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) AccessPointInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accessPointInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) BrowseOnly() interface{} {
@@ -317,6 +301,26 @@ func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) EnableFileEvents() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFileEvents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) EnableFileEventsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFileEventsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) EncryptionDetails() DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsOutputReference {
 	var returns DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsOutputReference
 	_jsii_.Get(
@@ -352,6 +356,26 @@ func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	_jsii_.Get(
 		j,
 		"fallbackInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) FileEventQueue() DataDatabricksExternalLocationExternalLocationInfoFileEventQueueOutputReference {
+	var returns DataDatabricksExternalLocationExternalLocationInfoFileEventQueueOutputReference
+	_jsii_.Get(
+		j,
+		"fileEventQueue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) FileEventQueueInput() *DataDatabricksExternalLocationExternalLocationInfoFileEventQueue {
+	var returns *DataDatabricksExternalLocationExternalLocationInfoFileEventQueue
+	_jsii_.Get(
+		j,
+		"fileEventQueueInput",
 		&returns,
 	)
 	return returns
@@ -585,17 +609,6 @@ func NewDataDatabricksExternalLocationExternalLocationInfoOutputReference_Overri
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference)SetAccessPoint(val *string) {
-	if err := j.validateSetAccessPointParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"accessPoint",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference)SetBrowseOnly(val interface{}) {
 	if err := j.validateSetBrowseOnlyParameters(val); err != nil {
 		panic(err)
@@ -680,6 +693,17 @@ func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	_jsii_.Set(
 		j,
 		"credentialName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference)SetEnableFileEvents(val interface{}) {
+	if err := j.validateSetEnableFileEventsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableFileEvents",
 		val,
 	)
 }
@@ -1013,11 +1037,14 @@ func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) ResetAccessPoint() {
+func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) PutFileEventQueue(value *DataDatabricksExternalLocationExternalLocationInfoFileEventQueue) {
+	if err := d.validatePutFileEventQueueParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
-		"resetAccessPoint",
-		nil, // no parameters
+		"putFileEventQueue",
+		[]interface{}{value},
 	)
 }
 
@@ -1069,6 +1096,14 @@ func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) ResetEnableFileEvents() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnableFileEvents",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) ResetEncryptionDetails() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1081,6 +1116,14 @@ func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputRefer
 	_jsii_.InvokeVoid(
 		d,
 		"resetFallback",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoOutputReference) ResetFileEventQueue() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFileEventQueue",
 		nil, // no parameters
 	)
 }

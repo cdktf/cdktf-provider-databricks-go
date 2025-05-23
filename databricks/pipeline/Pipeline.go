@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/pipeline databricks_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/pipeline databricks_pipeline}.
 type Pipeline interface {
 	cdktf.TerraformResource
 	AllowDuplicateNames() interface{}
@@ -126,6 +126,9 @@ type Pipeline interface {
 	RawOverrides() interface{}
 	RestartWindow() PipelineRestartWindowOutputReference
 	RestartWindowInput() *PipelineRestartWindow
+	RootPath() *string
+	SetRootPath(val *string)
+	RootPathInput() *string
 	RunAs() PipelineRunAsOutputReference
 	RunAsInput() *PipelineRunAs
 	RunAsUserName() *string
@@ -245,6 +248,7 @@ type Pipeline interface {
 	ResetOverrideLogicalId()
 	ResetPhoton()
 	ResetRestartWindow()
+	ResetRootPath()
 	ResetRunAs()
 	ResetRunAsUserName()
 	ResetSchema()
@@ -943,6 +947,26 @@ func (j *jsiiProxy_Pipeline) RestartWindowInput() *PipelineRestartWindow {
 	return returns
 }
 
+func (j *jsiiProxy_Pipeline) RootPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rootPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) RootPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rootPathInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Pipeline) RunAs() PipelineRunAsOutputReference {
 	var returns PipelineRunAsOutputReference
 	_jsii_.Get(
@@ -1174,7 +1198,7 @@ func (j *jsiiProxy_Pipeline) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig) Pipeline {
 	_init_.Initialize()
 
@@ -1192,7 +1216,7 @@ func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline_Override(p Pipeline, scope constructs.Construct, id *string, config *PipelineConfig) {
 	_init_.Initialize()
 
@@ -1454,6 +1478,17 @@ func (j *jsiiProxy_Pipeline)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Pipeline)SetRootPath(val *string) {
+	if err := j.validateSetRootPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rootPath",
 		val,
 	)
 }
@@ -2251,6 +2286,14 @@ func (p *jsiiProxy_Pipeline) ResetRestartWindow() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetRestartWindow",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Pipeline) ResetRootPath() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRootPath",
 		nil, // no parameters
 	)
 }

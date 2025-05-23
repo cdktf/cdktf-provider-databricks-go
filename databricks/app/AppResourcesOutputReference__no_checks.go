@@ -63,6 +63,10 @@ func (a *jsiiProxy_AppResourcesOutputReference) validatePutSqlWarehouseParameter
 	return nil
 }
 
+func (a *jsiiProxy_AppResourcesOutputReference) validatePutUcSecurableParameters(value *AppResourcesUcSecurable) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppResourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

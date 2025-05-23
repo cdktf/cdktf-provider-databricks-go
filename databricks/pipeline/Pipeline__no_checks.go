@@ -227,6 +227,10 @@ func (j *jsiiProxy_Pipeline) validateSetProvisionersParameters(val *[]interface{
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetRootPathParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetRunAsUserNameParameters(val *string) error {
 	return nil
 }

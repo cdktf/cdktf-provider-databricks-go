@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validatePutSqlW
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validatePutUcSecurableParameters(value *DataDatabricksAppAppResourcesUcSecurable) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}.
 type VectorSearchEndpoint interface {
 	cdktf.TerraformResource
+	BudgetPolicyId() *string
+	SetBudgetPolicyId(val *string)
+	BudgetPolicyIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -29,15 +32,11 @@ type VectorSearchEndpoint interface {
 	SetCount(val interface{})
 	CreationTimestamp() *float64
 	Creator() *string
-	CustomTags() VectorSearchEndpointCustomTagsList
-	CustomTagsInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EffectiveBudgetPolicyId() *string
-	SetEffectiveBudgetPolicyId(val *string)
-	EffectiveBudgetPolicyIdInput() *string
 	EndpointId() *string
 	EndpointStatus() VectorSearchEndpointEndpointStatusList
 	EndpointType() *string
@@ -127,10 +126,8 @@ type VectorSearchEndpoint interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCustomTags(value interface{})
 	PutTimeouts(value *VectorSearchEndpointTimeouts)
-	ResetCustomTags()
-	ResetEffectiveBudgetPolicyId()
+	ResetBudgetPolicyId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -152,6 +149,26 @@ type VectorSearchEndpoint interface {
 // The jsii proxy struct for VectorSearchEndpoint
 type jsiiProxy_VectorSearchEndpoint struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_VectorSearchEndpoint) BudgetPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchEndpoint) BudgetPolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_VectorSearchEndpoint) CdktfStack() cdktf.TerraformStack {
@@ -214,26 +231,6 @@ func (j *jsiiProxy_VectorSearchEndpoint) Creator() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchEndpoint) CustomTags() VectorSearchEndpointCustomTagsList {
-	var returns VectorSearchEndpointCustomTagsList
-	_jsii_.Get(
-		j,
-		"customTags",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_VectorSearchEndpoint) CustomTagsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"customTagsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_VectorSearchEndpoint) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -249,16 +246,6 @@ func (j *jsiiProxy_VectorSearchEndpoint) EffectiveBudgetPolicyId() *string {
 	_jsii_.Get(
 		j,
 		"effectiveBudgetPolicyId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_VectorSearchEndpoint) EffectiveBudgetPolicyIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"effectiveBudgetPolicyIdInput",
 		&returns,
 	)
 	return returns
@@ -505,7 +492,7 @@ func (j *jsiiProxy_VectorSearchEndpoint) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource.
 func NewVectorSearchEndpoint(scope constructs.Construct, id *string, config *VectorSearchEndpointConfig) VectorSearchEndpoint {
 	_init_.Initialize()
 
@@ -523,7 +510,7 @@ func NewVectorSearchEndpoint(scope constructs.Construct, id *string, config *Vec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource.
 func NewVectorSearchEndpoint_Override(v VectorSearchEndpoint, scope constructs.Construct, id *string, config *VectorSearchEndpointConfig) {
 	_init_.Initialize()
 
@@ -531,6 +518,17 @@ func NewVectorSearchEndpoint_Override(v VectorSearchEndpoint, scope constructs.C
 		"@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint",
 		[]interface{}{scope, id, config},
 		v,
+	)
+}
+
+func (j *jsiiProxy_VectorSearchEndpoint)SetBudgetPolicyId(val *string) {
+	if err := j.validateSetBudgetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"budgetPolicyId",
+		val,
 	)
 }
 
@@ -560,17 +558,6 @@ func (j *jsiiProxy_VectorSearchEndpoint)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_VectorSearchEndpoint)SetEffectiveBudgetPolicyId(val *string) {
-	if err := j.validateSetEffectiveBudgetPolicyIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"effectiveBudgetPolicyId",
 		val,
 	)
 }
@@ -999,17 +986,6 @@ func (v *jsiiProxy_VectorSearchEndpoint) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
-func (v *jsiiProxy_VectorSearchEndpoint) PutCustomTags(value interface{}) {
-	if err := v.validatePutCustomTagsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		v,
-		"putCustomTags",
-		[]interface{}{value},
-	)
-}
-
 func (v *jsiiProxy_VectorSearchEndpoint) PutTimeouts(value *VectorSearchEndpointTimeouts) {
 	if err := v.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1021,18 +997,10 @@ func (v *jsiiProxy_VectorSearchEndpoint) PutTimeouts(value *VectorSearchEndpoint
 	)
 }
 
-func (v *jsiiProxy_VectorSearchEndpoint) ResetCustomTags() {
+func (v *jsiiProxy_VectorSearchEndpoint) ResetBudgetPolicyId() {
 	_jsii_.InvokeVoid(
 		v,
-		"resetCustomTags",
-		nil, // no parameters
-	)
-}
-
-func (v *jsiiProxy_VectorSearchEndpoint) ResetEffectiveBudgetPolicyId() {
-	_jsii_.InvokeVoid(
-		v,
-		"resetEffectiveBudgetPolicyId",
+		"resetBudgetPolicyId",
 		nil, // no parameters
 	)
 }

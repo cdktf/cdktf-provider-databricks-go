@@ -79,6 +79,10 @@ func (e *jsiiProxy_ExternalLocation) validatePutEncryptionDetailsParameters(valu
 	return nil
 }
 
+func (e *jsiiProxy_ExternalLocation) validatePutFileEventQueueParameters(value *ExternalLocationFileEventQueue) error {
+	return nil
+}
+
 func validateExternalLocation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -95,10 +99,6 @@ func validateExternalLocation_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_ExternalLocation) validateSetAccessPointParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ExternalLocation) validateSetCommentParameters(val *string) error {
 	return nil
 }
@@ -112,6 +112,10 @@ func (j *jsiiProxy_ExternalLocation) validateSetCountParameters(val interface{})
 }
 
 func (j *jsiiProxy_ExternalLocation) validateSetCredentialNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ExternalLocation) validateSetEnableFileEventsParameters(val interface{}) error {
 	return nil
 }
 

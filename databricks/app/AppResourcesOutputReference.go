@@ -54,6 +54,8 @@ type AppResourcesOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UcSecurable() AppResourcesUcSecurableOutputReference
+	UcSecurableInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -82,11 +84,13 @@ type AppResourcesOutputReference interface {
 	PutSecret(value *AppResourcesSecret)
 	PutServingEndpoint(value *AppResourcesServingEndpoint)
 	PutSqlWarehouse(value *AppResourcesSqlWarehouse)
+	PutUcSecurable(value *AppResourcesUcSecurable)
 	ResetDescription()
 	ResetJob()
 	ResetSecret()
 	ResetServingEndpoint()
 	ResetSqlWarehouse()
+	ResetUcSecurable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -287,6 +291,26 @@ func (j *jsiiProxy_AppResourcesOutputReference) TerraformResource() cdktf.IInter
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppResourcesOutputReference) UcSecurable() AppResourcesUcSecurableOutputReference {
+	var returns AppResourcesUcSecurableOutputReference
+	_jsii_.Get(
+		j,
+		"ucSecurable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppResourcesOutputReference) UcSecurableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ucSecurableInput",
 		&returns,
 	)
 	return returns
@@ -627,6 +651,17 @@ func (a *jsiiProxy_AppResourcesOutputReference) PutSqlWarehouse(value *AppResour
 	)
 }
 
+func (a *jsiiProxy_AppResourcesOutputReference) PutUcSecurable(value *AppResourcesUcSecurable) {
+	if err := a.validatePutUcSecurableParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putUcSecurable",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppResourcesOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		a,
@@ -663,6 +698,14 @@ func (a *jsiiProxy_AppResourcesOutputReference) ResetSqlWarehouse() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSqlWarehouse",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppResourcesOutputReference) ResetUcSecurable() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUcSecurable",
 		nil, // no parameters
 	)
 }

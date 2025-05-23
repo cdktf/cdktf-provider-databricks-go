@@ -46,6 +46,9 @@ type DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputRefer
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TimeseriesColumns() *[]*string
+	SetTimeseriesColumns(val *[]*string)
+	TimeseriesColumnsInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,6 +73,7 @@ type DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputRefer
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetTimeseriesColumns()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -195,6 +199,26 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstra
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputReference) TimeseriesColumns() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"timeseriesColumns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputReference) TimeseriesColumnsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"timeseriesColumnsInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputReference {
 	_init_.Initialize()
@@ -296,6 +320,17 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstra
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputReference)SetTimeseriesColumns(val *[]*string) {
+	if err := j.validateSetTimeseriesColumnsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timeseriesColumns",
 		val,
 	)
 }
@@ -484,6 +519,14 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstra
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputReference) ResetTimeseriesColumns() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimeseriesColumns",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
