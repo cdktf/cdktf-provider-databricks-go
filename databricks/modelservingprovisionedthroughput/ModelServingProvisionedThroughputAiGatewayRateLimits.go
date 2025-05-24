@@ -5,11 +5,11 @@ package modelservingprovisionedthroughput
 
 
 type ModelServingProvisionedThroughputAiGatewayRateLimits struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#calls ModelServingProvisionedThroughput#calls}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#calls ModelServingProvisionedThroughput#calls}.
 	Calls *float64 `field:"required" json:"calls" yaml:"calls"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#renewal_period ModelServingProvisionedThroughput#renewal_period}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#renewal_period ModelServingProvisionedThroughput#renewal_period}.
 	RenewalPeriod *string `field:"required" json:"renewalPeriod" yaml:"renewalPeriod"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#key ModelServingProvisionedThroughput#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#key ModelServingProvisionedThroughput#key}.
 	Key *string `field:"optional" json:"key" yaml:"key"`
 }
 

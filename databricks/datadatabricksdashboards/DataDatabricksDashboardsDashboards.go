@@ -5,11 +5,11 @@ package datadatabricksdashboards
 
 
 type DataDatabricksDashboardsDashboards struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/dashboards#display_name DataDatabricksDashboards#display_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/dashboards#display_name DataDatabricksDashboards#display_name}.
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/dashboards#serialized_dashboard DataDatabricksDashboards#serialized_dashboard}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/dashboards#serialized_dashboard DataDatabricksDashboards#serialized_dashboard}.
 	SerializedDashboard *string `field:"optional" json:"serializedDashboard" yaml:"serializedDashboard"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/dashboards#warehouse_id DataDatabricksDashboards#warehouse_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/dashboards#warehouse_id DataDatabricksDashboards#warehouse_id}.
 	WarehouseId *string `field:"optional" json:"warehouseId" yaml:"warehouseId"`
 }
 

@@ -5,19 +5,19 @@ package pipeline
 
 
 type PipelineIngestionDefinition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/pipeline#connection_name Pipeline#connection_name}.
 	ConnectionName *string `field:"optional" json:"connectionName" yaml:"connectionName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}.
 	IngestionGatewayId *string `field:"optional" json:"ingestionGatewayId" yaml:"ingestionGatewayId"`
 	// objects block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/pipeline#objects Pipeline#objects}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/pipeline#objects Pipeline#objects}
 	Objects interface{} `field:"optional" json:"objects" yaml:"objects"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/pipeline#source_type Pipeline#source_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/pipeline#source_type Pipeline#source_type}.
 	SourceType *string `field:"optional" json:"sourceType" yaml:"sourceType"`
 	// table_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
 	TableConfiguration *PipelineIngestionDefinitionTableConfiguration `field:"optional" json:"tableConfiguration" yaml:"tableConfiguration"`
 }
 

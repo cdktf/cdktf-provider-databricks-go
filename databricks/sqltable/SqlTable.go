@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_table databricks_sql_table}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/sql_table databricks_sql_table}.
 type SqlTable interface {
 	cdktf.TerraformResource
 	CatalogName() *string
@@ -725,7 +725,7 @@ func (j *jsiiProxy_SqlTable) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_table databricks_sql_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/sql_table databricks_sql_table} Resource.
 func NewSqlTable(scope constructs.Construct, id *string, config *SqlTableConfig) SqlTable {
 	_init_.Initialize()
 
@@ -743,7 +743,7 @@ func NewSqlTable(scope constructs.Construct, id *string, config *SqlTableConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_table databricks_sql_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/sql_table databricks_sql_table} Resource.
 func NewSqlTable_Override(s SqlTable, scope constructs.Construct, id *string, config *SqlTableConfig) {
 	_init_.Initialize()
 
