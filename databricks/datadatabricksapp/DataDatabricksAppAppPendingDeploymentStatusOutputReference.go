@@ -5,9 +5,9 @@ package datadatabricksapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabricksapp/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

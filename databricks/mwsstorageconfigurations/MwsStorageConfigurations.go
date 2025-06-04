@@ -5,10 +5,10 @@ package mwsstorageconfigurations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/mwsstorageconfigurations/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/mwsstorageconfigurations/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
