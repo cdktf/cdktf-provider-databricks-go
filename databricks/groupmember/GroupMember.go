@@ -5,14 +5,14 @@ package groupmember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/groupmember/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/groupmember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/group_member databricks_group_member}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/group_member databricks_group_member}.
 type GroupMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_GroupMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/group_member databricks_group_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/group_member databricks_group_member} Resource.
 func NewGroupMember(scope constructs.Construct, id *string, config *GroupMemberConfig) GroupMember {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewGroupMember(scope constructs.Construct, id *string, config *GroupMemberC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/group_member databricks_group_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/group_member databricks_group_member} Resource.
 func NewGroupMember_Override(g GroupMember, scope constructs.Construct, id *string, config *GroupMemberConfig) {
 	_init_.Initialize()
 

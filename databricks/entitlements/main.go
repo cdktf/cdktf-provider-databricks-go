@@ -64,6 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetServicePrincipalId", GoMethod: "ResetServicePrincipalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUserId", GoMethod: "ResetUserId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceAccess", GoMethod: "ResetWorkspaceAccess"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceConsume", GoMethod: "ResetWorkspaceConsume"},
 			_jsii_.MemberProperty{JsiiProperty: "servicePrincipalId", GoGetter: "ServicePrincipalId"},
 			_jsii_.MemberProperty{JsiiProperty: "servicePrincipalIdInput", GoGetter: "ServicePrincipalIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -79,6 +80,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userIdInput", GoGetter: "UserIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceAccess", GoGetter: "WorkspaceAccess"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceAccessInput", GoGetter: "WorkspaceAccessInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceConsume", GoGetter: "WorkspaceConsume"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceConsumeInput", GoGetter: "WorkspaceConsumeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Entitlements{}

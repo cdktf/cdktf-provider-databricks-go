@@ -5,14 +5,14 @@ package serviceprincipal
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/serviceprincipal/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/serviceprincipal/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/service_principal databricks_service_principal}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/service_principal databricks_service_principal}.
 type ServicePrincipal interface {
 	cdktf.TerraformResource
 	AclPrincipalId() *string
@@ -109,6 +109,9 @@ type ServicePrincipal interface {
 	WorkspaceAccess() interface{}
 	SetWorkspaceAccess(val interface{})
 	WorkspaceAccessInput() interface{}
+	WorkspaceConsume() interface{}
+	SetWorkspaceConsume(val interface{})
+	WorkspaceConsumeInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -171,6 +174,7 @@ type ServicePrincipal interface {
 	ResetOverrideLogicalId()
 	ResetRepos()
 	ResetWorkspaceAccess()
+	ResetWorkspaceConsume()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -669,8 +673,28 @@ func (j *jsiiProxy_ServicePrincipal) WorkspaceAccessInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ServicePrincipal) WorkspaceConsume() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workspaceConsume",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/service_principal databricks_service_principal} Resource.
+func (j *jsiiProxy_ServicePrincipal) WorkspaceConsumeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workspaceConsumeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/service_principal databricks_service_principal} Resource.
 func NewServicePrincipal(scope constructs.Construct, id *string, config *ServicePrincipalConfig) ServicePrincipal {
 	_init_.Initialize()
 
@@ -688,7 +712,7 @@ func NewServicePrincipal(scope constructs.Construct, id *string, config *Service
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/service_principal databricks_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/service_principal databricks_service_principal} Resource.
 func NewServicePrincipal_Override(s ServicePrincipal, scope constructs.Construct, id *string, config *ServicePrincipalConfig) {
 	_init_.Initialize()
 
@@ -939,6 +963,17 @@ func (j *jsiiProxy_ServicePrincipal)SetWorkspaceAccess(val interface{}) {
 	_jsii_.Set(
 		j,
 		"workspaceAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicePrincipal)SetWorkspaceConsume(val interface{}) {
+	if err := j.validateSetWorkspaceConsumeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceConsume",
 		val,
 	)
 }
@@ -1428,6 +1463,14 @@ func (s *jsiiProxy_ServicePrincipal) ResetWorkspaceAccess() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetWorkspaceAccess",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicePrincipal) ResetWorkspaceConsume() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetWorkspaceConsume",
 		nil, // no parameters
 	)
 }

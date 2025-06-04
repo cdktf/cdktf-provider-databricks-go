@@ -5,14 +5,14 @@ package datadatabrickscatalogs
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickscatalogs/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabrickscatalogs/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/catalogs databricks_catalogs}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/catalogs databricks_catalogs}.
 type DataDatabricksCatalogs interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -289,7 +289,7 @@ func (j *jsiiProxy_DataDatabricksCatalogs) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/catalogs databricks_catalogs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/catalogs databricks_catalogs} Data Source.
 func NewDataDatabricksCatalogs(scope constructs.Construct, id *string, config *DataDatabricksCatalogsConfig) DataDatabricksCatalogs {
 	_init_.Initialize()
 
@@ -307,7 +307,7 @@ func NewDataDatabricksCatalogs(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/catalogs databricks_catalogs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/catalogs databricks_catalogs} Data Source.
 func NewDataDatabricksCatalogs_Override(d DataDatabricksCatalogs, scope constructs.Construct, id *string, config *DataDatabricksCatalogsConfig) {
 	_init_.Initialize()
 

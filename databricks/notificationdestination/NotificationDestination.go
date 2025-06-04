@@ -5,14 +5,14 @@ package notificationdestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/notificationdestination/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/notification_destination databricks_notification_destination}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/notification_destination databricks_notification_destination}.
 type NotificationDestination interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_NotificationDestination) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/notification_destination databricks_notification_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/notification_destination databricks_notification_destination} Resource.
 func NewNotificationDestination(scope constructs.Construct, id *string, config *NotificationDestinationConfig) NotificationDestination {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewNotificationDestination(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/notification_destination databricks_notification_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/notification_destination databricks_notification_destination} Resource.
 func NewNotificationDestination_Override(n NotificationDestination, scope constructs.Construct, id *string, config *NotificationDestinationConfig) {
 	_init_.Initialize()
 

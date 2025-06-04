@@ -5,14 +5,14 @@ package repo
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/repo/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/repo/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/repo databricks_repo}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/repo databricks_repo}.
 type Repo interface {
 	cdktf.TerraformResource
 	Branch() *string
@@ -488,7 +488,7 @@ func (j *jsiiProxy_Repo) WorkspacePath() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/repo databricks_repo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/repo databricks_repo} Resource.
 func NewRepo(scope constructs.Construct, id *string, config *RepoConfig) Repo {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewRepo(scope constructs.Construct, id *string, config *RepoConfig) Repo {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/repo databricks_repo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/repo databricks_repo} Resource.
 func NewRepo_Override(r Repo, scope constructs.Construct, id *string, config *RepoConfig) {
 	_init_.Initialize()
 

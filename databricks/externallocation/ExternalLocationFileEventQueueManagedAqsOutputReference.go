@@ -5,9 +5,9 @@ package externallocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/externallocation/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,8 +33,6 @@ type ExternalLocationFileEventQueueManagedAqsOutputReference interface {
 	InternalValue() *ExternalLocationFileEventQueueManagedAqs
 	SetInternalValue(val *ExternalLocationFileEventQueueManagedAqs)
 	ManagedResourceId() *string
-	SetManagedResourceId(val *string)
-	ManagedResourceIdInput() *string
 	QueueUrl() *string
 	SetQueueUrl(val *string)
 	QueueUrlInput() *string
@@ -76,10 +74,7 @@ type ExternalLocationFileEventQueueManagedAqsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetManagedResourceId()
 	ResetQueueUrl()
-	ResetResourceGroup()
-	ResetSubscriptionId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -150,16 +145,6 @@ func (j *jsiiProxy_ExternalLocationFileEventQueueManagedAqsOutputReference) Mana
 	_jsii_.Get(
 		j,
 		"managedResourceId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ExternalLocationFileEventQueueManagedAqsOutputReference) ManagedResourceIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"managedResourceIdInput",
 		&returns,
 	)
 	return returns
@@ -302,17 +287,6 @@ func (j *jsiiProxy_ExternalLocationFileEventQueueManagedAqsOutputReference)SetIn
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ExternalLocationFileEventQueueManagedAqsOutputReference)SetManagedResourceId(val *string) {
-	if err := j.validateSetManagedResourceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"managedResourceId",
 		val,
 	)
 }
@@ -558,34 +532,10 @@ func (e *jsiiProxy_ExternalLocationFileEventQueueManagedAqsOutputReference) Inte
 	return returns
 }
 
-func (e *jsiiProxy_ExternalLocationFileEventQueueManagedAqsOutputReference) ResetManagedResourceId() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetManagedResourceId",
-		nil, // no parameters
-	)
-}
-
 func (e *jsiiProxy_ExternalLocationFileEventQueueManagedAqsOutputReference) ResetQueueUrl() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetQueueUrl",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_ExternalLocationFileEventQueueManagedAqsOutputReference) ResetResourceGroup() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetResourceGroup",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_ExternalLocationFileEventQueueManagedAqsOutputReference) ResetSubscriptionId() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetSubscriptionId",
 		nil, // no parameters
 	)
 }

@@ -63,10 +63,6 @@ func (j *jsiiProxy_ExternalLocationFileEventQueueProvidedPubsubOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ExternalLocationFileEventQueueProvidedPubsubOutputReference) validateSetManagedResourceIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ExternalLocationFileEventQueueProvidedPubsubOutputReference) validateSetSubscriptionNameParameters(val *string) error {
 	return nil
 }

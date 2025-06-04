@@ -5,14 +5,14 @@ package automaticclusterupdateworkspacesetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/automaticclusterupdateworkspacesetting/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/automaticclusterupdateworkspacesetting/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting}.
 type AutomaticClusterUpdateWorkspaceSetting interface {
 	cdktf.TerraformResource
 	AutomaticClusterUpdateWorkspace() AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceOutputReference
@@ -381,7 +381,7 @@ func (j *jsiiProxy_AutomaticClusterUpdateWorkspaceSetting) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting} Resource.
 func NewAutomaticClusterUpdateWorkspaceSetting(scope constructs.Construct, id *string, config *AutomaticClusterUpdateWorkspaceSettingConfig) AutomaticClusterUpdateWorkspaceSetting {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewAutomaticClusterUpdateWorkspaceSetting(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting} Resource.
 func NewAutomaticClusterUpdateWorkspaceSetting_Override(a AutomaticClusterUpdateWorkspaceSetting, scope constructs.Construct, id *string, config *AutomaticClusterUpdateWorkspaceSettingConfig) {
 	_init_.Initialize()
 

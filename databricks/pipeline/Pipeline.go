@@ -5,14 +5,14 @@ package pipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/pipeline/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/pipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/pipeline databricks_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/pipeline databricks_pipeline}.
 type Pipeline interface {
 	cdktf.TerraformResource
 	AllowDuplicateNames() interface{}
@@ -1198,7 +1198,7 @@ func (j *jsiiProxy_Pipeline) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig) Pipeline {
 	_init_.Initialize()
 
@@ -1216,7 +1216,7 @@ func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline_Override(p Pipeline, scope constructs.Construct, id *string, config *PipelineConfig) {
 	_init_.Initialize()
 

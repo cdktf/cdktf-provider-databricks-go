@@ -5,14 +5,14 @@ package recipientfederationpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/recipientfederationpolicy/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/recipientfederationpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/recipient_federation_policy databricks_recipient_federation_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/recipient_federation_policy databricks_recipient_federation_policy}.
 type RecipientFederationPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_RecipientFederationPolicy) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/recipient_federation_policy databricks_recipient_federation_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/recipient_federation_policy databricks_recipient_federation_policy} Resource.
 func NewRecipientFederationPolicy(scope constructs.Construct, id *string, config *RecipientFederationPolicyConfig) RecipientFederationPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewRecipientFederationPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/recipient_federation_policy databricks_recipient_federation_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/recipient_federation_policy databricks_recipient_federation_policy} Resource.
 func NewRecipientFederationPolicy_Override(r RecipientFederationPolicy, scope constructs.Construct, id *string, config *RecipientFederationPolicyConfig) {
 	_init_.Initialize()
 

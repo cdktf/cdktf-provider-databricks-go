@@ -5,14 +5,14 @@ package aibidashboardembeddingapproveddomainssetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/aibidashboardembeddingapproveddomainssetting/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/aibidashboardembeddingapproveddomainssetting/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/aibi_dashboard_embedding_approved_domains_setting databricks_aibi_dashboard_embedding_approved_domains_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/aibi_dashboard_embedding_approved_domains_setting databricks_aibi_dashboard_embedding_approved_domains_setting}.
 type AibiDashboardEmbeddingApprovedDomainsSetting interface {
 	cdktf.TerraformResource
 	AibiDashboardEmbeddingApprovedDomains() AibiDashboardEmbeddingApprovedDomainsSettingAibiDashboardEmbeddingApprovedDomainsOutputReference
@@ -381,7 +381,7 @@ func (j *jsiiProxy_AibiDashboardEmbeddingApprovedDomainsSetting) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/aibi_dashboard_embedding_approved_domains_setting databricks_aibi_dashboard_embedding_approved_domains_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/aibi_dashboard_embedding_approved_domains_setting databricks_aibi_dashboard_embedding_approved_domains_setting} Resource.
 func NewAibiDashboardEmbeddingApprovedDomainsSetting(scope constructs.Construct, id *string, config *AibiDashboardEmbeddingApprovedDomainsSettingConfig) AibiDashboardEmbeddingApprovedDomainsSetting {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewAibiDashboardEmbeddingApprovedDomainsSetting(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/aibi_dashboard_embedding_approved_domains_setting databricks_aibi_dashboard_embedding_approved_domains_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/aibi_dashboard_embedding_approved_domains_setting databricks_aibi_dashboard_embedding_approved_domains_setting} Resource.
 func NewAibiDashboardEmbeddingApprovedDomainsSetting_Override(a AibiDashboardEmbeddingApprovedDomainsSetting, scope constructs.Construct, id *string, config *AibiDashboardEmbeddingApprovedDomainsSettingConfig) {
 	_init_.Initialize()
 

@@ -63,10 +63,6 @@ func (j *jsiiProxy_ExternalLocationFileEventQueueManagedSqsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ExternalLocationFileEventQueueManagedSqsOutputReference) validateSetManagedResourceIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ExternalLocationFileEventQueueManagedSqsOutputReference) validateSetQueueUrlParameters(val *string) error {
 	return nil
 }

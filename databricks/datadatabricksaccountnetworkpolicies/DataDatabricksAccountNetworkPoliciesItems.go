@@ -5,11 +5,11 @@ package datadatabricksaccountnetworkpolicies
 
 
 type DataDatabricksAccountNetworkPoliciesItems struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/account_network_policies#account_id DataDatabricksAccountNetworkPolicies#account_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/account_network_policies#account_id DataDatabricksAccountNetworkPolicies#account_id}.
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/account_network_policies#egress DataDatabricksAccountNetworkPolicies#egress}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/account_network_policies#egress DataDatabricksAccountNetworkPolicies#egress}.
 	Egress *DataDatabricksAccountNetworkPoliciesItemsEgress `field:"optional" json:"egress" yaml:"egress"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/account_network_policies#network_policy_id DataDatabricksAccountNetworkPolicies#network_policy_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/account_network_policies#network_policy_id DataDatabricksAccountNetworkPolicies#network_policy_id}.
 	NetworkPolicyId *string `field:"optional" json:"networkPolicyId" yaml:"networkPolicyId"`
 }
 

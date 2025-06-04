@@ -5,9 +5,9 @@ package pipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/pipeline/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/pipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -67,7 +67,6 @@ type PipelineLibraryGlobOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetInclude()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -451,14 +450,6 @@ func (p *jsiiProxy_PipelineLibraryGlobOutputReference) InterpolationForAttribute
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PipelineLibraryGlobOutputReference) ResetInclude() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetInclude",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PipelineLibraryGlobOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

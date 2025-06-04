@@ -89,6 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRepos", GoMethod: "ResetRepos"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceAccess", GoMethod: "ResetWorkspaceAccess"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceConsume", GoMethod: "ResetWorkspaceConsume"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -102,6 +103,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userNameInput", GoGetter: "UserNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceAccess", GoGetter: "WorkspaceAccess"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceAccessInput", GoGetter: "WorkspaceAccessInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceConsume", GoGetter: "WorkspaceConsume"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceConsumeInput", GoGetter: "WorkspaceConsumeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_User{}

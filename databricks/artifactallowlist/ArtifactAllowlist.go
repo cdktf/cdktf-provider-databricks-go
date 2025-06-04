@@ -5,14 +5,14 @@ package artifactallowlist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/artifactallowlist/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/artifactallowlist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/artifact_allowlist databricks_artifact_allowlist}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/artifact_allowlist databricks_artifact_allowlist}.
 type ArtifactAllowlist interface {
 	cdktf.TerraformResource
 	ArtifactMatcher() ArtifactAllowlistArtifactMatcherList
@@ -428,7 +428,7 @@ func (j *jsiiProxy_ArtifactAllowlist) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/artifact_allowlist databricks_artifact_allowlist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/artifact_allowlist databricks_artifact_allowlist} Resource.
 func NewArtifactAllowlist(scope constructs.Construct, id *string, config *ArtifactAllowlistConfig) ArtifactAllowlist {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewArtifactAllowlist(scope constructs.Construct, id *string, config *Artifa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/artifact_allowlist databricks_artifact_allowlist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/artifact_allowlist databricks_artifact_allowlist} Resource.
 func NewArtifactAllowlist_Override(a ArtifactAllowlist, scope constructs.Construct, id *string, config *ArtifactAllowlistConfig) {
 	_init_.Initialize()
 

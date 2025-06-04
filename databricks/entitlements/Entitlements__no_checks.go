@@ -139,6 +139,10 @@ func (j *jsiiProxy_Entitlements) validateSetWorkspaceAccessParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_Entitlements) validateSetWorkspaceConsumeParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewEntitlementsParameters(scope constructs.Construct, id *string, config *EntitlementsConfig) error {
 	return nil
 }

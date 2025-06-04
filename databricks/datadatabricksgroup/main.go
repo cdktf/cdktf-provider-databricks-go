@@ -76,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetServicePrincipals", GoMethod: "ResetServicePrincipals"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUsers", GoMethod: "ResetUsers"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceAccess", GoMethod: "ResetWorkspaceAccess"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceConsume", GoMethod: "ResetWorkspaceConsume"},
 			_jsii_.MemberProperty{JsiiProperty: "servicePrincipals", GoGetter: "ServicePrincipals"},
 			_jsii_.MemberProperty{JsiiProperty: "servicePrincipalsInput", GoGetter: "ServicePrincipalsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -91,6 +92,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usersInput", GoGetter: "UsersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceAccess", GoGetter: "WorkspaceAccess"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceAccessInput", GoGetter: "WorkspaceAccessInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceConsume", GoGetter: "WorkspaceConsume"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceConsumeInput", GoGetter: "WorkspaceConsumeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksGroup{}

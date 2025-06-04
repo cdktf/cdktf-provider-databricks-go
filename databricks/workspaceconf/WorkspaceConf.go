@@ -5,14 +5,14 @@ package workspaceconf
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/workspaceconf/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/workspaceconf/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/workspace_conf databricks_workspace_conf}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/workspace_conf databricks_workspace_conf}.
 type WorkspaceConf interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -334,7 +334,7 @@ func (j *jsiiProxy_WorkspaceConf) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/workspace_conf databricks_workspace_conf} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/workspace_conf databricks_workspace_conf} Resource.
 func NewWorkspaceConf(scope constructs.Construct, id *string, config *WorkspaceConfConfig) WorkspaceConf {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewWorkspaceConf(scope constructs.Construct, id *string, config *WorkspaceC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/workspace_conf databricks_workspace_conf} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/workspace_conf databricks_workspace_conf} Resource.
 func NewWorkspaceConf_Override(w WorkspaceConf, scope constructs.Construct, id *string, config *WorkspaceConfConfig) {
 	_init_.Initialize()
 

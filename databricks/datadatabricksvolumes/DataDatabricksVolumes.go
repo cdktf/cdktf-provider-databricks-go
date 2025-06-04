@@ -5,14 +5,14 @@ package datadatabricksvolumes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumes/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabricksvolumes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/volumes databricks_volumes}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/volumes databricks_volumes}.
 type DataDatabricksVolumes interface {
 	cdktf.TerraformDataSource
 	CatalogName() *string
@@ -311,7 +311,7 @@ func (j *jsiiProxy_DataDatabricksVolumes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/volumes databricks_volumes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/volumes databricks_volumes} Data Source.
 func NewDataDatabricksVolumes(scope constructs.Construct, id *string, config *DataDatabricksVolumesConfig) DataDatabricksVolumes {
 	_init_.Initialize()
 
@@ -329,7 +329,7 @@ func NewDataDatabricksVolumes(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/volumes databricks_volumes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/volumes databricks_volumes} Data Source.
 func NewDataDatabricksVolumes_Override(d DataDatabricksVolumes, scope constructs.Construct, id *string, config *DataDatabricksVolumesConfig) {
 	_init_.Initialize()
 

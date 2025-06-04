@@ -5,14 +5,14 @@ package mwsvpcendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsvpcendpoint/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/mwsvpcendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint}.
 type MwsVpcEndpoint interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -549,7 +549,7 @@ func (j *jsiiProxy_MwsVpcEndpoint) VpcEndpointNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint} Resource.
 func NewMwsVpcEndpoint(scope constructs.Construct, id *string, config *MwsVpcEndpointConfig) MwsVpcEndpoint {
 	_init_.Initialize()
 
@@ -567,7 +567,7 @@ func NewMwsVpcEndpoint(scope constructs.Construct, id *string, config *MwsVpcEnd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint} Resource.
 func NewMwsVpcEndpoint_Override(m MwsVpcEndpoint, scope constructs.Construct, id *string, config *MwsVpcEndpointConfig) {
 	_init_.Initialize()
 

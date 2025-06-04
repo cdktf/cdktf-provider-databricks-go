@@ -5,14 +5,14 @@ package secret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/secret/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/secret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/secret databricks_secret}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/secret databricks_secret}.
 type Secret interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_Secret) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/secret databricks_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/secret databricks_secret} Resource.
 func NewSecret(scope constructs.Construct, id *string, config *SecretConfig) Secret {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewSecret(scope constructs.Construct, id *string, config *SecretConfig) Sec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/secret databricks_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/secret databricks_secret} Resource.
 func NewSecret_Override(s Secret, scope constructs.Construct, id *string, config *SecretConfig) {
 	_init_.Initialize()
 

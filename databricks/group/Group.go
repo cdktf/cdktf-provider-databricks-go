@@ -5,14 +5,14 @@ package group
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/group/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/group/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/group databricks_group}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/group databricks_group}.
 type Group interface {
 	cdktf.TerraformResource
 	AclPrincipalId() *string
@@ -91,6 +91,9 @@ type Group interface {
 	WorkspaceAccess() interface{}
 	SetWorkspaceAccess(val interface{})
 	WorkspaceAccessInput() interface{}
+	WorkspaceConsume() interface{}
+	SetWorkspaceConsume(val interface{})
+	WorkspaceConsumeInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -146,6 +149,7 @@ type Group interface {
 	ResetOverrideLogicalId()
 	ResetUrl()
 	ResetWorkspaceAccess()
+	ResetWorkspaceConsume()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -524,8 +528,28 @@ func (j *jsiiProxy_Group) WorkspaceAccessInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Group) WorkspaceConsume() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workspaceConsume",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/group databricks_group} Resource.
+func (j *jsiiProxy_Group) WorkspaceConsumeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workspaceConsumeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/group databricks_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
 	_init_.Initialize()
 
@@ -543,7 +567,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/group databricks_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/group databricks_group} Resource.
 func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *GroupConfig) {
 	_init_.Initialize()
 
@@ -728,6 +752,17 @@ func (j *jsiiProxy_Group)SetWorkspaceAccess(val interface{}) {
 	_jsii_.Set(
 		j,
 		"workspaceAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetWorkspaceConsume(val interface{}) {
+	if err := j.validateSetWorkspaceConsumeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceConsume",
 		val,
 	)
 }
@@ -1161,6 +1196,14 @@ func (g *jsiiProxy_Group) ResetWorkspaceAccess() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetWorkspaceAccess",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetWorkspaceConsume() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWorkspaceConsume",
 		nil, // no parameters
 	)
 }

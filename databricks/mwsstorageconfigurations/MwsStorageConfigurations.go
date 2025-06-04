@@ -5,14 +5,14 @@ package mwsstorageconfigurations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsstorageconfigurations/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/mwsstorageconfigurations/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/mws_storage_configurations databricks_mws_storage_configurations}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations}.
 type MwsStorageConfigurations interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -401,7 +401,7 @@ func (j *jsiiProxy_MwsStorageConfigurations) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/mws_storage_configurations databricks_mws_storage_configurations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations} Resource.
 func NewMwsStorageConfigurations(scope constructs.Construct, id *string, config *MwsStorageConfigurationsConfig) MwsStorageConfigurations {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewMwsStorageConfigurations(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/mws_storage_configurations databricks_mws_storage_configurations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations} Resource.
 func NewMwsStorageConfigurations_Override(m MwsStorageConfigurations, scope constructs.Construct, id *string, config *MwsStorageConfigurationsConfig) {
 	_init_.Initialize()
 

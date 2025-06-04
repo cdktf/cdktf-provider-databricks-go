@@ -5,14 +5,14 @@ package mwsnetworkconnectivityconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsnetworkconnectivityconfig/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/mwsnetworkconnectivityconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config}.
 type MwsNetworkConnectivityConfig interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -476,7 +476,7 @@ func (j *jsiiProxy_MwsNetworkConnectivityConfig) UpdatedTimeInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Resource.
 func NewMwsNetworkConnectivityConfig(scope constructs.Construct, id *string, config *MwsNetworkConnectivityConfigConfig) MwsNetworkConnectivityConfig {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewMwsNetworkConnectivityConfig(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Resource.
 func NewMwsNetworkConnectivityConfig_Override(m MwsNetworkConnectivityConfig, scope constructs.Construct, id *string, config *MwsNetworkConnectivityConfigConfig) {
 	_init_.Initialize()
 

@@ -139,6 +139,10 @@ func (j *jsiiProxy_DataDatabricksGroup) validateSetWorkspaceAccessParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksGroup) validateSetWorkspaceConsumeParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewDataDatabricksGroupParameters(scope constructs.Construct, id *string, config *DataDatabricksGroupConfig) error {
 	return nil
 }

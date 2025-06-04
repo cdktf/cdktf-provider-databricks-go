@@ -5,14 +5,14 @@ package user
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/user/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/user/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/user databricks_user}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/user databricks_user}.
 type User interface {
 	cdktf.TerraformResource
 	AclPrincipalId() *string
@@ -109,6 +109,9 @@ type User interface {
 	WorkspaceAccess() interface{}
 	SetWorkspaceAccess(val interface{})
 	WorkspaceAccessInput() interface{}
+	WorkspaceConsume() interface{}
+	SetWorkspaceConsume(val interface{})
+	WorkspaceConsumeInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -170,6 +173,7 @@ type User interface {
 	ResetOverrideLogicalId()
 	ResetRepos()
 	ResetWorkspaceAccess()
+	ResetWorkspaceConsume()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -668,8 +672,28 @@ func (j *jsiiProxy_User) WorkspaceAccessInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_User) WorkspaceConsume() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workspaceConsume",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/user databricks_user} Resource.
+func (j *jsiiProxy_User) WorkspaceConsumeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workspaceConsumeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/user databricks_user} Resource.
 func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	_init_.Initialize()
 
@@ -687,7 +711,7 @@ func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/user databricks_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/user databricks_user} Resource.
 func NewUser_Override(u User, scope constructs.Construct, id *string, config *UserConfig) {
 	_init_.Initialize()
 
@@ -938,6 +962,17 @@ func (j *jsiiProxy_User)SetWorkspaceAccess(val interface{}) {
 	_jsii_.Set(
 		j,
 		"workspaceAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_User)SetWorkspaceConsume(val interface{}) {
+	if err := j.validateSetWorkspaceConsumeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceConsume",
 		val,
 	)
 }
@@ -1419,6 +1454,14 @@ func (u *jsiiProxy_User) ResetWorkspaceAccess() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetWorkspaceAccess",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_User) ResetWorkspaceConsume() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetWorkspaceConsume",
 		nil, // no parameters
 	)
 }

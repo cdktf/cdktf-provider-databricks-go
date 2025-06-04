@@ -5,14 +5,14 @@ package entitlements
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/entitlements/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/entitlements/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/entitlements databricks_entitlements}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/entitlements databricks_entitlements}.
 type Entitlements interface {
 	cdktf.TerraformResource
 	AllowClusterCreate() interface{}
@@ -85,6 +85,9 @@ type Entitlements interface {
 	WorkspaceAccess() interface{}
 	SetWorkspaceAccess(val interface{})
 	WorkspaceAccessInput() interface{}
+	WorkspaceConsume() interface{}
+	SetWorkspaceConsume(val interface{})
+	WorkspaceConsumeInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -139,6 +142,7 @@ type Entitlements interface {
 	ResetServicePrincipalId()
 	ResetUserId()
 	ResetWorkspaceAccess()
+	ResetWorkspaceConsume()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -477,8 +481,28 @@ func (j *jsiiProxy_Entitlements) WorkspaceAccessInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Entitlements) WorkspaceConsume() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workspaceConsume",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/entitlements databricks_entitlements} Resource.
+func (j *jsiiProxy_Entitlements) WorkspaceConsumeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workspaceConsumeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/entitlements databricks_entitlements} Resource.
 func NewEntitlements(scope constructs.Construct, id *string, config *EntitlementsConfig) Entitlements {
 	_init_.Initialize()
 
@@ -496,7 +520,7 @@ func NewEntitlements(scope constructs.Construct, id *string, config *Entitlement
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/entitlements databricks_entitlements} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/entitlements databricks_entitlements} Resource.
 func NewEntitlements_Override(e Entitlements, scope constructs.Construct, id *string, config *EntitlementsConfig) {
 	_init_.Initialize()
 
@@ -659,6 +683,17 @@ func (j *jsiiProxy_Entitlements)SetWorkspaceAccess(val interface{}) {
 	_jsii_.Set(
 		j,
 		"workspaceAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Entitlements)SetWorkspaceConsume(val interface{}) {
+	if err := j.validateSetWorkspaceConsumeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceConsume",
 		val,
 	)
 }
@@ -1084,6 +1119,14 @@ func (e *jsiiProxy_Entitlements) ResetWorkspaceAccess() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetWorkspaceAccess",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Entitlements) ResetWorkspaceConsume() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetWorkspaceConsume",
 		nil, // no parameters
 	)
 }

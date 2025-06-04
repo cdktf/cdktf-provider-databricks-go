@@ -5,14 +5,14 @@ package disablelegacyfeaturessetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/disablelegacyfeaturessetting/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/disablelegacyfeaturessetting/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting}.
 type DisableLegacyFeaturesSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DisableLegacyFeaturesSetting) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource.
 func NewDisableLegacyFeaturesSetting(scope constructs.Construct, id *string, config *DisableLegacyFeaturesSettingConfig) DisableLegacyFeaturesSetting {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDisableLegacyFeaturesSetting(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource.
 func NewDisableLegacyFeaturesSetting_Override(d DisableLegacyFeaturesSetting, scope constructs.Construct, id *string, config *DisableLegacyFeaturesSettingConfig) {
 	_init_.Initialize()
 

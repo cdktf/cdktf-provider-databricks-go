@@ -147,6 +147,10 @@ func (j *jsiiProxy_Group) validateSetWorkspaceAccessParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetWorkspaceConsumeParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewGroupParameters(scope constructs.Construct, id *string, config *GroupConfig) error {
 	return nil
 }

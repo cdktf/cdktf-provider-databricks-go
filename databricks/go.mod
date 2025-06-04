@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-databricks-go/databricks/v13
+module github.com/cdktf/cdktf-provider-databricks-go/databricks/v14
 
 go 1.18
 

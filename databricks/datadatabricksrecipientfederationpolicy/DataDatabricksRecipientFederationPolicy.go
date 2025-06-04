@@ -5,14 +5,14 @@ package datadatabricksrecipientfederationpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksrecipientfederationpolicy/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabricksrecipientfederationpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/recipient_federation_policy databricks_recipient_federation_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/recipient_federation_policy databricks_recipient_federation_policy}.
 type DataDatabricksRecipientFederationPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataDatabricksRecipientFederationPolicy) UpdateTime() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/recipient_federation_policy databricks_recipient_federation_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/recipient_federation_policy databricks_recipient_federation_policy} Data Source.
 func NewDataDatabricksRecipientFederationPolicy(scope constructs.Construct, id *string, config *DataDatabricksRecipientFederationPolicyConfig) DataDatabricksRecipientFederationPolicy {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataDatabricksRecipientFederationPolicy(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/recipient_federation_policy databricks_recipient_federation_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/recipient_federation_policy databricks_recipient_federation_policy} Data Source.
 func NewDataDatabricksRecipientFederationPolicy_Override(d DataDatabricksRecipientFederationPolicy, scope constructs.Construct, id *string, config *DataDatabricksRecipientFederationPolicyConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package aibidashboardembeddingaccesspolicysetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/aibidashboardembeddingaccesspolicysetting/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/aibidashboardembeddingaccesspolicysetting/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/aibi_dashboard_embedding_access_policy_setting databricks_aibi_dashboard_embedding_access_policy_setting}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/aibi_dashboard_embedding_access_policy_setting databricks_aibi_dashboard_embedding_access_policy_setting}.
 type AibiDashboardEmbeddingAccessPolicySetting interface {
 	cdktf.TerraformResource
 	AibiDashboardEmbeddingAccessPolicy() AibiDashboardEmbeddingAccessPolicySettingAibiDashboardEmbeddingAccessPolicyOutputReference
@@ -381,7 +381,7 @@ func (j *jsiiProxy_AibiDashboardEmbeddingAccessPolicySetting) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/aibi_dashboard_embedding_access_policy_setting databricks_aibi_dashboard_embedding_access_policy_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/aibi_dashboard_embedding_access_policy_setting databricks_aibi_dashboard_embedding_access_policy_setting} Resource.
 func NewAibiDashboardEmbeddingAccessPolicySetting(scope constructs.Construct, id *string, config *AibiDashboardEmbeddingAccessPolicySettingConfig) AibiDashboardEmbeddingAccessPolicySetting {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewAibiDashboardEmbeddingAccessPolicySetting(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/aibi_dashboard_embedding_access_policy_setting databricks_aibi_dashboard_embedding_access_policy_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/aibi_dashboard_embedding_access_policy_setting databricks_aibi_dashboard_embedding_access_policy_setting} Resource.
 func NewAibiDashboardEmbeddingAccessPolicySetting_Override(a AibiDashboardEmbeddingAccessPolicySetting, scope constructs.Construct, id *string, config *AibiDashboardEmbeddingAccessPolicySettingConfig) {
 	_init_.Initialize()
 

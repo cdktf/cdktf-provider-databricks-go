@@ -174,14 +174,6 @@ func (j *jsiiProxy_ExternalLocationFileEventQueueManagedAqsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ExternalLocationFileEventQueueManagedAqsOutputReference) validateSetManagedResourceIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ExternalLocationFileEventQueueManagedAqsOutputReference) validateSetQueueUrlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

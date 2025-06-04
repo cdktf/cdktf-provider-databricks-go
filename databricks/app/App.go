@@ -5,14 +5,14 @@ package app
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/app/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/app/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/app databricks_app}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/app databricks_app}.
 type App interface {
 	cdktf.TerraformResource
 	ActiveDeployment() AppActiveDeploymentOutputReference
@@ -627,7 +627,7 @@ func (j *jsiiProxy_App) UserApiScopesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/app databricks_app} Resource.
 func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	_init_.Initialize()
 
@@ -645,7 +645,7 @@ func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/app databricks_app} Resource.
 func NewApp_Override(a App, scope constructs.Construct, id *string, config *AppConfig) {
 	_init_.Initialize()
 

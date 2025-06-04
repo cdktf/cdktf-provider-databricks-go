@@ -171,6 +171,10 @@ func (j *jsiiProxy_User) validateSetWorkspaceAccessParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_User) validateSetWorkspaceConsumeParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewUserParameters(scope constructs.Construct, id *string, config *UserConfig) error {
 	return nil
 }

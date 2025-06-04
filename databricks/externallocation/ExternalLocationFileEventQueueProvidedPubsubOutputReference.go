@@ -5,9 +5,9 @@ package externallocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/externallocation/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,8 +33,6 @@ type ExternalLocationFileEventQueueProvidedPubsubOutputReference interface {
 	InternalValue() *ExternalLocationFileEventQueueProvidedPubsub
 	SetInternalValue(val *ExternalLocationFileEventQueueProvidedPubsub)
 	ManagedResourceId() *string
-	SetManagedResourceId(val *string)
-	ManagedResourceIdInput() *string
 	SubscriptionName() *string
 	SetSubscriptionName(val *string)
 	SubscriptionNameInput() *string
@@ -70,8 +68,6 @@ type ExternalLocationFileEventQueueProvidedPubsubOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetManagedResourceId()
-	ResetSubscriptionName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -142,16 +138,6 @@ func (j *jsiiProxy_ExternalLocationFileEventQueueProvidedPubsubOutputReference) 
 	_jsii_.Get(
 		j,
 		"managedResourceId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ExternalLocationFileEventQueueProvidedPubsubOutputReference) ManagedResourceIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"managedResourceIdInput",
 		&returns,
 	)
 	return returns
@@ -254,17 +240,6 @@ func (j *jsiiProxy_ExternalLocationFileEventQueueProvidedPubsubOutputReference)S
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ExternalLocationFileEventQueueProvidedPubsubOutputReference)SetManagedResourceId(val *string) {
-	if err := j.validateSetManagedResourceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"managedResourceId",
 		val,
 	)
 }
@@ -486,22 +461,6 @@ func (e *jsiiProxy_ExternalLocationFileEventQueueProvidedPubsubOutputReference) 
 	)
 
 	return returns
-}
-
-func (e *jsiiProxy_ExternalLocationFileEventQueueProvidedPubsubOutputReference) ResetManagedResourceId() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetManagedResourceId",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_ExternalLocationFileEventQueueProvidedPubsubOutputReference) ResetSubscriptionName() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetSubscriptionName",
-		nil, // no parameters
-	)
 }
 
 func (e *jsiiProxy_ExternalLocationFileEventQueueProvidedPubsubOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

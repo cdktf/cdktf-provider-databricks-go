@@ -5,14 +5,14 @@ package datadatabricksdashboards
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksdashboards/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabricksdashboards/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/dashboards databricks_dashboards}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/dashboards databricks_dashboards}.
 type DataDatabricksDashboards interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataDatabricksDashboards) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/dashboards databricks_dashboards} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/dashboards databricks_dashboards} Data Source.
 func NewDataDatabricksDashboards(scope constructs.Construct, id *string, config *DataDatabricksDashboardsConfig) DataDatabricksDashboards {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataDatabricksDashboards(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/dashboards databricks_dashboards} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/dashboards databricks_dashboards} Data Source.
 func NewDataDatabricksDashboards_Override(d DataDatabricksDashboards, scope constructs.Construct, id *string, config *DataDatabricksDashboardsConfig) {
 	_init_.Initialize()
 

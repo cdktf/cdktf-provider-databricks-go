@@ -5,14 +5,14 @@ package databaseinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/databaseinstance/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/databaseinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/database_instance databricks_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/database_instance databricks_database_instance}.
 type DatabaseInstance interface {
 	cdktf.TerraformResource
 	AdminPassword() *string
@@ -471,7 +471,7 @@ func (j *jsiiProxy_DatabaseInstance) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/database_instance databricks_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/database_instance databricks_database_instance} Resource.
 func NewDatabaseInstance(scope constructs.Construct, id *string, config *DatabaseInstanceConfig) DatabaseInstance {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewDatabaseInstance(scope constructs.Construct, id *string, config *Databas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/database_instance databricks_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/database_instance databricks_database_instance} Resource.
 func NewDatabaseInstance_Override(d DatabaseInstance, scope constructs.Construct, id *string, config *DatabaseInstanceConfig) {
 	_init_.Initialize()
 

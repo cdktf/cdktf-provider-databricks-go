@@ -171,6 +171,10 @@ func (j *jsiiProxy_ServicePrincipal) validateSetWorkspaceAccessParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipal) validateSetWorkspaceConsumeParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewServicePrincipalParameters(scope constructs.Construct, id *string, config *ServicePrincipalConfig) error {
 	return nil
 }

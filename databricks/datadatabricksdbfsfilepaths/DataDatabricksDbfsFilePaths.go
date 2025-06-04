@@ -5,14 +5,14 @@ package datadatabricksdbfsfilepaths
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksdbfsfilepaths/internal"
+	"github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabricksdbfsfilepaths/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/dbfs_file_paths databricks_dbfs_file_paths}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/dbfs_file_paths databricks_dbfs_file_paths}.
 type DataDatabricksDbfsFilePaths interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataDatabricksDbfsFilePaths) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/dbfs_file_paths databricks_dbfs_file_paths} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/dbfs_file_paths databricks_dbfs_file_paths} Data Source.
 func NewDataDatabricksDbfsFilePaths(scope constructs.Construct, id *string, config *DataDatabricksDbfsFilePathsConfig) DataDatabricksDbfsFilePaths {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataDatabricksDbfsFilePaths(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/dbfs_file_paths databricks_dbfs_file_paths} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/dbfs_file_paths databricks_dbfs_file_paths} Data Source.
 func NewDataDatabricksDbfsFilePaths_Override(d DataDatabricksDbfsFilePaths, scope constructs.Construct, id *string, config *DataDatabricksDbfsFilePathsConfig) {
 	_init_.Initialize()
 
