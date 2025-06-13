@@ -13,6 +13,8 @@ import (
 
 type MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference interface {
 	cdktf.ComplexObject
+	AwsPrivateEndpointRules() MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesList
+	AwsPrivateEndpointRulesInput() interface{}
 	AzurePrivateEndpointRules() MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesList
 	AzurePrivateEndpointRulesInput() interface{}
 	// the index of the complex object in a list.
@@ -66,7 +68,9 @@ type MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAwsPrivateEndpointRules(value interface{})
 	PutAzurePrivateEndpointRules(value interface{})
+	ResetAwsPrivateEndpointRules()
 	ResetAzurePrivateEndpointRules()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -81,6 +85,26 @@ type MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference interfac
 // The jsii proxy struct for MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference
 type jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference) AwsPrivateEndpointRules() MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesList {
+	var returns MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesList
+	_jsii_.Get(
+		j,
+		"awsPrivateEndpointRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference) AwsPrivateEndpointRulesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"awsPrivateEndpointRulesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference) AzurePrivateEndpointRules() MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesList {
@@ -442,6 +466,17 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputRefe
 	return returns
 }
 
+func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference) PutAwsPrivateEndpointRules(value interface{}) {
+	if err := m.validatePutAwsPrivateEndpointRulesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putAwsPrivateEndpointRules",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference) PutAzurePrivateEndpointRules(value interface{}) {
 	if err := m.validatePutAzurePrivateEndpointRulesParameters(value); err != nil {
 		panic(err)
@@ -450,6 +485,14 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputRefe
 		m,
 		"putAzurePrivateEndpointRules",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference) ResetAwsPrivateEndpointRules() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAwsPrivateEndpointRules",
+		nil, // no parameters
 	)
 }
 

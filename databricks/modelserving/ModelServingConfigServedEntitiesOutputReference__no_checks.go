@@ -83,7 +83,15 @@ func (j *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) validateSetI
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) validateSetMaxProvisionedConcurrencyParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) validateSetMaxProvisionedThroughputParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) validateSetMinProvisionedConcurrencyParameters(val *float64) error {
 	return nil
 }
 

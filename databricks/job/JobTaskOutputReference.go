@@ -34,6 +34,8 @@ type JobTaskOutputReference interface {
 	CreationStack() *[]*string
 	DashboardTask() JobTaskDashboardTaskOutputReference
 	DashboardTaskInput() *JobTaskDashboardTask
+	DbtCloudTask() JobTaskDbtCloudTaskOutputReference
+	DbtCloudTaskInput() *JobTaskDbtCloudTask
 	DbtTask() JobTaskDbtTaskOutputReference
 	DbtTaskInput() *JobTaskDbtTask
 	DependsOn() JobTaskDependsOnList
@@ -144,6 +146,7 @@ type JobTaskOutputReference interface {
 	PutCleanRoomsNotebookTask(value *JobTaskCleanRoomsNotebookTask)
 	PutConditionTask(value *JobTaskConditionTask)
 	PutDashboardTask(value *JobTaskDashboardTask)
+	PutDbtCloudTask(value *JobTaskDbtCloudTask)
 	PutDbtTask(value *JobTaskDbtTask)
 	PutDependsOn(value interface{})
 	PutEmailNotifications(value *JobTaskEmailNotifications)
@@ -166,6 +169,7 @@ type JobTaskOutputReference interface {
 	ResetCleanRoomsNotebookTask()
 	ResetConditionTask()
 	ResetDashboardTask()
+	ResetDbtCloudTask()
 	ResetDbtTask()
 	ResetDependsOn()
 	ResetDescription()
@@ -295,6 +299,26 @@ func (j *jsiiProxy_JobTaskOutputReference) DashboardTaskInput() *JobTaskDashboar
 	_jsii_.Get(
 		j,
 		"dashboardTaskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) DbtCloudTask() JobTaskDbtCloudTaskOutputReference {
+	var returns JobTaskDbtCloudTaskOutputReference
+	_jsii_.Get(
+		j,
+		"dbtCloudTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) DbtCloudTaskInput() *JobTaskDbtCloudTask {
+	var returns *JobTaskDbtCloudTask
+	_jsii_.Get(
+		j,
+		"dbtCloudTaskInput",
 		&returns,
 	)
 	return returns
@@ -1363,6 +1387,17 @@ func (j *jsiiProxy_JobTaskOutputReference) PutDashboardTask(value *JobTaskDashbo
 	)
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) PutDbtCloudTask(value *JobTaskDbtCloudTask) {
+	if err := j.validatePutDbtCloudTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putDbtCloudTask",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) PutDbtTask(value *JobTaskDbtTask) {
 	if err := j.validatePutDbtTaskParameters(value); err != nil {
 		panic(err)
@@ -1592,6 +1627,14 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetDashboardTask() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetDashboardTask",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ResetDbtCloudTask() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetDbtCloudTask",
 		nil, // no parameters
 	)
 }

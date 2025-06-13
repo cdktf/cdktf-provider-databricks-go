@@ -13,12 +13,6 @@ import (
 
 type DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference interface {
 	cdktf.ComplexObject
-	AdminPassword() *string
-	SetAdminPassword(val *string)
-	AdminPasswordInput() *string
-	AdminRolename() *string
-	SetAdminRolename(val *string)
-	AdminRolenameInput() *string
 	Capacity() *string
 	SetCapacity(val *string)
 	CapacityInput() *string
@@ -85,8 +79,6 @@ type DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetAdminPassword()
-	ResetAdminRolename()
 	ResetCapacity()
 	ResetStopped()
 	// Produce the Token's value at resolution time.
@@ -102,46 +94,6 @@ type DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference interface {
 // The jsii proxy struct for DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference
 type jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) AdminPassword() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"adminPassword",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) AdminPasswordInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"adminPasswordInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) AdminRolename() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"adminRolename",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) AdminRolenameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"adminRolenameInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) Capacity() *string {
@@ -359,28 +311,6 @@ func NewDataDatabricksDatabaseInstancesDatabaseInstancesOutputReference_Override
 		"@cdktf/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference)SetAdminPassword(val *string) {
-	if err := j.validateSetAdminPasswordParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"adminPassword",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference)SetAdminRolename(val *string) {
-	if err := j.validateSetAdminRolenameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"adminRolename",
-		val,
 	)
 }
 
@@ -656,22 +586,6 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) ResetAdminPassword() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAdminPassword",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) ResetAdminRolename() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAdminRolename",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) ResetCapacity() {

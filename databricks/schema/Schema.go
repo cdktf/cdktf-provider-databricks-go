@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/schema databricks_schema}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/schema databricks_schema}.
 type Schema interface {
 	cdktf.TerraformResource
 	CatalogName() *string
@@ -82,6 +82,7 @@ type Schema interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SchemaId() *string
 	StorageRoot() *string
 	SetStorageRoot(val *string)
 	StorageRootInput() *string
@@ -473,6 +474,16 @@ func (j *jsiiProxy_Schema) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Schema) SchemaId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Schema) StorageRoot() *string {
 	var returns *string
 	_jsii_.Get(
@@ -524,7 +535,7 @@ func (j *jsiiProxy_Schema) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/schema databricks_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/schema databricks_schema} Resource.
 func NewSchema(scope constructs.Construct, id *string, config *SchemaConfig) Schema {
 	_init_.Initialize()
 
@@ -542,7 +553,7 @@ func NewSchema(scope constructs.Construct, id *string, config *SchemaConfig) Sch
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/schema databricks_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/schema databricks_schema} Resource.
 func NewSchema_Override(s Schema, scope constructs.Construct, id *string, config *SchemaConfig) {
 	_init_.Initialize()
 

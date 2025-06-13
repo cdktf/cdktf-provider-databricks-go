@@ -59,6 +59,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutDashboardTa
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutDbtCloudTaskParameters(value *JobTaskForEachTaskTaskDbtCloudTask) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutDbtTaskParameters(value *JobTaskForEachTaskTaskDbtTask) error {
 	return nil
 }

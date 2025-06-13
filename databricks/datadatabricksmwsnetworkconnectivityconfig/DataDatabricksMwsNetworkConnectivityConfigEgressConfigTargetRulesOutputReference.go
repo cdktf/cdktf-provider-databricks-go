@@ -13,6 +13,8 @@ import (
 
 type DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference interface {
 	cdktf.ComplexObject
+	AwsPrivateEndpointRules() DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesList
+	AwsPrivateEndpointRulesInput() interface{}
 	AzurePrivateEndpointRules() DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesList
 	AzurePrivateEndpointRulesInput() interface{}
 	// the index of the complex object in a list.
@@ -66,7 +68,9 @@ type DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesOutputRefe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAwsPrivateEndpointRules(value interface{})
 	PutAzurePrivateEndpointRules(value interface{})
+	ResetAwsPrivateEndpointRules()
 	ResetAzurePrivateEndpointRules()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -81,6 +85,26 @@ type DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesOutputRefe
 // The jsii proxy struct for DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference
 type jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference) AwsPrivateEndpointRules() DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesList {
+	var returns DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesList
+	_jsii_.Get(
+		j,
+		"awsPrivateEndpointRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference) AwsPrivateEndpointRulesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"awsPrivateEndpointRulesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference) AzurePrivateEndpointRules() DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesList {
@@ -442,6 +466,17 @@ func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetR
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference) PutAwsPrivateEndpointRules(value interface{}) {
+	if err := d.validatePutAwsPrivateEndpointRulesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAwsPrivateEndpointRules",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference) PutAzurePrivateEndpointRules(value interface{}) {
 	if err := d.validatePutAzurePrivateEndpointRulesParameters(value); err != nil {
 		panic(err)
@@ -450,6 +485,14 @@ func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetR
 		d,
 		"putAzurePrivateEndpointRules",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference) ResetAwsPrivateEndpointRules() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAwsPrivateEndpointRules",
+		nil, // no parameters
 	)
 }
 

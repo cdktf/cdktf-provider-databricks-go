@@ -34,6 +34,8 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	CreationStack() *[]*string
 	DashboardTask() JobTaskForEachTaskTaskDashboardTaskOutputReference
 	DashboardTaskInput() *JobTaskForEachTaskTaskDashboardTask
+	DbtCloudTask() JobTaskForEachTaskTaskDbtCloudTaskOutputReference
+	DbtCloudTaskInput() *JobTaskForEachTaskTaskDbtCloudTask
 	DbtTask() JobTaskForEachTaskTaskDbtTaskOutputReference
 	DbtTaskInput() *JobTaskForEachTaskTaskDbtTask
 	DependsOn() JobTaskForEachTaskTaskDependsOnList
@@ -142,6 +144,7 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	PutCleanRoomsNotebookTask(value *JobTaskForEachTaskTaskCleanRoomsNotebookTask)
 	PutConditionTask(value *JobTaskForEachTaskTaskConditionTask)
 	PutDashboardTask(value *JobTaskForEachTaskTaskDashboardTask)
+	PutDbtCloudTask(value *JobTaskForEachTaskTaskDbtCloudTask)
 	PutDbtTask(value *JobTaskForEachTaskTaskDbtTask)
 	PutDependsOn(value interface{})
 	PutEmailNotifications(value *JobTaskForEachTaskTaskEmailNotifications)
@@ -163,6 +166,7 @@ type JobTaskForEachTaskTaskOutputReference interface {
 	ResetCleanRoomsNotebookTask()
 	ResetConditionTask()
 	ResetDashboardTask()
+	ResetDbtCloudTask()
 	ResetDbtTask()
 	ResetDependsOn()
 	ResetDescription()
@@ -291,6 +295,26 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) DashboardTaskInput() *
 	_jsii_.Get(
 		j,
 		"dashboardTaskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) DbtCloudTask() JobTaskForEachTaskTaskDbtCloudTaskOutputReference {
+	var returns JobTaskForEachTaskTaskDbtCloudTaskOutputReference
+	_jsii_.Get(
+		j,
+		"dbtCloudTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) DbtCloudTaskInput() *JobTaskForEachTaskTaskDbtCloudTask {
+	var returns *JobTaskForEachTaskTaskDbtCloudTask
+	_jsii_.Get(
+		j,
+		"dbtCloudTaskInput",
 		&returns,
 	)
 	return returns
@@ -1339,6 +1363,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) PutDashboardTask(value
 	)
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) PutDbtCloudTask(value *JobTaskForEachTaskTaskDbtCloudTask) {
+	if err := j.validatePutDbtCloudTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putDbtCloudTask",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) PutDbtTask(value *JobTaskForEachTaskTaskDbtTask) {
 	if err := j.validatePutDbtTaskParameters(value); err != nil {
 		panic(err)
@@ -1557,6 +1592,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ResetDashboardTask() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetDashboardTask",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) ResetDbtCloudTask() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetDbtCloudTask",
 		nil, // no parameters
 	)
 }

@@ -76,6 +76,7 @@ type JobEnvironmentSpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetClient()
 	ResetDependencies()
 	ResetEnvironmentVersion()
 	ResetJarDependencies()
@@ -555,6 +556,14 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) InterpolationForAttribute(
 	)
 
 	return returns
+}
+
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) ResetClient() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetClient",
+		nil, // no parameters
+	)
 }
 
 func (j *jsiiProxy_JobEnvironmentSpecOutputReference) ResetDependencies() {

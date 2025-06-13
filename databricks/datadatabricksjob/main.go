@@ -417,6 +417,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "jarDependencies", GoGetter: "JarDependencies"},
 			_jsii_.MemberProperty{JsiiProperty: "jarDependenciesInput", GoGetter: "JarDependenciesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClient", GoMethod: "ResetClient"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDependencies", GoMethod: "ResetDependencies"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentVersion", GoMethod: "ResetEnvironmentVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJarDependencies", GoMethod: "ResetJarDependencies"},

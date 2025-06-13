@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetR
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference) validatePutAwsPrivateEndpointRulesParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference) validatePutAzurePrivateEndpointRulesParameters(value interface{}) error {
 	return nil
 }

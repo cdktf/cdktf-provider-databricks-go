@@ -251,6 +251,10 @@ func (j *jsiiProxy_Pipeline) validateSetStorageParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Pipeline) validateSetTargetParameters(val *string) error {
 	return nil
 }

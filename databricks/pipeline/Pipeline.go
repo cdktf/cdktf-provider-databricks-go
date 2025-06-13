@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/pipeline databricks_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/pipeline databricks_pipeline}.
 type Pipeline interface {
 	cdktf.TerraformResource
 	AllowDuplicateNames() interface{}
@@ -146,6 +146,9 @@ type Pipeline interface {
 	Storage() *string
 	SetStorage(val *string)
 	StorageInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	Target() *string
 	SetTarget(val *string)
 	TargetInput() *string
@@ -255,6 +258,7 @@ type Pipeline interface {
 	ResetServerless()
 	ResetState()
 	ResetStorage()
+	ResetTags()
 	ResetTarget()
 	ResetTimeouts()
 	ResetTrigger()
@@ -1087,6 +1091,26 @@ func (j *jsiiProxy_Pipeline) StorageInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Pipeline) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pipeline) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Pipeline) Target() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1198,7 +1222,7 @@ func (j *jsiiProxy_Pipeline) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig) Pipeline {
 	_init_.Initialize()
 
@@ -1216,7 +1240,7 @@ func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline_Override(p Pipeline, scope constructs.Construct, id *string, config *PipelineConfig) {
 	_init_.Initialize()
 
@@ -1544,6 +1568,17 @@ func (j *jsiiProxy_Pipeline)SetStorage(val *string) {
 	_jsii_.Set(
 		j,
 		"storage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Pipeline)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -2342,6 +2377,14 @@ func (p *jsiiProxy_Pipeline) ResetStorage() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetStorage",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Pipeline) ResetTags() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTags",
 		nil, // no parameters
 	)
 }

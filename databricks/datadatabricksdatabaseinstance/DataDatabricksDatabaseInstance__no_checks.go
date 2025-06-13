@@ -71,14 +71,6 @@ func validateDataDatabricksDatabaseInstance_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetAdminPasswordParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetAdminRolenameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetCapacityParameters(val *string) error {
 	return nil
 }

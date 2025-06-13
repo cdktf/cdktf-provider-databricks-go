@@ -47,6 +47,10 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputRefe
 	return nil
 }
 
+func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference) validatePutAwsPrivateEndpointRulesParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference) validatePutAzurePrivateEndpointRulesParameters(value interface{}) error {
 	return nil
 }

@@ -12,15 +12,9 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/database_instance databricks_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/database_instance databricks_database_instance}.
 type DatabaseInstance interface {
 	cdktf.TerraformResource
-	AdminPassword() *string
-	SetAdminPassword(val *string)
-	AdminPasswordInput() *string
-	AdminRolename() *string
-	SetAdminRolename(val *string)
-	AdminRolenameInput() *string
 	Capacity() *string
 	SetCapacity(val *string)
 	CapacityInput() *string
@@ -125,8 +119,6 @@ type DatabaseInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAdminPassword()
-	ResetAdminRolename()
 	ResetCapacity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -148,46 +140,6 @@ type DatabaseInstance interface {
 // The jsii proxy struct for DatabaseInstance
 type jsiiProxy_DatabaseInstance struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_DatabaseInstance) AdminPassword() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"adminPassword",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DatabaseInstance) AdminPasswordInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"adminPasswordInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DatabaseInstance) AdminRolename() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"adminRolename",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DatabaseInstance) AdminRolenameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"adminRolenameInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DatabaseInstance) Capacity() *string {
@@ -471,7 +423,7 @@ func (j *jsiiProxy_DatabaseInstance) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/database_instance databricks_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/database_instance databricks_database_instance} Resource.
 func NewDatabaseInstance(scope constructs.Construct, id *string, config *DatabaseInstanceConfig) DatabaseInstance {
 	_init_.Initialize()
 
@@ -489,7 +441,7 @@ func NewDatabaseInstance(scope constructs.Construct, id *string, config *Databas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/database_instance databricks_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/database_instance databricks_database_instance} Resource.
 func NewDatabaseInstance_Override(d DatabaseInstance, scope constructs.Construct, id *string, config *DatabaseInstanceConfig) {
 	_init_.Initialize()
 
@@ -497,28 +449,6 @@ func NewDatabaseInstance_Override(d DatabaseInstance, scope constructs.Construct
 		"@cdktf/provider-databricks.databaseInstance.DatabaseInstance",
 		[]interface{}{scope, id, config},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DatabaseInstance)SetAdminPassword(val *string) {
-	if err := j.validateSetAdminPasswordParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"adminPassword",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DatabaseInstance)SetAdminRolename(val *string) {
-	if err := j.validateSetAdminRolenameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"adminRolename",
-		val,
 	)
 }
 
@@ -973,22 +903,6 @@ func (d *jsiiProxy_DatabaseInstance) OverrideLogicalId(newLogicalId *string) {
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DatabaseInstance) ResetAdminPassword() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAdminPassword",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DatabaseInstance) ResetAdminRolename() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAdminRolename",
-		nil, // no parameters
 	)
 }
 

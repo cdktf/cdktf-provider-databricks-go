@@ -91,14 +91,6 @@ func validateDatabaseInstance_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseInstance) validateSetAdminPasswordParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DatabaseInstance) validateSetAdminRolenameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DatabaseInstance) validateSetCapacityParameters(val *string) error {
 	return nil
 }

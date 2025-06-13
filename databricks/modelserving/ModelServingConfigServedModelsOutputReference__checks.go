@@ -206,7 +206,23 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetInt
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetMaxProvisionedConcurrencyParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetMaxProvisionedThroughputParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) validateSetMinProvisionedConcurrencyParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -247,6 +247,14 @@ func validateMwsNccPrivateEndpointRule_IsTerraformResourceParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetAccountIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -389,7 +397,35 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetDomainNamesParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetEndpointNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetEndpointServiceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -483,6 +519,14 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetResourceIdParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetResourceNamesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetRuleIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -492,6 +536,14 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetRuleIdParameters(val *s
 }
 
 func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetUpdatedTimeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MwsNccPrivateEndpointRule) validateSetVpcEndpointIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

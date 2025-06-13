@@ -38,9 +38,15 @@ type ModelServingConfigServedModelsOutputReference interface {
 	InstanceProfileArnInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	MaxProvisionedConcurrency() *float64
+	SetMaxProvisionedConcurrency(val *float64)
+	MaxProvisionedConcurrencyInput() *float64
 	MaxProvisionedThroughput() *float64
 	SetMaxProvisionedThroughput(val *float64)
 	MaxProvisionedThroughputInput() *float64
+	MinProvisionedConcurrency() *float64
+	SetMinProvisionedConcurrency(val *float64)
+	MinProvisionedConcurrencyInput() *float64
 	MinProvisionedThroughput() *float64
 	SetMinProvisionedThroughput(val *float64)
 	MinProvisionedThroughputInput() *float64
@@ -99,7 +105,9 @@ type ModelServingConfigServedModelsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnvironmentVars()
 	ResetInstanceProfileArn()
+	ResetMaxProvisionedConcurrency()
 	ResetMaxProvisionedThroughput()
+	ResetMinProvisionedConcurrency()
 	ResetMinProvisionedThroughput()
 	ResetName()
 	ResetProvisionedModelUnits()
@@ -211,6 +219,26 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) InternalValue(
 	return returns
 }
 
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) MaxProvisionedConcurrency() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxProvisionedConcurrency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) MaxProvisionedConcurrencyInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxProvisionedConcurrencyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) MaxProvisionedThroughput() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -226,6 +254,26 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) MaxProvisioned
 	_jsii_.Get(
 		j,
 		"maxProvisionedThroughputInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) MinProvisionedConcurrency() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minProvisionedConcurrency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference) MinProvisionedConcurrencyInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minProvisionedConcurrencyInput",
 		&returns,
 	)
 	return returns
@@ -494,6 +542,17 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference)SetInternalValu
 	)
 }
 
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference)SetMaxProvisionedConcurrency(val *float64) {
+	if err := j.validateSetMaxProvisionedConcurrencyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxProvisionedConcurrency",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference)SetMaxProvisionedThroughput(val *float64) {
 	if err := j.validateSetMaxProvisionedThroughputParameters(val); err != nil {
 		panic(err)
@@ -501,6 +560,17 @@ func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference)SetMaxProvision
 	_jsii_.Set(
 		j,
 		"maxProvisionedThroughput",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingConfigServedModelsOutputReference)SetMinProvisionedConcurrency(val *float64) {
+	if err := j.validateSetMinProvisionedConcurrencyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minProvisionedConcurrency",
 		val,
 	)
 }
@@ -817,10 +887,26 @@ func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetInstanceP
 	)
 }
 
+func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetMaxProvisionedConcurrency() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMaxProvisionedConcurrency",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetMaxProvisionedThroughput() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetMaxProvisionedThroughput",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingConfigServedModelsOutputReference) ResetMinProvisionedConcurrency() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMinProvisionedConcurrency",
 		nil, // no parameters
 	)
 }
