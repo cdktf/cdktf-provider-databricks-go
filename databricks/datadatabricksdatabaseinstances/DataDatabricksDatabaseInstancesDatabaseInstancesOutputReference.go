@@ -33,6 +33,7 @@ type DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference interface {
 	CreationStack() *[]*string
 	CreationTime() *string
 	Creator() *string
+	EffectiveStopped() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksDatabaseInstancesDatabaseInstances
@@ -161,6 +162,16 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	_jsii_.Get(
 		j,
 		"creator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EffectiveStopped() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"effectiveStopped",
 		&returns,
 	)
 	return returns

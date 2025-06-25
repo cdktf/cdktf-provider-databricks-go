@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) validateSetIdParameters(val *string) error {
 	return nil
 }

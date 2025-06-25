@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/service_principal_secret databricks_service_principal_secret}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/service_principal_secret databricks_service_principal_secret}.
 type ServicePrincipalSecret interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -85,6 +85,9 @@ type ServicePrincipalSecret interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TimeRotating() *string
+	SetTimeRotating(val *string)
+	TimeRotatingInput() *string
 	UpdateTime() *string
 	SetUpdateTime(val *string)
 	UpdateTimeInput() *string
@@ -141,6 +144,7 @@ type ServicePrincipalSecret interface {
 	ResetSecret()
 	ResetSecretHash()
 	ResetStatus()
+	ResetTimeRotating()
 	ResetUpdateTime()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -480,6 +484,26 @@ func (j *jsiiProxy_ServicePrincipalSecret) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ServicePrincipalSecret) TimeRotating() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeRotating",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret) TimeRotatingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeRotatingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServicePrincipalSecret) UpdateTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -501,7 +525,7 @@ func (j *jsiiProxy_ServicePrincipalSecret) UpdateTimeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
 func NewServicePrincipalSecret(scope constructs.Construct, id *string, config *ServicePrincipalSecretConfig) ServicePrincipalSecret {
 	_init_.Initialize()
 
@@ -519,7 +543,7 @@ func NewServicePrincipalSecret(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource.
 func NewServicePrincipalSecret_Override(s ServicePrincipalSecret, scope constructs.Construct, id *string, config *ServicePrincipalSecretConfig) {
 	_init_.Initialize()
 
@@ -682,6 +706,17 @@ func (j *jsiiProxy_ServicePrincipalSecret)SetStatus(val *string) {
 	_jsii_.Set(
 		j,
 		"status",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicePrincipalSecret)SetTimeRotating(val *string) {
+	if err := j.validateSetTimeRotatingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timeRotating",
 		val,
 	)
 }
@@ -1110,6 +1145,14 @@ func (s *jsiiProxy_ServicePrincipalSecret) ResetStatus() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicePrincipalSecret) ResetTimeRotating() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeRotating",
 		nil, // no parameters
 	)
 }

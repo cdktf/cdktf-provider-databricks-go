@@ -813,6 +813,14 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validateSetRemoteDiskThroughputParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validateSetRuntimeEngineParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -910,6 +918,14 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 }
 
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validateSetTotalInitialRemoteDiskSizeParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

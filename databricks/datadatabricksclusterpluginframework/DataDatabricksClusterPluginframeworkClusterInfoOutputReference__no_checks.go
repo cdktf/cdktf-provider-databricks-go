@@ -207,6 +207,10 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validateSetRemoteDiskThroughputParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validateSetRuntimeEngineParameters(val *string) error {
 	return nil
 }
@@ -256,6 +260,10 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReferenc
 }
 
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoOutputReference) validateSetTotalInitialRemoteDiskSizeParameters(val *float64) error {
 	return nil
 }
 

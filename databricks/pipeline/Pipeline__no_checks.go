@@ -83,6 +83,10 @@ func (p *jsiiProxy_Pipeline) validatePutDeploymentParameters(value *PipelineDepl
 	return nil
 }
 
+func (p *jsiiProxy_Pipeline) validatePutEnvironmentParameters(value *PipelineEnvironment) error {
+	return nil
+}
+
 func (p *jsiiProxy_Pipeline) validatePutEventLogParameters(value *PipelineEventLog) error {
 	return nil
 }

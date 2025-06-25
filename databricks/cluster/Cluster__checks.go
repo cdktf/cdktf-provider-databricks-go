@@ -796,6 +796,14 @@ func (j *jsiiProxy_Cluster) validateSetProvisionersParameters(val *[]interface{}
 	return nil
 }
 
+func (j *jsiiProxy_Cluster) validateSetRemoteDiskThroughputParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Cluster) validateSetRuntimeEngineParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -837,6 +845,14 @@ func (j *jsiiProxy_Cluster) validateSetSparkVersionParameters(val *string) error
 }
 
 func (j *jsiiProxy_Cluster) validateSetSshPublicKeysParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Cluster) validateSetTotalInitialRemoteDiskSizeParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -5,13 +5,13 @@ package recipientfederationpolicy
 
 
 type RecipientFederationPolicyOidcPolicy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/recipient_federation_policy#issuer RecipientFederationPolicy#issuer}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/recipient_federation_policy#issuer RecipientFederationPolicy#issuer}.
 	Issuer *string `field:"required" json:"issuer" yaml:"issuer"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/recipient_federation_policy#subject RecipientFederationPolicy#subject}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/recipient_federation_policy#subject RecipientFederationPolicy#subject}.
 	Subject *string `field:"required" json:"subject" yaml:"subject"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/recipient_federation_policy#subject_claim RecipientFederationPolicy#subject_claim}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/recipient_federation_policy#subject_claim RecipientFederationPolicy#subject_claim}.
 	SubjectClaim *string `field:"required" json:"subjectClaim" yaml:"subjectClaim"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/recipient_federation_policy#audiences RecipientFederationPolicy#audiences}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/recipient_federation_policy#audiences RecipientFederationPolicy#audiences}.
 	Audiences *[]*string `field:"optional" json:"audiences" yaml:"audiences"`
 }
 

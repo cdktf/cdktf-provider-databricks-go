@@ -98,6 +98,9 @@ type JobNewClusterOutputReference interface {
 	PolicyId() *string
 	SetPolicyId(val *string)
 	PolicyIdInput() *string
+	RemoteDiskThroughput() *float64
+	SetRemoteDiskThroughput(val *float64)
+	RemoteDiskThroughputInput() *float64
 	RuntimeEngine() *string
 	SetRuntimeEngine(val *string)
 	RuntimeEngineInput() *string
@@ -124,6 +127,9 @@ type JobNewClusterOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TotalInitialRemoteDiskSize() *float64
+	SetTotalInitialRemoteDiskSize(val *float64)
+	TotalInitialRemoteDiskSizeInput() *float64
 	UseMlRuntime() interface{}
 	SetUseMlRuntime(val interface{})
 	UseMlRuntimeInput() interface{}
@@ -188,12 +194,14 @@ type JobNewClusterOutputReference interface {
 	ResetNodeTypeId()
 	ResetNumWorkers()
 	ResetPolicyId()
+	ResetRemoteDiskThroughput()
 	ResetRuntimeEngine()
 	ResetSingleUserName()
 	ResetSparkConf()
 	ResetSparkEnvVars()
 	ResetSparkVersion()
 	ResetSshPublicKeys()
+	ResetTotalInitialRemoteDiskSize()
 	ResetUseMlRuntime()
 	ResetWorkloadType()
 	// Produce the Token's value at resolution time.
@@ -761,6 +769,26 @@ func (j *jsiiProxy_JobNewClusterOutputReference) PolicyIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_JobNewClusterOutputReference) RemoteDiskThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"remoteDiskThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobNewClusterOutputReference) RemoteDiskThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"remoteDiskThroughputInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobNewClusterOutputReference) RuntimeEngine() *string {
 	var returns *string
 	_jsii_.Get(
@@ -896,6 +924,26 @@ func (j *jsiiProxy_JobNewClusterOutputReference) TerraformResource() cdktf.IInte
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobNewClusterOutputReference) TotalInitialRemoteDiskSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalInitialRemoteDiskSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobNewClusterOutputReference) TotalInitialRemoteDiskSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalInitialRemoteDiskSizeInput",
 		&returns,
 	)
 	return returns
@@ -1178,6 +1226,17 @@ func (j *jsiiProxy_JobNewClusterOutputReference)SetPolicyId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_JobNewClusterOutputReference)SetRemoteDiskThroughput(val *float64) {
+	if err := j.validateSetRemoteDiskThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"remoteDiskThroughput",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JobNewClusterOutputReference)SetRuntimeEngine(val *string) {
 	if err := j.validateSetRuntimeEngineParameters(val); err != nil {
 		panic(err)
@@ -1262,6 +1321,17 @@ func (j *jsiiProxy_JobNewClusterOutputReference)SetTerraformResource(val cdktf.I
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobNewClusterOutputReference)SetTotalInitialRemoteDiskSize(val *float64) {
+	if err := j.validateSetTotalInitialRemoteDiskSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"totalInitialRemoteDiskSize",
 		val,
 	)
 }
@@ -1773,6 +1843,14 @@ func (j *jsiiProxy_JobNewClusterOutputReference) ResetPolicyId() {
 	)
 }
 
+func (j *jsiiProxy_JobNewClusterOutputReference) ResetRemoteDiskThroughput() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetRemoteDiskThroughput",
+		nil, // no parameters
+	)
+}
+
 func (j *jsiiProxy_JobNewClusterOutputReference) ResetRuntimeEngine() {
 	_jsii_.InvokeVoid(
 		j,
@@ -1817,6 +1895,14 @@ func (j *jsiiProxy_JobNewClusterOutputReference) ResetSshPublicKeys() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetSshPublicKeys",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobNewClusterOutputReference) ResetTotalInitialRemoteDiskSize() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetTotalInitialRemoteDiskSize",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2}.
 type QualityMonitorV2 interface {
 	cdktf.TerraformResource
 	AnomalyDetectionConfig() QualityMonitorV2AnomalyDetectionConfigOutputReference
@@ -343,7 +343,7 @@ func (j *jsiiProxy_QualityMonitorV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2} Resource.
 func NewQualityMonitorV2(scope constructs.Construct, id *string, config *QualityMonitorV2Config) QualityMonitorV2 {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewQualityMonitorV2(scope constructs.Construct, id *string, config *Quality
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2} Resource.
 func NewQualityMonitorV2_Override(q QualityMonitorV2, scope constructs.Construct, id *string, config *QualityMonitorV2Config) {
 	_init_.Initialize()
 

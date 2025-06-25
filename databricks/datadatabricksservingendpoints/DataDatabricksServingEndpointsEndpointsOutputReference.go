@@ -41,6 +41,9 @@ type DataDatabricksServingEndpointsEndpointsOutputReference interface {
 	Creator() *string
 	SetCreator(val *string)
 	CreatorInput() *string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -102,6 +105,7 @@ type DataDatabricksServingEndpointsEndpointsOutputReference interface {
 	ResetConfig()
 	ResetCreationTimestamp()
 	ResetCreator()
+	ResetDescription()
 	ResetId()
 	ResetLastUpdatedTimestamp()
 	ResetName()
@@ -248,6 +252,26 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) Creat
 	_jsii_.Get(
 		j,
 		"creatorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -492,6 +516,17 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference)SetCre
 	_jsii_.Set(
 		j,
 		"creator",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -839,6 +874,14 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) Reset
 	_jsii_.InvokeVoid(
 		d,
 		"resetCreator",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDescription",
 		nil, // no parameters
 	)
 }

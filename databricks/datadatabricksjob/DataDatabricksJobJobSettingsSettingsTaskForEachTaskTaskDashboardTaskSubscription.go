@@ -5,13 +5,13 @@ package datadatabricksjob
 
 
 type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscription struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}.
 	CustomSubject *string `field:"optional" json:"customSubject" yaml:"customSubject"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/job#paused DataDatabricksJob#paused}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/job#paused DataDatabricksJob#paused}.
 	Paused interface{} `field:"optional" json:"paused" yaml:"paused"`
 	// subscribers block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/job#subscribers DataDatabricksJob#subscribers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/job#subscribers DataDatabricksJob#subscribers}
 	Subscribers interface{} `field:"optional" json:"subscribers" yaml:"subscribers"`
 }
 

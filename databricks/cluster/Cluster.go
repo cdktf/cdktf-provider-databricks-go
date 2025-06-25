@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/cluster databricks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/cluster databricks_cluster}.
 type Cluster interface {
 	cdktf.TerraformResource
 	ApplyPolicyDefaultValues() interface{}
@@ -132,6 +132,9 @@ type Cluster interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RemoteDiskThroughput() *float64
+	SetRemoteDiskThroughput(val *float64)
+	RemoteDiskThroughputInput() *float64
 	RuntimeEngine() *string
 	SetRuntimeEngine(val *string)
 	RuntimeEngineInput() *string
@@ -159,6 +162,9 @@ type Cluster interface {
 	TerraformResourceType() *string
 	Timeouts() ClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TotalInitialRemoteDiskSize() *float64
+	SetTotalInitialRemoteDiskSize(val *float64)
+	TotalInitialRemoteDiskSizeInput() *float64
 	Url() *string
 	UseMlRuntime() interface{}
 	SetUseMlRuntime(val interface{})
@@ -250,12 +256,14 @@ type Cluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicyId()
+	ResetRemoteDiskThroughput()
 	ResetRuntimeEngine()
 	ResetSingleUserName()
 	ResetSparkConf()
 	ResetSparkEnvVars()
 	ResetSshPublicKeys()
 	ResetTimeouts()
+	ResetTotalInitialRemoteDiskSize()
 	ResetUseMlRuntime()
 	ResetWorkloadType()
 	SynthesizeAttributes() *map[string]interface{}
@@ -986,6 +994,26 @@ func (j *jsiiProxy_Cluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Cluster) RemoteDiskThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"remoteDiskThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) RemoteDiskThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"remoteDiskThroughputInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Cluster) RuntimeEngine() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1166,6 +1194,26 @@ func (j *jsiiProxy_Cluster) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Cluster) TotalInitialRemoteDiskSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalInitialRemoteDiskSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) TotalInitialRemoteDiskSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalInitialRemoteDiskSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Cluster) Url() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1217,7 +1265,7 @@ func (j *jsiiProxy_Cluster) WorkloadTypeInput() *ClusterWorkloadType {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) Cluster {
 	_init_.Initialize()
 
@@ -1235,7 +1283,7 @@ func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster_Override(c Cluster, scope constructs.Construct, id *string, config *ClusterConfig) {
 	_init_.Initialize()
 
@@ -1523,6 +1571,17 @@ func (j *jsiiProxy_Cluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Cluster)SetRemoteDiskThroughput(val *float64) {
+	if err := j.validateSetRemoteDiskThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"remoteDiskThroughput",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Cluster)SetRuntimeEngine(val *string) {
 	if err := j.validateSetRuntimeEngineParameters(val); err != nil {
 		panic(err)
@@ -1585,6 +1644,17 @@ func (j *jsiiProxy_Cluster)SetSshPublicKeys(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"sshPublicKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Cluster)SetTotalInitialRemoteDiskSize(val *float64) {
+	if err := j.validateSetTotalInitialRemoteDiskSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"totalInitialRemoteDiskSize",
 		val,
 	)
 }
@@ -2306,6 +2376,14 @@ func (c *jsiiProxy_Cluster) ResetPolicyId() {
 	)
 }
 
+func (c *jsiiProxy_Cluster) ResetRemoteDiskThroughput() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRemoteDiskThroughput",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_Cluster) ResetRuntimeEngine() {
 	_jsii_.InvokeVoid(
 		c,
@@ -2350,6 +2428,14 @@ func (c *jsiiProxy_Cluster) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cluster) ResetTotalInitialRemoteDiskSize() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTotalInitialRemoteDiskSize",
 		nil, // no parameters
 	)
 }

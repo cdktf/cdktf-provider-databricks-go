@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/jobs databricks_jobs}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/jobs databricks_jobs}.
 type DataDatabricksJobs interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -44,6 +44,9 @@ type DataDatabricksJobs interface {
 	JobNameContains() *string
 	SetJobNameContains(val *string)
 	JobNameContainsInput() *string
+	Key() *string
+	SetKey(val *string)
+	KeyInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -90,6 +93,7 @@ type DataDatabricksJobs interface {
 	ResetId()
 	ResetIds()
 	ResetJobNameContains()
+	ResetKey()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -242,6 +246,26 @@ func (j *jsiiProxy_DataDatabricksJobs) JobNameContainsInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksJobs) Key() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"key",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobs) KeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksJobs) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -313,7 +337,7 @@ func (j *jsiiProxy_DataDatabricksJobs) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/jobs databricks_jobs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/jobs databricks_jobs} Data Source.
 func NewDataDatabricksJobs(scope constructs.Construct, id *string, config *DataDatabricksJobsConfig) DataDatabricksJobs {
 	_init_.Initialize()
 
@@ -331,7 +355,7 @@ func NewDataDatabricksJobs(scope constructs.Construct, id *string, config *DataD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/jobs databricks_jobs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/jobs databricks_jobs} Data Source.
 func NewDataDatabricksJobs_Override(d DataDatabricksJobs, scope constructs.Construct, id *string, config *DataDatabricksJobsConfig) {
 	_init_.Initialize()
 
@@ -398,6 +422,17 @@ func (j *jsiiProxy_DataDatabricksJobs)SetJobNameContains(val *string) {
 	_jsii_.Set(
 		j,
 		"jobNameContains",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksJobs)SetKey(val *string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"key",
 		val,
 	)
 }
@@ -726,6 +761,14 @@ func (d *jsiiProxy_DataDatabricksJobs) ResetJobNameContains() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetJobNameContains",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobs) ResetKey() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKey",
 		nil, // no parameters
 	)
 }

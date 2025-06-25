@@ -63,6 +63,10 @@ func (j *jsiiProxy_JobTaskOutputReference) validatePutDbtCloudTaskParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskOutputReference) validatePutDbtPlatformTaskParameters(value *JobTaskDbtPlatformTask) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskOutputReference) validatePutDbtTaskParameters(value *JobTaskDbtTask) error {
 	return nil
 }

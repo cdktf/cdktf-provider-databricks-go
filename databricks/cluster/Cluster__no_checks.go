@@ -227,6 +227,10 @@ func (j *jsiiProxy_Cluster) validateSetProvisionersParameters(val *[]interface{}
 	return nil
 }
 
+func (j *jsiiProxy_Cluster) validateSetRemoteDiskThroughputParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cluster) validateSetRuntimeEngineParameters(val *string) error {
 	return nil
 }
@@ -248,6 +252,10 @@ func (j *jsiiProxy_Cluster) validateSetSparkVersionParameters(val *string) error
 }
 
 func (j *jsiiProxy_Cluster) validateSetSshPublicKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Cluster) validateSetTotalInitialRemoteDiskSizeParameters(val *float64) error {
 	return nil
 }
 

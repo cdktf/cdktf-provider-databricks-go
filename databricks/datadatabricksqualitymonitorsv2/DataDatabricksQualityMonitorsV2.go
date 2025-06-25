@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2}.
 type DataDatabricksQualityMonitorsV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -252,7 +252,7 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2} Data Source.
 func NewDataDatabricksQualityMonitorsV2(scope constructs.Construct, id *string, config *DataDatabricksQualityMonitorsV2Config) DataDatabricksQualityMonitorsV2 {
 	_init_.Initialize()
 
@@ -270,7 +270,7 @@ func NewDataDatabricksQualityMonitorsV2(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2} Data Source.
 func NewDataDatabricksQualityMonitorsV2_Override(d DataDatabricksQualityMonitorsV2, scope constructs.Construct, id *string, config *DataDatabricksQualityMonitorsV2Config) {
 	_init_.Initialize()
 

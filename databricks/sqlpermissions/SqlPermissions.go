@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/sql_permissions databricks_sql_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/sql_permissions databricks_sql_permissions}.
 type SqlPermissions interface {
 	cdktf.TerraformResource
 	AnonymousFunction() interface{}
@@ -502,7 +502,7 @@ func (j *jsiiProxy_SqlPermissions) ViewInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/sql_permissions databricks_sql_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/sql_permissions databricks_sql_permissions} Resource.
 func NewSqlPermissions(scope constructs.Construct, id *string, config *SqlPermissionsConfig) SqlPermissions {
 	_init_.Initialize()
 
@@ -520,7 +520,7 @@ func NewSqlPermissions(scope constructs.Construct, id *string, config *SqlPermis
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/sql_permissions databricks_sql_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/sql_permissions databricks_sql_permissions} Resource.
 func NewSqlPermissions_Override(s SqlPermissions, scope constructs.Construct, id *string, config *SqlPermissionsConfig) {
 	_init_.Initialize()
 

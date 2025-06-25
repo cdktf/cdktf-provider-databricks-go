@@ -455,6 +455,14 @@ func (j *jsiiProxy_ServicePrincipalSecret) validateSetStatusParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipalSecret) validateSetTimeRotatingParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipalSecret) validateSetUpdateTimeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

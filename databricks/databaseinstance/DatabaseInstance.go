@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/database_instance databricks_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/database_instance databricks_database_instance}.
 type DatabaseInstance interface {
 	cdktf.TerraformResource
 	Capacity() *string
@@ -36,6 +36,7 @@ type DatabaseInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveStopped() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -232,6 +233,16 @@ func (j *jsiiProxy_DatabaseInstance) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseInstance) EffectiveStopped() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"effectiveStopped",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseInstance) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -423,7 +434,7 @@ func (j *jsiiProxy_DatabaseInstance) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/database_instance databricks_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/database_instance databricks_database_instance} Resource.
 func NewDatabaseInstance(scope constructs.Construct, id *string, config *DatabaseInstanceConfig) DatabaseInstance {
 	_init_.Initialize()
 
@@ -441,7 +452,7 @@ func NewDatabaseInstance(scope constructs.Construct, id *string, config *Databas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/database_instance databricks_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/database_instance databricks_database_instance} Resource.
 func NewDatabaseInstance_Override(d DatabaseInstance, scope constructs.Construct, id *string, config *DatabaseInstanceConfig) {
 	_init_.Initialize()
 

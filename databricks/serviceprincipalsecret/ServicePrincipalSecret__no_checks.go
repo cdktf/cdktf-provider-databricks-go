@@ -139,6 +139,10 @@ func (j *jsiiProxy_ServicePrincipalSecret) validateSetStatusParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_ServicePrincipalSecret) validateSetTimeRotatingParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePrincipalSecret) validateSetUpdateTimeParameters(val *string) error {
 	return nil
 }

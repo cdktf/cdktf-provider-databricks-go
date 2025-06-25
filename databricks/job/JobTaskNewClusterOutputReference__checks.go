@@ -520,6 +520,14 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetPolicyIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetRemoteDiskThroughputParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetRuntimeEngineParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -577,6 +585,14 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetTerraformAttribu
 }
 
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetTotalInitialRemoteDiskSizeParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -96,6 +96,9 @@ type DataDatabricksClusterClusterInfoSpecOutputReference interface {
 	PolicyId() *string
 	SetPolicyId(val *string)
 	PolicyIdInput() *string
+	RemoteDiskThroughput() *float64
+	SetRemoteDiskThroughput(val *float64)
+	RemoteDiskThroughputInput() *float64
 	RuntimeEngine() *string
 	SetRuntimeEngine(val *string)
 	RuntimeEngineInput() *string
@@ -122,6 +125,9 @@ type DataDatabricksClusterClusterInfoSpecOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TotalInitialRemoteDiskSize() *float64
+	SetTotalInitialRemoteDiskSize(val *float64)
+	TotalInitialRemoteDiskSizeInput() *float64
 	UseMlRuntime() interface{}
 	SetUseMlRuntime(val interface{})
 	UseMlRuntimeInput() interface{}
@@ -185,12 +191,14 @@ type DataDatabricksClusterClusterInfoSpecOutputReference interface {
 	ResetNodeTypeId()
 	ResetNumWorkers()
 	ResetPolicyId()
+	ResetRemoteDiskThroughput()
 	ResetRuntimeEngine()
 	ResetSingleUserName()
 	ResetSparkConf()
 	ResetSparkEnvVars()
 	ResetSparkVersion()
 	ResetSshPublicKeys()
+	ResetTotalInitialRemoteDiskSize()
 	ResetUseMlRuntime()
 	ResetWorkloadType()
 	// Produce the Token's value at resolution time.
@@ -748,6 +756,26 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) PolicyId
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) RemoteDiskThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"remoteDiskThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) RemoteDiskThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"remoteDiskThroughputInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) RuntimeEngine() *string {
 	var returns *string
 	_jsii_.Get(
@@ -883,6 +911,26 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) Terrafor
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) TotalInitialRemoteDiskSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalInitialRemoteDiskSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) TotalInitialRemoteDiskSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalInitialRemoteDiskSizeInput",
 		&returns,
 	)
 	return returns
@@ -1154,6 +1202,17 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference)SetPolicy
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference)SetRemoteDiskThroughput(val *float64) {
+	if err := j.validateSetRemoteDiskThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"remoteDiskThroughput",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference)SetRuntimeEngine(val *string) {
 	if err := j.validateSetRuntimeEngineParameters(val); err != nil {
 		panic(err)
@@ -1238,6 +1297,17 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference)SetTerraf
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference)SetTotalInitialRemoteDiskSize(val *float64) {
+	if err := j.validateSetTotalInitialRemoteDiskSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"totalInitialRemoteDiskSize",
 		val,
 	)
 }
@@ -1741,6 +1811,14 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) ResetPol
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) ResetRemoteDiskThroughput() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRemoteDiskThroughput",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) ResetRuntimeEngine() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1785,6 +1863,14 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) ResetSsh
 	_jsii_.InvokeVoid(
 		d,
 		"resetSshPublicKeys",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) ResetTotalInitialRemoteDiskSize() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTotalInitialRemoteDiskSize",
 		nil, // no parameters
 	)
 }

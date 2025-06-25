@@ -7,11 +7,11 @@ package modelservingprovisionedthroughput
 type ModelServingProvisionedThroughputAiGatewayGuardrails struct {
 	// input block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/model_serving_provisioned_throughput#input ModelServingProvisionedThroughput#input}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/model_serving_provisioned_throughput#input ModelServingProvisionedThroughput#input}
 	Input *ModelServingProvisionedThroughputAiGatewayGuardrailsInput `field:"optional" json:"input" yaml:"input"`
 	// output block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/model_serving_provisioned_throughput#output ModelServingProvisionedThroughput#output}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/model_serving_provisioned_throughput#output ModelServingProvisionedThroughput#output}
 	Output *ModelServingProvisionedThroughputAiGatewayGuardrailsOutput `field:"optional" json:"output" yaml:"output"`
 }
 

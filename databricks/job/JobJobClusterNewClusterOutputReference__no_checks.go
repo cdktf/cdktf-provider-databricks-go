@@ -167,6 +167,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateSetPolicyIdPa
 	return nil
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateSetRemoteDiskThroughputParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateSetRuntimeEngineParameters(val *string) error {
 	return nil
 }
@@ -196,6 +200,10 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateSetTerraformA
 }
 
 func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) validateSetTotalInitialRemoteDiskSizeParameters(val *float64) error {
 	return nil
 }
 
