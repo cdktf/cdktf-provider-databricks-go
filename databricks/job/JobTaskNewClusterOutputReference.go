@@ -15,6 +15,9 @@ type JobTaskNewClusterOutputReference interface {
 	cdktf.ComplexObject
 	ApplyPolicyDefaultValues() interface{}
 	SetApplyPolicyDefaultValues(val interface{})
+	ApplyPolicyDefaultValuesAllowList() *[]*string
+	SetApplyPolicyDefaultValuesAllowList(val *[]*string)
+	ApplyPolicyDefaultValuesAllowListInput() *[]*string
 	ApplyPolicyDefaultValuesInput() interface{}
 	Autoscale() JobTaskNewClusterAutoscaleOutputReference
 	AutoscaleInput() *JobTaskNewClusterAutoscale
@@ -170,6 +173,7 @@ type JobTaskNewClusterOutputReference interface {
 	PutLibrary(value interface{})
 	PutWorkloadType(value *JobTaskNewClusterWorkloadType)
 	ResetApplyPolicyDefaultValues()
+	ResetApplyPolicyDefaultValuesAllowList()
 	ResetAutoscale()
 	ResetAwsAttributes()
 	ResetAzureAttributes()
@@ -224,6 +228,26 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) ApplyPolicyDefaultValues() 
 	_jsii_.Get(
 		j,
 		"applyPolicyDefaultValues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) ApplyPolicyDefaultValuesAllowList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"applyPolicyDefaultValuesAllowList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) ApplyPolicyDefaultValuesAllowListInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"applyPolicyDefaultValuesAllowListInput",
 		&returns,
 	)
 	return returns
@@ -1028,6 +1052,17 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference)SetApplyPolicyDefaultValues(
 	)
 }
 
+func (j *jsiiProxy_JobTaskNewClusterOutputReference)SetApplyPolicyDefaultValuesAllowList(val *[]*string) {
+	if err := j.validateSetApplyPolicyDefaultValuesAllowListParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"applyPolicyDefaultValuesAllowList",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JobTaskNewClusterOutputReference)SetClusterId(val *string) {
 	if err := j.validateSetClusterIdParameters(val); err != nil {
 		panic(err)
@@ -1647,6 +1682,14 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetApplyPolicyDefaultValu
 	_jsii_.InvokeVoid(
 		j,
 		"resetApplyPolicyDefaultValues",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetApplyPolicyDefaultValuesAllowList() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetApplyPolicyDefaultValuesAllowList",
 		nil, // no parameters
 	)
 }

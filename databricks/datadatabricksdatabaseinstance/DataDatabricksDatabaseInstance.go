@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/database_instance databricks_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/database_instance databricks_database_instance}.
 type DataDatabricksDatabaseInstance interface {
 	cdktf.TerraformDataSource
 	Capacity() *string
@@ -20,6 +20,7 @@ type DataDatabricksDatabaseInstance interface {
 	CapacityInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ChildInstanceRefs() DataDatabricksDatabaseInstanceChildInstanceRefsList
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -32,7 +33,13 @@ type DataDatabricksDatabaseInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveEnableReadableSecondaries() cdktf.IResolvable
+	EffectiveNodeCount() *float64
+	EffectiveRetentionWindowInDays() *float64
 	EffectiveStopped() cdktf.IResolvable
+	EnableReadableSecondaries() interface{}
+	SetEnableReadableSecondaries(val interface{})
+	EnableReadableSecondariesInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -50,6 +57,11 @@ type DataDatabricksDatabaseInstance interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NodeCount() *float64
+	SetNodeCount(val *float64)
+	NodeCountInput() *float64
+	ParentInstanceRef() DataDatabricksDatabaseInstanceParentInstanceRefOutputReference
+	ParentInstanceRefInput() interface{}
 	PgVersion() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -57,7 +69,11 @@ type DataDatabricksDatabaseInstance interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	ReadOnlyDns() *string
 	ReadWriteDns() *string
+	RetentionWindowInDays() *float64
+	SetRetentionWindowInDays(val *float64)
+	RetentionWindowInDaysInput() *float64
 	State() *string
 	Stopped() interface{}
 	SetStopped(val interface{})
@@ -94,10 +110,15 @@ type DataDatabricksDatabaseInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutParentInstanceRef(value *DataDatabricksDatabaseInstanceParentInstanceRef)
 	ResetCapacity()
+	ResetEnableReadableSecondaries()
+	ResetNodeCount()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParentInstanceRef()
+	ResetRetentionWindowInDays()
 	ResetStopped()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -143,6 +164,16 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) CdktfStack() cdktf.TerraformS
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) ChildInstanceRefs() DataDatabricksDatabaseInstanceChildInstanceRefsList {
+	var returns DataDatabricksDatabaseInstanceChildInstanceRefsList
+	_jsii_.Get(
+		j,
+		"childInstanceRefs",
 		&returns,
 	)
 	return returns
@@ -198,11 +229,61 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveEnableReadableSecondaries() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"effectiveEnableReadableSecondaries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveNodeCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"effectiveNodeCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveRetentionWindowInDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"effectiveRetentionWindowInDays",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveStopped() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"effectiveStopped",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) EnableReadableSecondaries() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableReadableSecondaries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) EnableReadableSecondariesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableReadableSecondariesInput",
 		&returns,
 	)
 	return returns
@@ -278,6 +359,46 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) NodeCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"nodeCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) NodeCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"nodeCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) ParentInstanceRef() DataDatabricksDatabaseInstanceParentInstanceRefOutputReference {
+	var returns DataDatabricksDatabaseInstanceParentInstanceRefOutputReference
+	_jsii_.Get(
+		j,
+		"parentInstanceRef",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) ParentInstanceRefInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"parentInstanceRefInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseInstance) PgVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -308,11 +429,41 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) ReadOnlyDns() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readOnlyDns",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseInstance) ReadWriteDns() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"readWriteDns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) RetentionWindowInDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retentionWindowInDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) RetentionWindowInDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retentionWindowInDaysInput",
 		&returns,
 	)
 	return returns
@@ -389,7 +540,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/database_instance databricks_database_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/database_instance databricks_database_instance} Data Source.
 func NewDataDatabricksDatabaseInstance(scope constructs.Construct, id *string, config *DataDatabricksDatabaseInstanceConfig) DataDatabricksDatabaseInstance {
 	_init_.Initialize()
 
@@ -407,7 +558,7 @@ func NewDataDatabricksDatabaseInstance(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/database_instance databricks_database_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/database_instance databricks_database_instance} Data Source.
 func NewDataDatabricksDatabaseInstance_Override(d DataDatabricksDatabaseInstance, scope constructs.Construct, id *string, config *DataDatabricksDatabaseInstanceConfig) {
 	_init_.Initialize()
 
@@ -448,6 +599,17 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetEnableReadableSecondaries(val interface{}) {
+	if err := j.validateSetEnableReadableSecondariesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableReadableSecondaries",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -478,10 +640,32 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetNodeCount(val *float64) {
+	if err := j.validateSetNodeCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeCount",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetRetentionWindowInDays(val *float64) {
+	if err := j.validateSetRetentionWindowInDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"retentionWindowInDays",
 		val,
 	)
 }
@@ -782,6 +966,17 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstance) OverrideLogicalId(newLogicalI
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksDatabaseInstance) PutParentInstanceRef(value *DataDatabricksDatabaseInstanceParentInstanceRef) {
+	if err := d.validatePutParentInstanceRefParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putParentInstanceRef",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksDatabaseInstance) ResetCapacity() {
 	_jsii_.InvokeVoid(
 		d,
@@ -790,10 +985,42 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstance) ResetCapacity() {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksDatabaseInstance) ResetEnableReadableSecondaries() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnableReadableSecondaries",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseInstance) ResetNodeCount() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNodeCount",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksDatabaseInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseInstance) ResetParentInstanceRef() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetParentInstanceRef",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseInstance) ResetRetentionWindowInDays() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRetentionWindowInDays",
 		nil, // no parameters
 	)
 }

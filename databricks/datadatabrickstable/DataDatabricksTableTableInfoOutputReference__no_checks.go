@@ -67,6 +67,10 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoOutputReference) validatePutRowFi
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksTableTableInfoOutputReference) validatePutSecurableKindManifestParameters(value *DataDatabricksTableTableInfoSecurableKindManifest) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksTableTableInfoOutputReference) validatePutTableConstraintsParameters(value interface{}) error {
 	return nil
 }

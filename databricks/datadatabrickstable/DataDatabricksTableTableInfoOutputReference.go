@@ -93,6 +93,8 @@ type DataDatabricksTableTableInfoOutputReference interface {
 	SchemaName() *string
 	SetSchemaName(val *string)
 	SchemaNameInput() *string
+	SecurableKindManifest() DataDatabricksTableTableInfoSecurableKindManifestOutputReference
+	SecurableKindManifestInput() *DataDatabricksTableTableInfoSecurableKindManifest
 	SqlPath() *string
 	SetSqlPath(val *string)
 	SqlPathInput() *string
@@ -158,6 +160,7 @@ type DataDatabricksTableTableInfoOutputReference interface {
 	PutEffectivePredictiveOptimizationFlag(value *DataDatabricksTableTableInfoEffectivePredictiveOptimizationFlag)
 	PutEncryptionDetails(value *DataDatabricksTableTableInfoEncryptionDetails)
 	PutRowFilter(value *DataDatabricksTableTableInfoRowFilter)
+	PutSecurableKindManifest(value *DataDatabricksTableTableInfoSecurableKindManifest)
 	PutTableConstraints(value interface{})
 	PutViewDependencies(value *DataDatabricksTableTableInfoViewDependencies)
 	ResetAccessPoint()
@@ -182,6 +185,7 @@ type DataDatabricksTableTableInfoOutputReference interface {
 	ResetProperties()
 	ResetRowFilter()
 	ResetSchemaName()
+	ResetSecurableKindManifest()
 	ResetSqlPath()
 	ResetStorageCredentialName()
 	ResetStorageLocation()
@@ -692,6 +696,26 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoOutputReference) SchemaNameInput(
 	_jsii_.Get(
 		j,
 		"schemaNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksTableTableInfoOutputReference) SecurableKindManifest() DataDatabricksTableTableInfoSecurableKindManifestOutputReference {
+	var returns DataDatabricksTableTableInfoSecurableKindManifestOutputReference
+	_jsii_.Get(
+		j,
+		"securableKindManifest",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksTableTableInfoOutputReference) SecurableKindManifestInput() *DataDatabricksTableTableInfoSecurableKindManifest {
+	var returns *DataDatabricksTableTableInfoSecurableKindManifest
+	_jsii_.Get(
+		j,
+		"securableKindManifestInput",
 		&returns,
 	)
 	return returns
@@ -1516,6 +1540,17 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoOutputReference) PutRowFilter(val
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksTableTableInfoOutputReference) PutSecurableKindManifest(value *DataDatabricksTableTableInfoSecurableKindManifest) {
+	if err := d.validatePutSecurableKindManifestParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSecurableKindManifest",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksTableTableInfoOutputReference) PutTableConstraints(value interface{}) {
 	if err := d.validatePutTableConstraintsParameters(value); err != nil {
 		panic(err)
@@ -1710,6 +1745,14 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoOutputReference) ResetSchemaName(
 	_jsii_.InvokeVoid(
 		d,
 		"resetSchemaName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksTableTableInfoOutputReference) ResetSecurableKindManifest() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSecurableKindManifest",
 		nil, // no parameters
 	)
 }

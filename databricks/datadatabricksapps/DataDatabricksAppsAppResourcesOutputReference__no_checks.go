@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) validateInterp
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) validatePutDatabaseParameters(value *DataDatabricksAppsAppResourcesDatabase) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) validatePutJobParameters(value *DataDatabricksAppsAppResourcesJob) error {
 	return nil
 }

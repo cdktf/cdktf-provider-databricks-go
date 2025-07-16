@@ -32,6 +32,9 @@ type ModelServingProvisionedThroughputConfigTrafficConfigRoutesOutputReference i
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	ServedEntityName() *string
+	SetServedEntityName(val *string)
+	ServedEntityNameInput() *string
 	ServedModelName() *string
 	SetServedModelName(val *string)
 	ServedModelNameInput() *string
@@ -70,6 +73,8 @@ type ModelServingProvisionedThroughputConfigTrafficConfigRoutesOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetServedEntityName()
+	ResetServedModelName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -130,6 +135,26 @@ func (j *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigRoutesOut
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigRoutesOutputReference) ServedEntityName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servedEntityName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigRoutesOutputReference) ServedEntityNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servedEntityNameInput",
 		&returns,
 	)
 	return returns
@@ -252,6 +277,17 @@ func (j *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigRoutesOut
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigRoutesOutputReference)SetServedEntityName(val *string) {
+	if err := j.validateSetServedEntityNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"servedEntityName",
 		val,
 	)
 }
@@ -484,6 +520,22 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigRoutesOut
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigRoutesOutputReference) ResetServedEntityName() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetServedEntityName",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigRoutesOutputReference) ResetServedModelName() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetServedModelName",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigRoutesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

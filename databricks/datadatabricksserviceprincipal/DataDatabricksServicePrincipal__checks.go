@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataDatabricksServicePrincipal) validateSetReposParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksServicePrincipal) validateSetSpIdParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksServicePrincipal) validateSetScimIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

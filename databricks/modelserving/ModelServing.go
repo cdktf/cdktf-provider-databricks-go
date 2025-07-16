@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/model_serving databricks_model_serving}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/model_serving databricks_model_serving}.
 type ModelServing interface {
 	cdktf.TerraformResource
 	AiGateway() ModelServingAiGatewayOutputReference
@@ -38,6 +38,9 @@ type ModelServing interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -135,6 +138,7 @@ type ModelServing interface {
 	ResetAiGateway()
 	ResetBudgetPolicyId()
 	ResetConfig()
+	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -266,6 +270,26 @@ func (j *jsiiProxy_ModelServing) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServing) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServing) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -512,7 +536,7 @@ func (j *jsiiProxy_ModelServing) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/model_serving databricks_model_serving} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/model_serving databricks_model_serving} Resource.
 func NewModelServing(scope constructs.Construct, id *string, config *ModelServingConfig) ModelServing {
 	_init_.Initialize()
 
@@ -530,7 +554,7 @@ func NewModelServing(scope constructs.Construct, id *string, config *ModelServin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/model_serving databricks_model_serving} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/model_serving databricks_model_serving} Resource.
 func NewModelServing_Override(m ModelServing, scope constructs.Construct, id *string, config *ModelServingConfig) {
 	_init_.Initialize()
 
@@ -578,6 +602,17 @@ func (j *jsiiProxy_ModelServing)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServing)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -1081,6 +1116,14 @@ func (m *jsiiProxy_ModelServing) ResetConfig() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetConfig",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServing) ResetDescription() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDescription",
 		nil, // no parameters
 	)
 }

@@ -75,6 +75,10 @@ func (d *jsiiProxy_DatabaseInstance) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseInstance) validatePutParentInstanceRefParameters(value *DatabaseInstanceParentInstanceRef) error {
+	return nil
+}
+
 func validateDatabaseInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -103,6 +107,10 @@ func (j *jsiiProxy_DatabaseInstance) validateSetCountParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseInstance) validateSetEnableReadableSecondariesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -111,7 +119,15 @@ func (j *jsiiProxy_DatabaseInstance) validateSetNameParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseInstance) validateSetNodeCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseInstance) validateSetRetentionWindowInDaysParameters(val *float64) error {
 	return nil
 }
 

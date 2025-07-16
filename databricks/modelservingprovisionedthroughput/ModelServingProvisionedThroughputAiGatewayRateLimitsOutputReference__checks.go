@@ -206,6 +206,14 @@ func (j *jsiiProxy_ModelServingProvisionedThroughputAiGatewayRateLimitsOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingProvisionedThroughputAiGatewayRateLimitsOutputReference) validateSetPrincipalParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingProvisionedThroughputAiGatewayRateLimitsOutputReference) validateSetRenewalPeriodParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

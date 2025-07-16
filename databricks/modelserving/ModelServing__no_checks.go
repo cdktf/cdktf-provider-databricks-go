@@ -123,6 +123,10 @@ func (j *jsiiProxy_ModelServing) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_ModelServing) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServing) validateSetIdParameters(val *string) error {
 	return nil
 }

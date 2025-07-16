@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validatePutParentInstanceRefParameters(value *DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -63,11 +67,23 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetEnableReadableSecondariesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetInternalValueParameters(val *DataDatabricksDatabaseInstancesDatabaseInstances) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetNodeCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetRetentionWindowInDaysParameters(val *float64) error {
 	return nil
 }
 

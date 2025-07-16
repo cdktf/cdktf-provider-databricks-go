@@ -47,6 +47,10 @@ func (a *jsiiProxy_AppResourcesOutputReference) validateInterpolationForAttribut
 	return nil
 }
 
+func (a *jsiiProxy_AppResourcesOutputReference) validatePutDatabaseParameters(value *AppResourcesDatabase) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppResourcesOutputReference) validatePutJobParameters(value *AppResourcesJob) error {
 	return nil
 }

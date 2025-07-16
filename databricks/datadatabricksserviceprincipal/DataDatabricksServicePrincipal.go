@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/service_principal databricks_service_principal}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/service_principal databricks_service_principal}.
 type DataDatabricksServicePrincipal interface {
 	cdktf.TerraformDataSource
 	AclPrincipalId() *string
@@ -71,9 +71,9 @@ type DataDatabricksServicePrincipal interface {
 	Repos() *string
 	SetRepos(val *string)
 	ReposInput() *string
-	SpId() *string
-	SetSpId(val *string)
-	SpIdInput() *string
+	ScimId() *string
+	SetScimId(val *string)
+	ScimIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -116,7 +116,7 @@ type DataDatabricksServicePrincipal interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRepos()
-	ResetSpId()
+	ResetScimId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -406,21 +406,21 @@ func (j *jsiiProxy_DataDatabricksServicePrincipal) ReposInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksServicePrincipal) SpId() *string {
+func (j *jsiiProxy_DataDatabricksServicePrincipal) ScimId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"spId",
+		"scimId",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksServicePrincipal) SpIdInput() *string {
+func (j *jsiiProxy_DataDatabricksServicePrincipal) ScimIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"spIdInput",
+		"scimIdInput",
 		&returns,
 	)
 	return returns
@@ -457,7 +457,7 @@ func (j *jsiiProxy_DataDatabricksServicePrincipal) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/service_principal databricks_service_principal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/service_principal databricks_service_principal} Data Source.
 func NewDataDatabricksServicePrincipal(scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalConfig) DataDatabricksServicePrincipal {
 	_init_.Initialize()
 
@@ -475,7 +475,7 @@ func NewDataDatabricksServicePrincipal(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/service_principal databricks_service_principal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/service_principal databricks_service_principal} Data Source.
 func NewDataDatabricksServicePrincipal_Override(d DataDatabricksServicePrincipal, scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalConfig) {
 	_init_.Initialize()
 
@@ -620,13 +620,13 @@ func (j *jsiiProxy_DataDatabricksServicePrincipal)SetRepos(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksServicePrincipal)SetSpId(val *string) {
-	if err := j.validateSetSpIdParameters(val); err != nil {
+func (j *jsiiProxy_DataDatabricksServicePrincipal)SetScimId(val *string) {
+	if err := j.validateSetScimIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"spId",
+		"scimId",
 		val,
 	)
 }
@@ -988,10 +988,10 @@ func (d *jsiiProxy_DataDatabricksServicePrincipal) ResetRepos() {
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksServicePrincipal) ResetSpId() {
+func (d *jsiiProxy_DataDatabricksServicePrincipal) ResetScimId() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetSpId",
+		"resetScimId",
 		nil, // no parameters
 	)
 }

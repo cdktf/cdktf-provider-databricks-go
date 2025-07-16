@@ -63,6 +63,75 @@ func init() {
 		"@cdktf/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstances",
 		reflect.TypeOf((*DataDatabricksDatabaseInstancesDatabaseInstances)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefs",
+		reflect.TypeOf((*DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefs)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefsList",
+		reflect.TypeOf((*DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefsOutputReference",
+		reflect.TypeOf((*DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "branchTime", GoGetter: "BranchTime"},
+			_jsii_.MemberProperty{JsiiProperty: "branchTimeInput", GoGetter: "BranchTimeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveLsn", GoGetter: "EffectiveLsn"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lsn", GoGetter: "Lsn"},
+			_jsii_.MemberProperty{JsiiProperty: "lsnInput", GoGetter: "LsnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBranchTime", GoMethod: "ResetBranchTime"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLsn", GoMethod: "ResetLsn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesList",
 		reflect.TypeOf((*DataDatabricksDatabaseInstancesDatabaseInstancesList)(nil)).Elem(),
@@ -91,13 +160,19 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacity", GoGetter: "Capacity"},
 			_jsii_.MemberProperty{JsiiProperty: "capacityInput", GoGetter: "CapacityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "childInstanceRefs", GoGetter: "ChildInstanceRefs"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "creationTime", GoGetter: "CreationTime"},
 			_jsii_.MemberProperty{JsiiProperty: "creator", GoGetter: "Creator"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveEnableReadableSecondaries", GoGetter: "EffectiveEnableReadableSecondaries"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveNodeCount", GoGetter: "EffectiveNodeCount"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveRetentionWindowInDays", GoGetter: "EffectiveRetentionWindowInDays"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveStopped", GoGetter: "EffectiveStopped"},
+			_jsii_.MemberProperty{JsiiProperty: "enableReadableSecondaries", GoGetter: "EnableReadableSecondaries"},
+			_jsii_.MemberProperty{JsiiProperty: "enableReadableSecondariesInput", GoGetter: "EnableReadableSecondariesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -113,11 +188,23 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "nodeCount", GoGetter: "NodeCount"},
+			_jsii_.MemberProperty{JsiiProperty: "nodeCountInput", GoGetter: "NodeCountInput"},
+			_jsii_.MemberProperty{JsiiProperty: "parentInstanceRef", GoGetter: "ParentInstanceRef"},
+			_jsii_.MemberProperty{JsiiProperty: "parentInstanceRefInput", GoGetter: "ParentInstanceRefInput"},
 			_jsii_.MemberProperty{JsiiProperty: "pgVersion", GoGetter: "PgVersion"},
+			_jsii_.MemberMethod{JsiiMethod: "putParentInstanceRef", GoMethod: "PutParentInstanceRef"},
+			_jsii_.MemberProperty{JsiiProperty: "readOnlyDns", GoGetter: "ReadOnlyDns"},
 			_jsii_.MemberProperty{JsiiProperty: "readWriteDns", GoGetter: "ReadWriteDns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCapacity", GoMethod: "ResetCapacity"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnableReadableSecondaries", GoMethod: "ResetEnableReadableSecondaries"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNodeCount", GoMethod: "ResetNodeCount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParentInstanceRef", GoMethod: "ResetParentInstanceRef"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRetentionWindowInDays", GoMethod: "ResetRetentionWindowInDays"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStopped", GoMethod: "ResetStopped"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "retentionWindowInDays", GoGetter: "RetentionWindowInDays"},
+			_jsii_.MemberProperty{JsiiProperty: "retentionWindowInDaysInput", GoGetter: "RetentionWindowInDaysInput"},
 			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
 			_jsii_.MemberProperty{JsiiProperty: "stopped", GoGetter: "Stopped"},
 			_jsii_.MemberProperty{JsiiProperty: "stoppedInput", GoGetter: "StoppedInput"},
@@ -128,6 +215,53 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef",
+		reflect.TypeOf((*DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRefOutputReference",
+		reflect.TypeOf((*DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRefOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "branchTime", GoGetter: "BranchTime"},
+			_jsii_.MemberProperty{JsiiProperty: "branchTimeInput", GoGetter: "BranchTimeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveLsn", GoGetter: "EffectiveLsn"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lsn", GoGetter: "Lsn"},
+			_jsii_.MemberProperty{JsiiProperty: "lsnInput", GoGetter: "LsnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBranchTime", GoMethod: "ResetBranchTime"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLsn", GoMethod: "ResetLsn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

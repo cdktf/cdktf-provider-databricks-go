@@ -71,6 +71,10 @@ func (j *jsiiProxy_ModelServingProvisionedThroughputAiGatewayRateLimitsOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingProvisionedThroughputAiGatewayRateLimitsOutputReference) validateSetPrincipalParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingProvisionedThroughputAiGatewayRateLimitsOutputReference) validateSetRenewalPeriodParameters(val *string) error {
 	return nil
 }

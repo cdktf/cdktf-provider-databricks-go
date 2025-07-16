@@ -5,11 +5,11 @@ package job
 
 
 type JobTaskForEachTaskTaskNewClusterDockerImage struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/job#url Job#url}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/job#url Job#url}.
 	Url *string `field:"required" json:"url" yaml:"url"`
 	// basic_auth block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/job#basic_auth Job#basic_auth}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/job#basic_auth Job#basic_auth}
 	BasicAuth *JobTaskForEachTaskTaskNewClusterDockerImageBasicAuth `field:"optional" json:"basicAuth" yaml:"basicAuth"`
 }
 

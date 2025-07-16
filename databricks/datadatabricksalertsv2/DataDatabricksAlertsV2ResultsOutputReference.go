@@ -54,6 +54,8 @@ type DataDatabricksAlertsV2ResultsOutputReference interface {
 	SetQueryText(val *string)
 	QueryTextInput() *string
 	RunAsUserName() *string
+	SetRunAsUserName(val *string)
+	RunAsUserNameInput() *string
 	Schedule() DataDatabricksAlertsV2ResultsScheduleOutputReference
 	ScheduleInput() interface{}
 	// Experimental.
@@ -100,6 +102,7 @@ type DataDatabricksAlertsV2ResultsOutputReference interface {
 	ResetEvaluation()
 	ResetParentPath()
 	ResetQueryText()
+	ResetRunAsUserName()
 	ResetSchedule()
 	ResetWarehouseId()
 	// Produce the Token's value at resolution time.
@@ -337,6 +340,16 @@ func (j *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) RunAsUserName()
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) RunAsUserNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runAsUserNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) Schedule() DataDatabricksAlertsV2ResultsScheduleOutputReference {
 	var returns DataDatabricksAlertsV2ResultsScheduleOutputReference
 	_jsii_.Get(
@@ -519,6 +532,17 @@ func (j *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference)SetQueryText(val
 	_jsii_.Set(
 		j,
 		"queryText",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference)SetRunAsUserName(val *string) {
+	if err := j.validateSetRunAsUserNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runAsUserName",
 		val,
 	)
 }
@@ -808,6 +832,14 @@ func (d *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) ResetQueryText(
 	_jsii_.InvokeVoid(
 		d,
 		"resetQueryText",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) ResetRunAsUserName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRunAsUserName",
 		nil, // no parameters
 	)
 }

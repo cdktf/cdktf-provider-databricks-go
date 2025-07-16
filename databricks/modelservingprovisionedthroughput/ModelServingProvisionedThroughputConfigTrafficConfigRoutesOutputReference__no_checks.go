@@ -63,6 +63,10 @@ func (j *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigRoutesOut
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigRoutesOutputReference) validateSetServedEntityNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigRoutesOutputReference) validateSetServedModelNameParameters(val *string) error {
 	return nil
 }

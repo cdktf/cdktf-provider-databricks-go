@@ -107,6 +107,10 @@ func (j *jsiiProxy_DataDatabricksAlertV2) validateSetQueryTextParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAlertV2) validateSetRunAsUserNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAlertV2) validateSetWarehouseIdParameters(val *string) error {
 	return nil
 }

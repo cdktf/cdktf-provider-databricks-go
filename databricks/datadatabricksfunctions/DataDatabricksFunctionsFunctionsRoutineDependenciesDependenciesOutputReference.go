@@ -23,11 +23,15 @@ type DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputRefere
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Connection() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnectionList
+	ConnectionInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Credential() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialList
+	CredentialInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Function() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionList
@@ -68,8 +72,12 @@ type DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputRefere
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutConnection(value interface{})
+	PutCredential(value interface{})
 	PutFunction(value interface{})
 	PutTable(value interface{})
+	ResetConnection()
+	ResetCredential()
 	ResetFunction()
 	ResetTable()
 	// Produce the Token's value at resolution time.
@@ -107,11 +115,51 @@ func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenci
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) Connection() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnectionList {
+	var returns DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnectionList
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) ConnectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) Credential() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialList {
+	var returns DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialList
+	_jsii_.Get(
+		j,
+		"credential",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) CredentialInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"credentialInput",
 		&returns,
 	)
 	return returns
@@ -466,6 +514,28 @@ func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenci
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) PutConnection(value interface{}) {
+	if err := d.validatePutConnectionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putConnection",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) PutCredential(value interface{}) {
+	if err := d.validatePutCredentialParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCredential",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) PutFunction(value interface{}) {
 	if err := d.validatePutFunctionParameters(value); err != nil {
 		panic(err)
@@ -485,6 +555,22 @@ func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenci
 		d,
 		"putTable",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) ResetConnection() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetConnection",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) ResetCredential() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCredential",
+		nil, // no parameters
 	)
 }
 

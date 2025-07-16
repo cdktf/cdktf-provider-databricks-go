@@ -15,6 +15,9 @@ type JobJobClusterNewClusterOutputReference interface {
 	cdktf.ComplexObject
 	ApplyPolicyDefaultValues() interface{}
 	SetApplyPolicyDefaultValues(val interface{})
+	ApplyPolicyDefaultValuesAllowList() *[]*string
+	SetApplyPolicyDefaultValuesAllowList(val *[]*string)
+	ApplyPolicyDefaultValuesAllowListInput() *[]*string
 	ApplyPolicyDefaultValuesInput() interface{}
 	Autoscale() JobJobClusterNewClusterAutoscaleOutputReference
 	AutoscaleInput() *JobJobClusterNewClusterAutoscale
@@ -170,6 +173,7 @@ type JobJobClusterNewClusterOutputReference interface {
 	PutLibrary(value interface{})
 	PutWorkloadType(value *JobJobClusterNewClusterWorkloadType)
 	ResetApplyPolicyDefaultValues()
+	ResetApplyPolicyDefaultValuesAllowList()
 	ResetAutoscale()
 	ResetAwsAttributes()
 	ResetAzureAttributes()
@@ -224,6 +228,26 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) ApplyPolicyDefaultVal
 	_jsii_.Get(
 		j,
 		"applyPolicyDefaultValues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) ApplyPolicyDefaultValuesAllowList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"applyPolicyDefaultValuesAllowList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) ApplyPolicyDefaultValuesAllowListInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"applyPolicyDefaultValuesAllowListInput",
 		&returns,
 	)
 	return returns
@@ -1028,6 +1052,17 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference)SetApplyPolicyDefaultV
 	)
 }
 
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference)SetApplyPolicyDefaultValuesAllowList(val *[]*string) {
+	if err := j.validateSetApplyPolicyDefaultValuesAllowListParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"applyPolicyDefaultValuesAllowList",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JobJobClusterNewClusterOutputReference)SetClusterId(val *string) {
 	if err := j.validateSetClusterIdParameters(val); err != nil {
 		panic(err)
@@ -1647,6 +1682,14 @@ func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) ResetApplyPolicyDefau
 	_jsii_.InvokeVoid(
 		j,
 		"resetApplyPolicyDefaultValues",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterOutputReference) ResetApplyPolicyDefaultValuesAllowList() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetApplyPolicyDefaultValuesAllowList",
 		nil, // no parameters
 	)
 }

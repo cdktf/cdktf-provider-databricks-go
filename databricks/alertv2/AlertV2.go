@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/alert_v2 databricks_alert_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/alert_v2 databricks_alert_v2}.
 type AlertV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -77,6 +77,8 @@ type AlertV2 interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RunAsUserName() *string
+	SetRunAsUserName(val *string)
+	RunAsUserNameInput() *string
 	Schedule() AlertV2ScheduleOutputReference
 	ScheduleInput() interface{}
 	// Experimental.
@@ -143,6 +145,7 @@ type AlertV2 interface {
 	ResetOverrideLogicalId()
 	ResetParentPath()
 	ResetQueryText()
+	ResetRunAsUserName()
 	ResetSchedule()
 	ResetWarehouseId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -463,6 +466,16 @@ func (j *jsiiProxy_AlertV2) RunAsUserName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AlertV2) RunAsUserNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runAsUserNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlertV2) Schedule() AlertV2ScheduleOutputReference {
 	var returns AlertV2ScheduleOutputReference
 	_jsii_.Get(
@@ -544,7 +557,7 @@ func (j *jsiiProxy_AlertV2) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
 func NewAlertV2(scope constructs.Construct, id *string, config *AlertV2Config) AlertV2 {
 	_init_.Initialize()
 
@@ -562,7 +575,7 @@ func NewAlertV2(scope constructs.Construct, id *string, config *AlertV2Config) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
 func NewAlertV2_Override(a AlertV2, scope constructs.Construct, id *string, config *AlertV2Config) {
 	_init_.Initialize()
 
@@ -692,6 +705,17 @@ func (j *jsiiProxy_AlertV2)SetQueryText(val *string) {
 	_jsii_.Set(
 		j,
 		"queryText",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlertV2)SetRunAsUserName(val *string) {
+	if err := j.validateSetRunAsUserNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runAsUserName",
 		val,
 	)
 }
@@ -1134,6 +1158,14 @@ func (a *jsiiProxy_AlertV2) ResetQueryText() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetQueryText",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlertV2) ResetRunAsUserName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRunAsUserName",
 		nil, // no parameters
 	)
 }

@@ -281,6 +281,14 @@ func (j *jsiiProxy_DataDatabricksAlertV2) validateSetQueryTextParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAlertV2) validateSetRunAsUserNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAlertV2) validateSetWarehouseIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

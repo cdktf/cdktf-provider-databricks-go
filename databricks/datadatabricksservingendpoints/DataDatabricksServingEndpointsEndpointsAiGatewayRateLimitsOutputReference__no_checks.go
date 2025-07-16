@@ -71,6 +71,10 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOut
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference) validateSetPrincipalParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference) validateSetRenewalPeriodParameters(val *string) error {
 	return nil
 }

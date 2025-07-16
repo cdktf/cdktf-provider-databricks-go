@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstance) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksDatabaseInstance) validatePutParentInstanceRefParameters(value *DataDatabricksDatabaseInstanceParentInstanceRef) error {
+	return nil
+}
+
 func validateDataDatabricksDatabaseInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -79,11 +83,23 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetCountParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetEnableReadableSecondariesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetNodeCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetRetentionWindowInDaysParameters(val *float64) error {
 	return nil
 }
 

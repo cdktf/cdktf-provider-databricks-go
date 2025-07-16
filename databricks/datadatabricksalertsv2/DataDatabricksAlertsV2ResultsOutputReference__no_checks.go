@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) validateSetQuer
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) validateSetRunAsUserNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

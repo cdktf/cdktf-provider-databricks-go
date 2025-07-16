@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/online_store databricks_online_store}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/online_store databricks_online_store}.
 type OnlineStore interface {
 	cdktf.TerraformResource
 	Capacity() *string
@@ -63,6 +63,9 @@ type OnlineStore interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReadReplicaCount() *float64
+	SetReadReplicaCount(val *float64)
+	ReadReplicaCountInput() *float64
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -113,10 +116,10 @@ type OnlineStore interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetCapacity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetReadReplicaCount()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -325,6 +328,26 @@ func (j *jsiiProxy_OnlineStore) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_OnlineStore) ReadReplicaCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"readReplicaCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OnlineStore) ReadReplicaCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"readReplicaCountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OnlineStore) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -366,7 +389,7 @@ func (j *jsiiProxy_OnlineStore) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/online_store databricks_online_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/online_store databricks_online_store} Resource.
 func NewOnlineStore(scope constructs.Construct, id *string, config *OnlineStoreConfig) OnlineStore {
 	_init_.Initialize()
 
@@ -384,7 +407,7 @@ func NewOnlineStore(scope constructs.Construct, id *string, config *OnlineStoreC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/online_store databricks_online_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/online_store databricks_online_store} Resource.
 func NewOnlineStore_Override(o OnlineStore, scope constructs.Construct, id *string, config *OnlineStoreConfig) {
 	_init_.Initialize()
 
@@ -481,6 +504,17 @@ func (j *jsiiProxy_OnlineStore)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OnlineStore)SetReadReplicaCount(val *float64) {
+	if err := j.validateSetReadReplicaCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readReplicaCount",
 		val,
 	)
 }
@@ -838,18 +872,18 @@ func (o *jsiiProxy_OnlineStore) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (o *jsiiProxy_OnlineStore) ResetCapacity() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetCapacity",
-		nil, // no parameters
-	)
-}
-
 func (o *jsiiProxy_OnlineStore) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OnlineStore) ResetReadReplicaCount() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetReadReplicaCount",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/online_store databricks_online_store}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/online_store databricks_online_store}.
 type DataDatabricksOnlineStore interface {
 	cdktf.TerraformDataSource
 	Capacity() *string
@@ -55,6 +55,9 @@ type DataDatabricksOnlineStore interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	ReadReplicaCount() *float64
+	SetReadReplicaCount(val *float64)
+	ReadReplicaCountInput() *float64
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -87,10 +90,10 @@ type DataDatabricksOnlineStore interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetCapacity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetReadReplicaCount()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -280,6 +283,26 @@ func (j *jsiiProxy_DataDatabricksOnlineStore) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksOnlineStore) ReadReplicaCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"readReplicaCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksOnlineStore) ReadReplicaCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"readReplicaCountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksOnlineStore) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -321,7 +344,7 @@ func (j *jsiiProxy_DataDatabricksOnlineStore) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/online_store databricks_online_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/online_store databricks_online_store} Data Source.
 func NewDataDatabricksOnlineStore(scope constructs.Construct, id *string, config *DataDatabricksOnlineStoreConfig) DataDatabricksOnlineStore {
 	_init_.Initialize()
 
@@ -339,7 +362,7 @@ func NewDataDatabricksOnlineStore(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/online_store databricks_online_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/online_store databricks_online_store} Data Source.
 func NewDataDatabricksOnlineStore_Override(d DataDatabricksOnlineStore, scope constructs.Construct, id *string, config *DataDatabricksOnlineStoreConfig) {
 	_init_.Initialize()
 
@@ -414,6 +437,17 @@ func (j *jsiiProxy_DataDatabricksOnlineStore)SetProvider(val cdktf.TerraformProv
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksOnlineStore)SetReadReplicaCount(val *float64) {
+	if err := j.validateSetReadReplicaCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readReplicaCount",
 		val,
 	)
 }
@@ -703,18 +737,18 @@ func (d *jsiiProxy_DataDatabricksOnlineStore) OverrideLogicalId(newLogicalId *st
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksOnlineStore) ResetCapacity() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCapacity",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksOnlineStore) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksOnlineStore) ResetReadReplicaCount() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetReadReplicaCount",
 		nil, // no parameters
 	)
 }

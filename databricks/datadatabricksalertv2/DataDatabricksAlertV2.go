@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/alert_v2 databricks_alert_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/alert_v2 databricks_alert_v2}.
 type DataDatabricksAlertV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -69,6 +69,8 @@ type DataDatabricksAlertV2 interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RunAsUserName() *string
+	SetRunAsUserName(val *string)
+	RunAsUserNameInput() *string
 	Schedule() DataDatabricksAlertV2ScheduleOutputReference
 	ScheduleInput() interface{}
 	// Experimental.
@@ -117,6 +119,7 @@ type DataDatabricksAlertV2 interface {
 	ResetOverrideLogicalId()
 	ResetParentPath()
 	ResetQueryText()
+	ResetRunAsUserName()
 	ResetSchedule()
 	ResetWarehouseId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -418,6 +421,16 @@ func (j *jsiiProxy_DataDatabricksAlertV2) RunAsUserName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAlertV2) RunAsUserNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runAsUserNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAlertV2) Schedule() DataDatabricksAlertV2ScheduleOutputReference {
 	var returns DataDatabricksAlertV2ScheduleOutputReference
 	_jsii_.Get(
@@ -499,7 +512,7 @@ func (j *jsiiProxy_DataDatabricksAlertV2) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
 func NewDataDatabricksAlertV2(scope constructs.Construct, id *string, config *DataDatabricksAlertV2Config) DataDatabricksAlertV2 {
 	_init_.Initialize()
 
@@ -517,7 +530,7 @@ func NewDataDatabricksAlertV2(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
 func NewDataDatabricksAlertV2_Override(d DataDatabricksAlertV2, scope constructs.Construct, id *string, config *DataDatabricksAlertV2Config) {
 	_init_.Initialize()
 
@@ -625,6 +638,17 @@ func (j *jsiiProxy_DataDatabricksAlertV2)SetQueryText(val *string) {
 	_jsii_.Set(
 		j,
 		"queryText",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAlertV2)SetRunAsUserName(val *string) {
+	if err := j.validateSetRunAsUserNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runAsUserName",
 		val,
 	)
 }
@@ -999,6 +1023,14 @@ func (d *jsiiProxy_DataDatabricksAlertV2) ResetQueryText() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetQueryText",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAlertV2) ResetRunAsUserName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRunAsUserName",
 		nil, // no parameters
 	)
 }

@@ -135,6 +135,10 @@ func (j *jsiiProxy_AlertV2) validateSetQueryTextParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_AlertV2) validateSetRunAsUserNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlertV2) validateSetWarehouseIdParameters(val *string) error {
 	return nil
 }

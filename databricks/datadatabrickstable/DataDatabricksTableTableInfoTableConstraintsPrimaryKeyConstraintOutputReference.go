@@ -38,6 +38,9 @@ type DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputRefer
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Rely() interface{}
+	SetRely(val interface{})
+	RelyInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,6 +76,7 @@ type DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputRefer
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetRely()
 	ResetTimeseriesColumns()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -174,6 +178,26 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstra
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputReference) Rely() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rely",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputReference) RelyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"relyInput",
 		&returns,
 	)
 	return returns
@@ -298,6 +322,17 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstra
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputReference)SetRely(val interface{}) {
+	if err := j.validateSetRelyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rely",
 		val,
 	)
 }
@@ -519,6 +554,14 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstra
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputReference) ResetRely() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRely",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputReference) ResetTimeseriesColumns() {

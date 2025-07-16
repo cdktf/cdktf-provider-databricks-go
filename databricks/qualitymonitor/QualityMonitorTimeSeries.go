@@ -5,9 +5,9 @@ package qualitymonitor
 
 
 type QualityMonitorTimeSeries struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/quality_monitor#granularities QualityMonitor#granularities}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/quality_monitor#granularities QualityMonitor#granularities}.
 	Granularities *[]*string `field:"required" json:"granularities" yaml:"granularities"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/quality_monitor#timestamp_col QualityMonitor#timestamp_col}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/quality_monitor#timestamp_col QualityMonitor#timestamp_col}.
 	TimestampCol *string `field:"required" json:"timestampCol" yaml:"timestampCol"`
 }
 

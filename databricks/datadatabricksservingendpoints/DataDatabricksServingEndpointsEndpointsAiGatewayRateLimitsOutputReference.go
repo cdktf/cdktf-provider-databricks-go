@@ -38,6 +38,9 @@ type DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference i
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
+	Principal() *string
+	SetPrincipal(val *string)
+	PrincipalInput() *string
 	RenewalPeriod() *string
 	SetRenewalPeriod(val *string)
 	RenewalPeriodInput() *string
@@ -73,7 +76,9 @@ type DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCalls()
 	ResetKey()
+	ResetPrincipal()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +179,26 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOut
 	_jsii_.Get(
 		j,
 		"keyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference) Principal() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference) PrincipalInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principalInput",
 		&returns,
 	)
 	return returns
@@ -298,6 +323,17 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOut
 	_jsii_.Set(
 		j,
 		"key",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference)SetPrincipal(val *string) {
+	if err := j.validateSetPrincipalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"principal",
 		val,
 	)
 }
@@ -521,10 +557,26 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOut
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference) ResetCalls() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCalls",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference) ResetKey() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetKey",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference) ResetPrincipal() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrincipal",
 		nil, // no parameters
 	)
 }

@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/permissions databricks_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/permissions databricks_permissions}.
 type Permissions interface {
 	cdktf.TerraformResource
 	AccessControl() PermissionsAccessControlList
 	AccessControlInput() interface{}
+	AlertV2Id() *string
+	SetAlertV2Id(val *string)
+	AlertV2IdInput() *string
 	AppName() *string
 	SetAppName(val *string)
 	AppNameInput() *string
@@ -44,6 +47,9 @@ type Permissions interface {
 	DashboardId() *string
 	SetDashboardId(val *string)
 	DashboardIdInput() *string
+	DatabaseInstanceName() *string
+	SetDatabaseInstanceName(val *string)
+	DatabaseInstanceNameInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -185,11 +191,13 @@ type Permissions interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAccessControl(value interface{})
+	ResetAlertV2Id()
 	ResetAppName()
 	ResetAuthorization()
 	ResetClusterId()
 	ResetClusterPolicyId()
 	ResetDashboardId()
+	ResetDatabaseInstanceName()
 	ResetDirectoryId()
 	ResetDirectoryPath()
 	ResetExperimentId()
@@ -247,6 +255,26 @@ func (j *jsiiProxy_Permissions) AccessControlInput() interface{} {
 	_jsii_.Get(
 		j,
 		"accessControlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Permissions) AlertV2Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alertV2Id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Permissions) AlertV2IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alertV2IdInput",
 		&returns,
 	)
 	return returns
@@ -387,6 +415,26 @@ func (j *jsiiProxy_Permissions) DashboardIdInput() *string {
 	_jsii_.Get(
 		j,
 		"dashboardIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Permissions) DatabaseInstanceName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseInstanceName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Permissions) DatabaseInstanceNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseInstanceNameInput",
 		&returns,
 	)
 	return returns
@@ -933,7 +981,7 @@ func (j *jsiiProxy_Permissions) WorkspaceFilePathInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/permissions databricks_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/permissions databricks_permissions} Resource.
 func NewPermissions(scope constructs.Construct, id *string, config *PermissionsConfig) Permissions {
 	_init_.Initialize()
 
@@ -951,7 +999,7 @@ func NewPermissions(scope constructs.Construct, id *string, config *PermissionsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/permissions databricks_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/permissions databricks_permissions} Resource.
 func NewPermissions_Override(p Permissions, scope constructs.Construct, id *string, config *PermissionsConfig) {
 	_init_.Initialize()
 
@@ -959,6 +1007,17 @@ func NewPermissions_Override(p Permissions, scope constructs.Construct, id *stri
 		"@cdktf/provider-databricks.permissions.Permissions",
 		[]interface{}{scope, id, config},
 		p,
+	)
+}
+
+func (j *jsiiProxy_Permissions)SetAlertV2Id(val *string) {
+	if err := j.validateSetAlertV2IdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alertV2Id",
+		val,
 	)
 }
 
@@ -1035,6 +1094,17 @@ func (j *jsiiProxy_Permissions)SetDashboardId(val *string) {
 	_jsii_.Set(
 		j,
 		"dashboardId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Permissions)SetDatabaseInstanceName(val *string) {
+	if err := j.validateSetDatabaseInstanceNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseInstanceName",
 		val,
 	)
 }
@@ -1680,6 +1750,14 @@ func (p *jsiiProxy_Permissions) PutAccessControl(value interface{}) {
 	)
 }
 
+func (p *jsiiProxy_Permissions) ResetAlertV2Id() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAlertV2Id",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_Permissions) ResetAppName() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1716,6 +1794,14 @@ func (p *jsiiProxy_Permissions) ResetDashboardId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetDashboardId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Permissions) ResetDatabaseInstanceName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDatabaseInstanceName",
 		nil, // no parameters
 	)
 }

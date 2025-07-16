@@ -23,11 +23,15 @@ type DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesD
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Connection() DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnectionList
+	ConnectionInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Credential() DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesCredentialList
+	CredentialInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Function() DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunctionList
@@ -68,8 +72,12 @@ type DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesD
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutConnection(value interface{})
+	PutCredential(value interface{})
 	PutFunction(value interface{})
 	PutTable(value interface{})
+	ResetConnection()
+	ResetCredential()
 	ResetFunction()
 	ResetTable()
 	// Produce the Token's value at resolution time.
@@ -107,11 +115,51 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsModelVersio
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesOutputReference) Connection() DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnectionList {
+	var returns DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnectionList
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesOutputReference) ConnectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesOutputReference) Credential() DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesCredentialList {
+	var returns DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesCredentialList
+	_jsii_.Get(
+		j,
+		"credential",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesOutputReference) CredentialInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"credentialInput",
 		&returns,
 	)
 	return returns
@@ -466,6 +514,28 @@ func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsModelVersio
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesOutputReference) PutConnection(value interface{}) {
+	if err := d.validatePutConnectionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putConnection",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesOutputReference) PutCredential(value interface{}) {
+	if err := d.validatePutCredentialParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCredential",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesOutputReference) PutFunction(value interface{}) {
 	if err := d.validatePutFunctionParameters(value); err != nil {
 		panic(err)
@@ -485,6 +555,22 @@ func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsModelVersio
 		d,
 		"putTable",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesOutputReference) ResetConnection() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetConnection",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesOutputReference) ResetCredential() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCredential",
+		nil, // no parameters
 	)
 }
 

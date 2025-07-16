@@ -38,6 +38,9 @@ type ModelServingAiGatewayRateLimitsOutputReference interface {
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
+	Principal() *string
+	SetPrincipal(val *string)
+	PrincipalInput() *string
 	RenewalPeriod() *string
 	SetRenewalPeriod(val *string)
 	RenewalPeriodInput() *string
@@ -73,7 +76,9 @@ type ModelServingAiGatewayRateLimitsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCalls()
 	ResetKey()
+	ResetPrincipal()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +179,26 @@ func (j *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference) KeyInput() *s
 	_jsii_.Get(
 		j,
 		"keyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference) Principal() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference) PrincipalInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principalInput",
 		&returns,
 	)
 	return returns
@@ -298,6 +323,17 @@ func (j *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference)SetKey(val *st
 	_jsii_.Set(
 		j,
 		"key",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference)SetPrincipal(val *string) {
+	if err := j.validateSetPrincipalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"principal",
 		val,
 	)
 }
@@ -521,10 +557,26 @@ func (m *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference) Interpolation
 	return returns
 }
 
+func (m *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference) ResetCalls() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCalls",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference) ResetKey() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetKey",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference) ResetPrincipal() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPrincipal",
 		nil, // no parameters
 	)
 }

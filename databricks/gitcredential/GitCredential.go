@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/git_credential databricks_git_credential}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/git_credential databricks_git_credential}.
 type GitCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -51,10 +51,16 @@ type GitCredential interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsDefaultForProvider() interface{}
+	SetIsDefaultForProvider(val interface{})
+	IsDefaultForProviderInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	PersonalAccessToken() *string
@@ -122,6 +128,8 @@ type GitCredential interface {
 	ResetForce()
 	ResetGitUsername()
 	ResetId()
+	ResetIsDefaultForProvider()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -304,11 +312,51 @@ func (j *jsiiProxy_GitCredential) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GitCredential) IsDefaultForProvider() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDefaultForProvider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GitCredential) IsDefaultForProviderInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDefaultForProviderInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GitCredential) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GitCredential) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GitCredential) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -405,7 +453,7 @@ func (j *jsiiProxy_GitCredential) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/git_credential databricks_git_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/git_credential databricks_git_credential} Resource.
 func NewGitCredential(scope constructs.Construct, id *string, config *GitCredentialConfig) GitCredential {
 	_init_.Initialize()
 
@@ -423,7 +471,7 @@ func NewGitCredential(scope constructs.Construct, id *string, config *GitCredent
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/git_credential databricks_git_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/git_credential databricks_git_credential} Resource.
 func NewGitCredential_Override(g GitCredential, scope constructs.Construct, id *string, config *GitCredentialConfig) {
 	_init_.Initialize()
 
@@ -516,6 +564,17 @@ func (j *jsiiProxy_GitCredential)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GitCredential)SetIsDefaultForProvider(val interface{}) {
+	if err := j.validateSetIsDefaultForProviderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isDefaultForProvider",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GitCredential)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -523,6 +582,17 @@ func (j *jsiiProxy_GitCredential)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GitCredential)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -930,6 +1000,22 @@ func (g *jsiiProxy_GitCredential) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GitCredential) ResetIsDefaultForProvider() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIsDefaultForProvider",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GitCredential) ResetName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetName",
 		nil, // no parameters
 	)
 }

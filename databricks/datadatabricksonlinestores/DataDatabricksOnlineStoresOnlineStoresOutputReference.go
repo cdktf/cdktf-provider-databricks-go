@@ -40,6 +40,9 @@ type DataDatabricksOnlineStoresOnlineStoresOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	ReadReplicaCount() *float64
+	SetReadReplicaCount(val *float64)
+	ReadReplicaCountInput() *float64
 	State() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -73,7 +76,7 @@ type DataDatabricksOnlineStoresOnlineStoresOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetCapacity()
+	ResetReadReplicaCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -199,6 +202,26 @@ func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) NameIn
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) ReadReplicaCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"readReplicaCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) ReadReplicaCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"readReplicaCountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -308,6 +331,17 @@ func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference)SetName
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference)SetReadReplicaCount(val *float64) {
+	if err := j.validateSetReadReplicaCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readReplicaCount",
 		val,
 	)
 }
@@ -520,10 +554,10 @@ func (d *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) Interp
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) ResetCapacity() {
+func (d *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) ResetReadReplicaCount() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetCapacity",
+		"resetReadReplicaCount",
 		nil, // no parameters
 	)
 }

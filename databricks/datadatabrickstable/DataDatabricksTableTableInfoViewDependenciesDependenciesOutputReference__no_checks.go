@@ -47,6 +47,14 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesOutpu
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesOutputReference) validatePutConnectionParameters(value *DataDatabricksTableTableInfoViewDependenciesDependenciesConnection) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesOutputReference) validatePutCredentialParameters(value *DataDatabricksTableTableInfoViewDependenciesDependenciesCredential) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesOutputReference) validatePutFunctionParameters(value *DataDatabricksTableTableInfoViewDependenciesDependenciesFunction) error {
 	return nil
 }

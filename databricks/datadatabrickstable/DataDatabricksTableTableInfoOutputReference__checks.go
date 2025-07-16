@@ -168,6 +168,17 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoOutputReference) validatePutRowFi
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksTableTableInfoOutputReference) validatePutSecurableKindManifestParameters(value *DataDatabricksTableTableInfoSecurableKindManifest) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksTableTableInfoOutputReference) validatePutTableConstraintsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

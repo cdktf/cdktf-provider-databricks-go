@@ -111,7 +111,7 @@ func (j *jsiiProxy_DataDatabricksServicePrincipal) validateSetReposParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksServicePrincipal) validateSetSpIdParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksServicePrincipal) validateSetScimIdParameters(val *string) error {
 	return nil
 }
 

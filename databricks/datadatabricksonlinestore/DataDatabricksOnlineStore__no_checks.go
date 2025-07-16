@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataDatabricksOnlineStore) validateSetNameParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksOnlineStore) validateSetReadReplicaCountParameters(val *float64) error {
+	return nil
+}
+
 func validateNewDataDatabricksOnlineStoreParameters(scope constructs.Construct, id *string, config *DataDatabricksOnlineStoreConfig) error {
 	return nil
 }

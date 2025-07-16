@@ -71,6 +71,10 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstra
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputReference) validateSetRelyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

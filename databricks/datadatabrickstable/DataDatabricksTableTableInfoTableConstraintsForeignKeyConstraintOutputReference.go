@@ -44,6 +44,9 @@ type DataDatabricksTableTableInfoTableConstraintsForeignKeyConstraintOutputRefer
 	ParentTable() *string
 	SetParentTable(val *string)
 	ParentTableInput() *string
+	Rely() interface{}
+	SetRely(val interface{})
+	RelyInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,6 +79,7 @@ type DataDatabricksTableTableInfoTableConstraintsForeignKeyConstraintOutputRefer
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetRely()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -221,6 +225,26 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsForeignKeyConstra
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsForeignKeyConstraintOutputReference) Rely() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rely",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsForeignKeyConstraintOutputReference) RelyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"relyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsForeignKeyConstraintOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -342,6 +366,17 @@ func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsForeignKeyConstra
 	_jsii_.Set(
 		j,
 		"parentTable",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsForeignKeyConstraintOutputReference)SetRely(val interface{}) {
+	if err := j.validateSetRelyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rely",
 		val,
 	)
 }
@@ -552,6 +587,14 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsForeignKeyConstra
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsForeignKeyConstraintOutputReference) ResetRely() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRely",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksTableTableInfoTableConstraintsForeignKeyConstraintOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

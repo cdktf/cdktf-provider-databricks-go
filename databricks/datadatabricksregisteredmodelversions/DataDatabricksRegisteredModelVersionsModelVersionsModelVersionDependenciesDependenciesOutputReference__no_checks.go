@@ -47,6 +47,14 @@ func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsModelVersio
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesOutputReference) validatePutConnectionParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesOutputReference) validatePutCredentialParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesOutputReference) validatePutFunctionParameters(value interface{}) error {
 	return nil
 }

@@ -440,6 +440,14 @@ func (j *jsiiProxy_ModelServing) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_ModelServing) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ModelServing) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

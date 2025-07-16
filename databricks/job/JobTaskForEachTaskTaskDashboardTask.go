@@ -5,13 +5,13 @@ package job
 
 
 type JobTaskForEachTaskTaskDashboardTask struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/job#dashboard_id Job#dashboard_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/job#dashboard_id Job#dashboard_id}.
 	DashboardId *string `field:"optional" json:"dashboardId" yaml:"dashboardId"`
 	// subscription block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/job#subscription Job#subscription}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/job#subscription Job#subscription}
 	Subscription *JobTaskForEachTaskTaskDashboardTaskSubscription `field:"optional" json:"subscription" yaml:"subscription"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/job#warehouse_id Job#warehouse_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/job#warehouse_id Job#warehouse_id}.
 	WarehouseId *string `field:"optional" json:"warehouseId" yaml:"warehouseId"`
 }
 

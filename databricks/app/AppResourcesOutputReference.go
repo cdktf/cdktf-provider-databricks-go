@@ -28,6 +28,8 @@ type AppResourcesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Database() AppResourcesDatabaseOutputReference
+	DatabaseInput() interface{}
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
@@ -80,11 +82,13 @@ type AppResourcesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDatabase(value *AppResourcesDatabase)
 	PutJob(value *AppResourcesJob)
 	PutSecret(value *AppResourcesSecret)
 	PutServingEndpoint(value *AppResourcesServingEndpoint)
 	PutSqlWarehouse(value *AppResourcesSqlWarehouse)
 	PutUcSecurable(value *AppResourcesUcSecurable)
+	ResetDatabase()
 	ResetDescription()
 	ResetJob()
 	ResetSecret()
@@ -131,6 +135,26 @@ func (j *jsiiProxy_AppResourcesOutputReference) CreationStack() *[]*string {
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppResourcesOutputReference) Database() AppResourcesDatabaseOutputReference {
+	var returns AppResourcesDatabaseOutputReference
+	_jsii_.Get(
+		j,
+		"database",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppResourcesOutputReference) DatabaseInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"databaseInput",
 		&returns,
 	)
 	return returns
@@ -607,6 +631,17 @@ func (a *jsiiProxy_AppResourcesOutputReference) InterpolationForAttribute(proper
 	return returns
 }
 
+func (a *jsiiProxy_AppResourcesOutputReference) PutDatabase(value *AppResourcesDatabase) {
+	if err := a.validatePutDatabaseParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putDatabase",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppResourcesOutputReference) PutJob(value *AppResourcesJob) {
 	if err := a.validatePutJobParameters(value); err != nil {
 		panic(err)
@@ -659,6 +694,14 @@ func (a *jsiiProxy_AppResourcesOutputReference) PutUcSecurable(value *AppResourc
 		a,
 		"putUcSecurable",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppResourcesOutputReference) ResetDatabase() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDatabase",
+		nil, // no parameters
 	)
 }
 

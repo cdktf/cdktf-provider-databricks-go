@@ -71,6 +71,10 @@ func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) validateSetReadReplicaCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

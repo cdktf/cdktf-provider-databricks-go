@@ -1999,6 +1999,8 @@ func init() {
 		reflect.TypeOf((*JobJobClusterNewClusterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyPolicyDefaultValues", GoGetter: "ApplyPolicyDefaultValues"},
+			_jsii_.MemberProperty{JsiiProperty: "applyPolicyDefaultValuesAllowList", GoGetter: "ApplyPolicyDefaultValuesAllowList"},
+			_jsii_.MemberProperty{JsiiProperty: "applyPolicyDefaultValuesAllowListInput", GoGetter: "ApplyPolicyDefaultValuesAllowListInput"},
 			_jsii_.MemberProperty{JsiiProperty: "applyPolicyDefaultValuesInput", GoGetter: "ApplyPolicyDefaultValuesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscale", GoGetter: "Autoscale"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscaleInput", GoGetter: "AutoscaleInput"},
@@ -2078,6 +2080,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "remoteDiskThroughput", GoGetter: "RemoteDiskThroughput"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteDiskThroughputInput", GoGetter: "RemoteDiskThroughputInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApplyPolicyDefaultValues", GoMethod: "ResetApplyPolicyDefaultValues"},
+			_jsii_.MemberMethod{JsiiMethod: "resetApplyPolicyDefaultValuesAllowList", GoMethod: "ResetApplyPolicyDefaultValuesAllowList"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoscale", GoMethod: "ResetAutoscale"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsAttributes", GoMethod: "ResetAwsAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureAttributes", GoMethod: "ResetAzureAttributes"},
@@ -10438,6 +10441,8 @@ func init() {
 		reflect.TypeOf((*JobTaskNewClusterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyPolicyDefaultValues", GoGetter: "ApplyPolicyDefaultValues"},
+			_jsii_.MemberProperty{JsiiProperty: "applyPolicyDefaultValuesAllowList", GoGetter: "ApplyPolicyDefaultValuesAllowList"},
+			_jsii_.MemberProperty{JsiiProperty: "applyPolicyDefaultValuesAllowListInput", GoGetter: "ApplyPolicyDefaultValuesAllowListInput"},
 			_jsii_.MemberProperty{JsiiProperty: "applyPolicyDefaultValuesInput", GoGetter: "ApplyPolicyDefaultValuesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscale", GoGetter: "Autoscale"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscaleInput", GoGetter: "AutoscaleInput"},
@@ -10517,6 +10522,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "remoteDiskThroughput", GoGetter: "RemoteDiskThroughput"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteDiskThroughputInput", GoGetter: "RemoteDiskThroughputInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApplyPolicyDefaultValues", GoMethod: "ResetApplyPolicyDefaultValues"},
+			_jsii_.MemberMethod{JsiiMethod: "resetApplyPolicyDefaultValuesAllowList", GoMethod: "ResetApplyPolicyDefaultValuesAllowList"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoscale", GoMethod: "ResetAutoscale"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsAttributes", GoMethod: "ResetAwsAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureAttributes", GoMethod: "ResetAzureAttributes"},

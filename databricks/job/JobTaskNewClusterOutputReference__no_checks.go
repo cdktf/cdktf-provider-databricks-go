@@ -95,6 +95,10 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetApplyPolicyDefau
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetApplyPolicyDefaultValuesAllowListParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

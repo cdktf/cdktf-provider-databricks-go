@@ -28,6 +28,8 @@ type DataDatabricksAppsAppResourcesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Database() DataDatabricksAppsAppResourcesDatabaseOutputReference
+	DatabaseInput() interface{}
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
@@ -80,11 +82,13 @@ type DataDatabricksAppsAppResourcesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDatabase(value *DataDatabricksAppsAppResourcesDatabase)
 	PutJob(value *DataDatabricksAppsAppResourcesJob)
 	PutSecret(value *DataDatabricksAppsAppResourcesSecret)
 	PutServingEndpoint(value *DataDatabricksAppsAppResourcesServingEndpoint)
 	PutSqlWarehouse(value *DataDatabricksAppsAppResourcesSqlWarehouse)
 	PutUcSecurable(value *DataDatabricksAppsAppResourcesUcSecurable)
+	ResetDatabase()
 	ResetDescription()
 	ResetJob()
 	ResetSecret()
@@ -131,6 +135,26 @@ func (j *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) CreationStack(
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) Database() DataDatabricksAppsAppResourcesDatabaseOutputReference {
+	var returns DataDatabricksAppsAppResourcesDatabaseOutputReference
+	_jsii_.Get(
+		j,
+		"database",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) DatabaseInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"databaseInput",
 		&returns,
 	)
 	return returns
@@ -607,6 +631,17 @@ func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) InterpolationF
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) PutDatabase(value *DataDatabricksAppsAppResourcesDatabase) {
+	if err := d.validatePutDatabaseParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putDatabase",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) PutJob(value *DataDatabricksAppsAppResourcesJob) {
 	if err := d.validatePutJobParameters(value); err != nil {
 		panic(err)
@@ -659,6 +694,14 @@ func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) PutUcSecurable
 		d,
 		"putUcSecurable",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppsAppResourcesOutputReference) ResetDatabase() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDatabase",
+		nil, // no parameters
 	)
 }
 

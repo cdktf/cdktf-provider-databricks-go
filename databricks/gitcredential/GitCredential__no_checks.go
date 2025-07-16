@@ -115,7 +115,15 @@ func (j *jsiiProxy_GitCredential) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_GitCredential) validateSetIsDefaultForProviderParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GitCredential) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_GitCredential) validateSetNameParameters(val *string) error {
 	return nil
 }
 

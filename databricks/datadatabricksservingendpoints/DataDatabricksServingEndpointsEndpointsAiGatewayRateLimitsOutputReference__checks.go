@@ -206,6 +206,14 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOut
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference) validateSetPrincipalParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference) validateSetRenewalPeriodParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
