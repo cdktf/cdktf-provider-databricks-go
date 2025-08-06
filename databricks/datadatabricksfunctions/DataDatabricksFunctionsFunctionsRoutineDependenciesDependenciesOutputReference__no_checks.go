@@ -47,19 +47,19 @@ func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenci
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) validatePutConnectionParameters(value interface{}) error {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) validatePutConnectionParameters(value *DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnection) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) validatePutCredentialParameters(value interface{}) error {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) validatePutCredentialParameters(value *DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredential) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) validatePutFunctionParameters(value interface{}) error {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) validatePutFunctionParameters(value *DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) validatePutTableParameters(value interface{}) error {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) validatePutTableParameters(value *DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable) error {
 	return nil
 }
 

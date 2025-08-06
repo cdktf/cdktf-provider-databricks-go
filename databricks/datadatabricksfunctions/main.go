@@ -78,28 +78,6 @@ func init() {
 		reflect.TypeOf((*DataDatabricksFunctionsFunctionsInputParams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParamsList",
-		reflect.TypeOf((*DataDatabricksFunctionsFunctionsInputParamsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataDatabricksFunctionsFunctionsInputParamsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
 		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParamsOutputReference",
 		reflect.TypeOf((*DataDatabricksFunctionsFunctionsInputParamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -377,28 +355,6 @@ func init() {
 		reflect.TypeOf((*DataDatabricksFunctionsFunctionsReturnParams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsReturnParamsList",
-		reflect.TypeOf((*DataDatabricksFunctionsFunctionsReturnParamsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataDatabricksFunctionsFunctionsReturnParamsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
 		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsReturnParamsOutputReference",
 		reflect.TypeOf((*DataDatabricksFunctionsFunctionsReturnParamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -537,28 +493,6 @@ func init() {
 		reflect.TypeOf((*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnection)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnectionList",
-		reflect.TypeOf((*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnectionList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnectionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
 		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnectionOutputReference",
 		reflect.TypeOf((*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnectionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -598,28 +532,6 @@ func init() {
 		reflect.TypeOf((*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredential)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialList",
-		reflect.TypeOf((*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
 		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference",
 		reflect.TypeOf((*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -657,28 +569,6 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction",
 		reflect.TypeOf((*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionList",
-		reflect.TypeOf((*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionOutputReference",
@@ -789,28 +679,6 @@ func init() {
 		reflect.TypeOf((*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableList",
-		reflect.TypeOf((*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
 		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableOutputReference",
 		reflect.TypeOf((*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -841,28 +709,6 @@ func init() {
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesList",
-		reflect.TypeOf((*DataDatabricksFunctionsFunctionsRoutineDependenciesList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)

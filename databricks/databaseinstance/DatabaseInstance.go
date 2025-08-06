@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/database_instance databricks_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/database_instance databricks_database_instance}.
 type DatabaseInstance interface {
 	cdktf.TerraformResource
 	Capacity() *string
@@ -75,6 +75,9 @@ type DatabaseInstance interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PurgeOnDelete() interface{}
+	SetPurgeOnDelete(val interface{})
+	PurgeOnDeleteInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	ReadOnlyDns() *string
@@ -144,6 +147,7 @@ type DatabaseInstance interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParentInstanceRef()
+	ResetPurgeOnDelete()
 	ResetRetentionWindowInDays()
 	ResetStopped()
 	SynthesizeAttributes() *map[string]interface{}
@@ -464,6 +468,26 @@ func (j *jsiiProxy_DatabaseInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseInstance) PurgeOnDelete() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"purgeOnDelete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseInstance) PurgeOnDeleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"purgeOnDeleteInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseInstance) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -585,7 +609,7 @@ func (j *jsiiProxy_DatabaseInstance) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/database_instance databricks_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/database_instance databricks_database_instance} Resource.
 func NewDatabaseInstance(scope constructs.Construct, id *string, config *DatabaseInstanceConfig) DatabaseInstance {
 	_init_.Initialize()
 
@@ -603,7 +627,7 @@ func NewDatabaseInstance(scope constructs.Construct, id *string, config *Databas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/database_instance databricks_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/database_instance databricks_database_instance} Resource.
 func NewDatabaseInstance_Override(d DatabaseInstance, scope constructs.Construct, id *string, config *DatabaseInstanceConfig) {
 	_init_.Initialize()
 
@@ -722,6 +746,17 @@ func (j *jsiiProxy_DatabaseInstance)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseInstance)SetPurgeOnDelete(val interface{}) {
+	if err := j.validateSetPurgeOnDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"purgeOnDelete",
 		val,
 	)
 }
@@ -1148,6 +1183,14 @@ func (d *jsiiProxy_DatabaseInstance) ResetParentInstanceRef() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetParentInstanceRef",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseInstance) ResetPurgeOnDelete() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPurgeOnDelete",
 		nil, // no parameters
 	)
 }

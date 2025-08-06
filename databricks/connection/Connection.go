@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/connection databricks_connection}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/connection databricks_connection}.
 type Connection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -41,6 +41,8 @@ type Connection interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnvironmentSettings() ConnectionEnvironmentSettingsOutputReference
+	EnvironmentSettingsInput() *ConnectionEnvironmentSettings
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -139,8 +141,10 @@ type Connection interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEnvironmentSettings(value *ConnectionEnvironmentSettings)
 	ResetComment()
 	ResetConnectionType()
+	ResetEnvironmentSettings()
 	ResetId()
 	ResetName()
 	ResetOptions()
@@ -293,6 +297,26 @@ func (j *jsiiProxy_Connection) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Connection) EnvironmentSettings() ConnectionEnvironmentSettingsOutputReference {
+	var returns ConnectionEnvironmentSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"environmentSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Connection) EnvironmentSettingsInput() *ConnectionEnvironmentSettings {
+	var returns *ConnectionEnvironmentSettings
+	_jsii_.Get(
+		j,
+		"environmentSettingsInput",
 		&returns,
 	)
 	return returns
@@ -599,7 +623,7 @@ func (j *jsiiProxy_Connection) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/connection databricks_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/connection databricks_connection} Resource.
 func NewConnection(scope constructs.Construct, id *string, config *ConnectionConfig) Connection {
 	_init_.Initialize()
 
@@ -617,7 +641,7 @@ func NewConnection(scope constructs.Construct, id *string, config *ConnectionCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/connection databricks_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/connection databricks_connection} Resource.
 func NewConnection_Override(c Connection, scope constructs.Construct, id *string, config *ConnectionConfig) {
 	_init_.Initialize()
 
@@ -1137,6 +1161,17 @@ func (c *jsiiProxy_Connection) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_Connection) PutEnvironmentSettings(value *ConnectionEnvironmentSettings) {
+	if err := c.validatePutEnvironmentSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putEnvironmentSettings",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_Connection) ResetComment() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1149,6 +1184,14 @@ func (c *jsiiProxy_Connection) ResetConnectionType() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetConnectionType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Connection) ResetEnvironmentSettings() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnvironmentSettings",
 		nil, // no parameters
 	)
 }

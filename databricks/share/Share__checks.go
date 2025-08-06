@@ -376,30 +376,6 @@ func (j *jsiiProxy_Share) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Share) validateSetCreatedAtParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Share) validateSetCreatedByParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Share) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_Share) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -470,31 +446,7 @@ func (j *jsiiProxy_Share) validateSetProvisionersParameters(val *[]interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_Share) validateSetStorageLocationParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_Share) validateSetStorageRootParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Share) validateSetUpdatedAtParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Share) validateSetUpdatedByParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

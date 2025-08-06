@@ -27,6 +27,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "emailNotifications", GoGetter: "EmailNotifications"},
+			_jsii_.MemberProperty{JsiiProperty: "emailNotificationsInput", GoGetter: "EmailNotificationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -56,11 +58,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putAiGateway", GoMethod: "PutAiGateway"},
 			_jsii_.MemberMethod{JsiiMethod: "putConfig", GoMethod: "PutConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putEmailNotifications", GoMethod: "PutEmailNotifications"},
 			_jsii_.MemberMethod{JsiiMethod: "putTags", GoMethod: "PutTags"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAiGateway", GoMethod: "ResetAiGateway"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBudgetPolicyId", GoMethod: "ResetBudgetPolicyId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEmailNotifications", GoMethod: "ResetEmailNotifications"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
@@ -773,6 +777,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigRoutesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputEmailNotifications",
+		reflect.TypeOf((*ModelServingProvisionedThroughputEmailNotifications)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputEmailNotificationsOutputReference",
+		reflect.TypeOf((*ModelServingProvisionedThroughputEmailNotificationsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "onUpdateFailure", GoGetter: "OnUpdateFailure"},
+			_jsii_.MemberProperty{JsiiProperty: "onUpdateFailureInput", GoGetter: "OnUpdateFailureInput"},
+			_jsii_.MemberProperty{JsiiProperty: "onUpdateSuccess", GoGetter: "OnUpdateSuccess"},
+			_jsii_.MemberProperty{JsiiProperty: "onUpdateSuccessInput", GoGetter: "OnUpdateSuccessInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnUpdateFailure", GoMethod: "ResetOnUpdateFailure"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnUpdateSuccess", GoMethod: "ResetOnUpdateSuccess"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ModelServingProvisionedThroughputEmailNotificationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

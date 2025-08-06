@@ -55,14 +55,6 @@ func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetAddedAtParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetAddedByParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetCdfEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -104,10 +96,6 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetSharedAs
 }
 
 func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetStartVersionParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) validateSetStatusParameters(val *string) error {
 	return nil
 }
 

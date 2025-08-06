@@ -115,6 +115,10 @@ func (j *jsiiProxy_DataDatabricksServicePrincipal) validateSetScimIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksServicePrincipal) validateSetSpIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksServicePrincipalParameters(scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalConfig) error {
 	return nil
 }

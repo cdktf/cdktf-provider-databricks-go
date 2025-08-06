@@ -22,11 +22,11 @@ type DataDatabricksOnlineStoreConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/online_store#capacity DataDatabricksOnlineStore#capacity}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/online_store#capacity DataDatabricksOnlineStore#capacity}.
 	Capacity *string `field:"required" json:"capacity" yaml:"capacity"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/online_store#name DataDatabricksOnlineStore#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/online_store#name DataDatabricksOnlineStore#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/online_store#read_replica_count DataDatabricksOnlineStore#read_replica_count}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/online_store#read_replica_count DataDatabricksOnlineStore#read_replica_count}.
 	ReadReplicaCount *float64 `field:"optional" json:"readReplicaCount" yaml:"readReplicaCount"`
 }
 

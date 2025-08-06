@@ -5,7 +5,7 @@ package datadatabrickscatalog
 
 
 type DataDatabricksCatalogCatalogInfoProvisioningInfo struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/catalog#state DataDatabricksCatalog#state}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/catalog#state DataDatabricksCatalog#state}.
 	State *string `field:"optional" json:"state" yaml:"state"`
 }
 

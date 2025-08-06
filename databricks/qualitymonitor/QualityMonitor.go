@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/quality_monitor databricks_quality_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/quality_monitor databricks_quality_monitor}.
 type QualityMonitor interface {
 	cdktf.TerraformResource
 	AssetsDir() *string
@@ -63,7 +63,7 @@ type QualityMonitor interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MonitorVersion() *string
+	MonitorVersion() *float64
 	// The tree node.
 	Node() constructs.Node
 	Notifications() QualityMonitorNotificationsList
@@ -441,8 +441,8 @@ func (j *jsiiProxy_QualityMonitor) Lifecycle() *cdktf.TerraformResourceLifecycle
 	return returns
 }
 
-func (j *jsiiProxy_QualityMonitor) MonitorVersion() *string {
-	var returns *string
+func (j *jsiiProxy_QualityMonitor) MonitorVersion() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"monitorVersion",
@@ -722,7 +722,7 @@ func (j *jsiiProxy_QualityMonitor) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/quality_monitor databricks_quality_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/quality_monitor databricks_quality_monitor} Resource.
 func NewQualityMonitor(scope constructs.Construct, id *string, config *QualityMonitorConfig) QualityMonitor {
 	_init_.Initialize()
 
@@ -740,7 +740,7 @@ func NewQualityMonitor(scope constructs.Construct, id *string, config *QualityMo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/quality_monitor databricks_quality_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/quality_monitor databricks_quality_monitor} Resource.
 func NewQualityMonitor_Override(q QualityMonitor, scope constructs.Construct, id *string, config *QualityMonitorConfig) {
 	_init_.Initialize()
 

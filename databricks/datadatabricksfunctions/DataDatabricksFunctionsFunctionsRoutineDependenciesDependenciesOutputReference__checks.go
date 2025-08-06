@@ -93,125 +93,45 @@ func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenci
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) validatePutConnectionParameters(value interface{}) error {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) validatePutConnectionParameters(value *DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnection) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnection:
-		value := value.(*[]*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnection)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnection:
-		value_ := value.([]*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnection)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnection; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) validatePutCredentialParameters(value interface{}) error {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) validatePutCredentialParameters(value *DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredential) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredential:
-		value := value.(*[]*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredential)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredential:
-		value_ := value.([]*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredential)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredential; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) validatePutFunctionParameters(value interface{}) error {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) validatePutFunctionParameters(value *DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction:
-		value := value.(*[]*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction:
-		value_ := value.([]*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) validatePutTableParameters(value interface{}) error {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) validatePutTableParameters(value *DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable:
-		value := value.(*[]*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable:
-		value_ := value.([]*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

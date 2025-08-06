@@ -41,6 +41,8 @@ type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference i
 	PrimaryKeys() *[]*string
 	SetPrimaryKeys(val *[]*string)
 	PrimaryKeysInput() *[]*string
+	QueryBasedConnectorConfig() PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference
+	QueryBasedConnectorConfigInput() *PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig
 	SalesforceIncludeFormulaFields() interface{}
 	SetSalesforceIncludeFormulaFields(val interface{})
 	SalesforceIncludeFormulaFieldsInput() interface{}
@@ -82,9 +84,11 @@ type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutQueryBasedConnectorConfig(value *PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig)
 	ResetExcludeColumns()
 	ResetIncludeColumns()
 	ResetPrimaryKeys()
+	ResetQueryBasedConnectorConfig()
 	ResetSalesforceIncludeFormulaFields()
 	ResetScdType()
 	ResetSequenceBy()
@@ -208,6 +212,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	_jsii_.Get(
 		j,
 		"primaryKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) QueryBasedConnectorConfig() PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference {
+	var returns PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference
+	_jsii_.Get(
+		j,
+		"queryBasedConnectorConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) QueryBasedConnectorConfigInput() *PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig {
+	var returns *PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig
+	_jsii_.Get(
+		j,
+		"queryBasedConnectorConfigInput",
 		&returns,
 	)
 	return returns
@@ -628,6 +652,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	return returns
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) PutQueryBasedConnectorConfig(value *PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig) {
+	if err := p.validatePutQueryBasedConnectorConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putQueryBasedConnectorConfig",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ResetExcludeColumns() {
 	_jsii_.InvokeVoid(
 		p,
@@ -648,6 +683,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	_jsii_.InvokeVoid(
 		p,
 		"resetPrimaryKeys",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ResetQueryBasedConnectorConfig() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetQueryBasedConnectorConfig",
 		nil, // no parameters
 	)
 }

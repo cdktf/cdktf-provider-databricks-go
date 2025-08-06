@@ -47,6 +47,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutp
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference) validatePutQueryBasedConnectorConfigParameters(value *PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

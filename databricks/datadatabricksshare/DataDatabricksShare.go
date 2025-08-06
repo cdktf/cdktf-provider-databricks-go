@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/share databricks_share}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/share databricks_share}.
 type DataDatabricksShare interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Comment() *string
+	SetComment(val *string)
+	CommentInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -24,15 +27,12 @@ type DataDatabricksShare interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedAt() *float64
-	SetCreatedAt(val *float64)
-	CreatedAtInput() *float64
 	CreatedBy() *string
-	SetCreatedBy(val *string)
-	CreatedByInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveOwner() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -41,9 +41,6 @@ type DataDatabricksShare interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -55,18 +52,27 @@ type DataDatabricksShare interface {
 	Node() constructs.Node
 	Object() DataDatabricksShareObjectList
 	ObjectInput() interface{}
+	Owner() *string
+	SetOwner(val *string)
+	OwnerInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	StorageLocation() *string
+	StorageRoot() *string
+	SetStorageRoot(val *string)
+	StorageRootInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatedAt() *float64
+	UpdatedBy() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -93,14 +99,14 @@ type DataDatabricksShare interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutObject(value interface{})
-	ResetCreatedAt()
-	ResetCreatedBy()
-	ResetId()
+	ResetComment()
 	ResetName()
 	ResetObject()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetOwner()
+	ResetStorageRoot()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -125,6 +131,26 @@ func (j *jsiiProxy_DataDatabricksShare) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksShare) Comment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"comment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksShare) CommentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"commentInput",
 		&returns,
 	)
 	return returns
@@ -160,16 +186,6 @@ func (j *jsiiProxy_DataDatabricksShare) CreatedAt() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksShare) CreatedAtInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"createdAtInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksShare) CreatedBy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -180,21 +196,21 @@ func (j *jsiiProxy_DataDatabricksShare) CreatedBy() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksShare) CreatedByInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdByInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksShare) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksShare) EffectiveOwner() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveOwner",
 		&returns,
 	)
 	return returns
@@ -225,26 +241,6 @@ func (j *jsiiProxy_DataDatabricksShare) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksShare) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksShare) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -310,6 +306,26 @@ func (j *jsiiProxy_DataDatabricksShare) ObjectInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksShare) Owner() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"owner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksShare) OwnerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksShare) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -325,6 +341,36 @@ func (j *jsiiProxy_DataDatabricksShare) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksShare) StorageLocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksShare) StorageRoot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageRoot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksShare) StorageRootInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageRootInput",
 		&returns,
 	)
 	return returns
@@ -360,8 +406,28 @@ func (j *jsiiProxy_DataDatabricksShare) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksShare) UpdatedAt() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/share databricks_share} Data Source.
+func (j *jsiiProxy_DataDatabricksShare) UpdatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedBy",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/share databricks_share} Data Source.
 func NewDataDatabricksShare(scope constructs.Construct, id *string, config *DataDatabricksShareConfig) DataDatabricksShare {
 	_init_.Initialize()
 
@@ -379,7 +445,7 @@ func NewDataDatabricksShare(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/share databricks_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/share databricks_share} Data Source.
 func NewDataDatabricksShare_Override(d DataDatabricksShare, scope constructs.Construct, id *string, config *DataDatabricksShareConfig) {
 	_init_.Initialize()
 
@@ -390,6 +456,17 @@ func NewDataDatabricksShare_Override(d DataDatabricksShare, scope constructs.Con
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksShare)SetComment(val *string) {
+	if err := j.validateSetCommentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"comment",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksShare)SetCount(val interface{}) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
@@ -397,28 +474,6 @@ func (j *jsiiProxy_DataDatabricksShare)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksShare)SetCreatedAt(val *float64) {
-	if err := j.validateSetCreatedAtParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createdAt",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksShare)SetCreatedBy(val *string) {
-	if err := j.validateSetCreatedByParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createdBy",
 		val,
 	)
 }
@@ -435,17 +490,6 @@ func (j *jsiiProxy_DataDatabricksShare)SetForEach(val cdktf.ITerraformIterator) 
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksShare)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -472,10 +516,32 @@ func (j *jsiiProxy_DataDatabricksShare)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksShare)SetOwner(val *string) {
+	if err := j.validateSetOwnerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"owner",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksShare)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksShare)SetStorageRoot(val *string) {
+	if err := j.validateSetStorageRootParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageRoot",
 		val,
 	)
 }
@@ -776,26 +842,10 @@ func (d *jsiiProxy_DataDatabricksShare) PutObject(value interface{}) {
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksShare) ResetCreatedAt() {
+func (d *jsiiProxy_DataDatabricksShare) ResetComment() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetCreatedAt",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksShare) ResetCreatedBy() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCreatedBy",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksShare) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
+		"resetComment",
 		nil, // no parameters
 	)
 }
@@ -820,6 +870,22 @@ func (d *jsiiProxy_DataDatabricksShare) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksShare) ResetOwner() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOwner",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksShare) ResetStorageRoot() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStorageRoot",
 		nil, // no parameters
 	)
 }

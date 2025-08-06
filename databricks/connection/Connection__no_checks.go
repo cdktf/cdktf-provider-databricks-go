@@ -75,6 +75,10 @@ func (c *jsiiProxy_Connection) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (c *jsiiProxy_Connection) validatePutEnvironmentSettingsParameters(value *ConnectionEnvironmentSettings) error {
+	return nil
+}
+
 func validateConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

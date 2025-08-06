@@ -63,7 +63,7 @@ type DataDatabricksFunctionsFunctionsOutputReference interface {
 	FunctionId() *string
 	SetFunctionId(val *string)
 	FunctionIdInput() *string
-	InputParams() DataDatabricksFunctionsFunctionsInputParamsList
+	InputParams() DataDatabricksFunctionsFunctionsInputParamsOutputReference
 	InputParamsInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
@@ -88,7 +88,7 @@ type DataDatabricksFunctionsFunctionsOutputReference interface {
 	Properties() *string
 	SetProperties(val *string)
 	PropertiesInput() *string
-	ReturnParams() DataDatabricksFunctionsFunctionsReturnParamsList
+	ReturnParams() DataDatabricksFunctionsFunctionsReturnParamsOutputReference
 	ReturnParamsInput() interface{}
 	RoutineBody() *string
 	SetRoutineBody(val *string)
@@ -96,7 +96,7 @@ type DataDatabricksFunctionsFunctionsOutputReference interface {
 	RoutineDefinition() *string
 	SetRoutineDefinition(val *string)
 	RoutineDefinitionInput() *string
-	RoutineDependencies() DataDatabricksFunctionsFunctionsRoutineDependenciesList
+	RoutineDependencies() DataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference
 	RoutineDependenciesInput() interface{}
 	SchemaName() *string
 	SetSchemaName(val *string)
@@ -151,9 +151,9 @@ type DataDatabricksFunctionsFunctionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutInputParams(value interface{})
-	PutReturnParams(value interface{})
-	PutRoutineDependencies(value interface{})
+	PutInputParams(value *DataDatabricksFunctionsFunctionsInputParams)
+	PutReturnParams(value *DataDatabricksFunctionsFunctionsReturnParams)
+	PutRoutineDependencies(value *DataDatabricksFunctionsFunctionsRoutineDependencies)
 	ResetBrowseOnly()
 	ResetCatalogName()
 	ResetComment()
@@ -459,8 +459,8 @@ func (j *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) FunctionIdIn
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) InputParams() DataDatabricksFunctionsFunctionsInputParamsList {
-	var returns DataDatabricksFunctionsFunctionsInputParamsList
+func (j *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) InputParams() DataDatabricksFunctionsFunctionsInputParamsOutputReference {
+	var returns DataDatabricksFunctionsFunctionsInputParamsOutputReference
 	_jsii_.Get(
 		j,
 		"inputParams",
@@ -629,8 +629,8 @@ func (j *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) PropertiesIn
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) ReturnParams() DataDatabricksFunctionsFunctionsReturnParamsList {
-	var returns DataDatabricksFunctionsFunctionsReturnParamsList
+func (j *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) ReturnParams() DataDatabricksFunctionsFunctionsReturnParamsOutputReference {
+	var returns DataDatabricksFunctionsFunctionsReturnParamsOutputReference
 	_jsii_.Get(
 		j,
 		"returnParams",
@@ -689,8 +689,8 @@ func (j *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) RoutineDefin
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) RoutineDependencies() DataDatabricksFunctionsFunctionsRoutineDependenciesList {
-	var returns DataDatabricksFunctionsFunctionsRoutineDependenciesList
+func (j *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) RoutineDependencies() DataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference {
+	var returns DataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference
 	_jsii_.Get(
 		j,
 		"routineDependencies",
@@ -1435,7 +1435,7 @@ func (d *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) Interpolatio
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) PutInputParams(value interface{}) {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) PutInputParams(value *DataDatabricksFunctionsFunctionsInputParams) {
 	if err := d.validatePutInputParamsParameters(value); err != nil {
 		panic(err)
 	}
@@ -1446,7 +1446,7 @@ func (d *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) PutInputPara
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) PutReturnParams(value interface{}) {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) PutReturnParams(value *DataDatabricksFunctionsFunctionsReturnParams) {
 	if err := d.validatePutReturnParamsParameters(value); err != nil {
 		panic(err)
 	}
@@ -1457,7 +1457,7 @@ func (d *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) PutReturnPar
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) PutRoutineDependencies(value interface{}) {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) PutRoutineDependencies(value *DataDatabricksFunctionsFunctionsRoutineDependencies) {
 	if err := d.validatePutRoutineDependenciesParameters(value); err != nil {
 		panic(err)
 	}

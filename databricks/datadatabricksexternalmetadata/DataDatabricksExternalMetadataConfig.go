@@ -22,21 +22,21 @@ type DataDatabricksExternalMetadataConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/external_metadata#entity_type DataDatabricksExternalMetadata#entity_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/external_metadata#entity_type DataDatabricksExternalMetadata#entity_type}.
 	EntityType *string `field:"required" json:"entityType" yaml:"entityType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/external_metadata#name DataDatabricksExternalMetadata#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/external_metadata#name DataDatabricksExternalMetadata#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/external_metadata#system_type DataDatabricksExternalMetadata#system_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/external_metadata#system_type DataDatabricksExternalMetadata#system_type}.
 	SystemType *string `field:"required" json:"systemType" yaml:"systemType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/external_metadata#columns DataDatabricksExternalMetadata#columns}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/external_metadata#columns DataDatabricksExternalMetadata#columns}.
 	Columns *[]*string `field:"optional" json:"columns" yaml:"columns"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/external_metadata#description DataDatabricksExternalMetadata#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/external_metadata#description DataDatabricksExternalMetadata#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/external_metadata#owner DataDatabricksExternalMetadata#owner}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/external_metadata#owner DataDatabricksExternalMetadata#owner}.
 	Owner *string `field:"optional" json:"owner" yaml:"owner"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/external_metadata#properties DataDatabricksExternalMetadata#properties}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/external_metadata#properties DataDatabricksExternalMetadata#properties}.
 	Properties *map[string]*string `field:"optional" json:"properties" yaml:"properties"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/external_metadata#url DataDatabricksExternalMetadata#url}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/external_metadata#url DataDatabricksExternalMetadata#url}.
 	Url *string `field:"optional" json:"url" yaml:"url"`
 }
 

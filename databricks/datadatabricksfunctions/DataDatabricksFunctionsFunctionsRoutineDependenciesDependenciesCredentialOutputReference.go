@@ -174,29 +174,29 @@ func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenci
 }
 
 
-func NewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference {
+func NewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference_Override(d DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference_Override(d DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
 }

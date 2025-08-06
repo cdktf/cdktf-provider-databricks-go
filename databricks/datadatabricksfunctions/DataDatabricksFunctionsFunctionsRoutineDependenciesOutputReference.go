@@ -174,29 +174,29 @@ func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesOutputRefe
 }
 
 
-func NewDataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference {
+func NewDataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataDatabricksFunctionsFunctionsRoutineDependenciesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewDataDatabricksFunctionsFunctionsRoutineDependenciesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference_Override(d DataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference_Override(d DataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
 }

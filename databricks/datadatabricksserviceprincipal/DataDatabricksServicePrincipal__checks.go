@@ -303,6 +303,14 @@ func (j *jsiiProxy_DataDatabricksServicePrincipal) validateSetScimIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksServicePrincipal) validateSetSpIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataDatabricksServicePrincipalParameters(scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

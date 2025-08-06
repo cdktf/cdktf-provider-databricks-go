@@ -174,29 +174,29 @@ func (j *jsiiProxy_DataDatabricksFunctionsFunctionsReturnParamsOutputReference) 
 }
 
 
-func NewDataDatabricksFunctionsFunctionsReturnParamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsReturnParamsOutputReference {
+func NewDataDatabricksFunctionsFunctionsReturnParamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatabricksFunctionsFunctionsReturnParamsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataDatabricksFunctionsFunctionsReturnParamsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewDataDatabricksFunctionsFunctionsReturnParamsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataDatabricksFunctionsFunctionsReturnParamsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsReturnParamsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataDatabricksFunctionsFunctionsReturnParamsOutputReference_Override(d DataDatabricksFunctionsFunctionsReturnParamsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatabricksFunctionsFunctionsReturnParamsOutputReference_Override(d DataDatabricksFunctionsFunctionsReturnParamsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsReturnParamsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
 }

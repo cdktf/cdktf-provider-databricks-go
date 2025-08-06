@@ -83,6 +83,10 @@ func (m *jsiiProxy_ModelServingProvisionedThroughput) validatePutConfigParameter
 	return nil
 }
 
+func (m *jsiiProxy_ModelServingProvisionedThroughput) validatePutEmailNotificationsParameters(value *ModelServingProvisionedThroughputEmailNotifications) error {
+	return nil
+}
+
 func (m *jsiiProxy_ModelServingProvisionedThroughput) validatePutTagsParameters(value interface{}) error {
 	return nil
 }

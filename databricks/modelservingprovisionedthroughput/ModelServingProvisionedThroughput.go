@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput}.
 type ModelServingProvisionedThroughput interface {
 	cdktf.TerraformResource
 	AiGateway() ModelServingProvisionedThroughputAiGatewayOutputReference
@@ -38,6 +38,8 @@ type ModelServingProvisionedThroughput interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EmailNotifications() ModelServingProvisionedThroughputEmailNotificationsOutputReference
+	EmailNotificationsInput() *ModelServingProvisionedThroughputEmailNotifications
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -124,10 +126,12 @@ type ModelServingProvisionedThroughput interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAiGateway(value *ModelServingProvisionedThroughputAiGateway)
 	PutConfig(value *ModelServingProvisionedThroughputConfigA)
+	PutEmailNotifications(value *ModelServingProvisionedThroughputEmailNotifications)
 	PutTags(value interface{})
 	PutTimeouts(value *ModelServingProvisionedThroughputTimeouts)
 	ResetAiGateway()
 	ResetBudgetPolicyId()
+	ResetEmailNotifications()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -257,6 +261,26 @@ func (j *jsiiProxy_ModelServingProvisionedThroughput) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingProvisionedThroughput) EmailNotifications() ModelServingProvisionedThroughputEmailNotificationsOutputReference {
+	var returns ModelServingProvisionedThroughputEmailNotificationsOutputReference
+	_jsii_.Get(
+		j,
+		"emailNotifications",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingProvisionedThroughput) EmailNotificationsInput() *ModelServingProvisionedThroughputEmailNotifications {
+	var returns *ModelServingProvisionedThroughputEmailNotifications
+	_jsii_.Get(
+		j,
+		"emailNotificationsInput",
 		&returns,
 	)
 	return returns
@@ -463,7 +487,7 @@ func (j *jsiiProxy_ModelServingProvisionedThroughput) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput} Resource.
 func NewModelServingProvisionedThroughput(scope constructs.Construct, id *string, config *ModelServingProvisionedThroughputConfig) ModelServingProvisionedThroughput {
 	_init_.Initialize()
 
@@ -481,7 +505,7 @@ func NewModelServingProvisionedThroughput(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput} Resource.
 func NewModelServingProvisionedThroughput_Override(m ModelServingProvisionedThroughput, scope constructs.Construct, id *string, config *ModelServingProvisionedThroughputConfig) {
 	_init_.Initialize()
 
@@ -968,6 +992,17 @@ func (m *jsiiProxy_ModelServingProvisionedThroughput) PutConfig(value *ModelServ
 	)
 }
 
+func (m *jsiiProxy_ModelServingProvisionedThroughput) PutEmailNotifications(value *ModelServingProvisionedThroughputEmailNotifications) {
+	if err := m.validatePutEmailNotificationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putEmailNotifications",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_ModelServingProvisionedThroughput) PutTags(value interface{}) {
 	if err := m.validatePutTagsParameters(value); err != nil {
 		panic(err)
@@ -1002,6 +1037,14 @@ func (m *jsiiProxy_ModelServingProvisionedThroughput) ResetBudgetPolicyId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetBudgetPolicyId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingProvisionedThroughput) ResetEmailNotifications() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEmailNotifications",
 		nil, // no parameters
 	)
 }

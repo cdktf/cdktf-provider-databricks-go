@@ -23,22 +23,22 @@ type DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputRefere
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	Connection() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnectionList
+	Connection() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnectionOutputReference
 	ConnectionInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Credential() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialList
+	Credential() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference
 	CredentialInput() interface{}
 	// Experimental.
 	Fqn() *string
-	Function() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionList
+	Function() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionOutputReference
 	FunctionInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Table() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableList
+	Table() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableOutputReference
 	TableInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
@@ -72,10 +72,10 @@ type DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputRefere
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutConnection(value interface{})
-	PutCredential(value interface{})
-	PutFunction(value interface{})
-	PutTable(value interface{})
+	PutConnection(value *DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnection)
+	PutCredential(value *DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredential)
+	PutFunction(value *DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction)
+	PutTable(value *DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable)
 	ResetConnection()
 	ResetCredential()
 	ResetFunction()
@@ -115,8 +115,8 @@ func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenci
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) Connection() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnectionList {
-	var returns DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnectionList
+func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) Connection() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnectionOutputReference {
+	var returns DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnectionOutputReference
 	_jsii_.Get(
 		j,
 		"connection",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenci
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) Credential() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialList {
-	var returns DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialList
+func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) Credential() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference {
+	var returns DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference
 	_jsii_.Get(
 		j,
 		"credential",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenci
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) Function() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionList {
-	var returns DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionList
+func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) Function() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionOutputReference {
+	var returns DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionOutputReference
 	_jsii_.Get(
 		j,
 		"function",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenci
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) Table() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableList {
-	var returns DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableList
+func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) Table() DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableOutputReference {
+	var returns DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableOutputReference
 	_jsii_.Get(
 		j,
 		"table",
@@ -514,7 +514,7 @@ func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenci
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) PutConnection(value interface{}) {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) PutConnection(value *DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnection) {
 	if err := d.validatePutConnectionParameters(value); err != nil {
 		panic(err)
 	}
@@ -525,7 +525,7 @@ func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenci
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) PutCredential(value interface{}) {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) PutCredential(value *DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredential) {
 	if err := d.validatePutCredentialParameters(value); err != nil {
 		panic(err)
 	}
@@ -536,7 +536,7 @@ func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenci
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) PutFunction(value interface{}) {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) PutFunction(value *DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction) {
 	if err := d.validatePutFunctionParameters(value); err != nil {
 		panic(err)
 	}
@@ -547,7 +547,7 @@ func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenci
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) PutTable(value interface{}) {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference) PutTable(value *DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable) {
 	if err := d.validatePutTableParameters(value); err != nil {
 		panic(err)
 	}

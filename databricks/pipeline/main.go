@@ -1487,9 +1487,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "primaryKeys", GoGetter: "PrimaryKeys"},
 			_jsii_.MemberProperty{JsiiProperty: "primaryKeysInput", GoGetter: "PrimaryKeysInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putQueryBasedConnectorConfig", GoMethod: "PutQueryBasedConnectorConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "queryBasedConnectorConfig", GoGetter: "QueryBasedConnectorConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "queryBasedConnectorConfigInput", GoGetter: "QueryBasedConnectorConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludeColumns", GoMethod: "ResetExcludeColumns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIncludeColumns", GoMethod: "ResetIncludeColumns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrimaryKeys", GoMethod: "ResetPrimaryKeys"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQueryBasedConnectorConfig", GoMethod: "ResetQueryBasedConnectorConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSalesforceIncludeFormulaFields", GoMethod: "ResetSalesforceIncludeFormulaFields"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScdType", GoMethod: "ResetScdType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSequenceBy", GoMethod: "ResetSequenceBy"},
@@ -1506,6 +1510,51 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "cursorColumns", GoGetter: "CursorColumns"},
+			_jsii_.MemberProperty{JsiiProperty: "cursorColumnsInput", GoGetter: "CursorColumnsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "deletionCondition", GoGetter: "DeletionCondition"},
+			_jsii_.MemberProperty{JsiiProperty: "deletionConditionInput", GoGetter: "DeletionConditionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hardDeletionSyncMinIntervalInSeconds", GoGetter: "HardDeletionSyncMinIntervalInSeconds"},
+			_jsii_.MemberProperty{JsiiProperty: "hardDeletionSyncMinIntervalInSecondsInput", GoGetter: "HardDeletionSyncMinIntervalInSecondsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCursorColumns", GoMethod: "ResetCursorColumns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeletionCondition", GoMethod: "ResetDeletionCondition"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHardDeletionSyncMinIntervalInSeconds", GoMethod: "ResetHardDeletionSyncMinIntervalInSeconds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -1590,9 +1639,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "primaryKeys", GoGetter: "PrimaryKeys"},
 			_jsii_.MemberProperty{JsiiProperty: "primaryKeysInput", GoGetter: "PrimaryKeysInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putQueryBasedConnectorConfig", GoMethod: "PutQueryBasedConnectorConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "queryBasedConnectorConfig", GoGetter: "QueryBasedConnectorConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "queryBasedConnectorConfigInput", GoGetter: "QueryBasedConnectorConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludeColumns", GoMethod: "ResetExcludeColumns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIncludeColumns", GoMethod: "ResetIncludeColumns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrimaryKeys", GoMethod: "ResetPrimaryKeys"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQueryBasedConnectorConfig", GoMethod: "ResetQueryBasedConnectorConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSalesforceIncludeFormulaFields", GoMethod: "ResetSalesforceIncludeFormulaFields"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScdType", GoMethod: "ResetScdType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSequenceBy", GoMethod: "ResetSequenceBy"},
@@ -1609,6 +1662,51 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "cursorColumns", GoGetter: "CursorColumns"},
+			_jsii_.MemberProperty{JsiiProperty: "cursorColumnsInput", GoGetter: "CursorColumnsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "deletionCondition", GoGetter: "DeletionCondition"},
+			_jsii_.MemberProperty{JsiiProperty: "deletionConditionInput", GoGetter: "DeletionConditionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hardDeletionSyncMinIntervalInSeconds", GoGetter: "HardDeletionSyncMinIntervalInSeconds"},
+			_jsii_.MemberProperty{JsiiProperty: "hardDeletionSyncMinIntervalInSecondsInput", GoGetter: "HardDeletionSyncMinIntervalInSecondsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCursorColumns", GoMethod: "ResetCursorColumns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeletionCondition", GoMethod: "ResetDeletionCondition"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHardDeletionSyncMinIntervalInSeconds", GoMethod: "ResetHardDeletionSyncMinIntervalInSeconds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -1699,9 +1797,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "primaryKeys", GoGetter: "PrimaryKeys"},
 			_jsii_.MemberProperty{JsiiProperty: "primaryKeysInput", GoGetter: "PrimaryKeysInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putQueryBasedConnectorConfig", GoMethod: "PutQueryBasedConnectorConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "queryBasedConnectorConfig", GoGetter: "QueryBasedConnectorConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "queryBasedConnectorConfigInput", GoGetter: "QueryBasedConnectorConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludeColumns", GoMethod: "ResetExcludeColumns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIncludeColumns", GoMethod: "ResetIncludeColumns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrimaryKeys", GoMethod: "ResetPrimaryKeys"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQueryBasedConnectorConfig", GoMethod: "ResetQueryBasedConnectorConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSalesforceIncludeFormulaFields", GoMethod: "ResetSalesforceIncludeFormulaFields"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScdType", GoMethod: "ResetScdType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSequenceBy", GoMethod: "ResetSequenceBy"},
@@ -1718,6 +1820,51 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "cursorColumns", GoGetter: "CursorColumns"},
+			_jsii_.MemberProperty{JsiiProperty: "cursorColumnsInput", GoGetter: "CursorColumnsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "deletionCondition", GoGetter: "DeletionCondition"},
+			_jsii_.MemberProperty{JsiiProperty: "deletionConditionInput", GoGetter: "DeletionConditionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hardDeletionSyncMinIntervalInSeconds", GoGetter: "HardDeletionSyncMinIntervalInSeconds"},
+			_jsii_.MemberProperty{JsiiProperty: "hardDeletionSyncMinIntervalInSecondsInput", GoGetter: "HardDeletionSyncMinIntervalInSecondsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCursorColumns", GoMethod: "ResetCursorColumns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeletionCondition", GoMethod: "ResetDeletionCondition"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHardDeletionSyncMinIntervalInSeconds", GoMethod: "ResetHardDeletionSyncMinIntervalInSeconds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -1802,9 +1949,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "primaryKeys", GoGetter: "PrimaryKeys"},
 			_jsii_.MemberProperty{JsiiProperty: "primaryKeysInput", GoGetter: "PrimaryKeysInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putQueryBasedConnectorConfig", GoMethod: "PutQueryBasedConnectorConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "queryBasedConnectorConfig", GoGetter: "QueryBasedConnectorConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "queryBasedConnectorConfigInput", GoGetter: "QueryBasedConnectorConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludeColumns", GoMethod: "ResetExcludeColumns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIncludeColumns", GoMethod: "ResetIncludeColumns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrimaryKeys", GoMethod: "ResetPrimaryKeys"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQueryBasedConnectorConfig", GoMethod: "ResetQueryBasedConnectorConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSalesforceIncludeFormulaFields", GoMethod: "ResetSalesforceIncludeFormulaFields"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScdType", GoMethod: "ResetScdType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSequenceBy", GoMethod: "ResetSequenceBy"},
@@ -1821,6 +1972,51 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig",
+		reflect.TypeOf((*PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigOutputReference",
+		reflect.TypeOf((*PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "cursorColumns", GoGetter: "CursorColumns"},
+			_jsii_.MemberProperty{JsiiProperty: "cursorColumnsInput", GoGetter: "CursorColumnsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "deletionCondition", GoGetter: "DeletionCondition"},
+			_jsii_.MemberProperty{JsiiProperty: "deletionConditionInput", GoGetter: "DeletionConditionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hardDeletionSyncMinIntervalInSeconds", GoGetter: "HardDeletionSyncMinIntervalInSeconds"},
+			_jsii_.MemberProperty{JsiiProperty: "hardDeletionSyncMinIntervalInSecondsInput", GoGetter: "HardDeletionSyncMinIntervalInSecondsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCursorColumns", GoMethod: "ResetCursorColumns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeletionCondition", GoMethod: "ResetDeletionCondition"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHardDeletionSyncMinIntervalInSeconds", GoMethod: "ResetHardDeletionSyncMinIntervalInSeconds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

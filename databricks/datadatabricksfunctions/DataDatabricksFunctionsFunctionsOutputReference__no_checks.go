@@ -47,15 +47,15 @@ func (d *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) validateInte
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) validatePutInputParamsParameters(value interface{}) error {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) validatePutInputParamsParameters(value *DataDatabricksFunctionsFunctionsInputParams) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) validatePutReturnParamsParameters(value interface{}) error {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) validatePutReturnParamsParameters(value *DataDatabricksFunctionsFunctionsReturnParams) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) validatePutRoutineDependenciesParameters(value interface{}) error {
+func (d *jsiiProxy_DataDatabricksFunctionsFunctionsOutputReference) validatePutRoutineDependenciesParameters(value *DataDatabricksFunctionsFunctionsRoutineDependencies) error {
 	return nil
 }
 

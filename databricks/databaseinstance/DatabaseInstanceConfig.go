@@ -22,19 +22,21 @@ type DatabaseInstanceConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/database_instance#name DatabaseInstance#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/database_instance#name DatabaseInstance#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/database_instance#capacity DatabaseInstance#capacity}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/database_instance#capacity DatabaseInstance#capacity}.
 	Capacity *string `field:"optional" json:"capacity" yaml:"capacity"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/database_instance#enable_readable_secondaries DatabaseInstance#enable_readable_secondaries}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/database_instance#enable_readable_secondaries DatabaseInstance#enable_readable_secondaries}.
 	EnableReadableSecondaries interface{} `field:"optional" json:"enableReadableSecondaries" yaml:"enableReadableSecondaries"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/database_instance#node_count DatabaseInstance#node_count}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/database_instance#node_count DatabaseInstance#node_count}.
 	NodeCount *float64 `field:"optional" json:"nodeCount" yaml:"nodeCount"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/database_instance#parent_instance_ref DatabaseInstance#parent_instance_ref}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/database_instance#parent_instance_ref DatabaseInstance#parent_instance_ref}.
 	ParentInstanceRef *DatabaseInstanceParentInstanceRef `field:"optional" json:"parentInstanceRef" yaml:"parentInstanceRef"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/database_instance#retention_window_in_days DatabaseInstance#retention_window_in_days}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/database_instance#purge_on_delete DatabaseInstance#purge_on_delete}.
+	PurgeOnDelete interface{} `field:"optional" json:"purgeOnDelete" yaml:"purgeOnDelete"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/database_instance#retention_window_in_days DatabaseInstance#retention_window_in_days}.
 	RetentionWindowInDays *float64 `field:"optional" json:"retentionWindowInDays" yaml:"retentionWindowInDays"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/database_instance#stopped DatabaseInstance#stopped}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/database_instance#stopped DatabaseInstance#stopped}.
 	Stopped interface{} `field:"optional" json:"stopped" yaml:"stopped"`
 }
 

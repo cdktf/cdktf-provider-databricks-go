@@ -5,7 +5,7 @@ package modelserving
 
 
 type ModelServingAiGatewayUsageTrackingConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/model_serving#enabled ModelServing#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/model_serving#enabled ModelServing#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

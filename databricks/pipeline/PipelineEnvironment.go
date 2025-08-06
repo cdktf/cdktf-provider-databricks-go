@@ -5,7 +5,7 @@ package pipeline
 
 
 type PipelineEnvironment struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/pipeline#dependencies Pipeline#dependencies}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/pipeline#dependencies Pipeline#dependencies}.
 	Dependencies *[]*string `field:"optional" json:"dependencies" yaml:"dependencies"`
 }
 

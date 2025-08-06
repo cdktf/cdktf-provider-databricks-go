@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/model_serving databricks_model_serving}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/model_serving databricks_model_serving}.
 type ModelServing interface {
 	cdktf.TerraformResource
 	AiGateway() ModelServingAiGatewayOutputReference
@@ -41,6 +41,9 @@ type ModelServing interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EmailNotifications() ModelServingEmailNotificationsOutputReference
+	EmailNotificationsInput() *ModelServingEmailNotifications
+	EndpointUrl() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -132,6 +135,7 @@ type ModelServing interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAiGateway(value *ModelServingAiGateway)
 	PutConfig(value *ModelServingConfigA)
+	PutEmailNotifications(value *ModelServingEmailNotifications)
 	PutRateLimits(value interface{})
 	PutTags(value interface{})
 	PutTimeouts(value *ModelServingTimeouts)
@@ -139,6 +143,7 @@ type ModelServing interface {
 	ResetBudgetPolicyId()
 	ResetConfig()
 	ResetDescription()
+	ResetEmailNotifications()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -290,6 +295,36 @@ func (j *jsiiProxy_ModelServing) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServing) EmailNotifications() ModelServingEmailNotificationsOutputReference {
+	var returns ModelServingEmailNotificationsOutputReference
+	_jsii_.Get(
+		j,
+		"emailNotifications",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServing) EmailNotificationsInput() *ModelServingEmailNotifications {
+	var returns *ModelServingEmailNotifications
+	_jsii_.Get(
+		j,
+		"emailNotificationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServing) EndpointUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUrl",
 		&returns,
 	)
 	return returns
@@ -536,7 +571,7 @@ func (j *jsiiProxy_ModelServing) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/model_serving databricks_model_serving} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/model_serving databricks_model_serving} Resource.
 func NewModelServing(scope constructs.Construct, id *string, config *ModelServingConfig) ModelServing {
 	_init_.Initialize()
 
@@ -554,7 +589,7 @@ func NewModelServing(scope constructs.Construct, id *string, config *ModelServin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/model_serving databricks_model_serving} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/model_serving databricks_model_serving} Resource.
 func NewModelServing_Override(m ModelServing, scope constructs.Construct, id *string, config *ModelServingConfig) {
 	_init_.Initialize()
 
@@ -1063,6 +1098,17 @@ func (m *jsiiProxy_ModelServing) PutConfig(value *ModelServingConfigA) {
 	)
 }
 
+func (m *jsiiProxy_ModelServing) PutEmailNotifications(value *ModelServingEmailNotifications) {
+	if err := m.validatePutEmailNotificationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putEmailNotifications",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_ModelServing) PutRateLimits(value interface{}) {
 	if err := m.validatePutRateLimitsParameters(value); err != nil {
 		panic(err)
@@ -1124,6 +1170,14 @@ func (m *jsiiProxy_ModelServing) ResetDescription() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServing) ResetEmailNotifications() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEmailNotifications",
 		nil, // no parameters
 	)
 }

@@ -127,6 +127,10 @@ func (j *jsiiProxy_DatabaseInstance) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseInstance) validateSetPurgeOnDeleteParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseInstance) validateSetRetentionWindowInDaysParameters(val *float64) error {
 	return nil
 }

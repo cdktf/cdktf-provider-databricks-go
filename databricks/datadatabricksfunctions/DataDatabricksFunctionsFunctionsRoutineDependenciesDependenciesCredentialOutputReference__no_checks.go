@@ -75,7 +75,7 @@ func (j *jsiiProxy_DataDatabricksFunctionsFunctionsRoutineDependenciesDependenci
 	return nil
 }
 
-func validateNewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor}.
 type LakehouseMonitor interface {
 	cdktf.TerraformResource
 	AssetsDir() *string
@@ -63,7 +63,7 @@ type LakehouseMonitor interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MonitorVersion() *string
+	MonitorVersion() *float64
 	// The tree node.
 	Node() constructs.Node
 	Notifications() LakehouseMonitorNotificationsOutputReference
@@ -445,8 +445,8 @@ func (j *jsiiProxy_LakehouseMonitor) Lifecycle() *cdktf.TerraformResourceLifecyc
 	return returns
 }
 
-func (j *jsiiProxy_LakehouseMonitor) MonitorVersion() *string {
-	var returns *string
+func (j *jsiiProxy_LakehouseMonitor) MonitorVersion() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"monitorVersion",
@@ -746,7 +746,7 @@ func (j *jsiiProxy_LakehouseMonitor) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource.
 func NewLakehouseMonitor(scope constructs.Construct, id *string, config *LakehouseMonitorConfig) LakehouseMonitor {
 	_init_.Initialize()
 
@@ -764,7 +764,7 @@ func NewLakehouseMonitor(scope constructs.Construct, id *string, config *Lakehou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource.
 func NewLakehouseMonitor_Override(l LakehouseMonitor, scope constructs.Construct, id *string, config *LakehouseMonitorConfig) {
 	_init_.Initialize()
 

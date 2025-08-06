@@ -229,6 +229,17 @@ func (m *jsiiProxy_ModelServing) validatePutConfigParameters(value *ModelServing
 	return nil
 }
 
+func (m *jsiiProxy_ModelServing) validatePutEmailNotificationsParameters(value *ModelServingEmailNotifications) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_ModelServing) validatePutRateLimitsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -1,0 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+package datadatabrickscleanroomassets
+
+
+type DataDatabricksCleanRoomAssetsAssetsTableLocalDetails struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/clean_room_assets#local_name DataDatabricksCleanRoomAssets#local_name}.
+	LocalName *string `field:"required" json:"localName" yaml:"localName"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/clean_room_assets#partitions DataDatabricksCleanRoomAssets#partitions}.
+	Partitions interface{} `field:"optional" json:"partitions" yaml:"partitions"`
+}
+
