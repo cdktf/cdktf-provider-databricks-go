@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/clean_room_asset_revisions_clean_room_asset databricks_clean_room_asset_revisions_clean_room_asset}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_asset_revisions_clean_room_asset databricks_clean_room_asset_revisions_clean_room_asset}.
 type DataDatabricksCleanRoomAssetRevisionsCleanRoomAsset interface {
 	cdktf.TerraformDataSource
 	AddedAt() *float64
@@ -536,7 +536,7 @@ func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAsset) VolumeLo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/clean_room_asset_revisions_clean_room_asset databricks_clean_room_asset_revisions_clean_room_asset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_asset_revisions_clean_room_asset databricks_clean_room_asset_revisions_clean_room_asset} Data Source.
 func NewDataDatabricksCleanRoomAssetRevisionsCleanRoomAsset(scope constructs.Construct, id *string, config *DataDatabricksCleanRoomAssetRevisionsCleanRoomAssetConfig) DataDatabricksCleanRoomAssetRevisionsCleanRoomAsset {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewDataDatabricksCleanRoomAssetRevisionsCleanRoomAsset(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/clean_room_asset_revisions_clean_room_asset databricks_clean_room_asset_revisions_clean_room_asset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_asset_revisions_clean_room_asset databricks_clean_room_asset_revisions_clean_room_asset} Data Source.
 func NewDataDatabricksCleanRoomAssetRevisionsCleanRoomAsset_Override(d DataDatabricksCleanRoomAssetRevisionsCleanRoomAsset, scope constructs.Construct, id *string, config *DataDatabricksCleanRoomAssetRevisionsCleanRoomAssetConfig) {
 	_init_.Initialize()
 

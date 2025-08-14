@@ -67,6 +67,10 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesO
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference) validateSetFirstOnDemandParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference) validateSetGoogleServiceAccountParameters(val *string) error {
 	return nil
 }

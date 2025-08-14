@@ -5,7 +5,9 @@ package datadatabricksshare
 
 
 type DataDatabricksShareObjectPartition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/share#value DataDatabricksShare#value}.
+	// value block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/share#value DataDatabricksShare#value}
 	Value interface{} `field:"optional" json:"value" yaml:"value"`
 }
 

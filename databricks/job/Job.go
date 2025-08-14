@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/job databricks_job}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/job databricks_job}.
 type Job interface {
 	cdktf.TerraformResource
 	AlwaysRunning() interface{}
@@ -160,6 +160,9 @@ type Job interface {
 	Trigger() JobTriggerOutputReference
 	TriggerInput() *JobTrigger
 	Url() *string
+	UsagePolicyId() *string
+	SetUsagePolicyId(val *string)
+	UsagePolicyIdInput() *string
 	WebhookNotifications() JobWebhookNotificationsOutputReference
 	WebhookNotificationsInput() *JobWebhookNotifications
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -275,6 +278,7 @@ type Job interface {
 	ResetTimeouts()
 	ResetTimeoutSeconds()
 	ResetTrigger()
+	ResetUsagePolicyId()
 	ResetWebhookNotifications()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -1284,6 +1288,26 @@ func (j *jsiiProxy_Job) Url() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Job) UsagePolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usagePolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) UsagePolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usagePolicyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Job) WebhookNotifications() JobWebhookNotificationsOutputReference {
 	var returns JobWebhookNotificationsOutputReference
 	_jsii_.Get(
@@ -1305,7 +1329,7 @@ func (j *jsiiProxy_Job) WebhookNotificationsInput() *JobWebhookNotifications {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/job databricks_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	_init_.Initialize()
 
@@ -1323,7 +1347,7 @@ func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/job databricks_job} Resource.
 func NewJob_Override(j Job, scope constructs.Construct, id *string, config *JobConfig) {
 	_init_.Initialize()
 
@@ -1574,6 +1598,17 @@ func (j *jsiiProxy_Job)SetTimeoutSeconds(val *float64) {
 	_jsii_.Set(
 		j,
 		"timeoutSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Job)SetUsagePolicyId(val *string) {
+	if err := j.validateSetUsagePolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usagePolicyId",
 		val,
 	)
 }
@@ -2549,6 +2584,14 @@ func (j *jsiiProxy_Job) ResetTrigger() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetTrigger",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetUsagePolicyId() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetUsagePolicyId",
 		nil, // no parameters
 	)
 }

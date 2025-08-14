@@ -275,6 +275,10 @@ func (j *jsiiProxy_Job) validateSetTimeoutSecondsParameters(val *float64) error 
 	return nil
 }
 
+func (j *jsiiProxy_Job) validateSetUsagePolicyIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewJobParameters(scope constructs.Construct, id *string, config *JobConfig) error {
 	return nil
 }

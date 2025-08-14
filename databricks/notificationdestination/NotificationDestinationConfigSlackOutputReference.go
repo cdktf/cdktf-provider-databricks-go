@@ -13,6 +13,12 @@ import (
 
 type NotificationDestinationConfigSlackOutputReference interface {
 	cdktf.ComplexObject
+	ChannelId() *string
+	SetChannelId(val *string)
+	ChannelIdInput() *string
+	ChannelIdSet() interface{}
+	SetChannelIdSet(val interface{})
+	ChannelIdSetInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,6 +38,12 @@ type NotificationDestinationConfigSlackOutputReference interface {
 	Fqn() *string
 	InternalValue() *NotificationDestinationConfigSlack
 	SetInternalValue(val *NotificationDestinationConfigSlack)
+	OauthToken() *string
+	SetOauthToken(val *string)
+	OauthTokenInput() *string
+	OauthTokenSet() interface{}
+	SetOauthTokenSet(val interface{})
+	OauthTokenSetInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +82,10 @@ type NotificationDestinationConfigSlackOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetChannelId()
+	ResetChannelIdSet()
+	ResetOauthToken()
+	ResetOauthTokenSet()
 	ResetUrl()
 	ResetUrlSet()
 	// Produce the Token's value at resolution time.
@@ -85,6 +101,46 @@ type NotificationDestinationConfigSlackOutputReference interface {
 // The jsii proxy struct for NotificationDestinationConfigSlackOutputReference
 type jsiiProxy_NotificationDestinationConfigSlackOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference) ChannelId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"channelId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference) ChannelIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"channelIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference) ChannelIdSet() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"channelIdSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference) ChannelIdSetInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"channelIdSetInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference) ComplexObjectIndex() interface{} {
@@ -132,6 +188,46 @@ func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference) InternalVa
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference) OauthToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oauthToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference) OauthTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oauthTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference) OauthTokenSet() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"oauthTokenSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference) OauthTokenSetInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"oauthTokenSetInput",
 		&returns,
 	)
 	return returns
@@ -225,6 +321,28 @@ func NewNotificationDestinationConfigSlackOutputReference_Override(n Notificatio
 	)
 }
 
+func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference)SetChannelId(val *string) {
+	if err := j.validateSetChannelIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"channelId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference)SetChannelIdSet(val interface{}) {
+	if err := j.validateSetChannelIdSetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"channelIdSet",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -254,6 +372,28 @@ func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference)SetInternal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference)SetOauthToken(val *string) {
+	if err := j.validateSetOauthTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"oauthToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference)SetOauthTokenSet(val interface{}) {
+	if err := j.validateSetOauthTokenSetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"oauthTokenSet",
 		val,
 	)
 }
@@ -486,6 +626,38 @@ func (n *jsiiProxy_NotificationDestinationConfigSlackOutputReference) Interpolat
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationConfigSlackOutputReference) ResetChannelId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetChannelId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestinationConfigSlackOutputReference) ResetChannelIdSet() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetChannelIdSet",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestinationConfigSlackOutputReference) ResetOauthToken() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetOauthToken",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestinationConfigSlackOutputReference) ResetOauthTokenSet() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetOauthTokenSet",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NotificationDestinationConfigSlackOutputReference) ResetUrl() {

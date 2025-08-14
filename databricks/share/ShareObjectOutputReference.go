@@ -14,7 +14,11 @@ import (
 type ShareObjectOutputReference interface {
 	cdktf.ComplexObject
 	AddedAt() *float64
+	SetAddedAt(val *float64)
+	AddedAtInput() *float64
 	AddedBy() *string
+	SetAddedBy(val *string)
+	AddedByInput() *string
 	CdfEnabled() interface{}
 	SetCdfEnabled(val interface{})
 	CdfEnabledInput() interface{}
@@ -42,11 +46,6 @@ type ShareObjectOutputReference interface {
 	DataObjectType() *string
 	SetDataObjectType(val *string)
 	DataObjectTypeInput() *string
-	EffectiveCdfEnabled() cdktf.IResolvable
-	EffectiveHistoryDataSharingStatus() *string
-	EffectiveSharedAs() *string
-	EffectiveStartVersion() *float64
-	EffectiveStringSharedAs() *string
 	// Experimental.
 	Fqn() *string
 	HistoryDataSharingStatus() *string
@@ -66,6 +65,8 @@ type ShareObjectOutputReference interface {
 	SetStartVersion(val *float64)
 	StartVersionInput() *float64
 	Status() *string
+	SetStatus(val *string)
+	StatusInput() *string
 	StringSharedAs() *string
 	SetStringSharedAs(val *string)
 	StringSharedAsInput() *string
@@ -102,6 +103,8 @@ type ShareObjectOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPartition(value interface{})
+	ResetAddedAt()
+	ResetAddedBy()
 	ResetCdfEnabled()
 	ResetComment()
 	ResetContent()
@@ -109,6 +112,7 @@ type ShareObjectOutputReference interface {
 	ResetPartition()
 	ResetSharedAs()
 	ResetStartVersion()
+	ResetStatus()
 	ResetStringSharedAs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -135,11 +139,31 @@ func (j *jsiiProxy_ShareObjectOutputReference) AddedAt() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ShareObjectOutputReference) AddedAtInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"addedAtInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ShareObjectOutputReference) AddedBy() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"addedBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ShareObjectOutputReference) AddedByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addedByInput",
 		&returns,
 	)
 	return returns
@@ -250,56 +274,6 @@ func (j *jsiiProxy_ShareObjectOutputReference) DataObjectTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"dataObjectTypeInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ShareObjectOutputReference) EffectiveCdfEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"effectiveCdfEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ShareObjectOutputReference) EffectiveHistoryDataSharingStatus() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"effectiveHistoryDataSharingStatus",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ShareObjectOutputReference) EffectiveSharedAs() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"effectiveSharedAs",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ShareObjectOutputReference) EffectiveStartVersion() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"effectiveStartVersion",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ShareObjectOutputReference) EffectiveStringSharedAs() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"effectiveStringSharedAs",
 		&returns,
 	)
 	return returns
@@ -435,6 +409,16 @@ func (j *jsiiProxy_ShareObjectOutputReference) Status() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ShareObjectOutputReference) StatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ShareObjectOutputReference) StringSharedAs() *string {
 	var returns *string
 	_jsii_.Get(
@@ -500,6 +484,28 @@ func NewShareObjectOutputReference_Override(s ShareObjectOutputReference, terraf
 		"@cdktf/provider-databricks.share.ShareObjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
+	)
+}
+
+func (j *jsiiProxy_ShareObjectOutputReference)SetAddedAt(val *float64) {
+	if err := j.validateSetAddedAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addedAt",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ShareObjectOutputReference)SetAddedBy(val *string) {
+	if err := j.validateSetAddedByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addedBy",
+		val,
 	)
 }
 
@@ -620,6 +626,17 @@ func (j *jsiiProxy_ShareObjectOutputReference)SetStartVersion(val *float64) {
 	_jsii_.Set(
 		j,
 		"startVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ShareObjectOutputReference)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"status",
 		val,
 	)
 }
@@ -854,6 +871,22 @@ func (s *jsiiProxy_ShareObjectOutputReference) PutPartition(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_ShareObjectOutputReference) ResetAddedAt() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAddedAt",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ShareObjectOutputReference) ResetAddedBy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAddedBy",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_ShareObjectOutputReference) ResetCdfEnabled() {
 	_jsii_.InvokeVoid(
 		s,
@@ -906,6 +939,14 @@ func (s *jsiiProxy_ShareObjectOutputReference) ResetStartVersion() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetStartVersion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ShareObjectOutputReference) ResetStatus() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStatus",
 		nil, // no parameters
 	)
 }

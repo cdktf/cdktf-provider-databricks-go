@@ -51,6 +51,14 @@ func (n *jsiiProxy_NotificationDestinationConfigSlackOutputReference) validateRe
 	return nil
 }
 
+func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference) validateSetChannelIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference) validateSetChannelIdSetParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -60,6 +68,14 @@ func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference) validateSe
 }
 
 func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference) validateSetInternalValueParameters(val *NotificationDestinationConfigSlack) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference) validateSetOauthTokenParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigSlackOutputReference) validateSetOauthTokenSetParameters(val interface{}) error {
 	return nil
 }
 

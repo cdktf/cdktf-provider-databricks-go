@@ -67,6 +67,10 @@ func (j *jsiiProxy_JobTaskNewClusterGcpAttributesOutputReference) validateSetCom
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskNewClusterGcpAttributesOutputReference) validateSetFirstOnDemandParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskNewClusterGcpAttributesOutputReference) validateSetGoogleServiceAccountParameters(val *string) error {
 	return nil
 }

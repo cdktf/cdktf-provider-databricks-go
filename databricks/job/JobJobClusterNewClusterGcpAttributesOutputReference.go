@@ -34,6 +34,9 @@ type JobJobClusterNewClusterGcpAttributesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FirstOnDemand() *float64
+	SetFirstOnDemand(val *float64)
+	FirstOnDemandInput() *float64
 	// Experimental.
 	Fqn() *string
 	GoogleServiceAccount() *string
@@ -84,6 +87,7 @@ type JobJobClusterNewClusterGcpAttributesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAvailability()
 	ResetBootDiskSize()
+	ResetFirstOnDemand()
 	ResetGoogleServiceAccount()
 	ResetLocalSsdCount()
 	ResetUsePreemptibleExecutors()
@@ -168,6 +172,26 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) Creation
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) FirstOnDemand() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"firstOnDemand",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) FirstOnDemandInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"firstOnDemandInput",
 		&returns,
 	)
 	return returns
@@ -361,6 +385,17 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference)SetComple
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference)SetFirstOnDemand(val *float64) {
+	if err := j.validateSetFirstOnDemandParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"firstOnDemand",
 		val,
 	)
 }
@@ -640,6 +675,14 @@ func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) ResetBoo
 	_jsii_.InvokeVoid(
 		j,
 		"resetBootDiskSize",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobJobClusterNewClusterGcpAttributesOutputReference) ResetFirstOnDemand() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetFirstOnDemand",
 		nil, // no parameters
 	)
 }

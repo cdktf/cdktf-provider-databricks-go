@@ -5,9 +5,9 @@ package cleanroomasset
 
 
 type CleanRoomAssetNotebook struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#notebook_content CleanRoomAsset#notebook_content}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#notebook_content CleanRoomAsset#notebook_content}.
 	NotebookContent *string `field:"required" json:"notebookContent" yaml:"notebookContent"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#runner_collaborator_aliases CleanRoomAsset#runner_collaborator_aliases}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#runner_collaborator_aliases CleanRoomAsset#runner_collaborator_aliases}.
 	RunnerCollaboratorAliases *[]*string `field:"optional" json:"runnerCollaboratorAliases" yaml:"runnerCollaboratorAliases"`
 }
 

@@ -5,7 +5,7 @@ package cleanroomscleanroom
 
 
 type CleanRoomsCleanRoomRemoteDetailedInfoEgressNetworkPolicy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_rooms_clean_room#internet_access CleanRoomsCleanRoom#internet_access}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_rooms_clean_room#internet_access CleanRoomsCleanRoom#internet_access}.
 	InternetAccess *CleanRoomsCleanRoomRemoteDetailedInfoEgressNetworkPolicyInternetAccess `field:"optional" json:"internetAccess" yaml:"internetAccess"`
 }
 

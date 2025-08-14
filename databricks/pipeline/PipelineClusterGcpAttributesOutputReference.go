@@ -31,6 +31,9 @@ type PipelineClusterGcpAttributesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FirstOnDemand() *float64
+	SetFirstOnDemand(val *float64)
+	FirstOnDemandInput() *float64
 	// Experimental.
 	Fqn() *string
 	GoogleServiceAccount() *string
@@ -77,6 +80,7 @@ type PipelineClusterGcpAttributesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAvailability()
+	ResetFirstOnDemand()
 	ResetGoogleServiceAccount()
 	ResetLocalSsdCount()
 	ResetZoneId()
@@ -140,6 +144,26 @@ func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) CreationStack() 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) FirstOnDemand() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"firstOnDemand",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference) FirstOnDemandInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"firstOnDemandInput",
 		&returns,
 	)
 	return returns
@@ -302,6 +326,17 @@ func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference)SetComplexObjectI
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineClusterGcpAttributesOutputReference)SetFirstOnDemand(val *float64) {
+	if err := j.validateSetFirstOnDemandParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"firstOnDemand",
 		val,
 	)
 }
@@ -562,6 +597,14 @@ func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) ResetAvailabilit
 	_jsii_.InvokeVoid(
 		p,
 		"resetAvailability",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineClusterGcpAttributesOutputReference) ResetFirstOnDemand() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetFirstOnDemand",
 		nil, // no parameters
 	)
 }

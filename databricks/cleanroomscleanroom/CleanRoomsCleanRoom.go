@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_rooms_clean_room databricks_clean_rooms_clean_room}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_rooms_clean_room databricks_clean_rooms_clean_room}.
 type CleanRoomsCleanRoom interface {
 	cdktf.TerraformResource
 	AccessRestricted() *string
@@ -448,7 +448,7 @@ func (j *jsiiProxy_CleanRoomsCleanRoom) UpdatedAt() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_rooms_clean_room databricks_clean_rooms_clean_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_rooms_clean_room databricks_clean_rooms_clean_room} Resource.
 func NewCleanRoomsCleanRoom(scope constructs.Construct, id *string, config *CleanRoomsCleanRoomConfig) CleanRoomsCleanRoom {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewCleanRoomsCleanRoom(scope constructs.Construct, id *string, config *Clea
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_rooms_clean_room databricks_clean_rooms_clean_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_rooms_clean_room databricks_clean_rooms_clean_room} Resource.
 func NewCleanRoomsCleanRoom_Override(c CleanRoomsCleanRoom, scope constructs.Construct, id *string, config *CleanRoomsCleanRoomConfig) {
 	_init_.Initialize()
 

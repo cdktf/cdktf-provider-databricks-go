@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataDatabricksShares) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksShares) validateSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksShares) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

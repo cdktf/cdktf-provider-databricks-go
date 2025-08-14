@@ -7,11 +7,11 @@ package qualitymonitor
 type QualityMonitorNotifications struct {
 	// on_failure block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/quality_monitor#on_failure QualityMonitor#on_failure}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/quality_monitor#on_failure QualityMonitor#on_failure}
 	OnFailure interface{} `field:"optional" json:"onFailure" yaml:"onFailure"`
 	// on_new_classification_tag_detected block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/quality_monitor#on_new_classification_tag_detected QualityMonitor#on_new_classification_tag_detected}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/quality_monitor#on_new_classification_tag_detected QualityMonitor#on_new_classification_tag_detected}
 	OnNewClassificationTagDetected interface{} `field:"optional" json:"onNewClassificationTagDetected" yaml:"onNewClassificationTagDetected"`
 }
 

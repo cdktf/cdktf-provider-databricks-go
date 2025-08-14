@@ -5,7 +5,7 @@ package job
 
 
 type JobJobClusterNewClusterInitScriptsWorkspace struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/job#destination Job#destination}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/job#destination Job#destination}.
 	Destination *string `field:"required" json:"destination" yaml:"destination"`
 }
 

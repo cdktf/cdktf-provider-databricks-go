@@ -182,6 +182,14 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecGcpAttributesOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference) validateSetFirstOnDemandParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference) validateSetGoogleServiceAccountParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

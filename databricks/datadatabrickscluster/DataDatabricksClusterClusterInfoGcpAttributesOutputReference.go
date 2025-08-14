@@ -34,6 +34,9 @@ type DataDatabricksClusterClusterInfoGcpAttributesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FirstOnDemand() *float64
+	SetFirstOnDemand(val *float64)
+	FirstOnDemandInput() *float64
 	// Experimental.
 	Fqn() *string
 	GoogleServiceAccount() *string
@@ -84,6 +87,7 @@ type DataDatabricksClusterClusterInfoGcpAttributesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAvailability()
 	ResetBootDiskSize()
+	ResetFirstOnDemand()
 	ResetGoogleServiceAccount()
 	ResetLocalSsdCount()
 	ResetUsePreemptibleExecutors()
@@ -168,6 +172,26 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoGcpAttributesOutputReference)
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoGcpAttributesOutputReference) FirstOnDemand() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"firstOnDemand",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoGcpAttributesOutputReference) FirstOnDemandInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"firstOnDemandInput",
 		&returns,
 	)
 	return returns
@@ -361,6 +385,17 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoGcpAttributesOutputReference)
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoGcpAttributesOutputReference)SetFirstOnDemand(val *float64) {
+	if err := j.validateSetFirstOnDemandParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"firstOnDemand",
 		val,
 	)
 }
@@ -640,6 +675,14 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoGcpAttributesOutputReference)
 	_jsii_.InvokeVoid(
 		d,
 		"resetBootDiskSize",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoGcpAttributesOutputReference) ResetFirstOnDemand() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFirstOnDemand",
 		nil, // no parameters
 	)
 }

@@ -14,7 +14,11 @@ import (
 type DataDatabricksShareObjectOutputReference interface {
 	cdktf.ComplexObject
 	AddedAt() *float64
+	SetAddedAt(val *float64)
+	AddedAtInput() *float64
 	AddedBy() *string
+	SetAddedBy(val *string)
+	AddedByInput() *string
 	CdfEnabled() interface{}
 	SetCdfEnabled(val interface{})
 	CdfEnabledInput() interface{}
@@ -42,11 +46,6 @@ type DataDatabricksShareObjectOutputReference interface {
 	DataObjectType() *string
 	SetDataObjectType(val *string)
 	DataObjectTypeInput() *string
-	EffectiveCdfEnabled() cdktf.IResolvable
-	EffectiveHistoryDataSharingStatus() *string
-	EffectiveSharedAs() *string
-	EffectiveStartVersion() *float64
-	EffectiveStringSharedAs() *string
 	// Experimental.
 	Fqn() *string
 	HistoryDataSharingStatus() *string
@@ -66,6 +65,8 @@ type DataDatabricksShareObjectOutputReference interface {
 	SetStartVersion(val *float64)
 	StartVersionInput() *float64
 	Status() *string
+	SetStatus(val *string)
+	StatusInput() *string
 	StringSharedAs() *string
 	SetStringSharedAs(val *string)
 	StringSharedAsInput() *string
@@ -102,14 +103,16 @@ type DataDatabricksShareObjectOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPartition(value interface{})
+	ResetAddedAt()
+	ResetAddedBy()
 	ResetCdfEnabled()
 	ResetComment()
 	ResetContent()
-	ResetDataObjectType()
 	ResetHistoryDataSharingStatus()
 	ResetPartition()
 	ResetSharedAs()
 	ResetStartVersion()
+	ResetStatus()
 	ResetStringSharedAs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -136,11 +139,31 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) AddedAt() *float64 
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) AddedAtInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"addedAtInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) AddedBy() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"addedBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) AddedByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addedByInput",
 		&returns,
 	)
 	return returns
@@ -251,56 +274,6 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) DataObjectTypeInput
 	_jsii_.Get(
 		j,
 		"dataObjectTypeInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) EffectiveCdfEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"effectiveCdfEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) EffectiveHistoryDataSharingStatus() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"effectiveHistoryDataSharingStatus",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) EffectiveSharedAs() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"effectiveSharedAs",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) EffectiveStartVersion() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"effectiveStartVersion",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) EffectiveStringSharedAs() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"effectiveStringSharedAs",
 		&returns,
 	)
 	return returns
@@ -436,6 +409,16 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) Status() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) StatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksShareObjectOutputReference) StringSharedAs() *string {
 	var returns *string
 	_jsii_.Get(
@@ -501,6 +484,28 @@ func NewDataDatabricksShareObjectOutputReference_Override(d DataDatabricksShareO
 		"@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference)SetAddedAt(val *float64) {
+	if err := j.validateSetAddedAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addedAt",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference)SetAddedBy(val *string) {
+	if err := j.validateSetAddedByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addedBy",
+		val,
 	)
 }
 
@@ -621,6 +626,17 @@ func (j *jsiiProxy_DataDatabricksShareObjectOutputReference)SetStartVersion(val 
 	_jsii_.Set(
 		j,
 		"startVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksShareObjectOutputReference)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"status",
 		val,
 	)
 }
@@ -855,6 +871,22 @@ func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) PutPartition(value 
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) ResetAddedAt() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAddedAt",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) ResetAddedBy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAddedBy",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) ResetCdfEnabled() {
 	_jsii_.InvokeVoid(
 		d,
@@ -875,14 +907,6 @@ func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) ResetContent() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetContent",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) ResetDataObjectType() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDataObjectType",
 		nil, // no parameters
 	)
 }
@@ -915,6 +939,14 @@ func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) ResetStartVersion()
 	_jsii_.InvokeVoid(
 		d,
 		"resetStartVersion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksShareObjectOutputReference) ResetStatus() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStatus",
 		nil, // no parameters
 	)
 }

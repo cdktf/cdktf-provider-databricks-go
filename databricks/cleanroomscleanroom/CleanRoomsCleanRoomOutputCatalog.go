@@ -5,7 +5,7 @@ package cleanroomscleanroom
 
 
 type CleanRoomsCleanRoomOutputCatalog struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_rooms_clean_room#catalog_name CleanRoomsCleanRoom#catalog_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_rooms_clean_room#catalog_name CleanRoomsCleanRoom#catalog_name}.
 	CatalogName *string `field:"optional" json:"catalogName" yaml:"catalogName"`
 }
 

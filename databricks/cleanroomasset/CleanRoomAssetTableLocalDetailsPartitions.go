@@ -5,7 +5,7 @@ package cleanroomasset
 
 
 type CleanRoomAssetTableLocalDetailsPartitions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#value CleanRoomAsset#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#value CleanRoomAsset#value}.
 	Value interface{} `field:"optional" json:"value" yaml:"value"`
 }
 

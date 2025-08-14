@@ -5,7 +5,7 @@ package recipient
 
 
 type RecipientIpAccessListStruct struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/recipient#allowed_ip_addresses Recipient#allowed_ip_addresses}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/recipient#allowed_ip_addresses Recipient#allowed_ip_addresses}.
 	AllowedIpAddresses *[]*string `field:"optional" json:"allowedIpAddresses" yaml:"allowedIpAddresses"`
 }
 

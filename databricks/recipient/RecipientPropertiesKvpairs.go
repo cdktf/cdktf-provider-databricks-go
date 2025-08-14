@@ -5,7 +5,7 @@ package recipient
 
 
 type RecipientPropertiesKvpairs struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/recipient#properties Recipient#properties}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/recipient#properties Recipient#properties}.
 	Properties *map[string]*string `field:"required" json:"properties" yaml:"properties"`
 }
 

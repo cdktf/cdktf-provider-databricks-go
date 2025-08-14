@@ -55,6 +55,14 @@ func (s *jsiiProxy_ShareObjectOutputReference) validateResolveParameters(_contex
 	return nil
 }
 
+func (j *jsiiProxy_ShareObjectOutputReference) validateSetAddedAtParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ShareObjectOutputReference) validateSetAddedByParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ShareObjectOutputReference) validateSetCdfEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -96,6 +104,10 @@ func (j *jsiiProxy_ShareObjectOutputReference) validateSetSharedAsParameters(val
 }
 
 func (j *jsiiProxy_ShareObjectOutputReference) validateSetStartVersionParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ShareObjectOutputReference) validateSetStatusParameters(val *string) error {
 	return nil
 }
 
