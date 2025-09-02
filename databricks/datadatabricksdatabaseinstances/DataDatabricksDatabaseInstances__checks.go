@@ -219,6 +219,14 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstances) validateSetLifecycleParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseInstances) validateSetWorkspaceIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataDatabricksDatabaseInstancesParameters(scope constructs.Construct, id *string, config *DataDatabricksDatabaseInstancesConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

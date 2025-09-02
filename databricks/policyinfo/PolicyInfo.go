@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/policy_info databricks_policy_info}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/policy_info databricks_policy_info}.
 type PolicyInfo interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -99,6 +99,9 @@ type PolicyInfo interface {
 	WhenCondition() *string
 	SetWhenCondition(val *string)
 	WhenConditionInput() *string
+	WorkspaceId() *string
+	SetWorkspaceId(val *string)
+	WorkspaceIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -157,6 +160,7 @@ type PolicyInfo interface {
 	ResetOverrideLogicalId()
 	ResetRowFilter()
 	ResetWhenCondition()
+	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -625,8 +629,28 @@ func (j *jsiiProxy_PolicyInfo) WhenConditionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PolicyInfo) WorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/policy_info databricks_policy_info} Resource.
+func (j *jsiiProxy_PolicyInfo) WorkspaceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/policy_info databricks_policy_info} Resource.
 func NewPolicyInfo(scope constructs.Construct, id *string, config *PolicyInfoConfig) PolicyInfo {
 	_init_.Initialize()
 
@@ -644,7 +668,7 @@ func NewPolicyInfo(scope constructs.Construct, id *string, config *PolicyInfoCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/policy_info databricks_policy_info} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/policy_info databricks_policy_info} Resource.
 func NewPolicyInfo_Override(p PolicyInfo, scope constructs.Construct, id *string, config *PolicyInfoConfig) {
 	_init_.Initialize()
 
@@ -818,6 +842,17 @@ func (j *jsiiProxy_PolicyInfo)SetWhenCondition(val *string) {
 	_jsii_.Set(
 		j,
 		"whenCondition",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PolicyInfo)SetWorkspaceId(val *string) {
+	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceId",
 		val,
 	)
 }
@@ -1284,6 +1319,14 @@ func (p *jsiiProxy_PolicyInfo) ResetWhenCondition() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetWhenCondition",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicyInfo) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

@@ -35,6 +35,9 @@ type JobContinuousOutputReference interface {
 	PauseStatus() *string
 	SetPauseStatus(val *string)
 	PauseStatusInput() *string
+	TaskRetryMode() *string
+	SetTaskRetryMode(val *string)
+	TaskRetryModeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type JobContinuousOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetPauseStatus()
+	ResetTaskRetryMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_JobContinuousOutputReference) PauseStatusInput() *string {
 	_jsii_.Get(
 		j,
 		"pauseStatusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobContinuousOutputReference) TaskRetryMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"taskRetryMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobContinuousOutputReference) TaskRetryModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"taskRetryModeInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +265,17 @@ func (j *jsiiProxy_JobContinuousOutputReference)SetPauseStatus(val *string) {
 	_jsii_.Set(
 		j,
 		"pauseStatus",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobContinuousOutputReference)SetTaskRetryMode(val *string) {
+	if err := j.validateSetTaskRetryModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"taskRetryMode",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (j *jsiiProxy_JobContinuousOutputReference) ResetPauseStatus() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetPauseStatus",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobContinuousOutputReference) ResetTaskRetryMode() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetTaskRetryMode",
 		nil, // no parameters
 	)
 }

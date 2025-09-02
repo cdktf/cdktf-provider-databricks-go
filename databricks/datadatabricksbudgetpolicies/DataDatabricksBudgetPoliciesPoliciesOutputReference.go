@@ -38,6 +38,8 @@ type DataDatabricksBudgetPoliciesPoliciesOutputReference interface {
 	InternalValue() *DataDatabricksBudgetPoliciesPolicies
 	SetInternalValue(val *DataDatabricksBudgetPoliciesPolicies)
 	PolicyId() *string
+	SetPolicyId(val *string)
+	PolicyIdInput() *string
 	PolicyName() *string
 	SetPolicyName(val *string)
 	PolicyNameInput() *string
@@ -76,6 +78,7 @@ type DataDatabricksBudgetPoliciesPoliciesOutputReference interface {
 	PutCustomTags(value interface{})
 	ResetBindingWorkspaceIds()
 	ResetCustomTags()
+	ResetPolicyId()
 	ResetPolicyName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -192,6 +195,16 @@ func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) PolicyId
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) PolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) PolicyName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -300,6 +313,17 @@ func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference)SetIntern
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference)SetPolicyId(val *string) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyId",
 		val,
 	)
 }
@@ -546,6 +570,14 @@ func (d *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) ResetCus
 	_jsii_.InvokeVoid(
 		d,
 		"resetCustomTags",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) ResetPolicyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPolicyId",
 		nil, // no parameters
 	)
 }

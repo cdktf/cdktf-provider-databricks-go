@@ -71,6 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRowFilter", GoMethod: "ResetRowFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWhenCondition", GoMethod: "ResetWhenCondition"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceId", GoMethod: "ResetWorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "rowFilter", GoGetter: "RowFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "rowFilterInput", GoGetter: "RowFilterInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -88,6 +89,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updatedBy", GoGetter: "UpdatedBy"},
 			_jsii_.MemberProperty{JsiiProperty: "whenCondition", GoGetter: "WhenCondition"},
 			_jsii_.MemberProperty{JsiiProperty: "whenConditionInput", GoGetter: "WhenConditionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksPolicyInfo{}

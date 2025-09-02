@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataDatabricksCleanRoomsCleanRooms) validateSetLifecycleParam
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksCleanRoomsCleanRooms) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksCleanRoomsCleanRoomsParameters(scope constructs.Construct, id *string, config *DataDatabricksCleanRoomsCleanRoomsConfig) error {
 	return nil
 }

@@ -67,6 +67,10 @@ func (j *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsO
 	return nil
 }
 
+func (j *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference) validateSetModelEndpointNameForQueryParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }

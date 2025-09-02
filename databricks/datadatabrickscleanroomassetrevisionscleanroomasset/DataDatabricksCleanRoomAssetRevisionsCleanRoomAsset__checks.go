@@ -331,6 +331,14 @@ func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAsset) validate
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAsset) validateSetWorkspaceIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataDatabricksCleanRoomAssetRevisionsCleanRoomAssetParameters(scope constructs.Construct, id *string, config *DataDatabricksCleanRoomAssetRevisionsCleanRoomAssetConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

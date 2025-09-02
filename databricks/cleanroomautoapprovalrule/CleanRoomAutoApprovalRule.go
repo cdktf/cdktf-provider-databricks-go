@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_auto_approval_rule databricks_clean_room_auto_approval_rule}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/clean_room_auto_approval_rule databricks_clean_room_auto_approval_rule}.
 type CleanRoomAutoApprovalRule interface {
 	cdktf.TerraformResource
 	AuthorCollaboratorAlias() *string
@@ -76,6 +76,9 @@ type CleanRoomAutoApprovalRule interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WorkspaceId() *string
+	SetWorkspaceId(val *string)
+	WorkspaceIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -126,6 +129,7 @@ type CleanRoomAutoApprovalRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRunnerCollaboratorAlias()
+	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -414,8 +418,28 @@ func (j *jsiiProxy_CleanRoomAutoApprovalRule) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CleanRoomAutoApprovalRule) WorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_auto_approval_rule databricks_clean_room_auto_approval_rule} Resource.
+func (j *jsiiProxy_CleanRoomAutoApprovalRule) WorkspaceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/clean_room_auto_approval_rule databricks_clean_room_auto_approval_rule} Resource.
 func NewCleanRoomAutoApprovalRule(scope constructs.Construct, id *string, config *CleanRoomAutoApprovalRuleConfig) CleanRoomAutoApprovalRule {
 	_init_.Initialize()
 
@@ -433,7 +457,7 @@ func NewCleanRoomAutoApprovalRule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_auto_approval_rule databricks_clean_room_auto_approval_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/clean_room_auto_approval_rule databricks_clean_room_auto_approval_rule} Resource.
 func NewCleanRoomAutoApprovalRule_Override(c CleanRoomAutoApprovalRule, scope constructs.Construct, id *string, config *CleanRoomAutoApprovalRuleConfig) {
 	_init_.Initialize()
 
@@ -552,6 +576,17 @@ func (j *jsiiProxy_CleanRoomAutoApprovalRule)SetRunnerCollaboratorAlias(val *str
 	_jsii_.Set(
 		j,
 		"runnerCollaboratorAlias",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CleanRoomAutoApprovalRule)SetWorkspaceId(val *string) {
+	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceId",
 		val,
 	)
 }
@@ -945,6 +980,14 @@ func (c *jsiiProxy_CleanRoomAutoApprovalRule) ResetRunnerCollaboratorAlias() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRunnerCollaboratorAlias",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CleanRoomAutoApprovalRule) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

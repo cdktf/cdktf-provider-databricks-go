@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/database_instance databricks_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/database_instance databricks_database_instance}.
 type DatabaseInstance interface {
 	cdktf.TerraformResource
 	Capacity() *string
@@ -37,10 +37,14 @@ type DatabaseInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveEnablePgNativeLogin() cdktf.IResolvable
 	EffectiveEnableReadableSecondaries() cdktf.IResolvable
 	EffectiveNodeCount() *float64
 	EffectiveRetentionWindowInDays() *float64
 	EffectiveStopped() cdktf.IResolvable
+	EnablePgNativeLogin() interface{}
+	SetEnablePgNativeLogin(val interface{})
+	EnablePgNativeLoginInput() interface{}
 	EnableReadableSecondaries() interface{}
 	SetEnableReadableSecondaries(val interface{})
 	EnableReadableSecondariesInput() interface{}
@@ -96,6 +100,9 @@ type DatabaseInstance interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Uid() *string
+	WorkspaceId() *string
+	SetWorkspaceId(val *string)
+	WorkspaceIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -141,6 +148,7 @@ type DatabaseInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutParentInstanceRef(value *DatabaseInstanceParentInstanceRef)
 	ResetCapacity()
+	ResetEnablePgNativeLogin()
 	ResetEnableReadableSecondaries()
 	ResetNodeCount()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -150,6 +158,7 @@ type DatabaseInstance interface {
 	ResetPurgeOnDelete()
 	ResetRetentionWindowInDays()
 	ResetStopped()
+	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -268,6 +277,16 @@ func (j *jsiiProxy_DatabaseInstance) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseInstance) EffectiveEnablePgNativeLogin() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"effectiveEnablePgNativeLogin",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseInstance) EffectiveEnableReadableSecondaries() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -303,6 +322,26 @@ func (j *jsiiProxy_DatabaseInstance) EffectiveStopped() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"effectiveStopped",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseInstance) EnablePgNativeLogin() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePgNativeLogin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseInstance) EnablePgNativeLoginInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePgNativeLoginInput",
 		&returns,
 	)
 	return returns
@@ -608,8 +647,28 @@ func (j *jsiiProxy_DatabaseInstance) Uid() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseInstance) WorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/database_instance databricks_database_instance} Resource.
+func (j *jsiiProxy_DatabaseInstance) WorkspaceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/database_instance databricks_database_instance} Resource.
 func NewDatabaseInstance(scope constructs.Construct, id *string, config *DatabaseInstanceConfig) DatabaseInstance {
 	_init_.Initialize()
 
@@ -627,7 +686,7 @@ func NewDatabaseInstance(scope constructs.Construct, id *string, config *Databas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/database_instance databricks_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/database_instance databricks_database_instance} Resource.
 func NewDatabaseInstance_Override(d DatabaseInstance, scope constructs.Construct, id *string, config *DatabaseInstanceConfig) {
 	_init_.Initialize()
 
@@ -675,6 +734,17 @@ func (j *jsiiProxy_DatabaseInstance)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseInstance)SetEnablePgNativeLogin(val interface{}) {
+	if err := j.validateSetEnablePgNativeLoginParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePgNativeLogin",
 		val,
 	)
 }
@@ -779,6 +849,17 @@ func (j *jsiiProxy_DatabaseInstance)SetStopped(val interface{}) {
 	_jsii_.Set(
 		j,
 		"stopped",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseInstance)SetWorkspaceId(val *string) {
+	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceId",
 		val,
 	)
 }
@@ -1155,6 +1236,14 @@ func (d *jsiiProxy_DatabaseInstance) ResetCapacity() {
 	)
 }
 
+func (d *jsiiProxy_DatabaseInstance) ResetEnablePgNativeLogin() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnablePgNativeLogin",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseInstance) ResetEnableReadableSecondaries() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1207,6 +1296,14 @@ func (d *jsiiProxy_DatabaseInstance) ResetStopped() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetStopped",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseInstance) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

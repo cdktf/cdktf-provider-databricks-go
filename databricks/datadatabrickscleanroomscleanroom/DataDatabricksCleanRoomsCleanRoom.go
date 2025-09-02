@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_rooms_clean_room databricks_clean_rooms_clean_room}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_rooms_clean_room databricks_clean_rooms_clean_room}.
 type DataDatabricksCleanRoomsCleanRoom interface {
 	cdktf.TerraformDataSource
 	AccessRestricted() *string
@@ -70,6 +70,9 @@ type DataDatabricksCleanRoomsCleanRoom interface {
 	// Experimental.
 	TerraformResourceType() *string
 	UpdatedAt() *float64
+	WorkspaceId() *string
+	SetWorkspaceId(val *string)
+	WorkspaceIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -103,6 +106,7 @@ type DataDatabricksCleanRoomsCleanRoom interface {
 	ResetOverrideLogicalId()
 	ResetOwner()
 	ResetRemoteDetailedInfo()
+	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -402,8 +406,28 @@ func (j *jsiiProxy_DataDatabricksCleanRoomsCleanRoom) UpdatedAt() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksCleanRoomsCleanRoom) WorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_rooms_clean_room databricks_clean_rooms_clean_room} Data Source.
+func (j *jsiiProxy_DataDatabricksCleanRoomsCleanRoom) WorkspaceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_rooms_clean_room databricks_clean_rooms_clean_room} Data Source.
 func NewDataDatabricksCleanRoomsCleanRoom(scope constructs.Construct, id *string, config *DataDatabricksCleanRoomsCleanRoomConfig) DataDatabricksCleanRoomsCleanRoom {
 	_init_.Initialize()
 
@@ -421,7 +445,7 @@ func NewDataDatabricksCleanRoomsCleanRoom(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_rooms_clean_room databricks_clean_rooms_clean_room} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_rooms_clean_room databricks_clean_rooms_clean_room} Data Source.
 func NewDataDatabricksCleanRoomsCleanRoom_Override(d DataDatabricksCleanRoomsCleanRoom, scope constructs.Construct, id *string, config *DataDatabricksCleanRoomsCleanRoomConfig) {
 	_init_.Initialize()
 
@@ -507,6 +531,17 @@ func (j *jsiiProxy_DataDatabricksCleanRoomsCleanRoom)SetProvider(val cdktf.Terra
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksCleanRoomsCleanRoom)SetWorkspaceId(val *string) {
+	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceId",
 		val,
 	)
 }
@@ -843,6 +878,14 @@ func (d *jsiiProxy_DataDatabricksCleanRoomsCleanRoom) ResetRemoteDetailedInfo() 
 	_jsii_.InvokeVoid(
 		d,
 		"resetRemoteDetailedInfo",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksCleanRoomsCleanRoom) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

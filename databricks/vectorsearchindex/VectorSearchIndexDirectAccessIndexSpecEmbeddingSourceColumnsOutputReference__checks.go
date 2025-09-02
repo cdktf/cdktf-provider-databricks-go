@@ -198,6 +198,14 @@ func (j *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsO
 	return nil
 }
 
+func (j *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference) validateSetModelEndpointNameForQueryParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

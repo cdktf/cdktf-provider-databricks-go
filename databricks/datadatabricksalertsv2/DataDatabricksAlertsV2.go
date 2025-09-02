@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/alerts_v2 databricks_alerts_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/alerts_v2 databricks_alerts_v2}.
 type DataDatabricksAlertsV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -54,6 +54,9 @@ type DataDatabricksAlertsV2 interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WorkspaceId() *string
+	SetWorkspaceId(val *string)
+	WorkspaceIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -82,6 +85,7 @@ type DataDatabricksAlertsV2 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -251,8 +255,28 @@ func (j *jsiiProxy_DataDatabricksAlertsV2) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAlertsV2) WorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/alerts_v2 databricks_alerts_v2} Data Source.
+func (j *jsiiProxy_DataDatabricksAlertsV2) WorkspaceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/alerts_v2 databricks_alerts_v2} Data Source.
 func NewDataDatabricksAlertsV2(scope constructs.Construct, id *string, config *DataDatabricksAlertsV2Config) DataDatabricksAlertsV2 {
 	_init_.Initialize()
 
@@ -270,7 +294,7 @@ func NewDataDatabricksAlertsV2(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/alerts_v2 databricks_alerts_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/alerts_v2 databricks_alerts_v2} Data Source.
 func NewDataDatabricksAlertsV2_Override(d DataDatabricksAlertsV2, scope constructs.Construct, id *string, config *DataDatabricksAlertsV2Config) {
 	_init_.Initialize()
 
@@ -323,6 +347,17 @@ func (j *jsiiProxy_DataDatabricksAlertsV2)SetProvider(val cdktf.TerraformProvide
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAlertsV2)SetWorkspaceId(val *string) {
+	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceId",
 		val,
 	)
 }
@@ -616,6 +651,14 @@ func (d *jsiiProxy_DataDatabricksAlertsV2) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAlertsV2) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

@@ -662,9 +662,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCalls", GoMethod: "ResetCalls"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKey", GoMethod: "ResetKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrincipal", GoMethod: "ResetPrincipal"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTokens", GoMethod: "ResetTokens"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "tokens", GoGetter: "Tokens"},
+			_jsii_.MemberProperty{JsiiProperty: "tokensInput", GoGetter: "TokensInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
@@ -1948,6 +1951,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetState", GoMethod: "ResetState"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTask", GoMethod: "ResetTask"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUsagePolicyId", GoMethod: "ResetUsagePolicyId"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
 			_jsii_.MemberProperty{JsiiProperty: "stateInput", GoGetter: "StateInput"},
@@ -1958,6 +1962,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "usagePolicyId", GoGetter: "UsagePolicyId"},
+			_jsii_.MemberProperty{JsiiProperty: "usagePolicyIdInput", GoGetter: "UsagePolicyIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference{}

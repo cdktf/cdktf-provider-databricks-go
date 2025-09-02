@@ -75,6 +75,14 @@ func (c *jsiiProxy_Catalog) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
+func (c *jsiiProxy_Catalog) validatePutEffectivePredictiveOptimizationFlagParameters(value *CatalogEffectivePredictiveOptimizationFlag) error {
+	return nil
+}
+
+func (c *jsiiProxy_Catalog) validatePutProvisioningInfoParameters(value *CatalogProvisioningInfo) error {
+	return nil
+}
+
 func validateCatalog_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,6 +96,10 @@ func validateCatalog_IsTerraformElementParameters(x interface{}) error {
 }
 
 func validateCatalog_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Catalog) validateSetBrowseOnlyParameters(val interface{}) error {
 	return nil
 }
 
@@ -156,6 +168,10 @@ func (j *jsiiProxy_Catalog) validateSetProvisionersParameters(val *[]interface{}
 }
 
 func (j *jsiiProxy_Catalog) validateSetShareNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Catalog) validateSetStorageLocationParameters(val *string) error {
 	return nil
 }
 

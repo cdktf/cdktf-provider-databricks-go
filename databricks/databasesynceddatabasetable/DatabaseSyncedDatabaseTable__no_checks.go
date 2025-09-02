@@ -123,6 +123,10 @@ func (j *jsiiProxy_DatabaseSyncedDatabaseTable) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSyncedDatabaseTable) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDatabaseSyncedDatabaseTableParameters(scope constructs.Construct, id *string, config *DatabaseSyncedDatabaseTableConfig) error {
 	return nil
 }

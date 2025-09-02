@@ -34,10 +34,14 @@ type DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference interface {
 	CreationStack() *[]*string
 	CreationTime() *string
 	Creator() *string
+	EffectiveEnablePgNativeLogin() cdktf.IResolvable
 	EffectiveEnableReadableSecondaries() cdktf.IResolvable
 	EffectiveNodeCount() *float64
 	EffectiveRetentionWindowInDays() *float64
 	EffectiveStopped() cdktf.IResolvable
+	EnablePgNativeLogin() interface{}
+	SetEnablePgNativeLogin(val interface{})
+	EnablePgNativeLoginInput() interface{}
 	EnableReadableSecondaries() interface{}
 	SetEnableReadableSecondaries(val interface{})
 	EnableReadableSecondariesInput() interface{}
@@ -98,6 +102,7 @@ type DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutParentInstanceRef(value *DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef)
 	ResetCapacity()
+	ResetEnablePgNativeLogin()
 	ResetEnableReadableSecondaries()
 	ResetNodeCount()
 	ResetParentInstanceRef()
@@ -198,6 +203,16 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EffectiveEnablePgNativeLogin() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"effectiveEnablePgNativeLogin",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EffectiveEnableReadableSecondaries() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -233,6 +248,26 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	_jsii_.Get(
 		j,
 		"effectiveStopped",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EnablePgNativeLogin() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePgNativeLogin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EnablePgNativeLoginInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePgNativeLoginInput",
 		&returns,
 	)
 	return returns
@@ -505,6 +540,17 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference)SetEnablePgNativeLogin(val interface{}) {
+	if err := j.validateSetEnablePgNativeLoginParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePgNativeLogin",
 		val,
 	)
 }
@@ -798,6 +844,14 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	_jsii_.InvokeVoid(
 		d,
 		"resetCapacity",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) ResetEnablePgNativeLogin() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnablePgNativeLogin",
 		nil, // no parameters
 	)
 }

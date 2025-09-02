@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs databricks}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs databricks}.
 type DatabricksProvider interface {
 	cdktf.TerraformProvider
 	AccountId() *string
@@ -105,6 +105,9 @@ type DatabricksProvider interface {
 	MetadataServiceUrlInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OauthCallbackPort() *float64
+	SetOauthCallbackPort(val *float64)
+	OauthCallbackPortInput() *float64
 	OidcTokenEnv() *string
 	SetOidcTokenEnv(val *string)
 	OidcTokenEnvInput() *string
@@ -174,6 +177,7 @@ type DatabricksProvider interface {
 	ResetHost()
 	ResetHttpTimeoutSeconds()
 	ResetMetadataServiceUrl()
+	ResetOauthCallbackPort()
 	ResetOidcTokenEnv()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -785,6 +789,26 @@ func (j *jsiiProxy_DatabricksProvider) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DatabricksProvider) OauthCallbackPort() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"oauthCallbackPort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) OauthCallbackPortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"oauthCallbackPortInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabricksProvider) OidcTokenEnv() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1026,7 +1050,7 @@ func (j *jsiiProxy_DatabricksProvider) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs databricks} Resource.
 func NewDatabricksProvider(scope constructs.Construct, id *string, config *DatabricksProviderConfig) DatabricksProvider {
 	_init_.Initialize()
 
@@ -1044,7 +1068,7 @@ func NewDatabricksProvider(scope constructs.Construct, id *string, config *Datab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs databricks} Resource.
 func NewDatabricksProvider_Override(d DatabricksProvider, scope constructs.Construct, id *string, config *DatabricksProviderConfig) {
 	_init_.Initialize()
 
@@ -1265,6 +1289,14 @@ func (j *jsiiProxy_DatabricksProvider)SetMetadataServiceUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"metadataServiceUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabricksProvider)SetOauthCallbackPort(val *float64) {
+	_jsii_.Set(
+		j,
+		"oauthCallbackPort",
 		val,
 	)
 }
@@ -1681,6 +1713,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetMetadataServiceUrl() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMetadataServiceUrl",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) ResetOauthCallbackPort() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOauthCallbackPort",
 		nil, // no parameters
 	)
 }

@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataDatabricksBudgetPolicy) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksBudgetPolicy) validateSetPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksBudgetPolicy) validateSetPolicyNameParameters(val *string) error {
 	return nil
 }

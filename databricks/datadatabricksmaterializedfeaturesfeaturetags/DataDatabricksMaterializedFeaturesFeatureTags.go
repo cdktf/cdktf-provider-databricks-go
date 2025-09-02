@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags}.
 type DataDatabricksMaterializedFeaturesFeatureTags interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -54,6 +54,9 @@ type DataDatabricksMaterializedFeaturesFeatureTags interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WorkspaceId() *string
+	SetWorkspaceId(val *string)
+	WorkspaceIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -82,6 +85,7 @@ type DataDatabricksMaterializedFeaturesFeatureTags interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -251,8 +255,28 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) TerraformResou
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) WorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source.
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) WorkspaceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source.
 func NewDataDatabricksMaterializedFeaturesFeatureTags(scope constructs.Construct, id *string, config *DataDatabricksMaterializedFeaturesFeatureTagsConfig) DataDatabricksMaterializedFeaturesFeatureTags {
 	_init_.Initialize()
 
@@ -270,7 +294,7 @@ func NewDataDatabricksMaterializedFeaturesFeatureTags(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source.
 func NewDataDatabricksMaterializedFeaturesFeatureTags_Override(d DataDatabricksMaterializedFeaturesFeatureTags, scope constructs.Construct, id *string, config *DataDatabricksMaterializedFeaturesFeatureTagsConfig) {
 	_init_.Initialize()
 
@@ -323,6 +347,17 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags)SetProvider(val
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags)SetWorkspaceId(val *string) {
+	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceId",
 		val,
 	)
 }
@@ -616,6 +651,14 @@ func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) ResetOverrideL
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

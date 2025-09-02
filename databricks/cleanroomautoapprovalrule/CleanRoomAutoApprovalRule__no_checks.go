@@ -123,6 +123,10 @@ func (j *jsiiProxy_CleanRoomAutoApprovalRule) validateSetRunnerCollaboratorAlias
 	return nil
 }
 
+func (j *jsiiProxy_CleanRoomAutoApprovalRule) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewCleanRoomAutoApprovalRuleParameters(scope constructs.Construct, id *string, config *CleanRoomAutoApprovalRuleConfig) error {
 	return nil
 }

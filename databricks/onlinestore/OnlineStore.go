@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/online_store databricks_online_store}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store databricks_online_store}.
 type OnlineStore interface {
 	cdktf.TerraformResource
 	Capacity() *string
@@ -73,6 +73,9 @@ type OnlineStore interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WorkspaceId() *string
+	SetWorkspaceId(val *string)
+	WorkspaceIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -120,6 +123,7 @@ type OnlineStore interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetReadReplicaCount()
+	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -388,8 +392,28 @@ func (j *jsiiProxy_OnlineStore) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OnlineStore) WorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/online_store databricks_online_store} Resource.
+func (j *jsiiProxy_OnlineStore) WorkspaceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store databricks_online_store} Resource.
 func NewOnlineStore(scope constructs.Construct, id *string, config *OnlineStoreConfig) OnlineStore {
 	_init_.Initialize()
 
@@ -407,7 +431,7 @@ func NewOnlineStore(scope constructs.Construct, id *string, config *OnlineStoreC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/online_store databricks_online_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store databricks_online_store} Resource.
 func NewOnlineStore_Override(o OnlineStore, scope constructs.Construct, id *string, config *OnlineStoreConfig) {
 	_init_.Initialize()
 
@@ -515,6 +539,17 @@ func (j *jsiiProxy_OnlineStore)SetReadReplicaCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"readReplicaCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OnlineStore)SetWorkspaceId(val *string) {
+	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceId",
 		val,
 	)
 }
@@ -884,6 +919,14 @@ func (o *jsiiProxy_OnlineStore) ResetReadReplicaCount() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetReadReplicaCount",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OnlineStore) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

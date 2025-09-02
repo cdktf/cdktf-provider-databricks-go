@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2}.
 type DataDatabricksQualityMonitorsV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -54,6 +54,9 @@ type DataDatabricksQualityMonitorsV2 interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WorkspaceId() *string
+	SetWorkspaceId(val *string)
+	WorkspaceIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -82,6 +85,7 @@ type DataDatabricksQualityMonitorsV2 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -251,8 +255,28 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) TerraformResourceType() *str
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) WorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2} Data Source.
+func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) WorkspaceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2} Data Source.
 func NewDataDatabricksQualityMonitorsV2(scope constructs.Construct, id *string, config *DataDatabricksQualityMonitorsV2Config) DataDatabricksQualityMonitorsV2 {
 	_init_.Initialize()
 
@@ -270,7 +294,7 @@ func NewDataDatabricksQualityMonitorsV2(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2} Data Source.
 func NewDataDatabricksQualityMonitorsV2_Override(d DataDatabricksQualityMonitorsV2, scope constructs.Construct, id *string, config *DataDatabricksQualityMonitorsV2Config) {
 	_init_.Initialize()
 
@@ -323,6 +347,17 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorsV2)SetProvider(val cdktf.Terrafo
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksQualityMonitorsV2)SetWorkspaceId(val *string) {
+	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceId",
 		val,
 	)
 }
@@ -616,6 +651,14 @@ func (d *jsiiProxy_DataDatabricksQualityMonitorsV2) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksQualityMonitorsV2) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

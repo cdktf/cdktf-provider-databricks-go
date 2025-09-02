@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) validatePutEval
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) validatePutRunAsParameters(value *DataDatabricksAlertsV2ResultsRunAs) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) validatePutScheduleParameters(value *DataDatabricksAlertsV2ResultsSchedule) error {
 	return nil
 }

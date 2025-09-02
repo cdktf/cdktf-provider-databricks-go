@@ -123,6 +123,10 @@ func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAsset) validate
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAsset) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksCleanRoomAssetRevisionsCleanRoomAssetParameters(scope constructs.Construct, id *string, config *DataDatabricksCleanRoomAssetRevisionsCleanRoomAssetConfig) error {
 	return nil
 }

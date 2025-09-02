@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/alert_v2 databricks_alert_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/alert_v2 databricks_alert_v2}.
 type DataDatabricksAlertV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -37,6 +37,7 @@ type DataDatabricksAlertV2 interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveRunAs() DataDatabricksAlertV2EffectiveRunAsOutputReference
 	Evaluation() DataDatabricksAlertV2EvaluationOutputReference
 	EvaluationInput() interface{}
 	// Experimental.
@@ -68,6 +69,8 @@ type DataDatabricksAlertV2 interface {
 	QueryTextInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	RunAs() DataDatabricksAlertV2RunAsOutputReference
+	RunAsInput() interface{}
 	RunAsUserName() *string
 	SetRunAsUserName(val *string)
 	RunAsUserNameInput() *string
@@ -83,6 +86,9 @@ type DataDatabricksAlertV2 interface {
 	WarehouseId() *string
 	SetWarehouseId(val *string)
 	WarehouseIdInput() *string
+	WorkspaceId() *string
+	SetWorkspaceId(val *string)
+	WorkspaceIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -109,6 +115,7 @@ type DataDatabricksAlertV2 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEvaluation(value *DataDatabricksAlertV2Evaluation)
+	PutRunAs(value *DataDatabricksAlertV2RunAs)
 	PutSchedule(value *DataDatabricksAlertV2Schedule)
 	ResetCustomDescription()
 	ResetCustomSummary()
@@ -119,9 +126,11 @@ type DataDatabricksAlertV2 interface {
 	ResetOverrideLogicalId()
 	ResetParentPath()
 	ResetQueryText()
+	ResetRunAs()
 	ResetRunAsUserName()
 	ResetSchedule()
 	ResetWarehouseId()
+	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -246,6 +255,16 @@ func (j *jsiiProxy_DataDatabricksAlertV2) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAlertV2) EffectiveRunAs() DataDatabricksAlertV2EffectiveRunAsOutputReference {
+	var returns DataDatabricksAlertV2EffectiveRunAsOutputReference
+	_jsii_.Get(
+		j,
+		"effectiveRunAs",
 		&returns,
 	)
 	return returns
@@ -411,6 +430,26 @@ func (j *jsiiProxy_DataDatabricksAlertV2) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAlertV2) RunAs() DataDatabricksAlertV2RunAsOutputReference {
+	var returns DataDatabricksAlertV2RunAsOutputReference
+	_jsii_.Get(
+		j,
+		"runAs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAlertV2) RunAsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"runAsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAlertV2) RunAsUserName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -511,8 +550,28 @@ func (j *jsiiProxy_DataDatabricksAlertV2) WarehouseIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAlertV2) WorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
+func (j *jsiiProxy_DataDatabricksAlertV2) WorkspaceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
 func NewDataDatabricksAlertV2(scope constructs.Construct, id *string, config *DataDatabricksAlertV2Config) DataDatabricksAlertV2 {
 	_init_.Initialize()
 
@@ -530,7 +589,7 @@ func NewDataDatabricksAlertV2(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
 func NewDataDatabricksAlertV2_Override(d DataDatabricksAlertV2, scope constructs.Construct, id *string, config *DataDatabricksAlertV2Config) {
 	_init_.Initialize()
 
@@ -660,6 +719,17 @@ func (j *jsiiProxy_DataDatabricksAlertV2)SetWarehouseId(val *string) {
 	_jsii_.Set(
 		j,
 		"warehouseId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAlertV2)SetWorkspaceId(val *string) {
+	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceId",
 		val,
 	)
 }
@@ -960,6 +1030,17 @@ func (d *jsiiProxy_DataDatabricksAlertV2) PutEvaluation(value *DataDatabricksAle
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAlertV2) PutRunAs(value *DataDatabricksAlertV2RunAs) {
+	if err := d.validatePutRunAsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRunAs",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAlertV2) PutSchedule(value *DataDatabricksAlertV2Schedule) {
 	if err := d.validatePutScheduleParameters(value); err != nil {
 		panic(err)
@@ -1027,6 +1108,14 @@ func (d *jsiiProxy_DataDatabricksAlertV2) ResetQueryText() {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAlertV2) ResetRunAs() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRunAs",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAlertV2) ResetRunAsUserName() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1047,6 +1136,14 @@ func (d *jsiiProxy_DataDatabricksAlertV2) ResetWarehouseId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetWarehouseId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAlertV2) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

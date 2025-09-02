@@ -79,6 +79,10 @@ func (a *jsiiProxy_AlertV2) validatePutEvaluationParameters(value *AlertV2Evalua
 	return nil
 }
 
+func (a *jsiiProxy_AlertV2) validatePutRunAsParameters(value *AlertV2RunAs) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertV2) validatePutScheduleParameters(value *AlertV2Schedule) error {
 	return nil
 }
@@ -140,6 +144,10 @@ func (j *jsiiProxy_AlertV2) validateSetRunAsUserNameParameters(val *string) erro
 }
 
 func (j *jsiiProxy_AlertV2) validateSetWarehouseIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AlertV2) validateSetWorkspaceIdParameters(val *string) error {
 	return nil
 }
 

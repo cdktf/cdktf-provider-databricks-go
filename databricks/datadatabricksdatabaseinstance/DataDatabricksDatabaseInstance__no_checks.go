@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetCountParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetEnablePgNativeLoginParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetEnableReadableSecondariesParameters(val interface{}) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetRetentionWindowInD
 }
 
 func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetStoppedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetWorkspaceIdParameters(val *string) error {
 	return nil
 }
 

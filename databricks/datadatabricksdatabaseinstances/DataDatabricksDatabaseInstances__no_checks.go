@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstances) validateSetLifecycleParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseInstances) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksDatabaseInstancesParameters(scope constructs.Construct, id *string, config *DataDatabricksDatabaseInstancesConfig) error {
 	return nil
 }

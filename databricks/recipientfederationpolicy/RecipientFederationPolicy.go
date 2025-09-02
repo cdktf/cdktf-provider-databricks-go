@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/recipient_federation_policy databricks_recipient_federation_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/recipient_federation_policy databricks_recipient_federation_policy}.
 type RecipientFederationPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -72,6 +72,9 @@ type RecipientFederationPolicy interface {
 	// Experimental.
 	TerraformResourceType() *string
 	UpdateTime() *string
+	WorkspaceId() *string
+	SetWorkspaceId(val *string)
+	WorkspaceIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -122,6 +125,7 @@ type RecipientFederationPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -390,8 +394,28 @@ func (j *jsiiProxy_RecipientFederationPolicy) UpdateTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RecipientFederationPolicy) WorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/recipient_federation_policy databricks_recipient_federation_policy} Resource.
+func (j *jsiiProxy_RecipientFederationPolicy) WorkspaceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/recipient_federation_policy databricks_recipient_federation_policy} Resource.
 func NewRecipientFederationPolicy(scope constructs.Construct, id *string, config *RecipientFederationPolicyConfig) RecipientFederationPolicy {
 	_init_.Initialize()
 
@@ -409,7 +433,7 @@ func NewRecipientFederationPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/recipient_federation_policy databricks_recipient_federation_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/recipient_federation_policy databricks_recipient_federation_policy} Resource.
 func NewRecipientFederationPolicy_Override(r RecipientFederationPolicy, scope constructs.Construct, id *string, config *RecipientFederationPolicyConfig) {
 	_init_.Initialize()
 
@@ -506,6 +530,17 @@ func (j *jsiiProxy_RecipientFederationPolicy)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RecipientFederationPolicy)SetWorkspaceId(val *string) {
+	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceId",
 		val,
 	)
 }
@@ -902,6 +937,14 @@ func (r *jsiiProxy_RecipientFederationPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RecipientFederationPolicy) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

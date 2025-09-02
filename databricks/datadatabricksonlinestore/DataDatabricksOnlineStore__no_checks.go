@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataDatabricksOnlineStore) validateSetReadReplicaCountParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksOnlineStore) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksOnlineStoreParameters(scope constructs.Construct, id *string, config *DataDatabricksOnlineStoreConfig) error {
 	return nil
 }

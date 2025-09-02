@@ -111,6 +111,10 @@ func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetUrlParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksExternalMetadataParameters(scope constructs.Construct, id *string, config *DataDatabricksExternalMetadataConfig) error {
 	return nil
 }

@@ -151,6 +151,10 @@ func (j *jsiiProxy_CleanRoomAsset) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_CleanRoomAsset) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewCleanRoomAssetParameters(scope constructs.Construct, id *string, config *CleanRoomAssetConfig) error {
 	return nil
 }

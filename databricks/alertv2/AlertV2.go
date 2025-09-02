@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2 databricks_alert_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2 databricks_alert_v2}.
 type AlertV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -41,6 +41,7 @@ type AlertV2 interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveRunAs() AlertV2EffectiveRunAsOutputReference
 	Evaluation() AlertV2EvaluationOutputReference
 	EvaluationInput() interface{}
 	// Experimental.
@@ -76,6 +77,8 @@ type AlertV2 interface {
 	QueryTextInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	RunAs() AlertV2RunAsOutputReference
+	RunAsInput() interface{}
 	RunAsUserName() *string
 	SetRunAsUserName(val *string)
 	RunAsUserNameInput() *string
@@ -91,6 +94,9 @@ type AlertV2 interface {
 	WarehouseId() *string
 	SetWarehouseId(val *string)
 	WarehouseIdInput() *string
+	WorkspaceId() *string
+	SetWorkspaceId(val *string)
+	WorkspaceIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -135,6 +141,7 @@ type AlertV2 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEvaluation(value *AlertV2Evaluation)
+	PutRunAs(value *AlertV2RunAs)
 	PutSchedule(value *AlertV2Schedule)
 	ResetCustomDescription()
 	ResetCustomSummary()
@@ -145,9 +152,11 @@ type AlertV2 interface {
 	ResetOverrideLogicalId()
 	ResetParentPath()
 	ResetQueryText()
+	ResetRunAs()
 	ResetRunAsUserName()
 	ResetSchedule()
 	ResetWarehouseId()
+	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -281,6 +290,16 @@ func (j *jsiiProxy_AlertV2) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertV2) EffectiveRunAs() AlertV2EffectiveRunAsOutputReference {
+	var returns AlertV2EffectiveRunAsOutputReference
+	_jsii_.Get(
+		j,
+		"effectiveRunAs",
 		&returns,
 	)
 	return returns
@@ -456,6 +475,26 @@ func (j *jsiiProxy_AlertV2) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AlertV2) RunAs() AlertV2RunAsOutputReference {
+	var returns AlertV2RunAsOutputReference
+	_jsii_.Get(
+		j,
+		"runAs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertV2) RunAsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"runAsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlertV2) RunAsUserName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -556,8 +595,28 @@ func (j *jsiiProxy_AlertV2) WarehouseIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AlertV2) WorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2 databricks_alert_v2} Resource.
+func (j *jsiiProxy_AlertV2) WorkspaceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
 func NewAlertV2(scope constructs.Construct, id *string, config *AlertV2Config) AlertV2 {
 	_init_.Initialize()
 
@@ -575,7 +634,7 @@ func NewAlertV2(scope constructs.Construct, id *string, config *AlertV2Config) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2 databricks_alert_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
 func NewAlertV2_Override(a AlertV2, scope constructs.Construct, id *string, config *AlertV2Config) {
 	_init_.Initialize()
 
@@ -727,6 +786,17 @@ func (j *jsiiProxy_AlertV2)SetWarehouseId(val *string) {
 	_jsii_.Set(
 		j,
 		"warehouseId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlertV2)SetWorkspaceId(val *string) {
+	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceId",
 		val,
 	)
 }
@@ -1095,6 +1165,17 @@ func (a *jsiiProxy_AlertV2) PutEvaluation(value *AlertV2Evaluation) {
 	)
 }
 
+func (a *jsiiProxy_AlertV2) PutRunAs(value *AlertV2RunAs) {
+	if err := a.validatePutRunAsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putRunAs",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlertV2) PutSchedule(value *AlertV2Schedule) {
 	if err := a.validatePutScheduleParameters(value); err != nil {
 		panic(err)
@@ -1162,6 +1243,14 @@ func (a *jsiiProxy_AlertV2) ResetQueryText() {
 	)
 }
 
+func (a *jsiiProxy_AlertV2) ResetRunAs() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRunAs",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AlertV2) ResetRunAsUserName() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1182,6 +1271,14 @@ func (a *jsiiProxy_AlertV2) ResetWarehouseId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetWarehouseId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlertV2) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

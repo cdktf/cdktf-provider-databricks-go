@@ -52,6 +52,9 @@ type DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference i
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Tokens() *float64
+	SetTokens(val *float64)
+	TokensInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,6 +82,7 @@ type DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference i
 	ResetCalls()
 	ResetKey()
 	ResetPrincipal()
+	ResetTokens()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -244,6 +248,26 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOut
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference) Tokens() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokens",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference) TokensInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokensInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference {
 	_init_.Initialize()
@@ -367,6 +391,17 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOut
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference)SetTokens(val *float64) {
+	if err := j.validateSetTokensParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokens",
 		val,
 	)
 }
@@ -577,6 +612,14 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOut
 	_jsii_.InvokeVoid(
 		d,
 		"resetPrincipal",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference) ResetTokens() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTokens",
 		nil, // no parameters
 	)
 }

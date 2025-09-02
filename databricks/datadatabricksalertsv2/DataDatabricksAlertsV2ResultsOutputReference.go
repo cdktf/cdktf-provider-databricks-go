@@ -38,6 +38,7 @@ type DataDatabricksAlertsV2ResultsOutputReference interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveRunAs() DataDatabricksAlertsV2ResultsEffectiveRunAsOutputReference
 	Evaluation() DataDatabricksAlertsV2ResultsEvaluationOutputReference
 	EvaluationInput() interface{}
 	// Experimental.
@@ -53,6 +54,8 @@ type DataDatabricksAlertsV2ResultsOutputReference interface {
 	QueryText() *string
 	SetQueryText(val *string)
 	QueryTextInput() *string
+	RunAs() DataDatabricksAlertsV2ResultsRunAsOutputReference
+	RunAsInput() interface{}
 	RunAsUserName() *string
 	SetRunAsUserName(val *string)
 	RunAsUserNameInput() *string
@@ -95,6 +98,7 @@ type DataDatabricksAlertsV2ResultsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEvaluation(value *DataDatabricksAlertsV2ResultsEvaluation)
+	PutRunAs(value *DataDatabricksAlertsV2ResultsRunAs)
 	PutSchedule(value *DataDatabricksAlertsV2ResultsSchedule)
 	ResetCustomDescription()
 	ResetCustomSummary()
@@ -102,6 +106,7 @@ type DataDatabricksAlertsV2ResultsOutputReference interface {
 	ResetEvaluation()
 	ResetParentPath()
 	ResetQueryText()
+	ResetRunAs()
 	ResetRunAsUserName()
 	ResetSchedule()
 	ResetWarehouseId()
@@ -220,6 +225,16 @@ func (j *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) DisplayNameInpu
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) EffectiveRunAs() DataDatabricksAlertsV2ResultsEffectiveRunAsOutputReference {
+	var returns DataDatabricksAlertsV2ResultsEffectiveRunAsOutputReference
+	_jsii_.Get(
+		j,
+		"effectiveRunAs",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) Evaluation() DataDatabricksAlertsV2ResultsEvaluationOutputReference {
 	var returns DataDatabricksAlertsV2ResultsEvaluationOutputReference
 	_jsii_.Get(
@@ -325,6 +340,26 @@ func (j *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) QueryTextInput(
 	_jsii_.Get(
 		j,
 		"queryTextInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) RunAs() DataDatabricksAlertsV2ResultsRunAsOutputReference {
+	var returns DataDatabricksAlertsV2ResultsRunAsOutputReference
+	_jsii_.Get(
+		j,
+		"runAs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) RunAsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"runAsInput",
 		&returns,
 	)
 	return returns
@@ -777,6 +812,17 @@ func (d *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) PutEvaluation(v
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) PutRunAs(value *DataDatabricksAlertsV2ResultsRunAs) {
+	if err := d.validatePutRunAsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRunAs",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) PutSchedule(value *DataDatabricksAlertsV2ResultsSchedule) {
 	if err := d.validatePutScheduleParameters(value); err != nil {
 		panic(err)
@@ -832,6 +878,14 @@ func (d *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) ResetQueryText(
 	_jsii_.InvokeVoid(
 		d,
 		"resetQueryText",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) ResetRunAs() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRunAs",
 		nil, // no parameters
 	)
 }

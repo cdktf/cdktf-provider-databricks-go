@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables}.
 type DataDatabricksDatabaseSyncedDatabaseTables interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -54,6 +54,9 @@ type DataDatabricksDatabaseSyncedDatabaseTables interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WorkspaceId() *string
+	SetWorkspaceId(val *string)
+	WorkspaceIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -82,6 +85,7 @@ type DataDatabricksDatabaseSyncedDatabaseTables interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -251,8 +255,28 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) TerraformResource
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) WorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables} Data Source.
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) WorkspaceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables} Data Source.
 func NewDataDatabricksDatabaseSyncedDatabaseTables(scope constructs.Construct, id *string, config *DataDatabricksDatabaseSyncedDatabaseTablesConfig) DataDatabricksDatabaseSyncedDatabaseTables {
 	_init_.Initialize()
 
@@ -270,7 +294,7 @@ func NewDataDatabricksDatabaseSyncedDatabaseTables(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables} Data Source.
 func NewDataDatabricksDatabaseSyncedDatabaseTables_Override(d DataDatabricksDatabaseSyncedDatabaseTables, scope constructs.Construct, id *string, config *DataDatabricksDatabaseSyncedDatabaseTablesConfig) {
 	_init_.Initialize()
 
@@ -323,6 +347,17 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables)SetProvider(val cd
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables)SetWorkspaceId(val *string) {
+	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceId",
 		val,
 	)
 }
@@ -616,6 +651,14 @@ func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) ResetOverrideLogi
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

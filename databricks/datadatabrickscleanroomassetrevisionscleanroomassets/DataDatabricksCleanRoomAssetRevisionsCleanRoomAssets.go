@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_asset_revisions_clean_room_assets databricks_clean_room_asset_revisions_clean_room_assets}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_asset_revisions_clean_room_assets databricks_clean_room_asset_revisions_clean_room_assets}.
 type DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -39,6 +39,9 @@ type DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -54,6 +57,9 @@ type DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WorkspaceId() *string
+	SetWorkspaceId(val *string)
+	WorkspaceIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -82,6 +88,7 @@ type DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -181,6 +188,26 @@ func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets) Lifecyc
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -251,8 +278,28 @@ func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets) Terrafo
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets) WorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_asset_revisions_clean_room_assets databricks_clean_room_asset_revisions_clean_room_assets} Data Source.
+func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets) WorkspaceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_asset_revisions_clean_room_assets databricks_clean_room_asset_revisions_clean_room_assets} Data Source.
 func NewDataDatabricksCleanRoomAssetRevisionsCleanRoomAssets(scope constructs.Construct, id *string, config *DataDatabricksCleanRoomAssetRevisionsCleanRoomAssetsConfig) DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets {
 	_init_.Initialize()
 
@@ -270,7 +317,7 @@ func NewDataDatabricksCleanRoomAssetRevisionsCleanRoomAssets(scope constructs.Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_asset_revisions_clean_room_assets databricks_clean_room_asset_revisions_clean_room_assets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_asset_revisions_clean_room_assets databricks_clean_room_asset_revisions_clean_room_assets} Data Source.
 func NewDataDatabricksCleanRoomAssetRevisionsCleanRoomAssets_Override(d DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets, scope constructs.Construct, id *string, config *DataDatabricksCleanRoomAssetRevisionsCleanRoomAssetsConfig) {
 	_init_.Initialize()
 
@@ -319,10 +366,32 @@ func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets)SetLifec
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets)SetWorkspaceId(val *string) {
+	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceId",
 		val,
 	)
 }
@@ -616,6 +685,14 @@ func (d *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets) ResetOv
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

@@ -71,6 +71,10 @@ func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) validateSetPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) validateSetPolicyNameParameters(val *string) error {
 	return nil
 }

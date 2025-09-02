@@ -283,6 +283,14 @@ func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetUrlParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetWorkspaceIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataDatabricksExternalMetadataParameters(scope constructs.Construct, id *string, config *DataDatabricksExternalMetadataConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

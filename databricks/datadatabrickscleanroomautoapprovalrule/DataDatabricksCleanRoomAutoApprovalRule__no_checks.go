@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataDatabricksCleanRoomAutoApprovalRule) validateSetRunnerCol
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksCleanRoomAutoApprovalRule) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksCleanRoomAutoApprovalRuleParameters(scope constructs.Construct, id *string, config *DataDatabricksCleanRoomAutoApprovalRuleConfig) error {
 	return nil
 }

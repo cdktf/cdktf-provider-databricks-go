@@ -154,6 +154,14 @@ func validateDataDatabricksCleanRoomAssets_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksCleanRoomAssets) validateSetCleanRoomNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksCleanRoomAssets) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:
@@ -219,6 +227,14 @@ func (j *jsiiProxy_DataDatabricksCleanRoomAssets) validateSetLifecycleParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksCleanRoomAssets) validateSetWorkspaceIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataDatabricksCleanRoomAssetsParameters(scope constructs.Construct, id *string, config *DataDatabricksCleanRoomAssetsConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -228,6 +244,9 @@ func validateNewDataDatabricksCleanRoomAssetsParameters(scope constructs.Constru
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
+	if config == nil {
+		return fmt.Errorf("parameter config is required, but nil was provided")
+	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

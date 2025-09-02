@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) validateSetNamePar
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksDatabaseSyncedDatabaseTableParameters(scope constructs.Construct, id *string, config *DataDatabricksDatabaseSyncedDatabaseTableConfig) error {
 	return nil
 }

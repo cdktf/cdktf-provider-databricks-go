@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOut
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference) validateSetTokensParameters(val *float64) error {
+	return nil
+}
+
 func validateNewDataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }

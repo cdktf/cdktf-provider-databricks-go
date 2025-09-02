@@ -107,6 +107,10 @@ func (j *jsiiProxy_DatabaseInstance) validateSetCountParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseInstance) validateSetEnablePgNativeLoginParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseInstance) validateSetEnableReadableSecondariesParameters(val interface{}) error {
 	return nil
 }
@@ -136,6 +140,10 @@ func (j *jsiiProxy_DatabaseInstance) validateSetRetentionWindowInDaysParameters(
 }
 
 func (j *jsiiProxy_DatabaseInstance) validateSetStoppedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseInstance) validateSetWorkspaceIdParameters(val *string) error {
 	return nil
 }
 

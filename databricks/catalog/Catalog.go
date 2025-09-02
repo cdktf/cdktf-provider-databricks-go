@@ -12,9 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/catalog databricks_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/catalog databricks_catalog}.
 type Catalog interface {
 	cdktf.TerraformResource
+	BrowseOnly() interface{}
+	SetBrowseOnly(val interface{})
+	BrowseOnlyInput() interface{}
+	CatalogType() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Comment() *string
@@ -33,10 +37,14 @@ type Catalog interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *float64
+	CreatedBy() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectivePredictiveOptimizationFlag() CatalogEffectivePredictiveOptimizationFlagOutputReference
+	EffectivePredictiveOptimizationFlagInput() *CatalogEffectivePredictiveOptimizationFlag
 	EnablePredictiveOptimization() *string
 	SetEnablePredictiveOptimization(val *string)
 	EnablePredictiveOptimizationInput() *string
@@ -51,6 +59,7 @@ type Catalog interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	FullName() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -89,11 +98,17 @@ type Catalog interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	ProvisioningInfo() CatalogProvisioningInfoOutputReference
+	ProvisioningInfoInput() *CatalogProvisioningInfo
 	// Experimental.
 	RawOverrides() interface{}
+	SecurableType() *string
 	ShareName() *string
 	SetShareName(val *string)
 	ShareNameInput() *string
+	StorageLocation() *string
+	SetStorageLocation(val *string)
+	StorageLocationInput() *string
 	StorageRoot() *string
 	SetStorageRoot(val *string)
 	StorageRootInput() *string
@@ -103,6 +118,8 @@ type Catalog interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatedAt() *float64
+	UpdatedBy() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -146,13 +163,18 @@ type Catalog interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEffectivePredictiveOptimizationFlag(value *CatalogEffectivePredictiveOptimizationFlag)
+	PutProvisioningInfo(value *CatalogProvisioningInfo)
+	ResetBrowseOnly()
 	ResetComment()
 	ResetConnectionName()
+	ResetEffectivePredictiveOptimizationFlag()
 	ResetEnablePredictiveOptimization()
 	ResetForceDestroy()
 	ResetId()
 	ResetIsolationMode()
 	ResetMetastoreId()
+	ResetName()
 	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -160,7 +182,9 @@ type Catalog interface {
 	ResetOwner()
 	ResetProperties()
 	ResetProviderName()
+	ResetProvisioningInfo()
 	ResetShareName()
+	ResetStorageLocation()
 	ResetStorageRoot()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -178,6 +202,36 @@ type Catalog interface {
 // The jsii proxy struct for Catalog
 type jsiiProxy_Catalog struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Catalog) BrowseOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"browseOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) BrowseOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"browseOnlyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) CatalogType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalogType",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Catalog) CdktfStack() cdktf.TerraformStack {
@@ -260,11 +314,51 @@ func (j *jsiiProxy_Catalog) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Catalog) CreatedAt() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) CreatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdBy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Catalog) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) EffectivePredictiveOptimizationFlag() CatalogEffectivePredictiveOptimizationFlagOutputReference {
+	var returns CatalogEffectivePredictiveOptimizationFlagOutputReference
+	_jsii_.Get(
+		j,
+		"effectivePredictiveOptimizationFlag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) EffectivePredictiveOptimizationFlagInput() *CatalogEffectivePredictiveOptimizationFlag {
+	var returns *CatalogEffectivePredictiveOptimizationFlag
+	_jsii_.Get(
+		j,
+		"effectivePredictiveOptimizationFlagInput",
 		&returns,
 	)
 	return returns
@@ -335,6 +429,16 @@ func (j *jsiiProxy_Catalog) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) FullName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fullName",
 		&returns,
 	)
 	return returns
@@ -540,11 +644,41 @@ func (j *jsiiProxy_Catalog) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Catalog) ProvisioningInfo() CatalogProvisioningInfoOutputReference {
+	var returns CatalogProvisioningInfoOutputReference
+	_jsii_.Get(
+		j,
+		"provisioningInfo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) ProvisioningInfoInput() *CatalogProvisioningInfo {
+	var returns *CatalogProvisioningInfo
+	_jsii_.Get(
+		j,
+		"provisioningInfoInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Catalog) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) SecurableType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securableType",
 		&returns,
 	)
 	return returns
@@ -565,6 +699,26 @@ func (j *jsiiProxy_Catalog) ShareNameInput() *string {
 	_jsii_.Get(
 		j,
 		"shareNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) StorageLocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Catalog) StorageLocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageLocationInput",
 		&returns,
 	)
 	return returns
@@ -620,8 +774,28 @@ func (j *jsiiProxy_Catalog) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Catalog) UpdatedAt() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/catalog databricks_catalog} Resource.
+func (j *jsiiProxy_Catalog) UpdatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedBy",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) Catalog {
 	_init_.Initialize()
 
@@ -639,7 +813,7 @@ func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog_Override(c Catalog, scope constructs.Construct, id *string, config *CatalogConfig) {
 	_init_.Initialize()
 
@@ -647,6 +821,17 @@ func NewCatalog_Override(c Catalog, scope constructs.Construct, id *string, conf
 		"@cdktf/provider-databricks.catalog.Catalog",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_Catalog)SetBrowseOnly(val interface{}) {
+	if err := j.validateSetBrowseOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"browseOnly",
+		val,
 	)
 }
 
@@ -857,6 +1042,17 @@ func (j *jsiiProxy_Catalog)SetShareName(val *string) {
 	_jsii_.Set(
 		j,
 		"shareName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Catalog)SetStorageLocation(val *string) {
+	if err := j.validateSetStorageLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageLocation",
 		val,
 	)
 }
@@ -1225,6 +1421,36 @@ func (c *jsiiProxy_Catalog) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_Catalog) PutEffectivePredictiveOptimizationFlag(value *CatalogEffectivePredictiveOptimizationFlag) {
+	if err := c.validatePutEffectivePredictiveOptimizationFlagParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putEffectivePredictiveOptimizationFlag",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_Catalog) PutProvisioningInfo(value *CatalogProvisioningInfo) {
+	if err := c.validatePutProvisioningInfoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putProvisioningInfo",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_Catalog) ResetBrowseOnly() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBrowseOnly",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_Catalog) ResetComment() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1237,6 +1463,14 @@ func (c *jsiiProxy_Catalog) ResetConnectionName() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetConnectionName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Catalog) ResetEffectivePredictiveOptimizationFlag() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEffectivePredictiveOptimizationFlag",
 		nil, // no parameters
 	)
 }
@@ -1281,6 +1515,14 @@ func (c *jsiiProxy_Catalog) ResetMetastoreId() {
 	)
 }
 
+func (c *jsiiProxy_Catalog) ResetName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_Catalog) ResetOptions() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1321,10 +1563,26 @@ func (c *jsiiProxy_Catalog) ResetProviderName() {
 	)
 }
 
+func (c *jsiiProxy_Catalog) ResetProvisioningInfo() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProvisioningInfo",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_Catalog) ResetShareName() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetShareName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Catalog) ResetStorageLocation() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStorageLocation",
 		nil, // no parameters
 	)
 }

@@ -79,6 +79,14 @@ func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets) validat
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksCleanRoomAssetRevisionsCleanRoomAssets) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksCleanRoomAssetRevisionsCleanRoomAssetsParameters(scope constructs.Construct, id *string, config *DataDatabricksCleanRoomAssetRevisionsCleanRoomAssetsConfig) error {
 	return nil
 }

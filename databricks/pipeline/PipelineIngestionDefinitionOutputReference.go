@@ -40,6 +40,8 @@ type PipelineIngestionDefinitionOutputReference interface {
 	SetInternalValue(val *PipelineIngestionDefinition)
 	Objects() PipelineIngestionDefinitionObjectsList
 	ObjectsInput() interface{}
+	SourceConfigurations() PipelineIngestionDefinitionSourceConfigurationsList
+	SourceConfigurationsInput() interface{}
 	SourceType() *string
 	SetSourceType(val *string)
 	SourceTypeInput() *string
@@ -78,10 +80,12 @@ type PipelineIngestionDefinitionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutObjects(value interface{})
+	PutSourceConfigurations(value interface{})
 	PutTableConfiguration(value *PipelineIngestionDefinitionTableConfiguration)
 	ResetConnectionName()
 	ResetIngestionGatewayId()
 	ResetObjects()
+	ResetSourceConfigurations()
 	ResetSourceType()
 	ResetTableConfiguration()
 	// Produce the Token's value at resolution time.
@@ -204,6 +208,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) ObjectsInput() in
 	_jsii_.Get(
 		j,
 		"objectsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) SourceConfigurations() PipelineIngestionDefinitionSourceConfigurationsList {
+	var returns PipelineIngestionDefinitionSourceConfigurationsList
+	_jsii_.Get(
+		j,
+		"sourceConfigurations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) SourceConfigurationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sourceConfigurationsInput",
 		&returns,
 	)
 	return returns
@@ -582,6 +606,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) PutObjects(value 
 	)
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) PutSourceConfigurations(value interface{}) {
+	if err := p.validatePutSourceConfigurationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putSourceConfigurations",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) PutTableConfiguration(value *PipelineIngestionDefinitionTableConfiguration) {
 	if err := p.validatePutTableConfigurationParameters(value); err != nil {
 		panic(err)
@@ -613,6 +648,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) ResetObjects() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetObjects",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) ResetSourceConfigurations() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSourceConfigurations",
 		nil, // no parameters
 	)
 }

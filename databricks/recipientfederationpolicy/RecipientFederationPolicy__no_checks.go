@@ -119,6 +119,10 @@ func (j *jsiiProxy_RecipientFederationPolicy) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_RecipientFederationPolicy) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewRecipientFederationPolicyParameters(scope constructs.Construct, id *string, config *RecipientFederationPolicyConfig) error {
 	return nil
 }

@@ -5,29 +5,29 @@ package datadatabrickscleanroomassets
 
 
 type DataDatabricksCleanRoomAssetsAssetsForeignTableColumns struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_assets#comment DataDatabricksCleanRoomAssets#comment}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_assets#comment DataDatabricksCleanRoomAssets#comment}.
 	Comment *string `field:"optional" json:"comment" yaml:"comment"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_assets#mask DataDatabricksCleanRoomAssets#mask}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_assets#mask DataDatabricksCleanRoomAssets#mask}.
 	Mask *DataDatabricksCleanRoomAssetsAssetsForeignTableColumnsMask `field:"optional" json:"mask" yaml:"mask"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_assets#name DataDatabricksCleanRoomAssets#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_assets#name DataDatabricksCleanRoomAssets#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_assets#nullable DataDatabricksCleanRoomAssets#nullable}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_assets#nullable DataDatabricksCleanRoomAssets#nullable}.
 	Nullable interface{} `field:"optional" json:"nullable" yaml:"nullable"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_assets#partition_index DataDatabricksCleanRoomAssets#partition_index}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_assets#partition_index DataDatabricksCleanRoomAssets#partition_index}.
 	PartitionIndex *float64 `field:"optional" json:"partitionIndex" yaml:"partitionIndex"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_assets#position DataDatabricksCleanRoomAssets#position}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_assets#position DataDatabricksCleanRoomAssets#position}.
 	Position *float64 `field:"optional" json:"position" yaml:"position"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_assets#type_interval_type DataDatabricksCleanRoomAssets#type_interval_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_assets#type_interval_type DataDatabricksCleanRoomAssets#type_interval_type}.
 	TypeIntervalType *string `field:"optional" json:"typeIntervalType" yaml:"typeIntervalType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_assets#type_json DataDatabricksCleanRoomAssets#type_json}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_assets#type_json DataDatabricksCleanRoomAssets#type_json}.
 	TypeJson *string `field:"optional" json:"typeJson" yaml:"typeJson"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_assets#type_name DataDatabricksCleanRoomAssets#type_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_assets#type_name DataDatabricksCleanRoomAssets#type_name}.
 	TypeName *string `field:"optional" json:"typeName" yaml:"typeName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_assets#type_precision DataDatabricksCleanRoomAssets#type_precision}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_assets#type_precision DataDatabricksCleanRoomAssets#type_precision}.
 	TypePrecision *float64 `field:"optional" json:"typePrecision" yaml:"typePrecision"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_assets#type_scale DataDatabricksCleanRoomAssets#type_scale}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_assets#type_scale DataDatabricksCleanRoomAssets#type_scale}.
 	TypeScale *float64 `field:"optional" json:"typeScale" yaml:"typeScale"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/clean_room_assets#type_text DataDatabricksCleanRoomAssets#type_text}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_assets#type_text DataDatabricksCleanRoomAssets#type_text}.
 	TypeText *string `field:"optional" json:"typeText" yaml:"typeText"`
 }
 

@@ -69,6 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetView", GoMethod: "ResetView"},
 			_jsii_.MemberMethod{JsiiMethod: "resetViewLocalDetails", GoMethod: "ResetViewLocalDetails"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVolumeLocalDetails", GoMethod: "ResetVolumeLocalDetails"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceId", GoMethod: "ResetWorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
@@ -89,6 +90,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "viewLocalDetailsInput", GoGetter: "ViewLocalDetailsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeLocalDetails", GoGetter: "VolumeLocalDetails"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeLocalDetailsInput", GoGetter: "VolumeLocalDetailsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksCleanRoomAsset{}

@@ -87,6 +87,10 @@ func (j *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference) validateSetTe
 	return nil
 }
 
+func (j *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference) validateSetTokensParameters(val *float64) error {
+	return nil
+}
+
 func validateNewModelServingAiGatewayRateLimitsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }

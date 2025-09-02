@@ -104,6 +104,17 @@ func (d *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) validatePutEval
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) validatePutRunAsParameters(value *DataDatabricksAlertsV2ResultsRunAs) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAlertsV2ResultsOutputReference) validatePutScheduleParameters(value *DataDatabricksAlertsV2ResultsSchedule) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

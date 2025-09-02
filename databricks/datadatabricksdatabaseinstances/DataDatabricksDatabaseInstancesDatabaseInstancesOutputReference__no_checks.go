@@ -67,6 +67,10 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetEnablePgNativeLoginParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetEnableReadableSecondariesParameters(val interface{}) error {
 	return nil
 }

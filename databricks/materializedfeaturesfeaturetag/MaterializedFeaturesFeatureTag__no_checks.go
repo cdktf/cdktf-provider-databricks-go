@@ -115,6 +115,10 @@ func (j *jsiiProxy_MaterializedFeaturesFeatureTag) validateSetValueParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_MaterializedFeaturesFeatureTag) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewMaterializedFeaturesFeatureTagParameters(scope constructs.Construct, id *string, config *MaterializedFeaturesFeatureTagConfig) error {
 	return nil
 }

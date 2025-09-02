@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) validateSetNameParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatabricksDatabaseDatabaseCatalogParameters(scope constructs.Construct, id *string, config *DataDatabricksDatabaseDatabaseCatalogConfig) error {
 	return nil
 }

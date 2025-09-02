@@ -72,6 +72,9 @@ type DataDatabricksServingEndpointsEndpointsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UsagePolicyId() *string
+	SetUsagePolicyId(val *string)
+	UsagePolicyIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -112,6 +115,7 @@ type DataDatabricksServingEndpointsEndpointsOutputReference interface {
 	ResetState()
 	ResetTags()
 	ResetTask()
+	ResetUsagePolicyId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -437,6 +441,26 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) Terra
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) UsagePolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usagePolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) UsagePolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usagePolicyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDataDatabricksServingEndpointsEndpointsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksServingEndpointsEndpointsOutputReference {
 	_init_.Initialize()
@@ -604,6 +628,17 @@ func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference)SetTer
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference)SetUsagePolicyId(val *string) {
+	if err := j.validateSetUsagePolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usagePolicyId",
 		val,
 	)
 }
@@ -930,6 +965,14 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) Reset
 	_jsii_.InvokeVoid(
 		d,
 		"resetTask",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsOutputReference) ResetUsagePolicyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUsagePolicyId",
 		nil, // no parameters
 	)
 }

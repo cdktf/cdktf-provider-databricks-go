@@ -111,6 +111,10 @@ func (j *jsiiProxy_BudgetPolicy) validateSetLifecycleParameters(val *cdktf.Terra
 	return nil
 }
 
+func (j *jsiiProxy_BudgetPolicy) validateSetPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BudgetPolicy) validateSetPolicyNameParameters(val *string) error {
 	return nil
 }

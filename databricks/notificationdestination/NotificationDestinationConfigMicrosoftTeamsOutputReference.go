@@ -13,6 +13,24 @@ import (
 
 type NotificationDestinationConfigMicrosoftTeamsOutputReference interface {
 	cdktf.ComplexObject
+	AppId() *string
+	SetAppId(val *string)
+	AppIdInput() *string
+	AppIdSet() interface{}
+	SetAppIdSet(val interface{})
+	AppIdSetInput() interface{}
+	AuthSecret() *string
+	SetAuthSecret(val *string)
+	AuthSecretInput() *string
+	AuthSecretSet() interface{}
+	SetAuthSecretSet(val interface{})
+	AuthSecretSetInput() interface{}
+	ChannelUrl() *string
+	SetChannelUrl(val *string)
+	ChannelUrlInput() *string
+	ChannelUrlSet() interface{}
+	SetChannelUrlSet(val interface{})
+	ChannelUrlSetInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,6 +50,12 @@ type NotificationDestinationConfigMicrosoftTeamsOutputReference interface {
 	Fqn() *string
 	InternalValue() *NotificationDestinationConfigMicrosoftTeams
 	SetInternalValue(val *NotificationDestinationConfigMicrosoftTeams)
+	TenantId() *string
+	SetTenantId(val *string)
+	TenantIdInput() *string
+	TenantIdSet() interface{}
+	SetTenantIdSet(val interface{})
+	TenantIdSetInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +94,14 @@ type NotificationDestinationConfigMicrosoftTeamsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAppId()
+	ResetAppIdSet()
+	ResetAuthSecret()
+	ResetAuthSecretSet()
+	ResetChannelUrl()
+	ResetChannelUrlSet()
+	ResetTenantId()
+	ResetTenantIdSet()
 	ResetUrl()
 	ResetUrlSet()
 	// Produce the Token's value at resolution time.
@@ -85,6 +117,126 @@ type NotificationDestinationConfigMicrosoftTeamsOutputReference interface {
 // The jsii proxy struct for NotificationDestinationConfigMicrosoftTeamsOutputReference
 type jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) AppId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) AppIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) AppIdSet() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"appIdSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) AppIdSetInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"appIdSetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) AuthSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) AuthSecretInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authSecretInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) AuthSecretSet() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"authSecretSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) AuthSecretSetInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"authSecretSetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) ChannelUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"channelUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) ChannelUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"channelUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) ChannelUrlSet() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"channelUrlSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) ChannelUrlSetInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"channelUrlSetInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) ComplexObjectIndex() interface{} {
@@ -132,6 +284,46 @@ func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) I
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) TenantId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) TenantIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) TenantIdSet() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tenantIdSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) TenantIdSetInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tenantIdSetInput",
 		&returns,
 	)
 	return returns
@@ -225,6 +417,72 @@ func NewNotificationDestinationConfigMicrosoftTeamsOutputReference_Override(n No
 	)
 }
 
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference)SetAppId(val *string) {
+	if err := j.validateSetAppIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference)SetAppIdSet(val interface{}) {
+	if err := j.validateSetAppIdSetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appIdSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference)SetAuthSecret(val *string) {
+	if err := j.validateSetAuthSecretParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authSecret",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference)SetAuthSecretSet(val interface{}) {
+	if err := j.validateSetAuthSecretSetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authSecretSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference)SetChannelUrl(val *string) {
+	if err := j.validateSetChannelUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"channelUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference)SetChannelUrlSet(val interface{}) {
+	if err := j.validateSetChannelUrlSetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"channelUrlSet",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -254,6 +512,28 @@ func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference)Se
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference)SetTenantId(val *string) {
+	if err := j.validateSetTenantIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tenantId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference)SetTenantIdSet(val interface{}) {
+	if err := j.validateSetTenantIdSetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tenantIdSet",
 		val,
 	)
 }
@@ -486,6 +766,70 @@ func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) I
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) ResetAppId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAppId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) ResetAppIdSet() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAppIdSet",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) ResetAuthSecret() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAuthSecret",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) ResetAuthSecretSet() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAuthSecretSet",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) ResetChannelUrl() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetChannelUrl",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) ResetChannelUrlSet() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetChannelUrlSet",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) ResetTenantId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTenantId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) ResetTenantIdSet() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTenantIdSet",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) ResetUrl() {

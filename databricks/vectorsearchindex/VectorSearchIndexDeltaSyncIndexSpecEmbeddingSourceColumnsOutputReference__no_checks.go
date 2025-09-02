@@ -67,6 +67,10 @@ func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutp
 	return nil
 }
 
+func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputReference) validateSetModelEndpointNameForQueryParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }

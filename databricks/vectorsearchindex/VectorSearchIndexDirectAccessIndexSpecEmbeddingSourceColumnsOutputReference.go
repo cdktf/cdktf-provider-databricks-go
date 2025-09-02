@@ -35,6 +35,9 @@ type VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	ModelEndpointNameForQuery() *string
+	SetModelEndpointNameForQuery(val *string)
+	ModelEndpointNameForQueryInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -71,6 +74,7 @@ type VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEmbeddingModelEndpointName()
+	ResetModelEndpointNameForQuery()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsO
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference) ModelEndpointNameForQuery() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelEndpointNameForQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference) ModelEndpointNameForQueryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelEndpointNameForQueryInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +289,17 @@ func (j *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsO
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference)SetModelEndpointNameForQuery(val *string) {
+	if err := j.validateSetModelEndpointNameForQueryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"modelEndpointNameForQuery",
 		val,
 	)
 }
@@ -492,6 +527,14 @@ func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsO
 	_jsii_.InvokeVoid(
 		v,
 		"resetEmbeddingModelEndpointName",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference) ResetModelEndpointNameForQuery() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetModelEndpointNameForQuery",
 		nil, // no parameters
 	)
 }

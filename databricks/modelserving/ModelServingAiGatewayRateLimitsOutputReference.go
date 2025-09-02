@@ -52,6 +52,9 @@ type ModelServingAiGatewayRateLimitsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Tokens() *float64
+	SetTokens(val *float64)
+	TokensInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,6 +82,7 @@ type ModelServingAiGatewayRateLimitsOutputReference interface {
 	ResetCalls()
 	ResetKey()
 	ResetPrincipal()
+	ResetTokens()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -244,6 +248,26 @@ func (j *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference) TerraformReso
 	return returns
 }
 
+func (j *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference) Tokens() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokens",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference) TokensInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokensInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewModelServingAiGatewayRateLimitsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ModelServingAiGatewayRateLimitsOutputReference {
 	_init_.Initialize()
@@ -367,6 +391,17 @@ func (j *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference)SetTerraformRe
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference)SetTokens(val *float64) {
+	if err := j.validateSetTokensParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokens",
 		val,
 	)
 }
@@ -577,6 +612,14 @@ func (m *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference) ResetPrincipa
 	_jsii_.InvokeVoid(
 		m,
 		"resetPrincipal",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ModelServingAiGatewayRateLimitsOutputReference) ResetTokens() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTokens",
 		nil, // no parameters
 	)
 }

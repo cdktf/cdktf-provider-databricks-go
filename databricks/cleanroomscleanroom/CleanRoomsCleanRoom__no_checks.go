@@ -123,6 +123,10 @@ func (j *jsiiProxy_CleanRoomsCleanRoom) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_CleanRoomsCleanRoom) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewCleanRoomsCleanRoomParameters(scope constructs.Construct, id *string, config *CleanRoomsCleanRoomConfig) error {
 	return nil
 }

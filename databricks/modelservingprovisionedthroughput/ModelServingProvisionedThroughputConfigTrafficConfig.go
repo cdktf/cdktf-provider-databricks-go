@@ -7,7 +7,7 @@ package modelservingprovisionedthroughput
 type ModelServingProvisionedThroughputConfigTrafficConfig struct {
 	// routes block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/model_serving_provisioned_throughput#routes ModelServingProvisionedThroughput#routes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/model_serving_provisioned_throughput#routes ModelServingProvisionedThroughput#routes}
 	Routes interface{} `field:"optional" json:"routes" yaml:"routes"`
 }
 

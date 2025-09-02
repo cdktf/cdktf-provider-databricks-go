@@ -522,9 +522,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCalls", GoMethod: "ResetCalls"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKey", GoMethod: "ResetKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrincipal", GoMethod: "ResetPrincipal"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTokens", GoMethod: "ResetTokens"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "tokens", GoGetter: "Tokens"},
+			_jsii_.MemberProperty{JsiiProperty: "tokensInput", GoGetter: "TokensInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {

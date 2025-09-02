@@ -51,6 +51,30 @@ func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) validateSetAppIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) validateSetAppIdSetParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) validateSetAuthSecretParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) validateSetAuthSecretSetParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) validateSetChannelUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) validateSetChannelUrlSetParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -60,6 +84,14 @@ func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) v
 }
 
 func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) validateSetInternalValueParameters(val *NotificationDestinationConfigMicrosoftTeams) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) validateSetTenantIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) validateSetTenantIdSetParameters(val interface{}) error {
 	return nil
 }
 

@@ -71,11 +71,19 @@ func validateDataDatabricksCleanRoomAssets_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksCleanRoomAssets) validateSetCleanRoomNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksCleanRoomAssets) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksCleanRoomAssets) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksCleanRoomAssets) validateSetWorkspaceIdParameters(val *string) error {
 	return nil
 }
 

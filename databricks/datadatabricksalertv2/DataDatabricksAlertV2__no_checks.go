@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksAlertV2) validatePutEvaluationParameters(value 
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAlertV2) validatePutRunAsParameters(value *DataDatabricksAlertV2RunAs) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAlertV2) validatePutScheduleParameters(value *DataDatabricksAlertV2Schedule) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (j *jsiiProxy_DataDatabricksAlertV2) validateSetRunAsUserNameParameters(val
 }
 
 func (j *jsiiProxy_DataDatabricksAlertV2) validateSetWarehouseIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksAlertV2) validateSetWorkspaceIdParameters(val *string) error {
 	return nil
 }
 

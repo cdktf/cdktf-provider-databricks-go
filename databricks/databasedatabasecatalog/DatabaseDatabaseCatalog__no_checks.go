@@ -123,6 +123,10 @@ func (j *jsiiProxy_DatabaseDatabaseCatalog) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseDatabaseCatalog) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDatabaseDatabaseCatalogParameters(scope constructs.Construct, id *string, config *DatabaseDatabaseCatalogConfig) error {
 	return nil
 }

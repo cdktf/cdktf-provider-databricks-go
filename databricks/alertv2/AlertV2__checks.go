@@ -218,6 +218,17 @@ func (a *jsiiProxy_AlertV2) validatePutEvaluationParameters(value *AlertV2Evalua
 	return nil
 }
 
+func (a *jsiiProxy_AlertV2) validatePutRunAsParameters(value *AlertV2RunAs) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AlertV2) validatePutScheduleParameters(value *AlertV2Schedule) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -462,6 +473,14 @@ func (j *jsiiProxy_AlertV2) validateSetRunAsUserNameParameters(val *string) erro
 }
 
 func (j *jsiiProxy_AlertV2) validateSetWarehouseIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AlertV2) validateSetWorkspaceIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

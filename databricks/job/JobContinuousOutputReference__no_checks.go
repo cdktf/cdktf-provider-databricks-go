@@ -67,6 +67,10 @@ func (j *jsiiProxy_JobContinuousOutputReference) validateSetPauseStatusParameter
 	return nil
 }
 
+func (j *jsiiProxy_JobContinuousOutputReference) validateSetTaskRetryModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobContinuousOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
