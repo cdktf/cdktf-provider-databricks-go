@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table}.
 type DataDatabricksDatabaseSyncedDatabaseTable interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) WorkspaceIdInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table} Data Source.
 func NewDataDatabricksDatabaseSyncedDatabaseTable(scope constructs.Construct, id *string, config *DataDatabricksDatabaseSyncedDatabaseTableConfig) DataDatabricksDatabaseSyncedDatabaseTable {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewDataDatabricksDatabaseSyncedDatabaseTable(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table} Data Source.
 func NewDataDatabricksDatabaseSyncedDatabaseTable_Override(d DataDatabricksDatabaseSyncedDatabaseTable, scope constructs.Construct, id *string, config *DataDatabricksDatabaseSyncedDatabaseTableConfig) {
 	_init_.Initialize()
 

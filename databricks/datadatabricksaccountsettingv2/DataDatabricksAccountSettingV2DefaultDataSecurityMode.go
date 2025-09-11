@@ -5,7 +5,7 @@ package datadatabricksaccountsettingv2
 
 
 type DataDatabricksAccountSettingV2DefaultDataSecurityMode struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_setting_v2#status DataDatabricksAccountSettingV2#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_setting_v2#status DataDatabricksAccountSettingV2#status}.
 	Status *string `field:"required" json:"status" yaml:"status"`
 }
 

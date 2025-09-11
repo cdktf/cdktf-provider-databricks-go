@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_network_policies databricks_account_network_policies}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_network_policies databricks_account_network_policies}.
 type DataDatabricksAccountNetworkPolicies interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -252,7 +252,7 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPolicies) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_network_policies databricks_account_network_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_network_policies databricks_account_network_policies} Data Source.
 func NewDataDatabricksAccountNetworkPolicies(scope constructs.Construct, id *string, config *DataDatabricksAccountNetworkPoliciesConfig) DataDatabricksAccountNetworkPolicies {
 	_init_.Initialize()
 
@@ -270,7 +270,7 @@ func NewDataDatabricksAccountNetworkPolicies(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_network_policies databricks_account_network_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_network_policies databricks_account_network_policies} Data Source.
 func NewDataDatabricksAccountNetworkPolicies_Override(d DataDatabricksAccountNetworkPolicies, scope constructs.Construct, id *string, config *DataDatabricksAccountNetworkPoliciesConfig) {
 	_init_.Initialize()
 

@@ -5,11 +5,11 @@ package databaseinstance
 
 
 type DatabaseInstanceParentInstanceRef struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/database_instance#branch_time DatabaseInstance#branch_time}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/database_instance#branch_time DatabaseInstance#branch_time}.
 	BranchTime *string `field:"optional" json:"branchTime" yaml:"branchTime"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/database_instance#lsn DatabaseInstance#lsn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/database_instance#lsn DatabaseInstance#lsn}.
 	Lsn *string `field:"optional" json:"lsn" yaml:"lsn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/database_instance#name DatabaseInstance#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/database_instance#name DatabaseInstance#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

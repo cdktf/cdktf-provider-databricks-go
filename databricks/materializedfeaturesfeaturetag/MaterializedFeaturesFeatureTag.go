@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/materialized_features_feature_tag databricks_materialized_features_feature_tag}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/materialized_features_feature_tag databricks_materialized_features_feature_tag}.
 type MaterializedFeaturesFeatureTag interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_MaterializedFeaturesFeatureTag) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/materialized_features_feature_tag databricks_materialized_features_feature_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/materialized_features_feature_tag databricks_materialized_features_feature_tag} Resource.
 func NewMaterializedFeaturesFeatureTag(scope constructs.Construct, id *string, config *MaterializedFeaturesFeatureTagConfig) MaterializedFeaturesFeatureTag {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewMaterializedFeaturesFeatureTag(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/materialized_features_feature_tag databricks_materialized_features_feature_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/materialized_features_feature_tag databricks_materialized_features_feature_tag} Resource.
 func NewMaterializedFeaturesFeatureTag_Override(m MaterializedFeaturesFeatureTag, scope constructs.Construct, id *string, config *MaterializedFeaturesFeatureTagConfig) {
 	_init_.Initialize()
 
