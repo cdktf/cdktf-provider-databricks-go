@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/share_pluginframework databricks_share_pluginframework}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/share_pluginframework databricks_share_pluginframework}.
 type SharePluginframework interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,6 +45,7 @@ type SharePluginframework interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -280,6 +281,16 @@ func (j *jsiiProxy_SharePluginframework) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SharePluginframework) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SharePluginframework) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -471,7 +482,7 @@ func (j *jsiiProxy_SharePluginframework) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/share_pluginframework databricks_share_pluginframework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/share_pluginframework databricks_share_pluginframework} Resource.
 func NewSharePluginframework(scope constructs.Construct, id *string, config *SharePluginframeworkConfig) SharePluginframework {
 	_init_.Initialize()
 
@@ -489,7 +500,7 @@ func NewSharePluginframework(scope constructs.Construct, id *string, config *Sha
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/share_pluginframework databricks_share_pluginframework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/share_pluginframework databricks_share_pluginframework} Resource.
 func NewSharePluginframework_Override(s SharePluginframework, scope constructs.Construct, id *string, config *SharePluginframeworkConfig) {
 	_init_.Initialize()
 

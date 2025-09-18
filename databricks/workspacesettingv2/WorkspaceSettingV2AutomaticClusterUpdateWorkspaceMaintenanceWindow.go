@@ -5,7 +5,7 @@ package workspacesettingv2
 
 
 type WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}.
 	WeekDayBasedSchedule *WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule `field:"optional" json:"weekDayBasedSchedule" yaml:"weekDayBasedSchedule"`
 }
 

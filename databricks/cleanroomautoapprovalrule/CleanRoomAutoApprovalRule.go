@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/clean_room_auto_approval_rule databricks_clean_room_auto_approval_rule}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/clean_room_auto_approval_rule databricks_clean_room_auto_approval_rule}.
 type CleanRoomAutoApprovalRule interface {
 	cdktf.TerraformResource
 	AuthorCollaboratorAlias() *string
@@ -439,7 +439,7 @@ func (j *jsiiProxy_CleanRoomAutoApprovalRule) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/clean_room_auto_approval_rule databricks_clean_room_auto_approval_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/clean_room_auto_approval_rule databricks_clean_room_auto_approval_rule} Resource.
 func NewCleanRoomAutoApprovalRule(scope constructs.Construct, id *string, config *CleanRoomAutoApprovalRuleConfig) CleanRoomAutoApprovalRule {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewCleanRoomAutoApprovalRule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/clean_room_auto_approval_rule databricks_clean_room_auto_approval_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/clean_room_auto_approval_rule databricks_clean_room_auto_approval_rule} Resource.
 func NewCleanRoomAutoApprovalRule_Override(c CleanRoomAutoApprovalRule, scope constructs.Construct, id *string, config *CleanRoomAutoApprovalRuleConfig) {
 	_init_.Initialize()
 

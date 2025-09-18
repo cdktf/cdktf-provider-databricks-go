@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/sql_endpoint databricks_sql_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/sql_endpoint databricks_sql_endpoint}.
 type SqlEndpoint interface {
 	cdktf.TerraformResource
 	AutoStopMins() *float64
@@ -80,6 +80,9 @@ type SqlEndpoint interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NoWait() interface{}
+	SetNoWait(val interface{})
+	NoWaitInput() interface{}
 	NumActiveSessions() *float64
 	NumClusters() *float64
 	OdbcParams() SqlEndpointOdbcParamsList
@@ -165,6 +168,7 @@ type SqlEndpoint interface {
 	ResetInstanceProfileArn()
 	ResetMaxNumClusters()
 	ResetMinNumClusters()
+	ResetNoWait()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -540,6 +544,26 @@ func (j *jsiiProxy_SqlEndpoint) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_SqlEndpoint) NoWait() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noWait",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlEndpoint) NoWaitInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noWaitInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlEndpoint) NumActiveSessions() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -721,7 +745,7 @@ func (j *jsiiProxy_SqlEndpoint) WarehouseTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
 func NewSqlEndpoint(scope constructs.Construct, id *string, config *SqlEndpointConfig) SqlEndpoint {
 	_init_.Initialize()
 
@@ -739,7 +763,7 @@ func NewSqlEndpoint(scope constructs.Construct, id *string, config *SqlEndpointC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource.
 func NewSqlEndpoint_Override(s SqlEndpoint, scope constructs.Construct, id *string, config *SqlEndpointConfig) {
 	_init_.Initialize()
 
@@ -905,6 +929,17 @@ func (j *jsiiProxy_SqlEndpoint)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlEndpoint)SetNoWait(val interface{}) {
+	if err := j.validateSetNoWaitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"noWait",
 		val,
 	)
 }
@@ -1404,6 +1439,14 @@ func (s *jsiiProxy_SqlEndpoint) ResetMinNumClusters() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMinNumClusters",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlEndpoint) ResetNoWait() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNoWait",
 		nil, // no parameters
 	)
 }

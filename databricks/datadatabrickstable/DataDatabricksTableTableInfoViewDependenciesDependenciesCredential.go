@@ -5,7 +5,7 @@ package datadatabrickstable
 
 
 type DataDatabricksTableTableInfoViewDependenciesDependenciesCredential struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/table#credential_name DataDatabricksTable#credential_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/table#credential_name DataDatabricksTable#credential_name}.
 	CredentialName *string `field:"optional" json:"credentialName" yaml:"credentialName"`
 }
 

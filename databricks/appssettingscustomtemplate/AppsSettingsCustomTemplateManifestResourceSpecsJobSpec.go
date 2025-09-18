@@ -5,7 +5,7 @@ package appssettingscustomtemplate
 
 
 type AppsSettingsCustomTemplateManifestResourceSpecsJobSpec struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}.
 	Permission *string `field:"required" json:"permission" yaml:"permission"`
 }
 

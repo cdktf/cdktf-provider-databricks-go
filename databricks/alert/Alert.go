@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert databricks_alert}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert databricks_alert}.
 type Alert interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -565,7 +565,7 @@ func (j *jsiiProxy_Alert) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert databricks_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert databricks_alert} Resource.
 func NewAlert(scope constructs.Construct, id *string, config *AlertConfig) Alert {
 	_init_.Initialize()
 
@@ -583,7 +583,7 @@ func NewAlert(scope constructs.Construct, id *string, config *AlertConfig) Alert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert databricks_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert databricks_alert} Resource.
 func NewAlert_Override(a Alert, scope constructs.Construct, id *string, config *AlertConfig) {
 	_init_.Initialize()
 

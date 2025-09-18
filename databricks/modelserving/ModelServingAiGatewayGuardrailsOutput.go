@@ -5,15 +5,15 @@ package modelserving
 
 
 type ModelServingAiGatewayGuardrailsOutput struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/model_serving#invalid_keywords ModelServing#invalid_keywords}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/model_serving#invalid_keywords ModelServing#invalid_keywords}.
 	InvalidKeywords *[]*string `field:"optional" json:"invalidKeywords" yaml:"invalidKeywords"`
 	// pii block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/model_serving#pii ModelServing#pii}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/model_serving#pii ModelServing#pii}
 	Pii *ModelServingAiGatewayGuardrailsOutputPii `field:"optional" json:"pii" yaml:"pii"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/model_serving#safety ModelServing#safety}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/model_serving#safety ModelServing#safety}.
 	Safety interface{} `field:"optional" json:"safety" yaml:"safety"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/model_serving#valid_topics ModelServing#valid_topics}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/model_serving#valid_topics ModelServing#valid_topics}.
 	ValidTopics *[]*string `field:"optional" json:"validTopics" yaml:"validTopics"`
 }
 

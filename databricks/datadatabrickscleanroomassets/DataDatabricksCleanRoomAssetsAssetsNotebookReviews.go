@@ -5,15 +5,15 @@ package datadatabrickscleanroomassets
 
 
 type DataDatabricksCleanRoomAssetsAssetsNotebookReviews struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/clean_room_assets#comment DataDatabricksCleanRoomAssets#comment}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/clean_room_assets#comment DataDatabricksCleanRoomAssets#comment}.
 	Comment *string `field:"optional" json:"comment" yaml:"comment"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/clean_room_assets#created_at_millis DataDatabricksCleanRoomAssets#created_at_millis}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/clean_room_assets#created_at_millis DataDatabricksCleanRoomAssets#created_at_millis}.
 	CreatedAtMillis *float64 `field:"optional" json:"createdAtMillis" yaml:"createdAtMillis"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/clean_room_assets#reviewer_collaborator_alias DataDatabricksCleanRoomAssets#reviewer_collaborator_alias}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/clean_room_assets#reviewer_collaborator_alias DataDatabricksCleanRoomAssets#reviewer_collaborator_alias}.
 	ReviewerCollaboratorAlias *string `field:"optional" json:"reviewerCollaboratorAlias" yaml:"reviewerCollaboratorAlias"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/clean_room_assets#review_state DataDatabricksCleanRoomAssets#review_state}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/clean_room_assets#review_state DataDatabricksCleanRoomAssets#review_state}.
 	ReviewState *string `field:"optional" json:"reviewState" yaml:"reviewState"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/clean_room_assets#review_sub_reason DataDatabricksCleanRoomAssets#review_sub_reason}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/clean_room_assets#review_sub_reason DataDatabricksCleanRoomAssets#review_sub_reason}.
 	ReviewSubReason *string `field:"optional" json:"reviewSubReason" yaml:"reviewSubReason"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/online_store databricks_online_store}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/online_store databricks_online_store}.
 type DataDatabricksOnlineStore interface {
 	cdktf.TerraformDataSource
 	Capacity() *string
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DataDatabricksOnlineStore) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/online_store databricks_online_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/online_store databricks_online_store} Data Source.
 func NewDataDatabricksOnlineStore(scope constructs.Construct, id *string, config *DataDatabricksOnlineStoreConfig) DataDatabricksOnlineStore {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewDataDatabricksOnlineStore(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/online_store databricks_online_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/online_store databricks_online_store} Data Source.
 func NewDataDatabricksOnlineStore_Override(d DataDatabricksOnlineStore, scope constructs.Construct, id *string, config *DataDatabricksOnlineStoreConfig) {
 	_init_.Initialize()
 

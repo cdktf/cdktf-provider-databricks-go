@@ -155,6 +155,10 @@ func (j *jsiiProxy_SqlEndpoint) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_SqlEndpoint) validateSetNoWaitParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlEndpoint) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

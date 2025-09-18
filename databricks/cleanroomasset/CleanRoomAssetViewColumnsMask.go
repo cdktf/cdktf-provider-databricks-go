@@ -5,9 +5,9 @@ package cleanroomasset
 
 
 type CleanRoomAssetViewColumnsMask struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}.
 	FunctionName *string `field:"optional" json:"functionName" yaml:"functionName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}.
 	UsingColumnNames *[]*string `field:"optional" json:"usingColumnNames" yaml:"usingColumnNames"`
 }
 
