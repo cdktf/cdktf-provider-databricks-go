@@ -251,17 +251,6 @@ func (a *jsiiProxy_AccountSettingV2) validatePutBooleanValParameters(value *Acco
 	return nil
 }
 
-func (a *jsiiProxy_AccountSettingV2) validatePutDefaultDataSecurityModeParameters(value *AccountSettingV2DefaultDataSecurityMode) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (a *jsiiProxy_AccountSettingV2) validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value *AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -285,17 +274,6 @@ func (a *jsiiProxy_AccountSettingV2) validatePutEffectiveAibiDashboardEmbeddingA
 }
 
 func (a *jsiiProxy_AccountSettingV2) validatePutEffectiveAutomaticClusterUpdateWorkspaceParameters(value *AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (a *jsiiProxy_AccountSettingV2) validatePutEffectiveDefaultDataSecurityModeParameters(value *AccountSettingV2EffectiveDefaultDataSecurityMode) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

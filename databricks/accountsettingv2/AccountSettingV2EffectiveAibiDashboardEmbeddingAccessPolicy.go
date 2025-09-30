@@ -5,7 +5,7 @@ package accountsettingv2
 
 
 type AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}.
 	AccessPolicyType *string `field:"required" json:"accessPolicyType" yaml:"accessPolicyType"`
 }
 

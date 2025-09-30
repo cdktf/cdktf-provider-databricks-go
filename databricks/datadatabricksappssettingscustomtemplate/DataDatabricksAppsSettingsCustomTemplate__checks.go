@@ -270,14 +270,6 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) validateSetPathPara
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) validateSetWorkspaceIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewDataDatabricksAppsSettingsCustomTemplateParameters(scope constructs.Construct, id *string, config *DataDatabricksAppsSettingsCustomTemplateConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

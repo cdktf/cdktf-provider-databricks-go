@@ -119,10 +119,6 @@ func (j *jsiiProxy_TagPolicy) validateSetTagKeyParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_TagPolicy) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewTagPolicyParameters(scope constructs.Construct, id *string, config *TagPolicyConfig) error {
 	return nil
 }

@@ -158,17 +158,6 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutBooleanValParame
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutDefaultDataSecurityModeParameters(value *DataDatabricksWorkspaceSettingV2DefaultDataSecurityMode) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value *DataDatabricksWorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -192,17 +181,6 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutEffectiveAibiDas
 }
 
 func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutEffectiveAutomaticClusterUpdateWorkspaceParameters(value *DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutEffectiveDefaultDataSecurityModeParameters(value *DataDatabricksWorkspaceSettingV2EffectiveDefaultDataSecurityMode) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -385,14 +363,6 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) validateSetLifecycleParamet
 }
 
 func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) validateSetWorkspaceIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

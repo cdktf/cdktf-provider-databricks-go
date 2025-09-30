@@ -103,10 +103,6 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) validateSetPathPara
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataDatabricksAppsSettingsCustomTemplateParameters(scope constructs.Construct, id *string, config *DataDatabricksAppsSettingsCustomTemplateConfig) error {
 	return nil
 }

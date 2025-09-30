@@ -38,6 +38,9 @@ type PipelineIngestionDefinitionOutputReference interface {
 	IngestionGatewayIdInput() *string
 	InternalValue() *PipelineIngestionDefinition
 	SetInternalValue(val *PipelineIngestionDefinition)
+	NetsuiteJarPath() *string
+	SetNetsuiteJarPath(val *string)
+	NetsuiteJarPathInput() *string
 	Objects() PipelineIngestionDefinitionObjectsList
 	ObjectsInput() interface{}
 	SourceConfigurations() PipelineIngestionDefinitionSourceConfigurationsList
@@ -84,6 +87,7 @@ type PipelineIngestionDefinitionOutputReference interface {
 	PutTableConfiguration(value *PipelineIngestionDefinitionTableConfiguration)
 	ResetConnectionName()
 	ResetIngestionGatewayId()
+	ResetNetsuiteJarPath()
 	ResetObjects()
 	ResetSourceConfigurations()
 	ResetSourceType()
@@ -188,6 +192,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) InternalValue() *
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) NetsuiteJarPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"netsuiteJarPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) NetsuiteJarPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"netsuiteJarPathInput",
 		&returns,
 	)
 	return returns
@@ -372,6 +396,17 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference)SetInternalValue(v
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference)SetNetsuiteJarPath(val *string) {
+	if err := j.validateSetNetsuiteJarPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"netsuiteJarPath",
 		val,
 	)
 }
@@ -640,6 +675,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) ResetIngestionGat
 	_jsii_.InvokeVoid(
 		p,
 		"resetIngestionGatewayId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) ResetNetsuiteJarPath() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNetsuiteJarPath",
 		nil, // no parameters
 	)
 }

@@ -87,10 +87,6 @@ func (j *jsiiProxy_DataDatabricksPolicyInfos) validateSetOnSecurableTypeParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfos) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataDatabricksPolicyInfosParameters(scope constructs.Construct, id *string, config *DataDatabricksPolicyInfosConfig) error {
 	return nil
 }

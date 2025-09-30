@@ -87,10 +87,6 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTag) validateSetValu
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTag) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataDatabricksMaterializedFeaturesFeatureTagParameters(scope constructs.Construct, id *string, config *DataDatabricksMaterializedFeaturesFeatureTagConfig) error {
 	return nil
 }

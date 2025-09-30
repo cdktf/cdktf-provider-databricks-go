@@ -147,10 +147,6 @@ func (j *jsiiProxy_AlertV2) validateSetWarehouseIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_AlertV2) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewAlertV2Parameters(scope constructs.Construct, id *string, config *AlertV2Config) error {
 	return nil
 }

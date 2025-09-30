@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/recipient_federation_policies databricks_recipient_federation_policies}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/recipient_federation_policies databricks_recipient_federation_policies}.
 type DataDatabricksRecipientFederationPolicies interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -54,9 +54,6 @@ type DataDatabricksRecipientFederationPolicies interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	WorkspaceId() *string
-	SetWorkspaceId(val *string)
-	WorkspaceIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -85,7 +82,6 @@ type DataDatabricksRecipientFederationPolicies interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -255,28 +251,8 @@ func (j *jsiiProxy_DataDatabricksRecipientFederationPolicies) TerraformResourceT
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksRecipientFederationPolicies) WorkspaceId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_DataDatabricksRecipientFederationPolicies) WorkspaceIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/recipient_federation_policies databricks_recipient_federation_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/recipient_federation_policies databricks_recipient_federation_policies} Data Source.
 func NewDataDatabricksRecipientFederationPolicies(scope constructs.Construct, id *string, config *DataDatabricksRecipientFederationPoliciesConfig) DataDatabricksRecipientFederationPolicies {
 	_init_.Initialize()
 
@@ -294,7 +270,7 @@ func NewDataDatabricksRecipientFederationPolicies(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/recipient_federation_policies databricks_recipient_federation_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/recipient_federation_policies databricks_recipient_federation_policies} Data Source.
 func NewDataDatabricksRecipientFederationPolicies_Override(d DataDatabricksRecipientFederationPolicies, scope constructs.Construct, id *string, config *DataDatabricksRecipientFederationPoliciesConfig) {
 	_init_.Initialize()
 
@@ -347,17 +323,6 @@ func (j *jsiiProxy_DataDatabricksRecipientFederationPolicies)SetProvider(val cdk
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksRecipientFederationPolicies)SetWorkspaceId(val *string) {
-	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"workspaceId",
 		val,
 	)
 }
@@ -651,14 +616,6 @@ func (d *jsiiProxy_DataDatabricksRecipientFederationPolicies) ResetOverrideLogic
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksRecipientFederationPolicies) ResetWorkspaceId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

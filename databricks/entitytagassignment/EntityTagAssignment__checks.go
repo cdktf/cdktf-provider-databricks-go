@@ -423,14 +423,6 @@ func (j *jsiiProxy_EntityTagAssignment) validateSetTagValueParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_EntityTagAssignment) validateSetWorkspaceIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewEntityTagAssignmentParameters(scope constructs.Construct, id *string, config *EntityTagAssignmentConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

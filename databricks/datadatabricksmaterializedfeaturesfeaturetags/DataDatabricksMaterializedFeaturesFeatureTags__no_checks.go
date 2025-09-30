@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) validateSetLif
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataDatabricksMaterializedFeaturesFeatureTagsParameters(scope constructs.Construct, id *string, config *DataDatabricksMaterializedFeaturesFeatureTagsConfig) error {
 	return nil
 }

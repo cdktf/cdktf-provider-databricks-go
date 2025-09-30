@@ -155,10 +155,6 @@ func (j *jsiiProxy_PolicyInfo) validateSetWhenConditionParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_PolicyInfo) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewPolicyInfoParameters(scope constructs.Construct, id *string, config *PolicyInfoConfig) error {
 	return nil
 }

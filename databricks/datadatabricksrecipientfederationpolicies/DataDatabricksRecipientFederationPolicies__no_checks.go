@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataDatabricksRecipientFederationPolicies) validateSetLifecyc
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksRecipientFederationPolicies) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataDatabricksRecipientFederationPoliciesParameters(scope constructs.Construct, id *string, config *DataDatabricksRecipientFederationPoliciesConfig) error {
 	return nil
 }

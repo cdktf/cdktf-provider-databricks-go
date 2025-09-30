@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance databricks_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance databricks_database_instance}.
 type DatabaseInstance interface {
 	cdktf.TerraformResource
 	Capacity() *string
@@ -37,6 +37,7 @@ type DatabaseInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveCapacity() *string
 	EffectiveEnablePgNativeLogin() cdktf.IResolvable
 	EffectiveEnableReadableSecondaries() cdktf.IResolvable
 	EffectiveNodeCount() *float64
@@ -100,9 +101,6 @@ type DatabaseInstance interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Uid() *string
-	WorkspaceId() *string
-	SetWorkspaceId(val *string)
-	WorkspaceIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -158,7 +156,6 @@ type DatabaseInstance interface {
 	ResetPurgeOnDelete()
 	ResetRetentionWindowInDays()
 	ResetStopped()
-	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -272,6 +269,16 @@ func (j *jsiiProxy_DatabaseInstance) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseInstance) EffectiveCapacity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveCapacity",
 		&returns,
 	)
 	return returns
@@ -647,28 +654,8 @@ func (j *jsiiProxy_DatabaseInstance) Uid() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseInstance) WorkspaceId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_DatabaseInstance) WorkspaceIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance databricks_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance databricks_database_instance} Resource.
 func NewDatabaseInstance(scope constructs.Construct, id *string, config *DatabaseInstanceConfig) DatabaseInstance {
 	_init_.Initialize()
 
@@ -686,7 +673,7 @@ func NewDatabaseInstance(scope constructs.Construct, id *string, config *Databas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance databricks_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance databricks_database_instance} Resource.
 func NewDatabaseInstance_Override(d DatabaseInstance, scope constructs.Construct, id *string, config *DatabaseInstanceConfig) {
 	_init_.Initialize()
 
@@ -849,17 +836,6 @@ func (j *jsiiProxy_DatabaseInstance)SetStopped(val interface{}) {
 	_jsii_.Set(
 		j,
 		"stopped",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DatabaseInstance)SetWorkspaceId(val *string) {
-	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"workspaceId",
 		val,
 	)
 }
@@ -1296,14 +1272,6 @@ func (d *jsiiProxy_DatabaseInstance) ResetStopped() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetStopped",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DatabaseInstance) ResetWorkspaceId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

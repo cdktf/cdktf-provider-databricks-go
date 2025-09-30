@@ -131,10 +131,6 @@ func (j *jsiiProxy_AppsSettingsCustomTemplate) validateSetProvisionersParameters
 	return nil
 }
 
-func (j *jsiiProxy_AppsSettingsCustomTemplate) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewAppsSettingsCustomTemplateParameters(scope constructs.Construct, id *string, config *AppsSettingsCustomTemplateConfig) error {
 	return nil
 }

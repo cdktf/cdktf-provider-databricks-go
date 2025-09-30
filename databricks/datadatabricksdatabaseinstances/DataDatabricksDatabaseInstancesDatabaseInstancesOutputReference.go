@@ -34,6 +34,7 @@ type DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference interface {
 	CreationStack() *[]*string
 	CreationTime() *string
 	Creator() *string
+	EffectiveCapacity() *string
 	EffectiveEnablePgNativeLogin() cdktf.IResolvable
 	EffectiveEnableReadableSecondaries() cdktf.IResolvable
 	EffectiveNodeCount() *float64
@@ -198,6 +199,16 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	_jsii_.Get(
 		j,
 		"creator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EffectiveCapacity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveCapacity",
 		&returns,
 	)
 	return returns

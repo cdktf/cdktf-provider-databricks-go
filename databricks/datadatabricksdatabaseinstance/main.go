@@ -24,6 +24,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationTime", GoGetter: "CreationTime"},
 			_jsii_.MemberProperty{JsiiProperty: "creator", GoGetter: "Creator"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveCapacity", GoGetter: "EffectiveCapacity"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveEnablePgNativeLogin", GoGetter: "EffectiveEnablePgNativeLogin"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveEnableReadableSecondaries", GoGetter: "EffectiveEnableReadableSecondaries"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveNodeCount", GoGetter: "EffectiveNodeCount"},
@@ -69,7 +70,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetParentInstanceRef", GoMethod: "ResetParentInstanceRef"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRetentionWindowInDays", GoMethod: "ResetRetentionWindowInDays"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStopped", GoMethod: "ResetStopped"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceId", GoMethod: "ResetWorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "retentionWindowInDays", GoGetter: "RetentionWindowInDays"},
 			_jsii_.MemberProperty{JsiiProperty: "retentionWindowInDaysInput", GoGetter: "RetentionWindowInDaysInput"},
 			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
@@ -85,8 +85,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
-			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
-			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatabricksDatabaseInstance{}

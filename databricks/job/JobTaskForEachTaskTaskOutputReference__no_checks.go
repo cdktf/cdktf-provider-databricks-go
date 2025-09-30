@@ -159,6 +159,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateSetDisableAuto
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateSetDisabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateSetEnvironmentKeyParameters(val *string) error {
 	return nil
 }

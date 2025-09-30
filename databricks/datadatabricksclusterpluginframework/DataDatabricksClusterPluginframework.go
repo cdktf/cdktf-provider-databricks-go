@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework}.
 type DataDatabricksClusterPluginframework interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -313,7 +313,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframework) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source.
 func NewDataDatabricksClusterPluginframework(scope constructs.Construct, id *string, config *DataDatabricksClusterPluginframeworkConfig) DataDatabricksClusterPluginframework {
 	_init_.Initialize()
 
@@ -331,7 +331,7 @@ func NewDataDatabricksClusterPluginframework(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source.
 func NewDataDatabricksClusterPluginframework_Override(d DataDatabricksClusterPluginframework, scope constructs.Construct, id *string, config *DataDatabricksClusterPluginframeworkConfig) {
 	_init_.Initialize()
 

@@ -111,10 +111,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetStoppedParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataDatabricksDatabaseInstanceParameters(scope constructs.Construct, id *string, config *DataDatabricksDatabaseInstanceConfig) error {
 	return nil
 }

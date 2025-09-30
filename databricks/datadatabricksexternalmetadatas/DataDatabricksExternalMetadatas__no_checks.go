@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatas) validateSetLifecycleParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksExternalMetadatas) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataDatabricksExternalMetadatasParameters(scope constructs.Construct, id *string, config *DataDatabricksExternalMetadatasConfig) error {
 	return nil
 }

@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogs) validateSetLifecycleP
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogs) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataDatabricksDatabaseDatabaseCatalogsParameters(scope constructs.Construct, id *string, config *DataDatabricksDatabaseDatabaseCatalogsConfig) error {
 	return nil
 }

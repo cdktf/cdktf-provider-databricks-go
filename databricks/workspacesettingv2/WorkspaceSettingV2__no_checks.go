@@ -91,10 +91,6 @@ func (w *jsiiProxy_WorkspaceSettingV2) validatePutBooleanValParameters(value *Wo
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceSettingV2) validatePutDefaultDataSecurityModeParameters(value *WorkspaceSettingV2DefaultDataSecurityMode) error {
-	return nil
-}
-
 func (w *jsiiProxy_WorkspaceSettingV2) validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value *WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) error {
 	return nil
 }
@@ -104,10 +100,6 @@ func (w *jsiiProxy_WorkspaceSettingV2) validatePutEffectiveAibiDashboardEmbeddin
 }
 
 func (w *jsiiProxy_WorkspaceSettingV2) validatePutEffectiveAutomaticClusterUpdateWorkspaceParameters(value *WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace) error {
-	return nil
-}
-
-func (w *jsiiProxy_WorkspaceSettingV2) validatePutEffectiveDefaultDataSecurityModeParameters(value *WorkspaceSettingV2EffectiveDefaultDataSecurityMode) error {
 	return nil
 }
 
@@ -168,10 +160,6 @@ func (j *jsiiProxy_WorkspaceSettingV2) validateSetNameParameters(val *string) er
 }
 
 func (j *jsiiProxy_WorkspaceSettingV2) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_WorkspaceSettingV2) validateSetWorkspaceIdParameters(val *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/account_setting_v2 databricks_account_setting_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/account_setting_v2 databricks_account_setting_v2}.
 type AccountSettingV2 interface {
 	cdktf.TerraformResource
 	AibiDashboardEmbeddingAccessPolicy() AccountSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
@@ -35,8 +35,6 @@ type AccountSettingV2 interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	DefaultDataSecurityMode() AccountSettingV2DefaultDataSecurityModeOutputReference
-	DefaultDataSecurityModeInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,8 +46,6 @@ type AccountSettingV2 interface {
 	EffectiveAutomaticClusterUpdateWorkspace() AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference
 	EffectiveAutomaticClusterUpdateWorkspaceInput() interface{}
 	EffectiveBooleanVal() AccountSettingV2EffectiveBooleanValOutputReference
-	EffectiveDefaultDataSecurityMode() AccountSettingV2EffectiveDefaultDataSecurityModeOutputReference
-	EffectiveDefaultDataSecurityModeInput() interface{}
 	EffectiveIntegerVal() AccountSettingV2EffectiveIntegerValOutputReference
 	EffectivePersonalCompute() AccountSettingV2EffectivePersonalComputeOutputReference
 	EffectivePersonalComputeInput() interface{}
@@ -144,11 +140,9 @@ type AccountSettingV2 interface {
 	PutAibiDashboardEmbeddingApprovedDomains(value *AccountSettingV2AibiDashboardEmbeddingApprovedDomains)
 	PutAutomaticClusterUpdateWorkspace(value *AccountSettingV2AutomaticClusterUpdateWorkspace)
 	PutBooleanVal(value *AccountSettingV2BooleanVal)
-	PutDefaultDataSecurityMode(value *AccountSettingV2DefaultDataSecurityMode)
 	PutEffectiveAibiDashboardEmbeddingAccessPolicy(value *AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy)
 	PutEffectiveAibiDashboardEmbeddingApprovedDomains(value *AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains)
 	PutEffectiveAutomaticClusterUpdateWorkspace(value *AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace)
-	PutEffectiveDefaultDataSecurityMode(value *AccountSettingV2EffectiveDefaultDataSecurityMode)
 	PutEffectivePersonalCompute(value *AccountSettingV2EffectivePersonalCompute)
 	PutEffectiveRestrictWorkspaceAdmins(value *AccountSettingV2EffectiveRestrictWorkspaceAdmins)
 	PutIntegerVal(value *AccountSettingV2IntegerVal)
@@ -159,11 +153,9 @@ type AccountSettingV2 interface {
 	ResetAibiDashboardEmbeddingApprovedDomains()
 	ResetAutomaticClusterUpdateWorkspace()
 	ResetBooleanVal()
-	ResetDefaultDataSecurityMode()
 	ResetEffectiveAibiDashboardEmbeddingAccessPolicy()
 	ResetEffectiveAibiDashboardEmbeddingApprovedDomains()
 	ResetEffectiveAutomaticClusterUpdateWorkspace()
-	ResetEffectiveDefaultDataSecurityMode()
 	ResetEffectivePersonalCompute()
 	ResetEffectiveRestrictWorkspaceAdmins()
 	ResetIntegerVal()
@@ -312,26 +304,6 @@ func (j *jsiiProxy_AccountSettingV2) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AccountSettingV2) DefaultDataSecurityMode() AccountSettingV2DefaultDataSecurityModeOutputReference {
-	var returns AccountSettingV2DefaultDataSecurityModeOutputReference
-	_jsii_.Get(
-		j,
-		"defaultDataSecurityMode",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountSettingV2) DefaultDataSecurityModeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"defaultDataSecurityModeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AccountSettingV2) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -407,26 +379,6 @@ func (j *jsiiProxy_AccountSettingV2) EffectiveBooleanVal() AccountSettingV2Effec
 	_jsii_.Get(
 		j,
 		"effectiveBooleanVal",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountSettingV2) EffectiveDefaultDataSecurityMode() AccountSettingV2EffectiveDefaultDataSecurityModeOutputReference {
-	var returns AccountSettingV2EffectiveDefaultDataSecurityModeOutputReference
-	_jsii_.Get(
-		j,
-		"effectiveDefaultDataSecurityMode",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountSettingV2) EffectiveDefaultDataSecurityModeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"effectiveDefaultDataSecurityModeInput",
 		&returns,
 	)
 	return returns
@@ -703,7 +655,7 @@ func (j *jsiiProxy_AccountSettingV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource.
 func NewAccountSettingV2(scope constructs.Construct, id *string, config *AccountSettingV2Config) AccountSettingV2 {
 	_init_.Initialize()
 
@@ -721,7 +673,7 @@ func NewAccountSettingV2(scope constructs.Construct, id *string, config *Account
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource.
 func NewAccountSettingV2_Override(a AccountSettingV2, scope constructs.Construct, id *string, config *AccountSettingV2Config) {
 	_init_.Initialize()
 
@@ -1208,17 +1160,6 @@ func (a *jsiiProxy_AccountSettingV2) PutBooleanVal(value *AccountSettingV2Boolea
 	)
 }
 
-func (a *jsiiProxy_AccountSettingV2) PutDefaultDataSecurityMode(value *AccountSettingV2DefaultDataSecurityMode) {
-	if err := a.validatePutDefaultDataSecurityModeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putDefaultDataSecurityMode",
-		[]interface{}{value},
-	)
-}
-
 func (a *jsiiProxy_AccountSettingV2) PutEffectiveAibiDashboardEmbeddingAccessPolicy(value *AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) {
 	if err := a.validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value); err != nil {
 		panic(err)
@@ -1248,17 +1189,6 @@ func (a *jsiiProxy_AccountSettingV2) PutEffectiveAutomaticClusterUpdateWorkspace
 	_jsii_.InvokeVoid(
 		a,
 		"putEffectiveAutomaticClusterUpdateWorkspace",
-		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_AccountSettingV2) PutEffectiveDefaultDataSecurityMode(value *AccountSettingV2EffectiveDefaultDataSecurityMode) {
-	if err := a.validatePutEffectiveDefaultDataSecurityModeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putEffectiveDefaultDataSecurityMode",
 		[]interface{}{value},
 	)
 }
@@ -1361,14 +1291,6 @@ func (a *jsiiProxy_AccountSettingV2) ResetBooleanVal() {
 	)
 }
 
-func (a *jsiiProxy_AccountSettingV2) ResetDefaultDataSecurityMode() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetDefaultDataSecurityMode",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AccountSettingV2) ResetEffectiveAibiDashboardEmbeddingAccessPolicy() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1389,14 +1311,6 @@ func (a *jsiiProxy_AccountSettingV2) ResetEffectiveAutomaticClusterUpdateWorkspa
 	_jsii_.InvokeVoid(
 		a,
 		"resetEffectiveAutomaticClusterUpdateWorkspace",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AccountSettingV2) ResetEffectiveDefaultDataSecurityMode() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetEffectiveDefaultDataSecurityMode",
 		nil, // no parameters
 	)
 }

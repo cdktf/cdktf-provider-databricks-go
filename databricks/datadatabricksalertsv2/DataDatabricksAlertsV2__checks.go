@@ -219,14 +219,6 @@ func (j *jsiiProxy_DataDatabricksAlertsV2) validateSetLifecycleParameters(val *c
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2) validateSetWorkspaceIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewDataDatabricksAlertsV2Parameters(scope constructs.Construct, id *string, config *DataDatabricksAlertsV2Config) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

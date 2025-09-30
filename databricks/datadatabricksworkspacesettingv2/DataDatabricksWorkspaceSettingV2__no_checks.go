@@ -71,10 +71,6 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutBooleanValParame
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutDefaultDataSecurityModeParameters(value *DataDatabricksWorkspaceSettingV2DefaultDataSecurityMode) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value *DataDatabricksWorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) error {
 	return nil
 }
@@ -84,10 +80,6 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutEffectiveAibiDas
 }
 
 func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutEffectiveAutomaticClusterUpdateWorkspaceParameters(value *DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutEffectiveDefaultDataSecurityModeParameters(value *DataDatabricksWorkspaceSettingV2EffectiveDefaultDataSecurityMode) error {
 	return nil
 }
 
@@ -140,10 +132,6 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) validateSetLifecycleParamet
 }
 
 func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) validateSetWorkspaceIdParameters(val *string) error {
 	return nil
 }
 

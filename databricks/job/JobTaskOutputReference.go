@@ -48,6 +48,9 @@ type JobTaskOutputReference interface {
 	DisableAutoOptimization() interface{}
 	SetDisableAutoOptimization(val interface{})
 	DisableAutoOptimizationInput() interface{}
+	Disabled() interface{}
+	SetDisabled(val interface{})
+	DisabledInput() interface{}
 	EmailNotifications() JobTaskEmailNotificationsOutputReference
 	EmailNotificationsInput() *JobTaskEmailNotifications
 	EnvironmentKey() *string
@@ -178,6 +181,7 @@ type JobTaskOutputReference interface {
 	ResetDependsOn()
 	ResetDescription()
 	ResetDisableAutoOptimization()
+	ResetDisabled()
 	ResetEmailNotifications()
 	ResetEnvironmentKey()
 	ResetExistingClusterId()
@@ -423,6 +427,26 @@ func (j *jsiiProxy_JobTaskOutputReference) DisableAutoOptimizationInput() interf
 	_jsii_.Get(
 		j,
 		"disableAutoOptimizationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) Disabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) DisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disabledInput",
 		&returns,
 	)
 	return returns
@@ -1056,6 +1080,17 @@ func (j *jsiiProxy_JobTaskOutputReference)SetDisableAutoOptimization(val interfa
 	_jsii_.Set(
 		j,
 		"disableAutoOptimization",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference)SetDisabled(val interface{}) {
+	if err := j.validateSetDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disabled",
 		val,
 	)
 }
@@ -1710,6 +1745,14 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetDisableAutoOptimization() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetDisableAutoOptimization",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskOutputReference) ResetDisabled() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetDisabled",
 		nil, // no parameters
 	)
 }

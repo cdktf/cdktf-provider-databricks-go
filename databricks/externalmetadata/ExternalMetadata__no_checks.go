@@ -139,10 +139,6 @@ func (j *jsiiProxy_ExternalMetadata) validateSetUrlParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_ExternalMetadata) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewExternalMetadataParameters(scope constructs.Construct, id *string, config *ExternalMetadataConfig) error {
 	return nil
 }

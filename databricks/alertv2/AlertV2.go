@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert_v2 databricks_alert_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert_v2 databricks_alert_v2}.
 type AlertV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -94,9 +94,6 @@ type AlertV2 interface {
 	WarehouseId() *string
 	SetWarehouseId(val *string)
 	WarehouseIdInput() *string
-	WorkspaceId() *string
-	SetWorkspaceId(val *string)
-	WorkspaceIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -156,7 +153,6 @@ type AlertV2 interface {
 	ResetRunAsUserName()
 	ResetSchedule()
 	ResetWarehouseId()
-	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -595,28 +591,8 @@ func (j *jsiiProxy_AlertV2) WarehouseIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlertV2) WorkspaceId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_AlertV2) WorkspaceIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
 func NewAlertV2(scope constructs.Construct, id *string, config *AlertV2Config) AlertV2 {
 	_init_.Initialize()
 
@@ -634,7 +610,7 @@ func NewAlertV2(scope constructs.Construct, id *string, config *AlertV2Config) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
 func NewAlertV2_Override(a AlertV2, scope constructs.Construct, id *string, config *AlertV2Config) {
 	_init_.Initialize()
 
@@ -786,17 +762,6 @@ func (j *jsiiProxy_AlertV2)SetWarehouseId(val *string) {
 	_jsii_.Set(
 		j,
 		"warehouseId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AlertV2)SetWorkspaceId(val *string) {
-	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"workspaceId",
 		val,
 	)
 }
@@ -1271,14 +1236,6 @@ func (a *jsiiProxy_AlertV2) ResetWarehouseId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetWarehouseId",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AlertV2) ResetWorkspaceId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

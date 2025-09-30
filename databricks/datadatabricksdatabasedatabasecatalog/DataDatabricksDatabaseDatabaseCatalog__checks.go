@@ -263,14 +263,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) validateSetNameParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) validateSetWorkspaceIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewDataDatabricksDatabaseDatabaseCatalogParameters(scope constructs.Construct, id *string, config *DataDatabricksDatabaseDatabaseCatalogConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

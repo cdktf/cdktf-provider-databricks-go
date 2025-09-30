@@ -28,8 +28,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultDataSecurityMode", GoGetter: "DefaultDataSecurityMode"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultDataSecurityModeInput", GoGetter: "DefaultDataSecurityModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveAibiDashboardEmbeddingAccessPolicy", GoGetter: "EffectiveAibiDashboardEmbeddingAccessPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveAibiDashboardEmbeddingAccessPolicyInput", GoGetter: "EffectiveAibiDashboardEmbeddingAccessPolicyInput"},
@@ -38,8 +36,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "effectiveAutomaticClusterUpdateWorkspace", GoGetter: "EffectiveAutomaticClusterUpdateWorkspace"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveAutomaticClusterUpdateWorkspaceInput", GoGetter: "EffectiveAutomaticClusterUpdateWorkspaceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveBooleanVal", GoGetter: "EffectiveBooleanVal"},
-			_jsii_.MemberProperty{JsiiProperty: "effectiveDefaultDataSecurityMode", GoGetter: "EffectiveDefaultDataSecurityMode"},
-			_jsii_.MemberProperty{JsiiProperty: "effectiveDefaultDataSecurityModeInput", GoGetter: "EffectiveDefaultDataSecurityModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveIntegerVal", GoGetter: "EffectiveIntegerVal"},
 			_jsii_.MemberProperty{JsiiProperty: "effectivePersonalCompute", GoGetter: "EffectivePersonalCompute"},
 			_jsii_.MemberProperty{JsiiProperty: "effectivePersonalComputeInput", GoGetter: "EffectivePersonalComputeInput"},
@@ -79,11 +75,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAibiDashboardEmbeddingApprovedDomains", GoMethod: "PutAibiDashboardEmbeddingApprovedDomains"},
 			_jsii_.MemberMethod{JsiiMethod: "putAutomaticClusterUpdateWorkspace", GoMethod: "PutAutomaticClusterUpdateWorkspace"},
 			_jsii_.MemberMethod{JsiiMethod: "putBooleanVal", GoMethod: "PutBooleanVal"},
-			_jsii_.MemberMethod{JsiiMethod: "putDefaultDataSecurityMode", GoMethod: "PutDefaultDataSecurityMode"},
 			_jsii_.MemberMethod{JsiiMethod: "putEffectiveAibiDashboardEmbeddingAccessPolicy", GoMethod: "PutEffectiveAibiDashboardEmbeddingAccessPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putEffectiveAibiDashboardEmbeddingApprovedDomains", GoMethod: "PutEffectiveAibiDashboardEmbeddingApprovedDomains"},
 			_jsii_.MemberMethod{JsiiMethod: "putEffectiveAutomaticClusterUpdateWorkspace", GoMethod: "PutEffectiveAutomaticClusterUpdateWorkspace"},
-			_jsii_.MemberMethod{JsiiMethod: "putEffectiveDefaultDataSecurityMode", GoMethod: "PutEffectiveDefaultDataSecurityMode"},
 			_jsii_.MemberMethod{JsiiMethod: "putEffectivePersonalCompute", GoMethod: "PutEffectivePersonalCompute"},
 			_jsii_.MemberMethod{JsiiMethod: "putEffectiveRestrictWorkspaceAdmins", GoMethod: "PutEffectiveRestrictWorkspaceAdmins"},
 			_jsii_.MemberMethod{JsiiMethod: "putIntegerVal", GoMethod: "PutIntegerVal"},
@@ -95,11 +89,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAibiDashboardEmbeddingApprovedDomains", GoMethod: "ResetAibiDashboardEmbeddingApprovedDomains"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomaticClusterUpdateWorkspace", GoMethod: "ResetAutomaticClusterUpdateWorkspace"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBooleanVal", GoMethod: "ResetBooleanVal"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDefaultDataSecurityMode", GoMethod: "ResetDefaultDataSecurityMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEffectiveAibiDashboardEmbeddingAccessPolicy", GoMethod: "ResetEffectiveAibiDashboardEmbeddingAccessPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEffectiveAibiDashboardEmbeddingApprovedDomains", GoMethod: "ResetEffectiveAibiDashboardEmbeddingApprovedDomains"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEffectiveAutomaticClusterUpdateWorkspace", GoMethod: "ResetEffectiveAutomaticClusterUpdateWorkspace"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEffectiveDefaultDataSecurityMode", GoMethod: "ResetEffectiveDefaultDataSecurityMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEffectivePersonalCompute", GoMethod: "ResetEffectivePersonalCompute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEffectiveRestrictWorkspaceAdmins", GoMethod: "ResetEffectiveRestrictWorkspaceAdmins"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIntegerVal", GoMethod: "ResetIntegerVal"},
@@ -108,7 +100,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPersonalCompute", GoMethod: "ResetPersonalCompute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRestrictWorkspaceAdmins", GoMethod: "ResetRestrictWorkspaceAdmins"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStringVal", GoMethod: "ResetStringVal"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceId", GoMethod: "ResetWorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "restrictWorkspaceAdmins", GoGetter: "RestrictWorkspaceAdmins"},
 			_jsii_.MemberProperty{JsiiProperty: "restrictWorkspaceAdminsInput", GoGetter: "RestrictWorkspaceAdminsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "stringVal", GoGetter: "StringVal"},
@@ -122,8 +113,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
-			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkspaceSettingV2{}
@@ -478,44 +467,6 @@ func init() {
 		reflect.TypeOf((*WorkspaceSettingV2Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.workspaceSettingV2.WorkspaceSettingV2DefaultDataSecurityMode",
-		reflect.TypeOf((*WorkspaceSettingV2DefaultDataSecurityMode)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.workspaceSettingV2.WorkspaceSettingV2DefaultDataSecurityModeOutputReference",
-		reflect.TypeOf((*WorkspaceSettingV2DefaultDataSecurityModeOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
-			_jsii_.MemberProperty{JsiiProperty: "statusInput", GoGetter: "StatusInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_WorkspaceSettingV2DefaultDataSecurityModeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
 		"@cdktf/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy",
 		reflect.TypeOf((*WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy)(nil)).Elem(),
 	)
@@ -853,44 +804,6 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkspaceSettingV2EffectiveBooleanValOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveDefaultDataSecurityMode",
-		reflect.TypeOf((*WorkspaceSettingV2EffectiveDefaultDataSecurityMode)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveDefaultDataSecurityModeOutputReference",
-		reflect.TypeOf((*WorkspaceSettingV2EffectiveDefaultDataSecurityModeOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
-			_jsii_.MemberProperty{JsiiProperty: "statusInput", GoGetter: "StatusInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_WorkspaceSettingV2EffectiveDefaultDataSecurityModeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2}.
 type DataDatabricksWorkspaceSettingV2 interface {
 	cdktf.TerraformDataSource
 	AibiDashboardEmbeddingAccessPolicy() DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
@@ -31,8 +31,6 @@ type DataDatabricksWorkspaceSettingV2 interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	DefaultDataSecurityMode() DataDatabricksWorkspaceSettingV2DefaultDataSecurityModeOutputReference
-	DefaultDataSecurityModeInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -44,8 +42,6 @@ type DataDatabricksWorkspaceSettingV2 interface {
 	EffectiveAutomaticClusterUpdateWorkspace() DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference
 	EffectiveAutomaticClusterUpdateWorkspaceInput() interface{}
 	EffectiveBooleanVal() DataDatabricksWorkspaceSettingV2EffectiveBooleanValOutputReference
-	EffectiveDefaultDataSecurityMode() DataDatabricksWorkspaceSettingV2EffectiveDefaultDataSecurityModeOutputReference
-	EffectiveDefaultDataSecurityModeInput() interface{}
 	EffectiveIntegerVal() DataDatabricksWorkspaceSettingV2EffectiveIntegerValOutputReference
 	EffectivePersonalCompute() DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference
 	EffectivePersonalComputeInput() interface{}
@@ -89,9 +85,6 @@ type DataDatabricksWorkspaceSettingV2 interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	WorkspaceId() *string
-	SetWorkspaceId(val *string)
-	WorkspaceIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -121,11 +114,9 @@ type DataDatabricksWorkspaceSettingV2 interface {
 	PutAibiDashboardEmbeddingApprovedDomains(value *DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains)
 	PutAutomaticClusterUpdateWorkspace(value *DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspace)
 	PutBooleanVal(value *DataDatabricksWorkspaceSettingV2BooleanVal)
-	PutDefaultDataSecurityMode(value *DataDatabricksWorkspaceSettingV2DefaultDataSecurityMode)
 	PutEffectiveAibiDashboardEmbeddingAccessPolicy(value *DataDatabricksWorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy)
 	PutEffectiveAibiDashboardEmbeddingApprovedDomains(value *DataDatabricksWorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains)
 	PutEffectiveAutomaticClusterUpdateWorkspace(value *DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace)
-	PutEffectiveDefaultDataSecurityMode(value *DataDatabricksWorkspaceSettingV2EffectiveDefaultDataSecurityMode)
 	PutEffectivePersonalCompute(value *DataDatabricksWorkspaceSettingV2EffectivePersonalCompute)
 	PutEffectiveRestrictWorkspaceAdmins(value *DataDatabricksWorkspaceSettingV2EffectiveRestrictWorkspaceAdmins)
 	PutIntegerVal(value *DataDatabricksWorkspaceSettingV2IntegerVal)
@@ -136,11 +127,9 @@ type DataDatabricksWorkspaceSettingV2 interface {
 	ResetAibiDashboardEmbeddingApprovedDomains()
 	ResetAutomaticClusterUpdateWorkspace()
 	ResetBooleanVal()
-	ResetDefaultDataSecurityMode()
 	ResetEffectiveAibiDashboardEmbeddingAccessPolicy()
 	ResetEffectiveAibiDashboardEmbeddingApprovedDomains()
 	ResetEffectiveAutomaticClusterUpdateWorkspace()
-	ResetEffectiveDefaultDataSecurityMode()
 	ResetEffectivePersonalCompute()
 	ResetEffectiveRestrictWorkspaceAdmins()
 	ResetIntegerVal()
@@ -151,7 +140,6 @@ type DataDatabricksWorkspaceSettingV2 interface {
 	ResetPersonalCompute()
 	ResetRestrictWorkspaceAdmins()
 	ResetStringVal()
-	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -281,26 +269,6 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) DefaultDataSecurityMode() DataDatabricksWorkspaceSettingV2DefaultDataSecurityModeOutputReference {
-	var returns DataDatabricksWorkspaceSettingV2DefaultDataSecurityModeOutputReference
-	_jsii_.Get(
-		j,
-		"defaultDataSecurityMode",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) DefaultDataSecurityModeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"defaultDataSecurityModeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -376,26 +344,6 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) EffectiveBooleanVal() DataD
 	_jsii_.Get(
 		j,
 		"effectiveBooleanVal",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) EffectiveDefaultDataSecurityMode() DataDatabricksWorkspaceSettingV2EffectiveDefaultDataSecurityModeOutputReference {
-	var returns DataDatabricksWorkspaceSettingV2EffectiveDefaultDataSecurityModeOutputReference
-	_jsii_.Get(
-		j,
-		"effectiveDefaultDataSecurityMode",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) EffectiveDefaultDataSecurityModeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"effectiveDefaultDataSecurityModeInput",
 		&returns,
 	)
 	return returns
@@ -661,28 +609,8 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) TerraformResourceType() *st
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) WorkspaceId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) WorkspaceIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2} Data Source.
 func NewDataDatabricksWorkspaceSettingV2(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceSettingV2Config) DataDatabricksWorkspaceSettingV2 {
 	_init_.Initialize()
 
@@ -700,7 +628,7 @@ func NewDataDatabricksWorkspaceSettingV2(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2} Data Source.
 func NewDataDatabricksWorkspaceSettingV2_Override(d DataDatabricksWorkspaceSettingV2, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceSettingV2Config) {
 	_init_.Initialize()
 
@@ -764,17 +692,6 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2)SetProvider(val cdktf.Terraf
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2)SetWorkspaceId(val *string) {
-	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"workspaceId",
 		val,
 	)
 }
@@ -1108,17 +1025,6 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) PutBooleanVal(value *DataDa
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) PutDefaultDataSecurityMode(value *DataDatabricksWorkspaceSettingV2DefaultDataSecurityMode) {
-	if err := d.validatePutDefaultDataSecurityModeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putDefaultDataSecurityMode",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) PutEffectiveAibiDashboardEmbeddingAccessPolicy(value *DataDatabricksWorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) {
 	if err := d.validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value); err != nil {
 		panic(err)
@@ -1148,17 +1054,6 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) PutEffectiveAutomaticCluste
 	_jsii_.InvokeVoid(
 		d,
 		"putEffectiveAutomaticClusterUpdateWorkspace",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) PutEffectiveDefaultDataSecurityMode(value *DataDatabricksWorkspaceSettingV2EffectiveDefaultDataSecurityMode) {
-	if err := d.validatePutEffectiveDefaultDataSecurityModeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putEffectiveDefaultDataSecurityMode",
 		[]interface{}{value},
 	)
 }
@@ -1261,14 +1156,6 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) ResetBooleanVal() {
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) ResetDefaultDataSecurityMode() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDefaultDataSecurityMode",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) ResetEffectiveAibiDashboardEmbeddingAccessPolicy() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1289,14 +1176,6 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) ResetEffectiveAutomaticClus
 	_jsii_.InvokeVoid(
 		d,
 		"resetEffectiveAutomaticClusterUpdateWorkspace",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) ResetEffectiveDefaultDataSecurityMode() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEffectiveDefaultDataSecurityMode",
 		nil, // no parameters
 	)
 }
@@ -1361,14 +1240,6 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) ResetStringVal() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetStringVal",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) ResetWorkspaceId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

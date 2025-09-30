@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/database_database_catalog databricks_database_database_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/database_database_catalog databricks_database_database_catalog}.
 type DataDatabricksDatabaseDatabaseCatalog interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -66,9 +66,6 @@ type DataDatabricksDatabaseDatabaseCatalog interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Uid() *string
-	WorkspaceId() *string
-	SetWorkspaceId(val *string)
-	WorkspaceIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -98,7 +95,6 @@ type DataDatabricksDatabaseDatabaseCatalog interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -348,28 +344,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) Uid() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) WorkspaceId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) WorkspaceIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/database_database_catalog databricks_database_database_catalog} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/database_database_catalog databricks_database_database_catalog} Data Source.
 func NewDataDatabricksDatabaseDatabaseCatalog(scope constructs.Construct, id *string, config *DataDatabricksDatabaseDatabaseCatalogConfig) DataDatabricksDatabaseDatabaseCatalog {
 	_init_.Initialize()
 
@@ -387,7 +363,7 @@ func NewDataDatabricksDatabaseDatabaseCatalog(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/database_database_catalog databricks_database_database_catalog} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/database_database_catalog databricks_database_database_catalog} Data Source.
 func NewDataDatabricksDatabaseDatabaseCatalog_Override(d DataDatabricksDatabaseDatabaseCatalog, scope constructs.Construct, id *string, config *DataDatabricksDatabaseDatabaseCatalogConfig) {
 	_init_.Initialize()
 
@@ -484,17 +460,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog)SetProvider(val cdktf.T
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog)SetWorkspaceId(val *string) {
-	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"workspaceId",
 		val,
 	)
 }
@@ -796,14 +761,6 @@ func (d *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) ResetOverrideLogicalId
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) ResetWorkspaceId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

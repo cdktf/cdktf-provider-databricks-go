@@ -115,10 +115,6 @@ func (j *jsiiProxy_QualityMonitorV2) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
-func (j *jsiiProxy_QualityMonitorV2) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewQualityMonitorV2Parameters(scope constructs.Construct, id *string, config *QualityMonitorV2Config) error {
 	return nil
 }

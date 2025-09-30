@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/external_metadatas databricks_external_metadatas}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadatas databricks_external_metadatas}.
 type DataDatabricksExternalMetadatas interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -54,9 +54,6 @@ type DataDatabricksExternalMetadatas interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	WorkspaceId() *string
-	SetWorkspaceId(val *string)
-	WorkspaceIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -85,7 +82,6 @@ type DataDatabricksExternalMetadatas interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -255,28 +251,8 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatas) TerraformResourceType() *str
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksExternalMetadatas) WorkspaceId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_DataDatabricksExternalMetadatas) WorkspaceIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/external_metadatas databricks_external_metadatas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadatas databricks_external_metadatas} Data Source.
 func NewDataDatabricksExternalMetadatas(scope constructs.Construct, id *string, config *DataDatabricksExternalMetadatasConfig) DataDatabricksExternalMetadatas {
 	_init_.Initialize()
 
@@ -294,7 +270,7 @@ func NewDataDatabricksExternalMetadatas(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/external_metadatas databricks_external_metadatas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadatas databricks_external_metadatas} Data Source.
 func NewDataDatabricksExternalMetadatas_Override(d DataDatabricksExternalMetadatas, scope constructs.Construct, id *string, config *DataDatabricksExternalMetadatasConfig) {
 	_init_.Initialize()
 
@@ -347,17 +323,6 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatas)SetProvider(val cdktf.Terrafo
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatas)SetWorkspaceId(val *string) {
-	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"workspaceId",
 		val,
 	)
 }
@@ -651,14 +616,6 @@ func (d *jsiiProxy_DataDatabricksExternalMetadatas) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksExternalMetadatas) ResetWorkspaceId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

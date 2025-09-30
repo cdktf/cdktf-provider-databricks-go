@@ -127,10 +127,6 @@ func (j *jsiiProxy_DataDatabricksPolicyInfo) validateSetWhenConditionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfo) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataDatabricksPolicyInfoParameters(scope constructs.Construct, id *string, config *DataDatabricksPolicyInfoConfig) error {
 	return nil
 }

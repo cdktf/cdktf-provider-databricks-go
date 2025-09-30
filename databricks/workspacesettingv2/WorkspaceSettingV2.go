@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2}.
 type WorkspaceSettingV2 interface {
 	cdktf.TerraformResource
 	AibiDashboardEmbeddingAccessPolicy() WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
@@ -35,8 +35,6 @@ type WorkspaceSettingV2 interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	DefaultDataSecurityMode() WorkspaceSettingV2DefaultDataSecurityModeOutputReference
-	DefaultDataSecurityModeInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,8 +46,6 @@ type WorkspaceSettingV2 interface {
 	EffectiveAutomaticClusterUpdateWorkspace() WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference
 	EffectiveAutomaticClusterUpdateWorkspaceInput() interface{}
 	EffectiveBooleanVal() WorkspaceSettingV2EffectiveBooleanValOutputReference
-	EffectiveDefaultDataSecurityMode() WorkspaceSettingV2EffectiveDefaultDataSecurityModeOutputReference
-	EffectiveDefaultDataSecurityModeInput() interface{}
 	EffectiveIntegerVal() WorkspaceSettingV2EffectiveIntegerValOutputReference
 	EffectivePersonalCompute() WorkspaceSettingV2EffectivePersonalComputeOutputReference
 	EffectivePersonalComputeInput() interface{}
@@ -97,9 +93,6 @@ type WorkspaceSettingV2 interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	WorkspaceId() *string
-	SetWorkspaceId(val *string)
-	WorkspaceIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -147,11 +140,9 @@ type WorkspaceSettingV2 interface {
 	PutAibiDashboardEmbeddingApprovedDomains(value *WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains)
 	PutAutomaticClusterUpdateWorkspace(value *WorkspaceSettingV2AutomaticClusterUpdateWorkspace)
 	PutBooleanVal(value *WorkspaceSettingV2BooleanVal)
-	PutDefaultDataSecurityMode(value *WorkspaceSettingV2DefaultDataSecurityMode)
 	PutEffectiveAibiDashboardEmbeddingAccessPolicy(value *WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy)
 	PutEffectiveAibiDashboardEmbeddingApprovedDomains(value *WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains)
 	PutEffectiveAutomaticClusterUpdateWorkspace(value *WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace)
-	PutEffectiveDefaultDataSecurityMode(value *WorkspaceSettingV2EffectiveDefaultDataSecurityMode)
 	PutEffectivePersonalCompute(value *WorkspaceSettingV2EffectivePersonalCompute)
 	PutEffectiveRestrictWorkspaceAdmins(value *WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins)
 	PutIntegerVal(value *WorkspaceSettingV2IntegerVal)
@@ -162,11 +153,9 @@ type WorkspaceSettingV2 interface {
 	ResetAibiDashboardEmbeddingApprovedDomains()
 	ResetAutomaticClusterUpdateWorkspace()
 	ResetBooleanVal()
-	ResetDefaultDataSecurityMode()
 	ResetEffectiveAibiDashboardEmbeddingAccessPolicy()
 	ResetEffectiveAibiDashboardEmbeddingApprovedDomains()
 	ResetEffectiveAutomaticClusterUpdateWorkspace()
-	ResetEffectiveDefaultDataSecurityMode()
 	ResetEffectivePersonalCompute()
 	ResetEffectiveRestrictWorkspaceAdmins()
 	ResetIntegerVal()
@@ -177,7 +166,6 @@ type WorkspaceSettingV2 interface {
 	ResetPersonalCompute()
 	ResetRestrictWorkspaceAdmins()
 	ResetStringVal()
-	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -316,26 +304,6 @@ func (j *jsiiProxy_WorkspaceSettingV2) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceSettingV2) DefaultDataSecurityMode() WorkspaceSettingV2DefaultDataSecurityModeOutputReference {
-	var returns WorkspaceSettingV2DefaultDataSecurityModeOutputReference
-	_jsii_.Get(
-		j,
-		"defaultDataSecurityMode",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkspaceSettingV2) DefaultDataSecurityModeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"defaultDataSecurityModeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_WorkspaceSettingV2) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -411,26 +379,6 @@ func (j *jsiiProxy_WorkspaceSettingV2) EffectiveBooleanVal() WorkspaceSettingV2E
 	_jsii_.Get(
 		j,
 		"effectiveBooleanVal",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkspaceSettingV2) EffectiveDefaultDataSecurityMode() WorkspaceSettingV2EffectiveDefaultDataSecurityModeOutputReference {
-	var returns WorkspaceSettingV2EffectiveDefaultDataSecurityModeOutputReference
-	_jsii_.Get(
-		j,
-		"effectiveDefaultDataSecurityMode",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkspaceSettingV2) EffectiveDefaultDataSecurityModeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"effectiveDefaultDataSecurityModeInput",
 		&returns,
 	)
 	return returns
@@ -706,28 +654,8 @@ func (j *jsiiProxy_WorkspaceSettingV2) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceSettingV2) WorkspaceId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_WorkspaceSettingV2) WorkspaceIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2} Resource.
 func NewWorkspaceSettingV2(scope constructs.Construct, id *string, config *WorkspaceSettingV2Config) WorkspaceSettingV2 {
 	_init_.Initialize()
 
@@ -745,7 +673,7 @@ func NewWorkspaceSettingV2(scope constructs.Construct, id *string, config *Works
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2} Resource.
 func NewWorkspaceSettingV2_Override(w WorkspaceSettingV2, scope constructs.Construct, id *string, config *WorkspaceSettingV2Config) {
 	_init_.Initialize()
 
@@ -831,17 +759,6 @@ func (j *jsiiProxy_WorkspaceSettingV2)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WorkspaceSettingV2)SetWorkspaceId(val *string) {
-	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"workspaceId",
 		val,
 	)
 }
@@ -1243,17 +1160,6 @@ func (w *jsiiProxy_WorkspaceSettingV2) PutBooleanVal(value *WorkspaceSettingV2Bo
 	)
 }
 
-func (w *jsiiProxy_WorkspaceSettingV2) PutDefaultDataSecurityMode(value *WorkspaceSettingV2DefaultDataSecurityMode) {
-	if err := w.validatePutDefaultDataSecurityModeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		w,
-		"putDefaultDataSecurityMode",
-		[]interface{}{value},
-	)
-}
-
 func (w *jsiiProxy_WorkspaceSettingV2) PutEffectiveAibiDashboardEmbeddingAccessPolicy(value *WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) {
 	if err := w.validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value); err != nil {
 		panic(err)
@@ -1283,17 +1189,6 @@ func (w *jsiiProxy_WorkspaceSettingV2) PutEffectiveAutomaticClusterUpdateWorkspa
 	_jsii_.InvokeVoid(
 		w,
 		"putEffectiveAutomaticClusterUpdateWorkspace",
-		[]interface{}{value},
-	)
-}
-
-func (w *jsiiProxy_WorkspaceSettingV2) PutEffectiveDefaultDataSecurityMode(value *WorkspaceSettingV2EffectiveDefaultDataSecurityMode) {
-	if err := w.validatePutEffectiveDefaultDataSecurityModeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		w,
-		"putEffectiveDefaultDataSecurityMode",
 		[]interface{}{value},
 	)
 }
@@ -1396,14 +1291,6 @@ func (w *jsiiProxy_WorkspaceSettingV2) ResetBooleanVal() {
 	)
 }
 
-func (w *jsiiProxy_WorkspaceSettingV2) ResetDefaultDataSecurityMode() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetDefaultDataSecurityMode",
-		nil, // no parameters
-	)
-}
-
 func (w *jsiiProxy_WorkspaceSettingV2) ResetEffectiveAibiDashboardEmbeddingAccessPolicy() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1424,14 +1311,6 @@ func (w *jsiiProxy_WorkspaceSettingV2) ResetEffectiveAutomaticClusterUpdateWorks
 	_jsii_.InvokeVoid(
 		w,
 		"resetEffectiveAutomaticClusterUpdateWorkspace",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WorkspaceSettingV2) ResetEffectiveDefaultDataSecurityMode() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetEffectiveDefaultDataSecurityMode",
 		nil, // no parameters
 	)
 }
@@ -1496,14 +1375,6 @@ func (w *jsiiProxy_WorkspaceSettingV2) ResetStringVal() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetStringVal",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WorkspaceSettingV2) ResetWorkspaceId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

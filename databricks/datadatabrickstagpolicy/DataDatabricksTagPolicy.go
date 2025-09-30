@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/tag_policy databricks_tag_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/tag_policy databricks_tag_policy}.
 type DataDatabricksTagPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -23,6 +23,7 @@ type DataDatabricksTagPolicy interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,11 +61,9 @@ type DataDatabricksTagPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdateTime() *string
 	Values() DataDatabricksTagPolicyValuesList
 	ValuesInput() interface{}
-	WorkspaceId() *string
-	SetWorkspaceId(val *string)
-	WorkspaceIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -96,7 +95,6 @@ type DataDatabricksTagPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetValues()
-	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -141,6 +139,16 @@ func (j *jsiiProxy_DataDatabricksTagPolicy) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksTagPolicy) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
 		&returns,
 	)
 	return returns
@@ -306,6 +314,16 @@ func (j *jsiiProxy_DataDatabricksTagPolicy) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksTagPolicy) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksTagPolicy) Values() DataDatabricksTagPolicyValuesList {
 	var returns DataDatabricksTagPolicyValuesList
 	_jsii_.Get(
@@ -326,28 +344,8 @@ func (j *jsiiProxy_DataDatabricksTagPolicy) ValuesInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksTagPolicy) WorkspaceId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_DataDatabricksTagPolicy) WorkspaceIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/tag_policy databricks_tag_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/tag_policy databricks_tag_policy} Data Source.
 func NewDataDatabricksTagPolicy(scope constructs.Construct, id *string, config *DataDatabricksTagPolicyConfig) DataDatabricksTagPolicy {
 	_init_.Initialize()
 
@@ -365,7 +363,7 @@ func NewDataDatabricksTagPolicy(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/tag_policy databricks_tag_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/tag_policy databricks_tag_policy} Data Source.
 func NewDataDatabricksTagPolicy_Override(d DataDatabricksTagPolicy, scope constructs.Construct, id *string, config *DataDatabricksTagPolicyConfig) {
 	_init_.Initialize()
 
@@ -440,17 +438,6 @@ func (j *jsiiProxy_DataDatabricksTagPolicy)SetTagKey(val *string) {
 	_jsii_.Set(
 		j,
 		"tagKey",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksTagPolicy)SetWorkspaceId(val *string) {
-	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"workspaceId",
 		val,
 	)
 }
@@ -771,14 +758,6 @@ func (d *jsiiProxy_DataDatabricksTagPolicy) ResetValues() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetValues",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksTagPolicy) ResetWorkspaceId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

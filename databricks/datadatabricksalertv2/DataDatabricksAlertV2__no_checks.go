@@ -119,10 +119,6 @@ func (j *jsiiProxy_DataDatabricksAlertV2) validateSetWarehouseIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataDatabricksAlertV2Parameters(scope constructs.Construct, id *string, config *DataDatabricksAlertV2Config) error {
 	return nil
 }

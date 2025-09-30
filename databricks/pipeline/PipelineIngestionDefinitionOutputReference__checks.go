@@ -263,6 +263,14 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateSetIntern
 	return nil
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateSetNetsuiteJarPathParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateSetSourceTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

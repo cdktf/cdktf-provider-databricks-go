@@ -51,6 +51,10 @@ func (p *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference)
 	return nil
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference) validatePutWorkdayReportParametersParameters(value *PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionTableConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

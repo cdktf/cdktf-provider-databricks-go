@@ -119,10 +119,6 @@ func (j *jsiiProxy_OnlineStore) validateSetReadReplicaCountParameters(val *float
 	return nil
 }
 
-func (j *jsiiProxy_OnlineStore) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewOnlineStoreParameters(scope constructs.Construct, id *string, config *OnlineStoreConfig) error {
 	return nil
 }

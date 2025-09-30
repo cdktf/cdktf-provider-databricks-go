@@ -5,9 +5,9 @@ package pipeline
 
 
 type PipelineRunAs struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}.
 	ServicePrincipalName *string `field:"optional" json:"servicePrincipalName" yaml:"servicePrincipalName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#user_name Pipeline#user_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#user_name Pipeline#user_name}.
 	UserName *string `field:"optional" json:"userName" yaml:"userName"`
 }
 

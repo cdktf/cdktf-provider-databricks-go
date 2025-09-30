@@ -143,10 +143,6 @@ func (j *jsiiProxy_DatabaseInstance) validateSetStoppedParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseInstance) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewDatabaseInstanceParameters(scope constructs.Construct, id *string, config *DatabaseInstanceConfig) error {
 	return nil
 }

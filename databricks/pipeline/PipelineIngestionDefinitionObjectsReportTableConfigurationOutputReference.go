@@ -60,6 +60,8 @@ type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference i
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WorkdayReportParameters() PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference
+	WorkdayReportParametersInput() *PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -85,6 +87,7 @@ type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference i
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutQueryBasedConnectorConfig(value *PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig)
+	PutWorkdayReportParameters(value *PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters)
 	ResetExcludeColumns()
 	ResetIncludeColumns()
 	ResetPrimaryKeys()
@@ -92,6 +95,7 @@ type PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference i
 	ResetSalesforceIncludeFormulaFields()
 	ResetScdType()
 	ResetSequenceBy()
+	ResetWorkdayReportParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -312,6 +316,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) WorkdayReportParameters() PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference {
+	var returns PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference
+	_jsii_.Get(
+		j,
+		"workdayReportParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) WorkdayReportParametersInput() *PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters {
+	var returns *PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters
+	_jsii_.Get(
+		j,
+		"workdayReportParametersInput",
 		&returns,
 	)
 	return returns
@@ -663,6 +687,17 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	)
 }
 
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) PutWorkdayReportParameters(value *PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters) {
+	if err := p.validatePutWorkdayReportParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putWorkdayReportParameters",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ResetExcludeColumns() {
 	_jsii_.InvokeVoid(
 		p,
@@ -715,6 +750,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOut
 	_jsii_.InvokeVoid(
 		p,
 		"resetSequenceBy",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference) ResetWorkdayReportParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetWorkdayReportParameters",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/external_metadata databricks_external_metadata}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/external_metadata databricks_external_metadata}.
 type ExternalMetadata interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -91,9 +91,6 @@ type ExternalMetadata interface {
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
-	WorkspaceId() *string
-	SetWorkspaceId(val *string)
-	WorkspaceIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -145,7 +142,6 @@ type ExternalMetadata interface {
 	ResetOwner()
 	ResetProperties()
 	ResetUrl()
-	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -544,28 +540,8 @@ func (j *jsiiProxy_ExternalMetadata) UrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalMetadata) WorkspaceId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_ExternalMetadata) WorkspaceIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/external_metadata databricks_external_metadata} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/external_metadata databricks_external_metadata} Resource.
 func NewExternalMetadata(scope constructs.Construct, id *string, config *ExternalMetadataConfig) ExternalMetadata {
 	_init_.Initialize()
 
@@ -583,7 +559,7 @@ func NewExternalMetadata(scope constructs.Construct, id *string, config *Externa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/external_metadata databricks_external_metadata} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/external_metadata databricks_external_metadata} Resource.
 func NewExternalMetadata_Override(e ExternalMetadata, scope constructs.Construct, id *string, config *ExternalMetadataConfig) {
 	_init_.Initialize()
 
@@ -746,17 +722,6 @@ func (j *jsiiProxy_ExternalMetadata)SetUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"url",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ExternalMetadata)SetWorkspaceId(val *string) {
-	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"workspaceId",
 		val,
 	)
 }
@@ -1158,14 +1123,6 @@ func (e *jsiiProxy_ExternalMetadata) ResetUrl() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetUrl",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_ExternalMetadata) ResetWorkspaceId() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

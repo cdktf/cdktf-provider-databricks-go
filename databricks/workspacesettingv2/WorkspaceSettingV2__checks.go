@@ -251,17 +251,6 @@ func (w *jsiiProxy_WorkspaceSettingV2) validatePutBooleanValParameters(value *Wo
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceSettingV2) validatePutDefaultDataSecurityModeParameters(value *WorkspaceSettingV2DefaultDataSecurityMode) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (w *jsiiProxy_WorkspaceSettingV2) validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value *WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -285,17 +274,6 @@ func (w *jsiiProxy_WorkspaceSettingV2) validatePutEffectiveAibiDashboardEmbeddin
 }
 
 func (w *jsiiProxy_WorkspaceSettingV2) validatePutEffectiveAutomaticClusterUpdateWorkspaceParameters(value *WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (w *jsiiProxy_WorkspaceSettingV2) validatePutEffectiveDefaultDataSecurityModeParameters(value *WorkspaceSettingV2EffectiveDefaultDataSecurityMode) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -559,14 +537,6 @@ func (j *jsiiProxy_WorkspaceSettingV2) validateSetProvisionersParameters(val *[]
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_WorkspaceSettingV2) validateSetWorkspaceIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

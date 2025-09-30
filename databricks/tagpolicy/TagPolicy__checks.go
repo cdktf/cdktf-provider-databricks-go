@@ -438,14 +438,6 @@ func (j *jsiiProxy_TagPolicy) validateSetTagKeyParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_TagPolicy) validateSetWorkspaceIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewTagPolicyParameters(scope constructs.Construct, id *string, config *TagPolicyConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

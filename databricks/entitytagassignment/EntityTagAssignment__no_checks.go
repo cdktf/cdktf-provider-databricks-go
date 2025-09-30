@@ -123,10 +123,6 @@ func (j *jsiiProxy_EntityTagAssignment) validateSetTagValueParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_EntityTagAssignment) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewEntityTagAssignmentParameters(scope constructs.Construct, id *string, config *EntityTagAssignmentConfig) error {
 	return nil
 }

@@ -91,10 +91,6 @@ func (j *jsiiProxy_DataDatabricksTagPolicy) validateSetTagKeyParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksTagPolicy) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataDatabricksTagPolicyParameters(scope constructs.Construct, id *string, config *DataDatabricksTagPolicyConfig) error {
 	return nil
 }

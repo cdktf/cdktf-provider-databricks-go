@@ -22,15 +22,13 @@ type EntityTagAssignmentConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#entity_name EntityTagAssignment#entity_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#entity_name EntityTagAssignment#entity_name}.
 	EntityName *string `field:"required" json:"entityName" yaml:"entityName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#entity_type EntityTagAssignment#entity_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#entity_type EntityTagAssignment#entity_type}.
 	EntityType *string `field:"required" json:"entityType" yaml:"entityType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#tag_key EntityTagAssignment#tag_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#tag_key EntityTagAssignment#tag_key}.
 	TagKey *string `field:"required" json:"tagKey" yaml:"tagKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#tag_value EntityTagAssignment#tag_value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#tag_value EntityTagAssignment#tag_value}.
 	TagValue *string `field:"optional" json:"tagValue" yaml:"tagValue"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#workspace_id EntityTagAssignment#workspace_id}.
-	WorkspaceId *string `field:"optional" json:"workspaceId" yaml:"workspaceId"`
 }
 

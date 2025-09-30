@@ -71,10 +71,6 @@ func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutBooleanValParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutDefaultDataSecurityModeParameters(value *DataDatabricksAccountSettingV2DefaultDataSecurityMode) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value *DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) error {
 	return nil
 }
@@ -84,10 +80,6 @@ func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutEffectiveAibiDashb
 }
 
 func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutEffectiveAutomaticClusterUpdateWorkspaceParameters(value *DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutEffectiveDefaultDataSecurityModeParameters(value *DataDatabricksAccountSettingV2EffectiveDefaultDataSecurityMode) error {
 	return nil
 }
 

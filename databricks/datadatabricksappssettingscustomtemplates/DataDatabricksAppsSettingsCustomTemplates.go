@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/apps_settings_custom_templates databricks_apps_settings_custom_templates}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/apps_settings_custom_templates databricks_apps_settings_custom_templates}.
 type DataDatabricksAppsSettingsCustomTemplates interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -54,9 +54,6 @@ type DataDatabricksAppsSettingsCustomTemplates interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	WorkspaceId() *string
-	SetWorkspaceId(val *string)
-	WorkspaceIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -85,7 +82,6 @@ type DataDatabricksAppsSettingsCustomTemplates interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -255,28 +251,8 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplates) TerraformResourceT
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplates) WorkspaceId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplates) WorkspaceIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/apps_settings_custom_templates databricks_apps_settings_custom_templates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/apps_settings_custom_templates databricks_apps_settings_custom_templates} Data Source.
 func NewDataDatabricksAppsSettingsCustomTemplates(scope constructs.Construct, id *string, config *DataDatabricksAppsSettingsCustomTemplatesConfig) DataDatabricksAppsSettingsCustomTemplates {
 	_init_.Initialize()
 
@@ -294,7 +270,7 @@ func NewDataDatabricksAppsSettingsCustomTemplates(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/apps_settings_custom_templates databricks_apps_settings_custom_templates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/apps_settings_custom_templates databricks_apps_settings_custom_templates} Data Source.
 func NewDataDatabricksAppsSettingsCustomTemplates_Override(d DataDatabricksAppsSettingsCustomTemplates, scope constructs.Construct, id *string, config *DataDatabricksAppsSettingsCustomTemplatesConfig) {
 	_init_.Initialize()
 
@@ -347,17 +323,6 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplates)SetProvider(val cdk
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplates)SetWorkspaceId(val *string) {
-	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"workspaceId",
 		val,
 	)
 }
@@ -651,14 +616,6 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplates) ResetOverrideLogic
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplates) ResetWorkspaceId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy databricks_tag_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy databricks_tag_policy}.
 type TagPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,7 @@ type TagPolicy interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -68,11 +69,9 @@ type TagPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdateTime() *string
 	Values() TagPolicyValuesList
 	ValuesInput() interface{}
-	WorkspaceId() *string
-	SetWorkspaceId(val *string)
-	WorkspaceIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -122,7 +121,6 @@ type TagPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetValues()
-	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -176,6 +174,16 @@ func (j *jsiiProxy_TagPolicy) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TagPolicy) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
 		&returns,
 	)
 	return returns
@@ -351,6 +359,16 @@ func (j *jsiiProxy_TagPolicy) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TagPolicy) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TagPolicy) Values() TagPolicyValuesList {
 	var returns TagPolicyValuesList
 	_jsii_.Get(
@@ -371,28 +389,8 @@ func (j *jsiiProxy_TagPolicy) ValuesInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TagPolicy) WorkspaceId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_TagPolicy) WorkspaceIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy databricks_tag_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy databricks_tag_policy} Resource.
 func NewTagPolicy(scope constructs.Construct, id *string, config *TagPolicyConfig) TagPolicy {
 	_init_.Initialize()
 
@@ -410,7 +408,7 @@ func NewTagPolicy(scope constructs.Construct, id *string, config *TagPolicyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy databricks_tag_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy databricks_tag_policy} Resource.
 func NewTagPolicy_Override(t TagPolicy, scope constructs.Construct, id *string, config *TagPolicyConfig) {
 	_init_.Initialize()
 
@@ -507,17 +505,6 @@ func (j *jsiiProxy_TagPolicy)SetTagKey(val *string) {
 	_jsii_.Set(
 		j,
 		"tagKey",
-		val,
-	)
-}
-
-func (j *jsiiProxy_TagPolicy)SetWorkspaceId(val *string) {
-	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"workspaceId",
 		val,
 	)
 }
@@ -906,14 +893,6 @@ func (t *jsiiProxy_TagPolicy) ResetValues() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetValues",
-		nil, // no parameters
-	)
-}
-
-func (t *jsiiProxy_TagPolicy) ResetWorkspaceId() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

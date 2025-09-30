@@ -480,14 +480,6 @@ func (j *jsiiProxy_AlertV2) validateSetWarehouseIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_AlertV2) validateSetWorkspaceIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewAlertV2Parameters(scope constructs.Construct, id *string, config *AlertV2Config) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

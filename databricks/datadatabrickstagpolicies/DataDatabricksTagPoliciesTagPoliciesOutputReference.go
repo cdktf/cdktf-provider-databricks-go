@@ -23,6 +23,7 @@ type DataDatabricksTagPoliciesTagPoliciesOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	CreateTime() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -47,6 +48,7 @@ type DataDatabricksTagPoliciesTagPoliciesOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UpdateTime() *string
 	Values() DataDatabricksTagPoliciesTagPoliciesValuesList
 	ValuesInput() interface{}
 	// Experimental.
@@ -106,6 +108,16 @@ func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) ComplexO
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
 		&returns,
 	)
 	return returns
@@ -206,6 +218,16 @@ func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) Terrafor
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
 		&returns,
 	)
 	return returns

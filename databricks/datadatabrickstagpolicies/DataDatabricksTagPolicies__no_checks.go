@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataDatabricksTagPolicies) validateSetLifecycleParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksTagPolicies) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataDatabricksTagPoliciesParameters(scope constructs.Construct, id *string, config *DataDatabricksTagPoliciesConfig) error {
 	return nil
 }

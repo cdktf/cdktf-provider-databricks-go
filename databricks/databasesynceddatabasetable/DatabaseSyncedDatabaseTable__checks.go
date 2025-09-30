@@ -426,14 +426,6 @@ func (j *jsiiProxy_DatabaseSyncedDatabaseTable) validateSetProvisionersParameter
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseSyncedDatabaseTable) validateSetWorkspaceIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewDatabaseSyncedDatabaseTableParameters(scope constructs.Construct, id *string, config *DatabaseSyncedDatabaseTableConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

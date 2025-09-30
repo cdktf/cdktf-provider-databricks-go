@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment databricks_entity_tag_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment databricks_entity_tag_assignment}.
 type EntityTagAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -73,9 +73,6 @@ type EntityTagAssignment interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	WorkspaceId() *string
-	SetWorkspaceId(val *string)
-	WorkspaceIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -123,7 +120,6 @@ type EntityTagAssignment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTagValue()
-	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -382,28 +378,8 @@ func (j *jsiiProxy_EntityTagAssignment) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EntityTagAssignment) WorkspaceId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_EntityTagAssignment) WorkspaceIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment databricks_entity_tag_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment databricks_entity_tag_assignment} Resource.
 func NewEntityTagAssignment(scope constructs.Construct, id *string, config *EntityTagAssignmentConfig) EntityTagAssignment {
 	_init_.Initialize()
 
@@ -421,7 +397,7 @@ func NewEntityTagAssignment(scope constructs.Construct, id *string, config *Enti
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment databricks_entity_tag_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment databricks_entity_tag_assignment} Resource.
 func NewEntityTagAssignment_Override(e EntityTagAssignment, scope constructs.Construct, id *string, config *EntityTagAssignmentConfig) {
 	_init_.Initialize()
 
@@ -540,17 +516,6 @@ func (j *jsiiProxy_EntityTagAssignment)SetTagValue(val *string) {
 	_jsii_.Set(
 		j,
 		"tagValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_EntityTagAssignment)SetWorkspaceId(val *string) {
-	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"workspaceId",
 		val,
 	)
 }
@@ -920,14 +885,6 @@ func (e *jsiiProxy_EntityTagAssignment) ResetTagValue() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTagValue",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_EntityTagAssignment) ResetWorkspaceId() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

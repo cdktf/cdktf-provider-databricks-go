@@ -44,6 +44,9 @@ type JobEnvironmentSpecOutputReference interface {
 	JarDependencies() *[]*string
 	SetJarDependencies(val *[]*string)
 	JarDependenciesInput() *[]*string
+	JavaDependencies() *[]*string
+	SetJavaDependencies(val *[]*string)
+	JavaDependenciesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -80,6 +83,7 @@ type JobEnvironmentSpecOutputReference interface {
 	ResetDependencies()
 	ResetEnvironmentVersion()
 	ResetJarDependencies()
+	ResetJavaDependencies()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -225,6 +229,26 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) JarDependenciesInput() *[]
 	return returns
 }
 
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) JavaDependencies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"javaDependencies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) JavaDependenciesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"javaDependenciesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobEnvironmentSpecOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -346,6 +370,17 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference)SetJarDependencies(val *[]*
 	_jsii_.Set(
 		j,
 		"jarDependencies",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference)SetJavaDependencies(val *[]*string) {
+	if err := j.validateSetJavaDependenciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"javaDependencies",
 		val,
 	)
 }
@@ -586,6 +621,14 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) ResetJarDependencies() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetJarDependencies",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobEnvironmentSpecOutputReference) ResetJavaDependencies() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetJavaDependencies",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2}.
 type DataDatabricksAccountSettingV2 interface {
 	cdktf.TerraformDataSource
 	AibiDashboardEmbeddingAccessPolicy() DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
@@ -31,8 +31,6 @@ type DataDatabricksAccountSettingV2 interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	DefaultDataSecurityMode() DataDatabricksAccountSettingV2DefaultDataSecurityModeOutputReference
-	DefaultDataSecurityModeInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -44,8 +42,6 @@ type DataDatabricksAccountSettingV2 interface {
 	EffectiveAutomaticClusterUpdateWorkspace() DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference
 	EffectiveAutomaticClusterUpdateWorkspaceInput() interface{}
 	EffectiveBooleanVal() DataDatabricksAccountSettingV2EffectiveBooleanValOutputReference
-	EffectiveDefaultDataSecurityMode() DataDatabricksAccountSettingV2EffectiveDefaultDataSecurityModeOutputReference
-	EffectiveDefaultDataSecurityModeInput() interface{}
 	EffectiveIntegerVal() DataDatabricksAccountSettingV2EffectiveIntegerValOutputReference
 	EffectivePersonalCompute() DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReference
 	EffectivePersonalComputeInput() interface{}
@@ -118,11 +114,9 @@ type DataDatabricksAccountSettingV2 interface {
 	PutAibiDashboardEmbeddingApprovedDomains(value *DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains)
 	PutAutomaticClusterUpdateWorkspace(value *DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace)
 	PutBooleanVal(value *DataDatabricksAccountSettingV2BooleanVal)
-	PutDefaultDataSecurityMode(value *DataDatabricksAccountSettingV2DefaultDataSecurityMode)
 	PutEffectiveAibiDashboardEmbeddingAccessPolicy(value *DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy)
 	PutEffectiveAibiDashboardEmbeddingApprovedDomains(value *DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains)
 	PutEffectiveAutomaticClusterUpdateWorkspace(value *DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace)
-	PutEffectiveDefaultDataSecurityMode(value *DataDatabricksAccountSettingV2EffectiveDefaultDataSecurityMode)
 	PutEffectivePersonalCompute(value *DataDatabricksAccountSettingV2EffectivePersonalCompute)
 	PutEffectiveRestrictWorkspaceAdmins(value *DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins)
 	PutIntegerVal(value *DataDatabricksAccountSettingV2IntegerVal)
@@ -133,11 +127,9 @@ type DataDatabricksAccountSettingV2 interface {
 	ResetAibiDashboardEmbeddingApprovedDomains()
 	ResetAutomaticClusterUpdateWorkspace()
 	ResetBooleanVal()
-	ResetDefaultDataSecurityMode()
 	ResetEffectiveAibiDashboardEmbeddingAccessPolicy()
 	ResetEffectiveAibiDashboardEmbeddingApprovedDomains()
 	ResetEffectiveAutomaticClusterUpdateWorkspace()
-	ResetEffectiveDefaultDataSecurityMode()
 	ResetEffectivePersonalCompute()
 	ResetEffectiveRestrictWorkspaceAdmins()
 	ResetIntegerVal()
@@ -277,26 +269,6 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) DefaultDataSecurityMode() DataDatabricksAccountSettingV2DefaultDataSecurityModeOutputReference {
-	var returns DataDatabricksAccountSettingV2DefaultDataSecurityModeOutputReference
-	_jsii_.Get(
-		j,
-		"defaultDataSecurityMode",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) DefaultDataSecurityModeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"defaultDataSecurityModeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountSettingV2) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -372,26 +344,6 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveBooleanVal() DataDat
 	_jsii_.Get(
 		j,
 		"effectiveBooleanVal",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveDefaultDataSecurityMode() DataDatabricksAccountSettingV2EffectiveDefaultDataSecurityModeOutputReference {
-	var returns DataDatabricksAccountSettingV2EffectiveDefaultDataSecurityModeOutputReference
-	_jsii_.Get(
-		j,
-		"effectiveDefaultDataSecurityMode",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveDefaultDataSecurityModeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"effectiveDefaultDataSecurityModeInput",
 		&returns,
 	)
 	return returns
@@ -658,7 +610,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
 func NewDataDatabricksAccountSettingV2(scope constructs.Construct, id *string, config *DataDatabricksAccountSettingV2Config) DataDatabricksAccountSettingV2 {
 	_init_.Initialize()
 
@@ -676,7 +628,7 @@ func NewDataDatabricksAccountSettingV2(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
 func NewDataDatabricksAccountSettingV2_Override(d DataDatabricksAccountSettingV2, scope constructs.Construct, id *string, config *DataDatabricksAccountSettingV2Config) {
 	_init_.Initialize()
 
@@ -1073,17 +1025,6 @@ func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutBooleanVal(value *DataData
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutDefaultDataSecurityMode(value *DataDatabricksAccountSettingV2DefaultDataSecurityMode) {
-	if err := d.validatePutDefaultDataSecurityModeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putDefaultDataSecurityMode",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutEffectiveAibiDashboardEmbeddingAccessPolicy(value *DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) {
 	if err := d.validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value); err != nil {
 		panic(err)
@@ -1113,17 +1054,6 @@ func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutEffectiveAutomaticClusterU
 	_jsii_.InvokeVoid(
 		d,
 		"putEffectiveAutomaticClusterUpdateWorkspace",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutEffectiveDefaultDataSecurityMode(value *DataDatabricksAccountSettingV2EffectiveDefaultDataSecurityMode) {
-	if err := d.validatePutEffectiveDefaultDataSecurityModeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putEffectiveDefaultDataSecurityMode",
 		[]interface{}{value},
 	)
 }
@@ -1226,14 +1156,6 @@ func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetBooleanVal() {
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetDefaultDataSecurityMode() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDefaultDataSecurityMode",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetEffectiveAibiDashboardEmbeddingAccessPolicy() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1254,14 +1176,6 @@ func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetEffectiveAutomaticCluste
 	_jsii_.InvokeVoid(
 		d,
 		"resetEffectiveAutomaticClusterUpdateWorkspace",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetEffectiveDefaultDataSecurityMode() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEffectiveDefaultDataSecurityMode",
 		nil, // no parameters
 	)
 }

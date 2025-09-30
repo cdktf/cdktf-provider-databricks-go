@@ -87,10 +87,6 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorV2) validateSetObjectTypeParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksQualityMonitorV2) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataDatabricksQualityMonitorV2Parameters(scope constructs.Construct, id *string, config *DataDatabricksQualityMonitorV2Config) error {
 	return nil
 }

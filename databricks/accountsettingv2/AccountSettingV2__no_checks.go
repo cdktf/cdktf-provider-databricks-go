@@ -91,10 +91,6 @@ func (a *jsiiProxy_AccountSettingV2) validatePutBooleanValParameters(value *Acco
 	return nil
 }
 
-func (a *jsiiProxy_AccountSettingV2) validatePutDefaultDataSecurityModeParameters(value *AccountSettingV2DefaultDataSecurityMode) error {
-	return nil
-}
-
 func (a *jsiiProxy_AccountSettingV2) validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value *AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) error {
 	return nil
 }
@@ -104,10 +100,6 @@ func (a *jsiiProxy_AccountSettingV2) validatePutEffectiveAibiDashboardEmbeddingA
 }
 
 func (a *jsiiProxy_AccountSettingV2) validatePutEffectiveAutomaticClusterUpdateWorkspaceParameters(value *AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace) error {
-	return nil
-}
-
-func (a *jsiiProxy_AccountSettingV2) validatePutEffectiveDefaultDataSecurityModeParameters(value *AccountSettingV2EffectiveDefaultDataSecurityMode) error {
 	return nil
 }
 

@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplates) validateSetLifecyc
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplates) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataDatabricksAppsSettingsCustomTemplatesParameters(scope constructs.Construct, id *string, config *DataDatabricksAppsSettingsCustomTemplatesConfig) error {
 	return nil
 }
