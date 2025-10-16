@@ -35,6 +35,8 @@ type AppResourcesOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
+	GenieSpace() AppResourcesGenieSpaceOutputReference
+	GenieSpaceInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Job() AppResourcesJobOutputReference
@@ -83,6 +85,7 @@ type AppResourcesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDatabase(value *AppResourcesDatabase)
+	PutGenieSpace(value *AppResourcesGenieSpace)
 	PutJob(value *AppResourcesJob)
 	PutSecret(value *AppResourcesSecret)
 	PutServingEndpoint(value *AppResourcesServingEndpoint)
@@ -90,6 +93,7 @@ type AppResourcesOutputReference interface {
 	PutUcSecurable(value *AppResourcesUcSecurable)
 	ResetDatabase()
 	ResetDescription()
+	ResetGenieSpace()
 	ResetJob()
 	ResetSecret()
 	ResetServingEndpoint()
@@ -185,6 +189,26 @@ func (j *jsiiProxy_AppResourcesOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppResourcesOutputReference) GenieSpace() AppResourcesGenieSpaceOutputReference {
+	var returns AppResourcesGenieSpaceOutputReference
+	_jsii_.Get(
+		j,
+		"genieSpace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppResourcesOutputReference) GenieSpaceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"genieSpaceInput",
 		&returns,
 	)
 	return returns
@@ -642,6 +666,17 @@ func (a *jsiiProxy_AppResourcesOutputReference) PutDatabase(value *AppResourcesD
 	)
 }
 
+func (a *jsiiProxy_AppResourcesOutputReference) PutGenieSpace(value *AppResourcesGenieSpace) {
+	if err := a.validatePutGenieSpaceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putGenieSpace",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppResourcesOutputReference) PutJob(value *AppResourcesJob) {
 	if err := a.validatePutJobParameters(value); err != nil {
 		panic(err)
@@ -709,6 +744,14 @@ func (a *jsiiProxy_AppResourcesOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppResourcesOutputReference) ResetGenieSpace() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGenieSpace",
 		nil, // no parameters
 	)
 }

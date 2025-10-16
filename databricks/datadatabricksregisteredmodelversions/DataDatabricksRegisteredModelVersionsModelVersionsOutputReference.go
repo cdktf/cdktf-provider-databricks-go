@@ -15,9 +15,6 @@ type DataDatabricksRegisteredModelVersionsModelVersionsOutputReference interface
 	cdktf.ComplexObject
 	Aliases() DataDatabricksRegisteredModelVersionsModelVersionsAliasesList
 	AliasesInput() interface{}
-	BrowseOnly() interface{}
-	SetBrowseOnly(val interface{})
-	BrowseOnlyInput() interface{}
 	CatalogName() *string
 	SetCatalogName(val *string)
 	CatalogNameInput() *string
@@ -122,7 +119,6 @@ type DataDatabricksRegisteredModelVersionsModelVersionsOutputReference interface
 	PutAliases(value interface{})
 	PutModelVersionDependencies(value interface{})
 	ResetAliases()
-	ResetBrowseOnly()
 	ResetCatalogName()
 	ResetComment()
 	ResetCreatedAt()
@@ -170,26 +166,6 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsOutputRefer
 	_jsii_.Get(
 		j,
 		"aliasesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsOutputReference) BrowseOnly() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"browseOnly",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsOutputReference) BrowseOnlyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"browseOnlyInput",
 		&returns,
 	)
 	return returns
@@ -630,17 +606,6 @@ func NewDataDatabricksRegisteredModelVersionsModelVersionsOutputReference_Overri
 		"@cdktf/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsOutputReference)SetBrowseOnly(val interface{}) {
-	if err := j.validateSetBrowseOnlyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"browseOnly",
-		val,
 	)
 }
 
@@ -1087,14 +1052,6 @@ func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsOutputRefer
 	_jsii_.InvokeVoid(
 		d,
 		"resetAliases",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsOutputReference) ResetBrowseOnly() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetBrowseOnly",
 		nil, // no parameters
 	)
 }

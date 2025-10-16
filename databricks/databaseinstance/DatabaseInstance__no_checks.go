@@ -75,6 +75,10 @@ func (d *jsiiProxy_DatabaseInstance) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseInstance) validatePutCustomTagsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseInstance) validatePutParentInstanceRefParameters(value *DatabaseInstanceParentInstanceRef) error {
 	return nil
 }
@@ -140,6 +144,10 @@ func (j *jsiiProxy_DatabaseInstance) validateSetRetentionWindowInDaysParameters(
 }
 
 func (j *jsiiProxy_DatabaseInstance) validateSetStoppedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseInstance) validateSetUsagePolicyIdParameters(val *string) error {
 	return nil
 }
 

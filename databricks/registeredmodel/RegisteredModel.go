@@ -12,9 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/registered_model databricks_registered_model}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/registered_model databricks_registered_model}.
 type RegisteredModel interface {
 	cdktf.TerraformResource
+	Aliases() RegisteredModelAliasesList
+	AliasesInput() interface{}
+	BrowseOnly() interface{}
+	SetBrowseOnly(val interface{})
+	BrowseOnlyInput() interface{}
 	CatalogName() *string
 	SetCatalogName(val *string)
 	CatalogNameInput() *string
@@ -33,6 +38,12 @@ type RegisteredModel interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *float64
+	SetCreatedAt(val *float64)
+	CreatedAtInput() *float64
+	CreatedBy() *string
+	SetCreatedBy(val *string)
+	CreatedByInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -45,6 +56,9 @@ type RegisteredModel interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	FullName() *string
+	SetFullName(val *string)
+	FullNameInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -52,6 +66,9 @@ type RegisteredModel interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MetastoreId() *string
+	SetMetastoreId(val *string)
+	MetastoreIdInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -82,6 +99,12 @@ type RegisteredModel interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatedAt() *float64
+	SetUpdatedAt(val *float64)
+	UpdatedAtInput() *float64
+	UpdatedBy() *string
+	SetUpdatedBy(val *string)
+	UpdatedByInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -125,13 +148,25 @@ type RegisteredModel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAliases(value interface{})
+	ResetAliases()
+	ResetBrowseOnly()
+	ResetCatalogName()
 	ResetComment()
+	ResetCreatedAt()
+	ResetCreatedBy()
+	ResetFullName()
 	ResetId()
+	ResetMetastoreId()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
+	ResetSchemaName()
 	ResetStorageLocation()
+	ResetUpdatedAt()
+	ResetUpdatedBy()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -148,6 +183,46 @@ type RegisteredModel interface {
 // The jsii proxy struct for RegisteredModel
 type jsiiProxy_RegisteredModel struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_RegisteredModel) Aliases() RegisteredModelAliasesList {
+	var returns RegisteredModelAliasesList
+	_jsii_.Get(
+		j,
+		"aliases",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegisteredModel) AliasesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aliasesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegisteredModel) BrowseOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"browseOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegisteredModel) BrowseOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"browseOnlyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_RegisteredModel) CatalogName() *string {
@@ -230,6 +305,46 @@ func (j *jsiiProxy_RegisteredModel) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RegisteredModel) CreatedAt() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegisteredModel) CreatedAtInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"createdAtInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegisteredModel) CreatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegisteredModel) CreatedByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdByInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RegisteredModel) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -270,6 +385,26 @@ func (j *jsiiProxy_RegisteredModel) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RegisteredModel) FullName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fullName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegisteredModel) FullNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fullNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RegisteredModel) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -295,6 +430,26 @@ func (j *jsiiProxy_RegisteredModel) Lifecycle() *cdktf.TerraformResourceLifecycl
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegisteredModel) MetastoreId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metastoreId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegisteredModel) MetastoreIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metastoreIdInput",
 		&returns,
 	)
 	return returns
@@ -450,8 +605,48 @@ func (j *jsiiProxy_RegisteredModel) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RegisteredModel) UpdatedAt() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/registered_model databricks_registered_model} Resource.
+func (j *jsiiProxy_RegisteredModel) UpdatedAtInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"updatedAtInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegisteredModel) UpdatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegisteredModel) UpdatedByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedByInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/registered_model databricks_registered_model} Resource.
 func NewRegisteredModel(scope constructs.Construct, id *string, config *RegisteredModelConfig) RegisteredModel {
 	_init_.Initialize()
 
@@ -469,7 +664,7 @@ func NewRegisteredModel(scope constructs.Construct, id *string, config *Register
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/registered_model databricks_registered_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/registered_model databricks_registered_model} Resource.
 func NewRegisteredModel_Override(r RegisteredModel, scope constructs.Construct, id *string, config *RegisteredModelConfig) {
 	_init_.Initialize()
 
@@ -477,6 +672,17 @@ func NewRegisteredModel_Override(r RegisteredModel, scope constructs.Construct, 
 		"@cdktf/provider-databricks.registeredModel.RegisteredModel",
 		[]interface{}{scope, id, config},
 		r,
+	)
+}
+
+func (j *jsiiProxy_RegisteredModel)SetBrowseOnly(val interface{}) {
+	if err := j.validateSetBrowseOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"browseOnly",
+		val,
 	)
 }
 
@@ -524,6 +730,28 @@ func (j *jsiiProxy_RegisteredModel)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_RegisteredModel)SetCreatedAt(val *float64) {
+	if err := j.validateSetCreatedAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createdAt",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RegisteredModel)SetCreatedBy(val *string) {
+	if err := j.validateSetCreatedByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createdBy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RegisteredModel)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -536,6 +764,17 @@ func (j *jsiiProxy_RegisteredModel)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RegisteredModel)SetFullName(val *string) {
+	if err := j.validateSetFullNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fullName",
 		val,
 	)
 }
@@ -558,6 +797,17 @@ func (j *jsiiProxy_RegisteredModel)SetLifecycle(val *cdktf.TerraformResourceLife
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RegisteredModel)SetMetastoreId(val *string) {
+	if err := j.validateSetMetastoreIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metastoreId",
 		val,
 	)
 }
@@ -621,6 +871,28 @@ func (j *jsiiProxy_RegisteredModel)SetStorageLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"storageLocation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RegisteredModel)SetUpdatedAt(val *float64) {
+	if err := j.validateSetUpdatedAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"updatedAt",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RegisteredModel)SetUpdatedBy(val *string) {
+	if err := j.validateSetUpdatedByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"updatedBy",
 		val,
 	)
 }
@@ -978,6 +1250,41 @@ func (r *jsiiProxy_RegisteredModel) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (r *jsiiProxy_RegisteredModel) PutAliases(value interface{}) {
+	if err := r.validatePutAliasesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putAliases",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RegisteredModel) ResetAliases() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAliases",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegisteredModel) ResetBrowseOnly() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetBrowseOnly",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegisteredModel) ResetCatalogName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetCatalogName",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RegisteredModel) ResetComment() {
 	_jsii_.InvokeVoid(
 		r,
@@ -986,10 +1293,50 @@ func (r *jsiiProxy_RegisteredModel) ResetComment() {
 	)
 }
 
+func (r *jsiiProxy_RegisteredModel) ResetCreatedAt() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetCreatedAt",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegisteredModel) ResetCreatedBy() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetCreatedBy",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegisteredModel) ResetFullName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetFullName",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RegisteredModel) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegisteredModel) ResetMetastoreId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMetastoreId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegisteredModel) ResetName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetName",
 		nil, // no parameters
 	)
 }
@@ -1010,10 +1357,34 @@ func (r *jsiiProxy_RegisteredModel) ResetOwner() {
 	)
 }
 
+func (r *jsiiProxy_RegisteredModel) ResetSchemaName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSchemaName",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RegisteredModel) ResetStorageLocation() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetStorageLocation",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegisteredModel) ResetUpdatedAt() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetUpdatedAt",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegisteredModel) ResetUpdatedBy() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetUpdatedBy",
 		nil, // no parameters
 	)
 }

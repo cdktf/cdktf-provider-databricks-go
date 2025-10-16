@@ -41,9 +41,6 @@ type JobEnvironmentSpecOutputReference interface {
 	Fqn() *string
 	InternalValue() *JobEnvironmentSpec
 	SetInternalValue(val *JobEnvironmentSpec)
-	JarDependencies() *[]*string
-	SetJarDependencies(val *[]*string)
-	JarDependenciesInput() *[]*string
 	JavaDependencies() *[]*string
 	SetJavaDependencies(val *[]*string)
 	JavaDependenciesInput() *[]*string
@@ -82,7 +79,6 @@ type JobEnvironmentSpecOutputReference interface {
 	ResetClient()
 	ResetDependencies()
 	ResetEnvironmentVersion()
-	ResetJarDependencies()
 	ResetJavaDependencies()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -204,26 +200,6 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) InternalValue() *JobEnviro
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobEnvironmentSpecOutputReference) JarDependencies() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"jarDependencies",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobEnvironmentSpecOutputReference) JarDependenciesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"jarDependenciesInput",
 		&returns,
 	)
 	return returns
@@ -359,17 +335,6 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference)SetInternalValue(val *JobEn
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_JobEnvironmentSpecOutputReference)SetJarDependencies(val *[]*string) {
-	if err := j.validateSetJarDependenciesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"jarDependencies",
 		val,
 	)
 }
@@ -613,14 +578,6 @@ func (j *jsiiProxy_JobEnvironmentSpecOutputReference) ResetEnvironmentVersion() 
 	_jsii_.InvokeVoid(
 		j,
 		"resetEnvironmentVersion",
-		nil, // no parameters
-	)
-}
-
-func (j *jsiiProxy_JobEnvironmentSpecOutputReference) ResetJarDependencies() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetJarDependencies",
 		nil, // no parameters
 	)
 }

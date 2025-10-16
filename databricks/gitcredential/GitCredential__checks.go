@@ -357,6 +357,14 @@ func (j *jsiiProxy_GitCredential) validateSetForceParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_GitCredential) validateSetGitEmailParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GitCredential) validateSetGitProviderParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

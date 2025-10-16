@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/permission_assignment databricks_permission_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment databricks_permission_assignment}.
 type PermissionAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,7 @@ type PermissionAssignment interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisplayName() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -39,6 +40,9 @@ type PermissionAssignment interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GroupName() *string
+	SetGroupName(val *string)
+	GroupNameInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -64,12 +68,18 @@ type PermissionAssignment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ServicePrincipalName() *string
+	SetServicePrincipalName(val *string)
+	ServicePrincipalNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UserName() *string
+	SetUserName(val *string)
+	UserNameInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -113,10 +123,14 @@ type PermissionAssignment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetGroupName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrincipalId()
+	ResetServicePrincipalName()
+	ResetUserName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -185,6 +199,16 @@ func (j *jsiiProxy_PermissionAssignment) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_PermissionAssignment) DisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PermissionAssignment) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -210,6 +234,26 @@ func (j *jsiiProxy_PermissionAssignment) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PermissionAssignment) GroupName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PermissionAssignment) GroupNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupNameInput",
 		&returns,
 	)
 	return returns
@@ -325,6 +369,26 @@ func (j *jsiiProxy_PermissionAssignment) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PermissionAssignment) ServicePrincipalName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servicePrincipalName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PermissionAssignment) ServicePrincipalNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servicePrincipalNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PermissionAssignment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -355,8 +419,28 @@ func (j *jsiiProxy_PermissionAssignment) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PermissionAssignment) UserName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userName",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/permission_assignment databricks_permission_assignment} Resource.
+func (j *jsiiProxy_PermissionAssignment) UserNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment databricks_permission_assignment} Resource.
 func NewPermissionAssignment(scope constructs.Construct, id *string, config *PermissionAssignmentConfig) PermissionAssignment {
 	_init_.Initialize()
 
@@ -374,7 +458,7 @@ func NewPermissionAssignment(scope constructs.Construct, id *string, config *Per
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/permission_assignment databricks_permission_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment databricks_permission_assignment} Resource.
 func NewPermissionAssignment_Override(p PermissionAssignment, scope constructs.Construct, id *string, config *PermissionAssignmentConfig) {
 	_init_.Initialize()
 
@@ -419,6 +503,17 @@ func (j *jsiiProxy_PermissionAssignment)SetForEach(val cdktf.ITerraformIterator)
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PermissionAssignment)SetGroupName(val *string) {
+	if err := j.validateSetGroupNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupName",
 		val,
 	)
 }
@@ -482,6 +577,28 @@ func (j *jsiiProxy_PermissionAssignment)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PermissionAssignment)SetServicePrincipalName(val *string) {
+	if err := j.validateSetServicePrincipalNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"servicePrincipalName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PermissionAssignment)SetUserName(val *string) {
+	if err := j.validateSetUserNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userName",
 		val,
 	)
 }
@@ -839,6 +956,14 @@ func (p *jsiiProxy_PermissionAssignment) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (p *jsiiProxy_PermissionAssignment) ResetGroupName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetGroupName",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PermissionAssignment) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
@@ -851,6 +976,30 @@ func (p *jsiiProxy_PermissionAssignment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PermissionAssignment) ResetPrincipalId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPrincipalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PermissionAssignment) ResetServicePrincipalName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetServicePrincipalName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PermissionAssignment) ResetUserName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUserName",
 		nil, // no parameters
 	)
 }

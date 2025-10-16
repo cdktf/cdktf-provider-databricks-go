@@ -59,10 +59,6 @@ func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsOutputReference) validateSetBrowseOnlyParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsOutputReference) validateSetCatalogNameParameters(val *string) error {
 	return nil
 }

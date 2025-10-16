@@ -103,6 +103,10 @@ func (j *jsiiProxy_GitCredential) validateSetForceParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_GitCredential) validateSetGitEmailParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GitCredential) validateSetGitProviderParameters(val *string) error {
 	return nil
 }

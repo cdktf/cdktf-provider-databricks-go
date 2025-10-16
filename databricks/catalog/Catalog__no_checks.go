@@ -171,10 +171,6 @@ func (j *jsiiProxy_Catalog) validateSetShareNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Catalog) validateSetStorageLocationParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Catalog) validateSetStorageRootParameters(val *string) error {
 	return nil
 }

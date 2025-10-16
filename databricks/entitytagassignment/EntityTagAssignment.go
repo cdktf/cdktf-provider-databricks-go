@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment databricks_entity_tag_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/entity_tag_assignment databricks_entity_tag_assignment}.
 type EntityTagAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_EntityTagAssignment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment databricks_entity_tag_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/entity_tag_assignment databricks_entity_tag_assignment} Resource.
 func NewEntityTagAssignment(scope constructs.Construct, id *string, config *EntityTagAssignmentConfig) EntityTagAssignment {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewEntityTagAssignment(scope constructs.Construct, id *string, config *Enti
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment databricks_entity_tag_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/entity_tag_assignment databricks_entity_tag_assignment} Resource.
 func NewEntityTagAssignment_Override(e EntityTagAssignment, scope constructs.Construct, id *string, config *EntityTagAssignmentConfig) {
 	_init_.Initialize()
 

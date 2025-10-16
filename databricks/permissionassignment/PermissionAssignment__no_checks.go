@@ -99,6 +99,10 @@ func (j *jsiiProxy_PermissionAssignment) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_PermissionAssignment) validateSetGroupNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PermissionAssignment) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -116,6 +120,14 @@ func (j *jsiiProxy_PermissionAssignment) validateSetPrincipalIdParameters(val *f
 }
 
 func (j *jsiiProxy_PermissionAssignment) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PermissionAssignment) validateSetServicePrincipalNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PermissionAssignment) validateSetUserNameParameters(val *string) error {
 	return nil
 }
 

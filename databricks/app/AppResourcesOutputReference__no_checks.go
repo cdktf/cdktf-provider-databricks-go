@@ -51,6 +51,10 @@ func (a *jsiiProxy_AppResourcesOutputReference) validatePutDatabaseParameters(va
 	return nil
 }
 
+func (a *jsiiProxy_AppResourcesOutputReference) validatePutGenieSpaceParameters(value *AppResourcesGenieSpace) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppResourcesOutputReference) validatePutJobParameters(value *AppResourcesJob) error {
 	return nil
 }

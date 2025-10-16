@@ -75,6 +75,10 @@ func (r *jsiiProxy_RegisteredModel) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (r *jsiiProxy_RegisteredModel) validatePutAliasesParameters(value interface{}) error {
+	return nil
+}
+
 func validateRegisteredModel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func validateRegisteredModel_IsTerraformElementParameters(x interface{}) error {
 }
 
 func validateRegisteredModel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RegisteredModel) validateSetBrowseOnlyParameters(val interface{}) error {
 	return nil
 }
 
@@ -107,11 +115,27 @@ func (j *jsiiProxy_RegisteredModel) validateSetCountParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_RegisteredModel) validateSetCreatedAtParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RegisteredModel) validateSetCreatedByParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RegisteredModel) validateSetFullNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RegisteredModel) validateSetIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_RegisteredModel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_RegisteredModel) validateSetMetastoreIdParameters(val *string) error {
 	return nil
 }
 
@@ -132,6 +156,14 @@ func (j *jsiiProxy_RegisteredModel) validateSetSchemaNameParameters(val *string)
 }
 
 func (j *jsiiProxy_RegisteredModel) validateSetStorageLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RegisteredModel) validateSetUpdatedAtParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RegisteredModel) validateSetUpdatedByParameters(val *string) error {
 	return nil
 }
 

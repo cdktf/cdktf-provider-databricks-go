@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app databricks_app}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app databricks_app}.
 type App interface {
 	cdktf.TerraformResource
 	ActiveDeployment() AppActiveDeploymentOutputReference
@@ -22,6 +22,9 @@ type App interface {
 	BudgetPolicyIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ComputeSize() *string
+	SetComputeSize(val *string)
+	ComputeSizeInput() *string
 	ComputeStatus() AppComputeStatusOutputReference
 	// Experimental.
 	Connection() interface{}
@@ -141,6 +144,7 @@ type App interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutResources(value interface{})
 	ResetBudgetPolicyId()
+	ResetComputeSize()
 	ResetDescription()
 	ResetNoCompute()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -211,6 +215,26 @@ func (j *jsiiProxy_App) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) ComputeSize() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"computeSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) ComputeSizeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"computeSizeInput",
 		&returns,
 	)
 	return returns
@@ -627,7 +651,7 @@ func (j *jsiiProxy_App) UserApiScopesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app databricks_app} Resource.
 func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	_init_.Initialize()
 
@@ -645,7 +669,7 @@ func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app databricks_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app databricks_app} Resource.
 func NewApp_Override(a App, scope constructs.Construct, id *string, config *AppConfig) {
 	_init_.Initialize()
 
@@ -663,6 +687,17 @@ func (j *jsiiProxy_App)SetBudgetPolicyId(val *string) {
 	_jsii_.Set(
 		j,
 		"budgetPolicyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_App)SetComputeSize(val *string) {
+	if err := j.validateSetComputeSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"computeSize",
 		val,
 	)
 }
@@ -1147,6 +1182,14 @@ func (a *jsiiProxy_App) ResetBudgetPolicyId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetBudgetPolicyId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_App) ResetComputeSize() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetComputeSize",
 		nil, // no parameters
 	)
 }

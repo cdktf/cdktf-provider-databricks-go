@@ -71,6 +71,10 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetInternalValueParameters(val *DataDatabricksExternalMetadatasExternalMetadata) error {
 	return nil
 }

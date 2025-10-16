@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/database_instance databricks_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/database_instance databricks_database_instance}.
 type DataDatabricksDatabaseInstance interface {
 	cdktf.TerraformDataSource
 	Capacity() *string
@@ -29,16 +29,20 @@ type DataDatabricksDatabaseInstance interface {
 	SetCount(val interface{})
 	CreationTime() *string
 	Creator() *string
+	CustomTags() DataDatabricksDatabaseInstanceCustomTagsList
+	CustomTagsInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EffectiveCapacity() *string
+	EffectiveCustomTags() DataDatabricksDatabaseInstanceEffectiveCustomTagsList
 	EffectiveEnablePgNativeLogin() cdktf.IResolvable
 	EffectiveEnableReadableSecondaries() cdktf.IResolvable
 	EffectiveNodeCount() *float64
 	EffectiveRetentionWindowInDays() *float64
 	EffectiveStopped() cdktf.IResolvable
+	EffectiveUsagePolicyId() *string
 	EnablePgNativeLogin() interface{}
 	SetEnablePgNativeLogin(val interface{})
 	EnablePgNativeLoginInput() interface{}
@@ -90,6 +94,9 @@ type DataDatabricksDatabaseInstance interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Uid() *string
+	UsagePolicyId() *string
+	SetUsagePolicyId(val *string)
+	UsagePolicyIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -115,8 +122,10 @@ type DataDatabricksDatabaseInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCustomTags(value interface{})
 	PutParentInstanceRef(value *DataDatabricksDatabaseInstanceParentInstanceRef)
 	ResetCapacity()
+	ResetCustomTags()
 	ResetEnablePgNativeLogin()
 	ResetEnableReadableSecondaries()
 	ResetNodeCount()
@@ -126,6 +135,7 @@ type DataDatabricksDatabaseInstance interface {
 	ResetParentInstanceRef()
 	ResetRetentionWindowInDays()
 	ResetStopped()
+	ResetUsagePolicyId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -225,6 +235,26 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) Creator() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) CustomTags() DataDatabricksDatabaseInstanceCustomTagsList {
+	var returns DataDatabricksDatabaseInstanceCustomTagsList
+	_jsii_.Get(
+		j,
+		"customTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) CustomTagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customTagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseInstance) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -240,6 +270,16 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveCapacity() *string {
 	_jsii_.Get(
 		j,
 		"effectiveCapacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveCustomTags() DataDatabricksDatabaseInstanceEffectiveCustomTagsList {
+	var returns DataDatabricksDatabaseInstanceEffectiveCustomTagsList
+	_jsii_.Get(
+		j,
+		"effectiveCustomTags",
 		&returns,
 	)
 	return returns
@@ -290,6 +330,16 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveStopped() cdktf.IRes
 	_jsii_.Get(
 		j,
 		"effectiveStopped",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) EffectiveUsagePolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveUsagePolicyId",
 		&returns,
 	)
 	return returns
@@ -585,8 +635,28 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) Uid() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) UsagePolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usagePolicyId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/database_instance databricks_database_instance} Data Source.
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) UsagePolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usagePolicyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/database_instance databricks_database_instance} Data Source.
 func NewDataDatabricksDatabaseInstance(scope constructs.Construct, id *string, config *DataDatabricksDatabaseInstanceConfig) DataDatabricksDatabaseInstance {
 	_init_.Initialize()
 
@@ -604,7 +674,7 @@ func NewDataDatabricksDatabaseInstance(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/database_instance databricks_database_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/database_instance databricks_database_instance} Data Source.
 func NewDataDatabricksDatabaseInstance_Override(d DataDatabricksDatabaseInstance, scope constructs.Construct, id *string, config *DataDatabricksDatabaseInstanceConfig) {
 	_init_.Initialize()
 
@@ -734,6 +804,17 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetStopped(val interface{}) {
 	_jsii_.Set(
 		j,
 		"stopped",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance)SetUsagePolicyId(val *string) {
+	if err := j.validateSetUsagePolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usagePolicyId",
 		val,
 	)
 }
@@ -1023,6 +1104,17 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstance) OverrideLogicalId(newLogicalI
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksDatabaseInstance) PutCustomTags(value interface{}) {
+	if err := d.validatePutCustomTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCustomTags",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksDatabaseInstance) PutParentInstanceRef(value *DataDatabricksDatabaseInstanceParentInstanceRef) {
 	if err := d.validatePutParentInstanceRefParameters(value); err != nil {
 		panic(err)
@@ -1038,6 +1130,14 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstance) ResetCapacity() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCapacity",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseInstance) ResetCustomTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCustomTags",
 		nil, // no parameters
 	)
 }
@@ -1094,6 +1194,14 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstance) ResetStopped() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetStopped",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseInstance) ResetUsagePolicyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUsagePolicyId",
 		nil, // no parameters
 	)
 }

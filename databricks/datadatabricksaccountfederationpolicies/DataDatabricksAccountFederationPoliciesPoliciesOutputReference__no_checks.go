@@ -71,14 +71,6 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) validateSetPolicyIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) validateSetServicePrincipalIdParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

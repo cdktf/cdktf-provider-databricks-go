@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share databricks_share}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share databricks_share}.
 type Share interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -549,7 +549,7 @@ func (j *jsiiProxy_Share) UpdatedByInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share databricks_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share databricks_share} Resource.
 func NewShare(scope constructs.Construct, id *string, config *ShareConfig) Share {
 	_init_.Initialize()
 
@@ -567,7 +567,7 @@ func NewShare(scope constructs.Construct, id *string, config *ShareConfig) Share
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share databricks_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share databricks_share} Resource.
 func NewShare_Override(s Share, scope constructs.Construct, id *string, config *ShareConfig) {
 	_init_.Initialize()
 

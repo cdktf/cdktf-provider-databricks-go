@@ -42,6 +42,8 @@ type DataDatabricksExternalMetadatasExternalMetadataOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
+	SetId(val *string)
+	IdInput() *string
 	InternalValue() *DataDatabricksExternalMetadatasExternalMetadata
 	SetInternalValue(val *DataDatabricksExternalMetadatasExternalMetadata)
 	MetastoreId() *string
@@ -239,6 +241,16 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
 		&returns,
 	)
 	return returns
@@ -483,6 +495,17 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	_jsii_.Set(
 		j,
 		"entityType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
 		val,
 	)
 }

@@ -5,7 +5,7 @@ package workspacesettingv2
 
 
 type WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}.
 	AccessPolicyType *string `field:"required" json:"accessPolicyType" yaml:"accessPolicyType"`
 }
 

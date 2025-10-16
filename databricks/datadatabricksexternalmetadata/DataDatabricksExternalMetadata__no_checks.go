@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetEntityTypeParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -16,6 +16,9 @@ type DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference in
 	AliasName() *string
 	SetAliasName(val *string)
 	AliasNameInput() *string
+	CatalogName() *string
+	SetCatalogName(val *string)
+	CatalogNameInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -33,8 +36,17 @@ type DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference in
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	ModelName() *string
+	SetModelName(val *string)
+	ModelNameInput() *string
+	SchemaName() *string
+	SetSchemaName(val *string)
+	SchemaNameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,6 +83,10 @@ type DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference in
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAliasName()
+	ResetCatalogName()
+	ResetId()
+	ResetModelName()
+	ResetSchemaName()
 	ResetVersionNum()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -102,6 +118,26 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutp
 	_jsii_.Get(
 		j,
 		"aliasNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference) CatalogName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalogName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference) CatalogNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalogNameInput",
 		&returns,
 	)
 	return returns
@@ -147,11 +183,71 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutp
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference) ModelName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference) ModelNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference) SchemaName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference) SchemaNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaNameInput",
 		&returns,
 	)
 	return returns
@@ -236,6 +332,17 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutp
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference)SetCatalogName(val *string) {
+	if err := j.validateSetCatalogNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"catalogName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -258,6 +365,17 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutp
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -265,6 +383,28 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutp
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference)SetModelName(val *string) {
+	if err := j.validateSetModelNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"modelName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference)SetSchemaName(val *string) {
+	if err := j.validateSetSchemaNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"schemaName",
 		val,
 	)
 }
@@ -492,6 +632,38 @@ func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutp
 	_jsii_.InvokeVoid(
 		d,
 		"resetAliasName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference) ResetCatalogName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCatalogName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference) ResetModelName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetModelName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference) ResetSchemaName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSchemaName",
 		nil, // no parameters
 	)
 }

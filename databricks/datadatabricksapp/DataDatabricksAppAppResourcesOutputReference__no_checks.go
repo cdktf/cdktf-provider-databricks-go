@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validatePutData
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validatePutGenieSpaceParameters(value *DataDatabricksAppAppResourcesGenieSpace) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) validatePutJobParameters(value *DataDatabricksAppAppResourcesJob) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/catalog databricks_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/catalog databricks_catalog}.
 type Catalog interface {
 	cdktf.TerraformResource
 	BrowseOnly() interface{}
@@ -107,8 +107,6 @@ type Catalog interface {
 	SetShareName(val *string)
 	ShareNameInput() *string
 	StorageLocation() *string
-	SetStorageLocation(val *string)
-	StorageLocationInput() *string
 	StorageRoot() *string
 	SetStorageRoot(val *string)
 	StorageRootInput() *string
@@ -184,7 +182,6 @@ type Catalog interface {
 	ResetProviderName()
 	ResetProvisioningInfo()
 	ResetShareName()
-	ResetStorageLocation()
 	ResetStorageRoot()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -714,16 +711,6 @@ func (j *jsiiProxy_Catalog) StorageLocation() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Catalog) StorageLocationInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"storageLocationInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Catalog) StorageRoot() *string {
 	var returns *string
 	_jsii_.Get(
@@ -795,7 +782,7 @@ func (j *jsiiProxy_Catalog) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) Catalog {
 	_init_.Initialize()
 
@@ -813,7 +800,7 @@ func NewCatalog(scope constructs.Construct, id *string, config *CatalogConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/catalog databricks_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/catalog databricks_catalog} Resource.
 func NewCatalog_Override(c Catalog, scope constructs.Construct, id *string, config *CatalogConfig) {
 	_init_.Initialize()
 
@@ -1042,17 +1029,6 @@ func (j *jsiiProxy_Catalog)SetShareName(val *string) {
 	_jsii_.Set(
 		j,
 		"shareName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Catalog)SetStorageLocation(val *string) {
-	if err := j.validateSetStorageLocationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"storageLocation",
 		val,
 	)
 }
@@ -1575,14 +1551,6 @@ func (c *jsiiProxy_Catalog) ResetShareName() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetShareName",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_Catalog) ResetStorageLocation() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetStorageLocation",
 		nil, // no parameters
 	)
 }

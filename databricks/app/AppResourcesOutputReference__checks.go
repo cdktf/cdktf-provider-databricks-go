@@ -104,6 +104,17 @@ func (a *jsiiProxy_AppResourcesOutputReference) validatePutDatabaseParameters(va
 	return nil
 }
 
+func (a *jsiiProxy_AppResourcesOutputReference) validatePutGenieSpaceParameters(value *AppResourcesGenieSpace) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AppResourcesOutputReference) validatePutJobParameters(value *AppResourcesJob) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

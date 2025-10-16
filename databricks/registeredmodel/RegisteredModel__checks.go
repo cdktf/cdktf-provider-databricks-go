@@ -207,6 +207,37 @@ func (r *jsiiProxy_RegisteredModel) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (r *jsiiProxy_RegisteredModel) validatePutAliasesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*RegisteredModelAliases:
+		value := value.(*[]*RegisteredModelAliases)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*RegisteredModelAliases:
+		value_ := value.([]*RegisteredModelAliases)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RegisteredModelAliases; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func validateRegisteredModel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -242,6 +273,26 @@ func validateRegisteredModel_IsTerraformElementParameters(x interface{}) error {
 func validateRegisteredModel_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RegisteredModel) validateSetBrowseOnlyParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
@@ -353,6 +404,30 @@ func (j *jsiiProxy_RegisteredModel) validateSetCountParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_RegisteredModel) validateSetCreatedAtParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RegisteredModel) validateSetCreatedByParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RegisteredModel) validateSetFullNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RegisteredModel) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -364,6 +439,14 @@ func (j *jsiiProxy_RegisteredModel) validateSetIdParameters(val *string) error {
 func (j *jsiiProxy_RegisteredModel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RegisteredModel) validateSetMetastoreIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -447,6 +530,22 @@ func (j *jsiiProxy_RegisteredModel) validateSetStorageLocationParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_RegisteredModel) validateSetUpdatedAtParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RegisteredModel) validateSetUpdatedByParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewRegisteredModelParameters(scope constructs.Construct, id *string, config *RegisteredModelConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -456,9 +555,6 @@ func validateNewRegisteredModelParameters(scope constructs.Construct, id *string
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
-	if config == nil {
-		return fmt.Errorf("parameter config is required, but nil was provided")
-	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/git_credential databricks_git_credential}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/git_credential databricks_git_credential}.
 type GitCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,6 +42,9 @@ type GitCredential interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GitEmail() *string
+	SetGitEmail(val *string)
+	GitEmailInput() *string
 	GitProvider() *string
 	SetGitProvider(val *string)
 	GitProviderInput() *string
@@ -126,6 +129,7 @@ type GitCredential interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetForce()
+	ResetGitEmail()
 	ResetGitUsername()
 	ResetId()
 	ResetIsDefaultForProvider()
@@ -247,6 +251,26 @@ func (j *jsiiProxy_GitCredential) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GitCredential) GitEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gitEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GitCredential) GitEmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gitEmailInput",
 		&returns,
 	)
 	return returns
@@ -453,7 +477,7 @@ func (j *jsiiProxy_GitCredential) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/git_credential databricks_git_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/git_credential databricks_git_credential} Resource.
 func NewGitCredential(scope constructs.Construct, id *string, config *GitCredentialConfig) GitCredential {
 	_init_.Initialize()
 
@@ -471,7 +495,7 @@ func NewGitCredential(scope constructs.Construct, id *string, config *GitCredent
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/git_credential databricks_git_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/git_credential databricks_git_credential} Resource.
 func NewGitCredential_Override(g GitCredential, scope constructs.Construct, id *string, config *GitCredentialConfig) {
 	_init_.Initialize()
 
@@ -527,6 +551,17 @@ func (j *jsiiProxy_GitCredential)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GitCredential)SetGitEmail(val *string) {
+	if err := j.validateSetGitEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gitEmail",
 		val,
 	)
 }
@@ -984,6 +1019,14 @@ func (g *jsiiProxy_GitCredential) ResetForce() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetForce",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GitCredential) ResetGitEmail() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGitEmail",
 		nil, // no parameters
 	)
 }

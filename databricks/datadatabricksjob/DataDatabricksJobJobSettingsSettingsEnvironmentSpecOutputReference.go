@@ -41,9 +41,6 @@ type DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference interfac
 	Fqn() *string
 	InternalValue() *DataDatabricksJobJobSettingsSettingsEnvironmentSpec
 	SetInternalValue(val *DataDatabricksJobJobSettingsSettingsEnvironmentSpec)
-	JarDependencies() *[]*string
-	SetJarDependencies(val *[]*string)
-	JarDependenciesInput() *[]*string
 	JavaDependencies() *[]*string
 	SetJavaDependencies(val *[]*string)
 	JavaDependenciesInput() *[]*string
@@ -82,7 +79,6 @@ type DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference interfac
 	ResetClient()
 	ResetDependencies()
 	ResetEnvironmentVersion()
-	ResetJarDependencies()
 	ResetJavaDependencies()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -204,26 +200,6 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) JarDependencies() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"jarDependencies",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) JarDependenciesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"jarDependenciesInput",
 		&returns,
 	)
 	return returns
@@ -359,17 +335,6 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference)SetJarDependencies(val *[]*string) {
-	if err := j.validateSetJarDependenciesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"jarDependencies",
 		val,
 	)
 }
@@ -613,14 +578,6 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputRefe
 	_jsii_.InvokeVoid(
 		d,
 		"resetEnvironmentVersion",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference) ResetJarDependencies() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetJarDependencies",
 		nil, // no parameters
 	)
 }

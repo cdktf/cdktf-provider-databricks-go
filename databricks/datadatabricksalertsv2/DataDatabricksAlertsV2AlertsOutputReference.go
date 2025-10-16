@@ -44,6 +44,8 @@ type DataDatabricksAlertsV2AlertsOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
+	SetId(val *string)
+	IdInput() *string
 	InternalValue() *DataDatabricksAlertsV2Alerts
 	SetInternalValue(val *DataDatabricksAlertsV2Alerts)
 	LifecycleState() *string
@@ -270,6 +272,16 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
 		&returns,
 	)
 	return returns
@@ -534,6 +546,17 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference)SetDisplayName(va
 	_jsii_.Set(
 		j,
 		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
 		val,
 	)
 }

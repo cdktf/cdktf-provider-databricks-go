@@ -5,7 +5,7 @@ package externallocation
 
 
 type ExternalLocationFileEventQueueProvidedPubsub struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}.
 	SubscriptionName *string `field:"required" json:"subscriptionName" yaml:"subscriptionName"`
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstance) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksDatabaseInstance) validatePutCustomTagsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksDatabaseInstance) validatePutParentInstanceRefParameters(value *DataDatabricksDatabaseInstanceParentInstanceRef) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetRetentionWindowInD
 }
 
 func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetStoppedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstance) validateSetUsagePolicyIdParameters(val *string) error {
 	return nil
 }
 

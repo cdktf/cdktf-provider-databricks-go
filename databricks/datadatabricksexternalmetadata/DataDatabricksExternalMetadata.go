@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadata databricks_external_metadata}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/external_metadata databricks_external_metadata}.
 type DataDatabricksExternalMetadata interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -47,6 +47,8 @@ type DataDatabricksExternalMetadata interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	SetId(val *string)
+	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -295,6 +297,16 @@ func (j *jsiiProxy_DataDatabricksExternalMetadata) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksExternalMetadata) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksExternalMetadata) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -496,7 +508,7 @@ func (j *jsiiProxy_DataDatabricksExternalMetadata) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadata databricks_external_metadata} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/external_metadata databricks_external_metadata} Data Source.
 func NewDataDatabricksExternalMetadata(scope constructs.Construct, id *string, config *DataDatabricksExternalMetadataConfig) DataDatabricksExternalMetadata {
 	_init_.Initialize()
 
@@ -514,7 +526,7 @@ func NewDataDatabricksExternalMetadata(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadata databricks_external_metadata} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/external_metadata databricks_external_metadata} Data Source.
 func NewDataDatabricksExternalMetadata_Override(d DataDatabricksExternalMetadata, scope constructs.Construct, id *string, config *DataDatabricksExternalMetadataConfig) {
 	_init_.Initialize()
 
@@ -581,6 +593,17 @@ func (j *jsiiProxy_DataDatabricksExternalMetadata)SetForEach(val cdktf.ITerrafor
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksExternalMetadata)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
 		val,
 	)
 }

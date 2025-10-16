@@ -34,12 +34,16 @@ type DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference interface {
 	CreationStack() *[]*string
 	CreationTime() *string
 	Creator() *string
+	CustomTags() DataDatabricksDatabaseInstancesDatabaseInstancesCustomTagsList
+	CustomTagsInput() interface{}
 	EffectiveCapacity() *string
+	EffectiveCustomTags() DataDatabricksDatabaseInstancesDatabaseInstancesEffectiveCustomTagsList
 	EffectiveEnablePgNativeLogin() cdktf.IResolvable
 	EffectiveEnableReadableSecondaries() cdktf.IResolvable
 	EffectiveNodeCount() *float64
 	EffectiveRetentionWindowInDays() *float64
 	EffectiveStopped() cdktf.IResolvable
+	EffectiveUsagePolicyId() *string
 	EnablePgNativeLogin() interface{}
 	SetEnablePgNativeLogin(val interface{})
 	EnablePgNativeLoginInput() interface{}
@@ -77,6 +81,9 @@ type DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Uid() *string
+	UsagePolicyId() *string
+	SetUsagePolicyId(val *string)
+	UsagePolicyIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -101,14 +108,17 @@ type DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomTags(value interface{})
 	PutParentInstanceRef(value *DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef)
 	ResetCapacity()
+	ResetCustomTags()
 	ResetEnablePgNativeLogin()
 	ResetEnableReadableSecondaries()
 	ResetNodeCount()
 	ResetParentInstanceRef()
 	ResetRetentionWindowInDays()
 	ResetStopped()
+	ResetUsagePolicyId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -204,11 +214,41 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) CustomTags() DataDatabricksDatabaseInstancesDatabaseInstancesCustomTagsList {
+	var returns DataDatabricksDatabaseInstancesDatabaseInstancesCustomTagsList
+	_jsii_.Get(
+		j,
+		"customTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) CustomTagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customTagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EffectiveCapacity() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"effectiveCapacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EffectiveCustomTags() DataDatabricksDatabaseInstancesDatabaseInstancesEffectiveCustomTagsList {
+	var returns DataDatabricksDatabaseInstancesDatabaseInstancesEffectiveCustomTagsList
+	_jsii_.Get(
+		j,
+		"effectiveCustomTags",
 		&returns,
 	)
 	return returns
@@ -259,6 +299,16 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	_jsii_.Get(
 		j,
 		"effectiveStopped",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) EffectiveUsagePolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveUsagePolicyId",
 		&returns,
 	)
 	return returns
@@ -494,6 +544,26 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) UsagePolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usagePolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) UsagePolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usagePolicyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDataDatabricksDatabaseInstancesDatabaseInstancesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference {
 	_init_.Initialize()
@@ -650,6 +720,17 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference)SetUsagePolicyId(val *string) {
+	if err := j.validateSetUsagePolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usagePolicyId",
 		val,
 	)
 }
@@ -840,6 +921,17 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return returns
 }
 
+func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) PutCustomTags(value interface{}) {
+	if err := d.validatePutCustomTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCustomTags",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) PutParentInstanceRef(value *DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef) {
 	if err := d.validatePutParentInstanceRefParameters(value); err != nil {
 		panic(err)
@@ -855,6 +947,14 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	_jsii_.InvokeVoid(
 		d,
 		"resetCapacity",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) ResetCustomTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCustomTags",
 		nil, // no parameters
 	)
 }
@@ -903,6 +1003,14 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	_jsii_.InvokeVoid(
 		d,
 		"resetStopped",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) ResetUsagePolicyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUsagePolicyId",
 		nil, // no parameters
 	)
 }

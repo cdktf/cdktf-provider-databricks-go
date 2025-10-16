@@ -87,14 +87,6 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) validateSetLifecyclePa
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) validateSetPolicyIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) validateSetServicePrincipalIdParameters(val *float64) error {
-	return nil
-}
-
 func validateNewDataDatabricksAccountFederationPolicyParameters(scope constructs.Construct, id *string, config *DataDatabricksAccountFederationPolicyConfig) error {
 	return nil
 }

@@ -55,6 +55,10 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelModelInfoAliasesOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksRegisteredModelModelInfoAliasesOutputReference) validateSetCatalogNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksRegisteredModelModelInfoAliasesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -63,7 +67,19 @@ func (j *jsiiProxy_DataDatabricksRegisteredModelModelInfoAliasesOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksRegisteredModelModelInfoAliasesOutputReference) validateSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksRegisteredModelModelInfoAliasesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksRegisteredModelModelInfoAliasesOutputReference) validateSetModelNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksRegisteredModelModelInfoAliasesOutputReference) validateSetSchemaNameParameters(val *string) error {
 	return nil
 }
 

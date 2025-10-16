@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetDispl
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetInternalValueParameters(val *DataDatabricksAlertsV2Alerts) error {
 	return nil
 }

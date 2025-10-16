@@ -238,22 +238,6 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) validateSetLifecyclePa
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) validateSetPolicyIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) validateSetServicePrincipalIdParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewDataDatabricksAccountFederationPolicyParameters(scope constructs.Construct, id *string, config *DataDatabricksAccountFederationPolicyConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

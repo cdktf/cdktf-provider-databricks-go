@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validatePutCustomTagsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validatePutParentInstanceRefParameters(value *DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 }
 
 func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetUsagePolicyIdParameters(val *string) error {
 	return nil
 }
 

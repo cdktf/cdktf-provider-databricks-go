@@ -28,6 +28,9 @@ type DataDatabricksAppAppOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ComputeSize() *string
+	SetComputeSize(val *string)
+	ComputeSizeInput() *string
 	ComputeStatus() DataDatabricksAppAppComputeStatusOutputReference
 	CreateTime() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -98,6 +101,7 @@ type DataDatabricksAppAppOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutResources(value interface{})
 	ResetBudgetPolicyId()
+	ResetComputeSize()
 	ResetDescription()
 	ResetResources()
 	ResetUserApiScopes()
@@ -171,6 +175,26 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) ComplexObjectIsFromSet()
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) ComputeSize() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"computeSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) ComputeSizeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"computeSizeInput",
 		&returns,
 	)
 	return returns
@@ -527,6 +551,17 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetComplexObjectIsFromSet
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetComputeSize(val *string) {
+	if err := j.validateSetComputeSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"computeSize",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference)SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
@@ -794,6 +829,14 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetBudgetPolicyId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetBudgetPolicyId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppAppOutputReference) ResetComputeSize() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetComputeSize",
 		nil, // no parameters
 	)
 }

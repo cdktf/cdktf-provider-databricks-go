@@ -67,6 +67,10 @@ func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetComplexObject
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetComputeSizeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksAppAppOutputReference) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

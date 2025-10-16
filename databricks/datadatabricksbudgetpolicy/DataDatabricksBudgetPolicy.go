@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/budget_policy databricks_budget_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/budget_policy databricks_budget_policy}.
 type DataDatabricksBudgetPolicy interface {
 	cdktf.TerraformDataSource
 	BindingWorkspaceIds() *[]*float64
@@ -47,8 +47,6 @@ type DataDatabricksBudgetPolicy interface {
 	// The tree node.
 	Node() constructs.Node
 	PolicyId() *string
-	SetPolicyId(val *string)
-	PolicyIdInput() *string
 	PolicyName() *string
 	SetPolicyName(val *string)
 	PolicyNameInput() *string
@@ -95,7 +93,6 @@ type DataDatabricksBudgetPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPolicyId()
 	ResetPolicyName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -256,16 +253,6 @@ func (j *jsiiProxy_DataDatabricksBudgetPolicy) PolicyId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksBudgetPolicy) PolicyIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksBudgetPolicy) PolicyName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -337,7 +324,7 @@ func (j *jsiiProxy_DataDatabricksBudgetPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/budget_policy databricks_budget_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/budget_policy databricks_budget_policy} Data Source.
 func NewDataDatabricksBudgetPolicy(scope constructs.Construct, id *string, config *DataDatabricksBudgetPolicyConfig) DataDatabricksBudgetPolicy {
 	_init_.Initialize()
 
@@ -355,7 +342,7 @@ func NewDataDatabricksBudgetPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/budget_policy databricks_budget_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/budget_policy databricks_budget_policy} Data Source.
 func NewDataDatabricksBudgetPolicy_Override(d DataDatabricksBudgetPolicy, scope constructs.Construct, id *string, config *DataDatabricksBudgetPolicyConfig) {
 	_init_.Initialize()
 
@@ -411,17 +398,6 @@ func (j *jsiiProxy_DataDatabricksBudgetPolicy)SetLifecycle(val *cdktf.TerraformR
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksBudgetPolicy)SetPolicyId(val *string) {
-	if err := j.validateSetPolicyIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"policyId",
 		val,
 	)
 }
@@ -761,14 +737,6 @@ func (d *jsiiProxy_DataDatabricksBudgetPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksBudgetPolicy) ResetPolicyId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPolicyId",
 		nil, // no parameters
 	)
 }

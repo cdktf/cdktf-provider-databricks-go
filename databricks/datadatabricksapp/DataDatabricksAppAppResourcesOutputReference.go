@@ -35,6 +35,8 @@ type DataDatabricksAppAppResourcesOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
+	GenieSpace() DataDatabricksAppAppResourcesGenieSpaceOutputReference
+	GenieSpaceInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Job() DataDatabricksAppAppResourcesJobOutputReference
@@ -83,6 +85,7 @@ type DataDatabricksAppAppResourcesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDatabase(value *DataDatabricksAppAppResourcesDatabase)
+	PutGenieSpace(value *DataDatabricksAppAppResourcesGenieSpace)
 	PutJob(value *DataDatabricksAppAppResourcesJob)
 	PutSecret(value *DataDatabricksAppAppResourcesSecret)
 	PutServingEndpoint(value *DataDatabricksAppAppResourcesServingEndpoint)
@@ -90,6 +93,7 @@ type DataDatabricksAppAppResourcesOutputReference interface {
 	PutUcSecurable(value *DataDatabricksAppAppResourcesUcSecurable)
 	ResetDatabase()
 	ResetDescription()
+	ResetGenieSpace()
 	ResetJob()
 	ResetSecret()
 	ResetServingEndpoint()
@@ -185,6 +189,26 @@ func (j *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) GenieSpace() DataDatabricksAppAppResourcesGenieSpaceOutputReference {
+	var returns DataDatabricksAppAppResourcesGenieSpaceOutputReference
+	_jsii_.Get(
+		j,
+		"genieSpace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) GenieSpaceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"genieSpaceInput",
 		&returns,
 	)
 	return returns
@@ -642,6 +666,17 @@ func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) PutDatabase(val
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) PutGenieSpace(value *DataDatabricksAppAppResourcesGenieSpace) {
+	if err := d.validatePutGenieSpaceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putGenieSpace",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) PutJob(value *DataDatabricksAppAppResourcesJob) {
 	if err := d.validatePutJobParameters(value); err != nil {
 		panic(err)
@@ -709,6 +744,14 @@ func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) ResetDescriptio
 	_jsii_.InvokeVoid(
 		d,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) ResetGenieSpace() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGenieSpace",
 		nil, // no parameters
 	)
 }
