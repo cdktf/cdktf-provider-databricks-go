@@ -5,7 +5,7 @@ package datadatabrickstable
 
 
 type DataDatabricksTableTableInfoTableConstraintsNamedTableConstraint struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/table#name DataDatabricksTable#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/table#name DataDatabricksTable#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

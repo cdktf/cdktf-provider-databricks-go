@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations}.
 type DataDatabricksRfaAccessRequestDestinations interface {
 	cdktf.TerraformDataSource
 	AreAnyDestinationsHidden() cdktf.IResolvable
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source.
 func NewDataDatabricksRfaAccessRequestDestinations(scope constructs.Construct, id *string, config *DataDatabricksRfaAccessRequestDestinationsConfig) DataDatabricksRfaAccessRequestDestinations {
 	_init_.Initialize()
 
@@ -316,7 +316,7 @@ func NewDataDatabricksRfaAccessRequestDestinations(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source.
 func NewDataDatabricksRfaAccessRequestDestinations_Override(d DataDatabricksRfaAccessRequestDestinations, scope constructs.Construct, id *string, config *DataDatabricksRfaAccessRequestDestinationsConfig) {
 	_init_.Initialize()
 

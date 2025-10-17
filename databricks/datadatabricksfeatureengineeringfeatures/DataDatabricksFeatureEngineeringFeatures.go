@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features}.
 type DataDatabricksFeatureEngineeringFeatures interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -252,7 +252,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features} Data Source.
 func NewDataDatabricksFeatureEngineeringFeatures(scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringFeaturesConfig) DataDatabricksFeatureEngineeringFeatures {
 	_init_.Initialize()
 
@@ -270,7 +270,7 @@ func NewDataDatabricksFeatureEngineeringFeatures(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features} Data Source.
 func NewDataDatabricksFeatureEngineeringFeatures_Override(d DataDatabricksFeatureEngineeringFeatures, scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringFeaturesConfig) {
 	_init_.Initialize()
 

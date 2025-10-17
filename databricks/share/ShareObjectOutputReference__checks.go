@@ -132,22 +132,6 @@ func (s *jsiiProxy_ShareObjectOutputReference) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_ShareObjectOutputReference) validateSetAddedAtParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ShareObjectOutputReference) validateSetAddedByParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ShareObjectOutputReference) validateSetCdfEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -306,14 +290,6 @@ func (j *jsiiProxy_ShareObjectOutputReference) validateSetSharedAsParameters(val
 }
 
 func (j *jsiiProxy_ShareObjectOutputReference) validateSetStartVersionParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ShareObjectOutputReference) validateSetStatusParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

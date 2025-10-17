@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/app databricks_app}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/app databricks_app}.
 type DataDatabricksApp interface {
 	cdktf.TerraformDataSource
 	App() DataDatabricksAppAppOutputReference
@@ -275,7 +275,7 @@ func (j *jsiiProxy_DataDatabricksApp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/app databricks_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/app databricks_app} Data Source.
 func NewDataDatabricksApp(scope constructs.Construct, id *string, config *DataDatabricksAppConfig) DataDatabricksApp {
 	_init_.Initialize()
 
@@ -293,7 +293,7 @@ func NewDataDatabricksApp(scope constructs.Construct, id *string, config *DataDa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/app databricks_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/app databricks_app} Data Source.
 func NewDataDatabricksApp_Override(d DataDatabricksApp, scope constructs.Construct, id *string, config *DataDatabricksAppConfig) {
 	_init_.Initialize()
 

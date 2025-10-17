@@ -75,19 +75,11 @@ func validateDataDatabricksShare_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksShare) validateSetCommentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksShare) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksShare) validateSetCreatedAtParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksShare) validateSetCreatedByParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksShare) validateSetIdParameters(val *string) error {
 	return nil
 }
 
@@ -96,6 +88,14 @@ func (j *jsiiProxy_DataDatabricksShare) validateSetLifecycleParameters(val *cdkt
 }
 
 func (j *jsiiProxy_DataDatabricksShare) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksShare) validateSetOwnerParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksShare) validateSetStorageRootParameters(val *string) error {
 	return nil
 }
 

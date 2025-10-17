@@ -5,7 +5,7 @@ package workspacesettingv2
 
 
 type WorkspaceSettingV2StringVal struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/policy_info databricks_policy_info}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/policy_info databricks_policy_info}.
 type DataDatabricksPolicyInfo interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -581,7 +581,7 @@ func (j *jsiiProxy_DataDatabricksPolicyInfo) WhenConditionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
 func NewDataDatabricksPolicyInfo(scope constructs.Construct, id *string, config *DataDatabricksPolicyInfoConfig) DataDatabricksPolicyInfo {
 	_init_.Initialize()
 
@@ -599,7 +599,7 @@ func NewDataDatabricksPolicyInfo(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/policy_info databricks_policy_info} Data Source.
 func NewDataDatabricksPolicyInfo_Override(d DataDatabricksPolicyInfo, scope constructs.Construct, id *string, config *DataDatabricksPolicyInfoConfig) {
 	_init_.Initialize()
 

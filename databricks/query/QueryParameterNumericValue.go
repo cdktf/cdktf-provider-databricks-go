@@ -5,7 +5,7 @@ package query
 
 
 type QueryParameterNumericValue struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#value Query#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/query#value Query#value}.
 	Value *float64 `field:"required" json:"value" yaml:"value"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy}.
 type DataDatabricksServicePrincipalFederationPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy) UpdateTime() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy} Data Source.
 func NewDataDatabricksServicePrincipalFederationPolicy(scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalFederationPolicyConfig) DataDatabricksServicePrincipalFederationPolicy {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDataDatabricksServicePrincipalFederationPolicy(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy} Data Source.
 func NewDataDatabricksServicePrincipalFederationPolicy_Override(d DataDatabricksServicePrincipalFederationPolicy, scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalFederationPolicyConfig) {
 	_init_.Initialize()
 

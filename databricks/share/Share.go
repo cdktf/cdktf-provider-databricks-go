@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share databricks_share}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share databricks_share}.
 type Share interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,15 +31,12 @@ type Share interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedAt() *float64
-	SetCreatedAt(val *float64)
-	CreatedAtInput() *float64
 	CreatedBy() *string
-	SetCreatedBy(val *string)
-	CreatedByInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveOwner() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -49,8 +46,6 @@ type Share interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -76,8 +71,6 @@ type Share interface {
 	// Experimental.
 	RawOverrides() interface{}
 	StorageLocation() *string
-	SetStorageLocation(val *string)
-	StorageLocationInput() *string
 	StorageRoot() *string
 	SetStorageRoot(val *string)
 	StorageRootInput() *string
@@ -88,11 +81,7 @@ type Share interface {
 	// Experimental.
 	TerraformResourceType() *string
 	UpdatedAt() *float64
-	SetUpdatedAt(val *float64)
-	UpdatedAtInput() *float64
 	UpdatedBy() *string
-	SetUpdatedBy(val *string)
-	UpdatedByInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -138,18 +127,12 @@ type Share interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutObject(value interface{})
 	ResetComment()
-	ResetCreatedAt()
-	ResetCreatedBy()
-	ResetId()
 	ResetObject()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
-	ResetStorageLocation()
 	ResetStorageRoot()
-	ResetUpdatedAt()
-	ResetUpdatedBy()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -238,16 +221,6 @@ func (j *jsiiProxy_Share) CreatedAt() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Share) CreatedAtInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"createdAtInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Share) CreatedBy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -258,21 +231,21 @@ func (j *jsiiProxy_Share) CreatedBy() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Share) CreatedByInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdByInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Share) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Share) EffectiveOwner() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveOwner",
 		&returns,
 	)
 	return returns
@@ -313,16 +286,6 @@ func (j *jsiiProxy_Share) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Share) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -448,16 +411,6 @@ func (j *jsiiProxy_Share) StorageLocation() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Share) StorageLocationInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"storageLocationInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Share) StorageRoot() *string {
 	var returns *string
 	_jsii_.Get(
@@ -518,16 +471,6 @@ func (j *jsiiProxy_Share) UpdatedAt() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Share) UpdatedAtInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"updatedAtInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Share) UpdatedBy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -538,18 +481,8 @@ func (j *jsiiProxy_Share) UpdatedBy() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Share) UpdatedByInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedByInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share databricks_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share databricks_share} Resource.
 func NewShare(scope constructs.Construct, id *string, config *ShareConfig) Share {
 	_init_.Initialize()
 
@@ -567,7 +500,7 @@ func NewShare(scope constructs.Construct, id *string, config *ShareConfig) Share
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share databricks_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share databricks_share} Resource.
 func NewShare_Override(s Share, scope constructs.Construct, id *string, config *ShareConfig) {
 	_init_.Initialize()
 
@@ -611,28 +544,6 @@ func (j *jsiiProxy_Share)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Share)SetCreatedAt(val *float64) {
-	if err := j.validateSetCreatedAtParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createdAt",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Share)SetCreatedBy(val *string) {
-	if err := j.validateSetCreatedByParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createdBy",
-		val,
-	)
-}
-
 func (j *jsiiProxy_Share)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -645,17 +556,6 @@ func (j *jsiiProxy_Share)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Share)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -712,17 +612,6 @@ func (j *jsiiProxy_Share)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Share)SetStorageLocation(val *string) {
-	if err := j.validateSetStorageLocationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"storageLocation",
-		val,
-	)
-}
-
 func (j *jsiiProxy_Share)SetStorageRoot(val *string) {
 	if err := j.validateSetStorageRootParameters(val); err != nil {
 		panic(err)
@@ -730,28 +619,6 @@ func (j *jsiiProxy_Share)SetStorageRoot(val *string) {
 	_jsii_.Set(
 		j,
 		"storageRoot",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Share)SetUpdatedAt(val *float64) {
-	if err := j.validateSetUpdatedAtParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"updatedAt",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Share)SetUpdatedBy(val *string) {
-	if err := j.validateSetUpdatedByParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"updatedBy",
 		val,
 	)
 }
@@ -1128,30 +995,6 @@ func (s *jsiiProxy_Share) ResetComment() {
 	)
 }
 
-func (s *jsiiProxy_Share) ResetCreatedAt() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetCreatedAt",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_Share) ResetCreatedBy() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetCreatedBy",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_Share) ResetId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_Share) ResetObject() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1176,34 +1019,10 @@ func (s *jsiiProxy_Share) ResetOwner() {
 	)
 }
 
-func (s *jsiiProxy_Share) ResetStorageLocation() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetStorageLocation",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_Share) ResetStorageRoot() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetStorageRoot",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_Share) ResetUpdatedAt() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetUpdatedAt",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_Share) ResetUpdatedBy() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetUpdatedBy",
 		nil, // no parameters
 	)
 }
