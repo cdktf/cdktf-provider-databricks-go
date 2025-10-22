@@ -5,9 +5,9 @@ package datadatabrickspolicyinfos
 
 
 type DataDatabricksPolicyInfosPoliciesRowFilter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/policy_infos#function_name DataDatabricksPolicyInfos#function_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/policy_infos#function_name DataDatabricksPolicyInfos#function_name}.
 	FunctionName *string `field:"required" json:"functionName" yaml:"functionName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/policy_infos#using DataDatabricksPolicyInfos#using}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/policy_infos#using DataDatabricksPolicyInfos#using}.
 	Using interface{} `field:"optional" json:"using" yaml:"using"`
 }
 

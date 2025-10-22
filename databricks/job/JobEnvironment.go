@@ -5,11 +5,11 @@ package job
 
 
 type JobEnvironment struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/job#environment_key Job#environment_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/job#environment_key Job#environment_key}.
 	EnvironmentKey *string `field:"required" json:"environmentKey" yaml:"environmentKey"`
 	// spec block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/job#spec Job#spec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/job#spec Job#spec}
 	Spec *JobEnvironmentSpec `field:"optional" json:"spec" yaml:"spec"`
 }
 

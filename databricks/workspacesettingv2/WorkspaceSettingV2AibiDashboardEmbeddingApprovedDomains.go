@@ -5,7 +5,7 @@ package workspacesettingv2
 
 
 type WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}.
 	ApprovedDomains *[]*string `field:"optional" json:"approvedDomains" yaml:"approvedDomains"`
 }
 

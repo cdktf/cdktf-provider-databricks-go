@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/database_synced_database_table databricks_database_synced_database_table}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/database_synced_database_table databricks_database_synced_database_table}.
 type DatabaseSyncedDatabaseTable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_DatabaseSyncedDatabaseTable) UnityCatalogProvisioningState() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/database_synced_database_table databricks_database_synced_database_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/database_synced_database_table databricks_database_synced_database_table} Resource.
 func NewDatabaseSyncedDatabaseTable(scope constructs.Construct, id *string, config *DatabaseSyncedDatabaseTableConfig) DatabaseSyncedDatabaseTable {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewDatabaseSyncedDatabaseTable(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/database_synced_database_table databricks_database_synced_database_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/database_synced_database_table databricks_database_synced_database_table} Resource.
 func NewDatabaseSyncedDatabaseTable_Override(d DatabaseSyncedDatabaseTable, scope constructs.Construct, id *string, config *DatabaseSyncedDatabaseTableConfig) {
 	_init_.Initialize()
 

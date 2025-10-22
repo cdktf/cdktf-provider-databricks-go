@@ -5,9 +5,9 @@ package datadatabrickspolicyinfo
 
 
 type DataDatabricksPolicyInfoRowFilterUsing struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/policy_info#alias DataDatabricksPolicyInfo#alias}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/policy_info#alias DataDatabricksPolicyInfo#alias}.
 	Alias *string `field:"optional" json:"alias" yaml:"alias"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/policy_info#constant DataDatabricksPolicyInfo#constant}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/policy_info#constant DataDatabricksPolicyInfo#constant}.
 	Constant *string `field:"optional" json:"constant" yaml:"constant"`
 }
 

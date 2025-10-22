@@ -5,7 +5,7 @@ package notificationdestination
 
 
 type NotificationDestinationConfigEmail struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/notification_destination#addresses NotificationDestination#addresses}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/notification_destination#addresses NotificationDestination#addresses}.
 	Addresses *[]*string `field:"optional" json:"addresses" yaml:"addresses"`
 }
 

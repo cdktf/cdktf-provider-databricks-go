@@ -7,15 +7,15 @@ package job
 type JobTaskNewClusterClusterLogConf struct {
 	// dbfs block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/job#dbfs Job#dbfs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/job#dbfs Job#dbfs}
 	Dbfs *JobTaskNewClusterClusterLogConfDbfs `field:"optional" json:"dbfs" yaml:"dbfs"`
 	// s3 block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/job#s3 Job#s3}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/job#s3 Job#s3}
 	S3 *JobTaskNewClusterClusterLogConfS3 `field:"optional" json:"s3" yaml:"s3"`
 	// volumes block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/job#volumes Job#volumes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/job#volumes Job#volumes}
 	Volumes *JobTaskNewClusterClusterLogConfVolumes `field:"optional" json:"volumes" yaml:"volumes"`
 }
 

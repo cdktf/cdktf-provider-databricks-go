@@ -22,7 +22,7 @@ type DataDatabricksSharesConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/data-sources/shares#shares DataDatabricksShares#shares}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/shares#shares DataDatabricksShares#shares}.
 	Shares *[]*string `field:"optional" json:"shares" yaml:"shares"`
 }
 

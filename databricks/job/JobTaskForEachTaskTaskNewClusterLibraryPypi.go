@@ -5,9 +5,9 @@ package job
 
 
 type JobTaskForEachTaskTaskNewClusterLibraryPypi struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/job#package Job#package}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/job#package Job#package}.
 	Package *string `field:"required" json:"package" yaml:"package"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/job#repo Job#repo}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/job#repo Job#repo}.
 	Repo *string `field:"optional" json:"repo" yaml:"repo"`
 }
 
