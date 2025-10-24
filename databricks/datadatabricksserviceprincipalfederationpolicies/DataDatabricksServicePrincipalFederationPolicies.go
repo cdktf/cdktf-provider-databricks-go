@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/service_principal_federation_policies databricks_service_principal_federation_policies}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/service_principal_federation_policies databricks_service_principal_federation_policies}.
 type DataDatabricksServicePrincipalFederationPolicies interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -41,6 +41,9 @@ type DataDatabricksServicePrincipalFederationPolicies interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	PageSize() *float64
+	SetPageSize(val *float64)
+	PageSizeInput() *float64
 	Policies() DataDatabricksServicePrincipalFederationPoliciesPoliciesList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -85,6 +88,7 @@ type DataDatabricksServicePrincipalFederationPolicies interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPageSize()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -194,6 +198,26 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicies) Node() cons
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicies) PageSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pageSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicies) PageSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pageSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicies) Policies() DataDatabricksServicePrincipalFederationPoliciesPoliciesList {
 	var returns DataDatabricksServicePrincipalFederationPoliciesPoliciesList
 	_jsii_.Get(
@@ -275,7 +299,7 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicies) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/service_principal_federation_policies databricks_service_principal_federation_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/service_principal_federation_policies databricks_service_principal_federation_policies} Data Source.
 func NewDataDatabricksServicePrincipalFederationPolicies(scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalFederationPoliciesConfig) DataDatabricksServicePrincipalFederationPolicies {
 	_init_.Initialize()
 
@@ -293,7 +317,7 @@ func NewDataDatabricksServicePrincipalFederationPolicies(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/service_principal_federation_policies databricks_service_principal_federation_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/service_principal_federation_policies databricks_service_principal_federation_policies} Data Source.
 func NewDataDatabricksServicePrincipalFederationPolicies_Override(d DataDatabricksServicePrincipalFederationPolicies, scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalFederationPoliciesConfig) {
 	_init_.Initialize()
 
@@ -338,6 +362,17 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicies)SetLifecycle
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicies)SetPageSize(val *float64) {
+	if err := j.validateSetPageSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pageSize",
 		val,
 	)
 }
@@ -650,6 +685,14 @@ func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPolicies) ResetOverri
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPolicies) ResetPageSize() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPageSize",
 		nil, // no parameters
 	)
 }

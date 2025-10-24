@@ -47,10 +47,6 @@ func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) validatePutOidcPolicyParameters(value *DataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicy) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -63,11 +59,15 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) validateSetDescriptionParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) validateSetInternalValueParameters(val *DataDatabricksServicePrincipalFederationPoliciesPolicies) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) validateSetInternalValueParameters(val *DataDatabricksServicePrincipalFederationPoliciesPolicies) error {
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) validateSetPolicyIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) validateSetServicePrincipalIdParameters(val *float64) error {
 	return nil
 }
 

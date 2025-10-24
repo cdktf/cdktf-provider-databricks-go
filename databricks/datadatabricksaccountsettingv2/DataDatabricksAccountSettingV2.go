@@ -12,17 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2}.
 type DataDatabricksAccountSettingV2 interface {
 	cdktf.TerraformDataSource
 	AibiDashboardEmbeddingAccessPolicy() DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
-	AibiDashboardEmbeddingAccessPolicyInput() interface{}
 	AibiDashboardEmbeddingApprovedDomains() DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference
-	AibiDashboardEmbeddingApprovedDomainsInput() interface{}
 	AutomaticClusterUpdateWorkspace() DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutputReference
-	AutomaticClusterUpdateWorkspaceInput() interface{}
 	BooleanVal() DataDatabricksAccountSettingV2BooleanValOutputReference
-	BooleanValInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -36,17 +32,12 @@ type DataDatabricksAccountSettingV2 interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EffectiveAibiDashboardEmbeddingAccessPolicy() DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutputReference
-	EffectiveAibiDashboardEmbeddingAccessPolicyInput() interface{}
 	EffectiveAibiDashboardEmbeddingApprovedDomains() DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutputReference
-	EffectiveAibiDashboardEmbeddingApprovedDomainsInput() interface{}
 	EffectiveAutomaticClusterUpdateWorkspace() DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference
-	EffectiveAutomaticClusterUpdateWorkspaceInput() interface{}
 	EffectiveBooleanVal() DataDatabricksAccountSettingV2EffectiveBooleanValOutputReference
 	EffectiveIntegerVal() DataDatabricksAccountSettingV2EffectiveIntegerValOutputReference
 	EffectivePersonalCompute() DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReference
-	EffectivePersonalComputeInput() interface{}
 	EffectiveRestrictWorkspaceAdmins() DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference
-	EffectiveRestrictWorkspaceAdminsInput() interface{}
 	EffectiveStringVal() DataDatabricksAccountSettingV2EffectiveStringValOutputReference
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -57,7 +48,6 @@ type DataDatabricksAccountSettingV2 interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	IntegerVal() DataDatabricksAccountSettingV2IntegerValOutputReference
-	IntegerValInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -68,7 +58,6 @@ type DataDatabricksAccountSettingV2 interface {
 	// The tree node.
 	Node() constructs.Node
 	PersonalCompute() DataDatabricksAccountSettingV2PersonalComputeOutputReference
-	PersonalComputeInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -76,9 +65,7 @@ type DataDatabricksAccountSettingV2 interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RestrictWorkspaceAdmins() DataDatabricksAccountSettingV2RestrictWorkspaceAdminsOutputReference
-	RestrictWorkspaceAdminsInput() interface{}
 	StringVal() DataDatabricksAccountSettingV2StringValOutputReference
-	StringValInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -110,36 +97,9 @@ type DataDatabricksAccountSettingV2 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAibiDashboardEmbeddingAccessPolicy(value *DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy)
-	PutAibiDashboardEmbeddingApprovedDomains(value *DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains)
-	PutAutomaticClusterUpdateWorkspace(value *DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace)
-	PutBooleanVal(value *DataDatabricksAccountSettingV2BooleanVal)
-	PutEffectiveAibiDashboardEmbeddingAccessPolicy(value *DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy)
-	PutEffectiveAibiDashboardEmbeddingApprovedDomains(value *DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains)
-	PutEffectiveAutomaticClusterUpdateWorkspace(value *DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace)
-	PutEffectivePersonalCompute(value *DataDatabricksAccountSettingV2EffectivePersonalCompute)
-	PutEffectiveRestrictWorkspaceAdmins(value *DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins)
-	PutIntegerVal(value *DataDatabricksAccountSettingV2IntegerVal)
-	PutPersonalCompute(value *DataDatabricksAccountSettingV2PersonalCompute)
-	PutRestrictWorkspaceAdmins(value *DataDatabricksAccountSettingV2RestrictWorkspaceAdmins)
-	PutStringVal(value *DataDatabricksAccountSettingV2StringVal)
-	ResetAibiDashboardEmbeddingAccessPolicy()
-	ResetAibiDashboardEmbeddingApprovedDomains()
-	ResetAutomaticClusterUpdateWorkspace()
-	ResetBooleanVal()
-	ResetEffectiveAibiDashboardEmbeddingAccessPolicy()
-	ResetEffectiveAibiDashboardEmbeddingApprovedDomains()
-	ResetEffectiveAutomaticClusterUpdateWorkspace()
-	ResetEffectivePersonalCompute()
-	ResetEffectiveRestrictWorkspaceAdmins()
-	ResetIntegerVal()
-	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPersonalCompute()
-	ResetRestrictWorkspaceAdmins()
-	ResetStringVal()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -169,31 +129,11 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) AibiDashboardEmbeddingAccessP
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) AibiDashboardEmbeddingAccessPolicyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"aibiDashboardEmbeddingAccessPolicyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountSettingV2) AibiDashboardEmbeddingApprovedDomains() DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference {
 	var returns DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference
 	_jsii_.Get(
 		j,
 		"aibiDashboardEmbeddingApprovedDomains",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) AibiDashboardEmbeddingApprovedDomainsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"aibiDashboardEmbeddingApprovedDomainsInput",
 		&returns,
 	)
 	return returns
@@ -209,31 +149,11 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) AutomaticClusterUpdateWorkspa
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) AutomaticClusterUpdateWorkspaceInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"automaticClusterUpdateWorkspaceInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountSettingV2) BooleanVal() DataDatabricksAccountSettingV2BooleanValOutputReference {
 	var returns DataDatabricksAccountSettingV2BooleanValOutputReference
 	_jsii_.Get(
 		j,
 		"booleanVal",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) BooleanValInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"booleanValInput",
 		&returns,
 	)
 	return returns
@@ -289,16 +209,6 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveAibiDashboardEmbeddi
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveAibiDashboardEmbeddingAccessPolicyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"effectiveAibiDashboardEmbeddingAccessPolicyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveAibiDashboardEmbeddingApprovedDomains() DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutputReference {
 	var returns DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutputReference
 	_jsii_.Get(
@@ -309,31 +219,11 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveAibiDashboardEmbeddi
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveAibiDashboardEmbeddingApprovedDomainsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"effectiveAibiDashboardEmbeddingApprovedDomainsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveAutomaticClusterUpdateWorkspace() DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference {
 	var returns DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference
 	_jsii_.Get(
 		j,
 		"effectiveAutomaticClusterUpdateWorkspace",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveAutomaticClusterUpdateWorkspaceInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"effectiveAutomaticClusterUpdateWorkspaceInput",
 		&returns,
 	)
 	return returns
@@ -369,31 +259,11 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectivePersonalCompute() Da
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectivePersonalComputeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"effectivePersonalComputeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveRestrictWorkspaceAdmins() DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference {
 	var returns DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference
 	_jsii_.Get(
 		j,
 		"effectiveRestrictWorkspaceAdmins",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) EffectiveRestrictWorkspaceAdminsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"effectiveRestrictWorkspaceAdminsInput",
 		&returns,
 	)
 	return returns
@@ -449,16 +319,6 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) IntegerVal() DataDatabricksAc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) IntegerValInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"integerValInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountSettingV2) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -509,16 +369,6 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) PersonalCompute() DataDatabri
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) PersonalComputeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"personalComputeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountSettingV2) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -549,31 +399,11 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) RestrictWorkspaceAdmins() Dat
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) RestrictWorkspaceAdminsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"restrictWorkspaceAdminsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountSettingV2) StringVal() DataDatabricksAccountSettingV2StringValOutputReference {
 	var returns DataDatabricksAccountSettingV2StringValOutputReference
 	_jsii_.Get(
 		j,
 		"stringVal",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAccountSettingV2) StringValInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"stringValInput",
 		&returns,
 	)
 	return returns
@@ -610,7 +440,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
 func NewDataDatabricksAccountSettingV2(scope constructs.Construct, id *string, config *DataDatabricksAccountSettingV2Config) DataDatabricksAccountSettingV2 {
 	_init_.Initialize()
 
@@ -628,7 +458,7 @@ func NewDataDatabricksAccountSettingV2(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source.
 func NewDataDatabricksAccountSettingV2_Override(d DataDatabricksAccountSettingV2, scope constructs.Construct, id *string, config *DataDatabricksAccountSettingV2Config) {
 	_init_.Initialize()
 
@@ -981,265 +811,10 @@ func (d *jsiiProxy_DataDatabricksAccountSettingV2) OverrideLogicalId(newLogicalI
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutAibiDashboardEmbeddingAccessPolicy(value *DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy) {
-	if err := d.validatePutAibiDashboardEmbeddingAccessPolicyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putAibiDashboardEmbeddingAccessPolicy",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutAibiDashboardEmbeddingApprovedDomains(value *DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains) {
-	if err := d.validatePutAibiDashboardEmbeddingApprovedDomainsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putAibiDashboardEmbeddingApprovedDomains",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutAutomaticClusterUpdateWorkspace(value *DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace) {
-	if err := d.validatePutAutomaticClusterUpdateWorkspaceParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putAutomaticClusterUpdateWorkspace",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutBooleanVal(value *DataDatabricksAccountSettingV2BooleanVal) {
-	if err := d.validatePutBooleanValParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putBooleanVal",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutEffectiveAibiDashboardEmbeddingAccessPolicy(value *DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) {
-	if err := d.validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putEffectiveAibiDashboardEmbeddingAccessPolicy",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutEffectiveAibiDashboardEmbeddingApprovedDomains(value *DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains) {
-	if err := d.validatePutEffectiveAibiDashboardEmbeddingApprovedDomainsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putEffectiveAibiDashboardEmbeddingApprovedDomains",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutEffectiveAutomaticClusterUpdateWorkspace(value *DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace) {
-	if err := d.validatePutEffectiveAutomaticClusterUpdateWorkspaceParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putEffectiveAutomaticClusterUpdateWorkspace",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutEffectivePersonalCompute(value *DataDatabricksAccountSettingV2EffectivePersonalCompute) {
-	if err := d.validatePutEffectivePersonalComputeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putEffectivePersonalCompute",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutEffectiveRestrictWorkspaceAdmins(value *DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins) {
-	if err := d.validatePutEffectiveRestrictWorkspaceAdminsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putEffectiveRestrictWorkspaceAdmins",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutIntegerVal(value *DataDatabricksAccountSettingV2IntegerVal) {
-	if err := d.validatePutIntegerValParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putIntegerVal",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutPersonalCompute(value *DataDatabricksAccountSettingV2PersonalCompute) {
-	if err := d.validatePutPersonalComputeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putPersonalCompute",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutRestrictWorkspaceAdmins(value *DataDatabricksAccountSettingV2RestrictWorkspaceAdmins) {
-	if err := d.validatePutRestrictWorkspaceAdminsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putRestrictWorkspaceAdmins",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) PutStringVal(value *DataDatabricksAccountSettingV2StringVal) {
-	if err := d.validatePutStringValParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putStringVal",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetAibiDashboardEmbeddingAccessPolicy() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAibiDashboardEmbeddingAccessPolicy",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetAibiDashboardEmbeddingApprovedDomains() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAibiDashboardEmbeddingApprovedDomains",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetAutomaticClusterUpdateWorkspace() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAutomaticClusterUpdateWorkspace",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetBooleanVal() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetBooleanVal",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetEffectiveAibiDashboardEmbeddingAccessPolicy() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEffectiveAibiDashboardEmbeddingAccessPolicy",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetEffectiveAibiDashboardEmbeddingApprovedDomains() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEffectiveAibiDashboardEmbeddingApprovedDomains",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetEffectiveAutomaticClusterUpdateWorkspace() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEffectiveAutomaticClusterUpdateWorkspace",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetEffectivePersonalCompute() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEffectivePersonalCompute",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetEffectiveRestrictWorkspaceAdmins() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEffectiveRestrictWorkspaceAdmins",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetIntegerVal() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIntegerVal",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetPersonalCompute() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPersonalCompute",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetRestrictWorkspaceAdmins() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRestrictWorkspaceAdmins",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) ResetStringVal() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetStringVal",
 		nil, // no parameters
 	)
 }

@@ -44,8 +44,6 @@ type DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference int
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Value() *string
-	SetValue(val *string)
-	ValueInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,7 +68,6 @@ type DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -186,16 +183,6 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) ValueInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"valueInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewDataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference {
 	_init_.Initialize()
@@ -286,17 +273,6 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutpu
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference)SetValue(val *string) {
-	if err := j.validateSetValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"value",
 		val,
 	)
 }
@@ -485,14 +461,6 @@ func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutpu
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) ResetValue() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetValue",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

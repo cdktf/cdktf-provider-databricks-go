@@ -33,8 +33,8 @@ type DataDatabricksRfaAccessRequestDestinationsSecurableOutputReference interfac
 	FullName() *string
 	SetFullName(val *string)
 	FullNameInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksRfaAccessRequestDestinationsSecurable
+	SetInternalValue(val *DataDatabricksRfaAccessRequestDestinationsSecurable)
 	ProviderShare() *string
 	SetProviderShare(val *string)
 	ProviderShareInput() *string
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinationsSecurableOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinationsSecurableOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinationsSecurableOutputReference) InternalValue() *DataDatabricksRfaAccessRequestDestinationsSecurable {
+	var returns *DataDatabricksRfaAccessRequestDestinationsSecurable
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -282,7 +282,7 @@ func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinationsSecurableOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinationsSecurableOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinationsSecurableOutputReference)SetInternalValue(val *DataDatabricksRfaAccessRequestDestinationsSecurable) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

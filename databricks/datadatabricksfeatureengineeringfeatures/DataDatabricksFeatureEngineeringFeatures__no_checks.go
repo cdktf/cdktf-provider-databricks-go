@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures) validateSetLifecycl
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatures) validateSetPageSizeParameters(val *float64) error {
+	return nil
+}
+
 func validateNewDataDatabricksFeatureEngineeringFeaturesParameters(scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringFeaturesConfig) error {
 	return nil
 }

@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplates) validateSetLifecyc
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplates) validateSetPageSizeParameters(val *float64) error {
+	return nil
+}
+
 func validateNewDataDatabricksAppsSettingsCustomTemplatesParameters(scope constructs.Construct, id *string, config *DataDatabricksAppsSettingsCustomTemplatesConfig) error {
 	return nil
 }

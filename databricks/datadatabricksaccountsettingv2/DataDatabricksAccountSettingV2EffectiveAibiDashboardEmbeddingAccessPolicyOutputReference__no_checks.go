@@ -63,7 +63,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbedding
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutputReference) validateSetInternalValueParameters(val *DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) error {
 	return nil
 }
 

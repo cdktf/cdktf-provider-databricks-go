@@ -114,39 +114,6 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeature) validateOverrideLogi
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeature) validatePutFunctionParameters(value *DataDatabricksFeatureEngineeringFeatureFunction) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeature) validatePutSourceParameters(value *DataDatabricksFeatureEngineeringFeatureSource) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeature) validatePutTimeWindowParameters(value *DataDatabricksFeatureEngineeringFeatureTimeWindow) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func validateDataDatabricksFeatureEngineeringFeature_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -244,23 +211,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) validateSetCountPara
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) validateSetDescriptionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) validateSetFullNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) validateSetInputsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -5,9 +5,9 @@ package job
 
 
 type JobTaskForEachTaskTaskDbtCloudTask struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/job#connection_resource_name Job#connection_resource_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/job#connection_resource_name Job#connection_resource_name}.
 	ConnectionResourceName *string `field:"optional" json:"connectionResourceName" yaml:"connectionResourceName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/job#dbt_cloud_job_id Job#dbt_cloud_job_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/job#dbt_cloud_job_id Job#dbt_cloud_job_id}.
 	DbtCloudJobId *float64 `field:"optional" json:"dbtCloudJobId" yaml:"dbtCloudJobId"`
 }
 

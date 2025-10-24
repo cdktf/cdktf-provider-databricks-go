@@ -41,6 +41,8 @@ type DataDatabricksDataQualityRefreshesRefreshesOutputReference interface {
 	SetObjectType(val *string)
 	ObjectTypeInput() *string
 	RefreshId() *float64
+	SetRefreshId(val *float64)
+	RefreshIdInput() *float64
 	StartTimeMs() *float64
 	State() *string
 	// Experimental.
@@ -211,6 +213,16 @@ func (j *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) R
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) RefreshIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"refreshIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference) StartTimeMs() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -340,6 +352,17 @@ func (j *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference)Se
 	_jsii_.Set(
 		j,
 		"objectType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesOutputReference)SetRefreshId(val *float64) {
+	if err := j.validateSetRefreshIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"refreshId",
 		val,
 	)
 }

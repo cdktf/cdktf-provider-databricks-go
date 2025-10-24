@@ -47,23 +47,7 @@ func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateInt
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validatePutColumnMaskParameters(value *DataDatabricksPolicyInfosPoliciesColumnMask) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validatePutMatchColumnsParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validatePutRowFilterParameters(value *DataDatabricksPolicyInfosPoliciesRowFilter) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetCommentParameters(val *string) error {
 	return nil
 }
 
@@ -72,14 +56,6 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSet
 }
 
 func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetExceptPrincipalsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetForSecurableTypeParameters(val *string) error {
 	return nil
 }
 
@@ -99,23 +75,11 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetPolicyTypeParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetToPrincipalsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetWhenConditionParameters(val *string) error {
 	return nil
 }
 

@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataDatabricksTagPolicies) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksTagPolicies) validateSetPageSizeParameters(val *float64) error {
+	return nil
+}
+
 func validateNewDataDatabricksTagPoliciesParameters(scope constructs.Construct, id *string, config *DataDatabricksTagPoliciesConfig) error {
 	return nil
 }

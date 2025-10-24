@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataDatabricksAlertsV2) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksAlertsV2) validateSetPageSizeParameters(val *float64) error {
+	return nil
+}
+
 func validateNewDataDatabricksAlertsV2Parameters(scope constructs.Construct, id *string, config *DataDatabricksAlertsV2Config) error {
 	return nil
 }

@@ -30,8 +30,8 @@ type DataDatabricksDatabaseInstancesDatabaseInstancesCustomTagsOutputReference i
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksDatabaseInstancesDatabaseInstancesCustomTags
+	SetInternalValue(val *DataDatabricksDatabaseInstancesDatabaseInstancesCustomTags)
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -127,8 +127,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesCustomTagsOut
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesCustomTagsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesCustomTagsOutputReference) InternalValue() *DataDatabricksDatabaseInstancesDatabaseInstancesCustomTags {
+	var returns *DataDatabricksDatabaseInstancesDatabaseInstancesCustomTags
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -247,7 +247,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesCustomTagsOut
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesCustomTagsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesCustomTagsOutputReference)SetInternalValue(val *DataDatabricksDatabaseInstancesDatabaseInstancesCustomTags) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

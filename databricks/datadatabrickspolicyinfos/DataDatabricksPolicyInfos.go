@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/policy_infos databricks_policy_infos}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/policy_infos databricks_policy_infos}.
 type DataDatabricksPolicyInfos interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -35,10 +35,16 @@ type DataDatabricksPolicyInfos interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	IncludeInherited() interface{}
+	SetIncludeInherited(val interface{})
+	IncludeInheritedInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxResults() *float64
+	SetMaxResults(val *float64)
+	MaxResultsInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	OnSecurableFullname() *string
@@ -85,6 +91,8 @@ type DataDatabricksPolicyInfos interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetIncludeInherited()
+	ResetMaxResults()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -177,11 +185,51 @@ func (j *jsiiProxy_DataDatabricksPolicyInfos) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksPolicyInfos) IncludeInherited() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeInherited",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfos) IncludeInheritedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeInheritedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksPolicyInfos) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfos) MaxResults() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxResults",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfos) MaxResultsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxResultsInput",
 		&returns,
 	)
 	return returns
@@ -298,7 +346,7 @@ func (j *jsiiProxy_DataDatabricksPolicyInfos) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/policy_infos databricks_policy_infos} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/policy_infos databricks_policy_infos} Data Source.
 func NewDataDatabricksPolicyInfos(scope constructs.Construct, id *string, config *DataDatabricksPolicyInfosConfig) DataDatabricksPolicyInfos {
 	_init_.Initialize()
 
@@ -316,7 +364,7 @@ func NewDataDatabricksPolicyInfos(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/policy_infos databricks_policy_infos} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/policy_infos databricks_policy_infos} Data Source.
 func NewDataDatabricksPolicyInfos_Override(d DataDatabricksPolicyInfos, scope constructs.Construct, id *string, config *DataDatabricksPolicyInfosConfig) {
 	_init_.Initialize()
 
@@ -354,6 +402,17 @@ func (j *jsiiProxy_DataDatabricksPolicyInfos)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksPolicyInfos)SetIncludeInherited(val interface{}) {
+	if err := j.validateSetIncludeInheritedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeInherited",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksPolicyInfos)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -361,6 +420,17 @@ func (j *jsiiProxy_DataDatabricksPolicyInfos)SetLifecycle(val *cdktf.TerraformRe
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfos)SetMaxResults(val *float64) {
+	if err := j.validateSetMaxResultsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxResults",
 		val,
 	)
 }
@@ -677,6 +747,22 @@ func (d *jsiiProxy_DataDatabricksPolicyInfos) OverrideLogicalId(newLogicalId *st
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksPolicyInfos) ResetIncludeInherited() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncludeInherited",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksPolicyInfos) ResetMaxResults() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMaxResults",
+		nil, // no parameters
 	)
 }
 

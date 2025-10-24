@@ -33,8 +33,8 @@ type DataDatabricksAppsSettingsCustomTemplateManifestOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAppsSettingsCustomTemplateManifest
+	SetInternalValue(val *DataDatabricksAppsSettingsCustomTemplateManifest)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestOutputReference) InternalValue() *DataDatabricksAppsSettingsCustomTemplateManifest {
+	var returns *DataDatabricksAppsSettingsCustomTemplateManifest
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -304,7 +304,7 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestOutputReference)SetInternalValue(val *DataDatabricksAppsSettingsCustomTemplateManifest) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

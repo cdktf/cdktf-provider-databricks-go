@@ -59,18 +59,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference) validateSetCreateDatabaseIfNotExistsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference) validateSetDatabaseInstanceNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference) validateSetDatabaseNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference) validateSetInternalValueParameters(val *DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogs) error {
 	return nil
 }

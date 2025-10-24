@@ -47,10 +47,6 @@ func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) validatePutSpecParameters(value *DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesSpec) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -63,15 +59,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) validateSetDatabaseInstanceNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) validateSetInternalValueParameters(val *DataDatabricksDatabaseSyncedDatabaseTablesSyncedTables) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) validateSetLogicalDatabaseNameParameters(val *string) error {
 	return nil
 }
 

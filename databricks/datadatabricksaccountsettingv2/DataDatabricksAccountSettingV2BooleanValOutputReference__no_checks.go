@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2BooleanValOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2BooleanValOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksAccountSettingV2BooleanValOutputReference) validateSetInternalValueParameters(val *DataDatabricksAccountSettingV2BooleanVal) error {
 	return nil
 }
 

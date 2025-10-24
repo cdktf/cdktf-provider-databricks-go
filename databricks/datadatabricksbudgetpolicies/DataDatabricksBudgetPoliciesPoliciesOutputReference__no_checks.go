@@ -47,15 +47,7 @@ func (d *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) validatePutCustomTagsParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) validateSetBindingWorkspaceIdsParameters(val *[]*float64) error {
 	return nil
 }
 
@@ -71,7 +63,7 @@ func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) validateSetPolicyNameParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) validateSetPolicyIdParameters(val *string) error {
 	return nil
 }
 

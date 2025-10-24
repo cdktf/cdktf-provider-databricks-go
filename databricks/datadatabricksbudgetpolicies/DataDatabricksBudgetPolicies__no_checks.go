@@ -55,6 +55,14 @@ func (d *jsiiProxy_DataDatabricksBudgetPolicies) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksBudgetPolicies) validatePutFilterByParameters(value *DataDatabricksBudgetPoliciesFilterBy) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksBudgetPolicies) validatePutSortSpecParameters(value *DataDatabricksBudgetPoliciesSortSpec) error {
+	return nil
+}
+
 func validateDataDatabricksBudgetPolicies_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,6 +84,10 @@ func (j *jsiiProxy_DataDatabricksBudgetPolicies) validateSetCountParameters(val 
 }
 
 func (j *jsiiProxy_DataDatabricksBudgetPolicies) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksBudgetPolicies) validateSetPageSizeParameters(val *float64) error {
 	return nil
 }
 

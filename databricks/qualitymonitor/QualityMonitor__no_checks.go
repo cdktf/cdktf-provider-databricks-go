@@ -91,6 +91,10 @@ func (q *jsiiProxy_QualityMonitor) validatePutNotificationsParameters(value inte
 	return nil
 }
 
+func (q *jsiiProxy_QualityMonitor) validatePutProviderConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (q *jsiiProxy_QualityMonitor) validatePutScheduleParameters(value interface{}) error {
 	return nil
 }

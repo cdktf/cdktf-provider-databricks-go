@@ -30,8 +30,8 @@ type DataDatabricksAccountSettingV2IntegerValOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAccountSettingV2IntegerVal
+	SetInternalValue(val *DataDatabricksAccountSettingV2IntegerVal)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2IntegerValOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2IntegerValOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAccountSettingV2IntegerValOutputReference) InternalValue() *DataDatabricksAccountSettingV2IntegerVal {
+	var returns *DataDatabricksAccountSettingV2IntegerVal
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -223,7 +223,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2IntegerValOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2IntegerValOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAccountSettingV2IntegerValOutputReference)SetInternalValue(val *DataDatabricksAccountSettingV2IntegerVal) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

@@ -36,8 +36,8 @@ type DataDatabricksAlertV2EvaluationOutputReference interface {
 	EmptyResultStateInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAlertV2Evaluation
+	SetInternalValue(val *DataDatabricksAlertV2Evaluation)
 	LastEvaluatedAt() *string
 	Notification() DataDatabricksAlertV2EvaluationNotificationOutputReference
 	NotificationInput() interface{}
@@ -181,8 +181,8 @@ func (j *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference) InternalValue() *DataDatabricksAlertV2Evaluation {
+	var returns *DataDatabricksAlertV2Evaluation
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -363,7 +363,7 @@ func (j *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference)SetEmptyResult
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference)SetInternalValue(val *DataDatabricksAlertV2Evaluation) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

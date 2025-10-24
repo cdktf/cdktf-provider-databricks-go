@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table}.
 type DataDatabricksDatabaseSyncedDatabaseTable interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -24,8 +24,6 @@ type DataDatabricksDatabaseSyncedDatabaseTable interface {
 	// Experimental.
 	SetCount(val interface{})
 	DatabaseInstanceName() *string
-	SetDatabaseInstanceName(val *string)
-	DatabaseInstanceNameInput() *string
 	DataSynchronizationStatus() DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusOutputReference
 	// Experimental.
 	DependsOn() *[]*string
@@ -46,8 +44,6 @@ type DataDatabricksDatabaseSyncedDatabaseTable interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LogicalDatabaseName() *string
-	SetLogicalDatabaseName(val *string)
-	LogicalDatabaseNameInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -60,7 +56,6 @@ type DataDatabricksDatabaseSyncedDatabaseTable interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Spec() DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference
-	SpecInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -93,13 +88,9 @@ type DataDatabricksDatabaseSyncedDatabaseTable interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutSpec(value *DataDatabricksDatabaseSyncedDatabaseTableSpec)
-	ResetDatabaseInstanceName()
-	ResetLogicalDatabaseName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSpec()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -154,16 +145,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) DatabaseInstanceNa
 	_jsii_.Get(
 		j,
 		"databaseInstanceName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) DatabaseInstanceNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"databaseInstanceNameInput",
 		&returns,
 	)
 	return returns
@@ -259,16 +240,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) LogicalDatabaseNam
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) LogicalDatabaseNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"logicalDatabaseNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -329,16 +300,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) Spec() DataDatabri
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) SpecInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"specInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -380,7 +341,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) UnityCatalogProvis
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table} Data Source.
 func NewDataDatabricksDatabaseSyncedDatabaseTable(scope constructs.Construct, id *string, config *DataDatabricksDatabaseSyncedDatabaseTableConfig) DataDatabricksDatabaseSyncedDatabaseTable {
 	_init_.Initialize()
 
@@ -398,7 +359,7 @@ func NewDataDatabricksDatabaseSyncedDatabaseTable(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table} Data Source.
 func NewDataDatabricksDatabaseSyncedDatabaseTable_Override(d DataDatabricksDatabaseSyncedDatabaseTable, scope constructs.Construct, id *string, config *DataDatabricksDatabaseSyncedDatabaseTableConfig) {
 	_init_.Initialize()
 
@@ -416,17 +377,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable)SetCount(val interf
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable)SetDatabaseInstanceName(val *string) {
-	if err := j.validateSetDatabaseInstanceNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"databaseInstanceName",
 		val,
 	)
 }
@@ -454,17 +404,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable)SetLifecycle(val *c
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable)SetLogicalDatabaseName(val *string) {
-	if err := j.validateSetLogicalDatabaseNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"logicalDatabaseName",
 		val,
 	)
 }
@@ -773,45 +712,10 @@ func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) OverrideLogicalId(
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) PutSpec(value *DataDatabricksDatabaseSyncedDatabaseTableSpec) {
-	if err := d.validatePutSpecParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putSpec",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) ResetDatabaseInstanceName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDatabaseInstanceName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) ResetLogicalDatabaseName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetLogicalDatabaseName",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) ResetSpec() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSpec",
 		nil, // no parameters
 	)
 }

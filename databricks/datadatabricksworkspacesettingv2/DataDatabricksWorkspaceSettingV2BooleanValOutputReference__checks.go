@@ -166,25 +166,9 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2BooleanValOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2BooleanValOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataDatabricksWorkspaceSettingV2BooleanVal:
-		val := val.(*DataDatabricksWorkspaceSettingV2BooleanVal)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataDatabricksWorkspaceSettingV2BooleanVal:
-		val_ := val.(DataDatabricksWorkspaceSettingV2BooleanVal)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksWorkspaceSettingV2BooleanVal; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2BooleanValOutputReference) validateSetInternalValueParameters(val *DataDatabricksWorkspaceSettingV2BooleanVal) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

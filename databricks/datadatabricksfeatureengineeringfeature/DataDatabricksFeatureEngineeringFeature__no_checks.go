@@ -55,18 +55,6 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeature) validateOverrideLogi
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeature) validatePutFunctionParameters(value *DataDatabricksFeatureEngineeringFeatureFunction) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeature) validatePutSourceParameters(value *DataDatabricksFeatureEngineeringFeatureSource) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeature) validatePutTimeWindowParameters(value *DataDatabricksFeatureEngineeringFeatureTimeWindow) error {
-	return nil
-}
-
 func validateDataDatabricksFeatureEngineeringFeature_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -87,15 +75,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) validateSetCountPara
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) validateSetFullNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) validateSetInputsParameters(val *[]*string) error {
 	return nil
 }
 

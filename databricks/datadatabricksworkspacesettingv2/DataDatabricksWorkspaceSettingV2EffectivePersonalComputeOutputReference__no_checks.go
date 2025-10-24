@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectivePersonalComputeOutputReference) validateSetInternalValueParameters(val *DataDatabricksWorkspaceSettingV2EffectivePersonalCompute) error {
 	return nil
 }
 

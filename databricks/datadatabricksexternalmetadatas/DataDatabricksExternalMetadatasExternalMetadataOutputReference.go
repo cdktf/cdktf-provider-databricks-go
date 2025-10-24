@@ -14,8 +14,6 @@ import (
 type DataDatabricksExternalMetadatasExternalMetadataOutputReference interface {
 	cdktf.ComplexObject
 	Columns() *[]*string
-	SetColumns(val *[]*string)
-	ColumnsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,16 +32,10 @@ type DataDatabricksExternalMetadatasExternalMetadataOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	EntityType() *string
-	SetEntityType(val *string)
-	EntityTypeInput() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	InternalValue() *DataDatabricksExternalMetadatasExternalMetadata
 	SetInternalValue(val *DataDatabricksExternalMetadatasExternalMetadata)
 	MetastoreId() *string
@@ -51,14 +43,8 @@ type DataDatabricksExternalMetadatasExternalMetadataOutputReference interface {
 	SetName(val *string)
 	NameInput() *string
 	Owner() *string
-	SetOwner(val *string)
-	OwnerInput() *string
-	Properties() *map[string]*string
-	SetProperties(val *map[string]*string)
-	PropertiesInput() *map[string]*string
+	Properties() cdktf.StringMap
 	SystemType() *string
-	SetSystemType(val *string)
-	SystemTypeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,8 +56,6 @@ type DataDatabricksExternalMetadatasExternalMetadataOutputReference interface {
 	UpdatedBy() *string
 	UpdateTime() *string
 	Url() *string
-	SetUrl(val *string)
-	UrlInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -96,11 +80,6 @@ type DataDatabricksExternalMetadatasExternalMetadataOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetColumns()
-	ResetDescription()
-	ResetOwner()
-	ResetProperties()
-	ResetUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -121,16 +100,6 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	_jsii_.Get(
 		j,
 		"columns",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) ColumnsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"columnsInput",
 		&returns,
 	)
 	return returns
@@ -196,31 +165,11 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) EntityType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"entityType",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) EntityTypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"entityTypeInput",
 		&returns,
 	)
 	return returns
@@ -241,16 +190,6 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -306,31 +245,11 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) OwnerInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ownerInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) Properties() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) Properties() cdktf.StringMap {
+	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"properties",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) PropertiesInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"propertiesInput",
 		&returns,
 	)
 	return returns
@@ -341,16 +260,6 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	_jsii_.Get(
 		j,
 		"systemType",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) SystemTypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"systemTypeInput",
 		&returns,
 	)
 	return returns
@@ -406,16 +315,6 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) UrlInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"urlInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewDataDatabricksExternalMetadatasExternalMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksExternalMetadatasExternalMetadataOutputReference {
 	_init_.Initialize()
@@ -444,17 +343,6 @@ func NewDataDatabricksExternalMetadatasExternalMetadataOutputReference_Override(
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference)SetColumns(val *[]*string) {
-	if err := j.validateSetColumnsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"columns",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -473,39 +361,6 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference)SetEntityType(val *string) {
-	if err := j.validateSetEntityTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"entityType",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -532,39 +387,6 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference)SetOwner(val *string) {
-	if err := j.validateSetOwnerParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"owner",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference)SetProperties(val *map[string]*string) {
-	if err := j.validateSetPropertiesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"properties",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference)SetSystemType(val *string) {
-	if err := j.validateSetSystemTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"systemType",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -583,17 +405,6 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference)SetUrl(val *string) {
-	if err := j.validateSetUrlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"url",
 		val,
 	)
 }
@@ -782,46 +593,6 @@ func (d *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) ResetColumns() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetColumns",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) ResetDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) ResetOwner() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOwner",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) ResetProperties() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetProperties",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) ResetUrl() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUrl",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

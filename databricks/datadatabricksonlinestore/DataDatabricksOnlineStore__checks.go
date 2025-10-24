@@ -154,14 +154,6 @@ func validateDataDatabricksOnlineStore_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksOnlineStore) validateSetCapacityParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksOnlineStore) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:
@@ -228,14 +220,6 @@ func (j *jsiiProxy_DataDatabricksOnlineStore) validateSetLifecycleParameters(val
 }
 
 func (j *jsiiProxy_DataDatabricksOnlineStore) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksOnlineStore) validateSetReadReplicaCountParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

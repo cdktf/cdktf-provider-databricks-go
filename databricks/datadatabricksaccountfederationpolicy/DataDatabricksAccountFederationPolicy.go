@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_federation_policy databricks_account_federation_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_federation_policy databricks_account_federation_policy}.
 type DataDatabricksAccountFederationPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -29,8 +29,6 @@ type DataDatabricksAccountFederationPolicy interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -47,8 +45,9 @@ type DataDatabricksAccountFederationPolicy interface {
 	// The tree node.
 	Node() constructs.Node
 	OidcPolicy() DataDatabricksAccountFederationPolicyOidcPolicyOutputReference
-	OidcPolicyInput() interface{}
 	PolicyId() *string
+	SetPolicyId(val *string)
+	PolicyIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -89,9 +88,6 @@ type DataDatabricksAccountFederationPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutOidcPolicy(value *DataDatabricksAccountFederationPolicyOidcPolicy)
-	ResetDescription()
-	ResetOidcPolicy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -174,16 +170,6 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) Description() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -254,21 +240,21 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) OidcPolicy() DataDatab
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) OidcPolicyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"oidcPolicyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) PolicyId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"policyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) PolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyIdInput",
 		&returns,
 	)
 	return returns
@@ -355,7 +341,7 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_federation_policy databricks_account_federation_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_federation_policy databricks_account_federation_policy} Data Source.
 func NewDataDatabricksAccountFederationPolicy(scope constructs.Construct, id *string, config *DataDatabricksAccountFederationPolicyConfig) DataDatabricksAccountFederationPolicy {
 	_init_.Initialize()
 
@@ -373,7 +359,7 @@ func NewDataDatabricksAccountFederationPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_federation_policy databricks_account_federation_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_federation_policy databricks_account_federation_policy} Data Source.
 func NewDataDatabricksAccountFederationPolicy_Override(d DataDatabricksAccountFederationPolicy, scope constructs.Construct, id *string, config *DataDatabricksAccountFederationPolicyConfig) {
 	_init_.Initialize()
 
@@ -403,17 +389,6 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicy)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPolicy)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksAccountFederationPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -429,6 +404,17 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicy)SetLifecycle(val *cdktf
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAccountFederationPolicy)SetPolicyId(val *string) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyId",
 		val,
 	)
 }
@@ -723,33 +709,6 @@ func (d *jsiiProxy_DataDatabricksAccountFederationPolicy) OverrideLogicalId(newL
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountFederationPolicy) PutOidcPolicy(value *DataDatabricksAccountFederationPolicyOidcPolicy) {
-	if err := d.validatePutOidcPolicyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putOidcPolicy",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountFederationPolicy) ResetDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountFederationPolicy) ResetOidcPolicy() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOidcPolicy",
-		nil, // no parameters
 	)
 }
 

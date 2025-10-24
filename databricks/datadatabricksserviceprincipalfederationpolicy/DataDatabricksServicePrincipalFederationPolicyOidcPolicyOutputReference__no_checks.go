@@ -63,7 +63,7 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicyOidcPolicyOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicyOidcPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicyOidcPolicyOutputReference) validateSetInternalValueParameters(val *DataDatabricksServicePrincipalFederationPolicyOidcPolicy) error {
 	return nil
 }
 

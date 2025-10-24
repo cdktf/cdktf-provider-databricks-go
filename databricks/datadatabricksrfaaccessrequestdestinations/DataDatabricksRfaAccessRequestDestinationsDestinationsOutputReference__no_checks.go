@@ -67,7 +67,7 @@ func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinationsDestinationsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinationsDestinationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinationsDestinationsOutputReference) validateSetInternalValueParameters(val *DataDatabricksRfaAccessRequestDestinationsDestinations) error {
 	return nil
 }
 

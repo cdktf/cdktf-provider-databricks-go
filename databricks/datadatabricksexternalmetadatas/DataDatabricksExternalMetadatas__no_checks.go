@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatas) validateSetLifecycleParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksExternalMetadatas) validateSetPageSizeParameters(val *float64) error {
+	return nil
+}
+
 func validateNewDataDatabricksExternalMetadatasParameters(scope constructs.Construct, id *string, config *DataDatabricksExternalMetadatasConfig) error {
 	return nil
 }

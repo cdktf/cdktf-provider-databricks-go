@@ -47,19 +47,7 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validatePutCustomTagsParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validatePutParentInstanceRefParameters(value *DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetCapacityParameters(val *string) error {
 	return nil
 }
 
@@ -71,14 +59,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetEnablePgNativeLoginParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetEnableReadableSecondariesParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetInternalValueParameters(val *DataDatabricksDatabaseInstancesDatabaseInstances) error {
 	return nil
 }
@@ -87,27 +67,11 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetNodeCountParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetRetentionWindowInDaysParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetStoppedParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference) validateSetUsagePolicyIdParameters(val *string) error {
 	return nil
 }
 

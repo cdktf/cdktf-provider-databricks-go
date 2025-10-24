@@ -30,8 +30,8 @@ type DataDatabricksAlertsV2AlertsRunAsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAlertsV2AlertsRunAs
+	SetInternalValue(val *DataDatabricksAlertsV2AlertsRunAs)
 	ServicePrincipalName() *string
 	SetServicePrincipalName(val *string)
 	ServicePrincipalNameInput() *string
@@ -127,8 +127,8 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsRunAsOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsRunAsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAlertsV2AlertsRunAsOutputReference) InternalValue() *DataDatabricksAlertsV2AlertsRunAs {
+	var returns *DataDatabricksAlertsV2AlertsRunAs
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -247,7 +247,7 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsRunAsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsRunAsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAlertsV2AlertsRunAsOutputReference)SetInternalValue(val *DataDatabricksAlertsV2AlertsRunAs) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

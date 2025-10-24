@@ -166,25 +166,9 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2PersonalComputeOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2PersonalComputeOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataDatabricksWorkspaceSettingV2PersonalCompute:
-		val := val.(*DataDatabricksWorkspaceSettingV2PersonalCompute)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataDatabricksWorkspaceSettingV2PersonalCompute:
-		val_ := val.(DataDatabricksWorkspaceSettingV2PersonalCompute)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksWorkspaceSettingV2PersonalCompute; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2PersonalComputeOutputReference) validateSetInternalValueParameters(val *DataDatabricksWorkspaceSettingV2PersonalCompute) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

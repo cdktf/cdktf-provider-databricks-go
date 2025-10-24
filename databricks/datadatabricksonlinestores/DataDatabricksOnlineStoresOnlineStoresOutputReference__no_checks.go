@@ -51,10 +51,6 @@ func (d *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) validateSetCapacityParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -68,10 +64,6 @@ func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) valida
 }
 
 func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) validateSetReadReplicaCountParameters(val *float64) error {
 	return nil
 }
 

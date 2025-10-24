@@ -205,25 +205,9 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataDatabricksFeatureEngineeringFeatureFunction:
-		val := val.(*DataDatabricksFeatureEngineeringFeatureFunction)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataDatabricksFeatureEngineeringFeatureFunction:
-		val_ := val.(DataDatabricksFeatureEngineeringFeatureFunction)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksFeatureEngineeringFeatureFunction; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) validateSetInternalValueParameters(val *DataDatabricksFeatureEngineeringFeatureFunction) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

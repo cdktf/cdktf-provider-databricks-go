@@ -101,14 +101,6 @@ func (d *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetColumnsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -174,30 +166,6 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetDescriptionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetEntityTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetInternalValueParameters(val *DataDatabricksExternalMetadatasExternalMetadata) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -214,30 +182,6 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetOwnerParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetPropertiesParameters(val *map[string]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetSystemTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -247,14 +191,6 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 }
 
 func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetUrlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

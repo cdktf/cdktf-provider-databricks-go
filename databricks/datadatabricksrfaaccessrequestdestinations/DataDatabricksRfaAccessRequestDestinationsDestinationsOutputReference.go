@@ -36,8 +36,8 @@ type DataDatabricksRfaAccessRequestDestinationsDestinationsOutputReference inter
 	DestinationTypeInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksRfaAccessRequestDestinationsDestinations
+	SetInternalValue(val *DataDatabricksRfaAccessRequestDestinationsDestinations)
 	SpecialDestination() *string
 	SetSpecialDestination(val *string)
 	SpecialDestinationInput() *string
@@ -171,8 +171,8 @@ func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinationsDestinationsOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinationsDestinationsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinationsDestinationsOutputReference) InternalValue() *DataDatabricksRfaAccessRequestDestinationsDestinations {
+	var returns *DataDatabricksRfaAccessRequestDestinationsDestinations
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinationsDestinationsOutputR
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinationsDestinationsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinationsDestinationsOutputReference)SetInternalValue(val *DataDatabricksRfaAccessRequestDestinationsDestinations) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

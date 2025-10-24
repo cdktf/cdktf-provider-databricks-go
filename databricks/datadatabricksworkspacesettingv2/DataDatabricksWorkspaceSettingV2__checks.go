@@ -114,149 +114,6 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validateOverrideLogicalIdPa
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutAibiDashboardEmbeddingAccessPolicyParameters(value *DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutAibiDashboardEmbeddingApprovedDomainsParameters(value *DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutAutomaticClusterUpdateWorkspaceParameters(value *DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspace) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutBooleanValParameters(value *DataDatabricksWorkspaceSettingV2BooleanVal) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value *DataDatabricksWorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutEffectiveAibiDashboardEmbeddingApprovedDomainsParameters(value *DataDatabricksWorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutEffectiveAutomaticClusterUpdateWorkspaceParameters(value *DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutEffectivePersonalComputeParameters(value *DataDatabricksWorkspaceSettingV2EffectivePersonalCompute) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutEffectiveRestrictWorkspaceAdminsParameters(value *DataDatabricksWorkspaceSettingV2EffectiveRestrictWorkspaceAdmins) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutIntegerValParameters(value *DataDatabricksWorkspaceSettingV2IntegerVal) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutPersonalComputeParameters(value *DataDatabricksWorkspaceSettingV2PersonalCompute) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutRestrictWorkspaceAdminsParameters(value *DataDatabricksWorkspaceSettingV2RestrictWorkspaceAdmins) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2) validatePutStringValParameters(value *DataDatabricksWorkspaceSettingV2StringVal) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func validateDataDatabricksWorkspaceSettingV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -379,6 +236,9 @@ func validateNewDataDatabricksWorkspaceSettingV2Parameters(scope constructs.Cons
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
+	if config == nil {
+		return fmt.Errorf("parameter config is required, but nil was provided")
+	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

@@ -30,8 +30,8 @@ type DataDatabricksAlertV2ScheduleOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAlertV2Schedule
+	SetInternalValue(val *DataDatabricksAlertV2Schedule)
 	PauseStatus() *string
 	SetPauseStatus(val *string)
 	PauseStatusInput() *string
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataDatabricksAlertV2ScheduleOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2ScheduleOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAlertV2ScheduleOutputReference) InternalValue() *DataDatabricksAlertV2Schedule {
+	var returns *DataDatabricksAlertV2Schedule
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -271,7 +271,7 @@ func (j *jsiiProxy_DataDatabricksAlertV2ScheduleOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2ScheduleOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAlertV2ScheduleOutputReference)SetInternalValue(val *DataDatabricksAlertV2Schedule) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

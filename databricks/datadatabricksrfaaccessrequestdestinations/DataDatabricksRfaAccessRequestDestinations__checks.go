@@ -114,48 +114,6 @@ func (d *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) validateOverrideL
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) validatePutDestinationsParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataDatabricksRfaAccessRequestDestinationsDestinations:
-		value := value.(*[]*DataDatabricksRfaAccessRequestDestinationsDestinations)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataDatabricksRfaAccessRequestDestinationsDestinations:
-		value_ := value.([]*DataDatabricksRfaAccessRequestDestinationsDestinations)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksRfaAccessRequestDestinationsDestinations; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) validatePutSecurableParameters(value *DataDatabricksRfaAccessRequestDestinationsSecurable) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func validateDataDatabricksRfaAccessRequestDestinations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -270,9 +228,6 @@ func validateNewDataDatabricksRfaAccessRequestDestinationsParameters(scope const
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
-	if config == nil {
-		return fmt.Errorf("parameter config is required, but nil was provided")
-	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

@@ -5,9 +5,9 @@ package featureengineeringfeature
 
 
 type FeatureEngineeringFeatureTimeWindow struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/feature_engineering_feature#duration FeatureEngineeringFeature#duration}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/feature_engineering_feature#duration FeatureEngineeringFeature#duration}.
 	Duration *string `field:"required" json:"duration" yaml:"duration"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
 	Offset *string `field:"optional" json:"offset" yaml:"offset"`
 }
 

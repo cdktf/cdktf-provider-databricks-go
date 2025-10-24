@@ -30,8 +30,8 @@ type DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReferen
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins
+	SetInternalValue(val *DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins)
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmin
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference) InternalValue() *DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins {
+	var returns *DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmin
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference)SetInternalValue(val *DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

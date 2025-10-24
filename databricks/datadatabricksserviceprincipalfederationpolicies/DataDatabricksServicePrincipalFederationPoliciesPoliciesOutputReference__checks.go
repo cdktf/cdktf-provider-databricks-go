@@ -93,17 +93,6 @@ func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) validatePutOidcPolicyParameters(value *DataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicy) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -177,7 +166,15 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) validateSetDescriptionParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) validateSetInternalValueParameters(val *DataDatabricksServicePrincipalFederationPoliciesPolicies) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) validateSetPolicyIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -185,9 +182,9 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) validateSetInternalValueParameters(val *DataDatabricksServicePrincipalFederationPoliciesPolicies) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) validateSetServicePrincipalIdParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

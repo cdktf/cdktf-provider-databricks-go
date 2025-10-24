@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2StringValOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2StringValOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2StringValOutputReference) validateSetInternalValueParameters(val *DataDatabricksWorkspaceSettingV2StringVal) error {
 	return nil
 }
 

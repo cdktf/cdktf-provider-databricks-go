@@ -211,9 +211,25 @@ func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogs) validateSetCountParam
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogs) validateSetInstanceNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogs) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogs) validateSetPageSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -228,6 +244,9 @@ func validateNewDataDatabricksDatabaseDatabaseCatalogsParameters(scope construct
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
+	if config == nil {
+		return fmt.Errorf("parameter config is required, but nil was provided")
+	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

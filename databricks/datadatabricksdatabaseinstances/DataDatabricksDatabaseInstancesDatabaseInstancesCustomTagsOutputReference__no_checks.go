@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesCustomTagsOut
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesCustomTagsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesCustomTagsOutputReference) validateSetInternalValueParameters(val *DataDatabricksDatabaseInstancesDatabaseInstancesCustomTags) error {
 	return nil
 }
 

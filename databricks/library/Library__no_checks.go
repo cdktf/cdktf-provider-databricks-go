@@ -83,6 +83,10 @@ func (l *jsiiProxy_Library) validatePutMavenParameters(value interface{}) error 
 	return nil
 }
 
+func (l *jsiiProxy_Library) validatePutProviderConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_Library) validatePutPypiParameters(value interface{}) error {
 	return nil
 }

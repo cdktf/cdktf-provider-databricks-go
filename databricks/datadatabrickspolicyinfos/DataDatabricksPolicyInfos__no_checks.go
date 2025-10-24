@@ -75,7 +75,15 @@ func (j *jsiiProxy_DataDatabricksPolicyInfos) validateSetCountParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksPolicyInfos) validateSetIncludeInheritedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksPolicyInfos) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksPolicyInfos) validateSetMaxResultsParameters(val *float64) error {
 	return nil
 }
 

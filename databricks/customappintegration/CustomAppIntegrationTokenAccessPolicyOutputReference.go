@@ -13,6 +13,9 @@ import (
 
 type CustomAppIntegrationTokenAccessPolicyOutputReference interface {
 	cdktf.ComplexObject
+	AbsoluteSessionLifetimeInMinutes() *float64
+	SetAbsoluteSessionLifetimeInMinutes(val *float64)
+	AbsoluteSessionLifetimeInMinutesInput() *float64
 	AccessTokenTtlInMinutes() *float64
 	SetAccessTokenTtlInMinutes(val *float64)
 	AccessTokenTtlInMinutesInput() *float64
@@ -31,6 +34,9 @@ type CustomAppIntegrationTokenAccessPolicyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableSingleUseRefreshTokens() interface{}
+	SetEnableSingleUseRefreshTokens(val interface{})
+	EnableSingleUseRefreshTokensInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *CustomAppIntegrationTokenAccessPolicy
@@ -70,7 +76,9 @@ type CustomAppIntegrationTokenAccessPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAbsoluteSessionLifetimeInMinutes()
 	ResetAccessTokenTtlInMinutes()
+	ResetEnableSingleUseRefreshTokens()
 	ResetRefreshTokenTtlInMinutes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -85,6 +93,26 @@ type CustomAppIntegrationTokenAccessPolicyOutputReference interface {
 // The jsii proxy struct for CustomAppIntegrationTokenAccessPolicyOutputReference
 type jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) AbsoluteSessionLifetimeInMinutes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"absoluteSessionLifetimeInMinutes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) AbsoluteSessionLifetimeInMinutesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"absoluteSessionLifetimeInMinutesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) AccessTokenTtlInMinutes() *float64 {
@@ -132,6 +160,26 @@ func (j *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) Creatio
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) EnableSingleUseRefreshTokens() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSingleUseRefreshTokens",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) EnableSingleUseRefreshTokensInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSingleUseRefreshTokensInput",
 		&returns,
 	)
 	return returns
@@ -225,6 +273,17 @@ func NewCustomAppIntegrationTokenAccessPolicyOutputReference_Override(c CustomAp
 	)
 }
 
+func (j *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference)SetAbsoluteSessionLifetimeInMinutes(val *float64) {
+	if err := j.validateSetAbsoluteSessionLifetimeInMinutesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"absoluteSessionLifetimeInMinutes",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference)SetAccessTokenTtlInMinutes(val *float64) {
 	if err := j.validateSetAccessTokenTtlInMinutesParameters(val); err != nil {
 		panic(err)
@@ -254,6 +313,17 @@ func (j *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference)SetCompl
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference)SetEnableSingleUseRefreshTokens(val interface{}) {
+	if err := j.validateSetEnableSingleUseRefreshTokensParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableSingleUseRefreshTokens",
 		val,
 	)
 }
@@ -488,10 +558,26 @@ func (c *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) Interpo
 	return returns
 }
 
+func (c *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) ResetAbsoluteSessionLifetimeInMinutes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAbsoluteSessionLifetimeInMinutes",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) ResetAccessTokenTtlInMinutes() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAccessTokenTtlInMinutes",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) ResetEnableSingleUseRefreshTokens() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableSingleUseRefreshTokens",
 		nil, // no parameters
 	)
 }

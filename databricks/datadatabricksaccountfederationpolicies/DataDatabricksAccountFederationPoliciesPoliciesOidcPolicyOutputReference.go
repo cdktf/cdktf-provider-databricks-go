@@ -33,8 +33,8 @@ type DataDatabricksAccountFederationPoliciesPoliciesOidcPolicyOutputReference in
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAccountFederationPoliciesPoliciesOidcPolicy
+	SetInternalValue(val *DataDatabricksAccountFederationPoliciesPoliciesOidcPolicy)
 	Issuer() *string
 	SetIssuer(val *string)
 	IssuerInput() *string
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOidcPolicyOutp
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOidcPolicyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOidcPolicyOutputReference) InternalValue() *DataDatabricksAccountFederationPoliciesPoliciesOidcPolicy {
+	var returns *DataDatabricksAccountFederationPoliciesPoliciesOidcPolicy
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOidcPolicyOutp
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOidcPolicyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOidcPolicyOutputReference)SetInternalValue(val *DataDatabricksAccountFederationPoliciesPoliciesOidcPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

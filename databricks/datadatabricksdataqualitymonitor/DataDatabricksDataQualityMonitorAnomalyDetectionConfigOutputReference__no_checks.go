@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference) validateSetInternalValueParameters(val *DataDatabricksDataQualityMonitorAnomalyDetectionConfig) error {
 	return nil
 }
 

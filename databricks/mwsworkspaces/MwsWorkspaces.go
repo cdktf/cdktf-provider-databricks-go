@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/mws_workspaces databricks_mws_workspaces}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/mws_workspaces databricks_mws_workspaces}.
 type MwsWorkspaces interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -61,6 +61,9 @@ type MwsWorkspaces interface {
 	SetDeploymentName(val *string)
 	DeploymentNameInput() *string
 	EffectiveComputeMode() *string
+	ExpectedWorkspaceStatus() *string
+	SetExpectedWorkspaceStatus(val *string)
+	ExpectedWorkspaceStatusInput() *string
 	ExternalCustomerInfo() MwsWorkspacesExternalCustomerInfoOutputReference
 	ExternalCustomerInfoInput() *MwsWorkspacesExternalCustomerInfo
 	// Experimental.
@@ -202,6 +205,7 @@ type MwsWorkspaces interface {
 	ResetCustomerManagedKeyId()
 	ResetCustomTags()
 	ResetDeploymentName()
+	ResetExpectedWorkspaceStatus()
 	ResetExternalCustomerInfo()
 	ResetGcpManagedNetworkConfig()
 	ResetGkeConfig()
@@ -496,6 +500,26 @@ func (j *jsiiProxy_MwsWorkspaces) EffectiveComputeMode() *string {
 	_jsii_.Get(
 		j,
 		"effectiveComputeMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsWorkspaces) ExpectedWorkspaceStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expectedWorkspaceStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsWorkspaces) ExpectedWorkspaceStatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expectedWorkspaceStatusInput",
 		&returns,
 	)
 	return returns
@@ -1002,7 +1026,7 @@ func (j *jsiiProxy_MwsWorkspaces) WorkspaceUrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
 func NewMwsWorkspaces(scope constructs.Construct, id *string, config *MwsWorkspacesConfig) MwsWorkspaces {
 	_init_.Initialize()
 
@@ -1020,7 +1044,7 @@ func NewMwsWorkspaces(scope constructs.Construct, id *string, config *MwsWorkspa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
 func NewMwsWorkspaces_Override(m MwsWorkspaces, scope constructs.Construct, id *string, config *MwsWorkspacesConfig) {
 	_init_.Initialize()
 
@@ -1156,6 +1180,17 @@ func (j *jsiiProxy_MwsWorkspaces)SetDeploymentName(val *string) {
 	_jsii_.Set(
 		j,
 		"deploymentName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MwsWorkspaces)SetExpectedWorkspaceStatus(val *string) {
+	if err := j.validateSetExpectedWorkspaceStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expectedWorkspaceStatus",
 		val,
 	)
 }
@@ -1839,6 +1874,14 @@ func (m *jsiiProxy_MwsWorkspaces) ResetDeploymentName() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetDeploymentName",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsWorkspaces) ResetExpectedWorkspaceStatus() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetExpectedWorkspaceStatus",
 		nil, // no parameters
 	)
 }

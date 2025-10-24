@@ -33,8 +33,8 @@ type DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOu
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy
+	SetInternalValue(val *DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbedding
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutputReference) InternalValue() *DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy {
+	var returns *DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -233,7 +233,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbedding
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutputReference)SetInternalValue(val *DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

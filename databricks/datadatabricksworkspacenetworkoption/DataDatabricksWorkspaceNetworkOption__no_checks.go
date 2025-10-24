@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataDatabricksWorkspaceNetworkOption) validateSetLifecyclePar
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceNetworkOption) validateSetNetworkPolicyIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksWorkspaceNetworkOption) validateSetWorkspaceIdParameters(val *float64) error {
 	return nil
 }

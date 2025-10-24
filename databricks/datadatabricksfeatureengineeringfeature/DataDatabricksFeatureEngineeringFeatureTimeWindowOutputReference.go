@@ -33,8 +33,8 @@ type DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference interface 
 	DurationInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksFeatureEngineeringFeatureTimeWindow
+	SetInternalValue(val *DataDatabricksFeatureEngineeringFeatureTimeWindow)
 	Offset() *string
 	SetOffset(val *string)
 	OffsetInput() *string
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference) InternalValue() *DataDatabricksFeatureEngineeringFeatureTimeWindow {
+	var returns *DataDatabricksFeatureEngineeringFeatureTimeWindow
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -257,7 +257,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputRefere
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference)SetInternalValue(val *DataDatabricksFeatureEngineeringFeatureTimeWindow) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

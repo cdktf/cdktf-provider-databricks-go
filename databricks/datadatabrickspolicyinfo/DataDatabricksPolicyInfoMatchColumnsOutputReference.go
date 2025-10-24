@@ -36,8 +36,8 @@ type DataDatabricksPolicyInfoMatchColumnsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksPolicyInfoMatchColumns
+	SetInternalValue(val *DataDatabricksPolicyInfoMatchColumns)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -167,8 +167,8 @@ func (j *jsiiProxy_DataDatabricksPolicyInfoMatchColumnsOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfoMatchColumnsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksPolicyInfoMatchColumnsOutputReference) InternalValue() *DataDatabricksPolicyInfoMatchColumns {
+	var returns *DataDatabricksPolicyInfoMatchColumns
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataDatabricksPolicyInfoMatchColumnsOutputReference)SetCondit
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfoMatchColumnsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksPolicyInfoMatchColumnsOutputReference)SetInternalValue(val *DataDatabricksPolicyInfoMatchColumns) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

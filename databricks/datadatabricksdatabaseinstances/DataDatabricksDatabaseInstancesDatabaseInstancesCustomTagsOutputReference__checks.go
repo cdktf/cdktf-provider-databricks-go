@@ -166,25 +166,9 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesCustomTagsOut
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesCustomTagsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataDatabricksDatabaseInstancesDatabaseInstancesCustomTags:
-		val := val.(*DataDatabricksDatabaseInstancesDatabaseInstancesCustomTags)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataDatabricksDatabaseInstancesDatabaseInstancesCustomTags:
-		val_ := val.(DataDatabricksDatabaseInstancesDatabaseInstancesCustomTags)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksDatabaseInstancesDatabaseInstancesCustomTags; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesCustomTagsOutputReference) validateSetInternalValueParameters(val *DataDatabricksDatabaseInstancesDatabaseInstancesCustomTags) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

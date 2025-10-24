@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature}.
 type DataDatabricksFeatureEngineeringFeature interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -28,8 +28,6 @@ type DataDatabricksFeatureEngineeringFeature interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -42,10 +40,7 @@ type DataDatabricksFeatureEngineeringFeature interface {
 	SetFullName(val *string)
 	FullNameInput() *string
 	Function() DataDatabricksFeatureEngineeringFeatureFunctionOutputReference
-	FunctionInput() interface{}
 	Inputs() *[]*string
-	SetInputs(val *[]*string)
-	InputsInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -59,7 +54,6 @@ type DataDatabricksFeatureEngineeringFeature interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Source() DataDatabricksFeatureEngineeringFeatureSourceOutputReference
-	SourceInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -67,7 +61,6 @@ type DataDatabricksFeatureEngineeringFeature interface {
 	// Experimental.
 	TerraformResourceType() *string
 	TimeWindow() DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference
-	TimeWindowInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -93,10 +86,6 @@ type DataDatabricksFeatureEngineeringFeature interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFunction(value *DataDatabricksFeatureEngineeringFeatureFunction)
-	PutSource(value *DataDatabricksFeatureEngineeringFeatureSource)
-	PutTimeWindow(value *DataDatabricksFeatureEngineeringFeatureTimeWindow)
-	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -169,16 +158,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) Description() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -239,31 +218,11 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) Function() DataDatab
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) FunctionInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"functionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) Inputs() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"inputs",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) InputsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"inputsInput",
 		&returns,
 	)
 	return returns
@@ -319,16 +278,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) Source() DataDatabri
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) SourceInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"sourceInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -369,18 +318,8 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) TimeWindow() DataDat
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) TimeWindowInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"timeWindowInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
 func NewDataDatabricksFeatureEngineeringFeature(scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringFeatureConfig) DataDatabricksFeatureEngineeringFeature {
 	_init_.Initialize()
 
@@ -398,7 +337,7 @@ func NewDataDatabricksFeatureEngineeringFeature(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
 func NewDataDatabricksFeatureEngineeringFeature_Override(d DataDatabricksFeatureEngineeringFeature, scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringFeatureConfig) {
 	_init_.Initialize()
 
@@ -428,17 +367,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -454,17 +382,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature)SetFullName(val *stri
 	_jsii_.Set(
 		j,
 		"fullName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature)SetInputs(val *[]*string) {
-	if err := j.validateSetInputsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"inputs",
 		val,
 	)
 }
@@ -770,47 +687,6 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeature) OverrideLogicalId(ne
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeature) PutFunction(value *DataDatabricksFeatureEngineeringFeatureFunction) {
-	if err := d.validatePutFunctionParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putFunction",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeature) PutSource(value *DataDatabricksFeatureEngineeringFeatureSource) {
-	if err := d.validatePutSourceParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putSource",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeature) PutTimeWindow(value *DataDatabricksFeatureEngineeringFeatureTimeWindow) {
-	if err := d.validatePutTimeWindowParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putTimeWindow",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeature) ResetDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescription",
-		nil, // no parameters
 	)
 }
 

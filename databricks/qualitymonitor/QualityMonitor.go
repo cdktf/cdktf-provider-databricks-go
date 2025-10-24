@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/quality_monitor databricks_quality_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/quality_monitor databricks_quality_monitor}.
 type QualityMonitor interface {
 	cdktf.TerraformResource
 	AssetsDir() *string
@@ -76,6 +76,8 @@ type QualityMonitor interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() QualityMonitorProviderConfigList
+	ProviderConfigInput() interface{}
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -154,6 +156,7 @@ type QualityMonitor interface {
 	PutDataClassificationConfig(value interface{})
 	PutInferenceLog(value interface{})
 	PutNotifications(value interface{})
+	PutProviderConfig(value interface{})
 	PutSchedule(value interface{})
 	PutSnapshot(value interface{})
 	PutTimeSeries(value interface{})
@@ -167,6 +170,7 @@ type QualityMonitor interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetSchedule()
 	ResetSkipBuiltinDashboard()
 	ResetSlicingExprs()
@@ -521,6 +525,26 @@ func (j *jsiiProxy_QualityMonitor) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_QualityMonitor) ProviderConfig() QualityMonitorProviderConfigList {
+	var returns QualityMonitorProviderConfigList
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QualityMonitor) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QualityMonitor) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -722,7 +746,7 @@ func (j *jsiiProxy_QualityMonitor) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/quality_monitor databricks_quality_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/quality_monitor databricks_quality_monitor} Resource.
 func NewQualityMonitor(scope constructs.Construct, id *string, config *QualityMonitorConfig) QualityMonitor {
 	_init_.Initialize()
 
@@ -740,7 +764,7 @@ func NewQualityMonitor(scope constructs.Construct, id *string, config *QualityMo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/quality_monitor databricks_quality_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/quality_monitor databricks_quality_monitor} Resource.
 func NewQualityMonitor_Override(q QualityMonitor, scope constructs.Construct, id *string, config *QualityMonitorConfig) {
 	_init_.Initialize()
 
@@ -1315,6 +1339,17 @@ func (q *jsiiProxy_QualityMonitor) PutNotifications(value interface{}) {
 	)
 }
 
+func (q *jsiiProxy_QualityMonitor) PutProviderConfig(value interface{}) {
+	if err := q.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (q *jsiiProxy_QualityMonitor) PutSchedule(value interface{}) {
 	if err := q.validatePutScheduleParameters(value); err != nil {
 		panic(err)
@@ -1408,6 +1443,14 @@ func (q *jsiiProxy_QualityMonitor) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QualityMonitor) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

@@ -30,17 +30,18 @@ type DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference int
 	// Experimental.
 	CreationStack() *[]*string
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksServicePrincipalFederationPoliciesPolicies
 	SetInternalValue(val *DataDatabricksServicePrincipalFederationPoliciesPolicies)
 	Name() *string
 	OidcPolicy() DataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicyOutputReference
-	OidcPolicyInput() interface{}
 	PolicyId() *string
+	SetPolicyId(val *string)
+	PolicyIdInput() *string
 	ServicePrincipalId() *float64
+	SetServicePrincipalId(val *float64)
+	ServicePrincipalIdInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,9 +76,6 @@ type DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutOidcPolicy(value *DataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicy)
-	ResetDescription()
-	ResetOidcPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -143,16 +141,6 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -193,16 +181,6 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) OidcPolicyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"oidcPolicyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) PolicyId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -213,11 +191,31 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutpu
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) PolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) ServicePrincipalId() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"servicePrincipalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) ServicePrincipalIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"servicePrincipalIdInput",
 		&returns,
 	)
 	return returns
@@ -313,17 +311,6 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutpu
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference)SetInternalValue(val *DataDatabricksServicePrincipalFederationPoliciesPolicies) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -331,6 +318,28 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutpu
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference)SetPolicyId(val *string) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference)SetServicePrincipalId(val *float64) {
+	if err := j.validateSetServicePrincipalIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"servicePrincipalId",
 		val,
 	)
 }
@@ -541,33 +550,6 @@ func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutpu
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) PutOidcPolicy(value *DataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicy) {
-	if err := d.validatePutOidcPolicyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putOidcPolicy",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) ResetDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) ResetOidcPolicy() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOidcPolicy",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

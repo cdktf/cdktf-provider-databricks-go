@@ -30,8 +30,8 @@ type DataDatabricksDatabaseInstanceCustomTagsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksDatabaseInstanceCustomTags
+	SetInternalValue(val *DataDatabricksDatabaseInstanceCustomTags)
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -127,8 +127,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstanceCustomTagsOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstanceCustomTagsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksDatabaseInstanceCustomTagsOutputReference) InternalValue() *DataDatabricksDatabaseInstanceCustomTags {
+	var returns *DataDatabricksDatabaseInstanceCustomTags
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -247,7 +247,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstanceCustomTagsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstanceCustomTagsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksDatabaseInstanceCustomTagsOutputReference)SetInternalValue(val *DataDatabricksDatabaseInstanceCustomTags) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

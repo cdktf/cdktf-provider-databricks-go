@@ -166,25 +166,9 @@ func (j *jsiiProxy_DataDatabricksAlertV2ScheduleOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2ScheduleOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataDatabricksAlertV2Schedule:
-		val := val.(*DataDatabricksAlertV2Schedule)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataDatabricksAlertV2Schedule:
-		val_ := val.(DataDatabricksAlertV2Schedule)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksAlertV2Schedule; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataDatabricksAlertV2ScheduleOutputReference) validateSetInternalValueParameters(val *DataDatabricksAlertV2Schedule) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

@@ -30,16 +30,15 @@ type DataDatabricksAccountFederationPoliciesPoliciesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksAccountFederationPoliciesPolicies
 	SetInternalValue(val *DataDatabricksAccountFederationPoliciesPolicies)
 	Name() *string
 	OidcPolicy() DataDatabricksAccountFederationPoliciesPoliciesOidcPolicyOutputReference
-	OidcPolicyInput() interface{}
 	PolicyId() *string
+	SetPolicyId(val *string)
+	PolicyIdInput() *string
 	ServicePrincipalId() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -75,9 +74,6 @@ type DataDatabricksAccountFederationPoliciesPoliciesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutOidcPolicy(value *DataDatabricksAccountFederationPoliciesPoliciesOidcPolicy)
-	ResetDescription()
-	ResetOidcPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -143,16 +139,6 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -193,21 +179,21 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) OidcPolicyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"oidcPolicyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) PolicyId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"policyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) PolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyIdInput",
 		&returns,
 	)
 	return returns
@@ -313,17 +299,6 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference)SetInternalValue(val *DataDatabricksAccountFederationPoliciesPolicies) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -331,6 +306,17 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReferenc
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference)SetPolicyId(val *string) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyId",
 		val,
 	)
 }
@@ -541,33 +527,6 @@ func (d *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReferenc
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) PutOidcPolicy(value *DataDatabricksAccountFederationPoliciesPoliciesOidcPolicy) {
-	if err := d.validatePutOidcPolicyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putOidcPolicy",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) ResetDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) ResetOidcPolicy() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOidcPolicy",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksAccountFederationPoliciesPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

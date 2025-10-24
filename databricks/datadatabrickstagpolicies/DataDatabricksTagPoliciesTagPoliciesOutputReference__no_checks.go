@@ -47,10 +47,6 @@ func (d *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) validatePutValuesParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -60,10 +56,6 @@ func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) validate
 }
 
 func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 

@@ -93,70 +93,9 @@ func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateInt
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validatePutColumnMaskParameters(value *DataDatabricksPolicyInfosPoliciesColumnMask) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validatePutMatchColumnsParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataDatabricksPolicyInfosPoliciesMatchColumns:
-		value := value.(*[]*DataDatabricksPolicyInfosPoliciesMatchColumns)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataDatabricksPolicyInfosPoliciesMatchColumns:
-		value_ := value.([]*DataDatabricksPolicyInfosPoliciesMatchColumns)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksPolicyInfosPoliciesMatchColumns; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validatePutRowFilterParameters(value *DataDatabricksPolicyInfosPoliciesRowFilter) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetCommentParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -227,22 +166,6 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetExceptPrincipalsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetForSecurableTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetInternalValueParameters(val *DataDatabricksPolicyInfosPolicies) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -275,14 +198,6 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetPolicyTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -292,22 +207,6 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSet
 }
 
 func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetToPrincipalsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) validateSetWhenConditionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

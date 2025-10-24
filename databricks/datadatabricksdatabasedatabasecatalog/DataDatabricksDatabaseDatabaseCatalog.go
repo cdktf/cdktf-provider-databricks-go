@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_database_catalog databricks_database_database_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_database_catalog databricks_database_database_catalog}.
 type DataDatabricksDatabaseDatabaseCatalog interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -23,15 +23,9 @@ type DataDatabricksDatabaseDatabaseCatalog interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CreateDatabaseIfNotExists() interface{}
-	SetCreateDatabaseIfNotExists(val interface{})
-	CreateDatabaseIfNotExistsInput() interface{}
+	CreateDatabaseIfNotExists() cdktf.IResolvable
 	DatabaseInstanceName() *string
-	SetDatabaseInstanceName(val *string)
-	DatabaseInstanceNameInput() *string
 	DatabaseName() *string
-	SetDatabaseName(val *string)
-	DatabaseNameInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -91,7 +85,6 @@ type DataDatabricksDatabaseDatabaseCatalog interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetCreateDatabaseIfNotExists()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -144,21 +137,11 @@ func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) CreateDatabaseIfNotExists() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) CreateDatabaseIfNotExists() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"createDatabaseIfNotExists",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) CreateDatabaseIfNotExistsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"createDatabaseIfNotExistsInput",
 		&returns,
 	)
 	return returns
@@ -174,31 +157,11 @@ func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) DatabaseInstanceName()
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) DatabaseInstanceNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"databaseInstanceNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) DatabaseName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"databaseName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) DatabaseNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"databaseNameInput",
 		&returns,
 	)
 	return returns
@@ -345,7 +308,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_database_catalog databricks_database_database_catalog} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_database_catalog databricks_database_database_catalog} Data Source.
 func NewDataDatabricksDatabaseDatabaseCatalog(scope constructs.Construct, id *string, config *DataDatabricksDatabaseDatabaseCatalogConfig) DataDatabricksDatabaseDatabaseCatalog {
 	_init_.Initialize()
 
@@ -363,7 +326,7 @@ func NewDataDatabricksDatabaseDatabaseCatalog(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_database_catalog databricks_database_database_catalog} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_database_catalog databricks_database_database_catalog} Data Source.
 func NewDataDatabricksDatabaseDatabaseCatalog_Override(d DataDatabricksDatabaseDatabaseCatalog, scope constructs.Construct, id *string, config *DataDatabricksDatabaseDatabaseCatalogConfig) {
 	_init_.Initialize()
 
@@ -381,39 +344,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog)SetCount(val interface{
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog)SetCreateDatabaseIfNotExists(val interface{}) {
-	if err := j.validateSetCreateDatabaseIfNotExistsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createDatabaseIfNotExists",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog)SetDatabaseInstanceName(val *string) {
-	if err := j.validateSetDatabaseInstanceNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"databaseInstanceName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog)SetDatabaseName(val *string) {
-	if err := j.validateSetDatabaseNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"databaseName",
 		val,
 	)
 }
@@ -746,14 +676,6 @@ func (d *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) OverrideLogicalId(newL
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) ResetCreateDatabaseIfNotExists() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCreateDatabaseIfNotExists",
-		nil, // no parameters
 	)
 }
 

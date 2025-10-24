@@ -36,8 +36,8 @@ type DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference interface {
 	ExistingPipelineIdInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksDatabaseSyncedDatabaseTableSpec
+	SetInternalValue(val *DataDatabricksDatabaseSyncedDatabaseTableSpec)
 	NewPipelineSpec() DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference
 	NewPipelineSpecInput() interface{}
 	PrimaryKeyColumns() *[]*string
@@ -187,8 +187,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference) InternalValue() *DataDatabricksDatabaseSyncedDatabaseTableSpec {
+	var returns *DataDatabricksDatabaseSyncedDatabaseTableSpec
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -389,7 +389,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference)SetInternalValue(val *DataDatabricksDatabaseSyncedDatabaseTableSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

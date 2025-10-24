@@ -101,14 +101,6 @@ func (d *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) validateSetCapacityParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -183,14 +175,6 @@ func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) valida
 }
 
 func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) validateSetReadReplicaCountParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

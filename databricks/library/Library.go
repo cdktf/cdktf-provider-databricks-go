@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/library databricks_library}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/library databricks_library}.
 type Library interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,8 @@ type Library interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() LibraryProviderConfigList
+	ProviderConfigInput() interface{}
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -130,6 +132,7 @@ type Library interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCran(value interface{})
 	PutMaven(value interface{})
+	PutProviderConfig(value interface{})
 	PutPypi(value interface{})
 	ResetCran()
 	ResetEgg()
@@ -139,6 +142,7 @@ type Library interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetPypi()
 	ResetRequirements()
 	ResetWhl()
@@ -390,6 +394,26 @@ func (j *jsiiProxy_Library) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_Library) ProviderConfig() LibraryProviderConfigList {
+	var returns LibraryProviderConfigList
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Library) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Library) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -501,7 +525,7 @@ func (j *jsiiProxy_Library) WhlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/library databricks_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/library databricks_library} Resource.
 func NewLibrary(scope constructs.Construct, id *string, config *LibraryConfig) Library {
 	_init_.Initialize()
 
@@ -519,7 +543,7 @@ func NewLibrary(scope constructs.Construct, id *string, config *LibraryConfig) L
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/library databricks_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/library databricks_library} Resource.
 func NewLibrary_Override(l Library, scope constructs.Construct, id *string, config *LibraryConfig) {
 	_init_.Initialize()
 
@@ -1039,6 +1063,17 @@ func (l *jsiiProxy_Library) PutMaven(value interface{}) {
 	)
 }
 
+func (l *jsiiProxy_Library) PutProviderConfig(value interface{}) {
+	if err := l.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_Library) PutPypi(value interface{}) {
 	if err := l.validatePutPypiParameters(value); err != nil {
 		panic(err)
@@ -1094,6 +1129,14 @@ func (l *jsiiProxy_Library) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Library) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

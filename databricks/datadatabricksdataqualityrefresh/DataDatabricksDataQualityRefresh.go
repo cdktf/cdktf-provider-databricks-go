@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_refresh databricks_data_quality_refresh}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_refresh databricks_data_quality_refresh}.
 type DataDatabricksDataQualityRefresh interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -56,6 +56,8 @@ type DataDatabricksDataQualityRefresh interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RefreshId() *float64
+	SetRefreshId(val *float64)
+	RefreshIdInput() *float64
 	StartTimeMs() *float64
 	State() *string
 	// Experimental.
@@ -292,6 +294,16 @@ func (j *jsiiProxy_DataDatabricksDataQualityRefresh) RefreshId() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDataQualityRefresh) RefreshIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"refreshIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksDataQualityRefresh) StartTimeMs() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -353,7 +365,7 @@ func (j *jsiiProxy_DataDatabricksDataQualityRefresh) Trigger() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_refresh databricks_data_quality_refresh} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_refresh databricks_data_quality_refresh} Data Source.
 func NewDataDatabricksDataQualityRefresh(scope constructs.Construct, id *string, config *DataDatabricksDataQualityRefreshConfig) DataDatabricksDataQualityRefresh {
 	_init_.Initialize()
 
@@ -371,7 +383,7 @@ func NewDataDatabricksDataQualityRefresh(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_refresh databricks_data_quality_refresh} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_refresh databricks_data_quality_refresh} Data Source.
 func NewDataDatabricksDataQualityRefresh_Override(d DataDatabricksDataQualityRefresh, scope constructs.Construct, id *string, config *DataDatabricksDataQualityRefreshConfig) {
 	_init_.Initialize()
 
@@ -446,6 +458,17 @@ func (j *jsiiProxy_DataDatabricksDataQualityRefresh)SetProvider(val cdktf.Terraf
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityRefresh)SetRefreshId(val *float64) {
+	if err := j.validateSetRefreshIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"refreshId",
 		val,
 	)
 }

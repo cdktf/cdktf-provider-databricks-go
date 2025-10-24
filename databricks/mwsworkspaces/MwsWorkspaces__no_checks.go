@@ -159,6 +159,10 @@ func (j *jsiiProxy_MwsWorkspaces) validateSetDeploymentNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_MwsWorkspaces) validateSetExpectedWorkspaceStatusParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsWorkspaces) validateSetIdParameters(val *string) error {
 	return nil
 }

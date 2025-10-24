@@ -71,7 +71,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference) validateSetInternalValueParameters(val *DataDatabricksDatabaseSyncedDatabaseTableSpec) error {
 	return nil
 }
 

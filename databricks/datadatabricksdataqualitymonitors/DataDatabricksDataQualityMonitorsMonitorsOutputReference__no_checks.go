@@ -47,14 +47,6 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) validatePutAnomalyDetectionConfigParameters(value *DataDatabricksDataQualityMonitorsMonitorsAnomalyDetectionConfig) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) validatePutDataProfilingConfigParameters(value *DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfig) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

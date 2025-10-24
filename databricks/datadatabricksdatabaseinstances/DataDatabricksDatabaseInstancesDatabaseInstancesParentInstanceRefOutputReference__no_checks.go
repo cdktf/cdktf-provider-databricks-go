@@ -63,7 +63,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanc
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRefOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRefOutputReference) validateSetInternalValueParameters(val *DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef) error {
 	return nil
 }
 

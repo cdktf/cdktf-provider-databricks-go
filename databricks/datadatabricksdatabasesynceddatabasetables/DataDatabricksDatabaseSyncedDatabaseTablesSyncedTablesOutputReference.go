@@ -29,8 +29,6 @@ type DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference inter
 	// Experimental.
 	CreationStack() *[]*string
 	DatabaseInstanceName() *string
-	SetDatabaseInstanceName(val *string)
-	DatabaseInstanceNameInput() *string
 	DataSynchronizationStatus() DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesDataSynchronizationStatusOutputReference
 	EffectiveDatabaseInstanceName() *string
 	EffectiveLogicalDatabaseName() *string
@@ -39,13 +37,10 @@ type DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference inter
 	InternalValue() *DataDatabricksDatabaseSyncedDatabaseTablesSyncedTables
 	SetInternalValue(val *DataDatabricksDatabaseSyncedDatabaseTablesSyncedTables)
 	LogicalDatabaseName() *string
-	SetLogicalDatabaseName(val *string)
-	LogicalDatabaseNameInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	Spec() DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesSpecOutputReference
-	SpecInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,10 +74,6 @@ type DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference inter
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSpec(value *DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesSpec)
-	ResetDatabaseInstanceName()
-	ResetLogicalDatabaseName()
-	ResetSpec()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -133,16 +124,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputR
 	_jsii_.Get(
 		j,
 		"databaseInstanceName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) DatabaseInstanceNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"databaseInstanceNameInput",
 		&returns,
 	)
 	return returns
@@ -208,16 +189,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) LogicalDatabaseNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"logicalDatabaseNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -243,16 +214,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputR
 	_jsii_.Get(
 		j,
 		"spec",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) SpecInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"specInput",
 		&returns,
 	)
 	return returns
@@ -338,17 +299,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputR
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference)SetDatabaseInstanceName(val *string) {
-	if err := j.validateSetDatabaseInstanceNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"databaseInstanceName",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference)SetInternalValue(val *DataDatabricksDatabaseSyncedDatabaseTablesSyncedTables) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -356,17 +306,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputR
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference)SetLogicalDatabaseName(val *string) {
-	if err := j.validateSetLogicalDatabaseNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"logicalDatabaseName",
 		val,
 	)
 }
@@ -588,41 +527,6 @@ func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputR
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) PutSpec(value *DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesSpec) {
-	if err := d.validatePutSpecParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putSpec",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) ResetDatabaseInstanceName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDatabaseInstanceName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) ResetLogicalDatabaseName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetLogicalDatabaseName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) ResetSpec() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSpec",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTablesSyncedTablesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -33,8 +33,8 @@ type DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference interface {
 	FunctionName() *string
 	SetFunctionName(val *string)
 	FunctionNameInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksPolicyInfosPoliciesColumnMask
+	SetInternalValue(val *DataDatabricksPolicyInfosPoliciesColumnMask)
 	OnColumn() *string
 	SetOnColumn(val *string)
 	OnColumnInput() *string
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) InternalValue() *DataDatabricksPolicyInfosPoliciesColumnMask {
+	var returns *DataDatabricksPolicyInfosPoliciesColumnMask
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -280,7 +280,7 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference)SetInternalValue(val *DataDatabricksPolicyInfosPoliciesColumnMask) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

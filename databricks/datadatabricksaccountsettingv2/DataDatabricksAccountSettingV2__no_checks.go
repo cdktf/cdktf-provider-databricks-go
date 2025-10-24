@@ -55,58 +55,6 @@ func (d *jsiiProxy_DataDatabricksAccountSettingV2) validateOverrideLogicalIdPara
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutAibiDashboardEmbeddingAccessPolicyParameters(value *DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutAibiDashboardEmbeddingApprovedDomainsParameters(value *DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutAutomaticClusterUpdateWorkspaceParameters(value *DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutBooleanValParameters(value *DataDatabricksAccountSettingV2BooleanVal) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutEffectiveAibiDashboardEmbeddingAccessPolicyParameters(value *DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutEffectiveAibiDashboardEmbeddingApprovedDomainsParameters(value *DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutEffectiveAutomaticClusterUpdateWorkspaceParameters(value *DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutEffectivePersonalComputeParameters(value *DataDatabricksAccountSettingV2EffectivePersonalCompute) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutEffectiveRestrictWorkspaceAdminsParameters(value *DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutIntegerValParameters(value *DataDatabricksAccountSettingV2IntegerVal) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutPersonalComputeParameters(value *DataDatabricksAccountSettingV2PersonalCompute) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutRestrictWorkspaceAdminsParameters(value *DataDatabricksAccountSettingV2RestrictWorkspaceAdmins) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAccountSettingV2) validatePutStringValParameters(value *DataDatabricksAccountSettingV2StringVal) error {
-	return nil
-}
-
 func validateDataDatabricksAccountSettingV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

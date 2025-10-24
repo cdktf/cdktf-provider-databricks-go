@@ -42,8 +42,6 @@ type DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference interface {
 	SetTagKey(val *string)
 	TagKeyInput() *string
 	TagValue() *string
-	SetTagValue(val *string)
-	TagValueInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,7 +74,6 @@ type DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetTagValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -212,16 +209,6 @@ func (j *jsiiProxy_DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference) TagValueInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tagValueInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -332,17 +319,6 @@ func (j *jsiiProxy_DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReferen
 	_jsii_.Set(
 		j,
 		"tagKey",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference)SetTagValue(val *string) {
-	if err := j.validateSetTagValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tagValue",
 		val,
 	)
 }
@@ -553,14 +529,6 @@ func (d *jsiiProxy_DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReferen
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference) ResetTagValue() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTagValue",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

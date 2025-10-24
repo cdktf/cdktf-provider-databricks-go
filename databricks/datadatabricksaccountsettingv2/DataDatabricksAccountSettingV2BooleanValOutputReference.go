@@ -30,8 +30,8 @@ type DataDatabricksAccountSettingV2BooleanValOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAccountSettingV2BooleanVal
+	SetInternalValue(val *DataDatabricksAccountSettingV2BooleanVal)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2BooleanValOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2BooleanValOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAccountSettingV2BooleanValOutputReference) InternalValue() *DataDatabricksAccountSettingV2BooleanVal {
+	var returns *DataDatabricksAccountSettingV2BooleanVal
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -223,7 +223,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2BooleanValOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2BooleanValOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAccountSettingV2BooleanValOutputReference)SetInternalValue(val *DataDatabricksAccountSettingV2BooleanVal) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

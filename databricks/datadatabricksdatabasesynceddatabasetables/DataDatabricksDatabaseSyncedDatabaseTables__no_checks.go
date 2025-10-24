@@ -75,7 +75,15 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) validateSetCountP
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) validateSetInstanceNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) validateSetPageSizeParameters(val *float64) error {
 	return nil
 }
 

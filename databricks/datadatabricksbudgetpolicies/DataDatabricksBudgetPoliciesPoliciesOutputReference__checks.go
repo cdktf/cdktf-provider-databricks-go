@@ -93,48 +93,9 @@ func (d *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) validatePutCustomTagsParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataDatabricksBudgetPoliciesPoliciesCustomTags:
-		value := value.(*[]*DataDatabricksBudgetPoliciesPoliciesCustomTags)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataDatabricksBudgetPoliciesPoliciesCustomTags:
-		value_ := value.([]*DataDatabricksBudgetPoliciesPoliciesCustomTags)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksBudgetPoliciesPoliciesCustomTags; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) validateSetBindingWorkspaceIdsParameters(val *[]*float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -213,7 +174,7 @@ func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) validateSetPolicyNameParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) validateSetPolicyIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

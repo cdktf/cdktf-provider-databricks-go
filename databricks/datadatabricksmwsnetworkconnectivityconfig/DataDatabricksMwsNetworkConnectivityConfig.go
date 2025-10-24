@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/mws_network_connectivity_config databricks_mws_network_connectivity_config}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/mws_network_connectivity_config databricks_mws_network_connectivity_config}.
 type DataDatabricksMwsNetworkConnectivityConfig interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -432,7 +432,7 @@ func (j *jsiiProxy_DataDatabricksMwsNetworkConnectivityConfig) UpdatedTimeInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Data Source.
 func NewDataDatabricksMwsNetworkConnectivityConfig(scope constructs.Construct, id *string, config *DataDatabricksMwsNetworkConnectivityConfigConfig) DataDatabricksMwsNetworkConnectivityConfig {
 	_init_.Initialize()
 
@@ -450,7 +450,7 @@ func NewDataDatabricksMwsNetworkConnectivityConfig(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Data Source.
 func NewDataDatabricksMwsNetworkConnectivityConfig_Override(d DataDatabricksMwsNetworkConnectivityConfig, scope constructs.Construct, id *string, config *DataDatabricksMwsNetworkConnectivityConfigConfig) {
 	_init_.Initialize()
 

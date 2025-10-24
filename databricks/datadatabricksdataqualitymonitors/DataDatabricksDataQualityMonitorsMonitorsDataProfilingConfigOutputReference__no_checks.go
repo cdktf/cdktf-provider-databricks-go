@@ -91,7 +91,7 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigO
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigOutputReference) validateSetInternalValueParameters(val *DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfig) error {
 	return nil
 }
 

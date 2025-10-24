@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmin
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference) validateSetInternalValueParameters(val *DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins) error {
 	return nil
 }
 

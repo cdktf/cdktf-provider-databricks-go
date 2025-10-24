@@ -63,7 +63,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference) validateSetInternalValueParameters(val *DataDatabricksFeatureEngineeringFeatureTimeWindow) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/workspace_network_option databricks_workspace_network_option}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/workspace_network_option databricks_workspace_network_option}.
 type DataDatabricksWorkspaceNetworkOption interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -40,8 +40,6 @@ type DataDatabricksWorkspaceNetworkOption interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	NetworkPolicyId() *string
-	SetNetworkPolicyId(val *string)
-	NetworkPolicyIdInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -84,11 +82,9 @@ type DataDatabricksWorkspaceNetworkOption interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetNetworkPolicyId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -198,16 +194,6 @@ func (j *jsiiProxy_DataDatabricksWorkspaceNetworkOption) NetworkPolicyId() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceNetworkOption) NetworkPolicyIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"networkPolicyIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksWorkspaceNetworkOption) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -289,7 +275,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceNetworkOption) WorkspaceIdInput() *flo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/workspace_network_option databricks_workspace_network_option} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/workspace_network_option databricks_workspace_network_option} Data Source.
 func NewDataDatabricksWorkspaceNetworkOption(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceNetworkOptionConfig) DataDatabricksWorkspaceNetworkOption {
 	_init_.Initialize()
 
@@ -307,7 +293,7 @@ func NewDataDatabricksWorkspaceNetworkOption(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/workspace_network_option databricks_workspace_network_option} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/workspace_network_option databricks_workspace_network_option} Data Source.
 func NewDataDatabricksWorkspaceNetworkOption_Override(d DataDatabricksWorkspaceNetworkOption, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceNetworkOptionConfig) {
 	_init_.Initialize()
 
@@ -352,17 +338,6 @@ func (j *jsiiProxy_DataDatabricksWorkspaceNetworkOption)SetLifecycle(val *cdktf.
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksWorkspaceNetworkOption)SetNetworkPolicyId(val *string) {
-	if err := j.validateSetNetworkPolicyIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"networkPolicyId",
 		val,
 	)
 }
@@ -671,26 +646,10 @@ func (d *jsiiProxy_DataDatabricksWorkspaceNetworkOption) OverrideLogicalId(newLo
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceNetworkOption) ResetNetworkPolicyId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetNetworkPolicyId",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksWorkspaceNetworkOption) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksWorkspaceNetworkOption) ResetWorkspaceId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

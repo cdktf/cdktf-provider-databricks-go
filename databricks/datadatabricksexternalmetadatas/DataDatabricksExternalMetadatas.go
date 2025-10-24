@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/external_metadatas databricks_external_metadatas}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/external_metadatas databricks_external_metadatas}.
 type DataDatabricksExternalMetadatas interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -42,6 +42,9 @@ type DataDatabricksExternalMetadatas interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	PageSize() *float64
+	SetPageSize(val *float64)
+	PageSizeInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -82,6 +85,7 @@ type DataDatabricksExternalMetadatas interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPageSize()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -201,6 +205,26 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatas) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksExternalMetadatas) PageSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pageSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksExternalMetadatas) PageSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pageSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksExternalMetadatas) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -252,7 +276,7 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatas) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/external_metadatas databricks_external_metadatas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/external_metadatas databricks_external_metadatas} Data Source.
 func NewDataDatabricksExternalMetadatas(scope constructs.Construct, id *string, config *DataDatabricksExternalMetadatasConfig) DataDatabricksExternalMetadatas {
 	_init_.Initialize()
 
@@ -270,7 +294,7 @@ func NewDataDatabricksExternalMetadatas(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/external_metadatas databricks_external_metadatas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/external_metadatas databricks_external_metadatas} Data Source.
 func NewDataDatabricksExternalMetadatas_Override(d DataDatabricksExternalMetadatas, scope constructs.Construct, id *string, config *DataDatabricksExternalMetadatasConfig) {
 	_init_.Initialize()
 
@@ -315,6 +339,17 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatas)SetLifecycle(val *cdktf.Terra
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksExternalMetadatas)SetPageSize(val *float64) {
+	if err := j.validateSetPageSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pageSize",
 		val,
 	)
 }
@@ -616,6 +651,14 @@ func (d *jsiiProxy_DataDatabricksExternalMetadatas) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksExternalMetadatas) ResetPageSize() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPageSize",
 		nil, // no parameters
 	)
 }

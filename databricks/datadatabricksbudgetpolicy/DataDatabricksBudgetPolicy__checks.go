@@ -114,37 +114,6 @@ func (d *jsiiProxy_DataDatabricksBudgetPolicy) validateOverrideLogicalIdParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksBudgetPolicy) validatePutCustomTagsParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataDatabricksBudgetPolicyCustomTags:
-		value := value.(*[]*DataDatabricksBudgetPolicyCustomTags)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataDatabricksBudgetPolicyCustomTags:
-		value_ := value.([]*DataDatabricksBudgetPolicyCustomTags)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksBudgetPolicyCustomTags; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func validateDataDatabricksBudgetPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -180,14 +149,6 @@ func validateDataDatabricksBudgetPolicy_IsTerraformDataSourceParameters(x interf
 func validateDataDatabricksBudgetPolicy_IsTerraformElementParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksBudgetPolicy) validateSetBindingWorkspaceIdsParameters(val *[]*float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -258,7 +219,7 @@ func (j *jsiiProxy_DataDatabricksBudgetPolicy) validateSetLifecycleParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksBudgetPolicy) validateSetPolicyNameParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksBudgetPolicy) validateSetPolicyIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -275,6 +236,9 @@ func validateNewDataDatabricksBudgetPolicyParameters(scope constructs.Construct,
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
+	if config == nil {
+		return fmt.Errorf("parameter config is required, but nil was provided")
+	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

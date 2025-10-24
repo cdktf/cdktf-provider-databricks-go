@@ -67,7 +67,7 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplateManifestOutputReference) validateSetInternalValueParameters(val *DataDatabricksAppsSettingsCustomTemplateManifest) error {
 	return nil
 }
 

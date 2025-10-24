@@ -63,7 +63,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprove
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference) validateSetInternalValueParameters(val *DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains) error {
 	return nil
 }
 

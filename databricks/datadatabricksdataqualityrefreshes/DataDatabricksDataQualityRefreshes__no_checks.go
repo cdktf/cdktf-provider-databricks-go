@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataDatabricksDataQualityRefreshes) validateSetObjectTypePara
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDataQualityRefreshes) validateSetPageSizeParameters(val *float64) error {
+	return nil
+}
+
 func validateNewDataDatabricksDataQualityRefreshesParameters(scope constructs.Construct, id *string, config *DataDatabricksDataQualityRefreshesConfig) error {
 	return nil
 }

@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesValuesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesValuesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesValuesOutputReference) validateSetInternalValueParameters(val *DataDatabricksTagPoliciesTagPoliciesValues) error {
 	return nil
 }
 

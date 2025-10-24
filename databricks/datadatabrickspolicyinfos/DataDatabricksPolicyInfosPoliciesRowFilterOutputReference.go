@@ -33,8 +33,8 @@ type DataDatabricksPolicyInfosPoliciesRowFilterOutputReference interface {
 	FunctionName() *string
 	SetFunctionName(val *string)
 	FunctionNameInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksPolicyInfosPoliciesRowFilter
+	SetInternalValue(val *DataDatabricksPolicyInfosPoliciesRowFilter)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterOutputReference) Fu
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterOutputReference) InternalValue() *DataDatabricksPolicyInfosPoliciesRowFilter {
+	var returns *DataDatabricksPolicyInfosPoliciesRowFilter
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -257,7 +257,7 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesRowFilterOutputReference)SetInternalValue(val *DataDatabricksPolicyInfosPoliciesRowFilter) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

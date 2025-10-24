@@ -30,8 +30,8 @@ type DataDatabricksAlertV2RunAsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAlertV2RunAs
+	SetInternalValue(val *DataDatabricksAlertV2RunAs)
 	ServicePrincipalName() *string
 	SetServicePrincipalName(val *string)
 	ServicePrincipalNameInput() *string
@@ -127,8 +127,8 @@ func (j *jsiiProxy_DataDatabricksAlertV2RunAsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2RunAsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAlertV2RunAsOutputReference) InternalValue() *DataDatabricksAlertV2RunAs {
+	var returns *DataDatabricksAlertV2RunAs
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -247,7 +247,7 @@ func (j *jsiiProxy_DataDatabricksAlertV2RunAsOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2RunAsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAlertV2RunAsOutputReference)SetInternalValue(val *DataDatabricksAlertV2RunAs) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

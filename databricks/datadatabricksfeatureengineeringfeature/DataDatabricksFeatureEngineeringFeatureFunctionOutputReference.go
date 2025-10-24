@@ -35,8 +35,8 @@ type DataDatabricksFeatureEngineeringFeatureFunctionOutputReference interface {
 	FunctionType() *string
 	SetFunctionType(val *string)
 	FunctionTypeInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksFeatureEngineeringFeatureFunction
+	SetInternalValue(val *DataDatabricksFeatureEngineeringFeatureFunction)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -166,8 +166,8 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference) InternalValue() *DataDatabricksFeatureEngineeringFeatureFunction {
+	var returns *DataDatabricksFeatureEngineeringFeatureFunction
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -257,7 +257,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureFunctionOutputReference)SetInternalValue(val *DataDatabricksFeatureEngineeringFeatureFunction) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

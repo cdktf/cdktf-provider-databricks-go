@@ -12,12 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy databricks_account_network_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy databricks_account_network_policy}.
 type DataDatabricksAccountNetworkPolicy interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
-	SetAccountId(val *string)
-	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -31,7 +29,6 @@ type DataDatabricksAccountNetworkPolicy interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Egress() DataDatabricksAccountNetworkPolicyEgressOutputReference
-	EgressInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -86,10 +83,6 @@ type DataDatabricksAccountNetworkPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEgress(value *DataDatabricksAccountNetworkPolicyEgress)
-	ResetAccountId()
-	ResetEgress()
-	ResetNetworkPolicyId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -117,16 +110,6 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPolicy) AccountId() *string {
 	_jsii_.Get(
 		j,
 		"accountId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAccountNetworkPolicy) AccountIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountIdInput",
 		&returns,
 	)
 	return returns
@@ -177,16 +160,6 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPolicy) Egress() DataDatabricksAc
 	_jsii_.Get(
 		j,
 		"egress",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAccountNetworkPolicy) EgressInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"egressInput",
 		&returns,
 	)
 	return returns
@@ -313,7 +286,7 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPolicy) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy databricks_account_network_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy databricks_account_network_policy} Data Source.
 func NewDataDatabricksAccountNetworkPolicy(scope constructs.Construct, id *string, config *DataDatabricksAccountNetworkPolicyConfig) DataDatabricksAccountNetworkPolicy {
 	_init_.Initialize()
 
@@ -331,7 +304,7 @@ func NewDataDatabricksAccountNetworkPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy databricks_account_network_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy databricks_account_network_policy} Data Source.
 func NewDataDatabricksAccountNetworkPolicy_Override(d DataDatabricksAccountNetworkPolicy, scope constructs.Construct, id *string, config *DataDatabricksAccountNetworkPolicyConfig) {
 	_init_.Initialize()
 
@@ -339,17 +312,6 @@ func NewDataDatabricksAccountNetworkPolicy_Override(d DataDatabricksAccountNetwo
 		"@cdktf/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicy",
 		[]interface{}{scope, id, config},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAccountNetworkPolicy)SetAccountId(val *string) {
-	if err := j.validateSetAccountIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"accountId",
-		val,
 	)
 }
 
@@ -692,41 +654,6 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPolicy) OverrideLogicalId(newLogi
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountNetworkPolicy) PutEgress(value *DataDatabricksAccountNetworkPolicyEgress) {
-	if err := d.validatePutEgressParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putEgress",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountNetworkPolicy) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountNetworkPolicy) ResetEgress() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEgress",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountNetworkPolicy) ResetNetworkPolicyId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetNetworkPolicyId",
-		nil, // no parameters
 	)
 }
 

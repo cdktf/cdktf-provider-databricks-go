@@ -30,8 +30,6 @@ type DataDatabricksTagPoliciesTagPoliciesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -50,7 +48,6 @@ type DataDatabricksTagPoliciesTagPoliciesOutputReference interface {
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	UpdateTime() *string
 	Values() DataDatabricksTagPoliciesTagPoliciesValuesList
-	ValuesInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -75,9 +72,6 @@ type DataDatabricksTagPoliciesTagPoliciesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutValues(value interface{})
-	ResetDescription()
-	ResetValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -138,16 +132,6 @@ func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) Descript
 	_jsii_.Get(
 		j,
 		"description",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -243,16 +227,6 @@ func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) Values()
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) ValuesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"valuesInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewDataDatabricksTagPoliciesTagPoliciesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatabricksTagPoliciesTagPoliciesOutputReference {
 	_init_.Initialize()
@@ -299,17 +273,6 @@ func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference)SetComple
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
 		val,
 	)
 }
@@ -542,33 +505,6 @@ func (d *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) Interpol
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) PutValues(value interface{}) {
-	if err := d.validatePutValuesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putValues",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) ResetDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) ResetValues() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetValues",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

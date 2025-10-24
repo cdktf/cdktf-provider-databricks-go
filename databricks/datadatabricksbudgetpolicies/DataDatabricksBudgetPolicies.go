@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/budget_policies databricks_budget_policies}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/budget_policies databricks_budget_policies}.
 type DataDatabricksBudgetPolicies interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,8 @@ type DataDatabricksBudgetPolicies interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	FilterBy() DataDatabricksBudgetPoliciesFilterByOutputReference
+	FilterByInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -41,6 +43,9 @@ type DataDatabricksBudgetPolicies interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	PageSize() *float64
+	SetPageSize(val *float64)
+	PageSizeInput() *float64
 	Policies() DataDatabricksBudgetPoliciesPoliciesList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -48,6 +53,8 @@ type DataDatabricksBudgetPolicies interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	SortSpec() DataDatabricksBudgetPoliciesSortSpecOutputReference
+	SortSpecInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -79,9 +86,14 @@ type DataDatabricksBudgetPolicies interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilterBy(value *DataDatabricksBudgetPoliciesFilterBy)
+	PutSortSpec(value *DataDatabricksBudgetPoliciesSortSpec)
+	ResetFilterBy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPageSize()
+	ResetSortSpec()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -141,6 +153,26 @@ func (j *jsiiProxy_DataDatabricksBudgetPolicies) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksBudgetPolicies) FilterBy() DataDatabricksBudgetPoliciesFilterByOutputReference {
+	var returns DataDatabricksBudgetPoliciesFilterByOutputReference
+	_jsii_.Get(
+		j,
+		"filterBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksBudgetPolicies) FilterByInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterByInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksBudgetPolicies) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -191,6 +223,26 @@ func (j *jsiiProxy_DataDatabricksBudgetPolicies) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksBudgetPolicies) PageSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pageSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksBudgetPolicies) PageSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pageSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksBudgetPolicies) Policies() DataDatabricksBudgetPoliciesPoliciesList {
 	var returns DataDatabricksBudgetPoliciesPoliciesList
 	_jsii_.Get(
@@ -216,6 +268,26 @@ func (j *jsiiProxy_DataDatabricksBudgetPolicies) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksBudgetPolicies) SortSpec() DataDatabricksBudgetPoliciesSortSpecOutputReference {
+	var returns DataDatabricksBudgetPoliciesSortSpecOutputReference
+	_jsii_.Get(
+		j,
+		"sortSpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksBudgetPolicies) SortSpecInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sortSpecInput",
 		&returns,
 	)
 	return returns
@@ -252,7 +324,7 @@ func (j *jsiiProxy_DataDatabricksBudgetPolicies) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/budget_policies databricks_budget_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/budget_policies databricks_budget_policies} Data Source.
 func NewDataDatabricksBudgetPolicies(scope constructs.Construct, id *string, config *DataDatabricksBudgetPoliciesConfig) DataDatabricksBudgetPolicies {
 	_init_.Initialize()
 
@@ -270,7 +342,7 @@ func NewDataDatabricksBudgetPolicies(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/budget_policies databricks_budget_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/budget_policies databricks_budget_policies} Data Source.
 func NewDataDatabricksBudgetPolicies_Override(d DataDatabricksBudgetPolicies, scope constructs.Construct, id *string, config *DataDatabricksBudgetPoliciesConfig) {
 	_init_.Initialize()
 
@@ -315,6 +387,17 @@ func (j *jsiiProxy_DataDatabricksBudgetPolicies)SetLifecycle(val *cdktf.Terrafor
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksBudgetPolicies)SetPageSize(val *float64) {
+	if err := j.validateSetPageSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pageSize",
 		val,
 	)
 }
@@ -612,10 +695,56 @@ func (d *jsiiProxy_DataDatabricksBudgetPolicies) OverrideLogicalId(newLogicalId 
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksBudgetPolicies) PutFilterBy(value *DataDatabricksBudgetPoliciesFilterBy) {
+	if err := d.validatePutFilterByParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilterBy",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksBudgetPolicies) PutSortSpec(value *DataDatabricksBudgetPoliciesSortSpec) {
+	if err := d.validatePutSortSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSortSpec",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksBudgetPolicies) ResetFilterBy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilterBy",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksBudgetPolicies) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksBudgetPolicies) ResetPageSize() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPageSize",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksBudgetPolicies) ResetSortSpec() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSortSpec",
 		nil, // no parameters
 	)
 }

@@ -75,7 +75,19 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) validateSetCou
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) validateSetFeatureNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) validateSetPageSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) validateSetTableNameParameters(val *string) error {
 	return nil
 }
 

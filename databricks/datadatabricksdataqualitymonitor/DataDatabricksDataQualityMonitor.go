@@ -12,11 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor}.
 type DataDatabricksDataQualityMonitor interface {
 	cdktf.TerraformDataSource
 	AnomalyDetectionConfig() DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference
-	AnomalyDetectionConfigInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -26,7 +25,6 @@ type DataDatabricksDataQualityMonitor interface {
 	// Experimental.
 	SetCount(val interface{})
 	DataProfilingConfig() DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference
-	DataProfilingConfigInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -88,10 +86,6 @@ type DataDatabricksDataQualityMonitor interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAnomalyDetectionConfig(value *DataDatabricksDataQualityMonitorAnomalyDetectionConfig)
-	PutDataProfilingConfig(value *DataDatabricksDataQualityMonitorDataProfilingConfig)
-	ResetAnomalyDetectionConfig()
-	ResetDataProfilingConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -119,16 +113,6 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitor) AnomalyDetectionConfig() Da
 	_jsii_.Get(
 		j,
 		"anomalyDetectionConfig",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksDataQualityMonitor) AnomalyDetectionConfigInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"anomalyDetectionConfigInput",
 		&returns,
 	)
 	return returns
@@ -169,16 +153,6 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitor) DataProfilingConfig() DataD
 	_jsii_.Get(
 		j,
 		"dataProfilingConfig",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksDataQualityMonitor) DataProfilingConfigInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"dataProfilingConfigInput",
 		&returns,
 	)
 	return returns
@@ -335,7 +309,7 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitor) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor} Data Source.
 func NewDataDatabricksDataQualityMonitor(scope constructs.Construct, id *string, config *DataDatabricksDataQualityMonitorConfig) DataDatabricksDataQualityMonitor {
 	_init_.Initialize()
 
@@ -353,7 +327,7 @@ func NewDataDatabricksDataQualityMonitor(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor} Data Source.
 func NewDataDatabricksDataQualityMonitor_Override(d DataDatabricksDataQualityMonitor, scope constructs.Construct, id *string, config *DataDatabricksDataQualityMonitorConfig) {
 	_init_.Initialize()
 
@@ -714,44 +688,6 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitor) OverrideLogicalId(newLogica
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksDataQualityMonitor) PutAnomalyDetectionConfig(value *DataDatabricksDataQualityMonitorAnomalyDetectionConfig) {
-	if err := d.validatePutAnomalyDetectionConfigParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putAnomalyDetectionConfig",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksDataQualityMonitor) PutDataProfilingConfig(value *DataDatabricksDataQualityMonitorDataProfilingConfig) {
-	if err := d.validatePutDataProfilingConfigParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putDataProfilingConfig",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksDataQualityMonitor) ResetAnomalyDetectionConfig() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAnomalyDetectionConfig",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksDataQualityMonitor) ResetDataProfilingConfig() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDataProfilingConfig",
-		nil, // no parameters
 	)
 }
 

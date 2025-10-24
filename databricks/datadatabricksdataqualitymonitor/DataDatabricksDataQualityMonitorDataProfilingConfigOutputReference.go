@@ -43,8 +43,8 @@ type DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference interfac
 	Fqn() *string
 	InferenceLog() DataDatabricksDataQualityMonitorDataProfilingConfigInferenceLogOutputReference
 	InferenceLogInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksDataQualityMonitorDataProfilingConfig
+	SetInternalValue(val *DataDatabricksDataQualityMonitorDataProfilingConfig)
 	LatestMonitorFailureMessage() *string
 	MonitoredTableName() *string
 	MonitorVersion() *float64
@@ -284,8 +284,8 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference) InternalValue() *DataDatabricksDataQualityMonitorDataProfilingConfig {
+	var returns *DataDatabricksDataQualityMonitorDataProfilingConfig
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -596,7 +596,7 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference)SetInternalValue(val *DataDatabricksDataQualityMonitorDataProfilingConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

@@ -166,25 +166,9 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataDatabricksDataQualityMonitorAnomalyDetectionConfig:
-		val := val.(*DataDatabricksDataQualityMonitorAnomalyDetectionConfig)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataDatabricksDataQualityMonitorAnomalyDetectionConfig:
-		val_ := val.(DataDatabricksDataQualityMonitorAnomalyDetectionConfig)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksDataQualityMonitorAnomalyDetectionConfig; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference) validateSetInternalValueParameters(val *DataDatabricksDataQualityMonitorAnomalyDetectionConfig) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

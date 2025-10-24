@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations}.
 type DataDatabricksRfaAccessRequestDestinations interface {
 	cdktf.TerraformDataSource
 	AreAnyDestinationsHidden() cdktf.IResolvable
@@ -29,7 +29,6 @@ type DataDatabricksRfaAccessRequestDestinations interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Destinations() DataDatabricksRfaAccessRequestDestinationsDestinationsList
-	DestinationsInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -51,7 +50,6 @@ type DataDatabricksRfaAccessRequestDestinations interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Securable() DataDatabricksRfaAccessRequestDestinationsSecurableOutputReference
-	SecurableInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -83,8 +81,6 @@ type DataDatabricksRfaAccessRequestDestinations interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutDestinations(value interface{})
-	PutSecurable(value *DataDatabricksRfaAccessRequestDestinationsSecurable)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -162,16 +158,6 @@ func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) Destinations() Da
 	_jsii_.Get(
 		j,
 		"destinations",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) DestinationsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"destinationsInput",
 		&returns,
 	)
 	return returns
@@ -257,16 +243,6 @@ func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) Securable() DataD
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) SecurableInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"securableInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -298,7 +274,7 @@ func (j *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source.
 func NewDataDatabricksRfaAccessRequestDestinations(scope constructs.Construct, id *string, config *DataDatabricksRfaAccessRequestDestinationsConfig) DataDatabricksRfaAccessRequestDestinations {
 	_init_.Initialize()
 
@@ -316,7 +292,7 @@ func NewDataDatabricksRfaAccessRequestDestinations(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source.
 func NewDataDatabricksRfaAccessRequestDestinations_Override(d DataDatabricksRfaAccessRequestDestinations, scope constructs.Construct, id *string, config *DataDatabricksRfaAccessRequestDestinationsConfig) {
 	_init_.Initialize()
 
@@ -655,28 +631,6 @@ func (d *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) OverrideLogicalId
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) PutDestinations(value interface{}) {
-	if err := d.validatePutDestinationsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putDestinations",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) PutSecurable(value *DataDatabricksRfaAccessRequestDestinationsSecurable) {
-	if err := d.validatePutSecurableParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putSecurable",
-		[]interface{}{value},
 	)
 }
 

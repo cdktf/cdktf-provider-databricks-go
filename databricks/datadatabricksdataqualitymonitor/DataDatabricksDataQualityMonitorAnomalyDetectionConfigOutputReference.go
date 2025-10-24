@@ -30,8 +30,8 @@ type DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference inter
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksDataQualityMonitorAnomalyDetectionConfig
+	SetInternalValue(val *DataDatabricksDataQualityMonitorAnomalyDetectionConfig)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference) InternalValue() *DataDatabricksDataQualityMonitorAnomalyDetectionConfig {
+	var returns *DataDatabricksDataQualityMonitorAnomalyDetectionConfig
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -199,7 +199,7 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference)SetInternalValue(val *DataDatabricksDataQualityMonitorAnomalyDetectionConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

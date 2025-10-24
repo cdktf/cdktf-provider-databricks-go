@@ -93,39 +93,6 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateInterpol
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validatePutEvaluationParameters(value *DataDatabricksAlertsV2AlertsEvaluation) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validatePutRunAsParameters(value *DataDatabricksAlertsV2AlertsRunAs) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validatePutScheduleParameters(value *DataDatabricksAlertsV2AlertsSchedule) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -199,30 +166,6 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetCustomDescriptionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetCustomSummaryParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetDisplayNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -239,30 +182,6 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetInter
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetParentPathParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetQueryTextParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetRunAsUserNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -272,14 +191,6 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetTerra
 }
 
 func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) validateSetWarehouseIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

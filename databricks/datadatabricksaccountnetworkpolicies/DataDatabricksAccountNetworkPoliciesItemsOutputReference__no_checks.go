@@ -47,15 +47,7 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference) validatePutEgressParameters(value *DataDatabricksAccountNetworkPoliciesItemsEgress) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference) validateSetAccountIdParameters(val *string) error {
 	return nil
 }
 

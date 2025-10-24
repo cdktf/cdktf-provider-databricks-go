@@ -219,6 +219,14 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitors) validateSetLifecycleParame
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDataQualityMonitors) validateSetPageSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataDatabricksDataQualityMonitorsParameters(scope constructs.Construct, id *string, config *DataDatabricksDataQualityMonitorsConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

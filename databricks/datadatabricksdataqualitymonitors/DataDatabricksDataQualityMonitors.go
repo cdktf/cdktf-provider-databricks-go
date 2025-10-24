@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_monitors databricks_data_quality_monitors}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_monitors databricks_data_quality_monitors}.
 type DataDatabricksDataQualityMonitors interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -42,6 +42,9 @@ type DataDatabricksDataQualityMonitors interface {
 	Monitors() DataDatabricksDataQualityMonitorsMonitorsList
 	// The tree node.
 	Node() constructs.Node
+	PageSize() *float64
+	SetPageSize(val *float64)
+	PageSizeInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -82,6 +85,7 @@ type DataDatabricksDataQualityMonitors interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPageSize()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -201,6 +205,26 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitors) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDataQualityMonitors) PageSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pageSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityMonitors) PageSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pageSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksDataQualityMonitors) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -252,7 +276,7 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitors) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_monitors databricks_data_quality_monitors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_monitors databricks_data_quality_monitors} Data Source.
 func NewDataDatabricksDataQualityMonitors(scope constructs.Construct, id *string, config *DataDatabricksDataQualityMonitorsConfig) DataDatabricksDataQualityMonitors {
 	_init_.Initialize()
 
@@ -270,7 +294,7 @@ func NewDataDatabricksDataQualityMonitors(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_monitors databricks_data_quality_monitors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_monitors databricks_data_quality_monitors} Data Source.
 func NewDataDatabricksDataQualityMonitors_Override(d DataDatabricksDataQualityMonitors, scope constructs.Construct, id *string, config *DataDatabricksDataQualityMonitorsConfig) {
 	_init_.Initialize()
 
@@ -315,6 +339,17 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitors)SetLifecycle(val *cdktf.Ter
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksDataQualityMonitors)SetPageSize(val *float64) {
+	if err := j.validateSetPageSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pageSize",
 		val,
 	)
 }
@@ -616,6 +651,14 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitors) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDataQualityMonitors) ResetPageSize() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPageSize",
 		nil, // no parameters
 	)
 }

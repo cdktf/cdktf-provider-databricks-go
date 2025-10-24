@@ -174,25 +174,9 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprove
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains:
-		val := val.(*DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains:
-		val_ := val.(DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference) validateSetInternalValueParameters(val *DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

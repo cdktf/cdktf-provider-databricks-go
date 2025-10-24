@@ -30,8 +30,8 @@ type DataDatabricksAccountSettingV2PersonalComputeOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAccountSettingV2PersonalCompute
+	SetInternalValue(val *DataDatabricksAccountSettingV2PersonalCompute)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2PersonalComputeOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2PersonalComputeOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAccountSettingV2PersonalComputeOutputReference) InternalValue() *DataDatabricksAccountSettingV2PersonalCompute {
+	var returns *DataDatabricksAccountSettingV2PersonalCompute
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -223,7 +223,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2PersonalComputeOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2PersonalComputeOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAccountSettingV2PersonalComputeOutputReference)SetInternalValue(val *DataDatabricksAccountSettingV2PersonalCompute) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

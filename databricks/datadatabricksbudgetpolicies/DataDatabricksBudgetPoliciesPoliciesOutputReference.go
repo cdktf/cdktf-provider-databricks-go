@@ -14,8 +14,6 @@ import (
 type DataDatabricksBudgetPoliciesPoliciesOutputReference interface {
 	cdktf.ComplexObject
 	BindingWorkspaceIds() *[]*float64
-	SetBindingWorkspaceIds(val *[]*float64)
-	BindingWorkspaceIdsInput() *[]*float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,15 +30,14 @@ type DataDatabricksBudgetPoliciesPoliciesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomTags() DataDatabricksBudgetPoliciesPoliciesCustomTagsList
-	CustomTagsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksBudgetPoliciesPolicies
 	SetInternalValue(val *DataDatabricksBudgetPoliciesPolicies)
 	PolicyId() *string
+	SetPolicyId(val *string)
+	PolicyIdInput() *string
 	PolicyName() *string
-	SetPolicyName(val *string)
-	PolicyNameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,10 +70,6 @@ type DataDatabricksBudgetPoliciesPoliciesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCustomTags(value interface{})
-	ResetBindingWorkspaceIds()
-	ResetCustomTags()
-	ResetPolicyName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -97,16 +90,6 @@ func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) BindingW
 	_jsii_.Get(
 		j,
 		"bindingWorkspaceIds",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) BindingWorkspaceIdsInput() *[]*float64 {
-	var returns *[]*float64
-	_jsii_.Get(
-		j,
-		"bindingWorkspaceIdsInput",
 		&returns,
 	)
 	return returns
@@ -152,16 +135,6 @@ func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) CustomTa
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) CustomTagsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"customTagsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -192,21 +165,21 @@ func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) PolicyId
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) PolicyName() *string {
+func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) PolicyIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"policyName",
+		"policyIdInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) PolicyNameInput() *string {
+func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) PolicyName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"policyNameInput",
+		"policyName",
 		&returns,
 	)
 	return returns
@@ -260,17 +233,6 @@ func NewDataDatabricksBudgetPoliciesPoliciesOutputReference_Override(d DataDatab
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference)SetBindingWorkspaceIds(val *[]*float64) {
-	if err := j.validateSetBindingWorkspaceIdsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"bindingWorkspaceIds",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -304,13 +266,13 @@ func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference)SetPolicyName(val *string) {
-	if err := j.validateSetPolicyNameParameters(val); err != nil {
+func (j *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference)SetPolicyId(val *string) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"policyName",
+		"policyId",
 		val,
 	)
 }
@@ -521,41 +483,6 @@ func (d *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) Interpol
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) PutCustomTags(value interface{}) {
-	if err := d.validatePutCustomTagsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putCustomTags",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) ResetBindingWorkspaceIds() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetBindingWorkspaceIds",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) ResetCustomTags() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCustomTags",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) ResetPolicyName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPolicyName",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksBudgetPoliciesPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

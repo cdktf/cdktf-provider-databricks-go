@@ -75,7 +75,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutputReference) validateSetInternalValueParameters(val *DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace) error {
 	return nil
 }
 

@@ -268,25 +268,9 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigO
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfig:
-		val := val.(*DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfig)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfig:
-		val_ := val.(DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfig)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfig; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigOutputReference) validateSetInternalValueParameters(val *DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfig) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

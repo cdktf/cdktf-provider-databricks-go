@@ -55,14 +55,6 @@ func (d *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) validateOverrideL
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) validatePutDestinationsParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksRfaAccessRequestDestinations) validatePutSecurableParameters(value *DataDatabricksRfaAccessRequestDestinationsSecurable) error {
-	return nil
-}
-
 func validateDataDatabricksRfaAccessRequestDestinations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

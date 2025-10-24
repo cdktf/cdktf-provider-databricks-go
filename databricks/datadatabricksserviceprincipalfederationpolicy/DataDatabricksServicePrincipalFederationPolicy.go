@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy}.
 type DataDatabricksServicePrincipalFederationPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -29,8 +29,6 @@ type DataDatabricksServicePrincipalFederationPolicy interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -47,8 +45,9 @@ type DataDatabricksServicePrincipalFederationPolicy interface {
 	// The tree node.
 	Node() constructs.Node
 	OidcPolicy() DataDatabricksServicePrincipalFederationPolicyOidcPolicyOutputReference
-	OidcPolicyInput() interface{}
 	PolicyId() *string
+	SetPolicyId(val *string)
+	PolicyIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -56,6 +55,8 @@ type DataDatabricksServicePrincipalFederationPolicy interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ServicePrincipalId() *float64
+	SetServicePrincipalId(val *float64)
+	ServicePrincipalIdInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -89,9 +90,6 @@ type DataDatabricksServicePrincipalFederationPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutOidcPolicy(value *DataDatabricksServicePrincipalFederationPolicyOidcPolicy)
-	ResetDescription()
-	ResetOidcPolicy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -174,16 +172,6 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy) Description()
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -254,21 +242,21 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy) OidcPolicy() 
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy) OidcPolicyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"oidcPolicyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy) PolicyId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"policyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy) PolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyIdInput",
 		&returns,
 	)
 	return returns
@@ -299,6 +287,16 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy) ServicePrinci
 	_jsii_.Get(
 		j,
 		"servicePrincipalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy) ServicePrincipalIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"servicePrincipalIdInput",
 		&returns,
 	)
 	return returns
@@ -355,7 +353,7 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy) UpdateTime() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy} Data Source.
 func NewDataDatabricksServicePrincipalFederationPolicy(scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalFederationPolicyConfig) DataDatabricksServicePrincipalFederationPolicy {
 	_init_.Initialize()
 
@@ -373,7 +371,7 @@ func NewDataDatabricksServicePrincipalFederationPolicy(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/service_principal_federation_policy databricks_service_principal_federation_policy} Data Source.
 func NewDataDatabricksServicePrincipalFederationPolicy_Override(d DataDatabricksServicePrincipalFederationPolicy, scope constructs.Construct, id *string, config *DataDatabricksServicePrincipalFederationPolicyConfig) {
 	_init_.Initialize()
 
@@ -403,17 +401,6 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy)SetDependsOn(v
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -433,10 +420,32 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy)SetLifecycle(v
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy)SetPolicyId(val *string) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy)SetServicePrincipalId(val *float64) {
+	if err := j.validateSetServicePrincipalIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"servicePrincipalId",
 		val,
 	)
 }
@@ -723,33 +732,6 @@ func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy) OverrideLogic
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy) PutOidcPolicy(value *DataDatabricksServicePrincipalFederationPolicyOidcPolicy) {
-	if err := d.validatePutOidcPolicyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putOidcPolicy",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy) ResetDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksServicePrincipalFederationPolicy) ResetOidcPolicy() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOidcPolicy",
-		nil, // no parameters
 	)
 }
 

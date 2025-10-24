@@ -5,9 +5,13 @@ package customappintegration
 
 
 type CustomAppIntegrationTokenAccessPolicy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#access_token_ttl_in_minutes CustomAppIntegration#access_token_ttl_in_minutes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#absolute_session_lifetime_in_minutes CustomAppIntegration#absolute_session_lifetime_in_minutes}.
+	AbsoluteSessionLifetimeInMinutes *float64 `field:"optional" json:"absoluteSessionLifetimeInMinutes" yaml:"absoluteSessionLifetimeInMinutes"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#access_token_ttl_in_minutes CustomAppIntegration#access_token_ttl_in_minutes}.
 	AccessTokenTtlInMinutes *float64 `field:"optional" json:"accessTokenTtlInMinutes" yaml:"accessTokenTtlInMinutes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#refresh_token_ttl_in_minutes CustomAppIntegration#refresh_token_ttl_in_minutes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#enable_single_use_refresh_tokens CustomAppIntegration#enable_single_use_refresh_tokens}.
+	EnableSingleUseRefreshTokens interface{} `field:"optional" json:"enableSingleUseRefreshTokens" yaml:"enableSingleUseRefreshTokens"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#refresh_token_ttl_in_minutes CustomAppIntegration#refresh_token_ttl_in_minutes}.
 	RefreshTokenTtlInMinutes *float64 `field:"optional" json:"refreshTokenTtlInMinutes" yaml:"refreshTokenTtlInMinutes"`
 }
 

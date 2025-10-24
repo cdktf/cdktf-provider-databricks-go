@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataDatabricksAccountFederationPolicy) validateOverrideLogica
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAccountFederationPolicy) validatePutOidcPolicyParameters(value *DataDatabricksAccountFederationPolicyOidcPolicy) error {
-	return nil
-}
-
 func validateDataDatabricksAccountFederationPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -79,11 +75,11 @@ func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) validateSetCountParame
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) validateSetDescriptionParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataDatabricksAccountFederationPolicy) validateSetPolicyIdParameters(val *string) error {
 	return nil
 }
 

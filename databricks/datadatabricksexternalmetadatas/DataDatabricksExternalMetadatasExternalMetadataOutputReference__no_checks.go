@@ -51,27 +51,11 @@ func (d *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetColumnsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetEntityTypeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetIdParameters(val *string) error {
 	return nil
 }
 
@@ -83,27 +67,11 @@ func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetOwnerParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetPropertiesParameters(val *map[string]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetSystemTypeParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataOutputReference) validateSetUrlParameters(val *string) error {
 	return nil
 }
 

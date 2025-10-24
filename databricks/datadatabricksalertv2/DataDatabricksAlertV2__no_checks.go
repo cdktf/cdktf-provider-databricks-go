@@ -55,18 +55,6 @@ func (d *jsiiProxy_DataDatabricksAlertV2) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAlertV2) validatePutEvaluationParameters(value *DataDatabricksAlertV2Evaluation) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAlertV2) validatePutRunAsParameters(value *DataDatabricksAlertV2RunAs) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksAlertV2) validatePutScheduleParameters(value *DataDatabricksAlertV2Schedule) error {
-	return nil
-}
-
 func validateDataDatabricksAlertV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -87,39 +75,11 @@ func (j *jsiiProxy_DataDatabricksAlertV2) validateSetCountParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2) validateSetCustomDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAlertV2) validateSetCustomSummaryParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAlertV2) validateSetDisplayNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAlertV2) validateSetIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksAlertV2) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAlertV2) validateSetParentPathParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAlertV2) validateSetQueryTextParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAlertV2) validateSetRunAsUserNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAlertV2) validateSetWarehouseIdParameters(val *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables}.
 type DataDatabricksDatabaseSyncedDatabaseTables interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -35,12 +35,18 @@ type DataDatabricksDatabaseSyncedDatabaseTables interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	InstanceName() *string
+	SetInstanceName(val *string)
+	InstanceNameInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	PageSize() *float64
+	SetPageSize(val *float64)
+	PageSizeInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -82,6 +88,7 @@ type DataDatabricksDatabaseSyncedDatabaseTables interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPageSize()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -171,6 +178,26 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) FriendlyUniqueId(
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) InstanceName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) InstanceNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -186,6 +213,26 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) Node() constructs
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) PageSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pageSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) PageSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pageSizeInput",
 		&returns,
 	)
 	return returns
@@ -252,7 +299,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables} Data Source.
 func NewDataDatabricksDatabaseSyncedDatabaseTables(scope constructs.Construct, id *string, config *DataDatabricksDatabaseSyncedDatabaseTablesConfig) DataDatabricksDatabaseSyncedDatabaseTables {
 	_init_.Initialize()
 
@@ -270,7 +317,7 @@ func NewDataDatabricksDatabaseSyncedDatabaseTables(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_tables databricks_database_synced_database_tables} Data Source.
 func NewDataDatabricksDatabaseSyncedDatabaseTables_Override(d DataDatabricksDatabaseSyncedDatabaseTables, scope constructs.Construct, id *string, config *DataDatabricksDatabaseSyncedDatabaseTablesConfig) {
 	_init_.Initialize()
 
@@ -308,6 +355,17 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables)SetForEach(val cdk
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables)SetInstanceName(val *string) {
+	if err := j.validateSetInstanceNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instanceName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -315,6 +373,17 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables)SetLifecycle(val *
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables)SetPageSize(val *float64) {
+	if err := j.validateSetPageSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pageSize",
 		val,
 	)
 }
@@ -616,6 +685,14 @@ func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) ResetOverrideLogi
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTables) ResetPageSize() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPageSize",
 		nil, // no parameters
 	)
 }

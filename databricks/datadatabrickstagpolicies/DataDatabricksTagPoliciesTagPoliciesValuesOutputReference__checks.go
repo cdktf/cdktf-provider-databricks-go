@@ -166,25 +166,9 @@ func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesValuesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesValuesOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataDatabricksTagPoliciesTagPoliciesValues:
-		val := val.(*DataDatabricksTagPoliciesTagPoliciesValues)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataDatabricksTagPoliciesTagPoliciesValues:
-		val_ := val.(DataDatabricksTagPoliciesTagPoliciesValues)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksTagPoliciesTagPoliciesValues; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesValuesOutputReference) validateSetInternalValueParameters(val *DataDatabricksTagPoliciesTagPoliciesValues) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

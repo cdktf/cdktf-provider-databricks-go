@@ -63,7 +63,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureSourceOutputReference) validateSetInternalValueParameters(val *DataDatabricksFeatureEngineeringFeatureSource) error {
 	return nil
 }
 

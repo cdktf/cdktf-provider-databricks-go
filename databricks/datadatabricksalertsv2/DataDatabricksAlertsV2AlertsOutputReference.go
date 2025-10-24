@@ -30,17 +30,10 @@ type DataDatabricksAlertsV2AlertsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomDescription() *string
-	SetCustomDescription(val *string)
-	CustomDescriptionInput() *string
 	CustomSummary() *string
-	SetCustomSummary(val *string)
-	CustomSummaryInput() *string
 	DisplayName() *string
-	SetDisplayName(val *string)
-	DisplayNameInput() *string
 	EffectiveRunAs() DataDatabricksAlertsV2AlertsEffectiveRunAsOutputReference
 	Evaluation() DataDatabricksAlertsV2AlertsEvaluationOutputReference
-	EvaluationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -51,18 +44,10 @@ type DataDatabricksAlertsV2AlertsOutputReference interface {
 	LifecycleState() *string
 	OwnerUserName() *string
 	ParentPath() *string
-	SetParentPath(val *string)
-	ParentPathInput() *string
 	QueryText() *string
-	SetQueryText(val *string)
-	QueryTextInput() *string
 	RunAs() DataDatabricksAlertsV2AlertsRunAsOutputReference
-	RunAsInput() interface{}
 	RunAsUserName() *string
-	SetRunAsUserName(val *string)
-	RunAsUserNameInput() *string
 	Schedule() DataDatabricksAlertsV2AlertsScheduleOutputReference
-	ScheduleInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,8 +58,6 @@ type DataDatabricksAlertsV2AlertsOutputReference interface {
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	UpdateTime() *string
 	WarehouseId() *string
-	SetWarehouseId(val *string)
-	WarehouseIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -99,19 +82,6 @@ type DataDatabricksAlertsV2AlertsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEvaluation(value *DataDatabricksAlertsV2AlertsEvaluation)
-	PutRunAs(value *DataDatabricksAlertsV2AlertsRunAs)
-	PutSchedule(value *DataDatabricksAlertsV2AlertsSchedule)
-	ResetCustomDescription()
-	ResetCustomSummary()
-	ResetDisplayName()
-	ResetEvaluation()
-	ResetParentPath()
-	ResetQueryText()
-	ResetRunAs()
-	ResetRunAsUserName()
-	ResetSchedule()
-	ResetWarehouseId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -177,16 +147,6 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) CustomDescriptio
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) CustomDescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"customDescriptionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) CustomSummary() *string {
 	var returns *string
 	_jsii_.Get(
@@ -197,31 +157,11 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) CustomSummary() 
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) CustomSummaryInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"customSummaryInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) DisplayName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"displayName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) DisplayNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"displayNameInput",
 		&returns,
 	)
 	return returns
@@ -242,16 +182,6 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) Evaluation() Dat
 	_jsii_.Get(
 		j,
 		"evaluation",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) EvaluationInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"evaluationInput",
 		&returns,
 	)
 	return returns
@@ -327,31 +257,11 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) ParentPath() *st
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) ParentPathInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"parentPathInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) QueryText() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"queryText",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) QueryTextInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"queryTextInput",
 		&returns,
 	)
 	return returns
@@ -367,16 +277,6 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) RunAs() DataData
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) RunAsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"runAsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) RunAsUserName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -387,31 +287,11 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) RunAsUserName() 
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) RunAsUserNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"runAsUserNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) Schedule() DataDatabricksAlertsV2AlertsScheduleOutputReference {
 	var returns DataDatabricksAlertsV2AlertsScheduleOutputReference
 	_jsii_.Get(
 		j,
 		"schedule",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) ScheduleInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"scheduleInput",
 		&returns,
 	)
 	return returns
@@ -452,16 +332,6 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) WarehouseId() *s
 	_jsii_.Get(
 		j,
 		"warehouseId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) WarehouseIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"warehouseIdInput",
 		&returns,
 	)
 	return returns
@@ -517,39 +387,6 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference)SetCustomDescription(val *string) {
-	if err := j.validateSetCustomDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"customDescription",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference)SetCustomSummary(val *string) {
-	if err := j.validateSetCustomSummaryParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"customSummary",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference)SetDisplayName(val *string) {
-	if err := j.validateSetDisplayNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"displayName",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -572,39 +409,6 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference)SetParentPath(val *string) {
-	if err := j.validateSetParentPathParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"parentPath",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference)SetQueryText(val *string) {
-	if err := j.validateSetQueryTextParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"queryText",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference)SetRunAsUserName(val *string) {
-	if err := j.validateSetRunAsUserNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"runAsUserName",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -623,17 +427,6 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference)SetTerraformResou
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference)SetWarehouseId(val *string) {
-	if err := j.validateSetWarehouseIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"warehouseId",
 		val,
 	)
 }
@@ -822,119 +615,6 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) InterpolationFor
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) PutEvaluation(value *DataDatabricksAlertsV2AlertsEvaluation) {
-	if err := d.validatePutEvaluationParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putEvaluation",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) PutRunAs(value *DataDatabricksAlertsV2AlertsRunAs) {
-	if err := d.validatePutRunAsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putRunAs",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) PutSchedule(value *DataDatabricksAlertsV2AlertsSchedule) {
-	if err := d.validatePutScheduleParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putSchedule",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) ResetCustomDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCustomDescription",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) ResetCustomSummary() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCustomSummary",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) ResetDisplayName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDisplayName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) ResetEvaluation() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEvaluation",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) ResetParentPath() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetParentPath",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) ResetQueryText() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetQueryText",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) ResetRunAs() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRunAs",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) ResetRunAsUserName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRunAsUserName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) ResetSchedule() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSchedule",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) ResetWarehouseId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetWarehouseId",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksAlertsV2AlertsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

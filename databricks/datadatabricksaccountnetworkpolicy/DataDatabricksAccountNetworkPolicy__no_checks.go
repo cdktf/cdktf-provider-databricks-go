@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPolicy) validateOverrideLogicalId
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAccountNetworkPolicy) validatePutEgressParameters(value *DataDatabricksAccountNetworkPolicyEgress) error {
-	return nil
-}
-
 func validateDataDatabricksAccountNetworkPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -72,10 +68,6 @@ func validateDataDatabricksAccountNetworkPolicy_IsTerraformDataSourceParameters(
 }
 
 func validateDataDatabricksAccountNetworkPolicy_IsTerraformElementParameters(x interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAccountNetworkPolicy) validateSetAccountIdParameters(val *string) error {
 	return nil
 }
 

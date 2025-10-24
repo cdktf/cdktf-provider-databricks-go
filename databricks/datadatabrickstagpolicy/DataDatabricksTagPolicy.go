@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/tag_policy databricks_tag_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/tag_policy databricks_tag_policy}.
 type DataDatabricksTagPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -29,8 +29,6 @@ type DataDatabricksTagPolicy interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -63,7 +61,6 @@ type DataDatabricksTagPolicy interface {
 	TerraformResourceType() *string
 	UpdateTime() *string
 	Values() DataDatabricksTagPolicyValuesList
-	ValuesInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -89,12 +86,9 @@ type DataDatabricksTagPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutValues(value interface{})
-	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetValues()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -169,16 +163,6 @@ func (j *jsiiProxy_DataDatabricksTagPolicy) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksTagPolicy) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -334,18 +318,8 @@ func (j *jsiiProxy_DataDatabricksTagPolicy) Values() DataDatabricksTagPolicyValu
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksTagPolicy) ValuesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"valuesInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/tag_policy databricks_tag_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/tag_policy databricks_tag_policy} Data Source.
 func NewDataDatabricksTagPolicy(scope constructs.Construct, id *string, config *DataDatabricksTagPolicyConfig) DataDatabricksTagPolicy {
 	_init_.Initialize()
 
@@ -363,7 +337,7 @@ func NewDataDatabricksTagPolicy(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/tag_policy databricks_tag_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/tag_policy databricks_tag_policy} Data Source.
 func NewDataDatabricksTagPolicy_Override(d DataDatabricksTagPolicy, scope constructs.Construct, id *string, config *DataDatabricksTagPolicyConfig) {
 	_init_.Initialize()
 
@@ -389,17 +363,6 @@ func (j *jsiiProxy_DataDatabricksTagPolicy)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksTagPolicy)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
 		val,
 	)
 }
@@ -727,37 +690,10 @@ func (d *jsiiProxy_DataDatabricksTagPolicy) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksTagPolicy) PutValues(value interface{}) {
-	if err := d.validatePutValuesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putValues",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksTagPolicy) ResetDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescription",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksTagPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksTagPolicy) ResetValues() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetValues",
 		nil, // no parameters
 	)
 }

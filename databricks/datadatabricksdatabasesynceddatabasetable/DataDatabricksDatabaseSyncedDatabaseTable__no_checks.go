@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) validateOverrideLo
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) validatePutSpecParameters(value *DataDatabricksDatabaseSyncedDatabaseTableSpec) error {
-	return nil
-}
-
 func validateDataDatabricksDatabaseSyncedDatabaseTable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -79,15 +75,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) validateSetCountPa
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) validateSetDatabaseInstanceNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTable) validateSetLogicalDatabaseNameParameters(val *string) error {
 	return nil
 }
 

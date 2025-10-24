@@ -79,6 +79,10 @@ func (s *jsiiProxy_Share) validatePutObjectParameters(value interface{}) error {
 	return nil
 }
 
+func (s *jsiiProxy_Share) validatePutProviderConfigParameters(value interface{}) error {
+	return nil
+}
+
 func validateShare_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

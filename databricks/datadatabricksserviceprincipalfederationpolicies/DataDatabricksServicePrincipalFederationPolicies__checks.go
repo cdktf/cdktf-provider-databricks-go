@@ -219,6 +219,14 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicies) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicies) validateSetPageSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicies) validateSetServicePrincipalIdParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -14,8 +14,6 @@ import (
 type DataDatabricksAccountNetworkPoliciesItemsOutputReference interface {
 	cdktf.ComplexObject
 	AccountId() *string
-	SetAccountId(val *string)
-	AccountIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,7 +30,6 @@ type DataDatabricksAccountNetworkPoliciesItemsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Egress() DataDatabricksAccountNetworkPoliciesItemsEgressOutputReference
-	EgressInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksAccountNetworkPoliciesItems
@@ -72,10 +69,6 @@ type DataDatabricksAccountNetworkPoliciesItemsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEgress(value *DataDatabricksAccountNetworkPoliciesItemsEgress)
-	ResetAccountId()
-	ResetEgress()
-	ResetNetworkPolicyId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -96,16 +89,6 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference) Acc
 	_jsii_.Get(
 		j,
 		"accountId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference) AccountIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountIdInput",
 		&returns,
 	)
 	return returns
@@ -146,16 +129,6 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference) Egr
 	_jsii_.Get(
 		j,
 		"egress",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference) EgressInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"egressInput",
 		&returns,
 	)
 	return returns
@@ -246,17 +219,6 @@ func NewDataDatabricksAccountNetworkPoliciesItemsOutputReference_Override(d Data
 		"@cdktf/provider-databricks.dataDatabricksAccountNetworkPolicies.DataDatabricksAccountNetworkPoliciesItemsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference)SetAccountId(val *string) {
-	if err := j.validateSetAccountIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"accountId",
-		val,
 	)
 }
 
@@ -510,41 +472,6 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference) Int
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference) PutEgress(value *DataDatabricksAccountNetworkPoliciesItemsEgress) {
-	if err := d.validatePutEgressParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putEgress",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference) ResetEgress() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEgress",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference) ResetNetworkPolicyId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetNetworkPolicyId",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

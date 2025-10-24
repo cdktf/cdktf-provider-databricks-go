@@ -114,6 +114,28 @@ func (d *jsiiProxy_DataDatabricksBudgetPolicies) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksBudgetPolicies) validatePutFilterByParameters(value *DataDatabricksBudgetPoliciesFilterBy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksBudgetPolicies) validatePutSortSpecParameters(value *DataDatabricksBudgetPoliciesSortSpec) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateDataDatabricksBudgetPolicies_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -214,6 +236,14 @@ func (j *jsiiProxy_DataDatabricksBudgetPolicies) validateSetCountParameters(val 
 func (j *jsiiProxy_DataDatabricksBudgetPolicies) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksBudgetPolicies) validateSetPageSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

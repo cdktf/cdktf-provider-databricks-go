@@ -22,5 +22,7 @@ type DataDatabricksExternalMetadatasConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/external_metadatas#page_size DataDatabricksExternalMetadatas#page_size}.
+	PageSize *float64 `field:"optional" json:"pageSize" yaml:"pageSize"`
 }
 

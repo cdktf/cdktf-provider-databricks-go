@@ -14,7 +14,6 @@ import (
 type DataDatabricksDataQualityMonitorsMonitorsOutputReference interface {
 	cdktf.ComplexObject
 	AnomalyDetectionConfig() DataDatabricksDataQualityMonitorsMonitorsAnomalyDetectionConfigOutputReference
-	AnomalyDetectionConfigInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,7 +30,6 @@ type DataDatabricksDataQualityMonitorsMonitorsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DataProfilingConfig() DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigOutputReference
-	DataProfilingConfigInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksDataQualityMonitorsMonitors
@@ -74,10 +72,6 @@ type DataDatabricksDataQualityMonitorsMonitorsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAnomalyDetectionConfig(value *DataDatabricksDataQualityMonitorsMonitorsAnomalyDetectionConfig)
-	PutDataProfilingConfig(value *DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfig)
-	ResetAnomalyDetectionConfig()
-	ResetDataProfilingConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -98,16 +92,6 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) Ano
 	_jsii_.Get(
 		j,
 		"anomalyDetectionConfig",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) AnomalyDetectionConfigInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"anomalyDetectionConfigInput",
 		&returns,
 	)
 	return returns
@@ -148,16 +132,6 @@ func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) Dat
 	_jsii_.Get(
 		j,
 		"dataProfilingConfig",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) DataProfilingConfigInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"dataProfilingConfigInput",
 		&returns,
 	)
 	return returns
@@ -532,44 +506,6 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) Int
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) PutAnomalyDetectionConfig(value *DataDatabricksDataQualityMonitorsMonitorsAnomalyDetectionConfig) {
-	if err := d.validatePutAnomalyDetectionConfigParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putAnomalyDetectionConfig",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) PutDataProfilingConfig(value *DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfig) {
-	if err := d.validatePutDataProfilingConfigParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putDataProfilingConfig",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) ResetAnomalyDetectionConfig() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAnomalyDetectionConfig",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) ResetDataProfilingConfig() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDataProfilingConfig",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

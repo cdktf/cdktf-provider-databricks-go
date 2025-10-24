@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataDatabricksAlertV2RunAsOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2RunAsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksAlertV2RunAsOutputReference) validateSetInternalValueParameters(val *DataDatabricksAlertV2RunAs) error {
 	return nil
 }
 

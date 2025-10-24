@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicies) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicies) validateSetPageSizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksServicePrincipalFederationPolicies) validateSetServicePrincipalIdParameters(val *float64) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template}.
 type DataDatabricksAppsSettingsCustomTemplate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -29,8 +29,6 @@ type DataDatabricksAppsSettingsCustomTemplate interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -40,25 +38,18 @@ type DataDatabricksAppsSettingsCustomTemplate interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GitProvider() *string
-	SetGitProvider(val *string)
-	GitProviderInput() *string
 	GitRepo() *string
-	SetGitRepo(val *string)
-	GitRepoInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Manifest() DataDatabricksAppsSettingsCustomTemplateManifestOutputReference
-	ManifestInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Path() *string
-	SetPath(val *string)
-	PathInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -96,8 +87,6 @@ type DataDatabricksAppsSettingsCustomTemplate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutManifest(value *DataDatabricksAppsSettingsCustomTemplateManifest)
-	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -180,16 +169,6 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) Description() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -230,31 +209,11 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) GitProvider() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) GitProviderInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"gitProviderInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) GitRepo() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"gitRepo",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) GitRepoInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"gitRepoInput",
 		&returns,
 	)
 	return returns
@@ -275,16 +234,6 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) Manifest() DataData
 	_jsii_.Get(
 		j,
 		"manifest",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) ManifestInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"manifestInput",
 		&returns,
 	)
 	return returns
@@ -325,16 +274,6 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) Path() *string {
 	_jsii_.Get(
 		j,
 		"path",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) PathInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pathInput",
 		&returns,
 	)
 	return returns
@@ -391,7 +330,7 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source.
 func NewDataDatabricksAppsSettingsCustomTemplate(scope constructs.Construct, id *string, config *DataDatabricksAppsSettingsCustomTemplateConfig) DataDatabricksAppsSettingsCustomTemplate {
 	_init_.Initialize()
 
@@ -409,7 +348,7 @@ func NewDataDatabricksAppsSettingsCustomTemplate(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source.
 func NewDataDatabricksAppsSettingsCustomTemplate_Override(d DataDatabricksAppsSettingsCustomTemplate, scope constructs.Construct, id *string, config *DataDatabricksAppsSettingsCustomTemplateConfig) {
 	_init_.Initialize()
 
@@ -439,43 +378,10 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate)SetDependsOn(val *[]
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate)SetGitProvider(val *string) {
-	if err := j.validateSetGitProviderParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"gitProvider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate)SetGitRepo(val *string) {
-	if err := j.validateSetGitRepoParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"gitRepo",
 		val,
 	)
 }
@@ -498,17 +404,6 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate)SetName(val *string)
 	_jsii_.Set(
 		j,
 		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate)SetPath(val *string) {
-	if err := j.validateSetPathParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"path",
 		val,
 	)
 }
@@ -803,25 +698,6 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) OverrideLogicalId(n
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) PutManifest(value *DataDatabricksAppsSettingsCustomTemplateManifest) {
-	if err := d.validatePutManifestParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putManifest",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) ResetDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescription",
-		nil, // no parameters
 	)
 }
 

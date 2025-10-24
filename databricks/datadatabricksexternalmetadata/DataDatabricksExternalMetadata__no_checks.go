@@ -71,23 +71,7 @@ func validateDataDatabricksExternalMetadata_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetColumnsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetEntityTypeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetIdParameters(val *string) error {
 	return nil
 }
 
@@ -96,22 +80,6 @@ func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetLifecycleParameter
 }
 
 func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetOwnerParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetPropertiesParameters(val *map[string]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetSystemTypeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetUrlParameters(val *string) error {
 	return nil
 }
 

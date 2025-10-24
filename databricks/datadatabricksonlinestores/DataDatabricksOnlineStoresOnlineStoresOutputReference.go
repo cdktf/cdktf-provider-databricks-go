@@ -14,8 +14,6 @@ import (
 type DataDatabricksOnlineStoresOnlineStoresOutputReference interface {
 	cdktf.ComplexObject
 	Capacity() *string
-	SetCapacity(val *string)
-	CapacityInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,8 +39,6 @@ type DataDatabricksOnlineStoresOnlineStoresOutputReference interface {
 	SetName(val *string)
 	NameInput() *string
 	ReadReplicaCount() *float64
-	SetReadReplicaCount(val *float64)
-	ReadReplicaCountInput() *float64
 	State() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -76,7 +72,6 @@ type DataDatabricksOnlineStoresOnlineStoresOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetReadReplicaCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -97,16 +92,6 @@ func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) Capaci
 	_jsii_.Get(
 		j,
 		"capacity",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) CapacityInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"capacityInput",
 		&returns,
 	)
 	return returns
@@ -212,16 +197,6 @@ func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) ReadRe
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) ReadReplicaCountInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"readReplicaCountInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -280,17 +255,6 @@ func NewDataDatabricksOnlineStoresOnlineStoresOutputReference_Override(d DataDat
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference)SetCapacity(val *string) {
-	if err := j.validateSetCapacityParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"capacity",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -331,17 +295,6 @@ func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference)SetName
 	_jsii_.Set(
 		j,
 		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference)SetReadReplicaCount(val *float64) {
-	if err := j.validateSetReadReplicaCountParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"readReplicaCount",
 		val,
 	)
 }
@@ -552,14 +505,6 @@ func (d *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) Interp
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) ResetReadReplicaCount() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetReadReplicaCount",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

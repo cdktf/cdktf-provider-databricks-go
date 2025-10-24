@@ -22,11 +22,7 @@ type DataDatabricksBudgetPolicyConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/budget_policy#binding_workspace_ids DataDatabricksBudgetPolicy#binding_workspace_ids}.
-	BindingWorkspaceIds *[]*float64 `field:"optional" json:"bindingWorkspaceIds" yaml:"bindingWorkspaceIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/budget_policy#custom_tags DataDatabricksBudgetPolicy#custom_tags}.
-	CustomTags interface{} `field:"optional" json:"customTags" yaml:"customTags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/budget_policy#policy_name DataDatabricksBudgetPolicy#policy_name}.
-	PolicyName *string `field:"optional" json:"policyName" yaml:"policyName"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/budget_policy#policy_id DataDatabricksBudgetPolicy#policy_id}.
+	PolicyId *string `field:"required" json:"policyId" yaml:"policyId"`
 }
 

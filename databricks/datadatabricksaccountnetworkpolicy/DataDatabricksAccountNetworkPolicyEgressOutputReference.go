@@ -30,8 +30,8 @@ type DataDatabricksAccountNetworkPolicyEgressOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAccountNetworkPolicyEgress
+	SetInternalValue(val *DataDatabricksAccountNetworkPolicyEgress)
 	NetworkAccess() DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputReference
 	NetworkAccessInput() interface{}
 	// Experimental.
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressOutputReference) InternalValue() *DataDatabricksAccountNetworkPolicyEgress {
+	var returns *DataDatabricksAccountNetworkPolicyEgress
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -223,7 +223,7 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressOutputReference)SetInternalValue(val *DataDatabricksAccountNetworkPolicyEgress) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

@@ -154,14 +154,6 @@ func validateDataDatabricksExternalMetadata_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetColumnsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:
@@ -219,30 +211,6 @@ func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetCountParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetDescriptionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetEntityTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -252,38 +220,6 @@ func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetLifecycleParameter
 }
 
 func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetOwnerParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetPropertiesParameters(val *map[string]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetSystemTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksExternalMetadata) validateSetUrlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

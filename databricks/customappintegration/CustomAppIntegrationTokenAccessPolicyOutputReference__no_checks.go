@@ -51,6 +51,10 @@ func (c *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) validateSetAbsoluteSessionLifetimeInMinutesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) validateSetAccessTokenTtlInMinutesParameters(val *float64) error {
 	return nil
 }
@@ -60,6 +64,10 @@ func (j *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) validat
 }
 
 func (j *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) validateSetEnableSingleUseRefreshTokensParameters(val interface{}) error {
 	return nil
 }
 

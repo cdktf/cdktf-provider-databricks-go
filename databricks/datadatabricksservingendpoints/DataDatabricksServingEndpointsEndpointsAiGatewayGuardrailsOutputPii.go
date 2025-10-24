@@ -5,7 +5,7 @@ package datadatabricksservingendpoints
 
 
 type DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}.
 	Behavior *string `field:"optional" json:"behavior" yaml:"behavior"`
 }
 

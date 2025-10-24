@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataDatabricksBudgetPolicy) validateOverrideLogicalIdParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksBudgetPolicy) validatePutCustomTagsParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataDatabricksBudgetPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -75,10 +71,6 @@ func validateDataDatabricksBudgetPolicy_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksBudgetPolicy) validateSetBindingWorkspaceIdsParameters(val *[]*float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksBudgetPolicy) validateSetCountParameters(val interface{}) error {
 	return nil
 }
@@ -87,7 +79,7 @@ func (j *jsiiProxy_DataDatabricksBudgetPolicy) validateSetLifecycleParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksBudgetPolicy) validateSetPolicyNameParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksBudgetPolicy) validateSetPolicyIdParameters(val *string) error {
 	return nil
 }
 

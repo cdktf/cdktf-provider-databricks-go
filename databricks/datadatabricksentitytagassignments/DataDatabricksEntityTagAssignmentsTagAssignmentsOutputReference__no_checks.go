@@ -75,10 +75,6 @@ func (j *jsiiProxy_DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference) validateSetTagValueParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

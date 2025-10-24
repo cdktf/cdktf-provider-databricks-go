@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataDatabricksDataQualityRefreshes) validateSetObjectTypePara
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDataQualityRefreshes) validateSetPageSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataDatabricksDataQualityRefreshesParameters(scope constructs.Construct, id *string, config *DataDatabricksDataQualityRefreshesConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

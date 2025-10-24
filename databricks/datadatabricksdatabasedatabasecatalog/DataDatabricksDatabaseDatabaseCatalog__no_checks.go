@@ -75,18 +75,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) validateSetCountParame
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) validateSetCreateDatabaseIfNotExistsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) validateSetDatabaseInstanceNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) validateSetDatabaseNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalog) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataDatabricksTagPolicyValuesOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksTagPolicyValuesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksTagPolicyValuesOutputReference) validateSetInternalValueParameters(val *DataDatabricksTagPolicyValues) error {
 	return nil
 }
 

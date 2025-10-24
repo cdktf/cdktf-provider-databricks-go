@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) validateSetLifecycleParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksQualityMonitorsV2) validateSetPageSizeParameters(val *float64) error {
+	return nil
+}
+
 func validateNewDataDatabricksQualityMonitorsV2Parameters(scope constructs.Construct, id *string, config *DataDatabricksQualityMonitorsV2Config) error {
 	return nil
 }

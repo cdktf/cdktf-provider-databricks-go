@@ -63,7 +63,7 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressOutputReference) validateSetInternalValueParameters(val *DataDatabricksAccountNetworkPoliciesItemsEgress) error {
 	return nil
 }
 

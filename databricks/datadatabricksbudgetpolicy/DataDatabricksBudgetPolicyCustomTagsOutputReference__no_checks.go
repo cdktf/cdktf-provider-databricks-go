@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataDatabricksBudgetPolicyCustomTagsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksBudgetPolicyCustomTagsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksBudgetPolicyCustomTagsOutputReference) validateSetInternalValueParameters(val *DataDatabricksBudgetPolicyCustomTags) error {
 	return nil
 }
 

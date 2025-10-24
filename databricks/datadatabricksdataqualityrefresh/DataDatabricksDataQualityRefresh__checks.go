@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataDatabricksDataQualityRefresh) validateSetObjectTypeParame
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDataQualityRefresh) validateSetRefreshIdParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataDatabricksDataQualityRefreshParameters(scope constructs.Construct, id *string, config *DataDatabricksDataQualityRefreshConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

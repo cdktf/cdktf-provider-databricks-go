@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alert_v2 databricks_alert_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alert_v2 databricks_alert_v2}.
 type DataDatabricksAlertV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -25,21 +25,14 @@ type DataDatabricksAlertV2 interface {
 	SetCount(val interface{})
 	CreateTime() *string
 	CustomDescription() *string
-	SetCustomDescription(val *string)
-	CustomDescriptionInput() *string
 	CustomSummary() *string
-	SetCustomSummary(val *string)
-	CustomSummaryInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DisplayName() *string
-	SetDisplayName(val *string)
-	DisplayNameInput() *string
 	EffectiveRunAs() DataDatabricksAlertV2EffectiveRunAsOutputReference
 	Evaluation() DataDatabricksAlertV2EvaluationOutputReference
-	EvaluationInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -60,24 +53,16 @@ type DataDatabricksAlertV2 interface {
 	Node() constructs.Node
 	OwnerUserName() *string
 	ParentPath() *string
-	SetParentPath(val *string)
-	ParentPathInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	QueryText() *string
-	SetQueryText(val *string)
-	QueryTextInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	RunAs() DataDatabricksAlertV2RunAsOutputReference
-	RunAsInput() interface{}
 	RunAsUserName() *string
-	SetRunAsUserName(val *string)
-	RunAsUserNameInput() *string
 	Schedule() DataDatabricksAlertV2ScheduleOutputReference
-	ScheduleInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -86,8 +71,6 @@ type DataDatabricksAlertV2 interface {
 	TerraformResourceType() *string
 	UpdateTime() *string
 	WarehouseId() *string
-	SetWarehouseId(val *string)
-	WarehouseIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -113,22 +96,9 @@ type DataDatabricksAlertV2 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEvaluation(value *DataDatabricksAlertV2Evaluation)
-	PutRunAs(value *DataDatabricksAlertV2RunAs)
-	PutSchedule(value *DataDatabricksAlertV2Schedule)
-	ResetCustomDescription()
-	ResetCustomSummary()
-	ResetDisplayName()
-	ResetEvaluation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetParentPath()
-	ResetQueryText()
-	ResetRunAs()
-	ResetRunAsUserName()
-	ResetSchedule()
-	ResetWarehouseId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -198,31 +168,11 @@ func (j *jsiiProxy_DataDatabricksAlertV2) CustomDescription() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2) CustomDescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"customDescriptionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAlertV2) CustomSummary() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"customSummary",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAlertV2) CustomSummaryInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"customSummaryInput",
 		&returns,
 	)
 	return returns
@@ -248,16 +198,6 @@ func (j *jsiiProxy_DataDatabricksAlertV2) DisplayName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2) DisplayNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"displayNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAlertV2) EffectiveRunAs() DataDatabricksAlertV2EffectiveRunAsOutputReference {
 	var returns DataDatabricksAlertV2EffectiveRunAsOutputReference
 	_jsii_.Get(
@@ -273,16 +213,6 @@ func (j *jsiiProxy_DataDatabricksAlertV2) Evaluation() DataDatabricksAlertV2Eval
 	_jsii_.Get(
 		j,
 		"evaluation",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAlertV2) EvaluationInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"evaluationInput",
 		&returns,
 	)
 	return returns
@@ -388,16 +318,6 @@ func (j *jsiiProxy_DataDatabricksAlertV2) ParentPath() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2) ParentPathInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"parentPathInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAlertV2) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -413,16 +333,6 @@ func (j *jsiiProxy_DataDatabricksAlertV2) QueryText() *string {
 	_jsii_.Get(
 		j,
 		"queryText",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAlertV2) QueryTextInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"queryTextInput",
 		&returns,
 	)
 	return returns
@@ -448,16 +358,6 @@ func (j *jsiiProxy_DataDatabricksAlertV2) RunAs() DataDatabricksAlertV2RunAsOutp
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2) RunAsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"runAsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAlertV2) RunAsUserName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -468,31 +368,11 @@ func (j *jsiiProxy_DataDatabricksAlertV2) RunAsUserName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2) RunAsUserNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"runAsUserNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAlertV2) Schedule() DataDatabricksAlertV2ScheduleOutputReference {
 	var returns DataDatabricksAlertV2ScheduleOutputReference
 	_jsii_.Get(
 		j,
 		"schedule",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAlertV2) ScheduleInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"scheduleInput",
 		&returns,
 	)
 	return returns
@@ -548,18 +428,8 @@ func (j *jsiiProxy_DataDatabricksAlertV2) WarehouseId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2) WarehouseIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"warehouseIdInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
 func NewDataDatabricksAlertV2(scope constructs.Construct, id *string, config *DataDatabricksAlertV2Config) DataDatabricksAlertV2 {
 	_init_.Initialize()
 
@@ -577,7 +447,7 @@ func NewDataDatabricksAlertV2(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alert_v2 databricks_alert_v2} Data Source.
 func NewDataDatabricksAlertV2_Override(d DataDatabricksAlertV2, scope constructs.Construct, id *string, config *DataDatabricksAlertV2Config) {
 	_init_.Initialize()
 
@@ -599,43 +469,10 @@ func (j *jsiiProxy_DataDatabricksAlertV2)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2)SetCustomDescription(val *string) {
-	if err := j.validateSetCustomDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"customDescription",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAlertV2)SetCustomSummary(val *string) {
-	if err := j.validateSetCustomSummaryParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"customSummary",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksAlertV2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAlertV2)SetDisplayName(val *string) {
-	if err := j.validateSetDisplayNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"displayName",
 		val,
 	)
 }
@@ -670,54 +507,10 @@ func (j *jsiiProxy_DataDatabricksAlertV2)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2)SetParentPath(val *string) {
-	if err := j.validateSetParentPathParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"parentPath",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksAlertV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAlertV2)SetQueryText(val *string) {
-	if err := j.validateSetQueryTextParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"queryText",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAlertV2)SetRunAsUserName(val *string) {
-	if err := j.validateSetRunAsUserNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"runAsUserName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAlertV2)SetWarehouseId(val *string) {
-	if err := j.validateSetWarehouseIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"warehouseId",
 		val,
 	)
 }
@@ -1007,123 +800,10 @@ func (d *jsiiProxy_DataDatabricksAlertV2) OverrideLogicalId(newLogicalId *string
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAlertV2) PutEvaluation(value *DataDatabricksAlertV2Evaluation) {
-	if err := d.validatePutEvaluationParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putEvaluation",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertV2) PutRunAs(value *DataDatabricksAlertV2RunAs) {
-	if err := d.validatePutRunAsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putRunAs",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertV2) PutSchedule(value *DataDatabricksAlertV2Schedule) {
-	if err := d.validatePutScheduleParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putSchedule",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertV2) ResetCustomDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCustomDescription",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertV2) ResetCustomSummary() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCustomSummary",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertV2) ResetDisplayName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDisplayName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertV2) ResetEvaluation() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEvaluation",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksAlertV2) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertV2) ResetParentPath() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetParentPath",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertV2) ResetQueryText() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetQueryText",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertV2) ResetRunAs() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRunAs",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertV2) ResetRunAsUserName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRunAsUserName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertV2) ResetSchedule() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSchedule",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertV2) ResetWarehouseId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetWarehouseId",
 		nil, // no parameters
 	)
 }

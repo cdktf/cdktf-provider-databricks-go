@@ -34,8 +34,8 @@ type DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRefOutputRefe
 	EffectiveLsn() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef
+	SetInternalValue(val *DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef)
 	Lsn() *string
 	SetLsn(val *string)
 	LsnInput() *string
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRefOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRefOutputReference) InternalValue() *DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef {
+	var returns *DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -304,7 +304,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanc
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRefOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRefOutputReference)SetInternalValue(val *DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

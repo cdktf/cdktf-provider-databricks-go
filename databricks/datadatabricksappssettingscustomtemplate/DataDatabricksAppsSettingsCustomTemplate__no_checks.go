@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) validateOverrideLog
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) validatePutManifestParameters(value *DataDatabricksAppsSettingsCustomTemplateManifest) error {
-	return nil
-}
-
 func validateDataDatabricksAppsSettingsCustomTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -79,27 +75,11 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) validateSetCountPar
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) validateSetGitProviderParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) validateSetGitRepoParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplate) validateSetPathParameters(val *string) error {
 	return nil
 }
 

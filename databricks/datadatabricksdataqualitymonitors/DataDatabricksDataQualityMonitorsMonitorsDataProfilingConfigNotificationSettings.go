@@ -5,7 +5,7 @@ package datadatabricksdataqualitymonitors
 
 
 type DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_monitors#on_failure DataDatabricksDataQualityMonitors#on_failure}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_monitors#on_failure DataDatabricksDataQualityMonitors#on_failure}.
 	OnFailure *DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigNotificationSettingsOnFailure `field:"optional" json:"onFailure" yaml:"onFailure"`
 }
 

@@ -30,26 +30,17 @@ type DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference interface
 	CreationStack() *[]*string
 	Creator() *string
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
 	GitProvider() *string
-	SetGitProvider(val *string)
-	GitProviderInput() *string
 	GitRepo() *string
-	SetGitRepo(val *string)
-	GitRepoInput() *string
 	InternalValue() *DataDatabricksAppsSettingsCustomTemplatesTemplates
 	SetInternalValue(val *DataDatabricksAppsSettingsCustomTemplatesTemplates)
 	Manifest() DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestOutputReference
-	ManifestInput() *DataDatabricksAppsSettingsCustomTemplatesTemplatesManifest
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	Path() *string
-	SetPath(val *string)
-	PathInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,8 +73,6 @@ type DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutManifest(value *DataDatabricksAppsSettingsCustomTemplatesTemplatesManifest)
-	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -149,16 +138,6 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -179,31 +158,11 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) GitProviderInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"gitProviderInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) GitRepo() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"gitRepo",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) GitRepoInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"gitRepoInput",
 		&returns,
 	)
 	return returns
@@ -224,16 +183,6 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputRefer
 	_jsii_.Get(
 		j,
 		"manifest",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) ManifestInput() *DataDatabricksAppsSettingsCustomTemplatesTemplatesManifest {
-	var returns *DataDatabricksAppsSettingsCustomTemplatesTemplatesManifest
-	_jsii_.Get(
-		j,
-		"manifestInput",
 		&returns,
 	)
 	return returns
@@ -264,16 +213,6 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputRefer
 	_jsii_.Get(
 		j,
 		"path",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) PathInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pathInput",
 		&returns,
 	)
 	return returns
@@ -349,39 +288,6 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference)SetGitProvider(val *string) {
-	if err := j.validateSetGitProviderParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"gitProvider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference)SetGitRepo(val *string) {
-	if err := j.validateSetGitRepoParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"gitRepo",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference)SetInternalValue(val *DataDatabricksAppsSettingsCustomTemplatesTemplates) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -400,17 +306,6 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputRefer
 	_jsii_.Set(
 		j,
 		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference)SetPath(val *string) {
-	if err := j.validateSetPathParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"path",
 		val,
 	)
 }
@@ -621,25 +516,6 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputRefer
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) PutManifest(value *DataDatabricksAppsSettingsCustomTemplatesTemplatesManifest) {
-	if err := d.validatePutManifestParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putManifest",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) ResetDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescription",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

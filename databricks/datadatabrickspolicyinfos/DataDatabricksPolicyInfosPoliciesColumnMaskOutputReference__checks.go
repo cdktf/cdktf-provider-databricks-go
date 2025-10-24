@@ -205,25 +205,9 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataDatabricksPolicyInfosPoliciesColumnMask:
-		val := val.(*DataDatabricksPolicyInfosPoliciesColumnMask)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataDatabricksPolicyInfosPoliciesColumnMask:
-		val_ := val.(DataDatabricksPolicyInfosPoliciesColumnMask)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksPolicyInfosPoliciesColumnMask; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference) validateSetInternalValueParameters(val *DataDatabricksPolicyInfosPoliciesColumnMask) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

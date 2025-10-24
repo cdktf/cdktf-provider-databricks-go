@@ -38,8 +38,8 @@ type DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOut
 	EnablementDetailsInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace
+	SetInternalValue(val *DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace)
 	MaintenanceWindow() DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference
 	MaintenanceWindowInput() interface{}
 	RestartEvenIfNoUpdatesAvailable() interface{}
@@ -199,8 +199,8 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpda
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference) InternalValue() *DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace {
+	var returns *DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpda
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference)SetInternalValue(val *DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

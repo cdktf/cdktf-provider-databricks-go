@@ -55,18 +55,6 @@ func (d *jsiiProxy_DataDatabricksPolicyInfo) validateOverrideLogicalIdParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksPolicyInfo) validatePutColumnMaskParameters(value *DataDatabricksPolicyInfoColumnMask) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfo) validatePutMatchColumnsParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfo) validatePutRowFilterParameters(value *DataDatabricksPolicyInfoRowFilter) error {
-	return nil
-}
-
 func validateDataDatabricksPolicyInfo_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -83,19 +71,7 @@ func validateDataDatabricksPolicyInfo_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfo) validateSetCommentParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksPolicyInfo) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfo) validateSetExceptPrincipalsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfo) validateSetForSecurableTypeParameters(val *string) error {
 	return nil
 }
 
@@ -112,18 +88,6 @@ func (j *jsiiProxy_DataDatabricksPolicyInfo) validateSetOnSecurableFullnameParam
 }
 
 func (j *jsiiProxy_DataDatabricksPolicyInfo) validateSetOnSecurableTypeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfo) validateSetPolicyTypeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfo) validateSetToPrincipalsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfo) validateSetWhenConditionParameters(val *string) error {
 	return nil
 }
 

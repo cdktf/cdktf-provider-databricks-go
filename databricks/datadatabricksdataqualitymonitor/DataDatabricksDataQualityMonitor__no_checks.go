@@ -55,14 +55,6 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitor) validateOverrideLogicalIdPa
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDataQualityMonitor) validatePutAnomalyDetectionConfigParameters(value *DataDatabricksDataQualityMonitorAnomalyDetectionConfig) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataDatabricksDataQualityMonitor) validatePutDataProfilingConfigParameters(value *DataDatabricksDataQualityMonitorDataProfilingConfig) error {
-	return nil
-}
-
 func validateDataDatabricksDataQualityMonitor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

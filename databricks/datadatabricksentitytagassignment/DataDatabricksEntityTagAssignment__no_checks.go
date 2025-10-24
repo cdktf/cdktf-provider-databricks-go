@@ -91,10 +91,6 @@ func (j *jsiiProxy_DataDatabricksEntityTagAssignment) validateSetTagKeyParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksEntityTagAssignment) validateSetTagValueParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataDatabricksEntityTagAssignmentParameters(scope constructs.Construct, id *string, config *DataDatabricksEntityTagAssignmentConfig) error {
 	return nil
 }

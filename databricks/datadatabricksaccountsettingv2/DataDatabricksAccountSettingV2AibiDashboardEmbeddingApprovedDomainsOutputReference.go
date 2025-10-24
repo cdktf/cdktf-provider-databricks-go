@@ -33,8 +33,8 @@ type DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsOutputRe
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains
+	SetInternalValue(val *DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedD
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference) InternalValue() *DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains {
+	var returns *DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -234,7 +234,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedD
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference)SetInternalValue(val *DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

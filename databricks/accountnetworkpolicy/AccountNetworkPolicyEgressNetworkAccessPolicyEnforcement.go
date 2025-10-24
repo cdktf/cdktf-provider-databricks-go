@@ -5,9 +5,9 @@ package accountnetworkpolicy
 
 
 type AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/account_network_policy#dry_run_mode_product_filter AccountNetworkPolicy#dry_run_mode_product_filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/account_network_policy#dry_run_mode_product_filter AccountNetworkPolicy#dry_run_mode_product_filter}.
 	DryRunModeProductFilter *[]*string `field:"optional" json:"dryRunModeProductFilter" yaml:"dryRunModeProductFilter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/account_network_policy#enforcement_mode AccountNetworkPolicy#enforcement_mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/account_network_policy#enforcement_mode AccountNetworkPolicy#enforcement_mode}.
 	EnforcementMode *string `field:"optional" json:"enforcementMode" yaml:"enforcementMode"`
 }
 

@@ -29,22 +29,16 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
 	FullName() *string
 	SetFullName(val *string)
 	FullNameInput() *string
 	Function() DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference
-	FunctionInput() *DataDatabricksFeatureEngineeringFeaturesFeaturesFunction
 	Inputs() *[]*string
-	SetInputs(val *[]*string)
-	InputsInput() *[]*string
 	InternalValue() *DataDatabricksFeatureEngineeringFeaturesFeatures
 	SetInternalValue(val *DataDatabricksFeatureEngineeringFeaturesFeatures)
 	Source() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference
-	SourceInput() *DataDatabricksFeatureEngineeringFeaturesFeaturesSource
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -54,7 +48,6 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	TimeWindow() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference
-	TimeWindowInput() *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindow
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,10 +72,6 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutFunction(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunction)
-	PutSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSource)
-	PutTimeWindow(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindow)
-	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -138,16 +127,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -188,31 +167,11 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) FunctionInput() *DataDatabricksFeatureEngineeringFeaturesFeaturesFunction {
-	var returns *DataDatabricksFeatureEngineeringFeaturesFeaturesFunction
-	_jsii_.Get(
-		j,
-		"functionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) Inputs() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"inputs",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) InputsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"inputsInput",
 		&returns,
 	)
 	return returns
@@ -233,16 +192,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	_jsii_.Get(
 		j,
 		"source",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) SourceInput() *DataDatabricksFeatureEngineeringFeaturesFeaturesSource {
-	var returns *DataDatabricksFeatureEngineeringFeaturesFeaturesSource
-	_jsii_.Get(
-		j,
-		"sourceInput",
 		&returns,
 	)
 	return returns
@@ -273,16 +222,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	_jsii_.Get(
 		j,
 		"timeWindow",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) TimeWindowInput() *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindow {
-	var returns *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindow
-	_jsii_.Get(
-		j,
-		"timeWindowInput",
 		&returns,
 	)
 	return returns
@@ -338,17 +277,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference)SetFullName(val *string) {
 	if err := j.validateSetFullNameParameters(val); err != nil {
 		panic(err)
@@ -356,17 +284,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	_jsii_.Set(
 		j,
 		"fullName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference)SetInputs(val *[]*string) {
-	if err := j.validateSetInputsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"inputs",
 		val,
 	)
 }
@@ -588,47 +505,6 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) PutFunction(value *DataDatabricksFeatureEngineeringFeaturesFeaturesFunction) {
-	if err := d.validatePutFunctionParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putFunction",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) PutSource(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSource) {
-	if err := d.validatePutSourceParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putSource",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) PutTimeWindow(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindow) {
-	if err := d.validatePutTimeWindowParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putTimeWindow",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) ResetDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescription",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

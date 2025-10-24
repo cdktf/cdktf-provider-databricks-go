@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataDatabricksTagPolicy) validateOverrideLogicalIdParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksTagPolicy) validatePutValuesParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataDatabricksTagPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,10 +72,6 @@ func validateDataDatabricksTagPolicy_IsTerraformElementParameters(x interface{})
 }
 
 func (j *jsiiProxy_DataDatabricksTagPolicy) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksTagPolicy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 

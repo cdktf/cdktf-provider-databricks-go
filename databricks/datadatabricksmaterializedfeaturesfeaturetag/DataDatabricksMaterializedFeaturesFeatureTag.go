@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/materialized_features_feature_tag databricks_materialized_features_feature_tag}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/materialized_features_feature_tag databricks_materialized_features_feature_tag}.
 type DataDatabricksMaterializedFeaturesFeatureTag interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -57,8 +57,6 @@ type DataDatabricksMaterializedFeaturesFeatureTag interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Value() *string
-	SetValue(val *string)
-	ValueInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -87,7 +85,6 @@ type DataDatabricksMaterializedFeaturesFeatureTag interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetValue()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -277,18 +274,8 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTag) Value() *string
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTag) ValueInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"valueInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/materialized_features_feature_tag databricks_materialized_features_feature_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/materialized_features_feature_tag databricks_materialized_features_feature_tag} Data Source.
 func NewDataDatabricksMaterializedFeaturesFeatureTag(scope constructs.Construct, id *string, config *DataDatabricksMaterializedFeaturesFeatureTagConfig) DataDatabricksMaterializedFeaturesFeatureTag {
 	_init_.Initialize()
 
@@ -306,7 +293,7 @@ func NewDataDatabricksMaterializedFeaturesFeatureTag(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/materialized_features_feature_tag databricks_materialized_features_feature_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/materialized_features_feature_tag databricks_materialized_features_feature_tag} Data Source.
 func NewDataDatabricksMaterializedFeaturesFeatureTag_Override(d DataDatabricksMaterializedFeaturesFeatureTag, scope constructs.Construct, id *string, config *DataDatabricksMaterializedFeaturesFeatureTagConfig) {
 	_init_.Initialize()
 
@@ -370,17 +357,6 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTag)SetProvider(val 
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTag)SetValue(val *string) {
-	if err := j.validateSetValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"value",
 		val,
 	)
 }
@@ -674,14 +650,6 @@ func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTag) ResetOverrideLo
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTag) ResetValue() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetValue",
 		nil, // no parameters
 	)
 }

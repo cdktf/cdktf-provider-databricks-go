@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataDatabricksDataQualityRefresh) validateSetObjectTypeParame
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDataQualityRefresh) validateSetRefreshIdParameters(val *float64) error {
+	return nil
+}
+
 func validateNewDataDatabricksDataQualityRefreshParameters(scope constructs.Construct, id *string, config *DataDatabricksDataQualityRefreshConfig) error {
 	return nil
 }

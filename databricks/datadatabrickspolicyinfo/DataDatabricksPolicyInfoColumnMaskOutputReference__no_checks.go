@@ -67,7 +67,7 @@ func (j *jsiiProxy_DataDatabricksPolicyInfoColumnMaskOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfoColumnMaskOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksPolicyInfoColumnMaskOutputReference) validateSetInternalValueParameters(val *DataDatabricksPolicyInfoColumnMask) error {
 	return nil
 }
 

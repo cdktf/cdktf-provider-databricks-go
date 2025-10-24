@@ -30,8 +30,8 @@ type DataDatabricksAccountNetworkPoliciesItemsEgressOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAccountNetworkPoliciesItemsEgress
+	SetInternalValue(val *DataDatabricksAccountNetworkPoliciesItemsEgress)
 	NetworkAccess() DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputReference
 	NetworkAccessInput() interface{}
 	// Experimental.
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressOutputReference) InternalValue() *DataDatabricksAccountNetworkPoliciesItemsEgress {
+	var returns *DataDatabricksAccountNetworkPoliciesItemsEgress
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -223,7 +223,7 @@ func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsEgressOutputReference)SetInternalValue(val *DataDatabricksAccountNetworkPoliciesItemsEgress) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

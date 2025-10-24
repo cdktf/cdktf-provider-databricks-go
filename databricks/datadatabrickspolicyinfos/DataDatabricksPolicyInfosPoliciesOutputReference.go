@@ -14,10 +14,7 @@ import (
 type DataDatabricksPolicyInfosPoliciesOutputReference interface {
 	cdktf.ComplexObject
 	ColumnMask() DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference
-	ColumnMaskInput() interface{}
 	Comment() *string
-	SetComment(val *string)
-	CommentInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,18 +33,13 @@ type DataDatabricksPolicyInfosPoliciesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	ExceptPrincipals() *[]*string
-	SetExceptPrincipals(val *[]*string)
-	ExceptPrincipalsInput() *[]*string
 	ForSecurableType() *string
-	SetForSecurableType(val *string)
-	ForSecurableTypeInput() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
 	InternalValue() *DataDatabricksPolicyInfosPolicies
 	SetInternalValue(val *DataDatabricksPolicyInfosPolicies)
 	MatchColumns() DataDatabricksPolicyInfosPoliciesMatchColumnsList
-	MatchColumnsInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -58,10 +50,7 @@ type DataDatabricksPolicyInfosPoliciesOutputReference interface {
 	SetOnSecurableType(val *string)
 	OnSecurableTypeInput() *string
 	PolicyType() *string
-	SetPolicyType(val *string)
-	PolicyTypeInput() *string
 	RowFilter() DataDatabricksPolicyInfosPoliciesRowFilterOutputReference
-	RowFilterInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,13 +60,9 @@ type DataDatabricksPolicyInfosPoliciesOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	ToPrincipals() *[]*string
-	SetToPrincipals(val *[]*string)
-	ToPrincipalsInput() *[]*string
 	UpdatedAt() *float64
 	UpdatedBy() *string
 	WhenCondition() *string
-	SetWhenCondition(val *string)
-	WhenConditionInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -102,18 +87,6 @@ type DataDatabricksPolicyInfosPoliciesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutColumnMask(value *DataDatabricksPolicyInfosPoliciesColumnMask)
-	PutMatchColumns(value interface{})
-	PutRowFilter(value *DataDatabricksPolicyInfosPoliciesRowFilter)
-	ResetColumnMask()
-	ResetComment()
-	ResetExceptPrincipals()
-	ResetMatchColumns()
-	ResetName()
-	ResetOnSecurableFullname()
-	ResetOnSecurableType()
-	ResetRowFilter()
-	ResetWhenCondition()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -139,31 +112,11 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) ColumnMask(
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) ColumnMaskInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"columnMaskInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) Comment() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"comment",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) CommentInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"commentInput",
 		&returns,
 	)
 	return returns
@@ -229,31 +182,11 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) ExceptPrinc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) ExceptPrincipalsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"exceptPrincipalsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) ForSecurableType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"forSecurableType",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) ForSecurableTypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"forSecurableTypeInput",
 		&returns,
 	)
 	return returns
@@ -294,16 +227,6 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) MatchColumn
 	_jsii_.Get(
 		j,
 		"matchColumns",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) MatchColumnsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"matchColumnsInput",
 		&returns,
 	)
 	return returns
@@ -379,31 +302,11 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) PolicyType(
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) PolicyTypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyTypeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) RowFilter() DataDatabricksPolicyInfosPoliciesRowFilterOutputReference {
 	var returns DataDatabricksPolicyInfosPoliciesRowFilterOutputReference
 	_jsii_.Get(
 		j,
 		"rowFilter",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) RowFilterInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"rowFilterInput",
 		&returns,
 	)
 	return returns
@@ -439,16 +342,6 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) ToPrincipal
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) ToPrincipalsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"toPrincipalsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) UpdatedAt() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -474,16 +367,6 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) WhenConditi
 	_jsii_.Get(
 		j,
 		"whenCondition",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) WhenConditionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"whenConditionInput",
 		&returns,
 	)
 	return returns
@@ -517,17 +400,6 @@ func NewDataDatabricksPolicyInfosPoliciesOutputReference_Override(d DataDatabric
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference)SetComment(val *string) {
-	if err := j.validateSetCommentParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"comment",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -546,28 +418,6 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference)SetComplexOb
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference)SetExceptPrincipals(val *[]*string) {
-	if err := j.validateSetExceptPrincipalsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"exceptPrincipals",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference)SetForSecurableType(val *string) {
-	if err := j.validateSetForSecurableTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"forSecurableType",
 		val,
 	)
 }
@@ -616,17 +466,6 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference)SetOnSecurab
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference)SetPolicyType(val *string) {
-	if err := j.validateSetPolicyTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"policyType",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -645,28 +484,6 @@ func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference)SetTerraform
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference)SetToPrincipals(val *[]*string) {
-	if err := j.validateSetToPrincipalsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"toPrincipals",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference)SetWhenCondition(val *string) {
-	if err := j.validateSetWhenConditionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"whenCondition",
 		val,
 	)
 }
@@ -855,111 +672,6 @@ func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) Interpolati
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) PutColumnMask(value *DataDatabricksPolicyInfosPoliciesColumnMask) {
-	if err := d.validatePutColumnMaskParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putColumnMask",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) PutMatchColumns(value interface{}) {
-	if err := d.validatePutMatchColumnsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putMatchColumns",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) PutRowFilter(value *DataDatabricksPolicyInfosPoliciesRowFilter) {
-	if err := d.validatePutRowFilterParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putRowFilter",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) ResetColumnMask() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetColumnMask",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) ResetComment() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetComment",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) ResetExceptPrincipals() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetExceptPrincipals",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) ResetMatchColumns() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetMatchColumns",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) ResetOnSecurableFullname() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOnSecurableFullname",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) ResetOnSecurableType() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOnSecurableType",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) ResetRowFilter() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRowFilter",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) ResetWhenCondition() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetWhenCondition",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

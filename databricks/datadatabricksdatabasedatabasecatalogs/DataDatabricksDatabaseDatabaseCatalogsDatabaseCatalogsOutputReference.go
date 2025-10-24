@@ -23,20 +23,14 @@ type DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference inter
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CreateDatabaseIfNotExists() interface{}
-	SetCreateDatabaseIfNotExists(val interface{})
-	CreateDatabaseIfNotExistsInput() interface{}
+	CreateDatabaseIfNotExists() cdktf.IResolvable
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
 	DatabaseInstanceName() *string
-	SetDatabaseInstanceName(val *string)
-	DatabaseInstanceNameInput() *string
 	DatabaseName() *string
-	SetDatabaseName(val *string)
-	DatabaseNameInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogs
@@ -77,7 +71,6 @@ type DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference inter
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetCreateDatabaseIfNotExists()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -113,21 +106,11 @@ func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference) CreateDatabaseIfNotExists() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference) CreateDatabaseIfNotExists() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"createDatabaseIfNotExists",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference) CreateDatabaseIfNotExistsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"createDatabaseIfNotExistsInput",
 		&returns,
 	)
 	return returns
@@ -153,31 +136,11 @@ func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference) DatabaseInstanceNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"databaseInstanceNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference) DatabaseName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"databaseName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference) DatabaseNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"databaseNameInput",
 		&returns,
 	)
 	return returns
@@ -299,39 +262,6 @@ func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputR
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference)SetCreateDatabaseIfNotExists(val interface{}) {
-	if err := j.validateSetCreateDatabaseIfNotExistsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createDatabaseIfNotExists",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference)SetDatabaseInstanceName(val *string) {
-	if err := j.validateSetDatabaseInstanceNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"databaseInstanceName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference)SetDatabaseName(val *string) {
-	if err := j.validateSetDatabaseNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"databaseName",
 		val,
 	)
 }
@@ -564,14 +494,6 @@ func (d *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputR
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference) ResetCreateDatabaseIfNotExists() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCreateDatabaseIfNotExists",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

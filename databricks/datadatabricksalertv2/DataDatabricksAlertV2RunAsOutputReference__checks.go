@@ -166,25 +166,9 @@ func (j *jsiiProxy_DataDatabricksAlertV2RunAsOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2RunAsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataDatabricksAlertV2RunAs:
-		val := val.(*DataDatabricksAlertV2RunAs)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataDatabricksAlertV2RunAs:
-		val_ := val.(DataDatabricksAlertV2RunAs)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDatabricksAlertV2RunAs; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataDatabricksAlertV2RunAsOutputReference) validateSetInternalValueParameters(val *DataDatabricksAlertV2RunAs) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

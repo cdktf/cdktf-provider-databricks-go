@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags}.
 type DataDatabricksMaterializedFeaturesFeatureTags interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,9 @@ type DataDatabricksMaterializedFeaturesFeatureTags interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	FeatureName() *string
+	SetFeatureName(val *string)
+	FeatureNameInput() *string
 	FeatureTags() DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -42,12 +45,18 @@ type DataDatabricksMaterializedFeaturesFeatureTags interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	PageSize() *float64
+	SetPageSize(val *float64)
+	PageSizeInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	TableName() *string
+	SetTableName(val *string)
+	TableNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -82,6 +91,7 @@ type DataDatabricksMaterializedFeaturesFeatureTags interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPageSize()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -136,6 +146,26 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) DependsOn() *[
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) FeatureName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"featureName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) FeatureNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"featureNameInput",
 		&returns,
 	)
 	return returns
@@ -201,6 +231,26 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) Node() constru
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) PageSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pageSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) PageSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pageSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -216,6 +266,26 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) RawOverrides()
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) TableName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) TableNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableNameInput",
 		&returns,
 	)
 	return returns
@@ -252,7 +322,7 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source.
 func NewDataDatabricksMaterializedFeaturesFeatureTags(scope constructs.Construct, id *string, config *DataDatabricksMaterializedFeaturesFeatureTagsConfig) DataDatabricksMaterializedFeaturesFeatureTags {
 	_init_.Initialize()
 
@@ -270,7 +340,7 @@ func NewDataDatabricksMaterializedFeaturesFeatureTags(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source.
 func NewDataDatabricksMaterializedFeaturesFeatureTags_Override(d DataDatabricksMaterializedFeaturesFeatureTags, scope constructs.Construct, id *string, config *DataDatabricksMaterializedFeaturesFeatureTagsConfig) {
 	_init_.Initialize()
 
@@ -300,6 +370,17 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags)SetDependsOn(va
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags)SetFeatureName(val *string) {
+	if err := j.validateSetFeatureNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"featureName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -319,10 +400,32 @@ func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags)SetLifecycle(va
 	)
 }
 
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags)SetPageSize(val *float64) {
+	if err := j.validateSetPageSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pageSize",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags)SetTableName(val *string) {
+	if err := j.validateSetTableNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tableName",
 		val,
 	)
 }
@@ -616,6 +719,14 @@ func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) ResetOverrideL
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTags) ResetPageSize() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPageSize",
 		nil, // no parameters
 	)
 }

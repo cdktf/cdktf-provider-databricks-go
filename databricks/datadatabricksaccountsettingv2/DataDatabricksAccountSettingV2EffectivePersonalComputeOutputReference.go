@@ -30,8 +30,8 @@ type DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReference inter
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAccountSettingV2EffectivePersonalCompute
+	SetInternalValue(val *DataDatabricksAccountSettingV2EffectivePersonalCompute)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectivePersonalComputeOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReference) InternalValue() *DataDatabricksAccountSettingV2EffectivePersonalCompute {
+	var returns *DataDatabricksAccountSettingV2EffectivePersonalCompute
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -223,7 +223,7 @@ func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectivePersonalComputeOutputR
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReference)SetInternalValue(val *DataDatabricksAccountSettingV2EffectivePersonalCompute) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

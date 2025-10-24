@@ -47,10 +47,6 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) validatePutManifestParameters(value *DataDatabricksAppsSettingsCustomTemplatesTemplatesManifest) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -63,27 +59,11 @@ func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) validateSetGitProviderParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) validateSetGitRepoParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) validateSetInternalValueParameters(val *DataDatabricksAppsSettingsCustomTemplatesTemplates) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference) validateSetPathParameters(val *string) error {
 	return nil
 }
 

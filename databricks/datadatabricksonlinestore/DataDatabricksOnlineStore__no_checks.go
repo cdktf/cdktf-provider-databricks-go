@@ -71,10 +71,6 @@ func validateDataDatabricksOnlineStore_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksOnlineStore) validateSetCapacityParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksOnlineStore) validateSetCountParameters(val interface{}) error {
 	return nil
 }
@@ -84,10 +80,6 @@ func (j *jsiiProxy_DataDatabricksOnlineStore) validateSetLifecycleParameters(val
 }
 
 func (j *jsiiProxy_DataDatabricksOnlineStore) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksOnlineStore) validateSetReadReplicaCountParameters(val *float64) error {
 	return nil
 }
 

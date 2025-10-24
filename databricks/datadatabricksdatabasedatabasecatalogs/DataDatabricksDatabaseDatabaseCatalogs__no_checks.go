@@ -75,7 +75,15 @@ func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogs) validateSetCountParam
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogs) validateSetInstanceNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogs) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogs) validateSetPageSizeParameters(val *float64) error {
 	return nil
 }
 

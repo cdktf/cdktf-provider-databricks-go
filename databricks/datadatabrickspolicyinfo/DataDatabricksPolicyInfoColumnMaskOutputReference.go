@@ -33,8 +33,8 @@ type DataDatabricksPolicyInfoColumnMaskOutputReference interface {
 	FunctionName() *string
 	SetFunctionName(val *string)
 	FunctionNameInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksPolicyInfoColumnMask
+	SetInternalValue(val *DataDatabricksPolicyInfoColumnMask)
 	OnColumn() *string
 	SetOnColumn(val *string)
 	OnColumnInput() *string
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataDatabricksPolicyInfoColumnMaskOutputReference) FunctionNa
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfoColumnMaskOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksPolicyInfoColumnMaskOutputReference) InternalValue() *DataDatabricksPolicyInfoColumnMask {
+	var returns *DataDatabricksPolicyInfoColumnMask
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -280,7 +280,7 @@ func (j *jsiiProxy_DataDatabricksPolicyInfoColumnMaskOutputReference)SetFunction
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksPolicyInfoColumnMaskOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksPolicyInfoColumnMaskOutputReference)SetInternalValue(val *DataDatabricksPolicyInfoColumnMask) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
