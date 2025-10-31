@@ -42,6 +42,8 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryOutputReferen
 	JarInput() *string
 	Maven() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMavenOutputReference
 	MavenInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMaven
+	ProviderConfig() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfig
 	Pypi() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypiOutputReference
 	PypiInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypi
 	Requirements() *string
@@ -84,11 +86,13 @@ type DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryOutputReferen
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCran(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryCran)
 	PutMaven(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMaven)
+	PutProviderConfig(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfig)
 	PutPypi(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypi)
 	ResetCran()
 	ResetEgg()
 	ResetJar()
 	ResetMaven()
+	ResetProviderConfig()
 	ResetPypi()
 	ResetRequirements()
 	ResetWhl()
@@ -232,6 +236,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrar
 	_jsii_.Get(
 		j,
 		"mavenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryOutputReference) ProviderConfig() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfigOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryOutputReference) ProviderConfigInput() *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfig {
+	var returns *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -652,6 +676,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrar
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryOutputReference) PutProviderConfig(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryOutputReference) PutPypi(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypi) {
 	if err := d.validatePutPypiParameters(value); err != nil {
 		panic(err)
@@ -691,6 +726,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrar
 	_jsii_.InvokeVoid(
 		d,
 		"resetMaven",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryOutputReference) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

@@ -131,6 +131,10 @@ func (j *jsiiProxy_Job) validatePutPipelineTaskParameters(value *JobPipelineTask
 	return nil
 }
 
+func (j *jsiiProxy_Job) validatePutProviderConfigParameters(value *JobProviderConfig) error {
+	return nil
+}
+
 func (j *jsiiProxy_Job) validatePutPythonWheelTaskParameters(value *JobPythonWheelTask) error {
 	return nil
 }

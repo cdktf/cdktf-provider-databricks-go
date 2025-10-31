@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/cluster databricks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/cluster databricks_cluster}.
 type DataDatabricksCluster interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -56,6 +56,8 @@ type DataDatabricksCluster interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksClusterProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksClusterProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -90,6 +92,7 @@ type DataDatabricksCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutClusterInfo(value *DataDatabricksClusterClusterInfo)
+	PutProviderConfig(value *DataDatabricksClusterProviderConfig)
 	ResetClusterId()
 	ResetClusterInfo()
 	ResetClusterName()
@@ -97,6 +100,7 @@ type DataDatabricksCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -296,6 +300,26 @@ func (j *jsiiProxy_DataDatabricksCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksCluster) ProviderConfig() DataDatabricksClusterProviderConfigOutputReference {
+	var returns DataDatabricksClusterProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksCluster) ProviderConfigInput() *DataDatabricksClusterProviderConfig {
+	var returns *DataDatabricksClusterProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksCluster) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -337,7 +361,7 @@ func (j *jsiiProxy_DataDatabricksCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/cluster databricks_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/cluster databricks_cluster} Data Source.
 func NewDataDatabricksCluster(scope constructs.Construct, id *string, config *DataDatabricksClusterConfig) DataDatabricksCluster {
 	_init_.Initialize()
 
@@ -355,7 +379,7 @@ func NewDataDatabricksCluster(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/cluster databricks_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/cluster databricks_cluster} Data Source.
 func NewDataDatabricksCluster_Override(d DataDatabricksCluster, scope constructs.Construct, id *string, config *DataDatabricksClusterConfig) {
 	_init_.Initialize()
 
@@ -741,6 +765,17 @@ func (d *jsiiProxy_DataDatabricksCluster) PutClusterInfo(value *DataDatabricksCl
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksCluster) PutProviderConfig(value *DataDatabricksClusterProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksCluster) ResetClusterId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -777,6 +812,14 @@ func (d *jsiiProxy_DataDatabricksCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksCluster) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

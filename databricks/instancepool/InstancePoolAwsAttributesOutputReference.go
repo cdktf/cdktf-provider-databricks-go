@@ -33,6 +33,9 @@ type InstancePoolAwsAttributesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InstanceProfileArn() *string
+	SetInstanceProfileArn(val *string)
+	InstanceProfileArnInput() *string
 	InternalValue() *InstancePoolAwsAttributes
 	SetInternalValue(val *InstancePoolAwsAttributes)
 	SpotBidPricePercent() *float64
@@ -74,6 +77,7 @@ type InstancePoolAwsAttributesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAvailability()
+	ResetInstanceProfileArn()
 	ResetSpotBidPricePercent()
 	ResetZoneId()
 	// Produce the Token's value at resolution time.
@@ -146,6 +150,26 @@ func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) InstanceProfileArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceProfileArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) InstanceProfileArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceProfileArnInput",
 		&returns,
 	)
 	return returns
@@ -278,6 +302,17 @@ func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference)SetComplexObjectIsFr
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference)SetInstanceProfileArn(val *string) {
+	if err := j.validateSetInstanceProfileArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instanceProfileArn",
 		val,
 	)
 }
@@ -527,6 +562,14 @@ func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) ResetAvailability()
 	_jsii_.InvokeVoid(
 		i,
 		"resetAvailability",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_InstancePoolAwsAttributesOutputReference) ResetInstanceProfileArn() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetInstanceProfileArn",
 		nil, // no parameters
 	)
 }

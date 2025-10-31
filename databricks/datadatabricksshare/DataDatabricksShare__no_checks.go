@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksShare) validatePutObjectParameters(value interf
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksShare) validatePutProviderConfigParameters(value *DataDatabricksShareProviderConfig) error {
+	return nil
+}
+
 func validateDataDatabricksShare_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

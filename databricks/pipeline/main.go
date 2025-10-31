@@ -154,6 +154,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTrigger", GoMethod: "ResetTrigger"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUrl", GoMethod: "ResetUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUsagePolicyId", GoMethod: "ResetUsagePolicyId"},
 			_jsii_.MemberProperty{JsiiProperty: "restartWindow", GoGetter: "RestartWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "restartWindowInput", GoGetter: "RestartWindowInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rootPath", GoGetter: "RootPath"},
@@ -189,6 +190,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "triggerInput", GoGetter: "TriggerInput"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "usagePolicyId", GoGetter: "UsagePolicyId"},
+			_jsii_.MemberProperty{JsiiProperty: "usagePolicyIdInput", GoGetter: "UsagePolicyIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Pipeline{}

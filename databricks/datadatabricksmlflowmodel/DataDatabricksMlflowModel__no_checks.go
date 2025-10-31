@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksMlflowModel) validatePutLatestVersionsParameter
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksMlflowModel) validatePutProviderConfigParameters(value *DataDatabricksMlflowModelProviderConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksMlflowModel) validatePutTagsParameters(value interface{}) error {
 	return nil
 }

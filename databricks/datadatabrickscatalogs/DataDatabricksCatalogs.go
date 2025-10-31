@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/catalogs databricks_catalogs}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/catalogs databricks_catalogs}.
 type DataDatabricksCatalogs interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -51,6 +51,8 @@ type DataDatabricksCatalogs interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksCatalogsProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksCatalogsProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -84,11 +86,13 @@ type DataDatabricksCatalogs interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksCatalogsProviderConfig)
 	ResetId()
 	ResetIds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -248,6 +252,26 @@ func (j *jsiiProxy_DataDatabricksCatalogs) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksCatalogs) ProviderConfig() DataDatabricksCatalogsProviderConfigOutputReference {
+	var returns DataDatabricksCatalogsProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksCatalogs) ProviderConfigInput() *DataDatabricksCatalogsProviderConfig {
+	var returns *DataDatabricksCatalogsProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksCatalogs) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -289,7 +313,7 @@ func (j *jsiiProxy_DataDatabricksCatalogs) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/catalogs databricks_catalogs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/catalogs databricks_catalogs} Data Source.
 func NewDataDatabricksCatalogs(scope constructs.Construct, id *string, config *DataDatabricksCatalogsConfig) DataDatabricksCatalogs {
 	_init_.Initialize()
 
@@ -307,7 +331,7 @@ func NewDataDatabricksCatalogs(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/catalogs databricks_catalogs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/catalogs databricks_catalogs} Data Source.
 func NewDataDatabricksCatalogs_Override(d DataDatabricksCatalogs, scope constructs.Construct, id *string, config *DataDatabricksCatalogsConfig) {
 	_init_.Initialize()
 
@@ -671,6 +695,17 @@ func (d *jsiiProxy_DataDatabricksCatalogs) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksCatalogs) PutProviderConfig(value *DataDatabricksCatalogsProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksCatalogs) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -691,6 +726,14 @@ func (d *jsiiProxy_DataDatabricksCatalogs) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksCatalogs) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

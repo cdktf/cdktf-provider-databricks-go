@@ -42,6 +42,8 @@ type JobNewClusterLibraryOutputReference interface {
 	JarInput() *string
 	Maven() JobNewClusterLibraryMavenOutputReference
 	MavenInput() *JobNewClusterLibraryMaven
+	ProviderConfig() JobNewClusterLibraryProviderConfigOutputReference
+	ProviderConfigInput() *JobNewClusterLibraryProviderConfig
 	Pypi() JobNewClusterLibraryPypiOutputReference
 	PypiInput() *JobNewClusterLibraryPypi
 	Requirements() *string
@@ -84,11 +86,13 @@ type JobNewClusterLibraryOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCran(value *JobNewClusterLibraryCran)
 	PutMaven(value *JobNewClusterLibraryMaven)
+	PutProviderConfig(value *JobNewClusterLibraryProviderConfig)
 	PutPypi(value *JobNewClusterLibraryPypi)
 	ResetCran()
 	ResetEgg()
 	ResetJar()
 	ResetMaven()
+	ResetProviderConfig()
 	ResetPypi()
 	ResetRequirements()
 	ResetWhl()
@@ -232,6 +236,26 @@ func (j *jsiiProxy_JobNewClusterLibraryOutputReference) MavenInput() *JobNewClus
 	_jsii_.Get(
 		j,
 		"mavenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobNewClusterLibraryOutputReference) ProviderConfig() JobNewClusterLibraryProviderConfigOutputReference {
+	var returns JobNewClusterLibraryProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobNewClusterLibraryOutputReference) ProviderConfigInput() *JobNewClusterLibraryProviderConfig {
+	var returns *JobNewClusterLibraryProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -652,6 +676,17 @@ func (j *jsiiProxy_JobNewClusterLibraryOutputReference) PutMaven(value *JobNewCl
 	)
 }
 
+func (j *jsiiProxy_JobNewClusterLibraryOutputReference) PutProviderConfig(value *JobNewClusterLibraryProviderConfig) {
+	if err := j.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobNewClusterLibraryOutputReference) PutPypi(value *JobNewClusterLibraryPypi) {
 	if err := j.validatePutPypiParameters(value); err != nil {
 		panic(err)
@@ -691,6 +726,14 @@ func (j *jsiiProxy_JobNewClusterLibraryOutputReference) ResetMaven() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetMaven",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobNewClusterLibraryOutputReference) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

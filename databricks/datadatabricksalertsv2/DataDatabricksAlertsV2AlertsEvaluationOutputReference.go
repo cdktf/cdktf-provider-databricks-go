@@ -42,7 +42,7 @@ type DataDatabricksAlertsV2AlertsEvaluationOutputReference interface {
 	Notification() DataDatabricksAlertsV2AlertsEvaluationNotificationOutputReference
 	NotificationInput() interface{}
 	Source() DataDatabricksAlertsV2AlertsEvaluationSourceOutputReference
-	SourceInput() interface{}
+	SourceInput() *DataDatabricksAlertsV2AlertsEvaluationSource
 	State() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -81,10 +81,8 @@ type DataDatabricksAlertsV2AlertsEvaluationOutputReference interface {
 	PutNotification(value *DataDatabricksAlertsV2AlertsEvaluationNotification)
 	PutSource(value *DataDatabricksAlertsV2AlertsEvaluationSource)
 	PutThreshold(value *DataDatabricksAlertsV2AlertsEvaluationThreshold)
-	ResetComparisonOperator()
 	ResetEmptyResultState()
 	ResetNotification()
-	ResetSource()
 	ResetThreshold()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -231,8 +229,8 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationOutputReference) Source
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationOutputReference) SourceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationOutputReference) SourceInput() *DataDatabricksAlertsV2AlertsEvaluationSource {
+	var returns *DataDatabricksAlertsV2AlertsEvaluationSource
 	_jsii_.Get(
 		j,
 		"sourceInput",
@@ -615,14 +613,6 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationOutputReference) PutThr
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationOutputReference) ResetComparisonOperator() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetComparisonOperator",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationOutputReference) ResetEmptyResultState() {
 	_jsii_.InvokeVoid(
 		d,
@@ -635,14 +625,6 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationOutputReference) ResetN
 	_jsii_.InvokeVoid(
 		d,
 		"resetNotification",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationOutputReference) ResetSource() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSource",
 		nil, // no parameters
 	)
 }

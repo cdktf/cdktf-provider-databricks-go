@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/cluster_policy databricks_cluster_policy}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/cluster_policy databricks_cluster_policy}.
 type DataDatabricksClusterPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -69,6 +69,8 @@ type DataDatabricksClusterPolicy interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksClusterPolicyProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksClusterPolicyProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -102,6 +104,7 @@ type DataDatabricksClusterPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksClusterPolicyProviderConfig)
 	ResetDefinition()
 	ResetDescription()
 	ResetId()
@@ -113,6 +116,7 @@ type DataDatabricksClusterPolicy interface {
 	ResetOverrideLogicalId()
 	ResetPolicyFamilyDefinitionOverrides()
 	ResetPolicyFamilyId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -392,6 +396,26 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy) Provider() cdktf.TerraformProvid
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPolicy) ProviderConfig() DataDatabricksClusterPolicyProviderConfigOutputReference {
+	var returns DataDatabricksClusterPolicyProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPolicy) ProviderConfigInput() *DataDatabricksClusterPolicyProviderConfig {
+	var returns *DataDatabricksClusterPolicyProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPolicy) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -433,7 +457,7 @@ func (j *jsiiProxy_DataDatabricksClusterPolicy) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source.
 func NewDataDatabricksClusterPolicy(scope constructs.Construct, id *string, config *DataDatabricksClusterPolicyConfig) DataDatabricksClusterPolicy {
 	_init_.Initialize()
 
@@ -451,7 +475,7 @@ func NewDataDatabricksClusterPolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source.
 func NewDataDatabricksClusterPolicy_Override(d DataDatabricksClusterPolicy, scope constructs.Construct, id *string, config *DataDatabricksClusterPolicyConfig) {
 	_init_.Initialize()
 
@@ -881,6 +905,17 @@ func (d *jsiiProxy_DataDatabricksClusterPolicy) OverrideLogicalId(newLogicalId *
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterPolicy) PutProviderConfig(value *DataDatabricksClusterPolicyProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterPolicy) ResetDefinition() {
 	_jsii_.InvokeVoid(
 		d,
@@ -949,6 +984,14 @@ func (d *jsiiProxy_DataDatabricksClusterPolicy) ResetPolicyFamilyId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPolicyFamilyId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterPolicy) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

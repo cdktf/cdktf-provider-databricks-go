@@ -42,6 +42,8 @@ type DataDatabricksJobJobSettingsSettingsLibraryOutputReference interface {
 	JarInput() *string
 	Maven() DataDatabricksJobJobSettingsSettingsLibraryMavenOutputReference
 	MavenInput() *DataDatabricksJobJobSettingsSettingsLibraryMaven
+	ProviderConfig() DataDatabricksJobJobSettingsSettingsLibraryProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksJobJobSettingsSettingsLibraryProviderConfig
 	Pypi() DataDatabricksJobJobSettingsSettingsLibraryPypiOutputReference
 	PypiInput() *DataDatabricksJobJobSettingsSettingsLibraryPypi
 	Requirements() *string
@@ -84,11 +86,13 @@ type DataDatabricksJobJobSettingsSettingsLibraryOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCran(value *DataDatabricksJobJobSettingsSettingsLibraryCran)
 	PutMaven(value *DataDatabricksJobJobSettingsSettingsLibraryMaven)
+	PutProviderConfig(value *DataDatabricksJobJobSettingsSettingsLibraryProviderConfig)
 	PutPypi(value *DataDatabricksJobJobSettingsSettingsLibraryPypi)
 	ResetCran()
 	ResetEgg()
 	ResetJar()
 	ResetMaven()
+	ResetProviderConfig()
 	ResetPypi()
 	ResetRequirements()
 	ResetWhl()
@@ -232,6 +236,26 @@ func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference) M
 	_jsii_.Get(
 		j,
 		"mavenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference) ProviderConfig() DataDatabricksJobJobSettingsSettingsLibraryProviderConfigOutputReference {
+	var returns DataDatabricksJobJobSettingsSettingsLibraryProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference) ProviderConfigInput() *DataDatabricksJobJobSettingsSettingsLibraryProviderConfig {
+	var returns *DataDatabricksJobJobSettingsSettingsLibraryProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -652,6 +676,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference) P
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference) PutProviderConfig(value *DataDatabricksJobJobSettingsSettingsLibraryProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference) PutPypi(value *DataDatabricksJobJobSettingsSettingsLibraryPypi) {
 	if err := d.validatePutPypiParameters(value); err != nil {
 		panic(err)
@@ -691,6 +726,14 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference) R
 	_jsii_.InvokeVoid(
 		d,
 		"resetMaven",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

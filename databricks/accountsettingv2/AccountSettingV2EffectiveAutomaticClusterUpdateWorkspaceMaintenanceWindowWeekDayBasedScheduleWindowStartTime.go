@@ -5,9 +5,9 @@ package accountsettingv2
 
 
 type AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}.
 	Hours *float64 `field:"optional" json:"hours" yaml:"hours"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}.
 	Minutes *float64 `field:"optional" json:"minutes" yaml:"minutes"`
 }
 

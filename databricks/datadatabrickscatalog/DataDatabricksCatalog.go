@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/catalog databricks_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/catalog databricks_catalog}.
 type DataDatabricksCatalog interface {
 	cdktf.TerraformDataSource
 	CatalogInfo() DataDatabricksCatalogCatalogInfoOutputReference
@@ -53,6 +53,8 @@ type DataDatabricksCatalog interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksCatalogProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksCatalogProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -87,11 +89,13 @@ type DataDatabricksCatalog interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCatalogInfo(value *DataDatabricksCatalogCatalogInfo)
+	PutProviderConfig(value *DataDatabricksCatalogProviderConfig)
 	ResetCatalogInfo()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -271,6 +275,26 @@ func (j *jsiiProxy_DataDatabricksCatalog) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksCatalog) ProviderConfig() DataDatabricksCatalogProviderConfigOutputReference {
+	var returns DataDatabricksCatalogProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksCatalog) ProviderConfigInput() *DataDatabricksCatalogProviderConfig {
+	var returns *DataDatabricksCatalogProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksCatalog) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -312,7 +336,7 @@ func (j *jsiiProxy_DataDatabricksCatalog) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/catalog databricks_catalog} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/catalog databricks_catalog} Data Source.
 func NewDataDatabricksCatalog(scope constructs.Construct, id *string, config *DataDatabricksCatalogConfig) DataDatabricksCatalog {
 	_init_.Initialize()
 
@@ -330,7 +354,7 @@ func NewDataDatabricksCatalog(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/catalog databricks_catalog} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/catalog databricks_catalog} Data Source.
 func NewDataDatabricksCatalog_Override(d DataDatabricksCatalog, scope constructs.Construct, id *string, config *DataDatabricksCatalogConfig) {
 	_init_.Initialize()
 
@@ -705,6 +729,17 @@ func (d *jsiiProxy_DataDatabricksCatalog) PutCatalogInfo(value *DataDatabricksCa
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksCatalog) PutProviderConfig(value *DataDatabricksCatalogProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksCatalog) ResetCatalogInfo() {
 	_jsii_.InvokeVoid(
 		d,
@@ -725,6 +760,14 @@ func (d *jsiiProxy_DataDatabricksCatalog) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksCatalog) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

@@ -22,11 +22,11 @@ type DataDatabricksBudgetPoliciesConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/budget_policies#filter_by DataDatabricksBudgetPolicies#filter_by}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/budget_policies#filter_by DataDatabricksBudgetPolicies#filter_by}.
 	FilterBy *DataDatabricksBudgetPoliciesFilterBy `field:"optional" json:"filterBy" yaml:"filterBy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/budget_policies#page_size DataDatabricksBudgetPolicies#page_size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/budget_policies#page_size DataDatabricksBudgetPolicies#page_size}.
 	PageSize *float64 `field:"optional" json:"pageSize" yaml:"pageSize"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/budget_policies#sort_spec DataDatabricksBudgetPolicies#sort_spec}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/budget_policies#sort_spec DataDatabricksBudgetPolicies#sort_spec}.
 	SortSpec *DataDatabricksBudgetPoliciesSortSpec `field:"optional" json:"sortSpec" yaml:"sortSpec"`
 }
 

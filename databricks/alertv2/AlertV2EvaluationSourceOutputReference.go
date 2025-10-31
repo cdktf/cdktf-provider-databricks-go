@@ -75,7 +75,6 @@ type AlertV2EvaluationSourceOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAggregation()
 	ResetDisplay()
-	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -535,14 +534,6 @@ func (a *jsiiProxy_AlertV2EvaluationSourceOutputReference) ResetDisplay() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDisplay",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AlertV2EvaluationSourceOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetName",
 		nil, // no parameters
 	)
 }

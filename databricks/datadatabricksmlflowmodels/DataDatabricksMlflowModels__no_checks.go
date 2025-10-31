@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksMlflowModels) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksMlflowModels) validatePutProviderConfigParameters(value *DataDatabricksMlflowModelsProviderConfig) error {
+	return nil
+}
+
 func validateDataDatabricksMlflowModels_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

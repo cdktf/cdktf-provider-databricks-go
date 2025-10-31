@@ -63,6 +63,10 @@ func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) validateSetComplexO
 	return nil
 }
 
+func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) validateSetInstanceProfileArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_InstancePoolAwsAttributesOutputReference) validateSetInternalValueParameters(val *InstancePoolAwsAttributes) error {
 	return nil
 }

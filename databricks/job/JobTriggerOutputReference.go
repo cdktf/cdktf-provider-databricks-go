@@ -39,8 +39,6 @@ type JobTriggerOutputReference interface {
 	PauseStatusInput() *string
 	Periodic() JobTriggerPeriodicOutputReference
 	PeriodicInput() *JobTriggerPeriodic
-	Table() JobTriggerTableOutputReference
-	TableInput() *JobTriggerTable
 	TableUpdate() JobTriggerTableUpdateOutputReference
 	TableUpdateInput() *JobTriggerTableUpdate
 	// Experimental.
@@ -77,12 +75,10 @@ type JobTriggerOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFileArrival(value *JobTriggerFileArrival)
 	PutPeriodic(value *JobTriggerPeriodic)
-	PutTable(value *JobTriggerTable)
 	PutTableUpdate(value *JobTriggerTableUpdate)
 	ResetFileArrival()
 	ResetPauseStatus()
 	ResetPeriodic()
-	ResetTable()
 	ResetTableUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -204,26 +200,6 @@ func (j *jsiiProxy_JobTriggerOutputReference) PeriodicInput() *JobTriggerPeriodi
 	_jsii_.Get(
 		j,
 		"periodicInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobTriggerOutputReference) Table() JobTriggerTableOutputReference {
-	var returns JobTriggerTableOutputReference
-	_jsii_.Get(
-		j,
-		"table",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_JobTriggerOutputReference) TableInput() *JobTriggerTable {
-	var returns *JobTriggerTable
-	_jsii_.Get(
-		j,
-		"tableInput",
 		&returns,
 	)
 	return returns
@@ -571,17 +547,6 @@ func (j *jsiiProxy_JobTriggerOutputReference) PutPeriodic(value *JobTriggerPerio
 	)
 }
 
-func (j *jsiiProxy_JobTriggerOutputReference) PutTable(value *JobTriggerTable) {
-	if err := j.validatePutTableParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		j,
-		"putTable",
-		[]interface{}{value},
-	)
-}
-
 func (j *jsiiProxy_JobTriggerOutputReference) PutTableUpdate(value *JobTriggerTableUpdate) {
 	if err := j.validatePutTableUpdateParameters(value); err != nil {
 		panic(err)
@@ -613,14 +578,6 @@ func (j *jsiiProxy_JobTriggerOutputReference) ResetPeriodic() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetPeriodic",
-		nil, // no parameters
-	)
-}
-
-func (j *jsiiProxy_JobTriggerOutputReference) ResetTable() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetTable",
 		nil, // no parameters
 	)
 }

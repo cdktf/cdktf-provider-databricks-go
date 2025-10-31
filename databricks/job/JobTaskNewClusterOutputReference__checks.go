@@ -252,6 +252,17 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutLibraryParameter
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutProviderConfigParameters(value *JobTaskNewClusterProviderConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutWorkloadTypeParameters(value *JobTaskNewClusterWorkloadType) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

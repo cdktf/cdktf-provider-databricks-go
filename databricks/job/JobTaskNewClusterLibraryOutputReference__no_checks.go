@@ -55,6 +55,10 @@ func (j *jsiiProxy_JobTaskNewClusterLibraryOutputReference) validatePutMavenPara
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskNewClusterLibraryOutputReference) validatePutProviderConfigParameters(value *JobTaskNewClusterLibraryProviderConfig) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskNewClusterLibraryOutputReference) validatePutPypiParameters(value *JobTaskNewClusterLibraryPypi) error {
 	return nil
 }

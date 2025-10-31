@@ -42,7 +42,7 @@ type DataDatabricksAlertV2EvaluationOutputReference interface {
 	Notification() DataDatabricksAlertV2EvaluationNotificationOutputReference
 	NotificationInput() interface{}
 	Source() DataDatabricksAlertV2EvaluationSourceOutputReference
-	SourceInput() interface{}
+	SourceInput() *DataDatabricksAlertV2EvaluationSource
 	State() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -81,10 +81,8 @@ type DataDatabricksAlertV2EvaluationOutputReference interface {
 	PutNotification(value *DataDatabricksAlertV2EvaluationNotification)
 	PutSource(value *DataDatabricksAlertV2EvaluationSource)
 	PutThreshold(value *DataDatabricksAlertV2EvaluationThreshold)
-	ResetComparisonOperator()
 	ResetEmptyResultState()
 	ResetNotification()
-	ResetSource()
 	ResetThreshold()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -231,8 +229,8 @@ func (j *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference) Source() Data
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference) SourceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference) SourceInput() *DataDatabricksAlertV2EvaluationSource {
+	var returns *DataDatabricksAlertV2EvaluationSource
 	_jsii_.Get(
 		j,
 		"sourceInput",
@@ -615,14 +613,6 @@ func (d *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference) PutThreshold(
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference) ResetComparisonOperator() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetComparisonOperator",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference) ResetEmptyResultState() {
 	_jsii_.InvokeVoid(
 		d,
@@ -635,14 +625,6 @@ func (d *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference) ResetNotifica
 	_jsii_.InvokeVoid(
 		d,
 		"resetNotification",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference) ResetSource() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSource",
 		nil, // no parameters
 	)
 }

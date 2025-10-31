@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints databricks_serving_endpoints}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints databricks_serving_endpoints}.
 type DataDatabricksServingEndpoints interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -47,6 +47,8 @@ type DataDatabricksServingEndpoints interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksServingEndpointsProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -81,10 +83,12 @@ type DataDatabricksServingEndpoints interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEndpoints(value interface{})
+	PutProviderConfig(value *DataDatabricksServingEndpointsProviderConfig)
 	ResetEndpoints()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -224,6 +228,26 @@ func (j *jsiiProxy_DataDatabricksServingEndpoints) Provider() cdktf.TerraformPro
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksServingEndpoints) ProviderConfig() DataDatabricksServingEndpointsProviderConfigOutputReference {
+	var returns DataDatabricksServingEndpointsProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksServingEndpoints) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksServingEndpoints) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -265,7 +289,7 @@ func (j *jsiiProxy_DataDatabricksServingEndpoints) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints databricks_serving_endpoints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints databricks_serving_endpoints} Data Source.
 func NewDataDatabricksServingEndpoints(scope constructs.Construct, id *string, config *DataDatabricksServingEndpointsConfig) DataDatabricksServingEndpoints {
 	_init_.Initialize()
 
@@ -283,7 +307,7 @@ func NewDataDatabricksServingEndpoints(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints databricks_serving_endpoints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints databricks_serving_endpoints} Data Source.
 func NewDataDatabricksServingEndpoints_Override(d DataDatabricksServingEndpoints, scope constructs.Construct, id *string, config *DataDatabricksServingEndpointsConfig) {
 	_init_.Initialize()
 
@@ -636,6 +660,17 @@ func (d *jsiiProxy_DataDatabricksServingEndpoints) PutEndpoints(value interface{
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksServingEndpoints) PutProviderConfig(value *DataDatabricksServingEndpointsProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksServingEndpoints) ResetEndpoints() {
 	_jsii_.InvokeVoid(
 		d,
@@ -648,6 +683,14 @@ func (d *jsiiProxy_DataDatabricksServingEndpoints) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksServingEndpoints) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

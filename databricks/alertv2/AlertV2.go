@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/alert_v2 databricks_alert_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/alert_v2 databricks_alert_v2}.
 type AlertV2 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -142,17 +142,12 @@ type AlertV2 interface {
 	PutSchedule(value *AlertV2Schedule)
 	ResetCustomDescription()
 	ResetCustomSummary()
-	ResetDisplayName()
-	ResetEvaluation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParentPath()
-	ResetQueryText()
 	ResetRunAs()
 	ResetRunAsUserName()
-	ResetSchedule()
-	ResetWarehouseId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -592,7 +587,7 @@ func (j *jsiiProxy_AlertV2) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
 func NewAlertV2(scope constructs.Construct, id *string, config *AlertV2Config) AlertV2 {
 	_init_.Initialize()
 
@@ -610,7 +605,7 @@ func NewAlertV2(scope constructs.Construct, id *string, config *AlertV2Config) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/alert_v2 databricks_alert_v2} Resource.
 func NewAlertV2_Override(a AlertV2, scope constructs.Construct, id *string, config *AlertV2Config) {
 	_init_.Initialize()
 
@@ -1168,22 +1163,6 @@ func (a *jsiiProxy_AlertV2) ResetCustomSummary() {
 	)
 }
 
-func (a *jsiiProxy_AlertV2) ResetDisplayName() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetDisplayName",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AlertV2) ResetEvaluation() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetEvaluation",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AlertV2) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1200,14 +1179,6 @@ func (a *jsiiProxy_AlertV2) ResetParentPath() {
 	)
 }
 
-func (a *jsiiProxy_AlertV2) ResetQueryText() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetQueryText",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AlertV2) ResetRunAs() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1220,22 +1191,6 @@ func (a *jsiiProxy_AlertV2) ResetRunAsUserName() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRunAsUserName",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AlertV2) ResetSchedule() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSchedule",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AlertV2) ResetWarehouseId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetWarehouseId",
 		nil, // no parameters
 	)
 }

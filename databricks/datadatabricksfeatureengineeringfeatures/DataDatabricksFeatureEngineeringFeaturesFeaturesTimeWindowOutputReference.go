@@ -23,21 +23,19 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference i
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Continuous() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowContinuousOutputReference
+	ContinuousInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Duration() *string
-	SetDuration(val *string)
-	DurationInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindow
 	SetInternalValue(val *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindow)
-	Offset() *string
-	SetOffset(val *string)
-	OffsetInput() *string
+	Sliding() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSlidingOutputReference
+	SlidingInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,6 +44,8 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference i
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Tumbling() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowTumblingOutputReference
+	TumblingInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,7 +70,12 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetOffset()
+	PutContinuous(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowContinuous)
+	PutSliding(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSliding)
+	PutTumbling(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowTumbling)
+	ResetContinuous()
+	ResetSliding()
+	ResetTumbling()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -106,31 +111,31 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOut
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) Continuous() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowContinuousOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowContinuousOutputReference
+	_jsii_.Get(
+		j,
+		"continuous",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) ContinuousInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"continuousInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) Duration() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"duration",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) DurationInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"durationInput",
 		&returns,
 	)
 	return returns
@@ -156,21 +161,21 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOut
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) Offset() *string {
-	var returns *string
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) Sliding() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSlidingOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSlidingOutputReference
 	_jsii_.Get(
 		j,
-		"offset",
+		"sliding",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) OffsetInput() *string {
-	var returns *string
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) SlidingInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"offsetInput",
+		"slidingInput",
 		&returns,
 	)
 	return returns
@@ -191,6 +196,26 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOut
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) Tumbling() DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowTumblingOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowTumblingOutputReference
+	_jsii_.Get(
+		j,
+		"tumbling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) TumblingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tumblingInput",
 		&returns,
 	)
 	return returns
@@ -246,17 +271,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOut
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference)SetDuration(val *string) {
-	if err := j.validateSetDurationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"duration",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference)SetInternalValue(val *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindow) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -264,17 +278,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOut
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference)SetOffset(val *string) {
-	if err := j.validateSetOffsetParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"offset",
 		val,
 	)
 }
@@ -487,10 +490,59 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOut
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) ResetOffset() {
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) PutContinuous(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowContinuous) {
+	if err := d.validatePutContinuousParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
-		"resetOffset",
+		"putContinuous",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) PutSliding(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSliding) {
+	if err := d.validatePutSlidingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSliding",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) PutTumbling(value *DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowTumbling) {
+	if err := d.validatePutTumblingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTumbling",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) ResetContinuous() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetContinuous",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) ResetSliding() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSliding",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference) ResetTumbling() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTumbling",
 		nil, // no parameters
 	)
 }

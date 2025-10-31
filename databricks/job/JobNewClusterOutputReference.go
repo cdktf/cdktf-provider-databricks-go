@@ -98,6 +98,8 @@ type JobNewClusterOutputReference interface {
 	PolicyId() *string
 	SetPolicyId(val *string)
 	PolicyIdInput() *string
+	ProviderConfig() JobNewClusterProviderConfigOutputReference
+	ProviderConfigInput() *JobNewClusterProviderConfig
 	RemoteDiskThroughput() *float64
 	SetRemoteDiskThroughput(val *float64)
 	RemoteDiskThroughputInput() *float64
@@ -168,6 +170,7 @@ type JobNewClusterOutputReference interface {
 	PutGcpAttributes(value *JobNewClusterGcpAttributes)
 	PutInitScripts(value interface{})
 	PutLibrary(value interface{})
+	PutProviderConfig(value *JobNewClusterProviderConfig)
 	PutWorkloadType(value *JobNewClusterWorkloadType)
 	ResetApplyPolicyDefaultValues()
 	ResetAutoscale()
@@ -194,6 +197,7 @@ type JobNewClusterOutputReference interface {
 	ResetNodeTypeId()
 	ResetNumWorkers()
 	ResetPolicyId()
+	ResetProviderConfig()
 	ResetRemoteDiskThroughput()
 	ResetRuntimeEngine()
 	ResetSingleUserName()
@@ -764,6 +768,26 @@ func (j *jsiiProxy_JobNewClusterOutputReference) PolicyIdInput() *string {
 	_jsii_.Get(
 		j,
 		"policyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobNewClusterOutputReference) ProviderConfig() JobNewClusterProviderConfigOutputReference {
+	var returns JobNewClusterProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobNewClusterOutputReference) ProviderConfigInput() *JobNewClusterProviderConfig {
+	var returns *JobNewClusterProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -1632,6 +1656,17 @@ func (j *jsiiProxy_JobNewClusterOutputReference) PutLibrary(value interface{}) {
 	)
 }
 
+func (j *jsiiProxy_JobNewClusterOutputReference) PutProviderConfig(value *JobNewClusterProviderConfig) {
+	if err := j.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobNewClusterOutputReference) PutWorkloadType(value *JobNewClusterWorkloadType) {
 	if err := j.validatePutWorkloadTypeParameters(value); err != nil {
 		panic(err)
@@ -1839,6 +1874,14 @@ func (j *jsiiProxy_JobNewClusterOutputReference) ResetPolicyId() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetPolicyId",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobNewClusterOutputReference) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

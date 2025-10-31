@@ -5,7 +5,7 @@ package datadatabricksdatabasesynceddatabasetables
 
 
 type DataDatabricksDatabaseSyncedDatabaseTablesSyncedTables struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_tables#name DataDatabricksDatabaseSyncedDatabaseTables#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/database_synced_database_tables#name DataDatabricksDatabaseSyncedDatabaseTables#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

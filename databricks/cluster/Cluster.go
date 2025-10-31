@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster databricks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster databricks_cluster}.
 type Cluster interface {
 	cdktf.TerraformResource
 	ApplyPolicyDefaultValues() interface{}
@@ -126,6 +126,8 @@ type Cluster interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() ClusterProviderConfigOutputReference
+	ProviderConfigInput() *ClusterProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -223,6 +225,7 @@ type Cluster interface {
 	PutGcpAttributes(value *ClusterGcpAttributes)
 	PutInitScripts(value interface{})
 	PutLibrary(value interface{})
+	PutProviderConfig(value *ClusterProviderConfig)
 	PutTimeouts(value *ClusterTimeouts)
 	PutWorkloadType(value *ClusterWorkloadType)
 	ResetApplyPolicyDefaultValues()
@@ -256,6 +259,7 @@ type Cluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicyId()
+	ResetProviderConfig()
 	ResetRemoteDiskThroughput()
 	ResetRuntimeEngine()
 	ResetSingleUserName()
@@ -974,6 +978,26 @@ func (j *jsiiProxy_Cluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_Cluster) ProviderConfig() ClusterProviderConfigOutputReference {
+	var returns ClusterProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) ProviderConfigInput() *ClusterProviderConfig {
+	var returns *ClusterProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Cluster) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -1265,7 +1289,7 @@ func (j *jsiiProxy_Cluster) WorkloadTypeInput() *ClusterWorkloadType {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) Cluster {
 	_init_.Initialize()
 
@@ -1283,7 +1307,7 @@ func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster databricks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster databricks_cluster} Resource.
 func NewCluster_Override(c Cluster, scope constructs.Construct, id *string, config *ClusterConfig) {
 	_init_.Initialize()
 
@@ -2122,6 +2146,17 @@ func (c *jsiiProxy_Cluster) PutLibrary(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_Cluster) PutProviderConfig(value *ClusterProviderConfig) {
+	if err := c.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_Cluster) PutTimeouts(value *ClusterTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -2372,6 +2407,14 @@ func (c *jsiiProxy_Cluster) ResetPolicyId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetPolicyId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cluster) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

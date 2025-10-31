@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference) v
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference) validatePutProviderConfigParameters(value *DataDatabricksJobJobSettingsSettingsLibraryProviderConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryOutputReference) validatePutPypiParameters(value *DataDatabricksJobJobSettingsSettingsLibraryPypi) error {
 	return nil
 }

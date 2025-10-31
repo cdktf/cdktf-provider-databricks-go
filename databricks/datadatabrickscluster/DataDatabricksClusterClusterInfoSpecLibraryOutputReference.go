@@ -42,6 +42,8 @@ type DataDatabricksClusterClusterInfoSpecLibraryOutputReference interface {
 	JarInput() *string
 	Maven() DataDatabricksClusterClusterInfoSpecLibraryMavenOutputReference
 	MavenInput() *DataDatabricksClusterClusterInfoSpecLibraryMaven
+	ProviderConfig() DataDatabricksClusterClusterInfoSpecLibraryProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksClusterClusterInfoSpecLibraryProviderConfig
 	Pypi() DataDatabricksClusterClusterInfoSpecLibraryPypiOutputReference
 	PypiInput() *DataDatabricksClusterClusterInfoSpecLibraryPypi
 	Requirements() *string
@@ -84,11 +86,13 @@ type DataDatabricksClusterClusterInfoSpecLibraryOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCran(value *DataDatabricksClusterClusterInfoSpecLibraryCran)
 	PutMaven(value *DataDatabricksClusterClusterInfoSpecLibraryMaven)
+	PutProviderConfig(value *DataDatabricksClusterClusterInfoSpecLibraryProviderConfig)
 	PutPypi(value *DataDatabricksClusterClusterInfoSpecLibraryPypi)
 	ResetCran()
 	ResetEgg()
 	ResetJar()
 	ResetMaven()
+	ResetProviderConfig()
 	ResetPypi()
 	ResetRequirements()
 	ResetWhl()
@@ -232,6 +236,26 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecLibraryOutputReference) M
 	_jsii_.Get(
 		j,
 		"mavenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecLibraryOutputReference) ProviderConfig() DataDatabricksClusterClusterInfoSpecLibraryProviderConfigOutputReference {
+	var returns DataDatabricksClusterClusterInfoSpecLibraryProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecLibraryOutputReference) ProviderConfigInput() *DataDatabricksClusterClusterInfoSpecLibraryProviderConfig {
+	var returns *DataDatabricksClusterClusterInfoSpecLibraryProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -652,6 +676,17 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecLibraryOutputReference) P
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecLibraryOutputReference) PutProviderConfig(value *DataDatabricksClusterClusterInfoSpecLibraryProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecLibraryOutputReference) PutPypi(value *DataDatabricksClusterClusterInfoSpecLibraryPypi) {
 	if err := d.validatePutPypiParameters(value); err != nil {
 		panic(err)
@@ -691,6 +726,14 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecLibraryOutputReference) R
 	_jsii_.InvokeVoid(
 		d,
 		"resetMaven",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecLibraryOutputReference) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

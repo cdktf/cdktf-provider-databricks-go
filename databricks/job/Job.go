@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/job databricks_job}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/job databricks_job}.
 type Job interface {
 	cdktf.TerraformResource
 	AlwaysRunning() interface{}
@@ -116,6 +116,8 @@ type Job interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() JobProviderConfigOutputReference
+	ProviderConfigInput() *JobProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -222,6 +224,7 @@ type Job interface {
 	PutNotificationSettings(value *JobNotificationSettings)
 	PutParameter(value interface{})
 	PutPipelineTask(value *JobPipelineTask)
+	PutProviderConfig(value *JobProviderConfig)
 	PutPythonWheelTask(value *JobPythonWheelTask)
 	PutQueue(value *JobQueue)
 	PutRunAs(value *JobRunAs)
@@ -264,6 +267,7 @@ type Job interface {
 	ResetParameter()
 	ResetPerformanceTarget()
 	ResetPipelineTask()
+	ResetProviderConfig()
 	ResetPythonWheelTask()
 	ResetQueue()
 	ResetRetryOnTimeout()
@@ -948,6 +952,26 @@ func (j *jsiiProxy_Job) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_Job) ProviderConfig() JobProviderConfigOutputReference {
+	var returns JobProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) ProviderConfigInput() *JobProviderConfig {
+	var returns *JobProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Job) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -1329,7 +1353,7 @@ func (j *jsiiProxy_Job) WebhookNotificationsInput() *JobWebhookNotifications {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/job databricks_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	_init_.Initialize()
 
@@ -1347,7 +1371,7 @@ func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/job databricks_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/job databricks_job} Resource.
 func NewJob_Override(j Job, scope constructs.Construct, id *string, config *JobConfig) {
 	_init_.Initialize()
 
@@ -2120,6 +2144,17 @@ func (j *jsiiProxy_Job) PutPipelineTask(value *JobPipelineTask) {
 	)
 }
 
+func (j *jsiiProxy_Job) PutProviderConfig(value *JobProviderConfig) {
+	if err := j.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_Job) PutPythonWheelTask(value *JobPythonWheelTask) {
 	if err := j.validatePutPythonWheelTaskParameters(value); err != nil {
 		panic(err)
@@ -2472,6 +2507,14 @@ func (j *jsiiProxy_Job) ResetPipelineTask() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetPipelineTask",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

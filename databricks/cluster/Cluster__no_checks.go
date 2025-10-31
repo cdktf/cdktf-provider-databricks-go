@@ -111,6 +111,10 @@ func (c *jsiiProxy_Cluster) validatePutLibraryParameters(value interface{}) erro
 	return nil
 }
 
+func (c *jsiiProxy_Cluster) validatePutProviderConfigParameters(value *ClusterProviderConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cluster) validatePutTimeoutsParameters(value *ClusterTimeouts) error {
 	return nil
 }

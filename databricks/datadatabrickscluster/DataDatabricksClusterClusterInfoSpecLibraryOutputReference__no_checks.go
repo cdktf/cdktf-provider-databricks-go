@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecLibraryOutputReference) v
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecLibraryOutputReference) validatePutProviderConfigParameters(value *DataDatabricksClusterClusterInfoSpecLibraryProviderConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecLibraryOutputReference) validatePutPypiParameters(value *DataDatabricksClusterClusterInfoSpecLibraryPypi) error {
 	return nil
 }

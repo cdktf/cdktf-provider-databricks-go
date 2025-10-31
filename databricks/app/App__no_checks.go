@@ -75,6 +75,10 @@ func (a *jsiiProxy_App) validateOverrideLogicalIdParameters(newLogicalId *string
 	return nil
 }
 
+func (a *jsiiProxy_App) validatePutProviderConfigParameters(value *AppProviderConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_App) validatePutResourcesParameters(value interface{}) error {
 	return nil
 }

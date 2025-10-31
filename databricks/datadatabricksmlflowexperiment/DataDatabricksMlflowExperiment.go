@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment}.
 type DataDatabricksMlflowExperiment interface {
 	cdktf.TerraformDataSource
 	ArtifactLocation() *string
@@ -66,6 +66,8 @@ type DataDatabricksMlflowExperiment interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksMlflowExperimentProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksMlflowExperimentProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	Tags() DataDatabricksMlflowExperimentTagsList
@@ -101,6 +103,7 @@ type DataDatabricksMlflowExperiment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksMlflowExperimentProviderConfig)
 	PutTags(value interface{})
 	ResetArtifactLocation()
 	ResetCreationTime()
@@ -112,6 +115,7 @@ type DataDatabricksMlflowExperiment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -372,6 +376,26 @@ func (j *jsiiProxy_DataDatabricksMlflowExperiment) Provider() cdktf.TerraformPro
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksMlflowExperiment) ProviderConfig() DataDatabricksMlflowExperimentProviderConfigOutputReference {
+	var returns DataDatabricksMlflowExperimentProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMlflowExperiment) ProviderConfigInput() *DataDatabricksMlflowExperimentProviderConfig {
+	var returns *DataDatabricksMlflowExperimentProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksMlflowExperiment) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -433,7 +457,7 @@ func (j *jsiiProxy_DataDatabricksMlflowExperiment) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment} Data Source.
 func NewDataDatabricksMlflowExperiment(scope constructs.Construct, id *string, config *DataDatabricksMlflowExperimentConfig) DataDatabricksMlflowExperiment {
 	_init_.Initialize()
 
@@ -451,7 +475,7 @@ func NewDataDatabricksMlflowExperiment(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment} Data Source.
 func NewDataDatabricksMlflowExperiment_Override(d DataDatabricksMlflowExperiment, scope constructs.Construct, id *string, config *DataDatabricksMlflowExperimentConfig) {
 	_init_.Initialize()
 
@@ -870,6 +894,17 @@ func (d *jsiiProxy_DataDatabricksMlflowExperiment) OverrideLogicalId(newLogicalI
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksMlflowExperiment) PutProviderConfig(value *DataDatabricksMlflowExperimentProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksMlflowExperiment) PutTags(value interface{}) {
 	if err := d.validatePutTagsParameters(value); err != nil {
 		panic(err)
@@ -941,6 +976,14 @@ func (d *jsiiProxy_DataDatabricksMlflowExperiment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksMlflowExperiment) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

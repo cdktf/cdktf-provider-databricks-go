@@ -22,7 +22,9 @@ type DataDatabricksAppConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/app#name DataDatabricksApp#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/app#name DataDatabricksApp#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/app#provider_config DataDatabricksApp#provider_config}.
+	ProviderConfig *DataDatabricksAppProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

@@ -96,6 +96,8 @@ type DataDatabricksClusterClusterInfoSpecOutputReference interface {
 	PolicyId() *string
 	SetPolicyId(val *string)
 	PolicyIdInput() *string
+	ProviderConfig() DataDatabricksClusterClusterInfoSpecProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksClusterClusterInfoSpecProviderConfig
 	RemoteDiskThroughput() *float64
 	SetRemoteDiskThroughput(val *float64)
 	RemoteDiskThroughputInput() *float64
@@ -166,6 +168,7 @@ type DataDatabricksClusterClusterInfoSpecOutputReference interface {
 	PutGcpAttributes(value *DataDatabricksClusterClusterInfoSpecGcpAttributes)
 	PutInitScripts(value interface{})
 	PutLibrary(value interface{})
+	PutProviderConfig(value *DataDatabricksClusterClusterInfoSpecProviderConfig)
 	PutWorkloadType(value *DataDatabricksClusterClusterInfoSpecWorkloadType)
 	ResetApplyPolicyDefaultValues()
 	ResetAutoscale()
@@ -191,6 +194,7 @@ type DataDatabricksClusterClusterInfoSpecOutputReference interface {
 	ResetNodeTypeId()
 	ResetNumWorkers()
 	ResetPolicyId()
+	ResetProviderConfig()
 	ResetRemoteDiskThroughput()
 	ResetRuntimeEngine()
 	ResetSingleUserName()
@@ -751,6 +755,26 @@ func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) PolicyId
 	_jsii_.Get(
 		j,
 		"policyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) ProviderConfig() DataDatabricksClusterClusterInfoSpecProviderConfigOutputReference {
+	var returns DataDatabricksClusterClusterInfoSpecProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) ProviderConfigInput() *DataDatabricksClusterClusterInfoSpecProviderConfig {
+	var returns *DataDatabricksClusterClusterInfoSpecProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -1608,6 +1632,17 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) PutLibra
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) PutProviderConfig(value *DataDatabricksClusterClusterInfoSpecProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) PutWorkloadType(value *DataDatabricksClusterClusterInfoSpecWorkloadType) {
 	if err := d.validatePutWorkloadTypeParameters(value); err != nil {
 		panic(err)
@@ -1807,6 +1842,14 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) ResetPol
 	_jsii_.InvokeVoid(
 		d,
 		"resetPolicyId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

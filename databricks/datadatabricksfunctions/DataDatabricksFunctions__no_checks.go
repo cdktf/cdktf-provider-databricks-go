@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksFunctions) validatePutFunctionsParameters(value
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFunctions) validatePutProviderConfigParameters(value *DataDatabricksFunctionsProviderConfig) error {
+	return nil
+}
+
 func validateDataDatabricksFunctions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

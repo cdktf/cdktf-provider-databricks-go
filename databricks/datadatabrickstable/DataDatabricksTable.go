@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/table databricks_table}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/table databricks_table}.
 type DataDatabricksTable interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -51,6 +51,8 @@ type DataDatabricksTable interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksTableProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksTableProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	TableInfo() DataDatabricksTableTableInfoOutputReference
@@ -86,11 +88,13 @@ type DataDatabricksTable interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksTableProviderConfig)
 	PutTableInfo(value *DataDatabricksTableTableInfo)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetTableInfo()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -251,6 +255,26 @@ func (j *jsiiProxy_DataDatabricksTable) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksTable) ProviderConfig() DataDatabricksTableProviderConfigOutputReference {
+	var returns DataDatabricksTableProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksTable) ProviderConfigInput() *DataDatabricksTableProviderConfig {
+	var returns *DataDatabricksTableProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksTable) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -312,7 +336,7 @@ func (j *jsiiProxy_DataDatabricksTable) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/table databricks_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/table databricks_table} Data Source.
 func NewDataDatabricksTable(scope constructs.Construct, id *string, config *DataDatabricksTableConfig) DataDatabricksTable {
 	_init_.Initialize()
 
@@ -330,7 +354,7 @@ func NewDataDatabricksTable(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/table databricks_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/table databricks_table} Data Source.
 func NewDataDatabricksTable_Override(d DataDatabricksTable, scope constructs.Construct, id *string, config *DataDatabricksTableConfig) {
 	_init_.Initialize()
 
@@ -694,6 +718,17 @@ func (d *jsiiProxy_DataDatabricksTable) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksTable) PutProviderConfig(value *DataDatabricksTableProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksTable) PutTableInfo(value *DataDatabricksTableTableInfo) {
 	if err := d.validatePutTableInfoParameters(value); err != nil {
 		panic(err)
@@ -717,6 +752,14 @@ func (d *jsiiProxy_DataDatabricksTable) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksTable) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

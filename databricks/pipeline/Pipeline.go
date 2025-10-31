@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/pipeline databricks_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/pipeline databricks_pipeline}.
 type Pipeline interface {
 	cdktf.TerraformResource
 	AllowDuplicateNames() interface{}
@@ -167,6 +167,9 @@ type Pipeline interface {
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
+	UsagePolicyId() *string
+	SetUsagePolicyId(val *string)
+	UsagePolicyIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -267,6 +270,7 @@ type Pipeline interface {
 	ResetTimeouts()
 	ResetTrigger()
 	ResetUrl()
+	ResetUsagePolicyId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -1245,8 +1249,28 @@ func (j *jsiiProxy_Pipeline) UrlInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Pipeline) UsagePolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usagePolicyId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/pipeline databricks_pipeline} Resource.
+func (j *jsiiProxy_Pipeline) UsagePolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usagePolicyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig) Pipeline {
 	_init_.Initialize()
 
@@ -1264,7 +1288,7 @@ func NewPipeline(scope constructs.Construct, id *string, config *PipelineConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/pipeline databricks_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/pipeline databricks_pipeline} Resource.
 func NewPipeline_Override(p Pipeline, scope constructs.Construct, id *string, config *PipelineConfig) {
 	_init_.Initialize()
 
@@ -1625,6 +1649,17 @@ func (j *jsiiProxy_Pipeline)SetUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"url",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Pipeline)SetUsagePolicyId(val *string) {
+	if err := j.validateSetUsagePolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usagePolicyId",
 		val,
 	)
 }
@@ -2460,6 +2495,14 @@ func (p *jsiiProxy_Pipeline) ResetUrl() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetUrl",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Pipeline) ResetUsagePolicyId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUsagePolicyId",
 		nil, // no parameters
 	)
 }

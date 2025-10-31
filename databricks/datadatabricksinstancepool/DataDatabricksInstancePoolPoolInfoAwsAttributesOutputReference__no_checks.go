@@ -63,6 +63,10 @@ func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoAwsAttributesOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoAwsAttributesOutputReference) validateSetInstanceProfileArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoAwsAttributesOutputReference) validateSetInternalValueParameters(val *DataDatabricksInstancePoolPoolInfoAwsAttributes) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/volumes databricks_volumes}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/volumes databricks_volumes}.
 type DataDatabricksVolumes interface {
 	cdktf.TerraformDataSource
 	CatalogName() *string
@@ -51,6 +51,8 @@ type DataDatabricksVolumes interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksVolumesProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	SchemaName() *string
@@ -87,10 +89,12 @@ type DataDatabricksVolumes interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksVolumesProviderConfig)
 	ResetIds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -250,6 +254,26 @@ func (j *jsiiProxy_DataDatabricksVolumes) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksVolumes) ProviderConfig() DataDatabricksVolumesProviderConfigOutputReference {
+	var returns DataDatabricksVolumesProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksVolumes) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksVolumes) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -311,7 +335,7 @@ func (j *jsiiProxy_DataDatabricksVolumes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/volumes databricks_volumes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/volumes databricks_volumes} Data Source.
 func NewDataDatabricksVolumes(scope constructs.Construct, id *string, config *DataDatabricksVolumesConfig) DataDatabricksVolumes {
 	_init_.Initialize()
 
@@ -329,7 +353,7 @@ func NewDataDatabricksVolumes(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/volumes databricks_volumes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/volumes databricks_volumes} Data Source.
 func NewDataDatabricksVolumes_Override(d DataDatabricksVolumes, scope constructs.Construct, id *string, config *DataDatabricksVolumesConfig) {
 	_init_.Initialize()
 
@@ -704,6 +728,17 @@ func (d *jsiiProxy_DataDatabricksVolumes) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksVolumes) PutProviderConfig(value *DataDatabricksVolumesProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksVolumes) ResetIds() {
 	_jsii_.InvokeVoid(
 		d,
@@ -716,6 +751,14 @@ func (d *jsiiProxy_DataDatabricksVolumes) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksVolumes) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

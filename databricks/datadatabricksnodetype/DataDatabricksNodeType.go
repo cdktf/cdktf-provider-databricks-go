@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type databricks_node_type}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type databricks_node_type}.
 type DataDatabricksNodeType interface {
 	cdktf.TerraformDataSource
 	Arm() interface{}
@@ -87,6 +87,8 @@ type DataDatabricksNodeType interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksNodeTypeProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksNodeTypeProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	SupportPortForwarding() interface{}
@@ -123,6 +125,7 @@ type DataDatabricksNodeType interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksNodeTypeProviderConfig)
 	ResetArm()
 	ResetCategory()
 	ResetFleet()
@@ -140,6 +143,7 @@ type DataDatabricksNodeType interface {
 	ResetOverrideLogicalId()
 	ResetPhotonDriverCapable()
 	ResetPhotonWorkerCapable()
+	ResetProviderConfig()
 	ResetSupportPortForwarding()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -540,6 +544,26 @@ func (j *jsiiProxy_DataDatabricksNodeType) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksNodeType) ProviderConfig() DataDatabricksNodeTypeProviderConfigOutputReference {
+	var returns DataDatabricksNodeTypeProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksNodeType) ProviderConfigInput() *DataDatabricksNodeTypeProviderConfig {
+	var returns *DataDatabricksNodeTypeProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksNodeType) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -601,7 +625,7 @@ func (j *jsiiProxy_DataDatabricksNodeType) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type databricks_node_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type databricks_node_type} Data Source.
 func NewDataDatabricksNodeType(scope constructs.Construct, id *string, config *DataDatabricksNodeTypeConfig) DataDatabricksNodeType {
 	_init_.Initialize()
 
@@ -619,7 +643,7 @@ func NewDataDatabricksNodeType(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type databricks_node_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type databricks_node_type} Data Source.
 func NewDataDatabricksNodeType_Override(d DataDatabricksNodeType, scope constructs.Construct, id *string, config *DataDatabricksNodeTypeConfig) {
 	_init_.Initialize()
 
@@ -1126,6 +1150,17 @@ func (d *jsiiProxy_DataDatabricksNodeType) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksNodeType) PutProviderConfig(value *DataDatabricksNodeTypeProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksNodeType) ResetArm() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1242,6 +1277,14 @@ func (d *jsiiProxy_DataDatabricksNodeType) ResetPhotonWorkerCapable() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPhotonWorkerCapable",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksNodeType) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

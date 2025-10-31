@@ -47,6 +47,18 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputRefere
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference) validatePutContinuousParameters(value *DataDatabricksFeatureEngineeringFeatureTimeWindowContinuous) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference) validatePutSlidingParameters(value *DataDatabricksFeatureEngineeringFeatureTimeWindowSliding) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference) validatePutTumblingParameters(value *DataDatabricksFeatureEngineeringFeatureTimeWindowTumbling) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -59,15 +71,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference) validateSetDurationParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference) validateSetInternalValueParameters(val *DataDatabricksFeatureEngineeringFeatureTimeWindow) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference) validateSetOffsetParameters(val *string) error {
 	return nil
 }
 

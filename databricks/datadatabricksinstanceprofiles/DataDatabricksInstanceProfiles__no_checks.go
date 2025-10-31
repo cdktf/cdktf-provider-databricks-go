@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksInstanceProfiles) validatePutInstanceProfilesPa
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksInstanceProfiles) validatePutProviderConfigParameters(value *DataDatabricksInstanceProfilesProviderConfig) error {
+	return nil
+}
+
 func validateDataDatabricksInstanceProfiles_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

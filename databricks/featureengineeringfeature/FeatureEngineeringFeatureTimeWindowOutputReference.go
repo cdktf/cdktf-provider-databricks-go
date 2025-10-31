@@ -23,21 +23,19 @@ type FeatureEngineeringFeatureTimeWindowOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Continuous() FeatureEngineeringFeatureTimeWindowContinuousOutputReference
+	ContinuousInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Duration() *string
-	SetDuration(val *string)
-	DurationInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Offset() *string
-	SetOffset(val *string)
-	OffsetInput() *string
+	Sliding() FeatureEngineeringFeatureTimeWindowSlidingOutputReference
+	SlidingInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,6 +44,8 @@ type FeatureEngineeringFeatureTimeWindowOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Tumbling() FeatureEngineeringFeatureTimeWindowTumblingOutputReference
+	TumblingInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,7 +70,12 @@ type FeatureEngineeringFeatureTimeWindowOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetOffset()
+	PutContinuous(value *FeatureEngineeringFeatureTimeWindowContinuous)
+	PutSliding(value *FeatureEngineeringFeatureTimeWindowSliding)
+	PutTumbling(value *FeatureEngineeringFeatureTimeWindowTumbling)
+	ResetContinuous()
+	ResetSliding()
+	ResetTumbling()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -106,31 +111,31 @@ func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) ComplexOb
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) Continuous() FeatureEngineeringFeatureTimeWindowContinuousOutputReference {
+	var returns FeatureEngineeringFeatureTimeWindowContinuousOutputReference
+	_jsii_.Get(
+		j,
+		"continuous",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) ContinuousInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"continuousInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) Duration() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"duration",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) DurationInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"durationInput",
 		&returns,
 	)
 	return returns
@@ -156,21 +161,21 @@ func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) InternalV
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) Offset() *string {
-	var returns *string
+func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) Sliding() FeatureEngineeringFeatureTimeWindowSlidingOutputReference {
+	var returns FeatureEngineeringFeatureTimeWindowSlidingOutputReference
 	_jsii_.Get(
 		j,
-		"offset",
+		"sliding",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) OffsetInput() *string {
-	var returns *string
+func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) SlidingInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"offsetInput",
+		"slidingInput",
 		&returns,
 	)
 	return returns
@@ -191,6 +196,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) Terraform
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) Tumbling() FeatureEngineeringFeatureTimeWindowTumblingOutputReference {
+	var returns FeatureEngineeringFeatureTimeWindowTumblingOutputReference
+	_jsii_.Get(
+		j,
+		"tumbling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) TumblingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tumblingInput",
 		&returns,
 	)
 	return returns
@@ -246,17 +271,6 @@ func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference)SetDuration(val *string) {
-	if err := j.validateSetDurationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"duration",
-		val,
-	)
-}
-
 func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -264,17 +278,6 @@ func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference)SetInterna
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference)SetOffset(val *string) {
-	if err := j.validateSetOffsetParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"offset",
 		val,
 	)
 }
@@ -487,10 +490,59 @@ func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) Interpola
 	return returns
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) ResetOffset() {
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) PutContinuous(value *FeatureEngineeringFeatureTimeWindowContinuous) {
+	if err := f.validatePutContinuousParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		f,
-		"resetOffset",
+		"putContinuous",
+		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) PutSliding(value *FeatureEngineeringFeatureTimeWindowSliding) {
+	if err := f.validatePutSlidingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putSliding",
+		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) PutTumbling(value *FeatureEngineeringFeatureTimeWindowTumbling) {
+	if err := f.validatePutTumblingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putTumbling",
+		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) ResetContinuous() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetContinuous",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) ResetSliding() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetSliding",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) ResetTumbling() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTumbling",
 		nil, // no parameters
 	)
 }

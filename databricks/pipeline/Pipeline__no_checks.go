@@ -267,6 +267,10 @@ func (j *jsiiProxy_Pipeline) validateSetUrlParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Pipeline) validateSetUsagePolicyIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewPipelineParameters(scope constructs.Construct, id *string, config *PipelineConfig) error {
 	return nil
 }

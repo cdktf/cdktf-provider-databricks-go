@@ -36,8 +36,8 @@ type DataDatabricksAlertV2EvaluationSourceOutputReference interface {
 	DisplayInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAlertV2EvaluationSource
+	SetInternalValue(val *DataDatabricksAlertV2EvaluationSource)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -75,7 +75,6 @@ type DataDatabricksAlertV2EvaluationSourceOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAggregation()
 	ResetDisplay()
-	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -171,8 +170,8 @@ func (j *jsiiProxy_DataDatabricksAlertV2EvaluationSourceOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2EvaluationSourceOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAlertV2EvaluationSourceOutputReference) InternalValue() *DataDatabricksAlertV2EvaluationSource {
+	var returns *DataDatabricksAlertV2EvaluationSource
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -293,7 +292,7 @@ func (j *jsiiProxy_DataDatabricksAlertV2EvaluationSourceOutputReference)SetDispl
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2EvaluationSourceOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAlertV2EvaluationSourceOutputReference)SetInternalValue(val *DataDatabricksAlertV2EvaluationSource) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,14 +534,6 @@ func (d *jsiiProxy_DataDatabricksAlertV2EvaluationSourceOutputReference) ResetDi
 	_jsii_.InvokeVoid(
 		d,
 		"resetDisplay",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertV2EvaluationSourceOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
 		nil, // no parameters
 	)
 }

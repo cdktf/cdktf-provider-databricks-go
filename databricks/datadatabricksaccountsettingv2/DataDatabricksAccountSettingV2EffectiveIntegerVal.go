@@ -5,7 +5,7 @@ package datadatabricksaccountsettingv2
 
 
 type DataDatabricksAccountSettingV2EffectiveIntegerVal struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}.
 	Value *float64 `field:"optional" json:"value" yaml:"value"`
 }
 

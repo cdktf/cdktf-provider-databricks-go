@@ -115,6 +115,17 @@ func (j *jsiiProxy_JobLibraryOutputReference) validatePutMavenParameters(value *
 	return nil
 }
 
+func (j *jsiiProxy_JobLibraryOutputReference) validatePutProviderConfigParameters(value *JobLibraryProviderConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobLibraryOutputReference) validatePutPypiParameters(value *JobLibraryPypi) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

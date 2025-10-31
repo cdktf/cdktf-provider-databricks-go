@@ -42,6 +42,8 @@ type JobLibraryOutputReference interface {
 	JarInput() *string
 	Maven() JobLibraryMavenOutputReference
 	MavenInput() *JobLibraryMaven
+	ProviderConfig() JobLibraryProviderConfigOutputReference
+	ProviderConfigInput() *JobLibraryProviderConfig
 	Pypi() JobLibraryPypiOutputReference
 	PypiInput() *JobLibraryPypi
 	Requirements() *string
@@ -84,11 +86,13 @@ type JobLibraryOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCran(value *JobLibraryCran)
 	PutMaven(value *JobLibraryMaven)
+	PutProviderConfig(value *JobLibraryProviderConfig)
 	PutPypi(value *JobLibraryPypi)
 	ResetCran()
 	ResetEgg()
 	ResetJar()
 	ResetMaven()
+	ResetProviderConfig()
 	ResetPypi()
 	ResetRequirements()
 	ResetWhl()
@@ -232,6 +236,26 @@ func (j *jsiiProxy_JobLibraryOutputReference) MavenInput() *JobLibraryMaven {
 	_jsii_.Get(
 		j,
 		"mavenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobLibraryOutputReference) ProviderConfig() JobLibraryProviderConfigOutputReference {
+	var returns JobLibraryProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobLibraryOutputReference) ProviderConfigInput() *JobLibraryProviderConfig {
+	var returns *JobLibraryProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -652,6 +676,17 @@ func (j *jsiiProxy_JobLibraryOutputReference) PutMaven(value *JobLibraryMaven) {
 	)
 }
 
+func (j *jsiiProxy_JobLibraryOutputReference) PutProviderConfig(value *JobLibraryProviderConfig) {
+	if err := j.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobLibraryOutputReference) PutPypi(value *JobLibraryPypi) {
 	if err := j.validatePutPypiParameters(value); err != nil {
 		panic(err)
@@ -691,6 +726,14 @@ func (j *jsiiProxy_JobLibraryOutputReference) ResetMaven() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetMaven",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobLibraryOutputReference) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

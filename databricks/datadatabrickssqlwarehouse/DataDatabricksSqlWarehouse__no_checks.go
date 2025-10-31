@@ -67,6 +67,10 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) validatePutOdbcParamsParameters(v
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksSqlWarehouse) validatePutProviderConfigParameters(value *DataDatabricksSqlWarehouseProviderConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) validatePutTagsParameters(value *DataDatabricksSqlWarehouseTags) error {
 	return nil
 }

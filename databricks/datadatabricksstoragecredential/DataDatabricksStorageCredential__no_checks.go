@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksStorageCredential) validateOverrideLogicalIdPar
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksStorageCredential) validatePutProviderConfigParameters(value *DataDatabricksStorageCredentialProviderConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksStorageCredential) validatePutStorageCredentialInfoParameters(value *DataDatabricksStorageCredentialStorageCredentialInfo) error {
 	return nil
 }

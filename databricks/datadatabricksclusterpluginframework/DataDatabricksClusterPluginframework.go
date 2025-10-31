@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework}.
 type DataDatabricksClusterPluginframework interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -53,6 +53,8 @@ type DataDatabricksClusterPluginframework interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksClusterPluginframeworkProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -87,12 +89,14 @@ type DataDatabricksClusterPluginframework interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutClusterInfo(value interface{})
+	PutProviderConfig(value *DataDatabricksClusterPluginframeworkProviderConfig)
 	ResetClusterId()
 	ResetClusterInfo()
 	ResetClusterName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -272,6 +276,26 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframework) Provider() cdktf.Terraf
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksClusterPluginframework) ProviderConfig() DataDatabricksClusterPluginframeworkProviderConfigOutputReference {
+	var returns DataDatabricksClusterPluginframeworkProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksClusterPluginframework) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksClusterPluginframework) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -313,7 +337,7 @@ func (j *jsiiProxy_DataDatabricksClusterPluginframework) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source.
 func NewDataDatabricksClusterPluginframework(scope constructs.Construct, id *string, config *DataDatabricksClusterPluginframeworkConfig) DataDatabricksClusterPluginframework {
 	_init_.Initialize()
 
@@ -331,7 +355,7 @@ func NewDataDatabricksClusterPluginframework(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source.
 func NewDataDatabricksClusterPluginframework_Override(d DataDatabricksClusterPluginframework, scope constructs.Construct, id *string, config *DataDatabricksClusterPluginframeworkConfig) {
 	_init_.Initialize()
 
@@ -706,6 +730,17 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframework) PutClusterInfo(value in
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksClusterPluginframework) PutProviderConfig(value *DataDatabricksClusterPluginframeworkProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksClusterPluginframework) ResetClusterId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -734,6 +769,14 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframework) ResetOverrideLogicalId(
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksClusterPluginframework) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

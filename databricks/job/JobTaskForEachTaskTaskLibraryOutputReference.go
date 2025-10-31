@@ -42,6 +42,8 @@ type JobTaskForEachTaskTaskLibraryOutputReference interface {
 	JarInput() *string
 	Maven() JobTaskForEachTaskTaskLibraryMavenOutputReference
 	MavenInput() *JobTaskForEachTaskTaskLibraryMaven
+	ProviderConfig() JobTaskForEachTaskTaskLibraryProviderConfigOutputReference
+	ProviderConfigInput() *JobTaskForEachTaskTaskLibraryProviderConfig
 	Pypi() JobTaskForEachTaskTaskLibraryPypiOutputReference
 	PypiInput() *JobTaskForEachTaskTaskLibraryPypi
 	Requirements() *string
@@ -84,11 +86,13 @@ type JobTaskForEachTaskTaskLibraryOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCran(value *JobTaskForEachTaskTaskLibraryCran)
 	PutMaven(value *JobTaskForEachTaskTaskLibraryMaven)
+	PutProviderConfig(value *JobTaskForEachTaskTaskLibraryProviderConfig)
 	PutPypi(value *JobTaskForEachTaskTaskLibraryPypi)
 	ResetCran()
 	ResetEgg()
 	ResetJar()
 	ResetMaven()
+	ResetProviderConfig()
 	ResetPypi()
 	ResetRequirements()
 	ResetWhl()
@@ -232,6 +236,26 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskLibraryOutputReference) MavenInput() *J
 	_jsii_.Get(
 		j,
 		"mavenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskLibraryOutputReference) ProviderConfig() JobTaskForEachTaskTaskLibraryProviderConfigOutputReference {
+	var returns JobTaskForEachTaskTaskLibraryProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskLibraryOutputReference) ProviderConfigInput() *JobTaskForEachTaskTaskLibraryProviderConfig {
+	var returns *JobTaskForEachTaskTaskLibraryProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -652,6 +676,17 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskLibraryOutputReference) PutMaven(value 
 	)
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskLibraryOutputReference) PutProviderConfig(value *JobTaskForEachTaskTaskLibraryProviderConfig) {
+	if err := j.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskLibraryOutputReference) PutPypi(value *JobTaskForEachTaskTaskLibraryPypi) {
 	if err := j.validatePutPypiParameters(value); err != nil {
 		panic(err)
@@ -691,6 +726,14 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskLibraryOutputReference) ResetMaven() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetMaven",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTaskForEachTaskTaskLibraryOutputReference) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

@@ -55,6 +55,10 @@ func (j *jsiiProxy_JobLibraryOutputReference) validatePutMavenParameters(value *
 	return nil
 }
 
+func (j *jsiiProxy_JobLibraryOutputReference) validatePutProviderConfigParameters(value *JobLibraryProviderConfig) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobLibraryOutputReference) validatePutPypiParameters(value *JobLibraryPypi) error {
 	return nil
 }

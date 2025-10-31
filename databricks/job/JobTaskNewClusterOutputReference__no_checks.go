@@ -83,6 +83,10 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutLibraryParameter
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutProviderConfigParameters(value *JobTaskNewClusterProviderConfig) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskNewClusterOutputReference) validatePutWorkloadTypeParameters(value *JobTaskNewClusterWorkloadType) error {
 	return nil
 }

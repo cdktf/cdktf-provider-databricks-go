@@ -42,6 +42,8 @@ type ClusterPolicyLibrariesOutputReference interface {
 	JarInput() *string
 	Maven() ClusterPolicyLibrariesMavenOutputReference
 	MavenInput() *ClusterPolicyLibrariesMaven
+	ProviderConfig() ClusterPolicyLibrariesProviderConfigOutputReference
+	ProviderConfigInput() *ClusterPolicyLibrariesProviderConfig
 	Pypi() ClusterPolicyLibrariesPypiOutputReference
 	PypiInput() *ClusterPolicyLibrariesPypi
 	Requirements() *string
@@ -84,11 +86,13 @@ type ClusterPolicyLibrariesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCran(value *ClusterPolicyLibrariesCran)
 	PutMaven(value *ClusterPolicyLibrariesMaven)
+	PutProviderConfig(value *ClusterPolicyLibrariesProviderConfig)
 	PutPypi(value *ClusterPolicyLibrariesPypi)
 	ResetCran()
 	ResetEgg()
 	ResetJar()
 	ResetMaven()
+	ResetProviderConfig()
 	ResetPypi()
 	ResetRequirements()
 	ResetWhl()
@@ -232,6 +236,26 @@ func (j *jsiiProxy_ClusterPolicyLibrariesOutputReference) MavenInput() *ClusterP
 	_jsii_.Get(
 		j,
 		"mavenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterPolicyLibrariesOutputReference) ProviderConfig() ClusterPolicyLibrariesProviderConfigOutputReference {
+	var returns ClusterPolicyLibrariesProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterPolicyLibrariesOutputReference) ProviderConfigInput() *ClusterPolicyLibrariesProviderConfig {
+	var returns *ClusterPolicyLibrariesProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
 		&returns,
 	)
 	return returns
@@ -652,6 +676,17 @@ func (c *jsiiProxy_ClusterPolicyLibrariesOutputReference) PutMaven(value *Cluste
 	)
 }
 
+func (c *jsiiProxy_ClusterPolicyLibrariesOutputReference) PutProviderConfig(value *ClusterPolicyLibrariesProviderConfig) {
+	if err := c.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ClusterPolicyLibrariesOutputReference) PutPypi(value *ClusterPolicyLibrariesPypi) {
 	if err := c.validatePutPypiParameters(value); err != nil {
 		panic(err)
@@ -691,6 +726,14 @@ func (c *jsiiProxy_ClusterPolicyLibrariesOutputReference) ResetMaven() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetMaven",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterPolicyLibrariesOutputReference) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

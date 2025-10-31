@@ -252,6 +252,17 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) validate
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) validatePutProviderConfigParameters(value *DataDatabricksClusterClusterInfoSpecProviderConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) validatePutWorkloadTypeParameters(value *DataDatabricksClusterClusterInfoSpecWorkloadType) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

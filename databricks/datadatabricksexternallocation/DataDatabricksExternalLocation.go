@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/external_location databricks_external_location}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/external_location databricks_external_location}.
 type DataDatabricksExternalLocation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -53,6 +53,8 @@ type DataDatabricksExternalLocation interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksExternalLocationProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksExternalLocationProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -87,11 +89,13 @@ type DataDatabricksExternalLocation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutExternalLocationInfo(value *DataDatabricksExternalLocationExternalLocationInfo)
+	PutProviderConfig(value *DataDatabricksExternalLocationProviderConfig)
 	ResetExternalLocationInfo()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -271,6 +275,26 @@ func (j *jsiiProxy_DataDatabricksExternalLocation) Provider() cdktf.TerraformPro
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksExternalLocation) ProviderConfig() DataDatabricksExternalLocationProviderConfigOutputReference {
+	var returns DataDatabricksExternalLocationProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksExternalLocation) ProviderConfigInput() *DataDatabricksExternalLocationProviderConfig {
+	var returns *DataDatabricksExternalLocationProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksExternalLocation) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -312,7 +336,7 @@ func (j *jsiiProxy_DataDatabricksExternalLocation) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/external_location databricks_external_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/external_location databricks_external_location} Data Source.
 func NewDataDatabricksExternalLocation(scope constructs.Construct, id *string, config *DataDatabricksExternalLocationConfig) DataDatabricksExternalLocation {
 	_init_.Initialize()
 
@@ -330,7 +354,7 @@ func NewDataDatabricksExternalLocation(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/external_location databricks_external_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/external_location databricks_external_location} Data Source.
 func NewDataDatabricksExternalLocation_Override(d DataDatabricksExternalLocation, scope constructs.Construct, id *string, config *DataDatabricksExternalLocationConfig) {
 	_init_.Initialize()
 
@@ -705,6 +729,17 @@ func (d *jsiiProxy_DataDatabricksExternalLocation) PutExternalLocationInfo(value
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksExternalLocation) PutProviderConfig(value *DataDatabricksExternalLocationProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksExternalLocation) ResetExternalLocationInfo() {
 	_jsii_.InvokeVoid(
 		d,
@@ -725,6 +760,14 @@ func (d *jsiiProxy_DataDatabricksExternalLocation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksExternalLocation) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

@@ -47,6 +47,18 @@ func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) validateI
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) validatePutContinuousParameters(value *FeatureEngineeringFeatureTimeWindowContinuous) error {
+	return nil
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) validatePutSlidingParameters(value *FeatureEngineeringFeatureTimeWindowSliding) error {
+	return nil
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) validatePutTumblingParameters(value *FeatureEngineeringFeatureTimeWindowTumbling) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -59,15 +71,7 @@ func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) validateSetDurationParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_FeatureEngineeringFeatureTimeWindowOutputReference) validateSetOffsetParameters(val *string) error {
 	return nil
 }
 

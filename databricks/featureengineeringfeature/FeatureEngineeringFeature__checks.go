@@ -378,6 +378,14 @@ func (j *jsiiProxy_FeatureEngineeringFeature) validateSetDescriptionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeature) validateSetFilterConditionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeature) validateSetFullNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -83,6 +83,10 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) validate
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) validatePutProviderConfigParameters(value *DataDatabricksClusterClusterInfoSpecProviderConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecOutputReference) validatePutWorkloadTypeParameters(value *DataDatabricksClusterClusterInfoSpecWorkloadType) error {
 	return nil
 }

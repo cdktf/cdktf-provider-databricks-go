@@ -29,6 +29,7 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Description() *string
+	FilterCondition() *string
 	// Experimental.
 	Fqn() *string
 	FullName() *string
@@ -122,6 +123,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) FilterCondition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterCondition",
 		&returns,
 	)
 	return returns

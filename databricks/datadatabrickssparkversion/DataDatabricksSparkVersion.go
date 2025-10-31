@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version databricks_spark_version}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version databricks_spark_version}.
 type DataDatabricksSparkVersion interface {
 	cdktf.TerraformDataSource
 	Beta() interface{}
@@ -72,6 +72,8 @@ type DataDatabricksSparkVersion interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksSparkVersionProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksSparkVersionProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	Scala() *string
@@ -111,6 +113,7 @@ type DataDatabricksSparkVersion interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksSparkVersionProviderConfig)
 	ResetBeta()
 	ResetGenomics()
 	ResetGpu()
@@ -123,6 +126,7 @@ type DataDatabricksSparkVersion interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPhoton()
+	ResetProviderConfig()
 	ResetScala()
 	ResetSparkVersion()
 	SynthesizeAttributes() *map[string]interface{}
@@ -424,6 +428,26 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) Provider() cdktf.TerraformProvide
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksSparkVersion) ProviderConfig() DataDatabricksSparkVersionProviderConfigOutputReference {
+	var returns DataDatabricksSparkVersionProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSparkVersion) ProviderConfigInput() *DataDatabricksSparkVersionProviderConfig {
+	var returns *DataDatabricksSparkVersionProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksSparkVersion) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -505,7 +529,7 @@ func (j *jsiiProxy_DataDatabricksSparkVersion) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version databricks_spark_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version databricks_spark_version} Data Source.
 func NewDataDatabricksSparkVersion(scope constructs.Construct, id *string, config *DataDatabricksSparkVersionConfig) DataDatabricksSparkVersion {
 	_init_.Initialize()
 
@@ -523,7 +547,7 @@ func NewDataDatabricksSparkVersion(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version databricks_spark_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version databricks_spark_version} Data Source.
 func NewDataDatabricksSparkVersion_Override(d DataDatabricksSparkVersion, scope constructs.Construct, id *string, config *DataDatabricksSparkVersionConfig) {
 	_init_.Initialize()
 
@@ -986,6 +1010,17 @@ func (d *jsiiProxy_DataDatabricksSparkVersion) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksSparkVersion) PutProviderConfig(value *DataDatabricksSparkVersionProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksSparkVersion) ResetBeta() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1062,6 +1097,14 @@ func (d *jsiiProxy_DataDatabricksSparkVersion) ResetPhoton() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPhoton",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksSparkVersion) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

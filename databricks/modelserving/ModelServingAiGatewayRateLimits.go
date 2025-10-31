@@ -5,15 +5,15 @@ package modelserving
 
 
 type ModelServingAiGatewayRateLimits struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/model_serving#renewal_period ModelServing#renewal_period}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/model_serving#renewal_period ModelServing#renewal_period}.
 	RenewalPeriod *string `field:"required" json:"renewalPeriod" yaml:"renewalPeriod"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/model_serving#calls ModelServing#calls}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/model_serving#calls ModelServing#calls}.
 	Calls *float64 `field:"optional" json:"calls" yaml:"calls"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/model_serving#key ModelServing#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/model_serving#key ModelServing#key}.
 	Key *string `field:"optional" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/model_serving#principal ModelServing#principal}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/model_serving#principal ModelServing#principal}.
 	Principal *string `field:"optional" json:"principal" yaml:"principal"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/model_serving#tokens ModelServing#tokens}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/model_serving#tokens ModelServing#tokens}.
 	Tokens *float64 `field:"optional" json:"tokens" yaml:"tokens"`
 }
 

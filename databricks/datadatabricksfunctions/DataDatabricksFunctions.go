@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions databricks_functions}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions databricks_functions}.
 type DataDatabricksFunctions interface {
 	cdktf.TerraformDataSource
 	CatalogName() *string
@@ -53,6 +53,8 @@ type DataDatabricksFunctions interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksFunctionsProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	SchemaName() *string
@@ -90,11 +92,13 @@ type DataDatabricksFunctions interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFunctions(value interface{})
+	PutProviderConfig(value *DataDatabricksFunctionsProviderConfig)
 	ResetFunctions()
 	ResetIncludeBrowse()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -274,6 +278,26 @@ func (j *jsiiProxy_DataDatabricksFunctions) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFunctions) ProviderConfig() DataDatabricksFunctionsProviderConfigOutputReference {
+	var returns DataDatabricksFunctionsProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFunctions) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFunctions) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -335,7 +359,7 @@ func (j *jsiiProxy_DataDatabricksFunctions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions databricks_functions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions databricks_functions} Data Source.
 func NewDataDatabricksFunctions(scope constructs.Construct, id *string, config *DataDatabricksFunctionsConfig) DataDatabricksFunctions {
 	_init_.Initialize()
 
@@ -353,7 +377,7 @@ func NewDataDatabricksFunctions(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions databricks_functions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions databricks_functions} Data Source.
 func NewDataDatabricksFunctions_Override(d DataDatabricksFunctions, scope constructs.Construct, id *string, config *DataDatabricksFunctionsConfig) {
 	_init_.Initialize()
 
@@ -739,6 +763,17 @@ func (d *jsiiProxy_DataDatabricksFunctions) PutFunctions(value interface{}) {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksFunctions) PutProviderConfig(value *DataDatabricksFunctionsProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksFunctions) ResetFunctions() {
 	_jsii_.InvokeVoid(
 		d,
@@ -759,6 +794,14 @@ func (d *jsiiProxy_DataDatabricksFunctions) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksFunctions) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

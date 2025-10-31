@@ -115,6 +115,17 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrar
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryOutputReference) validatePutProviderConfigParameters(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryOutputReference) validatePutPypiParameters(value *DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypi) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

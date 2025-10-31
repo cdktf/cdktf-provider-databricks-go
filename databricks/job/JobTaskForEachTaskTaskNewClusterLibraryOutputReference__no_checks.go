@@ -55,6 +55,10 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterLibraryOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterLibraryOutputReference) validatePutProviderConfigParameters(value *JobTaskForEachTaskTaskNewClusterLibraryProviderConfig) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterLibraryOutputReference) validatePutPypiParameters(value *JobTaskForEachTaskTaskNewClusterLibraryPypi) error {
 	return nil
 }

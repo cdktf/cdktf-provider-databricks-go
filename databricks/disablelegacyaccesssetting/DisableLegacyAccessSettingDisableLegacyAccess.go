@@ -5,7 +5,7 @@ package disablelegacyaccesssetting
 
 
 type DisableLegacyAccessSettingDisableLegacyAccess struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/disable_legacy_access_setting#value DisableLegacyAccessSetting#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/disable_legacy_access_setting#value DisableLegacyAccessSetting#value}.
 	Value interface{} `field:"required" json:"value" yaml:"value"`
 }
 

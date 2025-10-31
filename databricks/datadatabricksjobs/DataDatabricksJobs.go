@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/jobs databricks_jobs}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/jobs databricks_jobs}.
 type DataDatabricksJobs interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -57,6 +57,8 @@ type DataDatabricksJobs interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksJobsProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksJobsProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -90,6 +92,7 @@ type DataDatabricksJobs interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksJobsProviderConfig)
 	ResetId()
 	ResetIds()
 	ResetJobNameContains()
@@ -97,6 +100,7 @@ type DataDatabricksJobs interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -296,6 +300,26 @@ func (j *jsiiProxy_DataDatabricksJobs) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksJobs) ProviderConfig() DataDatabricksJobsProviderConfigOutputReference {
+	var returns DataDatabricksJobsProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksJobs) ProviderConfigInput() *DataDatabricksJobsProviderConfig {
+	var returns *DataDatabricksJobsProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksJobs) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -337,7 +361,7 @@ func (j *jsiiProxy_DataDatabricksJobs) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/jobs databricks_jobs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/jobs databricks_jobs} Data Source.
 func NewDataDatabricksJobs(scope constructs.Construct, id *string, config *DataDatabricksJobsConfig) DataDatabricksJobs {
 	_init_.Initialize()
 
@@ -355,7 +379,7 @@ func NewDataDatabricksJobs(scope constructs.Construct, id *string, config *DataD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/jobs databricks_jobs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/jobs databricks_jobs} Data Source.
 func NewDataDatabricksJobs_Override(d DataDatabricksJobs, scope constructs.Construct, id *string, config *DataDatabricksJobsConfig) {
 	_init_.Initialize()
 
@@ -741,6 +765,17 @@ func (d *jsiiProxy_DataDatabricksJobs) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksJobs) PutProviderConfig(value *DataDatabricksJobsProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksJobs) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -777,6 +812,14 @@ func (d *jsiiProxy_DataDatabricksJobs) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksJobs) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

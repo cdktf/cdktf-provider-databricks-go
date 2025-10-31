@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/sql_warehouse databricks_sql_warehouse}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/sql_warehouse databricks_sql_warehouse}.
 type DataDatabricksSqlWarehouse interface {
 	cdktf.TerraformDataSource
 	AutoStopMins() *float64
@@ -93,6 +93,8 @@ type DataDatabricksSqlWarehouse interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksSqlWarehouseProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksSqlWarehouseProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	SpotInstancePolicy() *string
@@ -140,6 +142,7 @@ type DataDatabricksSqlWarehouse interface {
 	PutChannel(value *DataDatabricksSqlWarehouseChannel)
 	PutHealth(value *DataDatabricksSqlWarehouseHealth)
 	PutOdbcParams(value *DataDatabricksSqlWarehouseOdbcParams)
+	PutProviderConfig(value *DataDatabricksSqlWarehouseProviderConfig)
 	PutTags(value *DataDatabricksSqlWarehouseTags)
 	ResetAutoStopMins()
 	ResetChannel()
@@ -161,6 +164,7 @@ type DataDatabricksSqlWarehouse interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetSpotInstancePolicy()
 	ResetState()
 	ResetTags()
@@ -624,6 +628,26 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) Provider() cdktf.TerraformProvide
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) ProviderConfig() DataDatabricksSqlWarehouseProviderConfigOutputReference {
+	var returns DataDatabricksSqlWarehouseProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSqlWarehouse) ProviderConfigInput() *DataDatabricksSqlWarehouseProviderConfig {
+	var returns *DataDatabricksSqlWarehouseProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksSqlWarehouse) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -745,7 +769,7 @@ func (j *jsiiProxy_DataDatabricksSqlWarehouse) WarehouseTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
 func NewDataDatabricksSqlWarehouse(scope constructs.Construct, id *string, config *DataDatabricksSqlWarehouseConfig) DataDatabricksSqlWarehouse {
 	_init_.Initialize()
 
@@ -763,7 +787,7 @@ func NewDataDatabricksSqlWarehouse(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source.
 func NewDataDatabricksSqlWarehouse_Override(d DataDatabricksSqlWarehouse, scope constructs.Construct, id *string, config *DataDatabricksSqlWarehouseConfig) {
 	_init_.Initialize()
 
@@ -1325,6 +1349,17 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) PutOdbcParams(value *DataDatabric
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksSqlWarehouse) PutProviderConfig(value *DataDatabricksSqlWarehouseProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksSqlWarehouse) PutTags(value *DataDatabricksSqlWarehouseTags) {
 	if err := d.validatePutTagsParameters(value); err != nil {
 		panic(err)
@@ -1476,6 +1511,14 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksSqlWarehouse) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

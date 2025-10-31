@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/registered_model databricks_registered_model}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/registered_model databricks_registered_model}.
 type DataDatabricksRegisteredModel interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -56,6 +56,8 @@ type DataDatabricksRegisteredModel interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksRegisteredModelProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -90,12 +92,14 @@ type DataDatabricksRegisteredModel interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutModelInfo(value interface{})
+	PutProviderConfig(value *DataDatabricksRegisteredModelProviderConfig)
 	ResetIncludeAliases()
 	ResetIncludeBrowse()
 	ResetModelInfo()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -295,6 +299,26 @@ func (j *jsiiProxy_DataDatabricksRegisteredModel) Provider() cdktf.TerraformProv
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksRegisteredModel) ProviderConfig() DataDatabricksRegisteredModelProviderConfigOutputReference {
+	var returns DataDatabricksRegisteredModelProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksRegisteredModel) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksRegisteredModel) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -336,7 +360,7 @@ func (j *jsiiProxy_DataDatabricksRegisteredModel) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/registered_model databricks_registered_model} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/registered_model databricks_registered_model} Data Source.
 func NewDataDatabricksRegisteredModel(scope constructs.Construct, id *string, config *DataDatabricksRegisteredModelConfig) DataDatabricksRegisteredModel {
 	_init_.Initialize()
 
@@ -354,7 +378,7 @@ func NewDataDatabricksRegisteredModel(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/registered_model databricks_registered_model} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/registered_model databricks_registered_model} Data Source.
 func NewDataDatabricksRegisteredModel_Override(d DataDatabricksRegisteredModel, scope constructs.Construct, id *string, config *DataDatabricksRegisteredModelConfig) {
 	_init_.Initialize()
 
@@ -740,6 +764,17 @@ func (d *jsiiProxy_DataDatabricksRegisteredModel) PutModelInfo(value interface{}
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksRegisteredModel) PutProviderConfig(value *DataDatabricksRegisteredModelProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksRegisteredModel) ResetIncludeAliases() {
 	_jsii_.InvokeVoid(
 		d,
@@ -768,6 +803,14 @@ func (d *jsiiProxy_DataDatabricksRegisteredModel) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksRegisteredModel) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

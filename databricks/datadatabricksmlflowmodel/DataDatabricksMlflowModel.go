@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/mlflow_model databricks_mlflow_model}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/mlflow_model databricks_mlflow_model}.
 type DataDatabricksMlflowModel interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -57,6 +57,8 @@ type DataDatabricksMlflowModel interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksMlflowModelProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksMlflowModelProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	Tags() DataDatabricksMlflowModelTagsList
@@ -96,6 +98,7 @@ type DataDatabricksMlflowModel interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLatestVersions(value interface{})
+	PutProviderConfig(value *DataDatabricksMlflowModelProviderConfig)
 	PutTags(value interface{})
 	ResetDescription()
 	ResetLatestVersions()
@@ -103,6 +106,7 @@ type DataDatabricksMlflowModel interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPermissionLevel()
+	ResetProviderConfig()
 	ResetTags()
 	ResetUserId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -314,6 +318,26 @@ func (j *jsiiProxy_DataDatabricksMlflowModel) Provider() cdktf.TerraformProvider
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksMlflowModel) ProviderConfig() DataDatabricksMlflowModelProviderConfigOutputReference {
+	var returns DataDatabricksMlflowModelProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksMlflowModel) ProviderConfigInput() *DataDatabricksMlflowModelProviderConfig {
+	var returns *DataDatabricksMlflowModelProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksMlflowModel) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -395,7 +419,7 @@ func (j *jsiiProxy_DataDatabricksMlflowModel) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/mlflow_model databricks_mlflow_model} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/mlflow_model databricks_mlflow_model} Data Source.
 func NewDataDatabricksMlflowModel(scope constructs.Construct, id *string, config *DataDatabricksMlflowModelConfig) DataDatabricksMlflowModel {
 	_init_.Initialize()
 
@@ -413,7 +437,7 @@ func NewDataDatabricksMlflowModel(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/mlflow_model databricks_mlflow_model} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/mlflow_model databricks_mlflow_model} Data Source.
 func NewDataDatabricksMlflowModel_Override(d DataDatabricksMlflowModel, scope constructs.Construct, id *string, config *DataDatabricksMlflowModelConfig) {
 	_init_.Initialize()
 
@@ -810,6 +834,17 @@ func (d *jsiiProxy_DataDatabricksMlflowModel) PutLatestVersions(value interface{
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksMlflowModel) PutProviderConfig(value *DataDatabricksMlflowModelProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksMlflowModel) PutTags(value interface{}) {
 	if err := d.validatePutTagsParameters(value); err != nil {
 		panic(err)
@@ -849,6 +884,14 @@ func (d *jsiiProxy_DataDatabricksMlflowModel) ResetPermissionLevel() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPermissionLevel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksMlflowModel) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

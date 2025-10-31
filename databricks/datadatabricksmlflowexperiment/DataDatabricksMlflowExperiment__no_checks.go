@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksMlflowExperiment) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksMlflowExperiment) validatePutProviderConfigParameters(value *DataDatabricksMlflowExperimentProviderConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksMlflowExperiment) validatePutTagsParameters(value interface{}) error {
 	return nil
 }

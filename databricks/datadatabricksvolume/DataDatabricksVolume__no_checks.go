@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksVolume) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksVolume) validatePutProviderConfigParameters(value *DataDatabricksVolumeProviderConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksVolume) validatePutVolumeInfoParameters(value *DataDatabricksVolumeVolumeInfo) error {
 	return nil
 }

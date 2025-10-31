@@ -36,8 +36,8 @@ type DataDatabricksAlertsV2AlertsEvaluationSourceOutputReference interface {
 	DisplayInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDatabricksAlertsV2AlertsEvaluationSource
+	SetInternalValue(val *DataDatabricksAlertsV2AlertsEvaluationSource)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -75,7 +75,6 @@ type DataDatabricksAlertsV2AlertsEvaluationSourceOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAggregation()
 	ResetDisplay()
-	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -171,8 +170,8 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationSourceOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationSourceOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationSourceOutputReference) InternalValue() *DataDatabricksAlertsV2AlertsEvaluationSource {
+	var returns *DataDatabricksAlertsV2AlertsEvaluationSource
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -293,7 +292,7 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationSourceOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationSourceOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationSourceOutputReference)SetInternalValue(val *DataDatabricksAlertsV2AlertsEvaluationSource) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,14 +534,6 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationSourceOutputReference) 
 	_jsii_.InvokeVoid(
 		d,
 		"resetDisplay",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationSourceOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
 		nil, // no parameters
 	)
 }

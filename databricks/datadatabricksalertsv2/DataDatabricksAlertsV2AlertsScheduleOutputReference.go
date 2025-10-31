@@ -74,8 +74,6 @@ type DataDatabricksAlertsV2AlertsScheduleOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetPauseStatus()
-	ResetQuartzCronSchedule()
-	ResetTimezoneId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -527,22 +525,6 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsScheduleOutputReference) ResetPau
 	_jsii_.InvokeVoid(
 		d,
 		"resetPauseStatus",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsScheduleOutputReference) ResetQuartzCronSchedule() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetQuartzCronSchedule",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsScheduleOutputReference) ResetTimezoneId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTimezoneId",
 		nil, // no parameters
 	)
 }

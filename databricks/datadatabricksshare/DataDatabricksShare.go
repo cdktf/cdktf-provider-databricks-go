@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/share databricks_share}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/share databricks_share}.
 type DataDatabricksShare interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -59,6 +59,8 @@ type DataDatabricksShare interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksShareProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	StorageLocation() *string
@@ -99,6 +101,7 @@ type DataDatabricksShare interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutObject(value interface{})
+	PutProviderConfig(value *DataDatabricksShareProviderConfig)
 	ResetComment()
 	ResetName()
 	ResetObject()
@@ -106,6 +109,7 @@ type DataDatabricksShare interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
+	ResetProviderConfig()
 	ResetStorageRoot()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -336,6 +340,26 @@ func (j *jsiiProxy_DataDatabricksShare) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksShare) ProviderConfig() DataDatabricksShareProviderConfigOutputReference {
+	var returns DataDatabricksShareProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksShare) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksShare) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -427,7 +451,7 @@ func (j *jsiiProxy_DataDatabricksShare) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/share databricks_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/share databricks_share} Data Source.
 func NewDataDatabricksShare(scope constructs.Construct, id *string, config *DataDatabricksShareConfig) DataDatabricksShare {
 	_init_.Initialize()
 
@@ -445,7 +469,7 @@ func NewDataDatabricksShare(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/share databricks_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/share databricks_share} Data Source.
 func NewDataDatabricksShare_Override(d DataDatabricksShare, scope constructs.Construct, id *string, config *DataDatabricksShareConfig) {
 	_init_.Initialize()
 
@@ -842,6 +866,17 @@ func (d *jsiiProxy_DataDatabricksShare) PutObject(value interface{}) {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksShare) PutProviderConfig(value *DataDatabricksShareProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksShare) ResetComment() {
 	_jsii_.InvokeVoid(
 		d,
@@ -878,6 +913,14 @@ func (d *jsiiProxy_DataDatabricksShare) ResetOwner() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOwner",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksShare) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

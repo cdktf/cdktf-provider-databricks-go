@@ -67,7 +67,7 @@ func (j *jsiiProxy_DataDatabricksAlertV2EvaluationSourceOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksAlertV2EvaluationSourceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatabricksAlertV2EvaluationSourceOutputReference) validateSetInternalValueParameters(val *DataDatabricksAlertV2EvaluationSource) error {
 	return nil
 }
 

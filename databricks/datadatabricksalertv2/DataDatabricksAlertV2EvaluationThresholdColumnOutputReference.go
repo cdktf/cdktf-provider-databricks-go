@@ -75,7 +75,6 @@ type DataDatabricksAlertV2EvaluationThresholdColumnOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAggregation()
 	ResetDisplay()
-	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -535,14 +534,6 @@ func (d *jsiiProxy_DataDatabricksAlertV2EvaluationThresholdColumnOutputReference
 	_jsii_.InvokeVoid(
 		d,
 		"resetDisplay",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDatabricksAlertV2EvaluationThresholdColumnOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
 		nil, // no parameters
 	)
 }

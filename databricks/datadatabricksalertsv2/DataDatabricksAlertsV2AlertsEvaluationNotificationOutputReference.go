@@ -28,6 +28,8 @@ type DataDatabricksAlertsV2AlertsEvaluationNotificationOutputReference interface
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EffectiveNotifyOnOk() cdktf.IResolvable
+	EffectiveRetriggerSeconds() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -116,6 +118,26 @@ func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationOutputRefer
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationOutputReference) EffectiveNotifyOnOk() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"effectiveNotifyOnOk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationNotificationOutputReference) EffectiveRetriggerSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"effectiveRetriggerSeconds",
 		&returns,
 	)
 	return returns

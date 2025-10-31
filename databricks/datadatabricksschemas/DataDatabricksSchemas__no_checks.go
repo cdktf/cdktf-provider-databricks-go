@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatabricksSchemas) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksSchemas) validatePutProviderConfigParameters(value *DataDatabricksSchemasProviderConfig) error {
+	return nil
+}
+
 func validateDataDatabricksSchemas_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -5,7 +5,7 @@ package qualitymonitor
 
 
 type QualityMonitorProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/quality_monitor#workspace_id QualityMonitor#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/quality_monitor#workspace_id QualityMonitor#workspace_id}.
 	WorkspaceId *string `field:"required" json:"workspaceId" yaml:"workspaceId"`
 }
 

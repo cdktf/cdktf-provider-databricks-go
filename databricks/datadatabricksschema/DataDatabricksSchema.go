@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/schema databricks_schema}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/schema databricks_schema}.
 type DataDatabricksSchema interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -51,6 +51,8 @@ type DataDatabricksSchema interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksSchemaProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksSchemaProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	SchemaInfo() DataDatabricksSchemaSchemaInfoOutputReference
@@ -86,11 +88,13 @@ type DataDatabricksSchema interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksSchemaProviderConfig)
 	PutSchemaInfo(value *DataDatabricksSchemaSchemaInfo)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetSchemaInfo()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -251,6 +255,26 @@ func (j *jsiiProxy_DataDatabricksSchema) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksSchema) ProviderConfig() DataDatabricksSchemaProviderConfigOutputReference {
+	var returns DataDatabricksSchemaProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksSchema) ProviderConfigInput() *DataDatabricksSchemaProviderConfig {
+	var returns *DataDatabricksSchemaProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksSchema) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -312,7 +336,7 @@ func (j *jsiiProxy_DataDatabricksSchema) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/schema databricks_schema} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/schema databricks_schema} Data Source.
 func NewDataDatabricksSchema(scope constructs.Construct, id *string, config *DataDatabricksSchemaConfig) DataDatabricksSchema {
 	_init_.Initialize()
 
@@ -330,7 +354,7 @@ func NewDataDatabricksSchema(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/schema databricks_schema} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/schema databricks_schema} Data Source.
 func NewDataDatabricksSchema_Override(d DataDatabricksSchema, scope constructs.Construct, id *string, config *DataDatabricksSchemaConfig) {
 	_init_.Initialize()
 
@@ -694,6 +718,17 @@ func (d *jsiiProxy_DataDatabricksSchema) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksSchema) PutProviderConfig(value *DataDatabricksSchemaProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksSchema) PutSchemaInfo(value *DataDatabricksSchemaSchemaInfo) {
 	if err := d.validatePutSchemaInfoParameters(value); err != nil {
 		panic(err)
@@ -717,6 +752,14 @@ func (d *jsiiProxy_DataDatabricksSchema) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksSchema) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

@@ -55,6 +55,10 @@ func (c *jsiiProxy_ClusterPolicyLibrariesOutputReference) validatePutMavenParame
 	return nil
 }
 
+func (c *jsiiProxy_ClusterPolicyLibrariesOutputReference) validatePutProviderConfigParameters(value *ClusterPolicyLibrariesProviderConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterPolicyLibrariesOutputReference) validatePutPypiParameters(value *ClusterPolicyLibrariesPypi) error {
 	return nil
 }

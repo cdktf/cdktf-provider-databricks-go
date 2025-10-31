@@ -81,10 +81,8 @@ type AlertV2EvaluationOutputReference interface {
 	PutNotification(value *AlertV2EvaluationNotification)
 	PutSource(value *AlertV2EvaluationSource)
 	PutThreshold(value *AlertV2EvaluationThreshold)
-	ResetComparisonOperator()
 	ResetEmptyResultState()
 	ResetNotification()
-	ResetSource()
 	ResetThreshold()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -615,14 +613,6 @@ func (a *jsiiProxy_AlertV2EvaluationOutputReference) PutThreshold(value *AlertV2
 	)
 }
 
-func (a *jsiiProxy_AlertV2EvaluationOutputReference) ResetComparisonOperator() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetComparisonOperator",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AlertV2EvaluationOutputReference) ResetEmptyResultState() {
 	_jsii_.InvokeVoid(
 		a,
@@ -635,14 +625,6 @@ func (a *jsiiProxy_AlertV2EvaluationOutputReference) ResetNotification() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetNotification",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AlertV2EvaluationOutputReference) ResetSource() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSource",
 		nil, // no parameters
 	)
 }

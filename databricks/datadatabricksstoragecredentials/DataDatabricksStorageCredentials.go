@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/storage_credentials databricks_storage_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/storage_credentials databricks_storage_credentials}.
 type DataDatabricksStorageCredentials interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -51,6 +51,8 @@ type DataDatabricksStorageCredentials interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksStorageCredentialsProviderConfigOutputReference
+	ProviderConfigInput() *DataDatabricksStorageCredentialsProviderConfig
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -84,11 +86,13 @@ type DataDatabricksStorageCredentials interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksStorageCredentialsProviderConfig)
 	ResetId()
 	ResetNames()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -248,6 +252,26 @@ func (j *jsiiProxy_DataDatabricksStorageCredentials) Provider() cdktf.TerraformP
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksStorageCredentials) ProviderConfig() DataDatabricksStorageCredentialsProviderConfigOutputReference {
+	var returns DataDatabricksStorageCredentialsProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksStorageCredentials) ProviderConfigInput() *DataDatabricksStorageCredentialsProviderConfig {
+	var returns *DataDatabricksStorageCredentialsProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksStorageCredentials) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -289,7 +313,7 @@ func (j *jsiiProxy_DataDatabricksStorageCredentials) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/storage_credentials databricks_storage_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/storage_credentials databricks_storage_credentials} Data Source.
 func NewDataDatabricksStorageCredentials(scope constructs.Construct, id *string, config *DataDatabricksStorageCredentialsConfig) DataDatabricksStorageCredentials {
 	_init_.Initialize()
 
@@ -307,7 +331,7 @@ func NewDataDatabricksStorageCredentials(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/storage_credentials databricks_storage_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/storage_credentials databricks_storage_credentials} Data Source.
 func NewDataDatabricksStorageCredentials_Override(d DataDatabricksStorageCredentials, scope constructs.Construct, id *string, config *DataDatabricksStorageCredentialsConfig) {
 	_init_.Initialize()
 
@@ -671,6 +695,17 @@ func (d *jsiiProxy_DataDatabricksStorageCredentials) OverrideLogicalId(newLogica
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksStorageCredentials) PutProviderConfig(value *DataDatabricksStorageCredentialsProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksStorageCredentials) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -691,6 +726,14 @@ func (d *jsiiProxy_DataDatabricksStorageCredentials) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksStorageCredentials) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

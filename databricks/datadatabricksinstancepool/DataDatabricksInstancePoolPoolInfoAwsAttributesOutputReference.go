@@ -33,6 +33,9 @@ type DataDatabricksInstancePoolPoolInfoAwsAttributesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InstanceProfileArn() *string
+	SetInstanceProfileArn(val *string)
+	InstanceProfileArnInput() *string
 	InternalValue() *DataDatabricksInstancePoolPoolInfoAwsAttributes
 	SetInternalValue(val *DataDatabricksInstancePoolPoolInfoAwsAttributes)
 	SpotBidPricePercent() *float64
@@ -74,6 +77,7 @@ type DataDatabricksInstancePoolPoolInfoAwsAttributesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAvailability()
+	ResetInstanceProfileArn()
 	ResetSpotBidPricePercent()
 	ResetZoneId()
 	// Produce the Token's value at resolution time.
@@ -146,6 +150,26 @@ func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoAwsAttributesOutputReferenc
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoAwsAttributesOutputReference) InstanceProfileArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceProfileArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoAwsAttributesOutputReference) InstanceProfileArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceProfileArnInput",
 		&returns,
 	)
 	return returns
@@ -278,6 +302,17 @@ func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoAwsAttributesOutputReferenc
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksInstancePoolPoolInfoAwsAttributesOutputReference)SetInstanceProfileArn(val *string) {
+	if err := j.validateSetInstanceProfileArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instanceProfileArn",
 		val,
 	)
 }
@@ -527,6 +562,14 @@ func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoAwsAttributesOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"resetAvailability",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoAwsAttributesOutputReference) ResetInstanceProfileArn() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetInstanceProfileArn",
 		nil, // no parameters
 	)
 }

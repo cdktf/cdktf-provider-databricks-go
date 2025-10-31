@@ -5,9 +5,9 @@ package datadatabrickspolicyinfos
 
 
 type DataDatabricksPolicyInfosPoliciesColumnMaskUsing struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/policy_infos#alias DataDatabricksPolicyInfos#alias}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/policy_infos#alias DataDatabricksPolicyInfos#alias}.
 	Alias *string `field:"optional" json:"alias" yaml:"alias"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/policy_infos#constant DataDatabricksPolicyInfos#constant}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/policy_infos#constant DataDatabricksPolicyInfos#constant}.
 	Constant *string `field:"optional" json:"constant" yaml:"constant"`
 }
 

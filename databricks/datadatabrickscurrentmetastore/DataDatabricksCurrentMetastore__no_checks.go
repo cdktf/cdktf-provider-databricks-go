@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksCurrentMetastore) validatePutMetastoreInfoParam
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksCurrentMetastore) validatePutProviderConfigParameters(value *DataDatabricksCurrentMetastoreProviderConfig) error {
+	return nil
+}
+
 func validateDataDatabricksCurrentMetastore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

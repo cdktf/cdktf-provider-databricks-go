@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps databricks_apps}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/apps databricks_apps}.
 type DataDatabricksApps interface {
 	cdktf.TerraformDataSource
 	App() DataDatabricksAppsAppList
@@ -46,6 +46,8 @@ type DataDatabricksApps interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() DataDatabricksAppsProviderConfigOutputReference
+	ProviderConfigInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -79,9 +81,11 @@ type DataDatabricksApps interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *DataDatabricksAppsProviderConfig)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -211,6 +215,26 @@ func (j *jsiiProxy_DataDatabricksApps) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksApps) ProviderConfig() DataDatabricksAppsProviderConfigOutputReference {
+	var returns DataDatabricksAppsProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksApps) ProviderConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksApps) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -252,7 +276,7 @@ func (j *jsiiProxy_DataDatabricksApps) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps databricks_apps} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/apps databricks_apps} Data Source.
 func NewDataDatabricksApps(scope constructs.Construct, id *string, config *DataDatabricksAppsConfig) DataDatabricksApps {
 	_init_.Initialize()
 
@@ -270,7 +294,7 @@ func NewDataDatabricksApps(scope constructs.Construct, id *string, config *DataD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps databricks_apps} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/apps databricks_apps} Data Source.
 func NewDataDatabricksApps_Override(d DataDatabricksApps, scope constructs.Construct, id *string, config *DataDatabricksAppsConfig) {
 	_init_.Initialize()
 
@@ -612,10 +636,29 @@ func (d *jsiiProxy_DataDatabricksApps) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DataDatabricksApps) PutProviderConfig(value *DataDatabricksAppsProviderConfig) {
+	if err := d.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDatabricksApps) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatabricksApps) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

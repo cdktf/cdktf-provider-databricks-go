@@ -115,6 +115,10 @@ func (j *jsiiProxy_FeatureEngineeringFeature) validateSetDescriptionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeature) validateSetFilterConditionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeature) validateSetFullNameParameters(val *string) error {
 	return nil
 }

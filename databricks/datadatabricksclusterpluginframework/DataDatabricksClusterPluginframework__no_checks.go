@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframework) validatePutClusterInfoP
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksClusterPluginframework) validatePutProviderConfigParameters(value *DataDatabricksClusterPluginframeworkProviderConfig) error {
+	return nil
+}
+
 func validateDataDatabricksClusterPluginframework_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
