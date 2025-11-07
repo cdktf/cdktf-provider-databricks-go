@@ -43,7 +43,7 @@ func (a *jsiiProxy_AlertV2EvaluationOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (a *jsiiProxy_AlertV2EvaluationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlertV2EvaluationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (a *jsiiProxy_AlertV2EvaluationOutputReference) validatePutThresholdParamet
 	return nil
 }
 
-func (a *jsiiProxy_AlertV2EvaluationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertV2EvaluationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

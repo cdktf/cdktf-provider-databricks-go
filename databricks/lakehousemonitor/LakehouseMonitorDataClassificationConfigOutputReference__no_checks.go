@@ -43,11 +43,11 @@ func (l *jsiiProxy_LakehouseMonitorDataClassificationConfigOutputReference) vali
 	return nil
 }
 
-func (l *jsiiProxy_LakehouseMonitorDataClassificationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LakehouseMonitorDataClassificationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LakehouseMonitorDataClassificationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LakehouseMonitorDataClassificationConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

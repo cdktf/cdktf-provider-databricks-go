@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoExecutorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

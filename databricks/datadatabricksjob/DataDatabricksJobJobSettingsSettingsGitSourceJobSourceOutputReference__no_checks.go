@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsGitSourceJobSourceOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsGitSourceJobSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsGitSourceJobSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsGitSourceJobSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsGitSourceJobSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

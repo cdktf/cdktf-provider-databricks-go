@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscript
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

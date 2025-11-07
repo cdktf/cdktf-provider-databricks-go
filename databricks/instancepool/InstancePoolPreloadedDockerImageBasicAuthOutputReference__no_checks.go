@@ -43,11 +43,11 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) val
 	return nil
 }
 
-func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InstancePoolPreloadedDockerImageBasicAuthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

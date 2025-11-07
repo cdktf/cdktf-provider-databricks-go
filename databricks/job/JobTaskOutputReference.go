@@ -147,7 +147,7 @@ type JobTaskOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCleanRoomsNotebookTask(value *JobTaskCleanRoomsNotebookTask)
 	PutConditionTask(value *JobTaskConditionTask)
 	PutDashboardTask(value *JobTaskDashboardTask)
@@ -209,7 +209,7 @@ type JobTaskOutputReference interface {
 	ResetWebhookNotifications()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -1397,8 +1397,8 @@ func (j *jsiiProxy_JobTaskOutputReference) InterpolationAsList() cdktf.IResolvab
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+func (j *jsiiProxy_JobTaskOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -1406,7 +1406,7 @@ func (j *jsiiProxy_JobTaskOutputReference) InterpolationForAttribute(property *s
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1957,8 +1957,8 @@ func (j *jsiiProxy_JobTaskOutputReference) ResetWebhookNotifications() {
 	)
 }
 
-func (j *jsiiProxy_JobTaskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := j.validateResolveParameters(_context); err != nil {
+func (j *jsiiProxy_JobTaskOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1966,7 +1966,7 @@ func (j *jsiiProxy_JobTaskOutputReference) Resolve(_context cdktf.IResolveContex
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

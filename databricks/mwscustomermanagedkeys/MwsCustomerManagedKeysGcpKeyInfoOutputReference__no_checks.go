@@ -43,11 +43,11 @@ func (m *jsiiProxy_MwsCustomerManagedKeysGcpKeyInfoOutputReference) validateGetS
 	return nil
 }
 
-func (m *jsiiProxy_MwsCustomerManagedKeysGcpKeyInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MwsCustomerManagedKeysGcpKeyInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MwsCustomerManagedKeysGcpKeyInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MwsCustomerManagedKeysGcpKeyInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

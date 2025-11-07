@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTy
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

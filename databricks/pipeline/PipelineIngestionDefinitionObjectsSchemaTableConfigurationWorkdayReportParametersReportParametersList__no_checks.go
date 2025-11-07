@@ -15,7 +15,7 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaTableConfigurationWor
 	return nil
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

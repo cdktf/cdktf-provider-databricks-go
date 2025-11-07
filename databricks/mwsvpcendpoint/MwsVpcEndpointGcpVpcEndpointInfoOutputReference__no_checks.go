@@ -43,11 +43,11 @@ func (m *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) validateGetS
 	return nil
 }
 
-func (m *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MwsVpcEndpointGcpVpcEndpointInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

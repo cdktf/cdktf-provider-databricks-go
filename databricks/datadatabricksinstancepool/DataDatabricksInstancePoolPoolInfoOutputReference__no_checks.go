@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoOutputReference) validatePu
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

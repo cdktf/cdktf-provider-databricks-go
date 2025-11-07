@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsLibraryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

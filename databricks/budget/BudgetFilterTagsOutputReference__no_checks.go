@@ -43,7 +43,7 @@ func (b *jsiiProxy_BudgetFilterTagsOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (b *jsiiProxy_BudgetFilterTagsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BudgetFilterTagsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BudgetFilterTagsOutputReference) validatePutValueParameters(v
 	return nil
 }
 
-func (b *jsiiProxy_BudgetFilterTagsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BudgetFilterTagsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

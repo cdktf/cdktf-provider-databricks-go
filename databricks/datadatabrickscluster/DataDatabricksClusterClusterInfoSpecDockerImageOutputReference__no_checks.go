@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecDockerImageOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecDockerImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecDockerImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecDockerImageOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecDockerImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecDockerImageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

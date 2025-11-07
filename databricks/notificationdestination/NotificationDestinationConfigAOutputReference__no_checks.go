@@ -43,7 +43,7 @@ func (n *jsiiProxy_NotificationDestinationConfigAOutputReference) validateGetStr
 	return nil
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotificationDestinationConfigAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (n *jsiiProxy_NotificationDestinationConfigAOutputReference) validatePutSla
 	return nil
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationDestinationConfigAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

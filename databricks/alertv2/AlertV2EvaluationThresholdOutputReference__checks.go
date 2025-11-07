@@ -85,9 +85,9 @@ func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) validateGetStringM
 	return nil
 }
 
-func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -115,9 +115,9 @@ func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) validatePutValuePa
 	return nil
 }
 
-func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AlertV2EvaluationThresholdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

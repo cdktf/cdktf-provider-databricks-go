@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobTaskWebhookNotificationsOnSuccessOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskWebhookNotificationsOnSuccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTaskWebhookNotificationsOnSuccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskWebhookNotificationsOnSuccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskWebhookNotificationsOnSuccessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

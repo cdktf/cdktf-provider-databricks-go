@@ -43,11 +43,11 @@ func (m *jsiiProxy_MwsWorkspacesCloudResourceContainerGcpOutputReference) valida
 	return nil
 }
 
-func (m *jsiiProxy_MwsWorkspacesCloudResourceContainerGcpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MwsWorkspacesCloudResourceContainerGcpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MwsWorkspacesCloudResourceContainerGcpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MwsWorkspacesCloudResourceContainerGcpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

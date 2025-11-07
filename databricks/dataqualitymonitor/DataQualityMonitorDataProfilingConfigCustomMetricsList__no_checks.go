@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigCustomMetricsList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigCustomMetricsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigCustomMetricsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

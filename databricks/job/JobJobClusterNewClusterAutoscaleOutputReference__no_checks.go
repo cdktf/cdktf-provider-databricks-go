@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobJobClusterNewClusterAutoscaleOutputReference) validateGetS
 	return nil
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterAutoscaleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobJobClusterNewClusterAutoscaleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterAutoscaleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobJobClusterNewClusterAutoscaleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

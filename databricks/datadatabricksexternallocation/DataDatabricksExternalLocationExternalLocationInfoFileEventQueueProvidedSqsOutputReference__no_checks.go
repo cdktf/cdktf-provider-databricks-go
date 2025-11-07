@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoFileEventQu
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

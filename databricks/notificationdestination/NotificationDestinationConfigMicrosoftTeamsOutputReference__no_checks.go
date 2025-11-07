@@ -43,11 +43,11 @@ func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) v
 	return nil
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationDestinationConfigMicrosoftTeamsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

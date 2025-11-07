@@ -15,7 +15,7 @@ func (v *jsiiProxy_VectorSearchEndpointEndpointStatusList) validateGetParameters
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchEndpointEndpointStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VectorSearchEndpointEndpointStatusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

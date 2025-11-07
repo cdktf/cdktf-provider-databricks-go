@@ -15,7 +15,7 @@ func (o *jsiiProxy_OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncPro
 	return nil
 }
 
-func (o *jsiiProxy_OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

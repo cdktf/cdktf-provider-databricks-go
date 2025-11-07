@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskLibraryList) validateGetParameters(inde
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskLibraryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskLibraryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

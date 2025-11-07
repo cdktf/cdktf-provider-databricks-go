@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

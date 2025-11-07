@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoTerminationRea
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

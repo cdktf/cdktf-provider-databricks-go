@@ -15,7 +15,7 @@ func (l *jsiiProxy_LakehouseMonitorCustomMetricsList) validateGetParameters(inde
 	return nil
 }
 
-func (l *jsiiProxy_LakehouseMonitorCustomMetricsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LakehouseMonitorCustomMetricsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

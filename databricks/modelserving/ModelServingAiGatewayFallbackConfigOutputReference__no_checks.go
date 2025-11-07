@@ -43,11 +43,11 @@ func (m *jsiiProxy_ModelServingAiGatewayFallbackConfigOutputReference) validateG
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingAiGatewayFallbackConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelServingAiGatewayFallbackConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingAiGatewayFallbackConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingAiGatewayFallbackConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

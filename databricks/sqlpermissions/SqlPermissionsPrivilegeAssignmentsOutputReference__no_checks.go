@@ -43,11 +43,11 @@ func (s *jsiiProxy_SqlPermissionsPrivilegeAssignmentsOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_SqlPermissionsPrivilegeAssignmentsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlPermissionsPrivilegeAssignmentsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SqlPermissionsPrivilegeAssignmentsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlPermissionsPrivilegeAssignmentsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

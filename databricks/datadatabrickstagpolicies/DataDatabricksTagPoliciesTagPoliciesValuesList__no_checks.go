@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesValuesList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksTagPoliciesTagPoliciesValuesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksDbfsFilePathsPathListStructList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

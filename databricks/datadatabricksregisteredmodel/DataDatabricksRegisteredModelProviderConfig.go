@@ -5,7 +5,7 @@ package datadatabricksregisteredmodel
 
 
 type DataDatabricksRegisteredModelProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/registered_model#workspace_id DataDatabricksRegisteredModel#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/registered_model#workspace_id DataDatabricksRegisteredModel#workspace_id}.
 	WorkspaceId *string `field:"required" json:"workspaceId" yaml:"workspaceId"`
 }
 

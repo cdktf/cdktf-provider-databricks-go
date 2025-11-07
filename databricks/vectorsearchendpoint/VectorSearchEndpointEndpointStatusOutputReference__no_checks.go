@@ -43,11 +43,11 @@ func (v *jsiiProxy_VectorSearchEndpointEndpointStatusOutputReference) validateGe
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchEndpointEndpointStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VectorSearchEndpointEndpointStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchEndpointEndpointStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VectorSearchEndpointEndpointStatusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksShareObjectPartitionValueOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksShareObjectPartitionValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksShareObjectPartitionValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksShareObjectPartitionValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksShareObjectPartitionValueOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

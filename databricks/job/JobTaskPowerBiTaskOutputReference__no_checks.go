@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobTaskPowerBiTaskOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskPowerBiTaskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTaskPowerBiTaskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (j *jsiiProxy_JobTaskPowerBiTaskOutputReference) validatePutTablesParameter
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskPowerBiTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskPowerBiTaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

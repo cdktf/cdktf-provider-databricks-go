@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksMlflowModelLatestVersionsList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksMlflowModelLatestVersionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksMlflowModelLatestVersionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

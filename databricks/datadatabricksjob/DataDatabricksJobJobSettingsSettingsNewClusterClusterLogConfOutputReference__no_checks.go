@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfO
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfO
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

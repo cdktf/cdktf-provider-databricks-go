@@ -5,7 +5,7 @@ package datadatabricksdatabasedatabasecatalogs
 
 
 type DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogs struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/database_database_catalogs#name DataDatabricksDatabaseDatabaseCatalogs#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/database_database_catalogs#name DataDatabricksDatabaseDatabaseCatalogs#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

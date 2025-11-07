@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksExternalMetadatasExternalMetadataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

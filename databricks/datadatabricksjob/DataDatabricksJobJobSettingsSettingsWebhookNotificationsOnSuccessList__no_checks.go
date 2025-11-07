@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuc
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

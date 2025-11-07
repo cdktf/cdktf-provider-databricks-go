@@ -5,9 +5,9 @@ package workspacesettingv2
 
 
 type WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}.
 	Hours *float64 `field:"optional" json:"hours" yaml:"hours"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}.
 	Minutes *float64 `field:"optional" json:"minutes" yaml:"minutes"`
 }
 

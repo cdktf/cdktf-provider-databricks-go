@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppsSettingsCustomTemplateManifestOutputReference) validateGe
 	return nil
 }
 
-func (a *jsiiProxy_AppsSettingsCustomTemplateManifestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsSettingsCustomTemplateManifestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppsSettingsCustomTemplateManifestOutputReference) validatePu
 	return nil
 }
 
-func (a *jsiiProxy_AppsSettingsCustomTemplateManifestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsSettingsCustomTemplateManifestOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -76,7 +76,7 @@ type DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputRefere
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutEnablementDetails(value *DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails)
 	PutMaintenanceWindow(value *DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow)
 	ResetCanToggle()
@@ -86,7 +86,7 @@ type DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputRefere
 	ResetRestartEvenIfNoUpdatesAvailable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -555,8 +555,8 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspa
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -564,7 +564,7 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspa
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -633,8 +633,8 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspa
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -642,7 +642,7 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspa
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesL
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

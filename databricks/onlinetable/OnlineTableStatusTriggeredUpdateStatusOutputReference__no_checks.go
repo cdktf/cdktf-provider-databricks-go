@@ -43,11 +43,11 @@ func (o *jsiiProxy_OnlineTableStatusTriggeredUpdateStatusOutputReference) valida
 	return nil
 }
 
-func (o *jsiiProxy_OnlineTableStatusTriggeredUpdateStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OnlineTableStatusTriggeredUpdateStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OnlineTableStatusTriggeredUpdateStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnlineTableStatusTriggeredUpdateStatusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

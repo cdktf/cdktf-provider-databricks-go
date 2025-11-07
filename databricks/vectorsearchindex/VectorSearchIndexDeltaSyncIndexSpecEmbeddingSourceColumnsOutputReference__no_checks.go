@@ -43,11 +43,11 @@ func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutp
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

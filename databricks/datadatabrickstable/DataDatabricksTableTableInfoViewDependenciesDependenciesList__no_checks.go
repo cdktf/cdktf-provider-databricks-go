@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesList)
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

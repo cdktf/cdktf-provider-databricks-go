@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOfflineSto
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

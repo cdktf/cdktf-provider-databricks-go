@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnSuccessList) vali
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnSuccessList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnSuccessList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

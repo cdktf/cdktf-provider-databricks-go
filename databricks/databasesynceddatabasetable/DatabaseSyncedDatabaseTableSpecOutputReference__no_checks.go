@@ -43,7 +43,7 @@ func (d *jsiiProxy_DatabaseSyncedDatabaseTableSpecOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSyncedDatabaseTableSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseSyncedDatabaseTableSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DatabaseSyncedDatabaseTableSpecOutputReference) validatePutNe
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSyncedDatabaseTableSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSyncedDatabaseTableSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

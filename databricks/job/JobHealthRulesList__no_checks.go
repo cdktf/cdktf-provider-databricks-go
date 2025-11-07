@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobHealthRulesList) validateGetParameters(index *float64) err
 	return nil
 }
 
-func (j *jsiiProxy_JobHealthRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobHealthRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (s *jsiiProxy_SqlQueryParameterQueryOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (s *jsiiProxy_SqlQueryParameterQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlQueryParameterQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SqlQueryParameterQueryOutputReference) validatePutMultiplePar
 	return nil
 }
 
-func (s *jsiiProxy_SqlQueryParameterQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlQueryParameterQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

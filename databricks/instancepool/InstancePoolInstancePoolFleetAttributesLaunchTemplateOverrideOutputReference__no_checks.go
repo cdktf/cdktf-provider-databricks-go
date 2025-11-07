@@ -43,11 +43,11 @@ func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride
 	return nil
 }
 
-func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

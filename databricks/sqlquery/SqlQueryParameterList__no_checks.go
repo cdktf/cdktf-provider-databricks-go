@@ -15,7 +15,7 @@ func (s *jsiiProxy_SqlQueryParameterList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (s *jsiiProxy_SqlQueryParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlQueryParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

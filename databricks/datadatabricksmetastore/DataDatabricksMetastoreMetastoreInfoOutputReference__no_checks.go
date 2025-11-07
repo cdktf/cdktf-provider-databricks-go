@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksMetastoreMetastoreInfoOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksMetastoreMetastoreInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksMetastoreMetastoreInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksMetastoreMetastoreInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksMetastoreMetastoreInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

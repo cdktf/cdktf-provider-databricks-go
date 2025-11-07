@@ -43,11 +43,11 @@ func (s *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) validateGetStr
 	return nil
 }
 
-func (s *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlEndpointHealthFailureReasonOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SqlEndpointHealthFailureReasonList) validateGetParameters(ind
 	return nil
 }
 
-func (s *jsiiProxy_SqlEndpointHealthFailureReasonList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlEndpointHealthFailureReasonList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

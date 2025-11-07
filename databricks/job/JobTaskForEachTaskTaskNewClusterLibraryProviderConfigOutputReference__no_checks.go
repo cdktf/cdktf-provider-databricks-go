@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterLibraryProviderConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterLibraryProviderConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterLibraryProviderConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterLibraryProviderConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterLibraryProviderConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

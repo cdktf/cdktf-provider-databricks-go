@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2}.
 type DataDatabricksWorkspaceSettingV2 interface {
 	cdktf.TerraformDataSource
 	AibiDashboardEmbeddingAccessPolicy() DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
@@ -440,7 +440,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceSettingV2) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2} Data Source.
 func NewDataDatabricksWorkspaceSettingV2(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceSettingV2Config) DataDatabricksWorkspaceSettingV2 {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewDataDatabricksWorkspaceSettingV2(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2} Data Source.
 func NewDataDatabricksWorkspaceSettingV2_Override(d DataDatabricksWorkspaceSettingV2, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceSettingV2Config) {
 	_init_.Initialize()
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

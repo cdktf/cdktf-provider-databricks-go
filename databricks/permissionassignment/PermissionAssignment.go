@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/permission_assignment databricks_permission_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment databricks_permission_assignment}.
 type PermissionAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -62,6 +62,8 @@ type PermissionAssignment interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() PermissionAssignmentProviderConfigOutputReference
+	ProviderConfigInput() *PermissionAssignmentProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -123,12 +125,14 @@ type PermissionAssignment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *PermissionAssignmentProviderConfig)
 	ResetGroupName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrincipalId()
+	ResetProviderConfig()
 	ResetServicePrincipalName()
 	ResetUserName()
 	SynthesizeAttributes() *map[string]interface{}
@@ -349,6 +353,26 @@ func (j *jsiiProxy_PermissionAssignment) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_PermissionAssignment) ProviderConfig() PermissionAssignmentProviderConfigOutputReference {
+	var returns PermissionAssignmentProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PermissionAssignment) ProviderConfigInput() *PermissionAssignmentProviderConfig {
+	var returns *PermissionAssignmentProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PermissionAssignment) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -440,7 +464,7 @@ func (j *jsiiProxy_PermissionAssignment) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/permission_assignment databricks_permission_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment databricks_permission_assignment} Resource.
 func NewPermissionAssignment(scope constructs.Construct, id *string, config *PermissionAssignmentConfig) PermissionAssignment {
 	_init_.Initialize()
 
@@ -458,7 +482,7 @@ func NewPermissionAssignment(scope constructs.Construct, id *string, config *Per
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/permission_assignment databricks_permission_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment databricks_permission_assignment} Resource.
 func NewPermissionAssignment_Override(p PermissionAssignment, scope constructs.Construct, id *string, config *PermissionAssignmentConfig) {
 	_init_.Initialize()
 
@@ -956,6 +980,17 @@ func (p *jsiiProxy_PermissionAssignment) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (p *jsiiProxy_PermissionAssignment) PutProviderConfig(value *PermissionAssignmentProviderConfig) {
+	if err := p.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PermissionAssignment) ResetGroupName() {
 	_jsii_.InvokeVoid(
 		p,
@@ -984,6 +1019,14 @@ func (p *jsiiProxy_PermissionAssignment) ResetPrincipalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPrincipalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PermissionAssignment) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

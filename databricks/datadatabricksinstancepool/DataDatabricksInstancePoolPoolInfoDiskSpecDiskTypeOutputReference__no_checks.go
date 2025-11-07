@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoDiskSpecDiskTypeOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoDiskSpecDiskTypeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoDiskSpecDiskTypeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoDiskSpecDiskTypeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoDiskSpecDiskTypeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

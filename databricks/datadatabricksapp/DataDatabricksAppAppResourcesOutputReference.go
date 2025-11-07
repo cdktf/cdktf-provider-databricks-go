@@ -83,7 +83,7 @@ type DataDatabricksAppAppResourcesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutDatabase(value *DataDatabricksAppAppResourcesDatabase)
 	PutGenieSpace(value *DataDatabricksAppAppResourcesGenieSpace)
 	PutJob(value *DataDatabricksAppAppResourcesJob)
@@ -101,7 +101,7 @@ type DataDatabricksAppAppResourcesOutputReference interface {
 	ResetUcSecurable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -639,8 +639,8 @@ func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) InterpolationAs
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -648,7 +648,7 @@ func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -796,8 +796,8 @@ func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) ResetUcSecurabl
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -805,7 +805,7 @@ func (d *jsiiProxy_DataDatabricksAppAppResourcesOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

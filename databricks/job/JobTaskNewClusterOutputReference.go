@@ -163,7 +163,7 @@ type JobTaskNewClusterOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAutoscale(value *JobTaskNewClusterAutoscale)
 	PutAwsAttributes(value *JobTaskNewClusterAwsAttributes)
 	PutAzureAttributes(value *JobTaskNewClusterAzureAttributes)
@@ -214,7 +214,7 @@ type JobTaskNewClusterOutputReference interface {
 	ResetWorkloadType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -1576,8 +1576,8 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) InterpolationAsList() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -1585,7 +1585,7 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) InterpolationForAttribute(p
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -2009,8 +2009,8 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) ResetWorkloadType() {
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := j.validateResolveParameters(_context); err != nil {
+func (j *jsiiProxy_JobTaskNewClusterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -2018,7 +2018,7 @@ func (j *jsiiProxy_JobTaskNewClusterOutputReference) Resolve(_context cdktf.IRes
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

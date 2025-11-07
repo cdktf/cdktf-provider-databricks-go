@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksDataQualityRefreshesRefreshesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

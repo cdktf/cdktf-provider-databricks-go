@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsHealthRulesList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsHealthRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsHealthRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

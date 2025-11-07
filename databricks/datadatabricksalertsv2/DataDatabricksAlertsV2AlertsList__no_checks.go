@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsList) validateGetParameters(index
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksAlertsV2AlertsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

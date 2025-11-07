@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningTh
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

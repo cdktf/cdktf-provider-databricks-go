@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoPreloadedDockerImageBasicAu
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoPreloadedDockerImageBasicAuthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoPreloadedDockerImageBasicAuthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoPreloadedDockerImageBasicAuthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoPreloadedDockerImageBasicAuthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

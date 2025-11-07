@@ -5,7 +5,7 @@ package workspacesettingv2
 
 
 type WorkspaceSettingV2EffectiveBooleanVal struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
 	Value interface{} `field:"optional" json:"value" yaml:"value"`
 }
 

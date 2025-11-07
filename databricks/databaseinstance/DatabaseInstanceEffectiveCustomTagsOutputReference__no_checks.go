@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseInstanceEffectiveCustomTagsOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseInstanceEffectiveCustomTagsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseInstanceEffectiveCustomTagsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseInstanceEffectiveCustomTagsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseInstanceEffectiveCustomTagsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

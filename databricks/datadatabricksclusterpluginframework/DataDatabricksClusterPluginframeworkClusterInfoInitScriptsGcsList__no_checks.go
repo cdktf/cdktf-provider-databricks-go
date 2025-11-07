@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

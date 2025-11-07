@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobJobClusterNewClusterLibraryPypiOutputReference) validateGe
 	return nil
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterLibraryPypiOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobJobClusterNewClusterLibraryPypiOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterLibraryPypiOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobJobClusterNewClusterLibraryPypiOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

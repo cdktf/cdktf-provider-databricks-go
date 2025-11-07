@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterAwsAttributesOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterAwsAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterAwsAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterAwsAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterAwsAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

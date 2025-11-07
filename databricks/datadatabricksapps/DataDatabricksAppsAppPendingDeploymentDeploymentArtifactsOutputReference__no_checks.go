@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksAppsAppPendingDeploymentDeploymentArtifactsOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppsAppPendingDeploymentDeploymentArtifactsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksAppsAppPendingDeploymentDeploymentArtifactsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppsAppPendingDeploymentDeploymentArtifactsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksAppsAppPendingDeploymentDeploymentArtifactsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

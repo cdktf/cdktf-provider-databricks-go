@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoWorkloadTypeOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoWorkloadTypeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoWorkloadTypeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataDatabricksClusterClusterInfoWorkloadTypeOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterClusterInfoWorkloadTypeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksClusterClusterInfoWorkloadTypeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

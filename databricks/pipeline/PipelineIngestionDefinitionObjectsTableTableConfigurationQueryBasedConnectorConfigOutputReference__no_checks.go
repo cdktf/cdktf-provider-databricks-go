@@ -43,11 +43,11 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationQuer
 	return nil
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

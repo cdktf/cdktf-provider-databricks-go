@@ -75,6 +75,10 @@ func (p *jsiiProxy_PermissionAssignment) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (p *jsiiProxy_PermissionAssignment) validatePutProviderConfigParameters(value *PermissionAssignmentProviderConfig) error {
+	return nil
+}
+
 func validatePermissionAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

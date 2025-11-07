@@ -43,11 +43,11 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStable
 	return nil
 }
 
-func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

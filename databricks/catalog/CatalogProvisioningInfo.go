@@ -5,7 +5,7 @@ package catalog
 
 
 type CatalogProvisioningInfo struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/catalog#state Catalog#state}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/catalog#state Catalog#state}.
 	State *string `field:"optional" json:"state" yaml:"state"`
 }
 

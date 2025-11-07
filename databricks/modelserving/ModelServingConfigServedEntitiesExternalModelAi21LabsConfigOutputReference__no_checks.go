@@ -43,11 +43,11 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOu
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

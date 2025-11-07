@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributes
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesLaunchTemplateOverrideList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesLaunchTemplateOverrideList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

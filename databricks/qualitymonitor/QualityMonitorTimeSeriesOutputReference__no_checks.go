@@ -43,11 +43,11 @@ func (q *jsiiProxy_QualityMonitorTimeSeriesOutputReference) validateGetStringMap
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorTimeSeriesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QualityMonitorTimeSeriesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorTimeSeriesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QualityMonitorTimeSeriesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

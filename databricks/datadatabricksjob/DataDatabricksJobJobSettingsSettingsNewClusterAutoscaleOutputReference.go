@@ -69,12 +69,12 @@ type DataDatabricksJobJobSettingsSettingsNewClusterAutoscaleOutputReference inte
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetMaxWorkers()
 	ResetMinWorkers()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -472,8 +472,8 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterAutoscaleOutput
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterAutoscaleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterAutoscaleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -481,7 +481,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterAutoscaleOutput
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterAutoscaleOutput
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterAutoscaleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterAutoscaleOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterAutoscaleOutput
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

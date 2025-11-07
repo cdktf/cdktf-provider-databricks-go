@@ -15,7 +15,7 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigRoutesLis
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigRoutesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigRoutesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

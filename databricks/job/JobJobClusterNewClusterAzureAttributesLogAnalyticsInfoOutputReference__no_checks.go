@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobJobClusterNewClusterAzureAttributesLogAnalyticsInfoOutputR
 	return nil
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterAzureAttributesLogAnalyticsInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobJobClusterNewClusterAzureAttributesLogAnalyticsInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterAzureAttributesLogAnalyticsInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobJobClusterNewClusterAzureAttributesLogAnalyticsInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

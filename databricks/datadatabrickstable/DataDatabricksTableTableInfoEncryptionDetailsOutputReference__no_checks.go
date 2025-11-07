@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (g *jsiiProxy_GrantsGrantList) validateGetParameters(index *float64) error 
 	return nil
 }
 
-func (g *jsiiProxy_GrantsGrantList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GrantsGrantList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

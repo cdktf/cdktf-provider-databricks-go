@@ -43,11 +43,11 @@ func (r *jsiiProxy_RfaAccessRequestDestinationsDestinationsOutputReference) vali
 	return nil
 }
 
-func (r *jsiiProxy_RfaAccessRequestDestinationsDestinationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RfaAccessRequestDestinationsDestinationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RfaAccessRequestDestinationsDestinationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RfaAccessRequestDestinationsDestinationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

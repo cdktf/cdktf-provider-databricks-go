@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksAccountSettingV2EffectivePersonalComputeOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

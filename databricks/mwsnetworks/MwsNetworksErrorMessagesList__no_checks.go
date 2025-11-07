@@ -15,7 +15,7 @@ func (m *jsiiProxy_MwsNetworksErrorMessagesList) validateGetParameters(index *fl
 	return nil
 }
 
-func (m *jsiiProxy_MwsNetworksErrorMessagesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MwsNetworksErrorMessagesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

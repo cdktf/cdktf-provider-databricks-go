@@ -5,7 +5,7 @@ package datadatabricksclusterpluginframework
 
 
 type DataDatabricksClusterPluginframeworkClusterInfoWorkloadType struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/cluster_pluginframework#clients DataDatabricksClusterPluginframework#clients}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/cluster_pluginframework#clients DataDatabricksClusterPluginframework#clients}.
 	Clients interface{} `field:"required" json:"clients" yaml:"clients"`
 }
 

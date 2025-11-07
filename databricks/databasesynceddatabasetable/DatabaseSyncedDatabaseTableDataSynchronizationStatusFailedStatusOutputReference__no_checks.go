@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedSta
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

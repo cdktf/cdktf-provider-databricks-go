@@ -43,7 +43,7 @@ func (m *jsiiProxy_MwsWorkspacesCloudResourceContainerOutputReference) validateG
 	return nil
 }
 
-func (m *jsiiProxy_MwsWorkspacesCloudResourceContainerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MwsWorkspacesCloudResourceContainerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MwsWorkspacesCloudResourceContainerOutputReference) validateP
 	return nil
 }
 
-func (m *jsiiProxy_MwsWorkspacesCloudResourceContainerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MwsWorkspacesCloudResourceContainerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

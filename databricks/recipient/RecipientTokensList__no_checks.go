@@ -15,7 +15,7 @@ func (r *jsiiProxy_RecipientTokensList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (r *jsiiProxy_RecipientTokensList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RecipientTokensList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

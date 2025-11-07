@@ -85,9 +85,9 @@ func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) validateGetString
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -248,9 +248,9 @@ func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) validatePutOnSucc
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (j *jsiiProxy_JobTaskWebhookNotificationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

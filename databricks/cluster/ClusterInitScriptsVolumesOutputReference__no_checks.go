@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClusterInitScriptsVolumesOutputReference) validateGetStringMa
 	return nil
 }
 
-func (c *jsiiProxy_ClusterInitScriptsVolumesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterInitScriptsVolumesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClusterInitScriptsVolumesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterInitScriptsVolumesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

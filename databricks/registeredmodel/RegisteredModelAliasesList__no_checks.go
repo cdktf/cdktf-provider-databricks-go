@@ -15,7 +15,7 @@ func (r *jsiiProxy_RegisteredModelAliasesList) validateGetParameters(index *floa
 	return nil
 }
 
-func (r *jsiiProxy_RegisteredModelAliasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RegisteredModelAliasesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

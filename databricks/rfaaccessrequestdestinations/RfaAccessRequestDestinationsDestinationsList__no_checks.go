@@ -15,7 +15,7 @@ func (r *jsiiProxy_RfaAccessRequestDestinationsDestinationsList) validateGetPara
 	return nil
 }
 
-func (r *jsiiProxy_RfaAccessRequestDestinationsDestinationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RfaAccessRequestDestinationsDestinationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoDeltaRuntimePropertiesKvpairsOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoDeltaRuntimePropertiesKvpairsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksTableTableInfoDeltaRuntimePropertiesKvpairsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoDeltaRuntimePropertiesKvpairsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksTableTableInfoDeltaRuntimePropertiesKvpairsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

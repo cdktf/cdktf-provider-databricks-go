@@ -43,11 +43,11 @@ func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) vali
 	return nil
 }
 
-func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MetastoreDataAccessAzureServicePrincipalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

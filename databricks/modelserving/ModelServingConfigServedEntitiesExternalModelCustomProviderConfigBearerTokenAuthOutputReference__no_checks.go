@@ -43,11 +43,11 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderCo
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

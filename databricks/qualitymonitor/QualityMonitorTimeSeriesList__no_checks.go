@@ -15,7 +15,7 @@ func (q *jsiiProxy_QualityMonitorTimeSeriesList) validateGetParameters(index *fl
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorTimeSeriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QualityMonitorTimeSeriesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

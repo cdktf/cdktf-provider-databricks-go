@@ -15,7 +15,7 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsList) validateGetParameters
 	return nil
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionObjectsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

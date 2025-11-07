@@ -15,7 +15,7 @@ func (f *jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList) validat
 	return nil
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FeatureEngineeringFeatureFunctionExtraParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

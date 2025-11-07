@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksAccountNetworkPoliciesItemsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

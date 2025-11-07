@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoCloudflar
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoCloudflareApiTokenOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoCloudflareApiTokenOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoCloudflareApiTokenOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoCloudflareApiTokenOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

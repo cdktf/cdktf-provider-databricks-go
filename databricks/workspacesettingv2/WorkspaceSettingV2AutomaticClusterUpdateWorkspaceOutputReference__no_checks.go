@@ -43,7 +43,7 @@ func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputRefere
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputRefere
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivate
 	return nil
 }
 
-func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

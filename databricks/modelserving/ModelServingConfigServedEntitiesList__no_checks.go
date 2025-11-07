@@ -15,7 +15,7 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesList) validateGetParameters(i
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingConfigServedEntitiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

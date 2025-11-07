@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClusterPolicyLibrariesMavenOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_ClusterPolicyLibrariesMavenOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterPolicyLibrariesMavenOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClusterPolicyLibrariesMavenOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterPolicyLibrariesMavenOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

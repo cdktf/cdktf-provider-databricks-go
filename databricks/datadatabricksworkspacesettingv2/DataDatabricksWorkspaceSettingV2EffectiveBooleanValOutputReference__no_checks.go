@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectiveBooleanValOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectiveBooleanValOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectiveBooleanValOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectiveBooleanValOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectiveBooleanValOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

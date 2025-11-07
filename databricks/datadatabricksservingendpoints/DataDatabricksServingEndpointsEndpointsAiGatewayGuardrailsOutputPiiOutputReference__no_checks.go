@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOut
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPiiOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPiiOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPiiOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPiiOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

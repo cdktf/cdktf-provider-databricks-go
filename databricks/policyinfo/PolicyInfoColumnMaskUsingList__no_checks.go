@@ -15,7 +15,7 @@ func (p *jsiiProxy_PolicyInfoColumnMaskUsingList) validateGetParameters(index *f
 	return nil
 }
 
-func (p *jsiiProxy_PolicyInfoColumnMaskUsingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyInfoColumnMaskUsingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

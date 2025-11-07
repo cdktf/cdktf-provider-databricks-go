@@ -15,7 +15,7 @@ func (i *jsiiProxy_InstancePoolPreloadedDockerImageList) validateGetParameters(i
 	return nil
 }
 
-func (i *jsiiProxy_InstancePoolPreloadedDockerImageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InstancePoolPreloadedDockerImageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

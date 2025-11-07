@@ -43,11 +43,11 @@ func (l *jsiiProxy_LakehouseMonitorNotificationsOnNewClassificationTagDetectedOu
 	return nil
 }
 
-func (l *jsiiProxy_LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

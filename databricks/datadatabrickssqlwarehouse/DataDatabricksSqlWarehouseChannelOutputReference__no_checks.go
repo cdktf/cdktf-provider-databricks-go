@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksSqlWarehouseChannelOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesList
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksRegisteredModelVersionsModelVersionsAliasesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

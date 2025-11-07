@@ -15,7 +15,7 @@ func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

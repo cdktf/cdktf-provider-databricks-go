@@ -15,7 +15,7 @@ func (s *jsiiProxy_SqlEndpointTagsCustomTagsList) validateGetParameters(index *f
 	return nil
 }
 
-func (s *jsiiProxy_SqlEndpointTagsCustomTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlEndpointTagsCustomTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

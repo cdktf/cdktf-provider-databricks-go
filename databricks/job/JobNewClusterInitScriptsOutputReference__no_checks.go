@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) validatePutWorkspace
 	return nil
 }
 
-func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

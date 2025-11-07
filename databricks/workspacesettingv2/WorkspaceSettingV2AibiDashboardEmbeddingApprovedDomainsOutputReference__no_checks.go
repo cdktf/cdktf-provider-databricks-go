@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutput
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

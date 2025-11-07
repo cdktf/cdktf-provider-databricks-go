@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs databricks}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs databricks}.
 type DatabricksProvider interface {
 	cdktf.TerraformProvider
 	AccountId() *string
@@ -82,6 +82,9 @@ type DatabricksProvider interface {
 	DebugTruncateBytes() *float64
 	SetDebugTruncateBytes(val *float64)
 	DebugTruncateBytesInput() *float64
+	ExperimentalIsUnifiedHost() interface{}
+	SetExperimentalIsUnifiedHost(val interface{})
+	ExperimentalIsUnifiedHostInput() interface{}
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -146,6 +149,9 @@ type DatabricksProvider interface {
 	WarehouseId() *string
 	SetWarehouseId(val *string)
 	WarehouseIdInput() *string
+	WorkspaceId() *string
+	SetWorkspaceId(val *string)
+	WorkspaceIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
@@ -172,6 +178,7 @@ type DatabricksProvider interface {
 	ResetDatabricksIdTokenFilepath()
 	ResetDebugHeaders()
 	ResetDebugTruncateBytes()
+	ResetExperimentalIsUnifiedHost()
 	ResetGoogleCredentials()
 	ResetGoogleServiceAccount()
 	ResetHost()
@@ -191,6 +198,7 @@ type DatabricksProvider interface {
 	ResetToken()
 	ResetUsername()
 	ResetWarehouseId()
+	ResetWorkspaceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -649,6 +657,26 @@ func (j *jsiiProxy_DatabricksProvider) DebugTruncateBytesInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DatabricksProvider) ExperimentalIsUnifiedHost() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"experimentalIsUnifiedHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksProvider) ExperimentalIsUnifiedHostInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"experimentalIsUnifiedHostInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabricksProvider) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1049,8 +1077,28 @@ func (j *jsiiProxy_DatabricksProvider) WarehouseIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DatabricksProvider) WorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs databricks} Resource.
+func (j *jsiiProxy_DatabricksProvider) WorkspaceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs databricks} Resource.
 func NewDatabricksProvider(scope constructs.Construct, id *string, config *DatabricksProviderConfig) DatabricksProvider {
 	_init_.Initialize()
 
@@ -1068,7 +1116,7 @@ func NewDatabricksProvider(scope constructs.Construct, id *string, config *Datab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs databricks} Resource.
 func NewDatabricksProvider_Override(d DatabricksProvider, scope constructs.Construct, id *string, config *DatabricksProviderConfig) {
 	_init_.Initialize()
 
@@ -1253,6 +1301,17 @@ func (j *jsiiProxy_DatabricksProvider)SetDebugTruncateBytes(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_DatabricksProvider)SetExperimentalIsUnifiedHost(val interface{}) {
+	if err := j.validateSetExperimentalIsUnifiedHostParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"experimentalIsUnifiedHost",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabricksProvider)SetGoogleCredentials(val *string) {
 	_jsii_.Set(
 		j,
@@ -1380,6 +1439,14 @@ func (j *jsiiProxy_DatabricksProvider)SetWarehouseId(val *string) {
 	_jsii_.Set(
 		j,
 		"warehouseId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabricksProvider)SetWorkspaceId(val *string) {
+	_jsii_.Set(
+		j,
+		"workspaceId",
 		val,
 	)
 }
@@ -1677,6 +1744,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetDebugTruncateBytes() {
 	)
 }
 
+func (d *jsiiProxy_DatabricksProvider) ResetExperimentalIsUnifiedHost() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExperimentalIsUnifiedHost",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabricksProvider) ResetGoogleCredentials() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1809,6 +1884,14 @@ func (d *jsiiProxy_DatabricksProvider) ResetWarehouseId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetWarehouseId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksProvider) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWorkspaceId",
 		nil, // no parameters
 	)
 }

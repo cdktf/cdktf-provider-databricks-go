@@ -43,11 +43,11 @@ func (a *jsiiProxy_AccountSettingV2EffectiveIntegerValOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_AccountSettingV2EffectiveIntegerValOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccountSettingV2EffectiveIntegerValOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccountSettingV2EffectiveIntegerValOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccountSettingV2EffectiveIntegerValOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

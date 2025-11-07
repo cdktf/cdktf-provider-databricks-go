@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesChildInstance
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

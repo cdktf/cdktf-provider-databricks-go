@@ -71,12 +71,12 @@ type PolicyInfoColumnMaskOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutUsing(value interface{})
 	ResetUsing()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -494,8 +494,8 @@ func (p *jsiiProxy_PolicyInfoColumnMaskOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (p *jsiiProxy_PolicyInfoColumnMaskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PolicyInfoColumnMaskOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -503,7 +503,7 @@ func (p *jsiiProxy_PolicyInfoColumnMaskOutputReference) InterpolationForAttribut
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -529,8 +529,8 @@ func (p *jsiiProxy_PolicyInfoColumnMaskOutputReference) ResetUsing() {
 	)
 }
 
-func (p *jsiiProxy_PolicyInfoColumnMaskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PolicyInfoColumnMaskOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -538,7 +538,7 @@ func (p *jsiiProxy_PolicyInfoColumnMaskOutputReference) Resolve(_context cdktf.I
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

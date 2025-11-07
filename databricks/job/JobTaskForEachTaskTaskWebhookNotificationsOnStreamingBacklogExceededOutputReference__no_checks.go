@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogE
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

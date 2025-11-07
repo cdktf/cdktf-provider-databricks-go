@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobNewClusterClusterLogConfDbfsOutputReference) validateGetSt
 	return nil
 }
 
-func (j *jsiiProxy_JobNewClusterClusterLogConfDbfsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobNewClusterClusterLogConfDbfsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobNewClusterClusterLogConfDbfsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobNewClusterClusterLogConfDbfsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

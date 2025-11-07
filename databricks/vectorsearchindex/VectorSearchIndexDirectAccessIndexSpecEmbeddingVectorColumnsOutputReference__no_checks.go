@@ -43,11 +43,11 @@ func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsO
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

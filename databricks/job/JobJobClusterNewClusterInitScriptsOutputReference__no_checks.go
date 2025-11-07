@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validateGe
 	return nil
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validatePu
 	return nil
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobJobClusterNewClusterInitScriptsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) validateGetStringMapA
 	return nil
 }
 
-func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterClusterLogConfS3OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

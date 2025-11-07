@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskNewClusterDockerImageBasicAuthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LibraryMavenList) validateGetParameters(index *float64) error
 	return nil
 }
 
-func (l *jsiiProxy_LibraryMavenList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LibraryMavenList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

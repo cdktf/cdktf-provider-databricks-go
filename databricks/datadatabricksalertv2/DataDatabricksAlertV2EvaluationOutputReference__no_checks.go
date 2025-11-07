@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (d *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference) validatePutTh
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksAlertV2EvaluationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

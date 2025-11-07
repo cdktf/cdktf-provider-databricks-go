@@ -77,7 +77,7 @@ type JobNewClusterInitScriptsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAbfss(value *JobNewClusterInitScriptsAbfss)
 	PutDbfs(value *JobNewClusterInitScriptsDbfs)
 	PutFile(value *JobNewClusterInitScriptsFile)
@@ -94,7 +94,7 @@ type JobNewClusterInitScriptsOutputReference interface {
 	ResetWorkspace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -570,8 +570,8 @@ func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -579,7 +579,7 @@ func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -719,8 +719,8 @@ func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) ResetWorkspace() {
 	)
 }
 
-func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := j.validateResolveParameters(_context); err != nil {
+func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -728,7 +728,7 @@ func (j *jsiiProxy_JobNewClusterInitScriptsOutputReference) Resolve(_context cdk
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

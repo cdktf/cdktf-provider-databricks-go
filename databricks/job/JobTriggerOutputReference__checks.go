@@ -85,9 +85,9 @@ func (j *jsiiProxy_JobTriggerOutputReference) validateGetStringMapAttributeParam
 	return nil
 }
 
-func (j *jsiiProxy_JobTriggerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (j *jsiiProxy_JobTriggerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -126,9 +126,9 @@ func (j *jsiiProxy_JobTriggerOutputReference) validatePutTableUpdateParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_JobTriggerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (j *jsiiProxy_JobTriggerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

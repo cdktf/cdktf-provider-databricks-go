@@ -43,11 +43,11 @@ func (a *jsiiProxy_AccountSettingV2EffectiveBooleanValOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_AccountSettingV2EffectiveBooleanValOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccountSettingV2EffectiveBooleanValOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccountSettingV2EffectiveBooleanValOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccountSettingV2EffectiveBooleanValOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

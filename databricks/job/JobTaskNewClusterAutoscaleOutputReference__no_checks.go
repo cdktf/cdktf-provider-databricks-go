@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobTaskNewClusterAutoscaleOutputReference) validateGetStringM
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAutoscaleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTaskNewClusterAutoscaleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAutoscaleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskNewClusterAutoscaleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

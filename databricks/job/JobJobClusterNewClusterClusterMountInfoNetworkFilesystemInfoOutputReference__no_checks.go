@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfoO
 	return nil
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

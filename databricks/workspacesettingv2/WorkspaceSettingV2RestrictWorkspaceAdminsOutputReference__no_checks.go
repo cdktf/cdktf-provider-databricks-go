@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkspaceSettingV2RestrictWorkspaceAdminsOutputReference) val
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceSettingV2RestrictWorkspaceAdminsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspaceSettingV2RestrictWorkspaceAdminsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceSettingV2RestrictWorkspaceAdminsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceSettingV2RestrictWorkspaceAdminsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

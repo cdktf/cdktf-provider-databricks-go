@@ -43,11 +43,11 @@ func (m *jsiiProxy_MetastoreDataAccessGcpServiceAccountKeyOutputReference) valid
 	return nil
 }
 
-func (m *jsiiProxy_MetastoreDataAccessGcpServiceAccountKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MetastoreDataAccessGcpServiceAccountKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MetastoreDataAccessGcpServiceAccountKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MetastoreDataAccessGcpServiceAccountKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

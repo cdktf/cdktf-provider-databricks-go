@@ -43,11 +43,11 @@ func (l *jsiiProxy_LakehouseMonitorSnapshotOutputReference) validateGetStringMap
 	return nil
 }
 
-func (l *jsiiProxy_LakehouseMonitorSnapshotOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LakehouseMonitorSnapshotOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LakehouseMonitorSnapshotOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LakehouseMonitorSnapshotOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

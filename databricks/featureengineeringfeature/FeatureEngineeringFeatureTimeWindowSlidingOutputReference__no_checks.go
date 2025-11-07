@@ -43,11 +43,11 @@ func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowSlidingOutputReference) va
 	return nil
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowSlidingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowSlidingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowSlidingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowSlidingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

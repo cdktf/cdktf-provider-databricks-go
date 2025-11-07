@@ -85,17 +85,17 @@ func (b *jsiiProxy_BudgetFilterWorkspaceIdOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (b *jsiiProxy_BudgetFilterWorkspaceIdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (b *jsiiProxy_BudgetFilterWorkspaceIdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (b *jsiiProxy_BudgetFilterWorkspaceIdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (b *jsiiProxy_BudgetFilterWorkspaceIdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -15,7 +15,7 @@ func (s *jsiiProxy_ShareObjectPartitionValueList) validateGetParameters(index *f
 	return nil
 }
 
-func (s *jsiiProxy_ShareObjectPartitionValueList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ShareObjectPartitionValueList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

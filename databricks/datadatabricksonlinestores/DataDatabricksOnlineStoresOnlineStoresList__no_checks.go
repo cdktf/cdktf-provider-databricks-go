@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksOnlineStoresOnlineStoresList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LibraryProviderConfigList) validateGetParameters(index *float
 	return nil
 }
 
-func (l *jsiiProxy_LibraryProviderConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LibraryProviderConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

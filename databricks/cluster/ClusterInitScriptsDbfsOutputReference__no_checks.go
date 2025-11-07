@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClusterInitScriptsDbfsOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (c *jsiiProxy_ClusterInitScriptsDbfsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterInitScriptsDbfsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClusterInitScriptsDbfsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterInitScriptsDbfsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

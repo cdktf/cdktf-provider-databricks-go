@@ -43,11 +43,11 @@ func (q *jsiiProxy_QueryParameterDateRangeValueDateRangeValueOutputReference) va
 	return nil
 }
 
-func (q *jsiiProxy_QueryParameterDateRangeValueDateRangeValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QueryParameterDateRangeValueDateRangeValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QueryParameterDateRangeValueDateRangeValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QueryParameterDateRangeValueDateRangeValueOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

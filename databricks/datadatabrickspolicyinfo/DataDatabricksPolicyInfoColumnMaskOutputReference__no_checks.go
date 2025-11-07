@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatabricksPolicyInfoColumnMaskOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksPolicyInfoColumnMaskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksPolicyInfoColumnMaskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataDatabricksPolicyInfoColumnMaskOutputReference) validatePu
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksPolicyInfoColumnMaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksPolicyInfoColumnMaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

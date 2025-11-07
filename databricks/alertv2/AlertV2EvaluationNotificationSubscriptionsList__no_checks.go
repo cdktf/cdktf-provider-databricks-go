@@ -15,7 +15,7 @@ func (a *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) validateGetPa
 	return nil
 }
 
-func (a *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertV2EvaluationNotificationSubscriptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

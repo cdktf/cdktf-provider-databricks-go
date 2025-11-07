@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNotificationSettingsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskNotificationSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskNotificationSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskNotificationSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskNotificationSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

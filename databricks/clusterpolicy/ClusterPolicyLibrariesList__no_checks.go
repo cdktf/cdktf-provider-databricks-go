@@ -15,7 +15,7 @@ func (c *jsiiProxy_ClusterPolicyLibrariesList) validateGetParameters(index *floa
 	return nil
 }
 
-func (c *jsiiProxy_ClusterPolicyLibrariesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterPolicyLibrariesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

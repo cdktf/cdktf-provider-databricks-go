@@ -43,11 +43,11 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferenc
 	return nil
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

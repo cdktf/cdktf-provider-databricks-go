@@ -43,7 +43,7 @@ func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateGetString
 	return nil
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) validatePutTableC
 	return nil
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

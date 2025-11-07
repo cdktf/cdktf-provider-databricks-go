@@ -43,11 +43,11 @@ func (a *jsiiProxy_AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomain
 	return nil
 }
 
-func (a *jsiiProxy_AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

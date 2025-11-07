@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksPolicyInfoColumnMaskUsingOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksPolicyInfoColumnMaskUsingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksPolicyInfoColumnMaskUsingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksPolicyInfoColumnMaskUsingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksPolicyInfoColumnMaskUsingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

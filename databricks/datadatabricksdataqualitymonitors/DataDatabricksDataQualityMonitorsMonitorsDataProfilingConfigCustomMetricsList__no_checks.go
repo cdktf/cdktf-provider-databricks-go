@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigC
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigCustomMetricsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsDataProfilingConfigCustomMetricsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

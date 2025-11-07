@@ -43,11 +43,11 @@ func (c *jsiiProxy_CatalogEffectivePredictiveOptimizationFlagOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CatalogEffectivePredictiveOptimizationFlagOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CatalogEffectivePredictiveOptimizationFlagOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CatalogEffectivePredictiveOptimizationFlagOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CatalogEffectivePredictiveOptimizationFlagOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

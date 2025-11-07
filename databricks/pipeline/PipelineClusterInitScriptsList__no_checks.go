@@ -15,7 +15,7 @@ func (p *jsiiProxy_PipelineClusterInitScriptsList) validateGetParameters(index *
 	return nil
 }
 
-func (p *jsiiProxy_PipelineClusterInitScriptsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipelineClusterInitScriptsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

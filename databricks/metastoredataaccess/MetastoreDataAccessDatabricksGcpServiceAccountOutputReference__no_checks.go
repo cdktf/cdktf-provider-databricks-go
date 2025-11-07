@@ -43,11 +43,11 @@ func (m *jsiiProxy_MetastoreDataAccessDatabricksGcpServiceAccountOutputReference
 	return nil
 }
 
-func (m *jsiiProxy_MetastoreDataAccessDatabricksGcpServiceAccountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MetastoreDataAccessDatabricksGcpServiceAccountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MetastoreDataAccessDatabricksGcpServiceAccountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MetastoreDataAccessDatabricksGcpServiceAccountOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (o *jsiiProxy_OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgress
 	return nil
 }
 
-func (o *jsiiProxy_OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

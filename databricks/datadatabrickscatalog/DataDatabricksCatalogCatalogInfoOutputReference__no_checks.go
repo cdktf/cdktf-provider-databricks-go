@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) validatePutP
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

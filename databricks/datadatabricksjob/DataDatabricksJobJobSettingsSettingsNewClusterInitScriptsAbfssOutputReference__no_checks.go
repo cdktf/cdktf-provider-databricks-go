@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfs
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

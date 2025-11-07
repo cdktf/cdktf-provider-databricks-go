@@ -15,7 +15,7 @@ func (b *jsiiProxy_BudgetAlertConfigurationsActionConfigurationsList) validateGe
 	return nil
 }
 
-func (b *jsiiProxy_BudgetAlertConfigurationsActionConfigurationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BudgetAlertConfigurationsActionConfigurationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

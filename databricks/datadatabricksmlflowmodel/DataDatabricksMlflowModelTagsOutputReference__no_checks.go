@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksMlflowModelTagsOutputReference) validateGetStri
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksMlflowModelTagsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksMlflowModelTagsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksMlflowModelTagsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksMlflowModelTagsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

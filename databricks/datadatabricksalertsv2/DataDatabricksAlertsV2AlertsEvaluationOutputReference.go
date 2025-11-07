@@ -77,7 +77,7 @@ type DataDatabricksAlertsV2AlertsEvaluationOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutNotification(value *DataDatabricksAlertsV2AlertsEvaluationNotification)
 	PutSource(value *DataDatabricksAlertsV2AlertsEvaluationSource)
 	PutThreshold(value *DataDatabricksAlertsV2AlertsEvaluationThreshold)
@@ -86,7 +86,7 @@ type DataDatabricksAlertsV2AlertsEvaluationOutputReference interface {
 	ResetThreshold()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -564,8 +564,8 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationOutputReference) Interp
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -573,7 +573,7 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationOutputReference) Interp
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -637,8 +637,8 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationOutputReference) ResetT
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -646,7 +646,7 @@ func (d *jsiiProxy_DataDatabricksAlertsV2AlertsEvaluationOutputReference) Resolv
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

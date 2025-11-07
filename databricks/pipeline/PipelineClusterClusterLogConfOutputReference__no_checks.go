@@ -43,7 +43,7 @@ func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) validateGetStri
 	return nil
 }
 
-func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) validatePutVolu
 	return nil
 }
 
-func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

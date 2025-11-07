@@ -43,7 +43,7 @@ func (e *jsiiProxy_ExternalLocationEncryptionDetailsOutputReference) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_ExternalLocationEncryptionDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ExternalLocationEncryptionDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_ExternalLocationEncryptionDetailsOutputReference) validatePut
 	return nil
 }
 
-func (e *jsiiProxy_ExternalLocationEncryptionDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ExternalLocationEncryptionDetailsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

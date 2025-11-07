@@ -43,11 +43,11 @@ func (p *jsiiProxy_PipelineClusterInitScriptsS3OutputReference) validateGetStrin
 	return nil
 }
 
-func (p *jsiiProxy_PipelineClusterInitScriptsS3OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipelineClusterInitScriptsS3OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PipelineClusterInitScriptsS3OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipelineClusterInitScriptsS3OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

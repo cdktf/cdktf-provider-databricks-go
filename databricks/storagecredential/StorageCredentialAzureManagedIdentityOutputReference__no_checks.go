@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageCredentialAzureManagedIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

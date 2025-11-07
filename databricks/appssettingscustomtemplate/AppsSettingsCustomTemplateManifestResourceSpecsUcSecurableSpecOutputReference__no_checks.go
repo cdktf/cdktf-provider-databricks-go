@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpe
 	return nil
 }
 
-func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

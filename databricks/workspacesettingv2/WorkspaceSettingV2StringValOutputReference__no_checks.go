@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkspaceSettingV2StringValOutputReference) validateGetString
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceSettingV2StringValOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspaceSettingV2StringValOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceSettingV2StringValOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceSettingV2StringValOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

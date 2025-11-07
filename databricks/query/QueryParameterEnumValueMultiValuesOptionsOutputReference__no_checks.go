@@ -43,11 +43,11 @@ func (q *jsiiProxy_QueryParameterEnumValueMultiValuesOptionsOutputReference) val
 	return nil
 }
 
-func (q *jsiiProxy_QueryParameterEnumValueMultiValuesOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QueryParameterEnumValueMultiValuesOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QueryParameterEnumValueMultiValuesOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QueryParameterEnumValueMultiValuesOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

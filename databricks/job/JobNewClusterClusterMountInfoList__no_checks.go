@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobNewClusterClusterMountInfoList) validateGetParameters(inde
 	return nil
 }
 
-func (j *jsiiProxy_JobNewClusterClusterMountInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobNewClusterClusterMountInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

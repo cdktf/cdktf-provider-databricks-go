@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestOut
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestOut
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

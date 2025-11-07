@@ -43,7 +43,7 @@ func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessOutputReference) valid
 	return nil
 }
 
-func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessOutputReference) valid
 	return nil
 }
 
-func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

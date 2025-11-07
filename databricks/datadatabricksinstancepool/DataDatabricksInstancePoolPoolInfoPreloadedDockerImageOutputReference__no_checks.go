@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoPreloadedDockerImageOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoPreloadedDockerImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoPreloadedDockerImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoPreloadedDockerImageOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoPreloadedDockerImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksInstancePoolPoolInfoPreloadedDockerImageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

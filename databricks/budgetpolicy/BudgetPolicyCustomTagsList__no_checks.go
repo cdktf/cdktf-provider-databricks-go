@@ -15,7 +15,7 @@ func (b *jsiiProxy_BudgetPolicyCustomTagsList) validateGetParameters(index *floa
 	return nil
 }
 
-func (b *jsiiProxy_BudgetPolicyCustomTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BudgetPolicyCustomTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

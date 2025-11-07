@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksMlflowExperimentTagsOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksMlflowExperimentTagsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksMlflowExperimentTagsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksMlflowExperimentTagsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksMlflowExperimentTagsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -85,9 +85,9 @@ func (c *jsiiProxy_ClusterClusterMountInfoOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (c *jsiiProxy_ClusterClusterMountInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_ClusterClusterMountInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -104,9 +104,9 @@ func (c *jsiiProxy_ClusterClusterMountInfoOutputReference) validatePutNetworkFil
 	return nil
 }
 
-func (c *jsiiProxy_ClusterClusterMountInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_ClusterClusterMountInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

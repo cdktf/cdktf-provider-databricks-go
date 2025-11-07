@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksPolicyInfoRowFilterUsingList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksPolicyInfoRowFilterUsingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksPolicyInfoRowFilterUsingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

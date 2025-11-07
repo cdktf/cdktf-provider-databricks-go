@@ -43,11 +43,11 @@ func (s *jsiiProxy_SqlQueryParameterQueryMultipleOutputReference) validateGetStr
 	return nil
 }
 
-func (s *jsiiProxy_SqlQueryParameterQueryMultipleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlQueryParameterQueryMultipleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SqlQueryParameterQueryMultipleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlQueryParameterQueryMultipleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

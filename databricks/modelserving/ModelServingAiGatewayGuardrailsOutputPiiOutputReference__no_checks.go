@@ -43,11 +43,11 @@ func (m *jsiiProxy_ModelServingAiGatewayGuardrailsOutputPiiOutputReference) vali
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingAiGatewayGuardrailsOutputPiiOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelServingAiGatewayGuardrailsOutputPiiOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingAiGatewayGuardrailsOutputPiiOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingAiGatewayGuardrailsOutputPiiOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

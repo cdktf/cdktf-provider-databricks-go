@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule}.
 type MwsNccPrivateEndpointRule interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -693,7 +693,7 @@ func (j *jsiiProxy_MwsNccPrivateEndpointRule) VpcEndpointIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
 func NewMwsNccPrivateEndpointRule(scope constructs.Construct, id *string, config *MwsNccPrivateEndpointRuleConfig) MwsNccPrivateEndpointRule {
 	_init_.Initialize()
 
@@ -711,7 +711,7 @@ func NewMwsNccPrivateEndpointRule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource.
 func NewMwsNccPrivateEndpointRule_Override(m MwsNccPrivateEndpointRule, scope constructs.Construct, id *string, config *MwsNccPrivateEndpointRuleConfig) {
 	_init_.Initialize()
 

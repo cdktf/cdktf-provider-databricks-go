@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

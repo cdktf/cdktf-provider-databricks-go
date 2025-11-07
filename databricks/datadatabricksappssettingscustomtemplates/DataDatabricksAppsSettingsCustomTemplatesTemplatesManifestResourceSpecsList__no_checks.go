@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestRes
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceSpecsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceSpecsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

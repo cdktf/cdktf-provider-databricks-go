@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksDataQualityMonitorsMonitorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

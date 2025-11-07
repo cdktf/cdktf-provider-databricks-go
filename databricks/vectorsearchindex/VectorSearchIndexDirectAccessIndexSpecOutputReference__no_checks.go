@@ -43,7 +43,7 @@ func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecOutputReference) valida
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecOutputReference) valida
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

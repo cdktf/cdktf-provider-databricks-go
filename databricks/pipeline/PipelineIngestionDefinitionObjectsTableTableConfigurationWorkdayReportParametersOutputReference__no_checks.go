@@ -43,7 +43,7 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationWork
 	return nil
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationWork
 	return nil
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

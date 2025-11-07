@@ -43,7 +43,7 @@ func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) validate
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) validate
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingAiGatewayGuardrailsInputOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook databricks_notebook}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook databricks_notebook}.
 type Notebook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -73,6 +73,8 @@ type Notebook interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderConfig() NotebookProviderConfigOutputReference
+	ProviderConfigInput() *NotebookProviderConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -133,6 +135,7 @@ type Notebook interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProviderConfig(value *NotebookProviderConfig)
 	ResetContentBase64()
 	ResetFormat()
 	ResetId()
@@ -143,6 +146,7 @@ type Notebook interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProviderConfig()
 	ResetSource()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -432,6 +436,26 @@ func (j *jsiiProxy_Notebook) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_Notebook) ProviderConfig() NotebookProviderConfigOutputReference {
+	var returns NotebookProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"providerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Notebook) ProviderConfigInput() *NotebookProviderConfig {
+	var returns *NotebookProviderConfig
+	_jsii_.Get(
+		j,
+		"providerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Notebook) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -523,7 +547,7 @@ func (j *jsiiProxy_Notebook) WorkspacePath() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook databricks_notebook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook databricks_notebook} Resource.
 func NewNotebook(scope constructs.Construct, id *string, config *NotebookConfig) Notebook {
 	_init_.Initialize()
 
@@ -541,7 +565,7 @@ func NewNotebook(scope constructs.Construct, id *string, config *NotebookConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook databricks_notebook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook databricks_notebook} Resource.
 func NewNotebook_Override(n Notebook, scope constructs.Construct, id *string, config *NotebookConfig) {
 	_init_.Initialize()
 
@@ -1072,6 +1096,17 @@ func (n *jsiiProxy_Notebook) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (n *jsiiProxy_Notebook) PutProviderConfig(value *NotebookProviderConfig) {
+	if err := n.validatePutProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_Notebook) ResetContentBase64() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1132,6 +1167,14 @@ func (n *jsiiProxy_Notebook) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Notebook) ResetProviderConfig() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetProviderConfig",
 		nil, // no parameters
 	)
 }

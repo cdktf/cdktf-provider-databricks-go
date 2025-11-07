@@ -43,11 +43,11 @@ func (e *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) v
 	return nil
 }
 
-func (e *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ExternalLocationFileEventQueueManagedPubsubOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (q *jsiiProxy_QualityMonitorNotificationsOnNewClassificationTagDetectedList
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorNotificationsOnNewClassificationTagDetectedList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QualityMonitorNotificationsOnNewClassificationTagDetectedList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeA
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

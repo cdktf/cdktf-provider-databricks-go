@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/mws_workspaces databricks_mws_workspaces}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/mws_workspaces databricks_mws_workspaces}.
 type MwsWorkspaces interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -95,6 +95,9 @@ type MwsWorkspaces interface {
 	ManagedServicesCustomerManagedKeyId() *string
 	SetManagedServicesCustomerManagedKeyId(val *string)
 	ManagedServicesCustomerManagedKeyIdInput() *string
+	NetworkConnectivityConfigId() *string
+	SetNetworkConnectivityConfigId(val *string)
+	NetworkConnectivityConfigIdInput() *string
 	NetworkId() *string
 	SetNetworkId(val *string)
 	NetworkIdInput() *string
@@ -213,6 +216,7 @@ type MwsWorkspaces interface {
 	ResetIsNoPublicIpEnabled()
 	ResetLocation()
 	ResetManagedServicesCustomerManagedKeyId()
+	ResetNetworkConnectivityConfigId()
 	ResetNetworkId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -715,6 +719,26 @@ func (j *jsiiProxy_MwsWorkspaces) ManagedServicesCustomerManagedKeyIdInput() *st
 	return returns
 }
 
+func (j *jsiiProxy_MwsWorkspaces) NetworkConnectivityConfigId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkConnectivityConfigId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwsWorkspaces) NetworkConnectivityConfigIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkConnectivityConfigIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MwsWorkspaces) NetworkId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1026,7 +1050,7 @@ func (j *jsiiProxy_MwsWorkspaces) WorkspaceUrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
 func NewMwsWorkspaces(scope constructs.Construct, id *string, config *MwsWorkspacesConfig) MwsWorkspaces {
 	_init_.Initialize()
 
@@ -1044,7 +1068,7 @@ func NewMwsWorkspaces(scope constructs.Construct, id *string, config *MwsWorkspa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource.
 func NewMwsWorkspaces_Override(m MwsWorkspaces, scope constructs.Construct, id *string, config *MwsWorkspacesConfig) {
 	_init_.Initialize()
 
@@ -1254,6 +1278,17 @@ func (j *jsiiProxy_MwsWorkspaces)SetManagedServicesCustomerManagedKeyId(val *str
 	_jsii_.Set(
 		j,
 		"managedServicesCustomerManagedKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MwsWorkspaces)SetNetworkConnectivityConfigId(val *string) {
+	if err := j.validateSetNetworkConnectivityConfigIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkConnectivityConfigId",
 		val,
 	)
 }
@@ -1938,6 +1973,14 @@ func (m *jsiiProxy_MwsWorkspaces) ResetManagedServicesCustomerManagedKeyId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetManagedServicesCustomerManagedKeyId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwsWorkspaces) ResetNetworkConnectivityConfigId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetNetworkConnectivityConfigId",
 		nil, // no parameters
 	)
 }

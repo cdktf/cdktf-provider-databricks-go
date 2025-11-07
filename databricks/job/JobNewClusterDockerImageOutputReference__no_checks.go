@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobNewClusterDockerImageOutputReference) validateGetStringMap
 	return nil
 }
 
-func (j *jsiiProxy_JobNewClusterDockerImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobNewClusterDockerImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (j *jsiiProxy_JobNewClusterDockerImageOutputReference) validatePutBasicAuth
 	return nil
 }
 
-func (j *jsiiProxy_JobNewClusterDockerImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobNewClusterDockerImageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

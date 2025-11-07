@@ -43,11 +43,11 @@ func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) validateGetStri
 	return nil
 }
 
-func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MetastoreDataAccessAwsIamRoleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobGitSourceGitSnapshotOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (j *jsiiProxy_JobGitSourceGitSnapshotOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobGitSourceGitSnapshotOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobGitSourceGitSnapshotOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobGitSourceGitSnapshotOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

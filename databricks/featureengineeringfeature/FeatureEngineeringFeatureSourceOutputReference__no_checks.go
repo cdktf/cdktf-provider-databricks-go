@@ -43,7 +43,7 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validateGetSt
 	return nil
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validatePutDe
 	return nil
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

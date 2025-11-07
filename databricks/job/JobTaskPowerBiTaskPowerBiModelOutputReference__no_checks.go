@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobTaskPowerBiTaskPowerBiModelOutputReference) validateGetStr
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskPowerBiTaskPowerBiModelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTaskPowerBiTaskPowerBiModelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskPowerBiTaskPowerBiModelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskPowerBiTaskPowerBiModelOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

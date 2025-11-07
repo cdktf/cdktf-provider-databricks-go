@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -139,7 +139,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validatePutWebhookNoti
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

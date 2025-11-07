@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsList)
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

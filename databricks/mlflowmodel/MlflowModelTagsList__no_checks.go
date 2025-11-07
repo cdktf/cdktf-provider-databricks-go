@@ -15,7 +15,7 @@ func (m *jsiiProxy_MlflowModelTagsList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (m *jsiiProxy_MlflowModelTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MlflowModelTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (o *jsiiProxy_OnlineTableStatusFailedStatusList) validateGetParameters(inde
 	return nil
 }
 
-func (o *jsiiProxy_OnlineTableStatusFailedStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnlineTableStatusFailedStatusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

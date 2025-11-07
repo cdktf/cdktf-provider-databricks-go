@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksNotebookPathsNotebookPathListStructOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

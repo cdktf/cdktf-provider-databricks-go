@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskUsingList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskUsingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksPolicyInfosPoliciesColumnMaskUsingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

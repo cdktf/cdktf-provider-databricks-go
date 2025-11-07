@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskSparkPythonTaskOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskSparkPythonTaskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskSparkPythonTaskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskSparkPythonTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskSparkPythonTaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

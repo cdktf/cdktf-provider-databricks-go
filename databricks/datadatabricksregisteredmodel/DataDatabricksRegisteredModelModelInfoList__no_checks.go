@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksRegisteredModelModelInfoList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksRegisteredModelModelInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksRegisteredModelModelInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (c *jsiiProxy_ClusterAzureAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterAzureAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ClusterAzureAttributesOutputReference) validatePutLogAnalytic
 	return nil
 }
 
-func (c *jsiiProxy_ClusterAzureAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterAzureAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

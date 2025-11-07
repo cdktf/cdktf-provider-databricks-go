@@ -15,7 +15,7 @@ func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinat
 	return nil
 }
 
-func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

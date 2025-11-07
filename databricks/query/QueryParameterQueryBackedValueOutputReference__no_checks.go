@@ -43,7 +43,7 @@ func (q *jsiiProxy_QueryParameterQueryBackedValueOutputReference) validateGetStr
 	return nil
 }
 
-func (q *jsiiProxy_QueryParameterQueryBackedValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QueryParameterQueryBackedValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (q *jsiiProxy_QueryParameterQueryBackedValueOutputReference) validatePutMul
 	return nil
 }
 
-func (q *jsiiProxy_QueryParameterQueryBackedValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QueryParameterQueryBackedValueOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

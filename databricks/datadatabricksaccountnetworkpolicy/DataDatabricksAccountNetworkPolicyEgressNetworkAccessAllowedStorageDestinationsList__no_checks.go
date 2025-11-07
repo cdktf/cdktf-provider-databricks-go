@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedS
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

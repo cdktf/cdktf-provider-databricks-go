@@ -85,9 +85,9 @@ func (d *jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -104,9 +104,9 @@ func (d *jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference) validatePutEff
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataDatabricksSchemaSchemaInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -43,7 +43,7 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) validateGetS
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) validatePutE
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingConfigServedEntitiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

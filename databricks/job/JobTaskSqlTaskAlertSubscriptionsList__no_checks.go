@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobTaskSqlTaskAlertSubscriptionsList) validateGetParameters(i
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskSqlTaskAlertSubscriptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskSqlTaskAlertSubscriptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

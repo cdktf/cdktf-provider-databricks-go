@@ -43,11 +43,11 @@ func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinat
 	return nil
 }
 
-func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

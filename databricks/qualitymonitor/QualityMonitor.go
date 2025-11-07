@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/quality_monitor databricks_quality_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/quality_monitor databricks_quality_monitor}.
 type QualityMonitor interface {
 	cdktf.TerraformResource
 	AssetsDir() *string
@@ -746,7 +746,7 @@ func (j *jsiiProxy_QualityMonitor) WarehouseIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/quality_monitor databricks_quality_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/quality_monitor databricks_quality_monitor} Resource.
 func NewQualityMonitor(scope constructs.Construct, id *string, config *QualityMonitorConfig) QualityMonitor {
 	_init_.Initialize()
 
@@ -764,7 +764,7 @@ func NewQualityMonitor(scope constructs.Construct, id *string, config *QualityMo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/quality_monitor databricks_quality_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/quality_monitor databricks_quality_monitor} Resource.
 func NewQualityMonitor_Override(q QualityMonitor, scope constructs.Construct, id *string, config *QualityMonitorConfig) {
 	_init_.Initialize()
 

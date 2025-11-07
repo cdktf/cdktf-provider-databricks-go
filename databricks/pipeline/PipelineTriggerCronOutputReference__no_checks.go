@@ -43,11 +43,11 @@ func (p *jsiiProxy_PipelineTriggerCronOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (p *jsiiProxy_PipelineTriggerCronOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipelineTriggerCronOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PipelineTriggerCronOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipelineTriggerCronOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

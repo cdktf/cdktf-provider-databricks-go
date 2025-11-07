@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksMlflowModelTagsList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksMlflowModelTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksMlflowModelTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

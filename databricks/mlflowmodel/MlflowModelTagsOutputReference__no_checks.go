@@ -43,11 +43,11 @@ func (m *jsiiProxy_MlflowModelTagsOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (m *jsiiProxy_MlflowModelTagsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MlflowModelTagsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MlflowModelTagsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MlflowModelTagsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

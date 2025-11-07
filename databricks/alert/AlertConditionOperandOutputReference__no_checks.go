@@ -43,7 +43,7 @@ func (a *jsiiProxy_AlertConditionOperandOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (a *jsiiProxy_AlertConditionOperandOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlertConditionOperandOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AlertConditionOperandOutputReference) validatePutColumnParame
 	return nil
 }
 
-func (a *jsiiProxy_AlertConditionOperandOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertConditionOperandOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

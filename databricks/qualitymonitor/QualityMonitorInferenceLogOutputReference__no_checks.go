@@ -43,11 +43,11 @@ func (q *jsiiProxy_QualityMonitorInferenceLogOutputReference) validateGetStringM
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorInferenceLogOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QualityMonitorInferenceLogOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorInferenceLogOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QualityMonitorInferenceLogOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

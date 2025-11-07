@@ -43,7 +43,7 @@ func (c *jsiiProxy_ClusterPolicyLibrariesOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (c *jsiiProxy_ClusterPolicyLibrariesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterPolicyLibrariesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (c *jsiiProxy_ClusterPolicyLibrariesOutputReference) validatePutPypiParamet
 	return nil
 }
 
-func (c *jsiiProxy_ClusterPolicyLibrariesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterPolicyLibrariesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

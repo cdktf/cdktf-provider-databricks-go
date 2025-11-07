@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksQualityMonitorsV2QualityMonitorsList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksQualityMonitorsV2QualityMonitorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksQualityMonitorsV2QualityMonitorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

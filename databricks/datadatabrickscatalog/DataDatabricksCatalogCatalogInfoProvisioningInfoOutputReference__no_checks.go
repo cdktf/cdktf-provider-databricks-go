@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoProvisioningInfoOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoProvisioningInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoProvisioningInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoProvisioningInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksCatalogCatalogInfoProvisioningInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

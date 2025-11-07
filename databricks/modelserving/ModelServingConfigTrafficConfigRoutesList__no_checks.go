@@ -15,7 +15,7 @@ func (m *jsiiProxy_ModelServingConfigTrafficConfigRoutesList) validateGetParamet
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingConfigTrafficConfigRoutesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingConfigTrafficConfigRoutesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

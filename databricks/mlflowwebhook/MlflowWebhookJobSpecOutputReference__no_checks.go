@@ -43,11 +43,11 @@ func (m *jsiiProxy_MlflowWebhookJobSpecOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (m *jsiiProxy_MlflowWebhookJobSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MlflowWebhookJobSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MlflowWebhookJobSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MlflowWebhookJobSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

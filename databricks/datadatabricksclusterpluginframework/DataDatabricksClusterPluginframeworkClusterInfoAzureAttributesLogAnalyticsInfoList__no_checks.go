@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoAzureAttribute
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

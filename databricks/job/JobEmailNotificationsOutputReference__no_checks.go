@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobEmailNotificationsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (j *jsiiProxy_JobEmailNotificationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobEmailNotificationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobEmailNotificationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobEmailNotificationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

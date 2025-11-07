@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksServingEndpointsEndpointsAiGatewayList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

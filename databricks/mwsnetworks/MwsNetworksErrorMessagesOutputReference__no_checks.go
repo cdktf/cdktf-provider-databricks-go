@@ -43,11 +43,11 @@ func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) validateGetStringMap
 	return nil
 }
 
-func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MwsNetworksErrorMessagesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

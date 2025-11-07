@@ -15,7 +15,7 @@ func (p *jsiiProxy_PolicyInfoMatchColumnsList) validateGetParameters(index *floa
 	return nil
 }
 
-func (p *jsiiProxy_PolicyInfoMatchColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyInfoMatchColumnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

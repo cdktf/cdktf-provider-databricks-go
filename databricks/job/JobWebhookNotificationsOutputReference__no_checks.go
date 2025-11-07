@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validatePutOnSuccessP
 	return nil
 }
 
-func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobWebhookNotificationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

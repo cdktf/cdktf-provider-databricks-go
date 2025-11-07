@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

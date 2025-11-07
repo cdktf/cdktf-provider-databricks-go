@@ -43,7 +43,7 @@ func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) validatePutUsingParameter
 	return nil
 }
 
-func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyInfoRowFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

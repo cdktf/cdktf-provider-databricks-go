@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsList) vali
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (m *jsiiProxy_ModelServingRateLimitsList) validateGetParameters(index *floa
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingRateLimitsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingRateLimitsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

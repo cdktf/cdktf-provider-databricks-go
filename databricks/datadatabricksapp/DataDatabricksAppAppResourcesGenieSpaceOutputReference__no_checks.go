@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksAppAppResourcesGenieSpaceOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppResourcesGenieSpaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksAppAppResourcesGenieSpaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppResourcesGenieSpaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksAppAppResourcesGenieSpaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

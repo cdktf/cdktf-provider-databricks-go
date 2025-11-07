@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskConditionTaskOutputReference) validateG
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskConditionTaskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskConditionTaskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskConditionTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskConditionTaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

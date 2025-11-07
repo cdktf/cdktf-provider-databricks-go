@@ -43,11 +43,11 @@ func (m *jsiiProxy_ModelServingAiGatewayUsageTrackingConfigOutputReference) vali
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingAiGatewayUsageTrackingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelServingAiGatewayUsageTrackingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingAiGatewayUsageTrackingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingAiGatewayUsageTrackingConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

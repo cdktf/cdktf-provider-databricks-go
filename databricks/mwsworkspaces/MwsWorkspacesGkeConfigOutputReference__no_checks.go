@@ -43,11 +43,11 @@ func (m *jsiiProxy_MwsWorkspacesGkeConfigOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (m *jsiiProxy_MwsWorkspacesGkeConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MwsWorkspacesGkeConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MwsWorkspacesGkeConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MwsWorkspacesGkeConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

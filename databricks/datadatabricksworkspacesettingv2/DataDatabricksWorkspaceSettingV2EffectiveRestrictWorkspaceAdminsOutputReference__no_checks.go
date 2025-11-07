@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectiveRestrictWorkspaceAdm
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectiveRestrictWorkspaceAdminsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectiveRestrictWorkspaceAdminsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectiveRestrictWorkspaceAdminsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksWorkspaceSettingV2EffectiveRestrictWorkspaceAdminsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

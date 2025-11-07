@@ -43,7 +43,7 @@ func (a *jsiiProxy_AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutpu
 	return nil
 }
 
-func (a *jsiiProxy_AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutpu
 	return nil
 }
 
-func (a *jsiiProxy_AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

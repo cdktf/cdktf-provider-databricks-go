@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatabricksPolicyInfoRowFilterOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksPolicyInfoRowFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksPolicyInfoRowFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataDatabricksPolicyInfoRowFilterOutputReference) validatePut
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksPolicyInfoRowFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksPolicyInfoRowFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

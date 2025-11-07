@@ -72,7 +72,7 @@ type DataDatabricksJobJobSettingsSettingsTriggerOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutFileArrival(value *DataDatabricksJobJobSettingsSettingsTriggerFileArrival)
 	PutPeriodic(value *DataDatabricksJobJobSettingsSettingsTriggerPeriodic)
 	PutTableUpdate(value *DataDatabricksJobJobSettingsSettingsTriggerTableUpdate)
@@ -82,7 +82,7 @@ type DataDatabricksJobJobSettingsSettingsTriggerOutputReference interface {
 	ResetTableUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -509,8 +509,8 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) I
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -518,7 +518,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) I
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -590,8 +590,8 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) R
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -599,7 +599,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsTriggerOutputReference) R
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

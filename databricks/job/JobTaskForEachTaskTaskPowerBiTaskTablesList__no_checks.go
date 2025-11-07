@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskPowerBiTaskTablesList) validateGetParam
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskPowerBiTaskTablesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskPowerBiTaskTablesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

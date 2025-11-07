@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoAwsIamRol
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoAwsIamRoleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoAwsIamRoleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoAwsIamRoleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksStorageCredentialStorageCredentialInfoAwsIamRoleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

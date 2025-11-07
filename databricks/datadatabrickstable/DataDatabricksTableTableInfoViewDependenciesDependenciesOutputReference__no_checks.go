@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksTableTableInfoViewDependenciesDependenciesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

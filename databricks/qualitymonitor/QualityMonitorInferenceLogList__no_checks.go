@@ -15,7 +15,7 @@ func (q *jsiiProxy_QualityMonitorInferenceLogList) validateGetParameters(index *
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorInferenceLogList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QualityMonitorInferenceLogList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

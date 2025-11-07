@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsSseEncryptionDet
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsSseEncryptionDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsSseEncryptionDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsSseEncryptionDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksTableTableInfoEncryptionDetailsSseEncryptionDetailsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

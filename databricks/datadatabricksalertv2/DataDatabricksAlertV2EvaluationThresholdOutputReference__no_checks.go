@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatabricksAlertV2EvaluationThresholdOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAlertV2EvaluationThresholdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksAlertV2EvaluationThresholdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataDatabricksAlertV2EvaluationThresholdOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAlertV2EvaluationThresholdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksAlertV2EvaluationThresholdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

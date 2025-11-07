@@ -43,7 +43,7 @@ func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) validateG
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) validateP
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VectorSearchIndexDeltaSyncIndexSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

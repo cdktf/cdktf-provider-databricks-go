@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthOutputReference) validatePutF
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksSqlWarehouseHealthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

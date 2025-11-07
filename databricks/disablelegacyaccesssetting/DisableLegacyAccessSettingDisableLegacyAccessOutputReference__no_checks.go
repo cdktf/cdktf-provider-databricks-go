@@ -43,11 +43,11 @@ func (d *jsiiProxy_DisableLegacyAccessSettingDisableLegacyAccessOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DisableLegacyAccessSettingDisableLegacyAccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DisableLegacyAccessSettingDisableLegacyAccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DisableLegacyAccessSettingDisableLegacyAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DisableLegacyAccessSettingDisableLegacyAccessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

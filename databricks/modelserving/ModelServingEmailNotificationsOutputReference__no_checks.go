@@ -43,11 +43,11 @@ func (m *jsiiProxy_ModelServingEmailNotificationsOutputReference) validateGetStr
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingEmailNotificationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelServingEmailNotificationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingEmailNotificationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingEmailNotificationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

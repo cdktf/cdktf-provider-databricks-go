@@ -15,7 +15,7 @@ func (s *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList) validateGetParameters
 	return nil
 }
 
-func (s *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlPermissionsPrivilegeAssignmentsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

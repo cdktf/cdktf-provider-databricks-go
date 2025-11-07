@@ -43,7 +43,7 @@ func (o *jsiiProxy_OnlineTableSpecOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (o *jsiiProxy_OnlineTableSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OnlineTableSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (o *jsiiProxy_OnlineTableSpecOutputReference) validatePutRunTriggeredParame
 	return nil
 }
 
-func (o *jsiiProxy_OnlineTableSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnlineTableSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

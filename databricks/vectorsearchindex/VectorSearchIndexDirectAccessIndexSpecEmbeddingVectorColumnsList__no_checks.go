@@ -15,7 +15,7 @@ func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsL
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

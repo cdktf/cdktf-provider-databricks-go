@@ -43,7 +43,7 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigOutputRef
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigOutputRef
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingProvisionedThroughputConfigTrafficConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

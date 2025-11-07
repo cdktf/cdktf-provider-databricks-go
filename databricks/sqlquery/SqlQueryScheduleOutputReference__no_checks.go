@@ -43,7 +43,7 @@ func (s *jsiiProxy_SqlQueryScheduleOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (s *jsiiProxy_SqlQueryScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlQueryScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (s *jsiiProxy_SqlQueryScheduleOutputReference) validatePutWeeklyParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SqlQueryScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlQueryScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

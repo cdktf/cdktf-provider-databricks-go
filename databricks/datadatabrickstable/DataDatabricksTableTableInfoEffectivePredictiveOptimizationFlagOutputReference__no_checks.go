@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoEffectivePredictiveOptimizationFl
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoEffectivePredictiveOptimizationFlagOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksTableTableInfoEffectivePredictiveOptimizationFlagOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoEffectivePredictiveOptimizationFlagOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksTableTableInfoEffectivePredictiveOptimizationFlagOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (m *jsiiProxy_ModelServingConfigAOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingConfigAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelServingConfigAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (m *jsiiProxy_ModelServingConfigAOutputReference) validatePutTrafficConfigP
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingConfigAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

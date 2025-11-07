@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobNewClusterClusterLogConfOutputReference) validateGetString
 	return nil
 }
 
-func (j *jsiiProxy_JobNewClusterClusterLogConfOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobNewClusterClusterLogConfOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (j *jsiiProxy_JobNewClusterClusterLogConfOutputReference) validatePutVolume
 	return nil
 }
 
-func (j *jsiiProxy_JobNewClusterClusterLogConfOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobNewClusterClusterLogConfOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

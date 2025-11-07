@@ -85,17 +85,17 @@ func (j *jsiiProxy_JobTaskWebhookNotificationsOnStreamingBacklogExceededOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (j *jsiiProxy_JobTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (j *jsiiProxy_JobTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

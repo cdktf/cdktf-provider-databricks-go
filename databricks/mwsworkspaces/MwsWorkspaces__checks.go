@@ -535,6 +535,14 @@ func (j *jsiiProxy_MwsWorkspaces) validateSetManagedServicesCustomerManagedKeyId
 	return nil
 }
 
+func (j *jsiiProxy_MwsWorkspaces) validateSetNetworkConnectivityConfigIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MwsWorkspaces) validateSetNetworkIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobWebhookNotificationsOnStartList) validateGetParameters(ind
 	return nil
 }
 
-func (j *jsiiProxy_JobWebhookNotificationsOnStartList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobWebhookNotificationsOnStartList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

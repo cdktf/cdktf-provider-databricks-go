@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksDatabaseInstanceCustomTagsList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksDatabaseInstanceCustomTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksDatabaseInstanceCustomTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

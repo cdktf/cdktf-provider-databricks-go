@@ -43,11 +43,11 @@ func (q *jsiiProxy_QualityMonitorCustomMetricsOutputReference) validateGetString
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorCustomMetricsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QualityMonitorCustomMetricsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorCustomMetricsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QualityMonitorCustomMetricsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

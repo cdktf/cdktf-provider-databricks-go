@@ -43,11 +43,11 @@ func (s *jsiiProxy_SqlQueryParameterDateOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (s *jsiiProxy_SqlQueryParameterDateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlQueryParameterDateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SqlQueryParameterDateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlQueryParameterDateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

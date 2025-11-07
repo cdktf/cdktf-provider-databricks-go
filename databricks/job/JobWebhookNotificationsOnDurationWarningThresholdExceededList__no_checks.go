@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobWebhookNotificationsOnDurationWarningThresholdExceededList
 	return nil
 }
 
-func (j *jsiiProxy_JobWebhookNotificationsOnDurationWarningThresholdExceededList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobWebhookNotificationsOnDurationWarningThresholdExceededList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

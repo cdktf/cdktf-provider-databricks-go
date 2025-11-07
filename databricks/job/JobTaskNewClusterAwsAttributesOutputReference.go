@@ -93,7 +93,7 @@ type JobTaskNewClusterAwsAttributesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAvailability()
 	ResetEbsVolumeCount()
 	ResetEbsVolumeIops()
@@ -106,7 +106,7 @@ type JobTaskNewClusterAwsAttributesOutputReference interface {
 	ResetZoneId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -752,8 +752,8 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) InterpolationA
 	return returns
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -761,7 +761,7 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) InterpolationF
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -848,8 +848,8 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) ResetZoneId() 
 	)
 }
 
-func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := j.validateResolveParameters(_context); err != nil {
+func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -857,7 +857,7 @@ func (j *jsiiProxy_JobTaskNewClusterAwsAttributesOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -68,12 +68,12 @@ type DataDatabricksJobJobSettingsSettingsNewClusterDockerImageOutputReference in
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutBasicAuth(value *DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth)
 	ResetBasicAuth()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -460,8 +460,8 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterDockerImageOutp
 	return returns
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterDockerImageOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterDockerImageOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -469,7 +469,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterDockerImageOutp
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -495,8 +495,8 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterDockerImageOutp
 	)
 }
 
-func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterDockerImageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterDockerImageOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -504,7 +504,7 @@ func (d *jsiiProxy_DataDatabricksJobJobSettingsSettingsNewClusterDockerImageOutp
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

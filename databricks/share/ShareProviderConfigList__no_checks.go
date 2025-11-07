@@ -15,7 +15,7 @@ func (s *jsiiProxy_ShareProviderConfigList) validateGetParameters(index *float64
 	return nil
 }
 
-func (s *jsiiProxy_ShareProviderConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ShareProviderConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

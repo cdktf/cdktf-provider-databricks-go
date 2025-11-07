@@ -43,11 +43,11 @@ func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) validateGetString
 	return nil
 }
 
-func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RecipientIpAccessListStructOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

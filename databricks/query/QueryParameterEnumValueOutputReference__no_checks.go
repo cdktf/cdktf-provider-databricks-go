@@ -43,7 +43,7 @@ func (q *jsiiProxy_QueryParameterEnumValueOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (q *jsiiProxy_QueryParameterEnumValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QueryParameterEnumValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (q *jsiiProxy_QueryParameterEnumValueOutputReference) validatePutMultiValue
 	return nil
 }
 
-func (q *jsiiProxy_QueryParameterEnumValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QueryParameterEnumValueOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

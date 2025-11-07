@@ -43,11 +43,11 @@ func (l *jsiiProxy_LakehouseMonitorCustomMetricsOutputReference) validateGetStri
 	return nil
 }
 
-func (l *jsiiProxy_LakehouseMonitorCustomMetricsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LakehouseMonitorCustomMetricsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LakehouseMonitorCustomMetricsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LakehouseMonitorCustomMetricsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

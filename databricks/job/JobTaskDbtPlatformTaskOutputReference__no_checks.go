@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobTaskDbtPlatformTaskOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtPlatformTaskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTaskDbtPlatformTaskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDbtPlatformTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskDbtPlatformTaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

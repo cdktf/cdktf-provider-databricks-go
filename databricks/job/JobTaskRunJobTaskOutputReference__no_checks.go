@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validatePutPipelineParamsPa
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskRunJobTaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

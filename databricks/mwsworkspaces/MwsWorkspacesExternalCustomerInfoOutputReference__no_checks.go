@@ -43,11 +43,11 @@ func (m *jsiiProxy_MwsWorkspacesExternalCustomerInfoOutputReference) validateGet
 	return nil
 }
 
-func (m *jsiiProxy_MwsWorkspacesExternalCustomerInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MwsWorkspacesExternalCustomerInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MwsWorkspacesExternalCustomerInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MwsWorkspacesExternalCustomerInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

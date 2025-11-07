@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksBudgetPoliciesSortSpecOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksBudgetPoliciesSortSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksBudgetPoliciesSortSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksBudgetPoliciesSortSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksBudgetPoliciesSortSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

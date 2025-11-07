@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOptionsOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksTableTableInfoSecurableKindManifestOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

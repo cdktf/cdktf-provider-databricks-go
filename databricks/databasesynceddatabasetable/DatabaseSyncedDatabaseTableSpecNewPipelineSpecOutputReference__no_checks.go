@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

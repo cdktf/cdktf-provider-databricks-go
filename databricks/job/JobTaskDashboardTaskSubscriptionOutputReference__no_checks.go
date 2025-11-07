@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobTaskDashboardTaskSubscriptionOutputReference) validateGetS
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDashboardTaskSubscriptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTaskDashboardTaskSubscriptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (j *jsiiProxy_JobTaskDashboardTaskSubscriptionOutputReference) validatePutS
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDashboardTaskSubscriptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskDashboardTaskSubscriptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

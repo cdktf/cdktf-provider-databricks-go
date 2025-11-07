@@ -15,7 +15,7 @@ func (t *jsiiProxy_TagPolicyValuesList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (t *jsiiProxy_TagPolicyValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TagPolicyValuesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

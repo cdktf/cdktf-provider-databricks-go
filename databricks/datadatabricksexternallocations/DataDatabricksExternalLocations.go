@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/external_locations databricks_external_locations}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/external_locations databricks_external_locations}.
 type DataDatabricksExternalLocations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -313,7 +313,7 @@ func (j *jsiiProxy_DataDatabricksExternalLocations) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/external_locations databricks_external_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/external_locations databricks_external_locations} Data Source.
 func NewDataDatabricksExternalLocations(scope constructs.Construct, id *string, config *DataDatabricksExternalLocationsConfig) DataDatabricksExternalLocations {
 	_init_.Initialize()
 
@@ -331,7 +331,7 @@ func NewDataDatabricksExternalLocations(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/external_locations databricks_external_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/external_locations databricks_external_locations} Data Source.
 func NewDataDatabricksExternalLocations_Override(d DataDatabricksExternalLocations, scope constructs.Construct, id *string, config *DataDatabricksExternalLocationsConfig) {
 	_init_.Initialize()
 

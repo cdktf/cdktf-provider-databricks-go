@@ -183,6 +183,10 @@ func (j *jsiiProxy_MwsWorkspaces) validateSetManagedServicesCustomerManagedKeyId
 	return nil
 }
 
+func (j *jsiiProxy_MwsWorkspaces) validateSetNetworkConnectivityConfigIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwsWorkspaces) validateSetNetworkIdParameters(val *string) error {
 	return nil
 }

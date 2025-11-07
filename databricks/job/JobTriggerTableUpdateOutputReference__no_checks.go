@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobTriggerTableUpdateOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (j *jsiiProxy_JobTriggerTableUpdateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTriggerTableUpdateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobTriggerTableUpdateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTriggerTableUpdateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

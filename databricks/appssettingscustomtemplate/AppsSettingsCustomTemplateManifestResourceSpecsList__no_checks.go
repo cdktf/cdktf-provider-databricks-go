@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsList) validate
 	return nil
 }
 
-func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsSettingsCustomTemplateManifestResourceSpecsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

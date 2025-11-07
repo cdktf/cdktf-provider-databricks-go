@@ -43,7 +43,7 @@ func (s *jsiiProxy_SqlEndpointTagsOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (s *jsiiProxy_SqlEndpointTagsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlEndpointTagsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SqlEndpointTagsOutputReference) validatePutCustomTagsParamete
 	return nil
 }
 
-func (s *jsiiProxy_SqlEndpointTagsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlEndpointTagsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

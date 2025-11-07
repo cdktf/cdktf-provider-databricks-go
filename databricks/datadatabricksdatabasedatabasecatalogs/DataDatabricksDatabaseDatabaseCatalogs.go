@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/database_database_catalogs databricks_database_database_catalogs}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/database_database_catalogs databricks_database_database_catalogs}.
 type DataDatabricksDatabaseDatabaseCatalogs interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataDatabricksDatabaseDatabaseCatalogs) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/database_database_catalogs databricks_database_database_catalogs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/database_database_catalogs databricks_database_database_catalogs} Data Source.
 func NewDataDatabricksDatabaseDatabaseCatalogs(scope constructs.Construct, id *string, config *DataDatabricksDatabaseDatabaseCatalogsConfig) DataDatabricksDatabaseDatabaseCatalogs {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataDatabricksDatabaseDatabaseCatalogs(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/database_database_catalogs databricks_database_database_catalogs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/database_database_catalogs databricks_database_database_catalogs} Data Source.
 func NewDataDatabricksDatabaseDatabaseCatalogs_Override(d DataDatabricksDatabaseDatabaseCatalogs, scope constructs.Construct, id *string, config *DataDatabricksDatabaseDatabaseCatalogsConfig) {
 	_init_.Initialize()
 

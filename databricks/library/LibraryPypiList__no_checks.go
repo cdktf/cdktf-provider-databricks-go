@@ -15,7 +15,7 @@ func (l *jsiiProxy_LibraryPypiList) validateGetParameters(index *float64) error 
 	return nil
 }
 
-func (l *jsiiProxy_LibraryPypiList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LibraryPypiList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

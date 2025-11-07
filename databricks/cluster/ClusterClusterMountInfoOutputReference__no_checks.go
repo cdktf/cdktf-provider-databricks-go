@@ -43,7 +43,7 @@ func (c *jsiiProxy_ClusterClusterMountInfoOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (c *jsiiProxy_ClusterClusterMountInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterClusterMountInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ClusterClusterMountInfoOutputReference) validatePutNetworkFil
 	return nil
 }
 
-func (c *jsiiProxy_ClusterClusterMountInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterClusterMountInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

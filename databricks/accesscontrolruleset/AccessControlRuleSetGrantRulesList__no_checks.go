@@ -15,7 +15,7 @@ func (a *jsiiProxy_AccessControlRuleSetGrantRulesList) validateGetParameters(ind
 	return nil
 }
 
-func (a *jsiiProxy_AccessControlRuleSetGrantRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessControlRuleSetGrantRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

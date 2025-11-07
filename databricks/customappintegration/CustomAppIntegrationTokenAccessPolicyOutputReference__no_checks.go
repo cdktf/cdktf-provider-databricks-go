@@ -43,11 +43,11 @@ func (c *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomAppIntegrationTokenAccessPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

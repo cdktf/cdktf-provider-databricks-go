@@ -15,7 +15,7 @@ func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestina
 	return nil
 }
 
-func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

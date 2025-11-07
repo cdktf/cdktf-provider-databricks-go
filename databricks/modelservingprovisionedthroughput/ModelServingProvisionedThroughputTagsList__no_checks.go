@@ -15,7 +15,7 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputTagsList) validateGetParamet
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingProvisionedThroughputTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingProvisionedThroughputTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

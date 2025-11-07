@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClusterClusterLogConfVolumesOutputReference) validateGetStrin
 	return nil
 }
 
-func (c *jsiiProxy_ClusterClusterLogConfVolumesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterClusterLogConfVolumesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClusterClusterLogConfVolumesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterClusterLogConfVolumesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

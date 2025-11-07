@@ -59,6 +59,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "debugHeadersInput", GoGetter: "DebugHeadersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "debugTruncateBytes", GoGetter: "DebugTruncateBytes"},
 			_jsii_.MemberProperty{JsiiProperty: "debugTruncateBytesInput", GoGetter: "DebugTruncateBytesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "experimentalIsUnifiedHost", GoGetter: "ExperimentalIsUnifiedHost"},
+			_jsii_.MemberProperty{JsiiProperty: "experimentalIsUnifiedHostInput", GoGetter: "ExperimentalIsUnifiedHostInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
 			_jsii_.MemberProperty{JsiiProperty: "googleCredentials", GoGetter: "GoogleCredentials"},
@@ -106,6 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabricksIdTokenFilepath", GoMethod: "ResetDatabricksIdTokenFilepath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDebugHeaders", GoMethod: "ResetDebugHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDebugTruncateBytes", GoMethod: "ResetDebugTruncateBytes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExperimentalIsUnifiedHost", GoMethod: "ResetExperimentalIsUnifiedHost"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGoogleCredentials", GoMethod: "ResetGoogleCredentials"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGoogleServiceAccount", GoMethod: "ResetGoogleServiceAccount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHost", GoMethod: "ResetHost"},
@@ -123,6 +126,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetToken", GoMethod: "ResetToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUsername", GoMethod: "ResetUsername"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWarehouseId", GoMethod: "ResetWarehouseId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceId", GoMethod: "ResetWorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "retryTimeoutSeconds", GoGetter: "RetryTimeoutSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "retryTimeoutSecondsInput", GoGetter: "RetryTimeoutSecondsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serverlessComputeId", GoGetter: "ServerlessComputeId"},
@@ -144,6 +148,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "warehouseId", GoGetter: "WarehouseId"},
 			_jsii_.MemberProperty{JsiiProperty: "warehouseIdInput", GoGetter: "WarehouseIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabricksProvider{}

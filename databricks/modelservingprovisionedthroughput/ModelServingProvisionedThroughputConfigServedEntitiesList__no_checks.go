@@ -15,7 +15,7 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesList) va
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingProvisionedThroughputConfigServedEntitiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

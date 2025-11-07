@@ -85,9 +85,9 @@ func (c *jsiiProxy_ClusterInitScriptsOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (c *jsiiProxy_ClusterInitScriptsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_ClusterInitScriptsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -170,9 +170,9 @@ func (c *jsiiProxy_ClusterInitScriptsOutputReference) validatePutWorkspaceParame
 	return nil
 }
 
-func (c *jsiiProxy_ClusterInitScriptsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_ClusterInitScriptsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

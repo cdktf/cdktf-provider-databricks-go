@@ -69,7 +69,7 @@ type PipelineClusterClusterLogConfOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutDbfs(value *PipelineClusterClusterLogConfDbfs)
 	PutS3(value *PipelineClusterClusterLogConfS3)
 	PutVolumes(value *PipelineClusterClusterLogConfVolumes)
@@ -78,7 +78,7 @@ type PipelineClusterClusterLogConfOutputReference interface {
 	ResetVolumes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -474,8 +474,8 @@ func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) InterpolationAs
 	return returns
 }
 
-func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -483,7 +483,7 @@ func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) ResetVolumes() 
 	)
 }
 
-func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (p *jsiiProxy_PipelineClusterClusterLogConfOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

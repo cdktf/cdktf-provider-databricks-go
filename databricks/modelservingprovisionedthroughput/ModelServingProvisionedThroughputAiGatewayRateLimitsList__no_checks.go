@@ -15,7 +15,7 @@ func (m *jsiiProxy_ModelServingProvisionedThroughputAiGatewayRateLimitsList) val
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingProvisionedThroughputAiGatewayRateLimitsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingProvisionedThroughputAiGatewayRateLimitsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

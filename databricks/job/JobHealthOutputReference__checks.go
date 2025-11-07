@@ -85,9 +85,9 @@ func (j *jsiiProxy_JobHealthOutputReference) validateGetStringMapAttributeParame
 	return nil
 }
 
-func (j *jsiiProxy_JobHealthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (j *jsiiProxy_JobHealthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -124,9 +124,9 @@ func (j *jsiiProxy_JobHealthOutputReference) validatePutRulesParameters(value in
 	return nil
 }
 
-func (j *jsiiProxy_JobHealthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (j *jsiiProxy_JobHealthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

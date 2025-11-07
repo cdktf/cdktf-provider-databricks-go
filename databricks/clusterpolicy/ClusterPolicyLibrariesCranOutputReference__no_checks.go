@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClusterPolicyLibrariesCranOutputReference) validateGetStringM
 	return nil
 }
 
-func (c *jsiiProxy_ClusterPolicyLibrariesCranOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterPolicyLibrariesCranOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClusterPolicyLibrariesCranOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterPolicyLibrariesCranOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

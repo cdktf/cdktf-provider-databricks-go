@@ -43,7 +43,7 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference)
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference)
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingConfigServedEntitiesExternalModelOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

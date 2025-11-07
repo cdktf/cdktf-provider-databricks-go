@@ -43,11 +43,11 @@ func (n *jsiiProxy_NotificationDestinationConfigSlackOutputReference) validateGe
 	return nil
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigSlackOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotificationDestinationConfigSlackOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NotificationDestinationConfigSlackOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationDestinationConfigSlackOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

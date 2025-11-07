@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validatePutResourcesPara
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksAppAppOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (s *jsiiProxy_ShareObjectPartitionOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (s *jsiiProxy_ShareObjectPartitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ShareObjectPartitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_ShareObjectPartitionOutputReference) validatePutValueParamete
 	return nil
 }
 
-func (s *jsiiProxy_ShareObjectPartitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ShareObjectPartitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

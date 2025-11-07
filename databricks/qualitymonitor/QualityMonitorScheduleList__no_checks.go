@@ -15,7 +15,7 @@ func (q *jsiiProxy_QualityMonitorScheduleList) validateGetParameters(index *floa
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QualityMonitorScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

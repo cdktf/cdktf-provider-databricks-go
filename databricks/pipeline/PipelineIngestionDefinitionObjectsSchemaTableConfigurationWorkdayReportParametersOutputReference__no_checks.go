@@ -43,7 +43,7 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaTableConfigurationWor
 	return nil
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaTableConfigurationWor
 	return nil
 }
 
-func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

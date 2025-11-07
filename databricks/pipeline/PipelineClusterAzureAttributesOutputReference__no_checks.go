@@ -43,7 +43,7 @@ func (p *jsiiProxy_PipelineClusterAzureAttributesOutputReference) validateGetStr
 	return nil
 }
 
-func (p *jsiiProxy_PipelineClusterAzureAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipelineClusterAzureAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PipelineClusterAzureAttributesOutputReference) validatePutLog
 	return nil
 }
 
-func (p *jsiiProxy_PipelineClusterAzureAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipelineClusterAzureAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

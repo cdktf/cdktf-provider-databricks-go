@@ -43,11 +43,11 @@ func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowTumblingOutputReference) v
 	return nil
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowTumblingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowTumblingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowTumblingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FeatureEngineeringFeatureTimeWindowTumblingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

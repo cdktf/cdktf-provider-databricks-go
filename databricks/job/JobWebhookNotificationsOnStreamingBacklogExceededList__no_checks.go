@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobWebhookNotificationsOnStreamingBacklogExceededList) valida
 	return nil
 }
 
-func (j *jsiiProxy_JobWebhookNotificationsOnStreamingBacklogExceededList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobWebhookNotificationsOnStreamingBacklogExceededList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

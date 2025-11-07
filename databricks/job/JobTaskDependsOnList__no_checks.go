@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobTaskDependsOnList) validateGetParameters(index *float64) e
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskDependsOnList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskDependsOnList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

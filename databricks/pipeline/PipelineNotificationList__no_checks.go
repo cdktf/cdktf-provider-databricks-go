@@ -15,7 +15,7 @@ func (p *jsiiProxy_PipelineNotificationList) validateGetParameters(index *float6
 	return nil
 }
 
-func (p *jsiiProxy_PipelineNotificationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipelineNotificationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

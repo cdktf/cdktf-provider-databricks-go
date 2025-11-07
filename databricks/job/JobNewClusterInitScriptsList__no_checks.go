@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobNewClusterInitScriptsList) validateGetParameters(index *fl
 	return nil
 }
 
-func (j *jsiiProxy_JobNewClusterInitScriptsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobNewClusterInitScriptsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

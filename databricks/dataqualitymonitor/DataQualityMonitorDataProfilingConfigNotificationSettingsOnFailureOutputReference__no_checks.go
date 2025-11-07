@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOnFa
 	return nil
 }
 
-func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

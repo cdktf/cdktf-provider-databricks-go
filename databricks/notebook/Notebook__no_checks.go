@@ -75,6 +75,10 @@ func (n *jsiiProxy_Notebook) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (n *jsiiProxy_Notebook) validatePutProviderConfigParameters(value *NotebookProviderConfig) error {
+	return nil
+}
+
 func validateNotebook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

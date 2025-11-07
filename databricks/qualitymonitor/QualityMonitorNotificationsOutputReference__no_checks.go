@@ -43,7 +43,7 @@ func (q *jsiiProxy_QualityMonitorNotificationsOutputReference) validateGetString
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorNotificationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QualityMonitorNotificationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (q *jsiiProxy_QualityMonitorNotificationsOutputReference) validatePutOnNewC
 	return nil
 }
 
-func (q *jsiiProxy_QualityMonitorNotificationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QualityMonitorNotificationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

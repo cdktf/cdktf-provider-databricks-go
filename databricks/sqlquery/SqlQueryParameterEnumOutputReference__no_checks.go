@@ -43,7 +43,7 @@ func (s *jsiiProxy_SqlQueryParameterEnumOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (s *jsiiProxy_SqlQueryParameterEnumOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlQueryParameterEnumOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SqlQueryParameterEnumOutputReference) validatePutMultiplePara
 	return nil
 }
 
-func (s *jsiiProxy_SqlQueryParameterEnumOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlQueryParameterEnumOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatabricksShareObjectList) validateGetParameters(index *f
 	return nil
 }
 
-func (d *jsiiProxy_DataDatabricksShareObjectList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatabricksShareObjectList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

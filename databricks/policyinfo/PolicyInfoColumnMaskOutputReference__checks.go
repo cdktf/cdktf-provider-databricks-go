@@ -85,9 +85,9 @@ func (p *jsiiProxy_PolicyInfoColumnMaskOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (p *jsiiProxy_PolicyInfoColumnMaskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (p *jsiiProxy_PolicyInfoColumnMaskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -124,9 +124,9 @@ func (p *jsiiProxy_PolicyInfoColumnMaskOutputReference) validatePutUsingParamete
 	return nil
 }
 
-func (p *jsiiProxy_PolicyInfoColumnMaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_PolicyInfoColumnMaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -5,9 +5,9 @@ package mwsworkspaces
 
 
 type MwsWorkspacesGkeConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/mws_workspaces#connectivity_type MwsWorkspaces#connectivity_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/mws_workspaces#connectivity_type MwsWorkspaces#connectivity_type}.
 	ConnectivityType *string `field:"optional" json:"connectivityType" yaml:"connectivityType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/mws_workspaces#master_ip_range MwsWorkspaces#master_ip_range}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/mws_workspaces#master_ip_range MwsWorkspaces#master_ip_range}.
 	MasterIpRange *string `field:"optional" json:"masterIpRange" yaml:"masterIpRange"`
 }
 

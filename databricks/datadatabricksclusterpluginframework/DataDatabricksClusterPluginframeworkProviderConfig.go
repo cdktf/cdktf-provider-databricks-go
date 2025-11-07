@@ -5,7 +5,7 @@ package datadatabricksclusterpluginframework
 
 
 type DataDatabricksClusterPluginframeworkProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/cluster_pluginframework#workspace_id DataDatabricksClusterPluginframework#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/cluster_pluginframework#workspace_id DataDatabricksClusterPluginframework#workspace_id}.
 	WorkspaceId *string `field:"required" json:"workspaceId" yaml:"workspaceId"`
 }
 

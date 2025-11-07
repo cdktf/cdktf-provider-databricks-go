@@ -43,11 +43,11 @@ func (m *jsiiProxy_ModelServingConfigAutoCaptureConfigOutputReference) validateG
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingConfigAutoCaptureConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelServingConfigAutoCaptureConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ModelServingConfigAutoCaptureConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelServingConfigAutoCaptureConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

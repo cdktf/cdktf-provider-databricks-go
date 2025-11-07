@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterMountInfoOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterMountInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterMountInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterMountInfoOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterMountInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskForEachTaskTaskNewClusterClusterMountInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

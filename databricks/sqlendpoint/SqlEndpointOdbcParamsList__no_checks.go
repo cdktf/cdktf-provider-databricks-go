@@ -15,7 +15,7 @@ func (s *jsiiProxy_SqlEndpointOdbcParamsList) validateGetParameters(index *float
 	return nil
 }
 
-func (s *jsiiProxy_SqlEndpointOdbcParamsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlEndpointOdbcParamsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
