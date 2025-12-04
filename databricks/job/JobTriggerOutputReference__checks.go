@@ -104,6 +104,17 @@ func (j *jsiiProxy_JobTriggerOutputReference) validatePutFileArrivalParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_JobTriggerOutputReference) validatePutModelParameters(value *JobTriggerModel) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobTriggerOutputReference) validatePutPeriodicParameters(value *JobTriggerPeriodic) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

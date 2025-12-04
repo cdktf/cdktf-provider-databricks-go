@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputR
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) validatePutKafkaSourceParameters(value *DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSource) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }

@@ -5,9 +5,9 @@ package featureengineeringfeature
 
 
 type FeatureEngineeringFeatureTimeWindowContinuous struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 	WindowDuration *string `field:"required" json:"windowDuration" yaml:"windowDuration"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
 	Offset *string `field:"optional" json:"offset" yaml:"offset"`
 }
 

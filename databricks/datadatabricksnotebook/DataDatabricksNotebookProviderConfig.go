@@ -5,7 +5,7 @@ package datadatabricksnotebook
 
 
 type DataDatabricksNotebookProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/notebook#workspace_id DataDatabricksNotebook#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/notebook#workspace_id DataDatabricksNotebook#workspace_id}.
 	WorkspaceId *string `field:"required" json:"workspaceId" yaml:"workspaceId"`
 }
 

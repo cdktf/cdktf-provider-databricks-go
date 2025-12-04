@@ -51,6 +51,10 @@ func (d *jsiiProxy_DatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference) validateSetBudgetPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

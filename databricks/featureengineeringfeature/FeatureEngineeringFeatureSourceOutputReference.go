@@ -34,6 +34,8 @@ type FeatureEngineeringFeatureSourceOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	KafkaSource() FeatureEngineeringFeatureSourceKafkaSourceOutputReference
+	KafkaSourceInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type FeatureEngineeringFeatureSourceOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutDeltaTableSource(value *FeatureEngineeringFeatureSourceDeltaTableSource)
+	PutKafkaSource(value *FeatureEngineeringFeatureSourceKafkaSource)
 	ResetDeltaTableSource()
+	ResetKafkaSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) InternalValue
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) KafkaSource() FeatureEngineeringFeatureSourceKafkaSourceOutputReference {
+	var returns FeatureEngineeringFeatureSourceKafkaSourceOutputReference
+	_jsii_.Get(
+		j,
+		"kafkaSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) KafkaSourceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kafkaSourceInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) PutDeltaTable
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) PutKafkaSource(value *FeatureEngineeringFeatureSourceKafkaSource) {
+	if err := f.validatePutKafkaSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putKafkaSource",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) ResetDeltaTableSource() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetDeltaTableSource",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) ResetKafkaSource() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetKafkaSource",
 		nil, // no parameters
 	)
 }

@@ -5,7 +5,7 @@ package datadatabricksfunctions
 
 
 type DataDatabricksFunctionsProviderConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/functions#workspace_id DataDatabricksFunctions#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/functions#workspace_id DataDatabricksFunctions#workspace_id}.
 	WorkspaceId *string `field:"required" json:"workspaceId" yaml:"workspaceId"`
 }
 

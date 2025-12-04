@@ -13,9 +13,9 @@ import (
 
 type FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference interface {
 	cdktf.ComplexObject
-	Capacity() *string
-	SetCapacity(val *string)
-	CapacityInput() *string
+	CatalogName() *string
+	SetCatalogName(val *string)
+	CatalogNameInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,19 +31,19 @@ type FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference inter
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	CreationTime() *string
-	Creator() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Name() *string
-	SetName(val *string)
-	NameInput() *string
-	ReadReplicaCount() *float64
-	SetReadReplicaCount(val *float64)
-	ReadReplicaCountInput() *float64
-	State() *string
+	OnlineStoreName() *string
+	SetOnlineStoreName(val *string)
+	OnlineStoreNameInput() *string
+	SchemaName() *string
+	SetSchemaName(val *string)
+	SchemaNameInput() *string
+	TableNamePrefix() *string
+	SetTableNamePrefix(val *string)
+	TableNamePrefixInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,7 +76,6 @@ type FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference inter
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
-	ResetReadReplicaCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -92,21 +91,21 @@ type jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputRefer
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) Capacity() *string {
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) CatalogName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"capacity",
+		"catalogName",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) CapacityInput() *string {
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) CatalogNameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"capacityInput",
+		"catalogNameInput",
 		&returns,
 	)
 	return returns
@@ -142,26 +141,6 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) CreationTime() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"creationTime",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) Creator() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"creator",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -182,51 +161,61 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) Name() *string {
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) OnlineStoreName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"name",
+		"onlineStoreName",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) NameInput() *string {
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) OnlineStoreNameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"nameInput",
+		"onlineStoreNameInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) ReadReplicaCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"readReplicaCount",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) ReadReplicaCountInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"readReplicaCountInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) State() *string {
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) SchemaName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"state",
+		"schemaName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) SchemaNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) TableNamePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableNamePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) TableNamePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableNamePrefixInput",
 		&returns,
 	)
 	return returns
@@ -280,13 +269,13 @@ func NewFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference_Ov
 	)
 }
 
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference)SetCapacity(val *string) {
-	if err := j.validateSetCapacityParameters(val); err != nil {
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference)SetCatalogName(val *string) {
+	if err := j.validateSetCatalogNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"capacity",
+		"catalogName",
 		val,
 	)
 }
@@ -324,24 +313,35 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference)SetOnlineStoreName(val *string) {
+	if err := j.validateSetOnlineStoreNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"name",
+		"onlineStoreName",
 		val,
 	)
 }
 
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference)SetReadReplicaCount(val *float64) {
-	if err := j.validateSetReadReplicaCountParameters(val); err != nil {
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference)SetSchemaName(val *string) {
+	if err := j.validateSetSchemaNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"readReplicaCount",
+		"schemaName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference)SetTableNamePrefix(val *string) {
+	if err := j.validateSetTableNamePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tableNamePrefix",
 		val,
 	)
 }
@@ -552,14 +552,6 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputR
 	)
 
 	return returns
-}
-
-func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) ResetReadReplicaCount() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetReadReplicaCount",
-		nil, // no parameters
-	)
 }
 
 func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {

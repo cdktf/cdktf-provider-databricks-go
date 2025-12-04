@@ -22,9 +22,9 @@ type RfaAccessRequestDestinationsConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/rfa_access_request_destinations#destinations RfaAccessRequestDestinations#destinations}.
-	Destinations interface{} `field:"required" json:"destinations" yaml:"destinations"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/rfa_access_request_destinations#securable RfaAccessRequestDestinations#securable}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/rfa_access_request_destinations#securable RfaAccessRequestDestinations#securable}.
 	Securable *RfaAccessRequestDestinationsSecurable `field:"required" json:"securable" yaml:"securable"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/rfa_access_request_destinations#destinations RfaAccessRequestDestinations#destinations}.
+	Destinations interface{} `field:"optional" json:"destinations" yaml:"destinations"`
 }
 

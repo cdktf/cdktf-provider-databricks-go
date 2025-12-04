@@ -5,7 +5,7 @@ package datadatabrickstagpolicies
 
 
 type DataDatabricksTagPoliciesTagPoliciesValues struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/tag_policies#name DataDatabricksTagPolicies#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/tag_policies#name DataDatabricksTagPolicies#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

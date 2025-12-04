@@ -5,7 +5,7 @@ package datadatabricksmaterializedfeaturesfeaturetags
 
 
 type DataDatabricksMaterializedFeaturesFeatureTagsFeatureTags struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/materialized_features_feature_tags#key DataDatabricksMaterializedFeaturesFeatureTags#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/materialized_features_feature_tags#key DataDatabricksMaterializedFeaturesFeatureTags#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
 }
 

@@ -5,7 +5,7 @@ package dataqualitymonitor
 
 
 type DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/data_quality_monitor#email_addresses DataQualityMonitor#email_addresses}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/data_quality_monitor#email_addresses DataQualityMonitor#email_addresses}.
 	EmailAddresses *[]*string `field:"optional" json:"emailAddresses" yaml:"emailAddresses"`
 }
 

@@ -13,9 +13,9 @@ import (
 
 type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference interface {
 	cdktf.ComplexObject
-	Capacity() *string
-	SetCapacity(val *string)
-	CapacityInput() *string
+	CatalogName() *string
+	SetCatalogName(val *string)
+	CatalogNameInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,19 +31,19 @@ type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnl
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	CreationTime() *string
-	Creator() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfig
 	SetInternalValue(val *DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfig)
-	Name() *string
-	SetName(val *string)
-	NameInput() *string
-	ReadReplicaCount() *float64
-	SetReadReplicaCount(val *float64)
-	ReadReplicaCountInput() *float64
-	State() *string
+	OnlineStoreName() *string
+	SetOnlineStoreName(val *string)
+	OnlineStoreNameInput() *string
+	SchemaName() *string
+	SetSchemaName(val *string)
+	SchemaNameInput() *string
+	TableNamePrefix() *string
+	SetTableNamePrefix(val *string)
+	TableNamePrefixInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,7 +76,6 @@ type DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnl
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
-	ResetReadReplicaCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -92,21 +91,21 @@ type jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedF
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) Capacity() *string {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) CatalogName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"capacity",
+		"catalogName",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) CapacityInput() *string {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) CatalogNameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"capacityInput",
+		"catalogNameInput",
 		&returns,
 	)
 	return returns
@@ -142,26 +141,6 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) CreationTime() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"creationTime",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) Creator() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"creator",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -182,51 +161,61 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) Name() *string {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) OnlineStoreName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"name",
+		"onlineStoreName",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) NameInput() *string {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) OnlineStoreNameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"nameInput",
+		"onlineStoreNameInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) ReadReplicaCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"readReplicaCount",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) ReadReplicaCountInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"readReplicaCountInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) State() *string {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) SchemaName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"state",
+		"schemaName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) SchemaNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) TableNamePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableNamePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) TableNamePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableNamePrefixInput",
 		&returns,
 	)
 	return returns
@@ -280,13 +269,13 @@ func NewDataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeatures
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference)SetCapacity(val *string) {
-	if err := j.validateSetCapacityParameters(val); err != nil {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference)SetCatalogName(val *string) {
+	if err := j.validateSetCatalogNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"capacity",
+		"catalogName",
 		val,
 	)
 }
@@ -324,24 +313,35 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference)SetOnlineStoreName(val *string) {
+	if err := j.validateSetOnlineStoreNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"name",
+		"onlineStoreName",
 		val,
 	)
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference)SetReadReplicaCount(val *float64) {
-	if err := j.validateSetReadReplicaCountParameters(val); err != nil {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference)SetSchemaName(val *string) {
+	if err := j.validateSetSchemaNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"readReplicaCount",
+		"schemaName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference)SetTableNamePrefix(val *string) {
+	if err := j.validateSetTableNamePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tableNamePrefix",
 		val,
 	)
 }
@@ -552,14 +552,6 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMateriali
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) ResetReadReplicaCount() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetReadReplicaCount",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {

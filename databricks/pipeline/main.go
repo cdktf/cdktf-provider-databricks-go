@@ -1295,6 +1295,45 @@ func init() {
 		"@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition",
 		reflect.TypeOf((*PipelineGatewayDefinition)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionConnectionParameters",
+		reflect.TypeOf((*PipelineGatewayDefinitionConnectionParameters)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionConnectionParametersOutputReference",
+		reflect.TypeOf((*PipelineGatewayDefinitionConnectionParametersOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceCatalog", GoMethod: "ResetSourceCatalog"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceCatalog", GoGetter: "SourceCatalog"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceCatalogInput", GoGetter: "SourceCatalogInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PipelineGatewayDefinitionConnectionParametersOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference",
 		reflect.TypeOf((*PipelineGatewayDefinitionOutputReference)(nil)).Elem(),
@@ -1306,6 +1345,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "connectionIdInput", GoGetter: "ConnectionIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionName", GoGetter: "ConnectionName"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionNameInput", GoGetter: "ConnectionNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionParameters", GoGetter: "ConnectionParameters"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionParametersInput", GoGetter: "ConnectionParametersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "gatewayStorageCatalog", GoGetter: "GatewayStorageCatalog"},
@@ -1326,7 +1367,9 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putConnectionParameters", GoMethod: "PutConnectionParameters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionId", GoMethod: "ResetConnectionId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectionParameters", GoMethod: "ResetConnectionParameters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGatewayStorageName", GoMethod: "ResetGatewayStorageName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -2237,6 +2280,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "ingestFromUcForeignCatalog", GoGetter: "IngestFromUcForeignCatalog"},
+			_jsii_.MemberProperty{JsiiProperty: "ingestFromUcForeignCatalogInput", GoGetter: "IngestFromUcForeignCatalogInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ingestionGatewayId", GoGetter: "IngestionGatewayId"},
 			_jsii_.MemberProperty{JsiiProperty: "ingestionGatewayIdInput", GoGetter: "IngestionGatewayIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
@@ -2250,6 +2295,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSourceConfigurations", GoMethod: "PutSourceConfigurations"},
 			_jsii_.MemberMethod{JsiiMethod: "putTableConfiguration", GoMethod: "PutTableConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionName", GoMethod: "ResetConnectionName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIngestFromUcForeignCatalog", GoMethod: "ResetIngestFromUcForeignCatalog"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIngestionGatewayId", GoMethod: "ResetIngestionGatewayId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetsuiteJarPath", GoMethod: "ResetNetsuiteJarPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetObjects", GoMethod: "ResetObjects"},

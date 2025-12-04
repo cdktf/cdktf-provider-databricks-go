@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStor
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetCapacityParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetCatalogNameParameters(val *string) error {
 	return nil
 }
 
@@ -67,11 +67,15 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStor
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetNameParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetOnlineStoreNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetReadReplicaCountParameters(val *float64) error {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetSchemaNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetTableNamePrefixParameters(val *string) error {
 	return nil
 }
 

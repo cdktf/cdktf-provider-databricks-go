@@ -5,11 +5,11 @@ package alertv2
 
 
 type AlertV2EvaluationSource struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/alert_v2#name AlertV2#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/alert_v2#name AlertV2#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}.
 	Aggregation *string `field:"optional" json:"aggregation" yaml:"aggregation"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/alert_v2#display AlertV2#display}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/alert_v2#display AlertV2#display}.
 	Display *string `field:"optional" json:"display" yaml:"display"`
 }
 

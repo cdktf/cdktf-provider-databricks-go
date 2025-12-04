@@ -5,7 +5,7 @@ package accountsettingv2
 
 
 type AccountSettingV2EffectivePersonalCompute struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

@@ -5,7 +5,7 @@ package disablelegacyfeaturessetting
 
 
 type DisableLegacyFeaturesSettingDisableLegacyFeatures struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/disable_legacy_features_setting#value DisableLegacyFeaturesSetting#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/disable_legacy_features_setting#value DisableLegacyFeaturesSetting#value}.
 	Value interface{} `field:"required" json:"value" yaml:"value"`
 }
 

@@ -34,6 +34,8 @@ type JobTriggerOutputReference interface {
 	Fqn() *string
 	InternalValue() *JobTrigger
 	SetInternalValue(val *JobTrigger)
+	Model() JobTriggerModelOutputReference
+	ModelInput() *JobTriggerModel
 	PauseStatus() *string
 	SetPauseStatus(val *string)
 	PauseStatusInput() *string
@@ -74,9 +76,11 @@ type JobTriggerOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutFileArrival(value *JobTriggerFileArrival)
+	PutModel(value *JobTriggerModel)
 	PutPeriodic(value *JobTriggerPeriodic)
 	PutTableUpdate(value *JobTriggerTableUpdate)
 	ResetFileArrival()
+	ResetModel()
 	ResetPauseStatus()
 	ResetPeriodic()
 	ResetTableUpdate()
@@ -160,6 +164,26 @@ func (j *jsiiProxy_JobTriggerOutputReference) InternalValue() *JobTrigger {
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) Model() JobTriggerModelOutputReference {
+	var returns JobTriggerModelOutputReference
+	_jsii_.Get(
+		j,
+		"model",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) ModelInput() *JobTriggerModel {
+	var returns *JobTriggerModel
+	_jsii_.Get(
+		j,
+		"modelInput",
 		&returns,
 	)
 	return returns
@@ -536,6 +560,17 @@ func (j *jsiiProxy_JobTriggerOutputReference) PutFileArrival(value *JobTriggerFi
 	)
 }
 
+func (j *jsiiProxy_JobTriggerOutputReference) PutModel(value *JobTriggerModel) {
+	if err := j.validatePutModelParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putModel",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobTriggerOutputReference) PutPeriodic(value *JobTriggerPeriodic) {
 	if err := j.validatePutPeriodicParameters(value); err != nil {
 		panic(err)
@@ -562,6 +597,14 @@ func (j *jsiiProxy_JobTriggerOutputReference) ResetFileArrival() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetFileArrival",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobTriggerOutputReference) ResetModel() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetModel",
 		nil, // no parameters
 	)
 }

@@ -5,11 +5,11 @@ package instancepool
 
 
 type InstancePoolGcpAttributes struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/instance_pool#gcp_availability InstancePool#gcp_availability}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/instance_pool#gcp_availability InstancePool#gcp_availability}.
 	GcpAvailability *string `field:"optional" json:"gcpAvailability" yaml:"gcpAvailability"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/instance_pool#local_ssd_count InstancePool#local_ssd_count}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/instance_pool#local_ssd_count InstancePool#local_ssd_count}.
 	LocalSsdCount *float64 `field:"optional" json:"localSsdCount" yaml:"localSsdCount"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/instance_pool#zone_id InstancePool#zone_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/instance_pool#zone_id InstancePool#zone_id}.
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

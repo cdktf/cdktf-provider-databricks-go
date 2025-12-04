@@ -114,6 +114,37 @@ func (d *jsiiProxy_DataDatabricksServicePrincipals) validateOverrideLogicalIdPar
 	return nil
 }
 
+func (d *jsiiProxy_DataDatabricksServicePrincipals) validatePutServicePrincipalsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataDatabricksServicePrincipalsServicePrincipals:
+		value := value.(*[]*DataDatabricksServicePrincipalsServicePrincipals)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataDatabricksServicePrincipalsServicePrincipals:
+		value_ := value.([]*DataDatabricksServicePrincipalsServicePrincipals)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDatabricksServicePrincipalsServicePrincipals; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func validateDataDatabricksServicePrincipals_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

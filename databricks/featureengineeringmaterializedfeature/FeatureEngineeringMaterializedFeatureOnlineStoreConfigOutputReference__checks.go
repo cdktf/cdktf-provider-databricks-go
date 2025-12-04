@@ -101,7 +101,7 @@ func (f *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetCapacityParameters(val *string) error {
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetCatalogNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -198,7 +198,7 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetNameParameters(val *string) error {
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetOnlineStoreNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -206,7 +206,15 @@ func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetReadReplicaCountParameters(val *float64) error {
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetSchemaNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetTableNamePrefixParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

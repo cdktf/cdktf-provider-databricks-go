@@ -39,6 +39,7 @@ type DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference interface {
 	Inputs() *[]*string
 	InternalValue() *DataDatabricksFeatureEngineeringFeaturesFeatures
 	SetInternalValue(val *DataDatabricksFeatureEngineeringFeaturesFeatures)
+	LineageContext() DataDatabricksFeatureEngineeringFeaturesFeaturesLineageContextOutputReference
 	Source() DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference
 	// Experimental.
 	TerraformAttribute() *string
@@ -193,6 +194,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReferen
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference) LineageContext() DataDatabricksFeatureEngineeringFeaturesFeaturesLineageContextOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeaturesFeaturesLineageContextOutputReference
+	_jsii_.Get(
+		j,
+		"lineageContext",
 		&returns,
 	)
 	return returns

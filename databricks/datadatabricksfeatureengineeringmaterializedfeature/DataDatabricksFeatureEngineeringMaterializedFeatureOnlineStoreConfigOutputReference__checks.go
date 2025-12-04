@@ -101,7 +101,7 @@ func (d *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStor
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetCapacityParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetCatalogNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStor
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetNameParameters(val *string) error {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetOnlineStoreNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -190,7 +190,15 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStor
 	return nil
 }
 
-func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetReadReplicaCountParameters(val *float64) error {
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetSchemaNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference) validateSetTableNamePrefixParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations}.
 type RfaAccessRequestDestinations interface {
 	cdktf.TerraformResource
 	AreAnyDestinationsHidden() cdktf.IResolvable
@@ -111,6 +111,7 @@ type RfaAccessRequestDestinations interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutDestinations(value interface{})
 	PutSecurable(value *RfaAccessRequestDestinationsSecurable)
+	ResetDestinations()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -343,7 +344,7 @@ func (j *jsiiProxy_RfaAccessRequestDestinations) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Resource.
 func NewRfaAccessRequestDestinations(scope constructs.Construct, id *string, config *RfaAccessRequestDestinationsConfig) RfaAccessRequestDestinations {
 	_init_.Initialize()
 
@@ -361,7 +362,7 @@ func NewRfaAccessRequestDestinations(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Resource.
 func NewRfaAccessRequestDestinations_Override(r RfaAccessRequestDestinations, scope constructs.Construct, id *string, config *RfaAccessRequestDestinationsConfig) {
 	_init_.Initialize()
 
@@ -812,6 +813,14 @@ func (r *jsiiProxy_RfaAccessRequestDestinations) PutSecurable(value *RfaAccessRe
 		r,
 		"putSecurable",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RfaAccessRequestDestinations) ResetDestinations() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDestinations",
+		nil, // no parameters
 	)
 }
 

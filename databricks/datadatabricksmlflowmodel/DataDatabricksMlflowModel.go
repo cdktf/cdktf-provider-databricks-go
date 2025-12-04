@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/mlflow_model databricks_mlflow_model}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/mlflow_model databricks_mlflow_model}.
 type DataDatabricksMlflowModel interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -419,7 +419,7 @@ func (j *jsiiProxy_DataDatabricksMlflowModel) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/mlflow_model databricks_mlflow_model} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/mlflow_model databricks_mlflow_model} Data Source.
 func NewDataDatabricksMlflowModel(scope constructs.Construct, id *string, config *DataDatabricksMlflowModelConfig) DataDatabricksMlflowModel {
 	_init_.Initialize()
 
@@ -437,7 +437,7 @@ func NewDataDatabricksMlflowModel(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/mlflow_model databricks_mlflow_model} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/mlflow_model databricks_mlflow_model} Data Source.
 func NewDataDatabricksMlflowModel_Override(d DataDatabricksMlflowModel, scope constructs.Construct, id *string, config *DataDatabricksMlflowModelConfig) {
 	_init_.Initialize()
 

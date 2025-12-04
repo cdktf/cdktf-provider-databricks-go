@@ -29,6 +29,8 @@ type PipelineGatewayDefinitionOutputReference interface {
 	ConnectionName() *string
 	SetConnectionName(val *string)
 	ConnectionNameInput() *string
+	ConnectionParameters() PipelineGatewayDefinitionConnectionParametersOutputReference
+	ConnectionParametersInput() *PipelineGatewayDefinitionConnectionParameters
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -79,7 +81,9 @@ type PipelineGatewayDefinitionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	PutConnectionParameters(value *PipelineGatewayDefinitionConnectionParameters)
 	ResetConnectionId()
+	ResetConnectionParameters()
 	ResetGatewayStorageName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -151,6 +155,26 @@ func (j *jsiiProxy_PipelineGatewayDefinitionOutputReference) ConnectionNameInput
 	_jsii_.Get(
 		j,
 		"connectionNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineGatewayDefinitionOutputReference) ConnectionParameters() PipelineGatewayDefinitionConnectionParametersOutputReference {
+	var returns PipelineGatewayDefinitionConnectionParametersOutputReference
+	_jsii_.Get(
+		j,
+		"connectionParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineGatewayDefinitionOutputReference) ConnectionParametersInput() *PipelineGatewayDefinitionConnectionParameters {
+	var returns *PipelineGatewayDefinitionConnectionParameters
+	_jsii_.Get(
+		j,
+		"connectionParametersInput",
 		&returns,
 	)
 	return returns
@@ -590,10 +614,29 @@ func (p *jsiiProxy_PipelineGatewayDefinitionOutputReference) InterpolationForAtt
 	return returns
 }
 
+func (p *jsiiProxy_PipelineGatewayDefinitionOutputReference) PutConnectionParameters(value *PipelineGatewayDefinitionConnectionParameters) {
+	if err := p.validatePutConnectionParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putConnectionParameters",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipelineGatewayDefinitionOutputReference) ResetConnectionId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetConnectionId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineGatewayDefinitionOutputReference) ResetConnectionParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetConnectionParameters",
 		nil, // no parameters
 	)
 }

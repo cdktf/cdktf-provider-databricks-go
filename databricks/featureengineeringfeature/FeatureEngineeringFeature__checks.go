@@ -218,6 +218,17 @@ func (f *jsiiProxy_FeatureEngineeringFeature) validatePutFunctionParameters(valu
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeature) validatePutLineageContextParameters(value *FeatureEngineeringFeatureLineageContext) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeature) validatePutSourceParameters(value *FeatureEngineeringFeatureSource) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

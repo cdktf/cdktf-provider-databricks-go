@@ -51,6 +51,10 @@ func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validatePutDe
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validatePutKafkaSourceParameters(value *FeatureEngineeringFeatureSourceKafkaSource) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeatureSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }

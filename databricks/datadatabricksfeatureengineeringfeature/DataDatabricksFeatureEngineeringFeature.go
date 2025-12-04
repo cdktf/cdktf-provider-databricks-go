@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature}.
 type DataDatabricksFeatureEngineeringFeature interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -46,6 +46,7 @@ type DataDatabricksFeatureEngineeringFeature interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LineageContext() DataDatabricksFeatureEngineeringFeatureLineageContextOutputReference
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -249,6 +250,16 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) Lifecycle() *cdktf.T
 	return returns
 }
 
+func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) LineageContext() DataDatabricksFeatureEngineeringFeatureLineageContextOutputReference {
+	var returns DataDatabricksFeatureEngineeringFeatureLineageContextOutputReference
+	_jsii_.Get(
+		j,
+		"lineageContext",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -330,7 +341,7 @@ func (j *jsiiProxy_DataDatabricksFeatureEngineeringFeature) TimeWindow() DataDat
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
 func NewDataDatabricksFeatureEngineeringFeature(scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringFeatureConfig) DataDatabricksFeatureEngineeringFeature {
 	_init_.Initialize()
 
@@ -348,7 +359,7 @@ func NewDataDatabricksFeatureEngineeringFeature(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source.
 func NewDataDatabricksFeatureEngineeringFeature_Override(d DataDatabricksFeatureEngineeringFeature, scope constructs.Construct, id *string, config *DataDatabricksFeatureEngineeringFeatureConfig) {
 	_init_.Initialize()
 

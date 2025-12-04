@@ -50,6 +50,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putDestinations", GoMethod: "PutDestinations"},
 			_jsii_.MemberMethod{JsiiMethod: "putSecurable", GoMethod: "PutSecurable"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDestinations", GoMethod: "ResetDestinations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "securable", GoGetter: "Securable"},
 			_jsii_.MemberProperty{JsiiProperty: "securableInput", GoGetter: "SecurableInput"},

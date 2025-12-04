@@ -33,6 +33,9 @@ type PipelineIngestionDefinitionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IngestFromUcForeignCatalog() interface{}
+	SetIngestFromUcForeignCatalog(val interface{})
+	IngestFromUcForeignCatalogInput() interface{}
 	IngestionGatewayId() *string
 	SetIngestionGatewayId(val *string)
 	IngestionGatewayIdInput() *string
@@ -86,6 +89,7 @@ type PipelineIngestionDefinitionOutputReference interface {
 	PutSourceConfigurations(value interface{})
 	PutTableConfiguration(value *PipelineIngestionDefinitionTableConfiguration)
 	ResetConnectionName()
+	ResetIngestFromUcForeignCatalog()
 	ResetIngestionGatewayId()
 	ResetNetsuiteJarPath()
 	ResetObjects()
@@ -162,6 +166,26 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) IngestFromUcForeignCatalog() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ingestFromUcForeignCatalog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) IngestFromUcForeignCatalogInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ingestFromUcForeignCatalogInput",
 		&returns,
 	)
 	return returns
@@ -374,6 +398,17 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference)SetConnectionName(
 	_jsii_.Set(
 		j,
 		"connectionName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference)SetIngestFromUcForeignCatalog(val interface{}) {
+	if err := j.validateSetIngestFromUcForeignCatalogParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ingestFromUcForeignCatalog",
 		val,
 	)
 }
@@ -667,6 +702,14 @@ func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) ResetConnectionNa
 	_jsii_.InvokeVoid(
 		p,
 		"resetConnectionName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineIngestionDefinitionOutputReference) ResetIngestFromUcForeignCatalog() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetIngestFromUcForeignCatalog",
 		nil, // no parameters
 	)
 }

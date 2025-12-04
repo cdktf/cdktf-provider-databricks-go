@@ -79,6 +79,10 @@ func (f *jsiiProxy_FeatureEngineeringFeature) validatePutFunctionParameters(valu
 	return nil
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeature) validatePutLineageContextParameters(value *FeatureEngineeringFeatureLineageContext) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeature) validatePutSourceParameters(value *FeatureEngineeringFeatureSource) error {
 	return nil
 }

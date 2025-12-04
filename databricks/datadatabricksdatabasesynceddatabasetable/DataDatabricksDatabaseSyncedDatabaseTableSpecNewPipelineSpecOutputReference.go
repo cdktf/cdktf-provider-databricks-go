@@ -13,6 +13,9 @@ import (
 
 type DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference interface {
 	cdktf.ComplexObject
+	BudgetPolicyId() *string
+	SetBudgetPolicyId(val *string)
+	BudgetPolicyIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,7 @@ type DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	ResetBudgetPolicyId()
 	ResetStorageCatalog()
 	ResetStorageSchema()
 	// Produce the Token's value at resolution time.
@@ -85,6 +89,26 @@ type DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference
 // The jsii proxy struct for DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference
 type jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference) BudgetPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference) BudgetPolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetPolicyIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -222,6 +246,17 @@ func NewDataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputRefere
 		"@cdktf/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference)SetBudgetPolicyId(val *string) {
+	if err := j.validateSetBudgetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"budgetPolicyId",
+		val,
 	)
 }
 
@@ -486,6 +521,14 @@ func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecO
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference) ResetBudgetPolicyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBudgetPolicyId",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference) ResetStorageCatalog() {

@@ -22,13 +22,13 @@ type DataDatabricksVolumesConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/volumes#catalog_name DataDatabricksVolumes#catalog_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/volumes#catalog_name DataDatabricksVolumes#catalog_name}.
 	CatalogName *string `field:"required" json:"catalogName" yaml:"catalogName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/volumes#schema_name DataDatabricksVolumes#schema_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/volumes#schema_name DataDatabricksVolumes#schema_name}.
 	SchemaName *string `field:"required" json:"schemaName" yaml:"schemaName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/volumes#ids DataDatabricksVolumes#ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/volumes#ids DataDatabricksVolumes#ids}.
 	Ids *[]*string `field:"optional" json:"ids" yaml:"ids"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/volumes#provider_config DataDatabricksVolumes#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/volumes#provider_config DataDatabricksVolumes#provider_config}.
 	ProviderConfig *DataDatabricksVolumesProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 }
 

@@ -22,19 +22,21 @@ type FeatureEngineeringFeatureConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
 	FullName *string `field:"required" json:"fullName" yaml:"fullName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}.
 	Function *FeatureEngineeringFeatureFunction `field:"required" json:"function" yaml:"function"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}.
 	Inputs *[]*string `field:"required" json:"inputs" yaml:"inputs"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}.
 	Source *FeatureEngineeringFeatureSource `field:"required" json:"source" yaml:"source"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}.
 	TimeWindow *FeatureEngineeringFeatureTimeWindow `field:"required" json:"timeWindow" yaml:"timeWindow"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
 	FilterCondition *string `field:"optional" json:"filterCondition" yaml:"filterCondition"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}.
+	LineageContext *FeatureEngineeringFeatureLineageContext `field:"optional" json:"lineageContext" yaml:"lineageContext"`
 }
 

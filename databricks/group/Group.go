@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/group databricks_group}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/group databricks_group}.
 type Group interface {
 	cdktf.TerraformResource
 	AclPrincipalId() *string
@@ -549,7 +549,7 @@ func (j *jsiiProxy_Group) WorkspaceConsumeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/group databricks_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/group databricks_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
 	_init_.Initialize()
 
@@ -567,7 +567,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/group databricks_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/group databricks_group} Resource.
 func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *GroupConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/tag_policies databricks_tag_policies}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/tag_policies databricks_tag_policies}.
 type DataDatabricksTagPolicies interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataDatabricksTagPolicies) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/tag_policies databricks_tag_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/tag_policies databricks_tag_policies} Data Source.
 func NewDataDatabricksTagPolicies(scope constructs.Construct, id *string, config *DataDatabricksTagPoliciesConfig) DataDatabricksTagPolicies {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataDatabricksTagPolicies(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/tag_policies databricks_tag_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/tag_policies databricks_tag_policies} Data Source.
 func NewDataDatabricksTagPolicies_Override(d DataDatabricksTagPolicies, scope constructs.Construct, id *string, config *DataDatabricksTagPoliciesConfig) {
 	_init_.Initialize()
 

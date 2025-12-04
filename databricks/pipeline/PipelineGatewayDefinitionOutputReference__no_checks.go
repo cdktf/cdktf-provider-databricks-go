@@ -47,6 +47,10 @@ func (p *jsiiProxy_PipelineGatewayDefinitionOutputReference) validateInterpolati
 	return nil
 }
 
+func (p *jsiiProxy_PipelineGatewayDefinitionOutputReference) validatePutConnectionParametersParameters(value *PipelineGatewayDefinitionConnectionParameters) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineGatewayDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}.
 type FeatureEngineeringFeature interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -57,6 +57,8 @@ type FeatureEngineeringFeature interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LineageContext() FeatureEngineeringFeatureLineageContextOutputReference
+	LineageContextInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -123,10 +125,12 @@ type FeatureEngineeringFeature interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFunction(value *FeatureEngineeringFeatureFunction)
+	PutLineageContext(value *FeatureEngineeringFeatureLineageContext)
 	PutSource(value *FeatureEngineeringFeatureSource)
 	PutTimeWindow(value *FeatureEngineeringFeatureTimeWindow)
 	ResetDescription()
 	ResetFilterCondition()
+	ResetLineageContext()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -338,6 +342,26 @@ func (j *jsiiProxy_FeatureEngineeringFeature) Lifecycle() *cdktf.TerraformResour
 	return returns
 }
 
+func (j *jsiiProxy_FeatureEngineeringFeature) LineageContext() FeatureEngineeringFeatureLineageContextOutputReference {
+	var returns FeatureEngineeringFeatureLineageContextOutputReference
+	_jsii_.Get(
+		j,
+		"lineageContext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureEngineeringFeature) LineageContextInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lineageContextInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureEngineeringFeature) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -449,7 +473,7 @@ func (j *jsiiProxy_FeatureEngineeringFeature) TimeWindowInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
 func NewFeatureEngineeringFeature(scope constructs.Construct, id *string, config *FeatureEngineeringFeatureConfig) FeatureEngineeringFeature {
 	_init_.Initialize()
 
@@ -467,7 +491,7 @@ func NewFeatureEngineeringFeature(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource.
 func NewFeatureEngineeringFeature_Override(f FeatureEngineeringFeature, scope constructs.Construct, id *string, config *FeatureEngineeringFeatureConfig) {
 	_init_.Initialize()
 
@@ -954,6 +978,17 @@ func (f *jsiiProxy_FeatureEngineeringFeature) PutFunction(value *FeatureEngineer
 	)
 }
 
+func (f *jsiiProxy_FeatureEngineeringFeature) PutLineageContext(value *FeatureEngineeringFeatureLineageContext) {
+	if err := f.validatePutLineageContextParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putLineageContext",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FeatureEngineeringFeature) PutSource(value *FeatureEngineeringFeatureSource) {
 	if err := f.validatePutSourceParameters(value); err != nil {
 		panic(err)
@@ -988,6 +1023,14 @@ func (f *jsiiProxy_FeatureEngineeringFeature) ResetFilterCondition() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetFilterCondition",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureEngineeringFeature) ResetLineageContext() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetLineageContext",
 		nil, // no parameters
 	)
 }

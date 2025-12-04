@@ -51,6 +51,10 @@ func (j *jsiiProxy_JobTriggerOutputReference) validatePutFileArrivalParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_JobTriggerOutputReference) validatePutModelParameters(value *JobTriggerModel) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobTriggerOutputReference) validatePutPeriodicParameters(value *JobTriggerPeriodic) error {
 	return nil
 }

@@ -75,6 +75,10 @@ func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateSetIngestFromUcForeignCatalogParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipelineIngestionDefinitionOutputReference) validateSetIngestionGatewayIdParameters(val *string) error {
 	return nil
 }

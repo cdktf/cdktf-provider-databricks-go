@@ -22,7 +22,7 @@ type DataDatabricksBudgetPolicyConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/budget_policy#policy_id DataDatabricksBudgetPolicy#policy_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/budget_policy#policy_id DataDatabricksBudgetPolicy#policy_id}.
 	PolicyId *string `field:"required" json:"policyId" yaml:"policyId"`
 }
 

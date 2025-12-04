@@ -22,11 +22,11 @@ type DataDatabricksNotificationDestinationsConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/notification_destinations#display_name_contains DataDatabricksNotificationDestinations#display_name_contains}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/notification_destinations#display_name_contains DataDatabricksNotificationDestinations#display_name_contains}.
 	DisplayNameContains *string `field:"optional" json:"displayNameContains" yaml:"displayNameContains"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/notification_destinations#provider_config DataDatabricksNotificationDestinations#provider_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/notification_destinations#provider_config DataDatabricksNotificationDestinations#provider_config}.
 	ProviderConfig *DataDatabricksNotificationDestinationsProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/notification_destinations#type DataDatabricksNotificationDestinations#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/notification_destinations#type DataDatabricksNotificationDestinations#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 
