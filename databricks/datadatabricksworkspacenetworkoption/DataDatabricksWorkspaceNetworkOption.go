@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/workspace_network_option databricks_workspace_network_option}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_network_option databricks_workspace_network_option}.
 type DataDatabricksWorkspaceNetworkOption interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -275,7 +275,7 @@ func (j *jsiiProxy_DataDatabricksWorkspaceNetworkOption) WorkspaceIdInput() *flo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/workspace_network_option databricks_workspace_network_option} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_network_option databricks_workspace_network_option} Data Source.
 func NewDataDatabricksWorkspaceNetworkOption(scope constructs.Construct, id *string, config *DataDatabricksWorkspaceNetworkOptionConfig) DataDatabricksWorkspaceNetworkOption {
 	_init_.Initialize()
 
@@ -293,7 +293,7 @@ func NewDataDatabricksWorkspaceNetworkOption(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/workspace_network_option databricks_workspace_network_option} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_network_option databricks_workspace_network_option} Data Source.
 func NewDataDatabricksWorkspaceNetworkOption_Override(d DataDatabricksWorkspaceNetworkOption, scope constructs.Construct, id *string, config *DataDatabricksWorkspaceNetworkOptionConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/online_store databricks_online_store}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_store databricks_online_store}.
 type OnlineStore interface {
 	cdktf.TerraformResource
 	Capacity() *string
@@ -389,7 +389,7 @@ func (j *jsiiProxy_OnlineStore) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/online_store databricks_online_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_store databricks_online_store} Resource.
 func NewOnlineStore(scope constructs.Construct, id *string, config *OnlineStoreConfig) OnlineStore {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewOnlineStore(scope constructs.Construct, id *string, config *OnlineStoreC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/resources/online_store databricks_online_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_store databricks_online_store} Resource.
 func NewOnlineStore_Override(o OnlineStore, scope constructs.Construct, id *string, config *OnlineStoreConfig) {
 	_init_.Initialize()
 

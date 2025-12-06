@@ -7,27 +7,27 @@ package datadatabricksjob
 type DataDatabricksJobJobSettingsSettingsTaskLibrary struct {
 	// cran block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cran DataDatabricksJob#cran}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job#cran DataDatabricksJob#cran}
 	Cran *DataDatabricksJobJobSettingsSettingsTaskLibraryCran `field:"optional" json:"cran" yaml:"cran"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#egg DataDatabricksJob#egg}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job#egg DataDatabricksJob#egg}.
 	Egg *string `field:"optional" json:"egg" yaml:"egg"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jar DataDatabricksJob#jar}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job#jar DataDatabricksJob#jar}.
 	Jar *string `field:"optional" json:"jar" yaml:"jar"`
 	// maven block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#maven DataDatabricksJob#maven}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job#maven DataDatabricksJob#maven}
 	Maven *DataDatabricksJobJobSettingsSettingsTaskLibraryMaven `field:"optional" json:"maven" yaml:"maven"`
 	// provider_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#provider_config DataDatabricksJob#provider_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job#provider_config DataDatabricksJob#provider_config}
 	ProviderConfig *DataDatabricksJobJobSettingsSettingsTaskLibraryProviderConfig `field:"optional" json:"providerConfig" yaml:"providerConfig"`
 	// pypi block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pypi DataDatabricksJob#pypi}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job#pypi DataDatabricksJob#pypi}
 	Pypi *DataDatabricksJobJobSettingsSettingsTaskLibraryPypi `field:"optional" json:"pypi" yaml:"pypi"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#requirements DataDatabricksJob#requirements}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job#requirements DataDatabricksJob#requirements}.
 	Requirements *string `field:"optional" json:"requirements" yaml:"requirements"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#whl DataDatabricksJob#whl}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job#whl DataDatabricksJob#whl}.
 	Whl *string `field:"optional" json:"whl" yaml:"whl"`
 }
 

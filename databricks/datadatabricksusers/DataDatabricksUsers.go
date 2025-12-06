@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/users databricks_users}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/users databricks_users}.
 type DataDatabricksUsers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -313,7 +313,7 @@ func (j *jsiiProxy_DataDatabricksUsers) UsersInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/users databricks_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/users databricks_users} Data Source.
 func NewDataDatabricksUsers(scope constructs.Construct, id *string, config *DataDatabricksUsersConfig) DataDatabricksUsers {
 	_init_.Initialize()
 
@@ -331,7 +331,7 @@ func NewDataDatabricksUsers(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/users databricks_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/users databricks_users} Data Source.
 func NewDataDatabricksUsers_Override(d DataDatabricksUsers, scope constructs.Construct, id *string, config *DataDatabricksUsersConfig) {
 	_init_.Initialize()
 

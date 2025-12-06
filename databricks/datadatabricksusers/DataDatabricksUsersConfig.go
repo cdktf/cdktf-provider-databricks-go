@@ -22,11 +22,11 @@ type DataDatabricksUsersConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/users#extra_attributes DataDatabricksUsers#extra_attributes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/users#extra_attributes DataDatabricksUsers#extra_attributes}.
 	ExtraAttributes *string `field:"optional" json:"extraAttributes" yaml:"extraAttributes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/users#filter DataDatabricksUsers#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/users#filter DataDatabricksUsers#filter}.
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/users#users DataDatabricksUsers#users}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/users#users DataDatabricksUsers#users}.
 	Users interface{} `field:"optional" json:"users" yaml:"users"`
 }
 

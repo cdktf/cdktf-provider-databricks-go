@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/views databricks_views}.
+// Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/views databricks_views}.
 type DataDatabricksViews interface {
 	cdktf.TerraformDataSource
 	CatalogName() *string
@@ -359,7 +359,7 @@ func (j *jsiiProxy_DataDatabricksViews) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/views databricks_views} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/views databricks_views} Data Source.
 func NewDataDatabricksViews(scope constructs.Construct, id *string, config *DataDatabricksViewsConfig) DataDatabricksViews {
 	_init_.Initialize()
 
@@ -377,7 +377,7 @@ func NewDataDatabricksViews(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/views databricks_views} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/views databricks_views} Data Source.
 func NewDataDatabricksViews_Override(d DataDatabricksViews, scope constructs.Construct, id *string, config *DataDatabricksViewsConfig) {
 	_init_.Initialize()
 
